@@ -369,13 +369,25 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -391,22 +403,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -414,15 +410,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -774,49 +761,236 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-451 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-451 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-451 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-451 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
 .emotion-450 {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.emotion-247 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-247 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-247 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-247 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-244 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px) {
+  .emotion-244 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-244 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-243 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a68c1;
+}
+
+.emotion-243 svg {
+  fill: #0a68c1;
+}
+
+@media screen {
+  .emotion-243 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 18px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-243::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-243::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-246 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px) {
+  .emotion-246 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-246 {
+    margin-bottom: 40px;
+  }
+}
+
+.emotion-245 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+}
+
+.emotion-245 svg {
+  fill: #0a0a0a;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-245 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-245::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-245::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px) {
+  .emotion-245 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-245::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-245::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-245 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-245::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2333333333333334em;
+  }
+
+  .emotion-245::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2958333333333334em;
+  }
 }
 
 .emotion-250 {
@@ -835,21 +1009,11 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-250 {
-    padding: 0 inherit;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -867,7 +1031,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -1099,15 +1262,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -1946,13 +2100,25 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-414 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-417 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-416 {
+@media screen and (min-width:1440px) {
+  .emotion-414 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-413 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1963,32 +2129,21 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-416 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-416 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-413 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-416 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -1996,15 +2151,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-416 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-416 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -2298,55 +2444,31 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 }
 
 @media screen {
-  .emotion-447 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-447 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-447 {
-    padding: 0 inherit;
+  .emotion-444 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-447 {
+  .emotion-444 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-447 {
-    padding: 0 12px;
+  .emotion-444 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -2453,13 +2575,25 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-478 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-481 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-456 {
+@media screen and (min-width:1440px) {
+  .emotion-478 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-453 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -2470,49 +2604,26 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-456 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-456 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-456 {
-    padding: 0 inherit;
+  .emotion-453 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-456 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-456 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -2544,52 +2655,25 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-480 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-480 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-477 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-480 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-480 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-480 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -2707,13 +2791,25 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-380 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-383 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-380 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -2724,53 +2820,30 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -2910,53 +2983,30 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-375 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-375 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-375 {
-    padding: 0 inherit;
+  .emotion-372 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-375 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-375 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -2971,53 +3021,30 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-382 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-382 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-382 {
-    padding: 0 inherit;
+  .emotion-379 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-382 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-382 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -6051,13 +6078,25 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -6073,22 +6112,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -6096,15 +6119,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -6456,49 +6470,236 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-454 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-454 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-454 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-454 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
 .emotion-453 {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.emotion-247 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-247 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-247 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-247 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-244 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px) {
+  .emotion-244 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-244 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-243 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a68c1;
+}
+
+.emotion-243 svg {
+  fill: #0a68c1;
+}
+
+@media screen {
+  .emotion-243 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 18px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-243::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-243::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-246 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px) {
+  .emotion-246 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-246 {
+    margin-bottom: 40px;
+  }
+}
+
+.emotion-245 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+}
+
+.emotion-245 svg {
+  fill: #0a0a0a;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-245 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-245::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-245::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px) {
+  .emotion-245 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-245::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-245::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-245 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-245::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2333333333333334em;
+  }
+
+  .emotion-245::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2958333333333334em;
+  }
 }
 
 .emotion-250 {
@@ -6517,21 +6718,11 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-250 {
-    padding: 0 inherit;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -6549,7 +6740,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -6781,15 +6971,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -7628,13 +7809,25 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-417 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-420 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-419 {
+@media screen and (min-width:1440px) {
+  .emotion-417 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-416 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -7645,32 +7838,21 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-419 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-419 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-416 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-419 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -7678,15 +7860,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-419 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-419 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -7980,55 +8153,31 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-450 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-450 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-450 {
-    padding: 0 inherit;
+  .emotion-447 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-450 {
+  .emotion-447 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-450 {
-    padding: 0 12px;
+  .emotion-447 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -8135,13 +8284,25 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-481 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-484 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-459 {
+@media screen and (min-width:1440px) {
+  .emotion-481 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-456 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8152,49 +8313,26 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-459 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-459 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-459 {
-    padding: 0 inherit;
+  .emotion-456 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-459 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-459 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -8226,52 +8364,25 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-483 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-483 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-480 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-483 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-483 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-483 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -8389,13 +8500,25 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-383 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-386 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-383 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8406,53 +8529,30 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -8592,53 +8692,30 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-385 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-385 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-385 {
-    padding: 0 inherit;
+  .emotion-382 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-385 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-385 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -8669,13 +8746,25 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-379 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-382 {
     margin: -48px -12px 0 -12px;
   }
 }
 
-.emotion-381 {
+@media screen and (min-width:1440px) {
+  .emotion-379 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-378 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8691,39 +8780,12 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-381 {
-    padding: 0 8px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-381 {
-    padding: 0 inherit;
-    margin-top: 48px;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-381 {
     padding: 0 12px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-381 {
-    padding: 0 12px;
-    margin-top: 48px;
-    display: block;
   }
 }
 
@@ -11850,13 +11912,25 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -11872,22 +11946,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -11895,15 +11953,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -12255,43 +12304,18 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-516 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-516 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-516 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-516 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -12316,27 +12340,16 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -12348,15 +12361,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -12548,27 +12552,16 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -12580,15 +12573,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -13427,13 +13411,25 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-479 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-482 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-481 {
+@media screen and (min-width:1440px) {
+  .emotion-479 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-478 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -13444,32 +13440,21 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 @media screen {
   .emotion-481 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-481 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-478 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-481 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -13477,15 +13462,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-481 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-481 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -13779,55 +13755,31 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 }
 
 @media screen {
-  .emotion-512 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-512 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-512 {
-    padding: 0 inherit;
+  .emotion-509 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-512 {
+  .emotion-509 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-512 {
-    padding: 0 12px;
+  .emotion-509 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -13934,13 +13886,25 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-543 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-546 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-521 {
+@media screen and (min-width:1440px) {
+  .emotion-543 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-518 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -13951,49 +13915,26 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 @media screen {
   .emotion-521 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-521 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-521 {
-    padding: 0 inherit;
+  .emotion-518 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-521 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-521 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -14025,52 +13966,25 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 @media screen {
   .emotion-545 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-545 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-542 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-545 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-545 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-545 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -14306,23 +14220,12 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-464 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-464 {
-    padding: 0 inherit;
+  .emotion-461 {
     margin-left: 8.333333333333334%;
-    display: block;
   }
 }
 
@@ -14330,15 +14233,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-464 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-464 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -14381,7 +14275,13 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-.emotion-389 {
+@media screen and (min-width:1440px) {
+  .emotion-459 {
+    margin: -40px -40px 0 -40px;
+  }
+}
+
+.emotion-386 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -14397,47 +14297,25 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-389 {
-    padding: 0 40px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-389 {
-    padding: 0 40px;
-    margin-top: 48px;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-389 {
-    padding: 0 40px;
+  .emotion-386 {
     margin-top: 40px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-389 {
-    padding: 0 40px;
-    margin-top: 40px;
+  .emotion-386 {
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
     max-width: 41.66666666666667%;
-    display: block;
   }
 }
 
@@ -17861,13 +17739,25 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -17883,22 +17773,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -17906,15 +17780,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -18266,43 +18131,18 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-458 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-458 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-458 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-458 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -18327,27 +18167,16 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -18359,15 +18188,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -18559,27 +18379,16 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -18591,15 +18400,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -19438,13 +19238,25 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-421 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-424 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-423 {
+@media screen and (min-width:1440px) {
+  .emotion-421 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-420 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -19455,32 +19267,21 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-423 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-423 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-420 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-423 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -19488,15 +19289,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-423 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-423 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -19790,55 +19582,31 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 @media screen {
-  .emotion-454 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-454 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-454 {
-    padding: 0 inherit;
+  .emotion-451 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-454 {
+  .emotion-451 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-454 {
-    padding: 0 12px;
+  .emotion-451 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -19945,13 +19713,25 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-485 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-488 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-463 {
+@media screen and (min-width:1440px) {
+  .emotion-485 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-460 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -19962,49 +19742,26 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-463 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-463 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-463 {
-    padding: 0 inherit;
+  .emotion-460 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-463 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-463 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -20036,52 +19793,25 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-487 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-487 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-484 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-487 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-487 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-487 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -20199,13 +19929,25 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-387 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-390 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-387 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -20216,53 +19958,30 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -20467,44 +20186,16 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-389 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-389 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-389 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-389 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-389 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -20535,13 +20226,25 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-384 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-387 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-.emotion-386 {
+@media screen and (min-width:1440px) {
+  .emotion-384 {
+    margin: -80px -12px 0 -12px;
+  }
+}
+
+.emotion-383 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -20557,48 +20260,26 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-386 {
-    padding: 0 8px;
-    margin-top: 80px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-386 {
-    padding: 0 inherit;
+  .emotion-383 {
     margin-left: 8.333333333333334%;
-    margin-top: 80px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-386 {
     padding: 0 12px;
-    margin-top: 80px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-386 {
-    padding: 0 12px;
-    margin-top: 80px;
-    display: block;
   }
 }
 
@@ -23643,13 +23324,25 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -23665,22 +23358,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -23688,15 +23365,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -24048,43 +23716,18 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-456 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-456 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-456 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-456 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -24109,27 +23752,16 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -24141,15 +23773,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -24341,27 +23964,16 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -24373,15 +23985,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -25220,13 +24823,25 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-419 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-422 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-421 {
+@media screen and (min-width:1440px) {
+  .emotion-419 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-418 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -25237,32 +24852,21 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-421 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-421 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-418 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-421 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -25270,15 +24874,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-421 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-421 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -25572,55 +25167,31 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 }
 
 @media screen {
-  .emotion-452 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-452 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-452 {
-    padding: 0 inherit;
+  .emotion-449 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-452 {
+  .emotion-449 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-452 {
-    padding: 0 12px;
+  .emotion-449 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -25727,13 +25298,25 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-483 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-486 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-461 {
+@media screen and (min-width:1440px) {
+  .emotion-483 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-458 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -25744,49 +25327,26 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-461 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-461 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-461 {
-    padding: 0 inherit;
+  .emotion-458 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-461 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-461 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -25818,52 +25378,25 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-485 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-485 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-482 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-485 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-485 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-485 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -25981,13 +25514,25 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-388 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-391 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-388 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -25998,53 +25543,30 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -26184,53 +25706,30 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-390 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-390 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-390 {
-    padding: 0 inherit;
+  .emotion-387 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-390 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-390 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -29687,13 +29186,25 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -29709,22 +29220,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -29732,15 +29227,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -30092,43 +29578,18 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-453 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-453 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-453 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-453 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -30153,27 +29614,16 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -30185,15 +29635,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -30385,27 +29826,16 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -30417,15 +29847,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -31264,13 +30685,25 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-416 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-419 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-418 {
+@media screen and (min-width:1440px) {
+  .emotion-416 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-415 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -31281,32 +30714,21 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-418 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-418 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-415 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-418 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -31314,15 +30736,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-418 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-418 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -31616,55 +31029,31 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 }
 
 @media screen {
-  .emotion-449 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-449 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-449 {
-    padding: 0 inherit;
+  .emotion-446 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-449 {
+  .emotion-446 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-449 {
-    padding: 0 12px;
+  .emotion-446 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -31771,13 +31160,25 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-480 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-483 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-458 {
+@media screen and (min-width:1440px) {
+  .emotion-480 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-455 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -31788,49 +31189,26 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-458 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-458 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-458 {
-    padding: 0 inherit;
+  .emotion-455 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-458 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-458 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -31862,52 +31240,25 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-482 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-482 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-479 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-482 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-482 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-482 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -32025,13 +31376,25 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-385 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-388 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-385 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -32042,53 +31405,30 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -32228,53 +31568,30 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-387 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-387 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-387 {
-    padding: 0 inherit;
+  .emotion-384 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-387 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-387 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -35355,13 +34672,25 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -35377,22 +34706,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -35400,15 +34713,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -35760,43 +35064,18 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-463 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-463 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-463 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-463 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -35821,27 +35100,16 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -35853,15 +35121,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -36053,27 +35312,16 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -36085,15 +35333,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -36932,13 +36171,25 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-425 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-429 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-428 {
+@media screen and (min-width:1440px) {
+  .emotion-425 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-424 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -36949,32 +36200,21 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-428 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-428 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-424 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-428 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -36982,15 +36222,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-428 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-428 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -37284,55 +36515,31 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 }
 
 @media screen {
-  .emotion-459 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-459 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-459 {
-    padding: 0 inherit;
+  .emotion-455 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-459 {
+  .emotion-455 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-459 {
-    padding: 0 12px;
+  .emotion-455 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -37439,13 +36646,25 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-489 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-493 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-468 {
+@media screen and (min-width:1440px) {
+  .emotion-489 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-464 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -37456,49 +36675,26 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-468 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-468 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-468 {
-    padding: 0 inherit;
+  .emotion-464 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-468 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-468 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -37530,52 +36726,25 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-492 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-492 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-488 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-492 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-492 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-492 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -37693,13 +36862,25 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-394 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-398 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-394 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -37710,53 +36891,30 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -37896,53 +37054,30 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-393 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-393 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-393 {
-    padding: 0 inherit;
+  .emotion-390 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-393 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-393 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -41087,13 +40222,25 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -41109,22 +40256,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -41132,15 +40263,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -41492,43 +40614,18 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-449 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-449 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-449 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-449 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -41553,27 +40650,16 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -41585,15 +40671,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -41785,27 +40862,16 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -41817,15 +40883,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -42664,13 +41721,25 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-411 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-415 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-414 {
+@media screen and (min-width:1440px) {
+  .emotion-411 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-410 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -42681,32 +41750,21 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen {
   .emotion-414 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-414 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-410 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-414 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -42714,15 +41772,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-414 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-414 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -43016,55 +42065,31 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 }
 
 @media screen {
-  .emotion-445 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-445 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-445 {
-    padding: 0 inherit;
+  .emotion-441 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-445 {
+  .emotion-441 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-445 {
-    padding: 0 12px;
+  .emotion-441 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -43171,13 +42196,25 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-475 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-479 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-454 {
+@media screen and (min-width:1440px) {
+  .emotion-475 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-450 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -43188,49 +42225,26 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen {
   .emotion-454 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-454 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-454 {
-    padding: 0 inherit;
+  .emotion-450 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-454 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-454 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -43262,52 +42276,25 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen {
   .emotion-478 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-478 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-474 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-478 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-478 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-478 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -43550,13 +42537,25 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-393 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-397 {
     margin: -48px -12px 0 -12px;
   }
 }
 
-.emotion-395 {
+@media screen and (min-width:1440px) {
+  .emotion-393 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-391 {
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 0;
@@ -43716,43 +42715,16 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-396 {
-    padding: 0 8px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-396 {
-    padding: 0 inherit;
-    margin-top: 48px;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-396 {
     padding: 0 12px;
-    margin-top: 48px;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-396 {
-    padding: 0 12px;
-    margin-top: 48px;
-    display: block;
   }
 }
 
@@ -46728,13 +45700,25 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -46750,22 +45734,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -46773,15 +45741,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -47133,43 +46092,18 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-436 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-436 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-436 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-436 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -47194,27 +46128,16 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -47226,15 +46149,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -47426,27 +46340,16 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -47458,15 +46361,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -48305,13 +47199,25 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-399 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-402 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-401 {
+@media screen and (min-width:1440px) {
+  .emotion-399 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-398 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -48322,32 +47228,21 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-401 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-401 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-398 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-401 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -48355,15 +47250,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-401 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-401 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -48657,55 +47543,31 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 }
 
 @media screen {
-  .emotion-432 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-432 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-432 {
-    padding: 0 inherit;
+  .emotion-429 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-432 {
+  .emotion-429 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-432 {
-    padding: 0 12px;
+  .emotion-429 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -48812,13 +47674,25 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-463 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-466 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-441 {
+@media screen and (min-width:1440px) {
+  .emotion-463 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-438 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -48829,49 +47703,26 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-441 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-441 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-441 {
-    padding: 0 inherit;
+  .emotion-438 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-441 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-441 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -48903,52 +47754,25 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-465 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-465 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-462 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-465 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-465 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-465 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -49066,13 +47890,25 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-365 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-368 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-365 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -49083,53 +47919,30 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -52155,13 +50968,25 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -52177,22 +51002,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -52200,15 +51009,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -52560,43 +51360,18 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-463 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-463 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-463 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-463 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -52621,27 +51396,16 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -52653,15 +51417,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -52853,27 +51608,16 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -52885,15 +51629,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -53732,13 +52467,25 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-389 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-392 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-428 {
+@media screen and (min-width:1440px) {
+  .emotion-389 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-425 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -53749,32 +52496,21 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-428 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-428 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-425 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-428 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -53782,15 +52518,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-428 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-428 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -54084,55 +52811,31 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 }
 
 @media screen {
-  .emotion-459 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-459 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-459 {
-    padding: 0 inherit;
+  .emotion-456 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-459 {
+  .emotion-456 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-459 {
-    padding: 0 12px;
+  .emotion-456 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -54239,13 +52942,25 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-490 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-493 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-468 {
+@media screen and (min-width:1440px) {
+  .emotion-490 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-465 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -54256,49 +52971,26 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-468 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-468 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-468 {
-    padding: 0 inherit;
+  .emotion-465 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-468 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-468 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -54330,52 +53022,25 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-492 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-492 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-489 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-492 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-492 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-492 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -54493,13 +53158,25 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-392 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-395 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-392 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -54510,53 +53187,30 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -54696,53 +53350,30 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-394 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-394 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-394 {
-    padding: 0 inherit;
+  .emotion-391 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-394 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-394 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -54784,22 +53415,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-391 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-391 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -54807,15 +53422,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-391 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-391 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -57972,13 +56578,25 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -57994,22 +56612,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -58017,15 +56619,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -58377,43 +56970,18 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-454 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-454 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-454 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-454 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -58438,27 +57006,16 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -58470,15 +57027,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -58670,27 +57218,16 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -58702,15 +57239,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -59549,13 +58077,25 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-417 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-420 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-419 {
+@media screen and (min-width:1440px) {
+  .emotion-417 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-416 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -59566,32 +58106,21 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-419 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-419 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-416 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-419 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -59599,15 +58128,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-419 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-419 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -59901,55 +58421,31 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-450 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-450 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-450 {
-    padding: 0 inherit;
+  .emotion-447 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-450 {
+  .emotion-447 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-450 {
-    padding: 0 12px;
+  .emotion-447 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -60056,13 +58552,25 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-481 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-484 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-459 {
+@media screen and (min-width:1440px) {
+  .emotion-481 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-456 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -60073,49 +58581,26 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-459 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-459 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-459 {
-    padding: 0 inherit;
+  .emotion-456 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-459 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-459 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -60147,52 +58632,25 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-483 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-483 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-480 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-483 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-483 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-483 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -60310,13 +58768,25 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-383 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-386 {
     margin: -0px -12px 0 -12px;
   }
 }
 
-.emotion-367 {
+@media screen and (min-width:1440px) {
+  .emotion-383 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-364 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -60327,53 +58797,30 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-367 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-367 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-367 {
-    padding: 0 inherit;
+  .emotion-364 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-367 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-367 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -60513,53 +58960,30 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-385 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-385 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-385 {
-    padding: 0 inherit;
+  .emotion-382 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-385 {
     padding: 0 12px;
-    margin-top: 0px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-385 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -60590,13 +59014,25 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-379 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-382 {
     margin: -48px -12px 0 -12px;
   }
 }
 
-.emotion-381 {
+@media screen and (min-width:1440px) {
+  .emotion-379 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-378 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -60612,39 +59048,12 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-381 {
-    padding: 0 8px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-381 {
-    padding: 0 inherit;
-    margin-top: 48px;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-381 {
     padding: 0 12px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-381 {
-    padding: 0 12px;
-    margin-top: 48px;
-    display: block;
   }
 }
 
@@ -63771,13 +62180,25 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-240 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-243 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-242 {
+@media screen and (min-width:1440px) {
+  .emotion-240 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+.emotion-239 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -63793,22 +62214,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-242 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-242 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -63816,15 +62221,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-242 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-242 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -64176,43 +62572,18 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-422 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-422 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-422 {
     padding: 0 12px;
-    margin-left: 8.333333333333334%;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-422 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -64237,27 +62608,16 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-250 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-250 {
-    padding: 0 inherit;
+  .emotion-247 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -64269,15 +62629,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-250 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -64469,27 +62820,16 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-253 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-253 {
-    padding: 0 inherit;
+  .emotion-250 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -64501,15 +62841,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-253 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -65348,13 +63679,25 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-385 {
+    margin: -16px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-388 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-387 {
+@media screen and (min-width:1440px) {
+  .emotion-385 {
+    margin: -24px -12px 0 -12px;
+  }
+}
+
+.emotion-384 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -65365,32 +63708,21 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 @media screen {
   .emotion-387 {
     padding: 0 8px;
-    margin-left: 8.333333333333334%;
     margin-top: 16px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-387 {
-    padding: 0 8px;
-    margin-top: 16px;
+  .emotion-384 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-387 {
-    padding: 0 inherit;
-    display: block;
   }
 }
 
@@ -65398,15 +63730,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-387 {
     padding: 0 12px;
     margin-top: 24px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-387 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -65700,55 +64023,31 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 }
 
 @media screen {
-  .emotion-418 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-    max-width: 8.333333333333334%;
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-418 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-418 {
-    padding: 0 inherit;
+  .emotion-415 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-418 {
+  .emotion-415 {
+    display: block;
     padding: 0 12px;
-    margin-left: 75%;
     margin-top: 24px;
+    margin-left: 75%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-418 {
-    padding: 0 12px;
+  .emotion-415 {
     margin-left: 83.33333333333334%;
-    margin-top: 24px;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-    display: block;
   }
 }
 
@@ -65855,13 +64154,25 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-449 {
+    margin: -0px 8px 0 8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-452 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-427 {
+@media screen and (min-width:1440px) {
+  .emotion-449 {
+    margin: -0px 12px 0 12px;
+  }
+}
+
+.emotion-424 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -65872,49 +64183,26 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 @media screen {
   .emotion-427 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-427 {
-    padding: 0 8px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-427 {
-    padding: 0 inherit;
+  .emotion-424 {
     margin-left: 8.333333333333334%;
-    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
     max-width: 33.333333333333336%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-427 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-427 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 
@@ -65946,52 +64234,25 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 @media screen {
   .emotion-451 {
     padding: 0 8px;
-    margin-top: 0px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-451 {
-    padding: 0 8px;
-    margin-top: 0px;
+  .emotion-448 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-451 {
-    padding: 0 inherit;
-    margin-top: 0px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-451 {
     padding: 0 12px;
-    margin-top: 0px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-451 {
-    padding: 0 12px;
-    margin-top: 0px;
-    display: block;
   }
 }
 

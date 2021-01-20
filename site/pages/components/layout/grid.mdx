@@ -102,20 +102,30 @@ The 5 breakpoints (xs, sm, md, lg, xl) widths are set via the theme, as are the 
     The children of a column are rendered in that column, any supported React
     node is allowed.
   </Prop>
-  <Prop name="xs" type="number" default={1}>
-    The amount of columns for Cell to span at the xs and upwards breakpoint.
+  <Prop name="xs" type="number | 'full-width'" default={1}>
+    The amount of columns for Cell to span at the xs and upwards breakpoint. If
+    set to "full-width" the Cell will span all 12 columns and breakout across
+    the margin of the Grid. It will still be confined by the Grid's max-width.
   </Prop>
-  <Prop name="sm" type="number" default={1}>
-    The amount of columns for Cell to span at the sm and upwards breakpoint.
+  <Prop name="sm" type="number | 'full-width'" default={1}>
+    The amount of columns for Cell to span at the sm and upwards breakpoint. If
+    set to "full-width" the Cell will span all 12 columns and breakout across
+    the margin of the Grid. It will still be confined by the Grid's max-width.
   </Prop>
-  <Prop name="md" type="number" default={1}>
-    The amount of columns for Cell to span at the md and upwards breakpoint.
+  <Prop name="md" type="number | 'full-width'" default={1}>
+    The amount of columns for Cell to span at the md and upwards breakpoint. If
+    set to "full-width" the Cell will span all 12 columns and breakout across
+    the margin of the Grid. It will still be confined by the Grid's max-width.
   </Prop>
-  <Prop name="lg" type="number" default={1}>
-    The amount of columns for Cell to span at the lg and upwards breakpoint.
+  <Prop name="lg" type="number | 'full-width'" default={1}>
+    The amount of columns for Cell to span at the lg and upwards breakpoint. If
+    set to "full-width" the Cell will span all 12 columns and breakout across
+    the margin of the Grid. It will still be confined by the Grid's max-width.
   </Prop>
-  <Prop name="xl" type="number" default={1}>
-    The amount of columns for Cell to span at the xl breakpoint.
+  <Prop name="xl" type="number | 'full-width'" default={1}>
+    The amount of columns for Cell to span at the xl breakpoint. If set to
+    "full-width" the Cell will span all 12 columns and breakout across the
+    margin of the Grid. It will still be confined by the Grid's max-width.
   </Prop>
   <Prop name="xsHidden" type="boolean" default={false}>
     If true, the Cell will be hidden at the xs breakpoint. Unlike other

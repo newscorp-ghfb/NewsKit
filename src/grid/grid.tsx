@@ -56,6 +56,7 @@ const StyledGrid = styled.div<GridProps>`
   ${generateBreakpointConfig('sm')};
   ${generateBreakpointConfig('md')};
   ${generateBreakpointConfig('lg')};
+  ${generateBreakpointConfig('xl')};
 `;
 
 export const Grid: React.FC<GridProps> = ({children, ...props}) => (

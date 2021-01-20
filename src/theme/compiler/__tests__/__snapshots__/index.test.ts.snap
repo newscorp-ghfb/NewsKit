@@ -410,6 +410,7 @@ Object {
     "grid": Object {
       "columnGutters": Object {
         "lg": "space050",
+        "md": "space040",
         "sm": "space040",
         "xl": "space050",
         "xs": "space040",
@@ -417,6 +418,7 @@ Object {
       "columns": 12,
       "containerMargin": Object {
         "lg": "space050",
+        "md": "space040",
         "sm": "space040",
         "xl": "space050",
         "xs": "space040",
@@ -424,6 +426,7 @@ Object {
       "maxWidth": "1920px",
       "rowGutters": Object {
         "lg": "space050",
+        "md": "space040",
         "sm": "space040",
         "xl": "space050",
         "xs": "space040",

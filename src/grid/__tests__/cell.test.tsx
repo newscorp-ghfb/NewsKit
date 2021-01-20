@@ -122,4 +122,28 @@ describe('Cell Container', () => {
     ));
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders full width grid cell at expected breakpoints', () => {
+    const fragment = renderToFragmentWithTheme(Cell, {
+      xs: 12,
+      md: 'full-width',
+      xl: 6,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('re-renders full width grid cell css when grid margin changes', () => {
+    const fragment = renderToFragmentWithTheme(() => (
+      <GridContextProvider
+        value={{
+          xsMargin: 'space000',
+          smMargin: 'space050',
+          lgMargin: 'space060',
+        }}
+      >
+        <Cell xs="full-width" />
+      </GridContextProvider>
+    ));
+    expect(fragment).toMatchSnapshot();
+  });
 });

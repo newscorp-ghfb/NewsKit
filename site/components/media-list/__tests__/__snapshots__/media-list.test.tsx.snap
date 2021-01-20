@@ -18,27 +18,16 @@ exports[`Media List renders with custom layout 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-27 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-27 {
-    padding: 0 inherit;
+  .emotion-31 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -50,15 +39,6 @@ exports[`Media List renders with custom layout 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-27 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -68,7 +48,52 @@ exports[`Media List renders with custom layout 1`] = `
   margin: 0 auto;
 }
 
-.emotion-13 {
+.emotion-28 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-28 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-28 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-28 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-28 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-28 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-12 {
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 0;
@@ -342,43 +367,16 @@ exports[`Media List renders with custom layout 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-14 {
-    padding: 0 8px;
-    margin-top: 12px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-14 {
-    padding: 0 inherit;
-    margin-top: 12px;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-14 {
     padding: 0 12px;
-    margin-top: 12px;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-14 {
-    padding: 0 12px;
-    margin-top: 12px;
-    display: block;
   }
 }
 
@@ -529,27 +527,16 @@ exports[`Media List renders with default layout 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-27 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-27 {
-    padding: 0 inherit;
+  .emotion-31 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-    display: block;
   }
 }
 
@@ -561,15 +548,6 @@ exports[`Media List renders with default layout 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-27 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -606,13 +584,25 @@ exports[`Media List renders with default layout 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-28 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
 @media screen and (min-width:1024px) {
   .emotion-24 {
     margin: -48px -12px 0 -12px;
   }
 }
 
-.emotion-14 {
+@media screen and (min-width:1440px) {
+  .emotion-28 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-13 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -628,39 +618,12 @@ exports[`Media List renders with default layout 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-14 {
-    padding: 0 8px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-14 {
-    padding: 0 inherit;
-    margin-top: 48px;
-    display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-14 {
     padding: 0 12px;
-    margin-top: 48px;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-14 {
-    padding: 0 12px;
-    margin-top: 48px;
-    display: block;
   }
 }
 

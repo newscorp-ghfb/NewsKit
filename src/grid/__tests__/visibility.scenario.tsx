@@ -47,6 +47,13 @@ export default {
           <Hidden display="inline-block" lg>
             <Container color="silver">lg</Container>
           </Hidden>
+
+          <Visible display="inline-block" xl>
+            <Container color="green">xl</Container>
+          </Visible>
+          <Hidden display="inline-block" xl>
+            <Container color="silver">xl</Container>
+          </Hidden>
         </React.Fragment>
       ),
     },

@@ -18,27 +18,16 @@ exports[`SectionIntroduction renders with mandatory title 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-5 {
-    padding: 0 8px;
-    margin-top: 16px;
-    display: block;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-5 {
-    padding: 0 inherit;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-    display: block;
   }
 }
 
@@ -50,15 +39,6 @@ exports[`SectionIntroduction renders with mandatory title 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-5 {
-    padding: 0 12px;
-    margin-top: 24px;
-    display: block;
   }
 }
 
@@ -183,6 +163,221 @@ exports[`SectionIntroduction renders with mandatory title 1`] = `
           </section>
         </div>
       </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SectionIntroduction renders with mandatory title and introduction 1`] = `
+<DocumentFragment>
+  .emotion-7 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-7 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-7 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-7 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+.emotion-4 {
+  margin-bottom: 32px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  background-color: transparent;
+}
+
+.emotion-1 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-1 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-6 {
+  margin-bottom: 48px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-5 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+<div
+    class="emotion-7"
+  >
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+        >
+          <section
+            class="emotion-1"
+          >
+            <h2
+              class="nk-headline-heading emotion-0"
+            >
+              Title
+            </h2>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <p
+        class="emotion-5"
+      >
+        Introduction
+      </p>
     </div>
   </div>
 </DocumentFragment>

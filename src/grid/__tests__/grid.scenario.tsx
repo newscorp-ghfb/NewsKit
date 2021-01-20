@@ -283,16 +283,35 @@ export default {
               xsMargin="space000"
             >
               <Cell xs={6}>
-                <Content>Lorem</Content>
+                <Content>6 span - no margins or gutters</Content>
               </Cell>
               <Cell xs={6}>
-                <Content>ipsum</Content>
+                <Content>6 span - no margins or gutters</Content>
               </Cell>
               <Cell xs={6}>
-                <Content>dolar</Content>
+                <Content>6 span - no margins or gutters</Content>
               </Cell>
               <Cell xs={6}>
-                <Content>sit amet</Content>
+                <Content>6 span - no margins or gutters</Content>
+              </Cell>
+            </Grid>
+          </BorderedBox>
+
+          <BorderedBox>
+            <Grid xsColumnGutter="sizing000" xsRowGutter="sizing000">
+              <Cell xs="full-width">
+                <Content>
+                  Full width content, breaking out of the container margins
+                </Content>
+              </Cell>
+              <Cell xs={6} md="full-width">
+                <Content>6 at xs/sm, full width after</Content>
+              </Cell>
+              <Cell xs={6} md="full-width" xl={12}>
+                <Content>6 at xs/sm, full width after, 12 at xl</Content>
+              </Cell>
+              <Cell xs={12}>
+                <Content>12 span</Content>
               </Cell>
             </Grid>
           </BorderedBox>

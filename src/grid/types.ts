@@ -21,11 +21,11 @@ export interface GridProps {
 }
 
 export interface CellProps {
-  xs?: number;
-  sm?: number;
-  md?: number;
-  lg?: number;
-  xl?: number;
+  xs?: number | 'full-width';
+  sm?: number | 'full-width';
+  md?: number | 'full-width';
+  lg?: number | 'full-width';
+  xl?: number | 'full-width';
 
   xsHidden?: boolean;
   smHidden?: boolean;
