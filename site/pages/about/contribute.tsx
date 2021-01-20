@@ -38,8 +38,7 @@ const cards = [
     description:
       'Stay in contact with the NewsKit team and help it progress in a positive direction.',
     media: {
-      src: '/static/contribute-feedback-card.svg',
-      alt: 'Card Media',
+      src: '/static/Contribute_Banner_Feedback.svg',
     },
     styles: cardStyle
   },
@@ -48,8 +47,7 @@ const cards = [
     description:
       'Promote the Design System, answer questions and help your team integrate.',
     media: {
-      src: '/static/contribute-share-card.svg',
-      alt: 'Card Media',
+      src: '/static/Contribute_Banner_Share.svg',
     },
     styles: cardStyle
   },
@@ -58,8 +56,7 @@ const cards = [
     description:
       'Write code or design assets for the Design System for other users to reuse.',
     media: {
-      src: '/static/contribute-create-card.svg',
-      alt: 'Card Media',
+      src: '/static/Contribute_Banner_Create.svg',
     },
     styles: cardStyle
   },
@@ -69,20 +66,14 @@ export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-      {/* TODO there is spacing coming from don't know where, in the introduction. 
-       Removing the space would maybe fix it */}
-      {/* but... not the root of the problem */}
       <PageIntroduction
         type="About"
         name="Contribute"
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
         hero={{
-          src: '/static/contribute-page-introduction.svg',
-          alt: 'placeholder',
+          src: '/static/Contribute_Banner_Introduction.svg',
         }}
       />
-      {/* TODO the cell is adding some margin top, with adds 
-      to the margin bottom of 65 px coming from the image. */}
       <SectionIntroduction title="How to contribute">
         There are a lot of ways to contribute to the NewsKit community and
         Design System; from submitting a proposal to designing a new feature for
@@ -100,7 +91,12 @@ export default (layoutProps: LayoutProps) => (
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
       </Cell>
-      <SectionIntroduction title="Guide" />
+      <SectionIntroduction 
+        title="Feedback" 
+        image={{
+          src: '/static/Contribute_Banner_Feedback.svg',
+        }}
+      />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
@@ -185,13 +181,16 @@ export default (layoutProps: LayoutProps) => (
           </Link>
           .
         </Paragraph>
-
-        {/* TODO we need to be able to override space - for xs.  Another ticket. */}
         <Separator />
-      </Cell>
-      <SectionIntroduction title="Share" />
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
-        <Headline
+       </Cell>
+       <SectionIntroduction 
+         title="Share" 
+         image={{
+          src: '/static/Contribute_Banner_Share.svg',
+        }}
+        />
+       <Cell xs={12} md={10} lg={8} mdOffset={1}>
+         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"
         >
@@ -243,7 +242,12 @@ export default (layoutProps: LayoutProps) => (
 
         <Separator />
       </Cell>
-      <SectionIntroduction title="Create" />
+      <SectionIntroduction 
+        title="Create" 
+        image={{
+          src: '/static/Contribute_Banner_Create.svg',
+        }}
+      />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
@@ -282,7 +286,6 @@ export default (layoutProps: LayoutProps) => (
         </Headline>
         <br />
         <br />
-        {/* TODO UPDATE AS DESIGN in another ticker!? */}
         <InfoNotice>Currently only applicable for News UK teams.</InfoNotice>
         <br />
         <br />

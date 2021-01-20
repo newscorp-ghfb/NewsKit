@@ -1,12 +1,14 @@
 import React from 'react';
-import {Block, TextBlock, TitleBar, Cell} from 'newskit';
+import {Block, TextBlock, TitleBar, Cell, Image} from 'newskit';
 import {SectionIntroductionProps} from './types';
 
 export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   title,
   children,
   cellProps,
+  image,
 }) => (
+  <>
   <Cell xs={12} md={8} lg={6} mdOffset={1} {...cellProps}>
     <Block spaceStack="space060">
       <TitleBar
@@ -34,5 +36,17 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
         </TextBlock>
       </Block>
     )}
-  </Cell>
+    </Cell>
+    <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      {image && (
+        <Block spaceStack={{xs: 'space060', md: 'space070'}}>
+          <Image
+            src={image.src}
+            alt={image.alt || ''}
+            overrides={{stylePreset: 'imageDefault'}}
+          />
+        </Block>
+      )}
+    </Cell>
+    </>
 );

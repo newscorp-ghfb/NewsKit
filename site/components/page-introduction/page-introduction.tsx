@@ -3,15 +3,9 @@ import {
   Cell,
   Block,
   TextBlock,
-  styled,
-  getSizingFromTheme,
   Image,
 } from 'newskit';
 import {PageIntroductionProps} from './types';
-
-const ExtendedBlock = styled(Block)`
-  min-height: ${getSizingFromTheme('sizing100')};
-`;
 
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   type,
@@ -46,27 +40,21 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </Block>
     </Cell>
     <Cell xs={12} md={8} lg={6} mdOffset={1}>
-      <ExtendedBlock
-        // TODO there is spacing coming from don't know where. Removing the space would maybe fix it
-        // but... not the root of the problem
-        spaceStack={{xs: 'space060', md: 'space080', lg: 'space090'}}
+      <TextBlock
+        stylePreset="inkSubtle"
+        typographyPreset={{
+          xs: 'editorialSubheading010',
+          md: 'editorialSubheadline020',
+        }}
       >
-        <TextBlock
-          stylePreset="inkSubtle"
-          typographyPreset={{
-            xs: 'editorialSubheading010',
-            md: 'editorialSubheadline020',
-          }}
-        >
-          {introduction}
-        </TextBlock>
-      </ExtendedBlock>
+        {introduction}
+      </TextBlock>
     </Cell>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
       <Block spaceStack={{xs: 'space080', md: 'space060'}}>
         <Image
           src={hero.src}
-          alt={hero.alt}
+          alt={hero.alt || ''}
           overrides={{stylePreset: 'imageDefault'}}
         />
       </Block>
