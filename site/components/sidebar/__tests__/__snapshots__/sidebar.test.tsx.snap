@@ -1442,16 +1442,16 @@ exports[`Sidebar renders correctly when closed 1`] = `
             <div>
               <a
                 class="emotion-4"
-                href="/about/contribute"
+                href="/about/introduction"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
                     class="emotion-13"
-                    data-testid="/about/contribute"
+                    data-testid="/about/introduction"
                   >
-                    Contribute
+                    Introduction
                   </div>
                 </span>
               </a>
@@ -2932,16 +2932,16 @@ exports[`Sidebar renders correctly when open 1`] = `
             <div>
               <a
                 class="emotion-4"
-                href="/about/contribute"
+                href="/about/introduction"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
                     class="emotion-13"
-                    data-testid="/about/contribute"
+                    data-testid="/about/introduction"
                   >
-                    Contribute
+                    Introduction
                   </div>
                 </span>
               </a>

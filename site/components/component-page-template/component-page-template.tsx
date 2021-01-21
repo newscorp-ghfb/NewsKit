@@ -170,9 +170,7 @@ const renderSections = ({
                   <Table rows={props.rows} columns={props.columns} />
                 </Cell>
                 <Cell xs={12} md={10} lg={8} mdOffset={1}>
-                  <Cell xs={12} md={10} lg={8} mdOffset={1}>
-                    <Separator />
-                  </Cell>
+                  <Separator />
                 </Cell>
               </>
             )}

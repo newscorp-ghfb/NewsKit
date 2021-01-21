@@ -81,7 +81,7 @@ describe('Component Page Template', () => {
         introduction: 'Component variations',
         cards: [
           {
-            title: 'Variation',
+            label: 'Variation',
             description: 'Description',
             media: {
               src: '/static/placeholder-16x9.png',
@@ -102,7 +102,7 @@ describe('Component Page Template', () => {
         introduction: 'Component Behavior',
         cards: [
           {
-            title: 'Title',
+            label: 'Title',
             description: 'Description',
             media: {
               src: '/static/placeholder-16x9.png',
@@ -231,7 +231,7 @@ describe('Component Page Template', () => {
         introduction: 'Related Components',
         cards: [
           {
-            title: 'Title',
+            label: 'Title',
             description: 'Description',
             href: 'http://localhost:8081/components/action/button',
             media: {

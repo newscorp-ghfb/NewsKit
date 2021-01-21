@@ -6,9 +6,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   title,
   children,
   cellProps,
-  image,
 }) => (
-  <>
   <Cell xs={12} md={8} lg={6} mdOffset={1} {...cellProps}>
     <Block spaceStack="space060">
       <TitleBar

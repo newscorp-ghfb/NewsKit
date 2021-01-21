@@ -2,7 +2,7 @@ import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
 import {MediaList} from '../media-list';
 
 const interactiveCard = {
-  title: 'Interactive',
+  label: 'Interactive',
   description: 'interactive card',
   media: {
     src: '/static/placeholder-16x9.png',
@@ -12,9 +12,32 @@ const interactiveCard = {
 };
 
 const staticCard = {
-  title: 'Static Card',
-  subtitle: 'static',
-  description: 'card with optional subtitle ',
+  label: 'Static Card',
+  title: 'static',
+  description: 'card with optional title ',
+};
+
+const cardWithStyles = {
+  label: 'styled card label',
+  title: 'styled card title ',
+  description: 'styled card description',
+  styles: {
+    card: {
+      stylePreset: 'cardContainerNonInteractive030',
+    },
+    label: {
+      stylePreset: 'inkContrast',
+      typographyPreset: 'editorialHeadline020',
+    },
+    title: {
+      stylePreset: 'inkContrast',
+      typographyPreset: 'editorialHeadline020',
+    },
+    description: {
+      stylePreset: 'inkContrast',
+      typographyPreset: 'editorialHeadline020',
+    },
+  },
 };
 
 describe('Media List', () => {
@@ -27,7 +50,7 @@ describe('Media List', () => {
 
   test('renders with custom layout', () => {
     const fragment = renderToFragmentWithTheme(MediaList, {
-      cards: [interactiveCard, staticCard],
+      cards: [interactiveCard, staticCard, cardWithStyles],
       spaceStack: 'space110',
       xsCard: 6,
       lgCard: 3,

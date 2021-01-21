@@ -14,76 +14,67 @@ export const MediaList: React.FC<MediaListProps> = ({
   lgCard,
   xlCard,
   cards,
-  gridProps = {
-    xsRowGutter: 'space080',
-    xsMargin: 'space000',
-  },
+  gridProps,
 }) => (
   <Cell xs={12} md={10} lg={8} mdOffset={1}>
     <Block spaceStack={spaceStack}>
-      <Grid {...gridProps}>
-        {cards.map(
-          ({media, title: cardTitle, description, subtitle, href, styles}) => (
-            <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
-              <StyledCard
-                media={media}
-                overrides={styles && styles.card && {...styles.card}}
-                href={href}
-              >
-                <Block spaceStack="space040">
-                  <TextBlock
-                    stylePreset={
-                      styles && styles.title && styles.title.stylePreset
-                        ? styles.title.stylePreset
-                        : 'inkContrast'
-                    }
-                    typographyPreset={
-                      styles && styles.title && styles.title.typographyPreset
-                        ? styles.title.typographyPreset
-                        : 'editorialHeadline020'
-                    }
-                  >
-                    {cardTitle}
-                  </TextBlock>
-                </Block>
-                {subtitle && (
-                  <Block spaceStack="space040">
-                    <TextBlock
-                      stylePreset={
-                        styles && styles.subtitle && styles.subtitle.stylePreset
-                      }
-                      typographyPreset={
-                        styles &&
-                        styles.subtitle &&
-                        styles.subtitle.typographyPreset
-                      }
-                    >
-                      {subtitle}
-                    </TextBlock>
-                  </Block>
-                )}
+      <Grid xsRowGutter="space080" xsMargin="space000" {...gridProps}>
+        {cards.map(({media, label, description, title, href, styles}) => (
+          <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
+            <StyledCard
+              media={media}
+              overrides={styles && styles.card && {...styles.card}}
+              href={href}
+            >
+              <Block spaceStack="space045">
                 <TextBlock
                   stylePreset={
-                    styles &&
-                    styles.description &&
-                    styles.description.stylePreset
-                      ? styles.description.stylePreset
+                    styles && styles.label && styles.label.stylePreset
+                      ? styles.label.stylePreset
                       : 'inkContrast'
                   }
                   typographyPreset={
-                    styles &&
-                    styles.description &&
-                    styles.description.typographyPreset
-                      ? styles.description.typographyPreset
-                      : 'editorialParagraph020'
+                    styles && styles.label && styles.label.typographyPreset
+                      ? styles.label.typographyPreset
+                      : 'editorialHeadline020'
                   }
                 >
-                  {description}
+                  {label}
                 </TextBlock>
-              </StyledCard>
-            </Cell>
-          ),
-        )}
+              </Block>
+              {title && (
+                <Block spaceStack="space045">
+                  <TextBlock
+                    stylePreset={
+                      styles && styles.title && styles.title.stylePreset
+                    }
+                    typographyPreset={
+                      styles && styles.title && styles.title.typographyPreset
+                    }
+                  >
+                    {title}
+                  </TextBlock>
+                </Block>
+              )}
+              <TextBlock
+                stylePreset={
+                  styles && styles.description && styles.description.stylePreset
+                    ? styles.description.stylePreset
+                    : 'inkContrast'
+                }
+                typographyPreset={
+                  styles &&
+                  styles.description &&
+                  styles.description.typographyPreset
+                    ? styles.description.typographyPreset
+                    : 'editorialParagraph020'
+                }
+              >
+                {description}
+              </TextBlock>
+            </StyledCard>
+          </Cell>
+        ))}
       </Grid>
     </Block>
   </Cell>

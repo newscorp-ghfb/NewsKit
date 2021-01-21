@@ -2,7 +2,7 @@
 
 exports[`Media List renders with custom layout 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-36 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -11,7 +11,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen {
-  .emotion-27 {
+  .emotion-36 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -22,7 +22,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-31 {
+  .emotion-36 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -32,7 +32,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-27 {
+  .emotion-36 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -42,58 +42,13 @@ exports[`Media List renders with custom layout 1`] = `
   }
 }
 
-.emotion-25 {
+.emotion-34 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-28 {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-28 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-28 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-28 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-28 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-28 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-.emotion-12 {
+.emotion-13 {
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 0;
@@ -238,7 +193,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-8 {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .emotion-7 {
@@ -314,11 +269,11 @@ exports[`Media List renders with custom layout 1`] = `
   padding: 1px 0;
 }
 
-.emotion-26 {
+.emotion-35 {
   margin-bottom: 120px;
 }
 
-.emotion-24 {
+.emotion-33 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -334,19 +289,31 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen {
-  .emotion-24 {
+  .emotion-33 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-24 {
+  .emotion-33 {
+    margin: -12px -4px 0 -4px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-33 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-24 {
+  .emotion-33 {
+    margin: -12px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-33 {
     margin: -12px -8px 0 -8px;
   }
 }
@@ -380,17 +347,23 @@ exports[`Media List renders with custom layout 1`] = `
   }
 }
 
+.emotion-31 {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+
 <div
-    class="emotion-27"
+    class="emotion-36"
   >
     <div
-      class="emotion-26"
+      class="emotion-35"
     >
       <div
-        class="emotion-25"
+        class="emotion-34"
       >
         <div
-          class="emotion-24"
+          class="emotion-33"
         >
           <div
             class="emotion-14"
@@ -475,11 +448,21 @@ exports[`Media List renders with custom layout 1`] = `
                 <div
                   class="emotion-11"
                 >
-                  <div
-                    class="emotion-8"
+                  <a
+                    class="nk-card-link emotion-10"
+                    href="/"
                   >
+                    <div
+                      class="emotion-8"
+                    >
+                      <p
+                        class="emotion-7"
+                      >
+                        Interactive
+                      </p>
+                    </div>
                     <p
-                      class="emotion-7"
+                      class="emotion-9"
                     >
                       Static Card
                     </p>
@@ -496,7 +479,46 @@ exports[`Media List renders with custom layout 1`] = `
                   <p
                     class="emotion-9"
                   >
-                    card with optional subtitle 
+                    card with optional title 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-14"
+          >
+            <div
+              class="emotion-31"
+            >
+              <div
+                class="emotion-12"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <p
+                      class="emotion-7"
+                    >
+                      styled card label
+                    </p>
+                  </div>
+                  <div
+                    class="emotion-8"
+                  >
+                    <p
+                      class="emotion-17"
+                    >
+                      styled card title 
+                    </p>
+                  </div>
+                  <p
+                    class="emotion-7"
+                  >
+                    styled card description
                   </p>
                 </div>
               </div>
@@ -531,7 +553,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-31 {
+  .emotion-27 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -585,7 +607,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-28 {
+  .emotion-24 {
     margin: -48px -8px 0 -8px;
   }
 }
@@ -597,12 +619,12 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-28 {
+  .emotion-24 {
     margin: -48px -12px 0 -12px;
   }
 }
 
-.emotion-13 {
+.emotion-14 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -772,7 +794,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-8 {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .emotion-7 {
@@ -964,7 +986,7 @@ exports[`Media List renders with default layout 1`] = `
                   <p
                     class="emotion-9"
                   >
-                    card with optional subtitle 
+                    card with optional title 
                   </p>
                 </div>
               </div>

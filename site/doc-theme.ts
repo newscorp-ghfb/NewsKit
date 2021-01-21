@@ -443,7 +443,7 @@ const stylePresets = {
     base: {
       backgroundColor: '{{colors.interface010}}',
       borderRadius: (false as unknown) as string,
-      color: '{{color.inkBase}}',
+      color: '{{colors.inkBase}}',
     },
   },
   cardContainerMedia: {

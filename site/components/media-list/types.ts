@@ -17,8 +17,8 @@ interface TextBlockPresets {
 }
 
 export interface MediaItem {
-  title: string;
-  subtitle?: string;
+  label: string;
+  title?: string;
   description: string;
   media?: {
     src: string;
@@ -27,8 +27,8 @@ export interface MediaItem {
   href?: string;
   styles?: {
     card?: CardOverridesProps;
+    label?: TextBlockPresets;
     title?: TextBlockPresets;
-    subtitle?: TextBlockPresets;
     description?: TextBlockPresets;
   };
 }

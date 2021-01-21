@@ -9,65 +9,65 @@ import {MediaList} from '../../components/media-list';
 const cardContents = [
   {
     media: {
-      src: '../../static/principles-01.svg',
-      alt: 'user-foccusee-media-image',
+      src: '../../static/about-principles-01.svg',
+      alt: 'card-01',
     },
-    title: 'User focusse',
-    subtitle:
+    label: 'User focused',
+    title:
       'We don’t design for screens, we design for people; whether the product teams using our components or the customers using the end products.',
     description:
       'We establish insights on our user needs through qualitative and quantitative data from research. We continually test our components and the overall design system to ensure it meets these needs.',
   },
   {
     media: {
-      src: '../../static/principles-02.svg',
-      alt: 'user-foccusee-media-image',
+      src: '../../static/about-principles-02.svg',
+      alt: 'card-02',
     },
-    title: 'Inclusive',
-    subtitle:
+    label: 'Inclusive',
+    title:
       'Every design decision has the potential to include or exclude users. To ensure our solutions meet the needs of as many users as possible we take an inclusive first, design approach. ',
     description:
       'The default components are accessible to WCAG 2.1 AA standards. We strive for clarity around everything we do, simplifying the complex. We use simple language, avoid acronyms and offer more detail when required. Our users should always be able to understand and act with confidence.',
   },
   {
     media: {
-      src: '../../static/principles-03.svg',
-      alt: 'user-foccusee-media-image',
+      src: '../../static/about-principles-03.svg',
+      alt: 'card-03',
     },
-    title: 'Essential',
-    subtitle:
+    label: 'Essential',
+    title:
       'Every component serves a user’s need that is shared by multiple services or products.',
     description:
       "We don't create new solutions to solve problems that already exist in the system unless they are intended to replace them. We never build something 'just in case'. Every design decision and component has a clear purpose and contributes to a larger purpose; if it doesn’t, it shouldn’t be there.",
   },
   {
     media: {
-      src: '../../static/principles-04.svg',
-      alt: 'user-foccusee-media-image',
+      src: '../../static/about-principles-04.svg',
+      alt: 'card-04',
     },
-    title: 'Collaborative',
-    subtitle: 'Great ideas come from everywhere.',
+    label: 'Collaborative',
+    title: 'Great ideas come from everywhere.',
     description:
       'Everyone is encouraged to contribute. We share everything we are doing at every step in the process: designs, code, ideas, successes or failures. We encourage and seek feedback, suggestions and contributions. We all take responsibility for the output of the team and reject ownership.',
   },
   {
     media: {
-      src: '../../static/principles-05.svg',
-      alt: 'user-foccusee-media-image',
+      src: '../../static/about-principles-05.svg',
+      alt: 'card-05',
     },
-    title: 'Consistent',
-    subtitle:
+    label: 'Consistent',
+    title:
       'Ensuring everything reusable and shareable instead of constantly reinventing different solutions to solve the same need. ',
     description:
       'We create familiarity across our products by using the same solution to the same problem.',
   },
   {
     media: {
-      src: '../../static/principles-06.svg',
-      alt: 'user-foccusee-media-image',
+      src: '../../static/about-principles-06.svg',
+      alt: 'card-06',
     },
-    title: 'Robust',
-    subtitle:
+    label: 'Robust',
+    title:
       'Our users require a design system that they can trust and rely upon. ',
     description:
       'We thoroughly consider, design, develop and test solutions before they are released for users to consume. Whenever we make a change to the design system, we communicate this through well-structured documentation.',
@@ -87,21 +87,19 @@ const cardStyles = cardStylePresets.map(preset => ({
   card: {
     stylePreset: preset,
     teaserContainer: {
-      spaceInset: {
-        xs: 'spaceInset040',
-        sm: 'spaceInset040',
-        lg: 'spaceInset050',
-        xl: 'spaceInset050',
-      },
+      spaceInset: 'spaceInsetStretch050',
     },
   },
-  title: {
+  label: {
     stylePreset: 'inkWhiteSubtle',
     typographyPreset: 'utilityLabel020',
   },
-  subtitle: {
+  title: {
     stylePreset: 'inkWhiteContrast',
-    typographyPreset: 'editorialHeadline030',
+    typographyPreset: {
+      xs: 'editorialHeadline020',
+      md: 'editorialHeadline030',
+    },
   },
   description: {
     stylePreset: 'inkWhiteSubtle',
