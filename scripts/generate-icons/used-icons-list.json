@@ -33,7 +33,9 @@
     "ArrowDropUp",
     "Check",
     "ArrowRightAlt",
-    "Info"
+    "Info",
+    "ChevronLeft",
+    "ChevronRight"
   ]
 }
 

@@ -46,11 +46,12 @@ The provided functions, specified below, are used to retrieve the CSS values and
   getStylePreset(defaultPath, overridePath, options)(props)
   
   options: {
+    nestedCssSelector?: string;
     isLoading?: boolean;
     isSelected?: boolean;
     isDisabled?: boolean;
-    invalid?: boolean;
-    valid?: boolean;
+    isInvalid?: boolean;
+    isValid?: boolean;
     isSvg?: boolean;
     omitStates?: StylePresetStates[];
     filterStates?: StylePresetStates[];

@@ -2,8 +2,9 @@ import Layout from '../../../components/layout';
 import Playground from '../../../components/playground';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {Prop} from '../../../components/prop';
+import {CodeFromDefaultPresets} from '../../../components/code';
 
-import {Scroll, Image} from 'newskit';
+import {Scroll, Image, Link} from 'newskit';
 
 export default Layout;
 
@@ -16,14 +17,32 @@ By adding a scroll component to a block, you can enable the content within the b
 ## Props
 
 <LegacyBlock marginTop="sizing050">
-  <Prop
-    name="flow"
-    type="vertical | horizontal"
-    default="horizontal"
-  >
-    If provided, defines the flow direction of the Scroll contents.
+  <Prop name="vertical" type="boolean" default={false}>
+    If provided, changes the flow direction of the Scroll contents to vertical.
   </Prop>
-
+  <Prop name="arrows" type="'hover' | 'static'" default="undefined">
+    This prop is optional. If provided, will display scroll arrow buttons.
+    If 'hover' is passed as a value, the scroll buttons will be visible only on hover. 
+    If 'static' is provided, the buttons will persist on the screen.
+  </Prop>
+  <Prop name="stepDistance" type="number" default="160">
+    If scroll arrow buttons are enabled, this prop is used to set the scroll step representing 
+    the number of pixels that an element's content is scrolled in either direction.
+  </Prop>
+    <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    <Prop name="arrows" type="object">
+      <Prop name="stylePreset" type="MQ<string>">
+        If provided, this overrides the stylePreset preset applied to the scroll arrow buttons.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<string>">
+        If provided, this overrides the padding space applied to scroll icon buttons.
+      </Prop>
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="scroll" />
+    For more information about how to apply overrides to a component please refer to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+  </Prop>
 </LegacyBlock>
 
 ## Playground
@@ -32,7 +51,7 @@ By adding a scroll component to a block, you can enable the content within the b
   componentName="Scroll"
   component={state => (
       <LegacyBlock width="300px" height="200px">
-        {state.flow === 'horizontal' && 
+        {!state.vertical && 
           <Scroll {...state}>
             <Image 
               src="/static/placeholder-3x2.png" 
@@ -40,7 +59,7 @@ By adding a scroll component to a block, you can enable the content within the b
               overrides={{width: '400px', height: '200px'}}/>
           </Scroll>
         }
-        {state.flow === 'vertical' && 
+        {state.vertical && 
           <Scroll {...state}>
             <p style={{width: '400px'}}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
@@ -74,14 +93,47 @@ By adding a scroll component to a block, you can enable the content within the b
     )}
   knobs={[
     {
-      name: 'Scroll Flow',
-      propName: 'flow',
-      options: (() =>
-        ['horizontal', 'vertical'].map((flow, i) => ({
-          label: flow,
-          value: flow,
-          isDefault: !i,
-        })))(),
+      name: 'Vertical',
+      propName: 'vertical',
+      value: false,
+    },
+    {
+      name: 'Scroll With Arrows',
+      propName: 'arrows',
+      options: [
+        {
+          label: 'no arrows',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'hover',
+          value: 'hover',
+        },
+        {
+          label: 'static',
+          value: 'static',
+        },
+      ],
+    },
+    {
+      name: 'Scroll Step',
+      propName: 'stepDistance',
+      options: [
+        {
+          label: 'default',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: '100',
+          value: 100,
+        },
+        {
+          label: '50',
+          value: 50,
+        },
+      ],
     },
   ]}
 />

@@ -1,6 +1,13 @@
 import React from 'react';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {Scroll, ScrollFlow} from '../scroll';
+import '@testing-library/jest-dom';
+import {fireEvent, render} from '@testing-library/react';
+import {screen} from '@testing-library/dom';
+import {Scroll} from '../scroll';
+import {createTheme, newskitLightTheme, ThemeProvider} from '../../theme';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 
 const Content = () => (
   <p style={{width: '400px'}}>
@@ -29,8 +36,33 @@ const Content = () => (
   </p>
 );
 
+const myCustomTheme = createTheme({
+  name: 'my-custom-scroll-theme',
+  overrides: {
+    stylePresets: {
+      scrollArrowsCustom: {
+        base: {
+          backgroundColor: '{{colors.amber010}}',
+          color: '{{colors.purple050}}',
+          iconColor: '{{colors.purple050}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber020}}',
+        },
+        active: {
+          backgroundColor: '{{colors.amber060}}',
+        },
+        disabled: {
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+      },
+    },
+  },
+});
+
 describe('Scroll', () => {
-  test(`renders scroll when no properties are set`, () => {
+  test(`renders horizontal scroll when no properties are set`, () => {
     const fragment = renderToFragmentWithTheme(Scroll, {
       children: <Content />,
     });
@@ -38,14 +70,216 @@ describe('Scroll', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  Object.values(ScrollFlow).forEach(scrollFlowKey => {
-    test(`renders where the scroll flow is ${scrollFlowKey}`, () => {
-      const fragment = renderToFragmentWithTheme(Scroll, {
-        flow: scrollFlowKey,
+  test(`renders vertical scroll`, () => {
+    const fragment = renderToFragmentWithTheme(Scroll, {
+      vertical: true,
+      children: <Content />,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders horizontal scroll with visible arrows`, () => {
+    const {asFragment} = renderWithTheme(Scroll, {
+      children: <Content />,
+      arrows: 'static',
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test(`renders horizontal scroll with hidden arrows`, () => {
+    const {asFragment} = renderWithTheme(Scroll, {
+      children: <Content />,
+      arrows: 'hover',
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test(`renders vertical scroll with visible arrows`, () => {
+    const {asFragment} = renderWithTheme(Scroll, {
+      children: <Content />,
+      vertical: true,
+      arrows: 'static',
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test(`renders vertical scroll with hidden arrows`, () => {
+    const {asFragment} = renderWithTheme(Scroll, {
+      children: <Content />,
+      vertical: true,
+      arrows: 'hover',
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test(`renders scroll with overriden arrows style`, () => {
+    const {asFragment} = renderWithTheme(
+      Scroll,
+      {
         children: <Content />,
+        arrows: 'static',
+        overrides: {arrows: {stylePreset: 'scrollArrowsCustom'}},
+      },
+      myCustomTheme,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  describe('flow', () => {
+    const clientWidthMock = 600;
+    const scrollWidthMock = 800;
+    const scrollLeftMock = 0;
+
+    const clientHeightMock = 600;
+    const scrollHeightMock = 800;
+    const scrollTopMock = 0;
+
+    const defaultStepDistance = 40;
+
+    const ScrollWithContentAndProps = ({vertical}: {vertical?: boolean}) => (
+      <ThemeProvider theme={newskitLightTheme}>
+        <Scroll
+          vertical={vertical}
+          arrows="static"
+          stepDistance={defaultStepDistance}
+        >
+          <Content />
+        </Scroll>
+      </ThemeProvider>
+    );
+
+    test(`horizontally scrolls when arrow buttons click`, async () => {
+      const {rerender} = render(<ScrollWithContentAndProps />);
+      const scrollContainer = screen.getByTestId('scroll-container');
+
+      Object.defineProperty(scrollContainer, 'clientWidth', {
+        writable: true,
+        configurable: true,
+        value: clientWidthMock,
+      });
+      Object.defineProperty(scrollContainer, 'scrollWidth', {
+        writable: true,
+        configurable: true,
+        value: scrollWidthMock,
+      });
+      Object.defineProperty(scrollContainer, 'scrollLeft', {
+        writable: true,
+        configurable: true,
+        value: scrollLeftMock,
+      });
+      scrollContainer.onscroll = jest.fn().mockImplementation(() => {
+        scrollContainer.scrollLeft = scrollWidthMock - clientWidthMock;
       });
 
-      expect(fragment).toMatchSnapshot();
+      // Dirty hack to get the updated state!
+      rerender(<ScrollWithContentAndProps />);
+
+      // Initial render, left arrow is disabled(not rendered), right arrow is enabled
+      expect(
+        await screen.queryByTestId('scroll-arrow-left'),
+      ).not.toBeInTheDocument();
+      expect(await screen.findByTestId('scroll-arrow-right')).toBeEnabled();
+
+      // Scroll with a click on right arrow
+      fireEvent.click(screen.getByTestId('scroll-arrow-right'));
+
+      rerender(<ScrollWithContentAndProps />);
+
+      // Scroll position moved with default scroll step, left arrow enabled
+      expect(scrollContainer.scrollLeft).toEqual(defaultStepDistance);
+      expect(await screen.findByTestId('scroll-arrow-left')).toBeEnabled();
+
+      // Scroll with a click on left arrow
+      fireEvent.click(screen.getByTestId('scroll-arrow-left'));
+
+      rerender(<ScrollWithContentAndProps />);
+
+      // Scroll position moved back with default scroll step, left arrow disabled(not rendered)
+      expect(scrollContainer.scrollLeft).toEqual(scrollLeftMock);
+      expect(
+        await screen.queryByTestId('scroll-arrow-left'),
+      ).not.toBeInTheDocument();
+
+      // Trigger scroll with the a scrollbar
+      fireEvent.scroll(scrollContainer, {target: {scrollX: scrollWidthMock}});
+
+      rerender(<ScrollWithContentAndProps />);
+
+      // Scroll position moved to the end, right arrow disabled(not rendered)
+      expect(
+        await screen.queryByTestId('scroll-arrow-right'),
+      ).not.toBeInTheDocument();
+      expect(await screen.findByTestId('scroll-arrow-left')).toBeEnabled();
+    });
+
+    test(`vertically scrolls when arrow buttons click`, async () => {
+      const {rerender} = render(<ScrollWithContentAndProps vertical />);
+      const scrollContainer = screen.getByTestId('scroll-container');
+
+      Object.defineProperty(scrollContainer, 'clientHeight', {
+        writable: true,
+        configurable: true,
+        value: clientHeightMock,
+      });
+      Object.defineProperty(scrollContainer, 'scrollHeight', {
+        writable: true,
+        configurable: true,
+        value: scrollHeightMock,
+      });
+      Object.defineProperty(scrollContainer, 'scrollTop', {
+        writable: true,
+        configurable: true,
+        value: scrollTopMock,
+      });
+      scrollContainer.onscroll = jest.fn().mockImplementation(() => {
+        scrollContainer.scrollTop = scrollHeightMock - clientHeightMock;
+      });
+
+      // Dirty hack to get the updated state!
+      rerender(<ScrollWithContentAndProps vertical />);
+
+      // Initial render, top arrow is disabled(not rendered), bottom arrow is enabled
+      expect(
+        await screen.queryByTestId('scroll-arrow-top'),
+      ).not.toBeInTheDocument();
+      expect(await screen.findByTestId('scroll-arrow-bottom')).toBeEnabled();
+
+      // Scroll with a click on bottom arrow
+      fireEvent.click(screen.getByTestId('scroll-arrow-bottom'));
+
+      rerender(<ScrollWithContentAndProps vertical />);
+
+      // Scroll position moved with default scroll step, top arrow enabled
+      expect(scrollContainer.scrollTop).toEqual(defaultStepDistance);
+      expect(await screen.findByTestId('scroll-arrow-top')).toBeEnabled();
+
+      // Scroll with a click on top arrow
+      fireEvent.click(screen.getByTestId('scroll-arrow-top'));
+
+      rerender(<ScrollWithContentAndProps vertical />);
+
+      // Scroll position moved back with default scroll step, top arrow disabled(not rendered)
+      expect(scrollContainer.scrollTop).toEqual(scrollTopMock);
+      expect(
+        await screen.queryByTestId('scroll-arrow-top'),
+      ).not.toBeInTheDocument();
+
+      // Trigger scroll with the a scrollbar
+      fireEvent.scroll(scrollContainer, {target: {scrollY: scrollHeightMock}});
+
+      rerender(<ScrollWithContentAndProps vertical />);
+
+      // Scroll position moved to the end, bottom arrow disabled(not rendered)
+      expect(
+        await screen.queryByTestId('scroll-arrow-bottom'),
+      ).not.toBeInTheDocument();
+      expect(await screen.findByTestId('scroll-arrow-top')).toBeEnabled();
     });
   });
 });

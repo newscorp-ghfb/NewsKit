@@ -577,6 +577,12 @@ Object {
       "stylePreset": "inkBase",
       "typographyPreset": "editorialParagraph020",
     },
+    "scroll": Object {
+      "arrows": Object {
+        "spaceInset": "space000",
+        "stylePreset": "iconButtonMinimalPrimary",
+      },
+    },
     "shareBar": Object {
       "items": Object {
         "spaceInline": "space020",

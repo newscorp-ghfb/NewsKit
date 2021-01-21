@@ -405,6 +405,12 @@ export const componentDefaults = {
       space: 'space010',
     },
   },
+  scroll: {
+    arrows: {
+      stylePreset: 'iconButtonMinimalPrimary',
+      spaceInset: 'space000',
+    },
+  },
   shareBar: {
     label: {
       stylePreset: 'shareBarLabel',

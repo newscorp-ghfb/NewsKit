@@ -757,15 +757,16 @@ stylePresets.iconButtonMinimalInverse = {
 
 stylePresets.iconButtonDefault = stylePresets.iconButtonSolidPrimary;
 
+stylePresets.buttonSocialTwitter = stylePresets.iconButtonMinimalSecondary;
+stylePresets.buttonSocialFacebook = stylePresets.iconButtonMinimalSecondary;
+stylePresets.buttonSocialWhatsapp = stylePresets.iconButtonMinimalSecondary;
+stylePresets.buttonSocialEmail = stylePresets.iconButtonMinimalSecondary;
+stylePresets.buttonSocialLink = stylePresets.iconButtonMinimalSecondary;
+stylePresets.buttonSocialShare = stylePresets.iconButtonMinimalSecondary;
+
 //
 // Icons
 //
-stylePresets.iconDefault = {
-  base: {
-    iconColor: '{{colors.inkBase}}',
-  },
-};
-
 stylePresets.iconSocialTwitter = {
   base: {
     iconColor: '{{colors.socialTwitter}}',
@@ -802,12 +803,11 @@ stylePresets.iconSocialReddit = {
   },
 };
 
-stylePresets.buttonSocialTwitter = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialFacebook = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialWhatsapp = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialEmail = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialLink = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialShare = stylePresets.iconButtonMinimalSecondary;
+stylePresets.iconDefault = {
+  base: {
+    iconColor: '{{colors.inkBase}}',
+  },
+};
 
 //
 // Indeterminate Progress Indicator
@@ -865,8 +865,6 @@ stylePresets.tagPrimary = {
     backgroundColor: '{{colors.interactiveSecondary040}}',
   },
 };
-stylePresets.tagDefault = stylePresets.tagPrimary;
-
 stylePresets.tagPrimaryInverse = {
   base: {
     backgroundColor: '{{colors.transparent}}',
@@ -889,6 +887,8 @@ stylePresets.tagPrimaryInverse = {
     iconColor: '{{colors.inkBase}}',
   },
 };
+
+stylePresets.tagDefault = stylePresets.tagPrimary;
 
 // Tab
 
@@ -1038,21 +1038,12 @@ stylePresets.flagMinimal = {
     iconColor: '{{colors.inkInformative}}',
   },
 };
-stylePresets.flagDefault = stylePresets.flagSolid;
-
 stylePresets.flagSolidInverse = {
   base: {
     backgroundColor: '{{colors.inkInverse}}',
     borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkInformative}}',
     iconColor: '{{colors.inkInformative}}',
-  },
-};
-stylePresets.flagMinimalInverse = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-    color: '{{colors.inkInverse}}',
-    iconColor: '{{colors.inkInverse}}',
   },
 };
 stylePresets.flagSolidLiveInverse = {
@@ -1062,6 +1053,15 @@ stylePresets.flagSolidLiveInverse = {
     iconColor: '{{colors.inkBase}}',
   },
 };
+stylePresets.flagMinimalInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
+
+stylePresets.flagDefault = stylePresets.flagSolid;
 
 //
 // Link
@@ -1251,7 +1251,6 @@ stylePresets.sliderIndicator = {
     backgroundColor: '{{colors.interface040}}',
   },
 };
-
 stylePresets.sliderThumb = {
   base: {
     boxShadow: '{{shadows.shadow010}}',
@@ -1319,7 +1318,6 @@ stylePresets.volumeControlThumb = {
     ...stylePresets.sliderThumb.active,
   },
 };
-
 stylePresets.volumeControlTrack = {
   base: {
     backgroundColor: '{{colors.interface030}}',
@@ -1350,7 +1348,6 @@ stylePresets.audioPlayerSeekBarBuffering = {
     borderRadius: '{{borders.borderRadiusPill}}',
   },
 };
-
 stylePresets.audioPlayerThumb = {
   base: {
     ...stylePresets.sliderThumb.base,
@@ -1365,7 +1362,6 @@ stylePresets.audioPlayerThumb = {
     iconColor: '{{colors.inkSubtle}}',
   },
 };
-
 stylePresets.audioPlayerVolumeControlThumb = stylePresets.audioPlayerThumb;
 stylePresets.audioPlayerPopoutButton = stylePresets.iconButtonMinimalPrimary;
 stylePresets.audioPlayerControlButton = stylePresets.iconButtonMinimalPrimary;
@@ -1439,7 +1435,6 @@ stylePresets.cardContainer = {
     borderRadius: '{{borders.borderRadiusSharp}}',
   },
 };
-
 stylePresets.cardContainerMedia = {
   base: {
     borderRadius: '{{borders.borderRadiusSharp}}',
@@ -1449,13 +1444,11 @@ stylePresets.cardContainerMedia = {
     iconColor: '{{colors.inkNonEssential}}',
   },
 };
-
 stylePresets.cardContainerTeaserAndActions = {
   base: {
     backgroundColor: '{{colors.transparent}}',
   },
 };
-
 stylePresets.cardContainerTeaser = {
   base: {
     backgroundColor: '{{colors.interface010}}',
@@ -1463,7 +1456,6 @@ stylePresets.cardContainerTeaser = {
     color: '{{colors.inkBase}}',
   },
 };
-
 stylePresets.cardContainerActions = {
   base: {
     backgroundColor: '{{colors.interface010}}',
@@ -1479,7 +1471,6 @@ stylePresets.titleBar = {
     backgroundColor: '{{colors.transparent}}',
   },
 };
-
 stylePresets.titleBarButton = stylePresets.buttonSolidPrimary;
 stylePresets.titleBarLink = stylePresets.linkStandalone;
 
@@ -1516,7 +1507,6 @@ stylePresets.headlineKickerInteractive = {
     color: '{{colors.interactiveVisited010}}',
   },
 };
-
 stylePresets.headlineHeadingInteractive = {
   base: {
     color: '{{colors.inkBase}}',
