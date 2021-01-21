@@ -25,7 +25,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           {type}
         </TextBlock>
       </Block>
-      <Block spaceStack={{xs: 'space010', md: 'space030'}}>
+      <Block>
         <TextBlock
           as="h1"
           stylePreset="inkContrast"

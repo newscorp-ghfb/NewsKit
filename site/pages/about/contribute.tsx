@@ -11,12 +11,7 @@ const cardStyle = {
   card: { 
     stylePreset: 'cardContainerNonInteractive010',
     teaserContainer: {
-      spaceInset: {
-        xs: 'spaceInset040',
-        sm: 'spaceInset040',
-        lg: 'spaceInset050',
-        xl: 'spaceInset050',
-      },
+      spaceInset: 'spaceInsetStretch050',
     },
   },
   title: {
@@ -133,6 +128,7 @@ export default (layoutProps: LayoutProps) => (
           .
         </Paragraph>
         <br />
+        <br />
         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"
@@ -190,7 +186,7 @@ export default (layoutProps: LayoutProps) => (
         }}
         />
        <Cell xs={12} md={10} lg={8} mdOffset={1}>
-         <Headline
+        <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"
         >
