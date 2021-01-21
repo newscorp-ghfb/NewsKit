@@ -28,88 +28,91 @@ const StyledTextBlock = styled(TextBlock)`
   display: block;
 `;
 
-export const Link: React.FC<LinkProps> = props => {
-  const {
-    href,
-    external,
-    children,
-    overrides,
-    eventContext,
-    eventOriginator = 'link',
-  } = props;
-  const {fireEvent} = useInstrumentation();
+export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
+  (props, ref) => {
+    const {
+      href,
+      external,
+      children,
+      overrides,
+      eventContext,
+      eventOriginator = 'link',
+    } = props;
+    const {fireEvent} = useInstrumentation();
 
-  const theme = useTheme();
-  const hasMounted = useHasMounted();
+    const theme = useTheme();
+    const hasMounted = useHasMounted();
 
-  const externalIconSize = getToken(
-    {theme, overrides},
-    'link.externalIcon',
-    'externalIcon',
-    'size',
-  );
-  const spaceInBetween = getToken(
-    {theme, overrides},
-    'link',
-    '',
-    'spaceInline',
-  );
-  const typographyPreset = getToken(
-    {theme, overrides},
-    'link',
-    '',
-    'typographyPreset',
-  );
+    const externalIconSize = getToken(
+      {theme, overrides},
+      'link.externalIcon',
+      'externalIcon',
+      'size',
+    );
+    const spaceInBetween = getToken(
+      {theme, overrides},
+      'link',
+      '',
+      'spaceInline',
+    );
+    const typographyPreset = getToken(
+      {theme, overrides},
+      'link',
+      '',
+      'typographyPreset',
+    );
 
-  const willRenderExternalIcon =
-    external === undefined ? hasMounted && isLinkExternal(href) : external;
+    const willRenderExternalIcon =
+      external === undefined ? hasMounted && isLinkExternal(href) : external;
 
-  return (
-    <StyledLink
-      {...props}
-      onClick={(...args) => {
-        fireEvent({
-          originator: eventOriginator,
-          trigger: EventTrigger.Click,
-          context: {
-            href: props.href,
-            ...eventContext,
-          },
-        });
-        if (props.onClick) {
-          props.onClick(...args);
-        }
-      }}
-    >
-      <Stack
-        flow="horizontal-center"
-        spaceInline={
-          willRenderExternalIcon || React.Children.count(children) !== 1
-            ? spaceInBetween
-            : null
-        }
-        as="span"
+    return (
+      <StyledLink
+        ref={ref}
+        {...props}
+        onClick={(...args) => {
+          fireEvent({
+            originator: eventOriginator,
+            trigger: EventTrigger.Click,
+            context: {
+              href: props.href,
+              ...eventContext,
+            },
+          });
+          if (props.onClick) {
+            props.onClick(...args);
+          }
+        }}
       >
-        {React.Children.map(children, child =>
-          typeof child === 'string' ? (
-            <StyledTextBlock as="span" typographyPreset={typographyPreset}>
-              {child}
-            </StyledTextBlock>
-          ) : (
-            child
-          ),
-        )}
+        <Stack
+          flow="horizontal-center"
+          spaceInline={
+            willRenderExternalIcon || React.Children.count(children) !== 1
+              ? spaceInBetween
+              : null
+          }
+          as="span"
+        >
+          {React.Children.map(children, child =>
+            typeof child === 'string' ? (
+              <StyledTextBlock as="span" typographyPreset={typographyPreset}>
+                {child}
+              </StyledTextBlock>
+            ) : (
+              child
+            ),
+          )}
 
-        {willRenderExternalIcon && (
-          <IconFilledLaunch
-            title="External link"
-            overrides={{size: externalIconSize}}
-          />
-        )}
-      </Stack>
-    </StyledLink>
-  );
-};
+          {willRenderExternalIcon && (
+            <IconFilledLaunch
+              title="External link"
+              overrides={{size: externalIconSize}}
+            />
+          )}
+        </Stack>
+      </StyledLink>
+    );
+  },
+);
 
 Link.displayName = 'Link';
 export const A = Link;

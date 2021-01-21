@@ -15,11 +15,16 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 const BaseFlag = React.forwardRef<
   HTMLDivElement,
   BaseFlagProps<BaseFlagOverrides>
->(({children, overrides, ...props}, ref) => {
+>(({children, overrides, loading, ...props}, ref) => {
   const theme = useTheme();
   return (
     <IE11FixContainer overrides={overrides}>
-      <StyledBaseFlag {...props} overrides={overrides} ref={ref}>
+      <StyledBaseFlag
+        {...props}
+        $loading={loading}
+        overrides={overrides}
+        ref={ref}
+      >
         <Stack
           spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}
           flow={Flow.HorizontalCenter}

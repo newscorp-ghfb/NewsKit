@@ -135,7 +135,7 @@ const ImageComponent: React.FC<ImageProps> = ({
   return (
     <StyledImageAndCaptionContainer $width={aspectWidth}>
       <ImageContainer
-        loading={loading}
+        $loading={loading}
         paddingTop={paddingTop}
         stylePreset={imageContainerStylePreset}
         spaceStack={getSpaceStackValue(captionText, captionSpaceInset)}
@@ -157,7 +157,7 @@ const ImageComponent: React.FC<ImageProps> = ({
           maxHeight={maxHeight}
           ref={imageRef}
           onLoad={onLoad}
-          loading={loading}
+          $loading={loading}
         />
       </ImageContainer>
       {captionText &&

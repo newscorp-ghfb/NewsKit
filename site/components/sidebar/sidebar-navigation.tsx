@@ -49,7 +49,7 @@ const NavigationSection: React.FC<NavigationSectionProps> = ({
       {navigationSection.title}
     </StyledSecondLevelHeader>
     {navigationSection.subNav.map(page => (
-      <PageLink page={page} active={page.id === activePagePath} />
+      <PageLink key={page.id} page={page} active={page.id === activePagePath} />
     ))}
   </>
 );
@@ -71,6 +71,7 @@ const Section: React.FC<SectionProps> = ({
           if ((subNav as NavigationSectionType).subNav) {
             return (
               <NavigationSection
+                key={subNav.id}
                 navigationSection={subNav as NavigationSectionType}
                 activePagePath={activePagePath}
               />
@@ -78,6 +79,7 @@ const Section: React.FC<SectionProps> = ({
           }
           return (
             <PageLink
+              key={subNav.id}
               page={subNav as PageType}
               active={subNav.id === activePagePath}
             />
@@ -94,6 +96,7 @@ export const SidebarNav: React.FC<SidebarNavProps> = ({path}) => (
     <StyledNavigationWrapper role="list">
       {routes.map((section, index) => (
         <Section
+          key={section.id}
           section={section}
           activePagePath={path}
           lastSection={index === routes.length - 1}

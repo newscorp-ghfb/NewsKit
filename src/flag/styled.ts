@@ -26,7 +26,11 @@ export const IE11FixContainer = styled.div<BaseFlagProps<BaseFlagOverrides>>`
   }}
 `;
 
-export const StyledBaseFlag = styled.div<BaseFlagProps<BaseFlagOverrides>>`
+export const StyledBaseFlag = styled.div<
+  Omit<BaseFlagProps<BaseFlagOverrides>, 'loading'> & {
+    $loading?: BaseFlagProps<BaseFlagOverrides>['loading'];
+  }
+>`
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;
@@ -67,10 +71,10 @@ export const StyledBaseFlag = styled.div<BaseFlagProps<BaseFlagOverrides>>`
   overflow: hidden;
   // End of button related styles
 
-  ${({disabled, loading}) =>
+  ${({disabled, $loading}) =>
     getStylePreset('', '', {
       isDisabled: disabled,
-      isLoading: loading,
+      isLoading: $loading,
     })}
 `;
 

@@ -41,11 +41,9 @@ export const TabGroup: React.FC<TabGroupProps> = ({
   });
   // Just an incremental counter to trigger re-renders when the tab is changed (active tab ref changing wont trigger a render)
   const [keyUpdated, setKeyUpdated] = useState(0);
-  // Alias useEffect hook to avoid keyUpdated being added to hook dependencies by linter.
-  const ue = React.useEffect;
-  ue(() => {
+  React.useEffect(() => {
     setKeyUpdated(keyUpdated + 1);
-  }, [activeTab]);
+  }, [activeTab]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const activeTabRef = React.useRef<HTMLElement>(null);
   // Reference like this so linter does not remove from hooks dependencies

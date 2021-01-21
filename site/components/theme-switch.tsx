@@ -14,6 +14,10 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
 
   return (
     <IconButton
+      eventContext={{
+        currentThemeMode: themeMode,
+      }}
+      eventOriginator="theme-switch-button"
       data-testid="theme-switch-button"
       onClick={toggle}
       title={`${isDark() ? 'Disable' : 'Enable'} Dark Theme`}

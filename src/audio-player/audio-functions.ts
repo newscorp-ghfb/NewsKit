@@ -314,9 +314,7 @@ export const useAudioFunctions = ({
     fireEvent(trackingInformation);
   }, [getTrackingInformation, fireEvent]);
 
-  // Alias useEffect hook to avoid 'ifPlayer' and 'autoPlay' being added to hook dependencies.
-  const ue = useEffect;
-  ue(() => {
+  useEffect(() => {
     ifPlayer(player => {
       player.load();
       onWaiting();
@@ -332,17 +330,16 @@ export const useAudioFunctions = ({
     return () => {
       clearTimeout(showLoaderTimeoutRef.current);
     };
-  }, [src]);
+  }, [src]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Set initial volume value on player, don't want to re-run this.
-  ue(() => {
+  useEffect(() => {
     const storedVolume = parseFloat(
       (typeof window !== 'undefined' &&
         window.localStorage.getItem('newskit-audioplayer-volume')) ||
         '',
     );
     updateAudioVolume(Number.isNaN(storedVolume) ? 0.7 : storedVolume);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return {
     audioEvents: {

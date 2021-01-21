@@ -11,6 +11,7 @@ import {
   getBorderFromTheme,
   getMediaQueryFromTheme,
   styled,
+  Link as NewsKitLink,
 } from 'newskit';
 import {Link} from './link';
 
@@ -99,13 +100,13 @@ const SiteFooter: React.FC = () => (
             </ConsentSettingsLink>
           </FooterLink>
           <FooterLink>
-            <Link
+            <NewsKitLink
               href="https://www.newscareers.co.uk/"
               target="_blank"
               external={false}
             >
               Careers
-            </Link>
+            </NewsKitLink>
           </FooterLink>
           <Hidden xs sm md lg xl>
             <FooterLink>

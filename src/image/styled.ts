@@ -9,19 +9,23 @@ export const StyledImageAndCaptionContainer = styled.div<
   ${({$width: width = '100%'}) => ({width})}
 `;
 
-export const ImageContainer = styled(Block)<ImageContainerProps>`
+export const ImageContainer = styled(Block)<
+  Omit<ImageContainerProps, 'loading'> & {
+    $loading: ImageContainerProps['loading'];
+  }
+>`
   position: relative;
   width: 100%;
-  ${({loading, paddingTop = 0}) =>
-    loading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0}}
-  ${({loading, stylePreset, ...props}) =>
-    getStylePresetFromTheme(stylePreset, undefined, {isLoading: loading})(
+  ${({$loading, paddingTop = 0}) =>
+    $loading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0}}
+  ${({$loading, stylePreset, ...props}) =>
+    getStylePresetFromTheme(stylePreset, undefined, {isLoading: $loading})(
       props,
     )}
 `;
 
 export const StyledImage = styled.img<StyledImageProps>`
-  display: ${({loading}) => (loading ? 'none' : 'block')};
+  display: ${({$loading}) => ($loading ? 'none' : 'block')};
   ${({
     $height: height = 'auto',
     $width: width = '100%',

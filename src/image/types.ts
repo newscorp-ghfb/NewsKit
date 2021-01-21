@@ -23,7 +23,7 @@ export interface StyledImageProps
     ImageAlignmentProps {
   $height?: HeightProperty<string>;
   $width?: WidthProperty<string>;
-  loading: boolean;
+  $loading: boolean;
   maxHeight?: MaxHeightProperty<string>;
   maxWidth?: MaxWidthProperty<string>;
 }

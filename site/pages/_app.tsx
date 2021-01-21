@@ -9,6 +9,7 @@ import {
   UncompiledTheme,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
+import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
 import {newsKitLight, newsKitDark} from '../doc-theme';
 
@@ -295,7 +296,7 @@ export default class MyApp extends App<Props, State> {
                 }
               `}
             />
-
+            <PageLoadInstrumentation />
             <Component
               {...pageProps}
               path={path}

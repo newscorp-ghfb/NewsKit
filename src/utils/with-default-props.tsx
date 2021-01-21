@@ -10,27 +10,32 @@ export const withDefaultProps = <P extends {}>(
   Component: React.ComponentType<P>,
   defaultProps?: DeepPartial<P> | PropsEvalFunction<P>,
   defaultPresetsPath?: string,
-): React.FC<P> => (props: P) => {
-  const dProps =
-    typeof defaultProps === 'function'
-      ? (defaultProps as PropsEvalFunction<P>)(props)
-      : defaultProps || {};
-  const theme = useTheme();
-  const overrides = getToken({theme}, defaultPresetsPath);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const {children, ...propsWithoutChildren} = props as any;
-  return (
-    <Component
-      {...deepMerge(
-        {} as P,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        {overrides} as any,
-        dProps,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        propsWithoutChildren as any,
-      )}
-    >
-      {children}
-    </Component>
-  );
+): React.FC<P> => {
+  const WrappedComponent = React.forwardRef<unknown, P>((props, ref) => {
+    const dProps =
+      typeof defaultProps === 'function'
+        ? (defaultProps as PropsEvalFunction<P>)(props)
+        : defaultProps || {};
+    const theme = useTheme();
+    const overrides = getToken({theme}, defaultPresetsPath);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const {children, ...propsWithoutChildren} = props as any;
+    return (
+      <Component
+        ref={ref}
+        {...deepMerge(
+          {} as P,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          {overrides} as any,
+          dProps,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          propsWithoutChildren as any,
+        )}
+      >
+        {children}
+      </Component>
+    );
+  });
+  WrappedComponent.displayName = `withDefaultProps(${Component.displayName})`;
+  return (WrappedComponent as unknown) as React.FC<P>;
 };
