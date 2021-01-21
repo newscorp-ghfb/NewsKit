@@ -109,12 +109,10 @@ export default (layoutProps: LayoutProps) => (
           ultimately improving NewsKit for everyone.
         </Paragraph>
         <br />
-        <br />
         <Paragraph>
           For News UK users, we request feedback every two weeks using a simple
           2-minute survey and another more in-depth quarterly survey.
         </Paragraph>
-        <br />
         <br />
         <Paragraph>
           We also conduct focus group sessions, interviews and research tasks.
