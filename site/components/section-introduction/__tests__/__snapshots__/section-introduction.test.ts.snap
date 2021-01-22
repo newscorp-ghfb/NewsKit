@@ -74,35 +74,6 @@ exports[`SectionIntroduction renders with all props 1`] = `
 @media screen and (max-width:767px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
     font-size: 28px;
     line-height: 1.1428571428571428;
     font-weight: 600;
@@ -129,6 +100,35 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
 .emotion-0 {
   display: inline;
   font: inherit;
@@ -147,35 +147,11 @@ exports[`SectionIntroduction renders with all props 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  color: #535353;
 }
 
 .emotion-5 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-5::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4277777777777778em;
-}
-
-.emotion-5::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4902777777777778em;
+  fill: #535353;
 }
 
 <div
@@ -212,5 +188,48 @@ exports[`SectionIntroduction renders with all props 1`] = `
       </p>
     </div>
   </div>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-0 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
 </DocumentFragment>
 `;

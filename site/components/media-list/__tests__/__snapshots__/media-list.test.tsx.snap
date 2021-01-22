@@ -448,21 +448,11 @@ exports[`Media List renders with custom layout 1`] = `
                 <div
                   class="emotion-11"
                 >
-                  <a
-                    class="nk-card-link emotion-10"
-                    href="/"
+                  <div
+                    class="emotion-8"
                   >
-                    <div
-                      class="emotion-8"
-                    >
-                      <p
-                        class="emotion-7"
-                      >
-                        Interactive
-                      </p>
-                    </div>
                     <p
-                      class="emotion-9"
+                      class="emotion-7"
                     >
                       Static Card
                     </p>
@@ -510,7 +500,7 @@ exports[`Media List renders with custom layout 1`] = `
                     class="emotion-8"
                   >
                     <p
-                      class="emotion-17"
+                      class="emotion-7"
                     >
                       styled card title 
                     </p>

@@ -131,7 +131,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-208 {
+.emotion-211 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -142,13 +142,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-207 {
+.emotion-210 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-207:last-child {
+.emotion-210:last-child {
   margin-bottom: 24px;
 }
 
@@ -210,7 +210,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-209 {
+.emotion-212 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -232,7 +232,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-209 {
+  .emotion-212 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -240,23 +240,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-209 {
+  .emotion-212 {
     overflow: hidden;
   }
 
-  .emotion-209:hover {
+  .emotion-212:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-209 {
+  .emotion-212 {
     overflow: auto;
   }
 }
 
 <div
-    class="emotion-209"
+    class="emotion-212"
     data-testid="sidebar"
     role="complementary"
   >
@@ -357,11 +357,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-208"
+      class="emotion-211"
       role="navigation"
     >
       <ul
-        class="emotion-207"
+        class="emotion-210"
         role="list"
       >
         <li
@@ -1442,6 +1442,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
             <div>
               <a
                 class="emotion-4"
+                href="/about/contribute"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-13"
+                    data-testid="/about/contribute"
+                  >
+                    Contribute
+                  </div>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="emotion-4"
                 href="/about/introduction"
               >
                 <span
@@ -1491,7 +1508,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-209 {
+  .emotion-212 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -1513,7 +1530,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-209 {
+  .emotion-212 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -1521,17 +1538,17 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-209 {
+  .emotion-212 {
     overflow: hidden;
   }
 
-  .emotion-209:hover {
+  .emotion-212:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-209 {
+  .emotion-212 {
     overflow: auto;
   }
 }
@@ -1665,7 +1682,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-208 {
+.emotion-211 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1676,13 +1693,13 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-207 {
+.emotion-210 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-207:last-child {
+.emotion-210:last-child {
   margin-bottom: 24px;
 }
 
@@ -1745,7 +1762,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 <div
-    class="emotion-209"
+    class="emotion-212"
     data-testid="sidebar"
     open=""
     role="complementary"
@@ -1847,11 +1864,11 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-208"
+      class="emotion-211"
       role="navigation"
     >
       <ul
-        class="emotion-207"
+        class="emotion-210"
         role="list"
       >
         <li
@@ -2925,6 +2942,23 @@ exports[`Sidebar renders correctly when open 1`] = `
                     data-testid="/about/roadmap"
                   >
                     Roadmap
+                  </div>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="emotion-4"
+                href="/about/contribute"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-13"
+                    data-testid="/about/contribute"
+                  >
+                    Contribute
                   </div>
                 </span>
               </a>

@@ -8,7 +8,7 @@ import {MediaList} from '../../components/media-list';
 import {Separator} from '../../components/separator';
 
 const cardStyle = {
-  card: { 
+  card: {
     stylePreset: 'cardContainerNonInteractive010',
     teaserContainer: {
       spaceInset: 'spaceInsetStretch050',
@@ -19,13 +19,13 @@ const cardStyle = {
     typographyPreset: {
       xs: 'editorialHeadline020',
       lg: 'editorialHeadline030',
-    }
+    },
   },
   description: {
     stylePreset: 'inkWhiteSubtle',
     typographyPreset: 'editorialParagraph020',
   },
-}
+};
 
 const cards = [
   {
@@ -33,27 +33,27 @@ const cards = [
     description:
       'Stay in contact with the NewsKit team and help it progress in a positive direction.',
     media: {
-      src: '/static/Contribute_Banner_Feedback.svg',
+      src: '/static/contribute-banner-feedback.svg',
     },
-    styles: cardStyle
+    styles: cardStyle,
   },
   {
     title: 'Share',
     description:
       'Promote the Design System, answer questions and help your team integrate.',
     media: {
-      src: '/static/Contribute_Banner_Share.svg',
+      src: '/static/contribute-banner-share.svg',
     },
-    styles: cardStyle
+    styles: cardStyle,
   },
   {
     title: 'Create',
     description:
       'Write code or design assets for the Design System for other users to reuse.',
     media: {
-      src: '/static/Contribute_Banner_Create.svg',
+      src: '/static/contribute-banner-create.svg',
     },
-    styles: cardStyle
+    styles: cardStyle,
   },
 ];
 
@@ -66,7 +66,7 @@ export default (layoutProps: LayoutProps) => (
         name="Contribute"
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
         hero={{
-          src: '/static/Contribute_Banner_Introduction.svg',
+          src: '/static/contribute-banner-introduction.svg',
         }}
       />
       <SectionIntroduction title="How to contribute">
@@ -74,22 +74,14 @@ export default (layoutProps: LayoutProps) => (
         Design System; from submitting a proposal to designing a new feature for
         other users to benefit from.
       </SectionIntroduction>
-      <MediaList
-        xsCard={12}
-        smCard={4}
-        mdCard={4}
-        cards={[
-          ...cards
-        ]}
-      />
-      {/* TODO we need to be able to override space - for xs.  Another ticket. */}
+      <MediaList xsCard={12} smCard={4} mdCard={4} cards={[...cards]} />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
       </Cell>
-      <SectionIntroduction 
-        title="Feedback" 
+      <SectionIntroduction
+        title="Feedback"
         image={{
-          src: '/static/Contribute_Banner_Feedback.svg',
+          src: '/static/contribute-banner-feedback.svg',
         }}
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
@@ -176,14 +168,14 @@ export default (layoutProps: LayoutProps) => (
           .
         </Paragraph>
         <Separator />
-       </Cell>
-       <SectionIntroduction 
-         title="Share" 
-         image={{
-          src: '/static/Contribute_Banner_Share.svg',
+      </Cell>
+      <SectionIntroduction
+        title="Share"
+        image={{
+          src: '/static/contribute-banner-share.svg',
         }}
-        />
-       <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      />
+      <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"
@@ -236,10 +228,10 @@ export default (layoutProps: LayoutProps) => (
 
         <Separator />
       </Cell>
-      <SectionIntroduction 
-        title="Create" 
+      <SectionIntroduction
+        title="Create"
         image={{
-          src: '/static/Contribute_Banner_Create.svg',
+          src: '/static/contribute-banner-create.svg',
         }}
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>

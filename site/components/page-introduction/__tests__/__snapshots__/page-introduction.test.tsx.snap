@@ -44,19 +44,13 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-1 {
-    margin-bottom: 24px;
+    margin-bottom: 4px;
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1439px) {
+@media screen and (min-width:768px) {
   .emotion-1 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-1 {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 }
 
@@ -99,24 +93,6 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-3 {
-    margin-bottom: 12px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1439px) {
-  .emotion-3 {
-    margin-bottom: 12px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-3 {
-    margin-bottom: 12px;
-  }
-}
-
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
@@ -156,7 +132,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
@@ -185,7 +161,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
@@ -223,7 +199,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
       <p
         class="emotion-0"
       >
-        COMPONENT
+        Component
       </p>
     </div>
     <div
@@ -236,7 +212,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
       </h1>
     </div>
   </div>
-  .emotion-2 {
+  .emotion-1 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -245,7 +221,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-2 {
+  .emotion-1 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -256,7 +232,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-2 {
+  .emotion-1 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -266,7 +242,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-2 {
+  .emotion-1 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 50%;
@@ -276,43 +252,21 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-.emotion-1 {
-  min-height: 80px;
-}
-
-@media screen and (max-width:767px) {
-  .emotion-1 {
-    margin-bottom: 32px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-1 {
-    margin-bottom: 64px;
-  }
-}
-
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #535353;
 }
 
 @media screen and (min-width:768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -325,7 +279,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-0::after {
@@ -333,22 +287,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: calc(-0.2958333333333334em + 1px);
   }
 }
 
 <div
-    class="emotion-2"
+    class="emotion-1"
   >
-    <div
-      class="emotion-1"
+    <p
+      class="emotion-0"
     >
-      <p
-        class="emotion-0"
-      >
-        Component Introduction
-      </p>
-    </div>
+      Component Introduction
+    </p>
   </div>
   .emotion-7 {
   box-sizing: border-box;
@@ -390,8 +340,16 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-.emotion-6 {
-  margin-bottom: 64px;
+@media screen and (max-width:767px) {
+  .emotion-6 {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-6 {
+    margin-bottom: 32px;
+  }
 }
 
 .emotion-5 {

@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Cell,
-  Block,
-  TextBlock,
-  Image,
-} from 'newskit';
+import {Cell, Block, TextBlock, Image} from 'newskit';
 import {PageIntroductionProps} from './types';
 
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
