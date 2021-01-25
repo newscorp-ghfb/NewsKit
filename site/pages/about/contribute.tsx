@@ -70,6 +70,7 @@ export default (layoutProps: LayoutProps) => (
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
         hero={{
           src: '/static/contribute-banner-introduction.svg',
+          alt: '',
         }}
       />
       <SectionIntroduction title="How to contribute">
@@ -85,6 +86,7 @@ export default (layoutProps: LayoutProps) => (
         title="Feedback"
         image={{
           src: '/static/contribute-banner-feedback.svg',
+          alt: '',
         }}
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
@@ -176,6 +178,7 @@ export default (layoutProps: LayoutProps) => (
         title="Share"
         image={{
           src: '/static/contribute-banner-share.svg',
+          alt: '',
         }}
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
@@ -235,6 +238,7 @@ export default (layoutProps: LayoutProps) => (
         title="Create"
         image={{
           src: '/static/contribute-banner-create.svg',
+          alt: '',
         }}
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
