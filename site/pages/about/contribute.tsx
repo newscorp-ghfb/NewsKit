@@ -34,6 +34,7 @@ const cards = [
       'Stay in contact with the NewsKit team and help it progress in a positive direction.',
     media: {
       src: '/static/contribute-banner-feedback.svg',
+      alt: '',
     },
     styles: cardStyle,
   },
@@ -43,6 +44,7 @@ const cards = [
       'Promote the Design System, answer questions and help your team integrate.',
     media: {
       src: '/static/contribute-banner-share.svg',
+      alt: '',
     },
     styles: cardStyle,
   },
@@ -52,6 +54,7 @@ const cards = [
       'Write code or design assets for the Design System for other users to reuse.',
     media: {
       src: '/static/contribute-banner-create.svg',
+      alt: '',
     },
     styles: cardStyle,
   },

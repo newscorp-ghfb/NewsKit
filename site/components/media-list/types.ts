@@ -22,7 +22,7 @@ export interface MediaItem {
   description: string;
   media?: {
     src: string;
-    alt?: string;
+    alt: string;
   };
   href?: string;
   styles?: {
