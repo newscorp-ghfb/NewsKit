@@ -12,6 +12,7 @@ import {createTheme} from '../../theme';
 import {Headline} from '../../headline';
 import {HeadlineOverrides} from '../../headline/types';
 import {BaseLinkProps} from '../../link';
+import {isHorizontal, isReverse} from '../utils';
 
 const placeholder = '/placeholder-3x2.png';
 const href = 'https://newskit.co.uk/';
@@ -71,6 +72,15 @@ const customMediaComponentWithOverrides = () => (
   <Image
     src="/placeholder-16x9.png"
     overrides={{stylePreset: 'imageDefault'}}
+    alt="Card Media"
+  />
+);
+
+const customMediaComponentWithOverridesAndSize = () => (
+  <Image
+    src="/placeholder-16x9.png"
+    loadingAspectRatio="16:9"
+    overrides={{stylePreset: 'imageDefault', width: '200px'}}
     alt="Card Media"
   />
 );
@@ -301,6 +311,25 @@ describe('Card', () => {
   });
 });
 
+describe('Card with horizontal layout', () => {
+  test('renders correctly', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      media: customMediaComponentWithOverridesAndSize,
+      layout: 'horizontal',
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders correctly with horizontal-reverse layout', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      media: customMediaComponentWithOverridesAndSize,
+      layout: 'horizontal-reverse',
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+});
+
 describe('CardInset', () => {
   test('renders without card items', () => {
     const fragment = renderToFragmentWithTheme(CardInset);
@@ -350,5 +379,41 @@ describe('CardInset', () => {
       myCustomCardTheme,
     );
     expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('Card Utils', () => {
+  describe('isHorizontal', () => {
+    const isHorizontalAssertions = [
+      {value: 'horizontal', assertion: true},
+      {value: 'vertical', assertion: false},
+      {value: 'horizontal-reverse', assertion: true},
+      {value: 'vertical-reverse', assertion: false},
+    ];
+
+    test.each(isHorizontalAssertions)(
+      'returns true when layout is horizontal',
+      test => {
+        const layout = test.value;
+        expect(isHorizontal(layout)).toBe(test.assertion);
+      },
+    );
+  });
+
+  describe('isReverse', () => {
+    const isReverseAssertions = [
+      {value: 'horizontal', assertion: false},
+      {value: 'vertical', assertion: false},
+      {value: 'horizontal-reverse', assertion: true},
+      {value: 'vertical-reverse', assertion: true},
+    ];
+
+    test.each(isReverseAssertions)(
+      'returns true when layout is reverse',
+      test => {
+        const layout = test.value;
+        expect(isReverse(layout)).toBe(test.assertion);
+      },
+    );
   });
 });

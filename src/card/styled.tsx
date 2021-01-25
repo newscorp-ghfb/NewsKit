@@ -5,48 +5,68 @@ import {
   getMinHeight,
   getSpacingInlineVertical,
   getStylePreset,
+  getSpacingInlineHorizontal,
+  getDefaultedValue,
+  getSpacingFromTheme,
 } from '../utils/style';
 
 import {Stack} from '../stack';
 import {HeadlineOverrides} from '../headline/types';
+import {isHorizontal, isReverse} from './utils';
 
-export const StyledCardContainer = styled.div<Pick<CardProps, 'overrides'>>`
+export const StyledCardContainer = styled.div<
+  Pick<CardProps, 'overrides' | 'layout' | 'className'>
+>`
   box-sizing: border-box;
   ${getStylePreset('card', '')}
   position: relative;
+  display: flex;
+  flex-direction: ${({layout}) =>
+    isHorizontal(layout) ? `row${isReverse(layout) && '-reverse'}` : 'column'};
 `;
 
 export const StyledCardContainerMedia = styled.div<
-  Pick<CardProps, 'mediaInteractive' | 'overrides'>
+  Pick<CardProps, 'mediaInteractive' | 'layout' | 'overrides'>
 >`
   box-sizing: border-box;
   display: block;
   position: relative;
-  overflow: hidden;
+
+  ${({layout}) => {
+    if (isHorizontal(layout) && isReverse(layout))
+      return getDefaultedValue(
+        getSpacingFromTheme,
+        'spaceInline',
+        'marginLeft',
+      )('card.mediaContainer', 'mediaContainer');
+
+    return (isHorizontal(layout)
+      ? getSpacingInlineHorizontal
+      : getSpacingInlineVertical)('card.mediaContainer', 'mediaContainer');
+  }}
+
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
   ${getStylePreset('card.mediaContainer', 'mediaContainer')}
-  ${getSpacingInlineVertical('card.mediaContainer', 'mediaContainer')}
 `;
 
 export const StyledCardContainerTeaserAndActions = styled.div<
-  Pick<CardProps, 'overrides'>
+  Pick<CardProps, 'layout' | 'overrides'>
 >`
   box-sizing: border-box;
-  ${getStylePreset(
-    'card.contentAndActionsContainer',
-    'contentAndActionsContainer',
-  )}
+
+  ${({layout}) =>
+    isHorizontal(layout) &&
+    `display: flex;
+    flex-direction: column;`}
 `;
 
 export const StyledCardContainerTeaser = styled.div<
-  Pick<CardProps, 'overrides'>
+  Pick<CardProps, 'layout' | 'overrides'>
 >`
   box-sizing: border-box;
+  ${({layout}) => isHorizontal(layout) && 'flex: 1;'}
   ${getStylePreset('card.teaserContainer', 'teaserContainer')}
-  ${getSpacingInset(
-    'card.teaserContainer',
-    'teaserContainer',
-  )}
+  ${getSpacingInset('card.teaserContainer', 'teaserContainer')}
 
   a:not(.nk-card-link) {
     z-index: 2;
@@ -82,6 +102,7 @@ export const StyledCardLink = styled.a<HeadlineOverrides>`
 export const StyledCardContainerActions = styled(Stack)<
   Pick<CardProps, 'overrides'>
 >`
+  height: auto;
   box-sizing: border-box;
   ${getSpacingInset('card.actionsContainer', 'actionsContainer')}
   ${getStylePreset('card.actionsContainer', 'actionsContainer')}

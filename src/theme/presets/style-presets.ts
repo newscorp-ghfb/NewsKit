@@ -1444,11 +1444,6 @@ stylePresets.cardContainerMedia = {
     iconColor: '{{colors.inkNonEssential}}',
   },
 };
-stylePresets.cardContainerTeaserAndActions = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-  },
-};
 stylePresets.cardContainerTeaser = {
   base: {
     backgroundColor: '{{colors.interface010}}',

@@ -318,9 +318,6 @@ Object {
         "spaceInset": "spaceInsetSquish000",
         "stylePreset": "cardContainerActions",
       },
-      "contentAndActionsContainer": Object {
-        "stylePreset": "cardContainerTeaserAndActions",
-      },
       "mediaContainer": Object {
         "spaceInline": Object {
           "lg": "space050",
@@ -346,9 +343,6 @@ Object {
           "xs": "spaceInsetSquish030",
         },
         "stylePreset": "cardContainerActions",
-      },
-      "contentAndActionsContainer": Object {
-        "stylePreset": "cardContainerTeaserAndActions",
       },
       "mediaContainer": Object {
         "spaceInline": "space000",
@@ -1677,11 +1671,6 @@ Object {
         "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "cardContainerTeaserAndActions": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "dividerHorizontal": Object {

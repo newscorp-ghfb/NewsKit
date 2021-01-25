@@ -1,40 +1,11 @@
-import * as React from 'react';
-import {
-  ThemeProvider,
-  Grid,
-  Cell,
-  CardInset,
-  TagSize,
-  Block,
-  TextBlock,
-  Headline,
-  Flag,
-  IconFilledImage,
-  Stack,
-  Flow,
-  Tag,
-} from 'newskit';
-import {
-  myCustomCardTheme,
-  cardLabelSpaceStack,
-  cardTeaserHeadlineSpaceStack,
-  cardTeaserKickerSpaceInline,
-  cardTeaserLeadInsetVariantSpaceStack,
-  cardActionsSpace,
-  cardTeaserHeadlineSmallTypographyPreset,
-  cardTeaserLeadSmallTypographyPreset,
-  cardLabelSmallTypographyPreset,
-  cardTagSmallTypographyPreset,
-} from './common';
-
-const cardSmallTags = () => (
+const cardMediumTags = () => (
   <Stack flow={Flow.HorizontalCenter} spaceInline={cardActionsSpace}>
     <Tag
       size={TagSize.Small}
       href="/"
       overrides={{
         stylePreset: 'tagPrimary',
-        typographyPreset: cardTagSmallTypographyPreset,
+        typographyPreset: cardTagMediumTypographyPreset,
       }}
     >
       News
@@ -44,24 +15,25 @@ const cardSmallTags = () => (
       href="/"
       overrides={{
         stylePreset: 'tagPrimary',
-        typographyPreset: cardTagSmallTypographyPreset,
+        typographyPreset: cardTagMediumTypographyPreset,
       }}
     >
       Sport
     </Tag>
   </Stack>
 );
-export const CardSmallWithInset = () => (
+
+export const CardVerticalMediumWithoutInset = () => (
   <Grid>
-    <Cell xs={4}>
+    <Cell xs={6}>
       <ThemeProvider theme={myCustomCardTheme}>
-        <CardInset
+        <Card
           href="https://newskit.co.uk/"
           media={{
             src: '/static/placeholder-3x2.png',
             alt: 'Card Media',
           }}
-          actions={cardSmallTags}
+          actions={cardMediumTags}
           overrides={{
             stylePreset: 'cardContainer',
           }}
@@ -69,10 +41,9 @@ export const CardSmallWithInset = () => (
           <Block spaceStack={cardLabelSpaceStack}>
             <Flag
               overrides={{
-                minHeight: '0',
                 spaceInset: 'spaceInsetSquish000',
                 stylePreset: 'cardLabel',
-                typographyPreset: cardLabelSmallTypographyPreset,
+                typographyPreset: cardLabelMediumTypographyPreset,
               }}
             >
               <IconFilledImage />
@@ -84,7 +55,7 @@ export const CardSmallWithInset = () => (
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
-                typographyPreset: cardTeaserHeadlineSmallTypographyPreset,
+                typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
                 heading: {
                   stylePreset: 'headlineHeadingInteractive',
                 },
@@ -98,17 +69,17 @@ export const CardSmallWithInset = () => (
             </Headline>
           </Block>
 
-          <Block spaceStack={cardTeaserLeadInsetVariantSpaceStack}>
+          <Block spaceStack={cardTeaserLeadSpaceStack}>
             <TextBlock
               stylePreset="cardTeaserLead"
-              typographyPreset={cardTeaserLeadSmallTypographyPreset}
+              typographyPreset={cardTeaserLeadMediumTypographyPreset}
             >
               The bank holiday weekend has seen some mixed weather, but as the
               sun emerged, many in the UK took the opportunity to make the most
               of the lockdown easing.
             </TextBlock>
           </Block>
-        </CardInset>
+        </Card>
       </ThemeProvider>
     </Cell>
   </Grid>

@@ -152,9 +152,6 @@ export const componentDefaults = {
         xl: 'space050',
       },
     },
-    contentAndActionsContainer: {
-      stylePreset: 'cardContainerTeaserAndActions',
-    },
     teaserContainer: {
       stylePreset: 'cardContainerTeaser',
       spaceInset: 'spaceInsetSquish000',
@@ -170,9 +167,6 @@ export const componentDefaults = {
     mediaContainer: {
       stylePreset: 'cardContainerMedia',
       spaceInline: 'space000',
-    },
-    contentAndActionsContainer: {
-      stylePreset: 'cardContainerTeaserAndActions',
     },
     teaserContainer: {
       stylePreset: 'cardContainerTeaser',

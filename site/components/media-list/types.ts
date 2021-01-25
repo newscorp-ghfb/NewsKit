@@ -1,4 +1,4 @@
-import {CardOverridesProps, GridProps, MQ} from 'newskit';
+import {CardOverridesProps, GridProps, MQ, ImageProps} from 'newskit';
 
 export interface MediaListProps {
   cards: Array<MediaItem>;
@@ -23,6 +23,7 @@ export interface MediaItem {
   media?: {
     src: string;
     alt: string;
+    overrides?: ImageProps['overrides'];
   };
   href?: string;
   styles?: {

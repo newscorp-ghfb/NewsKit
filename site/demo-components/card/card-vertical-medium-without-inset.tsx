@@ -52,7 +52,7 @@ const cardMediumTags = () => (
   </Stack>
 );
 
-export const CardMediumWithoutInset = () => (
+export const CardVerticalMediumWithoutInset = () => (
   <Grid>
     <Cell xs={6}>
       <ThemeProvider theme={myCustomCardTheme}>

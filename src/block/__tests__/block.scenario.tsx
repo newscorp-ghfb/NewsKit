@@ -97,6 +97,9 @@ export default {
                 <Visible lg>
                   <span>Block with margin spaceStack040 at lg breakpoint</span>
                 </Visible>
+                <Visible xl>
+                  <span>Block with margin spaceStack050 at xl breakpoint</span>
+                </Visible>
               </Block>
             </Block>
             <StyledHr />

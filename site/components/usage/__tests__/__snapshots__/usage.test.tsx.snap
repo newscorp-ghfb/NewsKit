@@ -220,13 +220,19 @@ exports[`Usage renders with mandatory props 1`] = `
   background-color: #ffffff;
   border-radius: 0;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .emotion-13 {
   box-sizing: border-box;
   display: block;
   position: relative;
-  overflow: hidden;
 }
 
 @media screen and (max-width:479px) {
@@ -258,10 +264,17 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 .emotion-11 {
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 66%;
   height: 0;
+  border-radius: 0;
+  background-color: #fafafa;
+}
+
+.emotion-11 svg {
+  fill: #c0c0c0;
 }
 
 .emotion-9 {
@@ -317,7 +330,6 @@ exports[`Usage renders with mandatory props 1`] = `
 
 .emotion-20 {
   box-sizing: border-box;
-  background-color: transparent;
 }
 
 .emotion-19 {

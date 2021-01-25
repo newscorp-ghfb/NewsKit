@@ -21,6 +21,7 @@ export interface CardOverridesProps {
 export interface CardProps {
   className?: string;
   href?: string | BaseLinkProps;
+  layout?: 'vertical' | 'horizontal' | 'horizontal-reverse';
   media?: ImageProps | React.ComponentType;
   mediaInteractive?: boolean;
   children: Exclude<React.ReactNode, 'undefined'>;

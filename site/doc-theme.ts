@@ -446,7 +446,7 @@ const stylePresets = {
       color: '{{colors.inkBase}}',
     },
   },
-  cardContainerMedia: {
+  cardMediaNonInteractive: {
     base: {
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
@@ -497,7 +497,7 @@ const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded030}}',
     },
   },
-  cardContainerMediaInteractive: {
+  cardMediaInteractive: {
     base: {
       borderRadius: '{{borders.borderRadiusRounded040}}',
     },

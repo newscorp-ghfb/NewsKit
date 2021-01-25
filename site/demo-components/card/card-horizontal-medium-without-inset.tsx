@@ -1,10 +1,39 @@
+import * as React from 'react';
+import {
+  ThemeProvider,
+  Grid,
+  Cell,
+  Card,
+  TagSize,
+  TextBlock,
+  Block,
+  Headline,
+  Flag,
+  IconFilledImage,
+  Tag,
+  Stack,
+  Flow,
+} from 'newskit';
+import {
+  myCustomCardTheme,
+  cardLabelSpaceStack,
+  cardTeaserHeadlineSpaceStack,
+  cardTeaserKickerSpaceInline,
+  cardTeaserLeadSpaceStack,
+  cardActionsSpace,
+  cardTeaserHeadlineMediumTypographyPreset,
+  cardTeaserLeadMediumTypographyPreset,
+  cardLabelMediumTypographyPreset,
+  cardTagMediumTypographyPreset,
+} from './common';
+
 const cardMediumTags = () => (
   <Stack flow={Flow.HorizontalCenter} spaceInline={cardActionsSpace}>
     <Tag
       size={TagSize.Small}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTagMediumTypographyPreset,
       }}
     >
@@ -14,7 +43,7 @@ const cardMediumTags = () => (
       size={TagSize.Small}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTagMediumTypographyPreset,
       }}
     >
@@ -23,15 +52,20 @@ const cardMediumTags = () => (
   </Stack>
 );
 
-export const CardMediumWithoutInset = () => (
+export const CardHorizontalMediumWithoutInset = () => (
   <Grid>
-    <Cell xs={6}>
+    <Cell xs={8}>
       <ThemeProvider theme={myCustomCardTheme}>
         <Card
           href="https://newskit.co.uk/"
+          layout="horizontal"
           media={{
-            src: '/static/placeholder-3x2.png',
+            src: '/static/placeholder-1x1.png',
             alt: 'Card Media',
+            loadingAspectRatio: '1:1',
+            overrides: {
+              height: '300px',
+            },
           }}
           actions={cardMediumTags}
           overrides={{
@@ -75,8 +109,7 @@ export const CardMediumWithoutInset = () => (
               typographyPreset={cardTeaserLeadMediumTypographyPreset}
             >
               The bank holiday weekend has seen some mixed weather, but as the
-              sun emerged, many in the UK took the opportunity to make the most
-              of the lockdown easing.
+              sun emerged, many in the UK took the opportunity...
             </TextBlock>
           </Block>
         </Card>

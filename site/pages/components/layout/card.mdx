@@ -10,10 +10,12 @@ import {
   Stack,
   StackDistribution,
   Link,
+  UnorderedList,
 } from 'newskit';
 import {CodeFromDefaultPresets, CodeFromFile} from '../../../components/code';
-import {CardMediumWithoutInset} from '../../../demo-components/card/card-medium-without-inset';
-import {CardSmallWithInset} from '../../../demo-components/card/card-small-with-inset';
+import {CardVerticalMediumWithoutInset} from '../../../demo-components/card/card-vertical-medium-without-inset';
+import {CardVerticalSmallWithInset} from '../../../demo-components/card/card-vertical-small-with-inset';
+import {CardHorizontalMediumWithoutInset} from '../../../demo-components/card/card-horizontal-medium-without-inset';
 import {InlineCode} from '../../../components/markdown-elements';
 
 export default Layout;
@@ -42,22 +44,29 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
     <InlineCode>BaseLinkProps</InlineCode> is derived from <InlineCode>React.AnchorHTMLAttributes</InlineCode>,
     providing access to all anchor props. For more details check the Interactivity section below.
   </Prop>
+  <Prop name="layout" type="'vertical' | 'horizontal' | 'horizontal-reverse'" default="vertical">
+    The card supports three layouts:
+    <br />
+    <br />
+    <UnorderedList>
+      <>
+        <InlineCode>vertical</InlineCode> - The card is stacked vertically, displaying top to bottom:
+        media, content and action items.
+      </>
+      <>
+        <InlineCode>horizontal</InlineCode> - The card is laid out horizontally, media on the left
+        and content stacked above action items on right.
+      </>
+      <>
+        <InlineCode>horizontal-reverse</InlineCode> - The card is laid out horizontally,
+        content stacked above action items on left with media on the right.
+      </>
+    </UnorderedList>
+
+  </Prop>
   <Prop name="media" type="ImageProps | React.ComponentType">
-    If this parameter is provided as ImageProps, it will render the media as an image. <br />
+    If this parameter is provided as <InlineCode>ImageProps</InlineCode> object (see <Link href="/components/media/image">Image documentation</Link>), it will render the media as an image.<br />
     If this is provided as a custom React component, it will render the React component directly.
-    <Prop name="src" type="string">
-      Image file path that is used directly in the 'src' attribute of
-      the internal 'img' element.
-    </Prop>
-    <Prop name="alt" type="string">
-      Image description that is used directly in the 'alt' attribute of
-      the internal 'img' element.
-    </Prop>
-    <Prop name="loadingAspectRatio" type="string" default="3:2">
-      This is a string interpolation of the aspect ratio of the loading container of the image.
-      This is also used to determine the height or width of the image if only one dimension is provided.
-      The default loading aspect ratio of media is 3:2, however, a user should be able to pass any ratio to the media.
-    </Prop>
   </Prop>
   <Prop name="mediaInteractive" type="boolean" default={false}>
     Removes the card media from link area. This prop only matters when the card is used as a link
@@ -84,12 +93,7 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
         If provided, this overrides the style preset applied to the passed media container.
       </Prop>
       <Prop name="spaceInline" type="MQ<SpacingPresetKeys>">
-        If provided, this overrides the horizontal space between the media container and the next element.
-      </Prop>
-    </Prop>
-    <Prop name="contentAndActionsContainer" type="object">
-      <Prop name="stylePreset" type="MQ<string>" >
-        If provided, this overrides the style preset applied to the content and actions container.
+        If provided, this overrides the space between the media container and the container that holds the content and actions area.
       </Prop>
     </Prop>
     <Prop name="teaserContainer" type="object">
@@ -123,15 +127,24 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 
 <CodeFromFile path="examples/card/common.tsx" />
 
-#### Card without inset
+#### Vertical card
 
-<CardMediumWithoutInset/>
-<CodeFromFile path="examples/card/card-medium-without-inset.tsx" />
+##### Card without inset
 
-#### Card with inset
+<CardVerticalMediumWithoutInset/>
+<CodeFromFile path="examples/card/vertical-card-medium-without-inset.tsx" />
 
-<CardSmallWithInset/>
-<CodeFromFile path="examples/card/card-small-with-inset.tsx" />
+##### Card with inset
+
+<CardVerticalSmallWithInset/>
+<CodeFromFile path="examples/card/vertical-card-small-with-inset.tsx" />
+
+#### Horizontal card
+
+##### Card without inset
+
+<CardHorizontalMediumWithoutInset/>
+<CodeFromFile path="examples/card/horizontal-card-medium-without-inset.tsx" />
 
 ### Interactivity
 

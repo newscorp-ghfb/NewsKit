@@ -15,13 +15,9 @@ import {deepMap} from '../utils/react-children-utilities';
 import {Headline} from '../headline';
 import {BaseLinkProps} from '../link';
 
-const renderMedia = (media: CardProps['media'], overrides = {}) =>
+const renderMedia = (media: CardProps['media']) =>
   renderComponent(media) || (
-    <Image
-      loadingAspectRatio="3:2"
-      {...(media as ImageProps)}
-      overrides={overrides}
-    />
+    <Image loadingAspectRatio="3:2" {...(media as ImageProps)} />
   );
 
 const addHrefToLinkProps = (props: object, href: string | BaseLinkProps) =>
@@ -97,25 +93,31 @@ const TeaserDecorator = ({
 export const Card: React.FC<CardProps> = ({
   media,
   mediaInteractive = false,
+  layout = 'vertical',
   href,
   actions,
   children,
   overrides = {},
   className,
 }) => (
-  <StyledCardContainer className={className} overrides={overrides}>
+  <StyledCardContainer
+    className={className}
+    layout={layout}
+    overrides={overrides}
+  >
     {media && (
       <StyledCardContainerMedia
+        layout={layout}
         mediaInteractive={mediaInteractive}
         overrides={overrides}
       >
-        {renderMedia(media, overrides.mediaContainer)}
+        {renderMedia(media)}
       </StyledCardContainerMedia>
     )}
 
-    <StyledCardContainerTeaserAndActions>
+    <StyledCardContainerTeaserAndActions layout={layout} overrides={overrides}>
       {children && (
-        <StyledCardContainerTeaser overrides={overrides}>
+        <StyledCardContainerTeaser layout={layout} overrides={overrides}>
           <TeaserDecorator href={href}>{children}</TeaserDecorator>
         </StyledCardContainerTeaser>
       )}

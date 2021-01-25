@@ -4,7 +4,7 @@ const cardSmallTags = () => (
       size={TagSize.Small}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTagSmallTypographyPreset,
       }}
     >
@@ -14,7 +14,7 @@ const cardSmallTags = () => (
       size={TagSize.Small}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTagSmallTypographyPreset,
       }}
     >
@@ -22,7 +22,7 @@ const cardSmallTags = () => (
     </Tag>
   </Stack>
 );
-export const CardSmallWithInset = () => (
+export const CardVerticalSmallWithInset = () => (
   <Grid>
     <Cell xs={4}>
       <ThemeProvider theme={myCustomCardTheme}>

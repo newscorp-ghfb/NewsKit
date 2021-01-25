@@ -53,6 +53,13 @@ exports[`Media List renders with custom layout 1`] = `
   background-color: #ffffff;
   border-radius: 0;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -60,7 +67,6 @@ exports[`Media List renders with custom layout 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
-  overflow: hidden;
   border-radius: 0;
 }
 
@@ -159,7 +165,6 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-12 {
   box-sizing: border-box;
-  background-color: transparent;
 }
 
 .emotion-11 {
@@ -350,6 +355,13 @@ exports[`Media List renders with custom layout 1`] = `
 .emotion-31 {
   box-sizing: border-box;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -644,6 +656,13 @@ exports[`Media List renders with default layout 1`] = `
   background-color: #ffffff;
   border-radius: 0;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -651,7 +670,6 @@ exports[`Media List renders with default layout 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
-  overflow: hidden;
   border-radius: 0;
 }
 
@@ -750,7 +768,6 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-12 {
   box-sizing: border-box;
-  background-color: transparent;
 }
 
 .emotion-11 {
