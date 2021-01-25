@@ -619,11 +619,7 @@ jobs:
             echo "export VERSION=${VERSION}" >> $BASH_ENV
       - slack/status:
           <<: *slack_status
-      - slack/notify:
-          color: "#42e2f4"
-          channel: '#nuk-pp-newskit'
-          message: "Hi all, \n We are about to deploy ${VERSION}. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter&contains=${VERSION}"
-
+      
   publish_npm:
     parameters:
       publish_dev:
@@ -784,10 +780,6 @@ jobs:
         description: AWS ARN For Assume Role
         type: string
         default: "${AWS_ASSUME_ROLE_ARN}"
-      notify:
-        description: Send slack notification
-        type: boolean
-        default: false
     executor: kubectl-deploy
     steps:
       - checkout
@@ -818,14 +810,7 @@ jobs:
             kubectl apply -f .
       - slack/status:
           <<: *slack_status
-      - when:
-          condition: << parameters.notify >>
-          steps:
-            - slack/notify:
-                color: "#42e2f4"
-                channel: '#newskit'
-                message: "Hi all, \n ${VERSION} has now been successfully deployed to << parameters.environment >>. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter&contains=${VERSION}"
-
+      
 # ========== FILTERS START    ==========
 
 only_develop: &only_develop
@@ -1139,7 +1124,6 @@ workflows:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          notify: true
           <<: *only_master
           requires:
             - eks_flux_deploy_prod
