@@ -39,7 +39,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
         <TextBlock
           stylePreset="inkSubtle"
           typographyPreset={{
-            xs: 'editorialSubheading010',
+            xs: 'editorialSubheadline010',
             md: 'editorialSubheadline020',
           }}
         >
