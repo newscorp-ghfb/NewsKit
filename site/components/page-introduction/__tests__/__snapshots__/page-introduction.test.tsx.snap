@@ -44,13 +44,13 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-1 {
-    margin-bottom: 4px;
+    margin-bottom: 16px;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-1 {
-    margin-bottom: 12px;
+    margin-bottom: 24px;
   }
 }
 
@@ -203,7 +203,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
       </p>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-1"
     >
       <h1
         class="emotion-2"
@@ -212,7 +212,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
       </h1>
     </div>
   </div>
-  .emotion-1 {
+  .emotion-2 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -221,7 +221,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-1 {
+  .emotion-2 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -232,7 +232,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-1 {
+  .emotion-2 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -242,13 +242,25 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-1 {
+  .emotion-2 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-1 {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    margin-bottom: 32px;
   }
 }
 
@@ -292,13 +304,17 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 <div
-    class="emotion-1"
+    class="emotion-2"
   >
-    <p
-      class="emotion-0"
+    <div
+      class="emotion-1"
     >
-      Component Introduction
-    </p>
+      <p
+        class="emotion-0"
+      >
+        Component Introduction
+      </p>
+    </div>
   </div>
   .emotion-7 {
   box-sizing: border-box;
@@ -348,7 +364,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-6 {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
 }
 
