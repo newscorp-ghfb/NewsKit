@@ -481,7 +481,8 @@ const stylePresets = {
     base: {
       borderRadius: '{{borders.borderRadiusRounded030}}',
       borderWidth: '{{borders.borderWidth010}}',
-      borderColor: '{{colors.amber100}}',
+      borderColor: '{{colors.neutral020}}',
+      borderStyle: 'solid',
     },
   },
 
