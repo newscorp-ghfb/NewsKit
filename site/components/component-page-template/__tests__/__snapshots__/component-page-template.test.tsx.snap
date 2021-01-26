@@ -1062,7 +1062,71 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -2676,11 +2740,11 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -2696,7 +2760,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-368::after {
@@ -2704,10 +2768,10 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-378 {
+.emotion-371 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -6540,7 +6604,71 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -8154,11 +8282,11 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -8174,7 +8302,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-368::after {
@@ -8182,10 +8310,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-388 {
+.emotion-371 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -12148,7 +12276,71 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -13679,11 +13871,11 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 .emotion-382 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -13699,7 +13891,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-382::after {
@@ -13707,10 +13899,10 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-387 {
+.emotion-388 {
   margin-bottom: 16px;
 }
 
@@ -17976,7 +18168,71 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -19591,10 +19847,52 @@ exports[`Component Page Template renders mandatory sections and focus order from
   margin: 0;
   padding: 1px 0;
   color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-368 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+.emotion-368::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.25em;
+}
+
+.emotion-368::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
+.emotion-371 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-371 {
+    padding: 0 8px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 .emotion-368::before {
@@ -23576,7 +23874,36 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 }
 
 @media screen and (max-width:767px) {
-  .emotion-251 {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
     font-family: "Source Serif Pro",serif;
     font-size: 36px;
     line-height: 1.1111111111111112;
@@ -25287,11 +25614,11 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -25307,7 +25634,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-368::after {
@@ -25315,10 +25642,10 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-393 {
+.emotion-371 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -29536,7 +29863,71 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -31150,11 +31541,11 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -31170,7 +31561,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-368::after {
@@ -31178,10 +31569,10 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-390 {
+.emotion-371 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -35023,7 +35414,71 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -36637,11 +37092,11 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -36657,7 +37112,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-368::after {
@@ -36665,10 +37120,10 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-396 {
+.emotion-371 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -40570,7 +41025,71 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -42101,11 +42620,11 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 .emotion-382 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -42121,7 +42640,19 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
+}
+
+.emotion-382::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
+.emotion-403 {
+  margin-bottom: 120px;
 }
 
 .emotion-382::after {
@@ -46054,7 +46585,71 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -47669,10 +48264,52 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-368 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+.emotion-368::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.25em;
+}
+
+.emotion-368::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
+.emotion-371 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-371 {
+    padding: 0 8px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 .emotion-368::before {
@@ -51318,7 +51955,71 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -52932,11 +53633,11 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -52952,7 +53653,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-368::after {
@@ -52960,10 +53661,10 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-397 {
+.emotion-371 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -56941,7 +57642,71 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {
@@ -58555,11 +59320,11 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
+  color: #535353;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -58575,7 +59340,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-368::after {
@@ -58583,10 +59348,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.3125em;
 }
 
-.emotion-388 {
+.emotion-371 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -62549,7 +63314,71 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 }
 
 .emotion-254 svg {
-  fill: #2e2e2e;
+  fill: #535353;
+}
+
+@media screen and (max-width:767px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-254 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-254::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-254::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-263 {
+    margin-bottom: 48px;
+  }
 }
 
 .emotion-263 {

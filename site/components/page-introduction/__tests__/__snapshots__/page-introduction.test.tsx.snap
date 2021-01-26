@@ -274,6 +274,35 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   fill: #535353;
 }
 
+@media screen and (max-width:767px) {
+  .emotion-0 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 @media screen and (min-width:768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
