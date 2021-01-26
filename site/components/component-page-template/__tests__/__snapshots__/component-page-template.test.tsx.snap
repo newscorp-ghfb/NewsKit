@@ -52867,6 +52867,20 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
+.emotion-383 {
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 66%;
+  height: 0;
+  border-radius: 0;
+  background-color: #fafafa;
+}
+
+.emotion-383 svg {
+  fill: #c0c0c0;
+}
+
 .emotion-392 {
   box-sizing: border-box;
 }
@@ -53008,13 +53022,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-385 {
     margin-bottom: 24px;
   }
-}
-
-.emotion-383 {
-  position: relative;
-  width: 100%;
-  padding-top: 66%;
-  height: 0;
 }
 
 .emotion-388 {
