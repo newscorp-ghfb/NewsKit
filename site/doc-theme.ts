@@ -477,6 +477,14 @@ const stylePresets = {
   //
   // Website Cards
   //
+  cardContainerFoundationsOverview: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderColor: '{{colors.amber100}}',
+    },
+  },
+
   cardContainerNonInteractive030: {
     base: {
       backgroundColor: '{{colors.blue080}}',
@@ -506,6 +514,16 @@ const stylePresets = {
   //
   // Inks
   //
+  inkSubtle: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+    },
+  },
+  inkBase: {
+    base: {
+      color: '{{colors.inkBase}}',
+    },
+  },
   inkWhiteBase: {
     base: {
       color: '{{colors.whiteTint090}}',

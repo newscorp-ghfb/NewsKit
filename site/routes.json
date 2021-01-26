@@ -45,6 +45,11 @@
         "id": "/theming/foundations",
         "subNav": [
           {
+            "title": "Overview",
+            "page": true,
+            "id": "/theming/foundations/overview"
+          },
+          {
             "title": "Colours",
             "page": true,
             "id": "/theming/foundations/colours"

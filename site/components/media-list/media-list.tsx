@@ -15,8 +15,9 @@ export const MediaList: React.FC<MediaListProps> = ({
   xlCard,
   cards,
   gridProps,
+  parentCellProps,
 }) => (
-  <Cell xs={12} md={10} lg={8} mdOffset={1}>
+  <Cell xs={12} md={10} lg={8} mdOffset={1} {...parentCellProps}>
     <Block spaceStack={spaceStack}>
       <Grid xsRowGutter="space080" xsMargin="space000" {...gridProps}>
         {cards.map(({media, label, description, title, href, styles}) => (

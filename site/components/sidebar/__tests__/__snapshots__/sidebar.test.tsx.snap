@@ -495,6 +495,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
             <div>
               <a
                 class="emotion-4"
+                href="/theming/foundations/overview"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-13"
+                    data-testid="/theming/foundations/overview"
+                  >
+                    Overview
+                  </div>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="emotion-4"
                 href="/theming/foundations/colours"
               >
                 <span
@@ -1998,6 +2015,23 @@ exports[`Sidebar renders correctly when open 1`] = `
               id="/theming/foundations"
             >
               Foundations
+            </div>
+            <div>
+              <a
+                class="emotion-4"
+                href="/theming/foundations/overview"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-13"
+                    data-testid="/theming/foundations/overview"
+                  >
+                    Overview
+                  </div>
+                </span>
+              </a>
             </div>
             <div>
               <a
