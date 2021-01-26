@@ -33,7 +33,7 @@ const cards = [
     description:
       'Stay in contact with the NewsKit team and help it progress in a positive direction.',
     media: {
-      src: '/static/contribute-banner-feedback.svg',
+      src: '/static/contribute-card-feedback.svg',
       alt: '',
     },
     styles: cardStyle,
@@ -43,7 +43,7 @@ const cards = [
     description:
       'Promote the Design System, answer questions and help your team integrate.',
     media: {
-      src: '/static/contribute-banner-share.svg',
+      src: '/static/contribute-card-share.svg',
       alt: '',
     },
     styles: cardStyle,
@@ -53,7 +53,7 @@ const cards = [
     description:
       'Write code or design assets for the Design System for other users to reuse.',
     media: {
-      src: '/static/contribute-banner-create.svg',
+      src: '/static/contribute-card-create.svg',
       alt: '',
     },
     styles: cardStyle,
@@ -89,12 +89,12 @@ export default (layoutProps: LayoutProps) => (
           alt: '',
         }}
       />
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <Cell xs={12} md={10} lg={8} xl={7} mdOffset={1}>
         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"
         >
-          Partecipate in use research
+          Participate in use research
         </Headline>
         <br />
         {/* TODO add spacing with br? enough? */}
@@ -181,7 +181,7 @@ export default (layoutProps: LayoutProps) => (
           alt: '',
         }}
       />
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <Cell xs={12} md={10} lg={8} xl={7} mdOffset={1}>
         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"
@@ -241,7 +241,7 @@ export default (layoutProps: LayoutProps) => (
           alt: '',
         }}
       />
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <Cell xs={12} md={10} lg={8} xl={7} mdOffset={1}>
         <Headline
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"

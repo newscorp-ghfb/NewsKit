@@ -10,7 +10,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
 }) => (
   <>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
-      <Block spaceStack={{xs: 'space010', md: 'space030'}}>
+      <Block spaceStack={{xs: 'space040', md: 'space050'}}>
         <TextBlock
           stylePreset="inkBrand010"
           typographyPreset={{
@@ -20,7 +20,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           {type}
         </TextBlock>
       </Block>
-      <Block>
+      <Block spaceStack={{xs: 'space040', md: 'space050'}}>
         <TextBlock
           as="h1"
           stylePreset="inkContrast"
@@ -35,18 +35,20 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </Block>
     </Cell>
     <Cell xs={12} md={8} lg={6} mdOffset={1}>
-      <TextBlock
-        stylePreset="inkSubtle"
-        typographyPreset={{
-          xs: 'editorialSubheading010',
-          md: 'editorialSubheadline020',
-        }}
-      >
-        {introduction}
-      </TextBlock>
+      <Block spaceStack={{xs: 'space080', md: 'space060'}}>
+        <TextBlock
+          stylePreset="inkSubtle"
+          typographyPreset={{
+            xs: 'editorialSubheading010',
+            md: 'editorialSubheadline020',
+          }}
+        >
+          {introduction}
+        </TextBlock>
+      </Block>
     </Cell>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
-      <Block spaceStack={{xs: 'space080', md: 'space060'}}>
+      <Block spaceStack={{xs: 'space080', md: 'space090'}}>
         <Image
           src={hero.src}
           alt={hero.alt || ''}
