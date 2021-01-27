@@ -120,7 +120,9 @@ export default ({path, ...rest}: LayoutProps) => (
         Lorem non elit pariatur culpa in fugiat velit commodo excepteur Lorem.
       </SectionIntroduction>
       <MediaList
-        mdCard={4}
+        xsCard={12}
+        mdCard={6}
+        lgCard={4}
         cards={cardsForPage}
         parentCellProps={{lg: 10}}
         gridProps={{xsRowGutter: 'space050'}}
