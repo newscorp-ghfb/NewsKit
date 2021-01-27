@@ -172,6 +172,8 @@ export default (layoutProps: LayoutProps) => (
           </Link>
           .
         </Paragraph>
+      </Cell>
+      <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
       </Cell>
       <SectionIntroduction
@@ -231,7 +233,8 @@ export default (layoutProps: LayoutProps) => (
           in making their first integration. If you require additional support,
           the NewsKit team can help.
         </Paragraph>
-
+      </Cell>
+      <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
       </Cell>
       <SectionIntroduction
