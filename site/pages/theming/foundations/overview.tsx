@@ -84,6 +84,9 @@ const cardsContent = [
 const cardStyle = {
   card: {
     stylePreset: 'cardContainerFoundationsOverview',
+    mediaContainer: {
+      spaceInline: 'space000',
+    },
     teaserContainer: {
       spaceInset: 'spaceInsetStretch050',
     },
