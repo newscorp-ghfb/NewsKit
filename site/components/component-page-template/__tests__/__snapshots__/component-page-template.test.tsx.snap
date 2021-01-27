@@ -3659,16 +3659,16 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -9322,16 +9322,16 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -14880,16 +14880,16 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -20877,16 +20877,16 @@ exports[`Component Page Template renders mandatory sections and focus order from
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -26678,16 +26678,16 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -32461,16 +32461,16 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -38026,16 +38026,16 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -43655,16 +43655,16 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -49080,16 +49080,16 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -54643,16 +54643,16 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -60360,16 +60360,16 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>
@@ -65571,16 +65571,16 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/components/selection-controls/tab"
+                  href="/components/selection-controls/tabs"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/components/selection-controls/tab"
+                      data-testid="/components/selection-controls/tabs"
                     >
-                      Tab
+                      Tabs
                     </div>
                   </span>
                 </a>

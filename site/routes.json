@@ -7,16 +7,16 @@
         "title": "Code",
         "id": "/getting-started/code",
         "subNav": [
-            {
-              "title": "Web",
-              "page": true,
-              "id": "/getting-started/code/web"
-            },
-            {
-              "title": "Instrumentation",
-              "page": true,
-              "id": "/getting-started/code/instrumentation"
-            }
+          {
+            "title": "Web",
+            "page": true,
+            "id": "/getting-started/code/web"
+          },
+          {
+            "title": "Instrumentation",
+            "page": true,
+            "id": "/getting-started/code/instrumentation"
+          }
         ]
       }
     ]
@@ -229,9 +229,9 @@
         "id": "/components/selection-controls",
         "subNav": [
           {
-            "title": "Tab",
+            "title": "Tabs",
             "page": true,
-            "id": "/components/selection-controls/tab"
+            "id": "/components/selection-controls/tabs"
           },
           {
             "title": "Slider",
@@ -340,26 +340,26 @@
     "title": "Utilities",
     "id": "/utils",
     "subNav": [
-        {
-          "title": "Emotion",
-          "page": true,
-          "id": "/utils/emotion"
-        },
-        {
-          "title": "customToNewsKitIcon",
-          "page": true,
-          "id": "/utils/custom-to-newskit-icon"
-        },
-        {
-          "title": "getFromTheme",
-          "page": true,
-          "id": "/utils/get-from-theme"
-        },
-        {
-          "title": "getComponentDefaults",
-          "page": true,
-          "id": "/utils/get-defaults"
-        }
+      {
+        "title": "Emotion",
+        "page": true,
+        "id": "/utils/emotion"
+      },
+      {
+        "title": "customToNewsKitIcon",
+        "page": true,
+        "id": "/utils/custom-to-newskit-icon"
+      },
+      {
+        "title": "getFromTheme",
+        "page": true,
+        "id": "/utils/get-from-theme"
+      },
+      {
+        "title": "getComponentDefaults",
+        "page": true,
+        "id": "/utils/get-defaults"
+      }
     ]
   },
   {

@@ -919,7 +919,7 @@ stylePresets.tab = {
   },
 };
 
-stylePresets.tabGroup = {
+stylePresets.tabs = {
   base: {
     backgroundColor: '{{colors.transparent}}',
     borderStyle: 'solid',

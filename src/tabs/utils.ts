@@ -67,7 +67,7 @@ export const getTabBarIndicatorStyle = (
 ) => {
   const weightToken = getToken(
     {theme, overrides},
-    'tabGroup.tabBarIndicator',
+    'tabs.tabBarIndicator',
     'tabBarIndicator',
     'weight',
   );
@@ -75,7 +75,7 @@ export const getTabBarIndicatorStyle = (
 
   const motionDurationToken = getToken(
     {theme, overrides},
-    'tabGroup.tabBarIndicator',
+    'tabs.tabBarIndicator',
     'tabBarIndicator',
     'motionDuration',
   );
@@ -88,7 +88,7 @@ export const getTabBarIndicatorStyle = (
 
   const motionTimingToken = getToken(
     {theme, overrides},
-    'tabGroup.tabBarIndicator',
+    'tabs.tabBarIndicator',
     'tabBarIndicator',
     'motionTiming',
   );

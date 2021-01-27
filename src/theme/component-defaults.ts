@@ -473,8 +473,8 @@ export const componentDefaults = {
       spaceInline: 'space020',
     },
   },
-  tabGroup: {
-    stylePreset: 'tabGroup',
+  tabs: {
+    stylePreset: 'tabs',
     tabBarTrack: {
       stylePreset: 'tabBarTrack',
       weight: 'borderWidth020',
@@ -485,10 +485,10 @@ export const componentDefaults = {
       motionDuration: 'motionDuration030',
       motionTiming: 'motionEaseInAndOut',
     },
+    tabPane: {
+      typographyPreset: 'utilityBody020',
+    },
     spaceInline: 'space020',
-  },
-  tabPane: {
-    typographyPreset: 'utilityBody020',
   },
   textInput: {
     small: {

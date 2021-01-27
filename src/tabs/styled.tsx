@@ -8,13 +8,15 @@ import {
   getSpacingInlineHorizontal,
 } from '../utils/style';
 import {
-  TabGroupProps,
+  TabsProps,
   TabsDistribution,
   DistributionWrapperProps,
-  tabBarProps,
+  TabBarProps,
+  TabInternalProps,
 } from './types';
 import {Stack} from '../stack';
 import {TextBlock} from '../text-block';
+import {Button, ButtonProps} from '../button';
 
 const getFlexFromTabsDistribution = (
   distribution: TabsDistribution,
@@ -32,30 +34,28 @@ const getFlexFromTabsDistribution = (
 };
 
 export const StyledTabGroup = styled.div<
-  Pick<TabGroupProps, 'vertical' | 'distribution' | 'overrides'>
+  Pick<TabsProps, 'vertical' | 'distribution' | 'overrides'>
 >`
-  ${getStylePreset('tabGroup', '')}
+  ${getStylePreset('tabs', '')}
   ${getSpacingInset('', '')}
   display: flex;
   flex-flow: ${({vertical}) => (vertical ? 'row' : 'column')};
 `;
 
-export const StyledtabBar = styled.div<tabBarProps>`
+export const StyledTabBar = styled.div<TabBarProps>`
   /* By default, the height, it is being set to 100% by the Stack */
   /* it works with FittedFlex and FittedEqual */
   height: ${getHeight(undefined, 'tabBar')};
   display: flex;
   ${({vertical}) =>
     (vertical ? getSpacingInlineHorizontal : getSpacingInlineVertical)(
-      'tabGroup',
+      'tabs',
       '',
     )}
 `;
 
-export const StyledInnerTabGroup = styled(Stack)<
-  Pick<TabGroupProps, 'overrides'>
->`
-  flex: 1;
+export const StyledInnerTabGroup = styled(Stack)<Pick<TabsProps, 'overrides'>>`
+  width: 100%;
   border-width: 0;
   position: relative;
   display: flex;
@@ -73,9 +73,9 @@ export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`
 `;
 
 export const StyledTabBarIndicator = styled.div<
-  Pick<TabGroupProps, 'vertical' | 'overrides'>
+  Pick<TabsProps, 'vertical' | 'overrides'>
 >`
-  ${getStylePreset('tabGroup.tabBarIndicator', 'tabBarIndicator')};
+  ${getStylePreset('tabs.tabBarIndicator', 'tabBarIndicator')};
   position: absolute;
   top: ${({vertical}) => vertical && '0px'};
   right: ${({vertical}) => vertical && '0px'};
@@ -84,9 +84,9 @@ export const StyledTabBarIndicator = styled.div<
 `;
 
 export const StyledTabBarTrack = styled.div<
-  Pick<TabGroupProps, 'vertical' | 'overrides'>
+  Pick<TabsProps, 'vertical' | 'overrides'>
 >`
-  ${getStylePreset('tabGroup.tabBarTrack', 'tabBarTrack')}
+  ${getStylePreset('tabs.tabBarTrack', 'tabBarTrack')}
   display: block;
   position: absolute;
   top: ${({vertical}) => vertical && '0px'};
@@ -94,9 +94,16 @@ export const StyledTabBarTrack = styled.div<
   bottom: ${({vertical}) => !vertical && '0px'};
   left: ${({vertical}) => !vertical && '0px'};
   width: ${({vertical}) =>
-    vertical ? getWeight('tabGroup.tabBarTrack', 'tabBarTrack') : '100%'};
+    vertical ? getWeight('tabs.tabBarTrack', 'tabBarTrack') : '100%'};
   height: ${({vertical}) =>
-    vertical ? '100%' : getWeight('tabGroup.tabBarTrack', 'tabBarTrack')};
+    vertical ? '100%' : getWeight('tabs.tabBarTrack', 'tabBarTrack')};
+`;
+
+export const TabButton = styled(Button)<
+  Omit<ButtonProps, 'loading'> & TabInternalProps
+>`
+  ${({selected}) =>
+    selected && getStylePreset('tab', '', {isSelected: selected})}
 `;
 
 export const TabPaneBlock = styled(TextBlock)`

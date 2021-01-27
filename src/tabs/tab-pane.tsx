@@ -9,7 +9,7 @@ export const TabPane: React.FC<TabPaneProps> = ({children, overrides}) => {
 
   const tabPaneTypographyPresetToken = getToken(
     {theme, overrides},
-    'tabPane',
+    'tabs.tabPane',
     '',
     'typographyPreset',
   );
@@ -18,6 +18,7 @@ export const TabPane: React.FC<TabPaneProps> = ({children, overrides}) => {
     <TabPaneBlock
       data-testid="tab-pane"
       typographyPreset={tabPaneTypographyPresetToken}
+      as="div"
     >
       {children}
     </TabPaneBlock>

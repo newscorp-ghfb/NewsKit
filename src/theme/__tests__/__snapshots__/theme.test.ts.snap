@@ -651,9 +651,9 @@ Object {
         "typographyPreset": "utilityLabel010",
       },
     },
-    "tabGroup": Object {
+    "tabs": Object {
       "spaceInline": "space020",
-      "stylePreset": "tabGroup",
+      "stylePreset": "tabs",
       "tabBarIndicator": Object {
         "motionDuration": "motionDuration030",
         "motionTiming": "motionEaseInAndOut",
@@ -664,9 +664,9 @@ Object {
         "stylePreset": "tabBarTrack",
         "weight": "borderWidth020",
       },
-    },
-    "tabPane": Object {
-      "typographyPreset": "utilityBody020",
+      "tabPane": Object {
+        "typographyPreset": "utilityBody020",
+      },
     },
     "tag": Object {
       "large": Object {
@@ -2575,7 +2575,7 @@ Object {
         "backgroundColor": "{{colors.interface040}}",
       },
     },
-    "tabGroup": Object {
+    "tabs": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderColor": "{{colors.interface050}}",

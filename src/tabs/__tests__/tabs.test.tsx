@@ -6,110 +6,97 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Tab, TabSize} from '../../tab';
-import {TabGroup, TabPane, TabsDistribution} from '..';
-import {TabGroupProps} from '../types';
+import {Tab, TabSize} from '../..';
+import {Tabs, TabsDistribution} from '..';
+import {TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
 
 import {createTheme, compileTheme} from '../../theme';
 
-const renderTabGroupDefault = (props: TabGroupProps) => <TabGroup {...props} />;
+const renderTabsDefault = (props: TabsProps) => <Tabs {...props} />;
 
 const tabsWithLabel = [
-  <Tab tabKey={0}>Medium tab</Tab>,
-  <Tab tabKey={1}>Medium tab</Tab>,
-  <Tab tabKey={2}>Medium tab</Tab>,
+  <Tab title="Medium tab">First tab content</Tab>,
+  <Tab title="Medium tab">Second tab content</Tab>,
+  <Tab title="Medium tab">Third tab content</Tab>,
 ];
 
 const tabsWithIcons = [
-  <Tab tabKey={0}>
-    <IconFilledEmail />
-  </Tab>,
-  <Tab tabKey={1}>
-    <IconFilledEmail />
-  </Tab>,
-  <Tab tabKey={2}>
-    <IconFilledEmail />
-  </Tab>,
+  <Tab title={<IconFilledEmail />}>First tab content</Tab>,
+  <Tab title={<IconFilledEmail />}>Second tab content</Tab>,
+  <Tab title={<IconFilledEmail />}>Third tab content</Tab>,
 ];
+
+const tabWithLabelAndIcon = (
+  <>
+    <IconFilledEmail />
+    Medium tab
+  </>
+);
 
 const tabsWithLabelAndIcons = [
-  <Tab tabKey={0}>
-    <IconFilledEmail />
-    Medium tab
-  </Tab>,
-  <Tab tabKey={1}>
-    <IconFilledEmail />
-    Medium tab
-  </Tab>,
-  <Tab tabKey={2}>
-    <IconFilledEmail />
-    Medium tab
-  </Tab>,
-];
+  <Tab title={tabWithLabelAndIcon}>First tab content</Tab>,
 
-const tabPanes = [
-  <TabPane tabKey={0}>First tab content</TabPane>,
-  <TabPane tabKey={1}>Second tab content</TabPane>,
-  <TabPane tabKey={2}>Third tab content</TabPane>,
+  <Tab title={tabWithLabelAndIcon}>Second tab content</Tab>,
+  <Tab title={tabWithLabelAndIcon}>Third tab content</Tab>,
 ];
 
 const selectedTabStyled = 'color: #0a68c1';
 
-describe('Tab Group', () => {
+describe('Tabs', () => {
   test('renders with default styles', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with default styles and divider', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
       divider: true,
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with sizing', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
       size: TabSize.Large,
     };
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with icons for tabs', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithIcons,
       size: TabSize.Large,
     };
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with icons and label for tabs', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabelAndIcons,
       size: TabSize.Large,
     };
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders dividers correctly when orientation is vertical', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
       vertical: true,
       divider: true,
     };
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -118,7 +105,7 @@ describe('Tab Group', () => {
       name: 'my-custom-tab-group-theme',
       overrides: {
         stylePresets: {
-          tabGroupCustom: {
+          tabsCustom: {
             base: {
               backgroundColor: '{{colors.white}}',
             },
@@ -127,17 +114,17 @@ describe('Tab Group', () => {
       },
     });
 
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabelAndIcons,
       size: TabSize.Large,
       overrides: {
-        stylePreset: 'tabGroupCustom',
+        stylePreset: 'tabsCustom',
         spaceInline: 'space050',
       },
     };
 
     const fragment = renderToFragmentWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
       compileTheme(myCustomTheme),
     );
@@ -145,11 +132,11 @@ describe('Tab Group', () => {
   });
 
   it('sets active on click', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
     };
     const {getAllByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -162,11 +149,11 @@ describe('Tab Group', () => {
   });
 
   it('clears focus onMouseDown', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
     };
     const {getAllByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -179,11 +166,11 @@ describe('Tab Group', () => {
   });
 
   it('changes focus on tab', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
     };
     const {getAllByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -200,12 +187,11 @@ describe('Tab Group', () => {
   });
 
   it('changes focus and sets next to be active on right arrow', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
-      tabPanes,
     };
     const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -225,12 +211,11 @@ describe('Tab Group', () => {
   });
 
   it('changes focus and sets previous to be active on left arrow', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
-      tabPanes,
     };
     const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -250,12 +235,11 @@ describe('Tab Group', () => {
   });
 
   it('changes focus and sets last to be active on left arrow when on the first tab', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
-      tabPanes,
     };
     const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -275,12 +259,11 @@ describe('Tab Group', () => {
   });
 
   it('changes focus and sets first to be active on right arrow when on the last tab', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
-      tabPanes,
     };
     const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -300,19 +283,19 @@ describe('Tab Group', () => {
   });
 
   it('doesnt change focus if no other available tabs', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: [
-        <Tab tabKey={0}>Medium tab</Tab>,
-        <Tab disabled tabKey={1}>
-          Medium tab
+        <Tab title="Medium tab">First content</Tab>,
+        <Tab title="Medium tab" disabled>
+          Second content
         </Tab>,
-        <Tab disabled tabKey={2}>
-          Medium tab
+        <Tab title="Medium tab" disabled>
+          Third content
         </Tab>,
       ],
     };
     const {getAllByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -329,11 +312,11 @@ describe('Tab Group', () => {
   });
 
   it('doesnt change focus if unassigned key is pushed', async () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabel,
     };
     const {getAllByTestId, asFragment} = renderWithTheme(
-      renderTabGroupDefault,
+      renderTabsDefault,
       props,
     );
 
@@ -350,7 +333,7 @@ describe('Tab Group', () => {
   });
 
   test('renders with fixed tab indicator size', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
@@ -360,12 +343,12 @@ describe('Tab Group', () => {
       },
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with fixed tab indicator size which is larger than default', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
@@ -375,12 +358,12 @@ describe('Tab Group', () => {
       },
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with fixed tab indicator percentage size', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
@@ -390,12 +373,12 @@ describe('Tab Group', () => {
       },
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with custom tab bar track and indicator weight', () => {
-    const props: TabGroupProps = {
+    const props: TabsProps = {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
@@ -408,34 +391,67 @@ describe('Tab Group', () => {
       },
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with second tab initially selected', () => {
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      initialSelectedIndex: 1,
+    };
+    const {getAllByTestId, asFragment, getByTestId} = renderWithTheme(
+      renderTabsDefault,
+      props,
+    );
+
+    const tab = getAllByTestId('tab')[1];
+    expect(tab).toHaveStyle(selectedTabStyled);
+
+    const tabPane = getByTestId('tab-pane');
+    expect(tabPane).toHaveTextContent(/second tab content/i);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('renders with non-existing initialSelectedIndex', () => {
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      initialSelectedIndex: 10,
+    };
+    const {getAllByTestId, asFragment} = renderWithTheme(
+      renderTabsDefault,
+      props,
+    );
+
+    const tab = getAllByTestId('tab')[0];
+    expect(tab).toHaveStyle(selectedTabStyled);
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });
 
 const tabs = [
-  <Tab tabKey={0}>H tab 1</Tab>,
-  <Tab tabKey={1}>H tab 2</Tab>,
-  <Tab tabKey={2}>H tab 3</Tab>,
+  <Tab title="H tab 1">First tab content</Tab>,
+  <Tab title="H tab 2">Second tab content</Tab>,
+  <Tab title="H tab 3">Third tab content</Tab>,
 ];
 
-describe('Tab Group LeftStacked', () => {
-  test('renders tab group horizontal leftstacked', () => {
-    const props: TabGroupProps = {
+describe('Tabs LeftStacked', () => {
+  test('renders tabs horizontal leftstacked', () => {
+    const props: TabsProps = {
       children: tabs,
       distribution: TabsDistribution.LeftStacked,
-      tabPanes,
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders tab group vertical leftstacked', () => {
-    const props: TabGroupProps = {
+  test('renders Tabs vertical leftstacked', () => {
+    const props: TabsProps = {
       children: tabs,
       distribution: TabsDistribution.LeftStacked,
-      tabPanes,
       vertical: true,
       overrides: {
         tabBar: {
@@ -444,28 +460,26 @@ describe('Tab Group LeftStacked', () => {
       },
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 });
 
-describe('Tab Group FittedFlex', () => {
-  test('renders tab group horizontal fittedFlex', () => {
-    const props: TabGroupProps = {
+describe('Tabs FittedFlex', () => {
+  test('renders tabs horizontal fittedFlex', () => {
+    const props: TabsProps = {
       children: tabs,
       distribution: TabsDistribution.FittedFlex,
-      tabPanes,
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders tab group vertical FittedFlex', () => {
-    const props: TabGroupProps = {
+  test('renders tabs vertical FittedFlex', () => {
+    const props: TabsProps = {
       children: tabs,
       distribution: TabsDistribution.FittedFlex,
-      tabPanes,
       vertical: true,
       overrides: {
         tabBar: {
@@ -474,28 +488,26 @@ describe('Tab Group FittedFlex', () => {
       },
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 });
 
-describe('Tab Group FittedEqual', () => {
-  test('renders tab group horizontal FittedEqual', () => {
-    const props: TabGroupProps = {
+describe('Tabs FittedEqual', () => {
+  test('renders tabs horizontal FittedEqual', () => {
+    const props: TabsProps = {
       children: tabs,
       distribution: TabsDistribution.FittedEqual,
-      tabPanes,
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders tab group vertical FittedEqual', () => {
-    const props: TabGroupProps = {
+  test('renders tabs vertical FittedEqual', () => {
+    const props: TabsProps = {
       children: tabs,
       distribution: TabsDistribution.FittedEqual,
-      tabPanes,
       vertical: true,
       overrides: {
         tabBar: {
@@ -504,7 +516,7 @@ describe('Tab Group FittedEqual', () => {
       },
     };
 
-    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 });

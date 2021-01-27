@@ -1,0 +1,494 @@
+import Layout from '../../../components/layout';
+import Playground from '../../../components/playground';
+import {Prop} from '../../../components/prop';
+import {TextBoxSwatch} from '../../../components/theming-values/colors';
+import {LegacyBlock} from '../../../components/legacy-block';
+import {CodeFromDefaultPresets, CodeFromFile} from '../../../components/code';
+import {InlineCode} from '../../../components/markdown-elements';
+
+import {
+  Tab,
+  TabSize,
+  IconFilledEmail,
+  Block,
+  Tabs,
+  TabsDistribution,
+  UnorderedList,
+} from 'newskit';
+
+export default Layout;
+
+# Tabs
+
+## Tabs Overview
+
+Tabs component is used as a way of switching between different content panels.
+
+## Tabs Usage
+
+Tabs is used for users to alternate between views within the same context, not to navigate to different areas.
+
+The Tab components nested within Tabs should all look and work the same where possible.
+
+## Tabs Props
+
+Tabs have a number of props to facilitate a variety of uses:
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="children" type="React.ReactElement<TabProps>[]" required>
+    <InlineCode>Tabs</InlineCode> expects multiple
+    <InlineCode>Tab</InlineCode> components as children.
+    <br />
+    Refer to the code example below
+  </Prop>
+  <Prop name="divider" type="boolean">
+    Optional dividers between each Tab.
+  </Prop>
+  <Prop name="size" type="TabSize" enum={TabSize} default={TabSize.Medium}>
+    Optional size of the Tab: Small, Medium or Large.
+  </Prop>
+  <Prop name="vertical" type="boolean" default={false}>
+    Allows the Tabs to flow vertically. The Tabs component is laid out
+    horizontally by default.
+  </Prop>
+  <Prop name="initialSelectedIndex" type="number" default={0}>
+    Index of the initially selected tab
+  </Prop>
+  <Prop
+    name="distribution"
+    type="TabsDistribution"
+    default="TabsDistribution.LeftStacked"
+  >
+    Change the distribution of the tabs.
+    <br />
+    <br />
+    When flow is set to horizontal:
+    <br />
+    <UnorderedList>
+      <>
+        <InlineCode>left-stacked</InlineCode> Align the Tabs to the left of the
+        content area having the width of the individual tab component defined by
+        the width of their children.
+      </>
+      <>
+        <InlineCode>fitted-flex</InlineCode> Spread all tab children equally
+        across the content area, filling the entire width. Each tab’s width
+        should be defined by that of its child.
+      </>
+      <>
+        <InlineCode>fitted-equal</InlineCode> Space each tab across the content
+        area equally, regardless of the width of its child.
+      </>
+    </UnorderedList>
+    <br />
+    When flow is vertical:
+    <UnorderedList>
+      <>
+        <InlineCode>left-stacked</InlineCode> Align the Tabs to the top of the
+        content area with the height of the individual tab components defined by
+        the height of their children.
+      </>
+      <>
+        <InlineCode>fitted-flex</InlineCode> Spread all tab children equally
+        across the content area, filling the entire height. Each tab’s height
+        should be defined by that of its child.
+      </>
+      <>
+        <InlineCode>fitted-equal</InlineCode> Space each tab across the content
+        area equally, regardless of the height of its child.
+      </>
+    </UnorderedList>
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided
+    elements. Here are the overrides that the Tabs accepts:
+    <Prop name="stylePreset" type="MQ<string>">
+      If provided, this overrides the style preset applied to the Tabs
+      container.
+    </Prop>
+    <Prop name="spaceInset" type="MQ<string>">
+      The value for this prop should be a spaceInset token, If provided it will
+      inset spacing around the Tabs navigation and Tabs content.
+    </Prop>
+    <Prop name="spaceInline" type="MQ<string>">
+      The value for this prop should be a space token, If provided, this
+      overrides the space between the Tabs navigation and Tabs content
+    </Prop>
+    <Prop name="tabBar" type="object">
+      <Prop name="height" type="string">
+        The value for this prop should be a sizing token. If provided, will
+        override the height of the container wrapping the Tab components.
+      </Prop>
+    </Prop>
+    <Prop name="tabBarTrack" type="object">
+      <Prop name="weight" type="string">
+        If provided, this sets a fixed weight (height if horizontal, width if
+        vertical) to the tabBarTrack. This can be a sizing token from the theme,
+        or any CSS length value.
+      </Prop>
+    </Prop>
+    <Prop name="tabBarIndicator" type="object">
+      <Prop name="length" type="string">
+        If provided, this sets a fixed width to the tabBarIndicator. This can be
+        a sizing token from the theme, or any CSS length value, e.g. 75% of the
+        default full-width.
+      </Prop>
+      <Prop name="weight" type="string">
+        If provided, this sets a fixed weight (height if horizontal, width if
+        vertical) to the tabBarIndicator. This can be a sizing token from the
+        theme, or any CSS length value.
+      </Prop>
+    </Prop>
+    <Prop name="tabPane" type="object">
+      <Prop name="typographyPreset" type="MQ<string>">
+        If provided, this overrides the typography preset applied to the
+        TabPane.
+      </Prop>
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="tabs" />
+  </Prop>
+</LegacyBlock>
+
+## Tabs Code Example
+
+Here is an example of how the Tabs and Tab components are used.
+
+<CodeFromFile path="examples/tabs/tabs.tsx" />
+
+## Tabs Playground
+
+<Playground
+  componentName="Tabs"
+  newskitPath="/tabs"
+  component={state => (
+    <div style={{width: '100%'}}>
+      <Tabs {...state}>
+        <Tab title="Tab one, uno, une.">
+          <Block spaceInset="spaceInset040">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Block>
+        </Tab>
+        <Tab title="Tab two">
+          <Block spaceInset="spaceInset040">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae di
+            rem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+            non numquam eius modi tempora in cidunt ut labore et dolore magnam
+            aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+            exercit ationem ullam corporis suscipit laboriosam, nisi ut aliquid
+            ex ea commodi consequatur? Quis autem vel eum iu re reprehenderit
+            qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+            illum qui dolorem eum fugi at quo voluptas nulla pariatur?
+          </Block>
+        </Tab>
+        <Tab title="Tab three">
+          <Block spaceInset="spaceInset040">
+            Pellentesque ut odio orci. Sed non ipsum sed neque tincidunt
+            bibendum. Sed sit amet blandit purus, ac tincidunt nunc. Mauris
+            dignissim augue non eros dictum convallis. Nam quis nulla mi. Sed
+            venenatis elit ac urna elementum efficitur. Vivamus erat lorem,
+            pellentesque rhoncus metus a, venenatis porttitor enim. Quisque id
+            massa quam. Sed fringilla blandit lacus, a elementum lacus aliquam
+            nec. Mauris dui leo, pretium vitae fringilla at, tincidunt nec est.
+          </Block>
+        </Tab>
+      </Tabs>
+    </div>
+  )}
+  knobs={[
+    {
+      name: 'Distribution',
+      propName: 'distribution',
+      options: [
+        {
+          label: 'TabsDistribution.LeftStacked',
+          value: TabsDistribution.LeftStacked,
+          isDefault: true,
+        },
+        {
+          label: 'TabsDistribution.FittedFlex',
+          value: TabsDistribution.FittedFlex,
+        },
+        {
+          label: 'TabsDistribution.FittedEqual',
+          value: TabsDistribution.FittedEqual,
+        },
+      ],
+    },
+    {
+      name: 'Size',
+      propName: 'size',
+      options: [
+        {
+          label: 'TabSize.Small',
+          value: TabSize.Small,
+        },
+        {
+          label: 'TabSize.Medium',
+          value: TabSize.Medium,
+          isDefault: true,
+        },
+        {
+          label: 'TabSize.Large',
+          value: TabSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Tab Bar Track Weight',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBarTrack: {
+              weight: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'borderWidth030',
+          value: {
+            tabBarTrack: {
+              weight: 'borderWidth030',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Tab Bar Indicator Weight',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBarIndicator: {
+              weight: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'borderWidth030',
+          value: {
+            tabBarIndicator: {
+              weight: 'borderWidth030',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Tab Bar Indicator Length',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBarIndicator: {
+              length: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: '75%',
+          value: {
+            tabBarIndicator: {
+              length: '75%',
+            },
+          },
+        },
+        {
+          label: 'sizing050',
+          value: {
+            tabBarIndicator: {
+              length: 'sizing050',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Style preset overrides',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            stylePreset: undefined,
+          },
+          isDefault: true,
+        },
+        {
+          label: 'cardContainer',
+          value: {
+            stylePreset: 'cardContainer',
+          },
+        },
+      ],
+    },
+    {
+      name: 'Space inset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            spaceInset: undefined,
+          },
+          isDefault: true,
+        },
+        {
+          label: 'spaceInset040',
+          value: {
+            spaceInset: 'spaceInset040',
+          },
+        },
+      ],
+    },
+    {
+      name: 'tabBar height',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBar: {
+              height: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'sizing120',
+          value: {
+            tabBar: {
+              height: 'sizing120',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'divider',
+      propName: 'divider',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'vertical',
+      propName: 'vertical',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'initialSelectedIndex',
+      propName: 'initialSelectedIndex',
+      type: 'number',
+      value: 0,
+    },
+  ]}
+/>
+
+## Tabs Accessibility
+
+We recommend using the ARIA tab model. This works across all major screen readers and browser combinations.
+If you are using a screen reader with Javascript turned on, you should be able to navigate the tabs pattern in the following way:
+
+Use the tab key on your keyboard to access the tab labels
+
+Use the return key to select the tab
+
+Arrow Left & Arrow Right (only on horizontal tab orientation) - Move left and right through the enabled tabs and trigger select
+
+## Tab Overview
+
+The `Tab` component is used within the `Tabs` as a way of switching between different views.
+
+## Tab Usage
+
+A `Tab` is used in a `Tabs` for users to alternate between views within the same context, not to navigate to different areas.
+Tabs should all look and work the same where possible.
+
+## Tab Props
+
+Tab component has a number of props to facilitate a variety of uses:
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="children" type="React.ReactNode" required>
+    Content rendered inside the tab pane.
+  </Prop>
+  <Prop name="title" type="React.ReactNode" required>
+    The content of the tab button
+  </Prop>
+  <Prop name="disabled" type="boolean" default={false}>
+    If true, the Tab will render the disabled state of the style preset.
+  </Prop>
+  <Prop name="ariaLabel" type="string">
+    The aria-label attribute is to allow a user to describe the action that will
+    be performed when the user interacts with a tab in a Tabs. By default, this
+    could be the primary label text.
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided
+    elements. Here are the overrides that the Tab accepts:
+    <Prop name="spaceInset" type="MQ<string>">
+      If provided, this overrides the padding of the Tab. Otherwise,
+      spaceInsetSquish020 or spaceInsetSquish030 is used depending on the `size`
+      prop.
+    </Prop>
+    <Prop name="stylePreset" type="MQ<string>">
+      If provided, this overrides the style preset applied to the Tab.
+    </Prop>
+    <Prop name="typographyPreset" type="MQ<string>">
+      If provided, this overrides the typography preset applied to the Tab.
+      Otherwise, label020 or label030 is used depending on the `size` prop.
+    </Prop>
+    <Prop name="spaceInline" type="MQ<string>">
+      If provided, this overrides the space between multiple children in the
+      underlying Stack. If less than 2 children are passed, this prop is
+      irrelevant.
+    </Prop>
+    <Prop name="iconSize" type="string">
+      If provided, this overrides the icon size of any child icons. Otherwise,
+      iconSize010, iconSize020 or iconSize030 is used depending on the `size`
+      prop. If no icons are present in the Tab's children then this prop is
+      irrelevant.
+      <br />
+      <br />
+      <i>
+        Note: You can also set the icon size by passing it directly as a size
+        prop to the icon, but by doing this you will override the iconSize
+        passed from overrides. We discourage this approach but we will keep the
+        functionality in case it is needed.
+      </i>
+    </Prop>
+    <Prop name="minHeight" type="string">
+      If provided, this sets a minimum height to the Tab. This can be a sizing
+      token from the theme, or any CSS length value. By default, sizing060,
+      sizing080 or sizing090 is used depending on the `size` prop.
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="tab" />
+  </Prop>
+</LegacyBlock>
+
+## Tab Accessibility
+
+We recommend using the ARIA tab model. This works across all major screen readers and browser combinations.<br/><br/>
+Add aria-label prop to allow a user to describe the action that will be performed when the user interacts with a `Tab`. <br/>By default, this could be the primary label text.<br/>Where there are no text labels, the icon will need to be assigned a name.
+
+## SEO
+
+Ensure icons have alt text.

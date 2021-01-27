@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import {TabGroupProps, TabPaneProps, TabsDistribution} from './types';
+import {isFragment} from 'react-is';
+import {TabProps, TabsProps, TabsDistribution, TabSize} from './types';
 import {
-  StyledtabBar,
+  StyledTabBar,
   StyledInnerTabGroup,
   StyledTabBarTrack,
   StyledTabBarIndicator,
@@ -11,7 +12,7 @@ import {
 import {Flow} from '../stack';
 import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
-import {TabSize, Tab} from '../tab';
+import {TabInternal} from './tab-internal';
 import {useTheme} from '../theme';
 import {
   getTabBarIndicatorStyle,
@@ -22,30 +23,50 @@ import {
   getFirstParentElementWithRole,
   getDescendantOnlyFromFirstChild,
 } from './utils';
+import {TabPane} from './tab-pane';
+import {hasMatchingDisplayNameWith} from '../utils/component';
 
-export const TabGroup: React.FC<TabGroupProps> = ({
+/* istanbul ignore next */
+export const Tab: React.FC<TabProps> = () => <></>;
+Tab.displayName = 'Tab';
+
+const validateInitialSelectedIndex = (
+  index: number,
+  children: unknown[],
+): number => (index >= 0 && index < children.length ? index : 0);
+
+export const Tabs: React.FC<TabsProps> = ({
   children,
   overrides = {},
   size = TabSize.Medium,
   divider,
-  tabPanes,
   vertical = false,
   distribution,
+  initialSelectedIndex = 0,
 }) => {
   const theme = useTheme();
-  // The id of the active tab - this is what we change on click to trigger a visual tab change
-  const [activeTab, setActiveTab] = useState(0);
+
+  // filter out children which are not Tab component
+  const tabsOnlyChildren = React.Children.toArray(children).filter(
+    (child: React.ReactElement) => hasMatchingDisplayNameWith(child, Tab),
+  );
+
+  // The index of the active tab - this is what we change on click to trigger a visual tab change
+  const [activeTabIndex, setActiveTabIndex] = useState(() =>
+    validateInitialSelectedIndex(initialSelectedIndex, children),
+  );
   const [indicator, setIndicator] = useState({
     length: 0,
     distance: 0,
   });
+
   // Just an incremental counter to trigger re-renders when the tab is changed (active tab ref changing wont trigger a render)
   const [keyUpdated, setKeyUpdated] = useState(0);
   React.useEffect(() => {
     setKeyUpdated(keyUpdated + 1);
-  }, [activeTab]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [activeTabIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const activeTabRef = React.useRef<HTMLElement>(null);
+  const activeTabRef = React.useRef<HTMLButtonElement>(null);
   // Reference like this so linter does not remove from hooks dependencies
   const currentActiveTabRef = activeTabRef.current;
 
@@ -88,7 +109,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
       }
     });
 
-    // // Exit early if there are no other tabs available
+    // Exit early if there are no other tabs available
     if (availableTabs.length <= 1) return;
 
     // Find tab to focus, looping to start/end of list if necessary
@@ -113,12 +134,81 @@ export const TabGroup: React.FC<TabGroupProps> = ({
     nextTab.click();
   };
 
-  const tabContent =
-    tabPanes &&
-    tabPanes.find(
-      (tabPane: React.ReactElement<TabPaneProps>) =>
-        activeTab === tabPane.props.tabKey,
-    );
+  const tabPanes = tabsOnlyChildren.map(
+    (child: React.ReactElement<TabProps>) => {
+      const tabPaneProps = {
+        children: child.props.children,
+        overrides: overrides.tabPane,
+      };
+
+      return <TabPane {...tabPaneProps} />;
+    },
+  );
+
+  /* istanbul ignore next */
+  const tabContent = tabPanes[activeTabIndex] || null;
+
+  const tabData = tabsOnlyChildren.map(
+    (child: React.ReactElement<TabProps>, index) => ({
+      key: index,
+      isActive: index === activeTabIndex,
+      ...child.props,
+    }),
+  );
+
+  const addStackDivider = (key: number) => (
+    <StackChild key={`${key}-divider`} alignSelf={AlignSelfValues.Stretch}>
+      <Divider vertical={!vertical} />
+    </StackChild>
+  );
+
+  const getChildren = (
+    tab: string | React.ReactNode,
+  ): string | React.ReactNode => {
+    if (isFragment(tab)) {
+      // un-wrap the fragment from Tab.title prop
+      return tab.props.children;
+    }
+    return tab;
+  };
+
+  const tabs = tabData.reduce(
+    (acc, tab, index, array) => {
+      acc.push(
+        <StyledDistributionWrapper
+          distribution={distribution || TabsDistribution.LeftStacked}
+          numberOfSiblings={array.length}
+          data-testid="distribution-wrapper"
+          vertical={vertical}
+        >
+          <TabInternal
+            key={tab.key}
+            selected={tab.isActive}
+            autoFocus={tab.autoFocus}
+            size={size}
+            onKeyDown={handleKeyDown}
+            onClick={() => setActiveTabIndex(tab.key)}
+            onMouseDown={preventDefault}
+            disabled={tab.disabled}
+            ref={tab.isActive ? activeTabRef : undefined}
+            overrides={{
+              ...tab.overrides,
+              width: '100%',
+              height: vertical ? '100%' : '',
+            }}
+          >
+            {getChildren(tab.title)}
+          </TabInternal>
+        </StyledDistributionWrapper>,
+      );
+
+      if (divider && index < array.length - 1) {
+        acc.push(addStackDivider(tab.key));
+      }
+      return acc;
+    },
+    [] as React.ReactElement[],
+  );
 
   return (
     <StyledTabGroup
@@ -126,7 +216,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
       overrides={overrides}
       data-testid="tab-group"
     >
-      <StyledtabBar
+      <StyledTabBar
         overrides={overrides}
         vertical={vertical}
         data-testid="tab-bar"
@@ -137,50 +227,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
           inline={!vertical}
           role="tablist"
         >
-          {React.Children.toArray(children).reduce(
-            (acc, child, index, array) => {
-              const key = child.props.tabKey;
-              const isActive = key === activeTab;
-
-              acc.push(
-                <StyledDistributionWrapper
-                  distribution={distribution || TabsDistribution.LeftStacked}
-                  numberOfSiblings={array.length}
-                  data-testid="distribution-wrapper"
-                  vertical={vertical}
-                >
-                  <Tab
-                    {...child.props}
-                    key={key}
-                    selected={isActive}
-                    size={size}
-                    onKeyDown={handleKeyDown}
-                    onClick={() => setActiveTab(key)}
-                    onMouseDown={preventDefault}
-                    ref={isActive ? activeTabRef : undefined}
-                    overrides={{
-                      ...child.props.overrides,
-                      width: '100%',
-                      height: vertical ? '100%' : '',
-                    }}
-                  />
-                </StyledDistributionWrapper>,
-              );
-
-              if (divider && index < array.length - 1) {
-                acc.push(
-                  <StackChild
-                    key={`${key}-divider`}
-                    alignSelf={AlignSelfValues.Stretch}
-                  >
-                    <Divider vertical={!vertical} />
-                  </StackChild>,
-                );
-              }
-              return acc;
-            },
-            [] as React.ReactElement[],
-          )}
+          {tabs}
 
           <StyledTabBarTrack
             overrides={overrides}
@@ -204,7 +251,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
             role="presentation"
           />
         </StyledInnerTabGroup>
-      </StyledtabBar>
+      </StyledTabBar>
       {tabContent}
     </StyledTabGroup>
   );

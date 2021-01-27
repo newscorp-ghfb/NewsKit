@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {Tab, TabSize} from '..';
+import {TabInternal as Tab} from '../tab-internal';
+import {TabSize} from '../types';
 import {styled, getSizingFromTheme} from '../../utils/style';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';

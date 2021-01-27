@@ -28,7 +28,7 @@ export const isReactComponent = (component: any) =>
   isFunctionComponent(component) ||
   isStyledComponent(component);
 
-const getDisplayName = (component: any) => {
+export const getDisplayName = (component: any) => {
   if (component.props && component.props.mdxType) {
     return component.props.mdxType;
   }

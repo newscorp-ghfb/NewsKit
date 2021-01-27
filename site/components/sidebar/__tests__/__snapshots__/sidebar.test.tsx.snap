@@ -1004,16 +1004,16 @@ exports[`Sidebar renders correctly when closed 1`] = `
             <div>
               <a
                 class="emotion-4"
-                href="/components/selection-controls/tab"
+                href="/components/selection-controls/tabs"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
                     class="emotion-13"
-                    data-testid="/components/selection-controls/tab"
+                    data-testid="/components/selection-controls/tabs"
                   >
-                    Tab
+                    Tabs
                   </div>
                 </span>
               </a>
@@ -2528,16 +2528,16 @@ exports[`Sidebar renders correctly when open 1`] = `
             <div>
               <a
                 class="emotion-4"
-                href="/components/selection-controls/tab"
+                href="/components/selection-controls/tabs"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
                     class="emotion-13"
-                    data-testid="/components/selection-controls/tab"
+                    data-testid="/components/selection-controls/tabs"
                   >
-                    Tab
+                    Tabs
                   </div>
                 </span>
               </a>

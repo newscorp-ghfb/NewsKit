@@ -23,6 +23,7 @@ export interface BaseFlagProps<TOverrides> {
   loading?: boolean;
   overrides?: TOverrides;
   size?: 'small' | 'medium' | 'large';
+  children?: React.ReactNode;
 }
 
 export interface FlagProps extends BaseFlagProps<BaseFlagOverrides> {}

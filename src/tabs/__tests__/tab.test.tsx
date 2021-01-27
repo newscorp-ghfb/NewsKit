@@ -1,5 +1,6 @@
 import React from 'react';
-import {Tab, TabProps, TabSize} from '..';
+import {TabInternalProps as TabProps, TabSize} from '..';
+import {TabInternal as Tab} from '../tab-internal';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {IconFilledCircle} from '../../icons';
 import {createTheme, compileTheme} from '../../theme';

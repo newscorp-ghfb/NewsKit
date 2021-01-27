@@ -1,12 +1,12 @@
-import React, {PropsWithChildren} from 'react';
-import {TabProps, TabSize} from './types';
+import React from 'react';
+import {TabInternalProps, TabSize} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
-import {StyledButton} from './styled';
+import {TabButton} from './styled';
 
-export const Tab = React.forwardRef<
+export const TabInternal = React.forwardRef<
   HTMLButtonElement,
-  PropsWithChildren<TabProps>
+  TabInternalProps
 >(
   (
     {children, overrides = {}, size = TabSize.Medium, ariaLabel, ...props},
@@ -18,7 +18,7 @@ export const Tab = React.forwardRef<
       ...filterOutFalsyProperties(overrides),
     };
     return (
-      <StyledButton
+      <TabButton
         data-testid="tab"
         role="tab"
         aria-label={ariaLabel}
@@ -27,9 +27,9 @@ export const Tab = React.forwardRef<
         overrides={tabSettings}
       >
         {children}
-      </StyledButton>
+      </TabButton>
     );
   },
 );
 
-Tab.displayName = 'Tab';
+TabInternal.displayName = 'TabInternal';
