@@ -39,11 +39,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
       {image && (
         <Block spaceStack={{xs: 'space060', md: 'space070'}}>
-          <Image
-            src={image.src}
-            alt={image.alt || ''}
-            overrides={{stylePreset: 'imageDefault'}}
-          />
+          <Image src={image.src} alt={image.alt || ''} />
         </Block>
       )}
     </Cell>

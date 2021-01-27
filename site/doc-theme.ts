@@ -738,6 +738,9 @@ const fonts = {
 };
 
 const componentDefaults = {
+  image: {
+    stylePreset: 'imageDefault',
+  },
   headlineH1: {
     stylePreset: 'inkContrast',
     typographyPreset: {

@@ -402,12 +402,12 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 .emotion-4 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 

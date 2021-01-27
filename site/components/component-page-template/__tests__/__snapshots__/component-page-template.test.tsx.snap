@@ -1138,12 +1138,12 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -6680,12 +6680,12 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -12352,12 +12352,12 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -18244,12 +18244,12 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -24012,12 +24012,12 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -29939,12 +29939,12 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -35490,12 +35490,12 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -41101,12 +41101,12 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -46661,12 +46661,12 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -52031,12 +52031,12 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -57718,12 +57718,12 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 
@@ -63390,12 +63390,12 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 }
 
 .emotion-261 {
-  border-radius: 8px;
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fafafa;
 }
 

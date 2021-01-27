@@ -6,7 +6,7 @@ export const Anatomy: React.FC<AnatomyProps> = ({media, list}) => (
   <>
     <Cell mdOffset={1} xs={12} md={10} lg={8}>
       <Block spaceStack="space050">
-        <Image {...media} overrides={{stylePreset: 'imageDefault'}} />
+        <Image {...media} />
       </Block>
     </Cell>
     <Cell xs={9} md={8} lg={6} mdOffset={1}>
