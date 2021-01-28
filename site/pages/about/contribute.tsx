@@ -33,7 +33,7 @@ const cards = [
     description:
       'Stay in contact with the NewsKit team and help it progress in a positive direction.',
     media: {
-      src: '/static/contribute-card-feedback.svg',
+      src: '/static/about/contribute/contribute-card-feedback.svg',
       alt: '',
     },
     styles: cardStyle,
@@ -43,7 +43,7 @@ const cards = [
     description:
       'Promote the Design System, answer questions and help your team integrate.',
     media: {
-      src: '/static/contribute-card-share.svg',
+      src: '/static/about/contribute/contribute-card-share.svg',
       alt: '',
     },
     styles: cardStyle,
@@ -53,7 +53,7 @@ const cards = [
     description:
       'Write code or design assets for the Design System for other users to reuse.',
     media: {
-      src: '/static/contribute-card-create.svg',
+      src: '/static/about/contribute/contribute-card-create.svg',
       alt: '',
     },
     styles: cardStyle,
@@ -69,7 +69,7 @@ export default (layoutProps: LayoutProps) => (
         name="Contribute"
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
         hero={{
-          src: '/static/contribute-banner-introduction.svg',
+          src: '/static/about/contribute/contribute-banner-introduction.svg',
           alt: '',
         }}
       />
@@ -179,7 +179,7 @@ export default (layoutProps: LayoutProps) => (
       <SectionIntroduction
         title="Share"
         image={{
-          src: '/static/contribute-banner-share.svg',
+          src: '/static/about/contribute/contribute-banner-share.svg',
           alt: '',
         }}
       />
@@ -240,7 +240,7 @@ export default (layoutProps: LayoutProps) => (
       <SectionIntroduction
         title="Create"
         image={{
-          src: '/static/contribute-banner-create.svg',
+          src: '/static/about/contribute/contribute-banner-create.svg',
           alt: '',
         }}
       />
