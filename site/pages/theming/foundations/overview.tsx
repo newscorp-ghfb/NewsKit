@@ -10,7 +10,7 @@ const cardsContent = [
   {
     media: {
       src: '../../static/theming/foundations/borders.svg',
-      alt: 'borders-card-media',
+      alt: '',
     },
     label: 'Borders',
     description:
@@ -18,17 +18,17 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/borders.svg',
-      alt: 'breakpoints-card-media',
+      src: '../../static/theming/foundations/breakpoints.svg',
+      alt: '',
     },
     label: 'Breakpoints',
     description:
-      'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths. ',
+      'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
   },
   {
     media: {
       src: '../../static/theming/foundations/colours.svg',
-      alt: 'colours-card-media',
+      alt: '',
     },
     label: 'Colours',
     description:
@@ -37,7 +37,7 @@ const cardsContent = [
   {
     media: {
       src: '../../static/theming/foundations/motion.svg',
-      alt: 'motion-card-media',
+      alt: '',
     },
     label: 'Motion',
     description:
@@ -46,7 +46,7 @@ const cardsContent = [
   {
     media: {
       src: '../../static/theming/foundations/overlays.svg',
-      alt: 'overlays-card-media',
+      alt: '',
     },
     label: 'Overlays',
     description:
@@ -55,7 +55,7 @@ const cardsContent = [
   {
     media: {
       src: '../../static/theming/foundations/shadows.svg',
-      alt: 'shadows-card-media',
+      alt: '',
     },
     label: 'Shadows',
     description:
@@ -64,7 +64,7 @@ const cardsContent = [
   {
     media: {
       src: '../../static/theming/foundations/sizing.svg',
-      alt: 'sizing-card-media',
+      alt: '',
     },
     label: 'Sizing',
     description:
@@ -73,7 +73,7 @@ const cardsContent = [
   {
     media: {
       src: '../../static/theming/foundations/typography.svg',
-      alt: 'shadtypographyows-card-media',
+      alt: '',
     },
     label: 'Typography',
     description:
