@@ -124,6 +124,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-13 {
+    max-width: 100%;
+  }
+}
+
 .emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,6 +185,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-6 {
+    max-width: 100%;
+  }
 }
 
 .emotion-5 {
@@ -269,6 +281,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   width: 32px;
   height: 32px;
@@ -306,6 +324,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-7 {
+    max-width: 100%;
+  }
+}
+
 .emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -316,6 +340,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-9 {
+    max-width: 100%;
+  }
 }
 
 .emotion-10 {
@@ -330,6 +360,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   order: 5;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
 .emotion-33 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -338,6 +374,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-33 {
+    max-width: 100%;
+  }
 }
 
 .emotion-32 {
@@ -627,6 +669,12 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-42 {
+    max-width: 100%;
+  }
 }
 
 .emotion-40 {
@@ -1088,6 +1136,12 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   width: 32px;
   height: 32px;
@@ -1172,6 +1226,12 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -1357,6 +1417,12 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   width: 32px;
   height: 32px;
@@ -1536,6 +1602,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-38 {
+    max-width: 100%;
+  }
+}
+
 .emotion-37 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1569,6 +1641,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-7 {
+    max-width: 100%;
+  }
 }
 
 .emotion-6 {
@@ -1613,6 +1691,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
 .emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1623,6 +1707,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-14 {
+    max-width: 100%;
+  }
 }
 
 .emotion-28 {
@@ -1637,6 +1727,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   order: 1;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-28 {
+    max-width: 100%;
+  }
+}
+
 .emotion-35 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1649,6 +1745,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   order: 5;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-35 {
+    max-width: 100%;
+  }
+}
+
 .emotion-58 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1657,6 +1759,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-58 {
+    max-width: 100%;
+  }
 }
 
 .emotion-57 {
@@ -1892,6 +2000,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-61 {
+    max-width: 100%;
+  }
 }
 
 .emotion-59 {
@@ -2892,6 +3006,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-31 {
+    max-width: 100%;
+  }
+}
+
 .emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2925,6 +3045,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-6 {
+    max-width: 100%;
+  }
 }
 
 .emotion-5 {
@@ -3015,6 +3141,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   width: 32px;
   height: 32px;
@@ -3052,6 +3184,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-13 {
+    max-width: 100%;
+  }
+}
+
 .emotion-27 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3062,6 +3200,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-27 {
+    max-width: 100%;
+  }
 }
 
 .emotion-28 {
@@ -3076,6 +3220,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   order: 5;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-28 {
+    max-width: 100%;
+  }
+}
+
 .emotion-51 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3084,6 +3234,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-51 {
+    max-width: 100%;
+  }
 }
 
 .emotion-50 {
@@ -3373,6 +3529,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-54 {
+    max-width: 100%;
+  }
 }
 
 .emotion-52 {
@@ -4193,6 +4355,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-31 {
+    max-width: 100%;
+  }
+}
+
 .emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4226,6 +4394,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-6 {
+    max-width: 100%;
+  }
 }
 
 .emotion-5 {
@@ -4316,6 +4490,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   width: 32px;
   height: 32px;
@@ -4353,6 +4533,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-13 {
+    max-width: 100%;
+  }
+}
+
 .emotion-27 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4363,6 +4549,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-27 {
+    max-width: 100%;
+  }
 }
 
 .emotion-28 {
@@ -4377,6 +4569,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   order: 5;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-28 {
+    max-width: 100%;
+  }
+}
+
 .emotion-51 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4385,6 +4583,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-51 {
+    max-width: 100%;
+  }
 }
 
 .emotion-50 {
@@ -4674,6 +4878,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-54 {
+    max-width: 100%;
+  }
 }
 
 .emotion-52 {
@@ -5494,6 +5704,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-31 {
+    max-width: 100%;
+  }
+}
+
 .emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5559,6 +5775,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   width: 32px;
   height: 32px;
@@ -5592,6 +5814,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-51 {
+    max-width: 100%;
+  }
 }
 
 .emotion-50 {
@@ -5766,6 +5994,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   order: 3;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-54 {
+    max-width: 100%;
+  }
+}
+
 .emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5905,6 +6139,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   order: 3;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-6 {
+    max-width: 100%;
+  }
+}
+
 .emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -5975,6 +6215,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-13 {
+    max-width: 100%;
+  }
+}
+
 .emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -6031,6 +6277,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   order: 1;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-27 {
+    max-width: 100%;
+  }
+}
+
 .emotion-25 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -6084,6 +6336,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   -webkit-order: 5;
   -ms-flex-order: 5;
   order: 5;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-28 {
+    max-width: 100%;
+  }
 }
 
 .emotion-36 {

@@ -107,6 +107,12 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;

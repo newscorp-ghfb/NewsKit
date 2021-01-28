@@ -51,6 +51,12 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   fill: #2e2e2e;
   vertical-align: unset;
@@ -189,6 +195,12 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
 }
 
 .emotion-1 {
@@ -413,6 +425,12 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   fill: #2e2e2e;
   vertical-align: unset;
@@ -528,6 +546,12 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   display: inline-flex;
   margin-top: calc(8px/2);
   margin-bottom: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -670,6 +694,12 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
   margin-bottom: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 <div
     class="emotion-5"
     orientation="vertical"
@@ -763,6 +793,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
 }
 
 .emotion-1 {
@@ -1133,6 +1169,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
 }
 
 .emotion-1 {
@@ -1529,6 +1571,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   fill: #2e2e2e;
   vertical-align: unset;
@@ -1897,6 +1945,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
 }
 
 .emotion-1 {
@@ -2282,6 +2336,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   fill: #2e2e2e;
   vertical-align: unset;
@@ -2555,6 +2615,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-bottom: calc(32px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
 <div
     class="emotion-16"
     orientation="vertical"
@@ -2661,6 +2727,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   fill: #2e2e2e;
   vertical-align: unset;
@@ -2719,6 +2791,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   display: inline-flex;
   margin-top: calc(8px/2);
   margin-bottom: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {
@@ -3040,6 +3118,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
 .emotion-1 {
   fill: #2e2e2e;
   vertical-align: unset;
@@ -3098,6 +3182,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   display: inline-flex;
   margin-top: calc(8px/2);
   margin-bottom: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {

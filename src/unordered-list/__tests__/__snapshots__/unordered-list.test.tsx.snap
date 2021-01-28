@@ -182,6 +182,12 @@ exports[`UnorderedList renders different types of children 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-7 {
+    max-width: 100%;
+  }
+}
+
 <ul
     class="emotion-16"
     role="list"

@@ -133,6 +133,12 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
   ${calculateMargins()}
   order: ${({$order}) => $order};
   align-self: ${({$alignSelf}) => $alignSelf};
+  /* Needed for nesting horizontal cards inside a stack:  */
+  /* Use min-width to force IE11 recalculate containers width */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    max-width: 100%;
+  }
+  
 `;
 
 // Stack as list

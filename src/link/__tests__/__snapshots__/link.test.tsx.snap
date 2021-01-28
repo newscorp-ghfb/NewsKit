@@ -354,6 +354,12 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-2 {
   display: inline-block;
   vertical-align: middle;

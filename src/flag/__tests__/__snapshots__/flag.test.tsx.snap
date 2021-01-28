@@ -42,6 +42,12 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -211,6 +217,12 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -303,6 +315,12 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {
@@ -550,6 +568,12 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 <div
     class="emotion-7"
   >
@@ -635,6 +659,12 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -758,6 +788,12 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -905,6 +941,12 @@ exports[`Flag renders a flag with no paddings 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1036,6 +1078,12 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1157,6 +1205,12 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -1304,6 +1358,12 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1425,6 +1485,12 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -1570,6 +1636,12 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {
@@ -1775,6 +1847,12 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1901,6 +1979,12 @@ exports[`Flag renders with Large size 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {
@@ -2073,6 +2157,12 @@ exports[`Flag renders with Medium size 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -2165,6 +2255,12 @@ exports[`Flag renders with Small size 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {
@@ -2337,6 +2433,12 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -2467,6 +2569,12 @@ exports[`Flag renders with default styles 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {

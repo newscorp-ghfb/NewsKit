@@ -32,6 +32,12 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -256,6 +262,12 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -332,6 +344,12 @@ exports[`IconButton renders Large Icon Button 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -486,6 +504,12 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -717,6 +741,12 @@ exports[`IconButton renders Small Icon Button 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -871,6 +901,12 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -960,6 +996,12 @@ exports[`IconButton renders with different style preset 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {

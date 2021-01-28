@@ -201,6 +201,12 @@ exports[`Usage renders with mandatory props 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -233,6 +239,12 @@ exports[`Usage renders with mandatory props 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-13 {
+    min-height: 1px;
+  }
 }
 
 @media screen and (max-width:479px) {

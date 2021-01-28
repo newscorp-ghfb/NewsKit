@@ -33,6 +33,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
+}
+
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -122,6 +128,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -159,6 +171,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 3;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-11 {
+    max-width: 100%;
+  }
+}
+
 .emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -167,6 +185,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-17 {
+    max-width: 100%;
+  }
 }
 
 <div
@@ -266,6 +290,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 2;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
+}
+
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -355,6 +385,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -392,6 +428,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 3;
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-11 {
+    max-width: 100%;
+  }
+}
+
 .emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -400,6 +442,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-17 {
+    max-width: 100%;
+  }
 }
 
 .emotion-18 {
@@ -601,6 +649,12 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -659,6 +713,12 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
 }
 
 <div

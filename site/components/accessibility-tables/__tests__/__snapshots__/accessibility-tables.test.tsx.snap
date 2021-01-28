@@ -729,6 +729,12 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-8 {
+    max-width: 100%;
+  }
+}
+
 .emotion-7 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
@@ -1166,6 +1172,12 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-7 {
+    max-width: 100%;
+  }
 }
 
 .emotion-6 {

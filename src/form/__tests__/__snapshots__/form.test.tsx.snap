@@ -255,6 +255,12 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-15 {
+    max-width: 100%;
+  }
+}
+
 .emotion-14 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -537,6 +543,12 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-21 {
+    max-width: 100%;
+  }
 }
 
 .emotion-20 {
@@ -1090,6 +1102,12 @@ exports[`Form renders with error on blur 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-18 {
+    max-width: 100%;
+  }
+}
+
 .emotion-17 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1513,6 +1531,12 @@ exports[`Form renders with error on submit 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-21 {
+    max-width: 100%;
+  }
 }
 
 .emotion-20 {
@@ -2064,6 +2088,12 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-18 {
+    max-width: 100%;
+  }
 }
 
 .emotion-17 {
@@ -2817,6 +2847,12 @@ exports[`Form renders with nested inputs 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-15 {
+    max-width: 100%;
+  }
+}
+
 .emotion-14 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -3206,6 +3242,12 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-15 {
+    max-width: 100%;
+  }
+}
+
 .emotion-14 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -3593,6 +3635,12 @@ exports[`Form renders with valid state 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-17 {
+    max-width: 100%;
+  }
 }
 
 .emotion-16 {

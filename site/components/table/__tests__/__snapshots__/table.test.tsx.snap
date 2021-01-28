@@ -354,6 +354,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -689,6 +695,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {

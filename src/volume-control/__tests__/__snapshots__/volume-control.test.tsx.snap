@@ -160,6 +160,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -545,6 +551,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -934,6 +946,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -1266,6 +1284,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -1707,6 +1731,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -2092,6 +2122,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -2481,6 +2517,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -2868,6 +2910,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
@@ -3253,6 +3301,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {

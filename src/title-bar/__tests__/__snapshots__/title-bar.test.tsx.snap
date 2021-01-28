@@ -273,6 +273,12 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;

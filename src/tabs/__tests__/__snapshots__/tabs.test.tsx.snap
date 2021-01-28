@@ -170,6 +170,12 @@ exports[`Tabs FittedEqual renders tabs horizontal FittedEqual 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -495,6 +501,12 @@ exports[`Tabs FittedEqual renders tabs vertical FittedEqual 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -1102,6 +1114,12 @@ exports[`Tabs FittedFlex renders tabs horizontal fittedFlex 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1427,6 +1445,12 @@ exports[`Tabs FittedFlex renders tabs vertical FittedFlex 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -1894,6 +1918,12 @@ exports[`Tabs LeftStacked renders Tabs vertical leftstacked 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -2515,6 +2545,12 @@ exports[`Tabs LeftStacked renders tabs horizontal leftstacked 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -2978,6 +3014,12 @@ exports[`Tabs changes focus and sets first to be active on right arrow when on t
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -3445,6 +3487,12 @@ exports[`Tabs changes focus and sets last to be active on left arrow when on the
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -3908,6 +3956,12 @@ exports[`Tabs changes focus and sets next to be active on right arrow 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -4375,6 +4429,12 @@ exports[`Tabs changes focus and sets previous to be active on left arrow 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -4838,6 +4898,12 @@ exports[`Tabs changes focus on tab 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {
@@ -5305,6 +5371,12 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -5770,6 +5842,12 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -6209,6 +6287,12 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -6522,6 +6606,12 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -6587,6 +6677,12 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-7 {
+    max-width: 100%;
+  }
 }
 
 .emotion-27 {
@@ -7179,6 +7275,12 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -7713,6 +7815,12 @@ exports[`Tabs renders with default styles 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -8178,6 +8286,12 @@ exports[`Tabs renders with default styles and divider 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -8344,6 +8458,12 @@ exports[`Tabs renders with default styles and divider 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-7 {
+    max-width: 100%;
+  }
 }
 
 .emotion-6 {
@@ -8680,6 +8800,12 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {
@@ -9216,6 +9342,12 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -9750,6 +9882,12 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -10204,6 +10342,12 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-27 {
@@ -10738,6 +10882,12 @@ exports[`Tabs renders with icons for tabs 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-21 {
@@ -11298,6 +11448,12 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -11660,6 +11816,12 @@ exports[`Tabs renders with overrides 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-27 {
@@ -12293,6 +12455,12 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   margin-right: calc(8px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -12678,6 +12846,12 @@ exports[`Tabs renders with sizing 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-18 {
@@ -13221,6 +13395,12 @@ exports[`Tabs sets active on click 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
 }
 
 .emotion-0 {

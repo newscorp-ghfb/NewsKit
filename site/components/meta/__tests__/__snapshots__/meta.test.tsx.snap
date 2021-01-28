@@ -137,6 +137,12 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-right: calc(32px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
 .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -165,6 +171,12 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline-flex;
   margin-top: calc(12px/2);
   margin-bottom: calc(12px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-1 {
@@ -277,6 +289,12 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -314,6 +332,12 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-12 {
+    max-width: 100%;
+  }
 }
 
 .emotion-11 {
@@ -355,6 +379,12 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline-flex;
   margin-top: calc(24px/2);
   margin-bottom: calc(24px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-15 {
+    max-width: 100%;
+  }
 }
 
 .emotion-22 {
@@ -463,6 +493,12 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-right: calc(16px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-34 {
+    max-width: 100%;
+  }
+}
+
 .emotion-32 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -559,6 +595,12 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-28 {
+    max-width: 100%;
+  }
 }
 
 .emotion-27 {
@@ -1190,6 +1232,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(32px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
 .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1218,6 +1266,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-flex;
   margin-top: calc(12px/2);
   margin-bottom: calc(12px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
 }
 
 .emotion-1 {
@@ -1330,6 +1384,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(4px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
 .emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1367,6 +1427,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-12 {
+    max-width: 100%;
+  }
 }
 
 .emotion-11 {
@@ -1408,6 +1474,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-flex;
   margin-top: calc(24px/2);
   margin-bottom: calc(24px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-15 {
+    max-width: 100%;
+  }
 }
 
 .emotion-22 {
@@ -1516,6 +1588,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(16px/2);
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-34 {
+    max-width: 100%;
+  }
+}
+
 .emotion-32 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -1612,6 +1690,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-28 {
+    max-width: 100%;
+  }
 }
 
 .emotion-27 {

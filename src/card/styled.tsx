@@ -32,6 +32,13 @@ export const StyledCardContainerMedia = styled.div<
   display: block;
   position: relative;
 
+  /* Needed for IE flex item image resizing bug: https://github.com/philipwalton/flexbugs#flexbug-5 */
+  /* Solution explained here: https://stackoverflow.com/a/43027202 */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    min-height: 1px;
+  }
+ 
+
   ${({layout}) => {
     if (isHorizontal(layout) && isReverse(layout))
       return getDefaultedValue(
@@ -57,7 +64,11 @@ export const StyledCardContainerTeaserAndActions = styled.div<
   ${({layout}) =>
     isHorizontal(layout) &&
     `display: flex;
-    flex-direction: column;`}
+      flex-direction: column;
+      /* Needed for IE FLEX CHILDREN TEXT NOT WRAPPING bug: https://medium.com/codeart-mk/internet-explorer-hacks-796200e5741c */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        min-width: 1px;
+      }`}
 `;
 
 export const StyledCardContainerTeaser = styled.div<
