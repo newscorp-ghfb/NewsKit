@@ -85,7 +85,7 @@ export default (layoutProps: LayoutProps) => (
       <SectionIntroduction
         title="Feedback"
         image={{
-          src: '/static/contribute-banner-feedback.svg',
+          src: '/static/about/contribute/contribute-banner-feedback.svg',
           alt: '',
         }}
       />
