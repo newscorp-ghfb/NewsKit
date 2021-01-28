@@ -116,7 +116,7 @@ export default ({path, ...rest}: LayoutProps) => (
         introduction="NewsKit foundations define the visual elements that inform the look and feel of UI components."
         hero={{
           src: '/static/roadmap-hero.svg',
-          alt: 'foundations-overview-hero-image',
+          alt: '',
         }}
       />
       <SectionIntroduction title="Categories" cellProps={{lg: 8}}>
