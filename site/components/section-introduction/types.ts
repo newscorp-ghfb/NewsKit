@@ -5,6 +5,6 @@ export interface SectionIntroductionProps {
   cellProps?: CellProps;
   image?: {
     src: string;
-    alt: string;
+    alt?: string;
   };
 }
