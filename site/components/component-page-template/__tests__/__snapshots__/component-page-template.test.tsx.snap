@@ -1064,11 +1064,11 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -2782,7 +2782,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -6648,11 +6648,11 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -8366,7 +8366,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -12368,11 +12368,11 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -14003,7 +14003,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 .emotion-382 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -18302,11 +18302,11 @@ exports[`Component Page Template renders mandatory sections and focus order from
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -20020,7 +20020,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -20032,7 +20032,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-368 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 .emotion-368::before {
@@ -24046,11 +24046,11 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 .emotion-251 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #2e2e2e;
 }
 
-.emotion-251 svg {
-  fill: #0a0a0a;
+.emotion-254 svg {
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -25830,7 +25830,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -30081,11 +30081,11 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -31799,7 +31799,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -35674,11 +35674,11 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -37392,7 +37392,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -41327,11 +41327,11 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -42962,7 +42962,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 .emotion-382 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -46935,11 +46935,11 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -48653,7 +48653,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -48665,7 +48665,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 }
 
 .emotion-368 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 .emotion-368::before {
@@ -52347,11 +52347,11 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -54065,7 +54065,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -58082,11 +58082,11 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {
@@ -59800,7 +59800,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 .emotion-368 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -63802,11 +63802,11 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 .emotion-254 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-254 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {

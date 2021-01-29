@@ -267,11 +267,11 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-0 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 @media screen and (max-width:767px) {

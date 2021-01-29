@@ -147,7 +147,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  color: #535353;
+  color: #2e2e2e;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -159,7 +159,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #535353;
+  fill: #2e2e2e;
 }
 
 .emotion-5::before {
