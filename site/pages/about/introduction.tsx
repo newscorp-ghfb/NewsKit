@@ -103,7 +103,7 @@ const cardStyles = cardStylePresets.map(preset => ({
   },
   description: {
     stylePreset: 'inkWhiteSubtle',
-    typographyPreset: 'editorialParagraph020',
+    typographyPreset: 'editorialParagraph010',
   },
 }));
 

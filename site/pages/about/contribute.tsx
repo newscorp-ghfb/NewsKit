@@ -23,7 +23,7 @@ const cardStyle = {
   },
   description: {
     stylePreset: 'inkWhiteSubtle',
-    typographyPreset: 'editorialParagraph020',
+    typographyPreset: 'editorialParagraph010',
   },
 };
 

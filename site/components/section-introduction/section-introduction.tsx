@@ -15,6 +15,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           overrides={{
             spaceInset: 'space000',
             heading: {
+              stylePreset: 'inkContrast',
               typographyPreset: {
                 xs: 'editorialHeadline040',
                 md: 'editorialHeadline060',
@@ -28,7 +29,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
       {children && (
         <Block spaceStack="space080">
           <TextBlock
-            stylePreset="inkSubtle"
+            stylePreset="inkBase"
             typographyPreset="editorialSubheadline010"
           >
             {children}

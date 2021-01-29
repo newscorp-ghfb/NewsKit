@@ -37,7 +37,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
     <Cell xs={12} md={8} lg={6} mdOffset={1}>
       <Block spaceStack={{xs: 'space080', md: 'space060'}}>
         <TextBlock
-          stylePreset="inkSubtle"
+          stylePreset="inkBase"
           typographyPreset={{
             xs: 'editorialSubheadline010',
             md: 'editorialSubheadline020',
