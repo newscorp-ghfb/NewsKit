@@ -89,6 +89,7 @@ const cardStyle = {
     },
     teaserContainer: {
       spaceInset: 'spaceInsetStretch050',
+      typographyPreset: 'editorialParagraph010',
     },
   },
   label: {
@@ -101,7 +102,6 @@ const cardStyle = {
   description: {
     stylePreset: 'inkBase',
     typographyPreset: {
-      xs: 'editorialParagraph010',
       md: 'editorialParagraph020',
     },
   },
