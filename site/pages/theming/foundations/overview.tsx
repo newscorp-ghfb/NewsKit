@@ -92,12 +92,18 @@ const cardStyle = {
     },
   },
   label: {
-    stylePreset: 'inkBase',
-    typographyPreset: 'editorialHeadline040',
+    stylePreset: 'inkSubtle',
+    typographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline040',
+    },
   },
   description: {
-    stylePreset: 'inkSubtle',
-    typographyPreset: 'editorialParagraph020',
+    stylePreset: 'inkBase',
+    typographyPreset: {
+      xs: 'editorialParagraph010',
+      md: 'editorialParagraph020',
+    },
   },
 };
 
