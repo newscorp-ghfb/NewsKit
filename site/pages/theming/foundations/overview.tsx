@@ -92,7 +92,7 @@ const cardStyle = {
     },
   },
   label: {
-    stylePreset: 'inkSubtle',
+    stylePreset: 'inkContrast',
     typographyPreset: {
       xs: 'editorialHeadline030',
       md: 'editorialHeadline040',
