@@ -126,7 +126,7 @@ export default ({path, ...rest}: LayoutProps) => (
         }}
       />
       <SectionIntroduction title="Categories" cellProps={{lg: 8}}>
-        Lorem non elit pariatur culpa in fugiat velit commodo excepteur Lorem.
+        The NewsKit Foundations are structured into the following categories:
       </SectionIntroduction>
       <MediaList
         xsCard={12}
