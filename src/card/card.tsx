@@ -99,40 +99,53 @@ export const Card: React.FC<CardProps> = ({
   children,
   overrides = {},
   className,
-}) => (
-  <StyledCardContainer
-    className={className}
-    layout={layout}
-    overrides={overrides}
-  >
-    {media && (
-      <StyledCardContainerMedia
-        layout={layout}
-        mediaInteractive={mediaInteractive}
-        overrides={overrides}
-      >
-        {renderMedia(media)}
-      </StyledCardContainerMedia>
-    )}
-
-    <StyledCardContainerTeaserAndActions layout={layout} overrides={overrides}>
-      {children && (
-        <StyledCardContainerTeaser layout={layout} overrides={overrides}>
-          <TeaserDecorator href={href}>{children}</TeaserDecorator>
-        </StyledCardContainerTeaser>
-      )}
-      {actions && (
-        <StyledCardContainerActions
-          flow={Flow.HorizontalCenter}
-          stackDistribution={StackDistribution.Start}
-          wrap="nowrap"
+}) => {
+  const hasHref = Boolean(href);
+  return (
+    <StyledCardContainer
+      className={className}
+      hasHref={hasHref}
+      layout={layout}
+      overrides={overrides}
+    >
+      {media && (
+        <StyledCardContainerMedia
+          layout={layout}
+          mediaInteractive={mediaInteractive}
+          hasHref={hasHref}
           overrides={overrides}
         >
-          {renderComponent(actions)}
-        </StyledCardContainerActions>
+          {renderMedia(media)}
+        </StyledCardContainerMedia>
       )}
-    </StyledCardContainerTeaserAndActions>
-  </StyledCardContainer>
-);
+
+      <StyledCardContainerTeaserAndActions
+        layout={layout}
+        overrides={overrides}
+      >
+        {children && (
+          <StyledCardContainerTeaser
+            hasHref={hasHref}
+            layout={layout}
+            overrides={overrides}
+          >
+            <TeaserDecorator href={href}>{children}</TeaserDecorator>
+          </StyledCardContainerTeaser>
+        )}
+        {actions && (
+          <StyledCardContainerActions
+            flow={Flow.HorizontalCenter}
+            stackDistribution={StackDistribution.Start}
+            hasHref={hasHref}
+            wrap="nowrap"
+            overrides={overrides}
+          >
+            {renderComponent(actions)}
+          </StyledCardContainerActions>
+        )}
+      </StyledCardContainerTeaserAndActions>
+    </StyledCardContainer>
+  );
+};
 
 Card.displayName = 'Card';

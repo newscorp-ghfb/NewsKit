@@ -4,8 +4,7 @@ exports[`Card renders actions section with given component 1`] = `
 <DocumentFragment>
   .emotion-16 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -22,9 +21,6 @@ exports[`Card renders actions section with given component 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -92,8 +88,6 @@ exports[`Card renders actions section with given component 1`] = `
   height: auto;
   box-sizing: border-box;
   padding: 0;
-  background-color: #ffffff;
-  border-radius: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -426,8 +420,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 <DocumentFragment>
   .emotion-16 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -444,9 +437,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -754,8 +744,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   height: auto;
   box-sizing: border-box;
   padding: 0;
-  background-color: #ffffff;
-  border-radius: 0;
   min-height: 64px;
   position: relative;
   z-index: 2;
@@ -848,8 +836,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 <DocumentFragment>
   .emotion-16 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -866,9 +853,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -1176,8 +1160,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   height: auto;
   box-sizing: border-box;
   padding: 12px 16px;
-  background-color: #ffffff;
-  border-radius: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -1359,8 +1341,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 <DocumentFragment>
   .emotion-5 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1377,9 +1358,6 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 
 .emotion-3 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -1555,8 +1533,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1575,7 +1552,6 @@ exports[`Card renders media section if the media data is provided 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1665,9 +1641,6 @@ exports[`Card renders media section if the media data is provided 1`] = `
 
 .emotion-9 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -1787,8 +1760,7 @@ exports[`Card renders media section with a custom component 1`] = `
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1807,7 +1779,6 @@ exports[`Card renders media section with a custom component 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1911,9 +1882,6 @@ exports[`Card renders media section with a custom component 1`] = `
 
 .emotion-9 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -2019,8 +1987,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2039,7 +2006,6 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -2129,9 +2095,6 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 
 .emotion-9 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -2251,8 +2214,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2271,7 +2233,6 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -2361,9 +2322,6 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 
 .emotion-9 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -2483,8 +2441,7 @@ exports[`Card renders media section with overrides 1`] = `
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2556,9 +2513,6 @@ exports[`Card renders media section with overrides 1`] = `
 
 .emotion-9 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -2715,8 +2669,7 @@ exports[`Card renders with card items 1`] = `
 <DocumentFragment>
   .emotion-23 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2735,7 +2688,6 @@ exports[`Card renders with card items 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -2839,9 +2791,6 @@ exports[`Card renders with card items 1`] = `
 
 .emotion-9 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -2909,8 +2858,6 @@ exports[`Card renders with card items 1`] = `
   height: auto;
   box-sizing: border-box;
   padding: 0;
-  background-color: #ffffff;
-  border-radius: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -3279,8 +3226,7 @@ exports[`Card renders without card items 1`] = `
 <DocumentFragment>
   .emotion-1 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3384,8 +3330,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3400,7 +3345,6 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -3482,9 +3426,6 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -3679,9 +3620,6 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -3692,8 +3630,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 
 .emotion-11 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3708,7 +3645,6 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -3801,12 +3737,449 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 </DocumentFragment>
 `;
 
+exports[`Card with href renders correctly with actions 1`] = `
+<DocumentFragment>
+  .emotion-17 {
+  box-sizing: border-box;
+  color: #2e2e2e;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-16 {
+  box-sizing: border-box;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.emotion-3 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-1 {
+  margin-bottom: 4px;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0;
+  min-height: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-15 {
+    height: 0px;
+  }
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  color: #2e2e2e;
+  border-radius: 0;
+}
+
+.emotion-7 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-7 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-7:active:not(:disabled) {
+  border-width: 1px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-12 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-12 svg {
+  fill: #ffffff;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-12:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-12:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-12:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-2:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+<div
+    class="emotion-17"
+  >
+    <div
+      class="emotion-16"
+    >
+      <div
+        class="emotion-3"
+      >
+        <a
+          class="nk-card-link emotion-2"
+          href="https://newskit.co.uk/"
+        >
+          <div
+            class="emotion-1"
+          >
+            <p
+              class="emotion-0"
+            >
+              Example Card text
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="emotion-15"
+      >
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+              data-testid="tag"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-4"
+                  >
+                    Tag
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-8"
+          >
+            <button
+              class="emotion-12"
+              data-testid="button"
+              type="button"
+            >
+              <div
+                class="emotion-11"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-4"
+                  >
+                    Button
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Card with href renders correctly with mediaInteractive set to true 1`] = `
 <DocumentFragment>
   .emotion-12 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3878,9 +4251,6 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 
 .emotion-10 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -3958,7 +4328,6 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   display: block;
   position: relative;
   z-index: 2;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -4060,8 +4429,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 <DocumentFragment>
   .emotion-6 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4078,9 +4446,6 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-4 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -4294,8 +4659,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 <DocumentFragment>
   .emotion-6 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4312,9 +4676,6 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-4 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -4514,8 +4875,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 <DocumentFragment>
   .emotion-6 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4532,9 +4892,6 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-4 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -4732,8 +5089,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 <DocumentFragment>
   .emotion-5 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4750,9 +5106,6 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 
 .emotion-3 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -4846,8 +5199,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 <DocumentFragment>
   .emotion-5 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4864,9 +5216,6 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 
 .emotion-3 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -5076,8 +5425,7 @@ exports[`CardInset renders with card items 1`] = `
 <DocumentFragment>
   .emotion-23 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5439,7 +5787,6 @@ exports[`CardInset renders with card items 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -5450,9 +5797,6 @@ exports[`CardInset renders with card items 1`] = `
 
 .emotion-9 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
 }
 
 @media screen and (max-width:479px) {
@@ -5509,8 +5853,6 @@ exports[`CardInset renders with card items 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
   min-height: 0;
   position: relative;
   z-index: 2;
@@ -5663,8 +6005,7 @@ exports[`CardInset renders without card items 1`] = `
 <DocumentFragment>
   .emotion-1 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;

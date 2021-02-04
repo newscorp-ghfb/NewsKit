@@ -12,18 +12,13 @@ import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
 import {IconFilledImage} from '../../icons';
-import {
-  getColorFromTheme,
-  getSpacingInsetFromTheme,
-  styled,
-} from '../../utils/style';
+import {getColorFromTheme, styled} from '../../utils/style';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Link} from '../../link';
 
 const ContainerWithBackground = styled.div<{colorToken?: string}>`
-  background: ${({colorToken = 'interface040', ...props}) =>
+  background: ${({colorToken = 'white', ...props}) =>
     getColorFromTheme(colorToken)(props)};
-  ${getSpacingInsetFromTheme('spaceInsetStretch020')};
 `;
 
 const FlexBlock = styled(Block)`
@@ -104,6 +99,15 @@ const myCustomCardTheme = createTheme({
           borderStyle: 'solid',
           borderColor: '{{colors.purple020}}',
           borderWidth: '{{borders.borderWidth010}}',
+          backgroundColor: '{{colors.blue020}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.blue040}}',
+          boxShadow: '{{shadows.shadow030}}',
+        },
+        active: {
+          backgroundColor: '{{colors.blue060}}',
+          boxShadow: '{{shadows.shadow050}}',
         },
       },
       cardContainerMediaMock: {
@@ -114,6 +118,12 @@ const myCustomCardTheme = createTheme({
       cardContainerTeaserMock: {
         base: {
           backgroundColor: '{{colors.amber020}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.amber060}}',
         },
       },
       cardContainerActionsMock: {
@@ -703,7 +713,145 @@ export default {
                         title of the card describing the main content
                       </Headline>
                     </Block>
-
+                    <TextBlock
+                      stylePreset="cardTeaserLead"
+                      typographyPreset={
+                        cardTypographyPresets.cardTeaserLeadSmall
+                      }
+                    >
+                      A short paragraph description of the article, outlining
+                      the main story and focus.
+                    </TextBlock>
+                  </CardInset>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-without-inset-link-containers-overrides',
+      type: 'story',
+      parameters: {eyes: {include: false}},
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card - Without Inset - with Link and Container Overrides
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={4}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-3x2.png',
+                      alt: 'Card Media',
+                    }}
+                    actions={cardSmallTags}
+                    overrides={{
+                      stylePreset: 'cardContainerMock',
+                      mediaContainer: {
+                        stylePreset: 'cardContainerMediaMock',
+                      },
+                      teaserContainer: {
+                        stylePreset: 'cardContainerTeaserMock',
+                      },
+                      actionsContainer: {
+                        stylePreset: 'cardContainerActionsMock',
+                        minHeight: 'sizing090',
+                      },
+                    }}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="SHORT"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        title of the card describing the main content
+                      </Headline>
+                    </Block>
+                    <Block spaceStack={cardTeaserLead}>
+                      <TextBlock
+                        stylePreset="cardTeaserLead"
+                        typographyPreset={
+                          cardTypographyPresets.cardTeaserLeadSmall
+                        }
+                      >
+                        A short paragraph description of the article, outlining
+                        the main story and focus.
+                      </TextBlock>
+                    </Block>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-with-inset-link-containers-overrides',
+      type: 'story',
+      parameters: {eyes: {include: false}},
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card - With Inset - with Link and Containers Overrides
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={4}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <CardInset
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-3:2.png',
+                      alt: 'Card Media',
+                    }}
+                    actions={cardSmallTags}
+                    overrides={{
+                      stylePreset: 'cardContainerMock',
+                      mediaContainer: {
+                        stylePreset: 'cardContainerMediaMock',
+                      },
+                      teaserContainer: {
+                        stylePreset: 'cardContainerTeaserMock',
+                      },
+                      actionsContainer: {
+                        stylePreset: 'cardContainerActionsMock',
+                      },
+                    }}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="SHORT"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        title of the card describing the main content
+                      </Headline>
+                    </Block>
                     <TextBlock
                       stylePreset="cardTeaserLead"
                       typographyPreset={
@@ -918,6 +1066,154 @@ export default {
                       },
                     }}
                     actions={cardSmallTags}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="SHORT"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        title of the card describing the main content
+                      </Headline>
+                    </Block>
+                    <TextBlock
+                      stylePreset="cardTeaserLead"
+                      typographyPreset={
+                        cardTypographyPresets.cardTeaserLeadSmall
+                      }
+                    >
+                      A short paragraph description of the article, outlining
+                      the main story and focus.
+                    </TextBlock>
+                  </CardInset>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-horizontal-without-inset-link-containers-overrides',
+      type: 'story',
+      parameters: {eyes: {include: false}},
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card Horizontal - Without Inset - with Link and Container Overrides
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={6} md={5}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    layout="horizontal-reverse"
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-2x3.png',
+                      alt: 'Card Media',
+                      loadingAspectRatio: '2:3',
+                      overrides: {
+                        height: '300px',
+                      },
+                    }}
+                    actions={cardSmallTags}
+                    overrides={{
+                      stylePreset: 'cardContainerMock',
+                      mediaContainer: {
+                        stylePreset: 'cardContainerMediaMock',
+                      },
+                      teaserContainer: {
+                        stylePreset: 'cardContainerTeaserMock',
+                      },
+                      actionsContainer: {
+                        stylePreset: 'cardContainerActionsMock',
+                        minHeight: 'sizing090',
+                      },
+                    }}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="SHORT"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        title of the card describing the main content
+                      </Headline>
+                    </Block>
+                    <TextBlock
+                      stylePreset="cardTeaserLead"
+                      typographyPreset={
+                        cardTypographyPresets.cardTeaserLeadSmall
+                      }
+                    >
+                      A short paragraph description of the article, outlining
+                      the main story and focus.
+                    </TextBlock>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-horizontal-reverse-with-inset-link-containers-overrides',
+      type: 'story',
+      parameters: {eyes: {include: false}},
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card Horizontal-reverse - With Inset - with Link and Containers
+            Overrides
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={6} md={5}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <CardInset
+                    layout="horizontal-reverse"
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-2x3.png',
+                      alt: 'Card Media',
+                      loadingAspectRatio: '2:3',
+                      overrides: {
+                        height: '300px',
+                      },
+                    }}
+                    actions={cardSmallTags}
+                    overrides={{
+                      stylePreset: 'cardContainerMock',
+                      mediaContainer: {
+                        stylePreset: 'cardContainerMediaMock',
+                      },
+                      teaserContainer: {
+                        stylePreset: 'cardContainerTeaserMock',
+                      },
+                      actionsContainer: {
+                        stylePreset: 'cardContainerActionsMock',
+                      },
+                    }}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
                       <Headline

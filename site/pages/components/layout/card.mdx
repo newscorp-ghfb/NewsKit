@@ -43,6 +43,10 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
     Both <InlineCode>string</InlineCode> and <InlineCode>BaseLinkProps</InlineCode> are supported,
     <InlineCode>BaseLinkProps</InlineCode> is derived from <InlineCode>React.AnchorHTMLAttributes</InlineCode>,
     providing access to all anchor props. For more details check the Interactivity section below.
+    <br />
+    <br />
+    <b>NOTE:</b> If href prop is not provided the card will omit all interactive states (hover and active)
+    from the style presets applied to the inner card containers.
   </Prop>
   <Prop name="layout" type="'vertical' | 'horizontal' | 'horizontal-reverse'" default="vertical">
     The card supports three layouts:

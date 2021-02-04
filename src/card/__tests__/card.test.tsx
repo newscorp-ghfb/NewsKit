@@ -198,6 +198,15 @@ describe('Card', () => {
       );
       expect(fragment).toMatchSnapshot();
     });
+
+    test('renders correctly with actions', () => {
+      const fragment = renderToFragmentWithTheme(Card, {
+        href,
+        children: cardBody,
+        actions: actionsComponent,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
   });
 
   test('renders media section with custom loadingAspectRatio if the media data is provided', () => {

@@ -1648,29 +1648,6 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
-        "backgroundColor": "#ffffff",
-        "borderRadius": "0",
-      },
-    },
-    "cardContainerActions": Object {
-      "base": Object {
-        "backgroundColor": "#ffffff",
-        "borderRadius": "0",
-      },
-    },
-    "cardContainerMedia": Object {
-      "base": Object {
-        "borderRadius": "0",
-      },
-      "loading": Object {
-        "backgroundColor": "#fafafa",
-        "iconColor": "#c0c0c0",
-      },
-    },
-    "cardContainerTeaser": Object {
-      "base": Object {
-        "backgroundColor": "#ffffff",
-        "borderRadius": "0",
         "color": "#2e2e2e",
       },
     },

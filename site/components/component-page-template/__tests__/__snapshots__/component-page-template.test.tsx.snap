@@ -8507,8 +8507,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 .emotion-383 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8524,7 +8523,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -8577,9 +8575,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 .emotion-381 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -43052,8 +43047,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 .emotion-398 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -43069,7 +43063,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -43122,9 +43115,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 .emotion-396 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -54134,7 +54124,43 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-.emotion-382 {
+.emotion-388 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-388 {
+    min-height: 1px;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .emotion-388 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:1023px) {
+  .emotion-388 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-388 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-388 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-386 {
   border-radius: 0;
   position: relative;
   width: 100%;
@@ -54154,9 +54180,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 .emotion-390 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 
@@ -54249,8 +54272,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 .emotion-392 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -54261,43 +54283,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   flex-direction: column;
 }
 
-.emotion-384 {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-385 {
-    min-height: 1px;
-  }
-}
-
-@media screen and (max-width:479px) {
-  .emotion-384 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:1023px) {
-  .emotion-384 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-384 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-384 {
-    margin-bottom: 24px;
-  }
-}
-
-.emotion-387 {
+.emotion-391 {
   margin-bottom: 16px;
 }
 
@@ -59941,8 +59927,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 .emotion-383 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -59958,7 +59943,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -60011,9 +59995,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 .emotion-381 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 

@@ -1431,30 +1431,7 @@ stylePresets.imageCircle = {
 
 stylePresets.cardContainer = {
   base: {
-    backgroundColor: '{{colors.interface010}}',
-    borderRadius: '{{borders.borderRadiusSharp}}',
-  },
-};
-stylePresets.cardContainerMedia = {
-  base: {
-    borderRadius: '{{borders.borderRadiusSharp}}',
-  },
-  loading: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.cardContainerTeaser = {
-  base: {
-    backgroundColor: '{{colors.interface010}}',
-    borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkBase}}',
-  },
-};
-stylePresets.cardContainerActions = {
-  base: {
-    backgroundColor: '{{colors.interface010}}',
-    borderRadius: '{{borders.borderRadiusSharp}}',
   },
 };
 

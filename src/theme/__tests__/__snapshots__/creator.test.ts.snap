@@ -1647,29 +1647,6 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-    },
-    "cardContainerActions": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-    },
-    "cardContainerMedia": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "cardContainerTeaser": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
       },
     },

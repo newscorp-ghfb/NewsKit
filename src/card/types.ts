@@ -18,6 +18,11 @@ export interface CardOverridesProps {
     minHeight?: string;
   };
 }
+
+export type HasHref = {
+  hasHref?: boolean;
+};
+
 export interface CardProps {
   className?: string;
   href?: string | BaseLinkProps;

@@ -223,8 +223,7 @@ exports[`Usage renders with mandatory props 1`] = `
 
 .emotion-21 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -346,9 +345,6 @@ exports[`Usage renders with mandatory props 1`] = `
 
 .emotion-19 {
   box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
   padding: 0;
 }
 

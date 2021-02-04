@@ -1,4 +1,4 @@
-import {CardProps} from './types';
+import {CardProps, HasHref} from './types';
 import {
   styled,
   getSpacingInset,
@@ -12,13 +12,13 @@ import {
 
 import {Stack} from '../stack';
 import {HeadlineOverrides} from '../headline/types';
-import {isHorizontal, isReverse} from './utils';
+import {filterInteractiveStates, isHorizontal, isReverse} from './utils';
 
 export const StyledCardContainer = styled.div<
-  Pick<CardProps, 'overrides' | 'layout' | 'className'>
+  Pick<CardProps, 'overrides' | 'layout' | 'className'> & HasHref
 >`
   box-sizing: border-box;
-  ${getStylePreset('card', '')}
+  ${({hasHref, ...props}) => filterInteractiveStates('', hasHref)(props)}
   position: relative;
   display: flex;
   flex-direction: ${({layout}) =>
@@ -26,7 +26,7 @@ export const StyledCardContainer = styled.div<
 `;
 
 export const StyledCardContainerMedia = styled.div<
-  Pick<CardProps, 'mediaInteractive' | 'layout' | 'overrides'>
+  Pick<CardProps, 'mediaInteractive' | 'layout' | 'overrides'> & HasHref
 >`
   box-sizing: border-box;
   display: block;
@@ -53,7 +53,8 @@ export const StyledCardContainerMedia = styled.div<
   }}
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
-  ${getStylePreset('card.mediaContainer', 'mediaContainer')}
+  ${({hasHref, ...props}) =>
+    filterInteractiveStates('mediaContainer', hasHref)(props)}
 `;
 
 export const StyledCardContainerTeaserAndActions = styled.div<
@@ -72,11 +73,12 @@ export const StyledCardContainerTeaserAndActions = styled.div<
 `;
 
 export const StyledCardContainerTeaser = styled.div<
-  Pick<CardProps, 'layout' | 'overrides'>
+  Pick<CardProps, 'layout' | 'overrides'> & HasHref
 >`
   box-sizing: border-box;
   ${({layout}) => isHorizontal(layout) && 'flex: 1;'}
-  ${getStylePreset('card.teaserContainer', 'teaserContainer')}
+  ${({hasHref, ...props}) =>
+    filterInteractiveStates('teaserContainer', hasHref)(props)}
   ${getSpacingInset('card.teaserContainer', 'teaserContainer')}
 
   a:not(.nk-card-link) {
@@ -111,12 +113,13 @@ export const StyledCardLink = styled.a<HeadlineOverrides>`
 `;
 
 export const StyledCardContainerActions = styled(Stack)<
-  Pick<CardProps, 'overrides'>
+  Pick<CardProps, 'overrides'> & HasHref
 >`
   height: auto;
   box-sizing: border-box;
   ${getSpacingInset('card.actionsContainer', 'actionsContainer')}
-  ${getStylePreset('card.actionsContainer', 'actionsContainer')}
+  ${({hasHref, ...props}) =>
+    filterInteractiveStates('actionsContainer', hasHref)(props)}
   min-height: ${getMinHeight('card.actionsContainer', 'actionsContainer')};
 
   position: relative;
