@@ -1398,9 +1398,6 @@ Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
         "color": "{{colors.inkInverse}}",
       },
-      "selected": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
     },
     "buttonSocialFacebook": Object {
       "active": Object {
@@ -1423,9 +1420,6 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
         "color": "{{colors.inkInverse}}",
-      },
-      "selected": Object {
-        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSocialLink": Object {
@@ -1450,9 +1444,6 @@ Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
         "color": "{{colors.inkInverse}}",
       },
-      "selected": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
     },
     "buttonSocialShare": Object {
       "active": Object {
@@ -1475,9 +1466,6 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
         "color": "{{colors.inkInverse}}",
-      },
-      "selected": Object {
-        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSocialTwitter": Object {
@@ -1502,9 +1490,6 @@ Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
         "color": "{{colors.inkInverse}}",
       },
-      "selected": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
     },
     "buttonSocialWhatsapp": Object {
       "active": Object {
@@ -1527,9 +1512,6 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
         "color": "{{colors.inkInverse}}",
-      },
-      "selected": Object {
-        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSolidInverse": Object {
@@ -1884,9 +1866,6 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
         "color": "{{colors.inkInverse}}",
-      },
-      "selected": Object {
-        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "iconButtonOutlinedInverse": Object {
@@ -2577,11 +2556,6 @@ Object {
       "hover": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
       },
-      "selected": Object {
-        "backgroundColor": "{{colors.interactiveSecondary040}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
     },
     "tagPrimary": Object {
       "active": Object {
@@ -2599,11 +2573,6 @@ Object {
       "hover": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
       },
-      "selected": Object {
-        "backgroundColor": "{{colors.interactiveSecondary040}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
     },
     "tagPrimaryInverse": Object {
       "active": Object {
@@ -2620,11 +2589,6 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
-      },
-      "selected": Object {
-        "backgroundColor": "{{colors.interactiveInverse030}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
       },
     },
     "textInput": Object {

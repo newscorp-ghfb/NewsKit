@@ -677,9 +677,6 @@ stylePresets.iconButtonMinimalSecondary = {
   active: {
     backgroundColor: '{{colors.interactiveSecondary020}}',
   },
-  selected: {
-    backgroundColor: '{{colors.transparent}}',
-  },
   disabled: {
     backgroundColor: '{{colors.transparent}}',
     color: '{{colors.inkNonEssential}}',
@@ -859,11 +856,6 @@ stylePresets.tagPrimary = {
   active: {
     borderWidth: '{{borders.borderWidth010}}',
   },
-  selected: {
-    color: '{{colors.inkInverse}}',
-    iconColor: '{{colors.inkInverse}}',
-    backgroundColor: '{{colors.interactiveSecondary040}}',
-  },
 };
 stylePresets.tagPrimaryInverse = {
   base: {
@@ -880,11 +872,6 @@ stylePresets.tagPrimaryInverse = {
   },
   active: {
     backgroundColor: '{{colors.interactiveInverse020}}',
-  },
-  selected: {
-    backgroundColor: '{{colors.interactiveInverse030}}',
-    color: '{{colors.inkBase}}',
-    iconColor: '{{colors.inkBase}}',
   },
 };
 
