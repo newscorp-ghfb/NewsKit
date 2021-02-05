@@ -9,6 +9,7 @@ import {
   getFontsFromTheme,
 } from '../style';
 import {getFontSizing} from '../font-sizing';
+import {isValidUnit} from '../style/utils';
 
 jest.mock('../font-sizing');
 
@@ -154,7 +155,6 @@ describe('Style helpers', () => {
     const declaration = getSizingFromTheme<{sizing?: string; theme: any}>(
       'scale100' as any,
       'sizing',
-      true,
     )(props);
     expect(declaration).toEqual('100%');
   });
@@ -204,6 +204,17 @@ describe('Style helpers', () => {
       'color',
     )(props);
     expect(declaration).toEqual('secondary_color');
+  });
+
+  test('getColorFromTheme("cssValue")(theme) returns "cssValue"', () => {
+    ['#000', 'rgba(0,0,0,0)', 'red'].forEach(color => {
+      const declaration = getColorFromTheme<{color?: string; theme: any}>(
+        color,
+      )({
+        theme: {colors: {}},
+      });
+      expect(declaration).toEqual(color);
+    });
   });
 
   test('getBorderFromTheme("radius100")({theme}) returns "radius100_border"', () => {
@@ -424,5 +435,12 @@ describe('Style helpers', () => {
       'fontPrimary' as any,
     )(props);
     expect(declaration).toEqual('system-ui, "Open Sans", sans-serif');
+  });
+
+  test('isValidUnit returns correctly with falsy inputs', () => {
+    expect(isValidUnit('key', NaN)).toBeFalsy();
+    expect(isValidUnit('key', [])).toBeFalsy();
+    expect(isValidUnit('key', undefined)).toBeFalsy();
+    expect(isValidUnit('key', '10px')).toBeTruthy();
   });
 });

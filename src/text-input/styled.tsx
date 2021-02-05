@@ -19,7 +19,7 @@ export const StyledTextInputContainer = styled.div<TextInputProps>`
   ${({theme, overrides}) => {
     const getSizing = (tokenName: string) => {
       const token = getToken({theme, overrides}, '', '', tokenName);
-      return getSizingFromTheme(token, undefined, true)({
+      return getSizingFromTheme(token, undefined)({
         theme,
       });
     };

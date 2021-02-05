@@ -14,10 +14,10 @@ export const IE11FixContainer = styled.div<BaseFlagProps<BaseFlagOverrides>>`
   flex-direction: column;
   ${({theme, overrides}) => {
     const widthToken = getToken({theme, overrides}, '', '', 'width');
-    const width = getSizingFromTheme(widthToken, undefined, true)({theme});
+    const width = getSizingFromTheme(widthToken, undefined)({theme});
 
     const heightToken = getToken({theme, overrides}, '', '', 'height');
-    const height = getSizingFromTheme(heightToken, undefined, true)({theme});
+    const height = getSizingFromTheme(heightToken, undefined)({theme});
 
     return {
       width,
@@ -39,7 +39,7 @@ export const StyledBaseFlag = styled.div<
   ${({theme, overrides}) => {
     const getSizing = (tokenName: string) => {
       const token = getToken({theme, overrides}, '', '', tokenName);
-      return getSizingFromTheme(token, undefined, true)({
+      return getSizingFromTheme(token, undefined)({
         theme,
       });
     };

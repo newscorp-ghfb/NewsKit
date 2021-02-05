@@ -7,6 +7,12 @@ import {
   getSpacingInlineHorizontal,
   getSpacingInlineVertical,
   getStylePreset,
+  getSize,
+  getSpace,
+  getWeight,
+  getMinWidth,
+  getHeight,
+  getMinHeight,
 } from '../style';
 import {createTheme} from '../../theme';
 
@@ -74,6 +80,48 @@ describe('get component defaults functions', () => {
           spaceInset: {
             xs: 'theDefaultToken',
             md: 'theOverrideToken',
+          },
+        },
+        basicCCSUnitsComponent: {
+          spaceInset: '10px',
+          marginPreset: '11px',
+          spacePresets: '12px',
+          spaceInline: '13px',
+          spaceStack: '14px',
+          size: '15px',
+          space: '10vw',
+          weight: '4px',
+          minWidth: '100%',
+          height: '90vh',
+          minHeight: '10cm',
+          sizing: '10vh',
+        },
+        responsiveCCSUnitsComponent: {
+          spaceInset: {
+            xs: '10px',
+            md: '20px',
+          },
+          spaceInline: {
+            xs: '13px',
+            md: '23px',
+          },
+          spaceStack: {
+            xs: '14px',
+            md: '24px',
+          },
+        },
+        invalidResponsiveCCSUnitsComponent: {
+          spaceInset: {
+            xs: '10',
+            md: '20',
+          },
+          spaceInline: {
+            xs: 'no-valid-token',
+            md: 'not-valid-unit',
+          },
+          spaceStack: {
+            xs: '10pz',
+            md: '24md',
           },
         },
       },
@@ -406,4 +454,97 @@ describe('get component defaults functions', () => {
       });
     },
   );
+
+  describe('Component defaults with CSS Units', () => {
+    const props = {
+      theme,
+    };
+
+    const fns = [
+      {fn: getSize as any, fnName: 'getSize', path: 'size'},
+      {fn: getSpace as any, fnName: 'getSpace', path: 'space'},
+      {fn: getWeight as any, fnName: 'getWeight', path: 'weight'},
+      {fn: getMinWidth as any, fnName: 'getMinWidth', path: 'minWidth'},
+      {fn: getHeight as any, fnName: 'getHeight', path: 'height'},
+      {fn: getMinHeight as any, fnName: 'getMinHeight', path: 'minHeight'},
+      {fn: getSizing as any, fnName: 'getSizing', path: 'sizing'},
+      {
+        fn: getSpacingInset as any,
+        fnName: 'getSpacingInset',
+        path: 'spaceInset',
+        expectedResultFormatter: (expected: any) => ({padding: expected}),
+        responsive: true,
+      },
+      {
+        fn: getSpacingStackVertical as any,
+        fnName: 'getSpacingStackVertical',
+        path: 'spaceStack',
+        expectedResultFormatter: (expected: any) => ({
+          marginRight: expected,
+        }),
+        responsive: true,
+      },
+      {
+        fn: getSpacingStackHorizontal as any,
+        fnName: 'getSpacingStackHorizontal',
+        path: 'spaceStack',
+        expectedResultFormatter: (expected: any) => ({
+          marginBottom: expected,
+        }),
+        responsive: true,
+      },
+      {
+        fn: getSpacingInlineVertical as any,
+        fnName: 'getSpacingInlineVertical',
+        path: 'spaceInline',
+        expectedResultFormatter: (expected: any) => ({
+          marginBottom: expected,
+        }),
+        responsive: true,
+      },
+      {
+        fn: getSpacingInlineHorizontal as any,
+        fnName: 'getSpacingInlineHorizontal',
+        path: 'spaceInline',
+        expectedResultFormatter: (expected: any) => ({
+          marginRight: expected,
+        }),
+        responsive: true,
+      },
+    ];
+
+    const identify = (id: string) => id;
+
+    describe('basic CSS Units', () => {
+      fns.forEach(({fnName, fn, path, expectedResultFormatter = identify}) => {
+        test(fnName, () => {
+          expect(fn('basicCCSUnitsComponent')(props)).toEqual(
+            expectedResultFormatter(
+              theme.componentDefaults.basicCCSUnitsComponent[path],
+            ),
+          );
+        });
+      });
+    });
+
+    describe('responsive CSS Units', () => {
+      fns
+        .filter(({responsive}) => responsive)
+        .forEach(({fnName, fn}) => {
+          test(fnName, () => {
+            expect(fn('responsiveCCSUnitsComponent')(props)).toMatchSnapshot();
+          });
+        });
+    });
+
+    describe('invalid responsive CSS Units', () => {
+      fns
+        .filter(({responsive}) => responsive)
+        .forEach(({fnName, fn}) => {
+          test(fnName, () => {
+            expect(fn('invalidResponsiveCCSUnitsComponent')(props)).toEqual({});
+          });
+        });
+    });
+  });
 });

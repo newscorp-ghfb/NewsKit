@@ -71,7 +71,7 @@ export const getTabBarIndicatorStyle = (
     'tabBarIndicator',
     'weight',
   );
-  const weight = getBorderFromTheme(weightToken, undefined, true)({theme});
+  const weight = getBorderFromTheme(weightToken, undefined)({theme});
 
   const motionDurationToken = getToken(
     {theme, overrides},
@@ -80,11 +80,9 @@ export const getTabBarIndicatorStyle = (
     'motionDuration',
   );
 
-  const motionDuration = getMotionFromTheme(
-    motionDurationToken,
-    undefined,
-    true,
-  )({theme});
+  const motionDuration = getMotionFromTheme(motionDurationToken, undefined)({
+    theme,
+  });
 
   const motionTimingToken = getToken(
     {theme, overrides},
@@ -92,7 +90,7 @@ export const getTabBarIndicatorStyle = (
     'tabBarIndicator',
     'motionTiming',
   );
-  const motionTiming = getMotionFromTheme(motionTimingToken, undefined, true)({
+  const motionTiming = getMotionFromTheme(motionTimingToken, undefined)({
     theme,
   });
 

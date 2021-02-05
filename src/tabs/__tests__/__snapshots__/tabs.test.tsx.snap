@@ -581,14 +581,6 @@ exports[`Tabs FittedEqual renders tabs vertical FittedEqual 1`] = `
   flex-flow: row;
 }
 
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 8px;
-}
-
 .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -804,6 +796,15 @@ exports[`Tabs FittedEqual renders tabs vertical FittedEqual 1`] = `
 
 .emotion-19:disabled {
   background-color: #c0c0c0;
+}
+
+.emotion-21 {
+  height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 .emotion-5 {
@@ -1525,14 +1526,6 @@ exports[`Tabs FittedFlex renders tabs vertical FittedFlex 1`] = `
   flex-flow: row;
 }
 
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 8px;
-}
-
 .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1748,6 +1741,15 @@ exports[`Tabs FittedFlex renders tabs vertical FittedFlex 1`] = `
 
 .emotion-19:disabled {
   background-color: #c0c0c0;
+}
+
+.emotion-21 {
+  height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 .emotion-5 {
@@ -1998,14 +2000,6 @@ exports[`Tabs LeftStacked renders Tabs vertical leftstacked 1`] = `
   flex-flow: row;
 }
 
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 8px;
-}
-
 .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2236,6 +2230,15 @@ exports[`Tabs LeftStacked renders Tabs vertical leftstacked 1`] = `
 
 .emotion-19:disabled {
   background-color: #c0c0c0;
+}
+
+.emotion-21 {
+  height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 <div

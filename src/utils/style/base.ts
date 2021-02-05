@@ -4,10 +4,7 @@ import {filterObject} from '../filter-object';
 import {getToken} from '../get-token';
 import {ThemeProp} from '../style-types';
 import {MQ} from './types';
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const isValid = (value: any): boolean =>
-  !(Number.isNaN(value) || Array.isArray(value) || typeof value === 'object');
+import {isNonThemeValueAllowed, isValidUnit} from './utils';
 
 export const getDefaultedValue = <
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -32,16 +29,20 @@ export const getValueFromTheme = <ThemeToken extends string>(
 ) => <Props extends ThemeProp>(
   defaultToken?: MQ<ThemeToken>,
   customProp?: Exclude<keyof Props, 'theme'>,
-  allowNonThemeValue?: boolean,
 ) => (props: Props) => {
+  const canHaveNonThemeValue = isNonThemeValueAllowed(themeKey);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const section = props.theme[themeKey] as any;
   const token = (customProp && props[customProp]) || defaultToken;
 
-  return (
-    (section && section[token]) ||
-    (allowNonThemeValue && isValid(token) ? token : '')
-  );
+  if (section && section[token]) {
+    return section[token];
+  }
+  if (canHaveNonThemeValue && isValidUnit(themeKey, token)) {
+    return token;
+  }
+
+  return '';
 };
 
 export const getResponsiveValueFromTheme = <ThemeToken extends string>(
@@ -53,6 +54,7 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   const section = theme[themeKey] as Record<ThemeToken, unknown>;
   const propKeys = (customProp && props[customProp]) || defaultToken;
   const {breakpoints} = theme;
+  const canHaveNonThemeValue = isNonThemeValueAllowed(themeKey);
   if (isResponsive(propKeys, breakpoints)) {
     // We have a breakpoints object...
 
@@ -72,23 +74,39 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
         // Exclude invalid breakpoints and theme section keys
         ([breakpointKey, presetKey]) =>
           presetKey &&
-          section[presetKey] &&
+          (section[presetKey] ||
+            (canHaveNonThemeValue && isValidUnit(themeKey, presetKey))) &&
           breakpointKeys.includes(breakpointKey),
       )
       .reduce(
         (acc, [key, presetKey], index, arr) => {
-          const preset = section[presetKey];
+          const preset =
+            section[presetKey] ||
+            /* istanbul ignore next */
+            (canHaveNonThemeValue && isValidUnit(themeKey, presetKey)
+              ? presetKey
+              : '');
           // Get next key to set the max. This stops styles overlapping when they
           // shouldn't by explicitly setting them for the range they need to apply on.
           const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
-          const mediaQuery = getMediaQueryFromTheme(key, nextKey)({theme});
+          const mediaQuery = getMediaQueryFromTheme(key, nextKey)({
+            theme,
+          });
           acc[mediaQuery] = preset;
           return acc;
         },
         {} as Record<string, unknown>,
       );
+
     return Object.entries(cssObject);
   }
 
-  return (propKeys && section[propKeys as ThemeToken]) || '';
+  if (propKeys && section[propKeys as ThemeToken]) {
+    return section[propKeys as ThemeToken];
+  }
+  if (canHaveNonThemeValue && propKeys && isValidUnit(themeKey, propKeys)) {
+    return propKeys;
+  }
+
+  return '';
 };

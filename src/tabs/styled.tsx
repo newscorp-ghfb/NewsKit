@@ -45,6 +45,7 @@ export const StyledTabGroup = styled.div<
 export const StyledTabBar = styled.div<TabBarProps>`
   /* By default, the height, it is being set to 100% by the Stack */
   /* it works with FittedFlex and FittedEqual */
+
   height: ${getHeight(undefined, 'tabBar')};
   display: flex;
   ${({vertical}) =>

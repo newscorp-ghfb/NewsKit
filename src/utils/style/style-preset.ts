@@ -135,6 +135,7 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
     defaultToken,
     customProp,
   )(props) as Partial<StylePreset> | Array<[string, StylePreset]>;
+
   if (Array.isArray(stylePreset)) {
     return stylePreset.reduce(
       (acc, [mq, preset]) => {

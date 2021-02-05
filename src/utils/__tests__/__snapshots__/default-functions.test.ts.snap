@@ -1,5 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`get component defaults functions Component defaults with CSS Units responsive CSS Units getSpacingInlineHorizontal 1`] = `
+Object {
+  "@media screen and (max-width: 767px)": Object {
+    "marginRight": "13px",
+  },
+  "@media screen and (min-width: 768px)": Object {
+    "marginRight": "23px",
+  },
+}
+`;
+
+exports[`get component defaults functions Component defaults with CSS Units responsive CSS Units getSpacingInlineVertical 1`] = `
+Object {
+  "@media screen and (max-width: 767px)": Object {
+    "marginBottom": "13px",
+  },
+  "@media screen and (min-width: 768px)": Object {
+    "marginBottom": "23px",
+  },
+}
+`;
+
+exports[`get component defaults functions Component defaults with CSS Units responsive CSS Units getSpacingInset 1`] = `
+Object {
+  "@media screen and (max-width: 767px)": Object {
+    "padding": "10px",
+  },
+  "@media screen and (min-width: 768px)": Object {
+    "padding": "20px",
+  },
+}
+`;
+
+exports[`get component defaults functions Component defaults with CSS Units responsive CSS Units getSpacingStackHorizontal 1`] = `
+Object {
+  "@media screen and (max-width: 767px)": Object {
+    "marginBottom": "14px",
+  },
+  "@media screen and (min-width: 768px)": Object {
+    "marginBottom": "24px",
+  },
+}
+`;
+
+exports[`get component defaults functions Component defaults with CSS Units responsive CSS Units getSpacingStackVertical 1`] = `
+Object {
+  "@media screen and (max-width: 767px)": Object {
+    "marginRight": "14px",
+  },
+  "@media screen and (min-width: 768px)": Object {
+    "marginRight": "24px",
+  },
+}
+`;
+
 exports[`get component defaults functions getSpacingInlineHorizontal for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1024px)": Object {
