@@ -7,6 +7,7 @@ import {Stack, StackDistribution, Flow} from '../../stack';
 import {StackChild} from '../../stack-child';
 import {useTheme} from '../../theme';
 import {getToken} from '../../utils/get-token';
+import {ButtonOverrides} from '../../button';
 
 export interface TrackControlProps {
   onNextTrack?: () => void;
@@ -17,24 +18,12 @@ export interface TrackControlProps {
 
 export interface ControlsOverrideProps {
   space?: MQ<string>;
-  previousButton?: {
-    stylePreset?: MQ<string>;
-  };
-  replayButton?: {
-    stylePreset?: MQ<string>;
-  };
-  playPauseButton?: {
-    stylePreset?: MQ<string>;
-  };
-  forwardButton?: {
-    stylePreset?: MQ<string>;
-  };
-  nextButton?: {
-    stylePreset?: MQ<string>;
-  };
-  popoutButton?: {
-    stylePreset?: MQ<string>;
-  };
+  previousButton?: ButtonOverrides;
+  replayButton?: ButtonOverrides;
+  playPauseButton?: ButtonOverrides;
+  forwardButton?: ButtonOverrides;
+  nextButton?: ButtonOverrides;
+  popoutButton?: ButtonOverrides;
 }
 
 export interface ControlPanelProps extends TrackControlProps {

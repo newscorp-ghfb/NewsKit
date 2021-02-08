@@ -1,12 +1,12 @@
 import React from 'react';
 import {IconFilledSkipNext, IconFilledSkipPrevious} from '../../icons';
-import {ButtonSize, ButtonProps} from '../../button';
+import {ButtonSize, ButtonOverrides} from '../../button';
 import {IconButton} from '../../icon-button';
 
 export interface SkipButtonProps {
   onClick: () => void;
   disabled?: boolean;
-  overrides?: ButtonProps['overrides'];
+  overrides?: ButtonOverrides;
 }
 
 export const SkipNextButton: React.FC<SkipButtonProps> = React.memo(props => (

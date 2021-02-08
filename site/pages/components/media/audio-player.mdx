@@ -105,43 +105,31 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
         presets.
       </div>
       <Prop name="space" type="MQ<string>">
-        Setting the space between the control buttons.
+        Sets the space between the control buttons.
       </Prop>
-      <Prop name="previousButton" type="object">
-        <Prop name="stylePreset" type="MQ<string>">
-          Preset for previous track button.
-        </Prop>
+      <Prop name="previousButton" type="ButtonOverrides">
+        Overrides for previous track button. See all availble options in the <a href="/components/action/button"> button docs</a>.
       </Prop>
-      <Prop name="replayButton" type="object">
-        <Prop name="stylePreset" type="MQ<string>">
-          Preset for skip replay button.
-        </Prop>
+      <Prop name="replayButton" type="ButtonOverrides">
+        Overrides for skip replay button. See all availble options in the <a href="/components/action/button"> button docs</a>.
       </Prop>
-      <Prop name="playPauseButton" type="object">
-        <Prop name="stylePreset" type="MQ<string>">
-          Preset for play / pause button.
-        </Prop>
+      <Prop name="playPauseButton" type="ButtonOverrides">
+        Overrides for play / pause button. See all availble options in the <a href="/components/action/button"> button docs</a>.
       </Prop>
-      <Prop name="forwardButton" type="object">
-        <Prop name="stylePreset" type="MQ<string>">
-          Preset for skip forward button.
-        </Prop>
+      <Prop name="forwardButton" type="ButtonOverrides">
+        Overrides for skip forward button. See all availble options in the <a href="/components/action/button"> button docs</a>.
       </Prop>
-      <Prop name="nextButton" type="object">
-        <Prop name="stylePreset" type="MQ<string>">
-          Preset for next track button.
-        </Prop>
+      <Prop name="nextButton" type="ButtonOverrides">
+        Overrides for next track button. See all availble options in the <a href="/components/action/button"> button docs</a>.
       </Prop>
-      <Prop name="popoutButton" type="object">
-        <Prop name="stylePreset" type="MQ<string>">
-          Preset for popout button.
-        </Prop>
+      <Prop name="popoutButton" type="ButtonOverrides">
+        Overrides for popout button. See all availble options in the <a href="/components/action/button"> button docs</a>.
       </Prop>
     </Prop>
     <Prop name="volumeControl" type="VolumeControlOverrideProps">
       If provided overrides the styles of the slider that builds the
-      VolumeControl. The volume control overrides structure can be found in the{' '}
-      <a href="./volume-control">volume control documentation page</a>.
+      VolumeControl. The volume control overrides structure can be found in the {' '}
+      <a href="/components/media/volume-control">volume control documentation page</a>.
     </Prop>
     <CodeFromDefaultPresets componentName="audioPlayer" />
   </Prop>

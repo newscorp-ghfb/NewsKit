@@ -53,6 +53,11 @@ const myCustomTheme = createTheme({
           borderStyle: 'none',
         },
       },
+      customAudioPlayPauseButtonLoading: {
+        base: {
+          iconColor: '#fff',
+        },
+      },
       customAudioForwardButton: {
         base: {
           backgroundColor: 'transparent',
@@ -186,6 +191,9 @@ export default {
                     },
                     playPauseButton: {
                       stylePreset: 'customAudioPlayPauseButton',
+                      loadingIndicator: {
+                        stylePreset: 'customAudioPlayPauseButtonLoading',
+                      },
                     },
                     forwardButton: {
                       stylePreset: 'customAudioForwardButton',
