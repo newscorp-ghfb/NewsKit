@@ -131,8 +131,8 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #535353;
-  fill: #535353;
+  color: #808E99;
+  fill: #808E99;
   vertical-align: unset;
   display: inline-block;
 }
@@ -147,10 +147,10 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
-  font-weight: 600;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -163,7 +163,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.2055555555555556em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-4::after {
@@ -171,25 +171,25 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -200,7 +200,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-6::before {
@@ -208,7 +208,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-6::after {
@@ -216,7 +216,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4em;
 }
 
 <div
@@ -785,8 +785,8 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #535353;
-  fill: #535353;
+  color: #808E99;
+  fill: #808E99;
   vertical-align: unset;
   display: inline-block;
 }
@@ -801,10 +801,10 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 }
 
 .emotion-4 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
-  font-weight: 600;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -817,7 +817,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.2055555555555556em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-4::after {
@@ -825,25 +825,25 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -854,7 +854,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-6::before {
@@ -862,7 +862,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-6::after {
@@ -870,15 +870,15 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4em;
 }
 
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a782a;
-  fill: #0a782a;
+  color: #148F39;
+  fill: #148F39;
   vertical-align: unset;
   display: inline-block;
 }
@@ -892,8 +892,8 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #d20600;
-  fill: #d20600;
+  color: #D23F2D;
+  fill: #D23F2D;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1469,8 +1469,8 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #535353;
-  fill: #535353;
+  color: #808E99;
+  fill: #808E99;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1485,10 +1485,10 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 }
 
 .emotion-4 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
-  font-weight: 600;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1501,7 +1501,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.2055555555555556em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-4::after {
@@ -1509,25 +1509,25 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -1538,7 +1538,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-6::before {
@@ -1546,7 +1546,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-6::after {
@@ -1554,7 +1554,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4em;
 }
 
 <div
@@ -2123,8 +2123,8 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #535353;
-  fill: #535353;
+  color: #808E99;
+  fill: #808E99;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2139,10 +2139,10 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 }
 
 .emotion-4 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
-  font-weight: 600;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -2155,7 +2155,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.2055555555555556em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-4::after {
@@ -2163,25 +2163,25 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -2192,7 +2192,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-6::before {
@@ -2200,7 +2200,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-6::after {
@@ -2208,15 +2208,15 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4em;
 }
 
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #d20600;
-  fill: #d20600;
+  color: #D23F2D;
+  fill: #D23F2D;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2792,8 +2792,8 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #535353;
-  fill: #535353;
+  color: #808E99;
+  fill: #808E99;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2808,10 +2808,10 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 }
 
 .emotion-4 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
-  font-weight: 600;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -2824,7 +2824,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.2055555555555556em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-4::after {
@@ -2832,25 +2832,25 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -2861,7 +2861,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-6::before {
@@ -2869,7 +2869,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-6::after {
@@ -2877,15 +2877,15 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4em;
 }
 
 .emotion-0 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a782a;
-  fill: #0a782a;
+  color: #148F39;
+  fill: #148F39;
   vertical-align: unset;
   display: inline-block;
 }

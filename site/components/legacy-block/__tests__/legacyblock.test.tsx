@@ -1,4 +1,4 @@
-import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
+import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {LegacyBlock} from '..';
 import {LegacyBlockProps} from '../types';
 

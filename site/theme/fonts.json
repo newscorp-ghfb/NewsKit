@@ -1,0 +1,50 @@
+{
+	"fontWeight010": 400,
+	"fontWeight020": 500,
+	"fontWeight030": 600,
+	"fontWeight040": 700,
+
+	"fontFamily010": {
+		"fontFamily": "'Poppins', sans-serif",
+		"cropConfig": {
+				"top": 4,
+				"bottom": 12
+			},
+			"cropAdjustments": {
+				"{{fonts.fontSize010}}": {
+				  "top": 1,
+				  "bottom": -0.5
+				},
+				"{{fonts.fontSize020}}": {
+				  "top": 1.2
+				},
+				"{{fonts.fontSize070}}": {
+				  "top": 1,
+				  "bottom": 1
+				}
+			  }
+	},
+
+	"fontFamily020": {
+		"fontFamily": "'DM Sans', sans-serif",
+		"cropConfig": {
+			"top": 10,
+			"bottom": 8
+		},
+		"cropAdjustments": ""
+	},
+
+	"fontLetterSpacing010": 0,
+	"fontSize060": "24px",
+	"fontSize070": "28px",
+	"fontSize080": "32px",
+	"fontSize090": "40px",
+	"fontSize100": "48px",
+	"fontSize110": "60px",
+
+	"fontLineHeight010": 1.2,
+	"fontLineHeight020": 1.3333333333333333,
+	"fontLineHeight030": 1.4,
+	"fontLineHeight050": 1.6,
+	"fontLineHeight150": 1.75
+}

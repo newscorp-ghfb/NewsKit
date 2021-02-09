@@ -11,7 +11,7 @@ import {
 import App, {AppContext} from 'next/app';
 import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
-import {newsKitLight, newsKitDark} from '../doc-theme';
+import {docsThemeLight, docsThemeDark} from '../theme/doc-theme';
 
 const DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY_NAME = 'newskit-docs-theme';
@@ -34,7 +34,7 @@ export default class MyApp extends App<Props, State> {
 
     this.state = {
       themeMode: 'light',
-      theme: newsKitLight,
+      theme: docsThemeLight,
     } as State;
 
     this.mediaQueryListener = this.mediaQueryListener.bind(this);
@@ -102,7 +102,7 @@ export default class MyApp extends App<Props, State> {
 
     this.setState({
       themeMode,
-      theme: themeMode === 'dark' ? newsKitDark : newsKitLight,
+      theme: themeMode === 'dark' ? docsThemeDark : docsThemeLight,
     });
   }
 
@@ -135,42 +135,61 @@ export default class MyApp extends App<Props, State> {
             <Global
               styles={css`
                 @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-regular-webfont.woff2')
+                  font-family: 'DM Sans';
+                  src: url('/static/fonts/dmsans-regular-webfont.woff2')
                       format('woff2'),
-                    url('/static/fonts/notosans-regular-webfont.woff')
+                    url('/static/fonts/dmsans-regular-webfont.woff')
                       format('woff');
                   font-style: normal;
                   font-weight: 400;
                   font-display: swap;
                 }
                 @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-italic-webfont.woff2')
+                  font-family: 'DM Sans';
+                  src: url('/static/fonts/dmsans-italic-webfont.woff2')
                       format('woff2'),
-                    url('/static/fonts/notosans-italic-webfont.woff')
+                    url('/static/fonts/dmsans-italic-webfont.woff')
                       format('woff');
                   font-style: italic;
                   font-weight: 400;
                   font-display: swap;
                 }
                 @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-medium-webfont.woff2')
+                  font-family: 'DM Sans';
+                  src: url('/static/fonts/dmsans-medium-webfont.woff2')
                       format('woff2'),
-                    url('/static/fonts/notosans-medium-webfont.woff')
+                    url('/static/fonts/dmsans-medium-webfont.woff')
                       format('woff');
                   font-style: normal;
                   font-weight: 500;
                   font-display: swap;
                 }
                 @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-bold-webfont.woff2')
+                  font-family: 'DM Sans';
+                  src: url('/static/fonts/dmsans-mediumitalic-webfont.woff2')
                       format('woff2'),
-                    url('/static/fonts/notosans-bold-webfont.woff')
+                    url('/static/fonts/dmsans-mediumitalic-webfont.woff')
                       format('woff');
+                  font-style: italic;
+                  font-weight: 500;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'DM Sans';
+                  src: url('/static/fonts/dmsans-bold-webfont.woff2')
+                      format('woff2'),
+                    url('/static/fonts/dmsans-bold-webfont.woff') format('woff');
                   font-style: normal;
+                  font-weight: 700;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'DM Sans';
+                  src: url('/static/fonts/dmsans-bolditalic-webfont.woff2')
+                      format('woff2'),
+                    url('/static/fonts/dmsans-bolditalic-webfont.woff')
+                      format('woff');
+                  font-style: italic;
                   font-weight: 700;
                   font-display: swap;
                 }
@@ -286,7 +305,7 @@ export default class MyApp extends App<Props, State> {
                 }
 
                 @font-face {
-                  font-family: 'poppinssemibold_italic';
+                  font-family: 'Poppins';
                   src: url('/static/fonts/poppins-semibolditalic-webfont.woff2')
                       format('woff2'),
                     url('/static/fonts/poppins-semibolditalic-webfont.woff')

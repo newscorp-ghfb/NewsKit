@@ -57,19 +57,19 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a68c1;
+  color: #577FFB;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #577FFB;
 }
 
 @media screen {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 18px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -81,7 +81,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.19166666666666665em;
   }
 
   .emotion-0::after {
@@ -89,26 +89,26 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.44166666666666665em;
   }
 }
 
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-2 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 @media screen and (max-width:767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -120,7 +120,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.125em;
   }
 
   .emotion-2::after {
@@ -128,16 +128,16 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.375em;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 700;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -149,7 +149,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.10833333333333339em;
   }
 
   .emotion-2::after {
@@ -157,16 +157,16 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.3583333333333334em;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 700;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -178,7 +178,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.125em;
   }
 
   .emotion-2::after {
@@ -186,7 +186,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.375em;
   }
 }
 
@@ -267,19 +267,19 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
+  color: #555E74;
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 @media screen and (max-width:767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 500;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -291,7 +291,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.525em;
   }
 
   .emotion-0::after {
@@ -299,16 +299,16 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.775em;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -320,7 +320,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.32500000000000007em;
   }
 
   .emotion-0::after {
@@ -328,7 +328,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.5750000000000001em;
   }
 }
 
@@ -402,17 +402,17 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 .emotion-4 {
-  border-radius: 0;
+  border-radius: 8px;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
+  border-radius: 20rem;
+  background-color: #F4F4F4;
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
+  fill: #BBC3C9;
 }
 
 .emotion-2 {
@@ -447,7 +447,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }

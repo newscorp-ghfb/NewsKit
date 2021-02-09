@@ -37,7 +37,6 @@ export const StyledCardContainerMedia = styled.div<
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     min-height: 1px;
   }
- 
 
   ${({layout}) => {
     if (isHorizontal(layout) && isReverse(layout))
@@ -99,7 +98,6 @@ export const StyledCardLink = styled.a<HeadlineOverrides>`
     nestedCssSelector: '.nk-headline-heading',
   })}
 
-  
   :before {
     content: '';
     top: 0;

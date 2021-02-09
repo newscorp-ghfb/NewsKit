@@ -27,11 +27,7 @@ export interface MediaItem {
   label: string;
   title?: string;
   description: string;
-  media?: {
-    src: string;
-    alt: string;
-    overrides?: ImageProps['overrides'];
-  };
+  media?: ImageProps;
   href?: string;
   styles?: {
     card?: CardOverridesProps;

@@ -218,11 +218,11 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Source Serif Pro",serif;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -230,7 +230,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-0::before {
@@ -238,7 +238,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.22499999999999998em;
 }
 
 .emotion-0::after {
@@ -246,7 +246,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-3 {
@@ -256,10 +256,10 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 18px;
-  line-height: 1.5555555555555556;
+  line-height: 1.3333333333333333;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -268,7 +268,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 .emotion-2 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-2::before {
@@ -276,7 +276,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.37916666666666665em;
 }
 
 .emotion-2::after {
@@ -284,7 +284,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.31666666666666665em;
 }
 
 .emotion-14 {
@@ -298,10 +298,15 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #243853;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -314,9 +319,14 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 .emotion-12 {
-  font-family: "Noto Sans",sans-serif;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -548,11 +558,11 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Source Serif Pro",serif;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -560,7 +570,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-0::before {
@@ -568,7 +578,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.22499999999999998em;
 }
 
 .emotion-0::after {
@@ -576,7 +586,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-3 {
@@ -586,10 +596,10 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 18px;
-  line-height: 1.5555555555555556;
+  line-height: 1.3333333333333333;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -598,7 +608,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 .emotion-2 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-2::before {
@@ -606,7 +616,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.37916666666666665em;
 }
 
 .emotion-2::after {
@@ -614,7 +624,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.31666666666666665em;
 }
 
 .emotion-17 {
@@ -628,10 +638,15 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #243853;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -644,9 +659,14 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 .emotion-15 {
-  font-family: "Noto Sans",sans-serif;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -692,11 +712,18 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  color: #FFFFFF;
+  background-color: #AEBFFF;
+  border-radius: 20rem;
 }
 
 .emotion-10 svg {
   width: 16px;
   height: 16px;
+}
+
+.emotion-10 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-9 {
@@ -736,10 +763,10 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 .emotion-7 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -751,7 +778,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-7::after {
@@ -759,7 +786,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.44166666666666665em;
 }
 
 <div
@@ -993,11 +1020,11 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Source Serif Pro",serif;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1005,7 +1032,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-0::before {
@@ -1013,7 +1040,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.22499999999999998em;
 }
 
 .emotion-0::after {
@@ -1021,7 +1048,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-3 {
@@ -1031,10 +1058,10 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 18px;
-  line-height: 1.5555555555555556;
+  line-height: 1.3333333333333333;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -1043,7 +1070,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 .emotion-2 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-2::before {
@@ -1051,7 +1078,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.37916666666666665em;
 }
 
 .emotion-2::after {
@@ -1059,7 +1086,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.31666666666666665em;
 }
 
 .emotion-20 {
@@ -1073,10 +1100,15 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #243853;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1089,9 +1121,14 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 .emotion-18 {
-  font-family: "Noto Sans",sans-serif;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -1137,11 +1174,18 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  color: #FFFFFF;
+  background-color: #AEBFFF;
+  border-radius: 20rem;
 }
 
 .emotion-9 svg {
   width: 16px;
   height: 16px;
+}
+
+.emotion-9 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-8 {
@@ -1181,10 +1225,10 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1196,7 +1240,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-6::after {
@@ -1204,7 +1248,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.44166666666666665em;
 }
 
 <div

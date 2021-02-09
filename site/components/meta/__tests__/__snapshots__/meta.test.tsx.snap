@@ -180,10 +180,10 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -196,7 +196,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.3027777777777778em;
 }
 
 .emotion-1::after {
@@ -204,18 +204,18 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.5527777777777778em;
 }
 
 .emotion-0 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-7 {
@@ -252,11 +252,18 @@ exports[`Meta renders with mandatory props 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  color: #FFFFFF;
+  background-color: #0A782A;
+  border-radius: 20rem;
 }
 
 .emotion-6 svg {
   width: 16px;
   height: 16px;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -296,10 +303,10 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -311,7 +318,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.3027777777777778em;
 }
 
 .emotion-3::after {
@@ -319,7 +326,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.5527777777777778em;
 }
 
 .emotion-12 {
@@ -342,7 +349,7 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-11 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #E4E4E4;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -395,35 +402,35 @@ exports[`Meta renders with mandatory props 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
+  color: #577FFB;
 }
 
 .emotion-22 svg {
-  fill: #0a68c1;
+  fill: #577FFB;
 }
 
 .emotion-22:hover:not(:disabled) {
-  color: #02509b;
+  color: #3358CC;
 }
 
 .emotion-22:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
 }
 
 .emotion-22:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
 }
 
 .emotion-22:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-22:visited:not(:disabled) {
-  color: #7547a3;
+  color: #503B8C;
 }
 
 .emotion-22:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #503B8C;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -435,7 +442,7 @@ exports[`Meta renders with mandatory props 1`] = `
 .emotion-16 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
@@ -452,7 +459,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.4902777777777778em;
 }
 
 .emotion-16::after {
@@ -460,7 +467,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.4277777777777778em;
 }
 
 .emotion-35 {
@@ -526,10 +533,10 @@ exports[`Meta renders with mandatory props 1`] = `
   overflow: hidden;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #555E74;
   border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
+  border-radius: 20rem;
+  color: #555E74;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -545,26 +552,26 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-32 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-32:hover:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #2e2e2e;
+  background-color: #E4E4E4;
+  border-color: #243853;
 }
 
 .emotion-32:active:not(:disabled) {
-  background-color: #f0f0f0;
-  border-color: #0a0a0a;
+  background-color: #BBC3C9;
+  border-color: #162740;
 }
 
 .emotion-32:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
+  border-color: #E4E4E4;
+  color: #BBC3C9;
 }
 
 .emotion-32:disabled svg {
-  fill: #c0c0c0;
+  fill: #BBC3C9;
 }
 
 .emotion-31 {
@@ -604,9 +611,36 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-27 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
+}
+
+.emotion-29 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-29::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+}
+
+.emotion-29::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
 }
 
 @media screen {
@@ -662,7 +696,7 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-79 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #E4E4E4;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -695,7 +729,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -883,7 +917,7 @@ exports[`Meta renders with mandatory props 1`] = `
                         class="emotion-28"
                       >
                         <span
-                          class="emotion-3"
+                          class="emotion-29"
                         >
                           View source code
                         </span>
@@ -1071,7 +1105,7 @@ exports[`Meta renders with mandatory props 1`] = `
                           class="emotion-28"
                         >
                           <span
-                            class="emotion-3"
+                            class="emotion-29"
                           >
                             View source code
                           </span>
@@ -1275,10 +1309,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1291,7 +1325,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.3027777777777778em;
 }
 
 .emotion-1::after {
@@ -1299,18 +1333,18 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.5527777777777778em;
 }
 
 .emotion-0 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-7 {
@@ -1347,11 +1381,18 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  color: #FFFFFF;
+  background-color: #0A782A;
+  border-radius: 20rem;
 }
 
 .emotion-6 svg {
   width: 16px;
   height: 16px;
+}
+
+.emotion-6 svg {
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -1391,10 +1432,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1406,7 +1447,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.3027777777777778em;
 }
 
 .emotion-3::after {
@@ -1414,7 +1455,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.5527777777777778em;
 }
 
 .emotion-12 {
@@ -1437,7 +1478,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-11 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #E4E4E4;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1490,35 +1531,35 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
+  color: #577FFB;
 }
 
 .emotion-22 svg {
-  fill: #0a68c1;
+  fill: #577FFB;
 }
 
 .emotion-22:hover:not(:disabled) {
-  color: #02509b;
+  color: #3358CC;
 }
 
 .emotion-22:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
 }
 
 .emotion-22:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
 }
 
 .emotion-22:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-22:visited:not(:disabled) {
-  color: #7547a3;
+  color: #503B8C;
 }
 
 .emotion-22:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #503B8C;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1530,7 +1571,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 .emotion-16 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
@@ -1547,7 +1588,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4277777777777778em;
+  margin-bottom: -0.4902777777777778em;
 }
 
 .emotion-16::after {
@@ -1555,7 +1596,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.4277777777777778em;
 }
 
 .emotion-43 {
@@ -1621,10 +1662,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   overflow: hidden;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #555E74;
   border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
+  border-radius: 20rem;
+  color: #555E74;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1640,26 +1681,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-32 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-32:hover:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #2e2e2e;
+  background-color: #E4E4E4;
+  border-color: #243853;
 }
 
 .emotion-32:active:not(:disabled) {
-  background-color: #f0f0f0;
-  border-color: #0a0a0a;
+  background-color: #BBC3C9;
+  border-color: #162740;
 }
 
 .emotion-32:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
+  border-color: #E4E4E4;
+  color: #BBC3C9;
 }
 
 .emotion-32:disabled svg {
-  fill: #c0c0c0;
+  fill: #BBC3C9;
 }
 
 .emotion-31 {
@@ -1699,9 +1740,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-27 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
+}
+
+.emotion-29 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-29::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+}
+
+.emotion-29::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
 }
 
 @media screen {
@@ -1757,7 +1825,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-95 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #E4E4E4;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1790,7 +1858,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1827,10 +1895,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   overflow: hidden;
   background-color: transparent;
   border-style: solid;
-  border-color: #535353;
+  border-color: #555E74;
   border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
+  border-radius: 20rem;
+  color: #555E74;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1846,26 +1914,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-40 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #2e2e2e;
+  background-color: #E4E4E4;
+  border-color: #243853;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #f0f0f0;
-  border-color: #0a0a0a;
+  background-color: #BBC3C9;
+  border-color: #162740;
 }
 
 .emotion-40:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
+  border-color: #E4E4E4;
+  color: #BBC3C9;
 }
 
 .emotion-40:disabled svg {
-  fill: #c0c0c0;
+  fill: #BBC3C9;
 }
 
 <div
@@ -2046,7 +2114,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                         class="emotion-28"
                       >
                         <span
-                          class="emotion-3"
+                          class="emotion-29"
                         >
                           View source code
                         </span>
@@ -2105,7 +2173,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                         class="emotion-28"
                       >
                         <span
-                          class="emotion-3"
+                          class="emotion-29"
                         >
                           View Design
                         </span>
@@ -2293,7 +2361,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           class="emotion-28"
                         >
                           <span
-                            class="emotion-3"
+                            class="emotion-29"
                           >
                             View source code
                           </span>
@@ -2352,7 +2420,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           class="emotion-28"
                         >
                           <span
-                            class="emotion-3"
+                            class="emotion-29"
                           >
                             View Design
                           </span>

@@ -51,17 +51,17 @@ exports[`Anatomy renders with mandatory props 1`] = `
 }
 
 .emotion-4 {
-  border-radius: 0;
+  border-radius: 8px;
   position: relative;
   width: 100%;
   padding-top: 0;
   height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
+  border-radius: 20rem;
+  background-color: #F4F4F4;
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
+  fill: #BBC3C9;
 }
 
 .emotion-2 {
@@ -96,7 +96,7 @@ exports[`Anatomy renders with mandatory props 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -209,11 +209,11 @@ exports[`Anatomy renders with mandatory props 1`] = `
 .emotion-0 {
   margin-bottom: 16px;
   counter-increment: item-counter;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -221,7 +221,7 @@ exports[`Anatomy renders with mandatory props 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-0::before {
@@ -229,7 +229,7 @@ exports[`Anatomy renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4267857142857143em;
 }
 
 .emotion-0::after {
@@ -237,15 +237,15 @@ exports[`Anatomy renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3642857142857143em;
 }
 
 .emotion-0::before {
   content: counter(item-counter) '. ';
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.4;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -256,7 +256,7 @@ exports[`Anatomy renders with mandatory props 1`] = `
 }
 
 .emotion-0::before svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 <div

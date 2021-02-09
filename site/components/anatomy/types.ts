@@ -1,7 +1,6 @@
+import {ImageProps} from '../../../src/image/types';
+
 export interface AnatomyProps {
-  media: {
-    src: string;
-    alt: string;
-  };
+  media: ImageProps;
   list: Array<string>;
 }

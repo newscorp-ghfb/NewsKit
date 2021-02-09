@@ -50,7 +50,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-13 {
   box-sizing: border-box;
-  color: #2e2e2e;
+  color: #555E74;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -103,17 +103,17 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-4 {
-  border-radius: 0;
+  border-radius: 8px;
   position: relative;
   width: 100%;
   padding-top: 66%;
   height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
+  border-radius: 20rem;
+  background-color: #F4F4F4;
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
+  fill: #BBC3C9;
 }
 
 .emotion-2 {
@@ -148,7 +148,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -173,6 +173,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
+  color: inherit;
   padding: 0;
 }
 
@@ -205,11 +206,11 @@ exports[`Media List renders with custom layout 1`] = `
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Source Serif Pro",serif;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -217,7 +218,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-7::before {
@@ -225,7 +226,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.22499999999999998em;
 }
 
 .emotion-7::after {
@@ -233,14 +234,14 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -251,7 +252,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-9 svg {
-  fill: #0a0a0a;
+  fill: #555E74;
 }
 
 .emotion-9::before {
@@ -259,7 +260,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-9::after {
@@ -267,12 +268,17 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4em;
 }
 
 .emotion-17 {
   margin: 0;
   padding: 1px 0;
+  color: #162740;
+}
+
+.emotion-17 svg {
+  fill: #162740;
 }
 
 .emotion-35 {
@@ -355,6 +361,8 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-31 {
   box-sizing: border-box;
+  background-color: #213A82;
+  border-radius: 12px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -654,7 +662,7 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-13 {
   box-sizing: border-box;
-  color: #2e2e2e;
+  color: #555E74;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -707,17 +715,17 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-4 {
-  border-radius: 0;
+  border-radius: 8px;
   position: relative;
   width: 100%;
   padding-top: 66%;
   height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
+  border-radius: 20rem;
+  background-color: #F4F4F4;
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
+  fill: #BBC3C9;
 }
 
 .emotion-2 {
@@ -752,7 +760,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -777,6 +785,7 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
+  color: inherit;
   padding: 0;
 }
 
@@ -809,11 +818,11 @@ exports[`Media List renders with default layout 1`] = `
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Source Serif Pro",serif;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -821,7 +830,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-7::before {
@@ -829,7 +838,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.22499999999999998em;
 }
 
 .emotion-7::after {
@@ -837,14 +846,14 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -855,7 +864,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-9 svg {
-  fill: #0a0a0a;
+  fill: #555E74;
 }
 
 .emotion-9::before {
@@ -863,7 +872,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-9::after {
@@ -871,12 +880,17 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4em;
 }
 
 .emotion-17 {
   margin: 0;
   padding: 1px 0;
+  color: #162740;
+}
+
+.emotion-17 svg {
+  fill: #162740;
 }
 
 <div

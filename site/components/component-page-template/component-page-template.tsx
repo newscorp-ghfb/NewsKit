@@ -196,7 +196,13 @@ const renderSections = ({
       <CodeFromDefaultPresets componentName={componentDefaultsKey} />
       <InfoNotice>
         For more information on overriding component defaults, see the docs{' '}
-        <Link href="/theming/component-defaults">here</Link>.
+        <Link
+          href="/theming/component-defaults"
+          overrides={{stylePreset: 'infoNotice'}}
+        >
+          here
+        </Link>
+        .
       </InfoNotice>
     </Cell>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
@@ -220,7 +226,13 @@ const renderSections = ({
         <SectionIntroduction title="Related Components">
           {related.introduction}
         </SectionIntroduction>
-        <MediaList spaceStack="space110" xsCard={6} lgCard={3} {...related} />
+        <MediaList
+          spaceStack="space110"
+          xsCard={12}
+          mdCard={6}
+          lgCard={3}
+          {...related}
+        />
       </>
     )}
 

@@ -1414,14 +1414,6 @@ stylePresets.imageCircle = {
   },
 };
 
-// // Card
-
-stylePresets.cardContainer = {
-  base: {
-    color: '{{colors.inkBase}}',
-  },
-};
-
 //
 // TitleBar
 //

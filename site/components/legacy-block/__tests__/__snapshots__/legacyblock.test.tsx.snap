@@ -63,12 +63,12 @@ exports[`Block with overflow set to scrollY renders no overflow prop 1`] = `
 exports[`Block with responsive style props renders a responsive styled div 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #0a0a0a;
-  background-color: #ffffff;
-  font-family: "Noto Sans",sans-serif;
+  color: #162740;
+  background-color: #FFFFFF;
+  font-family: 'DM Sans',sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.4;
   border: 1px solid black;
   border-top: sizing010;
   border-right: sizing010;
@@ -125,9 +125,9 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width:0px) {
   .emotion-0 {
-    color: #2e2e2e;
-    background-color: #fafafa;
-    font-family: "Noto Sans",sans-serif;
+    color: #555E74;
+    background-color: #F4F4F4;
+    font-family: 'DM Sans',sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -184,12 +184,12 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-0 {
-    color: #535353;
-    background-color: #f0f0f0;
-    font-family: "Noto Sans",sans-serif;
+    color: #808E99;
+    background-color: #EBEBEB;
+    font-family: 'DM Sans',sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.5555555555555556;
+    line-height: 1.3333333333333333;
     border: 3px dotted green;
     border-top: sizing020;
     border-right: sizing030;
@@ -253,12 +253,12 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 exports[`Block with simple style props renders a styled div 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #0a0a0a;
-  background-color: #01396e;
-  font-family: "Noto Sans",sans-serif;
+  color: #162740;
+  background-color: #213A82;
+  font-family: 'DM Sans',sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.4;
   border: 1px solid black;
   border-top: sizing010;
   border-right: sizing010;

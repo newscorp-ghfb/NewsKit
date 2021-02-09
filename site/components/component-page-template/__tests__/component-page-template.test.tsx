@@ -1,5 +1,5 @@
 import {Button} from 'newskit';
-import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
+import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {MetaStatus} from '../../meta/types';
 import {ComponentPageTemplate} from '..';
 import {ComponentPageTemplateProps} from '../types';

@@ -1,0 +1,55 @@
+{
+  "inkBase": "{{colors.neutral040}}",
+  "inkContrast": "{{colors.neutral010}}",
+  "inkNonEssential": "{{colors.neutral080}}",
+  "inkInverse": "{{colors.neutral100}}",
+
+  "inkPositive": "{{colors.green040}}",
+  "inkNegative": "{{colors.red050}}",
+  "inkNotice": "{{colors.amber040}}",
+  "inkInformative": "{{colors.teal010}}",
+
+  "inkBrand020": "{{colors.blue030}}",
+
+  "interfaceBackground": "{{colors.neutral100}}",
+  "interface010": "{{colors.neutral100}}",
+  "interface020": "{{colors.neutral090}}",
+  "interface030": "{{colors.neutral080}}",
+  "interface040": "{{colors.neutral060}}",
+  "interface050": "{{colors.neutral030}}",
+  "interface060": "{{colors.neutral010}}",
+
+  "interfaceBrand060": "{{colors.teal040}}",
+
+  "interfacePositive010": "{{colors.green040}}",
+  "interfacePositive020": "{{colors.green070}}",
+  "interfaceNegative010": "{{colors.red050}}",
+  "interfaceNegative020": "{{colors.red070}}",
+  "interfaceNotice010": "{{colors.amber040}}",
+  "interfaceNotice020": "{{colors.amber070}}",
+  "interfaceInformative010": "{{colors.teal060}}",
+  "interfaceInformative020": "{{colors.teal070}}",
+
+  "interfaceSkeleton010": "{{colors.blue090}}",
+  "interfaceSkeleton020": "{{colors.blue080}}",
+
+  "interactivePrimary010": "{{colors.blue080}}",
+  "interactivePrimary020": "{{colors.blue090}}",
+  "interactivePrimary040": "{{colors.blue050}}",
+  "interactivePrimary050": "{{colors.blue070}}",
+
+  "interactiveSecondary010": "{{colors.neutral080}}",
+  "interactiveSecondary020": "{{colors.neutral090}}",
+  "interactiveSecondary030": "{{colors.neutral050}}",
+  "interactiveSecondary040": "{{colors.neutral060}}",
+  "interactiveSecondary050": "{{colors.neutral070}}",
+
+  "interactivePositive010": "{{colors.green090}}",
+  "interactivePositive020": "{{colors.green100}}",
+
+  "interactiveNegative010": "{{colors.red090}}",
+  "interactiveNegative020": "{{colors.red100}}",
+
+  "interactiveDisabled010": "{{colors.neutral100}}",
+  "interactiveVisited010": "{{colors.purple030}}"
+}

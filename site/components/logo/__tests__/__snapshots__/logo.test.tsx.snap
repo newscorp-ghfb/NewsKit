@@ -20,6 +20,11 @@ exports[`Logo Default logo renders as expected 1`] = `
   display: inline-block;
 }
 
+.emotion-0 {
+  fill: #162740;
+  color: #162740;
+}
+
 <div
     class="emotion-2"
   >
@@ -41,7 +46,6 @@ exports[`Logo Default logo renders as expected 1`] = `
         >
           <g
             class="emotion-0"
-            fill="#192C48"
             transform="translate(508.073657, 26.125170)"
           >
             <path
@@ -93,8 +97,8 @@ exports[`Logo Mobile logo renders as expected 1`] = `
 
 .emotion-0 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #555E74;
+  color: #555E74;
 }
 
 <div

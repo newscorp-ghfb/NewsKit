@@ -29,16 +29,10 @@ export const MediaList: React.FC<MediaListProps> = ({
             >
               <Block spaceStack="space045">
                 <TextBlock
-                  stylePreset={
-                    styles && styles.label && styles.label.stylePreset
-                      ? styles.label.stylePreset
-                      : 'inkContrast'
-                  }
-                  typographyPreset={
-                    styles && styles.label && styles.label.typographyPreset
-                      ? styles.label.typographyPreset
-                      : 'editorialHeadline020'
-                  }
+                  // eslint-disable-next-line no-undef, prettier/prettier
+                  stylePreset={styles?.label?.stylePreset || 'inkContrast'}
+                  // eslint-disable-next-line no-undef
+                  typographyPreset={styles?.label?.typographyPreset || 'editorialHeadline020'}
                 >
                   {label}
                 </TextBlock>
@@ -46,30 +40,20 @@ export const MediaList: React.FC<MediaListProps> = ({
               {title && (
                 <Block spaceStack="space045">
                   <TextBlock
-                    stylePreset={
-                      styles && styles.title && styles.title.stylePreset
-                    }
-                    typographyPreset={
-                      styles && styles.title && styles.title.typographyPreset
-                    }
+                  // eslint-disable-next-line no-undef
+                    stylePreset={styles?.title?.stylePreset || 'inkContrast'}
+                    // eslint-disable-next-line no-undef
+                    typographyPreset={styles?.title?.typographyPreset}
                   >
                     {title}
                   </TextBlock>
                 </Block>
               )}
               <TextBlock
-                stylePreset={
-                  styles && styles.description && styles.description.stylePreset
-                    ? styles.description.stylePreset
-                    : 'inkContrast'
-                }
-                typographyPreset={
-                  styles &&
-                  styles.description &&
-                  styles.description.typographyPreset
-                    ? styles.description.typographyPreset
-                    : 'editorialParagraph020'
-                }
+              // eslint-disable-next-line no-undef
+                stylePreset={styles?.description?.stylePreset || 'inkBase'}
+                // eslint-disable-next-line no-undef
+                typographyPreset={styles?.description?.typographyPreset || 'editorialParagraph020'}
               >
                 {description}
               </TextBlock>

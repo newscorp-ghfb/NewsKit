@@ -60,16 +60,7 @@ export const UsageCard = ({card}: {card: UsageCardProps}) => (
     <AbsoluteBlock>
       {card.allowed ? <CheckIcon /> : <CrossIcon />}
     </AbsoluteBlock>
-    <Card
-      media={card.media}
-      overrides={{
-        mediaContainer: {
-          stylePreset: card.allowed
-            ? 'positiveMediaContainer'
-            : 'negativeMediaContainer',
-        },
-      }}
-    >
+    <Card media={card.media}>
       <Block spaceStack="space040">
         <Headline
           overrides={{
@@ -84,7 +75,7 @@ export const UsageCard = ({card}: {card: UsageCardProps}) => (
       </Block>
       <Block spaceStack="space040">
         <TextBlock
-          stylePreset="inkPreset"
+          stylePreset="inkBase"
           typographyPreset="editorialParagraph020"
         >
           {card.description}

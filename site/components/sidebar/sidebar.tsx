@@ -38,9 +38,6 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   left: 0;
   z-index: 3;
   background-color: ${getColorFromTheme('interface020')};
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: ${getColorFromTheme('interface040')};
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
 
@@ -90,7 +87,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       role="complementary"
     >
       <SidebarHeader>
-        <Link href="/" overrides={{stylePreset: 'linkLogo'}}>
+        <Link href="/" overrides={{stylePreset: 'inkBase'}}>
           <NewsKitLogo size="sizing120" />
         </Link>
         <Visible xs sm md>

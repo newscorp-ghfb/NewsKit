@@ -1,4 +1,4 @@
-import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
+import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {Meta} from '../meta';
 import {MetaStatus} from '../types';
 

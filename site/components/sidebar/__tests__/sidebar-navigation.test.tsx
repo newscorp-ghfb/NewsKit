@@ -1,7 +1,7 @@
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
-} from 'newskit/test/test-utils';
+} from '../../../utils/test-utils';
 import {SidebarNav} from '..';
 
 const scrollIntoViewMock = jest.fn();

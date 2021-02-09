@@ -3,7 +3,7 @@
 exports[`Icons Moon icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -35,7 +35,7 @@ exports[`Icons Moon icon renders as expected 1`] = `
 exports[`Icons Sun icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {ThemeProvider, useTheme} from 'newskit';
-import {newsKitDark, newsKitLight} from '../doc-theme';
+import {docsThemeDark, docsThemeLight} from '../theme/doc-theme';
 
 export interface InverseThemeProps {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ export interface InverseThemeProps {
 
 export const InverseTheme = ({children}: InverseThemeProps) => {
   const inverseTheme =
-    useTheme().name === 'newskit-dark' ? newsKitLight : newsKitDark;
+    useTheme().name === 'docs-theme-dark' ? docsThemeLight : docsThemeDark;
 
   return <ThemeProvider theme={inverseTheme}>{children}</ThemeProvider>;
 };

@@ -3,9 +3,9 @@
 exports[`Sidebar navigation should match snapshot with active link 1`] = `
 <DocumentFragment>
   .emotion-25 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'DM Sans',sans-serif;
   font-size: 18px;
-  line-height: 1.5555555555555556;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -28,14 +28,16 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
+  line-height: 1.3333333333333333;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
   min-height: 40px;
   padding: 8px 0;
 }
@@ -48,6 +50,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:hover:not(:disabled) {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -76,16 +85,18 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  line-height: 1.4;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
   box-sizing: border-box;
-  color: #535353;
+  color: #808E99;
   cursor: 'pointer';
   min-height: 32px;
   min-width: 230px;
@@ -93,9 +104,21 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   text-overflow: ellipsis;
 }
 
+.emotion-9:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-radius: 20rem;
+  color: #162740;
+}
+
+.emotion-9:active:not(:disabled) {
+  background-color: #AEBFFF;
+  border-radius: 20rem;
+  color: #162740;
+}
+
 .emotion-5 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #E4E4E4;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -104,34 +127,50 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-8 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
   min-height: 32px;
   margin-top: 20px;
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  line-height: 1.4;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
   box-sizing: border-box;
-  color: #0a68c1;
+  color: #577FFB;
   cursor: 'pointer';
   min-height: 32px;
   min-width: 230px;
   padding: 8px 12px;
   text-overflow: ellipsis;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-radius: 20rem;
+  color: #162740;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #AEBFFF;
+  border-radius: 20rem;
+  color: #162740;
 }
 
 <nav
@@ -281,9 +320,9 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 <DocumentFragment>
   .emotion-25 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'DM Sans',sans-serif;
   font-size: 18px;
-  line-height: 1.5555555555555556;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -306,14 +345,16 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
+  line-height: 1.3333333333333333;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
   min-height: 40px;
   padding: 8px 0;
 }
@@ -326,6 +367,13 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:hover:not(:disabled) {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -354,16 +402,18 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  line-height: 1.4;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
   box-sizing: border-box;
-  color: #535353;
+  color: #808E99;
   cursor: 'pointer';
   min-height: 32px;
   min-width: 230px;
@@ -371,9 +421,21 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   text-overflow: ellipsis;
 }
 
+.emotion-1:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-radius: 20rem;
+  color: #162740;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #AEBFFF;
+  border-radius: 20rem;
+  color: #162740;
+}
+
 .emotion-5 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #E4E4E4;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -382,14 +444,16 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-8 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
   min-height: 32px;
   margin-top: 20px;
 }
