@@ -27,24 +27,30 @@ const handleScroll = (
   HtmlElementsList: Array<HTMLElement | null>,
   handleIntersection: Function,
 ) => {
-  // TODO to remove
-  console.log('handling scroll');
   const readHtmlElement = getHtmlReadElement(HtmlElementsList);
-  if (readHtmlElement) handleIntersection(readHtmlElement);
+  if (readHtmlElement) {
+    handleIntersection(readHtmlElement);
+  }
 };
 
 export const contentsObserver = (
-  handleIntersection: Function,
+  handleIntersection: (id: string) => void,
   contentsData: Array<{id: string}>,
 ) => {
-  const HtmlElementsList = contentsData.map(data =>
-    document.getElementById(data.id),
-  );
+  if (typeof document === 'undefined') {
+    return () => {};
+  }
 
-  document.addEventListener(
-    'scroll',
-    debounce(function() {
-      handleScroll(HtmlElementsList, handleIntersection);
-    }),
-  );
+  // eslint-disable-next-line no-undef
+  const d = document;
+
+  const htmlElementsList = contentsData.map(data => d.getElementById(data.id));
+  const onScroll = debounce(() => {
+    handleScroll(htmlElementsList, handleIntersection);
+  });
+
+  d.addEventListener('scroll', onScroll);
+  return () => {
+    d.removeEventListener('scroll', onScroll);
+  };
 };
