@@ -40,7 +40,7 @@ const renderSections = ({
     <Meta {...meta} />
     {interactiveDemo && (
       <Cell xs={12}>
-        <section id="interactive-demo">
+        <section id="interactive-demo" data-toc-indexed="Interactive Demo">
           <Grid lgMargin="space000" xsRowGutter="space000">
             <SectionIntroduction title="Interactive Demo">
               {interactiveDemo.introduction}
@@ -57,7 +57,7 @@ const renderSections = ({
     {anatomy && (
       <>
         <Cell xs={12}>
-          <section id="anatomy">
+          <section id="anatomy" data-toc-indexed="Anatomy">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Anatomy">
                 {anatomy.introduction}
@@ -75,7 +75,7 @@ const renderSections = ({
     {variations && (
       <>
         <Cell xs={12}>
-          <section id="variations">
+          <section id="variations" data-toc-indexed="Variations">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Variations">
                 {variations.introduction}
@@ -92,7 +92,7 @@ const renderSections = ({
     {behaviors && (
       <>
         <Cell xs={12}>
-          <section id="behaviors">
+          <section id="behaviors" data-toc-indexed="Behaviours">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Behaviours">
                 {behaviors.introduction}
@@ -109,7 +109,7 @@ const renderSections = ({
     {usage && (
       <>
         <Cell xs={12}>
-          <section id="usage">
+          <section id="usage" data-toc-indexed="Usage">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Usage">
                 {usage.introduction}
@@ -127,7 +127,7 @@ const renderSections = ({
     {accessibility && (
       <>
         <Cell xs={12}>
-          <section id="accessibility">
+          <section id="accessibility" data-toc-indexed="Accessibility">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Accessibility Considerations">
                 {accessibility.introduction}
@@ -144,7 +144,7 @@ const renderSections = ({
     {seo && (
       <>
         <Cell xs={12}>
-          <section id="seo">
+          <section id="seo" data-toc-indexed="SEO">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title={seo.title}>
                 {seo.introduction}
@@ -159,7 +159,7 @@ const renderSections = ({
     )}
     {(props || overrides) && (
       <Cell xs={12}>
-        <section id="props">
+        <section id="props" data-toc-indexed="Props">
           <Grid lgMargin="space000" xsRowGutter="space000">
             {props && (
               <>
@@ -176,7 +176,10 @@ const renderSections = ({
             )}
             {overrides && (
               <>
-                <SectionIntroduction title="Overrides">
+                <SectionIntroduction
+                  title="Overrides"
+                  data-toc-indexed="Overrides"
+                >
                   {overrides.summary}
                 </SectionIntroduction>
                 <Cell xs={12} md={10} lg={8} mdOffset={1}>

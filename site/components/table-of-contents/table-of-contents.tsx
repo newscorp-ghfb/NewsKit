@@ -1,10 +1,55 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Stack, Flow} from 'newskit';
 import {StyledTableOfContents, StyledContentsNavItem} from './styled';
 import {ContentsNavItemProps} from './types';
+import {contentsObserver} from './contents-observer';
 
 export const TableOfContents: React.FC = () => {
-  const [activeItem, setActiveItem] = useState(0);
+  const [activeItem, setActiveItem] = useState<number>();
+  const [contentsInfo, setContentsInfo] = useState<
+    {id: string; title: string}[]
+  >();
+
+  const getContentsData = () => {
+    const data: {id: string; title: string}[] = [];
+
+    document.querySelectorAll('section[data-toc-indexed').forEach(element => {
+      const title = element.getAttribute('data-toc-indexed');
+      if (title) {
+        data.push({id: element.id, title});
+      }
+    });
+    setContentsInfo(data);
+  };
+
+  const handleIntersection = (id: string) => {
+    const activeElement =
+      contentsInfo && contentsInfo.findIndex(info => info.id === id);
+
+    if (activeElement !== activeItem) {
+      setActiveItem(activeElement);
+    }
+  };
+
+  useEffect(() => {
+    if (!contentsInfo) getContentsData();
+    console.log(contentsInfo);
+    if (!activeItem && contentsInfo)
+      contentsObserver(handleIntersection, contentsInfo);
+
+    // TODO NOT working
+    return () => {
+      document.removeEventListener('scroll', () => {
+        console.log('removing listener');
+        handleIntersection;
+      });
+    };
+    // IT does not run the return on unmount. Is it because runs again only when contentsInfo
+    // changes?
+    // I tried to add document.location.href but tells me it is undefined... Are we hydrating?
+
+    // ALSO.. eslint keeps adding "[activeItem, contentsInfo, handleIntersection]"
+  }, [contentsInfo]);
 
   const ContentsNavItem: React.FC<ContentsNavItemProps> = ({
     children,
@@ -19,7 +64,7 @@ export const TableOfContents: React.FC = () => {
       }}
       onClick={() => setActiveItem(itemKey)}
       itemKey={itemKey}
-      isSelected={activeItem === itemKey}
+      isSelected={(activeItem || 0) === itemKey}
     >
       {children}
     </StyledContentsNavItem>
@@ -28,30 +73,12 @@ export const TableOfContents: React.FC = () => {
   return (
     <StyledTableOfContents>
       <Stack flow={Flow.VerticalLeft}>
-        <ContentsNavItem itemKey={0} href="#interactive-demo">
-          Interactive Demo
-        </ContentsNavItem>
-        <ContentsNavItem itemKey={1} href="#anatomy">
-          Anatomy
-        </ContentsNavItem>
-        <ContentsNavItem itemKey={2} href="#variations">
-          Variations
-        </ContentsNavItem>
-        <ContentsNavItem itemKey={3} href="#behaviors">
-          Behaviours
-        </ContentsNavItem>
-        <ContentsNavItem itemKey={4} href="#usage">
-          Usage
-        </ContentsNavItem>
-        <ContentsNavItem itemKey={5} href="#accessibility">
-          Accessibility
-        </ContentsNavItem>
-        <ContentsNavItem itemKey={6} href="#seo">
-          SEO
-        </ContentsNavItem>
-        <ContentsNavItem itemKey={7} href="#props">
-          Props
-        </ContentsNavItem>
+        {contentsInfo &&
+          contentsInfo.map((info, index) => (
+            <ContentsNavItem itemKey={index} href={`#${info.id}`}>
+              {info.title}
+            </ContentsNavItem>
+          ))}
       </Stack>
     </StyledTableOfContents>
   );
