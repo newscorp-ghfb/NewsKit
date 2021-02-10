@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer layout renders closed drawer 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  display: none;
+  width: 30%;
+  max-width: 100%;
+  min-width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+<div
+    aria-label="Drawer"
+    aria-modal="true"
+    class="emotion-0"
+    role="dialog"
+  >
+    <div>
+      Drawer content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Drawer layout renders default right position 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  display: block;
+  width: 30%;
+  max-width: 100%;
+  min-width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+<div
+    aria-label="Drawer"
+    aria-modal="true"
+    class="emotion-0"
+    role="dialog"
+  >
+    <div>
+      Drawer content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Drawer layout renders left position 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  display: block;
+  width: 30%;
+  max-width: 100%;
+  min-width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+<div
+    aria-label="Drawer"
+    aria-modal="true"
+    class="emotion-0"
+    role="dialog"
+  >
+    <div>
+      Drawer content
+    </div>
+  </div>
+</DocumentFragment>
+`;

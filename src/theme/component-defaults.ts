@@ -203,6 +203,22 @@ export const componentDefaults = {
   divider: {
     stylePreset: 'dividerHorizontal',
   },
+  drawer: {
+    panel: {
+      stylePreset: 'drawerPanel',
+      size: '30%',
+      maxSize: '100%',
+      minSize: '20px',
+      // Use the object below when PPDSC-1422 is resolved
+      // size: {
+      //   xs: '90%',
+      //   sm: '40%',
+      //   md: '30%',
+      //   lg: '25%',
+      //   xl: '20%',
+      // },
+    },
+  },
   flag: {
     small: {
       typographyPreset: 'utilityLabel010',

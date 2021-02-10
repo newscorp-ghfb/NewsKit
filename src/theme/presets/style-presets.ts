@@ -1471,3 +1471,15 @@ stylePresets.headlineHeadingInteractive = {
     textDecoration: 'underline',
   },
 };
+
+//
+// Drawer
+//
+
+stylePresets.drawerPanel = {
+  base: {
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    backgroundColor: '{{colors.interfaceBackground}}',
+    boxShadow: '{{shadows.shadow050}}',
+  },
+};

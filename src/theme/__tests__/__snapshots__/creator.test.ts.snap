@@ -374,6 +374,14 @@ Object {
     "divider": Object {
       "stylePreset": "dividerHorizontal",
     },
+    "drawer": Object {
+      "panel": Object {
+        "maxSize": "100%",
+        "minSize": "20px",
+        "size": "30%",
+        "stylePreset": "drawerPanel",
+      },
+    },
     "flag": Object {
       "large": Object {
         "iconSize": "iconSize010",
@@ -1639,6 +1647,13 @@ Object {
         "borderColor": "{{colors.interface040}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidthDefault}}",
+      },
+    },
+    "drawerPanel": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBackground}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "boxShadow": "{{shadows.shadow050}}",
       },
     },
     "flagDefault": Object {
