@@ -20,21 +20,22 @@ export const TableOfContents: React.FC = () => {
       }
     });
     setContentsInfo(data);
-  }
+  };
 
   const setNewActiveElement = (id: string) => {
     const activeElement =
       contentsInfo && contentsInfo.findIndex(info => info.id === id);
 
     setActiveItem(activeElement);
-  }
+  };
 
   useEffect(() => {
-    if (!contentsInfo) getContentInfo()
+    if (!contentsInfo) getContentInfo();
     if (contentsInfo) {
       return contentsObserver(setNewActiveElement, contentsInfo);
     }
-  }, [contentsInfo]);
+    return undefined;
+  }, [contentsInfo]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const ContentsNavItem: React.FC<ContentsNavItemProps> = ({
     children,

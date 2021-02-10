@@ -1,8 +1,5 @@
-import { fireEvent } from '@testing-library/react';
-import { renderToFragmentWithTheme } from 'newskit/test/test-utils';
-import React from 'react'
-import {TableOfContents} from '../table-of-contents'
-
+import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
+import {TableOfContents} from '../table-of-contents';
 
 describe('TableOfContent', () => {
   it('should render with no errors', () => {
@@ -13,5 +10,5 @@ describe('TableOfContent', () => {
 
     const fragment = renderToFragmentWithTheme(TableOfContents);
     expect(fragment).toMatchSnapshot();
-  })
-})
+  });
+});
