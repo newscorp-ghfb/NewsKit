@@ -211,93 +211,170 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-.emotion-1 {
-  margin-bottom: 16px;
+@media screen and (max-width:767px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  color: #555E74;
+  display: inline-block;
 }
 
 .emotion-0 svg {
-  fill: #162740;
+  fill: #555E74;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22499999999999998em;
+@media screen and (max-width:1439px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22499999999999998em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.475em;
+  }
 }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.475em;
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19166666666666665em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.44166666666666665em;
+  }
 }
 
-.emotion-3 {
-  margin-bottom: 24px;
+.emotion-14 {
+  margin-bottom: 32px;
 }
 
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  color: #808E99;
 }
 
 .emotion-2 svg {
-  fill: #555E74;
+  fill: #808E99;
 }
 
-.emotion-2::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.37916666666666665em;
+@media screen and (max-width:1439px) {
+  .emotion-2 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4625em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4em;
+  }
 }
 
-.emotion-2::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.31666666666666665em;
-}
+@media screen and (min-width:1440px) {
+  .emotion-2 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    line-height: 1.3333333333333333;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-14 {
-  overflow-x: auto;
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.37916666666666665em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.31666666666666665em;
+  }
 }
 
 .emotion-13 {
+  overflow-x: auto;
+}
+
+.emotion-12 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-3 {
   background-color: transparent;
   border-style: solid;
   border-color: #243853;
@@ -318,7 +395,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   min-width: 64px;
 }
 
-.emotion-12 {
+.emotion-11 {
   background-color: transparent;
   border-style: solid;
   border-color: #BBC3C9;
@@ -334,7 +411,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   letter-spacing: 0;
 }
 
-.emotion-8 {
+.emotion-7 {
   padding: 8px 8px 8px 0;
 }
 
@@ -353,78 +430,79 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
           <div
             class="emotion-1"
           >
-            <p
+            <span
               class="emotion-0"
             >
               WAI-ARIA
-            </p>
+            </span>
           </div>
           <div
-            class="emotion-3"
+            class="emotion-14"
           >
             <p
               class="emotion-2"
             >
               Some random text
             </p>
-          </div>
-          <div
-            class="emotion-14"
-          >
-            <table
+            <div
               class="emotion-13"
             >
-              <thead>
-                <tr>
-                  <th
-                    class="emotion-4"
+              <table
+                class="emotion-12"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="emotion-3"
+                    >
+                      Category
+                    </th>
+                    <th
+                      class="emotion-3"
+                    >
+                      Attribute
+                    </th>
+                    <th
+                      class="emotion-3"
+                    >
+                      Value
+                    </th>
+                    <th
+                      class="emotion-3"
+                    >
+                      Description
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="emotion-11"
                   >
-                    Category
-                  </th>
-                  <th
-                    class="emotion-4"
-                  >
-                    Attribute
-                  </th>
-                  <th
-                    class="emotion-4"
-                  >
-                    Value
-                  </th>
-                  <th
-                    class="emotion-4"
-                  >
-                    Description
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  class="emotion-12"
-                >
-                  <td
-                    class="emotion-8"
-                  >
-                    2
-                  </td>
-                  <td
-                    class="emotion-8"
-                  >
-                    description
-                  </td>
-                  <td
-                    class="emotion-8"
-                  >
-                    value
-                  </td>
-                  <td
-                    class="emotion-8"
-                  >
-                    description
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    <td
+                      class="emotion-7"
+                    >
+                      2
+                    </td>
+                    <td
+                      class="emotion-7"
+                    >
+                      description
+                    </td>
+                    <td
+                      class="emotion-7"
+                    >
+                      value
+                    </td>
+                    <td
+                      class="emotion-7"
+                    >
+                      description
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p />
           </div>
         </div>
       </div>
@@ -551,93 +629,170 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   }
 }
 
-.emotion-1 {
-  margin-bottom: 16px;
+@media screen and (max-width:767px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  color: #555E74;
+  display: inline-block;
 }
 
 .emotion-0 svg {
-  fill: #162740;
+  fill: #555E74;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22499999999999998em;
+@media screen and (max-width:1439px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22499999999999998em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.475em;
+  }
 }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.475em;
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19166666666666665em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.44166666666666665em;
+  }
 }
 
-.emotion-3 {
-  margin-bottom: 24px;
+.emotion-17 {
+  margin-bottom: 32px;
 }
 
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  color: #808E99;
 }
 
 .emotion-2 svg {
-  fill: #555E74;
+  fill: #808E99;
 }
 
-.emotion-2::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.37916666666666665em;
+@media screen and (max-width:1439px) {
+  .emotion-2 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4625em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4em;
+  }
 }
 
-.emotion-2::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.31666666666666665em;
-}
+@media screen and (min-width:1440px) {
+  .emotion-2 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    line-height: 1.3333333333333333;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-17 {
-  overflow-x: auto;
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.37916666666666665em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.31666666666666665em;
+  }
 }
 
 .emotion-16 {
+  overflow-x: auto;
+}
+
+.emotion-15 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-3 {
   background-color: transparent;
   border-style: solid;
   border-color: #243853;
@@ -658,7 +813,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   min-width: 64px;
 }
 
-.emotion-15 {
+.emotion-14 {
   background-color: transparent;
   border-style: solid;
   border-color: #BBC3C9;
@@ -674,11 +829,11 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   letter-spacing: 0;
 }
 
-.emotion-12 {
+.emotion-11 {
   padding: 8px 8px 8px 0;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -688,7 +843,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   flex-direction: column;
 }
 
-.emotion-10 {
+.emotion-9 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -717,16 +872,16 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   border-radius: 20rem;
 }
 
-.emotion-10 svg {
+.emotion-9 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-10 svg {
+.emotion-9 svg {
   fill: #FFFFFF;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -747,7 +902,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   margin-right: calc(-4px/2);
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -757,12 +912,12 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-8 {
+  .emotion-7 {
     max-width: 100%;
   }
 }
 
-.emotion-7 {
+.emotion-6 {
   font-family: 'Poppins',sans-serif;
   font-size: 24px;
   line-height: 1.3333333333333333;
@@ -773,7 +928,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   letter-spacing: 0;
 }
 
-.emotion-7::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -781,7 +936,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   margin-bottom: -0.19166666666666665em;
 }
 
-.emotion-7::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -804,89 +959,90 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
           <div
             class="emotion-1"
           >
-            <p
+            <span
               class="emotion-0"
             >
               Focus order
-            </p>
+            </span>
           </div>
           <div
-            class="emotion-3"
+            class="emotion-17"
           >
             <p
               class="emotion-2"
             >
               Some random text here
             </p>
-          </div>
-          <div
-            class="emotion-17"
-          >
-            <table
+            <div
               class="emotion-16"
             >
-              <thead>
-                <tr>
-                  <th
-                    class="emotion-4"
+              <table
+                class="emotion-15"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="emotion-3"
+                    >
+                      Order
+                    </th>
+                    <th
+                      class="emotion-3"
+                    >
+                      Element
+                    </th>
+                    <th
+                      class="emotion-3"
+                    >
+                      Role
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="emotion-14"
                   >
-                    Order
-                  </th>
-                  <th
-                    class="emotion-4"
-                  >
-                    Element
-                  </th>
-                  <th
-                    class="emotion-4"
-                  >
-                    Role
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  class="emotion-15"
-                >
-                  <td
-                    class="emotion-12"
-                  >
-                    <div
+                    <td
                       class="emotion-11"
                     >
                       <div
                         class="emotion-10"
-                        data-testid="flag"
                       >
                         <div
                           class="emotion-9"
+                          data-testid="flag"
                         >
                           <div
                             class="emotion-8"
                           >
-                            <span
+                            <div
                               class="emotion-7"
                             >
-                              1
-                            </span>
+                              <span
+                                class="emotion-6"
+                              >
+                                1
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </td>
-                  <td
-                    class="emotion-12"
-                  >
-                    element
-                  </td>
-                  <td
-                    class="emotion-12"
-                  >
-                    Role
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    </td>
+                    <td
+                      class="emotion-11"
+                    >
+                      element
+                    </td>
+                    <td
+                      class="emotion-11"
+                    >
+                      Role
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p />
           </div>
         </div>
       </div>
@@ -1013,93 +1169,170 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-.emotion-1 {
-  margin-bottom: 16px;
+@media screen and (max-width:767px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  color: #555E74;
+  display: inline-block;
 }
 
 .emotion-0 svg {
-  fill: #162740;
+  fill: #555E74;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22499999999999998em;
+@media screen and (max-width:1439px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22499999999999998em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.475em;
+  }
 }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.475em;
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19166666666666665em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.44166666666666665em;
+  }
 }
 
-.emotion-3 {
-  margin-bottom: 24px;
+.emotion-20 {
+  margin-bottom: 32px;
 }
 
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  color: #808E99;
 }
 
 .emotion-2 svg {
-  fill: #555E74;
+  fill: #808E99;
 }
 
-.emotion-2::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.37916666666666665em;
+@media screen and (max-width:1439px) {
+  .emotion-2 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4625em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4em;
+  }
 }
 
-.emotion-2::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.31666666666666665em;
-}
+@media screen and (min-width:1440px) {
+  .emotion-2 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    line-height: 1.3333333333333333;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-20 {
-  overflow-x: auto;
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.37916666666666665em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.31666666666666665em;
+  }
 }
 
 .emotion-19 {
+  overflow-x: auto;
+}
+
+.emotion-18 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-3 {
   background-color: transparent;
   border-style: solid;
   border-color: #243853;
@@ -1120,7 +1353,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   min-width: 64px;
 }
 
-.emotion-18 {
+.emotion-17 {
   background-color: transparent;
   border-style: solid;
   border-color: #BBC3C9;
@@ -1136,11 +1369,11 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   letter-spacing: 0;
 }
 
-.emotion-16 {
+.emotion-15 {
   padding: 8px 8px 8px 0;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1150,7 +1383,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   flex-direction: column;
 }
 
-.emotion-9 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1179,16 +1412,16 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   border-radius: 20rem;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1209,7 +1442,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   margin-right: calc(-4px/2);
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1219,12 +1452,12 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-7 {
+  .emotion-6 {
     max-width: 100%;
   }
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: 'Poppins',sans-serif;
   font-size: 24px;
   line-height: 1.3333333333333333;
@@ -1235,7 +1468,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -1243,7 +1476,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   margin-bottom: -0.19166666666666665em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -1266,102 +1499,103 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
           <div
             class="emotion-1"
           >
-            <p
+            <span
               class="emotion-0"
             >
               Keyboard Interactions
-            </p>
+            </span>
           </div>
           <div
-            class="emotion-3"
+            class="emotion-20"
           >
             <p
               class="emotion-2"
             >
               Some random text
             </p>
-          </div>
-          <div
-            class="emotion-20"
-          >
-            <table
+            <div
               class="emotion-19"
             >
-              <thead>
-                <tr>
-                  <th
-                    class="emotion-4"
+              <table
+                class="emotion-18"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="emotion-3"
+                    >
+                      Command
+                    </th>
+                    <th
+                      class="emotion-3"
+                    >
+                      Description
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="emotion-17"
                   >
-                    Command
-                  </th>
-                  <th
-                    class="emotion-4"
-                  >
-                    Description
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  class="emotion-18"
-                >
-                  <td
-                    class="emotion-16"
-                  >
-                    <div
-                      class="emotion-10"
+                    <td
+                      class="emotion-15"
                     >
                       <div
                         class="emotion-9"
-                        data-testid="flag"
                       >
                         <div
                           class="emotion-8"
+                          data-testid="flag"
                         >
                           <div
                             class="emotion-7"
                           >
-                            <span
+                            <div
                               class="emotion-6"
                             >
-                              ctrl
-                            </span>
+                              <span
+                                class="emotion-5"
+                              >
+                                ctrl
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                     + 
-                    <div
-                      class="emotion-10"
-                    >
+                       + 
                       <div
                         class="emotion-9"
-                        data-testid="flag"
                       >
                         <div
                           class="emotion-8"
+                          data-testid="flag"
                         >
                           <div
                             class="emotion-7"
                           >
-                            <span
+                            <div
                               class="emotion-6"
                             >
-                              esc
-                            </span>
+                              <span
+                                class="emotion-5"
+                              >
+                                esc
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </td>
-                  <td
-                    class="emotion-16"
-                  >
-                    description
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    </td>
+                    <td
+                      class="emotion-15"
+                    >
+                      description
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p />
           </div>
         </div>
       </div>

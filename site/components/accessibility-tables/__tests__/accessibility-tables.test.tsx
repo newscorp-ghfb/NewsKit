@@ -9,7 +9,7 @@ describe('Accessibility', () => {
   test('renders focus order table with keyCombo if data is provided', () => {
     const props = {
       focusOrder: {
-        name: 'Focus order',
+        title: 'Focus order',
         description: 'Some random text here',
         table: {
           columns: ['Order', 'Element', 'Role'],
@@ -29,7 +29,7 @@ describe('Accessibility', () => {
   test('renders keyboard interactions table with keyCombo if data is provided', () => {
     const props = {
       interaction: {
-        name: 'Keyboard Interactions',
+        title: 'Keyboard Interactions',
         description: 'Some random text',
         table: {
           columns: ['Command', 'Description'],
@@ -48,7 +48,7 @@ describe('Accessibility', () => {
   test('renders aria interactions table if data is provided', () => {
     const props = {
       aria: {
-        name: 'WAI-ARIA',
+        title: 'WAI-ARIA',
         description: 'Some random text',
         table: {
           columns: ['Category', 'Attribute', 'Value', 'Description'],

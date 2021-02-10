@@ -20994,45 +20994,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   margin-top: -0.4902777777777778em;
 }
 
-.emotion-375 {
-  margin: 0;
-  padding: 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-375 svg {
-  fill: #162740;
-}
-
-.emotion-371::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22499999999999998em;
-}
-
-.emotion-371::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.475em;
-}
-
-.emotion-372 {
-  margin-bottom: 16px;
-}
-
-.emotion-392 {
+.emotion-396 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -21140,51 +21102,154 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-.emotion-377 {
+.emotion-375 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  display: inline-block;
 }
 
-.emotion-377 svg {
+.emotion-375 svg {
   fill: #555E74;
 }
 
-.emotion-377::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.37916666666666665em;
+@media screen and (max-width:1439px) {
+  .emotion-375 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-375::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22499999999999998em;
+  }
+
+  .emotion-375::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.475em;
+  }
 }
 
-.emotion-377::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.31666666666666665em;
+@media screen and (min-width:1440px) {
+  .emotion-375 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-375::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19166666666666665em;
+  }
+
+  .emotion-375::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.44166666666666665em;
+  }
 }
 
-.emotion-392 {
+.emotion-377 {
+  margin: 0;
+  padding: 1px 0;
+  color: #808E99;
+}
+
+.emotion-377 svg {
+  fill: #808E99;
+}
+
+@media screen and (max-width:1439px) {
+  .emotion-377 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-377::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4625em;
+  }
+
+  .emotion-377::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-377 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    line-height: 1.3333333333333333;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-377::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.37916666666666665em;
+  }
+
+  .emotion-377::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.31666666666666665em;
+  }
+}
+
+.emotion-391 {
   overflow-x: auto;
 }
 
-.emotion-387 {
+.emotion-390 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-379 {
+.emotion-378 {
   background-color: transparent;
   border-style: solid;
   border-color: #243853;
@@ -21205,7 +21270,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   min-width: 64px;
 }
 
-.emotion-390 {
+.emotion-389 {
   background-color: transparent;
   border-style: solid;
   border-color: #BBC3C9;
@@ -21221,11 +21286,11 @@ exports[`Component Page Template renders mandatory sections and focus order from
   letter-spacing: 0;
 }
 
-.emotion-383 {
+.emotion-386 {
   padding: 8px 8px 8px 0;
 }
 
-.emotion-385 {
+.emotion-384 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -21254,16 +21319,16 @@ exports[`Component Page Template renders mandatory sections and focus order from
   border-radius: 20rem;
 }
 
-.emotion-385 svg {
+.emotion-384 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-385 svg {
+.emotion-384 svg {
   fill: #FFFFFF;
 }
 
-.emotion-382 {
+.emotion-381 {
   font-family: 'Poppins',sans-serif;
   font-size: 24px;
   line-height: 1.3333333333333333;
@@ -21274,7 +21339,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   letter-spacing: 0;
 }
 
-.emotion-382::before {
+.emotion-381::before {
   content: '';
   display: block;
   height: 0;
@@ -21282,7 +21347,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   margin-bottom: -0.19166666666666665em;
 }
 
-.emotion-382::after {
+.emotion-381::after {
   content: '';
   display: block;
   height: 0;
@@ -23419,91 +23484,92 @@ exports[`Component Page Template renders mandatory sections and focus order from
                                     class="emotion-389"
                                   >
                                     <div
-                                      class="emotion-372"
+                                      class="emotion-253"
                                     >
-                                      <p
-                                        class="emotion-371"
+                                      <span
+                                        class="emotion-375"
                                       >
                                         Focus order
-                                      </p>
+                                      </span>
                                     </div>
                                     <div
-                                      class="emotion-359"
+                                      class="emotion-370"
                                     >
                                       <p
                                         class="emotion-368"
                                       >
                                         Some random text here
                                       </p>
-                                    </div>
-                                    <div
-                                      class="emotion-388"
-                                    >
-                                      <table
-                                        class="emotion-387"
+                                      <div
+                                        class="emotion-391"
                                       >
-                                        <thead>
-                                          <tr>
-                                            <th
-                                              class="emotion-375"
+                                        <table
+                                          class="emotion-390"
+                                        >
+                                          <thead>
+                                            <tr>
+                                              <th
+                                                class="emotion-378"
+                                              >
+                                                Order
+                                              </th>
+                                              <th
+                                                class="emotion-378"
+                                              >
+                                                Element
+                                              </th>
+                                              <th
+                                                class="emotion-378"
+                                              >
+                                                Role
+                                              </th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr
+                                              class="emotion-389"
                                             >
-                                              Order
-                                            </th>
-                                            <th
-                                              class="emotion-375"
-                                            >
-                                              Element
-                                            </th>
-                                            <th
-                                              class="emotion-375"
-                                            >
-                                              Role
-                                            </th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr
-                                            class="emotion-386"
-                                          >
-                                            <td
-                                              class="emotion-383"
-                                            >
-                                              <div
-                                                class="emotion-272"
+                                              <td
+                                                class="emotion-386"
                                               >
                                                 <div
-                                                  class="emotion-385"
-                                                  data-testid="flag"
+                                                  class="emotion-275"
                                                 >
                                                   <div
-                                                    class="emotion-270"
+                                                    class="emotion-384"
+                                                    data-testid="flag"
                                                   >
                                                     <div
-                                                      class="emotion-269"
+                                                      class="emotion-273"
                                                     >
-                                                      <span
-                                                        class="emotion-378"
+                                                      <div
+                                                        class="emotion-272"
                                                       >
-                                                        1
-                                                      </span>
+                                                        <span
+                                                          class="emotion-381"
+                                                        >
+                                                          1
+                                                        </span>
+                                                      </div>
                                                     </div>
                                                   </div>
                                                 </div>
-                                              </div>
-                                            </td>
-                                            <td
-                                              class="emotion-383"
-                                            >
-                                              element
-                                            </td>
-                                            <td
-                                              class="emotion-383"
-                                            >
-                                              Role
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+                                              </td>
+                                              <td
+                                                class="emotion-386"
+                                              >
+                                                element
+                                              </td>
+                                              <td
+                                                class="emotion-386"
+                                              >
+                                                Role
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <p />
                                     </div>
                                   </div>
                                 </div>

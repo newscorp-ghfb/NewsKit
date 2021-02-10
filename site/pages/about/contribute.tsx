@@ -1,11 +1,12 @@
 import React from 'react';
-import {Cell, Link, Grid, Headline, Paragraph} from 'newskit';
+import {Cell, Link, Grid} from 'newskit';
 import {InfoNotice} from '../../components/info-notice';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
 import {MediaList} from '../../components/media-list';
 import {Separator} from '../../components/separator';
+import {ContentText} from '../../components/text-section';
 
 const cardStyle = {
   card: {
@@ -89,29 +90,21 @@ export default (layoutProps: LayoutProps) => (
           alt: '',
         }}
       />
-      <Cell xs={12} md={10} lg={8} xl={7} mdOffset={1}>
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Participate in use research
-        </Headline>
-        <br />
-        {/* TODO add spacing with br? enough? */}
-        {/* TODO contact form href correct? */}
-        <Paragraph>
+      <Cell xs={12} md={8} lg={7} mdOffset={1}>
+        <ContentText title="Participate in use research" titleAs="h3">
           We strive to build a Design System that best meets user needs, so we
           conduct user research to better understand what your needs are and how
-          you are using NewsKit. These insights inform the NewsKit roadmap,
-          ultimately improving NewsKit for everyone.
-        </Paragraph>
-        <br />
-        <Paragraph>
+          you are using NewsKit.
+          <br />
+          <br />
+          These insights inform the NewsKit roadmap, ultimately improving
+          NewsKit for everyone.
+          <br />
+          <br />
           For News UK users, we request feedback every two weeks using a simple
           2-minute survey and another more in-depth quarterly survey.
-        </Paragraph>
-        <br />
-        <Paragraph>
+          <br />
+          <br />
           We also conduct focus group sessions, interviews and research tasks.
           Apply to be part of a research programme by contacting us via the{' '}
           <Link
@@ -121,17 +114,9 @@ export default (layoutProps: LayoutProps) => (
             contact form
           </Link>
           .
-        </Paragraph>
-        <br />
-        <br />
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Report a bug
-        </Headline>
-        <br />
-        <Paragraph>
+        </ContentText>
+
+        <ContentText title="Report a bug" titleAs="h3">
           Software glitches and pesky bugs can occasionally make their way into
           NewsKit products including the design library, codebase or this
           website. If you encounter a bug, please report it to us using the{' '}
@@ -144,24 +129,18 @@ export default (layoutProps: LayoutProps) => (
           </Link>
           . Reports submitted in this fashion will be directed to the NewsKit
           team to address.
-        </Paragraph>
-        <br />
-        <br />
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
+        </ContentText>
+
+        <ContentText
+          title="Propose an enhancement or request a feature"
+          titleAs="h3"
         >
-          Propose an enhancement or request a feature
-        </Headline>
-        <br />
-        <Paragraph>
           We’re always upgrading and improving the Design System to better meet
           the product team’s needs. We encourage improvements, enhancements and
           new features. To support this process we have a workflow below to
           scope whether a new feature should be added to the Design System.
-        </Paragraph>
-        <br />
-        <Paragraph>
+          <br />
+          <br />
           Propose an enhancement or request a new feature by submitting details
           using the{' '}
           <Link
@@ -171,11 +150,12 @@ export default (layoutProps: LayoutProps) => (
             online form
           </Link>
           .
-        </Paragraph>
+        </ContentText>
       </Cell>
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
       </Cell>
+
       <SectionIntroduction
         title="Share"
         image={{
@@ -183,30 +163,21 @@ export default (layoutProps: LayoutProps) => (
           alt: '',
         }}
       />
-      <Cell xs={12} md={10} lg={8} xl={7} mdOffset={1}>
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Promote it
-        </Headline>
-        <br />
-        <Paragraph>
+      <Cell xs={12} md={8} lg={7} mdOffset={1}>
+        <ContentText title="Promote it" titleAs="h3">
           Had a good experience with NewsKit? Please let us know! By sharing
           your good experiences using NewsKit, our team and other teams can
           unlock the same benefits you have had; the benefits remain hidden
           until teams know about it and use it.
-        </Paragraph>
-        <br />
-        <br />
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Respond to questions
-        </Headline>
-        <br />
-        <Paragraph>
+        </ContentText>
+
+        <ContentText title="Respond to questions" titleAs="h3">
+          Had a good experience with NewsKit? Please let us know! By sharing
+          your good experiences using NewsKit, our team and other teams can
+          unlock the same benefits you have had; the benefits remain hidden
+          until teams know about it and use it.
+          <br />
+          <br />
           Use knowledge of the NewsKit, Design Systems and tools to assist
           teammates and others. For News UK teams, feel free to jump into{' '}
           <Link href="https://newsuktechnology.slack.com/archives/CTFGLAK9C">
@@ -214,17 +185,9 @@ export default (layoutProps: LayoutProps) => (
           </Link>{' '}
           and answer questions that arise. The more users that share knowledge,
           the more we can learn from each other and grow the NewsKit community.
-        </Paragraph>
-        <br />
-        <br />
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Assist adoption and integration
-        </Headline>
-        <br />
-        <Paragraph>
+        </ContentText>
+
+        <ContentText title="Assist adoption and integration" titleAs="h3">
           The NewsKit team spends a lot of energy and attention to ensure that
           users can get started and utilise the Design System as efficiently and
           simply as possible, however, we acknowledge that often the first steps
@@ -232,7 +195,7 @@ export default (layoutProps: LayoutProps) => (
           challenge. If you have the knowledge, assist your teammates and others
           in making their first integration. If you require additional support,
           the NewsKit team can help.
-        </Paragraph>
+        </ContentText>
       </Cell>
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
@@ -244,15 +207,9 @@ export default (layoutProps: LayoutProps) => (
           alt: '',
         }}
       />
-      <Cell xs={12} md={10} lg={8} xl={7} mdOffset={1}>
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Build assets for design libraries
-        </Headline>
-        <br />
-        <Paragraph>
+
+      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+        <ContentText title="Build assets for design libraries" titleAs="h3">
           Designed something that you think other NewsKit users would benefit
           from? Whether that be a component or a structured layout of existing
           components,{' '}
@@ -271,21 +228,12 @@ export default (layoutProps: LayoutProps) => (
             NewsKit workflow
           </Link>
           . Your design could be used to improve other products
-        </Paragraph>
-        <br />
-        <br />
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Write some code
-        </Headline>
-        <br />
-        <br />
-        <InfoNotice>Currently only applicable for News UK teams.</InfoNotice>
-        <br />
-        <br />
-        <Paragraph>
+        </ContentText>
+
+        <ContentText title="Write some code" titleAs="h3">
+          <br />
+          <InfoNotice>Currently only applicable for News UK teams.</InfoNotice>
+          <br />
           There’s a lot of code that has been written and there’s a lot more
           left to write. Whether you have built a new component or have a small
           typo fix,{' '}
@@ -304,17 +252,9 @@ export default (layoutProps: LayoutProps) => (
             NewsKit workflow
           </Link>
           . Your contribution could make it into NewsKit and other products!
-        </Paragraph>
-        <br />
-        <br />
-        <Headline
-          overrides={{typographyPreset: 'utilityHeading030'}}
-          headingAs="h3"
-        >
-          Write documentation
-        </Headline>
-        <br />
-        <Paragraph>
+        </ContentText>
+
+        <ContentText title="Write documentation" titleAs="h3">
           This website is the source of truth for the Design System. It’s
           important that the documentation is clear and concise whilst giving
           enough detail to best understand the Design System. If you would like
@@ -326,7 +266,7 @@ export default (layoutProps: LayoutProps) => (
             let our team know
           </Link>
           . The NewsKit team can guide you through the contribution process.
-        </Paragraph>
+        </ContentText>
       </Cell>
     </Grid>
   </Layout>

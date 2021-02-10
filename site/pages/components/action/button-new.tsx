@@ -464,7 +464,7 @@ export default (layoutProps: LayoutProps) => (
       introduction:
         'Add details of any Accessibility considerations for this component (to include aria labels, keyboard interactions and any other considerations such as WCAG guidance).',
       focusOrder: {
-        name: 'Focus order',
+        title: 'Focus order',
         description: 'Some random text here',
         table: {
           columns: ['Order', 'Element', 'Role'],
@@ -506,7 +506,7 @@ export default (layoutProps: LayoutProps) => (
         },
       },
       interaction: {
-        name: 'Keyboard Interactions',
+        title: 'Keyboard Interactions',
         description: 'Some random text',
         table: {
           columns: ['Command', 'Description'],
@@ -547,7 +547,7 @@ export default (layoutProps: LayoutProps) => (
         },
       },
       aria: {
-        name: 'WAI-ARIA',
+        title: 'WAI-ARIA',
         description: 'Some random text',
         table: {
           columns: ['Category', 'Attribute', 'Value', 'Description'],

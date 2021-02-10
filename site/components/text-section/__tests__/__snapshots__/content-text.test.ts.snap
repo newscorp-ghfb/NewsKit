@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentText renders with only the description 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin-bottom: 32px;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #808E99;
+}
+
+.emotion-0 svg {
+  fill: #808E99;
+}
+
+@media screen and (max-width:1439px) {
+  .emotion-0 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4625em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    line-height: 1.3333333333333333;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.37916666666666665em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.31666666666666665em;
+  }
+}
+
+<div
+    class="emotion-1"
+  >
+    <p
+      class="emotion-0"
+    >
+      description
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ContentText renders with only the title 1`] = `
+<DocumentFragment>
+  @media screen and (max-width:767px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #555E74;
+}
+
+.emotion-0 svg {
+  fill: #555E74;
+}
+
+@media screen and (max-width:1439px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22499999999999998em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.475em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19166666666666665em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.44166666666666665em;
+  }
+}
+
+<div
+    class="emotion-1"
+  >
+    <p
+      class="emotion-0"
+    >
+      Title
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ContentText renders with title and description 1`] = `
+<DocumentFragment>
+  @media screen and (max-width:767px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #555E74;
+}
+
+.emotion-0 svg {
+  fill: #555E74;
+}
+
+@media screen and (max-width:1439px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22499999999999998em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.475em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19166666666666665em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.44166666666666665em;
+  }
+}
+
+<div
+    class="emotion-1"
+  >
+    <p
+      class="emotion-0"
+    >
+      Title
+    </p>
+  </div>
+  .emotion-1 {
+  margin-bottom: 32px;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #808E99;
+}
+
+.emotion-0 svg {
+  fill: #808E99;
+}
+
+@media screen and (max-width:1439px) {
+  .emotion-0 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4625em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    line-height: 1.3333333333333333;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.37916666666666665em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.31666666666666665em;
+  }
+}
+
+<div
+    class="emotion-1"
+  >
+    <p
+      class="emotion-0"
+    >
+      description
+    </p>
+  </div>
+</DocumentFragment>
+`;

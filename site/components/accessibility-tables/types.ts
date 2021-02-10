@@ -1,6 +1,6 @@
 export interface AccessibilityTablesProps {
   focusOrder?: {
-    name: string;
+    title: string;
     description: string;
     table: {
       columns: string[];
@@ -8,7 +8,7 @@ export interface AccessibilityTablesProps {
     };
   };
   aria?: {
-    name: string;
+    title: string;
     description: string;
     table: {
       columns: string[];
@@ -16,7 +16,7 @@ export interface AccessibilityTablesProps {
     };
   };
   interaction?: {
-    name: string;
+    title: string;
     description: string;
     table: {
       columns: string[];

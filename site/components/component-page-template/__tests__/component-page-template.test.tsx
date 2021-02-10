@@ -144,7 +144,7 @@ describe('Component Page Template', () => {
       accessibility: {
         introduction: 'Component Accessibility.',
         focusOrder: {
-          name: 'Focus order',
+          title: 'Focus order',
           description: 'Some random text here',
           table: {
             columns: ['Order', 'Element', 'Role'],
