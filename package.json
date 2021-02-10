@@ -206,7 +206,6 @@
       "prepare-commit-msg": "node githooks/preparecommitmsg",
       "commit-msg": "node githooks/commitmsg",
       "pre-commit": "lint-staged",
-      "pre-push": "yarn test",
       "post-merge": "yarn dependencies:check",
       "post-checkout": "yarn dependencies:check"
     }
