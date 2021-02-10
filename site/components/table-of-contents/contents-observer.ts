@@ -35,7 +35,7 @@ const handleScroll = (
 
 export const contentsObserver = (
   handleIntersection: (id: string) => void,
-  contentsData: Array<{id: string}>,
+  contentsInfo: Array<{id: string}>,
 ) => {
   if (typeof document === 'undefined') {
     return () => {};
@@ -43,8 +43,9 @@ export const contentsObserver = (
 
   // eslint-disable-next-line no-undef
   const d = document;
-
-  const htmlElementsList = contentsData.map(data => d.getElementById(data.id));
+  
+  const htmlElementsList = contentsInfo.map(info => d.getElementById(info.id));
+  
   const onScroll = debounce(() => {
     handleScroll(htmlElementsList, handleIntersection);
   });

@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Stack, Flow} from 'newskit';
 import {StyledTableOfContents, StyledContentsNavItem} from './styled';
 import {ContentsNavItemProps} from './types';
@@ -10,27 +10,29 @@ export const TableOfContents: React.FC = () => {
     {id: string; title: string}[]
   >();
 
+  const getContentInfo = () => {
+    const data: {id: string; title: string}[] = [];
+
+    document.querySelectorAll('section[data-toc-indexed').forEach(element => {
+      const title = element.getAttribute('data-toc-indexed');
+      if (title) {
+        data.push({id: element.id, title});
+      }
+    });
+    setContentsInfo(data);
+  }
+
+  const setNewActiveElement = (id: string) => {
+    const activeElement =
+      contentsInfo && contentsInfo.findIndex(info => info.id === id);
+
+    setActiveItem(activeElement);
+  }
+
   useEffect(() => {
-    if (!contentsInfo) {
-      const data: {id: string; title: string}[] = [];
-
-      document.querySelectorAll('section[data-toc-indexed').forEach(element => {
-        const title = element.getAttribute('data-toc-indexed');
-        if (title) {
-          data.push({id: element.id, title});
-        }
-      });
-
-      setContentsInfo(data);
-    }
-
+    if (!contentsInfo) getContentInfo()
     if (contentsInfo) {
-      return contentsObserver((id: string) => {
-        const activeElement =
-          contentsInfo && contentsInfo.findIndex(info => info.id === id);
-
-        setActiveItem(activeElement);
-      }, contentsInfo);
+      return contentsObserver(setNewActiveElement, contentsInfo);
     }
   }, [contentsInfo]);
 
