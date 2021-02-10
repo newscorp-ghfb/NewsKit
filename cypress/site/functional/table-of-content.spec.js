@@ -27,7 +27,7 @@ describe('table of content', () => {
     cy.get('@TOCInteractiveDemo').should(
       'have.css',
       'border-color',
-      'rgb(85, 94, 116)',
+      'rgb(235, 235, 235)',
     );
   });
 });
