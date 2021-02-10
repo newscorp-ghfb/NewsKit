@@ -9,7 +9,7 @@ describe('table of content', () => {
     cy.get('@TOCInteractiveDemo').should(
       'have.css',
       'border-color',
-      'rgb(10, 104, 193)',
+      'rgb(87, 127, 251)',
     );
   });
 
@@ -22,7 +22,7 @@ describe('table of content', () => {
     cy.get('@TOCAnatomySection').should(
       'have.css',
       'border-color',
-      'rgb(10, 104, 193)',
+      'rgb(87, 127, 251)',
     );
     cy.get('@TOCInteractiveDemo').should(
       'have.css',
