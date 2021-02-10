@@ -14,6 +14,7 @@ import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {TabInternal} from './tab-internal';
 import {useTheme} from '../theme';
+import {useResizeObserver} from '../utils/use-resize-observer';
 import {
   getTabBarIndicatorStyle,
   getLayoutParams,
@@ -70,6 +71,12 @@ export const Tabs: React.FC<TabsProps> = ({
   // Reference like this so linter does not remove from hooks dependencies
   const currentActiveTabRef = activeTabRef.current;
 
+  const tabBarTrackRef = React.useRef<HTMLDivElement>(null);
+  const [tabBarTrackWidth, tabBarTrackHeight] = useResizeObserver(
+    tabBarTrackRef,
+  );
+  const tabBarTrackSize = vertical ? tabBarTrackHeight : tabBarTrackWidth;
+
   const tabBarIndicatorLengthOverride =
     overrides.tabBarIndicator && overrides.tabBarIndicator.length;
   React.useEffect(() => {
@@ -83,7 +90,13 @@ export const Tabs: React.FC<TabsProps> = ({
         ),
       );
     }
-  }, [currentActiveTabRef, tabBarIndicatorLengthOverride, theme, vertical]);
+  }, [
+    currentActiveTabRef,
+    tabBarIndicatorLengthOverride,
+    theme,
+    vertical,
+    tabBarTrackSize,
+  ]);
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
     // WAI-ARIA 1.1
@@ -234,6 +247,7 @@ export const Tabs: React.FC<TabsProps> = ({
             vertical={vertical}
             role="presentation"
             data-testid="tab-bar-track"
+            ref={tabBarTrackRef}
           />
           <StyledTabBarIndicator
             overrides={overrides}

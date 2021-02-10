@@ -492,3 +492,16 @@ Add aria-label prop to allow a user to describe the action that will be performe
 ## SEO
 
 Ensure icons have alt text.
+
+## Browser compatibility
+
+The animated highlight indicator that tracks the active tab is absolutely positioned.
+When the active tab changes, the layout of the indicator is recalculated.
+This means any change in the active tab's position or size, not caused by an active tab change,
+could lead to the indicator having an outdated layout.
+
+To solve this problem we use a [`ResizeObserver`](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver),
+which watches tabs container for size changes and re-position the indicator accordingly.
+The `ResizeObserver` is supported by all modern browsers but doesn't exist in Internet Explorer.
+If you need this behavior in IE, we suggest using a polyfill for the `ResizeObserver` such as [this one](https://www.npmjs.com/package/@juggle/resize-observer).
+We do not include the polyfill by default to avoid adding a few KB to the bundle size of the Tabs component.

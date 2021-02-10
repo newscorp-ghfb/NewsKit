@@ -180,6 +180,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@types/debounce": "^1.2.0",
+    "@types/resize-observer-browser": "^0.1.5",
     "date-fns": "^2.6.0",
     "debounce": "^1.2.0",
     "dequal": "^1.0.0",

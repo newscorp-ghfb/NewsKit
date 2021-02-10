@@ -10,7 +10,6 @@ import {Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
 import {TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
-
 import {createTheme, compileTheme} from '../../theme';
 
 const renderTabsDefault = (props: TabsProps) => <Tabs {...props} />;
@@ -44,6 +43,17 @@ const tabsWithLabelAndIcons = [
 const selectedTabStyled = 'color: #0a68c1';
 
 describe('Tabs', () => {
+  // Mocking ResizeObserver
+  const mockResizeObserver = jest.fn(() => ({
+    observe: jest.fn(),
+    disconnect: jest.fn(),
+  }));
+
+  beforeAll(() => {
+    // @ts-ignore
+    global.ResizeObserver = mockResizeObserver;
+  });
+
   test('renders with default styles', () => {
     const props: TabsProps = {
       children: tabsWithLabel,
