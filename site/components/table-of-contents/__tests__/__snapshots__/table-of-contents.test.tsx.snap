@@ -3,7 +3,7 @@
 exports[`TableOfContent should render with no errors 1`] = `
 <DocumentFragment>
   .emotion-7 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 

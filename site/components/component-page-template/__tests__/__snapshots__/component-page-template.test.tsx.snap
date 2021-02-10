@@ -2451,7 +2451,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 }
 
 .emotion-432 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -8273,7 +8273,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 .emotion-435 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -14227,7 +14227,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 }
 
 .emotion-494 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -20379,7 +20379,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-439 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -26490,7 +26490,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 }
 
 .emotion-437 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -32697,7 +32697,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 }
 
 .emotion-434 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -38545,7 +38545,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 }
 
 .emotion-443 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -44453,7 +44453,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 }
 
 .emotion-427 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -50284,7 +50284,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 }
 
 .emotion-417 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -55934,7 +55934,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 }
 
 .emotion-444 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -61911,7 +61911,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 .emotion-435 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
@@ -67865,7 +67865,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 }
 
 .emotion-399 {
-  top: 435px;
+  top: 40vh;
   position: fixed;
 }
 
