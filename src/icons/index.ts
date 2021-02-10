@@ -8,6 +8,7 @@ export * from './outlined/material';
 export * from './types';
 export * from './svg';
 export * from './to-newskit-icon';
+export * from './custom-to-newskit-icon';
 
 export type IconComponent = React.ComponentType<
   SvgProps & {

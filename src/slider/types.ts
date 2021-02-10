@@ -1,5 +1,4 @@
 import {Range} from 'react-range';
-import {IconComponent} from '../icons';
 import {MQ} from '../utils/style';
 
 type RenderTrackFunction = Range['props']['renderTrack'];
@@ -58,7 +57,7 @@ interface CommonSliderProps extends CommonProps {
   maxLabel?: string | React.ComponentType;
   labelPosition?: LabelPosition;
   thumbLabel?: boolean | React.ComponentType<ThumbLabelProps>;
-  thumbIcon?: IconComponent;
+  thumbIcon?: React.ComponentType;
   dataTestId?: string;
   renderTrack?: RenderTrackFunction;
   renderThumb?: RenderThumbFunction;

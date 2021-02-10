@@ -100,7 +100,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     receives the current thumb value as its children. If left undefined or set
     falsy, no thumb label is rendered.
   </Prop>
-  <Prop name="thumbIcon" type="IconComponent">
+  <Prop name="thumbIcon" type="React.ComponentType">
     If provided places the passed icon inside the slider thumb.
   </Prop>
   <Prop
@@ -237,7 +237,11 @@ Refer to the defaults below for the full object structure:
         },
         {
           label: 'Component',
-          value: withProps(IconFilledCircle, {overrides:{size: 'sizing040'}}, 'MyLabelIcon'),
+          value: withProps(
+            IconFilledCircle,
+            {overrides: {size: 'sizing040'}},
+            'MyLabelIcon',
+          ),
         },
       ],
     },
@@ -256,7 +260,11 @@ Refer to the defaults below for the full object structure:
         },
         {
           label: 'Component',
-          value: withProps(IconFilledCircle, {overrides:{size: 'sizing040'}}, 'MyLabelIcon'),
+          value: withProps(
+            IconFilledCircle,
+            {overrides: {size: 'sizing040'}},
+            'MyLabelIcon',
+          ),
         },
       ],
     },

@@ -2,9 +2,9 @@ import React from 'react';
 import {styled, getSize, getStylePreset} from '../../../utils/style';
 import {withTheme} from '../../../theme';
 import {Svg} from '../../svg';
-import {SvgProps} from '../../types';
+import {NewsKitIconProps} from '../../types';
 
-const StyledSvg = styled(Svg)<SvgProps>`
+const StyledSvg = styled(Svg)<NewsKitIconProps>`
   @keyframes rotate {
     0% {
       stroke-dasharray: 410;
@@ -51,17 +51,19 @@ const StyledSvg = styled(Svg)<SvgProps>`
   }
 `;
 
-const DefaultProgressIndicatorIcon: React.FC<SvgProps> = props => (
+const DefaultProgressIndicatorIcon: React.FC<NewsKitIconProps> = props => (
   <StyledSvg {...props} viewBox="0 0 64 64">
     <circle cx="50%" cy="50%" />
   </StyledSvg>
 );
 
-export const IndeterminateProgressIndicator = withTheme<SvgProps>(props => {
-  const Icon =
-    props.theme.icons.IndeterminateProgressIndicator ||
-    DefaultProgressIndicatorIcon;
-  return <Icon {...props} />;
-});
+export const IndeterminateProgressIndicator = withTheme<NewsKitIconProps>(
+  props => {
+    const Icon =
+      props.theme.icons.IndeterminateProgressIndicator ||
+      DefaultProgressIndicatorIcon;
+    return <Icon {...props} />;
+  },
+);
 
 IndeterminateProgressIndicator.displayName = 'IndeterminateProgressIndicator';

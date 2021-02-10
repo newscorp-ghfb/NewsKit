@@ -28,6 +28,7 @@ Array [
   "IndeterminateProgressIndicator",
   "Svg",
   "toNewsKitIcon",
+  "customToNewsKitIcon",
   "useClientSide",
   "Image",
   "instrumentationHandlers",

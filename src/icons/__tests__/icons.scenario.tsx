@@ -16,8 +16,8 @@ import {
   IconFilledAccountTree,
   IconOutlinedAccountTree,
   IconOutlinedClose,
-  SvgProps,
   Svg,
+  NewsKitIconProps,
 } from '..';
 import * as customIcons from '../filled/custom';
 import {customToNewsKitIcon} from '../custom-to-newskit-icon';
@@ -85,7 +85,7 @@ export default {
           {...Object.entries(remainingCustomIcons).map((entry: any) => {
             const [iconName, Icon] = entry as [
               string,
-              React.ComponentType<SvgProps>,
+              React.ComponentType<NewsKitIconProps>,
             ];
 
             const stylePresetOverride = isSocialIcon(iconName)
@@ -150,7 +150,7 @@ export default {
       component: () => (
         <>
           {...Object.values(materialIconsSample).map(
-            (Icon: React.ComponentType<SvgProps>) => (
+            (Icon: React.ComponentType<NewsKitIconProps>) => (
               <div>
                 <ThemeProvider theme={getTheme()}>
                   <Icon overrides={{size: 'iconSize020'}} />

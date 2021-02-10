@@ -1,7 +1,7 @@
 import React from 'react';
 import {EmotionIconProps} from '@emotion-icons/emotion-icon';
 import {withTheme} from '../theme';
-import {SvgProps} from './types';
+import {NewsKitIconProps, SvgProps} from './types';
 import {getStylePreset, styled} from '../utils/style';
 
 export const toNewsKitIcon = (
@@ -9,7 +9,7 @@ export const toNewsKitIcon = (
     | React.ComponentType<EmotionIconProps>
     | React.ComponentType<SvgProps>,
 ) =>
-  withTheme<SvgProps>(props => {
+  withTheme<NewsKitIconProps>(props => {
     const emotionIconName = PassedIcon.displayName;
     const size =
       props.overrides && props.overrides.size
@@ -32,5 +32,5 @@ export const toNewsKitIcon = (
 
     const Icon = props.theme.icons[`${emotionIconName}`] || StyledIcon;
 
-    return <Icon title={props.title} overrides={props.overrides} {...props} />;
+    return <Icon title={props.title} {...props} />;
   });

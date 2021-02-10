@@ -1,11 +1,11 @@
 import {withDefaultProps} from '../utils/with-default-props';
 import {toNewsKitIcon} from './to-newskit-icon';
-import {SvgProps} from './types';
+import {NewsKitIconProps, SvgProps} from './types';
 
 export const customToNewsKitIcon = (
   displayName: string,
   CustomIcon: React.ComponentType<SvgProps>,
-  overrides?: SvgProps['overrides'],
+  overrides?: NewsKitIconProps['overrides'],
 ) => {
   // eslint-disable-next-line no-param-reassign
   CustomIcon.displayName = displayName;
