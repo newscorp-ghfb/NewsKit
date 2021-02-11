@@ -30,7 +30,9 @@ export const TableOfContents: React.FC = () => {
   };
 
   useEffect(() => {
-    if (!contentsInfo) getContentInfo();
+    if (!contentsInfo) {
+      getContentInfo();
+    }
     if (contentsInfo) {
       return contentsObserver(setNewActiveElement, contentsInfo);
     }
