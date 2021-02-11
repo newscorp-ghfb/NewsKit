@@ -5,12 +5,7 @@ describe('table of content', () => {
   });
 
   it('should highlight the first section on load, Interactive Demo', () => {
-    cy.get('[href="#interactive-demo"]').as('TOCInteractiveDemo');
-    cy.get('@TOCInteractiveDemo').should(
-      'have.css',
-      'border-color',
-      'rgb(87, 127, 251)',
-    );
+    cy.get('@TOCInteractiveDemo').should('have.attr', 'data-selected', 'true');
   });
 
   it('highlighted Anatomy in the TOC after scrolling to that area', () => {
@@ -18,15 +13,7 @@ describe('table of content', () => {
 
     cy.scrollTo('bottom');
 
-    cy.get('@TOCOverridesSection').should(
-      'have.css',
-      'border-color',
-      'rgb(87, 127, 251)',
-    );
-    cy.get('@TOCInteractiveDemo').should(
-      'have.css',
-      'border-color',
-      'rgb(235, 235, 235)',
-    );
+    cy.get('@TOCOverridesSection').should('have.attr', 'data-selected', 'true');
+    cy.get('@TOCInteractiveDemo').should('have.attr', 'data-selected', 'false');
   });
 });

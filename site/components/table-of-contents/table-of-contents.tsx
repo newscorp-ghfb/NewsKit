@@ -53,6 +53,7 @@ export const TableOfContents: React.FC = () => {
       onClick={() => setActiveItem(itemKey)}
       itemKey={itemKey}
       isSelected={(activeItem || 0) === itemKey}
+      data-selected={(activeItem || 0) === itemKey}
     >
       {children}
     </StyledContentsNavItem>
