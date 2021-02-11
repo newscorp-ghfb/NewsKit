@@ -35590,8 +35590,8 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                       class="emotion-245"
                     >
                       <section
-                        data-toc-indexed="Props"
-                        id="props"
+                        data-toc-indexed="Overrides"
+                        id="overrides"
                       >
                         <div
                           class="emotion-247"
@@ -35899,7 +35899,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                         >
                           <a
                             class="emotion-432"
-                            href="#interactive-demo"
+                            href="#overrides"
                           >
                             <span
                               class="emotion-3"
@@ -35907,105 +35907,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                               <span
                                 class="emotion-430"
                               >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-435"
-                            href="#anatomy"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-430"
-                              >
-                                Anatomy
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-435"
-                            href="#variations"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-430"
-                              >
-                                Variations
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-435"
-                            href="#behaviors"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-430"
-                              >
-                                Behaviours
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-435"
-                            href="#usage"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-430"
-                              >
-                                Usage
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-435"
-                            href="#accessibility"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-430"
-                              >
-                                Accessibility
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-435"
-                            href="#seo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-430"
-                              >
-                                SEO
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-435"
-                            href="#props"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-430"
-                              >
-                                Props
+                                Overrides
                               </span>
                             </span>
                           </a>
