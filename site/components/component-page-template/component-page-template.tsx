@@ -176,9 +176,9 @@ const renderSections = ({
     )}
     {overrides && (
       <Cell xs={12}>
-        <section id="overrides" data-toc-indexed="Overrides">
+        <section id="overrides">
           <Grid lgMargin="space000" xsRowGutter="space000">
-            <SectionIntroduction title="Overrides" data-toc-indexed="Overrides">
+            <SectionIntroduction title="Overrides">
               {overrides.summary}
             </SectionIntroduction>
             <Cell xs={12} md={10} lg={8} mdOffset={1}>
