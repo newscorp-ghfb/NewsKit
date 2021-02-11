@@ -16,7 +16,7 @@ describe('table of content', () => {
   it('highlighted Anatomy in the TOC after scrolling to that area', () => {
     cy.get('[href="#overrides"]').as('TOCOverridesSection');
 
-    cy.scrollTo('bottom')
+    cy.scrollTo('bottom');
 
     cy.get('@TOCOverridesSection').should(
       'have.css',
