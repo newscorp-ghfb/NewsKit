@@ -14,12 +14,11 @@ describe('table of content', () => {
   });
 
   it('highlighted Anatomy in the TOC after scrolling to that area', () => {
-    cy.get('[href="#anatomy"]').as('TOCAnatomySection');
+    cy.get('[href="#overrides"]').as('TOCOverridesSection');
 
-    // Clicking on the link will trigger the scroll
-    cy.get('@TOCAnatomySection').click();
+    cy.scrollTo('bottom')
 
-    cy.get('@TOCAnatomySection').should(
+    cy.get('@TOCOverridesSection').should(
       'have.css',
       'border-color',
       'rgb(87, 127, 251)',
