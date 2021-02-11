@@ -5561,20 +5561,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                         >
                           <a
                             class="emotion-430"
-                            href="#interactive-demo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-428"
-                              >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-433"
+                            data-selected="true"
                             href="#anatomy"
                           >
                             <span
@@ -11515,48 +11502,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                         >
                           <a
                             class="emotion-433"
-                            href="#interactive-demo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-431"
-                              >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-436"
-                            href="#anatomy"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-431"
-                              >
-                                Anatomy
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-436"
-                            href="#variations"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-431"
-                              >
-                                Variations
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-436"
+                            data-selected="true"
                             href="#behaviors"
                           >
                             <span
@@ -23760,76 +23706,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                         >
                           <a
                             class="emotion-437"
-                            href="#interactive-demo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-435"
-                              >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-440"
-                            href="#anatomy"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-435"
-                              >
-                                Anatomy
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-440"
-                            href="#variations"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-435"
-                              >
-                                Variations
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-440"
-                            href="#behaviors"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-435"
-                              >
-                                Behaviours
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-440"
-                            href="#usage"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-435"
-                              >
-                                Usage
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-440"
+                            data-selected="true"
                             href="#accessibility"
                           >
                             <span
@@ -30050,7 +29927,8 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                           class="emotion-436"
                         >
                           <a
-                            class="emotion-431"
+                            class="emotion-435"
+                            data-selected="true"
                             href="#interactive-demo"
                           >
                             <span
@@ -35899,6 +35777,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                         >
                           <a
                             class="emotion-432"
+                            data-selected="true"
                             href="#overrides"
                           >
                             <span
@@ -41709,104 +41588,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
                         >
                           <a
                             class="emotion-441"
-                            href="#interactive-demo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-439"
-                              >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-444"
-                            href="#anatomy"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-439"
-                              >
-                                Anatomy
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-444"
-                            href="#variations"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-439"
-                              >
-                                Variations
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-444"
-                            href="#behaviors"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-439"
-                              >
-                                Behaviours
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-444"
-                            href="#usage"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-439"
-                              >
-                                Usage
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-444"
-                            href="#accessibility"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-439"
-                              >
-                                Accessibility
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-444"
-                            href="#seo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-439"
-                              >
-                                SEO
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-444"
+                            data-selected="true"
                             href="#props"
                           >
                             <span
@@ -53190,90 +52972,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                         >
                           <a
                             class="emotion-415"
-                            href="#interactive-demo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-413"
-                              >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-418"
-                            href="#anatomy"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-413"
-                              >
-                                Anatomy
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-418"
-                            href="#variations"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-413"
-                              >
-                                Variations
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-418"
-                            href="#behaviors"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-413"
-                              >
-                                Behaviours
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-418"
-                            href="#usage"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-413"
-                              >
-                                Usage
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-418"
-                            href="#accessibility"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-413"
-                              >
-                                Accessibility
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-418"
+                            data-selected="true"
                             href="#seo"
                           >
                             <span
@@ -59167,62 +58866,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                         >
                           <a
                             class="emotion-442"
-                            href="#interactive-demo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-440"
-                              >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-445"
-                            href="#anatomy"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-440"
-                              >
-                                Anatomy
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-445"
-                            href="#variations"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-440"
-                              >
-                                Variations
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-445"
-                            href="#behaviors"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-440"
-                              >
-                                Behaviours
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-445"
+                            data-selected="true"
                             href="#usage"
                           >
                             <span
@@ -65121,34 +64765,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                         >
                           <a
                             class="emotion-433"
-                            href="#interactive-demo"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-431"
-                              >
-                                Interactive Demo
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-436"
-                            href="#anatomy"
-                          >
-                            <span
-                              class="emotion-3"
-                            >
-                              <span
-                                class="emotion-431"
-                              >
-                                Anatomy
-                              </span>
-                            </span>
-                          </a>
-                          <a
-                            class="emotion-436"
+                            data-selected="true"
                             href="#variations"
                           >
                             <span

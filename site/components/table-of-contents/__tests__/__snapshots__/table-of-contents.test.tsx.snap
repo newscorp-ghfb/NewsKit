@@ -103,6 +103,7 @@ exports[`TableOfContent should render with no errors 1`] = `
     >
       <a
         class="emotion-2"
+        data-selected="true"
         href="#SEO"
       >
         <span
@@ -117,6 +118,7 @@ exports[`TableOfContent should render with no errors 1`] = `
       </a>
       <a
         class="emotion-2"
+        data-selected="false"
         href="#Accessibility"
       >
         <span
