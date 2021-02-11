@@ -157,40 +157,39 @@ const renderSections = ({
         </Cell>
       </>
     )}
-    {(props || overrides) && (
+    {props && (
       <Cell xs={12}>
         <section id="props" data-toc-indexed="Props">
           <Grid lgMargin="space000" xsRowGutter="space000">
-            {props && (
-              <>
-                <SectionIntroduction title="Props">
-                  {props.summary}
-                </SectionIntroduction>
-                <Cell xs={12} md={10} lg={8} mdOffset={1}>
-                  <Table rows={props.rows} columns={props.columns} />
-                </Cell>
-                <Cell xs={12} md={10} lg={8} mdOffset={1}>
-                  <Separator />
-                </Cell>
-              </>
-            )}
-            {overrides && (
-              <>
-                <SectionIntroduction
-                  title="Overrides"
-                  data-toc-indexed="Overrides"
-                >
-                  {overrides.summary}
-                </SectionIntroduction>
-                <Cell xs={12} md={10} lg={8} mdOffset={1}>
-                  <Table rows={overrides.rows} columns={overrides.columns} />
-                </Cell>
-              </>
-            )}
+            <SectionIntroduction title="Props">
+              {props.summary}
+            </SectionIntroduction>
+            <Cell xs={12} md={10} lg={8} mdOffset={1}>
+              <Table rows={props.rows} columns={props.columns} />
+            </Cell>
+            <Cell xs={12} md={10} lg={8} mdOffset={1}>
+              <Separator />
+            </Cell>
           </Grid>
         </section>
       </Cell>
     )}
+    {overrides && (
+      <Cell xs={12}>
+        <section id="overrides" data-toc-indexed="Overrides">
+          <Grid lgMargin="space000" xsRowGutter="space000">
+            <SectionIntroduction title="Overrides" data-toc-indexed="Overrides">
+              {overrides.summary}
+            </SectionIntroduction>
+            <Cell xs={12} md={10} lg={8} mdOffset={1}>
+              <Table rows={overrides.rows} columns={overrides.columns} />
+            </Cell>
+          </Grid>
+        </section>
+      </Cell>
+    )}
+
+    {/* )} */}
 
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
       <CodeFromDefaultPresets componentName={componentDefaultsKey} />
