@@ -15,11 +15,12 @@ const getHtmlReadElement = (HtmlElementsList: Array<HTMLElement | null>) => {
     }
   });
 
-  // This case covers when the users scrolls top the top again leaving the first section below the mid height
+  // This case covers when the users scrolls to the top again, after have visited other section,
+  //  leaving the first section below the mid height
   if (elementsAboveMidHeightData.length === 0 && HtmlElementsList[0])
     return HtmlElementsList[0].id;
 
-  // // Closest Html element's id to view port's mid height
+  // Closest Html element's id to view port's mid height
   return elementsAboveMidHeightData[elementsAboveMidHeightData.length - 1].id;
 };
 
