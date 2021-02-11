@@ -33,6 +33,7 @@ const Meta = (): JSX.Element => (
     />
     <link rel="manifest" href="/static/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="theme-color" content="#ffffff" />
   </React.Fragment>
 );
