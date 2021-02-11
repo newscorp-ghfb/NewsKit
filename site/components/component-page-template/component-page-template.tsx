@@ -188,9 +188,6 @@ const renderSections = ({
         </section>
       </Cell>
     )}
-
-    {/* )} */}
-
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
       <CodeFromDefaultPresets componentName={componentDefaultsKey} />
       <InfoNotice>
