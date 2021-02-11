@@ -8,12 +8,12 @@ describe('table of content', () => {
     cy.get('@TOCInteractiveDemo').should('have.attr', 'data-selected', 'true');
   });
 
-  it('highlighted Anatomy in the TOC after scrolling to that area', () => {
-    cy.get('[href="#overrides"]').as('TOCOverridesSection');
+  it('highlighted Props TOCSection after scrolling to the area', () => {
+    cy.get('[href="#props"]').as('TOCPropsSection');
 
     cy.scrollTo('bottom');
 
-    cy.get('@TOCOverridesSection').should('have.attr', 'data-selected', 'true');
+    cy.get('@TOCPropsSection').should('have.attr', 'data-selected', 'true');
     cy.get('@TOCInteractiveDemo').should('have.attr', 'data-selected', 'false');
   });
 });
