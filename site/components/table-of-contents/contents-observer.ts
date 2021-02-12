@@ -46,7 +46,7 @@ export const contentsObserver = (
   // eslint-disable-next-line no-undef
   const d = document;
   const htmlElementsList = contentsInfo.map(info => d.getElementById(info.id));
-   const onScroll = debounce(() => {
+  const onScroll = debounce(() => {
     handleScroll(htmlElementsList, handleIntersection);
   }, 10);
 
