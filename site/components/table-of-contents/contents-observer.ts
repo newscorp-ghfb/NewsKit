@@ -15,7 +15,7 @@ const getHtmlReadElement = (HtmlElementsList: Array<HTMLElement | null>) => {
     }
   });
 
-  // The following statement covers  the case of an user scrolling back to the top, after have visited another section,
+  // The following statement covers  the case of an user scrolling back to the top, after having visited another section,
   // leaving the first section below the mid height
   if (elementsAboveMidHeightData.length === 0 && HtmlElementsList[0]) {
     return HtmlElementsList[0].id;
