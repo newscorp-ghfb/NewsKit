@@ -1,4 +1,4 @@
-[PPDSC-XXX](https://nidigitalsolutions.jira.com/browse/PPDSC-XXX)
+PPDSC-XXXX
 
 **What**
 
