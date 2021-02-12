@@ -21,7 +21,7 @@ const getHtmlReadElement = (HtmlElementsList: Array<HTMLElement | null>) => {
     return HtmlElementsList[0].id;
   }
 
-  // Closest Html element's id to view port's mid height
+  // Closest Html element's id to viewport's mid height
   return elementsAboveMidHeightData[elementsAboveMidHeightData.length - 1].id;
 };
 
