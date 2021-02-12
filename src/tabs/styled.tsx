@@ -1,3 +1,4 @@
+import {TextAlignProperty} from 'csstype';
 import {
   styled,
   getSpacingInset,
@@ -13,6 +14,7 @@ import {
   DistributionWrapperProps,
   TabBarProps,
   TabInternalProps,
+  TabAlign,
 } from './types';
 import {Stack} from '../stack';
 import {TextBlock} from '../text-block';
@@ -100,11 +102,29 @@ export const StyledTabBarTrack = styled.div<
     vertical ? '100%' : getWeight('tabs.tabBarTrack', 'tabBarTrack')};
 `;
 
+const tabFlexAlign = {
+  start: 'flex-start',
+  end: 'flex-end',
+};
+
+const tabTextAlign = {
+  start: 'left',
+  end: 'right',
+};
+
 export const TabButton = styled(Button)<
   Omit<ButtonProps, 'loading'> & TabInternalProps
 >`
   ${({selected}) =>
     selected && getStylePreset('tab', '', {isSelected: selected})}
+
+  ${({align}) =>
+    align && align !== TabAlign.Center
+      ? {
+          justifyContent: tabFlexAlign[align],
+          textAlign: tabTextAlign[align] as TextAlignProperty,
+        }
+      : ''}
 `;
 
 export const TabPaneBlock = styled(TextBlock)`

@@ -8,7 +8,7 @@ import {
 } from '../../test/test-utils';
 import {Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
-import {TabsProps} from '../types';
+import {TabAlign, TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {createTheme, compileTheme} from '../../theme';
 
@@ -438,6 +438,25 @@ describe('Tabs', () => {
     expect(tab).toHaveStyle(selectedTabStyled);
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('renders with left/right aligned text', () => {
+    const props: TabsProps = {
+      children: tabsWithLabelAndIcons,
+      vertical: true,
+    };
+
+    const fragmentLeft = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      align: TabAlign.Start,
+    });
+    expect(fragmentLeft).toMatchSnapshot();
+
+    const fragmentRight = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      align: TabAlign.End,
+    });
+    expect(fragmentRight).toMatchSnapshot();
   });
 });
 

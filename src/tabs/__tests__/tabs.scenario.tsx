@@ -5,7 +5,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {Tab, Tabs, TabsDistribution} from '..';
+import {Tab, TabAlign, Tabs, TabsDistribution} from '..';
 import {IconFilledEmail} from '../../icons';
 
 const LoremIpsumText = [
@@ -732,6 +732,52 @@ export default {
             <Tab title="V tab 3, three">
               <LoremIpsum textNumber={3} />
             </Tab>
+          </Tabs>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tabs-with-align',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Tabs With Align</StorybookHeading>
+          <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>
+          <Tabs
+            align={TabAlign.Start}
+            distribution={TabsDistribution.FittedFlex}
+          >
+            <Tab title="Tab">Content 1</Tab>
+            <Tab title="Tab Two">Content 2</Tab>
+            <Tab title="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+
+          <StorybookSubHeading>Tabs Horizontal Align Right</StorybookSubHeading>
+          <Tabs align={TabAlign.End} distribution={TabsDistribution.FittedFlex}>
+            <Tab title="Tab">Content 1</Tab>
+            <Tab title="Tab Two">Content 2</Tab>
+            <Tab title="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+
+          <StorybookSubHeading>Tabs Vertical Align Left</StorybookSubHeading>
+          <Tabs
+            align={TabAlign.Start}
+            distribution={TabsDistribution.FittedFlex}
+            vertical
+          >
+            <Tab title="Tab">Content 1</Tab>
+            <Tab title="Tab Two">Content 2</Tab>
+            <Tab title="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+          <StorybookSubHeading>Tabs Vertical Align Right</StorybookSubHeading>
+          <Tabs
+            align={TabAlign.End}
+            distribution={TabsDistribution.FittedFlex}
+            vertical
+          >
+            <Tab title="Tab">Content 1</Tab>
+            <Tab title="Tab Two">Content 2</Tab>
+            <Tab title="Tab Three is Long">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),

@@ -14,6 +14,7 @@ import {
   Tabs,
   TabsDistribution,
   UnorderedList,
+  TabAlign,
 } from 'newskit';
 
 export default Layout;
@@ -99,6 +100,25 @@ Tabs have a number of props to facilitate a variety of uses:
       </>
     </UnorderedList>
   </Prop>
+  <Prop name="align" type="TabAlign">
+      Set the text alignment for Tabs.<br /><br />
+     
+     <UnorderedList>
+      <>
+        <InlineCode>Center</InlineCode> Centers the text
+      </>
+      <>
+        <InlineCode>Start</InlineCode> Aligns the text to the left
+      </>
+      <>
+        <InlineCode>End</InlineCode> Aligns the text to the right
+      </>
+    </UnorderedList>
+    <br />
+     <strong>NOTE:</strong> Default value depends on <InlineCode>vertical</InlineCode> prop: when is <InlineCode>true</InlineCode> the value is set to <InlineCode>TabAlign.Start</InlineCode>,
+    and <InlineCode>TabAlign.Center</InlineCode> when is <InlineCode>false</InlineCode>.
+
+  </Prop>  
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements. Here are the overrides that the Tabs accepts:
@@ -397,6 +417,25 @@ Here is an example of how the Tabs and Tab components are used.
       propName: 'initialSelectedIndex',
       type: 'number',
       value: 0,
+    },
+    {
+      name: 'Align',
+      propName: 'align',
+      options: [
+        {
+          label: 'TabAlign.Center',
+          value: TabAlign.Center,
+          isDefault: true,
+        },
+        {
+          label: 'TabAlign.Start',
+          value: TabAlign.Start,
+        },
+        {
+          label: 'TabAlign.End',
+          value: TabAlign.End,
+        },
+      ],
     },
   ]}
 />

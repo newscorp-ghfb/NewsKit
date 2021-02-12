@@ -1,6 +1,12 @@
 import React, {useState} from 'react';
 import {isFragment} from 'react-is';
-import {TabProps, TabsProps, TabsDistribution, TabSize} from './types';
+import {
+  TabProps,
+  TabsProps,
+  TabsDistribution,
+  TabSize,
+  TabAlign,
+} from './types';
 import {
   StyledTabBar,
   StyledInnerTabGroup,
@@ -36,6 +42,13 @@ const validateInitialSelectedIndex = (
   children: unknown[],
 ): number => (index >= 0 && index < children.length ? index : 0);
 
+const getAlign = (align: TabAlign | undefined, vertical: boolean) => {
+  if (!align) {
+    return vertical ? TabAlign.Start : TabAlign.Center;
+  }
+  return align;
+};
+
 export const Tabs: React.FC<TabsProps> = ({
   children,
   overrides = {},
@@ -44,8 +57,10 @@ export const Tabs: React.FC<TabsProps> = ({
   vertical = false,
   distribution,
   initialSelectedIndex = 0,
+  align: initialAlign,
 }) => {
   const theme = useTheme();
+  const align = getAlign(initialAlign, vertical);
 
   // filter out children which are not Tab component
   const tabsOnlyChildren = React.Children.toArray(children).filter(
@@ -204,6 +219,7 @@ export const Tabs: React.FC<TabsProps> = ({
             onMouseDown={preventDefault}
             disabled={tab.disabled}
             ref={tab.isActive ? activeTabRef : undefined}
+            align={align}
             overrides={{
               ...tab.overrides,
               width: '100%',

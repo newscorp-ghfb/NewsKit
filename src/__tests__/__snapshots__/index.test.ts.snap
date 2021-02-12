@@ -63,6 +63,7 @@ Array [
   "Standfirst",
   "Tab",
   "Tabs",
+  "TabAlign",
   "TabSize",
   "TabsDistribution",
   "Tag",

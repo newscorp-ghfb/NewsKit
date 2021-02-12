@@ -1,5 +1,5 @@
 import React from 'react';
-import {TabInternalProps, TabSize} from './types';
+import {TabAlign, TabInternalProps, TabSize} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
 import {TabButton} from './styled';
@@ -9,7 +9,14 @@ export const TabInternal = React.forwardRef<
   TabInternalProps
 >(
   (
-    {children, overrides = {}, size = TabSize.Medium, ariaLabel, ...props},
+    {
+      children,
+      overrides = {},
+      size = TabSize.Medium,
+      ariaLabel,
+      align = TabAlign.Center,
+      ...props
+    },
     ref,
   ) => {
     const theme = useTheme();
@@ -25,6 +32,7 @@ export const TabInternal = React.forwardRef<
         ref={ref}
         {...props}
         overrides={tabSettings}
+        align={align}
       >
         {children}
       </TabButton>

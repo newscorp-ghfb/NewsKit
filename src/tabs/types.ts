@@ -2,6 +2,12 @@ import React from 'react';
 import {MQ} from '../utils/style';
 import {BaseFlagProps, BaseFlagOverrides} from '../flag';
 
+export enum TabAlign {
+  Start = 'start',
+  End = 'end',
+  Center = 'center',
+}
+
 export enum TabSize {
   Small = 'small',
   Medium = 'medium',
@@ -21,6 +27,7 @@ export interface TabsProps {
   vertical?: boolean;
   distribution?: TabsDistribution;
   initialSelectedIndex?: number;
+  align?: TabAlign;
   overrides?: {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
@@ -76,4 +83,5 @@ export interface TabInternalProps extends BaseFlagProps<BaseFlagOverrides> {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   onKeyDown?: (event: React.KeyboardEvent<HTMLButtonElement>) => void;
   onMouseDown?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  align?: TabAlign;
 }
