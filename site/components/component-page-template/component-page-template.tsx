@@ -1,6 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import {Link, Cell, Block, Grid} from 'newskit';
+import {Link, Cell, Block, Grid, Visible} from 'newskit';
 import {InfoNotice} from '../info-notice';
 import {ContactUs} from '../contact-us';
 import {AccessibilityTables} from '../accessibility-tables';
@@ -80,7 +80,21 @@ const renderSections = ({
               <SectionIntroduction title="Variations">
                 {variations.introduction}
               </SectionIntroduction>
-              <MediaList {...variations} />
+              {/* 
+                USE VISIBLE TO HIDE AND SHOW HORIZONTAL//VERTICAL 
+                PASS HORIZONTAL LAYOUT TO MEDIA LIST ABOVE SM
+                ALLOW MEDIA LIST TO TAKE LAYOUT PROP
+              */}
+
+              <Visible xs={true} sm={false} md={false} lg={false} xl={false}>
+                <MediaList {...variations}/>
+              </Visible>
+
+              <Visible xs={false} sm={true} md={true} lg={true} xl={true}>
+                <MediaList {...variations}/>
+              </Visible>
+
+
             </Grid>
           </section>
         </Cell>
