@@ -5,6 +5,7 @@ import {PageIntroduction} from '../../../components/page-introduction';
 import {SectionIntroduction} from '../../../components/section-introduction';
 import {Separator} from '../../../components/separator';
 import {MediaList} from '../../../components/media-list';
+import { HeaderIndex } from 'components/header-index';
 
 const cardsContent = [
   {
@@ -116,7 +117,7 @@ export default ({path, ...rest}: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...rest} path={`${path}-new`}>
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-      <PageIntroduction
+      {/* <PageIntroduction
         type="Theming"
         name="Foundations"
         introduction="NewsKit foundations define the visual elements that inform the look and feel of UI components."
@@ -124,7 +125,11 @@ export default ({path, ...rest}: LayoutProps) => (
           src: '/static/roadmap-hero.svg',
           alt: '',
         }}
-      />
+      /> */}
+
+      <HeaderIndex title='Foundations' media={{src:'/static/header-index.svg'}}>
+        NewsKit foundations define the visual elements that inform the look and feel of UI components.
+      </HeaderIndex>
       <SectionIntroduction title="Categories" cellProps={{lg: 8}}>
         The NewsKit Foundations are structured into the following categories:
       </SectionIntroduction>
