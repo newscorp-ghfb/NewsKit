@@ -80,21 +80,14 @@ const renderSections = ({
               <SectionIntroduction title="Variations">
                 {variations.introduction}
               </SectionIntroduction>
-              {/* 
-                USE VISIBLE TO HIDE AND SHOW HORIZONTAL//VERTICAL 
-                PASS HORIZONTAL LAYOUT TO MEDIA LIST ABOVE SM
-                ALLOW MEDIA LIST TO TAKE LAYOUT PROP
-              */}
 
-              <Visible xs={true} sm={false} md={false} lg={false} xl={false}>
-                <MediaList {...variations}/>
+              <Visible xs sm={false} md={false} lg={false} xl={false}>
+                <MediaList {...variations} />
               </Visible>
 
-              <Visible xs={false} sm={true} md={true} lg={true} xl={true}>
-                <MediaList {...variations}/>
+              <Visible xs={false} sm md lg xl>
+                <MediaList layout="horizontal" {...variations} />
               </Visible>
-
-
             </Grid>
           </section>
         </Cell>
@@ -111,7 +104,12 @@ const renderSections = ({
               <SectionIntroduction title="Behaviours">
                 {behaviors.introduction}
               </SectionIntroduction>
-              <MediaList {...behaviors} />
+              <Visible xs sm={false} md={false} lg={false} xl={false}>
+                <MediaList {...behaviors} />
+              </Visible>
+              <Visible xs={false} sm md lg xl>
+                <MediaList layout="horizontal" {...behaviors} />
+              </Visible>
             </Grid>
           </section>
         </Cell>

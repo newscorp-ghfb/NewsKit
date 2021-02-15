@@ -8,6 +8,7 @@ const StyledCard = styled(Card)`
 
 export const MediaList: React.FC<MediaListProps> = ({
   spaceStack,
+  layout,
   xsCard = 6,
   smCard,
   mdCard,
@@ -23,6 +24,7 @@ export const MediaList: React.FC<MediaListProps> = ({
         {cards.map(({media, label, description, title, href, styles}) => (
           <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
             <StyledCard
+              layout={layout}
               media={media}
               overrides={styles && styles.card && {...styles.card}}
               href={href}

@@ -5811,7 +5811,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 exports[`Component Page Template renders mandatory sections and behaviors 1`] = `
 <DocumentFragment>
-  .emotion-474 {
+  .emotion-494 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6149,7 +6149,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-473 {
+.emotion-493 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6161,7 +6161,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-473 {
+  .emotion-493 {
     padding-left: 276px;
   }
 }
@@ -6616,14 +6616,14 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-443 {
+.emotion-463 {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   background-color: #FFFFFF;
 }
 
-.emotion-440 {
+.emotion-460 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -6632,7 +6632,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-440 {
+  .emotion-460 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -6643,7 +6643,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-440 {
+  .emotion-460 {
     padding: 0 12px;
     margin-top: 24px;
     margin-left: 8.333333333333334%;
@@ -6654,7 +6654,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-439 {
+.emotion-459 {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -7750,7 +7750,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-408 {
+.emotion-428 {
   background-color: #DCF2F4;
   color: #20676F;
   border-color: #20676F;
@@ -7759,11 +7759,11 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   padding: 16px 24px;
 }
 
-.emotion-408 svg {
+.emotion-428 svg {
   fill: #20676F;
 }
 
-.emotion-407 {
+.emotion-427 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7784,7 +7784,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   margin-right: calc(-8px/2);
 }
 
-.emotion-401 {
+.emotion-425 {
   margin: 0;
   padding: 1px 0;
   font-family: 'DM Sans',sans-serif;
@@ -7797,7 +7797,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   letter-spacing: 0;
 }
 
-.emotion-401::before {
+.emotion-425::before {
   content: '';
   display: block;
   height: 0;
@@ -7805,7 +7805,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   margin-bottom: -0.4625em;
 }
 
-.emotion-401::after {
+.emotion-425::after {
   content: '';
   display: block;
   height: 0;
@@ -7813,7 +7813,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   margin-top: -0.4em;
 }
 
-.emotion-404 {
+.emotion-424 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -7828,29 +7828,48 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   border-radius: 20rem;
 }
 
-.emotion-404 svg {
+.emotion-424 svg {
   fill: #20676F;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-404 {
+  .emotion-424 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-398 {
+.emotion-422 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-393 {
-  margin-top: 80px;
-  margin-bottom: 80px;
+@media screen and (max-width:767px) {
+  .emotion-417 {
+    margin-top: 40px;
+  }
 }
 
-.emotion-429 {
+@media screen and (min-width:768px) {
+  .emotion-417 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-417 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-417 {
+    margin-bottom: 80px;
+  }
+}
+
+.emotion-449 {
   background-color: #AEBFFF;
   border-radius: 20rem;
   margin-bottom: 80px;
@@ -7860,7 +7879,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   background-repeat: no-repeat;
 }
 
-.emotion-423 {
+.emotion-447 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -7876,36 +7895,36 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-423 {
+  .emotion-447 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-422 {
+.emotion-446 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -7914,7 +7933,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-422 {
+  .emotion-446 {
     padding: 0 8px;
     margin-top: 16px;
     margin-left: 8.333333333333334%;
@@ -7926,7 +7945,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:480px) {
-  .emotion-422 {
+  .emotion-446 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -7935,13 +7954,13 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-422 {
+  .emotion-446 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-421 {
+.emotion-445 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7961,18 +7980,18 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   min-height: 320px;
 }
 
-.emotion-409 {
+.emotion-433 {
   margin: 0;
   padding: 1px 0;
   color: #446BE4;
 }
 
-.emotion-413 svg {
+.emotion-433 svg {
   fill: #446BE4;
 }
 
 @media screen and (max-width:1023px) {
-  .emotion-413 {
+  .emotion-433 {
     font-family: 'Poppins',sans-serif;
     font-size: 28px;
     line-height: 1.2857142857142858;
@@ -7983,7 +8002,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     letter-spacing: 0;
   }
 
-  .emotion-409::before {
+  .emotion-433::before {
     content: '';
     display: block;
     height: 0;
@@ -7991,7 +8010,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     margin-bottom: calc(-0.16785714285714293em + 1px);
   }
 
-  .emotion-409::after {
+  .emotion-433::after {
     content: '';
     display: block;
     height: 0;
@@ -8001,7 +8020,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-413 {
+  .emotion-433 {
     font-family: 'Poppins',sans-serif;
     font-size: 32px;
     line-height: 1.25;
@@ -8012,7 +8031,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     letter-spacing: 0;
   }
 
-  .emotion-409::before {
+  .emotion-433::before {
     content: '';
     display: block;
     height: 0;
@@ -8020,7 +8039,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     margin-bottom: -0.15000000000000002em;
   }
 
-  .emotion-409::after {
+  .emotion-433::after {
     content: '';
     display: block;
     height: 0;
@@ -8030,7 +8049,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-413 {
+  .emotion-433 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
     line-height: 1.2;
@@ -8041,7 +8060,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     letter-spacing: 0;
   }
 
-  .emotion-409::before {
+  .emotion-433::before {
     content: '';
     display: block;
     height: 0;
@@ -8049,7 +8068,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     margin-bottom: -0.125em;
   }
 
-  .emotion-409::after {
+  .emotion-433::after {
     content: '';
     display: block;
     height: 0;
@@ -8058,22 +8077,22 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-412 {
+.emotion-436 {
   margin-bottom: 40px;
 }
 
-.emotion-411 {
+.emotion-435 {
   margin: 0;
   padding: 1px 0;
   color: #FFFFFF;
 }
 
-.emotion-415 svg {
+.emotion-435 svg {
   fill: #FFFFFF;
 }
 
 @media screen and (max-width:1023px) {
-  .emotion-415 {
+  .emotion-435 {
     font-family: 'Poppins',sans-serif;
     font-size: 28px;
     line-height: 1.2857142857142858;
@@ -8084,7 +8103,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     letter-spacing: 0;
   }
 
-  .emotion-411::before {
+  .emotion-435::before {
     content: '';
     display: block;
     height: 0;
@@ -8092,7 +8111,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     margin-bottom: calc(-0.16785714285714293em + 1px);
   }
 
-  .emotion-411::after {
+  .emotion-435::after {
     content: '';
     display: block;
     height: 0;
@@ -8102,7 +8121,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-415 {
+  .emotion-435 {
     font-family: 'Poppins',sans-serif;
     font-size: 32px;
     line-height: 1.25;
@@ -8113,7 +8132,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     letter-spacing: 0;
   }
 
-  .emotion-411::before {
+  .emotion-435::before {
     content: '';
     display: block;
     height: 0;
@@ -8121,7 +8140,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     margin-bottom: -0.15000000000000002em;
   }
 
-  .emotion-411::after {
+  .emotion-435::after {
     content: '';
     display: block;
     height: 0;
@@ -8131,7 +8150,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-415 {
+  .emotion-435 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
     line-height: 1.2;
@@ -8142,7 +8161,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     letter-spacing: 0;
   }
 
-  .emotion-411::before {
+  .emotion-435::before {
     content: '';
     display: block;
     height: 0;
@@ -8150,7 +8169,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     margin-bottom: -0.125em;
   }
 
-  .emotion-411::after {
+  .emotion-435::after {
     content: '';
     display: block;
     height: 0;
@@ -8159,7 +8178,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-419 {
+.emotion-443 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8196,33 +8215,33 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   cursor: pointer;
 }
 
-.emotion-419 svg {
+.emotion-443 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-423 svg {
+.emotion-443 svg {
   fill: #FFFFFF;
 }
 
-.emotion-423:hover:not(:disabled) {
+.emotion-443:hover:not(:disabled) {
   background-color: #3358CC;
 }
 
-.emotion-423:active:not(:disabled) {
+.emotion-443:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-423:disabled {
+.emotion-443:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-423:disabled svg {
+.emotion-443:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-436 {
+.emotion-456 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8231,13 +8250,13 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-436 {
+  .emotion-456 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-436 {
+  .emotion-456 {
     display: block;
     padding: 0 12px;
     margin-top: 24px;
@@ -8250,7 +8269,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-436 {
+  .emotion-456 {
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -8259,12 +8278,12 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-435 {
+.emotion-455 {
   top: 40vh;
   position: fixed;
 }
 
-.emotion-434 {
+.emotion-454 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8283,112 +8302,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   justify-content: flex-start;
 }
 
-.emotion-433 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #808E99;
-  border-style: solid;
-  border-color: #EBEBEB;
-  border-width: 2px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #162740;
-  border-style: solid;
-  border-color: #577FFB;
-  border-width: 2px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-width: 0;
-  border-left-width: 2px;
-  min-height: 32px;
-  padding: 16px;
-}
-
-.emotion-433:hover:not(:disabled) {
-  color: #555E74;
-}
-
-.emotion-433:active:not(:disabled) {
-  color: #555E74;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-433 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-431 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-431::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
-}
-
-.emotion-431::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4892857142857143em;
-}
-
-.emotion-436 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #808E99;
-  border-style: solid;
-  border-color: #EBEBEB;
-  border-width: 2px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-width: 0;
-  border-left-width: 2px;
-  min-height: 32px;
-  padding: 16px;
-}
-
-.emotion-436:hover:not(:disabled) {
-  color: #555E74;
-}
-
-.emotion-436:active:not(:disabled) {
-  color: #555E74;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-436 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-493 {
+.emotion-492 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -8397,7 +8311,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   position: relative;
 }
 
-.emotion-472::before {
+.emotion-492::before {
   content: '';
   position: absolute;
   top: 0;
@@ -8412,7 +8326,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:480px) {
-  .emotion-472::before {
+  .emotion-492::before {
     right: 0;
     left: 0;
     -webkit-transform: scale(1);
@@ -8421,7 +8335,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-470 {
+.emotion-490 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -8437,36 +8351,36 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-445 {
+.emotion-465 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8475,7 +8389,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-445 {
+  .emotion-465 {
     padding: 0 8px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -8485,7 +8399,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:768px) {
-  .emotion-445 {
+  .emotion-465 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -8495,12 +8409,12 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-445 {
+  .emotion-465 {
     padding: 0 12px;
   }
 }
 
-.emotion-444 {
+.emotion-464 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -8517,7 +8431,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   color: #808E99;
 }
 
-.emotion-469 {
+.emotion-489 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8526,7 +8440,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-469 {
+  .emotion-489 {
     padding: 0 8px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -8536,7 +8450,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:480px) {
-  .emotion-469 {
+  .emotion-489 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -8545,12 +8459,12 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-469 {
+  .emotion-489 {
     padding: 0 12px;
   }
 }
 
-.emotion-468 {
+.emotion-488 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8562,7 +8476,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:768px) {
-  .emotion-468 {
+  .emotion-488 {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -8577,7 +8491,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-449 {
+.emotion-469 {
   -webkit-flex-basis: 50%;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
@@ -8593,7 +8507,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen and (min-width:768px) {
-  .emotion-449 {
+  .emotion-469 {
     -webkit-flex-basis: auto;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
@@ -8637,7 +8551,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   height: 16px;
 }
 
-.emotion-389 {
+.emotion-413 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -8653,31 +8567,31 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 @media screen {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px -12px 0 -12px;
   }
 }
@@ -8879,7 +8793,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-433 {
+.emotion-453 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -8892,9 +8806,78 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   padding: 16px;
 }
 
+.emotion-453:hover:not(:disabled) {
+  color: #555E74;
+}
+
+.emotion-453:active:not(:disabled) {
+  color: #555E74;
+}
+
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-433 {
+  .emotion-453 {
     vertical-align: text-bottom;
+  }
+}
+
+.emotion-451 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-451::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+}
+
+.emotion-451::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+@media screen {
+  .emotion-393 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-393 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-393 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-393 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-393 {
+    display: none;
   }
 }
 
@@ -9119,8 +9102,119 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   margin-top: -0.4em;
 }
 
+@media screen {
+  .emotion-412 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+.emotion-406 {
+  box-sizing: border-box;
+  color: #555E74;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: rowfalse;
+  -ms-flex-direction: rowfalse;
+  flex-direction: rowfalse;
+  height: 100%;
+}
+
+.emotion-400 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-400 {
+    min-height: 1px;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .emotion-400 {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:1023px) {
+  .emotion-400 {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-400 {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-400 {
+    margin-right: 24px;
+  }
+}
+
+.emotion-405 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-405 {
+    min-width: 1px;
+  }
+}
+
+.emotion-404 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: inherit;
+  padding: 0;
+}
+
+.emotion-404 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
 <div
-    class="emotion-474"
+    class="emotion-494"
   >
     <div
       class="emotion-212"
@@ -10366,7 +10460,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
       data-testid="overlay"
     />
     <div
-      class="emotion-473"
+      class="emotion-493"
     >
       <header
         class="emotion-248"
@@ -10588,7 +10682,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
         </div>
       </header>
       <main
-        class="emotion-443"
+        class="emotion-463"
       >
         <div
           class="emotion-247"
@@ -10597,10 +10691,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
             class="emotion-246"
           >
             <div
-              class="emotion-440"
+              class="emotion-460"
             >
               <div
-                class="emotion-439"
+                class="emotion-459"
               >
                 <div
                   class="emotion-247"
@@ -11199,7 +11293,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                           class="emotion-247"
                         >
                           <div
-                            class="emotion-389"
+                            class="emotion-413"
                           >
                             <div
                               class="emotion-370"
@@ -11236,79 +11330,172 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                               </div>
                             </div>
                             <div
-                              class="emotion-388"
+                              class="emotion-374"
+                            />
+                            <div
+                              class="emotion-393"
                             >
                               <div
-                                class="emotion-365"
+                                class="emotion-374"
                               >
                                 <div
-                                  class="emotion-247"
+                                  class="emotion-368"
                                 >
                                   <div
-                                    class="emotion-385"
+                                    class="emotion-250"
                                   >
                                     <div
-                                      class="emotion-384"
+                                      class="emotion-389"
                                     >
                                       <div
-                                        class="emotion-383"
+                                        class="emotion-388"
                                       >
                                         <div
-                                          class="emotion-377"
-                                        >
-                                          <div
-                                            class="emotion-262"
-                                          >
-                                            <div
-                                              class="emotion-375"
-                                            >
-                                              <div
-                                                class="emotion-259"
-                                              >
-                                                <div
-                                                  class="emotion-258"
-                                                >
-                                                  <svg
-                                                    aria-hidden="true"
-                                                    class="emotion-257"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 88 88"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                  >
-                                                    <path
-                                                      d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
-                                                    />
-                                                  </svg>
-                                                </div>
-                                              </div>
-                                              <img
-                                                alt="Component Behavior"
-                                                class="emotion-260"
-                                                src="/static/placeholder-16x9.png"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="emotion-382"
+                                          class="emotion-387"
                                         >
                                           <div
                                             class="emotion-381"
                                           >
                                             <div
-                                              class="emotion-379"
+                                              class="emotion-265"
                                             >
-                                              <p
-                                                class="emotion-378"
+                                              <div
+                                                class="emotion-379"
                                               >
-                                                Title
+                                                <div
+                                                  class="emotion-262"
+                                                >
+                                                  <div
+                                                    class="emotion-261"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      class="emotion-260"
+                                                      fill="currentColor"
+                                                      viewBox="0 0 88 88"
+                                                      xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                      <path
+                                                        d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
+                                                      />
+                                                    </svg>
+                                                  </div>
+                                                </div>
+                                                <img
+                                                  alt="Component Behavior"
+                                                  class="emotion-263"
+                                                  src="/static/placeholder-16x9.png"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="emotion-386"
+                                          >
+                                            <div
+                                              class="emotion-385"
+                                            >
+                                              <div
+                                                class="emotion-383"
+                                              >
+                                                <p
+                                                  class="emotion-382"
+                                                >
+                                                  Title
+                                                </p>
+                                              </div>
+                                              <p
+                                                class="emotion-384"
+                                              >
+                                                Description
                                               </p>
                                             </div>
-                                            <p
-                                              class="emotion-380"
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-412"
+                            >
+                              <div
+                                class="emotion-374"
+                              >
+                                <div
+                                  class="emotion-368"
+                                >
+                                  <div
+                                    class="emotion-250"
+                                  >
+                                    <div
+                                      class="emotion-389"
+                                    >
+                                      <div
+                                        class="emotion-388"
+                                      >
+                                        <div
+                                          class="emotion-406"
+                                        >
+                                          <div
+                                            class="emotion-400"
+                                          >
+                                            <div
+                                              class="emotion-265"
                                             >
-                                              Description
-                                            </p>
+                                              <div
+                                                class="emotion-379"
+                                              >
+                                                <div
+                                                  class="emotion-262"
+                                                >
+                                                  <div
+                                                    class="emotion-261"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      class="emotion-260"
+                                                      fill="currentColor"
+                                                      viewBox="0 0 88 88"
+                                                      xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                      <path
+                                                        d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
+                                                      />
+                                                    </svg>
+                                                  </div>
+                                                </div>
+                                                <img
+                                                  alt="Component Behavior"
+                                                  class="emotion-263"
+                                                  src="/static/placeholder-16x9.png"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="emotion-405"
+                                          >
+                                            <div
+                                              class="emotion-404"
+                                            >
+                                              <div
+                                                class="emotion-383"
+                                              >
+                                                <p
+                                                  class="emotion-382"
+                                                >
+                                                  Title
+                                                </p>
+                                              </div>
+                                              <p
+                                                class="emotion-384"
+                                              >
+                                                Description
+                                              </p>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -11325,7 +11512,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                       class="emotion-253"
                     >
                       <div
-                        class="emotion-393"
+                        class="emotion-417"
                       >
                         <hr
                           aria-hidden="true"
@@ -11341,10 +11528,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                         An error occurred loading this code example.
                       </p>
                       <div
-                        class="emotion-404"
+                        class="emotion-428"
                       >
                         <div
-                          class="emotion-403"
+                          class="emotion-427"
                         >
                           <div
                             class="emotion-239"
@@ -11370,18 +11557,18 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                             class="emotion-239"
                           >
                             <p
-                              class="emotion-401"
+                              class="emotion-425"
                             >
                               For more information on overriding component defaults, see the docs 
                               <a
-                                class="emotion-404"
+                                class="emotion-424"
                                 href="/theming/component-defaults"
                               >
                                 <span
                                   class="emotion-3"
                                 >
                                   <span
-                                    class="emotion-398"
+                                    class="emotion-422"
                                   >
                                     here
                                   </span>
@@ -11397,7 +11584,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                       class="emotion-253"
                     >
                       <div
-                        class="emotion-393"
+                        class="emotion-417"
                       >
                         <hr
                           aria-hidden="true"
@@ -11410,34 +11597,34 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                       class="emotion-253"
                     >
                       <div
-                        class="emotion-425"
+                        class="emotion-449"
                       >
                         <div
                           class="emotion-247"
                         >
                           <div
-                            class="emotion-423"
+                            class="emotion-447"
                           >
                             <div
-                              class="emotion-422"
+                              class="emotion-446"
                             >
                               <div
-                                class="emotion-421"
+                                class="emotion-445"
                               >
                                 <div
                                   class="emotion-359"
                                 >
                                   <p
-                                    class="emotion-409"
+                                    class="emotion-433"
                                   >
                                     Need Help?
                                   </p>
                                 </div>
                                 <div
-                                  class="emotion-412"
+                                  class="emotion-436"
                                 >
                                   <p
-                                    class="emotion-411"
+                                    class="emotion-435"
                                   >
                                     Can't find what you are looking for?
                                   </p>
@@ -11446,7 +11633,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                                   class="emotion-272"
                                 >
                                   <button
-                                    class="emotion-419"
+                                    class="emotion-443"
                                     data-testid="button"
                                     type="button"
                                   >
@@ -11492,16 +11679,16 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                       </div>
                     </div>
                     <div
-                      class="emotion-436"
+                      class="emotion-456"
                     >
                       <div
-                        class="emotion-435"
+                        class="emotion-455"
                       >
                         <div
-                          class="emotion-434"
+                          class="emotion-454"
                         >
                           <a
-                            class="emotion-433"
+                            class="emotion-453"
                             data-selected="true"
                             href="#behaviors"
                           >
@@ -11509,7 +11696,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                               class="emotion-3"
                             >
                               <span
-                                class="emotion-431"
+                                class="emotion-451"
                               >
                                 Behaviours
                               </span>
@@ -11582,34 +11769,34 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
         </div>
       </main>
       <footer
-        class="emotion-472"
+        class="emotion-492"
       >
         <div
           class="emotion-247"
         >
           <div
-            class="emotion-470"
+            class="emotion-490"
           >
             <div
-              class="emotion-445"
+              class="emotion-465"
             >
               <div
-                class="emotion-444"
+                class="emotion-464"
               >
                 Copyright © 2021 News Corp. All rights reserved.
               </div>
             </div>
             <div
-              class="emotion-469"
+              class="emotion-489"
             >
               <div
-                class="emotion-468"
+                class="emotion-488"
               >
                 <div
                   class="emotion-233"
                 >
                   <span
-                    class="emotion-449"
+                    class="emotion-469"
                   >
                     <a
                       class="emotion-225"
@@ -11627,7 +11814,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                     </a>
                   </span>
                   <span
-                    class="emotion-449"
+                    class="emotion-469"
                   >
                     <a
                       class="emotion-225"
@@ -11646,7 +11833,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                   </span>
                 </div>
                 <span
-                  class="emotion-449"
+                  class="emotion-469"
                 >
                   <a
                     class="emotion-225"
@@ -11665,7 +11852,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                   </a>
                 </span>
                 <span
-                  class="emotion-449"
+                  class="emotion-469"
                 >
                   <a
                     class="emotion-287"
@@ -11676,7 +11863,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                       class="emotion-3"
                     >
                       <span
-                        class="emotion-398"
+                        class="emotion-422"
                       >
                         Careers
                       </span>
@@ -11687,7 +11874,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                   class="emotion-233"
                 >
                   <span
-                    class="emotion-449"
+                    class="emotion-469"
                   >
                     <a
                       class="emotion-225"
@@ -58933,7 +59120,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 exports[`Component Page Template renders mandatory sections and variations 1`] = `
 <DocumentFragment>
-  .emotion-474 {
+  .emotion-494 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -59271,7 +59458,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-473 {
+.emotion-493 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -59283,7 +59470,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-473 {
+  .emotion-493 {
     padding-left: 276px;
   }
 }
@@ -59738,14 +59925,14 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-443 {
+.emotion-463 {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   background-color: #FFFFFF;
 }
 
-.emotion-440 {
+.emotion-460 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -59754,7 +59941,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-440 {
+  .emotion-460 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -59765,7 +59952,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-440 {
+  .emotion-460 {
     padding: 0 12px;
     margin-top: 24px;
     margin-left: 8.333333333333334%;
@@ -59776,7 +59963,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-439 {
+.emotion-459 {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -60872,7 +61059,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-408 {
+.emotion-428 {
   background-color: #DCF2F4;
   color: #20676F;
   border-color: #20676F;
@@ -60881,11 +61068,11 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   padding: 16px 24px;
 }
 
-.emotion-408 svg {
+.emotion-428 svg {
   fill: #20676F;
 }
 
-.emotion-407 {
+.emotion-427 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60906,7 +61093,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   margin-right: calc(-8px/2);
 }
 
-.emotion-401 {
+.emotion-425 {
   margin: 0;
   padding: 1px 0;
   font-family: 'DM Sans',sans-serif;
@@ -60919,7 +61106,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   letter-spacing: 0;
 }
 
-.emotion-401::before {
+.emotion-425::before {
   content: '';
   display: block;
   height: 0;
@@ -60927,7 +61114,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   margin-bottom: -0.4625em;
 }
 
-.emotion-401::after {
+.emotion-425::after {
   content: '';
   display: block;
   height: 0;
@@ -60935,7 +61122,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   margin-top: -0.4em;
 }
 
-.emotion-404 {
+.emotion-424 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -60950,29 +61137,48 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   border-radius: 20rem;
 }
 
-.emotion-404 svg {
+.emotion-424 svg {
   fill: #20676F;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-404 {
+  .emotion-424 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-398 {
+.emotion-422 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-393 {
-  margin-top: 80px;
-  margin-bottom: 80px;
+@media screen and (max-width:767px) {
+  .emotion-417 {
+    margin-top: 40px;
+  }
 }
 
-.emotion-429 {
+@media screen and (min-width:768px) {
+  .emotion-417 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-417 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-417 {
+    margin-bottom: 80px;
+  }
+}
+
+.emotion-449 {
   background-color: #AEBFFF;
   border-radius: 20rem;
   margin-bottom: 80px;
@@ -60982,7 +61188,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   background-repeat: no-repeat;
 }
 
-.emotion-423 {
+.emotion-447 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -60998,36 +61204,36 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-423 {
+  .emotion-447 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-423 {
+  .emotion-447 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-422 {
+.emotion-446 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -61036,7 +61242,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-422 {
+  .emotion-446 {
     padding: 0 8px;
     margin-top: 16px;
     margin-left: 8.333333333333334%;
@@ -61048,7 +61254,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:480px) {
-  .emotion-422 {
+  .emotion-446 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -61057,13 +61263,13 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-422 {
+  .emotion-446 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-421 {
+.emotion-445 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -61083,18 +61289,18 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   min-height: 320px;
 }
 
-.emotion-409 {
+.emotion-433 {
   margin: 0;
   padding: 1px 0;
   color: #446BE4;
 }
 
-.emotion-413 svg {
+.emotion-433 svg {
   fill: #446BE4;
 }
 
 @media screen and (max-width:1023px) {
-  .emotion-413 {
+  .emotion-433 {
     font-family: 'Poppins',sans-serif;
     font-size: 28px;
     line-height: 1.2857142857142858;
@@ -61105,7 +61311,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     letter-spacing: 0;
   }
 
-  .emotion-409::before {
+  .emotion-433::before {
     content: '';
     display: block;
     height: 0;
@@ -61113,7 +61319,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     margin-bottom: calc(-0.16785714285714293em + 1px);
   }
 
-  .emotion-409::after {
+  .emotion-433::after {
     content: '';
     display: block;
     height: 0;
@@ -61123,7 +61329,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-413 {
+  .emotion-433 {
     font-family: 'Poppins',sans-serif;
     font-size: 32px;
     line-height: 1.25;
@@ -61134,7 +61340,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     letter-spacing: 0;
   }
 
-  .emotion-409::before {
+  .emotion-433::before {
     content: '';
     display: block;
     height: 0;
@@ -61142,7 +61348,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     margin-bottom: -0.15000000000000002em;
   }
 
-  .emotion-409::after {
+  .emotion-433::after {
     content: '';
     display: block;
     height: 0;
@@ -61152,7 +61358,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-413 {
+  .emotion-433 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
     line-height: 1.2;
@@ -61163,7 +61369,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     letter-spacing: 0;
   }
 
-  .emotion-409::before {
+  .emotion-433::before {
     content: '';
     display: block;
     height: 0;
@@ -61171,7 +61377,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     margin-bottom: -0.125em;
   }
 
-  .emotion-409::after {
+  .emotion-433::after {
     content: '';
     display: block;
     height: 0;
@@ -61180,22 +61386,22 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-412 {
+.emotion-436 {
   margin-bottom: 40px;
 }
 
-.emotion-411 {
+.emotion-435 {
   margin: 0;
   padding: 1px 0;
   color: #FFFFFF;
 }
 
-.emotion-415 svg {
+.emotion-435 svg {
   fill: #FFFFFF;
 }
 
 @media screen and (max-width:1023px) {
-  .emotion-415 {
+  .emotion-435 {
     font-family: 'Poppins',sans-serif;
     font-size: 28px;
     line-height: 1.2857142857142858;
@@ -61206,7 +61412,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     letter-spacing: 0;
   }
 
-  .emotion-411::before {
+  .emotion-435::before {
     content: '';
     display: block;
     height: 0;
@@ -61214,7 +61420,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     margin-bottom: calc(-0.16785714285714293em + 1px);
   }
 
-  .emotion-411::after {
+  .emotion-435::after {
     content: '';
     display: block;
     height: 0;
@@ -61224,7 +61430,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-415 {
+  .emotion-435 {
     font-family: 'Poppins',sans-serif;
     font-size: 32px;
     line-height: 1.25;
@@ -61235,7 +61441,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     letter-spacing: 0;
   }
 
-  .emotion-411::before {
+  .emotion-435::before {
     content: '';
     display: block;
     height: 0;
@@ -61243,7 +61449,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     margin-bottom: -0.15000000000000002em;
   }
 
-  .emotion-411::after {
+  .emotion-435::after {
     content: '';
     display: block;
     height: 0;
@@ -61253,7 +61459,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-415 {
+  .emotion-435 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
     line-height: 1.2;
@@ -61264,7 +61470,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     letter-spacing: 0;
   }
 
-  .emotion-411::before {
+  .emotion-435::before {
     content: '';
     display: block;
     height: 0;
@@ -61272,7 +61478,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     margin-bottom: -0.125em;
   }
 
-  .emotion-411::after {
+  .emotion-435::after {
     content: '';
     display: block;
     height: 0;
@@ -61281,7 +61487,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-419 {
+.emotion-443 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -61318,33 +61524,33 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   cursor: pointer;
 }
 
-.emotion-419 svg {
+.emotion-443 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-423 svg {
+.emotion-443 svg {
   fill: #FFFFFF;
 }
 
-.emotion-423:hover:not(:disabled) {
+.emotion-443:hover:not(:disabled) {
   background-color: #3358CC;
 }
 
-.emotion-423:active:not(:disabled) {
+.emotion-443:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-423:disabled {
+.emotion-443:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-423:disabled svg {
+.emotion-443:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-436 {
+.emotion-456 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -61353,13 +61559,13 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-436 {
+  .emotion-456 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-436 {
+  .emotion-456 {
     display: block;
     padding: 0 12px;
     margin-top: 24px;
@@ -61372,7 +61578,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-436 {
+  .emotion-456 {
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -61381,12 +61587,12 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-435 {
+.emotion-455 {
   top: 40vh;
   position: fixed;
 }
 
-.emotion-434 {
+.emotion-454 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -61405,112 +61611,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   justify-content: flex-start;
 }
 
-.emotion-433 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #808E99;
-  border-style: solid;
-  border-color: #EBEBEB;
-  border-width: 2px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #162740;
-  border-style: solid;
-  border-color: #577FFB;
-  border-width: 2px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-width: 0;
-  border-left-width: 2px;
-  min-height: 32px;
-  padding: 16px;
-}
-
-.emotion-433:hover:not(:disabled) {
-  color: #555E74;
-}
-
-.emotion-433:active:not(:disabled) {
-  color: #555E74;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-433 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-431 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-431::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
-}
-
-.emotion-431::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4892857142857143em;
-}
-
-.emotion-436 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #808E99;
-  border-style: solid;
-  border-color: #EBEBEB;
-  border-width: 2px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-width: 0;
-  border-left-width: 2px;
-  min-height: 32px;
-  padding: 16px;
-}
-
-.emotion-436:hover:not(:disabled) {
-  color: #555E74;
-}
-
-.emotion-436:active:not(:disabled) {
-  color: #555E74;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-436 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-493 {
+.emotion-492 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -61519,7 +61620,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   position: relative;
 }
 
-.emotion-472::before {
+.emotion-492::before {
   content: '';
   position: absolute;
   top: 0;
@@ -61534,7 +61635,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:480px) {
-  .emotion-472::before {
+  .emotion-492::before {
     right: 0;
     left: 0;
     -webkit-transform: scale(1);
@@ -61543,7 +61644,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-470 {
+.emotion-490 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -61559,36 +61660,36 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-470 {
+  .emotion-490 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-445 {
+.emotion-465 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -61597,7 +61698,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-445 {
+  .emotion-465 {
     padding: 0 8px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -61607,7 +61708,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:768px) {
-  .emotion-445 {
+  .emotion-465 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -61617,12 +61718,12 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-445 {
+  .emotion-465 {
     padding: 0 12px;
   }
 }
 
-.emotion-444 {
+.emotion-464 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -61639,7 +61740,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   color: #808E99;
 }
 
-.emotion-469 {
+.emotion-489 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -61648,7 +61749,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-469 {
+  .emotion-489 {
     padding: 0 8px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -61658,7 +61759,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:480px) {
-  .emotion-469 {
+  .emotion-489 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -61667,12 +61768,12 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-469 {
+  .emotion-489 {
     padding: 0 12px;
   }
 }
 
-.emotion-468 {
+.emotion-488 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -61684,7 +61785,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:768px) {
-  .emotion-468 {
+  .emotion-488 {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -61699,7 +61800,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-449 {
+.emotion-469 {
   -webkit-flex-basis: 50%;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
@@ -61715,7 +61816,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen and (min-width:768px) {
-  .emotion-449 {
+  .emotion-469 {
     -webkit-flex-basis: auto;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
@@ -61759,7 +61860,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   height: 16px;
 }
 
-.emotion-389 {
+.emotion-413 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -61775,31 +61876,31 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 @media screen {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-389 {
+  .emotion-413 {
     margin: -0px -12px 0 -12px;
   }
 }
@@ -62001,7 +62102,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-433 {
+.emotion-453 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -62014,9 +62115,78 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   padding: 16px;
 }
 
+.emotion-453:hover:not(:disabled) {
+  color: #555E74;
+}
+
+.emotion-453:active:not(:disabled) {
+  color: #555E74;
+}
+
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-433 {
+  .emotion-453 {
     vertical-align: text-bottom;
+  }
+}
+
+.emotion-451 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-451::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+}
+
+.emotion-451::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+@media screen {
+  .emotion-393 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-393 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-393 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-393 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-393 {
+    display: none;
   }
 }
 
@@ -62241,8 +62411,119 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   margin-top: -0.4em;
 }
 
+@media screen {
+  .emotion-412 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-412 {
+    display: block;
+  }
+}
+
+.emotion-406 {
+  box-sizing: border-box;
+  color: #555E74;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: rowfalse;
+  -ms-flex-direction: rowfalse;
+  flex-direction: rowfalse;
+  height: 100%;
+}
+
+.emotion-400 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-400 {
+    min-height: 1px;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .emotion-400 {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:1023px) {
+  .emotion-400 {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-400 {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-400 {
+    margin-right: 24px;
+  }
+}
+
+.emotion-405 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-405 {
+    min-width: 1px;
+  }
+}
+
+.emotion-404 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: inherit;
+  padding: 0;
+}
+
+.emotion-404 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
 <div
-    class="emotion-474"
+    class="emotion-494"
   >
     <div
       class="emotion-212"
@@ -63488,7 +63769,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
       data-testid="overlay"
     />
     <div
-      class="emotion-473"
+      class="emotion-493"
     >
       <header
         class="emotion-248"
@@ -63710,7 +63991,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
         </div>
       </header>
       <main
-        class="emotion-443"
+        class="emotion-463"
       >
         <div
           class="emotion-247"
@@ -63719,10 +64000,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
             class="emotion-246"
           >
             <div
-              class="emotion-440"
+              class="emotion-460"
             >
               <div
-                class="emotion-439"
+                class="emotion-459"
               >
                 <div
                   class="emotion-247"
@@ -64321,7 +64602,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                           class="emotion-247"
                         >
                           <div
-                            class="emotion-389"
+                            class="emotion-413"
                           >
                             <div
                               class="emotion-370"
@@ -64358,79 +64639,172 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                               </div>
                             </div>
                             <div
-                              class="emotion-388"
+                              class="emotion-374"
+                            />
+                            <div
+                              class="emotion-393"
                             >
                               <div
-                                class="emotion-365"
+                                class="emotion-374"
                               >
                                 <div
-                                  class="emotion-247"
+                                  class="emotion-368"
                                 >
                                   <div
-                                    class="emotion-385"
+                                    class="emotion-250"
                                   >
                                     <div
-                                      class="emotion-384"
+                                      class="emotion-389"
                                     >
                                       <div
-                                        class="emotion-383"
+                                        class="emotion-388"
                                       >
                                         <div
-                                          class="emotion-377"
-                                        >
-                                          <div
-                                            class="emotion-262"
-                                          >
-                                            <div
-                                              class="emotion-375"
-                                            >
-                                              <div
-                                                class="emotion-259"
-                                              >
-                                                <div
-                                                  class="emotion-258"
-                                                >
-                                                  <svg
-                                                    aria-hidden="true"
-                                                    class="emotion-257"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 88 88"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                  >
-                                                    <path
-                                                      d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
-                                                    />
-                                                  </svg>
-                                                </div>
-                                              </div>
-                                              <img
-                                                alt="Card Media"
-                                                class="emotion-260"
-                                                src="/static/placeholder-16x9.png"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="emotion-382"
+                                          class="emotion-387"
                                         >
                                           <div
                                             class="emotion-381"
                                           >
                                             <div
-                                              class="emotion-379"
+                                              class="emotion-265"
                                             >
-                                              <p
-                                                class="emotion-378"
+                                              <div
+                                                class="emotion-379"
                                               >
-                                                Variation
+                                                <div
+                                                  class="emotion-262"
+                                                >
+                                                  <div
+                                                    class="emotion-261"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      class="emotion-260"
+                                                      fill="currentColor"
+                                                      viewBox="0 0 88 88"
+                                                      xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                      <path
+                                                        d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
+                                                      />
+                                                    </svg>
+                                                  </div>
+                                                </div>
+                                                <img
+                                                  alt="Card Media"
+                                                  class="emotion-263"
+                                                  src="/static/placeholder-16x9.png"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="emotion-386"
+                                          >
+                                            <div
+                                              class="emotion-385"
+                                            >
+                                              <div
+                                                class="emotion-383"
+                                              >
+                                                <p
+                                                  class="emotion-382"
+                                                >
+                                                  Variation
+                                                </p>
+                                              </div>
+                                              <p
+                                                class="emotion-384"
+                                              >
+                                                Description
                                               </p>
                                             </div>
-                                            <p
-                                              class="emotion-380"
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-412"
+                            >
+                              <div
+                                class="emotion-374"
+                              >
+                                <div
+                                  class="emotion-368"
+                                >
+                                  <div
+                                    class="emotion-250"
+                                  >
+                                    <div
+                                      class="emotion-389"
+                                    >
+                                      <div
+                                        class="emotion-388"
+                                      >
+                                        <div
+                                          class="emotion-406"
+                                        >
+                                          <div
+                                            class="emotion-400"
+                                          >
+                                            <div
+                                              class="emotion-265"
                                             >
-                                              Description
-                                            </p>
+                                              <div
+                                                class="emotion-379"
+                                              >
+                                                <div
+                                                  class="emotion-262"
+                                                >
+                                                  <div
+                                                    class="emotion-261"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      class="emotion-260"
+                                                      fill="currentColor"
+                                                      viewBox="0 0 88 88"
+                                                      xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                      <path
+                                                        d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
+                                                      />
+                                                    </svg>
+                                                  </div>
+                                                </div>
+                                                <img
+                                                  alt="Card Media"
+                                                  class="emotion-263"
+                                                  src="/static/placeholder-16x9.png"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="emotion-405"
+                                          >
+                                            <div
+                                              class="emotion-404"
+                                            >
+                                              <div
+                                                class="emotion-383"
+                                              >
+                                                <p
+                                                  class="emotion-382"
+                                                >
+                                                  Variation
+                                                </p>
+                                              </div>
+                                              <p
+                                                class="emotion-384"
+                                              >
+                                                Description
+                                              </p>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -64447,7 +64821,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                       class="emotion-253"
                     >
                       <div
-                        class="emotion-393"
+                        class="emotion-417"
                       >
                         <hr
                           aria-hidden="true"
@@ -64463,10 +64837,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                         An error occurred loading this code example.
                       </p>
                       <div
-                        class="emotion-404"
+                        class="emotion-428"
                       >
                         <div
-                          class="emotion-403"
+                          class="emotion-427"
                         >
                           <div
                             class="emotion-239"
@@ -64492,18 +64866,18 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                             class="emotion-239"
                           >
                             <p
-                              class="emotion-401"
+                              class="emotion-425"
                             >
                               For more information on overriding component defaults, see the docs 
                               <a
-                                class="emotion-404"
+                                class="emotion-424"
                                 href="/theming/component-defaults"
                               >
                                 <span
                                   class="emotion-3"
                                 >
                                   <span
-                                    class="emotion-398"
+                                    class="emotion-422"
                                   >
                                     here
                                   </span>
@@ -64519,7 +64893,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                       class="emotion-253"
                     >
                       <div
-                        class="emotion-393"
+                        class="emotion-417"
                       >
                         <hr
                           aria-hidden="true"
@@ -64532,34 +64906,34 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                       class="emotion-253"
                     >
                       <div
-                        class="emotion-425"
+                        class="emotion-449"
                       >
                         <div
                           class="emotion-247"
                         >
                           <div
-                            class="emotion-423"
+                            class="emotion-447"
                           >
                             <div
-                              class="emotion-422"
+                              class="emotion-446"
                             >
                               <div
-                                class="emotion-421"
+                                class="emotion-445"
                               >
                                 <div
                                   class="emotion-359"
                                 >
                                   <p
-                                    class="emotion-409"
+                                    class="emotion-433"
                                   >
                                     Need Help?
                                   </p>
                                 </div>
                                 <div
-                                  class="emotion-412"
+                                  class="emotion-436"
                                 >
                                   <p
-                                    class="emotion-411"
+                                    class="emotion-435"
                                   >
                                     Can't find what you are looking for?
                                   </p>
@@ -64568,7 +64942,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                                   class="emotion-272"
                                 >
                                   <button
-                                    class="emotion-419"
+                                    class="emotion-443"
                                     data-testid="button"
                                     type="button"
                                   >
@@ -64614,16 +64988,16 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                       </div>
                     </div>
                     <div
-                      class="emotion-436"
+                      class="emotion-456"
                     >
                       <div
-                        class="emotion-435"
+                        class="emotion-455"
                       >
                         <div
-                          class="emotion-434"
+                          class="emotion-454"
                         >
                           <a
-                            class="emotion-433"
+                            class="emotion-453"
                             data-selected="true"
                             href="#variations"
                           >
@@ -64631,7 +65005,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                               class="emotion-3"
                             >
                               <span
-                                class="emotion-431"
+                                class="emotion-451"
                               >
                                 Variations
                               </span>
@@ -64718,34 +65092,34 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
         </div>
       </main>
       <footer
-        class="emotion-472"
+        class="emotion-492"
       >
         <div
           class="emotion-247"
         >
           <div
-            class="emotion-470"
+            class="emotion-490"
           >
             <div
-              class="emotion-445"
+              class="emotion-465"
             >
               <div
-                class="emotion-444"
+                class="emotion-464"
               >
                 Copyright © 2021 News Corp. All rights reserved.
               </div>
             </div>
             <div
-              class="emotion-469"
+              class="emotion-489"
             >
               <div
-                class="emotion-468"
+                class="emotion-488"
               >
                 <div
                   class="emotion-233"
                 >
                   <span
-                    class="emotion-449"
+                    class="emotion-469"
                   >
                     <a
                       class="emotion-225"
@@ -64763,7 +65137,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                     </a>
                   </span>
                   <span
-                    class="emotion-449"
+                    class="emotion-469"
                   >
                     <a
                       class="emotion-225"
@@ -64782,7 +65156,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                   </span>
                 </div>
                 <span
-                  class="emotion-449"
+                  class="emotion-469"
                 >
                   <a
                     class="emotion-225"
@@ -64801,7 +65175,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                   </a>
                 </span>
                 <span
-                  class="emotion-449"
+                  class="emotion-469"
                 >
                   <a
                     class="emotion-287"
@@ -64812,7 +65186,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                       class="emotion-3"
                     >
                       <span
-                        class="emotion-398"
+                        class="emotion-422"
                       >
                         Careers
                       </span>
@@ -64823,7 +65197,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                   class="emotion-233"
                 >
                   <span
-                    class="emotion-449"
+                    class="emotion-469"
                   >
                     <a
                       class="emotion-225"
