@@ -39,7 +39,7 @@ export const getInheritedValue = (
     .reverse()
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     .map(bkp => (props as any)[`${bkp}${prop}`] as string)
-    .find(Boolean);
+    .find(value => typeof value !== 'undefined');
 
 export const getOverridableProp = (
   prop: OverrideProp,

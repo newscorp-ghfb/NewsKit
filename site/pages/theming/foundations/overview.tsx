@@ -5,7 +5,7 @@ import {PageIntroduction} from '../../../components/page-introduction';
 import {SectionIntroduction} from '../../../components/section-introduction';
 import {Separator} from '../../../components/separator';
 import {MediaList} from '../../../components/media-list';
-import { HeaderIndex } from '../../../components/header-index';
+import {HeaderIndex} from '../../../components/header-index';
 
 const cardsContent = [
   {
@@ -127,7 +127,7 @@ export default ({path, ...rest}: LayoutProps) => (
         }}
       /> */}
 
-      <HeaderIndex title='Foundations' media={{src:'/static/header-index.svg'}}>
+      <HeaderIndex title='Foundations' media={{src:'/static/foundations-overview-hero.svg'}}>
         NewsKit foundations define the visual elements that inform the look and feel of UI components.
       </HeaderIndex>
       <SectionIntroduction title="Categories" cellProps={{lg: 8}}>
