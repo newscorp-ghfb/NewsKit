@@ -5,7 +5,7 @@ import {PageIntroduction} from '../../../components/page-introduction';
 import {SectionIntroduction} from '../../../components/section-introduction';
 import {Separator} from '../../../components/separator';
 import {MediaList} from '../../../components/media-list';
-import { HeaderIndex } from 'components/header-index';
+import { HeaderIndex } from '../../../components/header-index';
 
 const cardsContent = [
   {
