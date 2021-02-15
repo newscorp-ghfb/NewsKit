@@ -61,8 +61,8 @@
     "generate:uninstall": "cd ./component-generator && yarn && yarn unlink"
   },
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.9.4",
-    "@applitools/eyes-storybook": "^3.3.0",
+    "@applitools/eyes-cypress": "^3.18.7",
+    "@applitools/eyes-storybook": "^3.16.3",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@commitlint/format": "8.0.0",

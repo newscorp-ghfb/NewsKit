@@ -620,7 +620,7 @@ jobs:
             echo "export VERSION=${VERSION}" >> $BASH_ENV
       - slack/status:
           <<: *slack_status
-      
+
   publish_npm:
     parameters:
       publish_dev:
@@ -811,7 +811,7 @@ jobs:
             kubectl apply -f .
       - slack/status:
           <<: *slack_status
-      
+
 # ========== FILTERS START    ==========
 
 only_develop: &only_develop
@@ -982,7 +982,7 @@ workflows:
           tf_env: false
           requires:
             - init_aws
-      
+
     # PR & Develop jobs
       - approve_publish_npm_dev:
           type: approval
