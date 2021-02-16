@@ -1,6 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import {Link, Cell, Block, Grid, Visible} from 'newskit';
+import {Link, Cell, Block, Grid} from 'newskit';
 import {InfoNotice} from '../info-notice';
 import {ContactUs} from '../contact-us';
 import {AccessibilityTables} from '../accessibility-tables';
@@ -106,12 +106,16 @@ const renderSections = ({
               <SectionIntroduction title="Behaviours">
                 {behaviors.introduction}
               </SectionIntroduction>
-              <Visible xs sm={false} md={false} lg={false} xl={false}>
-                <MediaList {...behaviors} />
-              </Visible>
-              <Visible xs={false} sm md lg xl>
-                <MediaList layout="horizontal" {...behaviors} />
-              </Visible>
+              <MediaList
+                layout={{
+                  xs: 'vertical',
+                  sm: 'vertical',
+                  md: 'horizontal',
+                  lg: 'horizontal',
+                  xl: 'horizontal',
+                }}
+                {...behaviors}
+              />
             </Grid>
           </section>
         </Cell>

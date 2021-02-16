@@ -19,10 +19,10 @@ export const MediaList: React.FC<MediaListProps> = ({
   parentCellProps,
 }) => {
 
-const renderCards = (l?:'vertical'|'horizontal') => (cards.map(({media, label, description, title, href, styles}) => (
+const renderCards = (cardLayout?:'vertical'|'horizontal') => (cards.map(({media, label, description, title, href, styles}) => (
   <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
     <StyledCard
-      layout={l}
+      layout={cardLayout}
       media={media}
       overrides={styles && styles.card && {...styles.card}}
       href={href}
