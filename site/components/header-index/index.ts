@@ -1,1 +1,1 @@
-export {HeaderIndex} from './header-index'
+export {HeaderIndex} from './header-index';

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Cell, Grid} from 'newskit';
 import Layout, {LayoutProps} from '../../../components/layout';
-import {PageIntroduction} from '../../../components/page-introduction';
 import {SectionIntroduction} from '../../../components/section-introduction';
 import {Separator} from '../../../components/separator';
 import {MediaList} from '../../../components/media-list';
@@ -127,8 +126,12 @@ export default ({path, ...rest}: LayoutProps) => (
         }}
       /> */}
 
-      <HeaderIndex title='Foundations' media={{src:'/static/foundations-overview-hero.svg'}}>
-        NewsKit foundations define the visual elements that inform the look and feel of UI components.
+      <HeaderIndex
+        title="Foundations"
+        media={{src: '/static/foundations-overview-hero.svg'}}
+      >
+        NewsKit foundations define the visual elements that inform the look and
+        feel of UI components.
       </HeaderIndex>
       <SectionIntroduction title="Categories" cellProps={{lg: 8}}>
         The NewsKit Foundations are structured into the following categories:

@@ -1,4 +1,4 @@
-import { ImageProps } from "newskit";
+import {ImageProps} from 'newskit';
 
 export interface HeaderIndexProps {
   title: string;

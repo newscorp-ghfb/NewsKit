@@ -84,7 +84,7 @@ const generateBreakpointConfig = (props: CellProps & GridProps & ThemeProp) => {
             `${breakpoint}Order` as keyof CellProps
           ] as CellProps['xsOrder']) || undefined;
         cellCss.padding = halfColumnGutter ? `0 ${halfColumnGutter}px` : 0;
-        cellCss['marginTop'] = rowGutter ? `${rowGutter}px` : 0;
+        cellCss.marginTop = rowGutter ? `${rowGutter}px` : 0;
 
         // Specific CSS to either numeric span or full-width
         if (colSpan === 'full-width') {
@@ -94,17 +94,18 @@ const generateBreakpointConfig = (props: CellProps & GridProps & ThemeProp) => {
             breakpoint,
             props,
           );
-          cellCss['flexBasis'] = `calc(100% + ${margin * 2}px)`;
-          cellCss['maxWidth'] = `calc(100% + ${margin * 2}px)`;
-          cellCss['marginLeft'] = margin ? `-${margin}px` : 0;
+          cellCss.flexBasis = `calc(100% + ${margin * 2}px)`;
+          cellCss.maxWidth = `calc(100% + ${margin * 2}px)`;
+          cellCss.marginLeft = margin ? `-${margin}px` : 0;
         } else {
           // Standard 1-12 column spanning Cell
           const colWidth = 100 / theme.componentDefaults.grid.columns;
           const width = +colSpan * colWidth;
-          const offsetColumnGutter = colOffset * colWidth
-          cellCss['marginLeft'] =  offsetColumnGutter > 0 ? `${offsetColumnGutter}%;` : 0;
-          cellCss['flexBasis'] = `${width}%`;
-          cellCss['maxWidth'] = `${width}%`;
+          const offsetColumnGutter = colOffset * colWidth;
+          cellCss.marginLeft =
+            offsetColumnGutter > 0 ? `${offsetColumnGutter}%;` : 0;
+          cellCss.flexBasis = `${width}%`;
+          cellCss.maxWidth = `${width}%`;
         }
       }
       acc[breakpoint] = cellCss;
