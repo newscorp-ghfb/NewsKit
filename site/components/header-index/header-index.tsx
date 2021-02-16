@@ -1,4 +1,12 @@
-import {Cell, Grid, TextBlock, Image, styled, Block, getColorFromTheme} from 'newskit';
+import {
+  Cell,
+  Grid,
+  TextBlock,
+  Image,
+  styled,
+  Block,
+  getColorFromTheme,
+} from 'newskit';
 import React from 'react';
 import {HeaderIndexProps} from './types';
 
@@ -7,7 +15,6 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
   children,
   media,
 }) => {
-
   const StyledGrid = styled(Grid)`
     align-items: center;
     background-color: ${getColorFromTheme('interface020')};
@@ -16,7 +23,7 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
   return (
     <StyledGrid xsRowGutter="space020" mdRowGutter="space030">
       <Cell lgOrder={2} xs={12} md={6} lg={5} mdOffset={6} lgOffset={0}>
-        <Image src={media.src} alt=""/>
+        <Image src={media.src} alt="" />
       </Cell>
       <Cell xs={12} md={8} lg={6} mdOffset={1}>
         <Block spaceStack={{xs: 'space060', md: 'space070'}}>
