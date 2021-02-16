@@ -14,6 +14,8 @@ export const TabInternal = React.forwardRef<
       overrides = {},
       size = TabSize.Medium,
       ariaLabel,
+      selected,
+      id,
       align = TabAlign.Center,
       ...props
     },
@@ -24,12 +26,18 @@ export const TabInternal = React.forwardRef<
       ...theme.componentDefaults.tab[size],
       ...filterOutFalsyProperties(overrides),
     };
+
     return (
       <TabButton
         data-testid="tab"
         role="tab"
         aria-label={ariaLabel}
         ref={ref}
+        aria-selected={Boolean(selected)}
+        aria-controls={id}
+        id={id}
+        tabIndex={selected ? 0 : -1}
+        selected={selected}
         {...props}
         overrides={tabSettings}
         align={align}

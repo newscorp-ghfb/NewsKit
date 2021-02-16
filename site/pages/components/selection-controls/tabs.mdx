@@ -15,6 +15,7 @@ import {
   TabsDistribution,
   UnorderedList,
   TabAlign,
+  Link,
 } from 'newskit';
 
 export default Layout;
@@ -445,11 +446,35 @@ Here is an example of how the Tabs and Tab components are used.
 We recommend using the ARIA tab model. This works across all major screen readers and browser combinations.
 If you are using a screen reader with Javascript turned on, you should be able to navigate the tabs pattern in the following way:
 
-Use the tab key on your keyboard to access the tab labels
+Keyboard support:
 
-Use the return key to select the tab
+<UnorderedList>
+  <>
+    <InlineCode>Right Arrow</InlineCode>: Moves focus to the next tab. If focus
+    is on the last tab, moves focus to the first tab.
+  </>
+  <>
+    <InlineCode>Left Arrow</InlineCode>: Moves focus to the previous tab. If
+    focus is on the first tab, moves focus to the last tab.
+  </>
+  <>
+    <InlineCode>Up Arrow</InlineCode>: Same as Right Arrow but for vertical
+    tabs.
+  </>
+  <>
+    <InlineCode>Down Arrow</InlineCode>: Same as Left Arrow but for vertical
+    tabs.
+  </>
+  <>
+    <InlineCode>Home</InlineCode>: Moves focus to the first tab and activates
+    it.
+  </>
+  <>
+    <InlineCode>End</InlineCode>: Moves focus to the last tab and activates it.
+  </>
+</UnorderedList>
 
-Arrow Left & Arrow Right (only on horizontal tab orientation) - Move left and right through the enabled tabs and trigger select
+**NOTE:** All Accessibility features in `Tabs` component are based on the following <Link href="https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel" target="_blank">guidelines and best practices from W3C</Link> and more particularly <Link href="https://www.w3.org/TR/wai-aria-practices-1.2/examples/tabs/tabs-1/tabs.html">Tabs With Automatic Activation</Link>.
 
 ## Tab Overview
 

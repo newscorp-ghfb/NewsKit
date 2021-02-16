@@ -52,6 +52,8 @@ export interface TabsProps {
 
 export interface TabPaneProps {
   children: React.ReactNode;
+  id?: string;
+  selected?: boolean;
   overrides?: {
     typographyPreset?: MQ<string>;
   };
@@ -83,5 +85,6 @@ export interface TabInternalProps extends BaseFlagProps<BaseFlagOverrides> {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   onKeyDown?: (event: React.KeyboardEvent<HTMLButtonElement>) => void;
   onMouseDown?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  id?: string;
   align?: TabAlign;
 }

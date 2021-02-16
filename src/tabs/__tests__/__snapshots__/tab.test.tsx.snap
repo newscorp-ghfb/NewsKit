@@ -78,9 +78,11 @@ exports[`Tab renders a selected tab correctly with overrides 1`] = `
     class="emotion-2"
   >
     <button
+      aria-selected="true"
       class="emotion-1"
       data-testid="tab"
       role="tab"
+      tabindex="0"
       type="button"
     >
       <div
@@ -214,10 +216,12 @@ exports[`Tab renders disabled tab 1`] = `
     class="emotion-4"
   >
     <button
+      aria-selected="false"
       class="emotion-3"
       data-testid="tab"
       disabled=""
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -400,9 +404,11 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
     class="emotion-6"
   >
     <button
+      aria-selected="false"
       class="emotion-5"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -591,9 +597,11 @@ exports[`Tab renders label with fallback formatting 1`] = `
     class="emotion-4"
   >
     <button
+      aria-selected="false"
       class="emotion-3"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -765,9 +773,11 @@ exports[`Tab renders large tab 1`] = `
     class="emotion-4"
   >
     <button
+      aria-selected="false"
       class="emotion-3"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -939,9 +949,11 @@ exports[`Tab renders small tab 1`] = `
     class="emotion-4"
   >
     <button
+      aria-selected="false"
       class="emotion-3"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -1124,9 +1136,11 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
     class="emotion-6"
   >
     <button
+      aria-selected="false"
       class="emotion-5"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -1326,9 +1340,11 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
     class="emotion-6"
   >
     <button
+      aria-selected="false"
       class="emotion-5"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -1517,9 +1533,11 @@ exports[`Tab renders with different minHeight 1`] = `
     class="emotion-4"
   >
     <button
+      aria-selected="false"
       class="emotion-3"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div
@@ -1703,9 +1721,11 @@ exports[`Tab should render custom aria-label tab 1`] = `
   >
     <button
       aria-label="my custom aria label"
+      aria-selected="false"
       class="emotion-5"
       data-testid="tab"
       role="tab"
+      tabindex="-1"
       type="button"
     >
       <div

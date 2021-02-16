@@ -42,14 +42,32 @@ export const getLayoutParams = (
 export const KEYBOARD_ACTION = {
   next: 'next',
   previous: 'previous',
+  start: 'start',
+  end: 'end',
 };
 
-export const parseKeyDown = (event: React.KeyboardEvent) => {
+export const KEYBOARD_ARROWS = {
+  left: 37,
+  up: 38,
+  right: 39,
+  down: 40,
+  home: 36,
+  end: 35,
+};
+
+export const parseKeyDown = (event: React.KeyboardEvent, vertical: boolean) => {
+  const next = vertical ? KEYBOARD_ARROWS.down : KEYBOARD_ARROWS.right;
+  const prev = vertical ? KEYBOARD_ARROWS.up : KEYBOARD_ARROWS.left;
+
   switch (event.keyCode) {
-    case 39:
+    case next:
       return KEYBOARD_ACTION.next;
-    case 37:
+    case prev:
       return KEYBOARD_ACTION.previous;
+    case KEYBOARD_ARROWS.home:
+      return KEYBOARD_ACTION.start;
+    case KEYBOARD_ARROWS.end:
+      return KEYBOARD_ACTION.end;
     default:
       return null;
   }

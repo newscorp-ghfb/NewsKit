@@ -17,7 +17,7 @@ import {
   TabAlign,
 } from './types';
 import {Stack} from '../stack';
-import {TextBlock} from '../text-block';
+import {TextBlock, TextBlockProps} from '../text-block';
 import {Button, ButtonProps} from '../button';
 
 const getFlexFromTabsDistribution = (
@@ -127,6 +127,8 @@ export const TabButton = styled(Button)<
       : ''}
 `;
 
-export const TabPaneBlock = styled(TextBlock)`
+export const TabPaneBlock = styled(TextBlock)<
+  TextBlockProps & {selected: boolean}
+>`
   width: 100%;
 `;

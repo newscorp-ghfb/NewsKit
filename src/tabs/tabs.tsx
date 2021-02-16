@@ -32,6 +32,7 @@ import {
 } from './utils';
 import {TabPane} from './tab-pane';
 import {hasMatchingDisplayNameWith} from '../utils/component';
+import {getSSRId} from '../utils/get-ssr-id';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -142,44 +143,57 @@ export const Tabs: React.FC<TabsProps> = ({
 
     // Find tab to focus, looping to start/end of list if necessary
     const currentTabIndex = availableTabs.indexOf(event.currentTarget);
-    const action = parseKeyDown(event);
+    const action = parseKeyDown(event, vertical);
 
     if (!action) return;
 
-    let nextTab;
-    /* istanbul ignore else */
-    if (action === KEYBOARD_ACTION.previous) {
-      nextTab =
+    const keyboardActions = {
+      [KEYBOARD_ACTION.previous]:
         availableTabs[currentTabIndex - 1] ||
-        availableTabs[availableTabs.length - 1];
-    } else if (action === KEYBOARD_ACTION.next) {
-      nextTab = availableTabs[currentTabIndex + 1] || availableTabs[0];
-    } else {
+        availableTabs[availableTabs.length - 1],
+      [KEYBOARD_ACTION.next]:
+        availableTabs[currentTabIndex + 1] || availableTabs[0],
+      [KEYBOARD_ACTION.start]: availableTabs[0],
+      [KEYBOARD_ACTION.end]: availableTabs[availableTabs.length - 1],
+    };
+
+    const nextTab = keyboardActions[action];
+
+    /* istanbul ignore if */
+    if (!nextTab) {
       return;
     }
+
     // Focus the tab
     nextTab.focus();
     nextTab.click();
   };
 
+  // generate uniq IDs for a11y porpose
+  const [ariaIds, setAriaIds] = useState<string[]>([]);
+  React.useEffect(() => {
+    const ids: string[] = tabsOnlyChildren.map(() => getSSRId());
+    setAriaIds(ids);
+  }, [tabsOnlyChildren.length]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const tabPanes = tabsOnlyChildren.map(
-    (child: React.ReactElement<TabProps>) => {
+    (child: React.ReactElement<TabProps>, index) => {
       const tabPaneProps = {
         children: child.props.children,
         overrides: overrides.tabPane,
+        selected: index === activeTabIndex,
+        id: ariaIds[index],
       };
 
       return <TabPane {...tabPaneProps} />;
     },
   );
 
-  /* istanbul ignore next */
-  const tabContent = tabPanes[activeTabIndex] || null;
-
   const tabData = tabsOnlyChildren.map(
     (child: React.ReactElement<TabProps>, index) => ({
       key: index,
-      isActive: index === activeTabIndex,
+      selected: index === activeTabIndex,
+      id: ariaIds[index],
       ...child.props,
     }),
   );
@@ -211,14 +225,15 @@ export const Tabs: React.FC<TabsProps> = ({
         >
           <TabInternal
             key={tab.key}
-            selected={tab.isActive}
+            selected={tab.selected}
             autoFocus={tab.autoFocus}
             size={size}
             onKeyDown={handleKeyDown}
             onClick={() => setActiveTabIndex(tab.key)}
             onMouseDown={preventDefault}
             disabled={tab.disabled}
-            ref={tab.isActive ? activeTabRef : undefined}
+            ref={tab.selected ? activeTabRef : undefined}
+            id={tab.id}
             align={align}
             overrides={{
               ...tab.overrides,
@@ -255,6 +270,7 @@ export const Tabs: React.FC<TabsProps> = ({
           flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
           inline={!vertical}
           role="tablist"
+          aria-orientation={vertical ? 'vertical' : 'horizontal'}
         >
           {tabs}
 
@@ -282,7 +298,7 @@ export const Tabs: React.FC<TabsProps> = ({
           />
         </StyledInnerTabGroup>
       </StyledTabBar>
-      {tabContent}
+      {tabPanes}
     </StyledTabGroup>
   );
 };

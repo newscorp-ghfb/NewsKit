@@ -11,6 +11,7 @@ import {Tabs, TabsDistribution} from '..';
 import {TabAlign, TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {createTheme, compileTheme} from '../../theme';
+import {KEYBOARD_ARROWS} from '../utils';
 
 const renderTabsDefault = (props: TabsProps) => <Tabs {...props} />;
 
@@ -175,7 +176,7 @@ describe('Tabs', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('changes focus on tab', async () => {
+  it('changes focus on-tab to tab-pane ', async () => {
     const props: TabsProps = {
       children: tabsWithLabel,
     };
@@ -185,109 +186,13 @@ describe('Tabs', () => {
     );
 
     const firstTab = getAllByTestId('tab')[0];
-    const secondTab = getAllByTestId('tab')[1];
+    const firstTabPane = getAllByTestId('tab-pane')[0];
 
     firstTab.focus();
     expect(firstTab).toHaveFocus();
 
     userEvent.tab();
-    expect(secondTab).toHaveFocus();
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it('changes focus and sets next to be active on right arrow', async () => {
-    const props: TabsProps = {
-      children: tabsWithLabel,
-    };
-    const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabsDefault,
-      props,
-    );
-
-    const firstTab = getAllByTestId('tab')[0];
-    const secondTab = getAllByTestId('tab')[1];
-    const tabPane = getByTestId('tab-pane');
-
-    firstTab.focus();
-    expect(firstTab).toHaveFocus();
-    fireEvent.keyDown(firstTab, {key: 'ArrowRight', keyCode: '39'});
-
-    expect(secondTab).toHaveFocus();
-    expect(secondTab).toHaveStyle(selectedTabStyled);
-    expect(tabPane.innerHTML).toEqual('Second tab content');
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it('changes focus and sets previous to be active on left arrow', async () => {
-    const props: TabsProps = {
-      children: tabsWithLabel,
-    };
-    const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabsDefault,
-      props,
-    );
-
-    const firstTab = getAllByTestId('tab')[0];
-    const secondTab = getAllByTestId('tab')[1];
-    const tabPane = getByTestId('tab-pane');
-
-    secondTab.focus();
-    expect(secondTab).toHaveFocus();
-    fireEvent.keyDown(secondTab, {key: 'ArrowLeft', keyCode: '37'});
-
-    expect(firstTab).toHaveFocus();
-    expect(firstTab).toHaveStyle(selectedTabStyled);
-    expect(tabPane.innerHTML).toEqual('First tab content');
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it('changes focus and sets last to be active on left arrow when on the first tab', async () => {
-    const props: TabsProps = {
-      children: tabsWithLabel,
-    };
-    const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabsDefault,
-      props,
-    );
-
-    const firstTab = getAllByTestId('tab')[0];
-    const lastTab = getAllByTestId('tab')[2];
-    const tabPane = getByTestId('tab-pane');
-
-    firstTab.focus();
-    expect(firstTab).toHaveFocus();
-    fireEvent.keyDown(firstTab, {key: 'ArrowLeft', keyCode: '37'});
-
-    expect(lastTab).toHaveFocus();
-    expect(lastTab).toHaveStyle(selectedTabStyled);
-    expect(tabPane.innerHTML).toEqual('Third tab content');
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it('changes focus and sets first to be active on right arrow when on the last tab', async () => {
-    const props: TabsProps = {
-      children: tabsWithLabel,
-    };
-    const {getAllByTestId, getByTestId, asFragment} = renderWithTheme(
-      renderTabsDefault,
-      props,
-    );
-
-    const firstTab = getAllByTestId('tab')[0];
-    const lastTab = getAllByTestId('tab')[2];
-    const tabPane = getByTestId('tab-pane');
-
-    lastTab.focus();
-    expect(lastTab).toHaveFocus();
-    fireEvent.keyDown(lastTab, {key: 'ArrowRight', keyCode: '39'});
-
-    expect(firstTab).toHaveFocus();
-    expect(firstTab).toHaveStyle(selectedTabStyled);
-    expect(tabPane.innerHTML).toEqual('First tab content');
+    expect(firstTabPane).toHaveFocus();
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -410,7 +315,7 @@ describe('Tabs', () => {
       children: tabsWithLabel,
       initialSelectedIndex: 1,
     };
-    const {getAllByTestId, asFragment, getByTestId} = renderWithTheme(
+    const {getAllByTestId, asFragment} = renderWithTheme(
       renderTabsDefault,
       props,
     );
@@ -418,8 +323,13 @@ describe('Tabs', () => {
     const tab = getAllByTestId('tab')[1];
     expect(tab).toHaveStyle(selectedTabStyled);
 
-    const tabPane = getByTestId('tab-pane');
-    expect(tabPane).toHaveTextContent(/second tab content/i);
+    const [firstTabPane, secondTabPane] = getAllByTestId('tab-pane');
+
+    expect(firstTabPane).toHaveAttribute('aria-hidden', 'true');
+    expect(secondTabPane).toHaveAttribute('aria-hidden', 'false');
+
+    expect(firstTabPane).not.toBeVisible();
+    expect(secondTabPane).toBeVisible();
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -547,5 +457,100 @@ describe('Tabs FittedEqual', () => {
 
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('Tabs keyboard changes focus', () => {
+  const scenarios = [
+    {
+      name: 'sets next to be active on right arrow',
+      fromIndex: 0,
+      toIndex: 1,
+      keyCode: KEYBOARD_ARROWS.right,
+      vertical: false,
+    },
+    {
+      name: 'sets previous to be active on left arrow',
+      fromIndex: 1,
+      toIndex: 0,
+      keyCode: KEYBOARD_ARROWS.left,
+      vertical: false,
+    },
+    {
+      name: 'sets last to be active on left arrow when on the first tab',
+      fromIndex: 0,
+      toIndex: 2,
+      keyCode: KEYBOARD_ARROWS.left,
+      vertical: false,
+    },
+    {
+      name: 'sets first to be active on right arrow when on the last tab',
+      fromIndex: 2,
+      toIndex: 0,
+      keyCode: KEYBOARD_ARROWS.right,
+      vertical: false,
+    },
+    {
+      name: 'sets next to be active on down arrow in vertical tabs',
+      fromIndex: 0,
+      toIndex: 1,
+      keyCode: KEYBOARD_ARROWS.down,
+      vertical: true,
+    },
+    {
+      name: 'sets previous to be active on up arrow in vertical tabs',
+      fromIndex: 1,
+      toIndex: 0,
+      keyCode: KEYBOARD_ARROWS.up,
+      vertical: true,
+    },
+    {
+      name: 'sets first to be active on Home key',
+      fromIndex: 2,
+      toIndex: 0,
+      keyCode: KEYBOARD_ARROWS.home,
+      vertical: true,
+    },
+    {
+      name: 'sets last to be active on End key',
+      fromIndex: 0,
+      toIndex: 2,
+      keyCode: KEYBOARD_ARROWS.end,
+      vertical: true,
+    },
+  ];
+
+  scenarios.forEach(({name, fromIndex, toIndex, keyCode, vertical}) => {
+    it(name, async () => {
+      const props: TabsProps = {
+        children: tabsWithLabel,
+        vertical,
+      };
+
+      const {getAllByTestId, asFragment} = renderWithTheme(
+        renderTabsDefault,
+        props,
+      );
+
+      const fromTab = getAllByTestId('tab')[fromIndex];
+      const toTab = getAllByTestId('tab')[toIndex];
+      const fromTabPane = getAllByTestId('tab-pane')[fromIndex];
+      const toTabPane = getAllByTestId('tab-pane')[toIndex];
+
+      fromTab.focus();
+      expect(fromTab).toHaveFocus();
+      fireEvent.keyDown(fromTab, {keyCode});
+
+      expect(toTab).toHaveFocus();
+      expect(toTab).toHaveStyle(selectedTabStyled);
+
+      expect(fromTabPane).toHaveAttribute('aria-hidden', 'true');
+      expect(toTabPane).toHaveAttribute('aria-hidden', 'false');
+
+      expect(fromTabPane).not.toBeVisible();
+      expect(toTabPane).toBeVisible();
+
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 });
