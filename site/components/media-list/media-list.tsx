@@ -8,7 +8,7 @@ const StyledCard = styled(Card)`
 
 export const MediaList: React.FC<MediaListProps> = ({
   spaceStack,
-  layout,
+  cardsLayout,
   xsCard = 6,
   smCard,
   mdCard,
@@ -19,10 +19,10 @@ export const MediaList: React.FC<MediaListProps> = ({
   parentCellProps,
 }) => {
 
-const renderCards = (cardLayout?:'vertical'|'horizontal') => (cards.map(({media, label, description, title, href, styles}) => (
+const renderCards = (layout?:'vertical'|'horizontal') => (cards.map(({media, label, description, title, href, styles}) => (
   <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
     <StyledCard
-      layout={cardLayout}
+      layout={layout}
       media={media}
       overrides={styles && styles.card && {...styles.card}}
       href={href}
@@ -63,20 +63,20 @@ const renderCards = (cardLayout?:'vertical'|'horizontal') => (cards.map(({media,
 
   const renderBreakpointCards = () => {
 
-    if (!layout || typeof layout === 'string') {
-      return renderCards(layout);
+    if (!cardsLayout || typeof cardsLayout === 'string') {
+      return renderCards(cardsLayout);
     }
 
-    const keys = Object.keys(layout) as BreakpointKeys[];
+    const keys = Object.keys(cardsLayout) as BreakpointKeys[];
 
     const verticalBreakpoints = keys.reduce((acc, key) => {
       // by looking for non-horizontal rather than vertical, it means we default to vertical cards if not specified.
-      acc[key] = layout[key] !== 'horizontal';
+      acc[key] = cardsLayout[key] !== 'horizontal';
       return acc;
     }, {} as Record<string, boolean>);
 
     const horizontalBreakpoints = keys.reduce((acc, key) => {
-    acc[key] = layout[key] === 'horizontal';
+    acc[key] = cardsLayout[key] === 'horizontal';
       return acc;
     }, {} as Record<string, boolean>);
 

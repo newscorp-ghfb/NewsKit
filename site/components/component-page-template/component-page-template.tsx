@@ -82,7 +82,7 @@ const renderSections = ({
               </SectionIntroduction>
               <MediaList
                 {...variations}
-                layout={{
+                cardsLayout={{
                   xs: 'vertical',
                   sm: 'horizontal',
                   md: 'horizontal',
@@ -107,7 +107,7 @@ const renderSections = ({
                 {behaviors.introduction}
               </SectionIntroduction>
               <MediaList
-                layout={{
+                cardsLayout={{
                   xs: 'vertical',
                   sm: 'vertical',
                   md: 'horizontal',
