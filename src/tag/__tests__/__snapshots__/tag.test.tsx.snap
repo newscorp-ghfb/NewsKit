@@ -12,55 +12,6 @@ exports[`Tag href renders as an anchor 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #535353;
-  border-width: 1px;
-  color: #2e2e2e;
-  border-radius: 0;
-}
-
-.emotion-3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-3 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-3:active:not(:disabled) {
-  border-width: 1px;
-}
-
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -122,6 +73,56 @@ exports[`Tag href renders as an anchor 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  color: #2e2e2e;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-width: 1px;
 }
 
 <div
