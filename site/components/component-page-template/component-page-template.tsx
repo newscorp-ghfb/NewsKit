@@ -80,14 +80,16 @@ const renderSections = ({
               <SectionIntroduction title="Variations">
                 {variations.introduction}
               </SectionIntroduction>
-
-              <Visible xs sm={false} md={false} lg={false} xl={false}>
-                <MediaList {...variations} />
-              </Visible>
-
-              <Visible xs={false} sm md lg xl>
-                <MediaList layout="horizontal" {...variations} />
-              </Visible>
+              <MediaList
+                {...variations}
+                layout={{
+                  xs: 'vertical',
+                  sm: 'horizontal',
+                  md: 'horizontal',
+                  lg: 'horizontal',
+                  xl: 'horizontal',
+                }}
+              />
             </Grid>
           </section>
         </Cell>

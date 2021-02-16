@@ -8,7 +8,7 @@ import {
 
 export interface MediaListProps {
   cards: Array<MediaItem>;
-  layout?: 'horizontal' | 'vertical';
+  layout?: MQ<'horizontal' | 'vertical'>;
   xsCard?: number;
   smCard?: number;
   mdCard?: number;
