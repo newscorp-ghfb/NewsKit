@@ -14,6 +14,18 @@ exports[`Meta renders with mandatory props 1`] = `
   .emotion-81 {
     padding: 0 8px;
     margin-top: 16px;
+    margin-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-81 {
+    margin-top: 16px;
+    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -23,6 +35,7 @@ exports[`Meta renders with mandatory props 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-81 {
+    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -35,6 +48,18 @@ exports[`Meta renders with mandatory props 1`] = `
   .emotion-81 {
     padding: 0 12px;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-81 {
+    margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -1143,6 +1168,18 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   .emotion-97 {
     padding: 0 8px;
     margin-top: 16px;
+    margin-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-97 {
+    margin-top: 16px;
+    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -1152,6 +1189,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-97 {
+    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -1164,6 +1202,18 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   .emotion-97 {
     padding: 0 12px;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-97 {
+    margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;

@@ -14,6 +14,18 @@ exports[`Media List renders with custom layout 1`] = `
   .emotion-36 {
     padding: 0 8px;
     margin-top: 16px;
+    margin-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-36 {
+    margin-top: 16px;
+    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -23,6 +35,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-36 {
+    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -35,6 +48,18 @@ exports[`Media List renders with custom layout 1`] = `
   .emotion-36 {
     padding: 0 12px;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-36 {
+    margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -342,6 +367,29 @@ exports[`Media List renders with custom layout 1`] = `
   .emotion-14 {
     padding: 0 8px;
     margin-top: 12px;
+    margin-left: 0;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-14 {
+    margin-top: 12px;
+    margin-left: 0;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-14 {
+    margin-top: 12px;
+    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -352,6 +400,19 @@ exports[`Media List renders with custom layout 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-14 {
     padding: 0 12px;
+    margin-top: 12px;
+    margin-left: 0;
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-14 {
+    margin-top: 12px;
+    margin-left: 0;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -556,6 +617,18 @@ exports[`Media List renders with default layout 1`] = `
   .emotion-27 {
     padding: 0 8px;
     margin-top: 16px;
+    margin-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-27 {
+    margin-top: 16px;
+    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -565,6 +638,7 @@ exports[`Media List renders with default layout 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-27 {
+    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -577,6 +651,18 @@ exports[`Media List renders with default layout 1`] = `
   .emotion-27 {
     padding: 0 12px;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-27 {
+    margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -647,6 +733,29 @@ exports[`Media List renders with default layout 1`] = `
   .emotion-14 {
     padding: 0 8px;
     margin-top: 48px;
+    margin-left: 0;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-14 {
+    margin-top: 48px;
+    margin-left: 0;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-14 {
+    margin-top: 48px;
+    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -657,6 +766,23 @@ exports[`Media List renders with default layout 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-14 {
     padding: 0 12px;
+    margin-top: 48px;
+    margin-left: 0;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-14 {
+    margin-top: 48px;
+    margin-left: 0;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
   }
 }
 

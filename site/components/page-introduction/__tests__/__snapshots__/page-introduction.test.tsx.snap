@@ -14,6 +14,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   .emotion-4 {
     padding: 0 8px;
     margin-top: 16px;
+    margin-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-4 {
+    margin-top: 16px;
+    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -23,6 +35,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-4 {
+    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -35,6 +48,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   .emotion-4 {
     padding: 0 12px;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-4 {
+    margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -224,6 +249,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   .emotion-2 {
     padding: 0 8px;
     margin-top: 16px;
+    margin-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-2 {
+    margin-top: 16px;
+    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -233,6 +270,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-2 {
+    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -245,6 +283,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   .emotion-2 {
     padding: 0 12px;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-2 {
+    margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -357,6 +407,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   .emotion-7 {
     padding: 0 8px;
     margin-top: 16px;
+    margin-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-7 {
+    margin-top: 16px;
+    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -366,6 +428,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-7 {
+    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -378,6 +441,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   .emotion-7 {
     padding: 0 12px;
     margin-top: 24px;
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-7 {
+    margin-top: 24px;
+    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
