@@ -24,6 +24,9 @@ export const StyledScrollContainer = styled.div<
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  ${({vertical, snapAlign}) =>
+    snapAlign && `scroll-snap-type: ${vertical ? 'y' : 'x'} mandatory;`};
 `;
 
 const pseudoBasicStyle = `
@@ -106,7 +109,7 @@ export const StyledScrollNav = styled.div<
           background-image: linear-gradient(
             ${vertical ? 'to top' : 'to left'},
             rgba(255,255,255,0) 0%,
-            #FFFFFF  48%
+            rgba(255,255,255,0.6)  50%
           );
           transition: all linear 0.3s;
         }
@@ -136,7 +139,7 @@ export const StyledScrollNav = styled.div<
         background-image: linear-gradient(
           ${vertical ? 'to bottom' : 'to right'},
           rgba(255,255,255,0) 0%,
-          #FFFFFF  48%
+          rgba(255,255,255,0.6)  50%
         );
         transition: all linear 0.3s;
       }
@@ -174,4 +177,10 @@ export const StyledScrollArrowButton = styled(IconButton)<
         ${position === 'start' ? 'left: 0;' : 'right: 0;'}
         `}
     `}
+`;
+
+export const StyledScrollSnapAlignment = styled.div<
+  Pick<ScrollProps, 'snapAlign'>
+>`
+  scroll-snap-align: ${({snapAlign}) => snapAlign};
 `;

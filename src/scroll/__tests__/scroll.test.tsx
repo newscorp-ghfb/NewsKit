@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import {fireEvent, render} from '@testing-library/react';
 import {screen} from '@testing-library/dom';
-import {Scroll} from '../scroll';
+import {Scroll, ScrollSnapAlignment} from '..';
 import {createTheme, newskitLightTheme, ThemeProvider} from '../../theme';
 import {
   renderToFragmentWithTheme,
@@ -281,5 +281,73 @@ describe('Scroll', () => {
       ).not.toBeInTheDocument();
       expect(await screen.findByTestId('scroll-arrow-top')).toBeEnabled();
     });
+  });
+});
+
+describe('ScrollSnapAlignment', () => {
+  test(`renders div with snap-align css styles`, () => {
+    const fragment = renderToFragmentWithTheme(ScrollSnapAlignment, {
+      children: <Content />,
+      snapAlign: 'end',
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders scroll with snapping enabled`, () => {
+    const {asFragment} = renderWithTheme(
+      Scroll,
+      {
+        children: [
+          <>
+            <ScrollSnapAlignment>
+              <div>1</div>
+            </ScrollSnapAlignment>
+            ,
+            <ScrollSnapAlignment>
+              <div>2</div>
+            </ScrollSnapAlignment>
+            ,
+            <ScrollSnapAlignment>
+              <div>3</div>
+            </ScrollSnapAlignment>
+            ,
+          </>,
+        ],
+        snapAlign: 'start',
+      },
+      myCustomTheme,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test(`renders vertical scroll with snapping enabled`, () => {
+    const {asFragment} = renderWithTheme(
+      Scroll,
+      {
+        children: [
+          <>
+            <ScrollSnapAlignment>
+              <div>1</div>
+            </ScrollSnapAlignment>
+            ,
+            <ScrollSnapAlignment>
+              <div>2</div>
+            </ScrollSnapAlignment>
+            ,
+            <ScrollSnapAlignment>
+              <div>3</div>
+            </ScrollSnapAlignment>
+            ,
+          </>,
+        ],
+        vertical: true,
+        snapAlign: 'start',
+      },
+      myCustomTheme,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

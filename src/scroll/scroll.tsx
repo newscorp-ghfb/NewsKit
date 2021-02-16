@@ -7,6 +7,7 @@ import {
   StyledScrollContainer,
   StyledScrollNav,
 } from './styled';
+import {ScrollSnapAlignmentContextProvider} from './context';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme';
 
@@ -14,6 +15,7 @@ export const Scroll: React.FC<ScrollProps> = ({
   vertical = false,
   arrows,
   stepDistance = 160,
+  snapAlign,
   children,
   overrides = {},
 }) => {
@@ -78,12 +80,19 @@ export const Scroll: React.FC<ScrollProps> = ({
         vertical={vertical}
         aria-orientation={vertical ? 'vertical' : 'horizontal'}
         tabIndex={0}
+        snapAlign={snapAlign}
         ref={scrollContainerRef}
         data-testid="scroll-container"
         onScroll={debounceCheckForScrollPosition}
         arrowsEnabled={arrowsEnabled}
       >
-        {children}
+        {snapAlign ? (
+          <ScrollSnapAlignmentContextProvider value={snapAlign}>
+            {children}
+          </ScrollSnapAlignmentContextProvider>
+        ) : (
+          children
+        )}
       </StyledScrollContainer>
 
       {arrowsEnabled && (

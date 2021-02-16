@@ -4,6 +4,7 @@ export interface ScrollProps {
   vertical?: boolean;
   arrows?: 'hover' | 'static';
   stepDistance?: number;
+  snapAlign?: 'start' | 'center' | 'end';
   overrides?: {
     arrows?: {
       stylePreset?: MQ<string>;

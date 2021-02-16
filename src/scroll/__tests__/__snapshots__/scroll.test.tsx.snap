@@ -392,3 +392,186 @@ exports[`Scroll renders vertical scroll with visible arrows 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`ScrollSnapAlignment renders div with snap-align css styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  -webkit-scroll-snap-align: end;
+  -moz-scroll-snap-align: end;
+  -ms-scroll-snap-align: end;
+  scroll-snap-align: end;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      style="width: 400px;"
+    >
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ipsa, molestiae officia ipsum facere blanditiis iste obcaecati esse, quidem placeat tenetur dicta distinctio inventore quasi sit sint explicabo quia maiores. Doloremque sit doloribus incidunt aperiam recusandae magnam nostrum labore eveniet, perferendis a, quibusdam, quos earum! Numquam quaerat recusandae commodi laudantium modi inventore voluptates officiis nesciunt eius, quis velit voluptatum, quos natus, adipisci nisi! Laborum eos incidunt maiores eaque obcaecati, itaque perferendis! Consectetur magnam pariatur amet, enim recusandae at laborum? Corrupti libero non, in eligendi ipsum odio fugiat excepturi, architecto nam pariatur reiciendis adipisci laudantium maiores. Earum quis magnam consequatur maxime veniam itaque quae eveniet quasi harum neque, expedita totam tempore aspernatur nostrum maiores repudiandae suscipit velit quaerat illo! Temporibus pariatur, enim mollitia animi odio tempore illum asperiores est soluta. Itaque obcaecati eum molestias expedita neque. Atque eum sint esse optio in dolore cum officia iusto inventore ullam nobis culpa ipsum nostrum aspernatur perferendis recusandae, maiores consectetur mollitia provident! Placeat voluptatem a natus quod sequi asperiores nam! Cupiditate illo voluptatum cumque laudantium quo assumenda ut repudiandae perferendis. Molestias, beatae sunt deleniti quasi nobis, provident sequi iste quod corporis incidunt repellat architecto ab voluptates saepe dolor velit, perspiciatis adipisci veritatis debitis laboriosam?
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ScrollSnapAlignment renders scroll with snapping enabled 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-scroll-snap-type: x mandatory;
+  -moz-scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-3::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-3 {
+  -ms-overflow-style: none;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+.emotion-0 {
+  -webkit-scroll-snap-align: start;
+  -moz-scroll-snap-align: start;
+  -ms-scroll-snap-align: start;
+  scroll-snap-align: start;
+}
+
+<div
+    class="emotion-4"
+  >
+    <div
+      aria-orientation="horizontal"
+      class="emotion-3"
+      data-testid="scroll-container"
+      tabindex="0"
+    >
+      <div
+        class="emotion-0"
+      >
+        <div>
+          1
+        </div>
+      </div>
+      ,
+      <div
+        class="emotion-0"
+      >
+        <div>
+          2
+        </div>
+      </div>
+      ,
+      <div
+        class="emotion-0"
+      >
+        <div>
+          3
+        </div>
+      </div>
+      ,
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ScrollSnapAlignment renders vertical scroll with snapping enabled 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-0 {
+  -webkit-scroll-snap-align: start;
+  -moz-scroll-snap-align: start;
+  -ms-scroll-snap-align: start;
+  scroll-snap-align: start;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-scroll-snap-type: y mandatory;
+  -moz-scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+.emotion-3::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-3 {
+  -ms-overflow-style: none;
+  -webkit-scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+<div
+    class="emotion-4"
+  >
+    <div
+      aria-orientation="vertical"
+      class="emotion-3"
+      data-testid="scroll-container"
+      tabindex="0"
+    >
+      <div
+        class="emotion-0"
+      >
+        <div>
+          1
+        </div>
+      </div>
+      ,
+      <div
+        class="emotion-0"
+      >
+        <div>
+          2
+        </div>
+      </div>
+      ,
+      <div
+        class="emotion-0"
+      >
+        <div>
+          3
+        </div>
+      </div>
+      ,
+    </div>
+  </div>
+</DocumentFragment>
+`;

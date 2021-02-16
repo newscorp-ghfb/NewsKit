@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Scroll} from '..';
+import {Scroll, ScrollSnapAlignment} from '..';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
@@ -39,10 +39,26 @@ const MainContainer = styled.div`
   margin: 0 auto;
 `;
 
-const Container = styled(Block)`
+const Container = styled(Block)<{width?: string; height?: string}>`
   background-color: ${getColorFromTheme('neutral020')};
-  width: 300px;
-  height: 150px;
+  width: ${({width}) => width || '300px'};
+  height: ${({height}) => height || '150px'};
+`;
+
+const Flex = styled.div`
+  display: flex;
+`;
+
+const Box = styled.div`
+  box-sizing: border-box;
+  flex: none;
+  width: 100px;
+  height: 100px;
+  background: salmon;
+  border: 1px solid red;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
 `;
 
 const tags = [
@@ -130,6 +146,76 @@ export default {
             </ThemeProvider>
           </Container>
         </MainContainer>
+      ),
+    },
+    {
+      name: 'scroll-snap',
+      type: 'story',
+      parameters: {eyes: {include: false}},
+      component: () => (
+        <>
+          <StorybookSubHeading>Scroll snap - start</StorybookSubHeading>
+          <Container width="250px" height="100px">
+            <Scroll snapAlign="start">
+              <Flex>
+                {Array.from({length: 10}, (_, i) => (
+                  <ScrollSnapAlignment>
+                    <Box>{`Item ${i + 1}`}</Box>
+                  </ScrollSnapAlignment>
+                ))}
+              </Flex>
+            </Scroll>
+          </Container>
+          <br />
+
+          <StorybookSubHeading>Scroll snap with arrows</StorybookSubHeading>
+          <Container width="250px" height="100px">
+            <Scroll snapAlign="start" arrows="static" stepDistance={60}>
+              <Flex>
+                {Array.from({length: 10}, (_, i) => (
+                  <ScrollSnapAlignment>
+                    <Box>{`Item ${i + 1}`}</Box>
+                  </ScrollSnapAlignment>
+                ))}
+              </Flex>
+            </Scroll>
+          </Container>
+          <br />
+
+          <StorybookSubHeading>Change snap position</StorybookSubHeading>
+          <Container width="250px" height="100px">
+            <Scroll snapAlign="center" arrows="static">
+              <Flex>
+                {Array.from({length: 5}, (_, i) => (
+                  <ScrollSnapAlignment>
+                    <Box>{`Item ${i + 1}`}</Box>
+                  </ScrollSnapAlignment>
+                ))}
+                <ScrollSnapAlignment snapAlign="start">
+                  <Box>Item 6 end</Box>
+                </ScrollSnapAlignment>
+                {Array.from({length: 5}, (_, i) => (
+                  <ScrollSnapAlignment>
+                    <Box>{`Item ${i + 7}`}</Box>
+                  </ScrollSnapAlignment>
+                ))}
+              </Flex>
+            </Scroll>
+          </Container>
+          <br />
+
+          <StorybookSubHeading>with stack vertical</StorybookSubHeading>
+          <Container>
+            <Scroll vertical snapAlign="start" arrows="static">
+              <Stack flow="vertical-left">
+                {[...tags, ...tags].map(tag => (
+                  <ScrollSnapAlignment>{tag}</ScrollSnapAlignment>
+                ))}
+              </Stack>
+            </Scroll>
+          </Container>
+          <br />
+        </>
       ),
     },
   ],

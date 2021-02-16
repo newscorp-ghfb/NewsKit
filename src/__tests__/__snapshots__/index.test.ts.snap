@@ -51,6 +51,7 @@ Array [
   "UnorderedList",
   "ScreenReaderOnly",
   "Scroll",
+  "ScrollSnapAlignment",
   "ShareBar",
   "Slider",
   "StatefulSlider",
