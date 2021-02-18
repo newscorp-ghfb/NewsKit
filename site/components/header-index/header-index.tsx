@@ -4,8 +4,8 @@ import {
   TextBlock,
   Image,
   styled,
-  Block,
   getColorFromTheme,
+  getSpacingFromTheme,
 } from 'newskit';
 import React from 'react';
 import {HeaderIndexProps} from './types';
@@ -15,48 +15,53 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
   children,
   media,
 }) => {
+
   const StyledGrid = styled(Grid)`
     align-items: center;
     background-color: ${getColorFromTheme('interface020')};
+    ${getSpacingFromTheme({xs: 'space080', lg: 'space090'}, undefined, 'marginBottom')}
   `;
 
+  const StyledDescriptionTextBlock = styled(TextBlock)`
+    ${getSpacingFromTheme({xs: 'space080', lg:'space000'}, undefined, 'marginBottom')}
+  `
+
+  const StyledTitleTextBlock = styled(TextBlock)`
+    ${getSpacingFromTheme({xs: 'space060', md: 'space070'}, undefined, 'marginBottom')}
+  `
+
   return (
-    <Block spaceStack={{xs: 'space080', lg: 'space090'}}>
-      <StyledGrid
-        xsRowGutter="space020"
-        mdRowGutter="space030"
-        xsMargin="space000"
-        xsColumnGutter="space050"
-      >
-        <Cell lgOrder={2} xs={12} md={6} lg={5} mdOffset={6} lgOffset={0}>
-          <Image src={media.src} alt="" />
-        </Cell>
-        <Block spaceStack={{xs: 'space080'}}>
-          <Cell xs={12} md={8} lg={6} mdOffset={1}>
-            <Block spaceStack={{xs: 'space060', md: 'space070'}}>
-              <TextBlock
-                as="h1"
-                stylePreset="inkContrast"
-                typographyPreset={{
-                  xs: 'editorialHeadline060',
-                  md: 'editorialHeadline080',
-                }}
-              >
-                {title}
-              </TextBlock>
-            </Block>
-            <TextBlock
-              stylePreset="inkBase"
-              typographyPreset={{
-                xs: 'editorialSubheadline010',
-                md: 'editorialSubheadline020',
-              }}
-            >
-              {children}
-            </TextBlock>
-          </Cell>
-        </Block>
-      </StyledGrid>
-    </Block>
+    <StyledGrid
+      xsRowGutter="space020"
+      mdRowGutter="space030"
+      xsMargin="space000"
+      xsColumnGutter="space050"
+    >
+      <Cell lgOrder={2} xs={12} md={6} lg={5} mdOffset={6} lgOffset={0}>
+        <Image src={media.src} alt="" />
+      </Cell>
+      <Cell xs={12} md={8} lg={6} mdOffset={1}>
+        <StyledTitleTextBlock
+          as="h1"
+          stylePreset="inkContrast"
+          typographyPreset={{
+            xs: 'editorialHeadline050',
+            sm: 'editorialHeadline060',
+            md: 'editorialHeadline080',
+          }}
+        >
+          {title}
+        </StyledTitleTextBlock>
+        <StyledDescriptionTextBlock
+          stylePreset="inkBase"
+          typographyPreset={{
+            xs: 'editorialSubheadline010',
+            md: 'editorialSubheadline020',
+          }}
+        >
+          {children}
+        </StyledDescriptionTextBlock>
+      </Cell>
+    </StyledGrid>
   );
 };
