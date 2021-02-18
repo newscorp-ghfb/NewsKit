@@ -23,34 +23,59 @@ By adding a scroll component to a block, you can enable the content within the b
   <Prop name="vertical" type="boolean" default={false}>
     If provided, changes the flow direction of the Scroll contents to vertical.
   </Prop>
+  <Prop name="scrollBar" type="boolean" default={false}>
+    By default the scrollBar is hidden. Enabling this prop will set the
+    scrollbars to behave as{' '}
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow">
+      overflow:auto
+    </a>
+    . Note: the user agent will determine how this behaves, with scrollbars
+    generally being displayed on desktop devices.
+  </Prop>
   <Prop name="arrows" type="'hover' | 'static'" default="undefined">
-    This prop is optional. If provided, will display scroll arrow buttons.
-    If 'hover' is passed as a value, the scroll buttons will be visible only on hover. 
-    If 'static' is provided, the buttons will persist on the screen.
+    This prop is optional. If provided, will display scroll arrow buttons. If
+    <InlineCode>hover</InlineCode> is passed as a value, the scroll buttons will be visible only on
+    hover. If <InlineCode>static</InlineCode> is provided, the buttons will persist on the screen.
   </Prop>
   <Prop name="stepDistance" type="number" default="160">
-    If scroll arrow buttons are enabled, this prop is used to set the scroll step representing 
-    the number of pixels that an element's content is scrolled in either direction.
+    If scroll arrow buttons are enabled, this prop is used to set the scroll
+    step representing the number of pixels that an element's content is scrolled
+    in either direction.
   </Prop>
-  <Prop name="snapAlign" type="'start' | 'center' | 'end'" >
-    Enables a <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type">scroll snap behaviour</Link> and specifies 
-    which part of the element is supposed to snap to the scroll container. In order for the scroll snap to work correcly each scroll item should be wrapped 
-    within <InlineCode>&lt;ScrollSnapAlignment/&gt;</InlineCode> component.
-    Currently the <InlineCode>scroll-snap-type</InlineCode> supports only the <InlineCode>mandatory</InlineCode> value which means the browser has to snap to a snap point whenever the user stops scrolling.
+  <Prop name="snapAlign" type="'start' | 'center' | 'end'">
+    Enables a{' '}
+    <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type">
+      scroll snap behaviour
+    </Link>{' '}
+    and specifies which part of the element is supposed to snap to the scroll
+    container. In order for the scroll snap to work correcly each scroll item
+    should be wrapped within{' '}
+    <InlineCode>&lt;ScrollSnapAlignment/&gt;</InlineCode> component. Currently
+    the <InlineCode>scroll-snap-type</InlineCode> supports only the{' '}
+    <InlineCode>mandatory</InlineCode> value which means the browser has to snap
+    to a snap point whenever the user stops scrolling.
   </Prop>
-    <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided
+    elements.
     <Prop name="arrows" type="object">
       <Prop name="stylePreset" type="MQ<string>">
-        If provided, this overrides the stylePreset preset applied to the scroll arrow buttons.
+        If provided, this overrides the stylePreset preset applied to the scroll
+        arrow buttons.
       </Prop>
       <Prop name="spaceInset" type="MQ<string>">
-        If provided, this overrides the padding space applied to scroll icon buttons.
+        If provided, this overrides the padding space applied to scroll icon
+        buttons.
       </Prop>
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="scroll" />
-    For more information about how to apply overrides to a component please refer to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+    For more information about how to apply overrides to a component please
+    refer to the{' '}
+    <Link href="/theming/override-default-presets">
+      Override default preset
+    </Link>{' '}
+    page.
   </Prop>
 </LegacyBlock>
 
@@ -59,51 +84,56 @@ By adding a scroll component to a block, you can enable the content within the b
 <Playground
   componentName="Scroll"
   component={state => {
-    const ContentWrapper = state.snapAlign? ScrollSnapAlignment : React.Fragment;
+    const ContentWrapper = state.snapAlign
+      ? ScrollSnapAlignment
+      : React.Fragment;
     return (
-            <LegacyBlock width="300px" height="200px">
-        {!state.vertical && 
+      <LegacyBlock width="300px" height="200px">
+        {!state.vertical && (
           <Scroll {...state}>
             <ContentWrapper>
-              <Image 
-                src="/static/placeholder-3x2.png" 
+              <Image
+                src="/static/placeholder-3x2.png"
                 alt="Example Image"
-                overrides={{width: '400px', height: '200px'}}/>
+                overrides={{width: '400px', height: '200px'}}
+              />
             </ContentWrapper>
           </Scroll>
-        }
-        {state.vertical && 
+        )}
+        {state.vertical && (
           <Scroll {...state}>
-              <ContentWrapper>
+            <ContentWrapper>
               <p style={{width: '400px'}}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-                ipsa, molestiae officia ipsum facere blanditiis iste obcaecati esse,
-                quidem placeat tenetur dicta distinctio inventore quasi sit sint
-                explicabo quia maiores. Doloremque sit doloribus incidunt aperiam
-                recusandae magnam nostrum labore eveniet, perferendis a, quibusdam,
-                quos earum! Numquam quaerat recusandae commodi laudantium modi
-                inventore voluptates officiis nesciunt eius, quis velit voluptatum,
-                quos natus, adipisci nisi! Laborum eos incidunt maiores eaque
-                obcaecati, itaque perferendis! Consectetur magnam pariatur amet, enim
-                recusandae at laborum? Corrupti libero non, in eligendi ipsum odio
-                fugiat excepturi, architecto nam pariatur reiciendis adipisci
-                laudantium maiores. Earum quis magnam consequatur maxime veniam itaque
-                quae eveniet quasi harum neque, expedita totam tempore aspernatur
-                nostrum maiores repudiandae suscipit velit quaerat illo! Temporibus
-                pariatur, enim mollitia animi odio tempore illum asperiores est
-                soluta. Itaque obcaecati eum molestias expedita neque. Atque eum sint
-                esse optio in dolore cum officia iusto inventore ullam nobis culpa
-                ipsum nostrum aspernatur perferendis recusandae, maiores consectetur
-                mollitia provident! Placeat voluptatem a natus quod sequi asperiores
-                nam! Cupiditate illo voluptatum cumque laudantium quo assumenda ut
-                repudiandae perferendis. Molestias, beatae sunt deleniti quasi nobis,
-                provident sequi iste quod corporis incidunt repellat architecto ab
-                voluptates saepe dolor velit, perspiciatis adipisci veritatis debitis
-                laboriosam?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Impedit ipsa, molestiae officia ipsum facere blanditiis iste
+                obcaecati esse, quidem placeat tenetur dicta distinctio
+                inventore quasi sit sint explicabo quia maiores. Doloremque sit
+                doloribus incidunt aperiam recusandae magnam nostrum labore
+                eveniet, perferendis a, quibusdam, quos earum! Numquam quaerat
+                recusandae commodi laudantium modi inventore voluptates officiis
+                nesciunt eius, quis velit voluptatum, quos natus, adipisci nisi!
+                Laborum eos incidunt maiores eaque obcaecati, itaque
+                perferendis! Consectetur magnam pariatur amet, enim recusandae
+                at laborum? Corrupti libero non, in eligendi ipsum odio fugiat
+                excepturi, architecto nam pariatur reiciendis adipisci
+                laudantium maiores. Earum quis magnam consequatur maxime veniam
+                itaque quae eveniet quasi harum neque, expedita totam tempore
+                aspernatur nostrum maiores repudiandae suscipit velit quaerat
+                illo! Temporibus pariatur, enim mollitia animi odio tempore
+                illum asperiores est soluta. Itaque obcaecati eum molestias
+                expedita neque. Atque eum sint esse optio in dolore cum officia
+                iusto inventore ullam nobis culpa ipsum nostrum aspernatur
+                perferendis recusandae, maiores consectetur mollitia provident!
+                Placeat voluptatem a natus quod sequi asperiores nam! Cupiditate
+                illo voluptatum cumque laudantium quo assumenda ut repudiandae
+                perferendis. Molestias, beatae sunt deleniti quasi nobis,
+                provident sequi iste quod corporis incidunt repellat architecto
+                ab voluptates saepe dolor velit, perspiciatis adipisci veritatis
+                debitis laboriosam?
               </p>
-              </ContentWrapper>
+            </ContentWrapper>
           </Scroll>
-        }
+        )}
       </LegacyBlock>
     );
   }}
@@ -111,6 +141,11 @@ By adding a scroll component to a block, you can enable the content within the b
     {
       name: 'Vertical',
       propName: 'vertical',
+      value: false,
+    },
+    {
+      name: 'ScrollBar',
+      propName: 'scrollBar',
       value: false,
     },
     {
@@ -151,7 +186,7 @@ By adding a scroll component to a block, you can enable the content within the b
         },
       ],
     },
-        {
+    {
       name: 'Scroll Snap',
       propName: 'snapAlign',
       options: [
@@ -168,7 +203,7 @@ By adding a scroll component to a block, you can enable the content within the b
           label: 'center',
           value: 'center',
         },
-                {
+        {
           label: 'end',
           value: 'end',
         },
@@ -179,25 +214,29 @@ By adding a scroll component to a block, you can enable the content within the b
 
 ## ScrollSnapAlignment Overview
 
-The ScrollSnapAlignment component should wrap each scrollable item inside the scroll container. It is used to set the `scroll-snap-align` CSS property for each item. 
+The ScrollSnapAlignment component should wrap each scrollable item inside the scroll container. It is used to set the `scroll-snap-align` CSS property for each item.
 
 ## ScrollSnapAlignment Props
 
 The ScrollSnapAlignment props are detailed below:
+
 <LegacyBlock marginTop="sizing050">
   <Prop name="snapAlign" type="'start' | 'center' | 'end'">
-   Sets the <InlineCode>scroll-snap-align</InlineCode> CSS property. <b>snapAlign</b> gets its value from a property with the same name passed to the <InlineCode>Scroll</InlineCode> component through a React context.
-   This makes it easier to use these two components together and keeps them in sync. <br/>
-   
-   In case you want a specific scrollable item to have different snap position you can pass one of the three supported values
-   to the ScrollSnapAlignment itself. Be aware that such change might cause unexpected scroll behaviour. 
+    Sets the <InlineCode>scroll-snap-align</InlineCode> CSS property.{' '}
+    <b>snapAlign</b> gets its value from a property with the same name passed to
+    the <InlineCode>Scroll</InlineCode> component through a React context. This
+    makes it easier to use these two components together and keeps them in sync.{' '}
+    <br />
+    In case you want a specific scrollable item to have different snap position you
+    can pass one of the three supported values to the ScrollSnapAlignment itself.
+    Be aware that such change might cause unexpected scroll behaviour.
   </Prop>
 </LegacyBlock>
 
 ## Usage
 
 <LegacyBlock marginTop="sizing050">
-  <ScrollSnap/>
+  <ScrollSnap />
 </LegacyBlock>
 
 <Code>
@@ -224,11 +263,13 @@ Also the `stepDistance` value should be:
 
 <UnorderedList>
   <>
-    <b>Greater than</b> - the half width (or height if orientation is vertical) of the smallest item inside.
-    Otherwise it might prevent the container from scrolling when using the arrow buttons
+    <b>Greater than</b> - the half width (or height if orientation is vertical)
+    of the smallest item inside. Otherwise it might prevent the container from
+    scrolling when using the arrow buttons
   </>
   <>
-    <b>Smaller than</b> - the width (or height if orientation is vertical) of the scroll area.
-    Otherwise you might experience skipping mutiple scroll items at once
+    <b>Smaller than</b> - the width (or height if orientation is vertical) of
+    the scroll area. Otherwise you might experience skipping mutiple scroll
+    items at once
   </>
 </UnorderedList>

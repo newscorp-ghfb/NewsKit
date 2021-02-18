@@ -350,4 +350,34 @@ describe('ScrollSnapAlignment', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
+  describe('ScrollBar', () => {
+    test(`Show horizontal scroll bar on a horizontal scroll`, () => {
+      const fragment = renderToFragmentWithTheme(Scroll, {
+        children: <Content />,
+        scrollBar: true,
+      });
+
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test(`Show vertical scroll bar on a vertical scroll`, () => {
+      const fragment = renderToFragmentWithTheme(Scroll, {
+        children: <Content />,
+        vertical: true,
+        scrollBar: true,
+      });
+
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test(`Hide horizontal scroll bar on a horizontal scroll`, () => {
+      const fragment = renderToFragmentWithTheme(Scroll, {
+        children: <Content />,
+        scrollBar: false,
+      });
+
+      expect(fragment).toMatchSnapshot();
+    });
+  });
 });

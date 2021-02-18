@@ -16,6 +16,7 @@ export const Scroll: React.FC<ScrollProps> = ({
   arrows,
   stepDistance = 160,
   snapAlign,
+  scrollBar = false,
   children,
   overrides = {},
 }) => {
@@ -81,6 +82,7 @@ export const Scroll: React.FC<ScrollProps> = ({
         aria-orientation={vertical ? 'vertical' : 'horizontal'}
         tabIndex={0}
         snapAlign={snapAlign}
+        scrollBar={scrollBar}
         ref={scrollContainerRef}
         data-testid="scroll-container"
         onScroll={debounceCheckForScrollPosition}

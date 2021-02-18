@@ -3,32 +3,6 @@ import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 import {css, styled} from '../utils/style';
 import {ScrollProps} from './types';
 
-export const StyledScrollContainer = styled.div<
-  Omit<ScrollProps, 'overrides'> & {
-    arrowsEnabled?: boolean;
-  }
->`
-  box-sizing: border-box;
-  height: 100%;
-
-  overflow-x: auto;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  /* Hide scrollbar for IE, Edge and Firefox */
-  & {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  ${({vertical, snapAlign}) =>
-    snapAlign && `scroll-snap-type: ${vertical ? 'y' : 'x'} mandatory;`};
-`;
-
 const pseudoBasicStyle = `
     content: '';
     position: absolute;
@@ -144,6 +118,34 @@ export const StyledScrollNav = styled.div<
         transition: all linear 0.3s;
       }
     `}
+`;
+
+export const StyledScrollContainer = styled.div<
+  Omit<ScrollProps, 'overrides'> & {
+    arrowsEnabled?: boolean;
+  }
+>`
+  box-sizing: border-box;
+  height: 100%;
+
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
+  ${({vertical, snapAlign}) =>
+    snapAlign && `scroll-snap-type: ${vertical ? 'y' : 'x'} mandatory;`};
+
+  ${({scrollBar}) =>
+    !scrollBar &&
+    `/* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  & {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }`}
 `;
 
 export const StyledScrollArrowButton = styled(IconButton)<

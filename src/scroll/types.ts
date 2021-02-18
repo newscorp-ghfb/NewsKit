@@ -5,6 +5,7 @@ export interface ScrollProps {
   arrows?: 'hover' | 'static';
   stepDistance?: number;
   snapAlign?: 'start' | 'center' | 'end';
+  scrollBar?: boolean;
   overrides?: {
     arrows?: {
       stylePreset?: MQ<string>;

@@ -218,5 +218,56 @@ export default {
         </>
       ),
     },
+    {
+      name: 'scroll-bar',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookSubHeading>
+            Scroll horizontal with scroll-bar
+          </StorybookSubHeading>
+          <Container>
+            <Scroll scrollBar>
+              <Stack flow="horizontal-top">{tags}</Stack>
+            </Scroll>
+          </Container>
+
+          <StorybookSubHeading>
+            Scroll vertical with scroll-bar
+          </StorybookSubHeading>
+          <Container>
+            <Scroll vertical scrollBar>
+              <Stack flow="vertical-left" spaceInline="space040">
+                {tags}
+              </Stack>
+            </Scroll>
+          </Container>
+          <StorybookSubHeading>
+            Scroll horizontal with arrows and scroll-bar
+          </StorybookSubHeading>
+          <Container width="250px" height="100px">
+            <Scroll scrollBar arrows="static">
+              <Flex>
+                {Array.from({length: 10}, (_, i) => (
+                  <Box>{`Item ${i + 1}`}</Box>
+                ))}
+              </Flex>
+            </Scroll>
+          </Container>
+          <StorybookSubHeading>
+            Scroll vertical with arrows and scroll-bar
+          </StorybookSubHeading>
+          <Container>
+            <Scroll scrollBar vertical arrows="static">
+              <Stack flow="vertical-left">
+                {[...tags, ...tags].map(tag => (
+                  <>{tag}</>
+                ))}
+              </Stack>
+            </Scroll>
+          </Container>
+        </MainContainer>
+      ),
+    },
   ],
 };
