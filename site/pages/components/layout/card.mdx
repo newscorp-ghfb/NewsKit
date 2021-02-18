@@ -75,7 +75,9 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
   <Prop name="mediaInteractive" type="boolean" default={false}>
     Removes the card media from link area. This prop only matters when the card is used as a link
     and when custom media or video components are passed as cardMedia so the user can interact with the video (play, pause, etc...) without navigation to occur. 
-    <br/><b>NOTE:</b> If necessary, make sure your media element is tabbable  by adding <InlineCode>tabindex</InlineCode> to it.
+    <br/>
+    <br/>
+    <b>NOTE:</b> If necessary, make sure your media element is tabbable  by adding <InlineCode>tabindex</InlineCode> to it.
   </Prop>
   <Prop name="children" type="Exclude<React.ReactNode, 'undefined'>" required>
     This is the body of the Card. A card requires to have at least a heading. Each element of the body content should be wrapped within a <Link href="/components/layout/block">Block</Link> component
@@ -122,6 +124,22 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName='card' />
+    <br/>
+    <br/>
+    <b>NOTE:</b> The <InlineCode>headline</InlineCode> object represent the defaults that will be applied to the
+    <InlineCode>Headline</InlineCode> component used inside  the card.
+    <br/>
+    <br/>
+    <UnorderedList>
+      <>
+        <InlineCode>card.headline.nonInteractive</InlineCode> - will be applied by default to the headline when there is <b>no href</b> property
+      </>
+      <>
+        <InlineCode>card.headline.interactive</InlineCode> - will be applied by default to the headline when <b>href</b> property is provided
+      </>
+    </UnorderedList>
+    You are still able to override the default <InlineCode>Headline</InlineCode> styles by passing the overides directly to the
+    <Link href="/components/text-content/headline">Headline</Link> as shown on the examples below.
   </Prop>
 </LegacyBlock>
 
@@ -152,15 +170,15 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 
 ### Interactivity
 
-When the Card component has a link applied to it (making it interactive), it is recommended
+When the Card component has a `href` property (making it interactive), it is recommended
 to pass the [Headline](/components/text-content/headline) as a child,
 inside of the card content area. In this case the Headline will have a link applied to it,
-which can have multiple interactivity states (hover, visited, etc.) applied
-directly to the overrides of the Headline component, also make sure you pass the
-following overrides to the Headline kicker <InlineCode>headlineKickerInteractive</InlineCode>
-and heading <InlineCode>headlineHeadingInteractive</InlineCode> (or your own custom presets),
-as shown in the example above. For this implementation, we use a z-index property in order to
-exclude the actions area and the media area (when we have mediaInteractive = true) from the link area.
+which will have various interactive states (hover, visited, avtive)
+and the Headline will have new component-defaults applied out of the box - <InlineCode>card.headline.interactive</InlineCode>
+(listed in the card defaults above), you can also pass your own custom overrides to the Headline.
+
+For this implementation, we use a z-index property in order to exclude the actions area and the media area
+(when we have mediaInteractive = true) from the link area.
 
 **NOTE:** It is not mandatory for the headline component to be direct child of the card content. It can be nested inside a structure,
 but make sure it does not have any parents with `position: relative` style applied as it will break the clickable area of the link.

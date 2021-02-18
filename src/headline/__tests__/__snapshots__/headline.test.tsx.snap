@@ -35,7 +35,7 @@ exports[`headline renders correctly with custom props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 36px;
@@ -64,7 +64,7 @@ exports[`headline renders correctly with custom props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
@@ -93,7 +93,7 @@ exports[`headline renders correctly with custom props 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
@@ -151,19 +151,19 @@ exports[`headline renders correctly with custom props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     margin-right: 12px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-0 {
     margin-right: 16px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     margin-right: 16px;
   }
@@ -221,7 +221,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
     font-size: 36px;
@@ -250,7 +250,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
@@ -279,7 +279,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
@@ -366,7 +366,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 36px;
@@ -395,7 +395,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
@@ -424,7 +424,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
@@ -479,19 +479,19 @@ exports[`headline renders correctly with default props, with heading and kicker 
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     margin-right: 12px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-0 {
     margin-right: 16px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     margin-right: 16px;
   }

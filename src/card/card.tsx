@@ -14,6 +14,9 @@ import {renderComponent, hasMatchingDisplayNameWith} from '../utils/component';
 import {deepMap} from '../utils/react-children-utilities';
 import {Headline} from '../headline';
 import {BaseLinkProps} from '../link';
+import {Theme, useTheme} from '../theme';
+import {filterOutFalsyProperties} from '../utils/filter-object';
+import {deepMerge} from '../utils/style';
 
 const renderMedia = (media: CardProps['media']) =>
   renderComponent(media) || (
@@ -31,33 +34,74 @@ const addHrefToLinkProps = (props: object, href: string | BaseLinkProps) =>
         ...props,
       };
 
-const recursivelyWrapHeadlineInLink = (
-  href: string | BaseLinkProps,
+const getCardHeadlineSettings = (
+  headline: React.ReactNode,
+  theme: Theme,
+  href?: string | BaseLinkProps,
+) => {
+  const cardHeadlineDefaults = href
+    ? theme.componentDefaults.card.headline.interactive
+    : theme.componentDefaults.card.headline.nonInteractive;
+
+  const {
+    overrides: headlineOverrides,
+    ...restHeadlineProps
+  } = (headline as React.ReactElement).props;
+  const headlineSettings = {
+    ...deepMerge(
+      {},
+      cardHeadlineDefaults,
+      filterOutFalsyProperties(headlineOverrides),
+    ),
+  };
+
+  return {
+    headlineSettings,
+    restHeadlineProps,
+  };
+};
+
+const findAndDecorateCardHeadline = (
   children: React.ReactNode,
+  theme: Theme,
+  href?: string | BaseLinkProps,
 ) => {
   let hasHeadline = false;
-  const wrapHeadlineInLink = (child: React.ReactNode) => {
+  const decorateCardHeadline = (child: React.ReactNode) => {
     if (!child || !hasMatchingDisplayNameWith(child, Headline)) {
       return child;
     }
 
     hasHeadline = true;
+    const {headlineSettings, restHeadlineProps} = getCardHeadlineSettings(
+      child,
+      theme,
+      href,
+    );
 
-    const {overrides: headlineOverrides} = (child as React.ReactElement).props;
+    const CardHeadline = (
+      <Headline {...restHeadlineProps} overrides={headlineSettings} />
+    );
+
+    // if href is not set - return card headline with styles
+    if (!href) return CardHeadline;
 
     const linkPropsWithHref = addHrefToLinkProps(
       {
         className: 'nk-card-link',
-        overrides: headlineOverrides,
-        children: child,
+        overrides: headlineSettings,
       },
       href,
     );
 
-    return <StyledCardLink {...linkPropsWithHref} />;
+    // if href is set - wrap card headline with styles within a link
+    return (
+      <StyledCardLink {...linkPropsWithHref}>{CardHeadline}</StyledCardLink>
+    );
   };
-  const wrappedChildren = deepMap(children, wrapHeadlineInLink);
-  return {hasHeadline, wrappedChildren};
+
+  const decoratedChildren = deepMap(children, decorateCardHeadline);
+  return {hasHeadline, decoratedChildren};
 };
 
 const TeaserDecorator = ({
@@ -67,18 +111,25 @@ const TeaserDecorator = ({
   children: React.ReactNode;
   href?: string | BaseLinkProps;
 }) => {
-  if (!href) {
-    return <>{children}</>;
-  }
-  const {hasHeadline, wrappedChildren} = recursivelyWrapHeadlineInLink(
-    href,
+  const theme = useTheme() as Theme;
+
+  // if hasHeadline = true - style card headline and wrap it within a link when href prop is set.
+  const {hasHeadline, decoratedChildren} = findAndDecorateCardHeadline(
     children,
+    theme,
+    href,
   );
 
   if (hasHeadline) {
-    return <>{wrappedChildren}</>;
+    return <>{decoratedChildren}</>;
   }
 
+  // if hasHeadline = false and href is not set - return children
+  if (!href) {
+    return <>{children}</>;
+  }
+
+  // if hasHeadline = false and href is set - set link props and wrap the while card Teaser with a link
   const linkProps = addHrefToLinkProps(
     {
       className: 'nk-card-link',

@@ -325,11 +325,53 @@ Object {
         "spaceInset": "spaceInsetSquish000",
         "stylePreset": "cardContainerActions",
       },
+      "headline": Object {
+        "interactive": Object {
+          "heading": Object {
+            "stylePreset": "headlineHeadingInteractive",
+          },
+          "kicker": Object {
+            "spaceInline": Object {
+              "lg": "space030",
+              "md": "space030",
+              "sm": "space020",
+              "xs": "space020",
+            },
+            "stylePreset": "headlineKickerInteractive",
+          },
+          "typographyPreset": Object {
+            "lg": "editorialHeadline050",
+            "md": "editorialHeadline030",
+            "sm": "editorialHeadline020",
+            "xs": "editorialHeadline020",
+          },
+        },
+        "nonInteractive": Object {
+          "heading": Object {
+            "stylePreset": "inkContrast",
+          },
+          "kicker": Object {
+            "spaceInline": Object {
+              "lg": "space030",
+              "md": "space030",
+              "sm": "space020",
+              "xs": "space020",
+            },
+            "stylePreset": "uppercaseInkBrand010",
+          },
+          "typographyPreset": Object {
+            "lg": "editorialHeadline050",
+            "md": "editorialHeadline030",
+            "sm": "editorialHeadline020",
+            "xs": "editorialHeadline020",
+          },
+        },
+      },
       "mediaContainer": Object {
-        "spaceInline": Object {
+        "spaceStack": Object {
           "lg": "space050",
+          "md": "space050",
           "sm": "space040",
-          "xl": "space050",
           "xs": "space040",
         },
         "stylePreset": "cardContainerMedia",
@@ -345,22 +387,22 @@ Object {
         "minHeight": "sizing000",
         "spaceInset": Object {
           "lg": "spaceInsetSquish040",
+          "md": "spaceInsetSquish040",
           "sm": "spaceInsetSquish030",
-          "xl": "spaceInsetSquish040",
           "xs": "spaceInsetSquish030",
         },
         "stylePreset": "cardContainerActions",
       },
       "mediaContainer": Object {
-        "spaceInline": "space000",
+        "spaceStack": "space000",
         "stylePreset": "cardContainerMedia",
       },
       "stylePreset": "cardContainer",
       "teaserContainer": Object {
         "spaceInset": Object {
           "lg": "spaceInset050",
+          "md": "spaceInset050",
           "sm": "spaceInset040",
-          "xl": "spaceInset050",
           "xs": "spaceInset040",
         },
         "stylePreset": "cardContainerTeaser",
@@ -447,16 +489,16 @@ Object {
       "kicker": Object {
         "spaceInline": Object {
           "lg": "space040",
+          "md": "space040",
           "sm": "space030",
-          "xl": "space040",
           "xs": "space030",
         },
         "stylePreset": "uppercaseInkBrand010",
       },
       "typographyPreset": Object {
-        "lg": "editorialHeadline070",
+        "lg": "editorialHeadline080",
+        "md": "editorialHeadline070",
         "sm": "editorialHeadline060",
-        "xl": "editorialHeadline080",
         "xs": "editorialHeadline060",
       },
     },
@@ -1727,6 +1769,9 @@ Object {
       "hover": Object {
         "color": "{{colors.interactivePrimary040}}",
         "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
       },
     },
     "headlineKickerInteractive": Object {

@@ -1373,8 +1373,8 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 @media screen and (max-width:479px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -1387,7 +1387,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -1395,15 +1395,15 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -1416,7 +1416,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -1424,43 +1424,14 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
@@ -1474,7 +1445,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-1::after {
@@ -1482,7 +1453,36 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-1 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
   }
 }
 
@@ -1561,19 +1561,19 @@ exports[`Card renders media section if the media data is provided 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
@@ -1787,19 +1787,19 @@ exports[`Card renders media section with a custom component 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
@@ -2013,19 +2013,19 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
@@ -2239,19 +2239,19 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
@@ -2578,19 +2578,19 @@ exports[`Card renders media section with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
@@ -2692,19 +2692,19 @@ exports[`Card renders with card items 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
@@ -3347,19 +3347,19 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-right: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-right: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-right: 24px;
   }
@@ -3646,19 +3646,19 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-left: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-left: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-left: 24px;
   }
@@ -4068,6 +4068,46 @@ exports[`Card with href renders correctly with actions 1`] = `
   border: none;
 }
 
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #2e2e2e;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-heading {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-heading {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-heading {
+  color: #7547a3;
+}
+
 .emotion-2:before {
   content: '';
   top: 0;
@@ -4297,6 +4337,46 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   border: none;
 }
 
+.emotion-9 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-9:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-9:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-9:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-9 .nk-headline-heading {
+  color: #2e2e2e;
+}
+
+.emotion-9:hover:not(:disabled) .nk-headline-heading {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-9:active:not(:disabled) .nk-headline-heading {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-9:visited:not(:disabled) .nk-headline-heading {
+  color: #7547a3;
+}
+
 .emotion-9:before {
   content: '';
   top: 0;
@@ -4327,19 +4407,19 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-6 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     margin-bottom: 24px;
   }
@@ -4449,8 +4529,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (max-width:479px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -4463,7 +4543,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -4471,15 +4551,15 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -4492,7 +4572,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -4500,43 +4580,14 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
@@ -4550,7 +4601,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-1::after {
@@ -4558,7 +4609,36 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-1 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
   }
 }
 
@@ -4566,6 +4646,26 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
 }
 
 .emotion-2 .nk-headline-heading {
@@ -4678,8 +4778,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (max-width:479px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -4692,7 +4792,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -4700,15 +4800,15 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -4721,7 +4821,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -4729,43 +4829,14 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
@@ -4779,7 +4850,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-1::after {
@@ -4787,25 +4858,83 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: calc(-0.2958333333333334em + 1px);
   }
 }
 
-.emotion-0 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #0a0a0a;
-}
+@media screen and (min-width:1024px) {
+  .emotion-1 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-0 svg {
-  fill: #0a0a0a;
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #2e2e2e;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-heading {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-heading {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-heading {
+  color: #7547a3;
 }
 
 .emotion-2:before {
@@ -4817,6 +4946,29 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   overflow: hidden;
   position: absolute;
   z-index: 1;
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #2e2e2e;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #7547a3;
 }
 
 <div
@@ -4893,8 +5045,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 @media screen and (max-width:479px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -4907,7 +5059,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -4915,15 +5067,15 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -4936,7 +5088,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-1::after {
@@ -4944,43 +5096,14 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.3125em;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-1 {
     font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
@@ -4994,7 +5117,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-1::after {
@@ -5002,25 +5125,83 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: calc(-0.2958333333333334em + 1px);
   }
 }
 
-.emotion-0 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #0a0a0a;
-}
+@media screen and (min-width:1024px) {
+  .emotion-1 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-0 svg {
-  fill: #0a0a0a;
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #2e2e2e;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-heading {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-heading {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-heading {
+  color: #7547a3;
 }
 
 .emotion-2:before {
@@ -5032,6 +5213,29 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   overflow: hidden;
   position: absolute;
   z-index: 1;
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #2e2e2e;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #7547a3;
 }
 
 <div
@@ -5132,6 +5336,46 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #2e2e2e;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-heading {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-heading {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-heading {
+  color: #7547a3;
 }
 
 .emotion-2:before {
@@ -5241,6 +5485,46 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #2e2e2e;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-heading {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-heading {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-heading {
+  color: #7547a3;
 }
 
 .emotion-2:before {
@@ -5360,15 +5644,9 @@ exports[`CardInset renders card with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 32px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-2 {
-    padding: 24px;
   }
 }
 
@@ -5784,19 +6062,19 @@ exports[`CardInset renders with card items 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-9 {
     padding: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-9 {
     padding: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-9 {
     padding: 24px;
   }
@@ -5843,19 +6121,19 @@ exports[`CardInset renders with card items 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-21 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-21 {
     padding: 16px 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-21 {
     padding: 16px 24px;
   }

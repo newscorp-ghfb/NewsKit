@@ -3,11 +3,11 @@ import {
   styled,
   getSpacingInset,
   getMinHeight,
-  getSpacingInlineVertical,
   getStylePreset,
-  getSpacingInlineHorizontal,
   getDefaultedValue,
   getSpacingFromTheme,
+  getSpacingStackHorizontal,
+  getSpacingStackVertical,
 } from '../utils/style';
 
 import {Stack} from '../stack';
@@ -40,15 +40,14 @@ export const StyledCardContainerMedia = styled.div<
 
   ${({layout}) => {
     if (isHorizontal(layout) && isReverse(layout))
-      return getDefaultedValue(
-        getSpacingFromTheme,
-        'spaceInline',
-        'marginLeft',
-      )('card.mediaContainer', 'mediaContainer');
+      return getDefaultedValue(getSpacingFromTheme, 'spaceStack', 'marginLeft')(
+        'card.mediaContainer',
+        'mediaContainer',
+      );
 
     return (isHorizontal(layout)
-      ? getSpacingInlineHorizontal
-      : getSpacingInlineVertical)('card.mediaContainer', 'mediaContainer');
+      ? getSpacingStackVertical
+      : getSpacingStackHorizontal)('card.mediaContainer', 'mediaContainer');
   }}
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
@@ -90,11 +89,11 @@ export const StyledCardLink = styled.a<HeadlineOverrides>`
   text-decoration: none;
   border: none;
 
-  ${getStylePreset('', 'kicker', {
+  ${getStylePreset('card.headline.interactive.kicker', 'kicker', {
     nestedCssSelector: '.nk-headline-kicker',
   })}
 
-  ${getStylePreset('', 'heading', {
+  ${getStylePreset('card.headline.interactive.heading', 'heading', {
     nestedCssSelector: '.nk-headline-heading',
   })}
 

@@ -325,19 +325,19 @@ exports[`Usage renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-13 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-13 {
     margin-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-13 {
     margin-bottom: 24px;
   }

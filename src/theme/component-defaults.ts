@@ -145,11 +145,11 @@ export const componentDefaults = {
     stylePreset: 'cardContainer',
     mediaContainer: {
       stylePreset: 'cardContainerMedia',
-      spaceInline: {
+      spaceStack: {
         xs: 'space040',
         sm: 'space040',
+        md: 'space050',
         lg: 'space050',
-        xl: 'space050',
       },
     },
     teaserContainer: {
@@ -161,20 +161,62 @@ export const componentDefaults = {
       minHeight: 'sizing080',
       spaceInset: 'spaceInsetSquish000',
     },
+    headline: {
+      nonInteractive: {
+        typographyPreset: {
+          xs: 'editorialHeadline020',
+          sm: 'editorialHeadline020',
+          md: 'editorialHeadline030',
+          lg: 'editorialHeadline050',
+        },
+        heading: {
+          stylePreset: 'inkContrast',
+        },
+        kicker: {
+          stylePreset: 'uppercaseInkBrand010',
+          spaceInline: {
+            xs: 'space020',
+            sm: 'space020',
+            md: 'space030',
+            lg: 'space030',
+          },
+        },
+      },
+      interactive: {
+        typographyPreset: {
+          xs: 'editorialHeadline020',
+          sm: 'editorialHeadline020',
+          md: 'editorialHeadline030',
+          lg: 'editorialHeadline050',
+        },
+        heading: {
+          stylePreset: 'headlineHeadingInteractive',
+        },
+        kicker: {
+          stylePreset: 'headlineKickerInteractive',
+          spaceInline: {
+            xs: 'space020',
+            sm: 'space020',
+            md: 'space030',
+            lg: 'space030',
+          },
+        },
+      },
+    },
   },
   cardInset: {
     stylePreset: 'cardContainer',
     mediaContainer: {
       stylePreset: 'cardContainerMedia',
-      spaceInline: 'space000',
+      spaceStack: 'space000',
     },
     teaserContainer: {
       stylePreset: 'cardContainerTeaser',
       spaceInset: {
         xs: 'spaceInset040',
         sm: 'spaceInset040',
+        md: 'spaceInset050',
         lg: 'spaceInset050',
-        xl: 'spaceInset050',
       },
     },
     actionsContainer: {
@@ -183,8 +225,8 @@ export const componentDefaults = {
       spaceInset: {
         xs: 'spaceInsetSquish030',
         sm: 'spaceInsetSquish030',
+        md: 'spaceInsetSquish040',
         lg: 'spaceInsetSquish040',
-        xl: 'spaceInsetSquish040',
       },
     },
   },
@@ -274,8 +316,8 @@ export const componentDefaults = {
     typographyPreset: {
       xs: 'editorialHeadline060',
       sm: 'editorialHeadline060',
-      lg: 'editorialHeadline070',
-      xl: 'editorialHeadline080',
+      md: 'editorialHeadline070',
+      lg: 'editorialHeadline080',
     },
     heading: {
       stylePreset: 'inkContrast',
@@ -285,8 +327,8 @@ export const componentDefaults = {
       spaceInline: {
         xs: 'space030',
         sm: 'space030',
+        md: 'space040',
         lg: 'space040',
-        xl: 'space040',
       },
     },
   },

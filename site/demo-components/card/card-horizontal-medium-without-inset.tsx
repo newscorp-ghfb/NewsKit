@@ -18,7 +18,6 @@ import {
   myCustomCardTheme,
   cardLabelSpaceStack,
   cardTeaserHeadlineSpaceStack,
-  cardTeaserKickerSpaceInline,
   cardTeaserLeadSpaceStack,
   cardActionsSpace,
   cardTeaserHeadlineMediumTypographyPreset,
@@ -90,13 +89,6 @@ export const CardHorizontalMediumWithoutInset = () => (
               kickerText="CROWDS HEAD"
               overrides={{
                 typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
-                heading: {
-                  stylePreset: 'headlineHeadingInteractive',
-                },
-                kicker: {
-                  spaceInline: cardTeaserKickerSpaceInline,
-                  stylePreset: 'headlineKickerInteractive',
-                },
               }}
             >
               outdoors as bank holiday temps soar above 20 degrees

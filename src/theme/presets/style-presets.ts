@@ -1470,6 +1470,9 @@ stylePresets.headlineHeadingInteractive = {
     color: '{{colors.interactivePrimary050}}',
     textDecoration: 'underline',
   },
+  visited: {
+    color: '{{colors.interactiveVisited010}}',
+  },
 };
 
 //

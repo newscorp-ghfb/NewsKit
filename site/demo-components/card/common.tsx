@@ -1,38 +1,34 @@
 import {createTheme} from 'newskit';
 
-const cardLabelSpaceStack = 'space040';
+// Spacing presets
+const cardLabelSpaceStack = 'space020';
 const cardTeaserHeadlineSpaceStack = {
-  lg: 'space050',
+  xs: 'space040',
+  sm: 'space040',
   md: 'space045',
-  sm: 'space040',
-  xs: 'space040',
-};
-const headlineKickerInline = {
-  xs: 'spaceInline030',
-  sm: 'spaceInline030',
-  md: 'spaceInline040',
-  lg: 'spaceInline040',
-};
-const cardTeaserKickerSpaceInline = headlineKickerInline;
-const cardTeaserLeadSpaceStack = {
   lg: 'space050',
-  md: 'space050',
-  sm: 'space040',
+};
+const cardTeaserLeadSpaceStack = {
   xs: 'space040',
+  sm: 'space040',
+  md: 'space050',
+  lg: 'space050',
 };
 const cardTeaserLeadInsetVariantSpaceStack = 'space000';
 const cardActionsSpace = 'space040';
 
+// Typography presets
 const cardTeaserHeadlineSmallTypographyPreset = 'editorialHeadline010';
 const cardTeaserLeadSmallTypographyPreset = 'editorialParagraph010';
 const cardLabelSmallTypographyPreset = 'utilityLabel010';
 const cardTagSmallTypographyPreset = 'utilityLabel010';
 
 const cardTeaserHeadlineMediumTypographyPreset = 'editorialHeadline030';
-const cardTeaserLeadMediumTypographyPreset = 'editorialParagraph010';
+const cardTeaserLeadMediumTypographyPreset = 'editorialParagraph020';
 const cardLabelMediumTypographyPreset = 'utilityLabel010';
 const cardTagMediumTypographyPreset = 'utilityLabel010';
 
+// Style presets
 const labelDefault = {
   base: {
     color: '{{colors.inkSubtle}}',
@@ -50,13 +46,6 @@ const myCustomCardTheme = createTheme({
           color: '{{colors.inkBase}}',
         },
       },
-      cardContainer: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '{{colors.interface040}}',
-          borderWidth: '{{borders.borderWidth010}}',
-        },
-      },
     },
   },
 });
@@ -65,7 +54,6 @@ export {
   myCustomCardTheme,
   cardLabelSpaceStack,
   cardTeaserHeadlineSpaceStack,
-  cardTeaserKickerSpaceInline,
   cardTeaserLeadSpaceStack,
   cardTeaserLeadInsetVariantSpaceStack,
   cardActionsSpace,

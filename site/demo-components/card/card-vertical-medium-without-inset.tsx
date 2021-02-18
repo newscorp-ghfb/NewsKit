@@ -18,7 +18,6 @@ import {
   myCustomCardTheme,
   cardLabelSpaceStack,
   cardTeaserHeadlineSpaceStack,
-  cardTeaserKickerSpaceInline,
   cardTeaserLeadSpaceStack,
   cardActionsSpace,
   cardTeaserHeadlineMediumTypographyPreset,
@@ -63,9 +62,6 @@ export const CardVerticalMediumWithoutInset = () => (
             alt: 'Card Media',
           }}
           actions={cardMediumTags}
-          overrides={{
-            stylePreset: 'cardContainer',
-          }}
         >
           <Block spaceStack={cardLabelSpaceStack}>
             <Flag
@@ -85,13 +81,6 @@ export const CardVerticalMediumWithoutInset = () => (
               kickerText="CROWDS HEAD"
               overrides={{
                 typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
-                heading: {
-                  stylePreset: 'headlineHeadingInteractive',
-                },
-                kicker: {
-                  spaceInline: cardTeaserKickerSpaceInline,
-                  stylePreset: 'headlineKickerInteractive',
-                },
               }}
             >
               outdoors as bank holiday temps soar above 20 degrees

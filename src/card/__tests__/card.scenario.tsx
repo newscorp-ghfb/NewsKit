@@ -21,33 +21,22 @@ const ContainerWithBackground = styled.div<{colorToken?: string}>`
     getColorFromTheme(colorToken)(props)};
 `;
 
-const FlexBlock = styled(Block)`
-  display: flex;
-`;
-
 // Spacing
 const cardLabel = 'space040';
 const cardTeaserHeadline = {
-  lg: 'space050',
+  xs: 'space040',
+  sm: 'space040',
   md: 'space045',
-  sm: 'space040',
-  xs: 'space040',
-};
-const headlineKickerInline = {
-  xs: 'spaceInline030',
-  sm: 'spaceInline030',
-  md: 'spaceInline040',
-  lg: 'spaceInline040',
-};
-const cardTeaserKicker = headlineKickerInline;
-const cardTeaserLead = {
   lg: 'space050',
-  md: 'space050',
-  sm: 'space040',
+};
+const cardTeaserLead = {
   xs: 'space040',
+  sm: 'space040',
+  md: 'space050',
+  lg: 'space050',
 };
 const cardTeaserLeadInsetVariant = 'space000';
-const cardActions = 'space040';
+const cardActions = 'space030';
 
 // Typography Presets
 const cardTypographyPresets: {[index: string]: string} = {
@@ -79,13 +68,6 @@ const labelDefault = {
 const myCustomCardTheme = createTheme({
   name: 'my-custom-card-theme',
   overrides: {
-    // TODO: Remove when PPDSE-52 is merged
-    breakpoints: {
-      xs: 0,
-      sm: 480,
-      md: 768,
-      lg: 1024,
-    },
     stylePresets: {
       cardLabel: labelDefault,
       cardTeaserLead: {
@@ -129,6 +111,37 @@ const myCustomCardTheme = createTheme({
       cardContainerActionsMock: {
         base: {
           backgroundColor: '{{colors.green020}}',
+        },
+      },
+      headlineKickerInteractiveMock: {
+        base: {
+          color: '{{colors.interactiveNegative030}}',
+          textDecoration: 'underline',
+        },
+        hover: {
+          color: '{{colors.interactiveNegative040}}',
+          textDecoration: 'underline',
+        },
+        active: {
+          color: '{{colors.interactiveNegative050}}',
+          textDecoration: 'none',
+        },
+        visited: {
+          color: '{{colors.interactiveVisited010}}',
+        },
+      },
+      headlineHeadingInteractiveMock: {
+        base: {
+          color: '{{colors.interactivePositive030}}',
+          textDecoration: 'underline',
+        },
+        hover: {
+          color: '{{colors.interactivePositive040}}',
+          textDecoration: 'none',
+        },
+        active: {
+          color: '{{colors.interactivePositive050}}',
+          textDecoration: 'underline',
         },
       },
     },
@@ -182,7 +195,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
   cardSize: string;
 }) => (
   <>
-    <FlexBlock spaceStack={cardLabel}>
+    <Block spaceStack={cardLabel}>
       <Flag
         overrides={{
           spaceInset: 'spaceInsetSquish000',
@@ -194,7 +207,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
         <IconFilledImage />
         IMAGE
       </Flag>
-    </FlexBlock>
+    </Block>
 
     <Block spaceStack={cardTeaserHeadline}>
       <Headline
@@ -202,9 +215,6 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
         overrides={{
           typographyPreset:
             cardTypographyPresets[`cardTeaserHeadline${cardSize}`],
-          kicker: {
-            spaceInline: cardTeaserKicker,
-          },
         }}
       >
         title of the card describing the main content
@@ -379,7 +389,7 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card - Without Inset - Container Overrides
+            Card - Without Inset - Containers Overrides
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
@@ -475,20 +485,7 @@ export default {
                     actions={cardSmallTags}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -522,20 +519,7 @@ export default {
                     actions={cardSmallTags}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -622,7 +606,7 @@ export default {
                     }}
                     actions={cardSmallTags}
                   >
-                    <FlexBlock spaceStack={cardLabel}>
+                    <Block spaceStack={cardLabel}>
                       <Flag
                         overrides={{
                           spaceInset: 'spaceInsetSquish000',
@@ -635,23 +619,10 @@ export default {
                         <IconFilledImage />
                         IMAGE
                       </Flag>
-                    </FlexBlock>
+                    </Block>
 
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -696,20 +667,7 @@ export default {
                     actions={cardSmallTags}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -731,13 +689,13 @@ export default {
       ),
     },
     {
-      name: 'card-without-inset-link-containers-overrides',
+      name: 'card-without-inset-link-containers-and-headline-overrides',
       type: 'story',
       parameters: {eyes: {include: false}},
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card - Without Inset - with Link and Container Overrides
+            Card - Without Inset - with Link and Containers & Headline Overrides
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
@@ -768,14 +726,12 @@ export default {
                       <Headline
                         kickerText="SHORT"
                         overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
                           kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
+                            stylePreset: 'headlineKickerInteractiveMock',
+                            // spaceInline: 'space000',
                           },
                           heading: {
-                            stylePreset: 'headlineHeadingInteractive',
+                            stylePreset: 'headlineHeadingInteractiveMock',
                           },
                         }}
                       >
@@ -802,13 +758,13 @@ export default {
       ),
     },
     {
-      name: 'card-with-inset-link-containers-overrides',
+      name: 'card-with-inset-link-containers-and-headline-overrides',
       type: 'story',
       parameters: {eyes: {include: false}},
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card - With Inset - with Link and Containers Overrides
+            Card - With Inset - with Link and Containers & Headline Overrides
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
@@ -838,14 +794,12 @@ export default {
                       <Headline
                         kickerText="SHORT"
                         overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
                           kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
+                            stylePreset: 'headlineKickerInteractiveMock',
+                            spaceInline: 'space000',
                           },
                           heading: {
-                            stylePreset: 'headlineHeadingInteractive',
+                            stylePreset: 'headlineHeadingInteractiveMock',
                           },
                         }}
                       >
@@ -892,16 +846,7 @@ export default {
                     actions={cardSmallTags}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -946,20 +891,7 @@ export default {
                     actions={cardSmallTags}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1007,20 +939,7 @@ export default {
                     actions={cardSmallTags}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1068,20 +987,7 @@ export default {
                     actions={cardSmallTags}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1103,13 +1009,15 @@ export default {
       ),
     },
     {
-      name: 'card-horizontal-without-inset-link-containers-overrides',
+      name:
+        'card-horizontal-without-inset-link-containers-and-headline-overrides',
       type: 'story',
       parameters: {eyes: {include: false}},
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card Horizontal - Without Inset - with Link and Container Overrides
+            Card Horizontal - Without Inset - with Link and Containers &
+            Headline Overrides
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
@@ -1145,14 +1053,12 @@ export default {
                       <Headline
                         kickerText="SHORT"
                         overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
                           kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
+                            stylePreset: 'headlineKickerInteractiveMock',
+                            spaceInline: 'space000',
                           },
                           heading: {
-                            stylePreset: 'headlineHeadingInteractive',
+                            stylePreset: 'headlineHeadingInteractiveMock',
                           },
                         }}
                       >
@@ -1177,14 +1083,15 @@ export default {
       ),
     },
     {
-      name: 'card-horizontal-reverse-with-inset-link-containers-overrides',
+      name:
+        'card-horizontal-reverse-with-inset-link-containers-and-headline-overrides',
       type: 'story',
       parameters: {eyes: {include: false}},
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card Horizontal-reverse - With Inset - with Link and Containers
-            Overrides
+            Card Horizontal-reverse - With Inset - with Link and Containers &
+            Headline Overrides
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
@@ -1219,14 +1126,12 @@ export default {
                       <Headline
                         kickerText="SHORT"
                         overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
                           kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
+                            stylePreset: 'headlineKickerInteractiveMock',
+                            spaceInline: 'space000',
                           },
                           heading: {
-                            stylePreset: 'headlineHeadingInteractive',
+                            stylePreset: 'headlineHeadingInteractiveMock',
                           },
                         }}
                       >
@@ -1282,20 +1187,7 @@ export default {
                     )}
                   >
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="CROWDS HEAD"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="CROWDS HEAD">
                         outdoors as bank holiday temps soar above 20 degrees
                       </Headline>
                     </Block>
@@ -1337,7 +1229,7 @@ export default {
                       <Link href="https://google.com">Read the full story</Link>
                     )}
                   >
-                    <FlexBlock spaceStack={cardLabel}>
+                    <Block spaceStack={cardLabel}>
                       <Flag
                         overrides={{
                           spaceInset: 'spaceInsetSquish000',
@@ -1350,23 +1242,10 @@ export default {
                         <IconFilledImage />
                         IMAGE
                       </Flag>
-                    </FlexBlock>
+                    </Block>
 
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1398,7 +1277,7 @@ export default {
                       <Link href="https://google.com">Read the full story</Link>
                     )}
                   >
-                    <FlexBlock spaceStack={cardLabel}>
+                    <Block spaceStack={cardLabel}>
                       <Flag
                         overrides={{
                           spaceInset: 'spaceInsetSquish000',
@@ -1411,23 +1290,10 @@ export default {
                         <IconFilledImage />
                         IMAGE
                       </Flag>
-                    </FlexBlock>
+                    </Block>
 
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1444,7 +1310,7 @@ export default {
                       <Link href="https://google.com">Read the full story</Link>
                     )}
                   >
-                    <FlexBlock spaceStack={cardLabel}>
+                    <Block spaceStack={cardLabel}>
                       <Flag
                         overrides={{
                           spaceInset: 'spaceInsetSquish000',
@@ -1457,25 +1323,10 @@ export default {
                         <IconFilledImage />
                         IMAGE
                       </Flag>
-                    </FlexBlock>
+                    </Block>
 
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
-                        title of the card
-                      </Headline>
+                      <Headline kickerText="SHORT">title of the card</Headline>
                     </Block>
                   </Card>
                 </Cell>
@@ -1490,7 +1341,7 @@ export default {
                       <Link href="https://google.com">Read the full story</Link>
                     )}
                   >
-                    <FlexBlock spaceStack={cardLabel}>
+                    <Block spaceStack={cardLabel}>
                       <Flag
                         overrides={{
                           spaceInset: 'spaceInsetSquish000',
@@ -1503,23 +1354,10 @@ export default {
                         <IconFilledImage />
                         IMAGE
                       </Flag>
-                    </FlexBlock>
+                    </Block>
 
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1536,7 +1374,7 @@ export default {
                       <Link href="https://google.com">Read the full story</Link>
                     )}
                   >
-                    <FlexBlock spaceStack={cardLabel}>
+                    <Block spaceStack={cardLabel}>
                       <Flag
                         overrides={{
                           spaceInset: 'spaceInsetSquish000',
@@ -1549,23 +1387,10 @@ export default {
                         <IconFilledImage />
                         IMAGE
                       </Flag>
-                    </FlexBlock>
+                    </Block>
 
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1583,7 +1408,7 @@ export default {
                       <Link href="https://google.com">Read the full story</Link>
                     )}
                   >
-                    <FlexBlock spaceStack={cardLabel}>
+                    <Block spaceStack={cardLabel}>
                       <Flag
                         overrides={{
                           spaceInset: 'spaceInsetSquish000',
@@ -1596,23 +1421,10 @@ export default {
                         <IconFilledImage />
                         IMAGE
                       </Flag>
-                    </FlexBlock>
+                    </Block>
 
                     <Block spaceStack={cardTeaserHeadline}>
-                      <Headline
-                        kickerText="SHORT"
-                        overrides={{
-                          typographyPreset:
-                            cardTypographyPresets.cardTeaserHeadlineSmall,
-                          kicker: {
-                            spaceInline: cardTeaserKicker,
-                            stylePreset: 'headlineKickerInteractive',
-                          },
-                          heading: {
-                            stylePreset: 'headlineHeadingInteractive',
-                          },
-                        }}
-                      >
+                      <Headline kickerText="SHORT">
                         title of the card describing the main content
                       </Headline>
                     </Block>
@@ -1643,20 +1455,7 @@ export default {
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>
-                        <Headline
-                          kickerText="SHORT"
-                          overrides={{
-                            typographyPreset:
-                              cardTypographyPresets.cardTeaserHeadlineSmall,
-                            kicker: {
-                              spaceInline: cardTeaserKicker,
-                              stylePreset: 'headlineKickerInteractive',
-                            },
-                            heading: {
-                              stylePreset: 'headlineHeadingInteractive',
-                            },
-                          }}
-                        >
+                        <Headline kickerText="SHORT">
                           title of the card describing the main content
                         </Headline>
                       </Block>
@@ -1683,20 +1482,7 @@ export default {
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>
-                        <Headline
-                          kickerText="SHORT"
-                          overrides={{
-                            typographyPreset:
-                              cardTypographyPresets.cardTeaserHeadlineSmall,
-                            kicker: {
-                              spaceInline: cardTeaserKicker,
-                              stylePreset: 'headlineKickerInteractive',
-                            },
-                            heading: {
-                              stylePreset: 'headlineHeadingInteractive',
-                            },
-                          }}
-                        >
+                        <Headline kickerText="SHORT">
                           title of the card describing the main content
                         </Headline>
                       </Block>
@@ -1723,20 +1509,7 @@ export default {
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>
-                        <Headline
-                          kickerText="SHORT"
-                          overrides={{
-                            typographyPreset:
-                              cardTypographyPresets.cardTeaserHeadlineSmall,
-                            kicker: {
-                              spaceInline: cardTeaserKicker,
-                              stylePreset: 'headlineKickerInteractive',
-                            },
-                            heading: {
-                              stylePreset: 'headlineHeadingInteractive',
-                            },
-                          }}
-                        >
+                        <Headline kickerText="SHORT">
                           title of the card describing the main content
                         </Headline>
                       </Block>
@@ -1763,20 +1536,7 @@ export default {
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>
-                        <Headline
-                          kickerText="SHORT"
-                          overrides={{
-                            typographyPreset:
-                              cardTypographyPresets.cardTeaserHeadlineSmall,
-                            kicker: {
-                              spaceInline: cardTeaserKicker,
-                              stylePreset: 'headlineKickerInteractive',
-                            },
-                            heading: {
-                              stylePreset: 'headlineHeadingInteractive',
-                            },
-                          }}
-                        >
+                        <Headline kickerText="SHORT">
                           title of the card describing the main content
                         </Headline>
                       </Block>
