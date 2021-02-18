@@ -43,7 +43,10 @@ export interface ImageProps
     height?: HeightProperty<string>;
     width?: WidthProperty<string>;
     maxHeight?: MaxHeightProperty<string>;
+    // TODO can we set max width only for S?
     maxWidth?: MaxWidthProperty<string>;
+    // TODO add minHeight, only for  XL and L? can it take an object? it takes
+    // string for maxH and maxW atm
     stylePreset?: MQ<string>;
     caption?: CaptionOverrides;
   };
