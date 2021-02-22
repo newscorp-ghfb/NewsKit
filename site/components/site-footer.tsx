@@ -95,7 +95,7 @@ const SiteFooter: React.FC = () => (
             </FooterLink>
           </Hidden>
           <FooterLink>
-            <ConsentSettingsLink privacyManagerId="139011">
+            <ConsentSettingsLink privacyManagerId="172716">
               Privacy
             </ConsentSettingsLink>
           </FooterLink>
@@ -104,6 +104,7 @@ const SiteFooter: React.FC = () => (
               href="https://www.newscareers.co.uk/"
               target="_blank"
               external={false}
+              overrides={{stylePreset: 'linkStandalone'}}
             >
               Careers
             </NewsKitLink>
