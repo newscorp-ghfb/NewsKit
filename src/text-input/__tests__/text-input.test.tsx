@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {createRef} from 'react';
 import {TextInput, TextInputProps} from '..';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {TextInputSize} from '../types';
 import {createTheme} from '../../theme';
 
@@ -215,5 +218,21 @@ describe('TextInput', () => {
     ) as any;
 
     expect(fragment).toMatchSnapshot();
+  });
+
+  it('focus can be triggered with ref', () => {
+    const inputRef = createRef<HTMLInputElement>();
+
+    const props = {
+      label: 'label',
+      ref: inputRef,
+    };
+
+    renderWithTheme(TextInput, props);
+
+    if (inputRef && inputRef.current) {
+      inputRef.current.focus();
+    }
+    expect(inputRef.current).toHaveFocus();
   });
 });

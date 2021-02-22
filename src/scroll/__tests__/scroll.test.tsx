@@ -1,5 +1,4 @@
 import React from 'react';
-import '@testing-library/jest-dom';
 import {fireEvent, render} from '@testing-library/react';
 import {screen} from '@testing-library/dom';
 import {Scroll, ScrollSnapAlignment} from '..';

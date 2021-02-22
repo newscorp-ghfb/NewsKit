@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import {useFormContext} from 'react-hook-form/dist/index.ie11';
+import composeRefs from '@seznam/compose-react-refs'
 import {TextInputProps, TextInputSize} from './types';
 import {getSSRId} from '../utils/get-ssr-id';
 import {FormValidationContext} from '../form/context'
@@ -17,8 +18,7 @@ import { getToken } from '../utils/get-token';
 import { useTheme } from '../theme';
 import { IconFilledCheckCircle, IconFilledError } from '../icons';
 
-
-export const TextInput: React.FC<TextInputProps> = ({
+export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
   overrides = {},
   size = TextInputSize.Medium,
   label,
@@ -31,7 +31,7 @@ export const TextInput: React.FC<TextInputProps> = ({
   name,
   spellCheck = false,
   ...props
-}) => {
+}, ref) => {
 
   const theme = useTheme();
   const validationMode = useContext(FormValidationContext);
@@ -96,7 +96,7 @@ export const TextInput: React.FC<TextInputProps> = ({
       <InputIconContainer>
         <StyledInput
             // eslint-disable-next-line no-undef
-          ref={(formContext?.register(rules) as unknown) as string}
+          ref={composeRefs(formContext?.register(rules), ref)}
           name={name}
           type="text"
           placeholder={placeholder}
@@ -141,6 +141,6 @@ export const TextInput: React.FC<TextInputProps> = ({
       </StyledAssistiveTextContainer>
     </StyledTextInputContainer>
   );
-};
+});
 
 TextInput.displayName = 'TextInput';
