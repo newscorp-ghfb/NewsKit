@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {
   ThemeProvider,
+  createTheme,
   Grid,
   Cell,
   Card,
-  TagSize,
   TextBlock,
   Block,
   Headline,
@@ -12,40 +12,28 @@ import {
   IconFilledImage,
   Tag,
   Stack,
-  Flow,
 } from 'newskit';
-import {
-  myCustomCardTheme,
-  cardLabelSpaceStack,
-  cardTeaserHeadlineSpaceStack,
-  cardTeaserLeadSpaceStack,
-  cardActionsSpace,
-  cardTeaserHeadlineMediumTypographyPreset,
-  cardTeaserLeadMediumTypographyPreset,
-  cardLabelMediumTypographyPreset,
-  cardTagMediumTypographyPreset,
-} from './common';
+
+const myCustomCardTheme = createTheme({
+  name: 'my-custom-card-theme',
+  overrides: {
+    stylePresets: {
+      cardLabel: {
+        base: {
+          color: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkSubtle}}',
+        },
+      },
+    },
+  },
+});
 
 const cardMediumTags = () => (
-  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActionsSpace}>
-    <Tag
-      size={TagSize.Small}
-      href="/"
-      overrides={{
-        stylePreset: 'tagPrimary',
-        typographyPreset: cardTagMediumTypographyPreset,
-      }}
-    >
+  <Stack flow="horizontal-center" spaceInline="space040">
+    <Tag size="medium" href="#">
       News
     </Tag>
-    <Tag
-      size={TagSize.Small}
-      href="/"
-      overrides={{
-        stylePreset: 'tagPrimary',
-        typographyPreset: cardTagMediumTypographyPreset,
-      }}
-    >
+    <Tag size="medium" href="#">
       Sport
     </Tag>
   </Stack>
@@ -56,7 +44,7 @@ export const CardHorizontalMediumWithoutInset = () => (
     <Cell xs={8}>
       <ThemeProvider theme={myCustomCardTheme}>
         <Card
-          href="https://newskit.co.uk/"
+          href="#"
           layout="horizontal"
           media={{
             src: '/static/placeholder-1x1.png',
@@ -71,12 +59,12 @@ export const CardHorizontalMediumWithoutInset = () => (
             stylePreset: 'cardContainer',
           }}
         >
-          <Block spaceStack={cardLabelSpaceStack}>
+          <Block spaceStack="space020">
             <Flag
               overrides={{
                 spaceInset: 'spaceInsetSquish000',
                 stylePreset: 'cardLabel',
-                typographyPreset: cardLabelMediumTypographyPreset,
+                typographyPreset: 'utilityLabel010',
               }}
             >
               <IconFilledImage />
@@ -84,22 +72,33 @@ export const CardHorizontalMediumWithoutInset = () => (
             </Flag>
           </Block>
 
-          <Block spaceStack={cardTeaserHeadlineSpaceStack}>
+          <Block
+            spaceStack={{
+              xs: 'space040',
+              sm: 'space040',
+              md: 'space045',
+              lg: 'space050',
+            }}
+          >
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
-                typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
+                typographyPreset: 'editorialHeadline030',
               }}
             >
               outdoors as bank holiday temps soar above 20 degrees
             </Headline>
           </Block>
 
-          <Block spaceStack={cardTeaserLeadSpaceStack}>
-            <TextBlock
-              stylePreset="cardTeaserLead"
-              typographyPreset={cardTeaserLeadMediumTypographyPreset}
-            >
+          <Block
+            spaceStack={{
+              xs: 'space040',
+              sm: 'space040',
+              md: 'space050',
+              lg: 'space050',
+            }}
+          >
+            <TextBlock typographyPreset="editorialParagraph020">
               The bank holiday weekend has seen some mixed weather, but as the
               sun emerged, many in the UK took the opportunity...
             </TextBlock>

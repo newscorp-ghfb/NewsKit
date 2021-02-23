@@ -1486,3 +1486,11 @@ stylePresets.drawerPanel = {
     boxShadow: '{{shadows.shadow050}}',
   },
 };
+
+// Card
+
+stylePresets.cardContainer = {
+  base: {
+    color: '{{colors.inkBase}}',
+  },
+};

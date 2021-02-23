@@ -1,33 +1,35 @@
+
+const myCustomCardTheme = createTheme({
+  name: 'my-custom-card-theme',
+  overrides: {
+    stylePresets: {
+      cardLabel: {
+        base: {
+          color: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkSubtle}}',
+        },
+      },
+    },
+  },
+});
+
 const cardSmallTags = () => (
-  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActionsSpace}>
-    <Tag
-      size={TagSize.Small}
-      href="/"
-      overrides={{
-        stylePreset: 'tagPrimary',
-        typographyPreset: cardTagSmallTypographyPreset,
-      }}
-    >
+  <Stack flow="horizontal-center" spaceInline="space040">
+    <Tag size="small" href="#">
       News
     </Tag>
-    <Tag
-      size={TagSize.Small}
-      href="/"
-      overrides={{
-        stylePreset: 'tagPrimary',
-        typographyPreset: cardTagSmallTypographyPreset,
-      }}
-    >
+    <Tag size="small" href="#">
       Sport
     </Tag>
   </Stack>
 );
+
 export const CardVerticalSmallWithInset = () => (
   <Grid>
     <Cell xs={4}>
       <ThemeProvider theme={myCustomCardTheme}>
         <CardInset
-          href="https://newskit.co.uk/"
+          href="#"
           media={{
             src: '/static/placeholder-3x2.png',
             alt: 'Card Media',
@@ -37,13 +39,12 @@ export const CardVerticalSmallWithInset = () => (
             stylePreset: 'cardContainer',
           }}
         >
-          <Block spaceStack={cardLabelSpaceStack}>
+          <Block spaceStack="space020">
             <Flag
               overrides={{
-                minHeight: '0',
                 spaceInset: 'spaceInsetSquish000',
                 stylePreset: 'cardLabel',
-                typographyPreset: cardLabelSmallTypographyPreset,
+                typographyPreset: 'utilityLabel010',
               }}
             >
               <IconFilledImage />
@@ -51,27 +52,28 @@ export const CardVerticalSmallWithInset = () => (
             </Flag>
           </Block>
 
-          <Block spaceStack={cardTeaserHeadlineSpaceStack}>
+          <Block
+            spaceStack={{
+              xs: 'space040',
+              sm: 'space040',
+              md: 'space045',
+              lg: 'space050',
+            }}
+          >
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
-                typographyPreset: cardTeaserHeadlineSmallTypographyPreset,
+                typographyPreset: 'editorialHeadline010',
               }}
             >
               outdoors as bank holiday temps soar above 20 degrees
             </Headline>
           </Block>
-
-          <Block spaceStack={cardTeaserLeadInsetVariantSpaceStack}>
-            <TextBlock
-              stylePreset="cardTeaserLead"
-              typographyPreset={cardTeaserLeadSmallTypographyPreset}
-            >
-              The bank holiday weekend has seen some mixed weather, but as the
-              sun emerged, many in the UK took the opportunity to make the most
-              of the lockdown easing.
-            </TextBlock>
-          </Block>
+          <TextBlock typographyPreset="editorialParagraph010">
+            The bank holiday weekend has seen some mixed weather, but as the sun
+            emerged, many in the UK took the opportunity to make the most of the
+            lockdown easing.
+          </TextBlock>
         </CardInset>
       </ThemeProvider>
     </Cell>

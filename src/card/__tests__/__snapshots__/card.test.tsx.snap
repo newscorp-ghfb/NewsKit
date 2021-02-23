@@ -4,6 +4,7 @@ exports[`Card renders actions section with given component 1`] = `
 <DocumentFragment>
   .emotion-16 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -419,6 +420,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 <DocumentFragment>
   .emotion-16 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -834,6 +836,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 <DocumentFragment>
   .emotion-16 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1338,6 +1341,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 <DocumentFragment>
   .emotion-5 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1529,6 +1533,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1755,6 +1760,7 @@ exports[`Card renders media section with a custom component 1`] = `
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1981,6 +1987,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2207,6 +2214,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2433,6 +2441,7 @@ exports[`Card renders media section with overrides 1`] = `
 <DocumentFragment>
   .emotion-11 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2660,6 +2669,7 @@ exports[`Card renders with card items 1`] = `
 <DocumentFragment>
   .emotion-23 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3216,6 +3226,7 @@ exports[`Card renders without card items 1`] = `
 <DocumentFragment>
   .emotion-1 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3319,6 +3330,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3618,6 +3630,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 
 .emotion-11 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3728,6 +3741,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 <DocumentFragment>
   .emotion-17 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4205,6 +4219,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 <DocumentFragment>
   .emotion-12 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4494,6 +4509,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 <DocumentFragment>
   .emotion-6 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4743,6 +4759,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 <DocumentFragment>
   .emotion-6 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5010,6 +5027,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 <DocumentFragment>
   .emotion-6 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5275,6 +5293,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 <DocumentFragment>
   .emotion-5 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5424,6 +5443,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 <DocumentFragment>
   .emotion-5 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5683,6 +5703,7 @@ exports[`CardInset renders with card items 1`] = `
 <DocumentFragment>
   .emotion-23 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6262,6 +6283,7 @@ exports[`CardInset renders without card items 1`] = `
 <DocumentFragment>
   .emotion-1 {
   box-sizing: border-box;
+  color: #2e2e2e;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;

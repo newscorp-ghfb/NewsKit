@@ -1678,6 +1678,11 @@ Object {
         "iconColor": "#2e2e2e",
       },
     },
+    "cardContainer": Object {
+      "base": Object {
+        "color": "#2e2e2e",
+      },
+    },
     "dividerHorizontal": Object {
       "base": Object {
         "borderColor": "#e4e4e4",

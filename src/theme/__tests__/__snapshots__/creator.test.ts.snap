@@ -1677,6 +1677,11 @@ Object {
         "iconColor": "{{colors.inkBase}}",
       },
     },
+    "cardContainer": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+    },
     "dividerHorizontal": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",

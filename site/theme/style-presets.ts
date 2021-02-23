@@ -200,7 +200,6 @@ export const stylePresets = {
   cardContainer: {
     base: {
       borderRadius: (false as unknown) as string,
-      color: '{{colors.inkBase}}',
     },
   },
   cardMediaNonInteractive: {
