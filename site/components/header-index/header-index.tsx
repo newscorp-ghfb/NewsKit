@@ -24,11 +24,11 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
 
   const StyledDescriptionTextBlock = styled(TextBlock)`
     ${getSpacingFromTheme({xs: 'space080', lg:'space000'}, undefined, 'marginBottom')}
-  `
+  `;
 
   const StyledTitleTextBlock = styled(TextBlock)`
     ${getSpacingFromTheme({xs: 'space060', md: 'space070'}, undefined, 'marginBottom')}
-  `
+  `;
 
   return (
     <StyledGrid
@@ -37,7 +37,7 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
       xsMargin="space000"
       xsColumnGutter="space050"
     >
-      <Cell lgOrder={2} xs={12} md={6} lg={5} mdOffset={6} lgOffset={0}>
+      <Cell lgOrder={2} xs={10} sm={8} md={6} lg={5} xsOffset={1} smOffset={4} mdOffset={6} lgOffset={0}>
         <Image src={media.src} alt="" />
       </Cell>
       <Cell xs={12} md={8} lg={6} mdOffset={1}>
