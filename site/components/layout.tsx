@@ -2,7 +2,6 @@ import * as React from 'react';
 import {MDXProvider} from '@mdx-js/react';
 import {
   Grid,
-  getSizingFromTheme,
   getColorFromTheme,
   getMediaQueryFromTheme,
   Cell,
@@ -38,11 +37,6 @@ const Container = styled.div`
 const BodyWrapper = styled.main`
   flex: 1 0 auto;
   background-color: ${getColorFromTheme('interfaceBackground')};
-`;
-
-const ContentWrapper = styled.div`
-  padding-top: ${getSizingFromTheme('sizing060')};
-  padding-bottom: ${getSizingFromTheme('sizing060')};
 `;
 
 export interface LayoutProps {
@@ -160,25 +154,21 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             ref={this.headerRef}
           />
 
-          <BodyWrapper>
+          <BodyWrapper data-test='bodywrapper'>
             {path.endsWith('-new') ? (
-              <ContentWrapper>
-                <MDXProvider components={this.updatePropsForMarkdownElements()}>
-                  {children}
-                </MDXProvider>
-              </ContentWrapper>
+              <MDXProvider components={this.updatePropsForMarkdownElements()}>
+                {children}
+              </MDXProvider>
             ) : (
               <Grid>
                 <Cell xs={12} lg={10} lgOffset={1}>
                   <Playground componentName={false} />
-                  <ContentWrapper>
-                    {this.renderNavigation()}
-                    <MDXProvider
-                      components={this.updatePropsForMarkdownElements()}
-                    >
-                      {children}
-                    </MDXProvider>
-                  </ContentWrapper>
+                  {this.renderNavigation()}
+                  <MDXProvider
+                    components={this.updatePropsForMarkdownElements()}
+                  >
+                    {children}
+                  </MDXProvider>
                 </Cell>
               </Grid>
             )}
