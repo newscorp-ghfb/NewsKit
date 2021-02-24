@@ -4,8 +4,8 @@ import {
   TextBlock,
   Image,
   styled,
-  getColorFromTheme,
   getSpacingFromTheme,
+  getMediaQueryFromTheme,
 } from 'newskit';
 import React from 'react';
 import {HeaderIndexProps} from './types';
@@ -15,19 +15,16 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
   children,
   media,
 }) => {
+
+  // TODO remove padding top and bottom in pages layout
+  // TODO buddy cell on full-width 
   const StyledGrid = styled(Grid)`
-    @media (min-width: 1024px) {
+    ${getMediaQueryFromTheme('lg')} {
       min-height: 440px;
     }
     align-items: center;
-    background-color: ${getColorFromTheme('interface020')};
-    ${getSpacingFromTheme(
-      {xs: 'space080', lg: 'space090'},
-      undefined,
-      'marginBottom',
-    )}
   `;
-
+   
   const StyledDescriptionTextBlock = styled(TextBlock)`
     ${getSpacingFromTheme(
       {xs: 'space080', lg: 'space000'},
@@ -36,19 +33,18 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
     )}
   `;
 
-  const StyledTitleTextBlock = styled(TextBlock)`
+const StyledTitleTextBlock = styled(TextBlock)`
     ${getSpacingFromTheme(
       {xs: 'space060', md: 'space070'},
       undefined,
       'marginBottom',
-    )}
+      )}
   `;
-
+   
   return (
     <StyledGrid
       xsRowGutter="space020"
       mdRowGutter="space030"
-      xsMargin="space000"
       xsColumnGutter="space050"
     >
       <Cell
@@ -64,13 +60,12 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
       >
         <Image src={media.src} alt="" />
       </Cell>
-      <Cell xs={12} md={8} lg={6} mdOffset={1}>
+      <Cell xs={11} md={8} lg={6} mdOffset={1}>
         <StyledTitleTextBlock
           as="h1"
           stylePreset="inkContrast"
           typographyPreset={{
-            xs: 'editorialHeadline050',
-            sm: 'editorialHeadline060',
+            xs: 'editorialHeadline060',
             md: 'editorialHeadline080',
           }}
         >
@@ -78,10 +73,7 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
         </StyledTitleTextBlock>
         <StyledDescriptionTextBlock
           stylePreset="inkBase"
-          typographyPreset={{
-            xs: 'editorialSubheadline010',
-            md: 'editorialSubheadline020',
-          }}
+          typographyPreset='editorialSubheadline020'
         >
           {children}
         </StyledDescriptionTextBlock>
