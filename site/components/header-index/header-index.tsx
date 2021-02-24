@@ -15,16 +15,15 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
   children,
   media,
 }) => {
-
   // TODO remove padding top and bottom in pages layout
-  // TODO buddy cell on full-width 
+  // TODO buddy cell on full-width
   const StyledGrid = styled(Grid)`
     ${getMediaQueryFromTheme('lg')} {
       min-height: 440px;
     }
     align-items: center;
   `;
-   
+
   const StyledDescriptionTextBlock = styled(TextBlock)`
     ${getSpacingFromTheme(
       {xs: 'space080', lg: 'space000'},
@@ -33,14 +32,14 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
     )}
   `;
 
-const StyledTitleTextBlock = styled(TextBlock)`
+  const StyledTitleTextBlock = styled(TextBlock)`
     ${getSpacingFromTheme(
       {xs: 'space060', md: 'space070'},
       undefined,
       'marginBottom',
-      )}
+    )}
   `;
-   
+
   return (
     <StyledGrid
       xsRowGutter="space020"
@@ -73,7 +72,7 @@ const StyledTitleTextBlock = styled(TextBlock)`
         </StyledTitleTextBlock>
         <StyledDescriptionTextBlock
           stylePreset="inkBase"
-          typographyPreset='editorialSubheadline020'
+          typographyPreset="editorialSubheadline020"
         >
           {children}
         </StyledDescriptionTextBlock>

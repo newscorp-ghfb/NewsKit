@@ -154,7 +154,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             ref={this.headerRef}
           />
 
-          <BodyWrapper data-test='bodywrapper'>
+          <BodyWrapper data-test="bodywrapper">
             {path.endsWith('-new') ? (
               <MDXProvider components={this.updatePropsForMarkdownElements()}>
                 {children}
