@@ -372,21 +372,5 @@
         "id": "/help/contact-us"
       }
     ]
-  },
-  {
-    "title": "About",
-    "id": "/about",
-    "subNav": [
-      {
-        "title": "Roadmap",
-        "page": true,
-        "id": "/about/roadmap"
-      },
-      {
-        "title": "Introduction",
-        "page": true,
-        "id": "/about/introduction"
-      }
-    ]
   }
 ]
