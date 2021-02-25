@@ -118,7 +118,7 @@ const cardsForPage = cardsContent.map(content => ({
   styles: cardStyle,
 }));
 
-const StyledHeaderIndexCell = styled(Cell)`
+const HeaderIndexContainer = styled.div`
   background-color: ${getColorFromTheme('interface020')};
   ${getSpacingFromTheme(
     {xs: 'space080', lg: 'space090'},
@@ -130,16 +130,16 @@ const StyledHeaderIndexCell = styled(Cell)`
 export default ({path, ...rest}: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...rest} path={`${path}-new`}>
+    <HeaderIndexContainer>
+      <HeaderIndex
+        title="Foundations"
+        media={{src: '/static/foundations-overview-hero.svg'}}
+      >
+        NewsKit foundations define the visual elements that inform the look and
+        feel of UI components.
+      </HeaderIndex>
+    </HeaderIndexContainer>
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-      <StyledHeaderIndexCell xs="full-width">
-        <HeaderIndex
-          title="Foundations"
-          media={{src: '/static/foundations-overview-hero.svg'}}
-        >
-          NewsKit foundations define the visual elements that inform the look
-          and feel of UI components.
-        </HeaderIndex>
-      </StyledHeaderIndexCell>
       <SectionIntroduction title="Categories" cellProps={{lg: 8}}>
         The NewsKit Foundations are structured into the following categories:
       </SectionIntroduction>
