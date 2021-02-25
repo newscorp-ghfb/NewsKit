@@ -2,13 +2,13 @@
 
 exports[`HeaderIndex renders without crashing 1`] = `
 <DocumentFragment>
-  .emotion-11 {
+  .emotion-13 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -25,54 +25,41 @@ exports[`HeaderIndex renders without crashing 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #F4F4F4;
 }
 
 @media screen {
-  .emotion-10 {
-    margin: -8px -12px 0 -12px;
+  .emotion-12 {
+    margin: -8px 4px 0 4px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-10 {
-    margin: -8px -12px 0 -12px;
+  .emotion-12 {
+    margin: -8px 4px 0 4px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-10 {
-    margin: -12px -12px 0 -12px;
+  .emotion-12 {
+    margin: -12px 4px 0 4px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-10 {
-    margin: -12px -12px 0 -12px;
+  .emotion-12 {
+    margin: -12px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-10 {
-    margin: -12px -12px 0 -12px;
-  }
-}
-
-@media (min-width:1024px) {
-  .emotion-10 {
-    min-height: 440px;
-  }
-}
-
-@media screen and (max-width:1023px) {
-  .emotion-10 {
-    margin-bottom: 48px;
+  .emotion-12 {
+    margin: -12px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-10 {
-    margin-bottom: 64px;
+  .emotion-12 {
+    min-height: 440px;
   }
 }
 
@@ -212,7 +199,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
   border-radius: inherit;
 }
 
-.emotion-9 {
+.emotion-11 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -221,30 +208,30 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 @media screen {
-  .emotion-9 {
+  .emotion-11 {
     padding: 0 12px;
     margin-top: 8px;
     margin-left: 0;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: 91.66666666666667%;
+    -ms-flex-preferred-size: 91.66666666666667%;
+    flex-basis: 91.66666666666667%;
+    max-width: 91.66666666666667%;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-9 {
+  .emotion-11 {
     margin-top: 8px;
     margin-left: 0;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: 91.66666666666667%;
+    -ms-flex-preferred-size: 91.66666666666667%;
+    flex-basis: 91.66666666666667%;
+    max-width: 91.66666666666667%;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-9 {
+  .emotion-11 {
     margin-top: 12px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
@@ -255,7 +242,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-9 {
+  .emotion-11 {
     margin-top: 12px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
@@ -266,13 +253,25 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-9 {
+  .emotion-11 {
     margin-top: 12px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .emotion-8 {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-8 {
+    margin-bottom: 40px;
   }
 }
 
@@ -286,36 +285,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
   fill: #162740;
 }
 
-@media screen and (max-width:479px) {
-  .emotion-7 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 32px;
-    line-height: 1.25;
-    font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-7::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.15000000000000002em;
-  }
-
-  .emotion-7::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.4em;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
+@media screen and (max-width:767px) {
   .emotion-7 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
@@ -373,103 +343,57 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-7 {
-    margin-bottom: 32px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-7 {
-    margin-bottom: 40px;
-  }
-}
-
-.emotion-8 {
-  margin: 0;
-  padding: 1px 0;
-  color: #555E74;
-}
-
-.emotion-8 svg {
-  fill: #555E74;
-}
-
-@media screen and (max-width:767px) {
-  .emotion-8 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 16px;
-    line-height: 2;
-    font-weight: 500;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-8::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.525em;
-  }
-
-  .emotion-8::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.775em;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-8 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-    line-height: 1.6;
-    font-weight: 500;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-8::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.32500000000000007em;
-  }
-
-  .emotion-8::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.5750000000000001em;
-  }
-}
-
 @media screen and (max-width:1023px) {
-  .emotion-8 {
+  .emotion-10 {
     margin-bottom: 48px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-8 {
+  .emotion-10 {
     margin-bottom: 0;
   }
 }
 
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+  color: #555E74;
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-9 svg {
+  fill: #555E74;
+}
+
+.emotion-9::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32500000000000007em;
+}
+
+.emotion-9::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.5750000000000001em;
+}
+
 <div
-    class="emotion-11"
+    class="emotion-13"
   >
     <div
-      class="emotion-10"
+      class="emotion-12"
     >
       <div
         class="emotion-6"
@@ -508,18 +432,26 @@ exports[`HeaderIndex renders without crashing 1`] = `
         </div>
       </div>
       <div
-        class="emotion-9"
+        class="emotion-11"
       >
-        <h1
-          class="emotion-7"
-        >
-          Foundations
-        </h1>
-        <p
+        <div
           class="emotion-8"
         >
-          description
-        </p>
+          <h1
+            class="emotion-7"
+          >
+            Foundations
+          </h1>
+        </div>
+        <div
+          class="emotion-10"
+        >
+          <p
+            class="emotion-9"
+          >
+            description
+          </p>
+        </div>
       </div>
     </div>
   </div>
