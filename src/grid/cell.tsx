@@ -24,7 +24,7 @@ const cleanCss = (
     if (cellCss.display === 'block') {
       delete cellCss.display;
     }
-    ['padding', 'margin-top', 'margin-left'].forEach(k => {
+    ['padding', 'marginTop', 'marginLeft'].forEach(k => {
       if (cellCss[k] === 0) {
         delete cellCss[k];
       }
@@ -40,9 +40,9 @@ const cleanCss = (
     'order',
     'padding',
     'flex-basis',
-    'max-width',
-    'margin-top',
-    'margin-left',
+    'maxWidth',
+    'marginTop',
+    'marginLeft',
   ].forEach(k => {
     if (cellCss[k] === prevCellCss[k]) {
       delete cellCss[k];
