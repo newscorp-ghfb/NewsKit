@@ -14,7 +14,6 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   .emotion-82 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -24,23 +23,18 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-82 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-82 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -48,22 +42,17 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   .emotion-82 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-82 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -130,7 +119,6 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   .emotion-7 {
     padding: 0 40px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -140,30 +128,23 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-7 {
     margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -173,8 +154,6 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-7 {
-    margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -727,7 +706,6 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   .emotion-82 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -737,23 +715,18 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 
 @media screen and (min-width:480px) {
   .emotion-82 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-82 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -761,22 +734,17 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   .emotion-82 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-82 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -843,7 +811,6 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   .emotion-7 {
     padding: 0 40px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -853,30 +820,23 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 
 @media screen and (min-width:480px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-7 {
     margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -886,8 +846,6 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 
 @media screen and (min-width:1440px) {
   .emotion-7 {
-    margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -1470,7 +1428,6 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   .emotion-82 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -1480,23 +1437,18 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 
 @media screen and (min-width:480px) {
   .emotion-82 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-82 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -1504,22 +1456,17 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   .emotion-82 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-82 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -1586,7 +1533,6 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   .emotion-7 {
     padding: 0 40px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -1596,30 +1542,23 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 
 @media screen and (min-width:480px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-7 {
     margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -1629,8 +1568,6 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 
 @media screen and (min-width:1440px) {
   .emotion-7 {
-    margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -2183,7 +2120,6 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   .emotion-82 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -2193,23 +2129,18 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 
 @media screen and (min-width:480px) {
   .emotion-82 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-82 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -2217,22 +2148,17 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   .emotion-82 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-82 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -2299,7 +2225,6 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   .emotion-7 {
     padding: 0 40px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -2309,30 +2234,23 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 
 @media screen and (min-width:480px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-7 {
     margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -2342,8 +2260,6 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 
 @media screen and (min-width:1440px) {
   .emotion-7 {
-    margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -2911,7 +2827,6 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   .emotion-82 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -2921,23 +2836,18 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 
 @media screen and (min-width:480px) {
   .emotion-82 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-82 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -2945,22 +2855,17 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   .emotion-82 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-82 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -3027,7 +2932,6 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   .emotion-7 {
     padding: 0 40px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -3037,30 +2941,23 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 
 @media screen and (min-width:480px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-7 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-7 {
     margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -3070,8 +2967,6 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 
 @media screen and (min-width:1440px) {
   .emotion-7 {
-    margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;

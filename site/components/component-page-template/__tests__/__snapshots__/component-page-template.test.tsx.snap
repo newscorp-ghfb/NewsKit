@@ -448,7 +448,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -458,23 +457,17 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -482,22 +475,17 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -865,7 +853,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-436 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -875,23 +862,17 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-436 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-436 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -909,12 +890,9 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-436 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -930,7 +908,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -940,18 +917,14 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -964,7 +937,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -974,12 +946,9 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -1143,7 +1112,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -1153,18 +1121,14 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -1177,7 +1141,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -1187,12 +1150,9 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -2219,8 +2179,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-423 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -2230,12 +2188,9 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-423 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -2243,22 +2198,17 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   .emotion-423 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-423 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -2572,7 +2522,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-433 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -2694,8 +2643,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-441 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -2705,18 +2652,14 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-441 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-441 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -2728,23 +2671,17 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-441 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-441 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -2776,8 +2713,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-465 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -2787,8 +2722,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-465 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -2798,35 +2731,26 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-465 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-465 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-465 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -2973,8 +2897,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -2984,18 +2906,14 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -3007,8 +2925,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -3018,12 +2934,9 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -3163,8 +3076,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -3174,18 +3085,14 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -3197,8 +3104,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -3208,12 +3113,9 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -3299,8 +3201,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen {
   .emotion-389 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
@@ -3310,18 +3210,14 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-389 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
-    max-width: 75%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-389 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -3333,8 +3229,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-389 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -3344,12 +3238,9 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-389 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -6398,7 +6289,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -6408,23 +6298,17 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -6432,22 +6316,17 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -6815,7 +6694,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-455 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -6825,23 +6703,17 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-455 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-455 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -6859,12 +6731,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-455 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -6880,7 +6749,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -6890,18 +6758,14 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -6914,7 +6778,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -6924,12 +6787,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -7093,7 +6953,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -7103,18 +6962,14 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -7127,7 +6982,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -7137,12 +6991,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -8169,8 +8020,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-442 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -8180,12 +8029,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:768px) {
   .emotion-442 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -8193,22 +8039,17 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-442 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-442 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -8522,7 +8363,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-452 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -8644,8 +8484,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-460 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -8655,18 +8493,14 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-460 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-460 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -8678,23 +8512,17 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-460 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-460 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -8726,8 +8554,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-484 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -8737,8 +8563,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-484 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -8748,35 +8572,26 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:768px) {
   .emotion-484 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-484 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-484 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -8923,8 +8738,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -8934,18 +8747,14 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -8957,8 +8766,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -8968,12 +8775,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -9113,8 +8917,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -9124,18 +8926,14 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -9147,8 +8945,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -9158,12 +8954,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -9295,7 +9088,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-388 {
     padding: 0 8px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -9305,46 +9097,34 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-388 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-388 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-388 {
     padding: 0 12px;
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-388 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -12708,7 +12488,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -12718,23 +12497,17 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -12742,22 +12515,17 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -13125,7 +12893,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-498 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -13135,23 +12902,17 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-498 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-498 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -13169,12 +12930,9 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-498 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -13190,7 +12948,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -13200,18 +12957,14 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -13224,7 +12977,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -13234,12 +12986,9 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -13403,7 +13152,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -13413,18 +13161,14 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -13437,7 +13181,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -13447,12 +13190,9 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -14479,8 +14219,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-488 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -14490,12 +14228,9 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:768px) {
   .emotion-488 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -14503,22 +14238,17 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-488 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-488 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -14832,7 +14562,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-495 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -14954,8 +14683,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 @media screen {
   .emotion-503 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -14965,18 +14692,14 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-503 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-503 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -14988,23 +14711,17 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 @media screen and (min-width:1024px) {
   .emotion-503 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-503 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -15036,8 +14753,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 @media screen {
   .emotion-527 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -15047,8 +14762,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-527 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -15058,35 +14771,26 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:768px) {
   .emotion-527 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-527 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-527 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -15352,7 +15056,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-471 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -15362,23 +15065,18 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-471 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-471 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -15386,22 +15084,17 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-471 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-471 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -15462,7 +15155,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-396 {
     padding: 0 40px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -15472,30 +15164,23 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-396 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-396 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-396 {
     margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -15505,8 +15190,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-396 {
-    margin-top: 40px;
-    margin-left: 0;
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -18898,7 +18581,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -18908,23 +18590,17 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -18932,22 +18608,17 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -19315,7 +18986,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-443 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -19325,23 +18995,17 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-443 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-443 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -19359,12 +19023,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:1440px) {
   .emotion-443 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -19380,7 +19041,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -19390,18 +19050,14 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -19414,7 +19070,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -19424,12 +19079,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -19593,7 +19245,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -19603,18 +19254,14 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -19627,7 +19274,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -19637,12 +19283,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -20669,8 +20312,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-430 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -20680,12 +20321,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:768px) {
   .emotion-430 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -20693,22 +20331,17 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-430 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-430 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -21022,7 +20655,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:1440px) {
   .emotion-440 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -21144,8 +20776,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-448 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -21155,18 +20785,14 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-448 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-448 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -21178,23 +20804,17 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen and (min-width:1024px) {
   .emotion-448 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-448 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -21226,8 +20846,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-472 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -21237,8 +20855,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-472 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -21248,35 +20864,26 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:768px) {
   .emotion-472 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-472 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-472 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -21423,8 +21030,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -21434,18 +21039,14 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -21457,8 +21058,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -21468,12 +21067,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -21613,8 +21209,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -21624,18 +21218,14 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -21647,8 +21237,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -21658,12 +21246,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -21749,8 +21334,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen {
   .emotion-396 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -21760,46 +21343,34 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-396 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-396 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-396 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-396 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -21860,7 +21431,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   .emotion-393 {
     padding: 0 8px;
     margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -21870,18 +21440,14 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:480px) {
   .emotion-393 {
-    margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-393 {
-    margin-top: 80px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -21893,8 +21459,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen and (min-width:1024px) {
   .emotion-393 {
     padding: 0 12px;
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -21904,12 +21468,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (min-width:1440px) {
   .emotion-393 {
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -25182,7 +24743,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -25192,23 +24752,17 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -25216,22 +24770,17 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -25599,7 +25148,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-441 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -25609,23 +25157,17 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-441 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-441 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -25643,12 +25185,9 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:1440px) {
   .emotion-441 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -25664,7 +25203,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -25674,18 +25212,14 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -25698,7 +25232,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -25708,12 +25241,9 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -25877,7 +25407,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -25887,18 +25416,14 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -25911,7 +25436,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -25921,12 +25445,9 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -26953,8 +26474,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-428 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -26964,12 +26483,9 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:768px) {
   .emotion-428 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -26977,22 +26493,17 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   .emotion-428 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-428 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -27306,7 +26817,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:1440px) {
   .emotion-438 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -27428,8 +26938,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-446 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -27439,18 +26947,14 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-446 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-446 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -27462,23 +26966,17 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen and (min-width:1024px) {
   .emotion-446 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-446 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -27510,8 +27008,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-470 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -27521,8 +27017,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-470 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -27532,35 +27026,26 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:768px) {
   .emotion-470 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-470 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-470 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -27707,8 +27192,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -27718,18 +27201,14 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -27741,8 +27220,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -27752,12 +27229,9 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -27897,8 +27371,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -27908,18 +27380,14 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -27931,8 +27399,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -27942,12 +27408,9 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -31494,7 +30957,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -31504,23 +30966,17 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -31528,22 +30984,17 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -31911,7 +31362,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-435 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -31921,23 +31371,17 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-435 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-435 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -31955,12 +31399,9 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-435 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -31976,7 +31417,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -31986,18 +31426,14 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -32010,7 +31446,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -32020,12 +31455,9 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -32189,7 +31621,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -32199,18 +31630,14 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -32223,7 +31650,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -32233,12 +31659,9 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -33265,8 +32688,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-425 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -33276,12 +32697,9 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:768px) {
   .emotion-425 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -33289,22 +32707,17 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   .emotion-425 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-425 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -33618,7 +33031,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-432 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -33740,8 +33152,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-440 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -33751,18 +33161,14 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-440 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-440 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -33774,23 +33180,17 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-440 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-440 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -33822,8 +33222,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-464 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -33833,8 +33231,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-464 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -33844,35 +33240,26 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:768px) {
   .emotion-464 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-464 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-464 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -34019,8 +33406,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -34030,18 +33415,14 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -34053,8 +33434,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -34064,12 +33443,9 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -34209,8 +33585,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -34220,18 +33594,14 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -34243,8 +33613,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -34254,12 +33622,9 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -37355,7 +36720,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -37365,23 +36729,17 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -37389,22 +36747,17 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -37772,7 +37125,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-447 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -37782,23 +37134,17 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-447 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-447 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -37816,12 +37162,9 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-447 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -37837,7 +37180,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -37847,18 +37189,14 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -37871,7 +37209,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -37881,12 +37218,9 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -38050,7 +37384,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -38060,18 +37393,14 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -38084,7 +37413,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -38094,12 +37422,9 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -39126,8 +38451,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-434 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -39137,12 +38460,9 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-434 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -39150,22 +38470,17 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   .emotion-434 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-434 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -39479,7 +38794,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-444 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -39601,8 +38915,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-452 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -39612,18 +38924,14 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-452 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-452 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -39635,23 +38943,17 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-452 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-452 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -39683,8 +38985,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-476 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -39694,8 +38994,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-476 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -39705,35 +39003,26 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-476 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-476 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-476 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -39880,8 +39169,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -39891,18 +39178,14 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -39914,8 +39197,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -39925,12 +39206,9 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -40070,8 +39348,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -40081,18 +39357,14 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -40104,8 +39376,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -40115,12 +39385,9 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -43364,7 +42631,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -43374,23 +42640,17 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -43398,22 +42658,17 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -43781,7 +43036,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-431 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -43791,23 +43045,17 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-431 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-431 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -43825,12 +43073,9 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-431 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -43846,7 +43091,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -43856,18 +43100,14 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -43880,7 +43120,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -43890,12 +43129,9 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -44059,7 +43295,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -44069,18 +43304,14 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -44093,7 +43324,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -44103,12 +43333,9 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -45135,8 +44362,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-421 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -45146,12 +44371,9 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-421 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -45159,22 +44381,17 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-421 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-421 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -45488,7 +44705,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-428 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -45610,8 +44826,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen {
   .emotion-436 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -45621,18 +44835,14 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-436 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-436 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -45644,23 +44854,17 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-436 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-436 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -45692,8 +44896,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen {
   .emotion-460 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -45703,8 +44905,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-460 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -45714,35 +44914,26 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-460 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-460 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-460 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -46170,7 +45361,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   .emotion-403 {
     padding: 0 8px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -46180,19 +45370,14 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-403 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-403 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -46203,8 +45388,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-403 {
     padding: 0 12px;
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -46214,12 +45397,9 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-403 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
-    max-width: 25%;
   }
 }
 
@@ -49233,7 +48413,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -49243,23 +48422,17 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -49267,22 +48440,17 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -49650,7 +48818,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-421 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -49660,23 +48827,17 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-421 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-421 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -49694,12 +48855,9 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-421 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -49715,7 +48873,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -49725,18 +48882,14 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -49749,7 +48902,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -49759,12 +48911,9 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -49928,7 +49077,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -49938,18 +49086,14 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -49962,7 +49106,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -49972,12 +49115,9 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -51004,8 +50144,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-408 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -51015,12 +50153,9 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-408 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -51028,22 +50163,17 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   .emotion-408 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-408 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -51357,7 +50487,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-418 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -51479,8 +50608,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-426 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -51490,18 +50617,14 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-426 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-426 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -51513,23 +50636,17 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-426 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-426 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -51561,8 +50678,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-450 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -51572,8 +50687,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-450 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -51583,35 +50696,26 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-450 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-450 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-450 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -51758,8 +50862,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -51769,18 +50871,14 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -51792,8 +50890,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -51803,12 +50899,9 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -51948,8 +51041,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -51959,18 +51050,14 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -51982,8 +51069,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -51993,12 +51078,9 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -54985,7 +54067,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -54995,23 +54076,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -55019,22 +54094,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -55402,7 +54472,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-448 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -55412,23 +54481,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-448 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-448 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -55446,12 +54509,9 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-448 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -55467,7 +54527,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -55477,18 +54536,14 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -55501,7 +54556,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -55511,12 +54565,9 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -55680,7 +54731,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -55690,18 +54740,14 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -55714,7 +54760,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -55724,12 +54769,9 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -56756,8 +55798,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-435 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -56767,12 +55807,9 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-435 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -56780,22 +55817,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-435 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-435 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -57109,7 +56141,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-445 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -57231,8 +56262,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-453 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -57242,18 +56271,14 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-453 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-453 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -57265,23 +56290,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-453 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-453 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -57313,8 +56332,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-477 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -57324,8 +56341,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-477 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -57335,35 +56350,26 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-477 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-477 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-477 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -57510,8 +56516,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -57521,18 +56525,14 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -57544,8 +56544,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -57555,12 +56553,9 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -57700,8 +56695,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -57711,18 +56704,14 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -57734,8 +56723,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -57745,12 +56732,9 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -57936,7 +56920,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-398 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -57946,23 +56929,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-398 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-398 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -57970,22 +56947,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-398 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-398 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -61138,7 +60110,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -61148,23 +60119,17 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -61172,22 +60137,17 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -61555,7 +60515,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-455 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -61565,23 +60524,17 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-455 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-455 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -61599,12 +60552,9 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-455 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -61620,7 +60570,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -61630,18 +60579,14 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -61654,7 +60599,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -61664,12 +60608,9 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -61833,7 +60774,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -61843,18 +60783,14 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -61867,7 +60803,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -61877,12 +60812,9 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -62909,8 +61841,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-442 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -62920,12 +61850,9 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:768px) {
   .emotion-442 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -62933,22 +61860,17 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-442 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-442 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -63262,7 +62184,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-452 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -63384,8 +62305,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-460 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -63395,18 +62314,14 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-460 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-460 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -63418,23 +62333,17 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen and (min-width:1024px) {
   .emotion-460 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-460 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -63466,8 +62375,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-484 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -63477,8 +62384,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-484 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -63488,35 +62393,26 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:768px) {
   .emotion-484 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-484 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-484 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -63663,8 +62559,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-373 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -63674,18 +62568,14 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-373 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -63697,8 +62587,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen and (min-width:1024px) {
   .emotion-373 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -63708,12 +62596,9 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-373 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -63853,8 +62738,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen {
   .emotion-374 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -63864,18 +62747,14 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-374 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -63887,8 +62766,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen and (min-width:1024px) {
   .emotion-374 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -63898,12 +62775,9 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-374 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -64065,7 +62939,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-388 {
     padding: 0 8px;
     margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -64075,46 +62948,34 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-388 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-388 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-388 {
     padding: 0 12px;
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-388 {
-    margin-top: 48px;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -67448,7 +66309,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-248 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -67458,23 +66318,17 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-248 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -67482,22 +66336,17 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-248 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-248 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -67865,7 +66714,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-403 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -67875,23 +66723,17 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-403 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-403 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -67909,12 +66751,9 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-403 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
   }
 }
 
@@ -67930,7 +66769,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-256 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -67940,18 +66778,14 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-256 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-256 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -67964,7 +66798,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-256 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -67974,12 +66807,9 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-256 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -68143,7 +66973,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-259 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -68153,18 +66982,14 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-259 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-259 {
-    margin-top: 16px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -68177,7 +67002,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-259 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -68187,12 +67011,9 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-259 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -69219,8 +68040,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-393 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -69230,12 +68049,9 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-393 {
-    margin-top: 16px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -69243,22 +68059,17 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   .emotion-393 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-393 {
-    margin-top: 24px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -69572,7 +68383,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-400 {
-    margin-top: 24px;
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -69694,8 +68504,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 @media screen {
   .emotion-408 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -69705,18 +68513,14 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-408 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-408 {
-    margin-top: 0;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -69728,23 +68532,17 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-408 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-408 {
-    margin-top: 0;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
   }
 }
 
@@ -69776,8 +68574,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 @media screen {
   .emotion-432 {
     padding: 0 8px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -69787,8 +68583,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-432 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -69798,35 +68592,26 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-432 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-432 {
     padding: 0 12px;
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-432 {
-    margin-top: 0;
-    margin-left: 0;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    max-width: 50%;
   }
 }
 

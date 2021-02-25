@@ -14,7 +14,6 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
   .emotion-2 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -24,23 +23,17 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-2 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-2 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -48,22 +41,17 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
   .emotion-2 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-2 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -146,7 +134,6 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   .emotion-18 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -156,23 +143,17 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-18 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-18 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -180,22 +161,17 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   .emotion-18 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-18 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -262,7 +238,6 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   .emotion-15 {
     padding: 0 8px;
     margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -272,18 +247,14 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-15 {
-    margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-15 {
-    margin-top: 80px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -295,8 +266,6 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 @media screen and (min-width:1024px) {
   .emotion-15 {
     padding: 0 12px;
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -306,12 +275,9 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 
 @media screen and (min-width:1440px) {
   .emotion-15 {
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -629,7 +595,6 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   .emotion-21 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -639,23 +604,17 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 
 @media screen and (min-width:480px) {
   .emotion-21 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-21 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -663,22 +622,17 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   .emotion-21 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-21 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -745,7 +699,6 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   .emotion-18 {
     padding: 0 8px;
     margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -755,18 +708,14 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 
 @media screen and (min-width:480px) {
   .emotion-18 {
-    margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-18 {
-    margin-top: 80px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -778,8 +727,6 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 @media screen and (min-width:1024px) {
   .emotion-18 {
     padding: 0 12px;
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -789,12 +736,9 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 
 @media screen and (min-width:1440px) {
   .emotion-18 {
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
@@ -1234,7 +1178,6 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   .emotion-24 {
     padding: 0 8px;
     margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -1244,23 +1187,17 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 
 @media screen and (min-width:480px) {
   .emotion-24 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-24 {
-    margin-top: 16px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -1268,22 +1205,17 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   .emotion-24 {
     padding: 0 12px;
     margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-24 {
-    margin-top: 24px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
@@ -1350,7 +1282,6 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   .emotion-21 {
     padding: 0 8px;
     margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -1360,18 +1291,14 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 
 @media screen and (min-width:480px) {
   .emotion-21 {
-    margin-top: 80px;
-    margin-left: 0;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-21 {
-    margin-top: 80px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -1383,8 +1310,6 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 @media screen and (min-width:1024px) {
   .emotion-21 {
     padding: 0 12px;
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -1394,12 +1319,9 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 
 @media screen and (min-width:1440px) {
   .emotion-21 {
-    margin-top: 80px;
-    margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
   }
 }
 
