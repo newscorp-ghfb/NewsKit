@@ -15,8 +15,6 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
   children,
   media,
 }) => {
-  // TODO remove padding top and bottom in pages layout
-  // TODO buddy cell on full-width
   const StyledGrid = styled(Grid)`
     ${getMediaQueryFromTheme('lg')} {
       min-height: 440px;
