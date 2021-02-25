@@ -4,8 +4,8 @@ import {
   TextBlock,
   Image,
   styled,
-  getSpacingFromTheme,
   getMediaQueryFromTheme,
+  Block,
 } from 'newskit';
 import React from 'react';
 import {HeaderIndexProps} from './types';
@@ -20,22 +20,6 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
       min-height: 440px;
     }
     align-items: center;
-  `;
-
-  const StyledDescriptionTextBlock = styled(TextBlock)`
-    ${getSpacingFromTheme(
-      {xs: 'space080', lg: 'space000'},
-      undefined,
-      'marginBottom',
-    )}
-  `;
-
-  const StyledTitleTextBlock = styled(TextBlock)`
-    ${getSpacingFromTheme(
-      {xs: 'space060', md: 'space070'},
-      undefined,
-      'marginBottom',
-    )}
   `;
 
   return (
@@ -58,22 +42,26 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
         <Image src={media.src} alt="" />
       </Cell>
       <Cell xs={11} md={8} lg={6} mdOffset={1}>
-        <StyledTitleTextBlock
-          as="h1"
-          stylePreset="inkContrast"
-          typographyPreset={{
-            xs: 'editorialHeadline060',
-            md: 'editorialHeadline080',
-          }}
-        >
-          {title}
-        </StyledTitleTextBlock>
-        <StyledDescriptionTextBlock
-          stylePreset="inkBase"
-          typographyPreset="editorialSubheadline020"
-        >
-          {children}
-        </StyledDescriptionTextBlock>
+        <Block spaceStack={{xs: 'space060', md: 'space070'}}>
+          <TextBlock
+            as="h1"
+            stylePreset="inkContrast"
+            typographyPreset={{
+              xs: 'editorialHeadline060',
+              md: 'editorialHeadline080',
+            }}
+          >
+            {title}
+          </TextBlock>
+        </Block>
+        <Block spaceStack={{xs: 'space080', lg: 'space000'}}>
+          <TextBlock
+            stylePreset="inkBase"
+            typographyPreset="editorialSubheadline020"
+          >
+            {children}
+          </TextBlock>
+        </Block>
       </Cell>
     </StyledGrid>
   );
