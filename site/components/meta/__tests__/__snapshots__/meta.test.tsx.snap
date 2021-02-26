@@ -21,14 +21,6 @@ exports[`Meta renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-81 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-81 {
     margin-left: 8.333333333333334%;
@@ -47,14 +39,6 @@ exports[`Meta renders with mandatory props 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-81 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -1166,14 +1150,6 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-97 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-97 {
     margin-left: 8.333333333333334%;
@@ -1192,14 +1168,6 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-97 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 

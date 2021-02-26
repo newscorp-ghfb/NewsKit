@@ -21,14 +21,6 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-7 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-7 {
     margin-left: 8.333333333333334%;
@@ -47,14 +39,6 @@ exports[`SectionIntroduction renders with all props 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-7 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -247,14 +231,6 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-0 {
     margin-left: 8.333333333333334%;
@@ -273,14 +249,6 @@ exports[`SectionIntroduction renders with all props 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 

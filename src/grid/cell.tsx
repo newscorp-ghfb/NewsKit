@@ -39,7 +39,7 @@ const cleanCss = (
     'display',
     'order',
     'padding',
-    'flex-basis',
+    'flexBasis',
     'maxWidth',
     'marginTop',
     'marginLeft',

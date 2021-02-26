@@ -21,14 +21,6 @@ exports[`Media List renders with custom layout 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-36 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-36 {
     margin-left: 8.333333333333334%;
@@ -47,14 +39,6 @@ exports[`Media List renders with custom layout 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-36 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -405,22 +389,6 @@ exports[`Media List renders with custom layout 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-14 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-14 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-14 {
     padding: 0 12px;
@@ -428,14 +396,6 @@ exports[`Media List renders with custom layout 1`] = `
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-14 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
   }
 }
 
@@ -643,14 +603,6 @@ exports[`Media List renders with default layout 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-27 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-27 {
     margin-left: 8.333333333333334%;
@@ -669,14 +621,6 @@ exports[`Media List renders with default layout 1`] = `
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-27 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -750,36 +694,9 @@ exports[`Media List renders with default layout 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-14 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-14 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-14 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-14 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 

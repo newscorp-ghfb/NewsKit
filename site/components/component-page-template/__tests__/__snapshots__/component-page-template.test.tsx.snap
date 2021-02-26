@@ -455,37 +455,10 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -860,22 +833,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-436 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-436 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-424 {
     padding: 0 12px;
@@ -888,12 +845,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-.emotion-423 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -909,14 +861,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -941,11 +885,21 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -1116,14 +1070,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -1142,14 +1088,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -1230,6 +1168,46 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -2183,29 +2161,10 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-423 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-410 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-423 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -2647,14 +2606,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-441 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-429 {
     margin-left: 8.333333333333334%;
@@ -2668,13 +2619,10 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-429 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-428 {
+.emotion-440 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2718,24 +2666,13 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-465 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-453 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-452 {
+.emotion-464 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2885,14 +2822,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -2913,7 +2842,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -3056,14 +2985,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -3084,7 +3005,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-.emotion-417 {
+.emotion-430 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -3173,14 +3094,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-389 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-376 {
     margin-left: 8.333333333333334%;
@@ -3201,7 +3114,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-.emotion-374 {
+.emotion-387 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -4704,7 +4617,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-246"
@@ -4744,7 +4657,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -5593,7 +5506,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -5610,7 +5523,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -5673,7 +5586,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -5690,7 +5603,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -6411,37 +6324,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -6816,22 +6702,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-455 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-455 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-443 {
     padding: 0 12px;
@@ -6844,12 +6714,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-442 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -6865,14 +6730,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -6897,11 +6754,21 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -7072,14 +6939,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -7098,14 +6957,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -7186,6 +7037,46 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -8139,29 +8030,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-442 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-429 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-442 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -8603,14 +8475,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-460 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-448 {
     margin-left: 8.333333333333334%;
@@ -8624,13 +8488,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-448 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-447 {
+.emotion-459 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -8674,24 +8535,13 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-484 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-472 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-471 {
+.emotion-483 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8841,14 +8691,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -8869,7 +8711,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -9012,14 +8854,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -9040,7 +8874,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-436 {
+.emotion-449 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -9175,36 +9009,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-388 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-388 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-375 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-388 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -10956,7 +10763,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-246"
@@ -10996,7 +10803,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -11998,7 +11805,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -12015,7 +11822,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -12078,7 +11885,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -12095,7 +11902,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -12816,37 +12623,10 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -13221,22 +13001,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-498 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-498 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-486 {
     padding: 0 12px;
@@ -13249,12 +13013,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-.emotion-485 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -13270,14 +13029,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -13302,11 +13053,21 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -13477,14 +13238,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -13503,14 +13256,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -13591,6 +13336,46 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -14544,29 +14329,10 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-488 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-475 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-488 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -15008,14 +14774,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-503 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-491 {
     margin-left: 8.333333333333334%;
@@ -15029,13 +14787,10 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 @media screen and (min-width:1024px) {
   .emotion-491 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-490 {
+.emotion-502 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -15079,24 +14834,13 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-527 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-515 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-514 {
+.emotion-526 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15365,20 +15109,9 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-471 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-458 {
     margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -15386,17 +15119,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   .emotion-458 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-471 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -15461,22 +15183,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-396 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-396 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -17018,7 +16724,20 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                     class="emotion-259"
                   >
                     <div
-                      class="emotion-246"
+                      class="emotion-258"
+                    >
+                      <p
+                        class="emotion-257"
+                      >
+                        Component Introduction
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  >
+                    <div
+                      class="emotion-266"
                     >
                       <div
                         class="emotion-245"
@@ -17055,7 +16774,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -17511,8 +17230,52 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                               </div>
                             </div>
                           </div>
-                          <div
-                            class="emotion-348"
+                        </div>
+                      </div>
+                      <hr
+                        aria-hidden="true"
+                        class="emotion-20"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  >
+                    <p>
+                      An error occurred loading this code example.
+                    </p>
+                    <div
+                      class="emotion-375"
+                    >
+                      <div
+                        class="emotion-374"
+                      >
+                        <div
+                          class="emotion-242"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="emotion-217 emotion-6"
+                            fill="currentColor"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="emotion-242"
+                        >
+                          <p
+                            class="emotion-372"
                           >
                             <div
                               class="emotion-347"
@@ -17764,7 +17527,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-378"
@@ -17811,7 +17574,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   />
                   <div
                     class="emotion-471"
@@ -18446,7 +18209,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -18463,7 +18226,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -19168,37 +18931,10 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -19573,22 +19309,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-443 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-443 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-431 {
     padding: 0 12px;
@@ -19601,12 +19321,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-.emotion-430 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -19622,14 +19337,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -19654,11 +19361,21 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -19829,14 +19546,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -19855,14 +19564,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -19943,6 +19644,46 @@ exports[`Component Page Template renders mandatory sections and focus order from
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -20896,29 +20637,10 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-430 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-417 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-430 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -21360,14 +21082,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-448 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-436 {
     margin-left: 8.333333333333334%;
@@ -21381,13 +21095,10 @@ exports[`Component Page Template renders mandatory sections and focus order from
 @media screen and (min-width:1024px) {
   .emotion-436 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-435 {
+.emotion-447 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -21431,24 +21142,13 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-472 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-460 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-459 {
+.emotion-471 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -21598,14 +21298,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -21626,7 +21318,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -21769,14 +21461,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -21797,7 +21481,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-.emotion-424 {
+.emotion-437 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -21886,36 +21570,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-396 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-396 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-383 {
     padding: 0 12px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-396 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -21983,14 +21640,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-393 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-380 {
     margin-left: 8.333333333333334%;
@@ -22011,7 +21660,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-.emotion-362 {
+.emotion-375 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -23710,7 +23359,20 @@ exports[`Component Page Template renders mandatory sections and focus order from
                     class="emotion-259"
                   >
                     <div
-                      class="emotion-246"
+                      class="emotion-258"
+                    >
+                      <p
+                        class="emotion-257"
+                      >
+                        Component Introduction
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  >
+                    <div
+                      class="emotion-266"
                     >
                       <div
                         class="emotion-245"
@@ -23747,7 +23409,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -24666,7 +24328,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -24683,7 +24345,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -24746,7 +24408,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -24763,7 +24425,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -25484,37 +25146,10 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -25889,22 +25524,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-441 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-441 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-429 {
     padding: 0 12px;
@@ -25917,12 +25536,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-.emotion-428 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -25938,14 +25552,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -25970,11 +25576,21 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -26145,14 +25761,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -26171,14 +25779,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -26259,6 +25859,46 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -27212,29 +26852,10 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-428 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-415 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-428 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -27676,14 +27297,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-446 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-434 {
     margin-left: 8.333333333333334%;
@@ -27697,13 +27310,10 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 @media screen and (min-width:1024px) {
   .emotion-434 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-433 {
+.emotion-445 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -27747,24 +27357,13 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-470 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-458 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-457 {
+.emotion-469 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -27914,14 +27513,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -27942,7 +27533,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -28085,14 +27676,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -28113,7 +27696,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-.emotion-383 {
+.emotion-396 {
   margin-bottom: 120px;
 }
 
@@ -29877,7 +29460,20 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                     class="emotion-259"
                   >
                     <div
-                      class="emotion-246"
+                      class="emotion-258"
+                    >
+                      <p
+                        class="emotion-257"
+                      >
+                        Component Introduction
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  >
+                    <div
+                      class="emotion-266"
                     >
                       <div
                         class="emotion-245"
@@ -29914,7 +29510,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -31009,7 +30605,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -31072,7 +30668,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -31089,7 +30685,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -31810,37 +31406,10 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -32215,22 +31784,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-435 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-435 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-423 {
     padding: 0 12px;
@@ -32243,12 +31796,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-.emotion-422 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -32264,14 +31812,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -32296,11 +31836,21 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -32471,14 +32021,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -32497,14 +32039,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -32585,6 +32119,46 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -33538,29 +33112,10 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-425 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-412 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-425 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -34002,14 +33557,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-440 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-428 {
     margin-left: 8.333333333333334%;
@@ -34023,13 +33570,10 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 @media screen and (min-width:1024px) {
   .emotion-428 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-427 {
+.emotion-439 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -34073,24 +33617,13 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-464 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-452 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-451 {
+.emotion-463 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -34240,14 +33773,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -34268,7 +33793,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -34411,14 +33936,6 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -34439,7 +33956,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
-.emotion-380 {
+.emotion-393 {
   overflow-x: auto;
 }
 
@@ -35998,7 +35515,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-246"
@@ -36038,7 +35555,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -36946,7 +36463,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -37009,7 +36526,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -37026,7 +36543,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -37731,37 +37248,10 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -38136,22 +37626,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-447 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-447 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-435 {
     padding: 0 12px;
@@ -38164,12 +37638,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-.emotion-434 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -38185,14 +37654,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -38217,11 +37678,21 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -38392,14 +37863,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -38418,14 +37881,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -38506,6 +37961,46 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -39459,29 +38954,10 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-434 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-421 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-434 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -39923,14 +39399,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-452 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-440 {
     margin-left: 8.333333333333334%;
@@ -39944,13 +39412,10 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-440 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-439 {
+.emotion-451 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -39994,24 +39459,13 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-476 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-464 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-463 {
+.emotion-475 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -40161,14 +39615,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -40189,7 +39635,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -40332,14 +39778,6 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -40360,7 +39798,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
-.emotion-428 {
+.emotion-441 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -42004,7 +41442,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-246"
@@ -42044,7 +41482,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -43002,7 +42440,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -43065,7 +42503,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -43082,7 +42520,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -43803,37 +43241,10 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -44208,22 +43619,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-431 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-431 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-419 {
     padding: 0 12px;
@@ -44236,12 +43631,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-.emotion-418 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -44257,14 +43647,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -44289,11 +43671,21 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -44464,14 +43856,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -44490,14 +43874,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -44578,6 +43954,46 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -45531,29 +44947,10 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-421 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-408 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-421 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -45995,14 +45392,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-436 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-424 {
     margin-left: 8.333333333333334%;
@@ -46016,13 +45405,10 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-424 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-423 {
+.emotion-435 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -46066,24 +45452,13 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-460 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-448 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-447 {
+.emotion-459 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -46514,14 +45889,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-403 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-390 {
     -webkit-flex-basis: 50%;
@@ -46541,7 +45908,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
-.emotion-386 {
+.emotion-399 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
@@ -48054,7 +47421,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-246"
@@ -48094,7 +47461,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -48859,7 +48226,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -48922,7 +48289,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -48975,6 +48342,13 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                         </p>
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  />
+                  <div
+                    class="emotion-267"
+                  >
                     <div
                       class="emotion-243"
                     />
@@ -49081,7 +48455,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -49786,37 +49160,10 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -50191,22 +49538,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-421 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-421 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-409 {
     padding: 0 12px;
@@ -50219,12 +49550,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-.emotion-408 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -50240,14 +49566,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -50272,11 +49590,21 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -50447,14 +49775,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -50473,14 +49793,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -50561,6 +49873,46 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -51514,29 +50866,10 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-408 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-395 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-408 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -51978,14 +51311,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-426 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-414 {
     margin-left: 8.333333333333334%;
@@ -51999,13 +51324,10 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-414 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-413 {
+.emotion-425 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -52049,24 +51371,13 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-450 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-438 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-437 {
+.emotion-449 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -52216,14 +51527,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -52244,7 +51547,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -52387,14 +51690,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -52415,7 +51710,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-.emotion-402 {
+.emotion-415 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -53932,7 +53227,20 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                     class="emotion-259"
                   >
                     <div
-                      class="emotion-246"
+                      class="emotion-258"
+                    >
+                      <p
+                        class="emotion-257"
+                      >
+                        Component Introduction
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  >
+                    <div
+                      class="emotion-266"
                     >
                       <div
                         class="emotion-245"
@@ -53969,7 +53277,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -54743,7 +54051,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -54760,7 +54068,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -54823,7 +54131,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -54840,7 +54148,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -55561,37 +54869,10 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -55966,22 +55247,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-448 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-448 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-436 {
     padding: 0 12px;
@@ -55994,12 +55259,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-.emotion-435 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -56015,14 +55275,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -56047,11 +55299,21 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -56222,14 +55484,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -56248,14 +55502,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -56336,6 +55582,46 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -57289,29 +56575,10 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-435 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-422 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-435 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -57753,14 +57020,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-453 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-441 {
     margin-left: 8.333333333333334%;
@@ -57774,13 +57033,10 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-441 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-440 {
+.emotion-452 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -57824,24 +57080,13 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-477 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-465 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-464 {
+.emotion-476 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -57991,14 +57236,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -58019,7 +57256,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -58162,14 +57399,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -58190,7 +57419,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-.emotion-429 {
+.emotion-442 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -58379,37 +57608,10 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-398 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-398 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-385 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-398 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -59966,7 +59168,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-246"
@@ -60006,7 +59208,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -60913,7 +60115,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -60930,7 +60132,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -60993,7 +60195,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -61010,7 +60212,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -61731,37 +60933,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -62136,22 +61311,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-455 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-455 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-443 {
     padding: 0 12px;
@@ -62164,12 +61323,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-442 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -62185,14 +61339,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -62217,11 +61363,21 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -62392,14 +61548,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -62418,14 +61566,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -62506,6 +61646,46 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -63459,29 +62639,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-442 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-429 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-442 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -63923,14 +63084,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-460 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-448 {
     margin-left: 8.333333333333334%;
@@ -63944,13 +63097,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 @media screen and (min-width:1024px) {
   .emotion-448 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-447 {
+.emotion-459 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -63994,24 +63144,13 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-484 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-472 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-471 {
+.emotion-483 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -64161,14 +63300,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-373 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-360 {
     margin-left: 8.333333333333334%;
@@ -64189,7 +63320,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-357 {
+.emotion-370 {
   margin-bottom: 32px;
 }
 
@@ -64332,14 +63463,6 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-374 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-361 {
     margin-left: 8.333333333333334%;
@@ -64360,7 +63483,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-.emotion-436 {
+.emotion-449 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -64525,36 +63648,9 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-388 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-388 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-375 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-388 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -66266,7 +65362,20 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                     class="emotion-259"
                   >
                     <div
-                      class="emotion-246"
+                      class="emotion-258"
+                    >
+                      <p
+                        class="emotion-257"
+                      >
+                        Component Introduction
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  >
+                    <div
+                      class="emotion-266"
                     >
                       <div
                         class="emotion-245"
@@ -66303,7 +65412,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -67309,7 +66418,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                     </section>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -67326,7 +66435,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -67389,7 +66498,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -67406,7 +66515,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -68127,37 +67236,10 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-235 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-248 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -68532,22 +67614,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-403 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-403 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-391 {
     padding: 0 12px;
@@ -68560,12 +67626,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-.emotion-390 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.emotion-243 {
+.emotion-256 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -68581,14 +67642,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-256 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -68613,11 +67666,21 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:767px) {
   .emotion-256 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
+    padding-top: 48px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-256 {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-256 {
+    padding-top: 80px;
   }
 }
 
@@ -68788,14 +67851,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-259 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-246 {
     margin-left: 8.333333333333334%;
@@ -68814,14 +67869,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-259 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -68902,6 +67949,46 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-267 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-267 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-267 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-267 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -69855,29 +68942,10 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-393 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-380 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-393 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
   }
 }
 
@@ -70319,14 +69387,6 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-408 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 @media screen and (min-width:768px) {
   .emotion-396 {
     margin-left: 8.333333333333334%;
@@ -70340,13 +69400,10 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 @media screen and (min-width:1024px) {
   .emotion-396 {
     padding: 0 12px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
   }
 }
 
-.emotion-395 {
+.emotion-407 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -70390,24 +69447,13 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-432 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-420 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
-.emotion-419 {
+.emotion-431 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -71940,7 +70986,20 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
                     class="emotion-259"
                   >
                     <div
-                      class="emotion-246"
+                      class="emotion-258"
+                    >
+                      <p
+                        class="emotion-257"
+                      >
+                        Component Introduction
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-267"
+                  >
+                    <div
+                      class="emotion-266"
                     >
                       <div
                         class="emotion-245"
@@ -71977,7 +71036,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -72691,7 +71750,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <p>
                       An error occurred loading this code example.
@@ -72754,7 +71813,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"
@@ -72771,7 +71830,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-256"
+                    class="emotion-267"
                   >
                     <div
                       class="emotion-243"

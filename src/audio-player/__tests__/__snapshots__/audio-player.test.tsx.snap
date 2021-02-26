@@ -75,38 +75,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 .emotion-44 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -124,38 +92,6 @@ exports[`Audio Player live player renders as expected 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-44 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-44 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-44 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-44 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -1617,38 +1553,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 .emotion-63 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -1666,38 +1570,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-63 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-63 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-63 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-63 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -2269,38 +2141,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-72 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-72 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-72 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-72 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -3117,38 +2957,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 .emotion-56 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -3166,38 +2974,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -3939,38 +3715,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -4562,38 +4306,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 .emotion-56 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -4611,38 +4323,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -5387,38 +5067,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 .emotion-62 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6007,38 +5655,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
 .emotion-56 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -6056,38 +5672,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-56 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -6464,38 +6048,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-64 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 

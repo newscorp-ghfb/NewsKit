@@ -31,14 +31,6 @@ exports[`Cell Container re-renders full width grid cell css when grid margin cha
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: calc(100% + 48px);
-    -ms-flex-preferred-size: calc(100% + 48px);
-    flex-basis: calc(100% + 48px);
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 12px;
@@ -48,14 +40,6 @@ exports[`Cell Container re-renders full width grid cell css when grid margin cha
     flex-basis: calc(100% + 64px);
     max-width: calc(100% + 64px);
     margin-left: -32px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: calc(100% + 64px);
-    -ms-flex-preferred-size: calc(100% + 64px);
-    flex-basis: calc(100% + 64px);
   }
 }
 
@@ -90,18 +74,12 @@ exports[`Cell Container renders expected cell offset styles 1`] = `
 @media screen and (min-width:480px) {
   .emotion-0 {
     margin-left: 16.666666666666668%;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
 @media screen and (min-width:768px) {
   .emotion-0 {
     margin-left: 25%;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -110,17 +88,6 @@ exports[`Cell Container renders expected cell offset styles 1`] = `
     padding: 0 12px;
     margin-top: 24px;
     margin-left: 33.333333333333336%;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -159,9 +126,6 @@ exports[`Cell Container renders expected cell order styles 1`] = `
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -170,9 +134,6 @@ exports[`Cell Container renders expected cell order styles 1`] = `
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -183,17 +144,6 @@ exports[`Cell Container renders expected cell order styles 1`] = `
     order: 4;
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -253,14 +203,6 @@ exports[`Cell Container renders expected cell span styles 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 16.666666666666668%;
-    -ms-flex-preferred-size: 16.666666666666668%;
-    flex-basis: 16.666666666666668%;
-  }
-}
-
 <div
     class="emotion-0"
   />
@@ -288,37 +230,10 @@ exports[`Cell Container renders expected default styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -441,14 +356,6 @@ exports[`Cell Container renders expected hidden at md styles 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 16.666666666666668%;
-    -ms-flex-preferred-size: 16.666666666666668%;
-    flex-basis: 16.666666666666668%;
-  }
-}
-
 <div
     class="emotion-0"
   />
@@ -503,14 +410,6 @@ exports[`Cell Container renders expected hidden at sm styles 1`] = `
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 16.666666666666668%;
-    -ms-flex-preferred-size: 16.666666666666668%;
-    flex-basis: 16.666666666666668%;
   }
 }
 
@@ -631,14 +530,6 @@ exports[`Cell Container renders expected hidden at xs styles 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 16.666666666666668%;
-    -ms-flex-preferred-size: 16.666666666666668%;
-    flex-basis: 16.666666666666668%;
-  }
-}
-
 <div
     class="emotion-0"
   />
@@ -670,17 +561,6 @@ exports[`Cell Container renders expected inherited sm cell offset styles from th
 @media screen and (min-width:480px) {
   .emotion-0 {
     margin-left: 16.666666666666668%;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -688,17 +568,6 @@ exports[`Cell Container renders expected inherited sm cell offset styles from th
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -737,17 +606,6 @@ exports[`Cell Container renders expected inherited sm cell order styles 1`] = `
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -755,17 +613,6 @@ exports[`Cell Container renders expected inherited sm cell order styles 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -805,29 +652,10 @@ exports[`Cell Container renders expected inherited sm cell span styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
 @media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
   }
 }
 
@@ -855,14 +683,6 @@ exports[`Cell Container renders full width grid cell at expected breakpoints 1`]
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 
@@ -928,9 +748,6 @@ exports[`Cell Container renders with expected grid overrides 1`] = `
   .emotion-0 {
     padding: 0 2px;
     margin-top: 8px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -938,9 +755,6 @@ exports[`Cell Container renders with expected grid overrides 1`] = `
   .emotion-0 {
     padding: 0 6px;
     margin-top: 16px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -948,17 +762,6 @@ exports[`Cell Container renders with expected grid overrides 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 32px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
@@ -994,33 +797,6 @@ exports[`Cell Container renders with expected inherited sm grid overrides 1`] = 
   .emotion-0 {
     padding: 0 2px;
     margin-top: 8px;
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 8.333333333333334%;
-    -ms-flex-preferred-size: 8.333333333333334%;
-    flex-basis: 8.333333333333334%;
   }
 }
 
