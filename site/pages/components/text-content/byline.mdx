@@ -4,7 +4,6 @@ import {Prop} from '../../../components/prop';
 import {TextBoxSwatch} from '../../../components/theming-values/colors';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {
-  CodeFromFile,
   CodeFromDefaultPresets,
   Code,
 } from '../../../components/code';
@@ -34,8 +33,6 @@ The byline uses a typography preset `meta02` and inherits its font color from it
     An array of byline data to populate the byline authors. Byline data objects
     must contain an author string, and can contain optional href and title
     strings.
-    {/* TODO: This should be investiged in https://nidigitalsolutions.jira.com/browse/PPDSC-1482 */}
-    {/* <CodeFromFile path="examples/byline/data.tsx" /> */}
     <Code>
       {`
 interface BylineData {
