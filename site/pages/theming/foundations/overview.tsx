@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Cell,
-  getColorFromTheme,
-  getSpacingFromTheme,
-  Grid,
-  styled,
-} from 'newskit';
+import {Cell, Grid} from 'newskit';
 import Layout, {LayoutProps} from '../../../components/layout';
 import {SectionIntroduction} from '../../../components/section-introduction';
 import {Separator} from '../../../components/separator';
@@ -118,27 +112,16 @@ const cardsForPage = cardsContent.map(content => ({
   styles: cardStyle,
 }));
 
-const HeaderIndexContainer = styled.div`
-  background-color: ${getColorFromTheme('interface020')};
-  ${getSpacingFromTheme(
-    {xs: 'space080', lg: 'space090'},
-    undefined,
-    'marginBottom',
-  )}
-`;
-
 export default ({path, ...rest}: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...rest} path={`${path}-new`}>
-    <HeaderIndexContainer>
-      <HeaderIndex
-        title="Foundations"
-        media={{src: '/static/foundations-overview-hero.svg'}}
-      >
-        NewsKit foundations define the visual elements that inform the look and
-        feel of UI components.
-      </HeaderIndex>
-    </HeaderIndexContainer>
+    <HeaderIndex
+      title="Foundations"
+      media={{src: '/static/foundations-overview-hero.svg'}}
+    >
+      NewsKit foundations define the visual elements that inform the look and
+      feel of UI components.
+    </HeaderIndex>
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
       <SectionIntroduction title="Categories" cellProps={{lg: 8}}>
         The NewsKit Foundations are structured into the following categories:
