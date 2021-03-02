@@ -42,6 +42,7 @@ const BodyWrapper = styled.main`
 
 export interface LayoutProps {
   path: string;
+  newPage?: boolean; // Temporary property until "new" pages are the only pages.
   toggleTheme: () => void;
   themeMode: string;
 }
@@ -62,9 +63,9 @@ type PageSection = React.ReactElement<{
 }>[];
 
 const WrapperWithPadding = styled.div`
-  padding-top: ${getSizingFromTheme('sizing060')};
-  padding-bottom: ${getSizingFromTheme('sizing060')};
+  padding: ${getSizingFromTheme('sizing060')} 0;
 `;
+
 class Layout extends React.Component<LayoutProps, LayoutState> {
   private headerRef: React.RefObject<HTMLElement>;
 
@@ -141,7 +142,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
   render() {
     const {sidebarOpen} = this.state;
-    const {path, toggleTheme, themeMode, children} = this.props;
+    const {path, newPage, toggleTheme, themeMode, children} = this.props;
 
     return (
       <LayoutWrapper>
@@ -159,25 +160,15 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             ref={this.headerRef}
           />
 
+          {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}
+          <Playground componentName={false} />
+
           <BodyWrapper>
-            {path.endsWith('-new') && (
-              <WrapperWithPadding>
-                <MDXProvider components={this.updatePropsForMarkdownElements()}>
-                  {children}
-                </MDXProvider>
-              </WrapperWithPadding>
-            )}
-
-            {path.endsWith('-new-doc') && (
-              <MDXProvider components={this.updatePropsForMarkdownElements()}>
-                {children}
-              </MDXProvider>
-            )}
-
-            {!path.endsWith('-new') && path.endsWith('-new-doc') && (
+            {path.endsWith('-new') || newPage ? (
+              children
+            ) : (
               <Grid>
                 <Cell xs={12} lg={10} lgOffset={1}>
-                  <Playground componentName={false} />
                   <WrapperWithPadding>
                     {this.renderNavigation()}
                     <MDXProvider

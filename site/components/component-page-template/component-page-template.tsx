@@ -1,6 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import {Link, Cell, Block, Grid} from 'newskit';
+import {Link, Cell, Block, Grid, getSizingFromTheme, styled} from 'newskit';
 import {InfoNotice} from '../info-notice';
 import {ContactUs} from '../contact-us';
 import {AccessibilityTables} from '../accessibility-tables';
@@ -254,16 +254,30 @@ const renderSections = ({
   </>
 );
 
+const WrapperWithPadding = styled.div`
+  padding: ${getSizingFromTheme('sizing060')} 0;
+`;
+
 export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   layoutProps,
   ...rest
 }: ComponentPageTemplateProps) => (
-  <Layout {...layoutProps}>
-    <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-      {renderSections(rest)}
-      <Cell xsHidden smHidden mdHidden lgOffset={9} lg={3} xlOffset={10} xl={2}>
-        <TableOfContents />
-      </Cell>
-    </Grid>
+  <Layout {...layoutProps} newPage>
+    <WrapperWithPadding>
+      <Grid lgMargin="sizing000" xsRowGutter="sizing000">
+        {renderSections(rest)}
+        <Cell
+          xsHidden
+          smHidden
+          mdHidden
+          lgOffset={9}
+          lg={3}
+          xlOffset={10}
+          xl={2}
+        >
+          <TableOfContents />
+        </Cell>
+      </Grid>
+    </WrapperWithPadding>
   </Layout>
 );

@@ -112,9 +112,8 @@ const cardsForPage = cardsContent.map(content => ({
   styles: cardStyle,
 }));
 
-export default ({path, ...rest}: LayoutProps) => (
-  //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
-  <Layout {...rest} path={`${path}-new-doc`}>
+export default (layoutProps: LayoutProps) => (
+  <Layout {...layoutProps} newPage>
     <HeaderIndex
       title="Foundations"
       media={{src: '/static/foundations-overview-hero.svg'}}
