@@ -6,6 +6,7 @@ import {
   getMediaQueryFromTheme,
   Cell,
   styled,
+  getSizingFromTheme,
 } from 'newskit';
 
 import SiteHeader from './site-header';
@@ -60,6 +61,10 @@ type PageSection = React.ReactElement<{
   mdxType: string;
 }>[];
 
+const WrapperWithPadding = styled.div`
+  padding-top: ${getSizingFromTheme('sizing060')};
+  padding-bottom: ${getSizingFromTheme('sizing060')};
+`;
 class Layout extends React.Component<LayoutProps, LayoutState> {
   private headerRef: React.RefObject<HTMLElement>;
 
@@ -155,20 +160,32 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
           />
 
           <BodyWrapper>
-            {path.endsWith('-new') ? (
+            {path.endsWith('-new') && (
+              <WrapperWithPadding>
+                <MDXProvider components={this.updatePropsForMarkdownElements()}>
+                  {children}
+                </MDXProvider>
+              </WrapperWithPadding>
+            )}
+
+            {path.endsWith('-new-doc') && (
               <MDXProvider components={this.updatePropsForMarkdownElements()}>
                 {children}
               </MDXProvider>
-            ) : (
+            )}
+
+            {!path.endsWith('-new') && path.endsWith('-new-doc') && (
               <Grid>
                 <Cell xs={12} lg={10} lgOffset={1}>
                   <Playground componentName={false} />
-                  {this.renderNavigation()}
-                  <MDXProvider
-                    components={this.updatePropsForMarkdownElements()}
-                  >
-                    {children}
-                  </MDXProvider>
+                  <WrapperWithPadding>
+                    {this.renderNavigation()}
+                    <MDXProvider
+                      components={this.updatePropsForMarkdownElements()}
+                    >
+                      {children}
+                    </MDXProvider>
+                  </WrapperWithPadding>
                 </Cell>
               </Grid>
             )}

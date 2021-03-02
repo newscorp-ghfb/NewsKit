@@ -43,24 +43,6 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen and (max-width:767px) {
-  .emotion-4 {
-    padding-top: 48px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-4 {
-    padding-top: 64px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-4 {
-    padding-top: 80px;
-  }
-}
-
-@media screen and (max-width:767px) {
   .emotion-1 {
     margin-bottom: 16px;
   }

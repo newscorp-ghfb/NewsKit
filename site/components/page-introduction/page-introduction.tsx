@@ -1,21 +1,6 @@
 import React from 'react';
-import {
-  Cell,
-  Block,
-  TextBlock,
-  Image,
-  styled,
-  getSpacingFromTheme,
-} from 'newskit';
+import {Cell, Block, TextBlock, Image} from 'newskit';
 import {PageIntroductionProps} from './types';
-
-const StyledTypeNameCell = styled(Cell)`
-  ${getSpacingFromTheme(
-    {xs: 'space080', md: 'space090', lg: 'space100'},
-    undefined,
-    'padding-top',
-  )}
-`;
 
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   type,
@@ -24,7 +9,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   hero,
 }) => (
   <>
-    <StyledTypeNameCell xs={12} md={10} lg={8} mdOffset={1}>
+    <Cell xs={12} md={10} lg={8} mdOffset={1}>
       <Block spaceStack={{xs: 'space040', md: 'space050'}}>
         <TextBlock
           stylePreset="inkBrand010"
@@ -48,7 +33,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           {name}
         </TextBlock>
       </Block>
-    </StyledTypeNameCell>
+    </Cell>
     <Cell xs={12} md={8} lg={6} mdOffset={1}>
       <Block spaceStack={{xs: 'space080', md: 'space060'}}>
         <TextBlock
