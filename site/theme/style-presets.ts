@@ -273,4 +273,130 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
+  contributeCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  contributeCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  contributeCardMedia: {
+    base: {
+      backgroundImage: 'url(/static/feature-card-m.svg)',
+    },
+  },
+  contributeCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhite}}',
+      iconColor: '{{colors.inkWhite}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+  },
+  patternsCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand060}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  patternsCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand060}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  patternsCardMedia: {
+    base: {
+      backgroundImage: 'url(/static/feature-card-patterns-16-9.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center left',
+    },
+  },
+  patternsCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhite}}',
+      iconColor: '{{colors.inkWhite}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
+    },
+  },
+  buttonSolidInverse010: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhite}}',
+      iconColor: '{{colors.inkWhite}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
 };

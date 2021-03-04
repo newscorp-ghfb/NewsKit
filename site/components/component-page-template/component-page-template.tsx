@@ -2,7 +2,7 @@
 import React from 'react';
 import {Link, Cell, Block, Grid, getSizingFromTheme, styled} from 'newskit';
 import {InfoNotice} from '../info-notice';
-import {ContactUs} from '../contact-us';
+import {FeatureCard} from '../feature-card';
 import {AccessibilityTables} from '../accessibility-tables';
 import {Anatomy} from '../anatomy';
 import {MediaList} from '../media-list';
@@ -34,6 +34,7 @@ const renderSections = ({
   overrides,
   compliance,
   related,
+  featureCard,
 }: Omit<ComponentPageTemplateProps, 'layoutProps'>) => (
   <>
     <PageIntroduction {...pageIntroduction} />
@@ -250,7 +251,11 @@ const renderSections = ({
       </>
     )}
 
-    <ContactUs />
+    {featureCard && (
+      <Cell xs={12} md={10} mdOffset={1} lg={8}>
+        <FeatureCard {...featureCard} />
+      </Cell>
+    )}
   </>
 );
 

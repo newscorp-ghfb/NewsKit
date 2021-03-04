@@ -1,0 +1,4343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-20 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-20 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-20 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-20 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-20 {
+    display: none;
+  }
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:768px) {
+  .emotion-19 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-19 {
+    min-height: 304px;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+}
+
+.emotion-17 {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.emotion-17 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-4 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-4:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-7 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+.emotion-16 {
+  margin-bottom: 8px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 64px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-9 {
+    max-width: 100%;
+  }
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+.emotion-10 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-10.emotion-10 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-19"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-0"
+        />
+      </div>
+      <div
+        class="emotion-18"
+      >
+        <div
+          class="emotion-17"
+        >
+          <div
+            class="emotion-5"
+          >
+            <a
+              class="nk-card-link emotion-4"
+              href="href"
+            >
+              <section
+                class="emotion-3"
+              >
+                <h1
+                  class="nk-headline-heading emotion-2"
+                >
+                  Interactive Horizontal Card
+                </h1>
+              </section>
+            </a>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <p
+              class="emotion-6"
+            >
+              I am interactive
+            </p>
+          </div>
+          <div
+            class="emotion-16"
+          >
+            <div
+              class="emotion-15"
+            >
+              <button
+                class="emotion-14"
+                data-testid="button"
+                type="button"
+              >
+                <div
+                  class="emotion-13"
+                >
+                  <div
+                    class="emotion-9"
+                  >
+                    <span
+                      class="emotion-8"
+                    >
+                      Read more
+                    </span>
+                  </div>
+                  <div
+                    class="emotion-9"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-10 emotion-11"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @media screen and (max-width:1023px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-4 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-4:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 64px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-9 {
+    max-width: 100%;
+  }
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+.emotion-10 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-10.emotion-10 {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen {
+  .emotion-20 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-20 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-20 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-20 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-20 {
+    display: block;
+  }
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:768px) {
+  .emotion-19 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-19 {
+    min-height: 304px;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-left: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  height: 100%;
+  width: 39.8vw;
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-0 {
+    width: 20vw;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    width: 25.55vw;
+  }
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-18 {
+    min-width: 1px;
+  }
+}
+
+.emotion-17 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-17 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-17 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-17 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-17 {
+    padding: 32px;
+  }
+}
+
+.emotion-17 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-7 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-19"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-0"
+        />
+      </div>
+      <div
+        class="emotion-18"
+      >
+        <div
+          class="emotion-17"
+        >
+          <div
+            class="emotion-16"
+          >
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="nk-card-link emotion-4"
+                href="href"
+              >
+                <section
+                  class="emotion-3"
+                >
+                  <h1
+                    class="nk-headline-heading emotion-2"
+                  >
+                    Interactive Horizontal Card
+                  </h1>
+                </section>
+              </a>
+            </div>
+            <div
+              class="emotion-7"
+            >
+              <p
+                class="emotion-6"
+              >
+                I am interactive
+              </p>
+            </div>
+            <div
+              class="emotion-15"
+            >
+              <button
+                class="emotion-14"
+                data-testid="button"
+                type="button"
+              >
+                <div
+                  class="emotion-13"
+                >
+                  <div
+                    class="emotion-9"
+                  >
+                    <span
+                      class="emotion-8"
+                    >
+                      Read more
+                    </span>
+                  </div>
+                  <div
+                    class="emotion-9"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-10 emotion-11"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-11 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-11 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-11 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-11 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-11 {
+    display: none;
+  }
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:768px) {
+  .emotion-10 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-10 {
+    min-height: 304px;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.emotion-8 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-4 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-4:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-7 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+<div
+    class="emotion-11"
+  >
+    <div
+      class="emotion-10"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-0"
+        />
+      </div>
+      <div
+        class="emotion-9"
+      >
+        <div
+          class="emotion-8"
+        >
+          <div
+            class="emotion-5"
+          >
+            <a
+              class="nk-card-link emotion-4"
+              href="href"
+            >
+              <section
+                class="emotion-3"
+              >
+                <h1
+                  class="nk-headline-heading emotion-2"
+                >
+                  Interactive Horizontal Card
+                </h1>
+              </section>
+            </a>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <p
+              class="emotion-6"
+            >
+              I am interactive
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @media screen and (max-width:1023px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-4 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-4:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen {
+  .emotion-12 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-12 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-12 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-12 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-12 {
+    display: block;
+  }
+}
+
+.emotion-11 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:768px) {
+  .emotion-11 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-11 {
+    min-height: 304px;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-left: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  height: 100%;
+  width: 39.8vw;
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-0 {
+    width: 20vw;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    width: 25.55vw;
+  }
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-10 {
+    min-width: 1px;
+  }
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-9 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-9 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-9 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-9 {
+    padding: 32px;
+  }
+}
+
+.emotion-9 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-7 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+<div
+    class="emotion-12"
+  >
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-0"
+        />
+      </div>
+      <div
+        class="emotion-10"
+      >
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-8"
+          >
+            <div
+              class="emotion-5"
+            >
+              <a
+                class="nk-card-link emotion-4"
+                href="href"
+              >
+                <section
+                  class="emotion-3"
+                >
+                  <h1
+                    class="nk-headline-heading emotion-2"
+                  >
+                    Interactive Horizontal Card
+                  </h1>
+                </section>
+              </a>
+            </div>
+            <div
+              class="emotion-7"
+            >
+              <p
+                class="emotion-6"
+              >
+                I am interactive
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeatureCard Renders interactive vertical card with button 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+}
+
+.emotion-17 {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.emotion-17 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-4 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-4:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-7 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+.emotion-16 {
+  margin-bottom: 8px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 64px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-9 {
+    max-width: 100%;
+  }
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+.emotion-10 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-10.emotion-10 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-19 {
+    min-height: 380px;
+  }
+}
+
+<div
+    class="emotion-19"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      />
+    </div>
+    <div
+      class="emotion-18"
+    >
+      <div
+        class="emotion-17"
+      >
+        <div
+          class="emotion-5"
+        >
+          <a
+            class="nk-card-link emotion-4"
+            href="href"
+          >
+            <section
+              class="emotion-3"
+            >
+              <h1
+                class="nk-headline-heading emotion-2"
+              >
+                Interactive Horizontal Card
+              </h1>
+            </section>
+          </a>
+        </div>
+        <div
+          class="emotion-7"
+        >
+          <p
+            class="emotion-6"
+          >
+            I am interactive
+          </p>
+        </div>
+        <div
+          class="emotion-16"
+        >
+          <div
+            class="emotion-15"
+          >
+            <button
+              class="emotion-14"
+              data-testid="button"
+              type="button"
+            >
+              <div
+                class="emotion-13"
+              >
+                <div
+                  class="emotion-9"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Read more
+                  </span>
+                </div>
+                <div
+                  class="emotion-9"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-10 emotion-11"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeatureCard Renders interactive vertical card without button 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.emotion-8 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-4 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-4:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-7 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-7 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-6::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-6::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-10 {
+    min-height: 380px;
+  }
+}
+
+<div
+    class="emotion-10"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      />
+    </div>
+    <div
+      class="emotion-9"
+    >
+      <div
+        class="emotion-8"
+      >
+        <div
+          class="emotion-5"
+        >
+          <a
+            class="nk-card-link emotion-4"
+            href="href"
+          >
+            <section
+              class="emotion-3"
+            >
+              <h1
+                class="nk-headline-heading emotion-2"
+              >
+                Interactive Horizontal Card
+              </h1>
+            </section>
+          </a>
+        </div>
+        <div
+          class="emotion-7"
+        >
+          <p
+            class="emotion-6"
+          >
+            I am interactive
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-10 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-10 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-10 {
+    display: none;
+  }
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:768px) {
+  .emotion-9 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-9 {
+    min-height: 304px;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.emotion-7 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-4 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-4 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-5 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+<div
+    class="emotion-10"
+  >
+    <div
+      class="emotion-9"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-0"
+        />
+      </div>
+      <div
+        class="emotion-8"
+      >
+        <div
+          class="emotion-7"
+        >
+          <div
+            class="emotion-4"
+          >
+            <section
+              class="emotion-3"
+            >
+              <h1
+                class="nk-headline-heading emotion-2"
+              >
+                Non-Interactive Horizontal Card
+              </h1>
+            </section>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <p
+              class="emotion-5"
+            >
+              I am non-interactive
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @media screen and (max-width:1023px) {
+  .emotion-4 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-4 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-5 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+@media screen {
+  .emotion-11 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-11 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-11 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-11 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-11 {
+    display: block;
+  }
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:768px) {
+  .emotion-10 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-10 {
+    min-height: 304px;
+  }
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-left: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  height: 100%;
+  width: 39.8vw;
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-0 {
+    width: 20vw;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    width: 25.55vw;
+  }
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-9 {
+    min-width: 1px;
+  }
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-8 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-8 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-8 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-8 {
+    padding: 32px;
+  }
+}
+
+.emotion-8 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-6 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-6 {
+    margin-bottom: 24px;
+  }
+}
+
+<div
+    class="emotion-11"
+  >
+    <div
+      class="emotion-10"
+    >
+      <div
+        class="emotion-1"
+      >
+        <div
+          class="emotion-0"
+        />
+      </div>
+      <div
+        class="emotion-9"
+      >
+        <div
+          class="emotion-8"
+        >
+          <div
+            class="emotion-7"
+          >
+            <div
+              class="emotion-4"
+            >
+              <section
+                class="emotion-3"
+              >
+                <h1
+                  class="nk-headline-heading emotion-2"
+                >
+                  Non-Interactive Horizontal Card
+                </h1>
+              </section>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <p
+                class="emotion-5"
+              >
+                I am non-interactive
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeatureCard Renders non-interactive vertical card 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+.emotion-0 {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.emotion-7 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-4 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-4 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-3 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-3 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-3::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-3::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+.emotion-2 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-6 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-6 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+@media screen and (max-width:1023px) {
+  .emotion-5 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc(-0.2333333333333334em + 1px);
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc(-0.2958333333333334em + 1px);
+  }
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-9 {
+    min-height: 380px;
+  }
+}
+
+<div
+    class="emotion-9"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      />
+    </div>
+    <div
+      class="emotion-8"
+    >
+      <div
+        class="emotion-7"
+      >
+        <div
+          class="emotion-4"
+        >
+          <section
+            class="emotion-3"
+          >
+            <h1
+              class="nk-headline-heading emotion-2"
+            >
+              Interactive Horizontal Card
+            </h1>
+          </section>
+        </div>
+        <div
+          class="emotion-6"
+        >
+          <p
+            class="emotion-5"
+          >
+            I am interactive
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

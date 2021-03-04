@@ -53,7 +53,7 @@
 
 	"editorialSubheadline010": {
 		"fontSize": "{{fonts.fontSize030}}",
-		"lineHeight": "{{fonts.fontLineHeight060}}",
+		"lineHeight": "{{fonts.fontLineHeight050}}",
 		"fontWeight": "{{fonts.fontWeight020}}",
 		"letterSpacing": "{{fonts.fontLetterSpacing010}}",
 		"fontFamily": "{{fonts.fontFamily010.fontFamily}}"

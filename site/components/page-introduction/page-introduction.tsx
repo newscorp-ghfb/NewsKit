@@ -49,7 +49,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
     </Cell>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
       <Block spaceStack={{xs: 'space080', md: 'space090'}}>
-        <Image src={hero.src} alt={hero.alt || ''} />
+        <Image loadingAspectRatio="16:9" alt="" {...hero} />
       </Block>
     </Cell>
   </>

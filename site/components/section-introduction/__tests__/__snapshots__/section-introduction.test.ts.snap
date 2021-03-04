@@ -150,7 +150,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   color: #555E74;
   font-family: 'Poppins',sans-serif;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -167,7 +167,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.525em;
+  margin-bottom: -0.275em;
 }
 
 .emotion-5::after {
@@ -175,7 +175,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.775em;
+  margin-top: -0.525em;
 }
 
 <div

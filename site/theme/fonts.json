@@ -12,15 +12,11 @@
 			},
 			"cropAdjustments": {
 				"{{fonts.fontSize010}}": {
-				  "top": 1,
-				  "bottom": -0.5
+				  "top": -0.5,
+				  "bottom": 0
 				},
 				"{{fonts.fontSize020}}": {
 				  "top": 1.2
-				},
-				"{{fonts.fontSize070}}": {
-				  "top": 1,
-				  "bottom": 1
 				}
 			  }
 	},

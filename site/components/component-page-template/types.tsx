@@ -8,6 +8,7 @@ import {PlaygroundProps} from '../playground/types';
 import {AnatomyProps} from '../anatomy';
 import {MediaListProps} from '../media-list';
 import {PageIntroductionProps} from '../page-introduction';
+import {FeatureCardProps} from '../feature-card';
 
 export type PropTableProps = {
   name: string;
@@ -42,4 +43,5 @@ export interface ComponentPageTemplateProps {
   overrides?: PropsProps;
   compliance?: ComplianceProps;
   related?: MediaListProps & {introduction: string};
+  featureCard?: FeatureCardProps;
 }
