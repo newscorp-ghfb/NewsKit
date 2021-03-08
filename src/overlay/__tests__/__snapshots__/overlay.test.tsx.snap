@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 70;
+  cursor: pointer;
+  background-color: rgba(10,10,10,0.80);
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+</DocumentFragment>
+`;
+
+exports[`Overlay renders with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 70;
+  cursor: pointer;
+  background-color: #ffeecf;
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+</DocumentFragment>
+`;

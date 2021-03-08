@@ -1476,6 +1476,16 @@ stylePresets.headlineHeadingInteractive = {
 };
 
 //
+// Overlay
+//
+
+stylePresets.overlay = {
+  base: {
+    backgroundColor: '{{overlays.overlayDark040}}',
+  },
+};
+
+//
 // Drawer
 //
 

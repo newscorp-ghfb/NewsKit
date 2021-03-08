@@ -1,6 +1,6 @@
 import {act} from '@testing-library/react-hooks';
-import {renderHook} from '../../test/test-utils';
-import {useResizeObserver} from '../use-resize-observer';
+import {renderHook} from '../../../test/test-utils';
+import {useResizeObserver} from '..';
 
 describe('useResizeObserver hook', () => {
   const renderHelper = (

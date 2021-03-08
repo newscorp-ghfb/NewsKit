@@ -444,6 +444,9 @@ export const componentDefaults = {
       minWidth: 'sizing050',
     },
   },
+  overlay: {
+    stylePreset: 'overlay',
+  },
   paragraph: {
     stylePreset: 'inkBase',
     typographyPreset: 'editorialParagraph020',

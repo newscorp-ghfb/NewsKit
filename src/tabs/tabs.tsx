@@ -20,7 +20,7 @@ import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {TabInternal} from './tab-internal';
 import {useTheme} from '../theme';
-import {useResizeObserver} from '../utils/use-resize-observer';
+import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {
   getTabBarIndicatorStyle,
   getLayoutParams,
@@ -95,6 +95,7 @@ export const Tabs: React.FC<TabsProps> = ({
 
   const tabBarIndicatorLengthOverride =
     overrides.tabBarIndicator && overrides.tabBarIndicator.length;
+
   React.useEffect(() => {
     if (currentActiveTabRef) {
       setIndicator(
@@ -171,6 +172,7 @@ export const Tabs: React.FC<TabsProps> = ({
 
   // generate uniq IDs for a11y porpose
   const [ariaIds, setAriaIds] = useState<string[]>([]);
+
   React.useEffect(() => {
     const ids: string[] = tabsOnlyChildren.map(() => getSSRId());
     setAriaIds(ids);

@@ -11,7 +11,7 @@ const Container = styled.div`
   overflow: hidden;
 `;
 const LimitSizeDecorator = (storyFn) => <Container>{ storyFn() }</Container>;
-const unlimitedScenarios = ['grid', 'card'];
+const unlimitedScenarios = ['grid', 'card', 'drawer'];
 scenarios.reduce(
   (storybookStories, scenario) => {
     const {name: categoryName, children: stories} = scenario.default;

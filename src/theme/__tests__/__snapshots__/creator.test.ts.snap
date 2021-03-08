@@ -607,6 +607,9 @@ Object {
       },
       "spaceInline": "space040",
     },
+    "overlay": Object {
+      "stylePreset": "overlay",
+    },
     "paragraph": Object {
       "dropCap": Object {
         "space": "space010",
@@ -2471,6 +2474,11 @@ Object {
       "visited": Object {
         "color": "{{colors.interactiveInverse040}}",
         "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
+    "overlay": Object {
+      "base": Object {
+        "backgroundColor": "{{overlays.overlayDark040}}",
       },
     },
     "sliderIndicator": Object {

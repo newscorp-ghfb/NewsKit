@@ -7,7 +7,7 @@ import {Stack} from '../stack/stack';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {isLinkExternal} from './utils';
-import {useHasMounted} from '../utils/use-has-mounted';
+import {useHasMounted} from '../utils/hooks';
 import {TextBlock} from '../text-block';
 
 const StyledLink = styled.a<LinkProps>`

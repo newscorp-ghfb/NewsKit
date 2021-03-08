@@ -20,10 +20,18 @@ const placementOptions = {
   },
 };
 
-const verticalSize = (theme: Theme) => css`
-  width: ${getSize('drawer.panel', 'panel')({theme})};
-  max-width: ${getMaxSize('drawer.panel', 'panel')({theme})};
-  min-width: ${getMinSize('drawer.panel', 'panel')({theme})};
+type DrawerContainerProps = Pick<DrawerProps, 'placement' | 'overrides'> & {
+  isOpen: boolean;
+};
+
+const verticalSize = (
+  props: DrawerContainerProps & {
+    theme: Theme;
+  },
+) => css`
+  width: ${getSize('drawer.panel', 'panel')(props)};
+  max-width: ${getMaxSize('drawer.panel', 'panel')(props)};
+  min-width: ${getMinSize('drawer.panel', 'panel')(props)};
   height: 100%;
 `;
 
@@ -32,17 +40,30 @@ const placementSize = {
   right: verticalSize,
 };
 
-export const StyledDialog = styled.div<
-  Omit<DrawerProps, 'open'> & {$open: boolean}
->`
-    box-sizing: border-box;
-  
-    position: fixed;
-    ${({placement = 'right'}) => placementOptions[placement]}
-    z-index: 80;
-    ${({$open}) => `display: ${$open ? 'block' : 'none'};`}
-  
-    ${({placement = 'right', theme}) => placementSize[placement](theme)}
-  
-    ${getStylePreset('drawer.panel', 'panel')}
-  `;
+export const StyledDrawerContainer = styled.div<DrawerContainerProps>`
+  box-sizing: border-box;
+
+  position: fixed;
+  ${({placement = 'right'}) => placementOptions[placement]}
+  z-index: 80;
+  ${({isOpen}) => `display: ${isOpen ? 'flex' : 'none'};`}
+  flex-direction: column;
+  overflow: hidden;
+
+  ${({placement = 'right', ...props}) => placementSize[placement](props)}
+
+  ${getStylePreset('drawer.panel', 'panel')}
+`;
+
+export const StyledDrawerHeader = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const StyledDrawerContent = styled.div`
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: hidden auto;
+`;
