@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Form} from '..';
+import {Form, FormRef} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -10,6 +10,8 @@ import {Block} from '../../block';
 import {Stack} from '../../stack';
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+const formRef = React.createRef<FormRef>();
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const onSubmit = async (data: any) => {
@@ -36,7 +38,7 @@ export default {
             <StorybookSubHeading>
               Input validation mode: onSubmit
             </StorybookSubHeading>
-            <Form onSubmit={onSubmit}>
+            <Form onSubmit={onSubmit} ref={formRef}>
               <Block spaceStack="space050">
                 <TextInput
                   label="Email"
@@ -64,8 +66,27 @@ export default {
                     validate: validateUserName,
                   }}
                 />
+                <select value='mercedes'>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input>
               </Block>
+
               <Button type="submit">Submit</Button>
+              <Button onClick={()=>{ 
+                formRef.current && formRef.current.reset()
+              }}>Reset</Button>
+              <Button onClick={()=>{ 
+              // @ts-ignore
+                formRef.current && formRef.current.resetValidation()
+              }}>Reset Validation</Button>
+              <Button onClick={()=>{ 
+              // @ts-ignore
+                formRef.current && formRef.current.clearErrors()
+              }}>Clear Errors</Button>
             </Form>
           </Block>
         </React.Fragment>

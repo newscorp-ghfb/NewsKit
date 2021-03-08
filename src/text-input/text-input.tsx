@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import {useFormContext} from 'react-hook-form/dist/index.ie11';
+import {useFormContext, useForm} from 'react-hook-form/dist/index.ie11';
 import composeRefs from '@seznam/compose-react-refs'
 import {TextInputProps, TextInputSize} from './types';
 import {getSSRId} from '../utils/get-ssr-id';
@@ -84,9 +84,15 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     'input',
     'iconSize',
   );
-
-  // eslint-disable-next-line no-undef, prettier/prettier
-  const valid = formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
+  
+  
+  console.log(formContext.formState.errors)
+  let valid
+  // @ts-ignore
+  if(formContext.formState.fieldsValidation) {
+    // @ts-ignore
+    valid = formContext?.formState?.fieldsValidation[name].valid || (hadError && !errorText);
+  }
 
   return (
     <StyledTextInputContainer label={label} overrides={overrides}>

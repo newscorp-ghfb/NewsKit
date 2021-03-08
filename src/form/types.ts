@@ -32,3 +32,5 @@ export interface FormRef {
   trigger: UseFormMethods['trigger'];
   element: HTMLFormElement | null;
 }
+
+export interface FormFieldsValidationObject { [key: string]: {valid: boolean} }
