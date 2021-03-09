@@ -193,6 +193,7 @@ describe('Form', () => {
 
   test('exposes the expected functions from useForm hook', async () => {
     const useFormMockMethods = {
+      // TODO it should expect [Function reset], how to test it?
       reset: 'reset-function',
       watch: 'watch-function',
       setError: 'setError-function',

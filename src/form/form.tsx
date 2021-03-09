@@ -1,6 +1,6 @@
 import React, {forwardRef, useEffect, useImperativeHandle, useRef, useState} from 'react';
 import {useForm, FormProvider} from 'react-hook-form/dist/index.ie11';
-import {FormProps, FormRef, FormFieldsValidationObject} from './types';
+import {FormProps, FormRef, FormFieldsValidationObject, FormFieldsHadErrorObject} from './types';
 import {FormValidationContextProvider} from './context';
 
 export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
@@ -13,11 +13,6 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     defaultValues = {},
   } = props;
   
-  // TODO Fix the @ts-ignore. here, text-input, scenario.
-  // TODO move error check into form.
-  // TODO Add more scenarios? tests?
-  // TODO valid const logic free in the file? move to useffect? function?
-
   // ** Only used for useForceUpdate() hook **
   const [value, setValue] = useState(0);
 
@@ -50,7 +45,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     useForceUpdate()
   }
 
-  const removeValidFromFields = () => {
+  const changeFieldsValidToFalse = () => {
     const newValidationState: FormFieldsValidationObject = {}
     // @ts-ignore
     Object.keys(formContext.formState.fieldsValidation).forEach(field => {
@@ -78,29 +73,51 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     Object.assign(formContext.formState, {fieldsValidation: fieldsValidationObject}) 
   }
 
+  const addFieldsHadErrorObject = () => {
+    const formFields = Object.keys(formContext.getValues())
+    const fieldsHadErrorObject: FormFieldsHadErrorObject = {}
+    
+    formFields.forEach(field => {
+      fieldsHadErrorObject[field] = {hadError: false}
+    })
+    Object.assign(formContext.formState, {fieldsHadError: fieldsHadErrorObject}) 
+  }
+
   useEffect(() => {
-    // @ts-ignore
-    if (formContext.formState.fieldsValidation === undefined) {
-      addFieldsValidationObject()
-    }
-    // @ts-ignore
-    if (formContext.formState.fieldsValidation !== undefined && 
-        formContext.formState.isSubmitSuccessful === true) {
-      setAllFieldsValid()
+    if (formContext.formState) {
+      // @ts-ignore
+      if (formContext.formState.fieldsHadError === undefined) {
+        // Adds a new object in the formState to keep track of which fields had an error.
+        addFieldsHadErrorObject()
+      }
+  
+      // @ts-ignore
+      if (formContext.formState.fieldsValidation === undefined) {
+        // Adds a new object in the FormState to keep track, singularly, of the form's fields.
+        addFieldsValidationObject()
+      }
+      // @ts-ignore
+      if (formContext.formState.fieldsValidation !== undefined && 
+          formContext.formState.isSubmitSuccessful === true) {
+        setAllFieldsValid()
+      }
     }
     
     if (isResettingValidation) {
       rePopulateForm()
-      removeValidFromFields()
+      changeFieldsValidToFalse()
       setIsResettingValidation(false)
     }
-  },[formContext.formState.isSubmitSuccessful, isResettingValidation]);
+  },[formContext.formState, isResettingValidation]);
   
   const formRef = useRef<HTMLFormElement>(null);
   useImperativeHandle(
     ref,
     () => ({
-      reset: formContext.reset,
+      reset: () => {
+        changeFieldsValidToFalse()
+        formContext.reset()
+      },
       resetValidation: () => {
         setFieldsValues(formContext.getValues())
         setIsResettingValidation(true)

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import {useFormContext, useForm} from 'react-hook-form/dist/index.ie11';
+import {useFormContext} from 'react-hook-form/dist/index.ie11';
 import composeRefs from '@seznam/compose-react-refs'
 import {TextInputProps, TextInputSize} from './types';
 import {getSSRId} from '../utils/get-ssr-id';
@@ -85,11 +85,9 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     'iconSize',
   );
   
-  
-  console.log(formContext.formState.errors)
   let valid
   // @ts-ignore
-  if(formContext.formState.fieldsValidation) {
+  if(formContext?.formState?.fieldsValidation) {
     // @ts-ignore
     valid = formContext?.formState?.fieldsValidation[name].valid || (hadError && !errorText);
   }
@@ -101,7 +99,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
       </StyledLabel>
       <InputIconContainer>
         <StyledInput
-            // eslint-disable-next-line no-undef
+          // eslint-disable-next-line no-undef
           ref={composeRefs(formContext?.register(rules), ref)}
           name={name}
           type="text"
@@ -121,13 +119,13 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
           spellCheck={spellCheck}
         />
         {(!!errorText || valid) && (
-        <IconContainer iconSpace={iconSpace}>
-          {
+          <IconContainer iconSpace={iconSpace}>
+            {
               !!errorText && <IconFilledError overrides={{ size: iconSize, stylePreset: 'iconNegative' }}  /> ||
               valid && <IconFilledCheckCircle data-testid='tick-icon' overrides={{ size: iconSize, stylePreset: 'iconPositive'}} />
             }
-        </IconContainer>
-)}
+          </IconContainer>
+        )}
       </InputIconContainer>
       <StyledAssistiveTextContainer $size={size}>
         {((assistiveText || errorText) && !valid) && (

@@ -34,3 +34,4 @@ export interface FormRef {
 }
 
 export interface FormFieldsValidationObject { [key: string]: {valid: boolean} }
+export interface FormFieldsHadErrorObject { [key: string]: {hadError: boolean} }
