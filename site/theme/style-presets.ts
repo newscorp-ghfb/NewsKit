@@ -233,6 +233,23 @@ export const stylePresets = {
   //
   // Website Cards
   //
+
+  baseCardNonInteractive: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+    },
+  },
+  baseCardInteractive: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderColor: '{{colors.neutral020}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+
   cardContainerFoundationsOverview: {
     base: {
       borderRadius: '{{borders.borderRadiusRounded030}}',

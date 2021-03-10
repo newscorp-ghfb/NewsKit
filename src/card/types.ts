@@ -6,7 +6,7 @@ export interface CardOverridesProps {
   stylePreset?: MQ<string>;
   mediaContainer?: {
     stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>;
+    spaceStack?: MQ<string>;
   };
   teaserContainer?: {
     stylePreset?: MQ<string>;

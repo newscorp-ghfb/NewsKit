@@ -11,9 +11,6 @@ import {ContentText} from '../../components/text-section';
 const cardStyle = {
   card: {
     stylePreset: 'cardContainerNonInteractive010',
-    teaserContainer: {
-      spaceInset: 'spaceInsetStretch050',
-    },
   },
   title: {
     stylePreset: 'inkWhiteContrast',
