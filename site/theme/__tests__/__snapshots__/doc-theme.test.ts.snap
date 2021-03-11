@@ -1232,6 +1232,22 @@ Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
       },
     },
+    "baseCardInteractive": Object {
+      "base": Object {
+        "borderColor": "{{colors.neutral020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
+      },
+    },
+    "baseCardNonInteractive": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+      },
+    },
     "buttonDefault": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary050}}",

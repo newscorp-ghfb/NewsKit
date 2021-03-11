@@ -1,38 +1,76 @@
 import React from 'react';
-import {Card, CardInset, CardProps} from 'newskit';
+import {Block, Card, CardInset, Headline} from 'newskit';
+import {BaseCardProps} from './types';
 
-// interface BaseCardProps extends CardProps{
-//     title: string;
-//     children: React.ReactNode;
-// }
-
-const BaseCardInteractive: React.FC<CardProps> = ({overrides, ...rest}) => {
-    console.log(rest,'<--- props')
-    return(
+const BaseCardInteractive: React.FC<BaseCardProps> = ({
+  title,
+  children,
+  overrides,
+  ...rest
+}) => (
   <CardInset
-    overrides={overrides || {
-      stylePreset: 'baseCardInteractive',
-      teaserContainer: {
-        spaceInset: 'space050',
-      },
-    }}
+    overrides={
+      overrides || {
+        stylePreset: 'baseCardInteractive',
+        teaserContainer: {
+          spaceInset: 'space050',
+        },
+      }
+    }
     {...rest}
-  />
-)};
-
-const BaseCardNonInteractive: React.FC<CardProps> = ({overrides,layout,  ...rest}) => (
-  <Card
-    overrides={overrides || {
-      stylePreset: 'baseCardNonInteractive',
-      mediaContainer: {
-        spaceStack: layout === 'horizontal' ? 'space050' : 'space040'
-    }}}
-    layout={layout}
-    {...rest}
-  />
+  >
+    <Block spaceStack="space020">
+      <Headline
+        overrides={{
+          typographyPreset: 'editorialHeadline030',
+          heading: {
+            stylePreset: 'inkContrast',
+          },
+        }}
+      >
+        {title}
+      </Headline>
+    </Block>
+    {children}
+  </CardInset>
 );
 
-export const BaseCard: React.FC<CardProps> = ({href, ...rest}) =>
+const BaseCardNonInteractive: React.FC<BaseCardProps> = ({
+  title,
+  children,
+  overrides,
+  layout,
+  ...rest
+}) => (
+  <Card
+    overrides={
+      overrides || {
+        stylePreset: 'baseCardNonInteractive',
+        mediaContainer: {
+          spaceStack: layout === 'horizontal' ? 'space050' : 'space040',
+        },
+      }
+    }
+    layout={layout}
+    {...rest}
+  >
+    <Block spaceStack="space020">
+      <Headline
+        overrides={{
+          typographyPreset: 'editorialHeadline030',
+          heading: {
+            stylePreset: 'inkContrast',
+          },
+        }}
+      >
+        {title}
+      </Headline>
+    </Block>
+    {children}
+  </Card>
+);
+
+export const BaseCard: React.FC<BaseCardProps> = ({href, ...rest}) =>
   href ? (
     <BaseCardInteractive href={href} {...rest} />
   ) : (

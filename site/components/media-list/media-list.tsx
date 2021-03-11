@@ -1,6 +1,14 @@
 import React from 'react';
-import {Cell, Grid, TextBlock, Block, Card, styled, Visible, BreakpointKeys} from 'newskit';
-import { BaseCard } from '../base-card';
+import {
+  Cell,
+  Grid,
+  TextBlock,
+  Block,
+  styled,
+  Visible,
+  BreakpointKeys,
+} from 'newskit';
+import {BaseCard} from '../base-card';
 import {MediaListProps} from './types';
 
 const StyledCard = styled(BaseCard)`
@@ -19,79 +27,60 @@ export const MediaList: React.FC<MediaListProps> = ({
   gridProps,
   parentCellProps,
 }) => {
-
-const renderCards = (layout?:'vertical'|'horizontal') => (cards.map(({media, label, description, title, href, styles}) => (
-  <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
-    <StyledCard
-      layout={layout}
-      media={media}
-      overrides={styles && styles.card && {...styles.card}}
-      href={href}
-    >
-      <Block spaceStack="space045">
-        <TextBlock
-          // eslint-disable-next-line no-undef, prettier/prettier
-          stylePreset={styles?.label?.stylePreset || 'inkContrast'}
-          // eslint-disable-next-line no-undef
-          typographyPreset={styles?.label?.typographyPreset || 'editorialHeadline020'}
+  const renderCards = (layout?: 'vertical' | 'horizontal') =>
+    cards.map(({media, description, title, href, styles}) => (
+      <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
+        <StyledCard
+          layout={layout}
+          media={media}
+          title={title}
+          href={href}
+          overrides={styles && styles.card && {...styles.card}}
         >
-          {label}
-        </TextBlock>
-      </Block>
-      {title && (
-      <Block spaceStack="space045">
-        <TextBlock
-          // eslint-disable-next-line no-undef
-          stylePreset={styles?.title?.stylePreset || 'inkContrast'}
-          // eslint-disable-next-line no-undef
-          typographyPreset={styles?.title?.typographyPreset}
-        >
-          {title}
-        </TextBlock>
-      </Block>
-      )}
-      <TextBlock
-        // eslint-disable-next-line no-undef
-        stylePreset={styles?.description?.stylePreset || 'inkBase'}
-        // eslint-disable-next-line no-undef
-        typographyPreset={styles?.description?.typographyPreset || 'editorialParagraph020'}
-      >
-        {description}
-      </TextBlock>
-    </StyledCard>
-  </Cell>
-        )))
+          <TextBlock
+            // eslint-disable-next-line no-undef
+            typographyPreset={styles?.description?.typographyPreset || 'editorialParagraph010'}
+            // eslint-disable-next-line no-undef
+            stylePreset={styles?.description?.stylePreset || 'inkBase'}>
+              {description}
+            </TextBlock>
+        </StyledCard>
+      </Cell>
+    ));
 
   const renderBreakpointCards = () => {
-
     if (!cardsLayout || typeof cardsLayout === 'string') {
       return renderCards(cardsLayout);
     }
-
     const keys = Object.keys(cardsLayout) as BreakpointKeys[];
 
-    const verticalBreakpoints = keys.reduce((acc, key) => {
-      // by looking for non-horizontal rather than vertical, it means we default to vertical cards if not specified.
-      acc[key] = cardsLayout[key] !== 'horizontal';
-      return acc;
-    }, {} as Record<string, boolean>);
+    const verticalBreakpoints = keys.reduce(
+      (acc, key) => {
+        // by looking for non-horizontal rather than vertical, it means we default to vertical cards if not specified.
+        acc[key] = cardsLayout[key] !== 'horizontal';
+        return acc;
+      },
+      {} as Record<string, boolean>,
+    );
 
-    const horizontalBreakpoints = keys.reduce((acc, key) => {
-    acc[key] = cardsLayout[key] === 'horizontal';
-      return acc;
-    }, {} as Record<string, boolean>);
+    const horizontalBreakpoints = keys.reduce(
+      (acc, key) => {
+        acc[key] = cardsLayout[key] === 'horizontal';
+        return acc;
+      },
+      {} as Record<string, boolean>,
+    );
 
     return (
       <>
-        <Visible {...verticalBreakpoints}>
-          {renderCards('vertical')}
-        </Visible>
+        <Visible {...verticalBreakpoints}>{renderCards('vertical')}</Visible>
 
         <Visible {...horizontalBreakpoints}>
           {renderCards('horizontal')}
         </Visible>
       </>
-    );}
+    );
+  };
 
   return (
     <Cell xs={12} md={10} lg={8} mdOffset={1} {...parentCellProps}>
@@ -101,4 +90,5 @@ const renderCards = (layout?:'vertical'|'horizontal') => (cards.map(({media, lab
         </Grid>
       </Block>
     </Cell>
-)};
+  );
+};

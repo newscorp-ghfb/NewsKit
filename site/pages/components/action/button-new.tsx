@@ -319,7 +319,7 @@ export default (layoutProps: LayoutProps) => (
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',
       cards: [
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -327,7 +327,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -335,7 +335,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -343,7 +343,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -357,7 +357,7 @@ export default (layoutProps: LayoutProps) => (
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',
       cards: [
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -365,7 +365,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -373,7 +373,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -381,7 +381,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           media: {
             src: '/static/placeholder-16x9.png',
@@ -395,7 +395,7 @@ export default (layoutProps: LayoutProps) => (
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',
       cards: [
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           href: 'http://localhost:8081/components/action/button',
           media: {
@@ -404,7 +404,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           href: 'http://localhost:8081/components/action/button',
           media: {
@@ -413,7 +413,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           href: 'http://localhost:8081/components/action/button',
           media: {
@@ -422,7 +422,7 @@ export default (layoutProps: LayoutProps) => (
           },
         },
         {
-          label: 'Title',
+          title: 'Title',
           description: 'Description',
           href: 'http://localhost:8081/components/action/button',
           media: {

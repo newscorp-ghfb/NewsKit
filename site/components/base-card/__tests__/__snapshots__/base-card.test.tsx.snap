@@ -1,0 +1,768 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
+<DocumentFragment>
+  .emotion-6 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.emotion-4 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-2 {
+  margin-bottom: 8px;
+}
+
+.emotion-1 {
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.2333333333333334em + 1px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.2958333333333334em + 1px);
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+<div
+    class="emotion-6"
+  >
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-2"
+        >
+          <section
+            class="emotion-1"
+          >
+            <h1
+              class="nk-headline-heading emotion-0"
+            >
+              Non-interactive Vertical Card
+            </h1>
+          </section>
+        </div>
+        <p
+          class="emotion-3"
+        >
+          Text
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BaseCard Renders horizontal interactive card 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  margin-bottom: 8px;
+}
+
+.emotion-1 {
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.2333333333333334em + 1px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.2958333333333334em + 1px);
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: rowfalse;
+  -ms-flex-direction: rowfalse;
+  flex-direction: rowfalse;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-6 {
+    min-width: 1px;
+  }
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #0a0a0a;
+}
+
+.emotion-2 .nk-headline-heading svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 24px;
+}
+
+.emotion-5 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+<div
+    class="emotion-7"
+  >
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-3"
+        >
+          <a
+            class="nk-card-link emotion-2"
+            href="newskit.com"
+          >
+            <section
+              class="emotion-1"
+            >
+              <h1
+                class="nk-headline-heading emotion-0"
+              >
+                Interactive Horizontal Card
+              </h1>
+            </section>
+          </a>
+        </div>
+        <p
+          class="emotion-4"
+        >
+          Text
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BaseCard Renders horizontal interactive card with overrides 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  margin-bottom: 8px;
+}
+
+.emotion-1 {
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.2333333333333334em + 1px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.2958333333333334em + 1px);
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-6 {
+    min-width: 1px;
+  }
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #0a0a0a;
+}
+
+.emotion-2 .nk-headline-heading svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  color: #2e2e2e;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: rowfalse;
+  -ms-flex-direction: rowfalse;
+  flex-direction: rowfalse;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-5 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-5 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-5 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-5 {
+    padding: 24px;
+  }
+}
+
+.emotion-5 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+<div
+    class="emotion-7"
+  >
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-3"
+        >
+          <a
+            class="nk-card-link emotion-2"
+            href="newskit.com"
+          >
+            <section
+              class="emotion-1"
+            >
+              <h1
+                class="nk-headline-heading emotion-0"
+              >
+                Interactive Horizontal Card
+              </h1>
+            </section>
+          </a>
+        </div>
+        <p
+          class="emotion-4"
+        >
+          Text
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BaseCard Renders horizontal non-interactive card 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  margin-bottom: 8px;
+}
+
+.emotion-1 {
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.2333333333333334em + 1px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.2958333333333334em + 1px);
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: rowfalse;
+  -ms-flex-direction: rowfalse;
+  flex-direction: rowfalse;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-5 {
+    min-width: 1px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0;
+}
+
+.emotion-4 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+<div
+    class="emotion-6"
+  >
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-2"
+        >
+          <section
+            class="emotion-1"
+          >
+            <h1
+              class="nk-headline-heading emotion-0"
+            >
+              Non-interactive Horizontal Card
+            </h1>
+          </section>
+        </div>
+        <p
+          class="emotion-3"
+        >
+          Text
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BaseCard Renders vertical interactive card 1`] = `
+<DocumentFragment>
+  .emotion-7 {
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+}
+
+.emotion-3 {
+  margin-bottom: 8px;
+}
+
+.emotion-1 {
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.2333333333333334em + 1px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.2958333333333334em + 1px);
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.emotion-5 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-2 .nk-headline-kicker {
+  color: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) .nk-headline-kicker {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) .nk-headline-kicker {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited:not(:disabled) .nk-headline-kicker {
+  color: #7547a3;
+}
+
+.emotion-2 .nk-headline-heading {
+  color: #0a0a0a;
+}
+
+.emotion-2 .nk-headline-heading svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+<div
+    class="emotion-7"
+  >
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-3"
+        >
+          <a
+            class="nk-card-link emotion-2"
+            href="newskit.com"
+          >
+            <section
+              class="emotion-1"
+            >
+              <h1
+                class="nk-headline-heading emotion-0"
+              >
+                Interactive Horizontal Card
+              </h1>
+            </section>
+          </a>
+        </div>
+        <p
+          class="emotion-4"
+        >
+          Text
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
