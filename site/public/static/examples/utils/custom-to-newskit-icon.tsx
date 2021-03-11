@@ -1,6 +1,7 @@
 import React from 'react';
+import {customToNewsKitIcon} from 'newskit';
+
 import {Svg} from '../../svg';
-import {customToNewsKitIcon} from '../../custom-to-newskit-icon';
 
 export const IconFilledCircle = customToNewsKitIcon(
   'IconFilledCircle',

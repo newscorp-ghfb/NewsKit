@@ -62,6 +62,261 @@ describe('compileTheme', () => {
     `);
   });
 
+  test('compiles with __extends and __delete keywords', () => {
+    const theme: any = {
+      colors: {
+        red010: '#ff0000',
+        green010: '#00ff00',
+        blue010: '#0000ff',
+        yellow010: '#ffff00',
+        grey010: '#888888',
+      },
+      stylePresets: {
+        cardContainer: {
+          base: {
+            backgroundColor: '{{colors.red010}}',
+            color: '{{colors.green010}}',
+          },
+          hover: {
+            backgroundColor: '{{colors.blue010}}',
+          },
+          active: {
+            color: '{{colors.blue010}}',
+          },
+          disabled: {
+            backgroundColor: '{{colors.grey010}}',
+            color: '{{colors.red010}}',
+          },
+        },
+        cardContainerVariant2: {
+          __extends: '{{stylePresets.cardContainer}}',
+          base: {
+            __extends: '{{stylePresets.cardContainer.base}}',
+            color: '{{colors.yellow010}}',
+          },
+          active: '__delete',
+          disabled: {
+            __extends: '{{stylePresets.cardContainer.disabled}}',
+            color: '__delete',
+          },
+        },
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "colors": Object {
+          "blue010": "#0000ff",
+          "green010": "#00ff00",
+          "grey010": "#888888",
+          "red010": "#ff0000",
+          "yellow010": "#ffff00",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "cardContainer": Object {
+            "active": Object {
+              "color": "#0000ff",
+            },
+            "base": Object {
+              "backgroundColor": "#ff0000",
+              "color": "#00ff00",
+            },
+            "disabled": Object {
+              "backgroundColor": "#888888",
+              "color": "#ff0000",
+            },
+            "hover": Object {
+              "backgroundColor": "#0000ff",
+            },
+          },
+          "cardContainerVariant2": Object {
+            "base": Object {
+              "backgroundColor": "#ff0000",
+              "color": "#ffff00",
+            },
+            "disabled": Object {
+              "backgroundColor": "#888888",
+            },
+            "hover": Object {
+              "backgroundColor": "#0000ff",
+            },
+          },
+        },
+      }
+    `);
+  });
+
+  test('compiles with multiple __extends keyword values', () => {
+    const theme: any = {
+      colors: {
+        red010: '#ff0000',
+        green010: '#00ff00',
+        blue010: '#0000ff',
+        yellow010: '#ffff00',
+        grey010: '#888888',
+      },
+      stylePresets: {
+        cardContainer: {
+          base: {
+            backgroundColor: '{{colors.red010}}',
+            iconColor: '{{colors.green010}}',
+          },
+          active: {
+            color: '{{colors.blue010}}',
+          },
+        },
+        cardContainer2: {
+          base: {
+            backgroundColor: '{{colors.yellow010}}',
+            color: '{{colors.blue010}}',
+          },
+          disabled: {
+            backgroundColor: '{{colors.grey010}}',
+          },
+        },
+        cardContainer3: {
+          __extends: [
+            '{{stylePresets.cardContainer}}',
+            '{{stylePresets.cardContainer2}}',
+          ],
+        },
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "colors": Object {
+          "blue010": "#0000ff",
+          "green010": "#00ff00",
+          "grey010": "#888888",
+          "red010": "#ff0000",
+          "yellow010": "#ffff00",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "cardContainer": Object {
+            "active": Object {
+              "color": "#0000ff",
+            },
+            "base": Object {
+              "backgroundColor": "#ff0000",
+              "iconColor": "#00ff00",
+            },
+          },
+          "cardContainer2": Object {
+            "base": Object {
+              "backgroundColor": "#ffff00",
+              "color": "#0000ff",
+            },
+            "disabled": Object {
+              "backgroundColor": "#888888",
+            },
+          },
+          "cardContainer3": Object {
+            "active": Object {
+              "color": "#0000ff",
+            },
+            "base": Object {
+              "backgroundColor": "#ffff00",
+              "color": "#0000ff",
+            },
+            "disabled": Object {
+              "backgroundColor": "#888888",
+            },
+          },
+        },
+      }
+    `);
+  });
+
+  test('compiles with __deepExtends keyword', () => {
+    const theme: any = {
+      colors: {
+        red010: '#ff0000',
+        green010: '#00ff00',
+        blue010: '#0000ff',
+        yellow010: '#ffff00',
+        grey010: '#888888',
+      },
+      stylePresets: {
+        cardContainer: {
+          base: {
+            backgroundColor: '{{colors.red010}}',
+            iconColor: '{{colors.green010}}',
+          },
+          active: {
+            color: '{{colors.blue010}}',
+          },
+        },
+        cardContainer2: {
+          base: {
+            backgroundColor: '{{colors.yellow010}}',
+            color: '{{colors.blue010}}',
+          },
+          disabled: {
+            backgroundColor: '{{colors.grey010}}',
+          },
+        },
+        cardContainer3: {
+          __deepExtends: [
+            '{{stylePresets.cardContainer}}',
+            '{{stylePresets.cardContainer2}}',
+          ],
+        },
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "colors": Object {
+          "blue010": "#0000ff",
+          "green010": "#00ff00",
+          "grey010": "#888888",
+          "red010": "#ff0000",
+          "yellow010": "#ffff00",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "cardContainer": Object {
+            "active": Object {
+              "color": "#0000ff",
+            },
+            "base": Object {
+              "backgroundColor": "#ff0000",
+              "iconColor": "#00ff00",
+            },
+          },
+          "cardContainer2": Object {
+            "base": Object {
+              "backgroundColor": "#ffff00",
+              "color": "#0000ff",
+            },
+            "disabled": Object {
+              "backgroundColor": "#888888",
+            },
+          },
+          "cardContainer3": Object {
+            "active": Object {
+              "color": "#0000ff",
+            },
+            "base": Object {
+              "backgroundColor": "#ffff00",
+              "color": "#0000ff",
+              "iconColor": "#00ff00",
+            },
+            "disabled": Object {
+              "backgroundColor": "#888888",
+            },
+          },
+        },
+      }
+    `);
+  });
+
   test('preserves number types', () => {
     const theme: any = {
       fonts: {

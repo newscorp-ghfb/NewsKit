@@ -16,7 +16,7 @@ import {Headline} from '../headline';
 import {BaseLinkProps} from '../link';
 import {Theme, useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
-import {deepMerge} from '../utils/style';
+import {deepMerge} from '../utils/deep-merge';
 
 const renderMedia = (media: CardProps['media']) =>
   renderComponent(media) || (

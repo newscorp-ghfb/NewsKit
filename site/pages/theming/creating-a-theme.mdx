@@ -78,9 +78,140 @@ To make this system as flexible as reasonably possible the compilation lookup pr
 
 As well as recursion protection the compiler will also log warnings when you reference tokens which it cannot find. This logging behaviour is overridable by passing your own logger function to the `errorLogger` property inside the options (2nd) argument. One useful reason to do this is to unit test your theme. By replacing the logger with an error throwing function or mock, you can ensure your theme is valid as part of your development lifecycle. There is an example of this below.
 
+### Keywords
+
+To allow you to build your theme more effectively, there are a few special "keywords" which can be used as keys or values. Note that they begin with double (2) underscore characters. The functionality of most of these keywords can be written yourself using functions if desired, however by using these keywords, you are able to perform the functionality while in JSON.
+
+Note that the keywords will be removed from the object as they are interpreted. You should not expect to see the keywords in a compiled theme, for example.
+
+#### \_\_extends
+
+This keyword is used as an object key, where the value is set to an object path in the theme. This will act like a shallow merge and put the values of the object in the token path into the object which `__extends` is specified. For example, to duplicate the buttonSolidPrimary style preset and replace the hover state:
+
+<Code>
+  {JSON.stringify(
+    {
+      __extends: '{{stylePresets.buttonSolidPrimary}}',
+      hover: {color: '{{colors.red010}}'},
+    },
+    null,
+    2,
+  )}
+</Code>
+
+Therefore, the above example is equivalent to the following function theme value:
+
+<CodeFromFile path="examples/theming/extends-keyword-equivalent.ts" />
+
+As well as a single token string, the `__extends` also supports an array of token strings. This can be used to merge multiple objects together. The order of the array is respected and is the merge order of the objects.
+
+#### \_\_deepExtends
+
+This keyword is similar to the above `__extends` keyword except it performs a deep merge. This is useful when you wish to merge multiple deep objects together, for example you might need to combine multiple style presets.
+
+<Code>
+  {JSON.stringify(
+    {
+      __deepExtends: [
+        '{{stylePresets.buttonSolidPrimary}}',
+        '{{stylePresets.inkContrast}}',
+      ],
+    },
+    null,
+    2,
+  )}
+</Code>
+
+Note that only the items specified under the `__deepExtends` keyword will be deeply merged. In the example above, if you were to specify a `base` state with some extra properties, those would overrwrite the merged base states of the two style presets specified. Remember to specify another extends keyword inside any deep objects you wish to change, like below.
+
+<Code>
+  {JSON.stringify(
+    {
+      __deepExtends: [
+        '{{stylePresets.buttonSolidPrimary}}',
+        '{{stylePresets.inkContrast}}',
+      ],
+      base: {
+        __deepExtends: [
+          '{{stylePresets.buttonSolidPrimary.base}}',
+          '{{stylePresets.inkContrast.base}}',
+        ],
+        borderRadius: '{{borders.borderRadiusRounded010}}',
+      },
+    },
+    null,
+    2,
+  )}
+</Code>
+
+#### \_\_delete
+
+This keyword is slightly different to the above and is used as a value, not a key. When the compiler encounters this value the key will be deleted from the object. This can be useful when you wish to simply remove a key rather than override it. It can delete simple string tokens, e.g. a color in a style preset, as well as whole objects such as the cropAdjustments in a typography preset or the hover state in a style preset.
+
+<Code>
+  {JSON.stringify(
+    {
+      __extends: '{{stylePresets.buttonSolidPrimary}}',
+      base: {
+        __extends: '{{stylePresets.buttonSolidPrimary.base}}',
+        borderRadius: '__delete',
+      },
+      hover: '__delete',
+    },
+    null,
+    2,
+  )}
+</Code>
+
+#### \_\_shallow
+
+This keyword is used as an object key with a value of `true`. When used, it dictates that the object it is a key of should be shallow merged rather than deep merged. This is useful if you wish to override an entire object without having to specify all the keys you wish to delete. For example, for a state inside an existing style preset:
+
+<Code>
+  {JSON.stringify(
+    {
+      tagPrimary: {
+        base: {
+          __shallow: true,
+          backgroundColor: '{{colors.interactivePrimary010}}',
+          color: '{{colors.inkBase}}',
+        },
+      },
+    },
+    null,
+    2,
+  )}
+</Code>
+
+This would be equivalent to the following (where the keys using the `__delete` keyword exist in the base theme):
+
+<Code>
+  {JSON.stringify(
+    {
+      tagPrimary: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary010}}',
+          color: '{{colors.inkBase}}',
+          borderStyle: '__delete',
+          borderColor: '__delete',
+          borderWidth: '__delete',
+          iconColor: '__delete',
+          borderRadius: '__delete',
+        },
+      },
+    },
+    null,
+    2,
+  )}
+</Code>
+
+The benefit of using the `__shallow` keyword is that should any new keys be added to the base object, you do not need to update your theme to delete them.
+
+This `__shallow` keyword is unique compared to the others as it is functionality of the underlying `deepMerge` function used as part of the theme creator. You can use this utility by importing `deepMerge` from NewsKit.
+
 ### Functions as theme values
 
-In certain use cases you may find the need to create a theme value by utilising other parts of the theme. This can be done by setting the value of a theme token to a function. This function will be called with the theme object when it is encountered during compilation. Please note that the compiler will call the functions as they are found, so other token values could still be functions, uncompiled token references (e.g. `{{colors.red070}}`), or compiled values (e.g. `#ff0000`).
+In certain use cases you may find the need to create a theme value by utilising other parts of the theme. This can be done by setting the value of a key to a function. This function will be called with the uncompiled theme object when it is encountered. Please note that the compiler will call the functions as they are found and execution order is not guaranteed. The uncompiled theme will still contain any other functions or token references (e.g. `{{colors.red070}}` not `#ff0000`).
 
 ### Examples
 

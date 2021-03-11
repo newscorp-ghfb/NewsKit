@@ -1,7 +1,7 @@
 import React from 'react';
+import {createTheme, customToNewsKitIcon} from 'newskit';
+
 import {Svg} from '../../svg';
-import {customToNewsKitIcon} from '../../custom-to-newskit-icon';
-import {createTheme} from 'newskit';
 
 export const IconOutlinedCustomClose = customToNewsKitIcon(
   'IconOutlinedCustomClose',
@@ -12,7 +12,6 @@ export const IconOutlinedCustomClose = customToNewsKitIcon(
   ),
   {size: 'iconSize040'},
 );
-
 
 const theme = createTheme({
   name: 'newskit-override-icons',

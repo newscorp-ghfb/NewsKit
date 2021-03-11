@@ -1,8 +1,10 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {ThemeLoggerFunction, Theme, UncompiledTheme, ThemeBase} from '../types';
+import {ThemeLoggerFunction, Theme, UncompiledTheme} from '../types';
 import {get} from '../../utils/get';
 import {ThemeCompilerOptions} from './types';
+import {generateInkStylePresets} from './ink-style-preset-generator';
+import {deepMerge} from '../../utils/deep-merge';
 
 const parseTokens = (str: unknown) => {
   if (typeof str !== 'string') {
@@ -79,7 +81,23 @@ const recurseUnknown = (
       (acc, [k, v]: any) => {
         // Key could be a token, e.g. cropAdjustments fonts object
         const key = parseAndGet(theme, k, errorLogger) as string;
+
+        if (key === '__extends' || key === '__deepExtends') {
+          const extendsObjects = (typeof v === 'string' ? [v] : v).map(
+            (extendsToken: string) =>
+              parseAndGet(theme, extendsToken, errorLogger) as
+                | object
+                | undefined,
+          );
+          const mergeFn =
+            key === '__deepExtends' ? deepMerge : Object.assign.bind(Object);
+          return mergeFn({}, acc, ...extendsObjects);
+        }
+
         acc[key] = recurseUnknown(theme, v, errorLogger);
+        if (acc[key] === '__delete') {
+          delete acc[key];
+        }
         return acc;
       },
       {} as any,
@@ -99,32 +117,15 @@ export const compileTheme = (
 
   // eslint-disable-next-line no-console
   const errorLogger = options.errorLogger || console.error.bind(console);
-  const inkStylePresets =
-    theme.colors &&
-    Object.keys(theme.colors).reduce(
-      (acc, color) => {
-        if (color.startsWith('ink')) {
-          acc[color] = {
-            base: {
-              color: `{{colors.${color}}}`,
-              iconColor: `{{colors.${color}}}`,
-            },
-          };
-          acc[`uppercaseI${color.slice(1)}`] = {
-            base: {
-              ...acc[color].base,
-              textTransform: 'uppercase',
-            },
-          };
-        }
-        return acc;
-      },
-      {} as ThemeBase['stylePresets'],
-    );
+
   const uncompiledTheme = {
     ...theme,
-    stylePresets: {...theme.stylePresets, ...inkStylePresets},
+    stylePresets: {
+      ...theme.stylePresets,
+      ...generateInkStylePresets(theme),
+    },
   };
+
   const {icons = {}, ...filteredTheme} = uncompiledTheme;
   return {
     ...(recurseUnknown(uncompiledTheme, filteredTheme, errorLogger) as any),
