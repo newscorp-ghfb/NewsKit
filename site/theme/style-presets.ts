@@ -241,6 +241,7 @@ export const stylePresets = {
   },
   baseCardInteractive: {
     base: {
+      borderStyle: 'solid',
       borderRadius: '{{borders.borderRadiusRounded030}}',
       borderWidth: '{{borders.borderWidth010}}',
       borderColor: '{{colors.neutral020}}',

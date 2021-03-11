@@ -1,5 +1,6 @@
 import React from 'react';
-import {Cell, Grid, TextBlock, Block, styled, Visible, BreakpointKeys, BaseCard} from 'newskit';
+import {Cell, Grid, TextBlock, Block, Card, styled, Visible, BreakpointKeys} from 'newskit';
+import { BaseCard } from '../base-card';
 import {MediaListProps} from './types';
 
 const StyledCard = styled(BaseCard)`

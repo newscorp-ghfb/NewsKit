@@ -34,6 +34,7 @@ const cards = [
       src: '/static/about/contribute/contribute-card-feedback.svg',
       alt: '',
     },
+    layout: 'horizontal',
     styles: cardStyle,
   },
   {

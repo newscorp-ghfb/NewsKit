@@ -151,6 +151,7 @@ export const Card: React.FC<CardProps> = ({
   overrides = {},
   className,
 }) => {
+  console.log(overrides, '<--- overrides')
   const hasHref = Boolean(href);
   return (
     <StyledCardContainer

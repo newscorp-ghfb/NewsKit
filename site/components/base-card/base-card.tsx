@@ -6,33 +6,35 @@ import {Card, CardInset, CardProps} from 'newskit';
 //     children: React.ReactNode;
 // }
 
-const BaseCardInteractive: React.FC<CardProps> = props => (
+const BaseCardInteractive: React.FC<CardProps> = ({overrides, ...rest}) => {
+    console.log(rest,'<--- props')
+    return(
   <CardInset
-    overrides={{
-      stylePreset: 'cardBaseNonInteractive',
+    overrides={overrides || {
+      stylePreset: 'baseCardInteractive',
       teaserContainer: {
-        spaceInset: 'space040',
+        spaceInset: 'space050',
       },
     }}
-    {...props}
+    {...rest}
   />
-);
+)};
 
-const BaseCardNonInteractive: React.FC<CardProps> = props => (
+const BaseCardNonInteractive: React.FC<CardProps> = ({overrides,layout,  ...rest}) => (
   <Card
-    overrides={{
-      stylePreset: 'cardBaseNonInteractive',
+    overrides={overrides || {
+      stylePreset: 'baseCardNonInteractive',
       mediaContainer: {
-        spaceStack: 'space040',
-      },
-    }}
-    {...props}
+        spaceStack: layout === 'horizontal' ? 'space050' : 'space040'
+    }}}
+    layout={layout}
+    {...rest}
   />
 );
 
 export const BaseCard: React.FC<CardProps> = ({href, ...rest}) =>
   href ? (
-    <BaseCardInteractive {...rest} />
+    <BaseCardInteractive href={href} {...rest} />
   ) : (
     <BaseCardNonInteractive {...rest} />
   );

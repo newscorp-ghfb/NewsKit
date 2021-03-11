@@ -402,12 +402,14 @@ export default (layoutProps: LayoutProps) => (
             src: '/static/placeholder-16x9.png',
             alt: 'Card Media',
           },
-          styles: {
-            card: {
-              mediaContainer: {
-                stylePreset: 'cardContainerMediaInteractive',
-              },
-            },
+        },
+        {
+          label: 'Title',
+          description: 'Description',
+          href: 'http://localhost:8081/components/action/button',
+          media: {
+            src: '/static/placeholder-16x9.png',
+            alt: 'Card Media',
           },
         },
         {
@@ -418,13 +420,6 @@ export default (layoutProps: LayoutProps) => (
             src: '/static/placeholder-16x9.png',
             alt: 'Card Media',
           },
-          styles: {
-            card: {
-              mediaContainer: {
-                stylePreset: 'cardContainerMediaInteractive',
-              },
-            },
-          },
         },
         {
           label: 'Title',
@@ -433,29 +428,6 @@ export default (layoutProps: LayoutProps) => (
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'Card Media',
-          },
-          styles: {
-            card: {
-              mediaContainer: {
-                stylePreset: 'cardContainerMediaInteractive',
-              },
-            },
-          },
-        },
-        {
-          label: 'Title',
-          description: 'Description',
-          href: 'http://localhost:8081/components/action/button',
-          media: {
-            src: '/static/placeholder-16x9.png',
-            alt: 'Card Media',
-          },
-          styles: {
-            card: {
-              mediaContainer: {
-                stylePreset: 'cardContainerMediaInteractive',
-              },
-            },
           },
         },
       ],
