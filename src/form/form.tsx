@@ -98,8 +98,10 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       }
       // @ts-ignore
       if (formContext.formState.fieldsValidation !== undefined && 
-          formContext.formState.isSubmitSuccessful === true) {
-        setAllFieldsValid()
+        formContext.formState.isSubmitSuccessful === true && 
+        // @ts-ignore 
+        Object.values(formContext.formState.fieldsValidation).some(field => field.valid === false)) {
+          setAllFieldsValid()
       }
     }
     
