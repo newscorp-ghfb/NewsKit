@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, {useEffect, useContext } from 'react';
 import {useFormContext} from 'react-hook-form/dist/index.ie11';
 import composeRefs from '@seznam/compose-react-refs'
 import {TextInputProps, TextInputSize} from './types';
@@ -44,13 +44,20 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     formContext.errors[name] &&
     formContext.errors[name].message;
 
-  const [hadError, setHadError] = useState(errorText)
+    const hadError = 
+    formContext.formState &&
+    // @ts-ignore
+    formContext.formState.fieldsHadError && 
+    // @ts-ignore
+    formContext.formState.fieldsHadError[name].hadError
+  
 
   useEffect(() => {
     if (!hadError && errorText) {
-      setHadError(true)
+      // @ts-ignore
+      formContext.formState.fieldsHadError[name].hadError = true
     }
-  }, [errorText, hadError]);
+  }, [errorText]);
 
   const id = getSSRId();
   const assistiveTextId = errorText && `${id}-error-text` || assistiveText && `${id}-assistive-text`
@@ -60,7 +67,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
       !hadError &&
       (errorText || value)
       ) {
-      setHadError(true)
+        // @ts-ignore
+        formContext.formState.fieldsHadError[name].hadError = true
     }
   }
 
@@ -86,10 +94,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
   );
   
   let valid
-  // @ts-ignore
-  if(formContext?.formState?.fieldsValidation) {
-    // @ts-ignore
-    valid = formContext?.formState?.fieldsValidation[name].valid || (hadError && !errorText);
+  if(formContext?.formState) {
+    valid = formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
   }
 
   return (
@@ -121,7 +127,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
         {(!!errorText || valid) && (
           <IconContainer iconSpace={iconSpace}>
             {
-              !!errorText && <IconFilledError overrides={{ size: iconSize, stylePreset: 'iconNegative' }}  /> ||
+              !!errorText && <IconFilledError data-testid='error-icon' overrides={{ size: iconSize, stylePreset: 'iconNegative' }}  /> ||
               valid && <IconFilledCheckCircle data-testid='tick-icon' overrides={{ size: iconSize, stylePreset: 'iconPositive'}} />
             }
           </IconContainer>

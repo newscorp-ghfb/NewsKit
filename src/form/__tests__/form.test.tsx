@@ -188,12 +188,80 @@ describe('Form', () => {
     });
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
-    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('resetValidation() remove valid state', async () => {
+    const ref = React.createRef<HTMLFormElement>();
+    const {getByTestId, findByTestId, asFragment, queryByTestId} = renderWithImplementation(
+      Form,
+      {
+        ...props,
+        ref,
+        validationMode: 'onBlur',
+      },
+    );
+
+    fireEvent.blur(getByTestId('text-input'), {
+      target: {value: 'test@news.co.uk'},
+    });
+
+    expect(await findByTestId('tick-icon')).not.toBeNull();
+    ref.current!.resetValidation()
+    expect(queryByTestId('tick-icon')).toBeNull()
+  });
+
+  test('resetValidation() works even if the field had an error', async () => {
+    const ref = React.createRef<HTMLFormElement>();
+    const {getByTestId, findByTestId, asFragment, queryByTestId} = renderWithImplementation(
+      Form,
+      {
+        ...props,
+        ref,
+        validationMode: 'onBlur',
+      },
+    );
+
+    fireEvent.blur(getByTestId('text-input'), {
+      target: {value: ''},
+    });
+
+    expect(await findByTestId('error-icon')).not.toBeNull();
+
+    fireEvent.blur(getByTestId('text-input'), {
+      target: {value: 'test@news.co.uk'},
+    });
+
+    ref.current!.resetValidation()
+    expect(queryByTestId('tick-icon')).toBeNull()
+  });
+
+  test('clearErrors() removes error state', async () => {
+    const ref = React.createRef<HTMLFormElement>();
+    const {getByTestId, findByTestId, asFragment, queryByTestId} = renderWithImplementation(
+      Form,
+      {
+        ...props,
+        ref,
+        validationMode: 'onBlur',
+      },
+    );
+
+    fireEvent.blur(getByTestId('text-input'), {
+      target: {value: ''},
+    });
+
+    expect(await findByTestId('error-icon')).not.toBeNull();
+    
+    ref.current!.clearErrors()
+
+    expect(queryByTestId('error-icon')).toBeNull()
+    expect(queryByTestId('tick-icon')).toBeNull()
   });
 
   test('exposes the expected functions from useForm hook', async () => {
     const useFormMockMethods = {
-      // TODO it should expect [Function reset], how to test it?
+      // TODO for resetValidation and clearError should expect [Function reset], how to test it?
+      // then added in the group in line 226.
       reset: 'reset-function',
       watch: 'watch-function',
       setError: 'setError-function',
@@ -227,7 +295,6 @@ describe('Form', () => {
     expect(ref.current!.reset).toBe(useFormMockMethods.reset);
     expect(ref.current!.watch).toBe(useFormMockMethods.watch);
     expect(ref.current!.setError).toBe(useFormMockMethods.setError);
-    expect(ref.current!.clearErrors).toBe(useFormMockMethods.clearErrors);
     expect(ref.current!.setValue).toBe(useFormMockMethods.setValue);
     expect(ref.current!.getValues).toBe(useFormMockMethods.getValues);
     expect(ref.current!.trigger).toBe(useFormMockMethods.trigger);

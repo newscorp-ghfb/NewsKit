@@ -23,10 +23,11 @@ export interface FormProps {
 }
 
 export interface FormRef {
+  resetValidation: Function;
   reset: UseFormMethods['reset'];
   watch: UseFormMethods['watch'];
   setError: UseFormMethods['setError'];
-  clearErrors: UseFormMethods['clearErrors'];
+  clearErrors: Function;
   setValue: UseFormMethods['setValue'];
   getValues: UseFormMethods['getValues'];
   trigger: UseFormMethods['trigger'];
