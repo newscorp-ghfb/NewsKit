@@ -58,8 +58,6 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     if (formContext.formState && formContext.formState.fieldsHadError === undefined) {
       // Adds a new object in the formState to keep track of which fields had an error.
       addFieldsHadErrorObject()
-      // @ts-ignore
-      console.log(formContext.formState.fieldsHadError)
     }
 
     if (isResettingValidation) {
