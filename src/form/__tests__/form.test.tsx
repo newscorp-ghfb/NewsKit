@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act} from '@testing-library/react';
 import {useForm} from 'react-hook-form/dist/index.ie11';
 import {Form} from '..';
 import {
@@ -211,7 +211,9 @@ describe('Form', () => {
     });
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
-    ref.current!.resetValidation()
+    act(() => {
+      ref.current!.resetValidation()
+    });
     expect(queryByTestId('tick-icon')).toBeNull()
   });
 
@@ -235,8 +237,10 @@ describe('Form', () => {
     fireEvent.blur(getByTestId('text-input'), {
       target: {value: 'test@news.co.uk'},
     });
-
-    ref.current!.resetValidation()
+    
+    act(() => {
+      ref.current!.resetValidation()
+    });
     expect(queryByTestId('tick-icon')).toBeNull()
   });
 
@@ -256,8 +260,9 @@ describe('Form', () => {
     });
 
     expect(await findByTestId('error-icon')).not.toBeNull();
- 
-    ref.current!.clearErrors()
+    act(() => {
+      ref.current!.clearErrors()
+    });
 
     expect(queryByTestId('error-icon')).toBeNull()
     expect(queryByTestId('tick-icon')).toBeNull()
