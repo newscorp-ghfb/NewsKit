@@ -175,7 +175,7 @@ describe('Form', () => {
   });
 
   test('renders with valid state', async () => {
-    const {getByTestId, findByTestId, asFragment} = renderWithImplementation(
+    const {getByTestId, findByTestId} = renderWithImplementation(
       Form,
       {
         ...props,
@@ -189,6 +189,8 @@ describe('Form', () => {
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
   });
+
+  // TODO fix act().. warning
 
   test('resetValidation() remove valid state', async () => {
     const ref = React.createRef<HTMLFormElement>();
@@ -251,7 +253,7 @@ describe('Form', () => {
     });
 
     expect(await findByTestId('error-icon')).not.toBeNull();
-    
+ 
     ref.current!.clearErrors()
 
     expect(queryByTestId('error-icon')).toBeNull()

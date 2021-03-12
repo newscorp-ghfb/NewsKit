@@ -45,6 +45,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     formContext.errors[name].message;
 
     const hadError = 
+    formContext &&
     formContext.formState &&
     // @ts-ignore
     formContext.formState.fieldsHadError && 
