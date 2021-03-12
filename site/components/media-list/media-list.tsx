@@ -41,9 +41,10 @@ export const MediaList: React.FC<MediaListProps> = ({
             // eslint-disable-next-line no-undef
             typographyPreset={styles?.description?.typographyPreset || 'editorialParagraph010'}
             // eslint-disable-next-line no-undef
-            stylePreset={styles?.description?.stylePreset || 'inkBase'}>
-              {description}
-            </TextBlock>
+            stylePreset={styles?.description?.stylePreset || 'inkBase'}
+          >
+            {description}
+          </TextBlock>
         </StyledCard>
       </Cell>
     ));
