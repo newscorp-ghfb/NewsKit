@@ -175,13 +175,10 @@ describe('Form', () => {
   });
 
   test('renders with valid state', async () => {
-    const {getByTestId, findByTestId} = renderWithImplementation(
-      Form,
-      {
-        ...props,
-        validationMode: 'onBlur',
-      },
-    );
+    const {getByTestId, findByTestId} = renderWithImplementation(Form, {
+      ...props,
+      validationMode: 'onBlur',
+    });
 
     fireEvent.blur(getByTestId('text-input'), {
       target: {value: 'test@news.co.uk'},
@@ -190,13 +187,9 @@ describe('Form', () => {
     expect(await findByTestId('tick-icon')).not.toBeNull();
   });
 
-  // TODO Fix linting -  be careful adding stuff in useEffect does not break your code.. if does.. why?
-  // TODO UseCallback, needed? be careful linting does not break stuff adding thing in the array.
-  // TODO Use imperativeHandle array todo
-
   test('resetValidation() remove valid state', async () => {
     const ref = React.createRef<HTMLFormElement>();
-    const {getByTestId, findByTestId, asFragment, queryByTestId} = renderWithImplementation(
+    const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
       Form,
       {
         ...props,
@@ -211,14 +204,14 @@ describe('Form', () => {
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
     act(() => {
-      ref.current!.resetValidation()
+      ref.current!.resetValidation();
     });
-    expect(queryByTestId('tick-icon')).toBeNull()
+    expect(queryByTestId('tick-icon')).toBeNull();
   });
 
   test('resetValidation() works even if the field had an error', async () => {
     const ref = React.createRef<HTMLFormElement>();
-    const {getByTestId, findByTestId, asFragment, queryByTestId} = renderWithImplementation(
+    const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
       Form,
       {
         ...props,
@@ -236,16 +229,16 @@ describe('Form', () => {
     fireEvent.blur(getByTestId('text-input'), {
       target: {value: 'test@news.co.uk'},
     });
-    
+
     act(() => {
-      ref.current!.resetValidation()
+      ref.current!.resetValidation();
     });
-    expect(queryByTestId('tick-icon')).toBeNull()
+    expect(queryByTestId('tick-icon')).toBeNull();
   });
 
   test('clearErrors() removes error state', async () => {
     const ref = React.createRef<HTMLFormElement>();
-    const {getByTestId, findByTestId, asFragment, queryByTestId} = renderWithImplementation(
+    const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
       Form,
       {
         ...props,
@@ -260,17 +253,17 @@ describe('Form', () => {
 
     expect(await findByTestId('error-icon')).not.toBeNull();
     act(() => {
-      ref.current!.clearErrors()
+      ref.current!.clearErrors();
     });
 
-    expect(queryByTestId('error-icon')).toBeNull()
-    expect(queryByTestId('tick-icon')).toBeNull()
+    expect(queryByTestId('error-icon')).toBeNull();
+    expect(queryByTestId('tick-icon')).toBeNull();
   });
 
   test('exposes the expected functions from useForm hook', async () => {
     const useFormMockMethods = {
       // TODO for resetValidation and clearError should expect [Function reset], how to test it?
-      // then added in the group in line 226.
+      // then add it in the group in line 304.
       reset: 'reset-function',
       watch: 'watch-function',
       setError: 'setError-function',

@@ -34,5 +34,6 @@ export interface FormRef {
   element: HTMLFormElement | null;
 }
 
-export interface FormFieldsValidationObject { [key: string]: {valid: boolean} }
-export interface FormFieldsHadErrorObject { [key: string]: {hadError: boolean} }
+export interface FormFieldsHadErrorObject {
+  [key: string]: {hadError: boolean};
+}

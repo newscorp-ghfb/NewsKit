@@ -66,27 +66,39 @@ export default {
                     validate: validateUserName,
                   }}
                 />
-                <select value='mercedes'>
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input>
               </Block>
 
               <Button type="submit">Submit</Button>
-              <Button onClick={()=>{ 
-                formRef.current && formRef.current.reset()
-              }}>Reset</Button>
-              <Button onClick={()=>{ 
-              // @ts-ignore
-                formRef.current && formRef.current.resetValidation()
-              }}>Reset Validation</Button>
-              <Button onClick={()=>{ 
-              // @ts-ignore
-                formRef.current && formRef.current.clearErrors()
-              }}>Clear Errors</Button>
+              <Button
+                onClick={() => {
+                  if (formRef.current) {
+                    formRef.current.reset();
+                  }
+                }}
+              >
+                Reset
+              </Button>
+              <Button
+                onClick={() => {
+                  if (formRef.current) {
+                    // TODO had to ignore, because says they do not exist. Evn if added in types.ts FormRef?
+                    // @ts-ignore
+                    formRef.current.resetValidation();
+                  }
+                }}
+              >
+                Reset Validation
+              </Button>
+              <Button
+                onClick={() => {
+                  if (formRef.current) {
+                    // @ts-ignore
+                    formRef.current.clearErrors();
+                  }
+                }}
+              >
+                Clear Errors
+              </Button>
             </Form>
           </Block>
         </React.Fragment>
