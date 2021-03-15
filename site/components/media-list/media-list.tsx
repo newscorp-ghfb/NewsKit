@@ -38,8 +38,10 @@ export const MediaList: React.FC<MediaListProps> = ({
           overrides={styles && styles.card && {...styles.card}}
         >
           <TextBlock
-            // eslint-disable-next-line no-undef
-            typographyPreset={styles?.description?.typographyPreset || 'editorialParagraph010'}
+            typographyPreset={
+              // eslint-disable-next-line no-undef
+              styles?.description?.typographyPreset || 'editorialParagraph010'
+            }
             // eslint-disable-next-line no-undef
             stylePreset={styles?.description?.stylePreset || 'inkBase'}
           >
@@ -55,22 +57,16 @@ export const MediaList: React.FC<MediaListProps> = ({
     }
     const keys = Object.keys(cardsLayout) as BreakpointKeys[];
 
-    const verticalBreakpoints = keys.reduce(
-      (acc, key) => {
-        // by looking for non-horizontal rather than vertical, it means we default to vertical cards if not specified.
-        acc[key] = cardsLayout[key] !== 'horizontal';
-        return acc;
-      },
-      {} as Record<string, boolean>,
-    );
+    const verticalBreakpoints = keys.reduce((acc, key) => {
+      // by looking for non-horizontal rather than vertical, it means we default to vertical cards if not specified.
+      acc[key] = cardsLayout[key] !== 'horizontal';
+      return acc;
+    }, {} as Record<string, boolean>);
 
-    const horizontalBreakpoints = keys.reduce(
-      (acc, key) => {
-        acc[key] = cardsLayout[key] === 'horizontal';
-        return acc;
-      },
-      {} as Record<string, boolean>,
-    );
+    const horizontalBreakpoints = keys.reduce((acc, key) => {
+      acc[key] = cardsLayout[key] === 'horizontal';
+      return acc;
+    }, {} as Record<string, boolean>);
 
     return (
       <>
