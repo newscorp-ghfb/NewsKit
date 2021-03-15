@@ -45,6 +45,9 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
     When the Stack has a horizontal flow and its items are allowed to wrap, this property is used to set space between the rows.
     When the Stack has a vertical flow and its items are allowed to wrap, this property is used to set space between the columns.
   </Prop>
+  <Prop name="height" type="string" default='100%'>
+    If provided, defines the height of the Stack. In a scenario where we have a Stack with siblings within a container that has defined height, we would need to set height:auto to the Stack, otherwise the container wouldn't calculate it's own height correctly.
+  </Prop>
   <Prop name="wrap" type="wrap | nowrap">
     If provided, defines if the content of the stack wraps.
   </Prop>
@@ -154,6 +157,25 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
             isDefault: !i,
           })),
         ))(),
+    },
+    {
+      name: 'Height',
+      propName: 'height',
+      options: [
+        {
+          label: 'Default (100%)',
+          value: '100%',
+          isDefault: true,
+        },
+        {
+          label: 'Auto',
+          value: 'auto',
+        },
+        {
+          label: 'Custom (500px)',
+          value: '500px',
+        },
+      ],
     },
     {
       name: 'Wrap',

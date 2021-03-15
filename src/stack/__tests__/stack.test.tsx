@@ -230,6 +230,26 @@ describe('Nested stacks', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test(`render in vertical flow with space and height`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      spaceInline: 'space030',
+      height: 'auto',
+      children: [
+        <Stack>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
   test(`render in horizontal flow`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       flow: Flow.HorizontalTop,

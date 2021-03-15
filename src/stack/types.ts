@@ -24,6 +24,7 @@ export interface CommonStackProps {
     | 'space-evenly';
   inline: boolean;
   as?: keyof JSX.IntrinsicElements;
+  height?: string;
 }
 
 export interface StyledStackProps extends CommonStackProps {

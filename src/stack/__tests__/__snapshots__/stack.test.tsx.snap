@@ -488,6 +488,153 @@ exports[`Nested stacks render in vertical flow with space 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Nested stacks render in vertical flow with space and height 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(12px/2);
+  margin-bottom: calc(12px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-12px/2);
+  margin-bottom: calc(-12px/2);
+}
+
+<div
+    class="emotion-15"
+    height="auto"
+  >
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-0"
+        >
+          child 1
+        </div>
+        , 
+        <div
+          class="emotion-0"
+        >
+          child 2
+        </div>
+        , 
+        <div
+          class="emotion-0"
+        >
+          child 3
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-0"
+        >
+          child 4
+        </div>
+        , 
+        <div
+          class="emotion-0"
+        >
+          child 5
+        </div>
+        , 
+        <div
+          class="emotion-0"
+        >
+          child 6
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-0"
+        >
+          child 7
+        </div>
+        , 
+        <div
+          class="emotion-0"
+        >
+          child 8
+        </div>
+        , 
+        <div
+          class="emotion-0"
+        >
+          child 9
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Nested stacks render mixed content 1`] = `
 <DocumentFragment>
   .emotion-0 {

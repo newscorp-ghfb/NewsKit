@@ -101,7 +101,7 @@ const getFlexDirection = ({flow, flowReverse}: StyledStackProps) => {
 
 export const StyledMasterContainer = styled.div<StyledStackProps>`
   display: ${({inline}) => (inline ? 'inline-flex' : 'flex')};
-  height: 100%;
+  height: ${({height}) => height || '100%'};
   align-items: ${({flow}) => alignmentDictionary[flow]};
   align-content: ${({flow, $wrap}) => ($wrap ? alignmentDictionary[flow] : '')};
   flex-wrap: ${({$wrap}) => ($wrap === true ? 'wrap' : $wrap)};
@@ -138,7 +138,7 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     max-width: 100%;
   }
-  
+
 `;
 
 // Stack as list

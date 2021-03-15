@@ -1,9 +1,10 @@
 import * as React from 'react';
 import {Flow, StackDistribution, Stack} from '..';
-
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
+import {TextBlock} from '../../text-block';
+import {Block} from '../../block';
 
 const MainContainer = styled.div`
   margin: 0 auto;
@@ -221,6 +222,55 @@ export default {
               <Tag>Example 6</Tag>
               <Tag>Example 7</Tag>
               <Tag>Example 8</Tag>
+            </Stack>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'stack-vertical-with-custom-height',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            Stack vertical with custom height (200px)
+          </StorybookHeading>
+          <Container>
+            <Stack
+              flow={Flow.VerticalLeft}
+              stackDistribution={StackDistribution.SpaceBetween}
+              height="200px"
+            >
+              <Tag>Nested Item 1</Tag>
+              <Tag>Nested Item 2</Tag>
+              <Tag>Nested Item 3</Tag>
+            </Stack>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'stack-vertical-with-siblings',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            Stack vertical with siblings within a container that has height
+            defined
+          </StorybookHeading>
+          <Container hasHeight>
+            <Block spaceStack="space020">
+              <TextBlock>Sibling</TextBlock>
+              <TextBlock>Sibling</TextBlock>
+            </Block>
+            <Stack
+              flow={Flow.VerticalLeft}
+              stackDistribution="space-between"
+              height="auto"
+            >
+              <Tag>Nested Item 1</Tag>
+              <Tag>Nested Item 2</Tag>
+              <Tag>Nested Item 3</Tag>
             </Stack>
           </Container>
         </MainContainer>
