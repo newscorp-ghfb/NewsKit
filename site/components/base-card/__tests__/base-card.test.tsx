@@ -45,15 +45,4 @@ describe('BaseCard', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('Renders horizontal interactive card with overrides', () => {
-    const props: BaseCardProps = {
-      title: 'Interactive Horizontal Card',
-      href: 'newskit.com',
-      layout: 'horizontal',
-      children: <TextBlock>Text</TextBlock>,
-      overrides: {stylePreset: 'cardContainer'},
-    };
-    const fragment = renderToFragmentWithTheme(BaseCard, props);
-    expect(fragment).toMatchSnapshot();
-  });
 });
