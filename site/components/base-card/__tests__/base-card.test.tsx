@@ -44,5 +44,4 @@ describe('BaseCard', () => {
     const fragment = renderToFragmentWithTheme(BaseCard, props);
     expect(fragment).toMatchSnapshot();
   });
-
 });
