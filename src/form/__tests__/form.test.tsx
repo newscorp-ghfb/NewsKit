@@ -262,8 +262,8 @@ describe('Form', () => {
 
   test('exposes the expected functions from useForm hook', async () => {
     const useFormMockMethods = {
-      // TODO for resetValidation and clearError should expect [Function reset], how to test it?
-      // then add it in the group in line 304.
+      // TODO for resetValidation and clearError should expect [Function reset], how to expect it?
+      // (once tested add it in the group in line 304).
       reset: 'reset-function',
       watch: 'watch-function',
       setError: 'setError-function',

@@ -105,7 +105,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [
-      // TODO what is this for? do I need to add resetValidation here?  why?
+      // TODO Do I need to add resetValidation here? without seems working fine. Is having deps needed for this hook?
       formContext.reset,
       formContext.watch,
       formContext.clearErrors,
