@@ -65,6 +65,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       formContext.formState.isSubmitSuccessful = false
       setIsResettingValidation(false)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[formContext.formState, isResettingValidation]);
   
   const formRef = useRef<HTMLFormElement>(null);

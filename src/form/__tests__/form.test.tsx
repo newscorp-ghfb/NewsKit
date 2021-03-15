@@ -190,7 +190,6 @@ describe('Form', () => {
     expect(await findByTestId('tick-icon')).not.toBeNull();
   });
 
-  // TODO fix act().. warning
   // TODO Fix linting -  be careful adding stuff in useEffect does not break your code.. if does.. why?
   // TODO UseCallback, needed? be careful linting does not break stuff adding thing in the array.
   // TODO Use imperativeHandle array todo

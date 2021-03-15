@@ -58,7 +58,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
       // @ts-ignore
       formContext.formState.fieldsHadError[name].hadError = true
     }
-  }, [errorText]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [errorText, hadError, name]);
 
   const id = getSSRId();
   const assistiveTextId = errorText && `${id}-error-text` || assistiveText && `${id}-assistive-text`
