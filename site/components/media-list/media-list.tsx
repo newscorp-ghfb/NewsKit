@@ -35,7 +35,6 @@ export const MediaList: React.FC<MediaListProps> = ({
           media={media}
           title={title}
           href={href}
-          overrides={styles && styles.card && {...styles.card}}
         >
           <TextBlock
             typographyPreset={

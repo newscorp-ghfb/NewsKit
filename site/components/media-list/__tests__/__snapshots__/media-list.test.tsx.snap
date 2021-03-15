@@ -391,21 +391,6 @@ exports[`Media List renders with custom layout 1`] = `
   }
 }
 
-.emotion-30 {
-  box-sizing: border-box;
-  background-color: #213A82;
-  border-radius: 12px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
-}
-
 .emotion-27 {
   margin: 0;
   padding: 1px 0;
@@ -563,7 +548,7 @@ exports[`Media List renders with custom layout 1`] = `
             class="emotion-15"
           >
             <div
-              class="emotion-30"
+              class="emotion-22"
             >
               <div
                 class="emotion-13"

@@ -5,18 +5,15 @@ import {BaseCardProps} from './types';
 const BaseCardInteractive: React.FC<BaseCardProps> = ({
   title,
   children,
-  overrides,
   ...rest
 }) => (
   <CardInset
-    overrides={
-      overrides || {
-        stylePreset: 'baseCardInteractive',
-        teaserContainer: {
-          spaceInset: 'space050',
-        },
-      }
-    }
+    overrides={{
+      stylePreset: 'baseCardInteractive',
+      teaserContainer: {
+        spaceInset: 'space050',
+      },
+    }}
     {...rest}
   >
     <Block spaceStack="space020">
@@ -38,19 +35,16 @@ const BaseCardInteractive: React.FC<BaseCardProps> = ({
 const BaseCardNonInteractive: React.FC<BaseCardProps> = ({
   title,
   children,
-  overrides,
   layout,
   ...rest
 }) => (
   <Card
-    overrides={
-      overrides || {
-        stylePreset: 'baseCardNonInteractive',
-        mediaContainer: {
-          spaceStack: layout === 'horizontal' ? 'space050' : 'space040',
-        },
-      }
-    }
+    overrides={{
+      stylePreset: 'baseCardNonInteractive',
+      mediaContainer: {
+        spaceStack: layout === 'horizontal' ? 'space050' : 'space040',
+      },
+    }}
     layout={layout}
     {...rest}
   >
