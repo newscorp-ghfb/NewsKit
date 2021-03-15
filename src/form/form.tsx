@@ -28,7 +28,6 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   const rePopulateForm = () => {
     if (fieldsValues) {
       Object.keys(fieldsValues).forEach(field => {
-        // @ts-ignore
         formContext.setValue(field, fieldsValues[field])
       })
     }
@@ -69,6 +68,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   },[formContext.formState, isResettingValidation]);
   
   const formRef = useRef<HTMLFormElement>(null);
+
   useImperativeHandle(
     ref,
     () => ({
@@ -90,8 +90,9 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       trigger: formContext.trigger,
       element: formRef.current,
     }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [
-      // TODO what is this for? do I need to add resetValidation here?
+      // TODO what is this for? do I need to add resetValidation here?  why? 
       formContext.reset,
       formContext.watch,
       formContext.clearErrors,

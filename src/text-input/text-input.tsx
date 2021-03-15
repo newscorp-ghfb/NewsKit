@@ -95,10 +95,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     'iconSize',
   );
   
-  let valid
-  if(formContext?.formState) {
-    valid = formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
-  }
+  // eslint-disable-next-line no-undef, prettier/prettier
+  const valid = formContext?.formState &&formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
 
   return (
     <StyledTextInputContainer label={label} overrides={overrides}>
