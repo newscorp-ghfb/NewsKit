@@ -138,7 +138,7 @@ exports[`Drawer layout renders closed drawer 1`] = `
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -148,6 +148,15 @@ exports[`Drawer layout renders closed drawer 1`] = `
 }
 
 .emotion-8 {
+  margin-bottom: 4px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-10 {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -168,9 +177,9 @@ exports[`Drawer layout renders closed drawer 1`] = `
 }
 
 <div
-    aria-label="Drawer"
+    aria-label="drawer"
     aria-modal="true"
-    class="emotion-8"
+    class="emotion-10"
     data-testid="drawer"
     role="dialog"
   >
@@ -217,11 +226,17 @@ exports[`Drawer layout renders closed drawer 1`] = `
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-9"
       data-testid="drawer-content"
     >
-      <div>
-        Drawer content
+      <div
+        class="emotion-8"
+      >
+        <p
+          class="emotion-7"
+        >
+          Example Drawer text
+        </p>
       </div>
     </div>
   </div>
@@ -246,7 +261,7 @@ exports[`Drawer layout renders default right position 1`] = `
     class="emotion-0"
     data-testid="overlay"
   />
-  .emotion-8 {
+  .emotion-10 {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -405,6 +420,229 @@ exports[`Drawer layout renders default right position 1`] = `
   display: inline-block;
 }
 
+.emotion-9 {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden auto;
+}
+
+.emotion-8 {
+  margin-bottom: 4px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+<div
+    aria-label="drawer"
+    aria-modal="true"
+    class="emotion-10"
+    data-testid="drawer"
+    role="dialog"
+  >
+    <div
+      class="emotion-6"
+    >
+      <h3>
+        Drawer Header WIP
+      </h3>
+      <div
+        class="emotion-5"
+      >
+        <button
+          aria-label="close drawer"
+          class="emotion-4"
+          data-testid="button"
+          type="button"
+        >
+          <div
+            class="emotion-3"
+          >
+            <div
+              class="emotion-2"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      class="emotion-9"
+      data-testid="drawer-content"
+    >
+      <div
+        class="emotion-8"
+      >
+        <p
+          class="emotion-7"
+        >
+          Example Drawer text
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
+<DocumentFragment>
+  .emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 50%;
+  color: #ffffff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-4 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-4 svg {
+  fill: #ffffff;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-4:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-4:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
 .emotion-7 {
   box-sizing: border-box;
   -webkit-box-flex: 1;
@@ -414,8 +652,29 @@ exports[`Drawer layout renders default right position 1`] = `
   overflow: hidden auto;
 }
 
+.emotion-8 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  width: 30%;
+  max-width: 100%;
+  min-width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
 <div
-    aria-label="Drawer"
+    aria-describedby="description purpose"
+    aria-label="drawer"
     aria-modal="true"
     class="emotion-8"
     data-testid="drawer"
@@ -467,8 +726,15 @@ exports[`Drawer layout renders default right position 1`] = `
       class="emotion-7"
       data-testid="drawer-content"
     >
-      <div>
-        Drawer content
+      <div
+        id="description"
+      >
+        Overriden drawer components
+      </div>
+      <div
+        id="purpose"
+      >
+        Showing different styles
       </div>
     </div>
   </div>
@@ -629,7 +895,7 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -639,6 +905,15 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
 }
 
 .emotion-8 {
+  margin-bottom: 4px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-10 {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -661,9 +936,9 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
 }
 
 <div
-    aria-label="Drawer"
+    aria-label="drawer"
     aria-modal="true"
-    class="emotion-8"
+    class="emotion-10"
     data-testid="drawer"
     role="dialog"
   >
@@ -710,11 +985,17 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-9"
       data-testid="drawer-content"
     >
-      <div>
-        Drawer content
+      <div
+        class="emotion-8"
+      >
+        <p
+          class="emotion-7"
+        >
+          Example Drawer text
+        </p>
       </div>
     </div>
   </div>
@@ -875,7 +1156,7 @@ exports[`Drawer layout renders left position 1`] = `
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -885,6 +1166,15 @@ exports[`Drawer layout renders left position 1`] = `
 }
 
 .emotion-8 {
+  margin-bottom: 4px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-10 {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -908,9 +1198,9 @@ exports[`Drawer layout renders left position 1`] = `
 }
 
 <div
-    aria-label="Drawer"
+    aria-label="drawer"
     aria-modal="true"
-    class="emotion-8"
+    class="emotion-10"
     data-testid="drawer"
     role="dialog"
   >
@@ -957,11 +1247,17 @@ exports[`Drawer layout renders left position 1`] = `
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-9"
       data-testid="drawer-content"
     >
-      <div>
-        Drawer content
+      <div
+        class="emotion-8"
+      >
+        <p
+          class="emotion-7"
+        >
+          Example Drawer text
+        </p>
       </div>
     </div>
   </div>

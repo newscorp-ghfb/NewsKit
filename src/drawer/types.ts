@@ -2,10 +2,10 @@ import {MQ} from '../utils/style';
 
 export interface DrawerProps {
   open: boolean;
-  onDismiss?: () => void;
+  onDismiss: () => void;
   placement?: 'left' | 'right';
-  /** Whether the drawer panel can be dismissed by clicking outside the drawer (on the overlay) */
-  closeable?: boolean;
+  children: Exclude<React.ReactNode, 'undefined'>;
+  ariaDescribedby?: string;
   overrides?: {
     overlay?: {
       stylePreset?: MQ<string>;

@@ -15,8 +15,8 @@ export const Drawer: React.FC<DrawerProps> = ({
   children,
   open: isOpen,
   onDismiss,
-  closeable = true,
   overrides = {},
+  ariaDescribedby,
   ...props
 }) => {
   const theme = useTheme();
@@ -30,9 +30,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   };
 
   const triggerClose = () => {
-    if (!onDismiss) return;
-
-    if (isOpen) {
+    if (onDismiss && isOpen) {
       onDismiss();
     }
   };
@@ -42,9 +40,6 @@ export const Drawer: React.FC<DrawerProps> = ({
   };
 
   const handleOverlayClick = () => {
-    if (!closeable) {
-      return;
-    }
     triggerClose();
   };
 
@@ -62,7 +57,8 @@ export const Drawer: React.FC<DrawerProps> = ({
       <StyledDrawerContainer
         isOpen={isOpen}
         role="dialog"
-        aria-label="Drawer"
+        aria-label="drawer"
+        aria-describedby={ariaDescribedby}
         aria-modal="true"
         data-testid="drawer"
         overrides={overrides}

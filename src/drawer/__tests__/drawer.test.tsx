@@ -6,12 +6,21 @@ import {
 } from '../../test/test-utils';
 import {createTheme} from '../../theme';
 import {Drawer} from '../drawer';
+import {Block} from '../../block';
+import {TextBlock} from '../../text-block';
+
+const drawerBody = (
+  <Block spaceStack="space010">
+    <TextBlock>Example Drawer text</TextBlock>
+  </Block>
+);
 
 describe('Drawer layout', () => {
   test('renders default right position', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
       open: true,
-      children: <div>Drawer content</div>,
+      children: drawerBody,
+      onDismiss: () => {},
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -19,7 +28,8 @@ describe('Drawer layout', () => {
   test('renders left position', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
       open: true,
-      children: <div>Drawer content</div>,
+      onDismiss: () => {},
+      children: drawerBody,
       placement: 'left',
     });
     expect(fragment).toMatchSnapshot();
@@ -28,7 +38,8 @@ describe('Drawer layout', () => {
   test('renders closed drawer', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
       open: false,
-      children: <div>Drawer content</div>,
+      onDismiss: () => {},
+      children: drawerBody,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -57,7 +68,8 @@ describe('Drawer layout', () => {
       Drawer,
       {
         open: true,
-        children: <div>Drawer content</div>,
+        onDismiss: () => {},
+        children: drawerBody,
         overrides: {
           overlay: {
             stylePreset: 'overlayCustom',
@@ -74,14 +86,30 @@ describe('Drawer layout', () => {
     );
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders drawer with aria-describedby attribute', () => {
+    const fragment = renderToFragmentWithTheme(Drawer, {
+      open: false,
+      onDismiss: () => {},
+      ariaDescribedby: 'description purpose',
+      children: (
+        <>
+          <div id="description">Overriden drawer components</div>
+          <div id="purpose">Showing different styles</div>
+        </>
+      ),
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
-describe('Drawer onDismiss', () => {
-  test('closes drawer when Esc key pressed', () => {
+describe('Drawer closing', () => {
+  test('invokes onDismiss callback when Esc key pressed', () => {
     const mockCallBack = jest.fn();
     renderWithTheme(Drawer, {
       open: true,
       onDismiss: mockCallBack,
+      children: drawerBody,
     });
 
     fireEvent.keyUp(document, {key: 'Escape'});
@@ -89,11 +117,12 @@ describe('Drawer onDismiss', () => {
     expect(mockCallBack).toHaveBeenCalled();
   });
 
-  test('closes drawer when clicking on the overlay', () => {
+  test('invokes onDismiss callback when clicking on the overlay', () => {
     const mockCallBack = jest.fn();
     const overlay = renderWithTheme(Drawer, {
       open: true,
       onDismiss: mockCallBack,
+      children: drawerBody,
     }).getByTestId('overlay');
 
     fireEvent.click(overlay);
@@ -101,24 +130,12 @@ describe('Drawer onDismiss', () => {
     expect(mockCallBack).toHaveBeenCalled();
   });
 
-  test("doesn't close tha drawer when clicking the overlay closable is false", () => {
-    const mockCallBack = jest.fn();
-    const overlay = renderWithTheme(Drawer, {
-      open: true,
-      onDismiss: mockCallBack,
-      closeable: false,
-    }).getByTestId('overlay');
-
-    fireEvent.click(overlay);
-
-    expect(mockCallBack).not.toHaveBeenCalled();
-  });
-
-  test('closes drawer when clicking on the close button', () => {
+  test('invokes onDismiss callback when clicking on the close button', () => {
     const mockCallBack = jest.fn();
     const drawerCloseIcon = renderWithTheme(Drawer, {
       open: true,
       onDismiss: mockCallBack,
+      children: drawerBody,
     }).getByLabelText('close drawer');
 
     fireEvent.click(drawerCloseIcon);
@@ -131,20 +148,11 @@ describe('Drawer onDismiss', () => {
     const drawerCloseIcon = renderWithTheme(Drawer, {
       open: false,
       onDismiss: mockCallBack,
+      children: drawerBody,
     }).getByLabelText('close drawer');
 
     fireEvent.click(drawerCloseIcon);
 
     expect(mockCallBack).not.toHaveBeenCalled();
-  });
-
-  test("doesn't close the drawer when onDismiss prop is not provided", () => {
-    const {getByTestId, getByLabelText} = renderWithTheme(Drawer, {
-      open: true,
-    });
-
-    fireEvent.click(getByLabelText('close drawer'));
-
-    expect(getByTestId('drawer')).toBeVisible();
   });
 });
