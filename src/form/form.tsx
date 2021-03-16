@@ -1,5 +1,6 @@
 import React, {
   forwardRef,
+  useCallback,
   useEffect,
   useImperativeHandle,
   useRef,
@@ -41,7 +42,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     }
   };
 
-  const addFieldsHadErrorObject = () => {
+  const addFieldsHadErrorObject = useCallback(() => {
     const formFields = Object.keys(formContext.getValues());
     const fieldsHadErrorObject: {[key: string]: {hadError: boolean}} = {};
 
@@ -50,16 +51,16 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     });
     // @ts-ignore
     formContext.formState.fieldsHadError = fieldsHadErrorObject;
-  };
+  }, [formContext]);
 
-  const setAllFieldsHadErrorToFalse = () => {
+  const setAllFieldsHadErrorToFalse = useCallback(() => {
     // @ts-ignore
     const hadErrorFields = Object.keys(formContext.formState.fieldsHadError);
     hadErrorFields.forEach(field => {
       // @ts-ignore
       formContext.formState.fieldsHadError[field].hadError = false;
     });
-  };
+  }, [formContext]);
 
   useEffect(() => {
     if (
@@ -86,7 +87,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     () => ({
       reset: () => {
         setAllFieldsHadErrorToFalse();
-        formContext.reset()
+        formContext.reset();
       },
       clearValidation: () => {
         setFieldsValues(formContext.getValues());
