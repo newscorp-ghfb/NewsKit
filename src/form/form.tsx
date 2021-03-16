@@ -48,9 +48,8 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     formFields.forEach(field => {
       fieldsHadErrorObject[field] = {hadError: false};
     });
-    Object.assign(formContext.formState, {
-      fieldsHadError: fieldsHadErrorObject,
-    });
+    // @ts-ignore
+    formContext.formState.fieldsHadError = fieldsHadErrorObject;
   };
 
   const setAllFieldsHadErrorToFalse = () => {
