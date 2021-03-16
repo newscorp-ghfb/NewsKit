@@ -62,6 +62,12 @@ exports[`Media List renders with custom layout 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
 }
 
@@ -167,7 +173,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-10 {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .emotion-9 {
@@ -259,8 +265,8 @@ exports[`Media List renders with custom layout 1`] = `
   padding: 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -277,7 +283,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4267857142857143em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-11::after {
@@ -285,7 +291,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3642857142857143em;
+  margin-top: -0.4em;
 }
 
 .emotion-22 {
@@ -299,6 +305,12 @@ exports[`Media List renders with custom layout 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
 }
 
@@ -717,6 +729,12 @@ exports[`Media List renders with default layout 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
 }
 
@@ -822,7 +840,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-10 {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .emotion-9 {
@@ -914,8 +932,8 @@ exports[`Media List renders with default layout 1`] = `
   padding: 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -932,7 +950,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4267857142857143em;
+  margin-bottom: -0.4625em;
 }
 
 .emotion-11::after {
@@ -940,7 +958,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3642857142857143em;
+  margin-top: -0.4em;
 }
 
 .emotion-22 {
@@ -954,6 +972,12 @@ exports[`Media List renders with default layout 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
 }
 

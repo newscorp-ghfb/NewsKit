@@ -39,7 +39,7 @@ export const MediaList: React.FC<MediaListProps> = ({
           <TextBlock
             typographyPreset={
               // eslint-disable-next-line prettier/prettier, no-undef
-              styles?.description?.typographyPreset || 'editorialParagraph010'
+              styles?.description?.typographyPreset || 'editorialParagraph020'
             }
             // eslint-disable-next-line no-undef
             stylePreset={styles?.description?.stylePreset || 'inkBase'}

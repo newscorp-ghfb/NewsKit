@@ -1,13 +1,14 @@
 import React from 'react';
-import {Block, Card, CardInset, Headline} from 'newskit';
+import {Block, Headline} from 'newskit';
 import {BaseCardProps} from './types';
+import {StyledCardInteractive, StyledBaseCardNonInteractive} from './styled';
 
 const BaseCardInteractive: React.FC<BaseCardProps> = ({
   title,
   children,
   ...rest
 }) => (
-  <CardInset
+  <StyledCardInteractive
     overrides={{
       stylePreset: 'baseCardInteractive',
       teaserContainer: {
@@ -16,7 +17,7 @@ const BaseCardInteractive: React.FC<BaseCardProps> = ({
     }}
     {...rest}
   >
-    <Block spaceStack="space020">
+    <Block spaceStack="space045">
       <Headline
         overrides={{
           typographyPreset: 'editorialHeadline030',
@@ -29,7 +30,7 @@ const BaseCardInteractive: React.FC<BaseCardProps> = ({
       </Headline>
     </Block>
     {children}
-  </CardInset>
+  </StyledCardInteractive>
 );
 
 const BaseCardNonInteractive: React.FC<BaseCardProps> = ({
@@ -38,7 +39,7 @@ const BaseCardNonInteractive: React.FC<BaseCardProps> = ({
   layout,
   ...rest
 }) => (
-  <Card
+  <StyledBaseCardNonInteractive
     overrides={{
       stylePreset: 'baseCardNonInteractive',
       mediaContainer: {
@@ -48,7 +49,7 @@ const BaseCardNonInteractive: React.FC<BaseCardProps> = ({
     layout={layout}
     {...rest}
   >
-    <Block spaceStack="space020">
+    <Block spaceStack="space045">
       <Headline
         overrides={{
           typographyPreset: 'editorialHeadline030',
@@ -61,7 +62,7 @@ const BaseCardNonInteractive: React.FC<BaseCardProps> = ({
       </Headline>
     </Block>
     {children}
-  </Card>
+  </StyledBaseCardNonInteractive>
 );
 
 export const BaseCard: React.FC<BaseCardProps> = ({href, ...rest}) =>
