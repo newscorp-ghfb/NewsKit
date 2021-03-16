@@ -23,7 +23,7 @@ export interface FormProps {
 }
 
 export interface FormRef {
-  clearValidation: ()=>{};
+  clearValidation: () => void;
   reset: UseFormMethods['reset'];
   watch: UseFormMethods['watch'];
   setError: UseFormMethods['setError'];

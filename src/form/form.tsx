@@ -90,6 +90,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
         setIsResettingValidation(true);
         setAllFieldsHadErrorToFalse();
         formContext.reset();
+        
       },
       watch: formContext.watch,
       setError: formContext.setError,
