@@ -64,8 +64,8 @@ exports[`Media List renders with custom layout 1`] = `
   flex-direction: column;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
@@ -307,8 +307,8 @@ exports[`Media List renders with custom layout 1`] = `
   flex-direction: column;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
@@ -731,8 +731,8 @@ exports[`Media List renders with default layout 1`] = `
   flex-direction: column;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
@@ -974,8 +974,8 @@ exports[`Media List renders with default layout 1`] = `
   flex-direction: column;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;

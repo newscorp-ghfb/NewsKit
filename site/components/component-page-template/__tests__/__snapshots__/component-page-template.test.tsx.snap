@@ -7807,8 +7807,8 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   flex-direction: column;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
@@ -7935,8 +7935,8 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   flex-direction: rowfalse;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
@@ -39608,8 +39608,8 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   flex-direction: column;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
@@ -55011,8 +55011,8 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   flex-direction: column;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
@@ -55169,8 +55169,8 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   flex-direction: rowfalse;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   height: 100%;
