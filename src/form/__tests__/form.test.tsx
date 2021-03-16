@@ -243,17 +243,22 @@ describe('Form', () => {
 
   test('clearValidation() removes error state properly even if field was valid', async () => {
     const ref = React.createRef<HTMLFormElement>();
-    const {getByTestId, findAllByTestId, getByRole, queryByTestId, findByTestId} = renderWithImplementation(
-      Form,
-      {
-        ...props,
-        ref,
-        validationMode: 'onSubmit',
-      },
-    );
-    
-    const inputEmail = getByTestId('text-input-email') as HTMLInputElement
-    const inputUsername = getByTestId('text-input-username') as HTMLInputElement
+    const {
+      getByTestId,
+      findAllByTestId,
+      getByRole,
+      queryByTestId,
+      findByTestId,
+    } = renderWithImplementation(Form, {
+      ...props,
+      ref,
+      validationMode: 'onSubmit',
+    });
+
+    const inputEmail = getByTestId('text-input-email') as HTMLInputElement;
+    const inputUsername = getByTestId(
+      'text-input-username',
+    ) as HTMLInputElement;
 
     fireEvent.change(inputEmail, {
       target: {value: 'test@news.co.uk'},
@@ -263,17 +268,16 @@ describe('Form', () => {
       target: {value: 'test'},
     });
 
-    expect(inputEmail.value).toBe('test@news.co.uk')
-    expect(inputUsername.value).toBe('test')
+    expect(inputEmail.value).toBe('test@news.co.uk');
+    expect(inputUsername.value).toBe('test');
 
     fireEvent.submit(getByRole('button'));
 
     expect(await findAllByTestId('tick-icon')).not.toBeNull();
-    
+
     fireEvent.blur(inputEmail, {
       target: {value: 'newste'},
     });
-
 
     expect(await findByTestId('error-icon')).not.toBeNull();
 

@@ -90,7 +90,6 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
         setIsResettingValidation(true);
         setAllFieldsHadErrorToFalse();
         formContext.reset();
-        
       },
       watch: formContext.watch,
       setError: formContext.setError,
@@ -101,7 +100,6 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [
-      // TODO Do I need to add clearValidation here? without seems working fine. Is having deps needed for this hook?
       formContext.reset,
       formContext.watch,
       formContext.clearErrors,
