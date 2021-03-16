@@ -251,15 +251,6 @@ export const stylePresets = {
     },
   },
 
-  cardContainerFoundationsOverview: {
-    base: {
-      borderRadius: '{{borders.borderRadiusRounded030}}',
-      borderWidth: '{{borders.borderWidth010}}',
-      borderColor: '{{colors.neutral020}}',
-      borderStyle: 'solid',
-    },
-  },
-
   cardContainerNonInteractive030: {
     base: {
       backgroundColor: '{{colors.blue080}}',
@@ -278,11 +269,6 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.blue060}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
-    },
-  },
-  cardMediaInteractive: {
-    base: {
-      borderRadius: '{{borders.borderRadiusRounded040}}',
     },
   },
 

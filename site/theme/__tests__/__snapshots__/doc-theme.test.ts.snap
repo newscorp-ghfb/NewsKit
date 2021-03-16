@@ -1828,14 +1828,6 @@ Object {
         "borderRadius": false,
       },
     },
-    "cardContainerFoundationsOverview": Object {
-      "base": Object {
-        "borderColor": "{{colors.neutral020}}",
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-      },
-    },
     "cardContainerNonInteractive010": Object {
       "base": Object {
         "backgroundColor": "{{colors.blue060}}",
@@ -1864,11 +1856,6 @@ Object {
     "cardContainerTeaserAndActions": Object {
       "base": Object {
         "backgroundColor": false,
-      },
-    },
-    "cardMediaInteractive": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded040}}",
       },
     },
     "cardMediaNonInteractive": Object {
