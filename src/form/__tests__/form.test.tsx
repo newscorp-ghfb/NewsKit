@@ -346,7 +346,6 @@ describe('Form', () => {
     });
 
     expect(ref.current).toBeDefined();
-    expect(ref.current!.reset).toBe(useFormMockMethods.reset);
     expect(ref.current!.watch).toBe(useFormMockMethods.watch);
     expect(ref.current!.setError).toBe(useFormMockMethods.setError);
     expect(ref.current!.setValue).toBe(useFormMockMethods.setValue);

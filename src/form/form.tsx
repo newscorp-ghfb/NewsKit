@@ -84,7 +84,10 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   useImperativeHandle(
     ref,
     () => ({
-      reset: formContext.reset,
+      reset: () => {
+        setAllFieldsHadErrorToFalse();
+        formContext.reset()
+      },
       clearValidation: () => {
         setFieldsValues(formContext.getValues());
         setIsResettingValidation(true);
@@ -98,16 +101,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       trigger: formContext.trigger,
       element: formRef.current,
     }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [
-      formContext.reset,
-      formContext.watch,
-      formContext.clearErrors,
-      formContext.setError,
-      formContext.setValue,
-      formContext.getValues,
-      formContext.trigger,
-    ],
+    [formContext, setAllFieldsHadErrorToFalse],
   );
 
   return (
