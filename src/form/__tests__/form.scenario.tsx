@@ -81,8 +81,6 @@ export default {
               <Button
                 onClick={() => {
                   if (formRef.current) {
-                    // TODO had to ignore, because says they do not exist. Evn if added in types.ts FormRef?
-                    // @ts-ignore
                     formRef.current.clearValidation();
                   }
                 }}
