@@ -1,6 +1,14 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import {Link, Cell, Block, Grid, getSizingFromTheme, styled} from 'newskit';
+import {
+  Link,
+  Cell,
+  Block,
+  Grid,
+  getSizingFromTheme,
+  styled,
+  getSpacingFromTheme,
+} from 'newskit';
 import {InfoNotice} from '../info-notice';
 import {FeatureCard} from '../feature-card';
 import {AccessibilityTables} from '../accessibility-tables';
@@ -18,6 +26,11 @@ import {SectionIntroduction} from '../section-introduction';
 import {Table} from '../table';
 import {PageIntroduction} from '../page-introduction/page-introduction';
 import {Separator} from '../separator';
+
+export const StyledSection = styled.section`
+  margin-top: -${getSpacingFromTheme('space050')};
+  padding-top: ${getSpacingFromTheme('space050')};
+`;
 
 const renderSections = ({
   componentDefaultsKey,
@@ -41,7 +54,10 @@ const renderSections = ({
     <Meta {...meta} />
     {interactiveDemo && (
       <Cell xs={12}>
-        <section id="interactive-demo" data-toc-indexed="Interactive Demo">
+        <StyledSection
+          id="interactive-demo"
+          data-toc-indexed="Interactive Demo"
+        >
           <Grid lgMargin="space000" xsRowGutter="space000">
             <SectionIntroduction title="Interactive Demo">
               {interactiveDemo.introduction}
@@ -52,20 +68,20 @@ const renderSections = ({
               </Block>
             </Cell>
           </Grid>
-        </section>
+        </StyledSection>
       </Cell>
     )}
     {anatomy && (
       <>
         <Cell xs={12}>
-          <section id="anatomy" data-toc-indexed="Anatomy">
+          <StyledSection id="anatomy" data-toc-indexed="Anatomy">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Anatomy">
                 {anatomy.introduction}
               </SectionIntroduction>
               <Anatomy {...anatomy} />
             </Grid>
-          </section>
+          </StyledSection>
         </Cell>
         <Cell xs={12} md={10} lg={8} mdOffset={1}>
           <Separator />
@@ -76,7 +92,7 @@ const renderSections = ({
     {variations && (
       <>
         <Cell xs={12}>
-          <section id="variations" data-toc-indexed="Variations">
+          <StyledSection id="variations" data-toc-indexed="Variations">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Variations">
                 {variations.introduction}
@@ -92,7 +108,7 @@ const renderSections = ({
                 }}
               />
             </Grid>
-          </section>
+          </StyledSection>
         </Cell>
         <Cell xs={12} md={10} lg={8} mdOffset={1}>
           <Separator />
@@ -102,7 +118,7 @@ const renderSections = ({
     {behaviors && (
       <>
         <Cell xs={12}>
-          <section id="behaviors" data-toc-indexed="Behaviours">
+          <StyledSection id="behaviors" data-toc-indexed="Behaviours">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Behaviours">
                 {behaviors.introduction}
@@ -118,7 +134,7 @@ const renderSections = ({
                 {...behaviors}
               />
             </Grid>
-          </section>
+          </StyledSection>
         </Cell>
         <Cell xs={12} md={10} lg={8} mdOffset={1}>
           <Separator />
@@ -128,14 +144,14 @@ const renderSections = ({
     {usage && (
       <>
         <Cell xs={12}>
-          <section id="usage" data-toc-indexed="Usage">
+          <StyledSection id="usage" data-toc-indexed="Usage">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Usage">
                 {usage.introduction}
               </SectionIntroduction>
               <Usage {...usage} />
             </Grid>
-          </section>
+          </StyledSection>
         </Cell>
         <Cell xs={12} md={10} lg={8} mdOffset={1}>
           <Separator />
@@ -146,14 +162,14 @@ const renderSections = ({
     {accessibility && (
       <>
         <Cell xs={12}>
-          <section id="accessibility" data-toc-indexed="Accessibility">
+          <StyledSection id="accessibility" data-toc-indexed="Accessibility">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title="Accessibility Considerations">
                 {accessibility.introduction}
               </SectionIntroduction>
               <AccessibilityTables {...accessibility} />
             </Grid>
-          </section>
+          </StyledSection>
         </Cell>
         <Cell xs={12} md={10} lg={8} mdOffset={1}>
           <Separator />
@@ -163,13 +179,13 @@ const renderSections = ({
     {seo && (
       <>
         <Cell xs={12}>
-          <section id="seo" data-toc-indexed="SEO">
+          <StyledSection id="seo" data-toc-indexed="SEO">
             <Grid lgMargin="space000" xsRowGutter="space000">
               <SectionIntroduction title={seo.title}>
                 {seo.introduction}
               </SectionIntroduction>
             </Grid>
-          </section>
+          </StyledSection>
         </Cell>
         <Cell xs={12} md={10} lg={8} mdOffset={1}>
           <Separator />
@@ -178,7 +194,7 @@ const renderSections = ({
     )}
     {props && (
       <Cell xs={12}>
-        <section id="props" data-toc-indexed="Props">
+        <StyledSection id="props" data-toc-indexed="Props">
           <Grid lgMargin="space000" xsRowGutter="space000">
             <SectionIntroduction title="Props">
               {props.summary}
@@ -190,12 +206,12 @@ const renderSections = ({
               <Separator />
             </Cell>
           </Grid>
-        </section>
+        </StyledSection>
       </Cell>
     )}
     {overrides && (
       <Cell xs={12}>
-        <section id="overrides">
+        <StyledSection id="overrides">
           <Grid lgMargin="space000" xsRowGutter="space000">
             <SectionIntroduction title="Overrides">
               {overrides.summary}
@@ -204,7 +220,7 @@ const renderSections = ({
               <Table rows={overrides.rows} columns={overrides.columns} />
             </Cell>
           </Grid>
-        </section>
+        </StyledSection>
       </Cell>
     )}
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
@@ -271,6 +287,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
     <WrapperWithPadding>
       <Grid lgMargin="sizing000" xsRowGutter="sizing000">
         {renderSections(rest)}
+
         <Cell
           xsHidden
           smHidden

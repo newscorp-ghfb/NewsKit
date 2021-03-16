@@ -9,10 +9,10 @@ describe('Documentation Site - playground', () => {
 
   it('Tag playground should update the content', () => {
     cy.get('input[name="Content"]')
-      .clear()
+      .clear({force: true})
       .type('Chelsea');
     cy.get('input[name="Link"]')
-      .clear()
+      .clear({force: true})
       .type('https://test.co.uk');
     cy.get(`${playgroundElement} [data-testid="tag"]`)
       .should('have.attr', 'href', 'https://test.co.uk')
@@ -34,14 +34,14 @@ describe('Documentation Site - playground - Unordered List', () => {
 
   it('Create a new tag, populate it with data and remove it', () => {
     cy.get(`${playgroundElement} ul>li`).should('have.length', 3);
-    cy.get(`${ulArrayKnob} ${buttonAdd}`).click();
+    cy.get(`${ulArrayKnob} ${buttonAdd}`).click({force: true});
     cy.get(`${playgroundElement} ul>li`).should('have.length', 4);
 
-    cy.get(`${textKnobLabel}:last`).clear();
+    cy.get(`${textKnobLabel}:last`).clear({force: true});
     cy.get(`${textKnobLabel}:last`).type(testTagText);
     cy.get(`${playgroundElement} ul>li:last`).should('have.text', testTagText);
 
-    cy.get(`${ulArrayKnob} ${buttonRemove}:last`).click();
+    cy.get(`${ulArrayKnob} ${buttonRemove}:last`).click({force: true});
     cy.get(`${playgroundElement} ul>li`).should('have.length', 3);
   });
 });
@@ -53,7 +53,7 @@ describe('Documentation Site - playground', () => {
 
   it('Flag playground should update the content', () => {
     cy.get('input[name="Content"]')
-      .clear()
+      .clear({force: true})
       .type('Chelsea');
     cy.get(`${playgroundElement} [data-testid="flag"]`).contains('Chelsea');
   });

@@ -134,6 +134,9 @@ export default class MyApp extends App<Props, State> {
           <ThemeMode.Provider value={themeMode}>
             <Global
               styles={css`
+                html {
+                  scroll-behavior: smooth;
+                }
                 @font-face {
                   font-family: 'DM Sans';
                   src: url('/static/fonts/dmsans-regular-webfont.woff2')
@@ -315,6 +318,7 @@ export default class MyApp extends App<Props, State> {
                 }
               `}
             />
+
             <PageLoadInstrumentation />
             <Component
               {...pageProps}
