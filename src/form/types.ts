@@ -23,17 +23,12 @@ export interface FormProps {
 }
 
 export interface FormRef {
-  resetValidation: Function;
+  clearValidation: Function;
   reset: UseFormMethods['reset'];
   watch: UseFormMethods['watch'];
   setError: UseFormMethods['setError'];
-  clearErrors: Function;
   setValue: UseFormMethods['setValue'];
   getValues: UseFormMethods['getValues'];
   trigger: UseFormMethods['trigger'];
   element: HTMLFormElement | null;
-}
-
-export interface FormFieldsHadErrorObject {
-  [key: string]: {hadError: boolean};
 }

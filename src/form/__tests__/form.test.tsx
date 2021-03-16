@@ -61,7 +61,7 @@ describe('Form', () => {
           name="email"
           assistiveText="Your email"
           defaultValue="test"
-          data-testid="text-input"
+          data-testid="text-input-email"
           rules={{
             required: 'Required field',
             minLength: {value: 3, message: 'min length is 3'},
@@ -77,6 +77,7 @@ describe('Form', () => {
         <TextInput
           label="Username"
           name="username"
+          data-testid="text-input-username"
           assistiveText="Your username"
           rules={{
             required: 'Required field',
@@ -151,7 +152,7 @@ describe('Form', () => {
       },
     );
 
-    fireEvent.blur(getByTestId('text-input'));
+    fireEvent.blur(getByTestId('text-input-email'));
 
     expect(await findByText('Please provide a valid email')).not.toBeNull();
     expect(asFragment()).toMatchSnapshot();
@@ -166,9 +167,9 @@ describe('Form', () => {
       },
     );
 
-    fireEvent.blur(getByTestId('text-input'));
+    fireEvent.blur(getByTestId('text-input-email'));
     // if input is invalid, error text will remain even after multiple onBlur.
-    fireEvent.blur(getByTestId('text-input'));
+    fireEvent.blur(getByTestId('text-input-email'));
 
     expect(await findByText('Please provide a valid email')).not.toBeNull();
     expect(asFragment()).toMatchSnapshot();
@@ -180,14 +181,14 @@ describe('Form', () => {
       validationMode: 'onBlur',
     });
 
-    fireEvent.blur(getByTestId('text-input'), {
+    fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: 'test@news.co.uk'},
     });
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
   });
 
-  test('resetValidation() remove valid state', async () => {
+  test('clearValidation() remove valid state', async () => {
     const ref = React.createRef<HTMLFormElement>();
     const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
       Form,
@@ -198,18 +199,20 @@ describe('Form', () => {
       },
     );
 
-    fireEvent.blur(getByTestId('text-input'), {
+    fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: 'test@news.co.uk'},
     });
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
     act(() => {
-      ref.current!.resetValidation();
+      ref.current!.clearValidation();
     });
+
     expect(queryByTestId('tick-icon')).toBeNull();
+    expect(queryByTestId('error-icon')).toBeNull();
   });
 
-  test('resetValidation() works even if the field had an error', async () => {
+  test('clearValidation() removes valid tick properly even if the field had an error', async () => {
     const ref = React.createRef<HTMLFormElement>();
     const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
       Form,
@@ -220,23 +223,69 @@ describe('Form', () => {
       },
     );
 
-    fireEvent.blur(getByTestId('text-input'), {
+    fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: ''},
     });
 
     expect(await findByTestId('error-icon')).not.toBeNull();
 
-    fireEvent.blur(getByTestId('text-input'), {
+    fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: 'test@news.co.uk'},
     });
 
     act(() => {
-      ref.current!.resetValidation();
+      ref.current!.clearValidation();
     });
+
+    expect(queryByTestId('error-icon')).toBeNull();
     expect(queryByTestId('tick-icon')).toBeNull();
   });
 
-  test('clearErrors() removes error state', async () => {
+  test('clearValidation() removes error state properly even if field was valid', async () => {
+    const ref = React.createRef<HTMLFormElement>();
+    const {getByTestId, findAllByTestId, getByRole, queryByTestId, findByTestId} = renderWithImplementation(
+      Form,
+      {
+        ...props,
+        ref,
+        validationMode: 'onSubmit',
+      },
+    );
+    
+    const inputEmail = getByTestId('text-input-email') as HTMLInputElement
+    const inputUsername = getByTestId('text-input-username') as HTMLInputElement
+
+    fireEvent.change(inputEmail, {
+      target: {value: 'test@news.co.uk'},
+    });
+
+    fireEvent.change(inputUsername, {
+      target: {value: 'test'},
+    });
+
+    expect(inputEmail.value).toBe('test@news.co.uk')
+    expect(inputUsername.value).toBe('test')
+
+    fireEvent.submit(getByRole('button'));
+
+    expect(await findAllByTestId('tick-icon')).not.toBeNull();
+    
+    fireEvent.blur(inputEmail, {
+      target: {value: 'newste'},
+    });
+
+
+    expect(await findByTestId('error-icon')).not.toBeNull();
+
+    act(() => {
+      ref.current!.clearValidation();
+    });
+
+    expect(queryByTestId('error-icon')).toBeNull();
+    expect(queryByTestId('tick-icon')).toBeNull();
+  });
+
+  test('clearValidation()', async () => {
     const ref = React.createRef<HTMLFormElement>();
     const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
       Form,
@@ -247,13 +296,13 @@ describe('Form', () => {
       },
     );
 
-    fireEvent.blur(getByTestId('text-input'), {
+    fireEvent.blur(getByTestId('text-input-email'), {
       target: {value: ''},
     });
 
     expect(await findByTestId('error-icon')).not.toBeNull();
     act(() => {
-      ref.current!.clearErrors();
+      ref.current!.clearValidation();
     });
 
     expect(queryByTestId('error-icon')).toBeNull();
@@ -262,12 +311,11 @@ describe('Form', () => {
 
   test('exposes the expected functions from useForm hook', async () => {
     const useFormMockMethods = {
-      // TODO for resetValidation and clearError should expect [Function reset], how to expect it?
+      // TODO for clearValidation and clearError should expect [Function reset], how to expect it?
       // (once tested add it in the group in line 304).
       reset: 'reset-function',
       watch: 'watch-function',
       setError: 'setError-function',
-      clearErrors: 'clearErrors-function',
       setValue: 'setValue-function',
       getValues: 'getValues-function',
       trigger: 'trigger-function',

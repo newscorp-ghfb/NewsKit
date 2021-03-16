@@ -6,7 +6,7 @@ import React, {
   useState,
 } from 'react';
 import {useForm, FormProvider} from 'react-hook-form/dist/index.ie11';
-import {FormProps, FormRef, FormFieldsHadErrorObject} from './types';
+import {FormProps, FormRef} from './types';
 import {FormValidationContextProvider} from './context';
 
 export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
@@ -43,7 +43,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
 
   const addFieldsHadErrorObject = () => {
     const formFields = Object.keys(formContext.getValues());
-    const fieldsHadErrorObject: FormFieldsHadErrorObject = {};
+    const fieldsHadErrorObject: {[key: string]: {hadError: boolean}} = {};
 
     formFields.forEach(field => {
       fieldsHadErrorObject[field] = {hadError: false};
@@ -86,7 +86,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     ref,
     () => ({
       reset: formContext.reset,
-      resetValidation: () => {
+      clearValidation: () => {
         setFieldsValues(formContext.getValues());
         setIsResettingValidation(true);
         setAllFieldsHadErrorToFalse();
@@ -95,17 +95,13 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       watch: formContext.watch,
       setError: formContext.setError,
       setValue: formContext.setValue,
-      clearErrors: () => {
-        setAllFieldsHadErrorToFalse();
-        formContext.clearErrors();
-      },
       getValues: formContext.getValues,
       trigger: formContext.trigger,
       element: formRef.current,
     }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [
-      // TODO Do I need to add resetValidation here? without seems working fine. Is having deps needed for this hook?
+      // TODO Do I need to add clearValidation here? without seems working fine. Is having deps needed for this hook?
       formContext.reset,
       formContext.watch,
       formContext.clearErrors,

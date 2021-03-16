@@ -83,21 +83,11 @@ export default {
                   if (formRef.current) {
                     // TODO had to ignore, because says they do not exist. Evn if added in types.ts FormRef?
                     // @ts-ignore
-                    formRef.current.resetValidation();
+                    formRef.current.clearValidation();
                   }
                 }}
               >
-                Reset Validation
-              </Button>
-              <Button
-                onClick={() => {
-                  if (formRef.current) {
-                    // @ts-ignore
-                    formRef.current.clearErrors();
-                  }
-                }}
-              >
-                Clear Errors
+                Clear Validation
               </Button>
             </Form>
           </Block>
