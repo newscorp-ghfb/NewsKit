@@ -5,8 +5,7 @@ export interface UsageProps {
 }
 
 export interface UsageCardProps {
-  title: string;
   description: string;
-  allowed: boolean;
+  kind: 'do' | 'dont';
   media: ImageProps;
 }

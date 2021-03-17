@@ -123,9 +123,8 @@ describe('Component Page Template', () => {
         introduction: 'Component Usage',
         cards: [
           {
-            title: 'Title',
             description: 'Description',
-            allowed: true,
+            kind: 'do',
             media: {
               src: '/static/placeholder-16x9.png',
               alt: 'src alt',

@@ -1952,6 +1952,22 @@ Object {
         "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
+    "dividerNegative": Object {
+      "base": Object {
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
+    "dividerPositive": Object {
+      "base": Object {
+        "borderColor": "{{colors.interfacePositive010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth030}}",
+      },
+    },
     "dividerVertical": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",

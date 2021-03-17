@@ -196,6 +196,26 @@ export const stylePresets = {
     },
   },
 
+  // Divider
+
+  dividerPositive: {
+    base: {
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfacePositive010}}',
+      borderWidth: '{{borders.borderWidth030}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+    },
+  },
+
+  dividerNegative: {
+    base: {
+      borderStyle: 'solid',
+      borderColor: '{{colors.interfaceNegative010}}',
+      borderWidth: '{{borders.borderWidth030}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+    },
+  },
+
   // Override these here for now - will move to NewsKit Light in another ticket
   cardContainer: {
     base: {

@@ -126,7 +126,7 @@
   "interfaceBrand050": "{{colors.blue080}}",
   "interfaceBrand060": "{{colors.teal050}}",
 
-  "interfacePositive010": "{{colors.green080}}",
+  "interfacePositive010": "{{colors.green070}}",
   "interfacePositive020": "{{colors.green010}}",
   "interfaceNegative010": "{{colors.red070}}",
   "interfaceNegative020": "{{colors.red010}}",

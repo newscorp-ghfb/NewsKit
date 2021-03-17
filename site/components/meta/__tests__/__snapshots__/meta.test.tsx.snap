@@ -253,7 +253,7 @@ exports[`Meta renders with mandatory props 1`] = `
   appearance: none;
   overflow: hidden;
   color: #FFFFFF;
-  background-color: #0A782A;
+  background-color: #148F39;
   border-radius: 20rem;
 }
 
@@ -1382,7 +1382,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   appearance: none;
   overflow: hidden;
   color: #FFFFFF;
-  background-color: #0A782A;
+  background-color: #148F39;
   border-radius: 20rem;
 }
 

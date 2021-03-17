@@ -1,5 +1,6 @@
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {Usage} from '..';
+import {UsageProps} from '../types';
 
 describe('Usage', () => {
   test('renders with mandatory props', () => {
@@ -8,27 +9,24 @@ describe('Usage', () => {
         'Add details of when and how to use this component. This could include do’s and don’ts to support guidance details.',
       cards: [
         {
-          title: 'Title',
           description: 'Description',
-          allowed: true,
+          kind: 'do',
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'src alt',
           },
         },
         {
-          title: 'Title',
           description: 'Description',
-          allowed: true,
+          kind: 'do',
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'src alt',
           },
         },
         {
-          title: 'Title',
           description: 'Description',
-          allowed: false,
+          kind: 'dont',
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'src alt',
@@ -36,7 +34,7 @@ describe('Usage', () => {
         },
       ],
     };
-    const fragment = renderToFragmentWithTheme(Usage, props);
+    const fragment = renderToFragmentWithTheme(Usage, props as UsageProps);
     expect(fragment).toMatchSnapshot();
   });
 });

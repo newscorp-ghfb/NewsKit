@@ -2,7 +2,7 @@
 
 exports[`Usage renders with mandatory props 1`] = `
 <DocumentFragment>
-  .emotion-74 {
+  .emotion-80 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -11,7 +11,7 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-74 {
+  .emotion-80 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -22,7 +22,7 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-74 {
+  .emotion-80 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -32,7 +32,7 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-74 {
+  .emotion-80 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -42,13 +42,13 @@ exports[`Usage renders with mandatory props 1`] = `
   }
 }
 
-.emotion-73 {
+.emotion-79 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-72 {
+.emotion-78 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -64,36 +64,36 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-72 {
+  .emotion-78 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-72 {
+  .emotion-78 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-72 {
+  .emotion-78 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-72 {
+  .emotion-78 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-72 {
+  .emotion-78 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-23 {
+.emotion-25 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -102,9 +102,18 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-23 {
+  .emotion-25 {
     padding: 0 8px;
     margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-25 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -113,20 +122,20 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-23 {
+  .emotion-25 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-22 {
+.emotion-24 {
   position: relative;
 }
 
 .emotion-6 {
   position: absolute;
+  right: 16px;
   top: 16px;
-  left: 16px;
   z-index: 1;
 }
 
@@ -157,7 +166,7 @@ exports[`Usage renders with mandatory props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -165,7 +174,7 @@ exports[`Usage renders with mandatory props 1`] = `
   appearance: none;
   overflow: hidden;
   border-style: solid;
-  border-color: #0A782A;
+  border-color: #148F39;
   background-color: #E6FAEB;
   border-radius: 50%;
   border-width: 1px;
@@ -226,13 +235,13 @@ exports[`Usage renders with mandatory props 1`] = `
 }
 
 .emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
 }
 
-.emotion-21 {
+.emotion-23 {
   box-sizing: border-box;
-  color: #555E74;
+  border-radius: 20rem;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -247,35 +256,13 @@ exports[`Usage renders with mandatory props 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+  margin-bottom: 16px;
+  border-radius: 20rem;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
   .emotion-13 {
     min-height: 1px;
-  }
-}
-
-@media screen and (max-width:479px) {
-  .emotion-13 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
-  .emotion-13 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-13 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-13 {
-    margin-bottom: 24px;
   }
 }
 
@@ -348,29 +335,40 @@ exports[`Usage renders with mandatory props 1`] = `
   border-radius: inherit;
 }
 
-.emotion-20 {
+.emotion-22 {
   box-sizing: border-box;
 }
 
-.emotion-19 {
+.emotion-21 {
   box-sizing: border-box;
   color: inherit;
   padding: 0;
 }
 
-.emotion-19 a:not(.nk-card-link) {
+.emotion-21 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-16 {
+.emotion-15 {
   margin-bottom: 16px;
 }
 
-.emotion-15 {
+.emotion-14 {
+  border-style: solid;
+  border-color: #148F39;
+  border-width: 4px;
+  border-radius: 4px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 4px;
+  width: 100%;
+}
+
+.emotion-17 {
   font-family: 'Poppins',sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -379,57 +377,12 @@ exports[`Usage renders with mandatory props 1`] = `
   padding: 1px 0px;
 }
 
-.emotion-15::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22499999999999998em;
-}
-
-.emotion-15::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.475em;
-}
-
-.emotion-14 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #162740;
-}
-
-.emotion-14 svg {
-  fill: #162740;
-}
-
-.emotion-17 {
-  margin: 0;
-  padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-17 svg {
-  fill: #555E74;
-}
-
 .emotion-17::before {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.19166666666666665em;
 }
 
 .emotion-17::after {
@@ -437,10 +390,55 @@ exports[`Usage renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.44166666666666665em;
 }
 
-.emotion-52 {
+.emotion-16 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #148F39;
+}
+
+.emotion-16 svg {
+  fill: #148F39;
+}
+
+.emotion-19 {
+  margin: 0;
+  padding: 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-19 svg {
+  fill: #555E74;
+}
+
+.emotion-19::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4267857142857143em;
+}
+
+.emotion-19::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3642857142857143em;
+}
+
+.emotion-56 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -457,7 +455,7 @@ exports[`Usage renders with mandatory props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
-  padding: 4px 8px;
+  padding: 0;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -471,29 +469,65 @@ exports[`Usage renders with mandatory props 1`] = `
   border-width: 1px;
 }
 
-.emotion-52 svg {
+.emotion-56 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-52 svg {
+.emotion-56 svg {
+  fill: #D23F2D;
+}
+
+.emotion-52 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #D23F2D;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-52.emotion-52 {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-66 {
+  border-style: solid;
+  border-color: #D23F2D;
+  border-width: 4px;
+  border-radius: 4px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 4px;
+  width: 100%;
+}
+
+.emotion-68 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #D23F2D;
+}
+
+.emotion-68 svg {
   fill: #D23F2D;
 }
 
 <div
-    class="emotion-74"
+    class="emotion-80"
   >
     <div
-      class="emotion-73"
+      class="emotion-79"
     >
       <div
-        class="emotion-72"
+        class="emotion-78"
       >
         <div
-          class="emotion-23"
+          class="emotion-25"
         >
           <div
-            class="emotion-22"
+            class="emotion-24"
           >
             <div
               class="emotion-6"
@@ -533,7 +567,7 @@ exports[`Usage renders with mandatory props 1`] = `
               </div>
             </div>
             <div
-              class="emotion-21"
+              class="emotion-23"
             >
               <div
                 class="emotion-13"
@@ -572,29 +606,37 @@ exports[`Usage renders with mandatory props 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-20"
+                class="emotion-22"
               >
                 <div
-                  class="emotion-19"
+                  class="emotion-21"
                 >
                   <div
-                    class="emotion-16"
+                    class="emotion-15"
                   >
-                    <section
+                    <hr
+                      aria-hidden="true"
+                      class="emotion-14"
+                      data-testid="divider"
+                    />
+                    <div
                       class="emotion-15"
+                    />
+                    <section
+                      class="emotion-17"
                     >
                       <h1
-                        class="nk-headline-heading emotion-14"
+                        class="nk-headline-heading emotion-16"
                       >
-                        Title
+                        Do
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-16"
+                    class="emotion-15"
                   >
                     <p
-                      class="emotion-17"
+                      class="emotion-19"
                     >
                       Description
                     </p>
@@ -605,10 +647,10 @@ exports[`Usage renders with mandatory props 1`] = `
           </div>
         </div>
         <div
-          class="emotion-23"
+          class="emotion-25"
         >
           <div
-            class="emotion-22"
+            class="emotion-24"
           >
             <div
               class="emotion-6"
@@ -648,7 +690,7 @@ exports[`Usage renders with mandatory props 1`] = `
               </div>
             </div>
             <div
-              class="emotion-21"
+              class="emotion-23"
             >
               <div
                 class="emotion-13"
@@ -687,29 +729,37 @@ exports[`Usage renders with mandatory props 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-20"
+                class="emotion-22"
               >
                 <div
-                  class="emotion-19"
+                  class="emotion-21"
                 >
                   <div
-                    class="emotion-16"
+                    class="emotion-15"
                   >
-                    <section
+                    <hr
+                      aria-hidden="true"
+                      class="emotion-14"
+                      data-testid="divider"
+                    />
+                    <div
                       class="emotion-15"
+                    />
+                    <section
+                      class="emotion-17"
                     >
                       <h1
-                        class="nk-headline-heading emotion-14"
+                        class="nk-headline-heading emotion-16"
                       >
-                        Title
+                        Do
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-16"
+                    class="emotion-15"
                   >
                     <p
-                      class="emotion-17"
+                      class="emotion-19"
                     >
                       Description
                     </p>
@@ -720,10 +770,10 @@ exports[`Usage renders with mandatory props 1`] = `
           </div>
         </div>
         <div
-          class="emotion-23"
+          class="emotion-25"
         >
           <div
-            class="emotion-22"
+            class="emotion-24"
           >
             <div
               class="emotion-6"
@@ -732,7 +782,7 @@ exports[`Usage renders with mandatory props 1`] = `
                 class="emotion-5"
               >
                 <div
-                  class="emotion-52"
+                  class="emotion-56"
                   data-testid="flag"
                 >
                   <div
@@ -743,7 +793,7 @@ exports[`Usage renders with mandatory props 1`] = `
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-0 emotion-1"
+                        class="emotion-52 emotion-1"
                         fill="currentColor"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -754,7 +804,7 @@ exports[`Usage renders with mandatory props 1`] = `
                           fill="none"
                         />
                         <path
-                          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
                         />
                       </svg>
                     </div>
@@ -763,7 +813,7 @@ exports[`Usage renders with mandatory props 1`] = `
               </div>
             </div>
             <div
-              class="emotion-21"
+              class="emotion-23"
             >
               <div
                 class="emotion-13"
@@ -802,29 +852,37 @@ exports[`Usage renders with mandatory props 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-20"
+                class="emotion-22"
               >
                 <div
-                  class="emotion-19"
+                  class="emotion-21"
                 >
                   <div
-                    class="emotion-16"
+                    class="emotion-15"
                   >
-                    <section
+                    <hr
+                      aria-hidden="true"
+                      class="emotion-66"
+                      data-testid="divider"
+                    />
+                    <div
                       class="emotion-15"
+                    />
+                    <section
+                      class="emotion-17"
                     >
                       <h1
-                        class="nk-headline-heading emotion-14"
+                        class="nk-headline-heading emotion-68"
                       >
-                        Title
+                        Do not
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-16"
+                    class="emotion-15"
                   >
                     <p
-                      class="emotion-17"
+                      class="emotion-19"
                     >
                       Description
                     </p>

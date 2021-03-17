@@ -9,6 +9,9 @@ import {
   IconOutlinedCheck,
   styled,
   Flag,
+  Divider,
+  getSpacingFromTheme,
+  IconOutlinedClose,
 } from 'newskit';
 import {UsageCardProps, UsageProps} from './types';
 
@@ -18,65 +21,100 @@ const RelativeBlock = styled(Block)`
 
 const AbsoluteBlock = styled(Block)`
   position: absolute;
-  top: 16px;
-  left: 16px;
+  right: ${getSpacingFromTheme('space040')};
+  top: ${getSpacingFromTheme('space040')};
   z-index: 1;
 `;
+const kindMap: Record<
+  UsageCardProps['kind'],
+  {
+    heading: string;
+    stylePreset: string;
+    flagStylePreset: string;
+    iconStylePreset: string;
+    iconComponent: typeof IconOutlinedCheck | typeof IconOutlinedClose;
+    dividerStylePreset: string;
+    headingStylePreset: string;
+  }
+> = {
+  do: {
+    heading: 'Do',
+    stylePreset: 'inkPositive',
+    flagStylePreset: 'usageIconPositive',
+    iconStylePreset: 'iconPositive',
+    iconComponent: IconOutlinedCheck,
+    dividerStylePreset: 'dividerPositive',
+    headingStylePreset: 'inkPositive',
+  },
 
-const CheckIcon = () => (
-  <Flag
-    overrides={{
-      stylePreset: 'usageIconPositive',
-      spaceInset: 'spaceInsetSquish010',
-    }}
-  >
-    <IconOutlinedCheck
+  dont: {
+    heading: 'Do not',
+    stylePreset: 'inkNegative',
+    flagStylePreset: 'usageIconNegative',
+    iconStylePreset: 'iconNegative',
+    iconComponent: IconOutlinedClose,
+    dividerStylePreset: 'dividerNegative',
+    headingStylePreset: 'inkNegative',
+  },
+};
+
+const Icon: React.FC<{kind: UsageCardProps['kind']}> = ({kind}) => {
+  const kindObj = kindMap[kind];
+  const KindIcon = kindObj.iconComponent;
+  return (
+    <Flag
       overrides={{
-        size: 'iconSize010',
-        stylePreset: 'iconPositive',
+        stylePreset: kindObj.flagStylePreset,
+        spaceInset: 'spaceInsetSquish000',
       }}
-    />
-  </Flag>
-);
+    >
+      <KindIcon
+        overrides={{
+          size: 'iconSize030',
+          stylePreset: kindObj.iconStylePreset,
+        }}
+      />
+    </Flag>
+  );
+};
 
-const CrossIcon = () => (
-  <Flag
-    overrides={{
-      stylePreset: 'usageIconNegative',
-      spaceInset: 'spaceInsetSquish010',
-    }}
-  >
-    <IconOutlinedCheck
-      overrides={{
-        size: 'iconSize010',
-        stylePreset: 'iconPositive',
-      }}
-    />
-  </Flag>
-);
-
-export const UsageCard = ({card}: {card: UsageCardProps}) => (
+export const CardUsage = ({card}: {card: UsageCardProps}) => (
   <RelativeBlock>
     <AbsoluteBlock>
-      {card.allowed ? <CheckIcon /> : <CrossIcon />}
+      <Icon kind={card.kind} />
     </AbsoluteBlock>
-    <Card media={card.media}>
+
+    <Card
+      media={card.media}
+      overrides={{
+        stylePreset: 'cardMediaNonInteractive',
+        mediaContainer: {
+          stylePreset: 'cardMediaNonInteractive',
+          spaceStack: 'space040',
+        },
+      }}
+    >
       <Block spaceStack="space040">
+        <Divider
+          overrides={{stylePreset: kindMap[card.kind].dividerStylePreset}}
+        />
+        <Block spaceStack="space040" />
+
         <Headline
           overrides={{
-            typographyPreset: 'editorialHeadline020',
+            typographyPreset: 'editorialHeadline030',
             heading: {
-              stylePreset: 'inkContrast',
+              stylePreset: kindMap[card.kind].stylePreset,
             },
           }}
         >
-          {card.title}
+          {kindMap[card.kind].heading}
         </Headline>
       </Block>
       <Block spaceStack="space040">
         <TextBlock
           stylePreset="inkBase"
-          typographyPreset="editorialParagraph020"
+          typographyPreset="editorialParagraph010"
         >
           {card.description}
         </TextBlock>
@@ -89,8 +127,8 @@ export const Usage: React.FC<UsageProps> = ({cards}) => (
   <Cell xs={12} md={10} lg={8} mdOffset={1}>
     <Grid xsMargin="space000">
       {cards.map(card => (
-        <Cell xs={6}>
-          <UsageCard card={card} />
+        <Cell xs={12} md={6}>
+          <CardUsage card={card} />
         </Cell>
       ))}
     </Grid>

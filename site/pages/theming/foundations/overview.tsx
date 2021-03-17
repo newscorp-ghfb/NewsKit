@@ -89,6 +89,37 @@ const cardsContent = [
   },
 ];
 
+const cardStyle = {
+  card: {
+    stylePreset: 'cardContainerFoundationsOverview',
+    mediaContainer: {
+      spaceStack: 'space000',
+    },
+    teaserContainer: {
+      spaceInset: 'spaceInsetStretch050',
+      typographyPreset: 'editorialParagraph010',
+    },
+  },
+  label: {
+    stylePreset: 'inkContrast',
+    typographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline040',
+    },
+  },
+  description: {
+    stylePreset: 'inkBase',
+    typographyPreset: {
+      md: 'editorialParagraph020',
+    },
+  },
+};
+
+const cardsForPage = cardsContent.map(content => ({
+  ...content,
+  styles: cardStyle,
+}));
+
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeaderIndex
