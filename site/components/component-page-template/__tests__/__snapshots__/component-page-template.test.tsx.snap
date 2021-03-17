@@ -7780,6 +7780,31 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
+.emotion-376 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-376 {
+    padding: 0 8px;
+    margin-top: 48px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-376 {
+    padding: 0 12px;
+  }
+}
+
 .emotion-375 {
   box-sizing: border-box;
   border-radius: 4px;
@@ -7999,31 +8024,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen and (min-width:1440px) {
   .emotion-377 {
     display: none;
-  }
-}
-
-.emotion-376 {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-376 {
-    padding: 0 8px;
-    margin-top: 48px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-376 {
-    padding: 0 12px;
   }
 }
 

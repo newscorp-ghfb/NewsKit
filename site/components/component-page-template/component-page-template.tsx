@@ -132,6 +132,7 @@ const renderSections = ({
                   lg: 'horizontal',
                   xl: 'horizontal',
                 }}
+                xsCard={8}
                 {...behaviors}
               />
             </Grid>

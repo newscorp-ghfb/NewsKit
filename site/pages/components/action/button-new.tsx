@@ -318,7 +318,6 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Title',
           description: 'Description',
-          href: '#',
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'Card Media',
