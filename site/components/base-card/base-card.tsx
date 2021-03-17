@@ -1,12 +1,11 @@
 import React from 'react';
-import {Block, Headline} from 'newskit';
+import {Block, Headline, styled} from 'newskit';
 import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
 
 export const BaseCard: React.FC<BaseCardProps> = ({
   title,
   children,
-  layout,
   href,
   ...rest
 }) => {
@@ -16,15 +15,21 @@ export const BaseCard: React.FC<BaseCardProps> = ({
         teaserContainer: {
           spaceInset: 'space050',
         },
+        mediaContainer: {
+          spaceStack: 'space000'
+        },
       }
     : {
         stylePreset: 'baseCardNonInteractive',
+        teaserContainer: {
+          spaceInset: 'spaceInsetStretch010',
+        },
         mediaContainer: {
-          spaceStack: layout === 'horizontal' ? 'space050' : 'space040',
+          spaceStack: 'space040'
         },
       };
   return (
-    <StyledCard overrides={overrides} layout={layout} href={href} {...rest}>
+    <StyledCard overrides={overrides} href={href} {...rest}>
       <Block spaceStack="space045">
         <Headline
           overrides={{
