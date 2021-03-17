@@ -79,35 +79,12 @@ exports[`Media List renders with custom layout 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+  margin-bottom: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
   .emotion-6 {
     min-height: 1px;
-  }
-}
-
-@media screen and (max-width:479px) {
-  .emotion-6 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
-  .emotion-6 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-6 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-6 {
-    margin-bottom: 24px;
   }
 }
 
@@ -340,7 +317,7 @@ exports[`Media List renders with custom layout 1`] = `
 .emotion-20 {
   box-sizing: border-box;
   color: inherit;
-  padding: 0;
+  padding: 8px 4px;
 }
 
 .emotion-20 a:not(.nk-card-link) {
@@ -769,35 +746,12 @@ exports[`Media List renders with default layout 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+  margin-bottom: 0;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
   .emotion-6 {
     min-height: 1px;
-  }
-}
-
-@media screen and (max-width:479px) {
-  .emotion-6 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
-  .emotion-6 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-6 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-6 {
-    margin-bottom: 24px;
   }
 }
 
@@ -1030,7 +984,7 @@ exports[`Media List renders with default layout 1`] = `
 .emotion-20 {
   box-sizing: border-box;
   color: inherit;
-  padding: 0;
+  padding: 8px 4px;
 }
 
 .emotion-20 a:not(.nk-card-link) {

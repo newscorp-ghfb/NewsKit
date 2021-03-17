@@ -7780,31 +7780,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-376 {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-376 {
-    padding: 0 8px;
-    margin-top: 48px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-376 {
-    padding: 0 12px;
-  }
-}
-
 .emotion-375 {
   box-sizing: border-box;
   border-radius: 4px;
@@ -7859,7 +7834,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 .emotion-373 {
   box-sizing: border-box;
   color: inherit;
-  padding: 0;
+  padding: 8px 4px;
 }
 
 .emotion-373 a:not(.nk-card-link) {
@@ -7957,7 +7932,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   box-sizing: border-box;
   display: block;
   position: relative;
-  margin-right: 24px;
+  margin-right: 16px;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -7989,7 +7964,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   -ms-flex: 1;
   flex: 1;
   color: inherit;
-  padding: 0;
+  padding: 8px 4px;
 }
 
 .emotion-389 a:not(.nk-card-link) {
@@ -8024,6 +7999,31 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 @media screen and (min-width:1440px) {
   .emotion-377 {
     display: none;
+  }
+}
+
+.emotion-376 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-376 {
+    padding: 0 8px;
+    margin-top: 48px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-376 {
+    padding: 0 12px;
   }
 }
 
@@ -39590,42 +39590,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   margin-top: -0.4em;
 }
 
-.emotion-382 {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-382 {
-    min-height: 1px;
-  }
-}
-
-@media screen and (max-width:479px) {
-  .emotion-382 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
-  .emotion-382 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-382 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-382 {
-    margin-bottom: 24px;
-  }
-}
-
 .emotion-391 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -39689,6 +39653,19 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 .emotion-390:hover:not(:disabled) {
   box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-382 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-382 {
+    min-height: 1px;
+  }
 }
 
 .emotion-388 {
@@ -49659,18 +49636,41 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   box-sizing: border-box;
 }
 
-.emotion-383 {
-  box-sizing: border-box;
-  color: inherit;
-  padding: 0;
+.emotion-379 {
+  margin: 0;
+  padding: 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
-.emotion-383 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
+.emotion-379 svg {
+  fill: #555E74;
 }
 
-.emotion-388 {
+.emotion-379::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4625em;
+}
+
+.emotion-379::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4em;
+}
+
+.emotion-386 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -49883,6 +49883,17 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.44166666666666665em;
+}
+
+.emotion-381 {
+  box-sizing: border-box;
+  color: inherit;
+  padding: 0;
+}
+
+.emotion-381 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
 }
 
 .emotion-378 {
@@ -55078,10 +55089,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   .emotion-376 {
     padding: 0 8px;
     margin-top: 48px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
   }
 }
 
@@ -55145,7 +55156,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 .emotion-373 {
   box-sizing: border-box;
   color: inherit;
-  padding: 0;
+  padding: 8px 4px;
 }
 
 .emotion-373 a:not(.nk-card-link) {
@@ -55273,7 +55284,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   box-sizing: border-box;
   display: block;
   position: relative;
-  margin-right: 24px;
+  margin-right: 16px;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -55305,7 +55316,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   -ms-flex: 1;
   flex: 1;
   color: inherit;
-  padding: 0;
+  padding: 8px 4px;
 }
 
 .emotion-389 a:not(.nk-card-link) {
