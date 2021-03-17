@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, Headline, styled} from 'newskit';
+import {Block, Headline} from 'newskit';
 import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
 
@@ -16,7 +16,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
           spaceInset: 'space050',
         },
         mediaContainer: {
-          spaceStack: 'space000'
+          spaceStack: 'space000',
         },
       }
     : {
@@ -25,7 +25,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
           spaceInset: 'spaceInsetStretch010',
         },
         mediaContainer: {
-          spaceStack: 'space040'
+          spaceStack: 'space040',
         },
       };
   return (
