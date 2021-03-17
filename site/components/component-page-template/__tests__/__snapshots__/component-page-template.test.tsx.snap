@@ -39590,6 +39590,42 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   margin-top: -0.4em;
 }
 
+.emotion-382 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-382 {
+    min-height: 1px;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .emotion-382 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  .emotion-382 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-382 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-382 {
+    margin-bottom: 24px;
+  }
+}
+
 .emotion-391 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -39653,19 +39689,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 .emotion-390:hover:not(:disabled) {
   box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
-}
-
-.emotion-382 {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-382 {
-    min-height: 1px;
-  }
 }
 
 .emotion-388 {
