@@ -35,9 +35,9 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
 }, ref) => {
 
   const theme = useTheme();
-  const validationMode = useContext(FormValidationContext).validationMode;
-  const setFieldsHadError = useContext(FormValidationContext).setFieldsHadError;
-  const fieldsHadError = useContext(FormValidationContext).fieldsHadError
+  const {validationMode} = useContext(FormValidationContext);
+  const {setFieldsHadError} = useContext(FormValidationContext);
+  const {fieldsHadError} = useContext(FormValidationContext)
 
   const hadError = name ? fieldsHadError[name] && fieldsHadError[name].hadError : undefined
 

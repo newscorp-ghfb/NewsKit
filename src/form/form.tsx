@@ -7,9 +7,8 @@ import React, {
   useState,
 } from 'react';
 import {useForm, FormProvider} from 'react-hook-form/dist/index.ie11';
-import {FormProps, FormRef} from './types';
+import {FormProps, FormRef, fieldsHadErrorObject} from './types';
 import {FormValidationContextProvider} from './context';
-import { fieldsHadErrorObject } from './types';
 
 export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   const {
@@ -29,7 +28,9 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     false,
   );
 
-  const [fieldsHadError, setFieldsHadError] = useState<fieldsHadErrorObject>({})
+  const [fieldsHadError, setFieldsHadError] = useState<fieldsHadErrorObject>(
+    {},
+  );
 
   const formContext = useForm({
     mode: validationMode,
@@ -47,13 +48,13 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
 
   const setAllFieldsHadErrorToFalse = useCallback(() => {
     const formFields = Object.keys(formContext.getValues());
-    const fieldsHadErrorObject: fieldsHadErrorObject = {};
+    const newFieldsHadErrorObject: fieldsHadErrorObject = {};
 
     formFields.forEach(field => {
-      fieldsHadErrorObject[field] = {hadError: false};
+      newFieldsHadErrorObject[field] = {hadError: false};
     });
 
-    setFieldsHadError(fieldsHadErrorObject)
+    setFieldsHadError(newFieldsHadErrorObject);
   }, [formContext]);
 
   useEffect(() => {
@@ -96,7 +97,9 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   );
 
   return (
-    <FormValidationContextProvider value={{validationMode, fieldsHadError, setFieldsHadError}}>
+    <FormValidationContextProvider
+      value={{validationMode, fieldsHadError, setFieldsHadError}}
+    >
       <FormProvider {...formContext}>
         <form
           ref={formRef}

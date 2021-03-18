@@ -33,4 +33,6 @@ export interface FormRef {
   element: HTMLFormElement | null;
 }
 
-export interface fieldsHadErrorObject {[key: string]: {hadError: boolean}} 
+export interface fieldsHadErrorObject {
+  [key: string]: {hadError: boolean};
+}
