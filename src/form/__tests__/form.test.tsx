@@ -313,6 +313,46 @@ describe('Form', () => {
     expect(queryByTestId('tick-icon')).toBeNull();
   });
 
+  test('reset() should reset fields value and remove validation', async () => {
+    const ref = React.createRef<HTMLFormElement>();
+    const {
+      getByTestId,
+      findAllByTestId,
+      queryByTestId,
+      getByRole,
+    } = renderWithImplementation(Form, {
+      ...props,
+      ref,
+      validationMode: 'OnSubmit',
+    });
+    const inputEmail = getByTestId('text-input-email') as HTMLInputElement;
+    const inputUsername = getByTestId(
+      'text-input-username',
+    ) as HTMLInputElement;
+
+    fireEvent.change(inputEmail, {
+      target: {value: 'test@news.co.uk'},
+    });
+
+    fireEvent.change(inputUsername, {
+      target: {value: 'testnews'},
+    });
+
+    fireEvent.submit(getByRole('button'));
+
+    expect(await findAllByTestId('tick-icon')).not.toBeNull();
+
+    act(() => {
+      ref.current!.reset();
+    });
+
+    expect(queryByTestId('error-icon')).toBeNull();
+    expect(queryByTestId('tick-icon')).toBeNull();
+
+    expect(inputEmail.value).toBe('test');
+    expect(inputUsername.value).toBe('');
+  });
+
   test('exposes the expected functions from useForm hook', async () => {
     const useFormMockMethods = {
       watch: 'watch-function',
