@@ -1,5 +1,6 @@
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {MediaList} from '../media-list';
+import {columnsCalculator} from '../columns-calculator';
 
 const interactiveCard = {
   label: 'Interactive',
@@ -61,5 +62,12 @@ describe('Media List', () => {
       },
     });
     expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('columnsCalculator()', () => {
+  test('should return the right columns object without errors', () => {
+    expect(columnsCalculator('3-span-hero')).toEqual({xs: 12, md: 4});
+    expect(columnsCalculator('4-span')).toEqual({xs: 12, md: 6, xl: 3});
   });
 });
