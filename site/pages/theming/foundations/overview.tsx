@@ -134,9 +134,7 @@ export default (layoutProps: LayoutProps) => (
         The NewsKit Foundations are structured into the following categories:
       </SectionIntroduction>
       <MediaList
-        xsCard={12}
-        mdCard={6}
-        lgCard={4}
+        layout="3-span"
         cards={cardsContent}
         parentCellProps={{lg: 10}}
         gridProps={{xsRowGutter: 'space050'}}

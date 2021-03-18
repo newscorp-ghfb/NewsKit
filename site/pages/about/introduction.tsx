@@ -164,7 +164,11 @@ export default (layoutProps: LayoutProps) => (
         NewsKit design system and the NewsKit team is guided by a set of
         principles.
       </SectionIntroduction>
-      <MediaList cards={cardsForPage} gridProps={{xsRowGutter: 'space050'}} />
+      <MediaList
+        layout="2-span"
+        cards={cardsForPage}
+        gridProps={{xsRowGutter: 'space050'}}
+      />
     </Grid>
   </Layout>
 );

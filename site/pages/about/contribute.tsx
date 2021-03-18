@@ -77,7 +77,7 @@ export default (layoutProps: LayoutProps) => (
         Design System; from submitting a proposal to designing a new feature for
         other users to benefit from.
       </SectionIntroduction>
-      <MediaList xsCard={12} smCard={4} mdCard={4} cards={[...cards]} />
+      <MediaList layout="3-span" cards={[...cards]} />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
       </Cell>

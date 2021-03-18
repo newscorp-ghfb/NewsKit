@@ -51,6 +51,7 @@ describe('Media List', () => {
   test('renders with custom layout', () => {
     const fragment = renderToFragmentWithTheme(MediaList, {
       cards: [interactiveCard, staticCard, cardWithStyles],
+      layout: '4-span',
       spaceStack: 'space110',
       xsCard: 6,
       lgCard: 3,

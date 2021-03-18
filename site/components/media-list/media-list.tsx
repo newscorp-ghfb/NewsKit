@@ -10,6 +10,7 @@ import {
 } from 'newskit';
 import {BaseCard} from '../base-card';
 import {MediaListProps} from './types';
+import { columnsCalculator } from './columns-calculator';
 
 const StyledCard = styled(BaseCard)`
   height: 100%;
@@ -18,27 +19,60 @@ const StyledCard = styled(BaseCard)`
 export const MediaList: React.FC<MediaListProps> = ({
   spaceStack,
   cardsLayout,
-  xsCard = 6,
-  smCard,
-  mdCard,
-  lgCard,
-  xlCard,
+  layout = '3-span',
   cards,
   gridProps,
   parentCellProps,
 }) => {
-  const renderCards = (layout?: 'vertical' | 'horizontal') =>
-    cards.map(({media, description, title, href, styles}) => (
-      <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
+
+  const renderCards = (finalCardsLayout?: 'vertical' | 'horizontal') => {
+    const cardsToRender = []
+    let heroCard
+    let notHeroCardGroup
+    const notHeroCardGroupColumns = columnsCalculator(layout)
+    
+    if (layout.includes('hero')) {
+      heroCard = [cards[0]]
+      notHeroCardGroup = cards.splice(1, cards.length -1)
+    } else {
+      notHeroCardGroup = cards
+    }
+
+    if (heroCard) {
+      cardsToRender.push(heroCard.map(({media, description, title, href, styles}) => (
+        <Cell xs={12}>
+          <StyledCard
+            layout={finalCardsLayout}
+            media={media}
+            title={title}
+            href={href}
+          >
+            <TextBlock
+              typographyPreset={
+                // eslint-disable-next-line prettier/prettier, no-undef
+                styles?.description?.typographyPreset || 'editorialParagraph020'
+              }
+              // eslint-disable-next-line no-undef
+              stylePreset={styles?.description?.stylePreset || 'inkBase'}
+            >
+              {description}
+            </TextBlock>
+          </StyledCard>
+        </Cell>
+      )))
+    }
+
+    cardsToRender.push(notHeroCardGroup.map(({media, description, title, href, styles}) => (
+      <Cell {...notHeroCardGroupColumns}>
         <StyledCard
-          layout={layout}
+          layout={finalCardsLayout}
           media={media}
           title={title}
           href={href}
         >
           <TextBlock
             typographyPreset={
-              // eslint-disable-next-line prettier/prettier, no-undef
+              // eslint-disable-next-line no-undef
               styles?.description?.typographyPreset || 'editorialParagraph020'
             }
             // eslint-disable-next-line no-undef
@@ -48,7 +82,10 @@ export const MediaList: React.FC<MediaListProps> = ({
           </TextBlock>
         </StyledCard>
       </Cell>
-    ));
+    )));
+
+    return cardsToRender
+  }
 
   const renderBreakpointCards = () => {
     if (!cardsLayout || typeof cardsLayout === 'string') {
