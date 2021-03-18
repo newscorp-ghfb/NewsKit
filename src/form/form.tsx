@@ -9,6 +9,7 @@ import React, {
 import {useForm, FormProvider} from 'react-hook-form/dist/index.ie11';
 import {FormProps, FormRef} from './types';
 import {FormValidationContextProvider} from './context';
+import { fieldsHadErrorObject } from './types';
 
 export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   const {
@@ -28,6 +29,8 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     false,
   );
 
+  const [fieldsHadError, setFieldsHadError] = useState<fieldsHadErrorObject>({})
+
   const formContext = useForm({
     mode: validationMode,
     reValidateMode: reValidationMode,
@@ -42,34 +45,21 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     }
   };
 
-  const addFieldsHadErrorObject = useCallback(() => {
+  const setAllFieldsHadErrorToFalse = useCallback(() => {
     const formFields = Object.keys(formContext.getValues());
-    const fieldsHadErrorObject: {[key: string]: {hadError: boolean}} = {};
+    const fieldsHadErrorObject: fieldsHadErrorObject = {};
 
     formFields.forEach(field => {
       fieldsHadErrorObject[field] = {hadError: false};
     });
-    // @ts-ignore
-    formContext.formState.fieldsHadError = fieldsHadErrorObject;
-  }, [formContext]);
 
-  const setAllFieldsHadErrorToFalse = useCallback(() => {
-    // @ts-ignore
-    const hadErrorFields = Object.keys(formContext.formState.fieldsHadError);
-    hadErrorFields.forEach(field => {
-      // @ts-ignore
-      formContext.formState.fieldsHadError[field].hadError = false;
-    });
+    setFieldsHadError(fieldsHadErrorObject)
   }, [formContext]);
 
   useEffect(() => {
-    if (
-      formContext.formState &&
-      // @ts-ignore
-      formContext.formState.fieldsHadError === undefined
-    ) {
-      // Adds a new object in the formState to keep track of which fields had an error.
-      addFieldsHadErrorObject();
+    if (Object.keys(fieldsHadError).length === 0 && formContext.formState) {
+      // Populates the fieldsHadError state and sets the values to false
+      setAllFieldsHadErrorToFalse();
     }
 
     if (isResettingValidation) {
@@ -106,7 +96,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   );
 
   return (
-    <FormValidationContextProvider value={validationMode}>
+    <FormValidationContextProvider value={{validationMode, fieldsHadError, setFieldsHadError}}>
       <FormProvider {...formContext}>
         <form
           ref={formRef}

@@ -17,6 +17,7 @@ import {
 import { getToken } from '../utils/get-token';
 import { useTheme } from '../theme';
 import { IconFilledCheckCircle, IconFilledError } from '../icons';
+import { fieldsHadErrorObject } from '../form/types';
 
 export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
   overrides = {},
@@ -34,7 +35,13 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
 }, ref) => {
 
   const theme = useTheme();
-  const validationMode = useContext(FormValidationContext);
+  const validationMode = useContext(FormValidationContext).validationMode;
+  const setFieldsHadError = useContext(FormValidationContext).setFieldsHadError;
+  const fieldsHadError = useContext(FormValidationContext).fieldsHadError
+
+  const hadError = name ? fieldsHadError[name] && fieldsHadError[name].hadError : undefined
+
+
   const formContext = useFormContext();
 
   const errorText =
@@ -44,19 +51,16 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     formContext.errors[name] &&
     formContext.errors[name].message;
 
-    const hadError = 
-    formContext &&
-    formContext.formState &&
-    // @ts-ignore
-    formContext.formState.fieldsHadError && 
-    // @ts-ignore
-    formContext.formState.fieldsHadError[name].hadError
-  
-
   useEffect(() => {
-    if (!hadError && errorText) {
-      // @ts-ignore
-      formContext.formState.fieldsHadError[name].hadError = true
+    if (!hadError && errorText && name) {
+      const updateForFieldsHadError: fieldsHadErrorObject = {}
+
+      updateForFieldsHadError[name] = {hadError: true}
+
+      setFieldsHadError({
+        ...fieldsHadError,
+        ...updateForFieldsHadError
+      })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [errorText, hadError, name]);
@@ -65,12 +69,11 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
   const assistiveTextId = errorText && `${id}-error-text` || assistiveText && `${id}-assistive-text`
 
   const handleOnBlur = ({target: { value }}: {target: {value: string}}) => {
-    if (validationMode === 'onBlur' &&
-      !hadError &&
-      (errorText || value)
-      ) {
-        // @ts-ignore
-        formContext.formState.fieldsHadError[name].hadError = true
+    if (validationMode === 'onBlur' && !hadError && name && (errorText || value)) {
+        const updateForFieldsHadError: fieldsHadErrorObject = {}
+
+        updateForFieldsHadError[name] = {hadError: true}
+        setFieldsHadError(updateForFieldsHadError)
     }
   }
 

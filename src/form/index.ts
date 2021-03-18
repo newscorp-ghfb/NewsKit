@@ -1,2 +1,2 @@
 export * from './form';
-export * from './types';
+export {FormProps, FormRef, FormError} from './types';

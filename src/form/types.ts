@@ -32,3 +32,5 @@ export interface FormRef {
   trigger: UseFormMethods['trigger'];
   element: HTMLFormElement | null;
 }
+
+export interface fieldsHadErrorObject {[key: string]: {hadError: boolean}} 
