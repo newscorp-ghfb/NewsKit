@@ -34,7 +34,7 @@ export interface ComponentPageTemplateProps {
     playground: PlaygroundProps;
   };
   anatomy?: AnatomyProps & {introduction: string};
-  variations?: MediaListProps & {introduction: string};
+  options?: MediaListProps & {introduction: string};
   behaviors?: MediaListProps & {introduction: string};
   usage?: UsageProps & {introduction: string};
   accessibility?: AccessibilityTablesProps & {introduction: string};

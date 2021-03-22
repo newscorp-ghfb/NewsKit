@@ -74,14 +74,14 @@ describe('Component Page Template', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders mandatory sections and variations', () => {
+  test('renders mandatory sections and options', () => {
     const props: ComponentPageTemplateProps = {
       ...mandatoryProps,
-      variations: {
-        introduction: 'Component variations',
+      options: {
+        introduction: 'Component options',
         cards: [
           {
-            label: 'Variation',
+            label: 'Options',
             description: 'Description',
             media: {
               src: '/static/placeholder-16x9.png',

@@ -311,7 +311,7 @@ export default (layoutProps: LayoutProps) => (
         alt: 'Card Media',
       },
     }}
-    variations={{
+    options={{
       introduction:
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',
       cards: [

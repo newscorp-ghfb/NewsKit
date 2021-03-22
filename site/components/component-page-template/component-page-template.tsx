@@ -38,7 +38,7 @@ const renderSections = ({
   meta,
   interactiveDemo,
   anatomy,
-  variations,
+  options,
   behaviors,
   usage,
   accessibility,
@@ -89,16 +89,16 @@ const renderSections = ({
       </>
     )}
 
-    {variations && (
+    {options && (
       <>
         <Cell xs={12}>
-          <StyledSection id="variations" data-toc-indexed="Variations">
+          <StyledSection id="options" data-toc-indexed="Options">
             <Grid lgMargin="space000" xsRowGutter="space000">
-              <SectionIntroduction title="Variations">
-                {variations.introduction}
+              <SectionIntroduction title="Options">
+                {options.introduction}
               </SectionIntroduction>
               <MediaList
-                {...variations}
+                {...options}
                 cardsLayout={{
                   xs: 'vertical',
                   sm: 'horizontal',
