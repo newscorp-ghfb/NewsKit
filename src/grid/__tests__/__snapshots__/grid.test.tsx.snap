@@ -65,13 +65,7 @@ exports[`Grid Container renders expected column styles 1`] = `
 
 exports[`Grid Container renders expected max width 1`] = `
 <DocumentFragment>
-  .emotion-1 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-0 {
+  .emotion-0 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -114,6 +108,12 @@ exports[`Grid Container renders expected max width 1`] = `
   .emotion-0 {
     margin: -24px 12px 0 12px;
   }
+}
+
+.emotion-1 {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 <div

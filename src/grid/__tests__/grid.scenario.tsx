@@ -315,6 +315,23 @@ export default {
               </Cell>
             </Grid>
           </BorderedBox>
+          <BorderedBox>
+            <Grid
+              xsColumnGutter="sizing000"
+              xsRowGutter="sizing000"
+              maxWidth="1024px"
+            >
+              <Cell xs="full-width">
+                <Content>Grid with custom max-width(1024px)</Content>
+              </Cell>
+              <Cell xs="full-width">
+                <Content>Full width Cell</Content>
+              </Cell>
+              <Cell xs={12}>
+                <Content>12 span</Content>
+              </Cell>
+            </Grid>
+          </BorderedBox>
         </React.Fragment>
       ),
     },

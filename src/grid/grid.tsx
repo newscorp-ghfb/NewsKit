@@ -59,9 +59,9 @@ const StyledGrid = styled.div<GridProps>`
   ${generateBreakpointConfig('xl')};
 `;
 
-export const Grid: React.FC<GridProps> = ({children, ...props}) => (
+export const Grid: React.FC<GridProps> = ({children, maxWidth, ...props}) => (
   <GridContextProvider value={props}>
-    <StyledGridContainer>
+    <StyledGridContainer maxWidth={maxWidth}>
       <StyledGrid {...props}>{children}</StyledGrid>
     </StyledGridContainer>
   </GridContextProvider>
