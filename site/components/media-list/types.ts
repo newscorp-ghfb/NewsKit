@@ -20,7 +20,6 @@ export interface MediaListProps {
   parentCellProps?: CellProps;
 }
 
-export type SpanLayoutList = Pick<MediaListProps, 'layout'>;
 interface TextBlockPresets {
   stylePreset: MQ<string>;
   typographyPreset: MQ<string>;
