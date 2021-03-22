@@ -20,7 +20,7 @@ const columnsCalculator = (
 
   layoutConfig.forEach(layout => {
     if (layout[0] === span) {
-      // eslint-disable-next-line
+      /* eslint-disable prefer-destructuring */
       layoutColumnsConfig = layout[1];
     }
   });
