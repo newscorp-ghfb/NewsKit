@@ -143,6 +143,7 @@
     "jest-emotion": "^10.0.14",
     "jest-junit": "^11.1.0",
     "jest-matcher-utils": "^26.4.2",
+    "jest-matchmedia-mock": "^1.1.0",
     "jscodeshift": "^0.6.4",
     "lint-staged": "^9.1.0",
     "markdownlint-cli": "^0.17.0",

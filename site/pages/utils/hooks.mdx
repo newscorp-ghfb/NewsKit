@@ -1,0 +1,74 @@
+import Layout from '../../components/layout';
+import {Code} from '../../components/code';
+import {LegacyBlock} from '../../components/legacy-block';
+import Prop from '../../components/prop';
+import {Link} from 'newskit';
+
+export default Layout;
+
+# Hooks
+
+## useMediaQueryObject
+
+### Overview
+
+`useMediaQueryObject` hook handles scenarios in which you want to render component based on media query breakpoints.
+This hooks also responds to the window resizing and returns the appropriate value for the new window size.
+
+`useMediaQueryObject` returns the value for the current breakpoint from the provided media query object ( `MQ<T>` )
+
+Note: The hook needs `<MediaQueryProvider>` to be added to an ancestor of the component in which it's used.
+
+### Example
+
+A common use case for using `useMediaQueryObject` is when you want to change component property based on media query.
+In the example below, the `<Card />` component changes its layout depending on screen the size.
+
+<Code>
+  {`const mqLayout = {
+    xs: 'vertical',
+    sm: 'vertical',
+    md: 'horizontal',
+    lg: 'horizontal',
+    xl: 'horizontal',
+}
+const layout = useMediaQueryObject(mqLayout);
+<Card layout={layout} /> `}
+</Code>
+
+Note: In theory `useMediaQueryObject` could be used with any `MQ<T>`, however, we recommend using it only for props that don't accept `MQ<T>` as a value. Most CSS-based props and overrides already support `MQ<T>` objects.
+When you create your own components and want to apply responsive behaviour you should try to use <Link href="/utils/get-from-theme">getters</Link> and <Link href="/utils/get-defaults">defaults</Link> functions.
+
+DO NOT DO THIS:
+
+<Code>
+  {`const stylePresets = {
+    xs: 'dividerPrimary',
+    md: 'horizontal',
+}
+const dividerStylePreset = useMediaQueryObject(stylePresets);
+<Divider overrides={{stylePreset: dividerStylePreset}} />`}
+</Code>
+
+## useBreakpointKey
+
+### Overview
+
+`useBreakpointKey` has a similar utility as `useMediaQueryObject`, it's intended usage is where you want to know the currently active breakpoint key `xs | sm | md | lg | xl`.
+
+### Example
+
+<Code>
+  {`const breakpointKey = useBreakpointKey();
+// return XL when screen has width XL ( 1440px and above )`}
+</Code>
+
+`<Card />` component use case
+
+<Code>
+  {`const breakpointKey = useBreakpointKey();
+  const layout == breakpointKey === 'xs || breakpointKey === 'sm' ? 'vertical' : 'horizontal';
+<Card layout={layout} />
+// the <Card will render verticaly on XS and SM screens and Horizontaly on the rest of breakpoints`}
+
+</Code>

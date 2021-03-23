@@ -359,6 +359,11 @@
         "title": "getComponentDefaults",
         "page": true,
         "id": "/utils/get-defaults"
+      },
+      {
+        "title": "Hooks",
+        "page": true,
+        "id": "/utils/hooks"
       }
     ]
   },

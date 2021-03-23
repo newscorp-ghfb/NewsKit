@@ -38,3 +38,4 @@ export * from './theme';
 export * from './title-bar';
 export * from './typography';
 export * from './volume-control';
+export * from './utils/hooks/use-media-query';
