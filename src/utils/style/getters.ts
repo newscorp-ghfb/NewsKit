@@ -5,7 +5,11 @@ import {isFontConfigObject} from '../guards';
 import {getFontProps} from '../get-font-props';
 import {ThemeProp} from '../style-types';
 import {MQ} from './types';
-import {getResponsiveValueFromTheme, getValueFromTheme} from './base';
+import {
+  getResponsiveValueFromTheme,
+  getValueFromTheme,
+  getXFromTheme,
+} from './base';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
@@ -55,8 +59,6 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   return typographyPreset;
 };
 
-export const getMotionFromTheme = getValueFromTheme<string>('motions');
-
 export const getFontsFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -72,10 +74,9 @@ export const getFontsFromTheme = <Props extends ThemeProp>(
   return propKeys ? style : '';
 };
 
-export const getColorFromTheme = getValueFromTheme<string>('colors');
-
-export const getSizingFromTheme = getValueFromTheme<string>('sizing');
-
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getSpacingCssFromTheme instead
+ */
 export const getSpacingFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -98,6 +99,9 @@ export const getSpacingFromTheme = <Props extends ThemeProp>(
   return cssProp ? {[cssProp]: value} : value;
 };
 
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getSpacingCssFromTheme instead
+ */
 export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -119,7 +123,9 @@ export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
   return {padding};
 };
 
-// Legacy function, clients might be using it, do not use internally
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getSpacingCssFromTheme instead
+ */
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -141,9 +147,30 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   return {margin};
 };
 
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getBorderCssFromTheme instead
+ */
 export const getBorderFromTheme = getValueFromTheme<string>('borders');
 
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getShadowCssFromTheme instead
+ */
 export const getShadowFromTheme = getValueFromTheme<string>('shadows');
+
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getColorCssFromTheme instead
+ */
+export const getColorFromTheme = getValueFromTheme<string>('colors');
+
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getSizingCssFromTheme instead
+ */
+export const getSizingFromTheme = getValueFromTheme<string>('sizing');
+
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release, use getMotionCssFromTheme instead
+ */
+export const getMotionFromTheme = getValueFromTheme<string>('motions');
 
 export const getFontSizingFromTheme = (
   fontSizeKey: string,
@@ -155,3 +182,10 @@ export const getFontSizingFromTheme = (
     : theme.fonts[fontSizeKey];
   return getFontSizing(fontSize, theme.fonts[lineHeightKey]);
 };
+
+export const getSpacingCssFromTheme = getXFromTheme('spacePresets');
+export const getMotionCssFromTheme = getXFromTheme('motions');
+export const getColorCssFromTheme = getXFromTheme('colors');
+export const getSizingCssFromTheme = getXFromTheme('sizing');
+export const getBorderCssFromTheme = getXFromTheme('borders');
+export const getShadowCssFromTheme = getXFromTheme('shadows');

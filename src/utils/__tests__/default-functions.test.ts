@@ -13,120 +13,129 @@ import {
   getMinWidth,
   getHeight,
   getMinHeight,
+  getResponsiveSpacingInlineHorizontal,
 } from '../style';
-import {createTheme} from '../../theme';
+import {createTheme, compileTheme} from '../../theme';
 
 describe('get component defaults functions', () => {
-  const theme: any = createTheme({
-    name: 'test-theme',
-    overrides: {
-      typographyPresets: {
-        theDefaultToken: {
-          fontFamily: 'theDefaultToken-value-typographyPresets',
+  const theme: any = compileTheme(
+    createTheme({
+      name: 'test-theme',
+      overrides: {
+        typographyPresets: {
+          theDefaultToken: {
+            fontFamily: 'theDefaultToken-value-typographyPresets',
+          },
+          theOverrideToken: {
+            fontFamily: 'theOverrideToken-value-typographyPresets',
+          },
+          theNestedOverrideToken: {
+            fontFamily: 'theNestedOverrideToken-value-typographyPresets',
+          },
         },
-        theOverrideToken: {
-          fontFamily: 'theOverrideToken-value-typographyPresets',
+        stylePresets: {
+          theDefaultToken: {
+            base: {
+              color: '#111111-stylePresets',
+            },
+          },
+          theOverrideToken: {
+            base: {
+              color: '#222222-stylePresets',
+            },
+          },
+          theNestedOverrideToken: {
+            base: {
+              color: '#333333-stylePresets',
+            },
+          },
         },
-        theNestedOverrideToken: {
-          fontFamily: 'theNestedOverrideToken-value-typographyPresets',
+        sizing: {
+          theDefaultToken: 'theDefaultToken-value-sizing',
+          theOverrideToken: 'theOverrideToken-value-sizing',
+          theNestedOverrideToken: 'theNestedOverrideToken-value-sizing',
+        },
+        spacePresets: {
+          theDefaultToken: 'theDefaultToken-value-space',
+          theOverrideToken: 'theOverrideToken-value-space',
+          theNestedOverrideToken: 'theNestedOverrideToken-value-space',
+        },
+        componentDefaults: {
+          basicTestComponent: {
+            typographyPreset: 'theDefaultToken',
+            stylePreset: 'theDefaultToken',
+            spaceInset: 'theDefaultToken',
+            marginPreset: 'theDefaultToken',
+            spacePresets: 'theDefaultToken',
+            spaceInline: 'theDefaultToken',
+            spaceStack: 'theDefaultToken',
+          },
+          responsiveTestComponent: {
+            typographyPreset: {
+              xs: 'theDefaultToken',
+              md: 'theOverrideToken',
+            },
+            marginPreset: {
+              xs: 'theDefaultToken',
+              md: 'theOverrideToken',
+            },
+            spaceInset: {
+              xs: 'theDefaultToken',
+              md: 'theOverrideToken',
+            },
+          },
+          responsiveTestComponent2: {
+            spaceInline: {
+              xs: 'space010',
+              md: 'space020',
+            },
+          },
+          basicCCSUnitsComponent: {
+            spaceInset: '10px',
+            marginPreset: '11px',
+            spacePresets: '12px',
+            spaceInline: '13px',
+            spaceStack: '14px',
+            size: '15px',
+            space: '10vw',
+            weight: '4px',
+            minWidth: '100%',
+            height: '90vh',
+            minHeight: '10cm',
+            sizing: '10vh',
+          },
+          responsiveCCSUnitsComponent: {
+            spaceInset: {
+              xs: '10px',
+              md: '20px',
+            },
+            spaceInline: {
+              xs: '13px',
+              md: '23px',
+            },
+            spaceStack: {
+              xs: '14px',
+              md: '24px',
+            },
+          },
+          invalidResponsiveCCSUnitsComponent: {
+            spaceInset: {
+              xs: '10',
+              md: '20',
+            },
+            spaceInline: {
+              xs: 'no-valid-token',
+              md: 'not-valid-unit',
+            },
+            spaceStack: {
+              xs: '10pz',
+              md: '24md',
+            },
+          },
         },
       },
-      stylePresets: {
-        theDefaultToken: {
-          base: {
-            color: '#111111-stylePresets',
-          },
-        },
-        theOverrideToken: {
-          base: {
-            color: '#222222-stylePresets',
-          },
-        },
-        theNestedOverrideToken: {
-          base: {
-            color: '#333333-stylePresets',
-          },
-        },
-      },
-      sizing: {
-        theDefaultToken: 'theDefaultToken-value-sizing',
-        theOverrideToken: 'theOverrideToken-value-sizing',
-        theNestedOverrideToken: 'theNestedOverrideToken-value-sizing',
-      },
-      spacePresets: {
-        theDefaultToken: 'theDefaultToken-value-space',
-        theOverrideToken: 'theOverrideToken-value-space',
-        theNestedOverrideToken: 'theNestedOverrideToken-value-space',
-      },
-      componentDefaults: {
-        basicTestComponent: {
-          typographyPreset: 'theDefaultToken',
-          stylePreset: 'theDefaultToken',
-          spaceInset: 'theDefaultToken',
-          marginPreset: 'theDefaultToken',
-          spacePresets: 'theDefaultToken',
-          spaceInline: 'theDefaultToken',
-          spaceStack: 'theDefaultToken',
-        },
-        responsiveTestComponent: {
-          typographyPreset: {
-            xs: 'theDefaultToken',
-            md: 'theOverrideToken',
-          },
-          marginPreset: {
-            xs: 'theDefaultToken',
-            md: 'theOverrideToken',
-          },
-          spaceInset: {
-            xs: 'theDefaultToken',
-            md: 'theOverrideToken',
-          },
-        },
-        basicCCSUnitsComponent: {
-          spaceInset: '10px',
-          marginPreset: '11px',
-          spacePresets: '12px',
-          spaceInline: '13px',
-          spaceStack: '14px',
-          size: '15px',
-          space: '10vw',
-          weight: '4px',
-          minWidth: '100%',
-          height: '90vh',
-          minHeight: '10cm',
-          sizing: '10vh',
-        },
-        responsiveCCSUnitsComponent: {
-          spaceInset: {
-            xs: '10px',
-            md: '20px',
-          },
-          spaceInline: {
-            xs: '13px',
-            md: '23px',
-          },
-          spaceStack: {
-            xs: '14px',
-            md: '24px',
-          },
-        },
-        invalidResponsiveCCSUnitsComponent: {
-          spaceInset: {
-            xs: '10',
-            md: '20',
-          },
-          spaceInline: {
-            xs: 'no-valid-token',
-            md: 'not-valid-unit',
-          },
-          spaceStack: {
-            xs: '10pz',
-            md: '24md',
-          },
-        },
-      },
-    },
-  });
+    }),
+  );
 
   // For new utils, add a test case to this array.
   [
@@ -545,6 +554,30 @@ describe('get component defaults functions', () => {
             expect(fn('invalidResponsiveCCSUnitsComponent')(props)).toEqual({});
           });
         });
+    });
+  });
+
+  describe('getResponsiveSpacingInlineHorizontal', () => {
+    const props = {
+      theme,
+    };
+    test('return correct CSS Object with tokens', () => {
+      const result = getResponsiveSpacingInlineHorizontal(
+        'responsiveTestComponent2',
+      )(props);
+      expect(result).toEqual({
+        '@media screen and (max-width: 767px)': {marginRight: '4px'},
+        '@media screen and (min-width: 768px)': {marginRight: '8px'},
+      });
+    });
+    test('return correct CSS Object with CSS units', () => {
+      const result = getResponsiveSpacingInlineHorizontal(
+        'responsiveCCSUnitsComponent',
+      )(props);
+      expect(result).toEqual({
+        '@media screen and (max-width: 767px)': {marginRight: '13px'},
+        '@media screen and (min-width: 768px)': {marginRight: '23px'},
+      });
     });
   });
 });

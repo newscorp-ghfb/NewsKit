@@ -142,7 +142,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-204 {
+.emotion-207 {
   font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -153,13 +153,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-203 {
+.emotion-206 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-203:last-child {
+.emotion-206:last-child {
   margin-bottom: 24px;
 }
 
@@ -262,7 +262,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-205 {
+.emotion-208 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -281,7 +281,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-205 {
+  .emotion-208 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -289,23 +289,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-205 {
+  .emotion-208 {
     overflow: hidden;
   }
 
-  .emotion-205:hover {
+  .emotion-208:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-205 {
+  .emotion-208 {
     overflow: auto;
   }
 }
 
 <div
-    class="emotion-205"
+    class="emotion-208"
     data-testid="sidebar"
     role="complementary"
   >
@@ -405,11 +405,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-204"
+      class="emotion-207"
       role="navigation"
     >
       <ul
-        class="emotion-203"
+        class="emotion-206"
         role="list"
       >
         <li
@@ -1401,6 +1401,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
             <div>
               <a
                 class="emotion-15"
+                href="/utils/get-css-from-theme"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-13"
+                    data-testid="/utils/get-css-from-theme"
+                  >
+                    getCssFromTheme
+                  </div>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="emotion-15"
                 href="/utils/get-from-theme"
               >
                 <span
@@ -1520,7 +1537,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-205 {
+  .emotion-208 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -1539,7 +1556,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-205 {
+  .emotion-208 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -1547,17 +1564,17 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-205 {
+  .emotion-208 {
     overflow: hidden;
   }
 
-  .emotion-205:hover {
+  .emotion-208:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-205 {
+  .emotion-208 {
     overflow: auto;
   }
 }
@@ -1702,7 +1719,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-204 {
+.emotion-207 {
   font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -1713,13 +1730,13 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-203 {
+.emotion-206 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-203:last-child {
+.emotion-206:last-child {
   margin-bottom: 24px;
 }
 
@@ -1823,7 +1840,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 <div
-    class="emotion-205"
+    class="emotion-208"
     data-testid="sidebar"
     open=""
     role="complementary"
@@ -1924,11 +1941,11 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-204"
+      class="emotion-207"
       role="navigation"
     >
       <ul
-        class="emotion-203"
+        class="emotion-206"
         role="list"
       >
         <li
@@ -2913,6 +2930,23 @@ exports[`Sidebar renders correctly when open 1`] = `
                     data-testid="/utils/custom-to-newskit-icon"
                   >
                     customToNewsKitIcon
+                  </div>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="emotion-15"
+                href="/utils/get-css-from-theme"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-13"
+                    data-testid="/utils/get-css-from-theme"
+                  >
+                    getCssFromTheme
                   </div>
                 </span>
               </a>

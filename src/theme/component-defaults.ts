@@ -248,9 +248,9 @@ export const componentDefaults = {
   drawer: {
     panel: {
       stylePreset: 'drawerPanel',
-      size: '30%',
       maxSize: '100%',
       minSize: '20px',
+      size: '30%',
       // Use the object below when PPDSC-1422 is resolved
       // size: {
       //   xs: '90%',

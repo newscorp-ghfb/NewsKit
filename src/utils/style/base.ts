@@ -5,6 +5,9 @@ import {getToken} from '../get-token';
 import {ThemeProp} from '../style-types';
 import {MQ} from './types';
 import {isNonThemeValueAllowed, isValidUnit} from './utils';
+import {CSSObject} from './emotion';
+
+export type FromThemeCallback = (cssValue: string) => CSSObject | string;
 
 export const getDefaultedValue = <
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -12,7 +15,7 @@ export const getDefaultedValue = <
 >(
   getPresetFromThemeUtil: FromThemeUtil,
   presetType: string,
-  cssProp?: string,
+  cssProp?: string | FromThemeCallback,
 ) => <Props extends ThemeProp>(
   defaultPath: string | undefined,
   overridePath: string | false = '',
@@ -109,4 +112,59 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   }
 
   return '';
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const isNotNullOrEmpty = (v: any): boolean =>
+  v !== null && v !== undefined && v !== '';
+
+export const getXFromTheme = (themeKey: keyof Theme) => <
+  Props extends ThemeProp
+>(
+  cssProperty: string | FromThemeCallback,
+  defaultToken: MQ<string>,
+) => (props: Props) => {
+  const value = getResponsiveValueFromTheme(themeKey)(defaultToken)(
+    props,
+  ) as Array<[string, string]>;
+
+  if (Array.isArray(value)) {
+    return value.reduce(
+      (acc, [mq, preset]) => {
+        let mqValue;
+        if (typeof cssProperty === 'string') {
+          mqValue = {[cssProperty]: preset};
+        }
+        if (typeof cssProperty === 'function') {
+          mqValue = cssProperty(preset);
+        }
+        /* istanbul ignore next */
+        if (mqValue) {
+          acc[mq] = mqValue;
+        }
+        return acc;
+      },
+      {} as CSSObject,
+    );
+  }
+
+  if (typeof cssProperty === 'string' && isNotNullOrEmpty(value)) {
+    return {[cssProperty]: value};
+  }
+
+  if (typeof cssProperty === 'function' && isNotNullOrEmpty(value)) {
+    return cssProperty(value);
+  }
+
+  return value;
+};
+
+export const getResponsiveX = (themeKey: keyof Theme) => (
+  cssProperty: string | FromThemeCallback,
+  defaultPath: string,
+  overridePath: string,
+  defaultsObjectKey: string,
+) => <Props extends ThemeProp>(props: Props) => {
+  const token = getToken(props, defaultPath, overridePath, defaultsObjectKey);
+  return getXFromTheme(themeKey)(cssProperty, token)(props);
 };
