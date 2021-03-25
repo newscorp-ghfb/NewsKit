@@ -9,7 +9,9 @@ describe('Consent component', () => {
     const iFrame = "iframe[id^='sp_message_iframe']";
     cy.get(iFrame, {timeout: 10000}).should('be.visible');
     cy.acceptCookieBanner();
-    cy.get(iFrame).should('not.be.visible');
+    // Non TCF and TCF behave differently in this regard,hidden and removed respectively, we need to support both during switch over
+    // TODO: uncomment once PPDSC-1504 released
+    // cy.get(iFrame).should('not.exist');
     cy.reload();
     cy.get(iFrame, {timeout: 10000}).should('not.exist');
   });

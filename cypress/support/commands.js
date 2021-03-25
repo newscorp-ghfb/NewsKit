@@ -32,7 +32,11 @@ Cypress.Commands.add('acceptCookieBanner', () => {
         const innerBody = iframe.contents().find('body');
         cy.wrap(innerBody)
           .find('.message-component.message-button')
-          .contains('Yes, I agree')
+          /*
+            match case false can be removed once the Non TCF banner PPSC-1504 is rolled out to production
+            this was added so e2e tests wouldn't break as part part of the rollout due to the copy change.
+          */
+          .contains('I Agree', {matchCase: false})
           .click();
       });
     }
