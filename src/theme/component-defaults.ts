@@ -511,7 +511,7 @@ export const componentDefaults = {
   tab: {
     small: {
       stylePreset: 'tab',
-      typographyPreset: 'utilityLabel010',
+      typographyPreset: 'utilityButton010',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -519,7 +519,7 @@ export const componentDefaults = {
     },
     medium: {
       stylePreset: 'tab',
-      typographyPreset: 'utilityLabel020',
+      typographyPreset: 'utilityButton020',
       spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
@@ -527,7 +527,7 @@ export const componentDefaults = {
     },
     large: {
       stylePreset: 'tab',
-      typographyPreset: 'utilityLabel030',
+      typographyPreset: 'utilityButton030',
       spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
@@ -535,21 +535,19 @@ export const componentDefaults = {
     },
   },
   tabs: {
-    stylePreset: 'tabs',
-    tabBarTrack: {
-      stylePreset: 'tabBarTrack',
-      weight: 'borderWidth020',
-    },
-    tabBarIndicator: {
-      stylePreset: 'tabBarIndicator',
-      weight: 'borderWidth020',
-      motionDuration: 'motionDuration030',
-      motionTiming: 'motionEaseInAndOut',
-    },
-    tabPane: {
-      typographyPreset: 'utilityBody020',
-    },
     spaceInline: 'space020',
+    selectionIndicator: {
+      track: {
+        stylePreset: 'tabsBarTrack',
+        weight: 'borderWidth020',
+      },
+      indicator: {
+        stylePreset: 'tabsBarIndicator',
+        weight: 'borderWidth020',
+        motionDuration: 'motionDuration030',
+        motionTiming: 'motionEaseInAndOut',
+      },
+    },
   },
   textInput: {
     small: {

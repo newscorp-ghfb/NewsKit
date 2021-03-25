@@ -8,10 +8,10 @@ import {
   TabAlign,
 } from './types';
 import {
-  StyledTabBar,
+  StyledTabsBar,
   StyledInnerTabGroup,
-  StyledTabBarTrack,
-  StyledTabBarIndicator,
+  StyledTabsBarTrack,
+  StyledTabsBarIndicator,
   StyledTabGroup,
   StyledDistributionWrapper,
 } from './styled';
@@ -22,17 +22,17 @@ import {TabInternal} from './tab-internal';
 import {useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {
-  getTabBarIndicatorStyle,
+  getTabsBarIndicatorStyle,
   getLayoutParams,
   KEYBOARD_ACTION,
   parseKeyDown,
-  preventDefault,
   getFirstParentElementWithRole,
   getDescendantOnlyFromFirstChild,
 } from './utils';
-import {TabPane} from './tab-pane';
+import {TabPanel} from './tab-panel';
 import {hasMatchingDisplayNameWith} from '../utils/component';
 import {getSSRId} from '../utils/get-ssr-id';
+import {get} from '../utils/get';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -73,7 +73,7 @@ export const Tabs: React.FC<TabsProps> = ({
     validateInitialSelectedIndex(initialSelectedIndex, children),
   );
   const [indicator, setIndicator] = useState({
-    length: 0,
+    size: 0,
     distance: 0,
   });
 
@@ -87,14 +87,16 @@ export const Tabs: React.FC<TabsProps> = ({
   // Reference like this so linter does not remove from hooks dependencies
   const currentActiveTabRef = activeTabRef.current;
 
-  const tabBarTrackRef = React.useRef<HTMLDivElement>(null);
-  const [tabBarTrackWidth, tabBarTrackHeight] = useResizeObserver(
-    tabBarTrackRef,
+  const tabsBarTrackRef = React.useRef<HTMLDivElement>(null);
+  const [tabsBarTrackWidth, tabsBarTrackHeight] = useResizeObserver(
+    tabsBarTrackRef,
   );
-  const tabBarTrackSize = vertical ? tabBarTrackHeight : tabBarTrackWidth;
+  const tabsBarTrackSize = vertical ? tabsBarTrackHeight : tabsBarTrackWidth;
 
-  const tabBarIndicatorLengthOverride =
-    overrides.tabBarIndicator && overrides.tabBarIndicator.length;
+  const tabsBarIndicatorSizeOverride = get(
+    overrides,
+    'selectionIndicator.indicator.size',
+  );
 
   React.useEffect(() => {
     if (currentActiveTabRef) {
@@ -103,16 +105,16 @@ export const Tabs: React.FC<TabsProps> = ({
           currentActiveTabRef,
           theme,
           vertical,
-          tabBarIndicatorLengthOverride,
+          tabsBarIndicatorSizeOverride,
         ),
       );
     }
   }, [
     currentActiveTabRef,
-    tabBarIndicatorLengthOverride,
+    tabsBarIndicatorSizeOverride,
     theme,
     vertical,
-    tabBarTrackSize,
+    tabsBarTrackSize,
   ]);
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
@@ -178,16 +180,15 @@ export const Tabs: React.FC<TabsProps> = ({
     setAriaIds(ids);
   }, [tabsOnlyChildren.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const tabPanes = tabsOnlyChildren.map(
+  const tabPanels = tabsOnlyChildren.map(
     (child: React.ReactElement<TabProps>, index) => {
-      const tabPaneProps = {
+      const tabPanelProps = {
         children: child.props.children,
-        overrides: overrides.tabPane,
         selected: index === activeTabIndex,
         id: ariaIds[index],
       };
 
-      return <TabPane {...tabPaneProps} />;
+      return <TabPanel {...tabPanelProps} />;
     },
   );
 
@@ -202,7 +203,7 @@ export const Tabs: React.FC<TabsProps> = ({
 
   const addStackDivider = (key: number) => (
     <StackChild key={`${key}-divider`} alignSelf={AlignSelfValues.Stretch}>
-      <Divider vertical={!vertical} />
+      <Divider overrides={overrides.divider} vertical={!vertical} />
     </StackChild>
   );
 
@@ -210,7 +211,7 @@ export const Tabs: React.FC<TabsProps> = ({
     tab: string | React.ReactNode,
   ): string | React.ReactNode => {
     if (isFragment(tab)) {
-      // un-wrap the fragment from Tab.title prop
+      // un-wrap the fragment from Tab.label prop
       return tab.props.children;
     }
     return tab;
@@ -220,7 +221,7 @@ export const Tabs: React.FC<TabsProps> = ({
     (acc, tab, index, array) => {
       acc.push(
         <StyledDistributionWrapper
-          distribution={distribution || TabsDistribution.LeftStacked}
+          distribution={distribution || TabsDistribution.Start}
           numberOfSiblings={array.length}
           data-testid="distribution-wrapper"
           vertical={vertical}
@@ -232,7 +233,6 @@ export const Tabs: React.FC<TabsProps> = ({
             size={size}
             onKeyDown={handleKeyDown}
             onClick={() => setActiveTabIndex(tab.key)}
-            onMouseDown={preventDefault}
             disabled={tab.disabled}
             ref={tab.selected ? activeTabRef : undefined}
             id={tab.id}
@@ -243,7 +243,7 @@ export const Tabs: React.FC<TabsProps> = ({
               height: vertical ? '100%' : '',
             }}
           >
-            {getChildren(tab.title)}
+            {getChildren(tab.label)}
           </TabInternal>
         </StyledDistributionWrapper>,
       );
@@ -262,7 +262,7 @@ export const Tabs: React.FC<TabsProps> = ({
       overrides={overrides}
       data-testid="tab-group"
     >
-      <StyledTabBar
+      <StyledTabsBar
         overrides={overrides}
         vertical={vertical}
         data-testid="tab-bar"
@@ -276,19 +276,19 @@ export const Tabs: React.FC<TabsProps> = ({
         >
           {tabs}
 
-          <StyledTabBarTrack
+          <StyledTabsBarTrack
             overrides={overrides}
             vertical={vertical}
             role="presentation"
             data-testid="tab-bar-track"
-            ref={tabBarTrackRef}
+            ref={tabsBarTrackRef}
           />
-          <StyledTabBarIndicator
+          <StyledTabsBarIndicator
             overrides={overrides}
             vertical={vertical}
-            style={getTabBarIndicatorStyle(
+            style={getTabsBarIndicatorStyle(
               theme,
-              indicator.length,
+              indicator.size,
               indicator.distance,
               vertical,
               keyUpdated,
@@ -299,8 +299,8 @@ export const Tabs: React.FC<TabsProps> = ({
             role="presentation"
           />
         </StyledInnerTabGroup>
-      </StyledTabBar>
-      {tabPanes}
+      </StyledTabsBar>
+      {tabPanels}
     </StyledTabGroup>
   );
 };

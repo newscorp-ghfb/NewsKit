@@ -9,21 +9,20 @@ import {Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
 import {TabAlign, TabsProps} from '../types';
 import {IconFilledEmail} from '../../icons';
-import {createTheme, compileTheme} from '../../theme';
 import {KEYBOARD_ARROWS} from '../utils';
 
 const renderTabsDefault = (props: TabsProps) => <Tabs {...props} />;
 
 const tabsWithLabel = [
-  <Tab title="Medium tab">First tab content</Tab>,
-  <Tab title="Medium tab">Second tab content</Tab>,
-  <Tab title="Medium tab">Third tab content</Tab>,
+  <Tab label="Medium tab">First tab content</Tab>,
+  <Tab label="Medium tab">Second tab content</Tab>,
+  <Tab label="Medium tab">Third tab content</Tab>,
 ];
 
 const tabsWithIcons = [
-  <Tab title={<IconFilledEmail />}>First tab content</Tab>,
-  <Tab title={<IconFilledEmail />}>Second tab content</Tab>,
-  <Tab title={<IconFilledEmail />}>Third tab content</Tab>,
+  <Tab label={<IconFilledEmail />}>First tab content</Tab>,
+  <Tab label={<IconFilledEmail />}>Second tab content</Tab>,
+  <Tab label={<IconFilledEmail />}>Third tab content</Tab>,
 ];
 
 const tabWithLabelAndIcon = (
@@ -34,10 +33,10 @@ const tabWithLabelAndIcon = (
 );
 
 const tabsWithLabelAndIcons = [
-  <Tab title={tabWithLabelAndIcon}>First tab content</Tab>,
+  <Tab label={tabWithLabelAndIcon}>First tab content</Tab>,
 
-  <Tab title={tabWithLabelAndIcon}>Second tab content</Tab>,
-  <Tab title={tabWithLabelAndIcon}>Third tab content</Tab>,
+  <Tab label={tabWithLabelAndIcon}>Second tab content</Tab>,
+  <Tab label={tabWithLabelAndIcon}>Third tab content</Tab>,
 ];
 
 const selectedTabStyled = 'color: #0a68c1';
@@ -111,33 +110,15 @@ describe('Tabs', () => {
   });
 
   test('renders with overrides', () => {
-    const myCustomTheme = createTheme({
-      name: 'my-custom-tab-group-theme',
-      overrides: {
-        stylePresets: {
-          tabsCustom: {
-            base: {
-              backgroundColor: '{{colors.white}}',
-            },
-          },
-        },
-      },
-    });
-
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
       size: TabSize.Large,
       overrides: {
-        stylePreset: 'tabsCustom',
         spaceInline: 'space050',
       },
     };
 
-    const fragment = renderToFragmentWithTheme(
-      renderTabsDefault,
-      props,
-      compileTheme(myCustomTheme),
-    );
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -175,7 +156,7 @@ describe('Tabs', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('changes focus on-tab to tab-pane ', async () => {
+  it('changes focus on-tab to tab-panel ', async () => {
     const props: TabsProps = {
       children: tabsWithLabel,
     };
@@ -185,13 +166,13 @@ describe('Tabs', () => {
     );
 
     const firstTab = getAllByTestId('tab')[0];
-    const firstTabPane = getAllByTestId('tab-pane')[0];
+    const firstTabPanel = getAllByTestId('tab-panel')[0];
 
     firstTab.focus();
     expect(firstTab).toHaveFocus();
 
     userEvent.tab();
-    expect(firstTabPane).toHaveFocus();
+    expect(firstTabPanel).toHaveFocus();
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -199,11 +180,11 @@ describe('Tabs', () => {
   it('doesnt change focus if no other available tabs', async () => {
     const props: TabsProps = {
       children: [
-        <Tab title="Medium tab">First content</Tab>,
-        <Tab title="Medium tab" disabled>
+        <Tab label="Medium tab">First content</Tab>,
+        <Tab label="Medium tab" disabled>
           Second content
         </Tab>,
-        <Tab title="Medium tab" disabled>
+        <Tab label="Medium tab" disabled>
           Third content
         </Tab>,
       ],
@@ -251,8 +232,10 @@ describe('Tabs', () => {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
-        tabBarIndicator: {
-          length: 'sizing050',
+        selectionIndicator: {
+          indicator: {
+            size: 'sizing050',
+          },
         },
       },
     };
@@ -266,8 +249,10 @@ describe('Tabs', () => {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
-        tabBarIndicator: {
-          length: 'sizing120',
+        selectionIndicator: {
+          indicator: {
+            size: 'sizing120',
+          },
         },
       },
     };
@@ -281,8 +266,10 @@ describe('Tabs', () => {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
-        tabBarIndicator: {
-          length: '75%',
+        selectionIndicator: {
+          indicator: {
+            size: '75%',
+          },
         },
       },
     };
@@ -296,11 +283,13 @@ describe('Tabs', () => {
       children: tabsWithLabelAndIcons,
       size: TabSize.Medium,
       overrides: {
-        tabBarTrack: {
-          weight: 'borderWidth030',
-        },
-        tabBarIndicator: {
-          weight: 'borderWidth030',
+        selectionIndicator: {
+          track: {
+            weight: 'borderWidth030',
+          },
+          indicator: {
+            weight: 'borderWidth030',
+          },
         },
       },
     };
@@ -322,13 +311,13 @@ describe('Tabs', () => {
     const tab = getAllByTestId('tab')[1];
     expect(tab).toHaveStyle(selectedTabStyled);
 
-    const [firstTabPane, secondTabPane] = getAllByTestId('tab-pane');
+    const [firstTabPanel, secondTabPanel] = getAllByTestId('tab-panel');
 
-    expect(firstTabPane).toHaveAttribute('aria-hidden', 'true');
-    expect(secondTabPane).toHaveAttribute('aria-hidden', 'false');
+    expect(firstTabPanel).toHaveAttribute('aria-hidden', 'true');
+    expect(secondTabPanel).toHaveAttribute('aria-hidden', 'false');
 
-    expect(firstTabPane).not.toBeVisible();
-    expect(secondTabPane).toBeVisible();
+    expect(firstTabPanel).not.toBeVisible();
+    expect(secondTabPanel).toBeVisible();
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -370,92 +359,29 @@ describe('Tabs', () => {
 });
 
 const tabs = [
-  <Tab title="H tab 1">First tab content</Tab>,
-  <Tab title="H tab 2">Second tab content</Tab>,
-  <Tab title="H tab 3">Third tab content</Tab>,
+  <Tab label="H tab 1">First tab content</Tab>,
+  <Tab label="H tab 2">Second tab content</Tab>,
+  <Tab label="H tab 3">Third tab content</Tab>,
 ];
 
-describe('Tabs LeftStacked', () => {
-  test('renders tabs horizontal leftstacked', () => {
-    const props: TabsProps = {
-      children: tabs,
-      distribution: TabsDistribution.LeftStacked,
-    };
+describe('Tabs distribution', () => {
+  const flows = ['horizontal', 'vertical'];
+  const tabsDistributions = Object.values(TabsDistribution) as string[];
 
-    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
-    expect(fragment).toMatchSnapshot();
-  });
+  flows.forEach(currentFlow => {
+    test.each(tabsDistributions)(
+      `set to %s with ${currentFlow} flow`,
+      currentDistribution => {
+        const props: TabsProps = {
+          children: tabs,
+          distribution: currentDistribution as TabsDistribution,
+          vertical: currentFlow === 'vertical',
+        };
 
-  test('renders Tabs vertical leftstacked', () => {
-    const props: TabsProps = {
-      children: tabs,
-      distribution: TabsDistribution.LeftStacked,
-      vertical: true,
-      overrides: {
-        tabBar: {
-          height: '300px',
-        },
+        const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
+        expect(fragment).toMatchSnapshot();
       },
-    };
-
-    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
-    expect(fragment).toMatchSnapshot();
-  });
-});
-
-describe('Tabs FittedFlex', () => {
-  test('renders tabs horizontal fittedFlex', () => {
-    const props: TabsProps = {
-      children: tabs,
-      distribution: TabsDistribution.FittedFlex,
-    };
-
-    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders tabs vertical FittedFlex', () => {
-    const props: TabsProps = {
-      children: tabs,
-      distribution: TabsDistribution.FittedFlex,
-      vertical: true,
-      overrides: {
-        tabBar: {
-          height: '300px',
-        },
-      },
-    };
-
-    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
-    expect(fragment).toMatchSnapshot();
-  });
-});
-
-describe('Tabs FittedEqual', () => {
-  test('renders tabs horizontal FittedEqual', () => {
-    const props: TabsProps = {
-      children: tabs,
-      distribution: TabsDistribution.FittedEqual,
-    };
-
-    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders tabs vertical FittedEqual', () => {
-    const props: TabsProps = {
-      children: tabs,
-      distribution: TabsDistribution.FittedEqual,
-      vertical: true,
-      overrides: {
-        tabBar: {
-          height: '300px',
-        },
-      },
-    };
-
-    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
-    expect(fragment).toMatchSnapshot();
+    );
   });
 });
 
@@ -533,8 +459,8 @@ describe('Tabs keyboard changes focus', () => {
 
       const fromTab = getAllByTestId('tab')[fromIndex];
       const toTab = getAllByTestId('tab')[toIndex];
-      const fromTabPane = getAllByTestId('tab-pane')[fromIndex];
-      const toTabPane = getAllByTestId('tab-pane')[toIndex];
+      const fromTabPanel = getAllByTestId('tab-panel')[fromIndex];
+      const toTabPanel = getAllByTestId('tab-panel')[toIndex];
 
       fromTab.focus();
       expect(fromTab).toHaveFocus();
@@ -543,11 +469,11 @@ describe('Tabs keyboard changes focus', () => {
       expect(toTab).toHaveFocus();
       expect(toTab).toHaveStyle(selectedTabStyled);
 
-      expect(fromTabPane).toHaveAttribute('aria-hidden', 'true');
-      expect(toTabPane).toHaveAttribute('aria-hidden', 'false');
+      expect(fromTabPanel).toHaveAttribute('aria-hidden', 'true');
+      expect(toTabPanel).toHaveAttribute('aria-hidden', 'false');
 
-      expect(fromTabPane).not.toBeVisible();
-      expect(toTabPane).toBeVisible();
+      expect(fromTabPanel).not.toBeVisible();
+      expect(toTabPanel).toBeVisible();
 
       expect(asFragment()).toMatchSnapshot();
     });

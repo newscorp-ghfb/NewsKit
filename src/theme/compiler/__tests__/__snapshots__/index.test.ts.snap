@@ -679,7 +679,7 @@ Object {
         "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "tab",
-        "typographyPreset": "utilityLabel030",
+        "typographyPreset": "utilityButton030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -687,7 +687,7 @@ Object {
         "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "tab",
-        "typographyPreset": "utilityLabel020",
+        "typographyPreset": "utilityButton020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -695,25 +695,23 @@ Object {
         "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "tab",
-        "typographyPreset": "utilityLabel010",
+        "typographyPreset": "utilityButton010",
       },
     },
     "tabs": Object {
+      "selectionIndicator": Object {
+        "indicator": Object {
+          "motionDuration": "motionDuration030",
+          "motionTiming": "motionEaseInAndOut",
+          "stylePreset": "tabsBarIndicator",
+          "weight": "borderWidth020",
+        },
+        "track": Object {
+          "stylePreset": "tabsBarTrack",
+          "weight": "borderWidth020",
+        },
+      },
       "spaceInline": "space020",
-      "stylePreset": "tabs",
-      "tabBarIndicator": Object {
-        "motionDuration": "motionDuration030",
-        "motionTiming": "motionEaseInAndOut",
-        "stylePreset": "tabBarIndicator",
-        "weight": "borderWidth020",
-      },
-      "tabBarTrack": Object {
-        "stylePreset": "tabBarTrack",
-        "weight": "borderWidth020",
-      },
-      "tabPane": Object {
-        "typographyPreset": "utilityBody020",
-      },
     },
     "tag": Object {
       "large": Object {
@@ -2658,38 +2656,17 @@ Object {
       },
       "selected": Object {
         "color": "#0a68c1",
-        "iconColor": "#2e2e2e",
+        "iconColor": "#0a68c1",
       },
     },
-    "tabBarIndicator": Object {
+    "tabsBarIndicator": Object {
       "base": Object {
         "backgroundColor": "#0a68c1",
       },
-      "disabled": Object {
-        "backgroundColor": "#c0c0c0",
-      },
-      "focus": Object {
-        "backgroundColor": "#02509b",
-      },
-      "hover": Object {
-        "backgroundColor": "#02509b",
-      },
-      "selected": Object {
-        "backgroundColor": "#0a68c1",
-      },
     },
-    "tabBarTrack": Object {
+    "tabsBarTrack": Object {
       "base": Object {
         "backgroundColor": "#e4e4e4",
-      },
-    },
-    "tabs": Object {
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderColor": "#cccccc",
-        "borderRadius": "0",
-        "borderStyle": "solid",
-        "borderWidth": "2px",
       },
     },
     "tagDefault": Object {

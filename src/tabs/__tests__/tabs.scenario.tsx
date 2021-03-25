@@ -1,12 +1,14 @@
 import * as React from 'react';
 
-import {TabSize, styled} from '../..';
+import {TabSize, styled, Scroll, TextBlock} from '../..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Tab, TabAlign, Tabs, TabsDistribution} from '..';
 import {IconFilledEmail} from '../../icons';
+import {Block} from '../../block';
+import {createTheme, ThemeProvider} from '../../theme';
 
 const LoremIpsumText = [
   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -37,18 +39,55 @@ const LoremIpsumText2 = [
   `Again different Content`,
 ];
 
+const myCustomTheme = createTheme({
+  name: 'my-custom-tabs-theme',
+  overrides: {
+    stylePresets: {
+      tabsBarTrackCustomPreset: {
+        base: {
+          backgroundColor: '{{colors.amber020}}',
+        },
+      },
+      tabsBarIndicatorCustomPreset: {
+        base: {
+          backgroundColor: '{{colors.green060}}',
+        },
+      },
+      dividerCustomPreset: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.red060}}',
+          borderWidth: '{{borders.borderWidth030}}',
+        },
+      },
+    },
+  },
+});
+
 const Spacer = styled.div`
   margin-bottom: 2em;
-`;
-
-const StyledLoremIpsum = styled.div`
-  padding: 1em;
 `;
 
 const LoremIpsum: React.FC<{textNumber: number; text?: Array<string>}> = ({
   textNumber = 1,
   text = LoremIpsumText,
-}) => <StyledLoremIpsum>{text[textNumber - 1]}</StyledLoremIpsum>;
+}) => (
+  <Block spaceInset="spaceInset040">
+    <TextBlock typographyPreset="utilityBody020">
+      {text[textNumber - 1]}
+    </TextBlock>
+  </Block>
+);
+
+const StyledBlock = styled(Block)`
+  height: 150px;
+`;
+
+const ScrollBox: React.FC = ({children}) => (
+  <StyledBlock>
+    <Scroll>{children}</Scroll>
+  </StyledBlock>
+);
 
 const titleCanHaveIcons = (
   <>
@@ -80,39 +119,39 @@ export default {
   name: 'tabs',
   children: [
     {
-      name: 'tabs-LeftStacked',
+      name: 'tabs-distribution-start',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tabs 2 LeftStacked</StorybookHeading>
+          <StorybookHeading>Tabs Distribution Start</StorybookHeading>
 
           <StorybookSubHeading>Horizontal</StorybookSubHeading>
           <Tabs
             size={TabSize.Small}
-            distribution={TabsDistribution.LeftStacked}
+            distribution={TabsDistribution.Start}
             divider
             initialSelectedIndex={10}
           >
-            <Tab title="H tab 1, one, uno, un">
+            <Tab label="H tab 1">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title={titleCanHaveIcons}>
+            <Tab label={titleCanHaveIcons}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="H tab 3, three">
+            <Tab label="H tab 3, three">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
           <Spacer />
 
           <Tabs size={TabSize.Medium} divider>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -124,16 +163,16 @@ export default {
             size={TabSize.Small}
             vertical
             divider
-            distribution={TabsDistribution.LeftStacked}
+            distribution={TabsDistribution.Start}
           >
-            <Tab title="V tab 1, one, uno, un">
+            <Tab label="V tab 1">
               <LoremIpsum textNumber={1} text={LoremIpsumText2} />
             </Tab>
-            <Tab title="V tab 2">
+            <Tab label="V tab 2">
               <LoremIpsum textNumber={2} />
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="V tab 3, three">
+            <Tab label="V tab 3, three">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -141,25 +180,25 @@ export default {
       ),
     },
     {
-      name: 'tabs-FittedFlex',
+      name: 'tabs-distribution-grow',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tabs FittedFlex</StorybookHeading>
+          <StorybookHeading>Tabs Distribution - Grow</StorybookHeading>
 
           <StorybookSubHeading>Horizontal</StorybookSubHeading>
           <Tabs
             size={TabSize.Small}
-            distribution={TabsDistribution.FittedFlex}
+            distribution={TabsDistribution.Grow}
             divider
           >
-            <Tab title="H tab 1, one, uno, un">
+            <Tab label="H tab 1">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title="H tab 2">
+            <Tab label="H tab 2">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="H tab 3, three">
+            <Tab label="H tab 3, three">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -170,15 +209,15 @@ export default {
             size={TabSize.Small}
             vertical
             divider
-            distribution={TabsDistribution.FittedFlex}
+            distribution={TabsDistribution.Grow}
           >
-            <Tab title="V tab 1, one, uno, un">
+            <Tab label="V tab 1">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title="V tab 2">
+            <Tab label="V tab 2">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="V tab 3, three">
+            <Tab label="V tab 3, three">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -186,25 +225,25 @@ export default {
       ),
     },
     {
-      name: 'tabs-FittedEqual',
+      name: 'tabs-distribution-equal',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tabs FittedEqual</StorybookHeading>
+          <StorybookHeading>Tabs Distribution - Equal</StorybookHeading>
 
           <StorybookSubHeading>Horizontal</StorybookSubHeading>
           <Tabs
             size={TabSize.Small}
             divider
-            distribution={TabsDistribution.FittedEqual}
+            distribution={TabsDistribution.Equal}
           >
-            <Tab title="H tab 1, one, uno, un">
+            <Tab label="H tab 1">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title="H tab 2">
+            <Tab label="H tab 2">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="H tab 3, three">
+            <Tab label="H tab 3, three">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -215,16 +254,75 @@ export default {
             size={TabSize.Small}
             vertical
             divider
-            distribution={TabsDistribution.FittedEqual}
+            distribution={TabsDistribution.Equal}
           >
-            <Tab title="V tab 1, one, uno, un">
+            <Tab label="V tab 1">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title="V tab 2">
+            <Tab label="V tab 2">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="V tab 3, three">
+            <Tab label="V tab 3, three">
               <LoremIpsum textNumber={3} />
+            </Tab>
+          </Tabs>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tabs-with-scroll',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tabs with fixed height in container and scroll
+          </StorybookHeading>
+
+          <StorybookSubHeading>Horizontal</StorybookSubHeading>
+          <Tabs
+            size={TabSize.Small}
+            divider
+            distribution={TabsDistribution.Equal}
+          >
+            <Tab label="H tab 1">
+              <ScrollBox>
+                <LoremIpsum textNumber={1} />
+              </ScrollBox>
+            </Tab>
+            <Tab label="H tab 2">
+              <ScrollBox>
+                <LoremIpsum textNumber={2} />
+              </ScrollBox>
+            </Tab>
+            <Tab label="H tab 3, three">
+              <ScrollBox>
+                <LoremIpsum textNumber={3} />
+              </ScrollBox>
+            </Tab>
+          </Tabs>
+          <Spacer />
+
+          <StorybookSubHeading>Vertical</StorybookSubHeading>
+          <Tabs
+            size={TabSize.Small}
+            vertical
+            divider
+            distribution={TabsDistribution.Equal}
+          >
+            <Tab label="V tab 1">
+              <ScrollBox>
+                <LoremIpsum textNumber={1} />
+              </ScrollBox>
+            </Tab>
+            <Tab label="V tab 2">
+              <ScrollBox>
+                <LoremIpsum textNumber={2} />
+              </ScrollBox>
+            </Tab>
+            <Tab label="V tab 3, three">
+              <ScrollBox>
+                <LoremIpsum textNumber={3} />
+              </ScrollBox>
             </Tab>
           </Tabs>
         </React.Fragment>
@@ -239,25 +337,25 @@ export default {
           <StorybookSubHeading>Small</StorybookSubHeading>
 
           <Tabs size={TabSize.Small}>
-            <Tab title="Small tab">Content 1</Tab>
-            <Tab title="Small tab">Content 2</Tab>
-            <Tab title="Small tab">Content 3</Tab>
+            <Tab label="Small tab">Content 1</Tab>
+            <Tab label="Small tab">Content 2</Tab>
+            <Tab label="Small tab">Content 3</Tab>
           </Tabs>
 
           <StorybookSubHeading>Medium</StorybookSubHeading>
 
           <Tabs size={TabSize.Medium}>
-            <Tab title="Medium tab">Content 1</Tab>
-            <Tab title="Medium tab">Content 2</Tab>
-            <Tab title="Medium tab">Content 3</Tab>
+            <Tab label="Medium tab">Content 1</Tab>
+            <Tab label="Medium tab">Content 2</Tab>
+            <Tab label="Medium tab">Content 3</Tab>
           </Tabs>
 
           <StorybookSubHeading>Large</StorybookSubHeading>
 
           <Tabs size={TabSize.Large}>
-            <Tab title="Large tab">Content 1</Tab>
-            <Tab title="Large tab">Content 2</Tab>
-            <Tab title="Large tab">Content 3</Tab>
+            <Tab label="Large tab">Content 1</Tab>
+            <Tab label="Large tab">Content 2</Tab>
+            <Tab label="Large tab">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),
@@ -270,25 +368,25 @@ export default {
           <StorybookHeading>Tabs Horizontal Label / Icon</StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider>
-            <Tab title="Tab">
+            <Tab label="Tab">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title="Tab Two">
+            <Tab label="Tab Two">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="Tab Three is Long">
+            <Tab label="Tab Three is Long">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
           <StorybookSubHeading>Icon Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider>
-            <Tab aria-label="tab label" title={<IconFilledEmail />}>
+            <Tab aria-label="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title={<IconFilledEmail />}>
+            <Tab aria-label="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title={<IconFilledEmail />}>
+            <Tab aria-label="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -303,31 +401,31 @@ export default {
           <StorybookHeading>Tabs Vertical Label / Icon</StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider vertical>
-            <Tab aria-label="tab label" title="Medium tab">
+            <Tab aria-label="tab label" label="Medium tab">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title="Medium tab" disabled>
+            <Tab aria-label="tab label" label="Medium tab" disabled>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title="Medium tab">
+            <Tab aria-label="tab label" label="Medium tab">
               <LoremIpsum textNumber={3} />
             </Tab>
-            <Tab aria-label="tab label" title="Medium tab">
+            <Tab aria-label="tab label" label="Medium tab">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
           <StorybookSubHeading>Icon Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider vertical>
-            <Tab aria-label="tab label" title={<IconFilledEmail />}>
+            <Tab aria-label="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title={<IconFilledEmail />}>
+            <Tab aria-label="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title={<IconFilledEmail />} disabled>
+            <Tab aria-label="tab label" label={<IconFilledEmail />} disabled>
               <LoremIpsum textNumber={3} />
             </Tab>
-            <Tab aria-label="tab label" title={<IconFilledEmail />}>
+            <Tab aria-label="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={4} />
             </Tab>
           </Tabs>
@@ -342,13 +440,13 @@ export default {
           <StorybookHeading>Tabs Horizontal Icon and Label</StorybookHeading>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <Tabs size={TabSize.Small} divider>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -356,13 +454,13 @@ export default {
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -377,13 +475,13 @@ export default {
           <StorybookHeading>Tabs Vertical Icon and Label</StorybookHeading>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider vertical>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -391,13 +489,13 @@ export default {
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <Tabs size={TabSize.Large} divider vertical>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -412,21 +510,21 @@ export default {
           <StorybookHeading>Tabs Vertical</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <Tabs size={TabSize.Small} vertical>
-            <Tab title="Small tab">Content 1</Tab>
-            <Tab title="Small tab">Content 2</Tab>
-            <Tab title="Small tab">Content 3</Tab>
+            <Tab label="Small tab">Content 1</Tab>
+            <Tab label="Small tab">Content 2</Tab>
+            <Tab label="Small tab">Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Medium</StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical>
-            <Tab title="Medium tab">Content 1</Tab>
-            <Tab title="Medium tab">Content 2</Tab>
-            <Tab title="Medium tab">Content 3</Tab>
+            <Tab label="Medium tab">Content 1</Tab>
+            <Tab label="Medium tab">Content 2</Tab>
+            <Tab label="Medium tab">Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Large</StorybookSubHeading>
           <Tabs size={TabSize.Large} vertical>
-            <Tab title="Large tab">Content 1</Tab>
-            <Tab title="Large tab">Content 2</Tab>
-            <Tab title="Large tab">Content 3</Tab>
+            <Tab label="Large tab">Content 1</Tab>
+            <Tab label="Large tab">Content 2</Tab>
+            <Tab label="Large tab">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),
@@ -441,19 +539,19 @@ export default {
           </StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Icon Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab ariaLabel="tab label" title={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               Content 1
             </Tab>
-            <Tab ariaLabel="tab label" title={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               Content 2
             </Tab>
-            <Tab ariaLabel="tab label" title={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               Content 3
             </Tab>
           </Tabs>
@@ -470,19 +568,19 @@ export default {
           </StorybookHeading>
           <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab title={titleAndRightIcon}>Content 1</Tab>
-            <Tab title={titleAndRightIcon}>Content 2</Tab>
-            <Tab title={titleAndRightIcon}>Content 3</Tab>
+            <Tab label={titleAndRightIcon}>Content 1</Tab>
+            <Tab label={titleAndRightIcon}>Content 2</Tab>
+            <Tab label={titleAndRightIcon}>Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               Content 1
             </Tab>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               Content 2
             </Tab>
-            <Tab aria-label="tab label" title={titleAndLeftIcon}>
+            <Tab aria-label="tab label" label={titleAndLeftIcon}>
               Content 3
             </Tab>
           </Tabs>
@@ -490,13 +588,13 @@ export default {
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               Content 1
             </Tab>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               Content 2
             </Tab>
-            <Tab aria-label="tab label" title={titleBetweenIcons}>
+            <Tab aria-label="tab label" label={titleBetweenIcons}>
               Content 3
             </Tab>
           </Tabs>
@@ -511,25 +609,25 @@ export default {
           <StorybookHeading>Tabs Content</StorybookHeading>
           <StorybookSubHeading>Tab with content</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider>
-            <Tab title="Tab">
+            <Tab label="Tab">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title="Tab Two">
+            <Tab label="Tab Two">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="Tab Three is Long">
+            <Tab label="Tab Three is Long">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
           <StorybookSubHeading>Tab vertical with content</StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab title="Tab">
+            <Tab label="Tab">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab title="Tab Two">
+            <Tab label="Tab Two">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab title="Tab Three is Long">
+            <Tab label="Tab Three is Long">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -544,19 +642,19 @@ export default {
           <StorybookHeading>Tabs With Disabled Tab</StorybookHeading>
           <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
           <Tabs>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two" disabled>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two" disabled>
               Content 3
             </Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
           <Tabs vertical>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two" disabled>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two" disabled>
               Content 3
             </Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),
@@ -570,16 +668,21 @@ export default {
             Tabs With Fixed Tab Indicator Size
           </StorybookHeading>
           <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-          <Tabs overrides={{tabBarIndicator: {length: 'sizing050'}}}>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+          <Tabs
+            overrides={{selectionIndicator: {indicator: {size: 'sizing050'}}}}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-          <Tabs vertical overrides={{tabBarIndicator: {length: 'sizing030'}}}>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+          <Tabs
+            vertical
+            overrides={{selectionIndicator: {indicator: {size: 'sizing030'}}}}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),
@@ -593,16 +696,45 @@ export default {
             Tabs With Fixed Tab Indicator Percentage Size
           </StorybookHeading>
           <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-          <Tabs overrides={{tabBarIndicator: {length: '75%'}}}>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+          <Tabs overrides={{selectionIndicator: {indicator: {size: '75%'}}}}>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-          <Tabs vertical overrides={{tabBarIndicator: {length: '75%'}}}>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 1</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+          <Tabs
+            vertical
+            overrides={{selectionIndicator: {indicator: {size: '75%'}}}}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 1</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tabs-with-fixed-tab-indicator-pixel-size',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tabs With Fixed Tab Indicator Pixel Size
+          </StorybookHeading>
+          <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
+          <Tabs overrides={{selectionIndicator: {indicator: {size: '30px'}}}}>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+          <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
+          <Tabs
+            vertical
+            overrides={{selectionIndicator: {indicator: {size: '30px'}}}}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 1</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),
@@ -618,36 +750,40 @@ export default {
           <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
           <Tabs
             overrides={{
-              tabBarTrack: {
-                weight: 'borderWidth030',
-              },
-              tabBarIndicator: {
-                weight: 'borderWidth030',
+              selectionIndicator: {
+                track: {
+                  weight: 'borderWidth030',
+                },
+                indicator: {
+                  weight: 'borderWidth030',
+                },
               },
             }}
           >
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
-            <Tab title="Tab Four">Content 4</Tab>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab Four">Content 4</Tab>
           </Tabs>
           <div style={{height: '100px'}} />
           <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
           <Tabs
             vertical
             overrides={{
-              tabBarTrack: {
-                weight: 'borderWidth030',
-              },
-              tabBarIndicator: {
-                weight: 'borderWidth030',
+              selectionIndicator: {
+                track: {
+                  weight: 'borderWidth030',
+                },
+                indicator: {
+                  weight: 'borderWidth030',
+                },
               },
             }}
           >
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
-            <Tab title="Tab Four">Content 4</Tab>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab Four">Content 4</Tab>
           </Tabs>
         </React.Fragment>
       ),
@@ -664,32 +800,38 @@ export default {
           <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
           <Tabs
             overrides={{
-              tabBarIndicator: {
-                motionDuration: 'motionDuration040',
-                motionTiming: 'motionEaseIn',
+              selectionIndicator: {
+                indicator: {
+                  motionDuration: 'motionDuration040',
+                  motionTiming: 'motionEaseIn',
+                },
               },
             }}
           >
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
-            <Tab title="Tab Four">Content 4</Tab>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab Four">Content 4</Tab>
           </Tabs>
-          <div style={{height: '100px'}} />
+          <br />
+          <br />
+          <Spacer />
           <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
           <Tabs
             vertical
             overrides={{
-              tabBarIndicator: {
-                motionDuration: 'motionDuration040',
-                motionTiming: 'motionEaseIn',
+              selectionIndicator: {
+                indicator: {
+                  motionDuration: 'motionDuration040',
+                  motionTiming: 'motionEaseIn',
+                },
               },
             }}
           >
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
-            <Tab title="Tab Four">Content 4</Tab>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab Four">Content 4</Tab>
           </Tabs>
         </React.Fragment>
       ),
@@ -699,40 +841,46 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>
-            Tabs with custom inset, style preset, tabs navigation bar height,
-            spaceInline
-          </StorybookHeading>
+          <StorybookHeading>Tabs with presets overides</StorybookHeading>
           <StorybookSubHeading>Vertical</StorybookSubHeading>
-          <Tabs
-            size={TabSize.Small}
-            overrides={{
-              tabBar: {height: 'sizing120'},
-              stylePreset: 'tagPrimary',
-              spaceInset: 'spaceInset040',
-              tabPane: {
-                typographyPreset: 'utilityHeading010',
-              },
-              spaceInline: {
-                xs: 'space020',
-                md: 'space050',
-                xl: 'space080',
-              },
-            }}
-            vertical
-            divider
-            distribution={TabsDistribution.FittedFlex}
-          >
-            <Tab title="V tab 1, one, uno, un">
-              <LoremIpsum textNumber={1} />
-            </Tab>
-            <Tab title="V tab 2">
-              <LoremIpsum textNumber={2} />
-            </Tab>
-            <Tab title="V tab 3, three">
-              <LoremIpsum textNumber={3} />
-            </Tab>
-          </Tabs>
+          <ThemeProvider theme={myCustomTheme}>
+            <Tabs
+              size={TabSize.Small}
+              overrides={{
+                spaceInline: {
+                  xs: 'space020',
+                  md: 'space050',
+                  xl: 'space080',
+                },
+                selectionIndicator: {
+                  track: {
+                    stylePreset: 'tabsBarTrackCustomPreset',
+                    weight: 'borderWidth030',
+                  },
+                  indicator: {
+                    stylePreset: 'tabsBarIndicatorCustomPreset',
+                    weight: 'borderWidth030',
+                  },
+                },
+                divider: {
+                  stylePreset: 'dividerCustomPreset',
+                },
+              }}
+              vertical
+              divider
+              distribution={TabsDistribution.Grow}
+            >
+              <Tab label="V tab 1">
+                <LoremIpsum textNumber={1} />
+              </Tab>
+              <Tab label="V tab 2">
+                <LoremIpsum textNumber={2} />
+              </Tab>
+              <Tab label="V tab 3, three">
+                <LoremIpsum textNumber={3} />
+              </Tab>
+            </Tabs>
+          </ThemeProvider>
         </React.Fragment>
       ),
     },
@@ -743,41 +891,38 @@ export default {
         <React.Fragment>
           <StorybookHeading>Tabs With Align</StorybookHeading>
           <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>
-          <Tabs
-            align={TabAlign.Start}
-            distribution={TabsDistribution.FittedFlex}
-          >
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+          <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow}>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
 
           <StorybookSubHeading>Tabs Horizontal Align Right</StorybookSubHeading>
-          <Tabs align={TabAlign.End} distribution={TabsDistribution.FittedFlex}>
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+          <Tabs align={TabAlign.End} distribution={TabsDistribution.Grow}>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
 
           <StorybookSubHeading>Tabs Vertical Align Left</StorybookSubHeading>
           <Tabs
             align={TabAlign.Start}
-            distribution={TabsDistribution.FittedFlex}
+            distribution={TabsDistribution.Grow}
             vertical
           >
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
           <StorybookSubHeading>Tabs Vertical Align Right</StorybookSubHeading>
           <Tabs
             align={TabAlign.End}
-            distribution={TabsDistribution.FittedFlex}
+            distribution={TabsDistribution.Grow}
             vertical
           >
-            <Tab title="Tab">Content 1</Tab>
-            <Tab title="Tab Two">Content 2</Tab>
-            <Tab title="Tab Three is Long">Content 3</Tab>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),

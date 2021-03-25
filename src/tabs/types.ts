@@ -1,6 +1,7 @@
 import React from 'react';
 import {MQ} from '../utils/style';
 import {BaseFlagProps, BaseFlagOverrides} from '../flag';
+import {DividerProps} from '../divider';
 
 export enum TabAlign {
   Start = 'start',
@@ -15,9 +16,9 @@ export enum TabSize {
 }
 
 export enum TabsDistribution {
-  LeftStacked = 'left-stacked',
-  FittedFlex = 'fitted-flex',
-  FittedEqual = 'fitted-equal',
+  Start = 'start',
+  Grow = 'grow',
+  Equal = 'equal',
 }
 
 export interface TabsProps {
@@ -29,28 +30,25 @@ export interface TabsProps {
   initialSelectedIndex?: number;
   align?: TabAlign;
   overrides?: {
-    stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
     spaceInline?: MQ<string>;
-    tabBar?: {
-      height?: string;
-    };
-    tabBarTrack?: {
-      weight?: MQ<string>;
-    };
-    tabBarIndicator?: {
-      length?: string;
-      weight?: string;
-      motionDuration?: string;
-      motionTiming?: string;
-    };
-    tabPane?: {
-      typographyPreset?: MQ<string>;
+    divider?: DividerProps['overrides'];
+    selectionIndicator?: {
+      track?: {
+        weight?: MQ<string>;
+        stylePreset?: MQ<string>;
+      };
+      indicator?: {
+        size?: string;
+        weight?: string;
+        motionDuration?: string;
+        motionTiming?: string;
+        stylePreset?: MQ<string>;
+      };
     };
   };
 }
 
-export interface TabPaneProps {
+export interface TabPanelProps {
   children: React.ReactNode;
   id?: string;
   selected?: boolean;
@@ -66,7 +64,7 @@ export interface DistributionWrapperProps {
 }
 
 export interface TabProps {
-  title: React.ReactNode;
+  label: React.ReactNode;
   children: React.ReactNode;
   ariaLabel?: string;
   autoFocus?: boolean;
@@ -74,7 +72,7 @@ export interface TabProps {
   disabled?: boolean;
 }
 
-export interface TabBarProps
+export interface TabsBarProps
   extends Pick<TabsProps, 'overrides' | 'vertical'> {}
 
 export interface TabInternalProps extends BaseFlagProps<BaseFlagOverrides> {

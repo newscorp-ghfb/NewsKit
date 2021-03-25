@@ -1,3 +1,4 @@
+// import ReactDOM from 'react-dom';
 import {Theme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {getBorderFromTheme, getMotionFromTheme} from '../utils/style';
@@ -6,34 +7,44 @@ export const getLayoutParams = (
   el: HTMLElement | undefined,
   theme: Theme,
   vertical: boolean,
-  lengthOverride?: string,
+  sizeOverride?: string,
 ) => {
   if (!el) {
     return {
-      length: 0,
+      size: 0,
       distance: 0,
     };
   }
 
   const params = vertical
     ? {
-        length: el.clientHeight,
+        size: el.clientHeight,
         distance: el.offsetTop,
       }
     : {
-        length: el.clientWidth,
+        size: el.clientWidth,
         distance: el.offsetLeft,
       };
 
-  if (lengthOverride) {
-    const newLength = lengthOverride.includes('%')
-      ? params.length * (parseFloat(lengthOverride) / 100)
-      : parseInt(theme.sizing[lengthOverride], 10);
+  if (sizeOverride) {
+    let newSize = params.size;
 
-    const lengthDifference = params.length - newLength;
-    if (lengthDifference > 0) {
-      params.distance += lengthDifference / 2;
-      params.length = newLength;
+    if (typeof theme.sizing[sizeOverride] !== 'undefined') {
+      newSize = parseInt(theme.sizing[sizeOverride], 10);
+    } else if (sizeOverride.includes('px')) {
+      newSize = parseInt(sizeOverride, 10);
+    } else if (sizeOverride.includes('%')) {
+      newSize = params.size * (parseFloat(sizeOverride) / 100);
+    }
+
+    const sizeDifference = params.size - newSize;
+    // update params object only when newSize is smaller than the
+    // current tab button size
+    if (sizeDifference > 0) {
+      // if the indicator size is smaller than the parent container
+      // center the indicator in it's container
+      params.distance += sizeDifference / 2;
+      params.size = newSize;
     }
   }
   return params;
@@ -73,11 +84,9 @@ export const parseKeyDown = (event: React.KeyboardEvent, vertical: boolean) => {
   }
 };
 
-export const preventDefault = (e: React.MouseEvent) => e.preventDefault();
-
-export const getTabBarIndicatorStyle = (
+export const getTabsBarIndicatorStyle = (
   theme: Theme,
-  length?: number,
+  size?: number,
   distance?: number,
   vertical?: boolean,
   keyUpdated?: number,
@@ -85,16 +94,16 @@ export const getTabBarIndicatorStyle = (
 ) => {
   const weightToken = getToken(
     {theme, overrides},
-    'tabs.tabBarIndicator',
-    'tabBarIndicator',
+    'tabs.selectionIndicator.indicator',
+    'selectionIndicator.indicator',
     'weight',
   );
   const weight = getBorderFromTheme(weightToken, undefined)({theme});
 
   const motionDurationToken = getToken(
     {theme, overrides},
-    'tabs.tabBarIndicator',
-    'tabBarIndicator',
+    'tabs.selectionIndicator.indicator',
+    'selectionIndicator.indicator',
     'motionDuration',
   );
 
@@ -104,8 +113,8 @@ export const getTabBarIndicatorStyle = (
 
   const motionTimingToken = getToken(
     {theme, overrides},
-    'tabs.tabBarIndicator',
-    'tabBarIndicator',
+    'tabs.selectionIndicator.indicator',
+    'selectionIndicator.indicator',
     'motionTiming',
   );
   const motionTiming = getMotionFromTheme(motionTimingToken, undefined)({
@@ -113,8 +122,8 @@ export const getTabBarIndicatorStyle = (
   });
 
   return {
-    width: vertical ? weight : `${length}px`,
-    height: vertical ? `${length}px` : weight,
+    width: vertical ? weight : `${size}px`,
+    height: vertical ? `${size}px` : weight,
     transform: vertical
       ? `translateY(${distance}px)`
       : `translateX(${distance}px)`,

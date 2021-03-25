@@ -886,8 +886,8 @@ stylePresets.tab = {
     iconColor: '{{colors.inkBase}}',
   },
   selected: {
-    iconColor: '{{colors.inkBase}}',
     color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
   },
   hover: {
     backgroundColor: '{{colors.interactivePrimary010}}',
@@ -906,37 +906,15 @@ stylePresets.tab = {
   },
 };
 
-stylePresets.tabs = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-    borderStyle: 'solid',
-    borderColor: '{{colors.interface050}}',
-    borderWidth: '{{borders.borderWidth020}}',
-    borderRadius: '{{borders.borderRadiusSharp}}',
-  },
-};
-
-stylePresets.tabBarTrack = {
+stylePresets.tabsBarTrack = {
   base: {
     backgroundColor: '{{colors.interface040}}',
   },
 };
 
-stylePresets.tabBarIndicator = {
+stylePresets.tabsBarIndicator = {
   base: {
     backgroundColor: '{{colors.interactivePrimary030}}',
-  },
-  hover: {
-    backgroundColor: '{{colors.interactivePrimary040}}',
-  },
-  focus: {
-    backgroundColor: '{{colors.interactivePrimary040}}',
-  },
-  selected: {
-    backgroundColor: '{{colors.interactivePrimary030}}',
-  },
-  disabled: {
-    backgroundColor: '{{colors.inkNonEssential}}',
   },
 };
 
