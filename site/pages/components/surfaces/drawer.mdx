@@ -30,8 +30,15 @@ Drawers are appropriate for five or more information and action items and should
   <Prop name="onDismiss" type="function" required>
     A callback which is invoked on dismissing the drawer through either, clicking the close icon button or overlay, or pressing the Esc key.
   </Prop>
+    <Prop name="header" type="React.ReactNode">
+    If provided sets the content of the Drawer header.
+  </Prop>
   <Prop name="placement" type="'left'|'right'" default='right'>
     Side of the screen which the drawer opens from.
+  </Prop>
+    <Prop name="ariaLabelledby" type="string" >
+    Used to title the drawer.
+    Single id or many space delimited ids referencing elements passed to the drawer header area.
   </Prop>
   <Prop name="ariaDescribedby" type="string" >
     Used to describe the primary purpose or message of the drawer.
@@ -40,6 +47,11 @@ Drawers are appropriate for five or more information and action items and should
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements.
+    <Prop name="overlay" type="object">
+      <Prop name="stylePreset" type="MQ<string>">
+        If provided, this overrides the style preset applied to the drawer overlay.
+      </Prop>
+    </Prop>
     <Prop name="panel" type="object">
       <Prop name="stylePreset" type="MQ<string>">
         If provided, this overrides the style preset applied to the drawer container.
@@ -52,6 +64,27 @@ Drawers are appropriate for five or more information and action items and should
       </Prop>
       <Prop name="minSize" type="MQ<string>">
         If provided, this overrides the min-width property of the drawer container when placement is left or right.
+      </Prop>
+    </Prop>
+    <Prop name="header" type="object">
+       <Prop name="stylePreset" type="MQ<string>">
+        If provided, this overrides the style preset applied to the drawer header.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<string>">
+        If provided, this overrides the padding space set in drawer header container.
+      </Prop>
+    </Prop>
+    <Prop name="content" type="object">
+    <Prop name="spaceInset" type="MQ<string>">
+        If provided, this overrides the padding space set in the drawer content container.
+      </Prop>
+    </Prop>
+    <Prop name="closeButton" type="object">
+      <Prop name="stylePreset" type="MQ<string>">
+        If provided, this overrides the style preset applied to the drawer close icon button.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<string>">
+        If provided, this overrides the padding space set in the close icon button.
       </Prop>
     </Prop>
     Refer to the defaults below for the object structure:

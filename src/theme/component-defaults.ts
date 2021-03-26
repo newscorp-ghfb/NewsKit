@@ -260,6 +260,16 @@ export const componentDefaults = {
       //   xl: '20%',
       // },
     },
+    header: {
+      spaceInset: 'spaceInsetSquish040',
+    },
+    content: {
+      spaceInset: 'spaceInset050',
+    },
+    closeButton: {
+      stylePreset: 'iconButtonMinimalSecondary',
+      spaceInset: 'spaceInset020',
+    },
   },
   flag: {
     small: {
@@ -463,7 +473,7 @@ export const componentDefaults = {
   scroll: {
     arrows: {
       stylePreset: 'iconButtonMinimalPrimary',
-      spaceInset: 'space000',
+      spaceInset: 'spaceInset000',
     },
   },
   shareBar: {

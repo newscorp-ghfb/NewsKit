@@ -47,7 +47,11 @@ export default {
                   </>
                 ))}
               </Box>
-              <Drawer open={isActive} onDismiss={close}>
+              <Drawer
+                open={isActive}
+                onDismiss={close}
+                header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+              >
                 <Block spaceInset="spaceInsetStretch050">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -110,7 +114,9 @@ export default {
               <Drawer
                 open={isActive}
                 onDismiss={close}
+                ariaLabelledby="drawerHeader"
                 ariaDescribedby="description purpose"
+                header={<div id="drawerHeader">Overriden drawer header</div>}
               >
                 <div id="description">Overriden drawer components</div>
                 <div id="purpose">Showing different styles</div>

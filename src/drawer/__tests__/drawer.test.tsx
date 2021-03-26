@@ -6,19 +6,17 @@ import {
 } from '../../test/test-utils';
 import {createTheme} from '../../theme';
 import {Drawer} from '../drawer';
-import {Block} from '../../block';
 import {TextBlock} from '../../text-block';
 
-const drawerBody = (
-  <Block spaceStack="space010">
-    <TextBlock>Example Drawer text</TextBlock>
-  </Block>
-);
+const drawerBody = <TextBlock>Drawer body content</TextBlock>;
+
+const drawerHeader = <TextBlock>Drawer header content</TextBlock>;
 
 describe('Drawer layout', () => {
   test('renders default right position', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
       open: true,
+      header: drawerHeader,
       children: drawerBody,
       onDismiss: () => {},
     });
@@ -29,22 +27,33 @@ describe('Drawer layout', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
       open: true,
       onDismiss: () => {},
+      header: drawerHeader,
       children: drawerBody,
       placement: 'left',
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders closed drawer', () => {
+  test('renders drawer without header', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
-      open: false,
+      open: true,
       onDismiss: () => {},
       children: drawerBody,
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders drawer with overlays', () => {
+  test('renders closed drawer', () => {
+    const {asFragment, getByTestId} = renderWithTheme(Drawer, {
+      open: false,
+      onDismiss: () => {},
+      children: drawerBody,
+    });
+    expect(asFragment()).toMatchSnapshot();
+    expect(getByTestId('drawer')).not.toBeVisible();
+  });
+
+  test('renders drawer with overrides', () => {
     const myCustomTheme = createTheme({
       name: 'my-custom-drawer-theme',
       overrides: {
@@ -57,7 +66,28 @@ describe('Drawer layout', () => {
           drawerPanelCustom: {
             base: {
               backgroundColor: '{{colors.green010}}',
-              boxShadow: '{{shadows.shadow030}}',
+              boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
+            },
+          },
+          drawerHeaderCustom: {
+            base: {
+              backgroundColor: '{{colors.transparent}}',
+              borderStyle: 'none none solid none',
+              borderWidth: '{{borders.borderWidth010}}',
+              borderColor: '{{colors.red060}}',
+            },
+          },
+          drawerCloseButtonCustom: {
+            base: {
+              borderWidth: '{{borders.borderWidth010}}',
+              borderStyle: 'solid',
+              borderColor: '{{colors.teal030}}',
+              backgroundColor: '{{colors.transparent}}',
+              borderRadius: '{{borders.borderRadiusCircle}}',
+              iconColor: '{{colors.teal070}}',
+            },
+            hover: {
+              backgroundColor: '{{colors.teal050}}',
             },
           },
         },
@@ -80,6 +110,16 @@ describe('Drawer layout', () => {
             maxSize: '40%',
             minSize: '200px',
           },
+          header: {
+            spaceInset: 'spaceInset000',
+            stylePreset: 'drawerHeaderCustom',
+          },
+          content: {
+            spaceInset: 'spaceInset060',
+          },
+          closeButton: {
+            stylePreset: 'drawerCloseButtonCustom',
+          },
         },
       },
       myCustomTheme,
@@ -87,14 +127,29 @@ describe('Drawer layout', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders drawer with aria-ariaLabelledby attribute', () => {
+    const fragment = renderToFragmentWithTheme(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      ariaLabelledby: 'headerLabel',
+      header: (
+        <>
+          <div id="headerLabel">Overridden drawer header</div>
+        </>
+      ),
+      children: null,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders drawer with aria-describedby attribute', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
-      open: false,
+      open: true,
       onDismiss: () => {},
       ariaDescribedby: 'description purpose',
       children: (
         <>
-          <div id="description">Overriden drawer components</div>
+          <div id="description">Overridden drawer components</div>
           <div id="purpose">Showing different styles</div>
         </>
       ),
@@ -109,6 +164,7 @@ describe('Drawer closing', () => {
     renderWithTheme(Drawer, {
       open: true,
       onDismiss: mockCallBack,
+      header: drawerHeader,
       children: drawerBody,
     });
 
@@ -122,6 +178,7 @@ describe('Drawer closing', () => {
     const overlay = renderWithTheme(Drawer, {
       open: true,
       onDismiss: mockCallBack,
+      header: drawerHeader,
       children: drawerBody,
     }).getByTestId('overlay');
 
@@ -135,6 +192,7 @@ describe('Drawer closing', () => {
     const drawerCloseIcon = renderWithTheme(Drawer, {
       open: true,
       onDismiss: mockCallBack,
+      header: drawerHeader,
       children: drawerBody,
     }).getByLabelText('close drawer');
 
@@ -148,6 +206,7 @@ describe('Drawer closing', () => {
     const drawerCloseIcon = renderWithTheme(Drawer, {
       open: false,
       onDismiss: mockCallBack,
+      header: drawerHeader,
       children: drawerBody,
     }).getByLabelText('close drawer');
 

@@ -11,14 +11,10 @@ export const IconButton: React.FC<IconButtonProps> = ({
   const theme = useTheme();
   const {size = ButtonSize.Small} = props;
 
-  return (
-    <Button
-      {...props}
-      size={size}
-      overrides={{
-        ...theme.componentDefaults.iconButton[size],
-        ...filterOutFalsyProperties(overrides),
-      }}
-    />
-  );
+  const iconButtonSettings: typeof overrides = {
+    ...theme.componentDefaults.iconButton[size],
+    ...filterOutFalsyProperties(overrides),
+  };
+
+  return <Button {...props} size={size} overrides={iconButtonSettings} />;
 };

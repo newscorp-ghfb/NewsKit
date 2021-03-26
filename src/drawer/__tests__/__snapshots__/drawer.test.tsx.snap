@@ -2,20 +2,41 @@
 
 exports[`Drawer layout renders closed drawer 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-8 {
   box-sizing: border-box;
+  min-height: 48px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-6 {
+  padding: 8px;
+  margin-left: auto;
 }
 
 .emotion-5 {
@@ -26,8 +47,8 @@ exports[`Drawer layout renders closed drawer 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
 .emotion-4 {
@@ -46,18 +67,17 @@ exports[`Drawer layout renders closed drawer 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
+  width: 48px;
+  height: 48px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0a68c1;
+  background-color: transparent;
   border-radius: 50%;
-  color: #ffffff;
+  color: #2e2e2e;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -68,24 +88,24 @@ exports[`Drawer layout renders closed drawer 1`] = `
 }
 
 .emotion-4 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #2e2e2e;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #fafafa;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #f0f0f0;
 }
 
 .emotion-4:disabled {
-  background-color: #e4e4e4;
+  background-color: transparent;
   color: #c0c0c0;
 }
 
@@ -138,25 +158,17 @@ exports[`Drawer layout renders closed drawer 1`] = `
   display: inline-block;
 }
 
-.emotion-9 {
+.emotion-10 {
   box-sizing: border-box;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden auto;
+  padding: 24px;
 }
 
-.emotion-8 {
-  margin-bottom: 4px;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
-}
-
-.emotion-10 {
+.emotion-11 {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -179,71 +191,654 @@ exports[`Drawer layout renders closed drawer 1`] = `
 <div
     aria-label="drawer"
     aria-modal="true"
-    class="emotion-10"
+    class="emotion-11"
     data-testid="drawer"
     role="dialog"
   >
     <div
-      class="emotion-6"
+      class="emotion-8"
     >
-      <h3>
-        Drawer Header WIP
-      </h3>
       <div
-        class="emotion-5"
+        class="emotion-7"
       >
-        <button
-          aria-label="close drawer"
-          class="emotion-4"
-          data-testid="button"
-          type="button"
+        <div
+          class="emotion-6"
         >
           <div
-            class="emotion-3"
+            class="emotion-5"
           >
-            <div
-              class="emotion-2"
+            <button
+              aria-label="close drawer"
+              class="emotion-4"
+              data-testid="button"
+              type="button"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-0 emotion-1"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-3"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </div>
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
           </div>
-        </button>
+        </div>
       </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="drawer-content"
     >
-      <div
-        class="emotion-8"
+      <p
+        class="emotion-9"
       >
-        <p
-          class="emotion-7"
-        >
-          Example Drawer text
-        </p>
-      </div>
+        Drawer body content
+      </p>
     </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Drawer layout renders default right position 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 70;
+  cursor: pointer;
+  background-color: rgba(10,10,10,0.80);
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+  .emotion-13 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  width: 30%;
+  max-width: 100%;
+  min-width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  min-height: 48px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-8 {
+  padding: 8px;
+  margin-left: auto;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-6:disabled {
+  background-color: transparent;
+  color: #c0c0c0;
+}
+
+.emotion-6:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden auto;
+  padding: 24px;
+}
+
+<div
+    aria-label="drawer"
+    aria-modal="true"
+    class="emotion-13"
+    data-testid="drawer"
+    role="dialog"
+  >
+    <div
+      class="emotion-10"
+    >
+      <div
+        class="emotion-9"
+      >
+        <div
+          class="emotion-1"
+        >
+          <p
+            class="emotion-0"
+          >
+            Drawer header content
+          </p>
+        </div>
+        <div
+          class="emotion-8"
+        >
+          <div
+            class="emotion-7"
+          >
+            <button
+              aria-label="close drawer"
+              class="emotion-6"
+              data-testid="button"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-4"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-2 emotion-3"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-12"
+      data-testid="drawer-content"
+    >
+      <p
+        class="emotion-0"
+      >
+        Drawer body content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 70;
+  cursor: pointer;
+  background-color: rgba(10,10,10,0.80);
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+  .emotion-11 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  width: 30%;
+  max-width: 100%;
+  min-width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  min-height: 48px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.emotion-7 {
+  padding: 8px;
+  margin-left: auto;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-5 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-5:disabled {
+  background-color: transparent;
+  color: #c0c0c0;
+}
+
+.emotion-5:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden auto;
+  padding: 24px;
+}
+
+<div
+    aria-label="drawer"
+    aria-labelledby="headerLabel"
+    aria-modal="true"
+    class="emotion-11"
+    data-testid="drawer"
+    role="dialog"
+  >
+    <div
+      class="emotion-9"
+    >
+      <div
+        class="emotion-8"
+      >
+        <div
+          class="emotion-0"
+        >
+          <div
+            id="headerLabel"
+          >
+            Overridden drawer header
+          </div>
+        </div>
+        <div
+          class="emotion-7"
+        >
+          <div
+            class="emotion-6"
+          >
+            <button
+              aria-label="close drawer"
+              class="emotion-5"
+              data-testid="button"
+              type="button"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-3"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-1 emotion-2"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-10"
+      data-testid="drawer-content"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -284,20 +879,36 @@ exports[`Drawer layout renders default right position 1`] = `
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
+  min-height: 48px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-6 {
+  padding: 8px;
+  margin-left: auto;
 }
 
 .emotion-5 {
@@ -308,8 +919,8 @@ exports[`Drawer layout renders default right position 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
 .emotion-4 {
@@ -328,18 +939,17 @@ exports[`Drawer layout renders default right position 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
+  width: 48px;
+  height: 48px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0a68c1;
+  background-color: transparent;
   border-radius: 50%;
-  color: #ffffff;
+  color: #2e2e2e;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -350,24 +960,24 @@ exports[`Drawer layout renders default right position 1`] = `
 }
 
 .emotion-4 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #2e2e2e;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #fafafa;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #f0f0f0;
 }
 
 .emotion-4:disabled {
-  background-color: #e4e4e4;
+  background-color: transparent;
   color: #c0c0c0;
 }
 
@@ -427,18 +1037,11 @@ exports[`Drawer layout renders default right position 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden auto;
-}
-
-.emotion-8 {
-  margin-bottom: 4px;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
+  padding: 24px;
 }
 
 <div
+    aria-describedby="description purpose"
     aria-label="drawer"
     aria-modal="true"
     class="emotion-10"
@@ -446,45 +1049,50 @@ exports[`Drawer layout renders default right position 1`] = `
     role="dialog"
   >
     <div
-      class="emotion-6"
+      class="emotion-8"
     >
-      <h3>
-        Drawer Header WIP
-      </h3>
       <div
-        class="emotion-5"
+        class="emotion-7"
       >
-        <button
-          aria-label="close drawer"
-          class="emotion-4"
-          data-testid="button"
-          type="button"
+        <div
+          class="emotion-6"
         >
           <div
-            class="emotion-3"
+            class="emotion-5"
           >
-            <div
-              class="emotion-2"
+            <button
+              aria-label="close drawer"
+              class="emotion-4"
+              data-testid="button"
+              type="button"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-0 emotion-1"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-3"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </div>
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
           </div>
-        </button>
+        </div>
       </div>
     </div>
     <div
@@ -492,244 +1100,9 @@ exports[`Drawer layout renders default right position 1`] = `
       data-testid="drawer-content"
     >
       <div
-        class="emotion-8"
-      >
-        <p
-          class="emotion-7"
-        >
-          Example Drawer text
-        </p>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
-<DocumentFragment>
-  .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #0a68c1;
-  border-radius: 50%;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-4 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-4 svg {
-  fill: #ffffff;
-}
-
-.emotion-4:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-4:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-4:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-4:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2e2e2e;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-7 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  overflow: hidden auto;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 80;
-  display: none;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  width: 30%;
-  max-width: 100%;
-  min-width: 20px;
-  height: 100%;
-  border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
-}
-
-<div
-    aria-describedby="description purpose"
-    aria-label="drawer"
-    aria-modal="true"
-    class="emotion-8"
-    data-testid="drawer"
-    role="dialog"
-  >
-    <div
-      class="emotion-6"
-    >
-      <h3>
-        Drawer Header WIP
-      </h3>
-      <div
-        class="emotion-5"
-      >
-        <button
-          aria-label="close drawer"
-          class="emotion-4"
-          data-testid="button"
-          type="button"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-2"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-0 emotion-1"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      class="emotion-7"
-      data-testid="drawer-content"
-    >
-      <div
         id="description"
       >
-        Overriden drawer components
+        Overridden drawer components
       </div>
       <div
         id="purpose"
@@ -741,7 +1114,7 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Drawer layout renders drawer with overlays 1`] = `
+exports[`Drawer layout renders drawer with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -759,20 +1132,33 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
     class="emotion-0"
     data-testid="overlay"
   />
-  .emotion-6 {
-  box-sizing: border-box;
+  .emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-6 {
+  padding: 8px;
+  margin-left: auto;
 }
 
 .emotion-5 {
@@ -783,71 +1169,8 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #0a68c1;
-  border-radius: 50%;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-4 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-4 svg {
-  fill: #ffffff;
-}
-
-.emotion-4:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-4:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-4:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-4:disabled svg {
-  fill: #c0c0c0;
+  width: 48px;
+  height: 48px;
 }
 
 .emotion-3 {
@@ -895,25 +1218,17 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
   display: inline-block;
 }
 
-.emotion-9 {
+.emotion-10 {
   box-sizing: border-box;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden auto;
+  padding: 24px;
 }
 
-.emotion-8 {
-  margin-bottom: 4px;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
-}
-
-.emotion-10 {
+.emotion-11 {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -932,71 +1247,410 @@ exports[`Drawer layout renders drawer with overlays 1`] = `
   min-width: 200px;
   height: 100%;
   background-color: #e6faeb;
-  box-shadow: 0 0 2px 0 rgba(40,41,61,0.04),0 4px 8px 0 rgba(96,97,112,0.16);
+  box-shadow: 0px 0px 16px 14px rgba(169,183,172,0.9);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  background-color: transparent;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: #ef1703;
+  min-height: 48px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a2dae3;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-4 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 svg {
+  fill: #128293;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #45b5c6;
 }
 
 <div
     aria-label="drawer"
     aria-modal="true"
-    class="emotion-10"
+    class="emotion-11"
     data-testid="drawer"
     role="dialog"
   >
     <div
-      class="emotion-6"
+      class="emotion-8"
     >
-      <h3>
-        Drawer Header WIP
-      </h3>
       <div
-        class="emotion-5"
+        class="emotion-7"
       >
-        <button
-          aria-label="close drawer"
-          class="emotion-4"
-          data-testid="button"
-          type="button"
+        <div
+          class="emotion-6"
         >
           <div
-            class="emotion-3"
+            class="emotion-5"
           >
-            <div
-              class="emotion-2"
+            <button
+              aria-label="close drawer"
+              class="emotion-4"
+              data-testid="button"
+              type="button"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-0 emotion-1"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-3"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </div>
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
           </div>
-        </button>
+        </div>
       </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-10"
       data-testid="drawer-content"
     >
-      <div
-        class="emotion-8"
+      <p
+        class="emotion-9"
       >
-        <p
-          class="emotion-7"
+        Drawer body content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Drawer layout renders drawer without header 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 70;
+  cursor: pointer;
+  background-color: rgba(10,10,10,0.80);
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+  .emotion-11 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  width: 30%;
+  max-width: 100%;
+  min-width: 20px;
+  height: 100%;
+  border-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  min-height: 48px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-6 {
+  padding: 8px;
+  margin-left: auto;
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-4 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-4:disabled {
+  background-color: transparent;
+  color: #c0c0c0;
+}
+
+.emotion-4:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden auto;
+  padding: 24px;
+}
+
+<div
+    aria-label="drawer"
+    aria-modal="true"
+    class="emotion-11"
+    data-testid="drawer"
+    role="dialog"
+  >
+    <div
+      class="emotion-8"
+    >
+      <div
+        class="emotion-7"
+      >
+        <div
+          class="emotion-6"
         >
-          Example Drawer text
-        </p>
+          <div
+            class="emotion-5"
+          >
+            <button
+              aria-label="close drawer"
+              class="emotion-4"
+              data-testid="button"
+              type="button"
+            >
+              <div
+                class="emotion-3"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
+    </div>
+    <div
+      class="emotion-10"
+      data-testid="drawer-content"
+    >
+      <p
+        class="emotion-9"
+      >
+        Drawer body content
+      </p>
     </div>
   </div>
 </DocumentFragment>
@@ -1020,23 +1674,32 @@ exports[`Drawer layout renders left position 1`] = `
     class="emotion-0"
     data-testid="overlay"
   />
-  .emotion-6 {
+  .emotion-10 {
   box-sizing: border-box;
+  min-height: 48px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 16px 24px;
 }
 
-.emotion-5 {
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1044,11 +1707,11 @@ exports[`Drawer layout renders left position 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
-.emotion-4 {
+.emotion-6 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1064,18 +1727,17 @@ exports[`Drawer layout renders left position 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
+  width: 48px;
+  height: 48px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0a68c1;
+  background-color: transparent;
   border-radius: 50%;
-  color: #ffffff;
+  color: #2e2e2e;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1085,33 +1747,33 @@ exports[`Drawer layout renders left position 1`] = `
   cursor: pointer;
 }
 
-.emotion-4 svg {
-  width: 16px;
-  height: 16px;
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-4 svg {
-  fill: #ffffff;
+.emotion-6 svg {
+  fill: #2e2e2e;
 }
 
-.emotion-4:hover:not(:disabled) {
-  background-color: #02509b;
+.emotion-6:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-4:active:not(:disabled) {
-  background-color: #01396e;
+.emotion-6:active:not(:disabled) {
+  background-color: #f0f0f0;
 }
 
-.emotion-4:disabled {
-  background-color: #e4e4e4;
+.emotion-6:disabled {
+  background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-4:disabled svg {
+.emotion-6:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1132,7 +1794,7 @@ exports[`Drawer layout renders left position 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1142,12 +1804,12 @@ exports[`Drawer layout renders left position 1`] = `
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+  .emotion-4 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1156,25 +1818,17 @@ exports[`Drawer layout renders left position 1`] = `
   display: inline-block;
 }
 
-.emotion-9 {
+.emotion-12 {
   box-sizing: border-box;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden auto;
+  padding: 24px;
 }
 
-.emotion-8 {
-  margin-bottom: 4px;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
-}
-
-.emotion-10 {
+.emotion-13 {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -1197,68 +1851,102 @@ exports[`Drawer layout renders left position 1`] = `
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
 }
 
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-8 {
+  padding: 8px;
+  margin-right: auto;
+}
+
 <div
     aria-label="drawer"
     aria-modal="true"
-    class="emotion-10"
+    class="emotion-13"
     data-testid="drawer"
     role="dialog"
   >
     <div
-      class="emotion-6"
+      class="emotion-10"
     >
-      <h3>
-        Drawer Header WIP
-      </h3>
       <div
-        class="emotion-5"
+        class="emotion-9"
       >
-        <button
-          aria-label="close drawer"
-          class="emotion-4"
-          data-testid="button"
-          type="button"
+        <div
+          class="emotion-1"
+        >
+          <p
+            class="emotion-0"
+          >
+            Drawer header content
+          </p>
+        </div>
+        <div
+          class="emotion-8"
         >
           <div
-            class="emotion-3"
+            class="emotion-7"
           >
-            <div
-              class="emotion-2"
+            <button
+              aria-label="close drawer"
+              class="emotion-6"
+              data-testid="button"
+              type="button"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-0 emotion-1"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-5"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </div>
+                <div
+                  class="emotion-4"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-2 emotion-3"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
           </div>
-        </button>
+        </div>
       </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-12"
       data-testid="drawer-content"
     >
-      <div
-        class="emotion-8"
+      <p
+        class="emotion-0"
       >
-        <p
-          class="emotion-7"
-        >
-          Example Drawer text
-        </p>
-      </div>
+        Drawer body content
+      </p>
     </div>
   </div>
 </DocumentFragment>

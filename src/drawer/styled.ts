@@ -6,6 +6,8 @@ import {
   getMinSize,
   getSize,
   getStylePreset,
+  getSpacingInset,
+  getSizingFromTheme,
 } from '../utils/style';
 import {DrawerProps} from './types';
 
@@ -20,12 +22,12 @@ const placementOptions = {
   },
 };
 
-type DrawerContainerProps = Pick<DrawerProps, 'placement' | 'overrides'> & {
+type DrawerPanelProps = Pick<DrawerProps, 'placement' | 'overrides'> & {
   isOpen: boolean;
 };
 
 const verticalSize = (
-  props: DrawerContainerProps & {
+  props: DrawerPanelProps & {
     theme: Theme;
   },
 ) => css`
@@ -40,30 +42,49 @@ const placementSize = {
   right: verticalSize,
 };
 
-export const StyledDrawerContainer = styled.div<DrawerContainerProps>`
+export const StyledDrawerPanel = styled.div<DrawerPanelProps>`
   box-sizing: border-box;
 
   position: fixed;
-  ${({placement = 'right'}) => placementOptions[placement]}
+  ${({placement}) => placementOptions[placement!]}
   z-index: 80;
   ${({isOpen}) => `display: ${isOpen ? 'flex' : 'none'};`}
   flex-direction: column;
   overflow: hidden;
 
-  ${({placement = 'right', ...props}) => placementSize[placement](props)}
+  ${({placement, ...props}) => placementSize[placement!](props)}
 
   ${getStylePreset('drawer.panel', 'panel')}
 `;
 
-export const StyledDrawerHeader = styled.div`
+export const StyledDrawerHeader = styled.div<
+  Pick<DrawerPanelProps, 'overrides'>
+>`
   box-sizing: border-box;
+  ${getStylePreset('drawer.header', 'header')};
+  min-height: ${getSizingFromTheme('sizing080')};
+  flex-shrink: 0; //fix min-height issues
+`;
+
+export const StyledDrawerHeaderContent = styled.div<
+  Pick<DrawerProps, 'placement'>
+>`
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  ${getSpacingInset('drawer.header', 'header')};
+`;
+
+export const StyledCloseButtonContainer = styled.div<
+  Pick<DrawerProps, 'placement' | 'overrides'>
+>`
+  ${getSpacingInset('drawer.closeButton', 'closeButton')};
+  ${({placement}) =>
+    placement === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
 `;
 
 export const StyledDrawerContent = styled.div`
   box-sizing: border-box;
   flex-grow: 1;
   overflow: hidden auto;
+  ${getSpacingInset('drawer.content', 'content')}
 `;

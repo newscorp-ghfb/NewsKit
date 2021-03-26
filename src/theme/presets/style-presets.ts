@@ -1395,6 +1395,7 @@ stylePresets.imageCircle = {
 //
 // TitleBar
 //
+
 stylePresets.titleBar = {
   base: {
     backgroundColor: '{{colors.transparent}}',
@@ -1470,7 +1471,7 @@ stylePresets.overlay = {
 stylePresets.drawerPanel = {
   base: {
     borderRadius: '{{borders.borderRadiusSharp}}',
-    backgroundColor: '{{colors.interfaceBackground}}',
+    backgroundColor: '{{colors.interface010}}',
     boxShadow: '{{shadows.shadow050}}',
   },
 };

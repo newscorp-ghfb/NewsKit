@@ -28,6 +28,7 @@ export const Button = React.forwardRef<
     ...theme.componentDefaults.button[size],
     ...filterOutFalsyProperties(overrides),
   };
+
   const loadingIndicatorStylePreset =
     buttonSettings.loadingIndicator &&
     buttonSettings.loadingIndicator.stylePreset;

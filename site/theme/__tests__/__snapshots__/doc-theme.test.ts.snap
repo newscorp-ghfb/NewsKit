@@ -445,6 +445,16 @@ Object {
       "stylePreset": "dividerHorizontal",
     },
     "drawer": Object {
+      "closeButton": Object {
+        "spaceInset": "spaceInset020",
+        "stylePreset": "iconButtonMinimalSecondary",
+      },
+      "content": Object {
+        "spaceInset": "spaceInset050",
+      },
+      "header": Object {
+        "spaceInset": "spaceInsetSquish040",
+      },
       "panel": Object {
         "maxSize": "100%",
         "minSize": "20px",
@@ -710,7 +720,7 @@ Object {
     },
     "scroll": Object {
       "arrows": Object {
-        "spaceInset": "space000",
+        "spaceInset": "spaceInset000",
         "stylePreset": "iconButtonMinimalPrimary",
       },
     },
@@ -1975,7 +1985,7 @@ Object {
     },
     "drawerPanel": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceBackground}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
         "boxShadow": "{{shadows.shadow050}}",
       },

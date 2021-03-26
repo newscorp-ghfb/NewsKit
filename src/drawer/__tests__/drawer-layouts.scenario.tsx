@@ -3,11 +3,11 @@ import {Drawer} from '..';
 import {createTheme, ThemeProvider} from '../../theme';
 import {getColorFromTheme, styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {IconFilledChevronRight} from '../../icons';
+import {IconFilledChevronRight, IconFilledAddCircleOutline} from '../../icons';
 import {Button} from '../../button';
 import {Link, LinkStandalone} from '../../link';
 import {TextInput} from '../../text-input';
-import {Block} from '../../block';
+import {UnorderedList} from '../../unordered-list';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-drawer-theme',
@@ -22,6 +22,27 @@ const myCustomTheme = createTheme({
         base: {
           backgroundColor: '{{colors.green010}}',
           boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
+        },
+      },
+      drawerHeaderCustom: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.red060}}',
+        },
+      },
+      drawerCloseButtonCustom: {
+        base: {
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.teal030}}',
+          backgroundColor: '{{colors.transparent}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          iconColor: '{{colors.teal070}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.teal050}}',
         },
       },
     },
@@ -60,12 +81,17 @@ export default {
           return (
             <>
               <StorybookHeading>Default drawer</StorybookHeading>
-              <Drawer open onDismiss={() => {}}>
-                <Block spaceInset="spaceInsetStretch050">
+              <Drawer
+                open
+                onDismiss={() => {}}
+                // eslint-disable-next-line prettier/prettier
+                header={<><IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} /><LinkStandalone href="www.test.com">Link button</LinkStandalone></>}
+              >
+                <div>
                   {Array.from({length: 16}, (_, i) => (
                     <CategoryRow>{`CATEGORY ${i + 1}`}</CategoryRow>
                   ))}
-                </Block>
+                </div>
               </Drawer>
             </>
           );
@@ -76,8 +102,8 @@ export default {
       type: 'story',
       component: () =>
         React.createElement(() => {
-          const renderChildrenAsReactComponent = () => (
-            <Block spaceInset="spaceInsetStretch050">
+          const renderChildren = () => (
+            <>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 aliquet lorem massa, et lacinia ipsum tristique id. Phasellus
@@ -114,7 +140,14 @@ export default {
                 <Button>Remind me later</Button>
                 <Button>Ok</Button>
               </div>
-            </Block>
+            </>
+          );
+
+          const renderHeader = () => (
+            <>
+              <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
+              <LinkStandalone href="www.test.com">Link button</LinkStandalone>
+            </>
           );
 
           return (
@@ -122,12 +155,40 @@ export default {
               <StorybookHeading>
                 Default positioned on the left
               </StorybookHeading>
-              <Drawer placement="left" open onDismiss={() => {}}>
-                {renderChildrenAsReactComponent()}
+              <Drawer
+                open
+                onDismiss={() => {}}
+                placement="left"
+                header={renderHeader()}
+              >
+                {renderChildren()}
               </Drawer>
             </>
           );
         }),
+    },
+    {
+      name: 'no header content',
+      type: 'story',
+      component: () =>
+        React.createElement(() => (
+          <>
+            <StorybookHeading>Default with no header</StorybookHeading>
+            <Drawer
+              open
+              onDismiss={() => {}}
+              overrides={{header: {spaceInset: 'space000'}}}
+            >
+              <h3>List title</h3>
+              <p>List description goes here</p>
+
+              <h4>List content</h4>
+              <UnorderedList listItemMarker={IconFilledAddCircleOutline}>
+                {Array.from({length: 5}, () => 'List item')}
+              </UnorderedList>
+            </Drawer>
+          </>
+        )),
     },
     {
       name: 'with overrides',
@@ -149,6 +210,17 @@ export default {
                     size: '50%',
                     maxSize: '40%',
                     minSize: '200px',
+                  },
+                  header: {
+                    spaceInset: 'spaceInset000',
+                    stylePreset: 'drawerHeaderCustom',
+                  },
+                  content: {
+                    spaceInset: 'spaceInset060',
+                  },
+                  closeButton: {
+                    stylePreset: 'drawerCloseButtonCustom',
+                    spaceInset: 'spaceInset000',
                   },
                 }}
               >
