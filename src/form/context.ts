@@ -1,5 +1,5 @@
 import {createContext, Dispatch, SetStateAction} from 'react';
-import {fieldsHadErrorObject} from './types';
+import {FieldsHadErrorObject} from './types';
 
 /* istanbul ignore next */
 const noop = () => {
@@ -8,8 +8,8 @@ const noop = () => {
 
 export const FormValidationContext = createContext<{
   validationMode: string;
-  fieldsHadError: fieldsHadErrorObject;
-  setFieldsHadError: Dispatch<SetStateAction<fieldsHadErrorObject>>;
+  fieldsHadError: FieldsHadErrorObject;
+  setFieldsHadError: Dispatch<SetStateAction<FieldsHadErrorObject>>;
 }>({
   validationMode: '',
   fieldsHadError: {},

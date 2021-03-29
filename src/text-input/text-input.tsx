@@ -17,7 +17,7 @@ import {
 import { getToken } from '../utils/get-token';
 import { useTheme } from '../theme';
 import { IconFilledCheckCircle, IconFilledError } from '../icons';
-import { fieldsHadErrorObject } from '../form/types';
+import { FieldsHadErrorObject } from '../form/types';
 
 export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
   overrides = {},
@@ -48,7 +48,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
 
   useEffect(() => {
     if (!hadError && errorText && name) {
-      const updateForFieldsHadError: fieldsHadErrorObject = {}
+      const updateForFieldsHadError: FieldsHadErrorObject = {}
 
       updateForFieldsHadError[name] = {hadError: true}
 
@@ -65,7 +65,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
 
   const handleOnBlur = ({target: { value }}: {target: {value: string}}) => {
     if (validationMode === 'onBlur' && !hadError && name && (errorText || value)) {
-        const updateForFieldsHadError: fieldsHadErrorObject = {}
+        const updateForFieldsHadError: FieldsHadErrorObject = {}
 
         updateForFieldsHadError[name] = {hadError: true}
         setFieldsHadError(updateForFieldsHadError)

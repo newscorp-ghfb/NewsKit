@@ -7,7 +7,7 @@ import React, {
   useState,
 } from 'react';
 import {useForm, FormProvider} from 'react-hook-form/dist/index.ie11';
-import {FormProps, FormRef, fieldsHadErrorObject} from './types';
+import {FormProps, FormRef, FieldsHadErrorObject} from './types';
 import {FormValidationContextProvider} from './context';
 
 export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
@@ -20,7 +20,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     defaultValues = {},
   } = props;
 
-  const [fieldsHadError, setFieldsHadError] = useState<fieldsHadErrorObject>(
+  const [fieldsHadError, setFieldsHadError] = useState<FieldsHadErrorObject>(
     {},
   );
 
@@ -32,7 +32,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
 
   const setAllFieldsHadErrorToFalse = useCallback(() => {
     const formFields = Object.keys(formContext.getValues());
-    const newFieldsHadErrorObject: fieldsHadErrorObject = {};
+    const newFieldsHadErrorObject: FieldsHadErrorObject = {};
 
     formFields.forEach(field => {
       newFieldsHadErrorObject[field] = {hadError: false};
