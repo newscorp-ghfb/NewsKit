@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Form, FormRef} from '..';
+import {Form} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -10,8 +10,6 @@ import {Block} from '../../block';
 import {Stack} from '../../stack';
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
-const formRef = React.createRef<FormRef>();
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const onSubmit = async (data: any) => {
@@ -38,7 +36,7 @@ export default {
             <StorybookSubHeading>
               Input validation mode: onSubmit
             </StorybookSubHeading>
-            <Form onSubmit={onSubmit} ref={formRef}>
+            <Form onSubmit={onSubmit}>
               <Block spaceStack="space050">
                 <TextInput
                   label="Email"
@@ -67,26 +65,7 @@ export default {
                   }}
                 />
               </Block>
-
               <Button type="submit">Submit</Button>
-              <Button
-                onClick={() => {
-                  if (formRef.current) {
-                    formRef.current.reset();
-                  }
-                }}
-              >
-                Reset
-              </Button>
-              <Button
-                onClick={() => {
-                  if (formRef.current) {
-                    formRef.current.clearValidation();
-                  }
-                }}
-              >
-                Clear Validation
-              </Button>
             </Form>
           </Block>
         </React.Fragment>
