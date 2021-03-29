@@ -20,14 +20,6 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     defaultValues = {},
   } = props;
 
-  // Used for the reset validation logic. The form's values are stored
-  // in fieldsValues before re-populating the form.
-  const [fieldsValues, setFieldsValues] = useState<{[name: string]: string}>();
-
-  const [isResettingValidation, setIsResettingValidation] = useState<boolean>(
-    false,
-  );
-
   const [fieldsHadError, setFieldsHadError] = useState<fieldsHadErrorObject>(
     {},
   );
@@ -37,14 +29,6 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     reValidateMode: reValidationMode,
     defaultValues,
   });
-
-  const rePopulateForm = () => {
-    if (fieldsValues) {
-      Object.keys(fieldsValues).forEach(field => {
-        formContext.setValue(field, fieldsValues[field]);
-      });
-    }
-  };
 
   const setAllFieldsHadErrorToFalse = useCallback(() => {
     const formFields = Object.keys(formContext.getValues());
@@ -62,29 +46,27 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       // Populates the fieldsHadError state and sets the values to false
       setAllFieldsHadErrorToFalse();
     }
-
-    if (isResettingValidation) {
-      rePopulateForm();
-      formContext.formState.isSubmitSuccessful = false;
-      setIsResettingValidation(false);
-    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [formContext.formState, isResettingValidation]);
+  }, [formContext.formState]);
 
   const formRef = useRef<HTMLFormElement>(null);
 
   useImperativeHandle(
     ref,
     () => ({
-      reset: () => {
+      reset: ((values = defaultValues, omitResetState) => {
         setAllFieldsHadErrorToFalse();
-        formContext.reset();
-      },
+
+        formContext.reset(values, omitResetState);
+      }) as typeof formContext.reset,
       clearValidation: () => {
-        setFieldsValues(formContext.getValues());
-        setIsResettingValidation(true);
         setAllFieldsHadErrorToFalse();
-        formContext.reset();
+        formContext.reset(formContext.getValues(), {
+          // Don't reset these properties of the form context
+          isSubmitted: true,
+          touched: true,
+          submitCount: true,
+        });
       },
       watch: formContext.watch,
       setError: formContext.setError,
@@ -93,7 +75,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       trigger: formContext.trigger,
       element: formRef.current,
     }),
-    [formContext, setAllFieldsHadErrorToFalse],
+    [defaultValues, formContext, setAllFieldsHadErrorToFalse],
   );
 
   return (

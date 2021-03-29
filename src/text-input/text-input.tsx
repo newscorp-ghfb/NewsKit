@@ -35,15 +35,10 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
 }, ref) => {
 
   const theme = useTheme();
-  const {validationMode} = useContext(FormValidationContext);
-  const {setFieldsHadError} = useContext(FormValidationContext);
-  const {fieldsHadError} = useContext(FormValidationContext)
-
-  const hadError = name ? fieldsHadError[name] && fieldsHadError[name].hadError : undefined
-
-
+  const {validationMode, setFieldsHadError, fieldsHadError} = useContext(FormValidationContext);
   const formContext = useFormContext();
 
+  const hadError = name ? fieldsHadError[name] && fieldsHadError[name].hadError : undefined
   const errorText =
     formContext &&
     formContext.errors &&
@@ -97,8 +92,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     'input',
     'iconSize',
   );
-  
-  // eslint-disable-next-line no-undef, prettier/prettier  
+
+  // eslint-disable-next-line no-undef, prettier/prettier
   const valid = formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
 
   return (

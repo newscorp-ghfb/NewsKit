@@ -1,7 +1,7 @@
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import {useForm} from 'react-hook-form/dist/index.ie11';
-import {Form} from '..';
+import {Form, FormRef} from '..';
 import {
   renderToFragmentWithTheme,
   renderWithImplementation,
@@ -314,7 +314,7 @@ describe('Form', () => {
   });
 
   test('reset() should reset fields value and remove validation', async () => {
-    const ref = React.createRef<HTMLFormElement>();
+    const ref = React.createRef<FormRef>();
     const {
       getByTestId,
       findAllByTestId,
@@ -351,6 +351,21 @@ describe('Form', () => {
 
     expect(inputEmail.value).toBe('test');
     expect(inputUsername.value).toBe('');
+
+    // Assert reset with default values passed
+    act(() => {
+      ref.current!.reset({
+        username: 'the username',
+        email: 'the email',
+      });
+    });
+
+    // No validation should occur on the default values at reset
+    expect(queryByTestId('error-icon')).toBeNull();
+    expect(queryByTestId('tick-icon')).toBeNull();
+
+    expect(inputEmail.value).toBe('the email');
+    expect(inputUsername.value).toBe('the username');
   });
 
   test('exposes the expected functions from useForm hook', async () => {
