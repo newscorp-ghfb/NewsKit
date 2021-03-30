@@ -25,7 +25,7 @@ export const MediaList: React.FC<MediaListProps> = ({
   parentCellProps,
 }) => {
 
-  const renderCards = (cardListOrentation?: 'vertical' | 'horizontal') => {
+  const renderCards = (cardListOrientation?: 'vertical' | 'horizontal') => {
     const cardListToRender = []
 
     const cardListColumns = {
@@ -44,7 +44,7 @@ export const MediaList: React.FC<MediaListProps> = ({
       return (
         <Cell {...cellColumnList}>
           <StyledCard
-            layout={cardListOrentation}
+            layout={cardListOrientation}
             media={media}
             title={title}
             href={href}
