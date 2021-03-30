@@ -10,11 +10,6 @@ export interface MediaListProps {
     | '3-span'
     | '3-span-hero'
     | '4-span';
-  xsCard?: number;
-  smCard?: number;
-  mdCard?: number;
-  lgCard?: number;
-  xlCard?: number;
   spaceStack?: string;
   gridProps?: GridProps;
   parentCellProps?: CellProps;

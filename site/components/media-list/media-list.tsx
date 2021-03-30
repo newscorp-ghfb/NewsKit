@@ -10,7 +10,7 @@ import {
 } from 'newskit';
 import {BaseCard} from '../base-card';
 import {MediaListProps} from './types';
-import { columnsCalculator } from './columns-calculator';
+import {spanListConfig} from './span-list-config'
 
 const StyledCard = styled(BaseCard)`
   height: 100%;
@@ -24,28 +24,48 @@ export const MediaList: React.FC<MediaListProps> = ({
   gridProps,
   parentCellProps,
 }) => {
-  const renderCards = (layout?: 'vertical' | 'horizontal') =>
-    cards.map(({media, description, title, href, styles}) => (
-      <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
-        <StyledCard
-          layout={layout}
-          media={media}
-          title={title}
-          href={href}
-        >
-          <TextBlock
-            typographyPreset={
-              // eslint-disable-next-line prettier/prettier, no-undef
-              styles?.description?.typographyPreset || 'editorialParagraph020'
-            }
-            // eslint-disable-next-line no-undef
-            stylePreset={styles?.description?.stylePreset || 'inkBase'}
+
+  const renderCards = (cardListOrentation?: 'vertical' | 'horizontal') => {
+    const cardListToRender = []
+
+    const cardListColumns = {
+      heroCard: {xs: 12},
+      notHeroCardGroup: spanListConfig[layout]
+    }
+      
+    cardListToRender.push(cards.map(({media, description, title, href, styles}, index) => {
+      let cellColumnList
+      if (layout.includes('hero') && index === 0) {
+        cellColumnList = cardListColumns.heroCard
+      } else {
+        cellColumnList = cardListColumns.notHeroCardGroup
+      }
+
+      return (
+        <Cell {...cellColumnList}>
+          <StyledCard
+            layout={cardListOrentation}
+            media={media}
+            title={title}
+            href={href}
           >
-            {description}
-          </TextBlock>
-        </StyledCard>
-      </Cell>
-    ));
+            <TextBlock
+              typographyPreset={
+                // eslint-disable-next-line prettier/prettier, no-undef
+                styles?.description?.typographyPreset || 'editorialParagraph020'
+              }
+              // eslint-disable-next-line no-undef
+              stylePreset={styles?.description?.stylePreset || 'inkBase'}
+            >
+              {description}
+            </TextBlock>
+          </StyledCard>
+        </Cell>
+        )
+      }))
+    
+    return cardListToRender
+  }
 
   const renderBreakpointCards = () => {
     if (!cardsLayout || typeof cardsLayout === 'string') {

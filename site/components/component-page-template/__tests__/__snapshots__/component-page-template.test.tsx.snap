@@ -7826,10 +7826,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   .emotion-382 {
     padding: 0 8px;
     margin-top: 48px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
   }
 }
 
@@ -39965,6 +39965,49 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
+.emotion-397 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-397 {
+    padding: 0 8px;
+    margin-top: 48px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-397 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-397 {
+    padding: 0 12px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-397 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+}
+
 .emotion-396 {
   box-sizing: border-box;
   border-style: solid;
@@ -55640,10 +55683,10 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   .emotion-382 {
     padding: 0 8px;
     margin-top: 48px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
   }
 }
 

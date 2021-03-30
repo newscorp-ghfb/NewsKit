@@ -106,7 +106,7 @@ const renderSections = ({
                   lg: 'horizontal',
                   xl: 'horizontal',
                 }}
-                xsCard={8}
+                layout="1-span"
               />
             </Grid>
           </StyledSection>
@@ -132,7 +132,7 @@ const renderSections = ({
                   lg: 'horizontal',
                   xl: 'horizontal',
                 }}
-                xsCard={8}
+                layout="1-span"
                 {...behaviors}
               />
             </Grid>
@@ -259,13 +259,7 @@ const renderSections = ({
         <SectionIntroduction title="Related Components">
           {related.introduction}
         </SectionIntroduction>
-        <MediaList
-          spaceStack="space110"
-          xsCard={12}
-          mdCard={6}
-          lgCard={3}
-          {...related}
-        />
+        <MediaList spaceStack="space110" layout="4-span" {...related} />
       </>
     )}
 
