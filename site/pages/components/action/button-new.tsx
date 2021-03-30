@@ -52,101 +52,145 @@ export default (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    props={{
-      summary: `Buttons have a number of props to facilitate a variety of uses:`,
-      columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-      rows: [
+    componentAPI={{
+      introduction: `Buttons have a number of props to facilitate a variety of uses:`,
+      components: [
         {
-          name: 'children',
-          type: 'string',
-          required: true,
-          description: `The content of the Button is passed as the child of the component.`,
+          title: 'Button1',
+          summary:
+            'This is a summary of the button1 component, only needed if more than 1 comp',
+          propsTable: {
+            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
+            rows: [
+              {
+                name: 'children',
+                type: 'string',
+                required: true,
+                description: `The content of the Button is passed as the child of the component.`,
+              },
+              {
+                name: 'size',
+                type: 'ButtonSize',
+                default: 'Medium',
+                description: `Optional size of the Button.`,
+              },
+              {
+                name: 'eventContext',
+                type: 'object',
+                description:
+                  "This props allows users to add extra event data to buttons' click events.",
+              },
+              {
+                name: 'eventOriginator',
+                type: 'string',
+                default: 'button',
+                description:
+                  "This props allows users to add event originator custom name. e.x.: 'play-button'.",
+              },
+            ],
+          },
         },
         {
-          name: 'size',
-          type: 'ButtonSize',
-          default: 'Medium',
-          description: `Optional size of the Button.`,
-        },
-        {
-          name: 'eventContext',
-          type: 'object',
-          description:
-            "This props allows users to add extra event data to buttons' click events.",
-        },
-        {
-          name: 'eventOriginator',
-          type: 'string',
-          default: 'button',
-          description:
-            "This props allows users to add event originator custom name. e.x.: 'play-button'.",
-        },
-      ],
-    }}
-    overrides={{
-      summary:
-        'If provided, overrides the respective presets for the component and provided elements. Here are the overrides that the Button accepts:',
-      columns: ['Name', 'Type', 'Description'],
-      rows: [
-        {
-          name: 'spaceInset',
-          type: 'MQ<string>',
-          description: 'If provided, this overrides the padding of the Button.',
-        },
-        {
-          name: 'stylePreset',
-          type: 'MQ<string>',
-          description: `If provided, this overrides the style preset applied to the Button.`,
-        },
-        {
-          name: 'typographyPreset',
-          type: 'MQ<string>',
-          description:
-            'If provided, this overrides the typography preset applied to the Button.',
-        },
-        {
-          name: 'spaceInline',
-          type: 'MQ<string>',
-          description:
-            'If provided, this overrides the space between multiple children in the underlying Stack. If less than 2 children are passed, this prop is irrelevant.',
-        },
-        {
-          name: 'iconSize',
-          type: 'string',
-          description: (
-            <>
-              If provided, this overrides the icon size of any child icons.
-              Otherwise, iconSize010, iconSize020 or iconSize030 is used
-              depending on the `size` prop. If no icons are present in the
-              Button&apos;s children then this prop is irrelevant.
-              <br />
-              <br />
-              <i>
-                Note: You can also set the icon size by passing it directly as a
-                size prop to the icon, but by doing this you will override the
-                iconSize passed from overrides. We discourage this approach but
-                we will keep the functionality in case it is needed.
-              </i>
-            </>
-          ),
-        },
-        {
-          name: 'width',
-          type: 'string',
-          description:
-            'If provided, this sets a fixed width to the Button. This can be a sizing token from the theme, or any CSS length value, e.g. 100% for a full-width element.',
-        },
-        {
-          name: 'height',
-          type: 'string',
-          description:
-            'If provided, this sets a fixed height to the Button. This can be a sizing token from the theme, or any CSS length value.',
-        },
-        {
-          name: 'minHeight',
-          type: 'string',
-          description:
-            'If provided, this sets a minimum height to the Flag. This can be a sizing token from the theme, or any CSS length value. By default, sizing050 or sizing060 is used depending on the `size` prop.',
+          title: 'Button2',
+          summary:
+            'This is a summary of the button2 component, only needed if more than 1 comp',
+          propsTable: {
+            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
+            rows: [
+              {
+                name: 'children',
+                type: 'string',
+                required: true,
+                description: `The content of the Button is passed as the child of the component.`,
+              },
+              {
+                name: 'size',
+                type: 'ButtonSize',
+                default: 'Medium',
+                description: `Optional size of the Button.`,
+              },
+              {
+                name: 'eventContext',
+                type: 'object',
+                description:
+                  "This props allows users to add extra event data to buttons' click events.",
+              },
+              {
+                name: 'eventOriginator',
+                type: 'string',
+                default: 'button',
+                description:
+                  "This props allows users to add event originator custom name. e.x.: 'play-button'.",
+              },
+            ],
+          },
+          overridesTable: {
+            columns: ['Name', 'Type', 'Description'],
+            rows: [
+              {
+                name: 'spaceInset',
+                type: 'MQ<string>',
+                description:
+                  'If provided, this overrides the padding of the Button.',
+              },
+              {
+                name: 'stylePreset',
+                type: 'MQ<string>',
+                description: `If provided, this overrides the style preset applied to the Button.`,
+              },
+              {
+                name: 'typographyPreset',
+                type: 'MQ<string>',
+                description:
+                  'If provided, this overrides the typography preset applied to the Button.',
+              },
+              {
+                name: 'spaceInline',
+                type: 'MQ<string>',
+                description:
+                  'If provided, this overrides the space between multiple children in the underlying Stack. If less than 2 children are passed, this prop is irrelevant.',
+              },
+              {
+                name: 'iconSize',
+                type: 'string',
+                description: (
+                  <>
+                    If provided, this overrides the icon size of any child
+                    icons. Otherwise, iconSize010, iconSize020 or iconSize030 is
+                    used depending on the `size` prop. If no icons are present
+                    in the Button&apos;s children then this prop is irrelevant.
+                    <br />
+                    <br />
+                    <i>
+                      Note: You can also set the icon size by passing it
+                      directly as a size prop to the icon, but by doing this you
+                      will override the iconSize passed from overrides. We
+                      discourage this approach but we will keep the
+                      functionality in case it is needed.
+                    </i>
+                  </>
+                ),
+              },
+              {
+                name: 'width',
+                type: 'string',
+                description:
+                  'If provided, this sets a fixed width to the Button. This can be a sizing token from the theme, or any CSS length value, e.g. 100% for a full-width element.',
+              },
+              {
+                name: 'height',
+                type: 'string',
+                description:
+                  'If provided, this sets a fixed height to the Button. This can be a sizing token from the theme, or any CSS length value.',
+              },
+              {
+                name: 'minHeight',
+                type: 'string',
+                description:
+                  'If provided, this sets a minimum height to the Flag. This can be a sizing token from the theme, or any CSS length value. By default, sizing050 or sizing060 is used depending on the `size` prop.',
+              },
+            ],
+          },
         },
       ],
     }}

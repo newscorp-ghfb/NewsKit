@@ -9,11 +9,11 @@ exports[`ContentText renders with only the description 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #808E99;
+  color: #555E74;
 }
 
 .emotion-0 svg {
-  fill: #808E99;
+  fill: #555E74;
 }
 
 @media screen and (max-width:1439px) {
@@ -96,18 +96,18 @@ exports[`ContentText renders with only the title 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-1 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
+  color: #162740;
 }
 
 .emotion-0 svg {
-  fill: #555E74;
+  fill: #162740;
 }
 
 @media screen and (max-width:1439px) {
@@ -190,18 +190,18 @@ exports[`ContentText renders with title and description 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-1 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
+  color: #162740;
 }
 
 .emotion-0 svg {
-  fill: #555E74;
+  fill: #162740;
 }
 
 @media screen and (max-width:1439px) {
@@ -278,11 +278,11 @@ exports[`ContentText renders with title and description 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #808E99;
+  color: #555E74;
 }
 
 .emotion-0 svg {
-  fill: #808E99;
+  fill: #555E74;
 }
 
 @media screen and (max-width:1439px) {

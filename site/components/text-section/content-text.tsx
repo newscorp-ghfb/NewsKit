@@ -9,10 +9,10 @@ export const ContentText: React.FC<ContentTextProps> = ({
 }) => (
   <>
     {title && (
-      <Block spaceStack={{xs: 'space040', md: 'space050'}}>
+      <Block spaceStack={{xs: 'space040', md: 'space045'}}>
         <TextBlock
           as={titleAs}
-          stylePreset="inkBase"
+          stylePreset="inkContrast"
           typographyPreset={{
             xs: 'editorialHeadline020',
             xl: 'editorialHeadline030',
@@ -25,7 +25,7 @@ export const ContentText: React.FC<ContentTextProps> = ({
     {children && (
       <Block spaceStack="space060">
         <TextBlock
-          stylePreset="inkSubtle"
+          stylePreset="inkBase"
           typographyPreset={{
             xs: 'editorialParagraph020',
             xl: 'editorialParagraph030',

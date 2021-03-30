@@ -219,19 +219,19 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 
 @media screen and (min-width:768px) {
   .emotion-1 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
+  color: #162740;
   display: inline-block;
 }
 
 .emotion-0 svg {
-  fill: #555E74;
+  fill: #162740;
 }
 
 @media screen and (max-width:1439px) {
@@ -299,11 +299,11 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #808E99;
+  color: #555E74;
 }
 
 .emotion-2 svg {
-  fill: #808E99;
+  fill: #555E74;
 }
 
 @media screen and (max-width:1439px) {
@@ -637,19 +637,19 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 
 @media screen and (min-width:768px) {
   .emotion-1 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
+  color: #162740;
   display: inline-block;
 }
 
 .emotion-0 svg {
-  fill: #555E74;
+  fill: #162740;
 }
 
 @media screen and (max-width:1439px) {
@@ -717,11 +717,11 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #808E99;
+  color: #555E74;
 }
 
 .emotion-2 svg {
-  fill: #808E99;
+  fill: #555E74;
 }
 
 @media screen and (max-width:1439px) {
@@ -1177,19 +1177,19 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 
 @media screen and (min-width:768px) {
   .emotion-1 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
+  color: #162740;
   display: inline-block;
 }
 
 .emotion-0 svg {
-  fill: #555E74;
+  fill: #162740;
 }
 
 @media screen and (max-width:1439px) {
@@ -1257,11 +1257,11 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  color: #808E99;
+  color: #555E74;
 }
 
 .emotion-2 svg {
-  fill: #808E99;
+  fill: #555E74;
 }
 
 @media screen and (max-width:1439px) {

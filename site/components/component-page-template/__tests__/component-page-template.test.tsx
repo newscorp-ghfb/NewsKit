@@ -174,37 +174,26 @@ describe('Component Page Template', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders mandatory sections and props', () => {
+  test('renders mandatory sections and component API', () => {
     const props: ComponentPageTemplateProps = {
       ...mandatoryProps,
-      props: {
-        summary: `Component Props`,
-        columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-        rows: [
+      componentAPI: {
+        introduction: 'Component API',
+        components: [
           {
-            name: 'children',
-            type: 'string',
-            required: true,
-            description: `Description.`,
-          },
-        ],
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and overrides', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      overrides: {
-        summary: 'Component Overrides',
-        columns: ['Name', 'Type', 'Description'],
-        rows: [
-          {
-            name: 'spaceInset',
-            type: 'MQ<string>',
-            description: 'Description.',
+            title: 'Button',
+            summary: 'Component Props',
+            propsTable: {
+              columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
+              rows: [
+                {
+                  name: 'children',
+                  type: 'string',
+                  required: true,
+                  description: `Description`,
+                },
+              ],
+            },
           },
         ],
       },

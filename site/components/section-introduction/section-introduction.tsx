@@ -27,10 +27,10 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
         </TitleBar>
       </Block>
       {children && (
-        <Block spaceStack="space080">
+        <Block spaceStack="space090">
           <TextBlock
             stylePreset="inkBase"
-            typographyPreset="editorialSubheadline010"
+            typographyPreset="editorialSubheadline020"
           >
             {children}
           </TextBlock>

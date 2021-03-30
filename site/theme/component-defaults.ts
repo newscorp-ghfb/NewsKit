@@ -41,4 +41,12 @@ export const componentDefaults = {
   image: {
     stylePreset: 'imageDefault',
   },
+  tab: {
+    small: {
+      spaceInset: 'spaceInsetStretch040',
+    },
+  },
+  tabs: {
+    spaceInline: 'space060',
+  },
 };

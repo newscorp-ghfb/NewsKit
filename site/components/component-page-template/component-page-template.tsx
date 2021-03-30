@@ -1,7 +1,5 @@
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import {
-  Link,
   Cell,
   Block,
   Grid,
@@ -9,21 +7,19 @@ import {
   styled,
   getSpacingFromTheme,
 } from 'newskit';
-import {InfoNotice} from '../info-notice';
 import {FeatureCard} from '../feature-card';
 import {AccessibilityTables} from '../accessibility-tables';
 import {Anatomy} from '../anatomy';
 import {MediaList} from '../media-list';
 import Layout from '../layout';
 import {Playground} from '../playground';
-import {CodeFromDefaultPresets} from '../code';
 import {TableOfContents} from '../table-of-contents';
 import {Compliance} from '../compliance';
 import {Meta} from '../meta/meta';
 import {Usage} from '../usage';
+import {ComponentAPI} from '../component-api';
 import {ComponentPageTemplateProps} from './types';
 import {SectionIntroduction} from '../section-introduction';
-import {Table} from '../table';
 import {PageIntroduction} from '../page-introduction/page-introduction';
 import {Separator} from '../separator';
 
@@ -33,7 +29,6 @@ export const StyledSection = styled.section`
 `;
 
 const renderSections = ({
-  componentDefaultsKey,
   pageIntroduction,
   meta,
   interactiveDemo,
@@ -43,8 +38,7 @@ const renderSections = ({
   usage,
   accessibility,
   seo,
-  props,
-  overrides,
+  componentAPI,
   compliance,
   related,
   featureCard,
@@ -194,53 +188,23 @@ const renderSections = ({
         </Cell>
       </>
     )}
-    {props && (
-      <Cell xs={12}>
-        <StyledSection id="props" data-toc-indexed="Props">
-          <Grid lgMargin="space000" xsRowGutter="space000">
-            <SectionIntroduction title="Props">
-              {props.summary}
-            </SectionIntroduction>
-            <Cell xs={12} md={10} lg={8} mdOffset={1}>
-              <Table rows={props.rows} columns={props.columns} />
-            </Cell>
-            <Cell xs={12} md={10} lg={8} mdOffset={1}>
-              <Separator />
-            </Cell>
-          </Grid>
-        </StyledSection>
-      </Cell>
+    {componentAPI && (
+      <>
+        <Cell xs={12}>
+          <StyledSection id="component-api" data-toc-indexed="API">
+            <Grid lgMargin="space000" xsRowGutter="space000">
+              <SectionIntroduction title="API">
+                {componentAPI.introduction}
+              </SectionIntroduction>
+              <ComponentAPI {...componentAPI} />
+            </Grid>
+          </StyledSection>
+        </Cell>
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
+      </>
     )}
-    {overrides && (
-      <Cell xs={12}>
-        <StyledSection id="overrides">
-          <Grid lgMargin="space000" xsRowGutter="space000">
-            <SectionIntroduction title="Overrides">
-              {overrides.summary}
-            </SectionIntroduction>
-            <Cell xs={12} md={10} lg={8} mdOffset={1}>
-              <Table rows={overrides.rows} columns={overrides.columns} />
-            </Cell>
-          </Grid>
-        </StyledSection>
-      </Cell>
-    )}
-    <Cell xs={12} md={10} lg={8} mdOffset={1}>
-      <CodeFromDefaultPresets componentName={componentDefaultsKey} />
-      <InfoNotice>
-        For more information on overriding component defaults, see the docs{' '}
-        <Link
-          href="/theming/component-defaults"
-          overrides={{stylePreset: 'infoNotice'}}
-        >
-          here
-        </Link>
-        .
-      </InfoNotice>
-    </Cell>
-    <Cell xs={12} md={10} lg={8} mdOffset={1}>
-      <Separator />
-    </Cell>
     {compliance && (
       <>
         <SectionIntroduction title="Compliance">

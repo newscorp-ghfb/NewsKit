@@ -423,4 +423,9 @@ export const stylePresets = {
       iconColor: '{{colors.inkBrand010}}',
     },
   },
+  tab: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+    },
+  },
 };

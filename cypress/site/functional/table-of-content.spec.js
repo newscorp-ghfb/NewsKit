@@ -8,8 +8,8 @@ describe('table of content', () => {
     cy.get('@TOCInteractiveDemo').should('have.attr', 'data-selected', 'true');
   });
 
-  it('highlighted Props TOCSection after scrolling to the area', () => {
-    cy.get('[href="#props"]').as('TOCPropsSection');
+  it('highlighted Component API TOCSection after scrolling to the area', () => {
+    cy.get('[href="#component-api"]').as('TOCPropsSection');
 
     cy.scrollTo('bottom');
 
