@@ -2,35 +2,13 @@ import React from 'react';
 import {RenderScripts} from '../utils/render-scripts';
 import {ConsentProps} from './types';
 import {
-  getV1Scripts,
+  getNonTCFScripts,
   getV2Scripts,
-  isLegacyProps,
-  isV1Props,
+  isNonTCFV1Props,
   isV2Props,
 } from './consent-utils';
 
 export const Consent: React.FC<ConsentProps> = ({reactHelmet, ...props}) => {
-  if (isLegacyProps(props)) {
-    const {accountId, mmsDomain, waitForConsent = false} = props;
-    return (
-      <RenderScripts
-        scripts={getV1Scripts({
-          accountId,
-          mmsDomain,
-          waitForConsent,
-        })}
-        reactHelmet={reactHelmet}
-      />
-    );
-  }
-  if (isV1Props(props)) {
-    return (
-      <RenderScripts
-        scripts={getV1Scripts(props.sourcePointConfig)}
-        reactHelmet={reactHelmet}
-      />
-    );
-  }
   if (isV2Props(props)) {
     return (
       <RenderScripts
@@ -39,6 +17,13 @@ export const Consent: React.FC<ConsentProps> = ({reactHelmet, ...props}) => {
       />
     );
   }
-
+  if (isNonTCFV1Props(props)) {
+    return (
+      <RenderScripts
+        scripts={getNonTCFScripts(props.sourcePointConfigNonTCFV1)}
+        reactHelmet={reactHelmet}
+      />
+    );
+  }
   return null;
 };

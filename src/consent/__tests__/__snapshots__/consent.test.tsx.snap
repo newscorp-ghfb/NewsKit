@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Consent with helmet the Consent renders with legacy props 1`] = `
+exports[`Consent with helmet no props supplied renders empty component 1`] = `<DocumentFragment />`;
+
+exports[`Consent with helmet nonTCF renders correctly with trailing slash on baseEndpoint 1`] = `
 <DocumentFragment>
   <div>
     RenderScripts Component with props:{
   "scripts": [
     {
-      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"testDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"accountId\\":\\"259\\",\\"waitForConsent\\":false}}"
-    },
-    {
-      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/messagingNoTcfApi.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"
@@ -21,21 +21,17 @@ exports[`Consent with helmet the Consent renders with legacy props 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Consent with helmet the Consent renders with legacy props 2`] = `<DocumentFragment />`;
-
-exports[`Consent with helmet the Consent renders with legacy props and waitForConsent 1`] = `
+exports[`Consent with helmet nonTCF the Consent version 2 renders correctly 1`] = `
 <DocumentFragment>
   <div>
     RenderScripts Component with props:{
   "scripts": [
     {
-      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"testDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"accountId\\":\\"259\\",\\"waitForConsent\\":true}}"
-    },
-    {
-      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/messagingNoTcfApi.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"
@@ -44,19 +40,17 @@ exports[`Consent with helmet the Consent renders with legacy props and waitForCo
 </DocumentFragment>
 `;
 
-exports[`Consent with helmet the Consent version 1 renders correctly 1`] = `
+exports[`Consent with helmet nonTCF the Consent version 2 renders correctly with default baseEndpoint 1`] = `
 <DocumentFragment>
   <div>
     RenderScripts Component with props:{
   "scripts": [
     {
-      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cdn.privacy-mgmt.com\\"}}"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"https://message259.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"accountId\\":\\"259\\",\\"siteHref\\":\\"https://newskit.dev-news.co.uk\\"}}"
-    },
-    {
-      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+      "src": "https://cdn.privacy-mgmt.com/messagingNoTcfApi.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"
@@ -128,63 +122,57 @@ exports[`Consent with helmet the Consent version 2 renders correctly with traili
 </DocumentFragment>
 `;
 
-exports[`Consent without helmet the Consent renders with legacy props 1`] = `
+exports[`Consent without helmet no props supplied renders empty component 1`] = `<DocumentFragment />`;
+
+exports[`Consent without helmet nonTCF renders correctly with trailing slash on baseEndpoint 1`] = `
 <DocumentFragment>
   <div>
     RenderScripts Component with props:{
   "scripts": [
     {
-      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"testDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"accountId\\":\\"259\\",\\"waitForConsent\\":false}}"
-    },
-    {
-      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/messagingNoTcfApi.js",
+      "async": true
     }
   ],
-  "reactHelmet": "function"
+  "reactHelmet": "undefined"
 }
   </div>
 </DocumentFragment>
 `;
 
-exports[`Consent without helmet the Consent renders with legacy props 2`] = `<DocumentFragment />`;
-
-exports[`Consent without helmet the Consent renders with legacy props and waitForConsent 1`] = `
+exports[`Consent without helmet nonTCF the Consent version 2 renders correctly 1`] = `
 <DocumentFragment>
   <div>
     RenderScripts Component with props:{
   "scripts": [
     {
-      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"testDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"accountId\\":\\"259\\",\\"waitForConsent\\":true}}"
-    },
-    {
-      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/messagingNoTcfApi.js",
+      "async": true
     }
   ],
-  "reactHelmet": "function"
+  "reactHelmet": "undefined"
 }
   </div>
 </DocumentFragment>
 `;
 
-exports[`Consent without helmet the Consent version 1 renders correctly 1`] = `
+exports[`Consent without helmet nonTCF the Consent version 2 renders correctly with default baseEndpoint 1`] = `
 <DocumentFragment>
   <div>
     RenderScripts Component with props:{
   "scripts": [
     {
-      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cdn.privacy-mgmt.com\\"}}"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"https://message259.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"accountId\\":\\"259\\",\\"siteHref\\":\\"https://newskit.dev-news.co.uk\\"}}"
-    },
-    {
-      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+      "src": "https://cdn.privacy-mgmt.com/messagingNoTcfApi.js",
+      "async": true
     }
   ],
   "reactHelmet": "undefined"

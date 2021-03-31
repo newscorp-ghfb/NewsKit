@@ -41,9 +41,10 @@ export default class MyDocument extends Document<Props> {
           {helmet.script.toComponent()}
           <Meta />
           <Consent
-            sourcePointConfigTCFV2={{
+            sourcePointConfigNonTCFV1={{
               accountId: 259,
-              propertyHref: 'https://newskit.dev-news.co.uk',
+              propertyHref: 'https://newskit.co.uk',
+              // propertyHref: 'https://newskit.dev-news.co.uk', // to test stage https://documentation.sourcepoint.com/consent_mp/campaigns/viewing-a-stage-campaign
             }}
             reactHelmet={Helmet}
           />

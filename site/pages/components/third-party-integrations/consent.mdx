@@ -3,7 +3,7 @@ import Playground from '../../../components/playground';
 import Prop from '../../../components/prop';
 import {Code, CodeFromFile} from '../../../components/code';
 import {LegacyBlock} from '../../../components/legacy-block';
-
+import {InlineCode} from '../../../components/markdown-elements';
 export default Layout;
 
 # Consent
@@ -13,82 +13,113 @@ export default Layout;
 The consent component is a non-visual component for the consent of the use of 3rd party cookies. It triggers the loading of a Sourcepoint CMP (Content Management Platform) dialog to allow the user to decide what 3rd party cookies they wish to allow or disallow on their browser.
 Unless you are utilising React Helmet, it must be placed inside the body of the document during server-side rendering. NewsKit has both an AMP and non-AMP version of this component. The two are not interchangeable so you must ensure you use the correct one.
 
-At the moment this component is supporting two version of the Sourcepoint config. Versions TCFV1 and TCFV2.
+At the moment this component is supporting two version of the Sourcepoint config. Versions GDPR TCF V2 and GDPR Non-TCF.
 
 ## Prerequisites
 
-To utilise this component you will need to have a [Sourcepoint](https://www.sourcepoint.com) account and, if required, a Sourcepoint messaging subdomain set up. For more information
-please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.com/web-implementation/sourcepoint-gdpr-and-tcf-v2-support-beta/gdpr-and-tcf-v2-setup-and-configuration) and
-[documentation TCFV1](https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2) for the version 1.
+To utilise this component you will need to have a [Sourcepoint](https://www.sourcepoint.com) account and, if required, a Sourcepoint messaging subdomain set up. For more detailed information
+please see Sourcepoint [documentation TCF V2](https://documentation.sourcepoint.com/web-implementation/web-implementation/sourcepoint-gdpr-and-tcf-v2-support/) or
+[documentation Non-TCF](https://documentation.sourcepoint.com/web-implementation/web-implementation/gdpr-non-tcf-web-implementation).
 
 ## Usage
 
 <CodeFromFile path="examples/consent.tsx" />
 
-## Props V2
+## Props GDPR TCF V2
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="sourcePointConfigTCFV2" required>
-    The config object that initialises SourcePoint. Required parameters:{' '}
-    <b>accountId</b>. Optional Parameters: <b>propertyHref</b>,{' '}
-    <b>privacyManagerId</b>, <b>siteId</b>, <b>siteHref</b>,{' '}
-    <b>targetingParams</b>, <b>waitForConsent</b> and <b>baseEndpoint</b>.{' '}
-    <b>mmsDomain</b> and <b>wrapperAPIOrigin</b> are supported but it is advised
-    you use the <b>baseEndpoint</b> property instead. See{' '}
-    <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">
+    The config object that initialises SourcePoint. See <a href="https://documentation.sourcepoint.com/web-implementation/web-implementation/sourcepoint-gdpr-and-tcf-v2-support/gdpr-and-tcf-v2-setup-and-configuration_v1.1.3">
       Sourcepoint documentation
-    </a>{' '}
-    for full description of options.
-  </Prop>
-  <Prop name="accountId" type="number">
-    <b>
-      This Prop is deprecated on the component and should be set in the
-      sourcepoint config.
-    </b>{' '}
-    Your Sourcepoint account id.
-  </Prop>
-  <Prop
-    name="mmsDomain"
-    type="string"
-    default="https://message{accountId}.sp-prod.net"
-  >
-    <b>
-      This Prop is deprecated on the component and should be set in the
-      sourcepoint config.{' '}
-    </b>
-    Can be changed to a CNAMED subdomain in order to deliver 1st party cookies on
-    Safari web browser (due to Safari’s ITP). Changing the mmsDomain is optional!
-    More information about setting up an mmsDomain below.
-  </Prop>
-  <Prop name="waitForConsent" type="boolean" default="false">
-    When true (the default value), the consent component will cause prebid.js to
-    wait for user consent to be provided before it initialises.
-  </Prop>
-  <Prop name="reactHelmet" type="react-helmet Helmet Component">
-    By default the Consent component will inject its scripts by rendering script
-    tags. However, if your project is using &nbsp;
-    <a href="https://www.npmjs.com/package/react-helmet" target="_blank">
-      React Helmet
-    </a>
-    &nbsp; you can pass the Helmet component in and the scripts will render
-    using that component.
+    </a>{' '} for a full reference.
+    <Prop name="accountId" type="number" required>
+      The accountId value associates the property with your organization's Sourcepoint account. Your organization's accountId can be retrieved by contacting your Sourcepoint Account Manager or via the My Account page in your Sourcepoint account.
+    </Prop>
+    <Prop name="targetingParams" type="object">
+      Targeting params allow a developer to set arbitrary key/value pairs. These key/value pairs are sent to Sourcepoint servers where they can be used to take a decision within the scenario builder.
+    </Prop>
+    <Prop name="isSPA" type="boolean">
+      When set to true, will confirm the implementation for a single page application and will show a message only when  window._sp_.executeMessaging();is triggered.<br/>
+      <b>Note:</b> <InlineCode>window._sp_.executeMessaging();</InlineCode> is supposed to be called on each (virtual) pageload.
+    </Prop>
+    <Prop name="mmsDomain" type="string">
+      has been replaced by the new <InlineCode>baseEndpoint</InlineCode> parameter for optimization reasons. This change is completely backwards compatible. However, it is recommended that older implementations move to the new parameter to benefit from the optimizations.
+    </Prop>
+    <Prop name="wrapperAPIOrigin" type="string">
+      has been replaced by the new <InlineCode>baseEndpoint</InlineCode> parameter for optimization reasons. This change is completely backwards compatible. However, it is recommended that older implementations move to the new parameter to benefit from the optimizations.
+    </Prop>
+    <Prop name="propertyHref" type="boolean">
+      Maps the implementation to a specific URL as set up in the Sourcepoint account dashboard.
+    </Prop>
+    <Prop name="baseEndpoint" type="string">
+      is a single server endpoint from where the messaging as well as the GDPR and TCFv2 experience is served. The baseEndpoint can also be changed to a CNAMED 1st party subdomain in order to persist 1st party cookies on Safari web browser (due to Safari’s ITP) by setting cookies through the server with "set-cookie" rather than using "document.cookie" on the page. Changing the baseEndpoint domain is optional but recommended!
+    </Prop>
+    <Prop name="groupPmId" type="number">
+      Allows your organization to use the Privacy Manager ID for the property group use of a property group's Privacy Manager ID.<br/>
+      <b>Note:</b> Call <InlineCode>window._sp_.loadPrivacyManagerModal()</InlineCode> without passing a parameter and the Privacy Manager that displays will be that property's version of the groupPmId Privacy Manager.
+    </Prop>
+    <Prop name="waitForConsent" type="boolean" default="false">
+      When true (the default value), the consent component will cause prebid.js to
+      wait for user consent to be provided before it initialises.
+    </Prop>
+    <Prop name="reactHelmet" type="react-helmet Helmet Component">
+      By default the Consent component will inject its scripts by rendering script
+      tags. However, if your project is using &nbsp;
+      <a href="https://www.npmjs.com/package/react-helmet" target="_blank">
+        React Helmet
+      </a>
+      &nbsp; you can pass the Helmet component in and the scripts will render
+      using that component.
+    </Prop>
+    <Prop name="events" type="object">
+      An array of events that allow Javascript callbacks to be triggered. Please refer to the <a href="https://documentation.sourcepoint.com/web-implementation/web-implementation/sourcepoint-gdpr-and-tcf-v2-support/optional-callbacks-tcfv2">Optional Callback</a> document to learn more about how to use events as part of your setup configuration.
+    </Prop>
+    <Prop name="consentLanguage" type="string">
+      If this parameter is not present, stacks and purposes will appear according to the end-user's preferred browser language setting. 
+      <InlineCode>consentLanguage: "nl"</InlineCode>
+    </Prop>
   </Prop>
 </LegacyBlock>
 
-## Props V1
+## Props GDPR Non-TCF
 
-If you want to use the TCF1 version of the consent rather than passing the SourcePoint config through
-sourcePointConfigTCFV2, you have to pass them through `sourcePointConfig`.
-Secondly pass the `accountId` as a string and rename `propertyHref` to `siteHref` if used.
-
-<Code>
-  {`<Consent
-    sourcePointConfig={{
-      accountId: "accountId",
-      siteHref: 'http://newskit.co.uk/'
-    }}
-  />`}
-</Code>
+<LegacyBlock marginTop="sizing040">
+  <Prop name="SourcePointConfigNonTCFV1" required>
+    The config object that initialises SourcePoint. See <a href="https://documentation.sourcepoint.com/web-implementation/web-implementation/sourcepoint-gdpr-and-tcf-v2-support/gdpr-and-tcf-v2-setup-and-configuration_v1.1.3">
+      Sourcepoint documentation
+    </a>{' '} for a full reference.
+    <Prop name="accountId" type="number" required>
+      The accountId value associates the property with your organization's Sourcepoint account. Your organization's accountId can be retrieved by contacting your Sourcepoint Account Manager or via the My Account page in your Sourcepoint account. 
+    </Prop>
+    <Prop name="baseEndpoint" type="string">
+      The baseEndpoint can also be changed to a CNAME first-party subdomain in order to persist first-party cookies on Safari web browser (due to Safari’s ITP) by setting cookies through the server with set-cookie rather than using document.cookie on the page. 
+    </Prop>
+    <Prop name="isSPA" type="boolean">
+      When set to true, will confirm the implementation for a single page application and will show a message only when  window._sp_.executeMessaging();is triggered.<br/>
+      <b>Note:</b> <InlineCode>window._sp_.executeMessaging();</InlineCode> is supposed to be called on each (virtual) pageload.
+    </Prop>
+    <Prop name="groupPmId" type="number">
+      Allows your organization to use the Privacy Manager ID for the property group use of a property group's Privacy Manager ID.<br/>
+      <b>Note:</b> Call <InlineCode>window._sp_.loadPrivacyManagerModal()</InlineCode> without passing a parameter and the Privacy Manager that displays will be that property's version of the groupPmId Privacy Manager.
+    </Prop>
+    <Prop name="propertyHref" type="string">
+      Maps the implementation to a specific URL as set up in the Sourcepoint account dashboard.
+    </Prop>
+    <Prop name="propertyId" type="string">
+      Maps the message to a specific property (website, app, OTT) as set up in the Sourcepoint account dashboard.
+    </Prop>
+    <Prop name="targetingParams" type="object">
+      Targeting params allow a developer to set arbitrary key/value pairs. These key/value pairs are sent to Sourcepoint servers where they can be used to take a decision within the scenario builder. 
+    </Prop>
+    <Prop name="events" type="object">
+      <a href="https://documentation.sourcepoint.com/web-implementation/web-implementation/gdpr-non-tcf-web-implementation/optional-event-callbacks-for-gdpr-non-tcf-web-implementation" target="_blank">Click here</a> for all optional event callbacks that are supported by Sourcepoint for GDPR non-TCF web implementations. 
+    </Prop>
+    <Prop name="consentLanguage" type="string">
+      If this parameter is not present, stacks and purposes will appear according to the end-user's preferred browser language setting. 
+      <InlineCode>consentLanguage: "nl"</InlineCode>
+    </Prop>
+  </Prop>
+</LegacyBlock>
 
 ## How to run on localhost
 

@@ -3,6 +3,7 @@ import {getSSRId} from './get-ssr-id';
 
 interface ExternalScriptData {
   src: string;
+  async?: boolean;
 }
 
 interface InlineScriptData {
@@ -13,6 +14,7 @@ type ScriptData = ExternalScriptData | InlineScriptData;
 interface HelmetScriptProps {
   type: 'text/javascript';
   src?: string;
+  async?: boolean;
   innerHTML?: string;
 }
 
@@ -44,6 +46,7 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
 
             if (isExternalScriptData(scriptData)) {
               scriptProps.src = scriptData.src;
+              scriptProps.async = scriptData.async;
             } else {
               scriptProps.innerHTML = scriptData.content;
             }
@@ -62,6 +65,7 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
           ? {
               key: scriptData.src,
               src: scriptData.src,
+              async: scriptData.async,
             }
           : {
               key: getSSRId(),
