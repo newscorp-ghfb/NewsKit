@@ -6,7 +6,7 @@ const getHtmlReadElement = (HtmlElementsList: Array<HTMLElement | null>) => {
     elementXTopPosition: number;
   }> = [];
 
-  HtmlElementsList.forEach(element => {
+  HtmlElementsList.forEach((element) => {
     if (element !== null) {
       const elementXTopPosition = element.getBoundingClientRect().top;
       if (elementXTopPosition < window.innerHeight / 2) {
@@ -43,9 +43,10 @@ export const contentsObserver = (
     return () => {};
   }
 
-  // eslint-disable-next-line no-undef
   const d = document;
-  const htmlElementsList = contentsInfo.map(info => d.getElementById(info.id));
+  const htmlElementsList = contentsInfo.map((info) =>
+    d.getElementById(info.id),
+  );
   const onScroll = debounce(() => {
     handleScroll(htmlElementsList, handleIntersection);
   }, 10);

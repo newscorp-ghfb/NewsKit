@@ -24,30 +24,20 @@ export const MediaList: React.FC<MediaListProps> = ({
   gridProps,
   parentCellProps,
 }) => {
-
-  const renderCards = (cardListOrientation?: 'vertical' | 'horizontal') => {
-    const cardListToRender = []
-
-    const cardListColumns = {
-      heroCard: {xs: 12},
-      notHeroCardGroup: spanListConfig[layout]
-    }
-      
-    cardListToRender.push(cards.map(({media, description, title, href, styles}, index) => {
-      let cellColumnList
-      if (layout.includes('hero') && index === 0) {
-        cellColumnList = cardListColumns.heroCard
-      } else {
-        cellColumnList = cardListColumns.notHeroCardGroup
-      }
-
-      return (
-        <Cell {...cellColumnList}>
-          <StyledCard
-            layout={cardListOrientation}
-            media={media}
-            title={title}
-            href={href}
+  const renderCards = (layout?: 'vertical' | 'horizontal') =>
+    cards.map(({media, description, title, href, styles}) => (
+      <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
+        <StyledCard
+          layout={layout}
+          media={media}
+          title={title}
+          href={href}
+        >
+          <TextBlock
+            typographyPreset={
+              styles?.description?.typographyPreset || 'editorialParagraph020'
+            }
+            stylePreset={styles?.description?.stylePreset || 'inkBase'}
           >
             <TextBlock
               typographyPreset={

@@ -93,7 +93,6 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
     'iconSize',
   );
 
-  // eslint-disable-next-line no-undef, prettier/prettier
   const valid = formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
 
   return (
@@ -103,7 +102,6 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(({
       </StyledLabel>
       <InputIconContainer>
         <StyledInput
-          // eslint-disable-next-line no-undef
           ref={composeRefs(formContext?.register(rules), ref)}
           name={name}
           type="text"

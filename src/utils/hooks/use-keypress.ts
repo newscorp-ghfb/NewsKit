@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import {RefObject, useEffect} from 'react';
 
 const keysMap = {

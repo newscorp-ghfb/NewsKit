@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import {createEvent, fireEvent} from '@testing-library/react';
 import {RefObject} from 'react';
 import {renderHook} from '../../../test/test-utils';

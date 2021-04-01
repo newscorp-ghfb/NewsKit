@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import {renderHook} from '../../../test/test-utils';
 import {useLockBodyScroll} from '..';
 
