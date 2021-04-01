@@ -95,6 +95,27 @@ describe('Component Page Template', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders mandatory sections and states', () => {
+    const props: ComponentPageTemplateProps = {
+      ...mandatoryProps,
+      states: {
+        introduction: 'Component states',
+        cards: [
+          {
+            label: 'States',
+            description: 'Description',
+            media: {
+              src: '/static/placeholder-16x9.png',
+              alt: 'Card Media',
+            },
+          },
+        ],
+      },
+    };
+    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders mandatory sections and behaviors', () => {
     const props: ComponentPageTemplateProps = {
       ...mandatoryProps,

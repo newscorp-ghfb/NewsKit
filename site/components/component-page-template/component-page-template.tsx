@@ -34,6 +34,7 @@ const renderSections = ({
   interactiveDemo,
   anatomy,
   options,
+  states,
   behaviors,
   usage,
   accessibility,
@@ -102,6 +103,24 @@ const renderSections = ({
                 }}
                 layout="1-span"
               />
+            </Grid>
+          </StyledSection>
+        </Cell>
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
+      </>
+    )}
+
+    {states && (
+      <>
+        <Cell xs={12}>
+          <StyledSection id="states" data-toc-indexed="States">
+            <Grid lgMargin="space000" xsRowGutter="space000">
+              <SectionIntroduction title="States">
+                {states.introduction}
+              </SectionIntroduction>
+              <MediaList {...states} layout="2-span" />
             </Grid>
           </StyledSection>
         </Cell>

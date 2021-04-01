@@ -393,6 +393,60 @@ export default (layoutProps: LayoutProps) => (
         },
       ],
     }}
+    states={{
+      introduction:
+        'Button items have states including, base, hover, active, disabled and focus. They can be displayed with both, base or selected.',
+      cards: [
+        {
+          title: 'Title',
+          description: 'Description',
+          media: {
+            src: '/static/placeholder-16x9.png',
+            alt: 'Card Media',
+          },
+        },
+        {
+          title: 'Title',
+          description: 'Description',
+          media: {
+            src: '/static/placeholder-16x9.png',
+            alt: 'Card Media',
+          },
+        },
+        {
+          title: 'Title',
+          description: 'Description',
+          media: {
+            src: '/static/placeholder-16x9.png',
+            alt: 'Card Media',
+          },
+        },
+        {
+          title: 'Title',
+          description: 'Description',
+          media: {
+            src: '/static/placeholder-16x9.png',
+            alt: 'Card Media',
+          },
+        },
+        {
+          title: 'Title',
+          description: 'Description',
+          media: {
+            src: '/static/placeholder-16x9.png',
+            alt: 'Card Media',
+          },
+        },
+        {
+          title: 'Title',
+          description: 'Description',
+          media: {
+            src: '/static/placeholder-16x9.png',
+            alt: 'Card Media',
+          },
+        },
+      ],
+    }}
     behaviors={{
       introduction:
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',

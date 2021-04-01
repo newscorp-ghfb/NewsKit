@@ -22,6 +22,7 @@ export interface ComponentPageTemplateProps {
   };
   anatomy?: AnatomyProps & {introduction: string};
   options?: MediaListProps & {introduction: string};
+  states?: MediaListProps & {introduction: string};
   behaviors?: MediaListProps & {introduction: string};
   usage?: UsageProps & {introduction: string};
   accessibility?: AccessibilityTablesProps & {introduction: string};
