@@ -15,6 +15,7 @@ import {
   TabsDistribution,
   UnorderedList,
   TabAlign,
+  TabsIndicatorPosition,
   Link,
   TextBlock,
 } from 'newskit';
@@ -120,6 +121,22 @@ Tabs have a number of props to facilitate a variety of uses:
     <b>NOTE:</b> Default value depends on <InlineCode>vertical</InlineCode> prop:
     when is <InlineCode>true</InlineCode> the value is set to <InlineCode>TabAlign.Start</InlineCode>,
     and <InlineCode>TabAlign.Center</InlineCode> when is <InlineCode>false</InlineCode>.
+
+  </Prop>
+  <Prop name="indicatorPosition" type="TabsIndicatorPosition" default="TabsIndicatorPosition.End">
+      Set the position of the selection indicator.<br /><br />
+     
+     <UnorderedList>
+      <>
+        <InlineCode>Start</InlineCode> Positions the selection indicator before the tabs. 
+      </>
+      <>
+        <InlineCode>End</InlineCode> Positions the selection indicator after the tabs.
+      </>
+      <>
+        <InlineCode>None</InlineCode> No selection indicator is displayed.
+      </>
+    </UnorderedList>
 
   </Prop>  
   <Prop name="overrides" type="object">
@@ -420,6 +437,25 @@ Here is an example of how the Tabs and Tab components are used.
         {
           label: 'TabAlign.End',
           value: TabAlign.End,
+        },
+      ],
+    },
+    {
+      name: 'Indicator Position',
+      propName: 'indicatorPosition',
+      options: [
+        {
+          label: 'TabsIndicatorPosition.Start',
+          value: TabsIndicatorPosition.Start,
+        },
+        {
+          label: 'TabsIndicatorPosition.End',
+          value: TabsIndicatorPosition.End,
+          isDefault: true,
+        },
+        {
+          label: 'TabsIndicatorPosition.None',
+          value: TabsIndicatorPosition.None,
         },
       ],
     },

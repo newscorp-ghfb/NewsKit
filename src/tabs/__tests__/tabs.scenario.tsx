@@ -5,7 +5,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {Tab, TabAlign, Tabs, TabsDistribution} from '..';
+import {Tab, TabAlign, Tabs, TabsDistribution, TabsIndicatorPosition} from '..';
 import {IconFilledEmail} from '../../icons';
 import {Block} from '../../block';
 import {createTheme, ThemeProvider} from '../../theme';
@@ -597,6 +597,82 @@ export default {
             <Tab aria-label="tab label" label={titleBetweenIcons}>
               Content 3
             </Tab>
+          </Tabs>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tabs-horizontal-indicator-position-variants',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tabs Horizontal Indicator Position Variants
+          </StorybookHeading>
+          <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
+          <Tabs
+            size={TabSize.Medium}
+            indicatorPosition={TabsIndicatorPosition.Start}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+          <StorybookSubHeading>
+            Indicator position End (default)
+          </StorybookSubHeading>
+          <Tabs size={TabSize.Medium}>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+          <StorybookSubHeading>Indicator position None</StorybookSubHeading>
+          <Tabs
+            size={TabSize.Medium}
+            indicatorPosition={TabsIndicatorPosition.None}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tabs-vertical-indicator-position-variants',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tabs Vertical Indicator Position Variants
+          </StorybookHeading>
+          <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
+          <Tabs
+            size={TabSize.Medium}
+            vertical
+            indicatorPosition={TabsIndicatorPosition.Start}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+          <StorybookSubHeading>
+            Indicator position End (default)
+          </StorybookSubHeading>
+          <Tabs size={TabSize.Medium} vertical>
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
+          </Tabs>
+          <StorybookSubHeading>Indicator position None</StorybookSubHeading>
+          <Tabs
+            size={TabSize.Medium}
+            vertical
+            indicatorPosition={TabsIndicatorPosition.None}
+          >
+            <Tab label="Tab">Content 1</Tab>
+            <Tab label="Tab Two">Content 2</Tab>
+            <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
         </React.Fragment>
       ),

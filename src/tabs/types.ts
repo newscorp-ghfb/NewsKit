@@ -21,6 +21,12 @@ export enum TabsDistribution {
   Equal = 'equal',
 }
 
+export enum TabsIndicatorPosition {
+  Start = 'start',
+  End = 'end',
+  None = 'none',
+}
+
 export interface TabsProps {
   size?: TabSize;
   children: React.ReactElement<TabProps>[];
@@ -28,6 +34,7 @@ export interface TabsProps {
   vertical?: boolean;
   distribution?: TabsDistribution;
   initialSelectedIndex?: number;
+  indicatorPosition?: TabsIndicatorPosition;
   align?: TabAlign;
   overrides?: {
     spaceInline?: MQ<string>;

@@ -6,6 +6,7 @@ import {
   TabsDistribution,
   TabSize,
   TabAlign,
+  TabsIndicatorPosition,
 } from './types';
 import {
   StyledTabsBar,
@@ -58,6 +59,7 @@ export const Tabs: React.FC<TabsProps> = ({
   vertical = false,
   distribution,
   initialSelectedIndex = 0,
+  indicatorPosition = TabsIndicatorPosition.End,
   align: initialAlign,
 }) => {
   const theme = useTheme();
@@ -278,6 +280,7 @@ export const Tabs: React.FC<TabsProps> = ({
           <StyledTabsBarTrack
             overrides={overrides}
             vertical={vertical}
+            indicatorPosition={indicatorPosition}
             role="presentation"
             data-testid="tab-bar-track"
             ref={tabsBarTrackRef}
@@ -285,6 +288,7 @@ export const Tabs: React.FC<TabsProps> = ({
           <StyledTabsBarIndicator
             overrides={overrides}
             vertical={vertical}
+            indicatorPosition={indicatorPosition}
             style={getTabsBarIndicatorStyle(
               theme,
               indicator.size,

@@ -7,7 +7,7 @@ import {
 } from '../../test/test-utils';
 import {Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
-import {TabAlign, TabsProps} from '../types';
+import {TabAlign, TabsProps, TabsIndicatorPosition} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {KEYBOARD_ARROWS} from '../utils';
 
@@ -382,6 +382,63 @@ describe('Tabs distribution', () => {
         expect(fragment).toMatchSnapshot();
       },
     );
+  });
+});
+
+describe(`tabs indicatorPosition`, () => {
+  const props: TabsProps = {
+    children: tabsWithLabelAndIcons,
+  };
+
+  test('renders horizontal tabs with the selection indicator before the tabs', () => {
+    const fragmentStart = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      indicatorPosition: TabsIndicatorPosition.Start,
+    });
+    expect(fragmentStart).toMatchSnapshot();
+  });
+
+  test('renders vertical tabs with the selection indicator before the tabs', () => {
+    const fragmentStart = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      indicatorPosition: TabsIndicatorPosition.Start,
+      vertical: true,
+    });
+    expect(fragmentStart).toMatchSnapshot();
+  });
+
+  test('renders horizontal tabs with the selection indicator after the tabs', () => {
+    const fragmentEnd = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      indicatorPosition: TabsIndicatorPosition.End,
+    });
+    expect(fragmentEnd).toMatchSnapshot();
+  });
+
+  test('renders vertical tabs with the selection indicator after the tabs', () => {
+    const fragmentEnd = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      indicatorPosition: TabsIndicatorPosition.End,
+      vertical: true,
+    });
+    expect(fragmentEnd).toMatchSnapshot();
+  });
+
+  test('renders horizontal tabs with no selection indicator displayed', () => {
+    const fragmentNone = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      indicatorPosition: TabsIndicatorPosition.None,
+    });
+    expect(fragmentNone).toMatchSnapshot();
+  });
+
+  test('renders vertical tabs with no selection indicator displayed', () => {
+    const fragmentNone = renderToFragmentWithTheme(renderTabsDefault, {
+      ...props,
+      indicatorPosition: TabsIndicatorPosition.None,
+      vertical: true,
+    });
+    expect(fragmentNone).toMatchSnapshot();
   });
 });
 

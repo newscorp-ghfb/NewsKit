@@ -12,6 +12,7 @@ import {
   DistributionWrapperProps,
   TabsBarProps,
   TabInternalProps,
+  TabsIndicatorPosition,
   TabAlign,
 } from './types';
 import {Stack} from '../stack';
@@ -31,6 +32,32 @@ const getFlexFromTabsDistribution = (
     default:
       return '0 0 auto';
   }
+};
+
+const alignmentPosition = (
+  indicatorPosition?: TabsIndicatorPosition,
+  vertical?: boolean,
+) => {
+  if (indicatorPosition === TabsIndicatorPosition.None) {
+    return `display: none`;
+  }
+
+  if (indicatorPosition === TabsIndicatorPosition.Start) {
+    return `
+      top: 0px;
+      left: 0px;
+    `;
+  }
+
+  return vertical
+    ? `
+        top: 0px;
+        right: 0px;
+      `
+    : `
+      bottom: 0px;
+      left: 0px;
+    `;
 };
 
 export const StyledTabGroup = styled.div<
@@ -71,29 +98,23 @@ export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`
 `;
 
 export const StyledTabsBarIndicator = styled.div<
-  Pick<TabsProps, 'vertical' | 'overrides'>
+  Pick<TabsProps, 'vertical' | 'overrides' | 'indicatorPosition'>
 >`
   ${getStylePreset(
     'tabs.selectionIndicator.indicator',
     'selectionIndicator.indicator',
   )};
   position: absolute;
-  top: ${({vertical}) => vertical && '0px'};
-  right: ${({vertical}) => vertical && '0px'};
-  bottom: ${({vertical}) => !vertical && '0px'};
-  left: ${({vertical}) => !vertical && '0px'};
+  ${({indicatorPosition, vertical}) =>
+    alignmentPosition(indicatorPosition, vertical)};
 `;
 
 export const StyledTabsBarTrack = styled.div<
-  Pick<TabsProps, 'vertical' | 'overrides'>
+  Pick<TabsProps, 'vertical' | 'overrides' | 'indicatorPosition'>
 >`
   ${getStylePreset('tabs.selectionIndicator.track', 'selectionIndicator.track')}
   display: block;
   position: absolute;
-  top: ${({vertical}) => vertical && '0px'};
-  right: ${({vertical}) => vertical && '0px'};
-  bottom: ${({vertical}) => !vertical && '0px'};
-  left: ${({vertical}) => !vertical && '0px'};
   width: ${({vertical}) =>
     vertical
       ? getWeight('tabs.selectionIndicator.track', 'selectionIndicator.track')
@@ -102,6 +123,8 @@ export const StyledTabsBarTrack = styled.div<
     vertical
       ? '100%'
       : getWeight('tabs.selectionIndicator.track', 'selectionIndicator.track')};
+  ${({indicatorPosition, vertical}) =>
+    alignmentPosition(indicatorPosition, vertical)};
 `;
 
 const tabFlexAlign = {
