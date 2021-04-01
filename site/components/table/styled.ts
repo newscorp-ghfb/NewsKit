@@ -13,15 +13,14 @@ export const StyledTable = styled.table`
 `;
 
 export const StyledHeader = styled.th`
-    ${getStylePresetFromTheme('tableHeader')}
-    ${getTypographyPresetFromTheme('utilityLabel020')}
+  ${getStylePresetFromTheme('tableHeader')}
+  ${getTypographyPresetFromTheme('utilityLabel020')}
     margin-bottom: ${getSpacingFromTheme('space020')};
-    height: ${getSizingFromTheme('sizing070')};
-    text-align: left;
-    vertical-align: middle;
-    min-width: ${getSpacingFromTheme('space090')};
-
-  `;
+  height: ${getSizingFromTheme('sizing070')};
+  text-align: left;
+  vertical-align: middle;
+  min-width: ${getSpacingFromTheme('space090')};
+`;
 
 export const StyledTableRow = styled.tr`
   ${getStylePresetFromTheme('tableRow')}

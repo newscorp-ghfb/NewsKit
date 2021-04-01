@@ -8,9 +8,7 @@ describe('Documentation Site - playground', () => {
   });
 
   it('Tag playground should update the content', () => {
-    cy.get('input[name="Content"]')
-      .clear({force: true})
-      .type('Chelsea');
+    cy.get('input[name="Content"]').clear({force: true}).type('Chelsea');
     cy.get('input[name="Link"]')
       .clear({force: true})
       .type('https://test.co.uk');
@@ -52,9 +50,7 @@ describe('Documentation Site - playground', () => {
   });
 
   it('Flag playground should update the content', () => {
-    cy.get('input[name="Content"]')
-      .clear({force: true})
-      .type('Chelsea');
+    cy.get('input[name="Content"]').clear({force: true}).type('Chelsea');
     cy.get(`${playgroundElement} [data-testid="flag"]`).contains('Chelsea');
   });
 });

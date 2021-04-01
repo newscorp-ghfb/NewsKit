@@ -137,13 +137,10 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
   )(props) as Partial<StylePreset> | Array<[string, StylePreset]>;
 
   if (Array.isArray(stylePreset)) {
-    return stylePreset.reduce(
-      (acc, [mq, preset]) => {
-        acc[mq] = getStylePresetValueFromTheme(preset, options);
-        return acc;
-      },
-      {} as CSSObject,
-    );
+    return stylePreset.reduce((acc, [mq, preset]) => {
+      acc[mq] = getStylePresetValueFromTheme(preset, options);
+      return acc;
+    }, {} as CSSObject);
   }
   return stylePreset ? getStylePresetValueFromTheme(stylePreset, options) : '';
 };

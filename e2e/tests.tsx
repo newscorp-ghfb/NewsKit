@@ -21,17 +21,14 @@ interface Scenario {
 const req = require.context('../src', true, /\.scenario\.tsx$/);
 const scenarios = req.keys().map(req) as Scenario[];
 
-const nameCounts = scenarios.reduce(
-  (acc, s) => {
-    if (!acc[s.default ? s.default.name : s.name]) {
-      acc[s.default ? s.default.name : s.name] = 1;
-    } else {
-      acc[s.default ? s.default.name : s.name] += 1;
-    }
-    return acc;
-  },
-  {} as Record<string, number>,
-);
+const nameCounts = scenarios.reduce((acc, s) => {
+  if (!acc[s.default ? s.default.name : s.name]) {
+    acc[s.default ? s.default.name : s.name] = 1;
+  } else {
+    acc[s.default ? s.default.name : s.name] += 1;
+  }
+  return acc;
+}, {} as Record<string, number>);
 
 const collisions = Object.entries(nameCounts).filter(([, count]) => count > 1);
 if (collisions.length >= 1) {

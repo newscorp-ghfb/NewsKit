@@ -32,13 +32,10 @@ export const removeMQEventListener = (
 export const createInitState = (
   mqPerBreakpoint: MediaQueries,
 ): BreakpointState =>
-  Object.entries(mqPerBreakpoint).reduce(
-    (state, [breakpointKey, mqString]) => {
-      const mql = window.matchMedia(mqString);
-      return {...state, [breakpointKey]: mql.matches};
-    },
-    {} as BreakpointState,
-  );
+  Object.entries(mqPerBreakpoint).reduce((state, [breakpointKey, mqString]) => {
+    const mql = window.matchMedia(mqString);
+    return {...state, [breakpointKey]: mql.matches};
+  }, {} as BreakpointState);
 
 export const getCurrentBreakpointKey = (
   state: BreakpointState,

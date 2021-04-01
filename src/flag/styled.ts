@@ -39,7 +39,10 @@ export const StyledBaseFlag = styled.div<
   ${({theme, overrides}) => {
     const getSizing = (tokenName: string) => {
       const token = getToken({theme, overrides}, '', '', tokenName);
-      return getSizingFromTheme(token, undefined)({
+      return getSizingFromTheme(
+        token,
+        undefined,
+      )({
         theme,
       });
     };

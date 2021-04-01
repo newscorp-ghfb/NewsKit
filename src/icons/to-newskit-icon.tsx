@@ -21,7 +21,7 @@ export const toNewsKitIcon = (
       vertical-align: unset;
       display: inline-block;
       ${size &&
-        `
+      `
       // https://css-tricks.com/the-sass-ampersand/#doubling-up-specificity
       && {
         width: ${size};

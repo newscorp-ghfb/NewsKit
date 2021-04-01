@@ -55,7 +55,7 @@ export const useKeypress = (
       const pressedKey = e.key;
 
       const keyMap = key && (keysMap[key as keyof typeof keysMap] || [key]);
-      if (action && (keyMap && keyMap.includes(pressedKey))) {
+      if (action && keyMap && keyMap.includes(pressedKey)) {
         action(e);
 
         e.preventDefault();

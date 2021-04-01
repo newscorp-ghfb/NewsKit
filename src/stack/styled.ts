@@ -138,7 +138,6 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     max-width: 100%;
   }
-
 `;
 
 // Stack as list

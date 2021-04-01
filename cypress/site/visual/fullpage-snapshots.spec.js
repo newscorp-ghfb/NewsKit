@@ -19,11 +19,9 @@ Object.entries(routes).forEach(route => {
       cy.eyesOpen();
       cy.mockConsentAndVisit(path);
       if (!['spacePresets', 'welcome'].includes(pageName)) {
-        cy.get('[data-testid="sample-code"]')
-          .first()
-          .scrollIntoView({
-            easing: 'linear',
-          });
+        cy.get('[data-testid="sample-code"]').first().scrollIntoView({
+          easing: 'linear',
+        });
       }
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();

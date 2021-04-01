@@ -98,23 +98,20 @@ export const Playground: React.FC<
   const {knobs = []} = props as PlaygroundProps;
 
   const [state, setState] = useState(() =>
-    knobs.reduce(
-      (acc, knobConfig) => {
-        const defaultOption = isMultiChoiceKnobConfig(knobConfig)
-          ? knobConfig.options.find(opt => opt.isDefault)
-          : {value: knobConfig.value};
+    knobs.reduce((acc, knobConfig) => {
+      const defaultOption = isMultiChoiceKnobConfig(knobConfig)
+        ? knobConfig.options.find(opt => opt.isDefault)
+        : {value: knobConfig.value};
 
-        return {
-          ...acc,
-          [knobConfig.propName]:
-            defaultOption &&
-            (acc[knobConfig.propName] !== undefined
-              ? deepMerge(acc[knobConfig.propName], defaultOption.value)
-              : defaultOption.value),
-        };
-      },
-      {} as Record<string, unknown>,
-    ),
+      return {
+        ...acc,
+        [knobConfig.propName]:
+          defaultOption &&
+          (acc[knobConfig.propName] !== undefined
+            ? deepMerge(acc[knobConfig.propName], defaultOption.value)
+            : defaultOption.value),
+      };
+    }, {} as Record<string, unknown>),
   );
 
   const {componentName} = props;

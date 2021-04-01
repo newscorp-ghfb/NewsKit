@@ -57,10 +57,6 @@ const assertKebabFileNames = createAsserter(
     } found! No spaces or uppercase characters - use kebab-case only.`,
 );
 
-getFiles('src')
-  .then(assertTestFolders)
-  .then(assertKebabFileNames);
+getFiles('src').then(assertTestFolders).then(assertKebabFileNames);
 
-getFiles('site')
-  .then(assertTestFolders)
-  .then(assertKebabFileNames);
+getFiles('site').then(assertTestFolders).then(assertKebabFileNames);

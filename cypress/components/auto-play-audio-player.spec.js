@@ -14,11 +14,7 @@ describe('auto play audio player', () => {
   it('should have auto played', () => {
     cy.get('[data-testid="audio-player-play-button"]').as('togglePlay');
     cy.get('@togglePlay').should('have.attr', 'aria-label', 'Pause');
-    cy.get('@togglePlay')
-      .click()
-      .should('have.attr', 'aria-label', 'Play');
-    cy.get('@togglePlay')
-      .click()
-      .should('have.attr', 'aria-label', 'Pause');
+    cy.get('@togglePlay').click().should('have.attr', 'aria-label', 'Play');
+    cy.get('@togglePlay').click().should('have.attr', 'aria-label', 'Pause');
   });
 });

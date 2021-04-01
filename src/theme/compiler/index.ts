@@ -37,27 +37,24 @@ const parseAndGet = (
 
   const tokens = parseTokens(value);
   if (tokens.length) {
-    return tokens.reduce(
-      (result: any, tokenPath) => {
-        let tokenValue = get(theme, tokenPath);
-        if (typeof tokenValue === 'undefined') {
-          errorLogger(
-            `Theme token "${tokenPath}" was not found when compiling theme!`,
-          );
-        } else {
-          // We recurse down with that token value to support things like colors
-          // e.g. (border color = interactiveNegative010 = red010 = #ff0000).
-          tokenValue = parseAndGet(theme, tokenValue, errorLogger, [
-            tokenPath,
-            ...stack,
-          ]);
-        }
-        return tokens.length > 1
-          ? result.replace(`{{${tokenPath}}}`, tokenValue as string)
-          : recurseUnknown(theme, tokenValue, errorLogger);
-      },
-      value as string,
-    );
+    return tokens.reduce((result: any, tokenPath) => {
+      let tokenValue = get(theme, tokenPath);
+      if (typeof tokenValue === 'undefined') {
+        errorLogger(
+          `Theme token "${tokenPath}" was not found when compiling theme!`,
+        );
+      } else {
+        // We recurse down with that token value to support things like colors
+        // e.g. (border color = interactiveNegative010 = red010 = #ff0000).
+        tokenValue = parseAndGet(theme, tokenValue, errorLogger, [
+          tokenPath,
+          ...stack,
+        ]);
+      }
+      return tokens.length > 1
+        ? result.replace(`{{${tokenPath}}}`, tokenValue as string)
+        : recurseUnknown(theme, tokenValue, errorLogger);
+    }, value as string);
   }
 
   // Not a token, return as is (e.g. hex code or px value).
@@ -77,31 +74,26 @@ const recurseUnknown = (
   }
   if (typeof value === 'object' && !Array.isArray(value)) {
     // Nested object, recurse down
-    return Object.entries(value as any).reduce(
-      (acc, [k, v]: any) => {
-        // Key could be a token, e.g. cropAdjustments fonts object
-        const key = parseAndGet(theme, k, errorLogger) as string;
+    return Object.entries(value as any).reduce((acc, [k, v]: any) => {
+      // Key could be a token, e.g. cropAdjustments fonts object
+      const key = parseAndGet(theme, k, errorLogger) as string;
 
-        if (key === '__extends' || key === '__deepExtends') {
-          const extendsObjects = (typeof v === 'string' ? [v] : v).map(
-            (extendsToken: string) =>
-              parseAndGet(theme, extendsToken, errorLogger) as
-                | object
-                | undefined,
-          );
-          const mergeFn =
-            key === '__deepExtends' ? deepMerge : Object.assign.bind(Object);
-          return mergeFn({}, acc, ...extendsObjects);
-        }
+      if (key === '__extends' || key === '__deepExtends') {
+        const extendsObjects = (typeof v === 'string' ? [v] : v).map(
+          (extendsToken: string) =>
+            parseAndGet(theme, extendsToken, errorLogger) as object | undefined,
+        );
+        const mergeFn =
+          key === '__deepExtends' ? deepMerge : Object.assign.bind(Object);
+        return mergeFn({}, acc, ...extendsObjects);
+      }
 
-        acc[key] = recurseUnknown(theme, v, errorLogger);
-        if (acc[key] === '__delete') {
-          delete acc[key];
-        }
-        return acc;
-      },
-      {} as any,
-    );
+      acc[key] = recurseUnknown(theme, v, errorLogger);
+      if (acc[key] === '__delete') {
+        delete acc[key];
+      }
+      return acc;
+    }, {} as any);
   }
   // Anything else, probably string, parse and get the token value
   return parseAndGet(theme, value, errorLogger);

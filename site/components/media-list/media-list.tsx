@@ -27,12 +27,7 @@ export const MediaList: React.FC<MediaListProps> = ({
   const renderCards = (layout?: 'vertical' | 'horizontal') =>
     cards.map(({media, description, title, href, styles}) => (
       <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
-        <StyledCard
-          layout={layout}
-          media={media}
-          title={title}
-          href={href}
-        >
+        <StyledCard layout={layout} media={media} title={title} href={href}>
           <TextBlock
             typographyPreset={
               styles?.description?.typographyPreset || 'editorialParagraph020'

@@ -76,12 +76,9 @@ export const groupColorObjects = (
 };
 
 export const createPaletteColorMap = (paletteColors: ThemeColor[]) =>
-  paletteColors.reduce(
-    (acc, color) => {
-      // eslint-disable-next-line no-multi-assign
-      const accGroup = (acc[color.value] = acc[color.value] || []);
-      accGroup.push(color);
-      return acc;
-    },
-    {} as Record<string, ThemeColor[]>,
-  );
+  paletteColors.reduce((acc, color) => {
+    // eslint-disable-next-line no-multi-assign
+    const accGroup = (acc[color.value] = acc[color.value] || []);
+    accGroup.push(color);
+    return acc;
+  }, {} as Record<string, ThemeColor[]>);

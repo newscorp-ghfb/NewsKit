@@ -137,7 +137,7 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
       {bylineData.map(
         ({author, href, title, location, ariaLabel}: BylineData, i) => {
           const lastItem = isLastItem(i, bylineData.length);
-          const hasLinkOnly = href && (!title && !location);
+          const hasLinkOnly = href && !title && !location;
           const hasLinkAndAuthorInfo = href && (title || location);
           const hasNoLink = !href;
           const authorNameLink = renderLink(

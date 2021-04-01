@@ -13,13 +13,10 @@ export const PropRenderer: React.FC<PropRendererProps> = ({
   Component,
   ...rest
 }) => {
-  const props = Object.entries(rest).reduce(
-    (acc, [k, v]) => {
-      const key = k.startsWith('_') ? `${k.slice(1)}` : k;
-      acc[key] = v;
-      return acc;
-    },
-    {} as Record<string, unknown>,
-  );
+  const props = Object.entries(rest).reduce((acc, [k, v]) => {
+    const key = k.startsWith('_') ? `${k.slice(1)}` : k;
+    acc[key] = v;
+    return acc;
+  }, {} as Record<string, unknown>);
   return <Component {...props} />;
 };

@@ -2,16 +2,13 @@ const filter = <T>(
   target: T,
   predicate: (x: [keyof T, T[keyof T]]) => boolean,
 ) =>
-  (Object.entries(target) as [keyof T, T[keyof T]][]).reduce(
-    (acc, obj) => {
-      if (predicate(obj)) {
-        const [key, value] = obj;
-        acc[key as keyof T] = value;
-      }
-      return acc;
-    },
-    {} as Partial<T>,
-  );
+  (Object.entries(target) as [keyof T, T[keyof T]][]).reduce((acc, obj) => {
+    if (predicate(obj)) {
+      const [key, value] = obj;
+      acc[key as keyof T] = value;
+    }
+    return acc;
+  }, {} as Partial<T>);
 
 export const filterObject = <T>(
   target: T,

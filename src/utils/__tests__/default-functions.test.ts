@@ -406,9 +406,10 @@ describe('get component defaults functions', () => {
 
               test('with override path', () => {
                 expect(
-                  fn(`responsiveTestComponent.${tokenPathEnd}`, tokenPathEnd)(
-                    props,
-                  ),
+                  fn(
+                    `responsiveTestComponent.${tokenPathEnd}`,
+                    tokenPathEnd,
+                  )(props),
                 ).toEqual(singleOverride);
               });
             });
@@ -452,9 +453,10 @@ describe('get component defaults functions', () => {
 
               test('with override path', () => {
                 expect(
-                  fn(`responsiveTestComponent.${tokenPathEnd}`, tokenPathEnd)(
-                    props,
-                  ),
+                  fn(
+                    `responsiveTestComponent.${tokenPathEnd}`,
+                    tokenPathEnd,
+                  )(props),
                 ).toMatchSnapshot('breakpoint-override-object:with-path-end');
               });
             });

@@ -62,53 +62,49 @@ export const StyledScrollNav = styled.div<
   ${({showStartShadow, vertical}) =>
     showStartShadow &&
     css`
-        ::before {
-          ${pseudoBasicStyle};
-          ${
-            vertical
-              ? `
+      ::before {
+        ${pseudoBasicStyle};
+        ${vertical
+          ? `
               top: 0;
               left: 0;
               right: 0;
               height: 2.4em;
             `
-              : `
+          : `
               top: 0;
               left: 0;  
               height: 100%;
               width: 2.4em;
-            `
-          }
+            `}
 
-          background-image: linear-gradient(
+        background-image: linear-gradient(
             ${vertical ? 'to top' : 'to left'},
             rgba(255,255,255,0) 0%,
             rgba(255,255,255,0.6)  50%
           );
-          transition: all linear 0.3s;
-        }
-      `}
+        transition: all linear 0.3s;
+      }
+    `}
 
    ${({showEndShadow, vertical}) =>
-     showEndShadow &&
-     css`
+    showEndShadow &&
+    css`
       ::after {
         ${pseudoBasicStyle};
-        ${
-          vertical
-            ? `
+        ${vertical
+          ? `
             bottom: 0;
             left: 0;
             right: 0;
             height: 2.4em;
           `
-            : `
+          : `
             top: 0;
             right: 0;
             height: 100%;
             width: 2.4em;
-          `
-        }
+          `}
 
         background-image: linear-gradient(
           ${vertical ? 'to bottom' : 'to right'},

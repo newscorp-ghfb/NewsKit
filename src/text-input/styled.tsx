@@ -19,7 +19,10 @@ export const StyledTextInputContainer = styled.div<TextInputProps>`
   ${({theme, overrides}) => {
     const getSizing = (tokenName: string) => {
       const token = getToken({theme, overrides}, '', '', tokenName);
-      return getSizingFromTheme(token, undefined)({
+      return getSizingFromTheme(
+        token,
+        undefined,
+      )({
         theme,
       });
     };
@@ -55,7 +58,7 @@ export const IconContainer = styled.span<{iconSpace: string}>`
 `;
 
 export const StyledInput = styled.input<StyledTextInputProps>`
-  &{
+  & {
     padding-right: ${({spaceInsetRight, valid, invalid}) =>
       (valid || invalid) && getSpacingFromTheme(spaceInsetRight)};
   }
@@ -79,17 +82,17 @@ export const StyledInput = styled.input<StyledTextInputProps>`
 `;
 
 export const StyledLabel = styled.label<StyledTextInputProps>`
-    display: block;
-    ${({$size}) => getStylePreset(`textInput.${$size}.label`, 'label')}
+  display: block;
+  ${({$size}) => getStylePreset(`textInput.${$size}.label`, 'label')}
+  ${({$size}) =>
+    getTypographyPreset(`textInput.${$size}.label`, 'label', {
+      withCrop: true,
+    })}
     ${({$size}) =>
-      getTypographyPreset(`textInput.${$size}.label`, 'label', {
-        withCrop: true,
-      })}
+    getSpacingStackHorizontal(`textInput.${$size}.label`, 'label')}
     ${({$size}) =>
-      getSpacingStackHorizontal(`textInput.${$size}.label`, 'label')}
-    ${({$size}) =>
-      getSpacingInlineHorizontal(`textInput.${$size}.label`, 'label')};
- `;
+    getSpacingInlineHorizontal(`textInput.${$size}.label`, 'label')};
+`;
 
 export const StyledAssistiveText = styled(TextBlock)<
   Omit<TextBlockProps, 'overrides'> & StyledTextInputProps

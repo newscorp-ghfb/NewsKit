@@ -81,25 +81,25 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
             (canHaveNonThemeValue && isValidUnit(themeKey, presetKey))) &&
           breakpointKeys.includes(breakpointKey),
       )
-      .reduce(
-        (acc, [key, presetKey], index, arr) => {
-          const preset =
-            section[presetKey] ||
-            /* istanbul ignore next */
-            (canHaveNonThemeValue && isValidUnit(themeKey, presetKey)
-              ? presetKey
-              : '');
-          // Get next key to set the max. This stops styles overlapping when they
-          // shouldn't by explicitly setting them for the range they need to apply on.
-          const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
-          const mediaQuery = getMediaQueryFromTheme(key, nextKey)({
-            theme,
-          });
-          acc[mediaQuery] = preset;
-          return acc;
-        },
-        {} as Record<string, unknown>,
-      );
+      .reduce((acc, [key, presetKey], index, arr) => {
+        const preset =
+          section[presetKey] ||
+          /* istanbul ignore next */
+          (canHaveNonThemeValue && isValidUnit(themeKey, presetKey)
+            ? presetKey
+            : '');
+        // Get next key to set the max. This stops styles overlapping when they
+        // shouldn't by explicitly setting them for the range they need to apply on.
+        const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
+        const mediaQuery = getMediaQueryFromTheme(
+          key,
+          nextKey,
+        )({
+          theme,
+        });
+        acc[mediaQuery] = preset;
+        return acc;
+      }, {} as Record<string, unknown>);
 
     return Object.entries(cssObject);
   }
@@ -129,23 +129,20 @@ export const getXFromTheme = (themeKey: keyof Theme) => <
   ) as Array<[string, string]>;
 
   if (Array.isArray(value)) {
-    return value.reduce(
-      (acc, [mq, preset]) => {
-        let mqValue;
-        if (typeof cssProperty === 'string') {
-          mqValue = {[cssProperty]: preset};
-        }
-        if (typeof cssProperty === 'function') {
-          mqValue = cssProperty(preset);
-        }
-        /* istanbul ignore next */
-        if (mqValue) {
-          acc[mq] = mqValue;
-        }
-        return acc;
-      },
-      {} as CSSObject,
-    );
+    return value.reduce((acc, [mq, preset]) => {
+      let mqValue;
+      if (typeof cssProperty === 'string') {
+        mqValue = {[cssProperty]: preset};
+      }
+      if (typeof cssProperty === 'function') {
+        mqValue = cssProperty(preset);
+      }
+      /* istanbul ignore next */
+      if (mqValue) {
+        acc[mq] = mqValue;
+      }
+      return acc;
+    }, {} as CSSObject);
   }
 
   if (typeof cssProperty === 'string' && isNotNullOrEmpty(value)) {

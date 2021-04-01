@@ -107,7 +107,10 @@ export const getTabsBarIndicatorStyle = (
     'motionDuration',
   );
 
-  const motionDuration = getMotionFromTheme(motionDurationToken, undefined)({
+  const motionDuration = getMotionFromTheme(
+    motionDurationToken,
+    undefined,
+  )({
     theme,
   });
 
@@ -117,7 +120,10 @@ export const getTabsBarIndicatorStyle = (
     'selectionIndicator.indicator',
     'motionTiming',
   );
-  const motionTiming = getMotionFromTheme(motionTimingToken, undefined)({
+  const motionTiming = getMotionFromTheme(
+    motionTimingToken,
+    undefined,
+  )({
     theme,
   });
 

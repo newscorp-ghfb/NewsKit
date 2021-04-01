@@ -80,7 +80,10 @@ describe('getXFromTheme', () => {
   });
 
   test('getSizingCssFromTheme non MQ', () => {
-    const result = getSizingCssFromTheme('width', 'sizing050')({
+    const result = getSizingCssFromTheme(
+      'width',
+      'sizing050',
+    )({
       theme,
     });
     expect(result).toEqual({width: '24px'});
@@ -104,7 +107,10 @@ describe('getXFromTheme', () => {
   });
   test('getSizingCssFromTheme non MQ and callback', () => {
     const cb = (value: string) => ({width: value});
-    const result = getSizingCssFromTheme(cb, 'sizing050')({
+    const result = getSizingCssFromTheme(
+      cb,
+      'sizing050',
+    )({
       theme,
     });
     expect(result).toEqual({width: '24px'});
@@ -129,14 +135,24 @@ describe('getXFromTheme', () => {
   });
 
   test('getResponsiveSize non MQ with Plain css value', () => {
-    const result = getResponsiveSize('minWidth', 'tabs', '', 'width')({
+    const result = getResponsiveSize(
+      'minWidth',
+      'tabs',
+      '',
+      'width',
+    )({
       theme,
     });
     expect(result).toEqual({minWidth: '100%'});
   });
 
   test('getResponsiveSize non MQ with Token value', () => {
-    const result = getResponsiveSize('minWidth', 'tabs', '', 'size')({
+    const result = getResponsiveSize(
+      'minWidth',
+      'tabs',
+      '',
+      'size',
+    )({
       theme,
     });
     expect(result).toEqual({minWidth: '4px'});
@@ -144,14 +160,24 @@ describe('getXFromTheme', () => {
 
   test('getResponsiveSize non MQ with token value and callback', () => {
     const cb = (value: string) => ({minWidth: value});
-    const result = getResponsiveSize(cb, 'tabs', '', 'size')({
+    const result = getResponsiveSize(
+      cb,
+      'tabs',
+      '',
+      'size',
+    )({
       theme,
     });
     expect(result).toEqual({minWidth: '4px'});
   });
 
   test('getResponsiveSize with MQ', () => {
-    const result = getResponsiveSize('minWidth', 'tabs', '', 'sizing')({
+    const result = getResponsiveSize(
+      'minWidth',
+      'tabs',
+      '',
+      'sizing',
+    )({
       theme,
     });
     expect(result).toEqual({
@@ -169,7 +195,12 @@ describe('getXFromTheme', () => {
 
   test('getResponsiveSize with MQ and callback', () => {
     const cb = (value: string) => ({minWidth: value});
-    const result = getResponsiveSize(cb, 'tabs', '', 'sizing')({
+    const result = getResponsiveSize(
+      cb,
+      'tabs',
+      '',
+      'sizing',
+    )({
       theme,
     });
     expect(result).toEqual({
@@ -186,14 +217,24 @@ describe('getXFromTheme', () => {
   });
 
   test('getResponsiveSpace', () => {
-    const result = getResponsiveSpace('minWidth', 'tabs', '', 'space')({
+    const result = getResponsiveSpace(
+      'minWidth',
+      'tabs',
+      '',
+      'space',
+    )({
       theme,
     });
     expect(result).toEqual({minWidth: '4px'});
   });
 
   test('getResponsiveBorder', () => {
-    const result = getResponsiveBorder('border', 'tabs', '', 'weight')({
+    const result = getResponsiveBorder(
+      'border',
+      'tabs',
+      '',
+      'weight',
+    )({
       theme,
     });
     expect(result).toEqual({border: '2px'});

@@ -236,9 +236,10 @@ describe('Image', () => {
       };
       const mockOnLoadHandler = jest.fn();
       renderHook(() =>
-        useClientSide(mockOnLoadHandler, imageRef as RefObject<
-          HTMLImageElement
-        >),
+        useClientSide(
+          mockOnLoadHandler,
+          imageRef as RefObject<HTMLImageElement>,
+        ),
       );
       expect(mockOnLoadHandler).toHaveBeenCalled();
     });
@@ -251,9 +252,10 @@ describe('Image', () => {
       };
       const mockOnLoadHandler = jest.fn();
       renderHook(() =>
-        useClientSide(mockOnLoadHandler, imageRef as RefObject<
-          HTMLImageElement
-        >),
+        useClientSide(
+          mockOnLoadHandler,
+          imageRef as RefObject<HTMLImageElement>,
+        ),
       );
       expect(mockOnLoadHandler).toHaveBeenCalledTimes(0);
     });

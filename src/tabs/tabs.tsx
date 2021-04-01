@@ -64,8 +64,10 @@ export const Tabs: React.FC<TabsProps> = ({
   const align = getAlign(initialAlign, vertical);
 
   // filter out children which are not Tab component
-  const tabsOnlyChildren = React.Children.toArray(children).filter(
-    (child: React.ReactElement) => hasMatchingDisplayNameWith(child, Tab),
+  const tabsOnlyChildren = React.Children.toArray(
+    children,
+  ).filter((child: React.ReactElement) =>
+    hasMatchingDisplayNameWith(child, Tab),
   );
 
   // The index of the active tab - this is what we change on click to trigger a visual tab change
@@ -217,44 +219,41 @@ export const Tabs: React.FC<TabsProps> = ({
     return tab;
   };
 
-  const tabs = tabData.reduce(
-    (acc, tab, index, array) => {
-      acc.push(
-        <StyledDistributionWrapper
-          distribution={distribution || TabsDistribution.Start}
-          numberOfSiblings={array.length}
-          data-testid="distribution-wrapper"
-          vertical={vertical}
+  const tabs = tabData.reduce((acc, tab, index, array) => {
+    acc.push(
+      <StyledDistributionWrapper
+        distribution={distribution || TabsDistribution.Start}
+        numberOfSiblings={array.length}
+        data-testid="distribution-wrapper"
+        vertical={vertical}
+      >
+        <TabInternal
+          key={tab.key}
+          selected={tab.selected}
+          autoFocus={tab.autoFocus}
+          size={size}
+          onKeyDown={handleKeyDown}
+          onClick={() => setActiveTabIndex(tab.key)}
+          disabled={tab.disabled}
+          ref={tab.selected ? activeTabRef : undefined}
+          id={tab.id}
+          align={align}
+          overrides={{
+            ...tab.overrides,
+            width: '100%',
+            height: vertical ? '100%' : '',
+          }}
         >
-          <TabInternal
-            key={tab.key}
-            selected={tab.selected}
-            autoFocus={tab.autoFocus}
-            size={size}
-            onKeyDown={handleKeyDown}
-            onClick={() => setActiveTabIndex(tab.key)}
-            disabled={tab.disabled}
-            ref={tab.selected ? activeTabRef : undefined}
-            id={tab.id}
-            align={align}
-            overrides={{
-              ...tab.overrides,
-              width: '100%',
-              height: vertical ? '100%' : '',
-            }}
-          >
-            {getChildren(tab.label)}
-          </TabInternal>
-        </StyledDistributionWrapper>,
-      );
+          {getChildren(tab.label)}
+        </TabInternal>
+      </StyledDistributionWrapper>,
+    );
 
-      if (divider && index < array.length - 1) {
-        acc.push(addStackDivider(tab.key));
-      }
-      return acc;
-    },
-    [] as React.ReactElement[],
-  );
+    if (divider && index < array.length - 1) {
+      acc.push(addStackDivider(tab.key));
+    }
+    return acc;
+  }, [] as React.ReactElement[]);
 
   return (
     <StyledTabGroup

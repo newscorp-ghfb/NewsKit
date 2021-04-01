@@ -38,19 +38,16 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   )(props) as Partial<TypographyPreset> | Array<[string, CSSObject]>;
 
   if (Array.isArray(typographyPreset)) {
-    return typographyPreset.reduce(
-      (acc, [mq, cssObject]) => {
-        let cssObjectFinal = cssObject;
+    return typographyPreset.reduce((acc, [mq, cssObject]) => {
+      let cssObjectFinal = cssObject;
 
-        if (withCrop && !Array.isArray(cssObject)) {
-          cssObjectFinal = applyCrop(cssObject);
-        }
+      if (withCrop && !Array.isArray(cssObject)) {
+        cssObjectFinal = applyCrop(cssObject);
+      }
 
-        acc[mq] = cssObjectFinal;
-        return acc;
-      },
-      {} as CSSObject,
-    );
+      acc[mq] = cssObjectFinal;
+      return acc;
+    }, {} as CSSObject);
   }
 
   if (typographyPreset && withCrop && !Array.isArray(typographyPreset)) {
@@ -87,13 +84,10 @@ export const getSpacingFromTheme = <Props extends ThemeProp>(
     customProp,
   )(props) as string | Array<[string, string]>;
   if (Array.isArray(value)) {
-    return value.reduce(
-      (acc, [mq, preset]) => {
-        acc[mq] = cssProp && {[cssProp]: preset};
-        return acc;
-      },
-      {} as CSSObject,
-    );
+    return value.reduce((acc, [mq, preset]) => {
+      acc[mq] = cssProp && {[cssProp]: preset};
+      return acc;
+    }, {} as CSSObject);
   }
 
   return cssProp ? {[cssProp]: value} : value;
@@ -111,13 +105,10 @@ export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
     customProp,
   )(props) as string | Array<[string, string]>;
   if (Array.isArray(padding)) {
-    return padding.reduce(
-      (acc, [mq, preset]) => {
-        acc[mq] = {padding: preset};
-        return acc;
-      },
-      {} as CSSObject,
-    );
+    return padding.reduce((acc, [mq, preset]) => {
+      acc[mq] = {padding: preset};
+      return acc;
+    }, {} as CSSObject);
   }
 
   return {padding};
@@ -135,13 +126,10 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
     customProp,
   )(props) as string | Array<[string, string]>;
   if (Array.isArray(margin)) {
-    return margin.reduce(
-      (acc, [mq, preset]) => {
-        acc[mq] = {margin: preset};
-        return acc;
-      },
-      {} as CSSObject,
-    );
+    return margin.reduce((acc, [mq, preset]) => {
+      acc[mq] = {margin: preset};
+      return acc;
+    }, {} as CSSObject);
   }
 
   return {margin};

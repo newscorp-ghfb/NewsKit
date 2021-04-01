@@ -20,10 +20,7 @@ const ListItem = styled.li<OrderedListProps>`
   &::before {
     content: counter(item-counter) '. ';
     ${getStylePreset('orderedList.counter', 'counter')}
-    ${getTypographyPreset(
-      'orderedList.counter',
-      'counter',
-    )}
+    ${getTypographyPreset('orderedList.counter', 'counter')}
     display: inline-block;
     min-width: ${getMinWidth('orderedList.counter', 'counter')};
   }

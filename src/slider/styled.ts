@@ -156,7 +156,10 @@ export const StyledThumbValue = styled.div<StyledThumbValueProps>`
     })}
 
   ${({vertical, ...rest}) => {
-    const thumbLabelSpace = getSpace('slider.thumbLabel', 'thumbLabel')({
+    const thumbLabelSpace = getSpace(
+      'slider.thumbLabel',
+      'thumbLabel',
+    )({
       ...rest,
     });
     return vertical
@@ -191,7 +194,10 @@ const getLabelMargin = ({
   if (labelPosition !== LabelPosition.Inline) {
     return '';
   }
-  const marginAmount = getSpace('slider.labels', 'labels')({
+  const marginAmount = getSpace(
+    'slider.labels',
+    'labels',
+  )({
     ...rest,
   });
 

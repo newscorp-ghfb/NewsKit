@@ -40,10 +40,11 @@ export const StyledCardContainerMedia = styled.div<
 
   ${({layout}) => {
     if (isHorizontal(layout) && isReverse(layout))
-      return getDefaultedValue(getSpacingFromTheme, 'spaceStack', 'marginLeft')(
-        'card.mediaContainer',
-        'mediaContainer',
-      );
+      return getDefaultedValue(
+        getSpacingFromTheme,
+        'spaceStack',
+        'marginLeft',
+      )('card.mediaContainer', 'mediaContainer');
 
     return (isHorizontal(layout)
       ? getSpacingStackVertical

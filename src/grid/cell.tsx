@@ -55,77 +55,71 @@ const cleanCss = (
 const generateBreakpointConfig = (props: CellProps & GridProps & ThemeProp) => {
   const {theme} = props;
   // Generate the CSS for each breakpoint
-  const cssObjects = breakpointKeys.reduce(
-    (acc, breakpoint) => {
-      const cellCss: CSSObject = {};
-      if (props[`${breakpoint}Hidden` as keyof CellProps]) {
-        cellCss.display = 'none';
-      } else {
-        // Get props/default values we need
-        const halfColumnGutter =
-          getOverridableProp(OverrideProp.ColumnGutter, breakpoint, props) / 2;
-        const rowGutter = getOverridableProp(
-          OverrideProp.RowGutter,
+  const cssObjects = breakpointKeys.reduce((acc, breakpoint) => {
+    const cellCss: CSSObject = {};
+    if (props[`${breakpoint}Hidden` as keyof CellProps]) {
+      cellCss.display = 'none';
+    } else {
+      // Get props/default values we need
+      const halfColumnGutter =
+        getOverridableProp(OverrideProp.ColumnGutter, breakpoint, props) / 2;
+      const rowGutter = getOverridableProp(
+        OverrideProp.RowGutter,
+        breakpoint,
+        props,
+      );
+
+      const colOffset = parseInt(
+        getInheritedValue(OverrideProp.Offset, breakpoint, props) || '0',
+        10,
+      );
+      const colSpan =
+        getInheritedValue(OverrideProp.Span, breakpoint, props) || 1;
+
+      // Common CSS
+      cellCss.display = 'block';
+      cellCss.order =
+        (props[
+          `${breakpoint}Order` as keyof CellProps
+        ] as CellProps['xsOrder']) || undefined;
+      cellCss.padding = halfColumnGutter ? `0 ${halfColumnGutter}px` : 0;
+      cellCss.marginTop = rowGutter ? `${rowGutter}px` : 0;
+
+      // Specific CSS to either numeric span or full-width
+      if (colSpan === 'full-width') {
+        // Full width (12 span and breaks out of margin) Cell
+        const margin = getOverridableProp(
+          OverrideProp.Margin,
           breakpoint,
           props,
         );
-
-        const colOffset = parseInt(
-          getInheritedValue(OverrideProp.Offset, breakpoint, props) || '0',
-          10,
-        );
-        const colSpan =
-          getInheritedValue(OverrideProp.Span, breakpoint, props) || 1;
-
-        // Common CSS
-        cellCss.display = 'block';
-        cellCss.order =
-          (props[
-            `${breakpoint}Order` as keyof CellProps
-          ] as CellProps['xsOrder']) || undefined;
-        cellCss.padding = halfColumnGutter ? `0 ${halfColumnGutter}px` : 0;
-        cellCss.marginTop = rowGutter ? `${rowGutter}px` : 0;
-
-        // Specific CSS to either numeric span or full-width
-        if (colSpan === 'full-width') {
-          // Full width (12 span and breaks out of margin) Cell
-          const margin = getOverridableProp(
-            OverrideProp.Margin,
-            breakpoint,
-            props,
-          );
-          cellCss.flexBasis = `calc(100% + ${margin * 2}px)`;
-          cellCss.maxWidth = `calc(100% + ${margin * 2}px)`;
-          cellCss.marginLeft = margin ? `-${margin}px` : 0;
-        } else {
-          // Standard 1-12 column spanning Cell
-          const colWidth = 100 / theme.componentDefaults.grid.columns;
-          const width = +colSpan * colWidth;
-          const offsetColumnGutter = colOffset * colWidth;
-          cellCss.marginLeft =
-            offsetColumnGutter > 0 ? `${offsetColumnGutter}%;` : 0;
-          cellCss.flexBasis = `${width}%`;
-          cellCss.maxWidth = `${width}%`;
-        }
+        cellCss.flexBasis = `calc(100% + ${margin * 2}px)`;
+        cellCss.maxWidth = `calc(100% + ${margin * 2}px)`;
+        cellCss.marginLeft = margin ? `-${margin}px` : 0;
+      } else {
+        // Standard 1-12 column spanning Cell
+        const colWidth = 100 / theme.componentDefaults.grid.columns;
+        const width = +colSpan * colWidth;
+        const offsetColumnGutter = colOffset * colWidth;
+        cellCss.marginLeft =
+          offsetColumnGutter > 0 ? `${offsetColumnGutter}%;` : 0;
+        cellCss.flexBasis = `${width}%`;
+        cellCss.maxWidth = `${width}%`;
       }
-      acc[breakpoint] = cellCss;
-      return acc;
-    },
-    {} as Record<BreakpointKeys, CSSObject>,
-  );
+    }
+    acc[breakpoint] = cellCss;
+    return acc;
+  }, {} as Record<BreakpointKeys, CSSObject>);
 
   // Filter out unneeded CSS, working down from XL
   reverseBreakpointKeys.reduce(cleanCss, cssObjects);
 
   // Render out each breakpoints (cleaned) CSS
   return css`
-    ${breakpointKeys.reduce(
-      (acc, k) => {
-        acc[getMediaQueryFromTheme(k)({theme})] = cssObjects[k];
-        return acc;
-      },
-      {} as Record<string, CSSObject>,
-    )};
+    ${breakpointKeys.reduce((acc, k) => {
+      acc[getMediaQueryFromTheme(k)({theme})] = cssObjects[k];
+      return acc;
+    }, {} as Record<string, CSSObject>)};
   `;
 };
 

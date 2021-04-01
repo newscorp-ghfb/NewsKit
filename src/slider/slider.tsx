@@ -171,9 +171,7 @@ export const Slider: React.FC<SliderProps> = ({
   );
 
   const inlineLabels = labelPosition === LabelPosition.Inline;
-  const labelContainer = inlineLabels ? (
-    undefined
-  ) : (
+  const labelContainer = inlineLabels ? undefined : (
     <LabelContainer
       labelPosition={labelPosition}
       vertical={vertical}
