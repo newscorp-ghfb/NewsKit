@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'airbnb-typescript',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
+    'prettier',
   ],
   plugins: ['cup', 'header', 'prettier', 'react-hooks'],
   env: {
@@ -17,6 +17,7 @@ module.exports = {
     window: true
   },
   rules: {
+    'no-undef': 'off',
     'react/prop-types': 'off',
     'react/forbid-prop-types': 'error',
     'react-hooks/rules-of-hooks': 'error',
