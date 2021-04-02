@@ -7743,6 +7743,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   box-sizing: border-box;
   display: block;
   position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-right: 16px;
 }
 
@@ -7761,6 +7764,9 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -34386,6 +34392,9 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-right: 16px;
 }
 
@@ -34404,6 +34413,9 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

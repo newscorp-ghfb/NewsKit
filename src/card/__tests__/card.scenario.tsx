@@ -839,9 +839,6 @@ export default {
                       src: '/placeholder-2x3.png',
                       alt: 'Card Media',
                       loadingAspectRatio: '2:3',
-                      overrides: {
-                        height: '300px',
-                      },
                     }}
                     actions={cardSmallTags}
                   >
@@ -883,10 +880,6 @@ export default {
                     media={{
                       src: '/placeholder-2x3.png',
                       alt: 'Card Media',
-                      loadingAspectRatio: '2:3',
-                      overrides: {
-                        width: '200px',
-                      },
                     }}
                     actions={cardSmallTags}
                   >
@@ -932,9 +925,6 @@ export default {
                       src: '/placeholder-2x3.png',
                       alt: 'Card Media',
                       loadingAspectRatio: '2:3',
-                      overrides: {
-                        height: '300px',
-                      },
                     }}
                     actions={cardSmallTags}
                   >
@@ -980,9 +970,6 @@ export default {
                       src: '/placeholder-2x3.png',
                       alt: 'Card Media',
                       loadingAspectRatio: '2:3',
-                      overrides: {
-                        height: '300px',
-                      },
                     }}
                     actions={cardSmallTags}
                   >
@@ -1030,9 +1017,6 @@ export default {
                       src: '/placeholder-2x3.png',
                       alt: 'Card Media',
                       loadingAspectRatio: '2:3',
-                      overrides: {
-                        height: '300px',
-                      },
                     }}
                     actions={cardSmallTags}
                     overrides={{
@@ -1104,9 +1088,6 @@ export default {
                       src: '/placeholder-2x3.png',
                       alt: 'Card Media',
                       loadingAspectRatio: '2:3',
-                      overrides: {
-                        height: '300px',
-                      },
                     }}
                     actions={cardSmallTags}
                     overrides={{
@@ -1155,6 +1136,139 @@ export default {
         </React.Fragment>
       ),
     },
+    {
+      name: 'card-horizontal-with-ratio',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Card horizontal with ratio (3:1)</StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={6} md={5}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    layout="horizontal"
+                    media={{
+                      src: '/placeholder-3x2.png',
+                      alt: 'Card Media',
+                      loadingAspectRatio: '3:2',
+                    }}
+                    overrides={{
+                      horizontalRatio: '3:1',
+                    }}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline kickerText="SHORT">
+                        title of the card describing the main content
+                      </Headline>
+                    </Block>
+                    <TextBlock
+                      stylePreset="cardTeaserLead"
+                      typographyPreset={
+                        cardTypographyPresets.cardTeaserLeadSmall
+                      }
+                    >
+                      A short paragraph description of the article, outlining
+                      the main story and focus.
+                    </TextBlock>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-horizontal-with-ratio-falsy-value',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Card horizontal with falsy value</StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={6} md={5}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    layout="horizontal"
+                    media={{
+                      src: '/placeholder-3x2.png',
+                      alt: 'Card Media',
+                      loadingAspectRatio: '3:2',
+                    }}
+                    overrides={{
+                      horizontalRatio: '',
+                    }}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline kickerText="SHORT">
+                        title of the card describing the main content
+                      </Headline>
+                    </Block>
+                    <TextBlock
+                      stylePreset="cardTeaserLead"
+                      typographyPreset={
+                        cardTypographyPresets.cardTeaserLeadSmall
+                      }
+                    >
+                      A short paragraph description of the article, outlining
+                      the main story and focus.
+                    </TextBlock>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-horizontal-reverse-with-ratio',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card horizontal-reverse with ratio (3:1)
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={6} md={5}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <CardInset
+                    layout="horizontal-reverse"
+                    href="https://newskit.co.uk/"
+                    mediaInteractive
+                    media={{
+                      src: '/placeholder-2x3.png',
+                      alt: 'Card Media',
+                      loadingAspectRatio: '2:3',
+                    }}
+                    overrides={{
+                      horizontalRatio: '3:1',
+                    }}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline kickerText="SHORT">
+                        title of the card describing the main content
+                      </Headline>
+                    </Block>
+                    <TextBlock
+                      stylePreset="cardTeaserLead"
+                      typographyPreset={
+                        cardTypographyPresets.cardTeaserLeadSmall
+                      }
+                    >
+                      A short paragraph description of the article, outlining
+                      the main story and focus.
+                    </TextBlock>
+                  </CardInset>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
     // The next scenario is only for showcase. It is excluded from Applitools.
     // Please don't place any other stories after this one.
     {
@@ -1178,10 +1292,8 @@ export default {
                       src: '/placeholder-3x2.png',
                       alt: 'Card Media',
                       loadingAspectRatio: '3:2',
-                      overrides: {
-                        height: '400px',
-                      },
                     }}
+                    overrides={{horizontalRatio: '2:3'}}
                     actions={() => (
                       <Link href="https://google.com">Read the full story</Link>
                     )}
@@ -1449,9 +1561,9 @@ export default {
                         src: '/placeholder-3x2.png',
                         alt: 'Card Media',
                         loadingAspectRatio: '3:2',
-                        overrides: {
-                          height: '100px',
-                        },
+                      }}
+                      overrides={{
+                        horizontalRatio: '1:2',
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>
@@ -1476,9 +1588,9 @@ export default {
                         src: '/placeholder-3x2.png',
                         alt: 'Card Media',
                         loadingAspectRatio: '3:2',
-                        overrides: {
-                          height: '100px',
-                        },
+                      }}
+                      overrides={{
+                        horizontalRatio: '1:2',
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>
@@ -1503,9 +1615,9 @@ export default {
                         src: '/placeholder-3x2.png',
                         alt: 'Card Media',
                         loadingAspectRatio: '3:2',
-                        overrides: {
-                          height: '100px',
-                        },
+                      }}
+                      overrides={{
+                        horizontalRatio: '1:2',
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>
@@ -1530,9 +1642,9 @@ export default {
                         src: '/placeholder-3x2.png',
                         alt: 'Card Media',
                         loadingAspectRatio: '3:2',
-                        overrides: {
-                          height: '100px',
-                        },
+                      }}
+                      overrides={{
+                        horizontalRatio: '1:2',
                       }}
                     >
                       <Block spaceStack={cardTeaserHeadline}>

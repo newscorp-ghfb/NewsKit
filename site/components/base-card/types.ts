@@ -1,6 +1,6 @@
 import {CardProps} from 'newskit';
 
-export interface BaseCardProps extends Omit<CardProps, 'overrides'> {
+export interface BaseCardProps extends CardProps {
   title?: string;
   children: React.ReactNode;
 }

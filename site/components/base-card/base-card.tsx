@@ -7,10 +7,12 @@ export const BaseCard: React.FC<BaseCardProps> = ({
   title,
   children,
   href,
+  overrides,
   ...rest
 }) => {
-  const overrides = href
+  const cardOverrides = href
     ? {
+        ...overrides,
         stylePreset: 'baseCardInteractive',
         teaserContainer: {
           spaceInset: 'space050',
@@ -20,6 +22,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
         },
       }
     : {
+        ...overrides,
         stylePreset: 'baseCardNonInteractive',
         teaserContainer: {
           spaceInset: 'spaceInsetStretch010',
@@ -29,7 +32,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
         },
       };
   return (
-    <StyledCard overrides={overrides} href={href} {...rest}>
+    <StyledCard overrides={cardOverrides} href={href} {...rest}>
       <Block spaceStack="space045">
         <Headline
           overrides={{

@@ -329,10 +329,59 @@ describe('Card with horizontal layout', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+  test('renders correctly with custom horizontalRatio (3:1)', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      media: customMediaComponentWithOverridesAndSize,
+      layout: 'horizontal',
+      overrides: {horizontalRatio: '3:1'},
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+  test('falls back to default horizontalRatio if a falsy is passed', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      media: customMediaComponentWithOverridesAndSize,
+      layout: 'horizontal',
+      overrides: {horizontalRatio: ''},
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('doesnt apply the flex property if none is passed', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      media: customMediaComponentWithOverridesAndSize,
+      layout: 'horizontal',
+      overrides: {horizontalRatio: 'none'},
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('does not apply flex on the sections if invalid value is passed (anything that does not consist of integer:integer)', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      media: customMediaComponentWithOverridesAndSize,
+      layout: 'horizontal',
+      overrides: {horizontalRatio: 'invalid:invalid'},
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders correctly with horizontal-reverse layout', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       media: customMediaComponentWithOverridesAndSize,
       layout: 'horizontal-reverse',
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders correctly with horizontal-reverse layout and custom horizontalRatio (3:1)', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      media: customMediaComponentWithOverridesAndSize,
+      layout: 'horizontal-reverse',
+      overrides: {horizontalRatio: '3:1'},
       children: cardBody,
     });
     expect(fragment).toMatchSnapshot();

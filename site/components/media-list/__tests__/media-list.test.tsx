@@ -17,29 +17,6 @@ const staticCard = {
   description: 'card with optional title ',
 };
 
-const cardWithStyles = {
-  label: 'styled card label',
-  title: 'styled card title ',
-  description: 'styled card description',
-  styles: {
-    card: {
-      stylePreset: 'cardContainerNonInteractive030',
-    },
-    label: {
-      stylePreset: 'inkContrast',
-      typographyPreset: 'editorialHeadline020',
-    },
-    title: {
-      stylePreset: 'inkContrast',
-      typographyPreset: 'editorialHeadline020',
-    },
-    description: {
-      stylePreset: 'inkContrast',
-      typographyPreset: 'editorialHeadline020',
-    },
-  },
-};
-
 describe('Media List', () => {
   test('renders with default layout', () => {
     const fragment = renderToFragmentWithTheme(MediaList, {
@@ -50,7 +27,7 @@ describe('Media List', () => {
 
   test('renders with custom layout', () => {
     const fragment = renderToFragmentWithTheme(MediaList, {
-      cards: [interactiveCard, staticCard, cardWithStyles],
+      cards: [interactiveCard, staticCard],
       layout: '3-span-hero',
       spaceStack: 'space110',
       gridProps: {

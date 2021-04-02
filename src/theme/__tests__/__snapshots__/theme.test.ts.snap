@@ -367,6 +367,7 @@ Object {
           },
         },
       },
+      "horizontalRatio": "1:1",
       "mediaContainer": Object {
         "spaceStack": Object {
           "lg": "space050",
@@ -393,6 +394,7 @@ Object {
         },
         "stylePreset": "cardContainerActions",
       },
+      "horizontalRatio": "1:1",
       "mediaContainer": Object {
         "spaceStack": "space000",
         "stylePreset": "cardContainerMedia",

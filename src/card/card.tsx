@@ -17,6 +17,7 @@ import {BaseLinkProps} from '../link';
 import {Theme, useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {deepMerge} from '../utils/deep-merge';
+import {getHorizontalRatio} from './utils';
 
 const renderMedia = (media: CardProps['media']) =>
   renderComponent(media) || (
@@ -152,6 +153,13 @@ export const Card: React.FC<CardProps> = ({
   className,
 }) => {
   const hasHref = Boolean(href);
+  const theme = useTheme();
+  const [mediaRatio, teaserRatio] = getHorizontalRatio(
+    layout,
+    theme.componentDefaults.card,
+    overrides,
+  );
+
   return (
     <StyledCardContainer
       className={className}
@@ -165,6 +173,7 @@ export const Card: React.FC<CardProps> = ({
           mediaInteractive={mediaInteractive}
           hasHref={hasHref}
           overrides={overrides}
+          flex={mediaRatio}
         >
           {renderMedia(media)}
         </StyledCardContainerMedia>
@@ -173,6 +182,7 @@ export const Card: React.FC<CardProps> = ({
       <StyledCardContainerTeaserAndActions
         layout={layout}
         overrides={overrides}
+        flex={teaserRatio}
       >
         {children && (
           <StyledCardContainerTeaser

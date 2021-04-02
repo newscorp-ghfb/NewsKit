@@ -26,7 +26,8 @@ export const StyledCardContainer = styled.div<
 `;
 
 export const StyledCardContainerMedia = styled.div<
-  Pick<CardProps, 'mediaInteractive' | 'layout' | 'overrides'> & HasHref
+  Pick<CardProps, 'mediaInteractive' | 'layout' | 'overrides'> &
+    HasHref & {flex: string}
 >`
   box-sizing: border-box;
   display: block;
@@ -37,6 +38,7 @@ export const StyledCardContainerMedia = styled.div<
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     min-height: 1px;
   }
+  ${({layout, flex}) => isHorizontal(layout) && `flex: ${flex};`}
 
   ${({layout}) => {
     if (isHorizontal(layout) && isReverse(layout))
@@ -57,14 +59,14 @@ export const StyledCardContainerMedia = styled.div<
 `;
 
 export const StyledCardContainerTeaserAndActions = styled.div<
-  Pick<CardProps, 'layout' | 'overrides'>
+  Pick<CardProps, 'layout' | 'overrides'> & HasHref & {flex: string}
 >`
   box-sizing: border-box;
-
-  ${({layout}) =>
+  ${({layout, flex}) =>
     isHorizontal(layout) &&
     `display: flex;
       flex-direction: column;
+      flex: ${flex};
       /* Needed for IE FLEX CHILDREN TEXT NOT WRAPPING bug: https://medium.com/codeart-mk/internet-explorer-hacks-796200e5741c */
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         min-width: 1px;

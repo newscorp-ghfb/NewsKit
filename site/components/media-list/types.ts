@@ -12,6 +12,7 @@ export interface MediaListProps {
     | '4-span';
   spaceStack?: string;
   gridProps?: GridProps;
+  horizontalRatio?: string;
   parentCellProps?: CellProps;
 }
 
@@ -26,9 +27,4 @@ export interface MediaItem {
   description: string;
   media?: ImageProps;
   href?: string;
-  styles?: {
-    label?: TextBlockPresets;
-    title?: TextBlockPresets;
-    description?: TextBlockPresets;
-  };
 }

@@ -10,7 +10,7 @@ export default (layoutProps: LayoutProps) => (
     pageIntroduction={{
       type: 'Component',
       name: 'Button',
-      hero: {src: '/static/button-hero.svg', alt: 'buttom-hero-image'},
+      hero: {src: '/static/button-hero.svg', alt: 'button-hero-image'},
       introduction:
         'Buttons allow users to make choices, take action and help guide them around the interface.',
     }}

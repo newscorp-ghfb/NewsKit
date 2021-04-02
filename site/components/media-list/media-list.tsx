@@ -23,34 +23,48 @@ export const MediaList: React.FC<MediaListProps> = ({
   cards,
   gridProps,
   parentCellProps,
+  horizontalRatio,
 }) => {
-  const renderCards = (layout?: 'vertical' | 'horizontal') =>
-    cards.map(({media, description, title, href, styles}) => (
-      <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
-        <StyledCard layout={layout} media={media} title={title} href={href}>
-          <TextBlock
-            typographyPreset={
-              styles?.description?.typographyPreset || 'editorialParagraph020'
-            }
-            stylePreset={styles?.description?.stylePreset || 'inkBase'}
-          >
-            <TextBlock
-              typographyPreset={
-                // eslint-disable-next-line prettier/prettier, no-undef
-                styles?.description?.typographyPreset || 'editorialParagraph020'
-              }
-              // eslint-disable-next-line no-undef
-              stylePreset={styles?.description?.stylePreset || 'inkBase'}
+  const renderCards = (cardListOrientation?: 'vertical' | 'horizontal') => {
+    const cardListToRender = [];
+
+    const cardListColumns = {
+      heroCard: {xs: 12},
+      notHeroCardGroup: spanListConfig[layout],
+    };
+
+    cardListToRender.push(
+      cards.map(({media, description, title, href}, index) => {
+        let cellColumnList;
+        if (layout.includes('hero') && index === 0) {
+          cellColumnList = cardListColumns.heroCard;
+        } else {
+          cellColumnList = cardListColumns.notHeroCardGroup;
+        }
+
+        return (
+          <Cell {...cellColumnList}>
+            <StyledCard
+              layout={cardListOrientation}
+              media={media}
+              title={title}
+              href={href}
+              overrides={{horizontalRatio}}
             >
-              {description}
-            </TextBlock>
-          </StyledCard>
-        </Cell>
-        )
-      }))
-    
-    return cardListToRender
-  }
+              <TextBlock
+                typographyPreset="editorialParagraph020"
+                stylePreset="inkBase"
+              >
+                {description}
+              </TextBlock>
+            </StyledCard>
+          </Cell>
+        );
+      }),
+    );
+
+    return cardListToRender;
+  };
 
   const renderBreakpointCards = () => {
     if (!cardsLayout || typeof cardsLayout === 'string') {

@@ -1058,6 +1058,9 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-left: 0;
 }
 
@@ -1093,6 +1096,9 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -2029,6 +2035,9 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-left: 0;
 }
 
@@ -2064,6 +2073,9 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -3829,6 +3841,9 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   box-sizing: border-box;
   display: block;
   position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-left: 0;
 }
 
@@ -3864,6 +3879,9 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

@@ -143,6 +143,7 @@ export const componentDefaults = {
   },
   card: {
     stylePreset: 'cardContainer',
+    horizontalRatio: '1:1',
     mediaContainer: {
       stylePreset: 'cardContainerMedia',
       spaceStack: {
@@ -206,6 +207,7 @@ export const componentDefaults = {
   },
   cardInset: {
     stylePreset: 'cardContainer',
+    horizontalRatio: '1:1',
     mediaContainer: {
       stylePreset: 'cardContainerMedia',
       spaceStack: 'space000',

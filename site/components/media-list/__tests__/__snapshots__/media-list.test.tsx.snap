@@ -2,7 +2,7 @@
 
 exports[`Media List renders with custom layout 1`] = `
 <DocumentFragment>
-  .emotion-35 {
+  .emotion-27 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -11,7 +11,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen {
-  .emotion-35 {
+  .emotion-27 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -22,7 +22,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-35 {
+  .emotion-27 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -32,7 +32,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-35 {
+  .emotion-27 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -42,7 +42,7 @@ exports[`Media List renders with custom layout 1`] = `
   }
 }
 
-.emotion-33 {
+.emotion-25 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -325,11 +325,11 @@ exports[`Media List renders with custom layout 1`] = `
   position: relative;
 }
 
-.emotion-34 {
+.emotion-26 {
   margin-bottom: 120px;
 }
 
-.emotion-32 {
+.emotion-24 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -345,31 +345,31 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen {
-  .emotion-32 {
+  .emotion-24 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-32 {
+  .emotion-24 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-32 {
+  .emotion-24 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-32 {
+  .emotion-24 {
     margin: -12px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-32 {
+  .emotion-24 {
     margin: -12px -8px 0 -8px;
   }
 }
@@ -433,51 +433,17 @@ exports[`Media List renders with custom layout 1`] = `
   }
 }
 
-.emotion-27 {
-  margin: 0;
-  padding: 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-27 svg {
-  fill: #162740;
-}
-
-.emotion-27::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22499999999999998em;
-}
-
-.emotion-27::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.475em;
-}
-
 <div
-    class="emotion-35"
+    class="emotion-27"
   >
     <div
-      class="emotion-34"
+      class="emotion-26"
     >
       <div
-        class="emotion-33"
+        class="emotion-25"
       >
         <div
-          class="emotion-32"
+          class="emotion-24"
         >
           <div
             class="emotion-15"
@@ -581,40 +547,6 @@ exports[`Media List renders with custom layout 1`] = `
                     class="emotion-11"
                   >
                     card with optional title 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-23"
-          >
-            <div
-              class="emotion-22"
-            >
-              <div
-                class="emotion-13"
-              >
-                <div
-                  class="emotion-20"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <section
-                      class="emotion-8"
-                    >
-                      <h1
-                        class="nk-headline-heading emotion-7"
-                      >
-                        styled card title 
-                      </h1>
-                    </section>
-                  </div>
-                  <p
-                    class="emotion-27"
-                  >
-                    styled card description
                   </p>
                 </div>
               </div>

@@ -74,7 +74,7 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
   </Prop>
   <Prop name="mediaInteractive" type="boolean" default={false}>
     Removes the card media from link area. This prop only matters when the card is used as a link
-    and when custom media or video components are passed as cardMedia so the user can interact with the video (play, pause, etc...) without navigation to occur. 
+    and when custom media or video components are passed as cardMedia so the user can interact with the video (play, pause, etc...) without navigation to occur.
     <br/>
     <br/>
     <b>NOTE:</b> If necessary, make sure your media element is tabbable  by adding <InlineCode>tabindex</InlineCode> to it.
@@ -92,6 +92,14 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
     If provided, overrides the respective presets for the component and provided elements.
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset of the card.
+    </Prop>
+    <Prop name="horizontalRatio" type="string" default="1:1">
+      If provided, this sets the ratio between the MediaContainer and TeaserAndActionsContainer on a Card with horizontal layout. The ratio consists of two integers with a colon separating them (1:1),
+      where the first value is applied to the left side and the second value is applied to the right side of the card,
+      regardless if the layout is horizontal or horizontal-reverse.<br />
+      If 'none' is passed, we don't apply any ratio.<br />
+      If an invalid value is passed, the ratio will default to what is defined in component defaults<br /><br />
+      <b>NOTE:</b> This prop works for <InlineCode>horizontal</InlineCode> and <InlineCode>horizontal-reverse</InlineCode> layouts only.
     </Prop>
     <Prop name="mediaContainer" type="object">
       <Prop name="stylePreset" type="MQ<string>">
@@ -137,7 +145,7 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
         <InlineCode>card.headline.interactive</InlineCode> - will be applied by default to the headline when <b>href</b> property is provided
       </>
     </UnorderedList>
-    You are still able to override the default <InlineCode>Headline</InlineCode> styles by passing the overides directly to 
+    You are still able to override the default <InlineCode>Headline</InlineCode> styles by passing the overides directly to
     the <Link href="/components/text-content/headline">Headline</Link> as shown on the examples below.
   </Prop>
 </LegacyBlock>

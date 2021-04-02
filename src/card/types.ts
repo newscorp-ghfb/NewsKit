@@ -4,6 +4,7 @@ import {MQ} from '../utils/style';
 
 export interface CardOverridesProps {
   stylePreset?: MQ<string>;
+  horizontalRatio?: string;
   mediaContainer?: {
     stylePreset?: MQ<string>;
     spaceStack?: MQ<string>;

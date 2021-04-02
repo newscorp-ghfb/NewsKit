@@ -6,7 +6,7 @@ import {SectionIntroduction} from '../../components/section-introduction';
 import {Separator} from '../../components/separator';
 import {MediaList} from '../../components/media-list';
 
-const cardContents = [
+const cards = [
   {
     media: {
       src: '../../static/about-principles-01.svg',
@@ -74,44 +74,6 @@ const cardContents = [
   },
 ];
 
-const cardStylePresets = [
-  'cardContainerNonInteractive030',
-  'cardContainerNonInteractive030',
-  'cardContainerNonInteractive020',
-  'cardContainerNonInteractive020',
-  'cardContainerNonInteractive010',
-  'cardContainerNonInteractive010',
-];
-
-const cardStyles = cardStylePresets.map(preset => ({
-  card: {
-    stylePreset: preset,
-    teaserContainer: {
-      spaceInset: 'spaceInsetStretch050',
-    },
-  },
-  label: {
-    stylePreset: 'inkWhiteSubtle',
-    typographyPreset: 'utilityLabel020',
-  },
-  title: {
-    stylePreset: 'inkWhiteContrast',
-    typographyPreset: {
-      xs: 'editorialHeadline020',
-      md: 'editorialHeadline030',
-    },
-  },
-  description: {
-    stylePreset: 'inkWhiteSubtle',
-    typographyPreset: 'editorialParagraph010',
-  },
-}));
-
-const cardsForPage = cardContents.map((content, index) => ({
-  ...content,
-  styles: {...cardStyles[index]},
-}));
-
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
@@ -166,7 +128,7 @@ export default (layoutProps: LayoutProps) => (
       </SectionIntroduction>
       <MediaList
         layout="2-span"
-        cards={cardsForPage}
+        cards={cards}
         gridProps={{xsRowGutter: 'space050'}}
       />
     </Grid>

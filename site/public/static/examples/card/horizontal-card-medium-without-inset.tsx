@@ -34,9 +34,6 @@ export const CardHorizontalMediumWithoutInset = () => (
             src: '/static/placeholder-1x1.png',
             alt: 'Card Media',
             loadingAspectRatio: '1:1',
-            overrides: {
-              height: '300px',
-            },
           }}
           actions={cardMediumTags}
           overrides={{
