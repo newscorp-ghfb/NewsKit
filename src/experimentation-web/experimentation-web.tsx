@@ -14,6 +14,7 @@ export const ExperimentationWeb: React.FC<ExperimentationWebProps> = ({
         {
           content: `(function() {
             if (window.location === window.parent.location) {
+              window.optimizely_feature_flag = true;
               window["optimizely_cdn"] = "${optimizelyWebConfig.scriptCdn}";
 
               window['optimizely'] = window['optimizely'] || [];
