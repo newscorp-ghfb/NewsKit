@@ -31,7 +31,7 @@ const BaseFlag = React.forwardRef<
           stackDistribution={StackDistribution.Center}
         >
           {React.Children.map(children, child =>
-            typeof child === 'string' ? (
+            ['string', 'number'].includes(typeof child) ? (
               <StyledTextCropWrapper overrides={overrides}>
                 {child}
               </StyledTextCropWrapper>

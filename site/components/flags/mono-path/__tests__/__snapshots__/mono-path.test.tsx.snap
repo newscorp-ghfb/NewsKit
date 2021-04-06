@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonoPath with 2 level path should render as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 4px;
+  margin-left: 0px;
+}
+
+.emotion-1 {
+  margin-bottom: 4px;
+  margin-left: 16px;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{
+  \\"minimal\\": true
+}"
+        data-testid="Mono"
+      >
+        level1Value
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <span
+        data-props="{
+  \\"minimal\\": true
+}"
+        data-testid="Mono"
+      >
+        .level2Value
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MonoPath with 3 level path should render as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 4px;
+  margin-left: 0px;
+}
+
+.emotion-1 {
+  margin-bottom: 4px;
+  margin-left: 16px;
+}
+
+.emotion-2 {
+  margin-bottom: 4px;
+  margin-left: 32px;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{
+  \\"minimal\\": true
+}"
+        data-testid="Mono"
+      >
+        level1Value
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <span
+        data-props="{
+  \\"minimal\\": true
+}"
+        data-testid="Mono"
+      >
+        .level2Value
+      </span>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <span
+        data-props="{
+  \\"minimal\\": true
+}"
+        data-testid="Mono"
+      >
+        .level3Value
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MonoPath with single level path should render as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-left: 0px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{
+  \\"minimal\\": true
+}"
+        data-testid="Mono"
+      >
+        level1Value
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

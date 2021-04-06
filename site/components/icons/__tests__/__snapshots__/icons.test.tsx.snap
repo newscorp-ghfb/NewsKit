@@ -1,6 +1,284 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icons Moon icon renders as expected 1`] = `
+exports[`Icons CheckIcon icon renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 0;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #148F39;
+  background-color: #E6FAEB;
+  border-radius: 50%;
+  border-width: 1px;
+}
+
+.emotion-4 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-4 svg {
+  fill: #148F39;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #148F39;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 32px;
+  height: 32px;
+  fill: #148F39;
+}
+
+<div
+    class="emotion-5"
+  >
+    <div
+      class="emotion-4"
+      data-testid="flag"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Icons CrossIcon icon renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 0;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #D23F2D;
+  background-color: #FFE8E5;
+  border-radius: 50%;
+  border-width: 1px;
+}
+
+.emotion-4 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-4 svg {
+  fill: #D23F2D;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #D23F2D;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 32px;
+  height: 32px;
+  fill: #D23F2D;
+}
+
+<div
+    class="emotion-5"
+  >
+    <div
+      class="emotion-4"
+      data-testid="flag"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Icons MoonIcon icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #555E74;
@@ -32,7 +310,38 @@ exports[`Icons Moon icon renders as expected 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Icons Sun icon renders as expected 1`] = `
+exports[`Icons NullDotIcon icon renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #E4E4E4;
+  vertical-align: unset;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.emotion-0.emotion-0 {
+  width: 12px;
+  height: 12px;
+  fill: #E4E4E4;
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="12"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icons SunIcon icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #555E74;

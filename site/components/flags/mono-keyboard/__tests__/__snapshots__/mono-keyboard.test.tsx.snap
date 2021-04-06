@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
+<DocumentFragment>
+  .emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-0 {
+    max-width: 100%;
+  }
+}
+
+<div
+    class="emotion-5"
+  >
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{}"
+        data-testid="Mono"
+      >
+        Ctrl
+      </span>
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{
+  \\"overrides\\": {
+    \\"size\\": \\"iconSize010\\"
+  }
+}"
+        data-testid="IconFilledAdd"
+      />
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{}"
+        data-testid="Mono"
+      >
+        <span
+          data-props="{
+  \\"overrides\\": {
+    \\"stylePreset\\": \\"inkBrand010\\",
+    \\"size\\": \\"iconSize010\\"
+  }
+}"
+          data-testid="IconOutlinedKeyboardReturn"
+        />
+        Rtn
+      </span>
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{
+  \\"overrides\\": {
+    \\"size\\": \\"iconSize010\\"
+  }
+}"
+        data-testid="IconFilledAdd"
+      />
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{}"
+        data-testid="Mono"
+      >
+        <span
+          data-props="{
+  \\"overrides\\": {
+    \\"stylePreset\\": \\"inkBrand010\\",
+    \\"size\\": \\"iconSize010\\"
+  }
+}"
+          data-testid="IconOutlinedKeyboardArrowLeft"
+        />
+        Left
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardReturn for the Rtn key 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-0 {
+    max-width: 100%;
+  }
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{}"
+        data-testid="Mono"
+      >
+        <span
+          data-props="{
+  \\"overrides\\": {
+    \\"stylePreset\\": \\"inkBrand010\\",
+    \\"size\\": \\"iconSize010\\"
+  }
+}"
+          data-testid="IconOutlinedKeyboardReturn"
+        />
+        Rtn
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MonoKeyboard with single key should render with no icon for unrecognised key 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-0 {
+    max-width: 100%;
+  }
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      <span
+        data-props="{}"
+        data-testid="Mono"
+      >
+        Ctrl
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

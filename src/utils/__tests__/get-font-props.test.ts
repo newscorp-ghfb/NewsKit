@@ -89,4 +89,10 @@ describe('getFontProps', () => {
 
     expect(result).toBeUndefined();
   });
+
+  test(`returns undefined if no font-family specified`, () => {
+    const result = getFontProps(fontSize, lineHeight, undefined as any, fonts);
+
+    expect(result).toBeUndefined();
+  });
 });

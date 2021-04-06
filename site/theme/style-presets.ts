@@ -25,20 +25,17 @@ export const stylePresets = {
   },
   tableHeader: {
     base: {
-      backgroundColor: '{{colors.transparent}}',
       borderStyle: 'solid',
-      borderColor: '{{colors.interface060}}',
+      borderColor: '{{colors.interface050}}',
       borderWidth:
         '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}',
       color: '{{colors.inkContrast}}',
     },
   },
-
   tableRow: {
     base: {
-      backgroundColor: '{{colors.transparent}}',
       borderStyle: 'solid',
-      borderColor: '{{colors.interface050}}',
+      borderColor: '{{colors.interface040}}',
       borderWidth:
         '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}',
       color: '{{colors.inkBase}}',
@@ -49,9 +46,9 @@ export const stylePresets = {
       iconColor: '{{colors.interactiveSecondary040}}',
     },
   },
-  arrowIcon: {
+  nullDotIcon: {
     base: {
-      iconColor: '{{colors.inkBase}}',
+      iconColor: '{{colors.interface040}}',
     },
   },
   swatchBadge: {
@@ -111,7 +108,7 @@ export const stylePresets = {
       borderColor: '{{colors.interactivePrimary030}}',
     },
   },
-  usageIconPositive: {
+  checkIconContainer: {
     base: {
       borderStyle: 'solid',
       borderColor: '{{colors.interfacePositive010}}',
@@ -121,7 +118,7 @@ export const stylePresets = {
       borderWidth: '{{borders.borderWidth010}}',
     },
   },
-  usageIconNegative: {
+  crossIconContainer: {
     base: {
       borderStyle: 'solid',
       borderColor: '{{colors.interfaceNegative010}}',
@@ -183,16 +180,25 @@ export const stylePresets = {
     base: {
       color: '{{colors.inkBase}}',
       iconColor: '{{colors.inkBase}}',
-      backgroundColor: '{{colors.interface040}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
+      backgroundColor: '{{colors.interface020}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+      whiteSpace: 'nowrap',
+    },
+  },
+  flagMinimalNeutral: {
+    base: {
+      __extends: '{{stylePresets.flagSolidNeutral.base}}',
+      backgroundColor: '__delete',
+      borderRadius: '__delete',
     },
   },
   flagBrand: {
     base: {
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.inkInverse}}',
-      backgroundColor: '{{colors.interfaceBrand010}}',
+      backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
+      whiteSpace: 'nowrap',
     },
   },
 

@@ -5,6 +5,7 @@ import {
   getSizingFromTheme,
   getSpacingFromTheme,
 } from 'newskit';
+import {TableCellProps} from './types';
 
 export const StyledTable = styled.table`
   border-collapse: collapse;
@@ -12,24 +13,31 @@ export const StyledTable = styled.table`
   width: 100%;
 `;
 
-export const StyledHeader = styled.th`
-  ${getStylePresetFromTheme('tableHeader')}
-  ${getTypographyPresetFromTheme('utilityLabel020')}
-    margin-bottom: ${getSpacingFromTheme('space020')};
+export const StyledHeader = styled.th<TableCellProps>`
+  ${getStylePresetFromTheme('tableHeader')};
+  ${getTypographyPresetFromTheme('utilityLabel010')};
+  margin-bottom: ${getSpacingFromTheme('space040')};
   height: ${getSizingFromTheme('sizing070')};
   text-align: left;
-  vertical-align: middle;
-  min-width: ${getSpacingFromTheme('space090')};
+  vertical-align: top;
+  min-width: ${getSpacingFromTheme('space090', 'minWidth')};
+  width: ${getSpacingFromTheme('', 'maxWidth')};
+  white-space: nowrap;
 `;
 
 export const StyledTableRow = styled.tr`
   ${getStylePresetFromTheme('tableRow')}
-  ${getTypographyPresetFromTheme('utilityBody010')}
+  ${getTypographyPresetFromTheme('utilityBody020')}
 `;
 
-export const StyledDataCell = styled.td`
-  padding: ${getSpacingFromTheme('space020')} ${getSpacingFromTheme('space020')}
-    ${getSpacingFromTheme('space020')} ${getSpacingFromTheme('space000')};
+export const StyledDataCell = styled.td<TableCellProps>`
+  padding: ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space040')}
+    ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space000')};
+  min-width: ${getSpacingFromTheme('', 'minWidth')};
+  width: ${getSpacingFromTheme('', 'maxWidth')};
+  text-align: ${({textAlign}) => textAlign || 'left'};
+  white-space: ${({noWrap}) => noWrap && 'nowrap'};
+  vertical-align: top;
 `;
 
 export const StyledContainer = styled.div`

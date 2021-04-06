@@ -11,7 +11,7 @@ import {
   MQ,
 } from '../utils/style';
 import {TextInputProps, TextInputSize} from './types';
-import {TextBlock, TextBlockProps} from '../text-block/text-block';
+import {TextBlock, TextBlockProps} from '../text-block';
 import {getToken} from '../utils/get-token';
 import {Block, BlockProps} from '../block';
 

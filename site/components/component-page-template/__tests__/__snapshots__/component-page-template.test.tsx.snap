@@ -197,6 +197,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -668,7 +669,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -676,7 +677,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -897,7 +898,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -905,7 +906,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -936,7 +937,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -944,7 +945,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -965,7 +966,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -973,7 +974,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -994,7 +995,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -1002,7 +1003,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -1085,7 +1086,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -1093,7 +1094,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -1114,7 +1115,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -1122,7 +1123,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -1349,7 +1350,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -1357,7 +1358,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -1398,7 +1399,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1471,7 +1472,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -1479,7 +1480,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -1612,7 +1613,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -1620,7 +1621,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -1743,7 +1744,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -1751,7 +1752,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -2324,7 +2325,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -2332,7 +2333,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -2353,7 +2354,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -2361,7 +2362,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -2392,7 +2393,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -2400,7 +2401,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -2501,7 +2502,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-390::after {
@@ -2509,7 +2510,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-372 {
@@ -2594,7 +2595,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4267857142857143em;
+  margin-bottom: calc(-0.3799107142857143em + 1.2px);
 }
 
 .emotion-376::after {
@@ -2602,7 +2603,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3642857142857143em;
+  margin-top: -0.4111607142857143em;
 }
 
 .emotion-376::before {
@@ -5182,6 +5183,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -5653,7 +5655,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -5661,7 +5663,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -5882,7 +5884,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -5890,7 +5892,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -5921,7 +5923,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -5929,7 +5931,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -5950,7 +5952,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -5958,7 +5960,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -5979,7 +5981,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -5987,7 +5989,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -6070,7 +6072,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -6078,7 +6080,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -6099,7 +6101,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -6107,7 +6109,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -6334,7 +6336,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -6342,7 +6344,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -6383,7 +6385,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -6456,7 +6458,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -6464,7 +6466,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -6597,7 +6599,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -6605,7 +6607,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -6728,7 +6730,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -6736,7 +6738,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -7309,7 +7311,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -7317,7 +7319,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -7338,7 +7340,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -7346,7 +7348,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -7377,7 +7379,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -7385,7 +7387,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -7486,7 +7488,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-411::after {
@@ -7494,7 +7496,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen and (max-width:767px) {
@@ -7674,7 +7676,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-376::after {
@@ -7682,7 +7684,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-378 {
@@ -7708,7 +7710,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-378::after {
@@ -7716,7 +7718,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.446875em;
 }
 
 .emotion-397 {
@@ -10470,6 +10472,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -10941,7 +10944,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -10949,7 +10952,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -11170,7 +11173,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -11178,7 +11181,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -11209,7 +11212,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -11217,7 +11220,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -11238,7 +11241,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -11246,7 +11249,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -11267,7 +11270,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -11275,7 +11278,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -11358,7 +11361,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -11366,7 +11369,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -11387,7 +11390,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -11395,7 +11398,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -11622,7 +11625,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -11630,7 +11633,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -11671,7 +11674,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -11744,7 +11747,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -11752,7 +11755,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -11885,7 +11888,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -11893,7 +11896,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -12016,7 +12019,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -12024,7 +12027,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -12509,7 +12512,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -12517,7 +12520,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -12538,7 +12541,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -12546,7 +12549,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -12577,7 +12580,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -12585,7 +12588,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 @media screen and (max-width:767px) {
@@ -12635,7 +12638,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-374::after {
@@ -12643,7 +12646,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.446875em;
 }
 
 .emotion-370 {
@@ -12778,6 +12781,8 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 .emotion-368.emotion-368 {
   width: 32px;
   height: 32px;
+  color: #148F39;
+  fill: #148F39;
 }
 
 .emotion-372 {
@@ -12797,7 +12802,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-372::after {
@@ -12805,7 +12810,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-376 {
@@ -12821,6 +12826,8 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 .emotion-376.emotion-376 {
   width: 32px;
   height: 32px;
+  color: #D23F2D;
+  fill: #D23F2D;
 }
 
 .emotion-384 {
@@ -12836,6 +12843,8 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 .emotion-384.emotion-384 {
   width: 32px;
   height: 32px;
+  color: #808E99;
+  fill: #808E99;
 }
 
 <div
@@ -15502,7 +15511,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 exports[`Component Page Template renders mandatory sections and component API 1`] = `
 <DocumentFragment>
-  .emotion-446 {
+  .emotion-442 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15697,6 +15706,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -15840,7 +15850,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-445 {
+.emotion-441 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15852,7 +15862,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-445 {
+  .emotion-441 {
     padding-left: 276px;
   }
 }
@@ -16168,7 +16178,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -16176,7 +16186,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -16307,14 +16317,14 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-415 {
+.emotion-411 {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   background-color: #FFFFFF;
 }
 
-.emotion-414 {
+.emotion-410 {
   padding: 32px 0;
 }
 
@@ -16397,7 +16407,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -16405,7 +16415,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -16436,7 +16446,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -16444,7 +16454,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -16465,7 +16475,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -16473,7 +16483,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -16494,7 +16504,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -16502,7 +16512,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -16585,7 +16595,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -16593,7 +16603,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -16614,7 +16624,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -16622,7 +16632,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -16849,7 +16859,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -16857,7 +16867,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -16898,7 +16908,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -16971,7 +16981,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -16979,7 +16989,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -17112,7 +17122,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -17120,7 +17130,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -17243,7 +17253,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -17251,7 +17261,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -17373,7 +17383,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-411 {
+.emotion-407 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -17382,13 +17392,13 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen {
-  .emotion-411 {
+  .emotion-407 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-411 {
+  .emotion-407 {
     display: block;
     padding: 0 12px;
     margin-top: 24px;
@@ -17401,7 +17411,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-411 {
+  .emotion-407 {
     margin-left: 83.33333333333334%;
     -webkit-flex-basis: 16.666666666666668%;
     -ms-flex-preferred-size: 16.666666666666668%;
@@ -17410,12 +17420,12 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-410 {
+.emotion-406 {
   top: 40vh;
   position: fixed;
 }
 
-.emotion-409 {
+.emotion-405 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17434,7 +17444,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   justify-content: flex-start;
 }
 
-.emotion-444 {
+.emotion-440 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -17443,7 +17453,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   position: relative;
 }
 
-.emotion-444::before {
+.emotion-440::before {
   content: '';
   position: absolute;
   top: 0;
@@ -17458,7 +17468,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:480px) {
-  .emotion-444::before {
+  .emotion-440::before {
     right: 0;
     left: 0;
     -webkit-transform: scale(1);
@@ -17467,7 +17477,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-442 {
+.emotion-438 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -17483,36 +17493,36 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen {
-  .emotion-442 {
+  .emotion-438 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-442 {
+  .emotion-438 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-442 {
+  .emotion-438 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-442 {
+  .emotion-438 {
     margin: -0px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-442 {
+  .emotion-438 {
     margin: -0px 12px 0 12px;
   }
 }
 
-.emotion-417 {
+.emotion-413 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -17521,7 +17531,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen {
-  .emotion-417 {
+  .emotion-413 {
     padding: 0 8px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -17531,7 +17541,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:768px) {
-  .emotion-417 {
+  .emotion-413 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -17541,12 +17551,12 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-417 {
+  .emotion-413 {
     padding: 0 12px;
   }
 }
 
-.emotion-416 {
+.emotion-412 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -17563,7 +17573,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   color: #808E99;
 }
 
-.emotion-441 {
+.emotion-437 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -17572,7 +17582,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen {
-  .emotion-441 {
+  .emotion-437 {
     padding: 0 8px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -17582,7 +17592,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:480px) {
-  .emotion-441 {
+  .emotion-437 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -17591,12 +17601,12 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-441 {
+  .emotion-437 {
     padding: 0 12px;
   }
 }
 
-.emotion-440 {
+.emotion-436 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -17608,7 +17618,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:768px) {
-  .emotion-440 {
+  .emotion-436 {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -17623,7 +17633,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-421 {
+.emotion-417 {
   -webkit-flex-basis: 50%;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
@@ -17639,7 +17649,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:768px) {
-  .emotion-421 {
+  .emotion-417 {
     -webkit-flex-basis: auto;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
@@ -17648,7 +17658,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-431 {
+.emotion-427 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
@@ -17690,12 +17700,12 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   height: 16px;
 }
 
-.emotion-401 {
+.emotion-397 {
   margin-top: -24px;
   padding-top: 24px;
 }
 
-.emotion-399 {
+.emotion-395 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -17711,31 +17721,31 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen {
-  .emotion-399 {
+  .emotion-395 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-399 {
+  .emotion-395 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-399 {
+  .emotion-395 {
     margin: -0px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-399 {
+  .emotion-395 {
     margin: -0px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-399 {
+  .emotion-395 {
     margin: -0px -12px 0 -12px;
   }
 }
@@ -17824,7 +17834,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -17832,7 +17842,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -17853,7 +17863,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -17861,7 +17871,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -17892,7 +17902,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -17900,7 +17910,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -17941,7 +17951,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-408 {
+.emotion-404 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -17967,21 +17977,21 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   padding: 16px;
 }
 
-.emotion-408:hover:not(:disabled) {
+.emotion-404:hover:not(:disabled) {
   color: #555E74;
 }
 
-.emotion-408:active:not(:disabled) {
+.emotion-404:active:not(:disabled) {
   color: #555E74;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-408 {
+  .emotion-404 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-406 {
+.emotion-402 {
   margin: 0;
   padding: 1px 0;
   font-family: 'Poppins',sans-serif;
@@ -17996,42 +18006,42 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: block;
 }
 
-.emotion-406::before {
+.emotion-402::before {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
-.emotion-406::after {
+.emotion-402::after {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen and (max-width:767px) {
-  .emotion-404 {
+  .emotion-400 {
     margin-top: 40px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-404 {
+  .emotion-400 {
     margin-top: 80px;
   }
 }
 
 @media screen and (max-width:767px) {
-  .emotion-404 {
+  .emotion-400 {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-404 {
+  .emotion-400 {
     margin-bottom: 80px;
   }
 }
@@ -18076,7 +18086,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-368::after {
@@ -18084,7 +18094,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -18105,7 +18115,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-368::after {
@@ -18113,7 +18123,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -18144,7 +18154,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-370::after {
@@ -18152,7 +18162,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -18173,7 +18183,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-370::after {
@@ -18181,49 +18191,69 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 
-.emotion-396 {
+.emotion-392 {
   overflow-x: auto;
 }
 
-.emotion-395 {
+.emotion-391 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-372 {
-  background-color: transparent;
+.emotion-376 {
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
-  min-width: 64px;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
 }
 
-.emotion-394 {
-  background-color: transparent;
+.emotion-373 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-390 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -18232,11 +18262,33 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   letter-spacing: 0;
 }
 
-.emotion-382 {
-  padding: 8px 8px 8px 0;
+.emotion-389 {
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
 }
 
-.emotion-398 {
+.emotion-388 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-380 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-394 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -18245,7 +18297,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen {
-  .emotion-398 {
+  .emotion-394 {
     padding: 0 8px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -18255,13 +18307,13 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 @media screen and (min-width:768px) {
-  .emotion-398 {
+  .emotion-394 {
     margin-left: 8.333333333333334%;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-398 {
+  .emotion-394 {
     padding: 0 12px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -18270,11 +18322,57 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-397 {
+.emotion-393 {
   margin-bottom: 40px;
 }
 
-.emotion-380 {
+.emotion-372 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 64px;
+  white-space: nowrap;
+}
+
+.emotion-377 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-378 {
+  margin: 0;
+  padding: 0;
+  color: #555E74;
+  white-space: nowrap;
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-378 svg {
+  fill: #555E74;
+}
+
+.emotion-387 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -18290,56 +18388,32 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
-  padding: 8px 12px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
   cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #555E74;
-  background-color: #E4E4E4;
-  border-radius: 20rem;
+  border-style: solid;
+  border-color: #148F39;
+  background-color: #E6FAEB;
+  border-radius: 50%;
+  border-width: 1px;
 }
 
-.emotion-380 svg {
+.emotion-387 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-380 svg {
-  fill: #555E74;
+.emotion-387 svg {
+  fill: #148F39;
 }
 
-.emotion-377 {
-  font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-377::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
-}
-
-.emotion-377::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
-}
-
-.emotion-391 {
+.emotion-383 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -18348,13 +18422,12 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   display: inline-block;
 }
 
-.emotion-391.emotion-391 {
-  width: 24px;
-  height: 24px;
+.emotion-383.emotion-383 {
+  fill: #148F39;
 }
 
 <div
-    class="emotion-446"
+    class="emotion-442"
   >
     <div
       class="emotion-208"
@@ -19564,7 +19637,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
       data-testid="overlay"
     />
     <div
-      class="emotion-445"
+      class="emotion-441"
     >
       <header
         class="emotion-244"
@@ -19786,10 +19859,10 @@ exports[`Component Page Template renders mandatory sections and component API 1`
         </div>
       </header>
       <main
-        class="emotion-415"
+        class="emotion-411"
       >
         <div
-          class="emotion-414"
+          class="emotion-410"
         >
           <div
             class="emotion-243"
@@ -20381,7 +20454,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                 class="emotion-241"
               >
                 <section
-                  class="emotion-401"
+                  class="emotion-397"
                   data-toc-indexed="API"
                   id="component-api"
                 >
@@ -20389,7 +20462,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                     class="emotion-243"
                   >
                     <div
-                      class="emotion-399"
+                      class="emotion-395"
                     >
                       <div
                         class="emotion-366"
@@ -20429,10 +20502,10 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                         class="emotion-367"
                       />
                       <div
-                        class="emotion-398"
+                        class="emotion-394"
                       >
                         <div
-                          class="emotion-397"
+                          class="emotion-393"
                         >
                           <div
                             class="emotion-369"
@@ -20453,10 +20526,10 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                             </p>
                           </div>
                           <div
-                            class="emotion-396"
+                            class="emotion-392"
                           >
                             <table
-                              class="emotion-395"
+                              class="emotion-391"
                             >
                               <thead>
                                 <tr>
@@ -20466,22 +20539,22 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                                     Name
                                   </th>
                                   <th
-                                    class="emotion-372"
+                                    class="emotion-373"
                                   >
                                     Type
                                   </th>
                                   <th
-                                    class="emotion-372"
+                                    class="emotion-373"
                                   >
                                     Default
                                   </th>
                                   <th
-                                    class="emotion-372"
+                                    class="emotion-373"
                                   >
                                     Description
                                   </th>
                                   <th
-                                    class="emotion-372"
+                                    class="emotion-376"
                                   >
                                     Required
                                   </th>
@@ -20489,87 +20562,70 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                               </thead>
                               <tbody>
                                 <tr
-                                  class="emotion-394"
+                                  class="emotion-390"
                                 >
                                   <td
-                                    class="emotion-382"
+                                    class="emotion-377"
+                                  >
+                                    children
+                                  </td>
+                                  <td
+                                    class="emotion-380"
                                   >
                                     <div
-                                      class="emotion-268"
+                                      class="emotion-361"
                                     >
-                                      <div
-                                        class="emotion-380"
-                                        data-testid="flag"
+                                      <p
+                                        class="emotion-378"
                                       >
-                                        <div
-                                          class="emotion-266"
-                                        >
-                                          <div
-                                            class="emotion-265"
-                                          >
-                                            <span
-                                              class="emotion-377"
-                                            >
-                                              children
-                                            </span>
-                                          </div>
-                                        </div>
-                                      </div>
+                                        string
+                                      </p>
                                     </div>
                                   </td>
                                   <td
-                                    class="emotion-382"
-                                  >
-                                    <div
-                                      class="emotion-268"
-                                    >
-                                      <div
-                                        class="emotion-380"
-                                        data-testid="flag"
-                                      >
-                                        <div
-                                          class="emotion-266"
-                                        >
-                                          <div
-                                            class="emotion-265"
-                                          >
-                                            <span
-                                              class="emotion-377"
-                                            >
-                                              string
-                                            </span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td
-                                    class="emotion-382"
+                                    class="emotion-380"
                                   />
                                   <td
-                                    class="emotion-382"
+                                    class="emotion-380"
                                   >
                                     Description
                                   </td>
                                   <td
-                                    class="emotion-382"
+                                    class="emotion-389"
                                   >
-                                    <svg
-                                      aria-hidden="true"
-                                      class="emotion-391 emotion-6"
-                                      fill="currentColor"
-                                      focusable="false"
-                                      viewBox="0 0 24 24"
-                                      xmlns="http://www.w3.org/2000/svg"
+                                    <div
+                                      class="emotion-388"
                                     >
-                                      <path
-                                        d="M0 0h24v24H0z"
-                                        fill="none"
-                                      />
-                                      <path
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                                      />
-                                    </svg>
+                                      <div
+                                        class="emotion-387"
+                                        data-testid="flag"
+                                      >
+                                        <div
+                                          class="emotion-266"
+                                        >
+                                          <div
+                                            class="emotion-265"
+                                          >
+                                            <svg
+                                              aria-hidden="true"
+                                              class="emotion-383 emotion-6"
+                                              fill="currentColor"
+                                              focusable="false"
+                                              viewBox="0 0 24 24"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <path
+                                                d="M0 0h24v24H0V0z"
+                                                fill="none"
+                                              />
+                                              <path
+                                                d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </td>
                                 </tr>
                               </tbody>
@@ -20585,7 +20641,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                 class="emotion-249"
               >
                 <div
-                  class="emotion-404"
+                  class="emotion-400"
                 >
                   <hr
                     aria-hidden="true"
@@ -20595,16 +20651,16 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                 </div>
               </div>
               <div
-                class="emotion-411"
+                class="emotion-407"
               >
                 <div
-                  class="emotion-410"
+                  class="emotion-406"
                 >
                   <div
-                    class="emotion-409"
+                    class="emotion-405"
                   >
                     <a
-                      class="emotion-408"
+                      class="emotion-404"
                       data-selected="true"
                       href="#component-api"
                     >
@@ -20612,7 +20668,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                         class="emotion-3"
                       >
                         <span
-                          class="emotion-406"
+                          class="emotion-402"
                         >
                           API
                         </span>
@@ -20626,34 +20682,34 @@ exports[`Component Page Template renders mandatory sections and component API 1`
         </div>
       </main>
       <footer
-        class="emotion-444"
+        class="emotion-440"
       >
         <div
           class="emotion-243"
         >
           <div
-            class="emotion-442"
+            class="emotion-438"
           >
             <div
-              class="emotion-417"
+              class="emotion-413"
             >
               <div
-                class="emotion-416"
+                class="emotion-412"
               >
                 Copyright © 2021 News Corp. All rights reserved.
               </div>
             </div>
             <div
-              class="emotion-441"
+              class="emotion-437"
             >
               <div
-                class="emotion-440"
+                class="emotion-436"
               >
                 <div
                   class="emotion-229"
                 >
                   <span
-                    class="emotion-421"
+                    class="emotion-417"
                   >
                     <a
                       class="emotion-221"
@@ -20671,7 +20727,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                     </a>
                   </span>
                   <span
-                    class="emotion-421"
+                    class="emotion-417"
                   >
                     <a
                       class="emotion-221"
@@ -20690,7 +20746,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                   </span>
                 </div>
                 <span
-                  class="emotion-421"
+                  class="emotion-417"
                 >
                   <a
                     class="emotion-221"
@@ -20709,7 +20765,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                   </a>
                 </span>
                 <span
-                  class="emotion-421"
+                  class="emotion-417"
                 >
                   <a
                     class="emotion-221"
@@ -20720,7 +20776,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                       class="emotion-3"
                     >
                       <span
-                        class="emotion-431"
+                        class="emotion-427"
                       >
                         Careers
                       </span>
@@ -20731,7 +20787,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                   class="emotion-229"
                 >
                   <span
-                    class="emotion-421"
+                    class="emotion-417"
                   >
                     <a
                       class="emotion-221"
@@ -20963,6 +21019,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -21434,7 +21491,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -21442,7 +21499,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -21663,7 +21720,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -21671,7 +21728,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -21702,7 +21759,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -21710,7 +21767,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -21731,7 +21788,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -21739,7 +21796,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -21760,7 +21817,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -21768,7 +21825,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -21851,7 +21908,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -21859,7 +21916,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -21880,7 +21937,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -21888,7 +21945,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -22115,7 +22172,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -22123,7 +22180,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -22164,7 +22221,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -22237,7 +22294,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -22245,7 +22302,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -22378,7 +22435,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -22386,7 +22443,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -22509,7 +22566,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -22517,7 +22574,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -23090,7 +23147,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -23098,7 +23155,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -23119,7 +23176,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -23127,7 +23184,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -23158,7 +23215,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -23166,7 +23223,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -23267,7 +23324,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-397::after {
@@ -23275,7 +23332,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen and (max-width:767px) {
@@ -23450,7 +23507,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-368::after {
@@ -23458,7 +23515,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -23479,7 +23536,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-368::after {
@@ -23487,7 +23544,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -23518,7 +23575,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-370::after {
@@ -23526,7 +23583,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -23547,7 +23604,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-370::after {
@@ -23555,7 +23612,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 
@@ -23570,34 +23627,54 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-371 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
-  min-width: 64px;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
 }
 
-.emotion-382 {
-  background-color: transparent;
+.emotion-372 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-382 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -23607,7 +23684,22 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-379 {
-  padding: 8px 8px 8px 0;
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-378 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-377 {
@@ -23626,8 +23718,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 40px;
-  padding: 8px 12px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -23635,8 +23728,9 @@ exports[`Component Page Template renders mandatory sections and focus order from
   appearance: none;
   overflow: hidden;
   color: #FFFFFF;
-  background-color: #AEBFFF;
+  background-color: #577FFB;
   border-radius: 20rem;
+  white-space: nowrap;
 }
 
 .emotion-377 svg {
@@ -23648,31 +23742,19 @@ exports[`Component Page Template renders mandatory sections and focus order from
   fill: #FFFFFF;
 }
 
-.emotion-374 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 24px;
-  line-height: 1.3333333333333333;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+.emotion-380 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
 }
 
-.emotion-374::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.19166666666666665em;
-}
-
-.emotion-374::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.44166666666666665em;
+.emotion-381 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
 }
 
 <div
@@ -25793,12 +25875,12 @@ exports[`Component Page Template renders mandatory sections and focus order from
                                           Order
                                         </th>
                                         <th
-                                          class="emotion-371"
+                                          class="emotion-372"
                                         >
                                           Element
                                         </th>
                                         <th
-                                          class="emotion-371"
+                                          class="emotion-372"
                                         >
                                           Role
                                         </th>
@@ -25812,7 +25894,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                                           class="emotion-379"
                                         >
                                           <div
-                                            class="emotion-268"
+                                            class="emotion-378"
                                           >
                                             <div
                                               class="emotion-377"
@@ -25825,7 +25907,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                                                   class="emotion-265"
                                                 >
                                                   <span
-                                                    class="emotion-374"
+                                                    class="emotion-290"
                                                   >
                                                     1
                                                   </span>
@@ -25835,12 +25917,12 @@ exports[`Component Page Template renders mandatory sections and focus order from
                                           </div>
                                         </td>
                                         <td
-                                          class="emotion-379"
+                                          class="emotion-380"
                                         >
                                           element
                                         </td>
                                         <td
-                                          class="emotion-379"
+                                          class="emotion-381"
                                         >
                                           Role
                                         </td>
@@ -26240,6 +26322,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -26711,7 +26794,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -26719,7 +26802,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -26940,7 +27023,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -26948,7 +27031,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -26979,7 +27062,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -26987,7 +27070,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -27008,7 +27091,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -27016,7 +27099,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -27037,7 +27120,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -27045,7 +27128,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -27128,7 +27211,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -27136,7 +27219,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -27157,7 +27240,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -27165,7 +27248,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -27392,7 +27475,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -27400,7 +27483,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -27441,7 +27524,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -27514,7 +27597,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -27522,7 +27605,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -27655,7 +27738,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -27663,7 +27746,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -27786,7 +27869,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -27794,7 +27877,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -28367,7 +28450,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -28375,7 +28458,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -28396,7 +28479,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -28404,7 +28487,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -28435,7 +28518,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -28443,7 +28526,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -28783,7 +28866,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.275em;
+  margin-bottom: -0.290625em;
 }
 
 .emotion-380::after {
@@ -28791,7 +28874,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.525em;
+  margin-top: -0.540625em;
 }
 
 .emotion-397 {
@@ -28854,7 +28937,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-395::after {
@@ -28862,7 +28945,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 <div
@@ -31639,6 +31722,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -32110,7 +32194,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -32118,7 +32202,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -32339,7 +32423,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -32347,7 +32431,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -32378,7 +32462,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -32386,7 +32470,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -32407,7 +32491,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -32415,7 +32499,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -32436,7 +32520,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -32444,7 +32528,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -32527,7 +32611,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -32535,7 +32619,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -32556,7 +32640,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -32564,7 +32648,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -32791,7 +32875,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -32799,7 +32883,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -32840,7 +32924,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -32913,7 +32997,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -32921,7 +33005,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -33054,7 +33138,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -33062,7 +33146,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -33185,7 +33269,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -33193,7 +33277,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -33766,7 +33850,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-374::after {
@@ -33774,7 +33858,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -33795,7 +33879,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-374::after {
@@ -33803,7 +33887,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -33834,7 +33918,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-378::after {
@@ -33842,7 +33926,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-400 {
@@ -34075,7 +34159,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-411::after {
@@ -34083,7 +34167,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen and (max-width:767px) {
@@ -34293,7 +34377,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-376::after {
@@ -34301,7 +34385,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-378 {
@@ -34327,7 +34411,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-378::after {
@@ -34335,7 +34419,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.446875em;
 }
 
 @media screen {
@@ -37070,6 +37154,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -37541,7 +37626,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -37549,7 +37634,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -37770,7 +37855,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -37778,7 +37863,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -37809,7 +37894,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -37817,7 +37902,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -37838,7 +37923,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -37846,7 +37931,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -37867,7 +37952,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -37875,7 +37960,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -37958,7 +38043,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -37966,7 +38051,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -37987,7 +38072,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -37995,7 +38080,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -38222,7 +38307,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -38230,7 +38315,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -38271,7 +38356,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -38344,7 +38429,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -38352,7 +38437,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -38485,7 +38570,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -38493,7 +38578,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -38616,7 +38701,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -38624,7 +38709,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -39109,7 +39194,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -39117,7 +39202,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -39138,7 +39223,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -39146,7 +39231,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -39177,7 +39262,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -39185,7 +39270,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-386 {
@@ -39276,7 +39361,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-376::after {
@@ -39284,7 +39369,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-379 {
@@ -39310,7 +39395,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-379::after {
@@ -39318,7 +39403,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.446875em;
 }
 
 .emotion-383 {
@@ -41958,6 +42043,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -42429,7 +42515,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -42437,7 +42523,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -42658,7 +42744,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -42666,7 +42752,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -42697,7 +42783,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -42705,7 +42791,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -42726,7 +42812,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -42734,7 +42820,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -42755,7 +42841,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -42763,7 +42849,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -42846,7 +42932,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -42854,7 +42940,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -42875,7 +42961,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -42883,7 +42969,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -43110,7 +43196,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -43118,7 +43204,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -43159,7 +43245,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -43232,7 +43318,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -43240,7 +43326,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -43373,7 +43459,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -43381,7 +43467,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -43504,7 +43590,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -43512,7 +43598,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -44085,7 +44171,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -44093,7 +44179,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -44114,7 +44200,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -44122,7 +44208,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -44153,7 +44239,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -44161,7 +44247,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -44262,7 +44348,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-375::after {
@@ -44270,7 +44356,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen and (max-width:767px) {
@@ -46893,6 +46979,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -47364,7 +47451,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -47372,7 +47459,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -47593,7 +47680,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -47601,7 +47688,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -47632,7 +47719,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -47640,7 +47727,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -47661,7 +47748,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -47669,7 +47756,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -47690,7 +47777,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -47698,7 +47785,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -47781,7 +47868,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -47789,7 +47876,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -47810,7 +47897,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -47818,7 +47905,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -48045,7 +48132,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -48053,7 +48140,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -48094,7 +48181,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -48167,7 +48254,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -48175,7 +48262,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -48308,7 +48395,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -48316,7 +48403,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -48439,7 +48526,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -48447,7 +48534,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -49020,7 +49107,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -49028,7 +49115,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -49049,7 +49136,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -49057,7 +49144,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -49088,7 +49175,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -49096,7 +49183,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -49197,7 +49284,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-394::after {
@@ -49205,7 +49292,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen and (max-width:767px) {
@@ -49360,7 +49447,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-376::after {
@@ -49368,7 +49455,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-378 {
@@ -49394,7 +49481,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-378::after {
@@ -49402,7 +49489,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.446875em;
 }
 
 .emotion-382 {
@@ -51984,6 +52071,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -52455,7 +52543,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -52463,7 +52551,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -52684,7 +52772,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -52692,7 +52780,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -52723,7 +52811,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -52731,7 +52819,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -52752,7 +52840,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -52760,7 +52848,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -52781,7 +52869,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -52789,7 +52877,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -52872,7 +52960,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -52880,7 +52968,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -52901,7 +52989,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -52909,7 +52997,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -53136,7 +53224,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -53144,7 +53232,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -53185,7 +53273,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -53258,7 +53346,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -53266,7 +53354,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -53399,7 +53487,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -53407,7 +53495,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -53530,7 +53618,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -53538,7 +53626,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {
@@ -54111,7 +54199,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.16785714285714293em + 1px);
+    margin-bottom: -0.18348214285714293em;
   }
 
   .emotion-360::after {
@@ -54119,7 +54207,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4178571428571429em + 1px);
+    margin-top: -0.4334821428571429em;
   }
 }
 
@@ -54140,7 +54228,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-360::after {
@@ -54148,7 +54236,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -54179,7 +54267,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-364::after {
@@ -54187,7 +54275,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 .emotion-367 {
@@ -54288,7 +54376,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-404::after {
@@ -54296,7 +54384,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen and (max-width:767px) {
@@ -54373,7 +54461,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-376::after {
@@ -54381,7 +54469,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-378 {
@@ -54500,6 +54588,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 .emotion-362.emotion-362 {
   width: 32px;
   height: 32px;
+  fill: #148F39;
 }
 
 .emotion-385 {
@@ -54541,18 +54630,20 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-.emotion-395 {
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  color: inherit;
-  padding: 8px 4px;
+.emotion-387::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3799107142857143em + 1.2px);
 }
 
-.emotion-395 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
+.emotion-387::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4111607142857143em;
 }
 
 <div
@@ -57193,6 +57284,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 .emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
+  fill: #243853;
 }
 
 .emotion-207 {
@@ -57664,7 +57756,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-219::after {
@@ -57672,7 +57764,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-232 {
@@ -57893,7 +57985,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-245::after {
@@ -57901,7 +57993,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -57932,7 +58024,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -57940,7 +58032,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -57961,7 +58053,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-247::after {
@@ -57969,7 +58061,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -57990,7 +58082,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-247::after {
@@ -57998,7 +58090,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -58081,7 +58173,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-250::after {
@@ -58089,7 +58181,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -58110,7 +58202,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-250::after {
@@ -58118,7 +58210,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 
@@ -58345,7 +58437,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-262::after {
@@ -58353,7 +58445,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-261 {
@@ -58394,7 +58486,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -58467,7 +58559,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-264::after {
@@ -58475,7 +58567,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-273 {
@@ -58608,7 +58700,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-277::after {
@@ -58616,7 +58708,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-304 {
@@ -58739,7 +58831,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-290::after {
@@ -58747,7 +58839,7 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 .emotion-301 {

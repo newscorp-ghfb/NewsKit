@@ -238,7 +238,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-8::after {
@@ -246,7 +246,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-7 {
@@ -283,7 +283,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-11::after {
@@ -291,7 +291,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.446875em;
 }
 
 .emotion-22 {
@@ -876,7 +876,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-8::after {
@@ -884,7 +884,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-7 {
@@ -921,7 +921,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4625em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-11::after {
@@ -929,7 +929,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4em;
+  margin-top: -0.446875em;
 }
 
 .emotion-22 {

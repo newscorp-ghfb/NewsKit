@@ -21,6 +21,7 @@ exports[`IconFilledCircle renders the IconFilledCircle icon with specified style
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -50,6 +51,7 @@ exports[`IconFilledCircle renders the IconFilledCircle icon with title override 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -92,6 +94,7 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -120,6 +123,7 @@ exports[`IconFilledFacebook renders the IconFilledFacebook icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -161,6 +165,7 @@ exports[`IconFilledFigma renders the IconFilledFigma icon with specified style 1
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -205,6 +210,7 @@ exports[`IconFilledFigma renders the IconFilledFigma icon with title override 1`
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -262,6 +268,7 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon with specified style
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -290,6 +297,7 @@ exports[`IconFilledGitHub renders the IconFilledGitHub icon with title override 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -331,6 +339,7 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon with specified
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -359,6 +368,7 @@ exports[`IconFilledInstagram renders the IconFilledInstagram icon with title ove
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -400,6 +410,7 @@ exports[`IconFilledPlaceholder renders the IconFilledPlaceholder icon with speci
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -427,6 +438,7 @@ exports[`IconFilledPlaceholder renders the IconFilledPlaceholder icon with title
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -467,6 +479,7 @@ exports[`IconFilledReddit renders the IconFilledReddit icon with specified style
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -495,6 +508,7 @@ exports[`IconFilledReddit renders the IconFilledReddit icon with title override 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -536,6 +550,7 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon with specified sty
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -564,6 +579,7 @@ exports[`IconFilledTwitter renders the IconFilledTwitter icon with title overrid
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -605,6 +621,7 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with specified s
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -633,6 +650,7 @@ exports[`IconFilledWhatsApp renders the IconFilledWhatsApp icon with title overr
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -674,6 +692,7 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with specified sty
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -702,6 +721,7 @@ exports[`IconFilledYoutube renders the IconFilledYoutube icon with title overrid
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -776,6 +796,7 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon with specified style
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg
@@ -820,6 +841,7 @@ exports[`IconOutlinedigma renders the IconOutlinedigma icon with title override 
 .emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
+  fill: #535353;
 }
 
 <svg

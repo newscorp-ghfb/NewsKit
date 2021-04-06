@@ -280,7 +280,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-7::after {
@@ -288,7 +288,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -309,7 +309,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-7::after {
@@ -317,7 +317,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -356,7 +356,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32500000000000007em;
+  margin-bottom: -0.34062500000000007em;
 }
 
 .emotion-9::after {
@@ -364,7 +364,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5750000000000001em;
+  margin-top: -0.5906250000000001em;
 }
 
 <div

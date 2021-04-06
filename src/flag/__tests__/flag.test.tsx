@@ -49,6 +49,20 @@ describe('Flag', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders a flag with custom presets when children is number', () => {
+    const props: FlagProps = {
+      overrides: {
+        stylePreset: 'flagMinimal',
+        typographyPreset: 'utilityLabel020',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(
+      () => <Flag {...props}>1</Flag>,
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders a flag with no paddings', () => {
     const props: FlagProps = {
       overrides: {

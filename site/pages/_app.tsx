@@ -316,6 +316,15 @@ export default class MyApp extends App<Props, State> {
                   font-weight: 600;
                   font-style: italic;
                 }
+
+                @font-face {
+                  font-family: 'DM Mono';
+                  src: url('/static/fonts/dmmono-medium.woff2') format('woff2'),
+                    url('/static/fonts/dmmono-medium.woff') format('woff');
+                  font-style: normal;
+                  font-weight: 500;
+                  font-display: swap;
+                }
               `}
             />
 

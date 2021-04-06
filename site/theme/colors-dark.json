@@ -4,8 +4,8 @@
   "inkNonEssential": "{{colors.neutral080}}",
   "inkInverse": "{{colors.neutral100}}",
 
-  "inkPositive": "{{colors.green040}}",
-  "inkNegative": "{{colors.red050}}",
+  "inkPositive": "{{colors.green030}}",
+  "inkNegative": "{{colors.red030}}",
   "inkNotice": "{{colors.amber040}}",
   "inkInformative": "{{colors.teal010}}",
 
@@ -15,8 +15,8 @@
   "interface010": "{{colors.neutral100}}",
   "interface020": "{{colors.neutral090}}",
   "interface030": "{{colors.neutral080}}",
-  "interface040": "{{colors.neutral060}}",
-  "interface050": "{{colors.neutral030}}",
+  "interface040": "{{colors.neutral070}}",
+  "interface050": "{{colors.neutral050}}",
   "interface060": "{{colors.neutral010}}",
 
   "interfaceBrand060": "{{colors.teal040}}",

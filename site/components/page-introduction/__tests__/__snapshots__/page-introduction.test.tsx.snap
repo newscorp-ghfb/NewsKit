@@ -81,7 +81,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-0::after {
@@ -89,7 +89,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -120,7 +120,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-2::after {
@@ -128,7 +128,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -149,7 +149,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.10833333333333339em;
+    margin-bottom: -0.12395833333333339em;
   }
 
   .emotion-2::after {
@@ -157,7 +157,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3583333333333334em;
+    margin-top: -0.3739583333333334em;
   }
 }
 
@@ -178,7 +178,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.140625em;
   }
 
   .emotion-2::after {
@@ -186,7 +186,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.390625em;
   }
 }
 
@@ -291,7 +291,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.275em;
+    margin-bottom: -0.290625em;
   }
 
   .emotion-0::after {
@@ -299,7 +299,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.540625em;
   }
 }
 
@@ -320,7 +320,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.32500000000000007em;
+    margin-bottom: -0.34062500000000007em;
   }
 
   .emotion-0::after {
@@ -328,7 +328,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.5906250000000001em;
   }
 }
 

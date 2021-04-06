@@ -33,7 +33,7 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-0::after {
@@ -41,7 +41,7 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -62,7 +62,7 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-0::after {
@@ -70,7 +70,7 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 
@@ -127,7 +127,7 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-0::after {
@@ -135,7 +135,7 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -156,7 +156,7 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-0::after {
@@ -164,7 +164,7 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -221,7 +221,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-0::after {
@@ -229,7 +229,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -250,7 +250,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-0::after {
@@ -258,7 +258,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -302,7 +302,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-0::after {
@@ -310,7 +310,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -331,7 +331,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-0::after {
@@ -339,7 +339,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 

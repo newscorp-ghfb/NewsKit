@@ -30,4 +30,12 @@ describe('TextBlock', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with no text cropping', () => {
+    const fragment = renderToFragmentWithTheme(TextBlock, {
+      typographyPreset: 'editorialParagraph010',
+      noCrop: true,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });

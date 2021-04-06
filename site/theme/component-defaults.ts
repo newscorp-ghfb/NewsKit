@@ -41,6 +41,22 @@ export const componentDefaults = {
   image: {
     stylePreset: 'imageDefault',
   },
+  flag: {
+    small: {
+      typographyPreset: 'utilityButton010',
+      stylePreset: 'flagBrand',
+    },
+    medium: {
+      typographyPreset: 'utilityButton020',
+      stylePreset: 'flagBrand',
+      spaceInset: 'spaceInsetSquish010',
+    },
+    large: {
+      typographyPreset: 'utilityButton030',
+      stylePreset: 'flagBrand',
+      spaceInset: 'spaceInsetSquish010',
+    },
+  },
   tab: {
     small: {
       spaceInset: 'spaceInsetStretch040',

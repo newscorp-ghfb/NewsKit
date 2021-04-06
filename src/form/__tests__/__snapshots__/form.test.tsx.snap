@@ -665,6 +665,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
 .emotion-2.emotion-2 {
   width: 24px;
   height: 24px;
+  fill: #d20600;
 }
 
 .emotion-6 {
@@ -1225,6 +1226,7 @@ exports[`Form renders with error on blur 1`] = `
 .emotion-2.emotion-2 {
   width: 24px;
   height: 24px;
+  fill: #d20600;
 }
 
 .emotion-6 {
@@ -1658,6 +1660,7 @@ exports[`Form renders with error on submit 1`] = `
 .emotion-2.emotion-2 {
   width: 24px;
   height: 24px;
+  fill: #d20600;
 }
 
 .emotion-6 {
@@ -2218,6 +2221,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 .emotion-2.emotion-2 {
   width: 24px;
   height: 24px;
+  fill: #d20600;
 }
 
 .emotion-6 {

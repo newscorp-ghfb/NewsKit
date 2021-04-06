@@ -69,10 +69,10 @@ Object {
     "inkHeadingLinkVisited": "{{colors.inkContrast}}",
     "inkInformative": "{{colors.teal010}}",
     "inkInverse": "{{colors.neutral100}}",
-    "inkNegative": "{{colors.red050}}",
+    "inkNegative": "{{colors.red030}}",
     "inkNonEssential": "{{colors.neutral080}}",
     "inkNotice": "{{colors.amber040}}",
-    "inkPositive": "{{colors.green040}}",
+    "inkPositive": "{{colors.green030}}",
     "inkSubtle": "{{colors.neutral060}}",
     "inkWhite": "{{colors.white}}",
     "inkWhiteTint080": "{{colors.whiteTint080}}",
@@ -107,8 +107,8 @@ Object {
     "interface010": "{{colors.neutral100}}",
     "interface020": "{{colors.neutral090}}",
     "interface030": "{{colors.neutral080}}",
-    "interface040": "{{colors.neutral060}}",
-    "interface050": "{{colors.neutral030}}",
+    "interface040": "{{colors.neutral070}}",
+    "interface050": "{{colors.neutral050}}",
     "interface060": "{{colors.neutral010}}",
     "interfaceBackground": "{{colors.neutral100}}",
     "interfaceBrand010": "{{colors.blue020}}",
@@ -469,25 +469,25 @@ Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing070",
         "spaceInline": "space010",
-        "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagDefault",
-        "typographyPreset": "utilityLabel030",
+        "spaceInset": "spaceInsetSquish010",
+        "stylePreset": "flagBrand",
+        "typographyPreset": "utilityButton030",
       },
       "medium": Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing060",
         "spaceInline": "space010",
-        "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagDefault",
-        "typographyPreset": "utilityLabel020",
+        "spaceInset": "spaceInsetSquish010",
+        "stylePreset": "flagBrand",
+        "typographyPreset": "utilityButton020",
       },
       "small": Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing050",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish010",
-        "stylePreset": "flagDefault",
-        "typographyPreset": "utilityLabel010",
+        "stylePreset": "flagBrand",
+        "typographyPreset": "utilityButton010",
       },
     },
     "grid": Object {
@@ -961,31 +961,40 @@ Object {
         "{{fonts.fontSize020}}": Object {
           "top": 1.2,
         },
+      },
+      "cropConfig": Object {
+        "bottom": 12.5,
+        "top": 4.5,
+      },
+      "fontFamily": "'Poppins', sans-serif",
+    },
+    "fontFamily020": Object {
+      "cropAdjustments": Object {
+        "{{fonts.fontSize010}}": Object {
+          "bottom": -0.5,
+          "top": 1,
+        },
+        "{{fonts.fontSize020}}": Object {
+          "top": 1.2,
+        },
         "{{fonts.fontSize070}}": Object {
           "bottom": 1,
           "top": 1,
         },
       },
       "cropConfig": Object {
-        "bottom": 12,
-        "top": 4,
-      },
-      "fontFamily": "'Poppins', sans-serif",
-    },
-    "fontFamily020": Object {
-      "cropAdjustments": "",
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
+        "bottom": 9.5,
+        "top": 8.5,
       },
       "fontFamily": "'DM Sans', sans-serif",
     },
     "fontFamily030": Object {
+      "cropAdjustments": "__delete",
       "cropConfig": Object {
-        "bottom": 3,
-        "top": 3,
+        "bottom": 8,
+        "top": 10,
       },
-      "fontFamily": "\\"Courier\\", monospace",
+      "fontFamily": "'DM Mono', monospace",
     },
     "fontLetterSpacing010": 0,
     "fontLetterSpacing020": "-0.25px",
@@ -1115,11 +1124,6 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
-    "arrowIcon": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
-      },
-    },
     "audioPlayerControlButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -1877,6 +1881,16 @@ Object {
         "iconColor": "{{colors.inkNonEssential}}",
       },
     },
+    "checkIconContainer": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfacePositive020}}",
+        "borderColor": "{{colors.interfacePositive010}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
     "closeIcon": Object {
       "base": Object {
         "iconColor": "{{colors.interactiveSecondary040}}",
@@ -1955,6 +1969,16 @@ Object {
         "backgroundImage": "url(/static/feature-card-m.svg)",
       },
     },
+    "crossIconContainer": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
     "dividerHorizontal": Object {
       "base": Object {
         "borderColor": "{{colors.interface040}}",
@@ -1994,10 +2018,11 @@ Object {
     },
     "flagBrand": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "backgroundColor": "{{colors.interfaceBrand030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+        "whiteSpace": "nowrap",
       },
     },
     "flagDefault": Object {
@@ -2020,6 +2045,13 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNeutral": Object {
+      "base": Object {
+        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
+        "backgroundColor": "__delete",
+        "borderRadius": "__delete",
       },
     },
     "flagSolid": Object {
@@ -2071,10 +2103,11 @@ Object {
     },
     "flagSolidNeutral": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface040}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
+        "whiteSpace": "nowrap",
       },
     },
     "flagSolidNotice": Object {
@@ -2839,6 +2872,11 @@ Object {
         "iconColor": "{{colors.interactiveInverse040}}",
       },
     },
+    "nullDotIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.interface040}}",
+      },
+    },
     "overlay": Object {
       "base": Object {
         "backgroundColor": "{{overlays.overlayDark040}}",
@@ -3015,8 +3053,7 @@ Object {
     },
     "tableHeader": Object {
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interface060}}",
+        "borderColor": "{{colors.interface050}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkContrast}}",
@@ -3024,8 +3061,7 @@ Object {
     },
     "tableRow": Object {
       "base": Object {
-        "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interface050}}",
+        "borderColor": "{{colors.interface040}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
         "color": "{{colors.inkBase}}",
@@ -3185,26 +3221,6 @@ Object {
       "visited": Object {
         "color": "{{colors.interactiveVisited010}}",
         "iconColor": "{{colors.interactiveVisited010}}",
-      },
-    },
-    "usageIconNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "usageIconPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive020}}",
-        "borderColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "iconColor": "{{colors.inkPositive}}",
       },
     },
     "volumeControlButtons": Object {
@@ -3447,6 +3463,27 @@ Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "lineHeight": "{{fonts.fontLineHeight040}}",
+    },
+    "utilityCode010": Object {
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize010}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "lineHeight": "{{fonts.fontLineHeight040}}",
+    },
+    "utilityCode020": Object {
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+      "lineHeight": "{{fonts.fontLineHeight040}}",
+    },
+    "utilityCode030": Object {
+      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+      "fontSize": "{{fonts.fontSize030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing010}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },

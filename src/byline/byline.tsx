@@ -5,7 +5,7 @@ import {Stack} from '../stack';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {Block} from '../block';
-import {TextBlock} from '../text-block/text-block';
+import {TextBlock} from '../text-block';
 import {BylineProps, BylineData} from './types';
 
 const InlineBlock = styled(Block)`

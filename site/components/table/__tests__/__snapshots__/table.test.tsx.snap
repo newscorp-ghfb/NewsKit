@@ -2,45 +2,44 @@
 
 exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` columm 1`] = `
 <DocumentFragment>
-  .emotion-13 {
+  .emotion-16 {
   overflow-x: auto;
 }
 
-.emotion-12 {
+.emotion-15 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
 .emotion-0 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   min-width: 64px;
+  white-space: nowrap;
 }
 
-.emotion-6 {
-  background-color: transparent;
+.emotion-10 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #E4E4E4;
   border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -50,7 +49,126 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-2 {
-  padding: 8px 8px 8px 0;
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-1 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-9 {
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #148F39;
+  background-color: #E6FAEB;
+  border-radius: 50%;
+  border-width: 1px;
+}
+
+.emotion-7 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-7 svg {
+  fill: #148F39;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
 }
 
 .emotion-3 {
@@ -63,15 +181,27 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-3.emotion-3 {
-  width: 24px;
-  height: 24px;
+  fill: #148F39;
+}
+
+.emotion-12 {
+  fill: #E4E4E4;
+  vertical-align: unset;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.emotion-12.emotion-12 {
+  width: 12px;
+  height: 12px;
+  fill: #E4E4E4;
 }
 
 <div
-    class="emotion-13"
+    class="emotion-16"
   >
     <table
-      class="emotion-12"
+      class="emotion-15"
     >
       <thead>
         <tr>
@@ -81,7 +211,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
             Column
           </th>
           <th
-            class="emotion-0"
+            class="emotion-1"
           >
             Required
           </th>
@@ -89,7 +219,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
       </thead>
       <tbody>
         <tr
-          class="emotion-6"
+          class="emotion-10"
         >
           <td
             class="emotion-2"
@@ -97,28 +227,45 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
             column
           </td>
           <td
-            class="emotion-2"
+            class="emotion-9"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-3 emotion-4"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-8"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-              />
-            </svg>
+              <div
+                class="emotion-7"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-6"
+                >
+                  <div
+                    class="emotion-5"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-3 emotion-4"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0V0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
         <tr
-          class="emotion-6"
+          class="emotion-10"
         >
           <td
             class="emotion-2"
@@ -126,22 +273,19 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
             column
           </td>
           <td
-            class="emotion-2"
+            class="emotion-9"
           >
             <svg
               aria-hidden="true"
-              class="emotion-3 emotion-4"
+              class="emotion-12"
               fill="currentColor"
-              focusable="false"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              <circle
+                cx="12"
+                cy="12"
+                r="12"
               />
             </svg>
           </td>
@@ -165,34 +309,33 @@ exports[`Table renders with default styles 1`] = `
 }
 
 .emotion-0 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   min-width: 64px;
+  white-space: nowrap;
 }
 
 .emotion-4 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #E4E4E4;
   border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -202,7 +345,9 @@ exports[`Table renders with default styles 1`] = `
 }
 
 .emotion-2 {
-  padding: 8px 8px 8px 0;
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
 }
 
 <div
@@ -262,45 +407,44 @@ exports[`Table renders with default styles 1`] = `
 
 exports[`Table wraps content with styledFlag if the column is either Name, Type or Default styles 1`] = `
 <DocumentFragment>
-  .emotion-42 {
+  .emotion-20 {
   overflow-x: auto;
 }
 
-.emotion-41 {
+.emotion-19 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
 .emotion-0 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   min-width: 64px;
+  white-space: nowrap;
 }
 
-.emotion-21 {
-  background-color: transparent;
+.emotion-10 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #E4E4E4;
   border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -309,126 +453,64 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   letter-spacing: 0;
 }
 
-.emotion-8 {
-  padding: 8px 8px 8px 0;
+.emotion-3 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
 }
 
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.emotion-1 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  color: #555E74;
-  background-color: #E4E4E4;
-  border-radius: 20rem;
-}
-
-.emotion-6 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-6 svg {
-  fill: #555E74;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-3 {
-  font-family: 'DM Sans',sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #555E74;
+  white-space: nowrap;
+  font-family: 'DM Mono',monospace;
   font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1.5;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
+.emotion-4 svg {
+  fill: #555E74;
 }
 
 <div
-    class="emotion-42"
+    class="emotion-20"
   >
     <table
-      class="emotion-41"
+      class="emotion-19"
     >
       <thead>
         <tr>
@@ -438,12 +520,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
             Name
           </th>
           <th
-            class="emotion-0"
+            class="emotion-1"
           >
             Type
           </th>
           <th
-            class="emotion-0"
+            class="emotion-1"
           >
             Default
           </th>
@@ -451,166 +533,72 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
       </thead>
       <tbody>
         <tr
-          class="emotion-21"
+          class="emotion-10"
         >
           <td
-            class="emotion-8"
+            class="emotion-3"
+          >
+            name
+          </td>
+          <td
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      name
-                    </span>
-                  </div>
-                </div>
-              </div>
+                type
+              </p>
             </div>
           </td>
           <td
-            class="emotion-8"
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      type
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td
-            class="emotion-8"
-          >
-            <div
-              class="emotion-7"
-            >
-              <div
-                class="emotion-6"
-                data-testid="flag"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      default
-                    </span>
-                  </div>
-                </div>
-              </div>
+                default
+              </p>
             </div>
           </td>
         </tr>
         <tr
-          class="emotion-21"
+          class="emotion-10"
         >
           <td
-            class="emotion-8"
+            class="emotion-3"
+          >
+            name
+          </td>
+          <td
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      name
-                    </span>
-                  </div>
-                </div>
-              </div>
+                type
+              </p>
             </div>
           </td>
           <td
-            class="emotion-8"
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      type
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td
-            class="emotion-8"
-          >
-            <div
-              class="emotion-7"
-            >
-              <div
-                class="emotion-6"
-                data-testid="flag"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      default
-                    </span>
-                  </div>
-                </div>
-              </div>
+                default
+              </p>
             </div>
           </td>
         </tr>
@@ -622,45 +610,44 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 exports[`Table wraps content with styledFlag if the column is either Name, Type or Default styles 2`] = `
 <DocumentFragment>
-  .emotion-42 {
+  .emotion-20 {
   overflow-x: auto;
 }
 
-.emotion-41 {
+.emotion-19 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
 .emotion-0 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   min-width: 64px;
+  white-space: nowrap;
 }
 
-.emotion-21 {
-  background-color: transparent;
+.emotion-10 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #E4E4E4;
   border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -669,126 +656,64 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   letter-spacing: 0;
 }
 
-.emotion-8 {
-  padding: 8px 8px 8px 0;
+.emotion-3 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
 }
 
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.emotion-1 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
 }
 
 .emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  color: #555E74;
-  background-color: #E4E4E4;
-  border-radius: 20rem;
-}
-
-.emotion-6 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-6 svg {
-  fill: #555E74;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-3 {
-  font-family: 'DM Sans',sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #555E74;
+  white-space: nowrap;
+  font-family: 'DM Mono',monospace;
   font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1.5;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
+.emotion-4 svg {
+  fill: #555E74;
 }
 
 <div
-    class="emotion-42"
+    class="emotion-20"
   >
     <table
-      class="emotion-41"
+      class="emotion-19"
     >
       <thead>
         <tr>
@@ -798,12 +723,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
             Name
           </th>
           <th
-            class="emotion-0"
+            class="emotion-1"
           >
             Type
           </th>
           <th
-            class="emotion-0"
+            class="emotion-1"
           >
             Default
           </th>
@@ -811,166 +736,72 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
       </thead>
       <tbody>
         <tr
-          class="emotion-21"
+          class="emotion-10"
         >
           <td
-            class="emotion-8"
+            class="emotion-3"
+          >
+            name
+          </td>
+          <td
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      name
-                    </span>
-                  </div>
-                </div>
-              </div>
+                type
+              </p>
             </div>
           </td>
           <td
-            class="emotion-8"
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      type
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td
-            class="emotion-8"
-          >
-            <div
-              class="emotion-7"
-            >
-              <div
-                class="emotion-6"
-                data-testid="flag"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      default
-                    </span>
-                  </div>
-                </div>
-              </div>
+                default
+              </p>
             </div>
           </td>
         </tr>
         <tr
-          class="emotion-21"
+          class="emotion-10"
         >
           <td
-            class="emotion-8"
+            class="emotion-3"
+          >
+            name
+          </td>
+          <td
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      name
-                    </span>
-                  </div>
-                </div>
-              </div>
+                type
+              </p>
             </div>
           </td>
           <td
-            class="emotion-8"
+            class="emotion-6"
           >
             <div
-              class="emotion-7"
+              class="emotion-5"
             >
-              <div
-                class="emotion-6"
-                data-testid="flag"
+              <p
+                class="emotion-4"
               >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      type
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td
-            class="emotion-8"
-          >
-            <div
-              class="emotion-7"
-            >
-              <div
-                class="emotion-6"
-                data-testid="flag"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-4"
-                  >
-                    <span
-                      class="emotion-3"
-                    >
-                      default
-                    </span>
-                  </div>
-                </div>
-              </div>
+                default
+              </p>
             </div>
           </td>
         </tr>

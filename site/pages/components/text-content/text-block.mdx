@@ -28,9 +28,12 @@ TextBlock is a paragraph, which can be used to summarize any text content. It ca
     default="p"
   >
     This is a string name with one of the following html elements: h1, h2, h3,
-    h4, h5, h6 or div, that the textblock can be converted to. TextBlock
+    h4, h5, h6 or div, that the TextBlock can be converted to. TextBlock
     defaults as a p element, but it can be converted to another heading element
     or div by `as="div"` prop.
+  </Prop>
+  <Prop name="noCrop" type="boolean">
+    If true, this disables text cropping functionality on the TextBlock.
   </Prop>
   <Prop name="stylePreset" type="MQ<string>">
     If provided, this overrides the style preset applied to the TextBlock.
@@ -50,6 +53,21 @@ TextBlock is a paragraph, which can be used to summarize any text content. It ca
       name: 'Content',
       propName: 'children',
       value: 'TextBlock Content',
+    },
+    {
+      name: 'No Crop',
+      propName: 'noCrop',
+      options: [
+        {
+          label: 'Default (false)',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+      ],
     },
     {
       name: 'Render Styled Text as',

@@ -196,7 +196,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-1::after {
@@ -204,7 +204,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-0 {
@@ -245,7 +245,7 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -318,7 +318,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-3::after {
@@ -326,7 +326,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-12 {
@@ -459,7 +459,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-16::after {
@@ -467,7 +467,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-35 {
@@ -632,7 +632,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-29::after {
@@ -640,7 +640,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen {
@@ -1325,7 +1325,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-1::after {
@@ -1333,7 +1333,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-0 {
@@ -1374,7 +1374,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
-  padding: 8px 12px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1447,7 +1447,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3027777777777778em;
+  margin-bottom: -0.3184027777777778em;
 }
 
 .emotion-3::after {
@@ -1455,7 +1455,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.5684027777777778em;
 }
 
 .emotion-12 {
@@ -1588,7 +1588,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4902777777777778em;
+  margin-bottom: -0.4434027777777778em;
 }
 
 .emotion-16::after {
@@ -1596,7 +1596,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4277777777777778em;
+  margin-top: -0.4746527777777778em;
 }
 
 .emotion-43 {
@@ -1761,7 +1761,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.23928571428571432em + 1.2px);
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-29::after {
@@ -1769,7 +1769,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.5049107142857143em;
 }
 
 @media screen {

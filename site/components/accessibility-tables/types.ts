@@ -1,3 +1,5 @@
+import {TableRow} from '../table';
+
 export interface AccessibilityTablesProps {
   focusOrder?: {
     title: string;
@@ -25,20 +27,20 @@ export interface AccessibilityTablesProps {
   };
 }
 
-export interface FocusOrderProps {
+export interface FocusOrderProps extends TableRow {
   order: string[];
   element: string | JSX.Element;
   role?: string;
 }
 
-export interface AriaProps {
+export interface AriaProps extends TableRow {
   category: string;
   attribute: string;
   value: string;
-  description: string;
+  description: string | JSX.Element;
 }
 
-export interface InteractionProps {
+export interface InteractionProps extends TableRow {
   command: string[];
-  description: string;
+  description: string | JSX.Element;
 }

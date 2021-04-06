@@ -1,4 +1,4 @@
-import {ImgHTMLAttributes} from 'react';
+import React from 'react';
 import {
   ObjectFitProperty,
   HeightProperty,
@@ -12,7 +12,7 @@ import {MQ} from '../utils/style';
 import {CaptionOverrides} from '../caption';
 
 interface HTMLImageElementWithNoSizes
-  extends Omit<ImgHTMLAttributes<HTMLImageElement>, 'height' | 'width'> {}
+  extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'height' | 'width'> {}
 
 interface ImageAlignmentProps {
   fit?: ObjectFitProperty;

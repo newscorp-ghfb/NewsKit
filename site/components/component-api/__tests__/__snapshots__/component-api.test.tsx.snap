@@ -2,7 +2,7 @@
 
 exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 <DocumentFragment>
-  .emotion-26 {
+  .emotion-22 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -11,7 +11,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 @media screen {
-  .emotion-26 {
+  .emotion-22 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -22,13 +22,401 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-26 {
+  .emotion-22 {
     margin-left: 8.333333333333334%;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-26 {
+  .emotion-22 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+.emotion-21 {
+  margin-bottom: 40px;
+}
+
+.emotion-20 {
+  overflow-x: auto;
+}
+
+.emotion-19 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-0 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 64px;
+  white-space: nowrap;
+}
+
+.emotion-1 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-18 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-5 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-8 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 0;
+  color: #555E74;
+  white-space: nowrap;
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-6 svg {
+  fill: #555E74;
+}
+
+.emotion-17 {
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-15 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #148F39;
+  background-color: #E6FAEB;
+  border-radius: 50%;
+  border-width: 1px;
+}
+
+.emotion-15 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-15 svg {
+  fill: #148F39;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-13 {
+    max-width: 100%;
+  }
+}
+
+.emotion-11 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #148F39;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-11.emotion-11 {
+  fill: #148F39;
+}
+
+<div
+    class="emotion-22"
+  >
+    <div
+      class="emotion-21"
+    >
+      <div
+        class="emotion-20"
+      >
+        <table
+          class="emotion-19"
+        >
+          <thead>
+            <tr>
+              <th
+                class="emotion-0"
+              >
+                Name
+              </th>
+              <th
+                class="emotion-1"
+              >
+                Type
+              </th>
+              <th
+                class="emotion-1"
+              >
+                Default
+              </th>
+              <th
+                class="emotion-1"
+              >
+                Description
+              </th>
+              <th
+                class="emotion-4"
+              >
+                Required
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="emotion-18"
+            >
+              <td
+                class="emotion-5"
+              >
+                children
+              </td>
+              <td
+                class="emotion-8"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <p
+                    class="emotion-6"
+                  >
+                    string
+                  </p>
+                </div>
+              </td>
+              <td
+                class="emotion-8"
+              />
+              <td
+                class="emotion-8"
+              >
+                Description.
+              </td>
+              <td
+                class="emotion-17"
+              >
+                <div
+                  class="emotion-16"
+                >
+                  <div
+                    class="emotion-15"
+                    data-testid="flag"
+                  >
+                    <div
+                      class="emotion-14"
+                    >
+                      <div
+                        class="emotion-13"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-11 emotion-12"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0V0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ComponentAPI renders with props for multiple components 1`] = `
+<DocumentFragment>
+  .emotion-82 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-82 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-82 {
+    margin-left: 8.333333333333334%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-82 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -52,387 +440,76 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   width: 100%;
 }
 
-.emotion-0 {
-  background-color: transparent;
+.emotion-4 {
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   min-width: 64px;
-}
-
-.emotion-22 {
-  background-color: transparent;
-  border-style: solid;
-  border-color: #BBC3C9;
-  border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-10 {
-  padding: 8px 8px 8px 0;
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  color: #555E74;
-  background-color: #E4E4E4;
-  border-radius: 20rem;
-}
-
-.emotion-8 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-8 svg {
-  fill: #555E74;
-}
-
-.emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
+  white-space: nowrap;
 }
 
 .emotion-5 {
-  font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-5::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
-}
-
-.emotion-5::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
-}
-
-.emotion-19 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #148F39;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-19.emotion-19 {
-  width: 24px;
-  height: 24px;
-}
-
-<div
-    class="emotion-26"
-  >
-    <div
-      class="emotion-25"
-    >
-      <div
-        class="emotion-24"
-      >
-        <table
-          class="emotion-23"
-        >
-          <thead>
-            <tr>
-              <th
-                class="emotion-0"
-              >
-                Name
-              </th>
-              <th
-                class="emotion-0"
-              >
-                Type
-              </th>
-              <th
-                class="emotion-0"
-              >
-                Default
-              </th>
-              <th
-                class="emotion-0"
-              >
-                Description
-              </th>
-              <th
-                class="emotion-0"
-              >
-                Required
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              class="emotion-22"
-            >
-              <td
-                class="emotion-10"
-              >
-                <div
-                  class="emotion-9"
-                >
-                  <div
-                    class="emotion-8"
-                    data-testid="flag"
-                  >
-                    <div
-                      class="emotion-7"
-                    >
-                      <div
-                        class="emotion-6"
-                      >
-                        <span
-                          class="emotion-5"
-                        >
-                          children
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td
-                class="emotion-10"
-              >
-                <div
-                  class="emotion-9"
-                >
-                  <div
-                    class="emotion-8"
-                    data-testid="flag"
-                  >
-                    <div
-                      class="emotion-7"
-                    >
-                      <div
-                        class="emotion-6"
-                      >
-                        <span
-                          class="emotion-5"
-                        >
-                          string
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td
-                class="emotion-10"
-              />
-              <td
-                class="emotion-10"
-              >
-                Description.
-              </td>
-              <td
-                class="emotion-10"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-19 emotion-20"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  />
-                </svg>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`ComponentAPI renders with props for multiple components 1`] = `
-<DocumentFragment>
-  .emotion-98 {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-98 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-98 {
-    margin-left: 8.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-98 {
-    padding: 0 12px;
-    margin-top: 24px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-.emotion-29 {
-  margin-bottom: 40px;
-}
-
-.emotion-28 {
-  overflow-x: auto;
-}
-
-.emotion-27 {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-}
-
-.emotion-4 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
-  min-width: 64px;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
 }
 
-.emotion-26 {
-  background-color: transparent;
+.emotion-8 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-22 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -441,11 +518,46 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-14 {
-  padding: 8px 8px 8px 0;
+.emotion-9 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
 }
 
-.emotion-13 {
+.emotion-12 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-10 {
+  margin: 0;
+  padding: 0;
+  color: #555E74;
+  white-space: nowrap;
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-10 svg {
+  fill: #555E74;
+}
+
+.emotion-21 {
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -453,9 +565,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-12 {
+.emotion-19 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -471,29 +585,32 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
-  padding: 8px 12px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
   cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #555E74;
-  background-color: #E4E4E4;
-  border-radius: 20rem;
+  border-style: solid;
+  border-color: #148F39;
+  background-color: #E6FAEB;
+  border-radius: 50%;
+  border-width: 1px;
 }
 
-.emotion-12 svg {
+.emotion-19 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-12 svg {
-  fill: #555E74;
+.emotion-19 svg {
+  fill: #148F39;
 }
 
-.emotion-11 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -514,7 +631,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-10 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -524,39 +641,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-10 {
+  .emotion-17 {
     max-width: 100%;
   }
 }
 
-.emotion-9 {
-  font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-9::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
-}
-
-.emotion-9::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
-}
-
-.emotion-23 {
+.emotion-15 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -565,9 +655,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: inline-block;
 }
 
-.emotion-23.emotion-23 {
-  width: 24px;
-  height: 24px;
+.emotion-15.emotion-15 {
+  fill: #148F39;
 }
 
 @media screen and (max-width:767px) {
@@ -610,7 +699,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-0::after {
@@ -618,7 +707,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -639,7 +728,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-0::after {
@@ -647,7 +736,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -682,7 +771,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-2::after {
@@ -690,7 +779,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -711,7 +800,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-2::after {
@@ -719,11 +808,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 
-.emotion-96 {
+.emotion-80 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -733,7 +822,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   flex-flow: column;
 }
 
-.emotion-49 {
+.emotion-45 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -741,7 +830,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-bottom: 32px;
 }
 
-.emotion-48 {
+.emotion-44 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -767,7 +856,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: flex;
 }
 
-.emotion-39 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -781,7 +870,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-38 {
+.emotion-34 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -792,7 +881,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 100%;
 }
 
-.emotion-37 {
+.emotion-33 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -830,47 +919,47 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   color: #577FFB;
 }
 
-.emotion-37 svg {
+.emotion-33 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-37 svg {
+.emotion-33 svg {
   fill: #555E74;
 }
 
-.emotion-37:hover:not(:disabled) {
+.emotion-33:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #577FFB;
 }
 
-.emotion-37:hover:not(:disabled) svg {
+.emotion-33:hover:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-37:active:not(:disabled) {
+.emotion-33:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #577FFB;
 }
 
-.emotion-37:active:not(:disabled) svg {
+.emotion-33:active:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-37:disabled {
+.emotion-33:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-37:disabled svg {
+.emotion-33:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-37 svg {
+.emotion-33 svg {
   fill: #577FFB;
 }
 
-.emotion-36 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -891,7 +980,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-35 {
+.emotion-31 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -901,12 +990,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-35 {
+  .emotion-31 {
     max-width: 100%;
   }
 }
 
-.emotion-34 {
+.emotion-30 {
   font-family: 'Poppins',sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -917,23 +1006,23 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-34::before {
+.emotion-30::before {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3583333333333334em + -0.5px);
+  margin-bottom: calc(-0.3739583333333334em + -0.5px);
 }
 
-.emotion-34::after {
+.emotion-30::after {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6083333333333334em;
+  margin-top: -0.6239583333333334em;
 }
 
-.emotion-43 {
+.emotion-39 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -969,43 +1058,43 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   cursor: pointer;
 }
 
-.emotion-43 svg {
+.emotion-39 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-43 svg {
+.emotion-39 svg {
   fill: #555E74;
 }
 
-.emotion-43:hover:not(:disabled) {
+.emotion-39:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #577FFB;
 }
 
-.emotion-43:hover:not(:disabled) svg {
+.emotion-39:hover:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-43:active:not(:disabled) {
+.emotion-39:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #577FFB;
 }
 
-.emotion-43:active:not(:disabled) svg {
+.emotion-39:active:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-43:disabled {
+.emotion-39:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-43:disabled svg {
+.emotion-39:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-46 {
+.emotion-42 {
   background-color: #E4E4E4;
   display: block;
   position: absolute;
@@ -1015,24 +1104,24 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   left: 0px;
 }
 
-.emotion-47 {
+.emotion-43 {
   background-color: #577FFB;
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
 
-.emotion-75 {
+.emotion-67 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
 }
 
 <div
-    class="emotion-98"
+    class="emotion-82"
   >
     <div
-      class="emotion-29"
+      class="emotion-25"
     >
       <div
         class="emotion-1"
@@ -1053,10 +1142,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         </p>
       </div>
       <div
-        class="emotion-28"
+        class="emotion-24"
       >
         <table
-          class="emotion-27"
+          class="emotion-23"
         >
           <thead>
             <tr>
@@ -1066,22 +1155,22 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                 Name
               </th>
               <th
-                class="emotion-4"
+                class="emotion-5"
               >
                 Type
               </th>
               <th
-                class="emotion-4"
+                class="emotion-5"
               >
                 Default
               </th>
               <th
-                class="emotion-4"
+                class="emotion-5"
               >
                 Description
               </th>
               <th
-                class="emotion-4"
+                class="emotion-8"
               >
                 Required
               </th>
@@ -1089,87 +1178,70 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
           </thead>
           <tbody>
             <tr
-              class="emotion-26"
+              class="emotion-22"
             >
               <td
-                class="emotion-14"
+                class="emotion-9"
+              >
+                children
+              </td>
+              <td
+                class="emotion-12"
               >
                 <div
-                  class="emotion-13"
+                  class="emotion-11"
                 >
-                  <div
-                    class="emotion-12"
-                    data-testid="flag"
+                  <p
+                    class="emotion-10"
                   >
-                    <div
-                      class="emotion-11"
-                    >
-                      <div
-                        class="emotion-10"
-                      >
-                        <span
-                          class="emotion-9"
-                        >
-                          children
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                    string
+                  </p>
                 </div>
               </td>
               <td
-                class="emotion-14"
-              >
-                <div
-                  class="emotion-13"
-                >
-                  <div
-                    class="emotion-12"
-                    data-testid="flag"
-                  >
-                    <div
-                      class="emotion-11"
-                    >
-                      <div
-                        class="emotion-10"
-                      >
-                        <span
-                          class="emotion-9"
-                        >
-                          string
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td
-                class="emotion-14"
+                class="emotion-12"
               />
               <td
-                class="emotion-14"
+                class="emotion-12"
               >
                 Description
               </td>
               <td
-                class="emotion-14"
+                class="emotion-21"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-23 emotion-24"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  class="emotion-20"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  />
-                </svg>
+                  <div
+                    class="emotion-19"
+                    data-testid="flag"
+                  >
+                    <div
+                      class="emotion-18"
+                    >
+                      <div
+                        class="emotion-17"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-15 emotion-16"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0V0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </td>
             </tr>
           </tbody>
@@ -1177,7 +1249,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
       </div>
     </div>
     <div
-      class="emotion-29"
+      class="emotion-25"
     >
       <div
         class="emotion-1"
@@ -1198,29 +1270,29 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         </p>
       </div>
       <div
-        class="emotion-96"
+        class="emotion-80"
         data-testid="tab-group"
       >
         <div
-          class="emotion-49"
+          class="emotion-45"
           data-testid="tab-bar"
         >
           <div
             aria-orientation="horizontal"
-            class="emotion-48"
+            class="emotion-44"
             role="tablist"
           >
             <div
-              class="emotion-39"
+              class="emotion-35"
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-38"
+                class="emotion-34"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="true"
-                  class="emotion-37"
+                  class="emotion-33"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -1228,13 +1300,13 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   type="button"
                 >
                   <div
-                    class="emotion-36"
+                    class="emotion-32"
                   >
                     <div
-                      class="emotion-35"
+                      class="emotion-31"
                     >
                       <span
-                        class="emotion-34"
+                        class="emotion-30"
                       >
                         Props
                       </span>
@@ -1244,16 +1316,16 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               </div>
             </div>
             <div
-              class="emotion-39"
+              class="emotion-35"
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-38"
+                class="emotion-34"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-43"
+                  class="emotion-39"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -1261,13 +1333,13 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   type="button"
                 >
                   <div
-                    class="emotion-36"
+                    class="emotion-32"
                   >
                     <div
-                      class="emotion-35"
+                      class="emotion-31"
                     >
                       <span
-                        class="emotion-34"
+                        class="emotion-30"
                       >
                         Overrides
                       </span>
@@ -1277,13 +1349,13 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               </div>
             </div>
             <div
-              class="emotion-46"
+              class="emotion-42"
               data-testid="tab-bar-track"
               role="presentation"
             />
             <div
               aria-hidden="true"
-              class="emotion-47"
+              class="emotion-43"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -1293,16 +1365,16 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         <div
           aria-hidden="false"
           aria-labelledby="mock-nk-1"
-          class="emotion-75"
+          class="emotion-67"
           data-testid="tab-panel"
           role="tabpanel"
           tabindex="0"
         >
           <div
-            class="emotion-28"
+            class="emotion-24"
           >
             <table
-              class="emotion-27"
+              class="emotion-23"
             >
               <thead>
                 <tr>
@@ -1312,22 +1384,22 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     Name
                   </th>
                   <th
-                    class="emotion-4"
+                    class="emotion-5"
                   >
                     Type
                   </th>
                   <th
-                    class="emotion-4"
+                    class="emotion-5"
                   >
                     Default
                   </th>
                   <th
-                    class="emotion-4"
+                    class="emotion-5"
                   >
                     Description
                   </th>
                   <th
-                    class="emotion-4"
+                    class="emotion-8"
                   >
                     Required
                   </th>
@@ -1335,87 +1407,70 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               </thead>
               <tbody>
                 <tr
-                  class="emotion-26"
+                  class="emotion-22"
                 >
                   <td
-                    class="emotion-14"
+                    class="emotion-9"
+                  >
+                    children
+                  </td>
+                  <td
+                    class="emotion-12"
                   >
                     <div
-                      class="emotion-13"
+                      class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
-                        data-testid="flag"
+                      <p
+                        class="emotion-10"
                       >
-                        <div
-                          class="emotion-11"
-                        >
-                          <div
-                            class="emotion-10"
-                          >
-                            <span
-                              class="emotion-9"
-                            >
-                              children
-                            </span>
-                          </div>
-                        </div>
-                      </div>
+                        string
+                      </p>
                     </div>
                   </td>
                   <td
-                    class="emotion-14"
-                  >
-                    <div
-                      class="emotion-13"
-                    >
-                      <div
-                        class="emotion-12"
-                        data-testid="flag"
-                      >
-                        <div
-                          class="emotion-11"
-                        >
-                          <div
-                            class="emotion-10"
-                          >
-                            <span
-                              class="emotion-9"
-                            >
-                              string
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td
-                    class="emotion-14"
+                    class="emotion-12"
                   />
                   <td
-                    class="emotion-14"
+                    class="emotion-12"
                   >
                     Description
                   </td>
                   <td
-                    class="emotion-14"
+                    class="emotion-21"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-23 emotion-24"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      class="emotion-20"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                      />
-                    </svg>
+                      <div
+                        class="emotion-19"
+                        data-testid="flag"
+                      >
+                        <div
+                          class="emotion-18"
+                        >
+                          <div
+                            class="emotion-17"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="emotion-15 emotion-16"
+                              fill="currentColor"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0 0h24v24H0V0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -1425,17 +1480,17 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         <div
           aria-hidden="true"
           aria-labelledby="mock-nk-1"
-          class="emotion-75"
+          class="emotion-67"
           data-testid="tab-panel"
           hidden=""
           role="tabpanel"
           tabindex="-1"
         >
           <div
-            class="emotion-28"
+            class="emotion-24"
           >
             <table
-              class="emotion-27"
+              class="emotion-23"
             >
               <thead>
                 <tr>
@@ -1445,12 +1500,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     Name
                   </th>
                   <th
-                    class="emotion-4"
+                    class="emotion-5"
                   >
                     Type
                   </th>
                   <th
-                    class="emotion-4"
+                    class="emotion-5"
                   >
                     Description
                   </th>
@@ -1458,62 +1513,28 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               </thead>
               <tbody>
                 <tr
-                  class="emotion-26"
+                  class="emotion-22"
                 >
                   <td
-                    class="emotion-14"
+                    class="emotion-9"
+                  >
+                    spaceInset
+                  </td>
+                  <td
+                    class="emotion-12"
                   >
                     <div
-                      class="emotion-13"
+                      class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
-                        data-testid="flag"
+                      <p
+                        class="emotion-10"
                       >
-                        <div
-                          class="emotion-11"
-                        >
-                          <div
-                            class="emotion-10"
-                          >
-                            <span
-                              class="emotion-9"
-                            >
-                              spaceInset
-                            </span>
-                          </div>
-                        </div>
-                      </div>
+                        MQ&lt;string&gt;
+                      </p>
                     </div>
                   </td>
                   <td
-                    class="emotion-14"
-                  >
-                    <div
-                      class="emotion-13"
-                    >
-                      <div
-                        class="emotion-12"
-                        data-testid="flag"
-                      >
-                        <div
-                          class="emotion-11"
-                        >
-                          <div
-                            class="emotion-10"
-                          >
-                            <span
-                              class="emotion-9"
-                            >
-                              MQ&lt;string&gt;
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td
-                    class="emotion-14"
+                    class="emotion-12"
                   >
                     Description.
                   </td>

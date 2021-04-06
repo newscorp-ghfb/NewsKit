@@ -237,6 +237,7 @@ exports[`Usage renders with mandatory props 1`] = `
 .emotion-0.emotion-0 {
   width: 32px;
   height: 32px;
+  fill: #148F39;
 }
 
 .emotion-23 {
@@ -382,7 +383,7 @@ exports[`Usage renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.20729166666666665em;
 }
 
 .emotion-17::after {
@@ -390,7 +391,7 @@ exports[`Usage renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.45729166666666665em;
 }
 
 .emotion-16 {
@@ -427,7 +428,7 @@ exports[`Usage renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4267857142857143em;
+  margin-bottom: calc(-0.3799107142857143em + 1.2px);
 }
 
 .emotion-19::after {
@@ -435,7 +436,7 @@ exports[`Usage renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3642857142857143em;
+  margin-top: -0.4111607142857143em;
 }
 
 .emotion-56 {
@@ -490,6 +491,7 @@ exports[`Usage renders with mandatory props 1`] = `
 .emotion-52.emotion-52 {
   width: 32px;
   height: 32px;
+  fill: #D23F2D;
 }
 
 .emotion-66 {

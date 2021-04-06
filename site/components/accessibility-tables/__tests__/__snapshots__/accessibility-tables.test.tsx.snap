@@ -95,7 +95,7 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
 
 exports[`Accessibility renders aria interactions table if data is provided 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-22 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -104,7 +104,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen {
-  .emotion-18 {
+  .emotion-22 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -115,19 +115,19 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-18 {
+  .emotion-22 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-17 {
+.emotion-21 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-16 {
+.emotion-20 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -143,36 +143,36 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen {
-  .emotion-16 {
+  .emotion-20 {
     margin: -80px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-16 {
+  .emotion-20 {
     margin: -80px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-16 {
+  .emotion-20 {
     margin: -80px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-16 {
+  .emotion-20 {
     margin: -80px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-16 {
+  .emotion-20 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-.emotion-15 {
+.emotion-19 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -181,7 +181,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen {
-  .emotion-15 {
+  .emotion-19 {
     padding: 0 8px;
     margin-top: 80px;
     -webkit-flex-basis: 100%;
@@ -192,7 +192,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen and (min-width:768px) {
-  .emotion-15 {
+  .emotion-19 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -202,7 +202,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-15 {
+  .emotion-19 {
     padding: 0 12px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -251,7 +251,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-0::after {
@@ -259,7 +259,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -280,7 +280,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-0::after {
@@ -288,11 +288,11 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
-.emotion-14 {
+.emotion-18 {
   margin-bottom: 32px;
 }
 
@@ -323,7 +323,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-2::after {
@@ -331,7 +331,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -352,7 +352,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-2::after {
@@ -360,49 +360,48 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 
-.emotion-13 {
+.emotion-17 {
   overflow-x: auto;
 }
 
-.emotion-12 {
+.emotion-16 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-3 {
-  background-color: transparent;
+.emotion-4 {
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
-  min-width: 64px;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
 }
 
-.emotion-11 {
-  background-color: transparent;
+.emotion-15 {
   border-style: solid;
-  border-color: #BBC3C9;
+  border-color: #E4E4E4;
   border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -411,21 +410,74 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   letter-spacing: 0;
 }
 
+.emotion-10 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-3 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 64px;
+  white-space: nowrap;
+}
+
 .emotion-7 {
-  padding: 8px 8px 8px 0;
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-9 {
+  margin-left: 0px;
+}
+
+.emotion-8 {
+  margin: 0;
+  padding: 0;
+  color: #555E74;
+  white-space: nowrap;
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-8 svg {
+  fill: #555E74;
 }
 
 <div
-    class="emotion-18"
+    class="emotion-22"
   >
     <div
-      class="emotion-17"
+      class="emotion-21"
     >
       <div
-        class="emotion-16"
+        class="emotion-20"
       >
         <div
-          class="emotion-15"
+          class="emotion-19"
         >
           <div
             class="emotion-1"
@@ -437,7 +489,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
             </span>
           </div>
           <div
-            class="emotion-14"
+            class="emotion-18"
           >
             <p
               class="emotion-2"
@@ -445,10 +497,10 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
               Some random text
             </p>
             <div
-              class="emotion-13"
+              class="emotion-17"
             >
               <table
-                class="emotion-12"
+                class="emotion-16"
               >
                 <thead>
                   <tr>
@@ -458,17 +510,17 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
                       Category
                     </th>
                     <th
-                      class="emotion-3"
+                      class="emotion-4"
                     >
                       Attribute
                     </th>
                     <th
-                      class="emotion-3"
+                      class="emotion-4"
                     >
                       Value
                     </th>
                     <th
-                      class="emotion-3"
+                      class="emotion-4"
                     >
                       Description
                     </th>
@@ -476,7 +528,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
                 </thead>
                 <tbody>
                   <tr
-                    class="emotion-11"
+                    class="emotion-15"
                   >
                     <td
                       class="emotion-7"
@@ -484,17 +536,33 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
                       2
                     </td>
                     <td
-                      class="emotion-7"
+                      class="emotion-10"
                     >
-                      description
+                      <div
+                        class="emotion-9"
+                      >
+                        <p
+                          class="emotion-8"
+                        >
+                          description
+                        </p>
+                      </div>
                     </td>
                     <td
-                      class="emotion-7"
+                      class="emotion-10"
                     >
-                      value
+                      <div
+                        class="emotion-12"
+                      >
+                        <p
+                          class="emotion-8"
+                        >
+                          value
+                        </p>
+                      </div>
                     </td>
                     <td
-                      class="emotion-7"
+                      class="emotion-10"
                     >
                       description
                     </td>
@@ -669,7 +737,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-0::after {
@@ -677,7 +745,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -698,7 +766,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-0::after {
@@ -706,7 +774,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
@@ -741,7 +809,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-2::after {
@@ -749,7 +817,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -770,7 +838,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-2::after {
@@ -778,7 +846,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 
@@ -793,34 +861,54 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 .emotion-3 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
-  min-width: 64px;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
 }
 
-.emotion-14 {
-  background-color: transparent;
+.emotion-4 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-14 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -830,7 +918,10 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 .emotion-11 {
-  padding: 8px 8px 8px 0;
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .emotion-10 {
@@ -841,6 +932,8 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-9 {
@@ -859,8 +952,9 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 40px;
-  padding: 8px 12px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -868,8 +962,9 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   appearance: none;
   overflow: hidden;
   color: #FFFFFF;
-  background-color: #AEBFFF;
+  background-color: #577FFB;
   border-radius: 20rem;
+  white-space: nowrap;
 }
 
 .emotion-9 svg {
@@ -919,9 +1014,9 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 
 .emotion-6 {
   font-family: 'Poppins',sans-serif;
-  font-size: 24px;
-  line-height: 1.3333333333333333;
-  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -933,7 +1028,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
 .emotion-6::after {
@@ -941,7 +1036,22 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.5049107142857143em;
+}
+
+.emotion-12 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.emotion-13 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
 }
 
 <div
@@ -987,12 +1097,12 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
                       Order
                     </th>
                     <th
-                      class="emotion-3"
+                      class="emotion-4"
                     >
                       Element
                     </th>
                     <th
-                      class="emotion-3"
+                      class="emotion-4"
                     >
                       Role
                     </th>
@@ -1029,12 +1139,12 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
                       </div>
                     </td>
                     <td
-                      class="emotion-11"
+                      class="emotion-12"
                     >
                       element
                     </td>
                     <td
-                      class="emotion-11"
+                      class="emotion-13"
                     >
                       Role
                     </td>
@@ -1053,7 +1163,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 
 exports[`Accessibility renders keyboard interactions table with keyCombo if data is provided 1`] = `
 <DocumentFragment>
-  .emotion-24 {
+  .emotion-32 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1062,7 +1172,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen {
-  .emotion-24 {
+  .emotion-32 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -1073,19 +1183,19 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-24 {
+  .emotion-32 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-23 {
+.emotion-31 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-22 {
+.emotion-30 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1101,36 +1211,36 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen {
-  .emotion-22 {
+  .emotion-30 {
     margin: -80px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-22 {
+  .emotion-30 {
     margin: -80px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-22 {
+  .emotion-30 {
     margin: -80px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-22 {
+  .emotion-30 {
     margin: -80px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-22 {
+  .emotion-30 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-.emotion-21 {
+.emotion-29 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1139,7 +1249,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen {
-  .emotion-21 {
+  .emotion-29 {
     padding: 0 8px;
     margin-top: 80px;
     -webkit-flex-basis: 100%;
@@ -1150,7 +1260,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen and (min-width:768px) {
-  .emotion-21 {
+  .emotion-29 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -1160,7 +1270,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-21 {
+  .emotion-29 {
     padding: 0 12px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -1209,7 +1319,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22499999999999998em;
+    margin-bottom: -0.24062499999999998em;
   }
 
   .emotion-0::after {
@@ -1217,7 +1327,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.490625em;
   }
 }
 
@@ -1238,7 +1348,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.19166666666666665em;
+    margin-bottom: -0.20729166666666665em;
   }
 
   .emotion-0::after {
@@ -1246,11 +1356,11 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.45729166666666665em;
   }
 }
 
-.emotion-20 {
+.emotion-28 {
   margin-bottom: 32px;
 }
 
@@ -1281,7 +1391,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.4625em;
+    margin-bottom: -0.415625em;
   }
 
   .emotion-2::after {
@@ -1289,7 +1399,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4em;
+    margin-top: -0.446875em;
   }
 }
 
@@ -1310,7 +1420,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.37916666666666665em;
+    margin-bottom: -0.33229166666666665em;
   }
 
   .emotion-2::after {
@@ -1318,49 +1428,69 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.31666666666666665em;
+    margin-top: -0.36354166666666665em;
   }
 }
 
-.emotion-19 {
+.emotion-27 {
   overflow-x: auto;
 }
 
-.emotion-18 {
+.emotion-26 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
 .emotion-3 {
-  background-color: transparent;
   border-style: solid;
-  border-color: #243853;
+  border-color: #BBC3C9;
   border-width: 0 0 1px 0;
   color: #162740;
   font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   height: 40px;
   text-align: left;
-  vertical-align: middle;
-  min-width: 64px;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
 }
 
-.emotion-17 {
-  background-color: transparent;
+.emotion-4 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-25 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
@@ -1369,59 +1499,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   letter-spacing: 0;
 }
 
-.emotion-15 {
-  padding: 8px 8px 8px 0;
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 40px;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  color: #FFFFFF;
-  background-color: #AEBFFF;
-  border-radius: 20rem;
-}
-
-.emotion-8 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-8 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1442,7 +1520,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   margin-right: calc(-4px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1452,49 +1530,164 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-6 {
+  .emotion-5 {
     max-width: 100%;
   }
 }
 
-.emotion-5 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 24px;
-  line-height: 1.3333333333333333;
-  font-weight: 700;
+.emotion-24 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-23 {
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-11 {
+    max-width: 100%;
+  }
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 4px 8px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  color: #555E74;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-top: -4px;
+}
+
+.emotion-9 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-9 svg {
+  fill: #555E74;
+}
+
+.emotion-6 {
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4285714285714286;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.19166666666666665em;
+  margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.3642857142857143em;
+}
+
+.emotion-12 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #555E74;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-12.emotion-12 {
+  width: 16px;
+  height: 16px;
 }
 
 <div
-    class="emotion-24"
+    class="emotion-32"
   >
     <div
-      class="emotion-23"
+      class="emotion-31"
     >
       <div
-        class="emotion-22"
+        class="emotion-30"
       >
         <div
-          class="emotion-21"
+          class="emotion-29"
         >
           <div
             class="emotion-1"
@@ -1506,7 +1699,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
             </span>
           </div>
           <div
-            class="emotion-20"
+            class="emotion-28"
           >
             <p
               class="emotion-2"
@@ -1514,10 +1707,10 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
               Some random text
             </p>
             <div
-              class="emotion-19"
+              class="emotion-27"
             >
               <table
-                class="emotion-18"
+                class="emotion-26"
               >
                 <thead>
                   <tr>
@@ -1527,7 +1720,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
                       Command
                     </th>
                     <th
-                      class="emotion-3"
+                      class="emotion-4"
                     >
                       Description
                     </th>
@@ -1535,59 +1728,96 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
                 </thead>
                 <tbody>
                   <tr
-                    class="emotion-17"
+                    class="emotion-25"
                   >
                     <td
-                      class="emotion-15"
+                      class="emotion-23"
                     >
                       <div
-                        class="emotion-9"
+                        class="emotion-22"
                       >
                         <div
-                          class="emotion-8"
-                          data-testid="flag"
+                          class="emotion-11"
                         >
                           <div
-                            class="emotion-7"
+                            class="emotion-10"
                           >
                             <div
-                              class="emotion-6"
+                              class="emotion-9"
+                              data-testid="flag"
                             >
-                              <span
-                                class="emotion-5"
+                              <div
+                                class="emotion-8"
                               >
-                                ctrl
-                              </span>
+                                <div
+                                  class="emotion-5"
+                                />
+                                <div
+                                  class="emotion-5"
+                                >
+                                  <span
+                                    class="emotion-6"
+                                  >
+                                    ctrl
+                                  </span>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                       + 
-                      <div
-                        class="emotion-9"
-                      >
                         <div
-                          class="emotion-8"
-                          data-testid="flag"
+                          class="emotion-11"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="emotion-12 emotion-13"
+                            fill="currentColor"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="emotion-11"
                         >
                           <div
-                            class="emotion-7"
+                            class="emotion-10"
                           >
                             <div
-                              class="emotion-6"
+                              class="emotion-9"
+                              data-testid="flag"
                             >
-                              <span
-                                class="emotion-5"
+                              <div
+                                class="emotion-8"
                               >
-                                esc
-                              </span>
+                                <div
+                                  class="emotion-5"
+                                />
+                                <div
+                                  class="emotion-5"
+                                >
+                                  <span
+                                    class="emotion-6"
+                                  >
+                                    esc
+                                  </span>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </td>
                     <td
-                      class="emotion-15"
+                      class="emotion-24"
                     >
                       description
                     </td>

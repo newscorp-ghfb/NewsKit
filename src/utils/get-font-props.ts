@@ -11,6 +11,10 @@ export const getFontProps = (
   fonts: Record<string, any>,
   // eslint-disable-next-line consistent-return
 ) => {
+  if (!fontFamily) {
+    return undefined;
+  }
+
   const [fontStackPeek] = fontFamily.split(',');
 
   const fontFamilyObject: FontConfig | undefined = Object.values(fonts).find(
