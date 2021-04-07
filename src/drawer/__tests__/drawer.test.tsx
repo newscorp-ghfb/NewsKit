@@ -14,7 +14,7 @@ const drawerBody = <TextBlock>Drawer body content</TextBlock>;
 const drawerHeader = <TextBlock>Drawer header content</TextBlock>;
 
 describe('Drawer layout', () => {
-  test('renders default right position', () => {
+  test('renders default left position', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
       open: true,
       header: drawerHeader,
@@ -24,13 +24,13 @@ describe('Drawer layout', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders left position', () => {
+  test('renders right position', () => {
     const fragment = renderToFragmentWithTheme(Drawer, {
       open: true,
       onDismiss: () => {},
       header: drawerHeader,
       children: drawerBody,
-      placement: 'left',
+      placement: 'right',
     });
     expect(fragment).toMatchSnapshot();
   });

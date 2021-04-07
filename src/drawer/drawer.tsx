@@ -7,7 +7,6 @@ import {
   StyledDrawerHeader,
   StyledCloseButtonContainer,
   StyledDrawerHeaderContent,
-  StyledFillSpaceCloseButtonContainer,
   StyledFillSpaceCloseButton,
 } from './styled';
 import {DrawerProps} from './types';
@@ -23,19 +22,10 @@ import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {Stack} from '../stack';
 
 /* istanbul ignore next */
-const safeCloseButtonStyles = (top: number) => ({
+const centerCloseButton = (top: number) => ({
   top: top / 2,
   transform: top !== 0 ? `translateY(-50%)` : undefined,
 });
-
-const FillSpaceButton = ({
-  placement,
-  overrides,
-}: Pick<DrawerProps, 'placement' | 'overrides'>) => (
-  <StyledFillSpaceCloseButtonContainer placement={placement}>
-    <StyledFillSpaceCloseButton overrides={overrides} />
-  </StyledFillSpaceCloseButtonContainer>
-);
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
@@ -45,7 +35,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   overrides = {},
   ariaLabelledby,
   ariaDescribedby,
-  placement = 'right',
+  placement = 'left',
   restoreFocusTo = undefined,
   ...props
 }) => {
@@ -138,7 +128,10 @@ export const Drawer: React.FC<DrawerProps> = ({
               {header && (
                 <StyledDrawerHeaderContent>{header}</StyledDrawerHeaderContent>
               )}
-              <FillSpaceButton placement={placement} overrides={overrides} />
+              <StyledFillSpaceCloseButton
+                overrides={overrides}
+                placement={placement}
+              />
             </Stack>
           </StyledDrawerHeader>
           <StyledDrawerContent data-testid="drawer-content">
@@ -148,7 +141,7 @@ export const Drawer: React.FC<DrawerProps> = ({
             placement={placement}
             overrides={overrides}
             style={{
-              ...safeCloseButtonStyles(headerHeight),
+              ...centerCloseButton(headerHeight),
             }}
             // Move props directly to IconButton when PPDSC-1449 is fixed
           >

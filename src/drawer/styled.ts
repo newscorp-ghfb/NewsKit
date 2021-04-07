@@ -20,7 +20,11 @@ const placementOptions = {
   },
 };
 
-type DrawerPanelProps = Pick<DrawerProps, 'placement' | 'overrides'> & {
+type DrawerOnlyOverridesAndPlacementProps = Pick<
+  DrawerProps,
+  'placement' | 'overrides'
+>;
+type DrawerPanelProps = DrawerOnlyOverridesAndPlacementProps & {
   isOpen: boolean;
 };
 
@@ -55,9 +59,7 @@ export const StyledDrawerPanel = styled.div<DrawerPanelProps>`
   ${getStylePreset('drawer.panel', 'panel')}
 `;
 
-export const StyledDrawerHeader = styled.div<
-  Pick<DrawerProps, 'placement' | 'overrides'>
->`
+export const StyledDrawerHeader = styled.div<DrawerOnlyOverridesAndPlacementProps>`
   box-sizing: border-box;
   ${getStylePreset('drawer.header', 'header')};
   ${getSizingCssFromTheme('minHeight', 'sizing080')}
@@ -73,9 +75,7 @@ export const StyledDrawerHeaderContent = styled.div<
   ${getResponsiveSpace('padding', 'drawer.header', 'header', 'spaceInset')}
 `;
 
-export const StyledCloseButtonContainer = styled.div<
-  Pick<DrawerProps, 'placement' | 'overrides'>
->`
+export const StyledCloseButtonContainer = styled.div<DrawerOnlyOverridesAndPlacementProps>`
   position: absolute;
   top: 0;
   ${({placement}) => `${placement}: 0;`}
@@ -94,16 +94,8 @@ export const StyledDrawerContent = styled.div`
   ${getResponsiveSpace('padding', 'drawer.content', 'content', 'spaceInset')}
 `;
 
-// These elements are needed to fill the space behind close button which is positioned absolute
-export const StyledFillSpaceCloseButtonContainer = styled.div<
-  Pick<DrawerProps, 'placement' | 'overrides'>
->`
-  ${({placement}) =>
-    placement === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
-`;
-export const StyledFillSpaceCloseButton = styled.div<
-  Pick<DrawerProps, 'placement' | 'overrides'>
->`
+// This elements is needed to fill the space behind close button which is positioned absolute
+export const StyledFillSpaceCloseButton = styled.div<DrawerOnlyOverridesAndPlacementProps>`
   ${getResponsiveSpace(
     'padding',
     'drawer.closeButton',
@@ -112,4 +104,7 @@ export const StyledFillSpaceCloseButton = styled.div<
   )}
   ${getResponsiveSize('width', 'iconButton.medium', '', 'width')}  
   ${getResponsiveSize('height', 'iconButton.medium', '', 'height')}
+  ${({placement}) =>
+    placement === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
+  flex-shrink: 0;
 `;

@@ -80,10 +80,11 @@ export default {
 
           return (
             <>
-              <StorybookHeading>Default drawer</StorybookHeading>
+              <StorybookHeading>Drawer placed on the right</StorybookHeading>
               <Drawer
                 open
                 onDismiss={() => {}}
+                placement="right"
                 // eslint-disable-next-line prettier/prettier
                 header={<><IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} /><LinkStandalone href="www.test.com">Link button</LinkStandalone></>}
               >
@@ -152,15 +153,8 @@ export default {
 
           return (
             <>
-              <StorybookHeading>
-                Default positioned on the left
-              </StorybookHeading>
-              <Drawer
-                open
-                onDismiss={() => {}}
-                placement="left"
-                header={renderHeader()}
-              >
+              <StorybookHeading>Drawer placed on the left</StorybookHeading>
+              <Drawer open onDismiss={() => {}} header={renderHeader()}>
                 {renderChildren()}
               </Drawer>
             </>
@@ -201,6 +195,7 @@ export default {
               <Drawer
                 open
                 onDismiss={() => {}}
+                placement="right"
                 overrides={{
                   overlay: {
                     stylePreset: 'overlayCustom',
