@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import FocusLock from 'react-focus-lock';
 import {Overlay} from '../overlay/overlay';
 import {
   StyledDrawerPanel,
@@ -6,6 +7,8 @@ import {
   StyledDrawerHeader,
   StyledCloseButtonContainer,
   StyledDrawerHeaderContent,
+  StyledFillSpaceCloseButtonContainer,
+  StyledFillSpaceCloseButton,
 } from './styled';
 import {DrawerProps} from './types';
 import {useTheme} from '../theme';
@@ -14,8 +17,25 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useKeypress} from '../utils/hooks';
 import {IconButton} from '../icon-button';
 import {IconFilledClose} from '../icons';
-import {Stack} from '../stack';
 import {ButtonSize} from '../button';
+import {get} from '../utils/get';
+import {useResizeObserver} from '../utils/hooks/use-resize-observer';
+import {Stack} from '../stack';
+
+/* istanbul ignore next */
+const safeCloseButtonStyles = (top: number) => ({
+  top: top / 2,
+  transform: top !== 0 ? `translateY(-50%)` : undefined,
+});
+
+const FillSpaceButton = ({
+  placement,
+  overrides,
+}: Pick<DrawerProps, 'placement' | 'overrides'>) => (
+  <StyledFillSpaceCloseButtonContainer placement={placement}>
+    <StyledFillSpaceCloseButton overrides={overrides} />
+  </StyledFillSpaceCloseButtonContainer>
+);
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
@@ -26,6 +46,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   ariaLabelledby,
   ariaDescribedby,
   placement = 'right',
+  restoreFocusTo = undefined,
   ...props
 }) => {
   const theme = useTheme();
@@ -65,49 +86,83 @@ export const Drawer: React.FC<DrawerProps> = ({
 
   useKeypress('Escape', handleEscape, {enabled: isOpen});
 
+  // ref to store activeElement ( focused ) before drawer been opened
+  const originalFocusedElementRef = useRef<Element | null>(null);
+
+  const handleOnLockActivation = () => {
+    originalFocusedElementRef.current = document.activeElement;
+  };
+
+  const handleOnLockDeactivation = () => {
+    const originalFocusedElement = get(originalFocusedElementRef, 'current');
+
+    /* istanbul ignore else */
+    if (restoreFocusTo || originalFocusedElement) {
+      const elementToFocus = restoreFocusTo || originalFocusedElement;
+      // without the zero-timeout, focus will likely remain on the drawer
+      window.setTimeout(
+        () =>
+          typeof elementToFocus.focus === 'function' && elementToFocus.focus(),
+        0,
+      );
+    }
+  };
+
+  const headerRef = React.useRef<HTMLDivElement>(null);
+  const [, headerHeight] = useResizeObserver(headerRef);
+
   return (
     <>
       {isOpen && (
         <Overlay onClick={handleOverlayClick} overrides={overlaySettings} />
       )}
-      <StyledDrawerPanel
-        isOpen={isOpen}
-        role="dialog"
-        aria-label="drawer"
-        aria-describedby={ariaDescribedby}
-        aria-labelledby={ariaLabelledby}
-        aria-modal="true"
-        data-testid="drawer"
-        overrides={overrides}
-        placement={placement}
-        {...props}
+      <FocusLock
+        disabled={!isOpen}
+        onActivation={handleOnLockActivation}
+        onDeactivation={handleOnLockDeactivation}
       >
-        <StyledDrawerHeader overrides={overrides}>
-          <Stack flow="horizontal-center" flowReverse={placement === 'left'}>
-            {header && (
-              <StyledDrawerHeaderContent>{header}</StyledDrawerHeaderContent>
-            )}
-            <StyledCloseButtonContainer
-              placement={placement}
-              overrides={overrides}
-              // Move props directly to IconButton when PPDSC-1449 is fixed
+        <StyledDrawerPanel
+          isOpen={isOpen}
+          role="dialog"
+          aria-label="drawer"
+          aria-describedby={ariaDescribedby}
+          aria-labelledby={ariaLabelledby}
+          aria-modal="true"
+          data-testid="drawer"
+          overrides={overrides}
+          placement={placement}
+          {...props}
+        >
+          <StyledDrawerHeader overrides={overrides} ref={headerRef}>
+            <Stack flow="horizontal-center" flowReverse={placement === 'left'}>
+              {header && (
+                <StyledDrawerHeaderContent>{header}</StyledDrawerHeaderContent>
+              )}
+              <FillSpaceButton placement={placement} overrides={overrides} />
+            </Stack>
+          </StyledDrawerHeader>
+          <StyledDrawerContent data-testid="drawer-content">
+            {children}
+          </StyledDrawerContent>
+          <StyledCloseButtonContainer
+            placement={placement}
+            overrides={overrides}
+            style={{
+              ...safeCloseButtonStyles(headerHeight),
+            }}
+            // Move props directly to IconButton when PPDSC-1449 is fixed
+          >
+            <IconButton
+              aria-label="close drawer"
+              onClick={handleCloseButtonClick}
+              overrides={closeButtonSettings}
+              size={ButtonSize.Medium}
             >
-              <IconButton
-                aria-label="close drawer"
-                onClick={handleCloseButtonClick}
-                overrides={closeButtonSettings}
-                size={ButtonSize.Medium}
-              >
-                <IconFilledClose />
-              </IconButton>
-            </StyledCloseButtonContainer>
-          </Stack>
-        </StyledDrawerHeader>
-
-        <StyledDrawerContent data-testid="drawer-content">
-          {children}
-        </StyledDrawerContent>
-      </StyledDrawerPanel>
+              <IconFilledClose />
+            </IconButton>
+          </StyledCloseButtonContainer>
+        </StyledDrawerPanel>
+      </FocusLock>
     </>
   );
 };

@@ -1,5 +1,6 @@
-import {fireEvent} from '@testing-library/react';
-import React from 'react';
+import {fireEvent, wait} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import React, {useRef, useState} from 'react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
@@ -213,5 +214,158 @@ describe('Drawer closing', () => {
     fireEvent.click(drawerCloseIcon);
 
     expect(mockCallBack).not.toHaveBeenCalled();
+  });
+});
+
+describe('Drawer focus management', () => {
+  test('focus on first interactive element', async () => {
+    const {findByTestId} = renderWithTheme(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      children: (
+        <button type="button" data-testid="interactive-element">
+          auto focus button
+        </button>
+      ),
+    });
+
+    await wait(async () => {
+      const element = await findByTestId('interactive-element');
+      expect(element).toHaveFocus();
+    });
+  });
+
+  test('focus on custom element using data-autofocus attr', async () => {
+    const {findByTestId} = renderWithTheme(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      children: (
+        <>
+          <button type="button">another button</button>
+          <p>text here</p>
+          <button
+            data-autofocus
+            type="button"
+            data-testid="interactive-element"
+          >
+            auto focus button
+          </button>
+        </>
+      ),
+    });
+
+    await wait(async () => {
+      const element = await findByTestId('interactive-element');
+      expect(element).toHaveFocus();
+    });
+  });
+
+  test('return focus to the last focused element on close', async () => {
+    const DrawerPage = () => {
+      const [isOpen, setOpen] = useState(false);
+      return (
+        <>
+          <button
+            type="button"
+            data-testid="toggle"
+            onClick={() => setOpen(!isOpen)}
+          >
+            toggle
+          </button>
+          <Drawer open={isOpen} onDismiss={() => setOpen(false)}>
+            content with
+            <button type="button" data-testid="interactive-element">
+              button
+            </button>
+          </Drawer>
+        </>
+      );
+    };
+    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+      DrawerPage,
+    );
+    let toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
+    await wait(async () => {
+      // first interactive element is focused
+      const interactiveElement = await findByTestId('interactive-element');
+      expect(interactiveElement).toHaveFocus();
+    });
+
+    // move to close button
+    userEvent.tab();
+
+    // check if close button is focused
+    const closeButton = getByLabelText('close drawer');
+    expect(closeButton).toHaveFocus();
+
+    fireEvent.click(closeButton);
+
+    await wait(async () => {
+      toggleButton = await findByTestId('toggle');
+      expect(toggleButton).toHaveFocus();
+    });
+  });
+
+  test('return focus to restoreFocusTo element on close', async () => {
+    const DrawerPage = () => {
+      const [isOpen, setOpen] = useState(false);
+      const restoreFocusRef = useRef(null);
+      return (
+        <>
+          <button
+            type="button"
+            data-testid="toggle"
+            onClick={() => setOpen(!isOpen)}
+          >
+            toggle
+          </button>
+
+          <Drawer
+            open={isOpen}
+            onDismiss={() => setOpen(false)}
+            restoreFocusTo={restoreFocusRef.current || undefined}
+          >
+            content with
+            <button type="button" data-testid="interactive-element">
+              button
+            </button>
+          </Drawer>
+          <button
+            type="button"
+            data-testid="restoreFocusTo"
+            ref={restoreFocusRef}
+          >
+            another button
+          </button>
+        </>
+      );
+    };
+    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+      DrawerPage,
+    );
+    const toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
+    await wait(async () => {
+      // first interactive element is focused
+      const interactiveElement = await findByTestId('interactive-element');
+      expect(interactiveElement).toHaveFocus();
+    });
+
+    // move to close button
+    userEvent.tab();
+
+    // check if close button is focused
+    const closeButton = getByLabelText('close drawer');
+    expect(closeButton).toHaveFocus();
+
+    fireEvent.click(closeButton);
+
+    await wait(async () => {
+      const restoreFocusButton = await findByTestId('restoreFocusTo');
+      expect(restoreFocusButton).toHaveFocus();
+    });
   });
 });

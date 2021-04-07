@@ -2,12 +2,10 @@ import {Theme} from '../theme';
 import {
   css,
   styled,
-  getMaxSize,
-  getMinSize,
-  getSize,
   getStylePreset,
-  getSpacingInset,
-  getSizingFromTheme,
+  getResponsiveSpace,
+  getResponsiveSize,
+  getSizingCssFromTheme,
 } from '../utils/style';
 import {DrawerProps} from './types';
 
@@ -31,9 +29,9 @@ const verticalSize = (
     theme: Theme;
   },
 ) => css`
-  width: ${getSize('drawer.panel', 'panel')(props)};
-  max-width: ${getMaxSize('drawer.panel', 'panel')(props)};
-  min-width: ${getMinSize('drawer.panel', 'panel')(props)};
+  ${getResponsiveSize('width', 'drawer.panel', 'panel', 'size')(props)}
+  ${getResponsiveSize('maxWidth', 'drawer.panel', 'panel', 'maxSize')(props)}
+  ${getResponsiveSize('minWidth', 'drawer.panel', 'panel', 'minSize')(props)}
   height: 100%;
 `;
 
@@ -58,11 +56,11 @@ export const StyledDrawerPanel = styled.div<DrawerPanelProps>`
 `;
 
 export const StyledDrawerHeader = styled.div<
-  Pick<DrawerPanelProps, 'overrides'>
+  Pick<DrawerProps, 'placement' | 'overrides'>
 >`
   box-sizing: border-box;
   ${getStylePreset('drawer.header', 'header')};
-  min-height: ${getSizingFromTheme('sizing080')};
+  ${getSizingCssFromTheme('minHeight', 'sizing080')}
   flex-shrink: 0; //fix min-height issues
 `;
 
@@ -71,20 +69,47 @@ export const StyledDrawerHeaderContent = styled.div<
 >`
   display: flex;
   align-items: center;
-  ${getSpacingInset('drawer.header', 'header')};
+  box-sizing: border-box;
+  ${getResponsiveSpace('padding', 'drawer.header', 'header', 'spaceInset')}
 `;
 
 export const StyledCloseButtonContainer = styled.div<
   Pick<DrawerProps, 'placement' | 'overrides'>
 >`
-  ${getSpacingInset('drawer.closeButton', 'closeButton')};
-  ${({placement}) =>
-    placement === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
+  position: absolute;
+  top: 0;
+  ${({placement}) => `${placement}: 0;`}
+  ${getResponsiveSpace(
+    'padding',
+    'drawer.closeButton',
+    'closeButton',
+    'spaceInset',
+  )}
 `;
 
 export const StyledDrawerContent = styled.div`
   box-sizing: border-box;
   flex-grow: 1;
   overflow: hidden auto;
-  ${getSpacingInset('drawer.content', 'content')}
+  ${getResponsiveSpace('padding', 'drawer.content', 'content', 'spaceInset')}
+`;
+
+// These elements are needed to fill the space behind close button which is positioned absolute
+export const StyledFillSpaceCloseButtonContainer = styled.div<
+  Pick<DrawerProps, 'placement' | 'overrides'>
+>`
+  ${({placement}) =>
+    placement === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
+`;
+export const StyledFillSpaceCloseButton = styled.div<
+  Pick<DrawerProps, 'placement' | 'overrides'>
+>`
+  ${getResponsiveSpace(
+    'padding',
+    'drawer.closeButton',
+    'closeButton',
+    'spaceInset',
+  )}
+  ${getResponsiveSize('width', 'iconButton.medium', '', 'width')}  
+  ${getResponsiveSize('height', 'iconButton.medium', '', 'height')}
 `;

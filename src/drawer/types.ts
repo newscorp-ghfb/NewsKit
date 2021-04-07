@@ -8,7 +8,7 @@ export interface DrawerProps {
   children: Exclude<React.ReactNode, 'undefined'>;
   ariaDescribedby?: string;
   ariaLabelledby?: string;
-
+  restoreFocusTo?: HTMLElement;
   overrides?: {
     overlay?: {
       stylePreset?: MQ<string>;
