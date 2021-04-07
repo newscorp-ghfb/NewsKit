@@ -240,6 +240,22 @@ Object {
         },
       },
     },
+    "banner": Object {
+      "container": Object {
+        "minHeight": "sizing090",
+        "spaceInset": "spaceInset045",
+        "stylePreset": "bannerContainerSolid",
+      },
+      "contentActionsContainer": Object {
+        "maxWidth": Object {
+          "lg": "1024px",
+          "md": "768px",
+          "sm": "480px",
+          "xl": "1440px",
+          "xs": "420px",
+        },
+      },
+    },
     "button": Object {
       "large": Object {
         "iconSize": "iconSize030",
@@ -1162,6 +1178,12 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "#02509b",
+      },
+    },
+    "bannerContainerSolid": Object {
+      "base": Object {
+        "backgroundColor": "#128293",
+        "color": "#ffffff",
       },
     },
     "buttonDefault": Object {

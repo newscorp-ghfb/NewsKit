@@ -3,6 +3,17 @@ import {StylePreset} from './types';
 export const stylePresets: Record<string, StylePreset> = {};
 
 //
+// Banner
+//
+
+stylePresets.bannerContainerSolid = {
+  base: {
+    backgroundColor: '{{colors.interfaceInformative010}}',
+    color: '{{colors.inkInverse}}',
+  },
+};
+
+//
 // Button
 //
 
