@@ -1,6 +1,4 @@
-import {TextBlock} from 'newskit';
 import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
-import React from 'react';
 import {BaseCardProps} from '..';
 import {BaseCard} from '../base-card';
 
@@ -8,7 +6,7 @@ describe('BaseCard', () => {
   test('Renders default (vertical) non-interactive card', () => {
     const props: BaseCardProps = {
       title: 'Non-interactive Vertical Card',
-      children: <TextBlock>Text</TextBlock>,
+      description: 'Text',
     };
     const fragment = renderToFragmentWithTheme(BaseCard, props);
     expect(fragment).toMatchSnapshot();
@@ -18,7 +16,7 @@ describe('BaseCard', () => {
     const props: BaseCardProps = {
       title: 'Non-interactive Horizontal Card',
       layout: 'horizontal',
-      children: <TextBlock>Text</TextBlock>,
+      description: 'Text',
     };
     const fragment = renderToFragmentWithTheme(BaseCard, props);
     expect(fragment).toMatchSnapshot();
@@ -28,7 +26,7 @@ describe('BaseCard', () => {
     const props: BaseCardProps = {
       title: 'Interactive Horizontal Card',
       href: 'newskit.com',
-      children: <TextBlock>Text</TextBlock>,
+      description: 'Text',
     };
     const fragment = renderToFragmentWithTheme(BaseCard, props);
     expect(fragment).toMatchSnapshot();
@@ -39,7 +37,7 @@ describe('BaseCard', () => {
       title: 'Interactive Horizontal Card',
       href: 'newskit.com',
       layout: 'horizontal',
-      children: <TextBlock>Text</TextBlock>,
+      description: 'Text',
     };
     const fragment = renderToFragmentWithTheme(BaseCard, props);
     expect(fragment).toMatchSnapshot();

@@ -8,22 +8,23 @@ import {MediaList} from '../../components/media-list';
 import {Separator} from '../../components/separator';
 import {ContentText} from '../../components/text-section';
 
-const cardStyle = {
-  card: {
-    stylePreset: 'cardContainerNonInteractive010',
-  },
-  title: {
-    stylePreset: 'inkWhiteContrast',
-    typographyPreset: {
-      xs: 'editorialHeadline020',
-      lg: 'editorialHeadline030',
-    },
-  },
-  description: {
-    stylePreset: 'inkWhiteSubtle',
-    typographyPreset: 'editorialParagraph010',
-  },
-};
+// Keeping this until mediaList starts supporting featureCards
+// const cardStyle = {
+//   card: {
+//     stylePreset: 'cardContainerNonInteractive010',
+//   },
+//   title: {
+//     stylePreset: 'inkWhiteContrast',
+//     typographyPreset: {
+//       xs: 'editorialHeadline020',
+//       lg: 'editorialHeadline030',
+//     },
+//   },
+//   description: {
+//     stylePreset: 'inkWhiteSubtle',
+//     typographyPreset: 'editorialParagraph010',
+//   },
+// };
 
 const cards = [
   {
@@ -34,8 +35,6 @@ const cards = [
       src: '/static/about/contribute/contribute-card-feedback.svg',
       alt: '',
     },
-    layout: 'horizontal',
-    styles: cardStyle,
   },
   {
     title: 'Share',
@@ -45,7 +44,6 @@ const cards = [
       src: '/static/about/contribute/contribute-card-share.svg',
       alt: '',
     },
-    styles: cardStyle,
   },
   {
     title: 'Create',
@@ -55,7 +53,6 @@ const cards = [
       src: '/static/about/contribute/contribute-card-create.svg',
       alt: '',
     },
-    styles: cardStyle,
   },
 ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, ButtonSize} from 'newskit';
+import {UsageKind} from '../../../components/usage-card';
 import {MetaStatus} from '../../../components/meta/types';
 import {LayoutProps} from '../../../components/layout';
 import {ComponentPageTemplate} from '../../../components/component-page-template';
@@ -28,7 +29,7 @@ export default (layoutProps: LayoutProps) => (
       cards: [
         {
           description: 'Description',
-          kind: 'do',
+          kind: UsageKind.DO,
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'src alt',
@@ -36,7 +37,7 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           description: 'Description',
-          kind: 'do',
+          kind: UsageKind.DO,
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'src alt',
@@ -44,7 +45,7 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           description: 'Description',
-          kind: 'dont',
+          kind: UsageKind.DONT,
           media: {
             src: '/static/placeholder-16x9.png',
             alt: 'src alt',

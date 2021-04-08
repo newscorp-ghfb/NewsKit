@@ -17,10 +17,27 @@ const staticCard = {
   description: 'card with optional title ',
 };
 
+const UsageCardDo = {
+  description: 'UsageCard Do',
+};
+
+const UsageCardDont = {
+  description: 'UsageCard Dont',
+  kind: 'dont',
+};
+
 describe('Media List', () => {
   test('renders with default layout', () => {
     const fragment = renderToFragmentWithTheme(MediaList, {
       cards: [interactiveCard, staticCard],
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with usage cards', () => {
+    const fragment = renderToFragmentWithTheme(MediaList, {
+      cards: [UsageCardDo, UsageCardDont],
+      cardType: 'usage',
     });
     expect(fragment).toMatchSnapshot();
   });

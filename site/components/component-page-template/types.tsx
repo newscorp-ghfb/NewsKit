@@ -4,7 +4,6 @@ import {ComponentAPIProps} from '../component-api';
 import {MetaProps} from '../meta/types';
 import {LayoutProps} from '../layout';
 import {ComplianceProps} from '../compliance';
-import {UsageProps} from '../usage';
 import {PlaygroundProps} from '../playground/types';
 import {AnatomyProps} from '../anatomy';
 import {MediaListProps} from '../media-list';
@@ -24,7 +23,7 @@ export interface ComponentPageTemplateProps {
   options?: MediaListProps & {introduction: string};
   states?: MediaListProps & {introduction: string};
   behaviors?: MediaListProps & {introduction: string};
-  usage?: UsageProps & {introduction: string};
+  usage?: MediaListProps & {introduction: string};
   accessibility?: AccessibilityTablesProps & {introduction: string};
   componentAPI?: ComponentAPIProps & {introduction: string};
   seo?: SectionIntroductionProps & {introduction: string};

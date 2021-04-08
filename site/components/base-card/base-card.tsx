@@ -1,10 +1,11 @@
 import React from 'react';
-import {Block, Headline} from 'newskit';
+import {Block, Headline, TextBlock} from 'newskit';
 import {BaseCardProps} from './types';
 import {StyledCard} from './styled';
 
 export const BaseCard: React.FC<BaseCardProps> = ({
   title,
+  description,
   children,
   href,
   overrides,
@@ -45,7 +46,9 @@ export const BaseCard: React.FC<BaseCardProps> = ({
           {title}
         </Headline>
       </Block>
-      {children}
+      <TextBlock typographyPreset="editorialParagraph020" stylePreset="inkBase">
+        {description}
+      </TextBlock>
     </StyledCard>
   );
 };

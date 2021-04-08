@@ -16,7 +16,6 @@ import {Playground} from '../playground';
 import {TableOfContents} from '../table-of-contents';
 import {Compliance} from '../compliance';
 import {Meta} from '../meta/meta';
-import {Usage} from '../usage';
 import {ComponentAPI} from '../component-api';
 import {ComponentPageTemplateProps} from './types';
 import {SectionIntroduction} from '../section-introduction';
@@ -164,7 +163,12 @@ const renderSections = ({
               <SectionIntroduction title="Usage">
                 {usage.introduction}
               </SectionIntroduction>
-              <Usage {...usage} />
+              <MediaList
+                gridProps={{xsRowGutter: 'space050'}}
+                cardType="usage"
+                layout="2-span"
+                {...usage}
+              />
             </Grid>
           </StyledSection>
         </Cell>

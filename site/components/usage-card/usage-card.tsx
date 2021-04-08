@@ -1,16 +1,18 @@
 import React from 'react';
 import {Block, Card, TextBlock, Headline, Divider} from 'newskit';
-import {CheckIcon, CrossIcon} from '../icons';
-import {KindConfig, UsageCardProps} from './types';
-import {AbsoluteBlock, RelativeBlock} from './styled';
+import {CheckIcon} from '../icons/check-icon';
+import {CrossIcon} from '../icons/cross-icon';
+import {KindConfig, UsageCardProps, UsageKind} from './types';
+import {RelativeBlock, AbsoluteBlock} from './styled';
 
-const kindMap: Record<UsageCardProps['kind'], KindConfig> = {
+const kindMap: Record<string, KindConfig> = {
   do: {
     heading: 'Do',
     iconComponent: CheckIcon,
     dividerStylePreset: 'dividerPositive',
     headingStylePreset: 'inkPositive',
   },
+
   dont: {
     heading: 'Do not',
     iconComponent: CrossIcon,
@@ -19,21 +21,25 @@ const kindMap: Record<UsageCardProps['kind'], KindConfig> = {
   },
 };
 
-export const CardUsage = ({card}: {card: UsageCardProps}) => {
+export const UsageCard: React.FC<UsageCardProps> = ({
+  kind = UsageKind.DO,
+  description,
+  media,
+}) => {
   const {
     iconComponent: Icon,
     heading,
     dividerStylePreset,
     headingStylePreset,
-  } = kindMap[card.kind];
-
+  } = kindMap[kind];
   return (
     <RelativeBlock>
       <AbsoluteBlock>
         <Icon />
       </AbsoluteBlock>
+
       <Card
-        media={card.media}
+        media={media}
         overrides={{
           stylePreset: 'cardMediaNonInteractive',
           mediaContainer: {
@@ -45,6 +51,7 @@ export const CardUsage = ({card}: {card: UsageCardProps}) => {
         <Block spaceStack="space040">
           <Divider overrides={{stylePreset: dividerStylePreset}} />
           <Block spaceStack="space040" />
+
           <Headline
             overrides={{
               typographyPreset: 'editorialHeadline030',
@@ -61,7 +68,7 @@ export const CardUsage = ({card}: {card: UsageCardProps}) => {
             stylePreset="inkBase"
             typographyPreset="editorialParagraph010"
           >
-            {card.description}
+            {description}
           </TextBlock>
         </Block>
       </Card>

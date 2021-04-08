@@ -3,6 +3,7 @@ import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {MetaStatus} from '../../meta/types';
 import {ComponentPageTemplate} from '..';
 import {ComponentPageTemplateProps} from '../types';
+import {UsageKind} from '../../usage-card';
 
 const layoutProps = {
   toggleTheme: () => {},
@@ -81,7 +82,7 @@ describe('Component Page Template', () => {
         introduction: 'Component options',
         cards: [
           {
-            label: 'Options',
+            title: 'Options',
             description: 'Description',
             media: {
               src: '/static/placeholder-16x9.png',
@@ -102,7 +103,7 @@ describe('Component Page Template', () => {
         introduction: 'Component states',
         cards: [
           {
-            label: 'States',
+            title: 'States',
             description: 'Description',
             media: {
               src: '/static/placeholder-16x9.png',
@@ -123,7 +124,7 @@ describe('Component Page Template', () => {
         introduction: 'Component Behavior',
         cards: [
           {
-            label: 'Title',
+            title: 'Title',
             description: 'Description',
             media: {
               src: '/static/placeholder-16x9.png',
@@ -145,7 +146,7 @@ describe('Component Page Template', () => {
         cards: [
           {
             description: 'Description',
-            kind: 'do',
+            kind: UsageKind.DO,
             media: {
               src: '/static/placeholder-16x9.png',
               alt: 'src alt',
@@ -240,7 +241,7 @@ describe('Component Page Template', () => {
         introduction: 'Related Components',
         cards: [
           {
-            label: 'Title',
+            title: 'Title',
             description: 'Description',
             href: 'http://localhost:8081/components/action/button',
             media: {

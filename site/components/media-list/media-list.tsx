@@ -1,32 +1,31 @@
 import React from 'react';
-import {
-  Cell,
-  Grid,
-  TextBlock,
-  Block,
-  styled,
-  Visible,
-  BreakpointKeys,
-} from 'newskit';
+import {Cell, Grid, Block, Visible, BreakpointKeys, styled} from 'newskit';
+import {UsageCard} from '../usage-card';
 import {BaseCard} from '../base-card';
 import {MediaListProps} from './types';
 import {spanListConfig} from './span-list-config'
 
-const StyledCard = styled(BaseCard)`
-  height: 100%;
-`;
+const CardTypes = {
+  usage: UsageCard,
+  base: BaseCard,
+};
 
 export const MediaList: React.FC<MediaListProps> = ({
   spaceStack,
   cardsLayout,
   layout = '3-span',
   cards,
+  cardType = 'base',
   gridProps,
   parentCellProps,
   horizontalRatio,
 }) => {
   const renderCards = (cardListOrientation?: 'vertical' | 'horizontal') => {
     const cardListToRender = [];
+    const CardComponent = CardTypes[cardType];
+    const StyledCardComponent = styled(CardComponent)`
+      height: 100%;
+    `;
 
     const cardListColumns = {
       heroCard: {xs: 12},
@@ -34,7 +33,7 @@ export const MediaList: React.FC<MediaListProps> = ({
     };
 
     cardListToRender.push(
-      cards.map(({media, description, title, href}, index) => {
+      cards.map((cardProps, index) => {
         let cellColumnList;
         if (layout.includes('hero') && index === 0) {
           cellColumnList = cardListColumns.heroCard;
@@ -44,20 +43,11 @@ export const MediaList: React.FC<MediaListProps> = ({
 
         return (
           <Cell {...cellColumnList}>
-            <StyledCard
+            <StyledCardComponent
               layout={cardListOrientation}
-              media={media}
-              title={title}
-              href={href}
               overrides={{horizontalRatio}}
-            >
-              <TextBlock
-                typographyPreset="editorialParagraph020"
-                stylePreset="inkBase"
-              >
-                {description}
-              </TextBlock>
-            </StyledCard>
+              {...cardProps}
+            />
           </Cell>
         );
       }),

@@ -1,7 +1,10 @@
-import {GridProps, MQ, ImageProps, CellProps} from 'newskit';
+import {GridProps, MQ, CellProps} from 'newskit';
+import {UsageCardProps} from '../usage-card';
+import {BaseCardProps} from '../base-card';
 
 export interface MediaListProps {
   cards: Array<MediaItem>;
+  cardType?: 'base' | 'usage';
   cardsLayout?: MQ<'horizontal' | 'vertical'>;
   layout?:
     | '1-span'
@@ -15,16 +18,4 @@ export interface MediaListProps {
   horizontalRatio?: string;
   parentCellProps?: CellProps;
 }
-
-interface TextBlockPresets {
-  stylePreset: MQ<string>;
-  typographyPreset: MQ<string>;
-}
-
-export interface MediaItem {
-  label: string;
-  title?: string;
-  description: string;
-  media?: ImageProps;
-  href?: string;
-}
+export type MediaItem = BaseCardProps & UsageCardProps;
