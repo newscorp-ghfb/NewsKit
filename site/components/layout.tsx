@@ -25,13 +25,12 @@ const LayoutWrapper = styled.div`
   -moz-osx-font-smoothing: grayscale;
 `;
 
-const Container = styled.div`
+const Container = styled.div<Pick<LayoutProps, 'hideSidebar'>>`
   width: 100%;
   display: flex;
   flex-direction: column;
-
   ${getMediaQueryFromTheme('lg')} {
-    padding-left: 276px;
+    padding-left: ${({hideSidebar}) => !hideSidebar && '276px'};
   }
 `;
 
@@ -45,8 +44,8 @@ export interface LayoutProps {
   newPage?: boolean; // Temporary property until "new" pages are the only pages.
   toggleTheme: () => void;
   themeMode: string;
+  hideSidebar?: boolean;
 }
-
 interface LayoutState {
   sidebarOpen: boolean;
   headerHeight: number;
@@ -142,17 +141,26 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
   render() {
     const {sidebarOpen} = this.state;
-    const {path, newPage, toggleTheme, themeMode, children} = this.props;
+    const {
+      hideSidebar,
+      path,
+      newPage,
+      toggleTheme,
+      themeMode,
+      children,
+    } = this.props;
 
     return (
       <LayoutWrapper>
-        <Sidebar
-          path={path}
-          sidebarOpen={sidebarOpen}
-          handleSidebarClick={this.toggleSidebar}
-        />
+        {!hideSidebar && (
+          <Sidebar
+            path={path}
+            sidebarOpen={sidebarOpen}
+            handleSidebarClick={this.toggleSidebar}
+          />
+        )}
 
-        <Container>
+        <Container hideSidebar={hideSidebar}>
           <SiteHeader
             handleSidebarClick={this.toggleSidebar}
             toggleTheme={toggleTheme}

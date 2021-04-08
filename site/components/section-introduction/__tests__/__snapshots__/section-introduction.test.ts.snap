@@ -43,7 +43,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
 }
 
 .emotion-4 {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .emotion-3 {
@@ -141,7 +141,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
 }
 
 .emotion-6 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-5 {

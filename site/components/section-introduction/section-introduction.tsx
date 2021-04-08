@@ -9,7 +9,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
 }) => (
   <>
     <Cell xs={12} md={8} lg={6} mdOffset={1} {...cellProps}>
-      <Block spaceStack="space060">
+      <Block spaceStack="space050">
         <TitleBar
           headingAs="h2"
           overrides={{
@@ -27,7 +27,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
         </TitleBar>
       </Block>
       {children && (
-        <Block spaceStack="space090">
+        <Block spaceStack="space070">
           <TextBlock
             stylePreset="inkBase"
             typographyPreset="editorialSubheadline020"

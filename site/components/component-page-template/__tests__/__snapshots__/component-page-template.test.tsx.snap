@@ -2279,10 +2279,6 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2367,7 +2363,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -4691,7 +4687,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -7265,10 +7261,6 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7353,7 +7345,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -9893,7 +9885,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -12470,10 +12462,6 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   height: 16px;
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12558,7 +12546,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -14879,7 +14867,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                 class="emotion-252"
               >
                 <div
-                  class="emotion-363"
+                  class="emotion-355"
                 >
                   <div
                     class="emotion-362"
@@ -17792,10 +17780,6 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -17880,7 +17864,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -18131,6 +18115,10 @@ exports[`Component Page Template renders mandatory sections and component API 1`
   }
 }
 
+.emotion-371 {
+  margin-bottom: 32px;
+}
+
 .emotion-370 {
   margin: 0;
   padding: 1px 0;
@@ -18324,10 +18312,6 @@ exports[`Component Page Template renders mandatory sections and component API 1`
     flex-basis: 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
-}
-
-.emotion-393 {
-  margin-bottom: 40px;
 }
 
 .emotion-372 {
@@ -20472,7 +20456,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -20509,7 +20493,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                         class="emotion-394"
                       >
                         <div
-                          class="emotion-393"
+                          class="emotion-365"
                         >
                           <div
                             class="emotion-369"
@@ -20521,7 +20505,7 @@ exports[`Component Page Template renders mandatory sections and component API 1`
                             </span>
                           </div>
                           <div
-                            class="emotion-363"
+                            class="emotion-371"
                           >
                             <p
                               class="emotion-370"
@@ -23105,10 +23089,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -23193,7 +23173,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -23550,6 +23530,10 @@ exports[`Component Page Template renders mandatory sections and focus order from
     width: 0;
     margin-top: -0.45729166666666665em;
   }
+}
+
+.emotion-385 {
+  margin-bottom: 32px;
 }
 
 .emotion-370 {
@@ -25803,7 +25787,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -25858,7 +25842,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                                 </span>
                               </div>
                               <div
-                                class="emotion-363"
+                                class="emotion-385"
                               >
                                 <p
                                   class="emotion-370"
@@ -28408,10 +28392,6 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28496,7 +28476,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -30994,7 +30974,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -33808,11 +33788,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
-.emotion-376 {
+.emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33896,7 +33872,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-378 {
@@ -36568,7 +36544,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -39156,10 +39132,6 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   height: 16px;
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -39244,7 +39216,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -41576,7 +41548,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                 class="emotion-252"
               >
                 <div
-                  class="emotion-363"
+                  class="emotion-355"
                 >
                   <div
                     class="emotion-362"
@@ -44135,10 +44107,6 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -44223,7 +44191,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -46435,7 +46403,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -49071,10 +49039,6 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -49159,7 +49123,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -51578,7 +51542,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
@@ -54165,10 +54129,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
-.emotion-363 {
-  margin-bottom: 32px;
-}
-
 .emotion-362 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -54253,7 +54213,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 }
 
 .emotion-365 {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .emotion-364 {
@@ -56711,7 +56671,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                         class="emotion-366"
                       >
                         <div
-                          class="emotion-363"
+                          class="emotion-355"
                         >
                           <div
                             class="emotion-362"
