@@ -773,7 +773,7 @@ export default {
                   <CardInset
                     href="https://newskit.co.uk/"
                     media={{
-                      src: '/placeholder-3:2.png',
+                      src: '/placeholder-3x2.png',
                       alt: 'Card Media',
                     }}
                     actions={cardSmallTags}

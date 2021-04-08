@@ -19,6 +19,13 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {deepMerge} from '../utils/deep-merge';
 import {getHorizontalRatio} from './utils';
 
+// This key is needed to for the card headline (and to the link when it is wrapped)
+// to avoid missing key prop warning from react.
+// There is no need for the key to be automatically generated for now
+// as we only support one Headline per card
+// https://nidigitalsolutions.jira.com/browse/PPDSC-1527
+const cardHeadlineKey = '1';
+
 const renderMedia = (media: CardProps['media']) =>
   renderComponent(media) || (
     <Image loadingAspectRatio="3:2" {...(media as ImageProps)} />
@@ -81,7 +88,11 @@ const findAndDecorateCardHeadline = (
     );
 
     const CardHeadline = (
-      <Headline {...restHeadlineProps} overrides={headlineSettings} />
+      <Headline
+        {...restHeadlineProps}
+        overrides={headlineSettings}
+        key={cardHeadlineKey}
+      />
     );
 
     // if href is not set - return card headline with styles
@@ -97,7 +108,9 @@ const findAndDecorateCardHeadline = (
 
     // if href is set - wrap card headline with styles within a link
     return (
-      <StyledCardLink {...linkPropsWithHref}>{CardHeadline}</StyledCardLink>
+      <StyledCardLink {...linkPropsWithHref} key={cardHeadlineKey}>
+        {CardHeadline}
+      </StyledCardLink>
     );
   };
 
