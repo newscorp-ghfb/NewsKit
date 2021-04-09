@@ -2,7 +2,7 @@
 
 exports[`Tag href renders as an anchor 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -12,78 +12,15 @@ exports[`Tag href renders as an anchor 1`] = `
   flex-direction: column;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -97,6 +34,7 @@ exports[`Tag href renders as an anchor 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -108,59 +46,21 @@ exports[`Tag href renders as an anchor 1`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <a
-      class="emotion-3"
-      data-testid="tag"
-      href="#"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </a>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag href renders in disable state as a div 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -177,14 +77,14 @@ exports[`Tag href renders in disable state as a div 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -193,24 +93,21 @@ exports[`Tag href renders in disable state as a div 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -218,7 +115,7 @@ exports[`Tag href renders in disable state as a div 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -226,15 +123,53 @@ exports[`Tag href renders in disable state as a div 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <a
+      class="emotion-1"
+      data-testid="tag"
+      href="#"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag href renders in disable state as a div 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -248,6 +183,7 @@ exports[`Tag href renders in disable state as a div 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -258,28 +194,88 @@ exports[`Tag href renders in disable state as a div 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
       disabled=""
     >
@@ -287,10 +283,10 @@ exports[`Tag href renders in disable state as a div 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>
@@ -303,7 +299,7 @@ exports[`Tag href renders in disable state as a div 1`] = `
 
 exports[`Tag renders a tag with a custom stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -313,15 +309,15 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -335,6 +331,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -345,20 +342,20 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
@@ -376,14 +373,14 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -392,24 +389,21 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -417,7 +411,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -426,20 +420,20 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>
@@ -452,7 +446,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 exports[`Tag renders a tag with a custom typographyPreset 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -462,15 +456,15 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -484,6 +478,7 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -494,20 +489,20 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
@@ -525,14 +520,14 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -541,24 +536,21 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -566,7 +558,7 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -575,20 +567,20 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>
@@ -601,7 +593,7 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
 
 exports[`Tag renders a tag with an icon 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -611,15 +603,15 @@ exports[`Tag renders a tag with an icon 1`] = `
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -633,6 +625,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -643,24 +636,24 @@ exports[`Tag renders a tag with an icon 1`] = `
   border-radius: 0;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-5 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -674,14 +667,14 @@ exports[`Tag renders a tag with an icon 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -690,40 +683,13 @@ exports[`Tag renders a tag with an icon 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-0 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -732,27 +698,51 @@ exports[`Tag renders a tag with an icon 1`] = `
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-4.emotion-4 {
   width: 16px;
   height: 16px;
 }
 
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -768,10 +758,10 @@ exports[`Tag renders a tag with an icon 1`] = `
           </svg>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <span
-            class="emotion-3"
+            class="emotion-7"
           >
             Text
           </span>
@@ -784,7 +774,7 @@ exports[`Tag renders a tag with an icon 1`] = `
 
 exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -794,92 +784,15 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   flex-direction: column;
 }
 
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    max-width: 100%;
-  }
-}
-
-.emotion-3 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2e2e2e;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-6 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -893,6 +806,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -903,39 +817,113 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   border-radius: 0;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   width: 48px;
   height: 48px;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -951,10 +939,10 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
           </svg>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <span
-            class="emotion-3"
+            class="emotion-7"
           >
             Text
           </span>
@@ -967,7 +955,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 
 exports[`Tag renders a tag with an icon and custom spacing between elements 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -977,15 +965,15 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -999,6 +987,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -1009,65 +998,24 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   border-radius: 0;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-3 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2e2e2e;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-5 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1081,14 +1029,14 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1097,28 +1045,66 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -1134,10 +1120,10 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
           </svg>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <span
-            class="emotion-3"
+            class="emotion-7"
           >
             Text
           </span>
@@ -1150,7 +1136,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 
 exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1160,78 +1146,15 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   flex-direction: column;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1246,6 +1169,7 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -1256,51 +1180,24 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders a tag with fixed for width and height 1`] = `
-<DocumentFragment>
-  .emotion-2 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1314,14 +1211,14 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1330,24 +1227,21 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1355,7 +1249,7 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1363,7 +1257,34 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders a tag with fixed for width and height 1`] = `
+<DocumentFragment>
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1375,15 +1296,15 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   height: 100px;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1398,6 +1319,7 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -1408,58 +1330,21 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders a tag with no paddings 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -1476,14 +1361,14 @@ exports[`Tag renders a tag with no paddings 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1492,24 +1377,21 @@ exports[`Tag renders a tag with no paddings 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1517,7 +1399,7 @@ exports[`Tag renders a tag with no paddings 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1525,15 +1407,52 @@ exports[`Tag renders a tag with no paddings 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders a tag with no paddings 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1547,6 +1466,7 @@ exports[`Tag renders a tag with no paddings 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -1557,58 +1477,21 @@ exports[`Tag renders a tag with no paddings 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -1625,14 +1508,14 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1641,24 +1524,21 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1666,7 +1546,7 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1674,15 +1554,52 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1697,6 +1614,7 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -1707,210 +1625,21 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders a tag with percentage for width and height 1`] = `
-<DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #535353;
-  border-width: 1px;
-  color: #2e2e2e;
-  border-radius: 0;
-}
-
-.emotion-3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-3 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-3:active:not(:disabled) {
-  border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -1927,14 +1656,14 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1943,24 +1672,21 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1968,7 +1694,7 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1976,15 +1702,202 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders a tag with percentage for width and height 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  color: #2e2e2e;
+  border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-1 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-1:active:not(:disabled) {
+  border-width: 1px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1999,6 +1912,7 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -2009,210 +1923,21 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders a tag with token set for width and height 1`] = `
-<DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 160px;
-  height: 160px;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 160px;
-  height: 160px;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #535353;
-  border-width: 1px;
-  color: #2e2e2e;
-  border-radius: 0;
-}
-
-.emotion-3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-3 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-3:active:not(:disabled) {
-  border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders in disabled state 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -2229,14 +1954,14 @@ exports[`Tag renders in disabled state 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2245,24 +1970,21 @@ exports[`Tag renders in disabled state 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2270,7 +1992,7 @@ exports[`Tag renders in disabled state 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2278,15 +2000,202 @@ exports[`Tag renders in disabled state 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders a tag with token set for width and height 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 160px;
+  height: 160px;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 160px;
+  height: 160px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  color: #2e2e2e;
+  border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-1 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-1:active:not(:disabled) {
+  border-width: 1px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders in disabled state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2300,6 +2209,7 @@ exports[`Tag renders in disabled state 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -2310,59 +2220,21 @@ exports[`Tag renders in disabled state 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
-}
-
-<div
-    class="emotion-4"
-  >
-    <div
-      class="emotion-3"
-      data-testid="tag"
-      disabled=""
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Text
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders with Large size 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -2379,14 +2251,14 @@ exports[`Tag renders with Large size 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2395,48 +2267,83 @@ exports[`Tag renders with Large size 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tag"
+      disabled=""
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag renders with Large size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2450,6 +2357,7 @@ exports[`Tag renders with Large size 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -2460,38 +2368,98 @@ exports[`Tag renders with Large size 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>
@@ -2504,7 +2472,7 @@ exports[`Tag renders with Large size 1`] = `
 
 exports[`Tag renders with Medium size 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2514,15 +2482,15 @@ exports[`Tag renders with Medium size 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2536,6 +2504,7 @@ exports[`Tag renders with Medium size 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -2546,20 +2515,20 @@ exports[`Tag renders with Medium size 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
@@ -2577,14 +2546,14 @@ exports[`Tag renders with Medium size 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2593,24 +2562,21 @@ exports[`Tag renders with Medium size 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2618,7 +2584,7 @@ exports[`Tag renders with Medium size 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2627,20 +2593,20 @@ exports[`Tag renders with Medium size 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>
@@ -2653,7 +2619,7 @@ exports[`Tag renders with Medium size 1`] = `
 
 exports[`Tag renders with Small size 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2663,51 +2629,15 @@ exports[`Tag renders with Small size 1`] = `
   flex-direction: column;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2721,6 +2651,7 @@ exports[`Tag renders with Small size 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -2731,35 +2662,68 @@ exports[`Tag renders with Small size 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-0 {
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2767,7 +2731,7 @@ exports[`Tag renders with Small size 1`] = `
   margin-bottom: calc(-0.4833333333333334em + 1px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2776,20 +2740,20 @@ exports[`Tag renders with Small size 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>
@@ -2802,7 +2766,7 @@ exports[`Tag renders with Small size 1`] = `
 
 exports[`Tag renders with default stylePreset if supplied with invalid value 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2812,15 +2776,15 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2834,6 +2798,7 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -2844,20 +2809,20 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
@@ -2875,14 +2840,14 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2891,24 +2856,21 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2916,7 +2878,7 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2925,20 +2887,20 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>
@@ -2951,7 +2913,7 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
 
 exports[`Tag renders with default styles 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2961,15 +2923,15 @@ exports[`Tag renders with default styles 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2983,6 +2945,7 @@ exports[`Tag renders with default styles 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -2993,20 +2956,20 @@ exports[`Tag renders with default styles 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-width: 1px;
 }
 
@@ -3024,14 +2987,14 @@ exports[`Tag renders with default styles 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3040,24 +3003,21 @@ exports[`Tag renders with default styles 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -3065,7 +3025,7 @@ exports[`Tag renders with default styles 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -3074,20 +3034,20 @@ exports[`Tag renders with default styles 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tag"
     >
       <div
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Text
           </span>

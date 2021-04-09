@@ -4,6 +4,7 @@ exports[`Cell Container re-renders full width grid cell css when grid margin cha
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -21,7 +22,7 @@ exports[`Cell Container re-renders full width grid cell css when grid margin cha
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-flex-basis: calc(100% + 48px);
     -ms-flex-preferred-size: calc(100% + 48px);
@@ -31,7 +32,7 @@ exports[`Cell Container re-renders full width grid cell css when grid margin cha
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -53,6 +54,7 @@ exports[`Cell Container renders expected cell offset styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -71,19 +73,19 @@ exports[`Cell Container renders expected cell offset styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     margin-left: 16.666666666666668%;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     margin-left: 25%;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -101,6 +103,7 @@ exports[`Cell Container renders expected cell order styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -121,7 +124,7 @@ exports[`Cell Container renders expected cell order styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -129,7 +132,7 @@ exports[`Cell Container renders expected cell order styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     -webkit-order: 3;
     -ms-flex-order: 3;
@@ -137,7 +140,7 @@ exports[`Cell Container renders expected cell order styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     -webkit-order: 4;
     -ms-flex-order: 4;
@@ -157,6 +160,7 @@ exports[`Cell Container renders expected cell span styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -174,7 +178,7 @@ exports[`Cell Container renders expected cell span styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -183,7 +187,7 @@ exports[`Cell Container renders expected cell span styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -192,7 +196,7 @@ exports[`Cell Container renders expected cell span styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -213,6 +217,7 @@ exports[`Cell Container renders expected default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -230,7 +235,7 @@ exports[`Cell Container renders expected default styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -247,6 +252,7 @@ exports[`Cell Container renders expected hidden at lg styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -264,7 +270,7 @@ exports[`Cell Container renders expected hidden at lg styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -273,7 +279,7 @@ exports[`Cell Container renders expected hidden at lg styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -282,13 +288,13 @@ exports[`Cell Container renders expected hidden at lg styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     display: none;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .emotion-0 {
     display: block;
     padding: 0 12px;
@@ -311,6 +317,7 @@ exports[`Cell Container renders expected hidden at md styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -328,7 +335,7 @@ exports[`Cell Container renders expected hidden at md styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -337,13 +344,13 @@ exports[`Cell Container renders expected hidden at md styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     display: none;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     display: block;
     padding: 0 12px;
@@ -366,6 +373,7 @@ exports[`Cell Container renders expected hidden at sm styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -383,13 +391,13 @@ exports[`Cell Container renders expected hidden at sm styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     display: none;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     display: block;
     padding: 0 8px;
@@ -402,7 +410,7 @@ exports[`Cell Container renders expected hidden at sm styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -423,6 +431,7 @@ exports[`Cell Container renders expected hidden at xl styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -440,7 +449,7 @@ exports[`Cell Container renders expected hidden at xl styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -449,7 +458,7 @@ exports[`Cell Container renders expected hidden at xl styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -458,7 +467,7 @@ exports[`Cell Container renders expected hidden at xl styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -469,7 +478,7 @@ exports[`Cell Container renders expected hidden at xl styles 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .emotion-0 {
     display: none;
   }
@@ -485,6 +494,7 @@ exports[`Cell Container renders expected hidden at xs styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -497,7 +507,7 @@ exports[`Cell Container renders expected hidden at xs styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     display: block;
     padding: 0 8px;
@@ -510,7 +520,7 @@ exports[`Cell Container renders expected hidden at xs styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
@@ -519,7 +529,7 @@ exports[`Cell Container renders expected hidden at xs styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -540,6 +550,7 @@ exports[`Cell Container renders expected inherited sm cell offset styles from th
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -558,13 +569,13 @@ exports[`Cell Container renders expected inherited sm cell offset styles from th
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     margin-left: 16.666666666666668%;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -581,6 +592,7 @@ exports[`Cell Container renders expected inherited sm cell order styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -601,7 +613,7 @@ exports[`Cell Container renders expected inherited sm cell order styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -609,7 +621,7 @@ exports[`Cell Container renders expected inherited sm cell order styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -626,6 +638,7 @@ exports[`Cell Container renders expected inherited sm cell span styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -643,7 +656,7 @@ exports[`Cell Container renders expected inherited sm cell span styles 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -652,7 +665,7 @@ exports[`Cell Container renders expected inherited sm cell span styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -669,6 +682,7 @@ exports[`Cell Container renders full width grid cell at expected breakpoints 1`]
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -686,7 +700,7 @@ exports[`Cell Container renders full width grid cell at expected breakpoints 1`]
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     -webkit-flex-basis: calc(100% + 32px);
     -ms-flex-preferred-size: calc(100% + 32px);
@@ -696,7 +710,7 @@ exports[`Cell Container renders full width grid cell at expected breakpoints 1`]
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
@@ -708,7 +722,7 @@ exports[`Cell Container renders full width grid cell at expected breakpoints 1`]
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .emotion-0 {
     margin-left: 0;
     -webkit-flex-basis: 50%;
@@ -728,6 +742,7 @@ exports[`Cell Container renders with expected grid overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -744,21 +759,21 @@ exports[`Cell Container renders with expected grid overrides 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     padding: 0 2px;
     margin-top: 8px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     padding: 0 6px;
     margin-top: 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 32px;
@@ -777,6 +792,7 @@ exports[`Cell Container renders with expected inherited sm grid overrides 1`] = 
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -793,7 +809,7 @@ exports[`Cell Container renders with expected inherited sm grid overrides 1`] = 
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     padding: 0 2px;
     margin-top: 8px;

@@ -233,7 +233,7 @@ const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
 const StyledBlock = (styled.div(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   getStyleFromProps as any,
-) as unknown) as StyledComponent<StyledBlockProps, {}, Theme>;
+) as unknown) as StyledComponent<StyledBlockProps>;
 
 export const LegacyBlock: React.FC<LegacyBlockProps> = ({
   height,

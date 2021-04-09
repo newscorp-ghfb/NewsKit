@@ -2,48 +2,45 @@
 
 exports[`EnumTable renders enum as expected 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   overflow-x: auto;
   width: 100%;
   margin-bottom: 40px;
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: #ffffff;
   box-shadow: 0 3px 4px 2px #ffffff;
 }
 
-.emotion-0,
-.emotion-0 td,
-.emotion-0 th {
+.emotion-1,
+.emotion-1 td,
+.emotion-1 th {
   color: #0a0a0a;
   border-spacing: 0;
   border: solid 1px #e4e4e4;
 }
 
-.emotion-0 td,
-.emotion-0 th {
+.emotion-1 td,
+.emotion-1 th {
   padding: 8px 12px;
   border-top: none;
 }
 
-.emotion-0 th {
+.emotion-1 th {
   text-align: left;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <table
-      class="emotion-0"
+      class="emotion-1"
     >
       <thead>
         <tr>

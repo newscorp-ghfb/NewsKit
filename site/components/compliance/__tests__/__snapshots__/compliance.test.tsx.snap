@@ -2,8 +2,9 @@
 
 exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 <DocumentFragment>
-  .emotion-82 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -11,7 +12,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 }
 
 @media screen {
-  .emotion-82 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -21,32 +22,34 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-82 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-82 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-81 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-80 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -56,37 +59,38 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 }
 
 @media screen {
-  .emotion-80 {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-80 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-80 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-80 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-80 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-.emotion-7 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -94,7 +98,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-3 {
     padding: 0 40px;
     margin-top: 48px;
     -webkit-flex-basis: 100%;
@@ -104,8 +108,8 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     margin-top: 40px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -114,8 +118,8 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-7 {
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -123,11 +127,11 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   }
 }
 
-.emotion-2 {
+.emotion-4 {
   margin-bottom: 16px;
 }
 
-.emotion-0 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -137,30 +141,27 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-5.emotion-5 {
   width: 32px;
   height: 32px;
   color: #808E99;
   fill: #808E99;
 }
 
-.emotion-5 {
+.emotion-7 {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-4::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -168,7 +169,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   margin-bottom: -0.20729166666666665em;
 }
 
-.emotion-4::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -176,18 +177,18 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   margin-top: -0.45729166666666665em;
 }
 
-.emotion-3 {
+.emotion-9 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #162740;
 }
 
-.emotion-3 svg {
+.emotion-9 svg {
   fill: #162740;
 }
 
-.emotion-6 {
+.emotion-10 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -195,17 +196,14 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-6 svg {
+.emotion-10 svg {
   fill: #555E74;
 }
 
-.emotion-6::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -213,7 +211,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   margin-bottom: -0.415625em;
 }
 
-.emotion-6::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -222,23 +220,23 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 }
 
 <div
-    class="emotion-82"
+    class="emotion-0"
   >
     <div
-      class="emotion-81"
+      class="emotion-1"
     >
       <div
-        class="emotion-80"
+        class="emotion-2"
       >
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -254,33 +252,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 All interactive states
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes all interactive states that are applicable (hover, down, focus, keyboard focus, disabled, error etc).
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -296,33 +294,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Variations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes relevant options (style, size, orientation etc.)
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -338,33 +336,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Themes
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Works properly across all light and dark themes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -380,33 +378,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Usage guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes a list of dos and don’ts that highlight best practices and common mistakes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -422,33 +420,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Accessibility guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Follows WCAG 2.0 standards for contrast (AA). Accessibility documentation defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -464,33 +462,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 SEO guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Conforms to best practice SEO techniques. SEO considerations defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -506,33 +504,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Technical Performance Considerations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes details on how this may impact performance.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -548,33 +546,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Design Specifications
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Detailed design specification including sizing, spacing and design tokens defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -590,33 +588,33 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Component Props
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Details of properties - their name, type, options, default, required and their description have been defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -632,20 +630,20 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Available in UI kit
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Included within NewsKit UI with multiple variations (including skeleton), states, colour (base and inverse),  and responsive (smart layout).
           </p>
@@ -658,8 +656,9 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
 
 exports[`Compliance renders a tick, a cross and N/A true, false and null is passed respectively, all the rest are N/A 1`] = `
 <DocumentFragment>
-  .emotion-82 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -667,7 +666,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 }
 
 @media screen {
-  .emotion-82 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -677,32 +676,34 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-82 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-82 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-81 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-80 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -712,37 +713,38 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 }
 
 @media screen {
-  .emotion-80 {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-80 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-80 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-80 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-80 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-.emotion-7 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -750,7 +752,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-3 {
     padding: 0 40px;
     margin-top: 48px;
     -webkit-flex-basis: 100%;
@@ -760,8 +762,8 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     margin-top: 40px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -770,8 +772,8 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-7 {
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -779,44 +781,41 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   }
 }
 
-.emotion-2 {
+.emotion-4 {
   margin-bottom: 16px;
 }
 
-.emotion-16 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #808E99;
-  fill: #808E99;
+  color: #148F39;
+  fill: #148F39;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-16.emotion-16 {
+.emotion-5.emotion-5 {
   width: 32px;
   height: 32px;
-  color: #808E99;
-  fill: #808E99;
+  color: #148F39;
+  fill: #148F39;
 }
 
-.emotion-5 {
+.emotion-7 {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-4::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -824,7 +823,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   margin-bottom: -0.20729166666666665em;
 }
 
-.emotion-4::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -832,18 +831,18 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   margin-top: -0.45729166666666665em;
 }
 
-.emotion-3 {
+.emotion-9 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #162740;
 }
 
-.emotion-3 svg {
+.emotion-9 svg {
   fill: #162740;
 }
 
-.emotion-6 {
+.emotion-10 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -851,17 +850,14 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-6 svg {
+.emotion-10 svg {
   fill: #555E74;
 }
 
-.emotion-6::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -869,7 +865,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   margin-bottom: -0.415625em;
 }
 
-.emotion-6::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -877,24 +873,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   margin-top: -0.446875em;
 }
 
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  color: #148F39;
-  fill: #148F39;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 32px;
-  height: 32px;
-  color: #148F39;
-  fill: #148F39;
-}
-
-.emotion-8 {
+.emotion-13 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -904,31 +883,48 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: inline-block;
 }
 
-.emotion-8.emotion-8 {
+.emotion-13.emotion-13 {
   width: 32px;
   height: 32px;
   color: #D23F2D;
   fill: #D23F2D;
+}
+
+.emotion-21 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #808E99;
+  fill: #808E99;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-21.emotion-21 {
+  width: 32px;
+  height: 32px;
+  color: #808E99;
+  fill: #808E99;
 }
 
 <div
-    class="emotion-82"
+    class="emotion-0"
   >
     <div
-      class="emotion-81"
+      class="emotion-1"
     >
       <div
-        class="emotion-80"
+        class="emotion-2"
       >
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -944,33 +940,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 All interactive states
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes all interactive states that are applicable (hover, down, focus, keyboard focus, disabled, error etc).
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -986,33 +982,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Variations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes relevant options (style, size, orientation etc.)
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1028,33 +1024,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Themes
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Works properly across all light and dark themes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1070,33 +1066,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Usage guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes a list of dos and don’ts that highlight best practices and common mistakes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1112,33 +1108,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Accessibility guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Follows WCAG 2.0 standards for contrast (AA). Accessibility documentation defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1154,33 +1150,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 SEO guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Conforms to best practice SEO techniques. SEO considerations defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1196,33 +1192,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Technical Performance Considerations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes details on how this may impact performance.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1238,33 +1234,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Design Specifications
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Detailed design specification including sizing, spacing and design tokens defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1280,33 +1276,33 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Component Props
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Details of properties - their name, type, options, default, required and their description have been defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-16 emotion-1"
+              class="emotion-21 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1322,20 +1318,20 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Available in UI kit
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Included within NewsKit UI with multiple variations (including skeleton), states, colour (base and inverse),  and responsive (smart layout).
           </p>
@@ -1348,8 +1344,9 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
 
 exports[`Compliance renders all compliance items with N/A if there are no rules passed 1`] = `
 <DocumentFragment>
-  .emotion-82 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1357,7 +1354,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 }
 
 @media screen {
-  .emotion-82 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -1367,32 +1364,34 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-82 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-82 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-81 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-80 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1402,37 +1401,38 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 }
 
 @media screen {
-  .emotion-80 {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-80 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-80 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-80 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-80 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-.emotion-7 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1440,7 +1440,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-3 {
     padding: 0 40px;
     margin-top: 48px;
     -webkit-flex-basis: 100%;
@@ -1450,8 +1450,8 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     margin-top: 40px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -1460,8 +1460,8 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-7 {
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -1469,11 +1469,11 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   }
 }
 
-.emotion-2 {
+.emotion-4 {
   margin-bottom: 16px;
 }
 
-.emotion-0 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1483,30 +1483,27 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-5.emotion-5 {
   width: 32px;
   height: 32px;
   color: #808E99;
   fill: #808E99;
 }
 
-.emotion-5 {
+.emotion-7 {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-4::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -1514,7 +1511,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   margin-bottom: -0.20729166666666665em;
 }
 
-.emotion-4::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -1522,18 +1519,18 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   margin-top: -0.45729166666666665em;
 }
 
-.emotion-3 {
+.emotion-9 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #162740;
 }
 
-.emotion-3 svg {
+.emotion-9 svg {
   fill: #162740;
 }
 
-.emotion-6 {
+.emotion-10 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -1541,17 +1538,14 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-6 svg {
+.emotion-10 svg {
   fill: #555E74;
 }
 
-.emotion-6::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -1559,7 +1553,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   margin-bottom: -0.415625em;
 }
 
-.emotion-6::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -1568,23 +1562,23 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 }
 
 <div
-    class="emotion-82"
+    class="emotion-0"
   >
     <div
-      class="emotion-81"
+      class="emotion-1"
     >
       <div
-        class="emotion-80"
+        class="emotion-2"
       >
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1600,33 +1594,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 All interactive states
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes all interactive states that are applicable (hover, down, focus, keyboard focus, disabled, error etc).
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1642,33 +1636,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Variations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes relevant options (style, size, orientation etc.)
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1684,33 +1678,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Themes
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Works properly across all light and dark themes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1726,33 +1720,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Usage guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes a list of dos and don’ts that highlight best practices and common mistakes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1768,33 +1762,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Accessibility guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Follows WCAG 2.0 standards for contrast (AA). Accessibility documentation defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1810,33 +1804,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 SEO guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Conforms to best practice SEO techniques. SEO considerations defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1852,33 +1846,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Technical Performance Considerations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes details on how this may impact performance.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1894,33 +1888,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Design Specifications
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Detailed design specification including sizing, spacing and design tokens defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1936,33 +1930,33 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Component Props
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Details of properties - their name, type, options, default, required and their description have been defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1978,20 +1972,20 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Available in UI kit
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Included within NewsKit UI with multiple variations (including skeleton), states, colour (base and inverse),  and responsive (smart layout).
           </p>
@@ -2004,8 +1998,9 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
 
 exports[`Compliance renders with cross if a rule is passed with false, otherwise renders N/A 1`] = `
 <DocumentFragment>
-  .emotion-82 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -2013,7 +2008,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 }
 
 @media screen {
-  .emotion-82 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -2023,32 +2018,34 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-82 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-82 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-81 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-80 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2058,37 +2055,38 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 }
 
 @media screen {
-  .emotion-80 {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-80 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-80 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-80 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-80 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-.emotion-7 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -2096,7 +2094,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-3 {
     padding: 0 40px;
     margin-top: 48px;
     -webkit-flex-basis: 100%;
@@ -2106,8 +2104,8 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     margin-top: 40px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -2116,8 +2114,8 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-7 {
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -2125,44 +2123,41 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   }
 }
 
-.emotion-2 {
+.emotion-4 {
   margin-bottom: 16px;
 }
 
-.emotion-8 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #808E99;
-  fill: #808E99;
+  color: #D23F2D;
+  fill: #D23F2D;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-8.emotion-8 {
+.emotion-5.emotion-5 {
   width: 32px;
   height: 32px;
-  color: #808E99;
-  fill: #808E99;
+  color: #D23F2D;
+  fill: #D23F2D;
 }
 
-.emotion-5 {
+.emotion-7 {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-4::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -2170,7 +2165,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   margin-bottom: -0.20729166666666665em;
 }
 
-.emotion-4::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -2178,18 +2173,18 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   margin-top: -0.45729166666666665em;
 }
 
-.emotion-3 {
+.emotion-9 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #162740;
 }
 
-.emotion-3 svg {
+.emotion-9 svg {
   fill: #162740;
 }
 
-.emotion-6 {
+.emotion-10 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -2197,17 +2192,14 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-6 svg {
+.emotion-10 svg {
   fill: #555E74;
 }
 
-.emotion-6::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -2215,7 +2207,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   margin-bottom: -0.415625em;
 }
 
-.emotion-6::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -2223,41 +2215,41 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   margin-top: -0.446875em;
 }
 
-.emotion-0 {
+.emotion-13 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #D23F2D;
-  fill: #D23F2D;
+  color: #808E99;
+  fill: #808E99;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-13.emotion-13 {
   width: 32px;
   height: 32px;
-  color: #D23F2D;
-  fill: #D23F2D;
+  color: #808E99;
+  fill: #808E99;
 }
 
 <div
-    class="emotion-82"
+    class="emotion-0"
   >
     <div
-      class="emotion-81"
+      class="emotion-1"
     >
       <div
-        class="emotion-80"
+        class="emotion-2"
       >
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2273,33 +2265,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 All interactive states
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes all interactive states that are applicable (hover, down, focus, keyboard focus, disabled, error etc).
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2315,33 +2307,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Variations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes relevant options (style, size, orientation etc.)
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2357,33 +2349,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Themes
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Works properly across all light and dark themes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2399,33 +2391,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Usage guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes a list of dos and don’ts that highlight best practices and common mistakes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2441,33 +2433,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Accessibility guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Follows WCAG 2.0 standards for contrast (AA). Accessibility documentation defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2483,33 +2475,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 SEO guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Conforms to best practice SEO techniques. SEO considerations defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2525,33 +2517,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Technical Performance Considerations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes details on how this may impact performance.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2567,33 +2559,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Design Specifications
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Detailed design specification including sizing, spacing and design tokens defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2609,33 +2601,33 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Component Props
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Details of properties - their name, type, options, default, required and their description have been defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2651,20 +2643,20 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Available in UI kit
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Included within NewsKit UI with multiple variations (including skeleton), states, colour (base and inverse),  and responsive (smart layout).
           </p>
@@ -2677,8 +2669,9 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
 
 exports[`Compliance renders with tick if a rule is passed with true, otherwise renders N/A 1`] = `
 <DocumentFragment>
-  .emotion-82 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -2686,7 +2679,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 }
 
 @media screen {
-  .emotion-82 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -2696,32 +2689,34 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-82 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-82 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-81 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-80 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2731,37 +2726,38 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 }
 
 @media screen {
-  .emotion-80 {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-80 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-80 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -48px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-80 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-80 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -40px -40px 0 -40px;
   }
 }
 
-.emotion-7 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -2769,7 +2765,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-3 {
     padding: 0 40px;
     margin-top: 48px;
     -webkit-flex-basis: 100%;
@@ -2779,8 +2775,8 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     margin-top: 40px;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -2789,8 +2785,8 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-7 {
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
     -webkit-flex-basis: 41.66666666666667%;
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
@@ -2798,44 +2794,41 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   }
 }
 
-.emotion-2 {
+.emotion-4 {
   margin-bottom: 16px;
 }
 
-.emotion-8 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #808E99;
-  fill: #808E99;
+  color: #148F39;
+  fill: #148F39;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-8.emotion-8 {
+.emotion-5.emotion-5 {
   width: 32px;
   height: 32px;
-  color: #808E99;
-  fill: #808E99;
+  color: #148F39;
+  fill: #148F39;
 }
 
-.emotion-5 {
+.emotion-7 {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-4::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -2843,7 +2836,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   margin-bottom: -0.20729166666666665em;
 }
 
-.emotion-4::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -2851,18 +2844,18 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   margin-top: -0.45729166666666665em;
 }
 
-.emotion-3 {
+.emotion-9 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #162740;
 }
 
-.emotion-3 svg {
+.emotion-9 svg {
   fill: #162740;
 }
 
-.emotion-6 {
+.emotion-10 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -2870,17 +2863,14 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-6 svg {
+.emotion-10 svg {
   fill: #555E74;
 }
 
-.emotion-6::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -2888,7 +2878,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   margin-bottom: -0.415625em;
 }
 
-.emotion-6::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -2896,41 +2886,41 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   margin-top: -0.446875em;
 }
 
-.emotion-0 {
+.emotion-13 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #148F39;
-  fill: #148F39;
+  color: #808E99;
+  fill: #808E99;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-13.emotion-13 {
   width: 32px;
   height: 32px;
-  color: #148F39;
-  fill: #148F39;
+  color: #808E99;
+  fill: #808E99;
 }
 
 <div
-    class="emotion-82"
+    class="emotion-0"
   >
     <div
-      class="emotion-81"
+      class="emotion-1"
     >
       <div
-        class="emotion-80"
+        class="emotion-2"
       >
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2946,33 +2936,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 All interactive states
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes all interactive states that are applicable (hover, down, focus, keyboard focus, disabled, error etc).
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -2988,33 +2978,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Variations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes relevant options (style, size, orientation etc.)
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3030,33 +3020,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Themes
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Works properly across all light and dark themes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3072,33 +3062,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Usage guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes a list of dos and don’ts that highlight best practices and common mistakes.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3114,33 +3104,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Accessibility guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Follows WCAG 2.0 standards for contrast (AA). Accessibility documentation defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3156,33 +3146,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 SEO guidelines
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Conforms to best practice SEO techniques. SEO considerations defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3198,33 +3188,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Technical Performance Considerations
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Includes details on how this may impact performance.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3240,33 +3230,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Design Specifications
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Detailed design specification including sizing, spacing and design tokens defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3282,33 +3272,33 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Component Props
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Details of properties - their name, type, options, default, required and their description have been defined.
           </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-8 emotion-1"
+              class="emotion-13 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -3324,20 +3314,20 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
             </svg>
           </div>
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <section
-              class="emotion-4"
+              class="emotion-8"
             >
               <h3
-                class="nk-headline-heading emotion-3"
+                class="nk-headline-heading emotion-9"
               >
                 Available in UI kit
               </h3>
             </section>
           </div>
           <p
-            class="emotion-6"
+            class="emotion-10"
           >
             Included within NewsKit UI with multiple variations (including skeleton), states, colour (base and inverse),  and responsive (smart layout).
           </p>

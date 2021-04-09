@@ -903,10 +903,9 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   will-change: stroke-dasharray;
   will-change: stroke-dashoffset;
@@ -945,10 +944,9 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   will-change: stroke-dasharray;
   will-change: stroke-dashoffset;

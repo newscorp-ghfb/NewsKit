@@ -4,7 +4,7 @@ exports[`StackChild renders null 1`] = `<DocumentFragment />`;
 
 exports[`StackChild renders within a Stack with custom order 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,12 +18,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-5 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -33,13 +33,13 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 2;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -56,8 +56,8 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -71,6 +71,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -98,7 +99,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-width: 1px;
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -112,14 +113,14 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -128,24 +129,21 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -153,7 +151,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -161,7 +159,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-11 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -171,13 +169,13 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-11 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-7 {
     max-width: 100%;
   }
 }
 
-.emotion-17 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -187,33 +185,33 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 1;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-17 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-13 {
     max-width: 100%;
   }
 }
 
 <div
-    class="emotion-18"
+    class="emotion-0"
   >
     <div
-      class="emotion-5"
+      class="emotion-1"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 1
               </span>
@@ -223,23 +221,23 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
       </div>
     </div>
     <div
-      class="emotion-11"
+      class="emotion-7"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 2
               </span>
@@ -249,23 +247,23 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
       </div>
     </div>
     <div
-      class="emotion-17"
+      class="emotion-13"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 3
               </span>
@@ -280,7 +278,30 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 
 exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -290,13 +311,13 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 2;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -313,8 +334,8 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -328,6 +349,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -355,7 +377,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-width: 1px;
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -369,14 +391,14 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -385,24 +407,21 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -410,7 +429,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -418,7 +437,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-11 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -428,13 +447,13 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-11 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-7 {
     max-width: 100%;
   }
 }
 
-.emotion-17 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -444,56 +463,33 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 1;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-17 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-13 {
     max-width: 100%;
   }
 }
 
-.emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 <ul
-    class="emotion-18"
+    class="emotion-0"
   >
     <li
-      class="emotion-5"
+      class="emotion-1"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 1
               </span>
@@ -503,23 +499,23 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
       </div>
     </li>
     <li
-      class="emotion-11"
+      class="emotion-7"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 2
               </span>
@@ -529,23 +525,23 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
       </div>
     </li>
     <li
-      class="emotion-17"
+      class="emotion-13"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 3
               </span>
@@ -560,7 +556,46 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 
 exports[`StackChild renders within a Stack, with align self property 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -577,8 +612,8 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -592,6 +627,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -619,7 +655,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   border-width: 1px;
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -633,14 +669,14 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -649,24 +685,21 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -674,7 +707,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -682,66 +715,27 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
 <div
-    class="emotion-18"
+    class="emotion-0"
   >
     <div
-      class="emotion-5"
+      class="emotion-1"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 1
               </span>
@@ -751,23 +745,23 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-1"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 2
               </span>
@@ -777,23 +771,23 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
       </div>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-1"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-3"
           data-testid="tag"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 child 3
               </span>

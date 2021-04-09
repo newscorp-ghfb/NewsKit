@@ -2,7 +2,7 @@
 
 exports[`Byline renders correctly multiple authors with link only 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -15,6 +15,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -22,14 +23,14 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-top: calc(-8px/2);
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-6 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -38,306 +39,10 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-6 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
-}
-
-.emotion-4 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-}
-
-.emotion-4 svg {
-  fill: #535353;
-}
-
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-5 {
-  margin-right: 8px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-3 {
-  margin-left: 8px;
-  color: #c0c0c0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-3 svg {
-  fill: #c0c0c0;
-}
-
-.emotion-2 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-}
-
-.emotion-2 svg {
-  fill: #0a68c1;
-}
-
-.emotion-2:hover:not(:disabled) {
-  color: #02509b;
-}
-
-.emotion-2:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-2:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-2:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-2:visited:not(:disabled) svg {
-  fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.emotion-0 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-<div
-    class="emotion-12"
-  >
-    <div
-      class="emotion-6"
-    >
-      <div
-        class="emotion-5"
-      >
-        <span
-          class="emotion-4"
-        >
-          <a
-            aria-label="more by Jane Smith"
-            class="emotion-2"
-            data-author="Jane Smith"
-            href="www.example.com"
-            rel="author"
-          >
-            <span
-              class="emotion-1"
-            >
-              <span
-                class="emotion-0"
-              >
-                Jane Smith
-              </span>
-            </span>
-          </a>
-          <span
-            class="emotion-3"
-          >
-            |
-          </span>
-        </span>
-      </div>
-    </div>
-    <div
-      class="emotion-6"
-    >
-      <span
-        class="emotion-4"
-      >
-        <a
-          aria-label="more by John Smith"
-          class="emotion-2"
-          data-author="John Smith"
-          href="www.example.com"
-          rel="author"
-        >
-          <span
-            class="emotion-1"
-          >
-            <span
-              class="emotion-0"
-            >
-              John Smith
-            </span>
-          </span>
-        </a>
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Byline renders correctly with author's name, author's information and no href provided 1`] = `
-<DocumentFragment>
-  .emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-1 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-}
-
-.emotion-1 svg {
-  fill: #535353;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
 }
 
 .emotion-2 {
@@ -348,97 +53,6 @@ exports[`Byline renders correctly with author's name, author's information and n
   display: inline-flex;
 }
 
-.emotion-0 {
-  margin-left: 8px;
-  color: #c0c0c0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-0 svg {
-  fill: #c0c0c0;
-}
-
-<div
-    class="emotion-6"
-  >
-    <div
-      class="emotion-3"
-    >
-      <div
-        class="emotion-2"
-      >
-        <span
-          class="emotion-1"
-        >
-          Jane Smith, Author
-          <span
-            class="emotion-0"
-          >
-            |
-          </span>
-        </span>
-      </div>
-    </div>
-    <div
-      class="emotion-3"
-    >
-      <span
-        class="emotion-1"
-      >
-        John Smith, Milan
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Byline renders correctly with authors and links 1`] = `
-<DocumentFragment>
-  .emotion-21 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-7 {
-    max-width: 100%;
-  }
-}
-
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
@@ -447,9 +61,6 @@ exports[`Byline renders correctly with authors and links 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
 }
@@ -474,12 +85,257 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
+.emotion-4 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #0a68c1;
+}
+
+.emotion-4 svg {
+  fill: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) {
+  color: #02509b;
+}
+
+.emotion-4:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-4:active:not(:disabled) {
+  color: #01396e;
+}
+
+.emotion-4:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-4:visited:not(:disabled) {
+  color: #7547a3;
+}
+
+.emotion-4:visited:not(:disabled) svg {
+  fill: #7547a3;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-4 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
 .emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-7 {
+  margin-left: 8px;
+  color: #c0c0c0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-7 svg {
+  fill: #c0c0c0;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-3"
+        >
+          <a
+            aria-label="more by Jane Smith"
+            class="emotion-4"
+            data-author="Jane Smith"
+            href="www.example.com"
+            rel="author"
+          >
+            <span
+              class="emotion-5"
+            >
+              <span
+                class="emotion-6"
+              >
+                Jane Smith
+              </span>
+            </span>
+          </a>
+          <span
+            class="emotion-7"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <span
+        class="emotion-3"
+      >
+        <a
+          aria-label="more by John Smith"
+          class="emotion-4"
+          data-author="John Smith"
+          href="www.example.com"
+          rel="author"
+        >
+          <span
+            class="emotion-5"
+          >
+            <span
+              class="emotion-6"
+            >
+              John Smith
+            </span>
+          </span>
+        </a>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Byline renders correctly with author's name, author's information and no href provided 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
   margin-right: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-4 {
@@ -495,52 +351,168 @@ exports[`Byline renders correctly with authors and links 1`] = `
   fill: #c0c0c0;
 }
 
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-3"
+        >
+          Jane Smith, Author
+          <span
+            class="emotion-4"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <span
+        class="emotion-3"
+      >
+        John Smith, Milan
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Byline renders correctly with authors and links 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
 .emotion-2 {
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
   display: inline-block;
-  -webkit-transition-property: color;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 {
+  display: inline-block;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-4:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-4:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-4 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-1 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -554,27 +526,24 @@ exports[`Byline renders correctly with authors and links 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-6 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -582,7 +551,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -590,30 +559,43 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
+.emotion-8 {
+  margin-left: 8px;
+  color: #c0c0c0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-8 svg {
+  fill: #c0c0c0;
+}
+
 <div
-    class="emotion-21"
+    class="emotion-0"
   >
     <div
-      class="emotion-7"
+      class="emotion-1"
     >
       <div
-        class="emotion-6"
+        class="emotion-2"
       >
         <span
           class="emotion-3"
         >
           <a
             aria-label="more by Jane Smith"
-            class="emotion-2"
+            class="emotion-4"
             data-author="Jane Smith"
             href="www.example.com"
             rel="author"
           >
             <span
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 Jane Smith
               </span>
@@ -627,7 +609,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
           </span>
           London
           <span
-            class="emotion-4"
+            class="emotion-8"
           >
             |
           </span>
@@ -635,33 +617,33 @@ exports[`Byline renders correctly with authors and links 1`] = `
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-1"
     >
       <div
-        class="emotion-6"
+        class="emotion-2"
       >
         <span
           class="emotion-3"
         >
           <a
             aria-label="more by John Smith"
-            class="emotion-2"
+            class="emotion-4"
             data-author="John Smith"
             href="www.example.com"
             rel="author"
           >
             <span
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 John Smith
               </span>
             </span>
           </a>
           <span
-            class="emotion-4"
+            class="emotion-8"
           >
             |
           </span>
@@ -669,23 +651,23 @@ exports[`Byline renders correctly with authors and links 1`] = `
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-1"
     >
       <span
         class="emotion-3"
       >
         <a
           aria-label="more by John Smith"
-          class="emotion-2"
+          class="emotion-4"
           data-author="John Smith"
           href="www.example.com"
           rel="author"
         >
           <span
-            class="emotion-1"
+            class="emotion-5"
           >
             <span
-              class="emotion-0"
+              class="emotion-6"
             >
               John Smith
             </span>
@@ -706,7 +688,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 exports[`Byline renders correctly with authors, location, titles and links 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -719,6 +701,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -726,14 +709,14 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-top: calc(-8px/2);
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-7 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -742,10 +725,18 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-7 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
+}
+
+.emotion-2 {
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .emotion-3 {
@@ -756,9 +747,6 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
 }
@@ -783,73 +771,49 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-6 {
-  margin-right: 8px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .emotion-4 {
-  margin-left: 8px;
-  color: #c0c0c0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-4 svg {
-  fill: #c0c0c0;
-}
-
-.emotion-2 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-4:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-4:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-4 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-1 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -863,27 +827,24 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-6 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -891,7 +852,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -899,30 +860,43 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-top: -0.4267857142857143em;
 }
 
+.emotion-8 {
+  margin-left: 8px;
+  color: #c0c0c0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-8 svg {
+  fill: #c0c0c0;
+}
+
 <div
-    class="emotion-14"
+    class="emotion-0"
   >
     <div
-      class="emotion-7"
+      class="emotion-1"
     >
       <div
-        class="emotion-6"
+        class="emotion-2"
       >
         <span
           class="emotion-3"
         >
           <a
             aria-label="more by Jane Smith"
-            class="emotion-2"
+            class="emotion-4"
             data-author="Jane Smith"
             href="www.example.com"
             rel="author"
           >
             <span
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 Jane Smith
               </span>
@@ -936,7 +910,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
           </span>
           Author, London
           <span
-            class="emotion-4"
+            class="emotion-8"
           >
             |
           </span>
@@ -944,23 +918,23 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-1"
     >
       <span
         class="emotion-3"
       >
         <a
           aria-label="more by John Smith"
-          class="emotion-2"
+          class="emotion-4"
           data-author="John Smith"
           href="www.example.com"
           rel="author"
         >
           <span
-            class="emotion-1"
+            class="emotion-5"
           >
             <span
-              class="emotion-0"
+              class="emotion-6"
             >
               John Smith
             </span>
@@ -981,7 +955,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 exports[`Byline renders correctly with multiple authors 1`] = `
 <DocumentFragment>
-  .emotion-10 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -994,6 +968,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1001,14 +976,14 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-top: calc(-8px/2);
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1017,45 +992,10 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-3 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
-}
-
-.emotion-1 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-}
-
-.emotion-1 svg {
-  fill: #535353;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
 }
 
 .emotion-2 {
@@ -1066,7 +1006,39 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   display: inline-flex;
 }
 
-.emotion-0 {
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 {
   margin-left: 8px;
   color: #c0c0c0;
   -webkit-user-select: none;
@@ -1075,25 +1047,25 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   user-select: none;
 }
 
-.emotion-0 svg {
+.emotion-4 svg {
   fill: #c0c0c0;
 }
 
 <div
-    class="emotion-10"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
     >
       <div
         class="emotion-2"
       >
         <span
-          class="emotion-1"
+          class="emotion-3"
         >
           Jane Smith
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             |
           </span>
@@ -1101,17 +1073,17 @@ exports[`Byline renders correctly with multiple authors 1`] = `
       </div>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-1"
     >
       <div
         class="emotion-2"
       >
         <span
-          class="emotion-1"
+          class="emotion-3"
         >
           John Smith
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             |
           </span>
@@ -1119,10 +1091,10 @@ exports[`Byline renders correctly with multiple authors 1`] = `
       </div>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-1"
     >
       <span
-        class="emotion-1"
+        class="emotion-3"
       >
         Sam Smith
       </span>
@@ -1133,7 +1105,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 
 exports[`Byline renders correctly with one author 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1146,6 +1118,7 @@ exports[`Byline renders correctly with one author 1`] = `
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1153,8 +1126,8 @@ exports[`Byline renders correctly with one author 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-top: calc(-8px/2);
   margin-bottom: calc(-8px/2);
@@ -1169,13 +1142,13 @@ exports[`Byline renders correctly with one author 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .emotion-1 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -1183,18 +1156,15 @@ exports[`Byline renders correctly with one author 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -1202,7 +1172,7 @@ exports[`Byline renders correctly with one author 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -1211,13 +1181,13 @@ exports[`Byline renders correctly with one author 1`] = `
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
   >
     <div
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         Jane Smith
       </span>
@@ -1228,26 +1198,7 @@ exports[`Byline renders correctly with one author 1`] = `
 
 exports[`Byline renders correctly with overrides 1`] = `
 <DocumentFragment>
-  .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.emotion-14 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1260,6 +1211,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1267,14 +1219,14 @@ exports[`Byline renders correctly with overrides 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-top: calc(-12px/2);
   margin-bottom: calc(-12px/2);
 }
 
-.emotion-7 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1283,13 +1235,13 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: calc(12px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-7 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
 }
 
-.emotion-6 {
+.emotion-2 {
   margin-right: 12px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1305,9 +1257,6 @@ exports[`Byline renders correctly with overrides 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
 }
@@ -1328,39 +1277,52 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-2 {
+.emotion-4 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #d82059;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-4 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-0 {
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-6 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -1368,7 +1330,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -1376,7 +1338,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
+.emotion-8 {
   margin-left: 12px;
   color: #27a727;
   -webkit-user-select: none;
@@ -1386,29 +1348,29 @@ exports[`Byline renders correctly with overrides 1`] = `
 }
 
 <div
-    class="emotion-14"
+    class="emotion-0"
   >
     <div
-      class="emotion-7"
+      class="emotion-1"
     >
       <div
-        class="emotion-6"
+        class="emotion-2"
       >
         <span
           class="emotion-3"
         >
           <a
             aria-label="more by Jane Smith"
-            class="emotion-2"
+            class="emotion-4"
             data-author="Jane Smith"
             href="www.example.com"
             rel="author"
           >
             <span
-              class="emotion-1"
+              class="emotion-5"
             >
               <span
-                class="emotion-0"
+                class="emotion-6"
               >
                 Jane Smith
               </span>
@@ -1422,7 +1384,7 @@ exports[`Byline renders correctly with overrides 1`] = `
           </span>
           Author, London
           <span
-            class="emotion-4"
+            class="emotion-8"
           >
             |
           </span>
@@ -1430,23 +1392,23 @@ exports[`Byline renders correctly with overrides 1`] = `
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-1"
     >
       <span
         class="emotion-3"
       >
         <a
           aria-label="more by John Smith"
-          class="emotion-2"
+          class="emotion-4"
           data-author="John Smith"
           href="www.example.com"
           rel="author"
         >
           <span
-            class="emotion-1"
+            class="emotion-5"
           >
             <span
-              class="emotion-0"
+              class="emotion-6"
             >
               John Smith
             </span>

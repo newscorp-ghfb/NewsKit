@@ -2,8 +2,9 @@
 
 exports[`Page Introduction renders with mandatory props 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -11,7 +12,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-4 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -21,8 +22,8 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-4 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -31,8 +32,8 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-4 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -42,41 +43,38 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-1 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-1 {
     margin-bottom: 24px;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   color: #577FFB;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #577FFB;
 }
 
 @media screen {
-  .emotion-0 {
+  .emotion-2 {
     font-family: 'Poppins',sans-serif;
     font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -84,7 +82,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     margin-bottom: -0.20729166666666665em;
   }
 
-  .emotion-0::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -93,29 +91,26 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-.emotion-2 {
+.emotion-4 {
   margin: 0;
   padding: 1px 0;
   color: #162740;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   fill: #162740;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-2 {
+@media screen and (max-width: 767px) {
+  .emotion-4 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-2::before {
+  .emotion-4::before {
     content: '';
     display: block;
     height: 0;
@@ -123,7 +118,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     margin-bottom: -0.140625em;
   }
 
-  .emotion-2::after {
+  .emotion-4::after {
     content: '';
     display: block;
     height: 0;
@@ -132,19 +127,16 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-2 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-4 {
     font-family: 'Poppins',sans-serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-2::before {
+  .emotion-4::before {
     content: '';
     display: block;
     height: 0;
@@ -152,7 +144,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     margin-bottom: -0.12395833333333339em;
   }
 
-  .emotion-2::after {
+  .emotion-4::after {
     content: '';
     display: block;
     height: 0;
@@ -161,19 +153,16 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-2 {
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
     font-family: 'Poppins',sans-serif;
     font-size: 60px;
     line-height: 1.2;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-2::before {
+  .emotion-4::before {
     content: '';
     display: block;
     height: 0;
@@ -181,7 +170,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     margin-bottom: -0.140625em;
   }
 
-  .emotion-2::after {
+  .emotion-4::after {
     content: '';
     display: block;
     height: 0;
@@ -191,13 +180,13 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
       class="emotion-1"
     >
       <p
-        class="emotion-0"
+        class="emotion-2"
       >
         Component
       </p>
@@ -206,14 +195,15 @@ exports[`Page Introduction renders with mandatory props 1`] = `
       class="emotion-1"
     >
       <h1
-        class="emotion-2"
+        class="emotion-4"
       >
         ComponentName
       </h1>
     </div>
   </div>
-  .emotion-2 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -221,7 +211,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-2 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -231,8 +221,8 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-2 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -241,8 +231,8 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-2 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 50%;
@@ -252,41 +242,38 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-1 {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-1 {
     margin-bottom: 32px;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #555E74;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-0 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: 'Poppins',sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -294,7 +281,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     margin-bottom: -0.290625em;
   }
 
-  .emotion-0::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -303,19 +290,16 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-0 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     line-height: 1.6;
     font-weight: 500;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -323,7 +307,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     margin-bottom: -0.34062500000000007em;
   }
 
-  .emotion-0::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -333,20 +317,21 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
   >
     <div
       class="emotion-1"
     >
       <p
-        class="emotion-0"
+        class="emotion-2"
       >
         Component Introduction
       </p>
     </div>
   </div>
-  .emotion-7 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -354,7 +339,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -364,8 +349,8 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-7 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -374,8 +359,8 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -385,23 +370,23 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-6 {
+@media screen and (max-width: 767px) {
+  .emotion-1 {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-6 {
+@media screen and (min-width: 768px) {
+  .emotion-1 {
     margin-bottom: 64px;
   }
 }
 
-.emotion-5 {
+.emotion-2 {
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-3 {
   border-radius: 8px;
   position: relative;
   width: 100%;
@@ -411,11 +396,11 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   background-color: #F4F4F4;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #BBC3C9;
 }
 
-.emotion-2 {
+.emotion-4 {
   top: 0;
   left: 0;
   position: absolute;
@@ -427,37 +412,37 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.emotion-1 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-0 {
+.emotion-6 {
   fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-6.emotion-6 {
   width: 48px;
   height: 48px;
 }
 
-.emotion-3 {
+.emotion-7 {
   display: none;
   height: auto;
   width: 100%;
@@ -467,26 +452,26 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-4"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <svg
                 aria-hidden="true"
-                class="emotion-0"
+                class="emotion-6"
                 fill="currentColor"
                 viewBox="0 0 88 88"
                 xmlns="http://www.w3.org/2000/svg"
@@ -499,7 +484,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
           </div>
           <img
             alt="button-hero"
-            class="emotion-3"
+            class="emotion-7"
             src="/static/button-hero.svg"
           />
         </div>

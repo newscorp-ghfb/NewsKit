@@ -2,39 +2,33 @@
 
 exports[`Sidebar navigation should match snapshot with active link 1`] = `
 <DocumentFragment>
-  .emotion-25 {
+  .emotion-0 {
   font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-24 {
+.emotion-1 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-24:last-child {
+.emotion-1:last-child {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-2 {
   margin-bottom: 24px;
 }
 
-.emotion-0 {
+.emotion-3 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -42,30 +36,27 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   padding: 8px 0;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-3 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-2 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -79,76 +70,16 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-9 {
+.emotion-7 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  background-color: transparent;
-  color: #162740;
-  box-sizing: border-box;
-  color: #808E99;
-  cursor: 'pointer';
-  min-height: 32px;
-  min-width: 230px;
-  padding: 8px 12px;
-  text-overflow: ellipsis;
-}
-
-.emotion-9:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-radius: 20rem;
-  color: #162740;
-}
-
-.emotion-9:active:not(:disabled) {
-  background-color: #AEBFFF;
-  border-radius: 20rem;
-  color: #162740;
-}
-
-.emotion-5 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-.emotion-8 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  background-color: transparent;
-  color: #162740;
-  min-height: 32px;
-  margin-top: 20px;
-}
-
-.emotion-1 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -161,13 +92,64 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
+  background-color: #AEBFFF;
+  border-radius: 20rem;
+  color: #162740;
+}
+
+.emotion-8 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-12 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+.emotion-15 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0;
+  background-color: transparent;
+  color: #162740;
+  box-sizing: border-box;
+  color: #808E99;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 230px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  border-radius: 20rem;
+  color: #162740;
+}
+
+.emotion-15:active:not(:disabled) {
   background-color: #AEBFFF;
   border-radius: 20rem;
   color: #162740;
@@ -175,35 +157,35 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 <nav
     aria-label="Sidebar"
-    class="emotion-25"
+    class="emotion-0"
     role="navigation"
   >
     <ul
-      class="emotion-24"
+      class="emotion-1"
       role="list"
     >
       <li
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-0"
+          class="emotion-3"
           data-testid="/group1"
         >
           Group 1
         </div>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group1/page1"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-7"
                   data-testid="/group1/page1"
                 >
                   Group 1 Page 1
@@ -214,38 +196,38 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="emotion-5"
+          class="emotion-8"
           data-testid="divider"
         />
       </li>
       <li
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-0"
+          class="emotion-3"
           data-testid="/group2"
         >
           Group 2
         </div>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
           <div
-            class="emotion-8"
+            class="emotion-12"
             id="/group2/page1"
           >
             Group 2 Page 1
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page1/a"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-9"
+                  class="emotion-15"
                   data-testid="/group2/page1/a"
                 >
                   Group 2 Page 1 a
@@ -255,14 +237,14 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page1/b"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-9"
+                  class="emotion-15"
                   data-testid="/group2/page1/b"
                 >
                   Group 2 Page 1 b
@@ -271,21 +253,21 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
             </a>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             id="/group2/page2"
           >
             Group 2 Page 2
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page2/a"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-9"
+                  class="emotion-15"
                   data-testid="/group2/page2/a"
                 >
                   Group 2 Page 2 a
@@ -295,14 +277,14 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page2/b"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-9"
+                  class="emotion-15"
                   data-testid="/group2/page2/b"
                 >
                   Group 2 Page 2 b
@@ -319,39 +301,33 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 <DocumentFragment>
-  .emotion-25 {
+  .emotion-0 {
   font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-24 {
+.emotion-1 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-24:last-child {
+.emotion-1:last-child {
   margin-bottom: 24px;
 }
 
-.emotion-4 {
+.emotion-2 {
   margin-bottom: 24px;
 }
 
-.emotion-0 {
+.emotion-3 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -359,30 +335,27 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   padding: 8px 0;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-3 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-2 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -396,19 +369,16 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-1 {
+.emotion-7 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -421,19 +391,19 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #AEBFFF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-5 {
+.emotion-8 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -443,14 +413,11 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-12 {
   font-family: 'Poppins',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -460,35 +427,35 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 <nav
     aria-label="Sidebar"
-    class="emotion-25"
+    class="emotion-0"
     role="navigation"
   >
     <ul
-      class="emotion-24"
+      class="emotion-1"
       role="list"
     >
       <li
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-0"
+          class="emotion-3"
           data-testid="/group1"
         >
           Group 1
         </div>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group1/page1"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-7"
                   data-testid="/group1/page1"
                 >
                   Group 1 Page 1
@@ -499,38 +466,38 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="emotion-5"
+          class="emotion-8"
           data-testid="divider"
         />
       </li>
       <li
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-0"
+          class="emotion-3"
           data-testid="/group2"
         >
           Group 2
         </div>
         <div
-          class="emotion-4"
+          class="emotion-2"
         >
           <div
-            class="emotion-8"
+            class="emotion-12"
             id="/group2/page1"
           >
             Group 2 Page 1
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page1/a"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-7"
                   data-testid="/group2/page1/a"
                 >
                   Group 2 Page 1 a
@@ -540,14 +507,14 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page1/b"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-7"
                   data-testid="/group2/page1/b"
                 >
                   Group 2 Page 1 b
@@ -556,21 +523,21 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
             </a>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-12"
             id="/group2/page2"
           >
             Group 2 Page 2
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page2/a"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-7"
                   data-testid="/group2/page2/a"
                 >
                   Group 2 Page 2 a
@@ -580,14 +547,14 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
           </div>
           <div>
             <a
-              class="emotion-3"
+              class="emotion-5"
               href="/group2/page2/b"
             >
               <span
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-7"
                   data-testid="/group2/page2/b"
                 >
                   Group 2 Page 2 b

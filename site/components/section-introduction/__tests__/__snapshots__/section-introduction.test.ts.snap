@@ -2,8 +2,9 @@
 
 exports[`SectionIntroduction renders with all props 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -11,7 +12,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -21,8 +22,8 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-7 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -31,8 +32,8 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 50%;
@@ -42,11 +43,11 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-.emotion-4 {
+.emotion-1 {
   margin-bottom: 24px;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -61,29 +62,25 @@ exports[`SectionIntroduction renders with all props 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0;
   background-color: transparent;
 }
 
-.emotion-1 {
+.emotion-4 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-4 {
     font-family: 'Poppins',sans-serif;
     font-size: 28px;
     line-height: 1.2857142857142858;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-4::before {
     content: '';
     display: block;
     height: 0;
@@ -91,7 +88,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
     margin-bottom: -0.18348214285714293em;
   }
 
-  .emotion-1::after {
+  .emotion-4::after {
     content: '';
     display: block;
     height: 0;
@@ -100,19 +97,16 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) {
+  .emotion-4 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-4::before {
     content: '';
     display: block;
     height: 0;
@@ -120,7 +114,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
     margin-bottom: -0.140625em;
   }
 
-  .emotion-1::after {
+  .emotion-4::after {
     content: '';
     display: block;
     height: 0;
@@ -129,14 +123,14 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-5 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #162740;
 }
 
-.emotion-0 svg {
+.emotion-5 svg {
   fill: #162740;
 }
 
@@ -144,7 +138,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   margin-bottom: 40px;
 }
 
-.emotion-5 {
+.emotion-7 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -152,17 +146,14 @@ exports[`SectionIntroduction renders with all props 1`] = `
   font-size: 20px;
   line-height: 1.6;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-5 svg {
+.emotion-7 svg {
   fill: #555E74;
 }
 
-.emotion-5::before {
+.emotion-7::before {
   content: '';
   display: block;
   height: 0;
@@ -170,7 +161,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   margin-bottom: -0.34062500000000007em;
 }
 
-.emotion-5::after {
+.emotion-7::after {
   content: '';
   display: block;
   height: 0;
@@ -179,22 +170,22 @@ exports[`SectionIntroduction renders with all props 1`] = `
 }
 
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-4"
+      class="emotion-1"
     >
       <div
-        class="emotion-3"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <section
-            class="emotion-1"
+            class="emotion-4"
           >
             <h2
-              class="nk-headline-heading emotion-0"
+              class="nk-headline-heading emotion-5"
             >
               Title
             </h2>
@@ -206,7 +197,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
       class="emotion-6"
     >
       <p
-        class="emotion-5"
+        class="emotion-7"
       >
         Section Introduction
       </p>
@@ -214,6 +205,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   </div>
   .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -231,7 +223,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
@@ -241,7 +233,7 @@ exports[`SectionIntroduction renders with all props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;

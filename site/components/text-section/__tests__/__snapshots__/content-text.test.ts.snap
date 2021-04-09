@@ -2,33 +2,30 @@
 
 exports[`ContentText renders with only the description 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   margin-bottom: 32px;
 }
 
-.emotion-0 {
+.emotion-1 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #555E74;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-0 {
+@media screen and (max-width: 1439px) {
+  .emotion-1 {
     font-family: 'DM Sans',sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -36,7 +33,7 @@ exports[`ContentText renders with only the description 1`] = `
     margin-bottom: -0.415625em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -45,19 +42,16 @@ exports[`ContentText renders with only the description 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
     font-family: 'DM Sans',sans-serif;
     font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -65,7 +59,7 @@ exports[`ContentText renders with only the description 1`] = `
     margin-bottom: -0.33229166666666665em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -75,10 +69,10 @@ exports[`ContentText renders with only the description 1`] = `
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <p
-      class="emotion-0"
+      class="emotion-1"
     >
       description
     </p>
@@ -88,41 +82,38 @@ exports[`ContentText renders with only the description 1`] = `
 
 exports[`ContentText renders with only the title 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:767px) {
-  .emotion-1 {
+  @media screen and (max-width: 767px) {
+  .emotion-0 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-bottom: 20px;
   }
 }
 
-.emotion-0 {
+.emotion-1 {
   margin: 0;
   padding: 1px 0;
   color: #162740;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #162740;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-0 {
+@media screen and (max-width: 1439px) {
+  .emotion-1 {
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -130,7 +121,7 @@ exports[`ContentText renders with only the title 1`] = `
     margin-bottom: -0.24062499999999998em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -139,19 +130,16 @@ exports[`ContentText renders with only the title 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
     font-family: 'Poppins',sans-serif;
     font-size: 24px;
     line-height: 1.3333333333333333;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -159,7 +147,7 @@ exports[`ContentText renders with only the title 1`] = `
     margin-bottom: -0.20729166666666665em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -169,10 +157,10 @@ exports[`ContentText renders with only the title 1`] = `
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <p
-      class="emotion-0"
+      class="emotion-1"
     >
       Title
     </p>
@@ -182,41 +170,38 @@ exports[`ContentText renders with only the title 1`] = `
 
 exports[`ContentText renders with title and description 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:767px) {
-  .emotion-1 {
+  @media screen and (max-width: 767px) {
+  .emotion-0 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-bottom: 20px;
   }
 }
 
-.emotion-0 {
+.emotion-1 {
   margin: 0;
   padding: 1px 0;
   color: #162740;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #162740;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-0 {
+@media screen and (max-width: 1439px) {
+  .emotion-1 {
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -224,7 +209,7 @@ exports[`ContentText renders with title and description 1`] = `
     margin-bottom: -0.24062499999999998em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -233,19 +218,16 @@ exports[`ContentText renders with title and description 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
     font-family: 'Poppins',sans-serif;
     font-size: 24px;
     line-height: 1.3333333333333333;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -253,7 +235,7 @@ exports[`ContentText renders with title and description 1`] = `
     margin-bottom: -0.20729166666666665em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -263,41 +245,38 @@ exports[`ContentText renders with title and description 1`] = `
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <p
-      class="emotion-0"
+      class="emotion-1"
     >
       Title
     </p>
   </div>
-  .emotion-1 {
+  .emotion-0 {
   margin-bottom: 32px;
 }
 
-.emotion-0 {
+.emotion-1 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #555E74;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-0 {
+@media screen and (max-width: 1439px) {
+  .emotion-1 {
     font-family: 'DM Sans',sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -305,7 +284,7 @@ exports[`ContentText renders with title and description 1`] = `
     margin-bottom: -0.415625em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -314,19 +293,16 @@ exports[`ContentText renders with title and description 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
     font-family: 'DM Sans',sans-serif;
     font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-1::before {
     content: '';
     display: block;
     height: 0;
@@ -334,7 +310,7 @@ exports[`ContentText renders with title and description 1`] = `
     margin-bottom: -0.33229166666666665em;
   }
 
-  .emotion-0::after {
+  .emotion-1::after {
     content: '';
     display: block;
     height: 0;
@@ -344,10 +320,10 @@ exports[`ContentText renders with title and description 1`] = `
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <p
-      class="emotion-0"
+      class="emotion-1"
     >
       description
     </p>

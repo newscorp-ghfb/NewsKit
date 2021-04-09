@@ -2,7 +2,7 @@
 
 exports[`Logo Default logo renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,13 +20,13 @@ exports[`Logo Default logo renders as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-0 {
+.emotion-2 {
   fill: #162740;
   color: #162740;
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
   >
     <svg
       class="emotion-1"
@@ -45,7 +45,7 @@ exports[`Logo Default logo renders as expected 1`] = `
           transform="translate(-5.000000, 47.000000)"
         >
           <g
-            class="emotion-0"
+            class="emotion-2"
             transform="translate(508.073657, 26.125170)"
           >
             <path
@@ -81,7 +81,7 @@ exports[`Logo Default logo renders as expected 1`] = `
 
 exports[`Logo Mobile logo renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,17 +95,17 @@ exports[`Logo Mobile logo renders as expected 1`] = `
   overflow: hidden;
 }
 
-.emotion-0 {
+.emotion-1 {
   display: inline-block;
   fill: #555E74;
   color: #555E74;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <svg
-      class="emotion-0"
+      class="emotion-1"
       viewBox="0 0 587 400"
     >
       <title>

@@ -2,12 +2,12 @@
 
 exports[`TableOfContent should render with no errors 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   top: 40vh;
   position: fixed;
 }
 
-.emotion-6 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,31 +21,28 @@ exports[`TableOfContent should render with no errors 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
 .emotion-2 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   border-width: 0;
   min-height: 32px;
   padding: 16px;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .emotion-2 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -59,27 +56,24 @@ exports[`TableOfContent should render with no errors 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-4 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -87,7 +81,7 @@ exports[`TableOfContent should render with no errors 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -96,10 +90,10 @@ exports[`TableOfContent should render with no errors 1`] = `
 }
 
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
     >
       <a
         class="emotion-2"
@@ -107,10 +101,10 @@ exports[`TableOfContent should render with no errors 1`] = `
         href="#SEO"
       >
         <span
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             SEO
           </span>
@@ -122,10 +116,10 @@ exports[`TableOfContent should render with no errors 1`] = `
         href="#Accessibility"
       >
         <span
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Accessibility
           </span>

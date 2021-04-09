@@ -2,8 +2,9 @@
 
 exports[`Meta renders with mandatory props 1`] = `
 <DocumentFragment>
-  .emotion-81 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -11,7 +12,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-81 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -21,8 +22,8 @@ exports[`Meta renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-81 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -31,8 +32,8 @@ exports[`Meta renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-81 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -42,50 +43,557 @@ exports[`Meta renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-80 {
+@media screen and (max-width: 767px) {
+  .emotion-1 {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-80 {
+@media screen and (min-width: 768px) {
+  .emotion-1 {
     margin-bottom: 64px;
   }
 }
 
-.emotion-78 {
+.emotion-2 {
   margin-bottom: 24px;
 }
 
 @media screen {
-  .emotion-37 {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-37 {
+@media screen and (min-width: 480px) {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-37 {
+@media screen and (min-width: 768px) {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-37 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-37 {
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
     display: block;
   }
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-32px/2);
+  margin-right: calc(-32px/2);
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(32px/2);
+  margin-right: calc(32px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-6 {
+    max-width: 100%;
+  }
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-12px/2);
+  margin-bottom: calc(-12px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(12px/2);
+  margin-bottom: calc(12px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-8 {
+    max-width: 100%;
+  }
+}
+
+.emotion-9 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 1px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3184027777777778em;
+}
+
+.emotion-9::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.5684027777777778em;
+}
+
+.emotion-10 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #162740;
+}
+
+.emotion-10 svg {
+  fill: #162740;
+}
+
+.emotion-12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 40px;
+  padding: 4px 8px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  color: #FFFFFF;
+  background-color: #148F39;
+  border-radius: 20rem;
+}
+
+.emotion-13 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-13 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-15 {
+    max-width: 100%;
+  }
+}
+
+.emotion-16 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.emotion-16::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3184027777777778em;
+}
+
+.emotion-16::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.5684027777777778em;
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(32px/2);
+  margin-right: calc(32px/2);
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-17 {
+    max-width: 100%;
+  }
+}
+
+.emotion-18 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-left-width: 1px;
+  display: inline-block;
+  height: 100%;
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-24px/2);
+  margin-bottom: calc(-24px/2);
+}
+
+.emotion-21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(24px/2);
+  margin-bottom: calc(24px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-21 {
+    max-width: 100%;
+  }
+}
+
+.emotion-25 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #577FFB;
+}
+
+.emotion-25 svg {
+  fill: #577FFB;
+}
+
+.emotion-25:hover:not(:disabled) {
+  color: #3358CC;
+}
+
+.emotion-25:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-25:active:not(:disabled) {
+  color: #213A82;
+}
+
+.emotion-25:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-25:visited:not(:disabled) {
+  color: #503B8C;
+}
+
+.emotion-25:visited:not(:disabled) svg {
+  fill: #503B8C;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-25 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-28 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-28::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4434027777777778em;
+}
+
+.emotion-28::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4746527777777778em;
+}
+
+.emotion-30 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #555E74;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-30.emotion-30 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-16px/2);
+  margin-right: calc(-16px/2);
+}
+
+.emotion-33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(16px/2);
+  margin-right: calc(16px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-33 {
+    max-width: 100%;
+  }
+}
+
+.emotion-35 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #555E74;
+  border-width: 1px;
+  border-radius: 20rem;
+  color: #555E74;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-35 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-35 svg {
+  fill: #555E74;
+}
+
+.emotion-35:hover:not(:disabled) {
+  background-color: #E4E4E4;
+  border-color: #243853;
+}
+
+.emotion-35:active:not(:disabled) {
+  background-color: #BBC3C9;
+  border-color: #162740;
+}
+
+.emotion-35:disabled {
+  border-color: #E4E4E4;
+  color: #BBC3C9;
+}
+
+.emotion-35:disabled svg {
+  fill: #BBC3C9;
 }
 
 .emotion-36 {
@@ -101,501 +609,15 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-26 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-32px/2);
-  margin-right: calc(-32px/2);
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(32px/2);
-  margin-right: calc(32px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-12px/2);
-  margin-bottom: calc(-12px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(12px/2);
-  margin-bottom: calc(12px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    max-width: 100%;
-  }
-}
-
-.emotion-1 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 1px 0px;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3184027777777778em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5684027777777778em;
-}
-
-.emotion-0 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #162740;
-}
-
-.emotion-0 svg {
-  fill: #162740;
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 40px;
-  padding: 4px 8px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  color: #FFFFFF;
-  background-color: #148F39;
-  border-radius: 20rem;
-}
-
-.emotion-6 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-6 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-3 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3184027777777778em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5684027777777778em;
-}
-
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(32px/2);
-  margin-right: calc(32px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-left-width: 1px;
-  display: inline-block;
-  height: 100%;
-}
-
-.emotion-24 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
-}
-
-.emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
-}
-
-.emotion-22 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #577FFB;
-}
-
-.emotion-22 svg {
-  fill: #577FFB;
-}
-
-.emotion-22:hover:not(:disabled) {
-  color: #3358CC;
-}
-
-.emotion-22:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-22:active:not(:disabled) {
-  color: #213A82;
-}
-
-.emotion-22:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-22:visited:not(:disabled) {
-  color: #503B8C;
-}
-
-.emotion-22:visited:not(:disabled) svg {
-  fill: #503B8C;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-22 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-16 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-16::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4434027777777778em;
-}
-
-.emotion-16::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4746527777777778em;
-}
-
-.emotion-35 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-16px/2);
-  margin-right: calc(-16px/2);
-}
-
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(16px/2);
-  margin-right: calc(16px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-34 {
-    max-width: 100%;
-  }
-}
-
-.emotion-32 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #555E74;
-  border-width: 1px;
-  border-radius: 20rem;
-  color: #555E74;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-32 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-32 svg {
-  fill: #555E74;
-}
-
-.emotion-32:hover:not(:disabled) {
-  background-color: #E4E4E4;
-  border-color: #243853;
-}
-
-.emotion-32:active:not(:disabled) {
-  background-color: #BBC3C9;
-  border-color: #162740;
-}
-
-.emotion-32:disabled {
-  border-color: #E4E4E4;
-  color: #BBC3C9;
-}
-
-.emotion-32:disabled svg {
-  fill: #BBC3C9;
-}
-
-.emotion-31 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-28 {
+.emotion-37 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -604,30 +626,27 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-28 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-37 {
     max-width: 100%;
   }
 }
 
-.emotion-27 {
+.emotion-38 {
   fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-29 {
+.emotion-40 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-29::before {
+.emotion-40::before {
   content: '';
   display: block;
   height: 0;
@@ -635,7 +654,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
-.emotion-29::after {
+.emotion-40::after {
   content: '';
   display: block;
   height: 0;
@@ -644,36 +663,36 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-77 {
+  .emotion-41 {
     display: block;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-77 {
+@media screen and (min-width: 480px) {
+  .emotion-41 {
     display: block;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-77 {
+@media screen and (min-width: 768px) {
+  .emotion-41 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-77 {
+@media screen and (min-width: 1024px) {
+  .emotion-41 {
     display: block;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-77 {
+@media screen and (min-width: 1440px) {
+  .emotion-41 {
     display: none;
   }
 }
 
-.emotion-76 {
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -688,13 +707,12 @@ exports[`Meta renders with mandatory props 1`] = `
   flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: calc(-24px/2);
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-79 {
+.emotion-81 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -704,96 +722,61 @@ exports[`Meta renders with mandatory props 1`] = `
   width: 100%;
 }
 
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-18 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #555E74;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-18.emotion-18 {
-  width: 16px;
-  height: 16px;
-}
-
 <div
-    class="emotion-81"
+    class="emotion-0"
   >
     <div
-      class="emotion-80"
+      class="emotion-1"
     >
       <div
-        class="emotion-78"
+        class="emotion-2"
       >
         <div
-          class="emotion-37"
+          class="emotion-3"
         >
           <div
-            class="emotion-36"
+            class="emotion-4"
           >
             <div
-              class="emotion-26"
+              class="emotion-5"
             >
               <div
-                class="emotion-10"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-9"
+                  class="emotion-7"
                 >
                   <div
-                    class="emotion-2"
+                    class="emotion-8"
                   >
                     <section
-                      class="emotion-1"
+                      class="emotion-9"
                     >
                       <h1
-                        class="nk-headline-heading emotion-0"
+                        class="nk-headline-heading emotion-10"
                       >
                         Status
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-2"
+                    class="emotion-8"
                   >
                     <div
-                      class="emotion-7"
+                      class="emotion-12"
                     >
                       <div
-                        class="emotion-6"
+                        class="emotion-13"
                         data-testid="flag"
                       >
                         <div
-                          class="emotion-5"
+                          class="emotion-14"
                         >
                           <div
-                            class="emotion-4"
+                            class="emotion-15"
                           >
                             <span
-                              class="emotion-3"
+                              class="emotion-16"
                             >
                               Supported
                             </span>
@@ -805,57 +788,57 @@ exports[`Meta renders with mandatory props 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-12"
+                class="emotion-17"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-11"
+                  class="emotion-18"
                   data-testid="divider"
                 />
               </div>
               <div
-                class="emotion-10"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-24"
+                  class="emotion-20"
                 >
                   <div
-                    class="emotion-15"
+                    class="emotion-21"
                   >
                     <section
-                      class="emotion-1"
+                      class="emotion-9"
                     >
                       <h1
-                        class="nk-headline-heading emotion-0"
+                        class="nk-headline-heading emotion-10"
                       >
                         Introduced
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-15"
+                    class="emotion-21"
                   >
                     <a
-                      class="emotion-22"
+                      class="emotion-25"
                       href="http://localhost:8081"
                     >
                       <span
-                        class="emotion-21"
+                        class="emotion-26"
                       >
                         <span
-                          class="emotion-4"
+                          class="emotion-15"
                         >
                           <span
-                            class="emotion-16"
+                            class="emotion-28"
                           >
                             v0.1
                           </span>
                         </span>
                         <span
-                          class="emotion-4"
+                          class="emotion-15"
                         >
                           <svg
-                            class="emotion-18 emotion-19"
+                            class="emotion-30 emotion-31"
                             fill="currentColor"
                             focusable="false"
                             role="img"
@@ -881,28 +864,28 @@ exports[`Meta renders with mandatory props 1`] = `
               </div>
             </div>
             <div
-              class="emotion-35"
+              class="emotion-32"
             >
               <div
-                class="emotion-34"
+                class="emotion-33"
               >
                 <div
-                  class="emotion-7"
+                  class="emotion-12"
                 >
                   <a
-                    class="emotion-32"
+                    class="emotion-35"
                     data-testid="buttonLink"
                     href="https://github.com/newscorp-ghfb/ncu-newskit"
                   >
                     <div
-                      class="emotion-31"
+                      class="emotion-36"
                     >
                       <div
-                        class="emotion-28"
+                        class="emotion-37"
                       >
                         <svg
                           aria-hidden="true"
-                          class="emotion-27"
+                          class="emotion-38"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -914,10 +897,10 @@ exports[`Meta renders with mandatory props 1`] = `
                         </svg>
                       </div>
                       <div
-                        class="emotion-28"
+                        class="emotion-37"
                       >
                         <span
-                          class="emotion-29"
+                          class="emotion-40"
                         >
                           View source code
                         </span>
@@ -930,54 +913,54 @@ exports[`Meta renders with mandatory props 1`] = `
           </div>
         </div>
         <div
-          class="emotion-77"
+          class="emotion-41"
         >
           <div
-            class="emotion-76"
+            class="emotion-42"
           >
             <div
-              class="emotion-15"
+              class="emotion-21"
             >
               <div
-                class="emotion-26"
+                class="emotion-5"
               >
                 <div
-                  class="emotion-10"
+                  class="emotion-6"
                 >
                   <div
-                    class="emotion-9"
+                    class="emotion-7"
                   >
                     <div
-                      class="emotion-2"
+                      class="emotion-8"
                     >
                       <section
-                        class="emotion-1"
+                        class="emotion-9"
                       >
                         <h1
-                          class="nk-headline-heading emotion-0"
+                          class="nk-headline-heading emotion-10"
                         >
                           Status
                         </h1>
                       </section>
                     </div>
                     <div
-                      class="emotion-2"
+                      class="emotion-8"
                     >
                       <div
-                        class="emotion-7"
+                        class="emotion-12"
                       >
                         <div
-                          class="emotion-6"
+                          class="emotion-13"
                           data-testid="flag"
                         >
                           <div
-                            class="emotion-5"
+                            class="emotion-14"
                           >
                             <div
-                              class="emotion-4"
+                              class="emotion-15"
                             >
                               <span
-                                class="emotion-3"
+                                class="emotion-16"
                               >
                                 Supported
                               </span>
@@ -989,57 +972,57 @@ exports[`Meta renders with mandatory props 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-12"
+                  class="emotion-17"
                 >
                   <hr
                     aria-hidden="true"
-                    class="emotion-11"
+                    class="emotion-18"
                     data-testid="divider"
                   />
                 </div>
                 <div
-                  class="emotion-10"
+                  class="emotion-6"
                 >
                   <div
-                    class="emotion-24"
+                    class="emotion-20"
                   >
                     <div
-                      class="emotion-15"
+                      class="emotion-21"
                     >
                       <section
-                        class="emotion-1"
+                        class="emotion-9"
                       >
                         <h1
-                          class="nk-headline-heading emotion-0"
+                          class="nk-headline-heading emotion-10"
                         >
                           Introduced
                         </h1>
                       </section>
                     </div>
                     <div
-                      class="emotion-15"
+                      class="emotion-21"
                     >
                       <a
-                        class="emotion-22"
+                        class="emotion-25"
                         href="http://localhost:8081"
                       >
                         <span
-                          class="emotion-21"
+                          class="emotion-26"
                         >
                           <span
-                            class="emotion-4"
+                            class="emotion-15"
                           >
                             <span
-                              class="emotion-16"
+                              class="emotion-28"
                             >
                               v0.1
                             </span>
                           </span>
                           <span
-                            class="emotion-4"
+                            class="emotion-15"
                           >
                             <svg
-                              class="emotion-18 emotion-19"
+                              class="emotion-30 emotion-31"
                               fill="currentColor"
                               focusable="false"
                               role="img"
@@ -1066,31 +1049,31 @@ exports[`Meta renders with mandatory props 1`] = `
               </div>
             </div>
             <div
-              class="emotion-15"
+              class="emotion-21"
             >
               <div
-                class="emotion-35"
+                class="emotion-32"
               >
                 <div
-                  class="emotion-34"
+                  class="emotion-33"
                 >
                   <div
-                    class="emotion-7"
+                    class="emotion-12"
                   >
                     <button
-                      class="emotion-32"
+                      class="emotion-35"
                       data-testid="button"
                       type="button"
                     >
                       <div
-                        class="emotion-31"
+                        class="emotion-36"
                       >
                         <div
-                          class="emotion-28"
+                          class="emotion-37"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-27"
+                            class="emotion-38"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
@@ -1102,10 +1085,10 @@ exports[`Meta renders with mandatory props 1`] = `
                           </svg>
                         </div>
                         <div
-                          class="emotion-28"
+                          class="emotion-37"
                         >
                           <span
-                            class="emotion-29"
+                            class="emotion-40"
                           >
                             View source code
                           </span>
@@ -1121,7 +1104,7 @@ exports[`Meta renders with mandatory props 1`] = `
       </div>
       <hr
         aria-hidden="true"
-        class="emotion-79"
+        class="emotion-81"
         data-testid="divider"
       />
     </div>
@@ -1131,8 +1114,9 @@ exports[`Meta renders with mandatory props 1`] = `
 
 exports[`Meta renders with mandatory props and figma button 1`] = `
 <DocumentFragment>
-  .emotion-97 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1140,7 +1124,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-97 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -1150,8 +1134,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-97 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -1160,8 +1144,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-97 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -1171,53 +1155,53 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-96 {
+@media screen and (max-width: 767px) {
+  .emotion-1 {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-96 {
+@media screen and (min-width: 768px) {
+  .emotion-1 {
     margin-bottom: 64px;
   }
 }
 
-.emotion-94 {
+.emotion-2 {
   margin-bottom: 24px;
 }
 
 @media screen {
-  .emotion-45 {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-45 {
+@media screen and (min-width: 480px) {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-45 {
+@media screen and (min-width: 768px) {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-45 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     display: none;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-45 {
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
     display: block;
   }
 }
 
-.emotion-44 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1232,11 +1216,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.emotion-26 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1250,14 +1233,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-left: calc(-32px/2);
   margin-right: calc(-32px/2);
 }
 
-.emotion-10 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1266,13 +1249,13 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(32px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-10 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-6 {
     max-width: 100%;
   }
 }
 
-.emotion-9 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1286,14 +1269,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-top: calc(-12px/2);
   margin-bottom: calc(-12px/2);
 }
 
-.emotion-2 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1302,25 +1285,22 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(12px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-8 {
     max-width: 100%;
   }
 }
 
-.emotion-1 {
+.emotion-9 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-1::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -1328,7 +1308,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: -0.3184027777777778em;
 }
 
-.emotion-1::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -1336,18 +1316,18 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-top: -0.5684027777777778em;
 }
 
-.emotion-0 {
+.emotion-10 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #162740;
 }
 
-.emotion-0 svg {
+.emotion-10 svg {
   fill: #162740;
 }
 
-.emotion-7 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1357,15 +1337,15 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-13 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1379,6 +1359,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   color: #FFFFFF;
@@ -1386,16 +1367,16 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border-radius: 20rem;
 }
 
-.emotion-6 svg {
+.emotion-13 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 svg {
+.emotion-13 svg {
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1409,14 +1390,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-4 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1425,24 +1406,21 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-15 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
+.emotion-16 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-3::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -1450,7 +1428,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: -0.3184027777777778em;
 }
 
-.emotion-3::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -1458,7 +1436,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-top: -0.5684027777777778em;
 }
 
-.emotion-12 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1470,13 +1448,13 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-self: stretch;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-12 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-17 {
     max-width: 100%;
   }
 }
 
-.emotion-11 {
+.emotion-18 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -1487,7 +1465,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   height: 100%;
 }
 
-.emotion-24 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1501,14 +1479,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-top: calc(-24px/2);
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-15 {
+.emotion-21 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1517,89 +1495,55 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(24px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-15 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-21 {
     max-width: 100%;
   }
 }
 
-.emotion-22 {
+.emotion-25 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #577FFB;
 }
 
-.emotion-22 svg {
+.emotion-25 svg {
   fill: #577FFB;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
   color: #3358CC;
 }
 
-.emotion-22:hover:not(:disabled) svg {
+.emotion-25:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-25:active:not(:disabled) {
   color: #213A82;
 }
 
-.emotion-22:active:not(:disabled) svg {
+.emotion-25:active:not(:disabled) svg {
   fill: #213A82;
 }
 
-.emotion-22:visited:not(:disabled) {
+.emotion-25:visited:not(:disabled) {
   color: #503B8C;
 }
 
-.emotion-22:visited:not(:disabled) svg {
+.emotion-25:visited:not(:disabled) svg {
   fill: #503B8C;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-22 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-25 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-16 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-16::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4434027777777778em;
-}
-
-.emotion-16::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4746527777777778em;
-}
-
-.emotion-43 {
+.emotion-26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1613,14 +1557,77 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-28 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-28::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4434027777777778em;
+}
+
+.emotion-28::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4746527777777778em;
+}
+
+.emotion-30 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #555E74;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-30.emotion-30 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-left: calc(-16px/2);
   margin-right: calc(-16px/2);
 }
 
-.emotion-34 {
+.emotion-33 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1629,21 +1636,21 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(16px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-34 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-33 {
     max-width: 100%;
   }
 }
 
-.emotion-32 {
+.emotion-35 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1658,6 +1665,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -1666,44 +1674,41 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border-width: 1px;
   border-radius: 20rem;
   color: #555E74;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-32 svg {
+.emotion-35 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-32 svg {
+.emotion-35 svg {
   fill: #555E74;
 }
 
-.emotion-32:hover:not(:disabled) {
+.emotion-35:hover:not(:disabled) {
   background-color: #E4E4E4;
   border-color: #243853;
 }
 
-.emotion-32:active:not(:disabled) {
+.emotion-35:active:not(:disabled) {
   background-color: #BBC3C9;
   border-color: #162740;
 }
 
-.emotion-32:disabled {
+.emotion-35:disabled {
   border-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-32:disabled svg {
+.emotion-35:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-31 {
+.emotion-36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1717,14 +1722,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-28 {
+.emotion-37 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1733,30 +1738,27 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-28 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-37 {
     max-width: 100%;
   }
 }
 
-.emotion-27 {
+.emotion-38 {
   fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-29 {
+.emotion-40 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-29::before {
+.emotion-40::before {
   content: '';
   display: block;
   height: 0;
@@ -1764,7 +1766,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
-.emotion-29::after {
+.emotion-40::after {
   content: '';
   display: block;
   height: 0;
@@ -1772,111 +1774,15 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-top: -0.5049107142857143em;
 }
 
-@media screen {
-  .emotion-93 {
-    display: block;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-93 {
-    display: block;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-93 {
-    display: block;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-93 {
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-93 {
-    display: none;
-  }
-}
-
-.emotion-92 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
-}
-
-.emotion-95 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-18 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #555E74;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-18.emotion-18 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-40 {
+.emotion-43 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1891,6 +1797,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
@@ -1899,98 +1806,155 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   border-width: 1px;
   border-radius: 20rem;
   color: #555E74;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-40 svg {
+.emotion-43 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-40 svg {
+.emotion-43 svg {
   fill: #555E74;
 }
 
-.emotion-40:hover:not(:disabled) {
+.emotion-43:hover:not(:disabled) {
   background-color: #E4E4E4;
   border-color: #243853;
 }
 
-.emotion-40:active:not(:disabled) {
+.emotion-43:active:not(:disabled) {
   background-color: #BBC3C9;
   border-color: #162740;
 }
 
-.emotion-40:disabled {
+.emotion-43:disabled {
   border-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-40:disabled svg {
+.emotion-43:disabled svg {
   fill: #BBC3C9;
 }
 
+@media screen {
+  .emotion-49 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-49 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-49 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-49 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-49 {
+    display: none;
+  }
+}
+
+.emotion-50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: calc(-24px/2);
+  margin-bottom: calc(-24px/2);
+}
+
+.emotion-97 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
 <div
-    class="emotion-97"
+    class="emotion-0"
   >
     <div
-      class="emotion-96"
+      class="emotion-1"
     >
       <div
-        class="emotion-94"
+        class="emotion-2"
       >
         <div
-          class="emotion-45"
+          class="emotion-3"
         >
           <div
-            class="emotion-44"
+            class="emotion-4"
           >
             <div
-              class="emotion-26"
+              class="emotion-5"
             >
               <div
-                class="emotion-10"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-9"
+                  class="emotion-7"
                 >
                   <div
-                    class="emotion-2"
+                    class="emotion-8"
                   >
                     <section
-                      class="emotion-1"
+                      class="emotion-9"
                     >
                       <h1
-                        class="nk-headline-heading emotion-0"
+                        class="nk-headline-heading emotion-10"
                       >
                         Status
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-2"
+                    class="emotion-8"
                   >
                     <div
-                      class="emotion-7"
+                      class="emotion-12"
                     >
                       <div
-                        class="emotion-6"
+                        class="emotion-13"
                         data-testid="flag"
                       >
                         <div
-                          class="emotion-5"
+                          class="emotion-14"
                         >
                           <div
-                            class="emotion-4"
+                            class="emotion-15"
                           >
                             <span
-                              class="emotion-3"
+                              class="emotion-16"
                             >
                               Supported
                             </span>
@@ -2002,57 +1966,57 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-12"
+                class="emotion-17"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-11"
+                  class="emotion-18"
                   data-testid="divider"
                 />
               </div>
               <div
-                class="emotion-10"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-24"
+                  class="emotion-20"
                 >
                   <div
-                    class="emotion-15"
+                    class="emotion-21"
                   >
                     <section
-                      class="emotion-1"
+                      class="emotion-9"
                     >
                       <h1
-                        class="nk-headline-heading emotion-0"
+                        class="nk-headline-heading emotion-10"
                       >
                         Introduced
                       </h1>
                     </section>
                   </div>
                   <div
-                    class="emotion-15"
+                    class="emotion-21"
                   >
                     <a
-                      class="emotion-22"
+                      class="emotion-25"
                       href="http://localhost:8081"
                     >
                       <span
-                        class="emotion-21"
+                        class="emotion-26"
                       >
                         <span
-                          class="emotion-4"
+                          class="emotion-15"
                         >
                           <span
-                            class="emotion-16"
+                            class="emotion-28"
                           >
                             v0.1
                           </span>
                         </span>
                         <span
-                          class="emotion-4"
+                          class="emotion-15"
                         >
                           <svg
-                            class="emotion-18 emotion-19"
+                            class="emotion-30 emotion-31"
                             fill="currentColor"
                             focusable="false"
                             role="img"
@@ -2078,28 +2042,28 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
               </div>
             </div>
             <div
-              class="emotion-43"
+              class="emotion-32"
             >
               <div
-                class="emotion-34"
+                class="emotion-33"
               >
                 <div
-                  class="emotion-7"
+                  class="emotion-12"
                 >
                   <a
-                    class="emotion-32"
+                    class="emotion-35"
                     data-testid="buttonLink"
                     href="https://github.com/newscorp-ghfb/ncu-newskit"
                   >
                     <div
-                      class="emotion-31"
+                      class="emotion-36"
                     >
                       <div
-                        class="emotion-28"
+                        class="emotion-37"
                       >
                         <svg
                           aria-hidden="true"
-                          class="emotion-27"
+                          class="emotion-38"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -2111,10 +2075,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                         </svg>
                       </div>
                       <div
-                        class="emotion-28"
+                        class="emotion-37"
                       >
                         <span
-                          class="emotion-29"
+                          class="emotion-40"
                         >
                           View source code
                         </span>
@@ -2124,25 +2088,25 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-34"
+                class="emotion-33"
               >
                 <div
-                  class="emotion-7"
+                  class="emotion-12"
                 >
                   <a
-                    class="emotion-40"
+                    class="emotion-43"
                     data-testid="buttonLink"
                     href="https://github.com/newscorp-ghfb/ncu-newskit"
                   >
                     <div
-                      class="emotion-31"
+                      class="emotion-36"
                     >
                       <div
-                        class="emotion-28"
+                        class="emotion-37"
                       >
                         <svg
                           aria-hidden="true"
-                          class="emotion-27"
+                          class="emotion-38"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -2170,10 +2134,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                         </svg>
                       </div>
                       <div
-                        class="emotion-28"
+                        class="emotion-37"
                       >
                         <span
-                          class="emotion-29"
+                          class="emotion-40"
                         >
                           View Design
                         </span>
@@ -2186,54 +2150,54 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
           </div>
         </div>
         <div
-          class="emotion-93"
+          class="emotion-49"
         >
           <div
-            class="emotion-92"
+            class="emotion-50"
           >
             <div
-              class="emotion-15"
+              class="emotion-21"
             >
               <div
-                class="emotion-26"
+                class="emotion-5"
               >
                 <div
-                  class="emotion-10"
+                  class="emotion-6"
                 >
                   <div
-                    class="emotion-9"
+                    class="emotion-7"
                   >
                     <div
-                      class="emotion-2"
+                      class="emotion-8"
                     >
                       <section
-                        class="emotion-1"
+                        class="emotion-9"
                       >
                         <h1
-                          class="nk-headline-heading emotion-0"
+                          class="nk-headline-heading emotion-10"
                         >
                           Status
                         </h1>
                       </section>
                     </div>
                     <div
-                      class="emotion-2"
+                      class="emotion-8"
                     >
                       <div
-                        class="emotion-7"
+                        class="emotion-12"
                       >
                         <div
-                          class="emotion-6"
+                          class="emotion-13"
                           data-testid="flag"
                         >
                           <div
-                            class="emotion-5"
+                            class="emotion-14"
                           >
                             <div
-                              class="emotion-4"
+                              class="emotion-15"
                             >
                               <span
-                                class="emotion-3"
+                                class="emotion-16"
                               >
                                 Supported
                               </span>
@@ -2245,57 +2209,57 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-12"
+                  class="emotion-17"
                 >
                   <hr
                     aria-hidden="true"
-                    class="emotion-11"
+                    class="emotion-18"
                     data-testid="divider"
                   />
                 </div>
                 <div
-                  class="emotion-10"
+                  class="emotion-6"
                 >
                   <div
-                    class="emotion-24"
+                    class="emotion-20"
                   >
                     <div
-                      class="emotion-15"
+                      class="emotion-21"
                     >
                       <section
-                        class="emotion-1"
+                        class="emotion-9"
                       >
                         <h1
-                          class="nk-headline-heading emotion-0"
+                          class="nk-headline-heading emotion-10"
                         >
                           Introduced
                         </h1>
                       </section>
                     </div>
                     <div
-                      class="emotion-15"
+                      class="emotion-21"
                     >
                       <a
-                        class="emotion-22"
+                        class="emotion-25"
                         href="http://localhost:8081"
                       >
                         <span
-                          class="emotion-21"
+                          class="emotion-26"
                         >
                           <span
-                            class="emotion-4"
+                            class="emotion-15"
                           >
                             <span
-                              class="emotion-16"
+                              class="emotion-28"
                             >
                               v0.1
                             </span>
                           </span>
                           <span
-                            class="emotion-4"
+                            class="emotion-15"
                           >
                             <svg
-                              class="emotion-18 emotion-19"
+                              class="emotion-30 emotion-31"
                               fill="currentColor"
                               focusable="false"
                               role="img"
@@ -2322,31 +2286,31 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
               </div>
             </div>
             <div
-              class="emotion-15"
+              class="emotion-21"
             >
               <div
-                class="emotion-43"
+                class="emotion-32"
               >
                 <div
-                  class="emotion-34"
+                  class="emotion-33"
                 >
                   <div
-                    class="emotion-7"
+                    class="emotion-12"
                   >
                     <button
-                      class="emotion-32"
+                      class="emotion-35"
                       data-testid="button"
                       type="button"
                     >
                       <div
-                        class="emotion-31"
+                        class="emotion-36"
                       >
                         <div
-                          class="emotion-28"
+                          class="emotion-37"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-27"
+                            class="emotion-38"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
@@ -2358,10 +2322,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           </svg>
                         </div>
                         <div
-                          class="emotion-28"
+                          class="emotion-37"
                         >
                           <span
-                            class="emotion-29"
+                            class="emotion-40"
                           >
                             View source code
                           </span>
@@ -2371,25 +2335,25 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-34"
+                  class="emotion-33"
                 >
                   <div
-                    class="emotion-7"
+                    class="emotion-12"
                   >
                     <a
-                      class="emotion-40"
+                      class="emotion-43"
                       data-testid="buttonLink"
                       href="https://github.com/newscorp-ghfb/ncu-newskit"
                     >
                       <div
-                        class="emotion-31"
+                        class="emotion-36"
                       >
                         <div
-                          class="emotion-28"
+                          class="emotion-37"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-27"
+                            class="emotion-38"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
@@ -2417,10 +2381,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                           </svg>
                         </div>
                         <div
-                          class="emotion-28"
+                          class="emotion-37"
                         >
                           <span
-                            class="emotion-29"
+                            class="emotion-40"
                           >
                             View Design
                           </span>
@@ -2436,7 +2400,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
       </div>
       <hr
         aria-hidden="true"
-        class="emotion-95"
+        class="emotion-97"
         data-testid="divider"
       />
     </div>

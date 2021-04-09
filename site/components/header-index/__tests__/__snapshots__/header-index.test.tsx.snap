@@ -2,35 +2,37 @@
 
 exports[`HeaderIndex renders without crashing 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-0 {
   background-color: #F4F4F4;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-14 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-14 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     margin-bottom: 64px;
   }
 }
 
-.emotion-13 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-12 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -44,43 +46,44 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 @media screen {
-  .emotion-12 {
+  .emotion-2 {
     margin: -8px 4px 0 4px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-12 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -8px 4px 0 4px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-12 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -12px 4px 0 4px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-12 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -12px 12px 0 12px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-12 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -12px 12px 0 12px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-12 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     min-height: 440px;
   }
 }
 
-.emotion-6 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -88,7 +91,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 @media screen {
-  .emotion-6 {
+  .emotion-3 {
     padding: 0 12px;
     margin-top: 8px;
     margin-left: 8.333333333333334%;
@@ -99,8 +102,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-6 {
+@media screen and (min-width: 480px) {
+  .emotion-3 {
     margin-left: 33.333333333333336%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -109,8 +112,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-6 {
+@media screen and (min-width: 768px) {
+  .emotion-3 {
     margin-top: 12px;
     margin-left: 50%;
     -webkit-flex-basis: 50%;
@@ -120,8 +123,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-6 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -133,11 +136,11 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-5 {
   border-radius: 8px;
   position: relative;
   width: 100%;
@@ -147,11 +150,11 @@ exports[`HeaderIndex renders without crashing 1`] = `
   background-color: #F4F4F4;
 }
 
-.emotion-4 svg {
+.emotion-5 svg {
   fill: #BBC3C9;
 }
 
-.emotion-2 {
+.emotion-6 {
   top: 0;
   left: 0;
   position: absolute;
@@ -163,37 +166,37 @@ exports[`HeaderIndex renders without crashing 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.emotion-1 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-0 {
+.emotion-8 {
   fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-8.emotion-8 {
   width: 48px;
   height: 48px;
 }
 
-.emotion-3 {
+.emotion-9 {
   display: none;
   height: auto;
   width: 100%;
@@ -202,8 +205,9 @@ exports[`HeaderIndex renders without crashing 1`] = `
   border-radius: inherit;
 }
 
-.emotion-11 {
+.emotion-10 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -211,7 +215,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 @media screen {
-  .emotion-11 {
+  .emotion-10 {
     padding: 0 12px;
     margin-top: 8px;
     -webkit-flex-basis: 91.66666666666667%;
@@ -221,8 +225,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-11 {
+@media screen and (min-width: 768px) {
+  .emotion-10 {
     margin-top: 12px;
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
@@ -232,8 +236,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-11 {
+@media screen and (min-width: 1024px) {
+  .emotion-10 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -241,41 +245,38 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-8 {
+@media screen and (max-width: 767px) {
+  .emotion-11 {
     margin-bottom: 32px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-8 {
+@media screen and (min-width: 768px) {
+  .emotion-11 {
     margin-bottom: 40px;
   }
 }
 
-.emotion-7 {
+.emotion-12 {
   margin: 0;
   padding: 1px 0;
   color: #162740;
 }
 
-.emotion-7 svg {
+.emotion-12 svg {
   fill: #162740;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-7 {
+@media screen and (max-width: 767px) {
+  .emotion-12 {
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-7::before {
+  .emotion-12::before {
     content: '';
     display: block;
     height: 0;
@@ -283,7 +284,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     margin-bottom: -0.140625em;
   }
 
-  .emotion-7::after {
+  .emotion-12::after {
     content: '';
     display: block;
     height: 0;
@@ -292,19 +293,16 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-7 {
+@media screen and (min-width: 768px) {
+  .emotion-12 {
     font-family: 'Poppins',sans-serif;
     font-size: 60px;
     line-height: 1.2;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-7::before {
+  .emotion-12::before {
     content: '';
     display: block;
     height: 0;
@@ -312,7 +310,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
     margin-bottom: -0.140625em;
   }
 
-  .emotion-7::after {
+  .emotion-12::after {
     content: '';
     display: block;
     height: 0;
@@ -321,19 +319,19 @@ exports[`HeaderIndex renders without crashing 1`] = `
   }
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-10 {
+@media screen and (max-width: 1023px) {
+  .emotion-13 {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-10 {
+@media screen and (min-width: 1024px) {
+  .emotion-13 {
     margin-bottom: 0;
   }
 }
 
-.emotion-9 {
+.emotion-14 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -341,17 +339,14 @@ exports[`HeaderIndex renders without crashing 1`] = `
   font-size: 20px;
   line-height: 1.6;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-9 svg {
+.emotion-14 svg {
   fill: #555E74;
 }
 
-.emotion-9::before {
+.emotion-14::before {
   content: '';
   display: block;
   height: 0;
@@ -359,7 +354,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
   margin-bottom: -0.34062500000000007em;
 }
 
-.emotion-9::after {
+.emotion-14::after {
   content: '';
   display: block;
   height: 0;
@@ -368,32 +363,32 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 <div
-    class="emotion-14"
+    class="emotion-0"
   >
     <div
-      class="emotion-13"
+      class="emotion-1"
     >
       <div
-        class="emotion-12"
+        class="emotion-2"
       >
         <div
-          class="emotion-6"
+          class="emotion-3"
         >
           <div
-            class="emotion-5"
+            class="emotion-4"
           >
             <div
-              class="emotion-4"
+              class="emotion-5"
             >
               <div
-                class="emotion-2"
+                class="emotion-6"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-7"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-0"
+                    class="emotion-8"
                     fill="currentColor"
                     viewBox="0 0 88 88"
                     xmlns="http://www.w3.org/2000/svg"
@@ -406,29 +401,29 @@ exports[`HeaderIndex renders without crashing 1`] = `
               </div>
               <img
                 alt=""
-                class="emotion-3"
+                class="emotion-9"
                 src="test"
               />
             </div>
           </div>
         </div>
         <div
-          class="emotion-11"
+          class="emotion-10"
         >
           <div
-            class="emotion-8"
+            class="emotion-11"
           >
             <h1
-              class="emotion-7"
+              class="emotion-12"
             >
               Foundations
             </h1>
           </div>
           <div
-            class="emotion-10"
+            class="emotion-13"
           >
             <p
-              class="emotion-9"
+              class="emotion-14"
             >
               description
             </p>

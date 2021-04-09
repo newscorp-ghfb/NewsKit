@@ -6,7 +6,7 @@ exports[`consent-button render consent-button default 1`] = `
     id="privacy-settings-prompt"
   >
     <button
-      class="css-0"
+      class="emotion-0"
       on="tap:consent.prompt(consent=SourcePoint)"
       type="button"
     >
@@ -22,7 +22,7 @@ exports[`consent-button render consent-button with button label and postPromptUI
     id="settings-ui"
   >
     <button
-      class="css-0"
+      class="emotion-0"
       on="tap:consent.prompt(consent=SourcePoint)"
       type="button"
     >

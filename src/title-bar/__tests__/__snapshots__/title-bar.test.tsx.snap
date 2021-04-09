@@ -2,7 +2,7 @@
 
 exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 <DocumentFragment>
-  .emotion-9 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,40 +17,40 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-9 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-9 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
 .emotion-1 {
+  margin-right: 16px;
+}
+
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -58,7 +58,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -67,19 +67,16 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -87,7 +84,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -96,19 +93,16 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -116,7 +110,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -125,52 +119,48 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
-.emotion-2 {
-  margin-right: 16px;
-}
-
 @media screen {
-  .emotion-8 {
+  .emotion-4 {
     display: none;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-8 {
+@media screen and (min-width: 480px) {
+  .emotion-4 {
     display: block;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-8 {
+@media screen and (min-width: 768px) {
+  .emotion-4 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-8 {
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
     display: block;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-8 {
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
     display: block;
   }
 }
 
-.emotion-7 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -187,8 +177,8 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -203,17 +193,15 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
@@ -243,7 +231,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   fill: #c0c0c0;
 }
 
-.emotion-5 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,14 +245,14 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -273,24 +261,21 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-8 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-3::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -298,7 +283,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-3::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -307,26 +292,26 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 <div
-    class="emotion-9"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h3
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h3>
       </section>
     </div>
     <div
-      class="emotion-8"
+      class="emotion-4"
     >
       <div
-        class="emotion-7"
+        class="emotion-5"
       >
         <button
           class="emotion-6"
@@ -334,13 +319,13 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
           type="button"
         >
           <div
-            class="emotion-5"
+            class="emotion-7"
           >
             <div
-              class="emotion-4"
+              class="emotion-8"
             >
               <span
-                class="emotion-3"
+                class="emotion-9"
               >
                 Default button
               </span>
@@ -355,7 +340,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -370,40 +355,40 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-7 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
 .emotion-1 {
+  margin-right: 16px;
+}
+
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -411,7 +396,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -420,19 +405,16 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -440,7 +422,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -449,19 +431,16 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -469,7 +448,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -478,59 +457,52 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
-.emotion-2 {
-  margin-right: 16px;
-}
-
 @media screen {
-  .emotion-6 {
+  .emotion-4 {
     display: none;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-6 {
+@media screen and (min-width: 480px) {
+  .emotion-4 {
     display: block;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-6 {
+@media screen and (min-width: 768px) {
+  .emotion-4 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-6 {
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
     display: block;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-6 {
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
     display: block;
   }
 }
 
 .emotion-5 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
@@ -562,13 +534,13 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .emotion-5 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-4 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -582,12 +554,12 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-3 {
+.emotion-7 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
@@ -595,33 +567,33 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 }
 
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h3
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h3>
       </section>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-4"
     >
       <a
         class="emotion-5"
         href="/"
       >
         <span
-          class="emotion-4"
+          class="emotion-6"
         >
           <span
-            class="emotion-3"
+            class="emotion-7"
           >
             Link
           </span>
@@ -634,7 +606,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -649,40 +621,36 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -690,7 +658,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -699,19 +667,16 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -719,7 +684,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -728,19 +693,16 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -748,7 +710,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -757,52 +719,52 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a68c1;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a68c1;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-0:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-0:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-0:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-0:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h3
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h3>
@@ -814,7 +776,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
 
 exports[`TitleBar should apply correctly only typographyPreset for the heading 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -829,51 +791,36 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-0 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #0a0a0a;
-}
-
-.emotion-0 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:479px) {
-  .emotion-1 {
+@media screen and (max-width: 479px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -881,7 +828,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     margin-bottom: -0.2055555555555556em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -890,19 +837,16 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   }
 }
 
-@media screen and (min-width:480px) and (max-width:767px) {
-  .emotion-1 {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -910,7 +854,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     margin-bottom: -0.25em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -919,19 +863,16 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -939,7 +880,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -948,19 +889,16 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 28px;
     line-height: 1.1428571428571428;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -968,7 +906,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     margin-bottom: -0.22142857142857142em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -977,17 +915,28 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   }
 }
 
+.emotion-3 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-3 svg {
+  fill: #0a0a0a;
+}
+
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h3
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h3>
@@ -999,7 +948,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
 
 exports[`TitleBar should apply correctly the props and overrides 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1014,28 +963,24 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 4px 8px;
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:479px) {
-  .emotion-1 {
+@media screen and (max-width: 479px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1043,7 +988,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     margin-bottom: -0.2055555555555556em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1052,19 +997,16 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:767px) {
-  .emotion-1 {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1072,7 +1014,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     margin-bottom: -0.25em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1081,19 +1023,16 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1101,7 +1040,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1110,19 +1049,16 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 28px;
     line-height: 1.1428571428571428;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1130,7 +1066,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     margin-bottom: -0.22142857142857142em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1139,52 +1075,52 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a68c1;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a68c1;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-0:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-0:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-0:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-0:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h3
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h3>
@@ -1196,7 +1132,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
 
 exports[`TitleBar should display correctly as renders with h1 size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1211,40 +1147,36 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1252,7 +1184,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1261,19 +1193,16 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1281,7 +1210,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1290,19 +1219,16 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1310,7 +1236,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1319,28 +1245,28 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h1
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h1>
@@ -1352,7 +1278,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
 
 exports[`TitleBar should display correctly as renders with h2 size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1367,40 +1293,36 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1408,7 +1330,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1417,19 +1339,16 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1437,7 +1356,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1446,19 +1365,16 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1466,7 +1382,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1475,28 +1391,28 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h2
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h2>
@@ -1508,7 +1424,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
 
 exports[`TitleBar should display correctly as renders with h3 size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1523,40 +1439,36 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1564,7 +1476,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1573,19 +1485,16 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1593,7 +1502,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1602,19 +1511,16 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1622,7 +1528,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1631,28 +1537,28 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h3
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h3>
@@ -1664,7 +1570,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
 
 exports[`TitleBar should display correctly as renders with h4 size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1679,40 +1585,36 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1720,7 +1622,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1729,19 +1631,16 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1749,7 +1648,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1758,19 +1657,16 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1778,7 +1674,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1787,28 +1683,28 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h4
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h4>
@@ -1820,7 +1716,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
 
 exports[`TitleBar should display correctly as renders with h5 size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1835,40 +1731,36 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1876,7 +1768,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1885,19 +1777,16 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1905,7 +1794,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1914,19 +1803,16 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -1934,7 +1820,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -1943,28 +1829,28 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h5
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h5>
@@ -1976,7 +1862,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
 
 exports[`TitleBar should display correctly as renders with h6 size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1991,40 +1877,36 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -2032,7 +1914,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -2041,19 +1923,16 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -2061,7 +1940,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -2070,19 +1949,16 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -2090,7 +1966,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -2099,28 +1975,28 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h6
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h6>
@@ -2132,7 +2008,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
 
 exports[`TitleBar should display correctly with default styles and given title 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2147,40 +2023,36 @@ exports[`TitleBar should display correctly with default styles and given title 1
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: transparent;
 }
 
-@media screen and (max-width:1023px) {
-  .emotion-3 {
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 16px 24px;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   padding: 1px 0px;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -2188,7 +2060,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     margin-bottom: -0.21250000000000002em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -2197,19 +2069,16 @@ exports[`TitleBar should display correctly with default styles and given title 1
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -2217,7 +2086,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -2226,19 +2095,16 @@ exports[`TitleBar should display correctly with default styles and given title 1
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-1::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -2246,7 +2112,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-1::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -2255,28 +2121,28 @@ exports[`TitleBar should display correctly with default styles and given title 1
   }
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a0a0a;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #0a0a0a;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
     >
       <section
-        class="emotion-1"
+        class="emotion-2"
       >
         <h3
-          class="nk-headline-heading emotion-0"
+          class="nk-headline-heading emotion-3"
         >
           Test title of title bar
         </h3>

@@ -73,7 +73,7 @@ exports[`getStylePresetFromTheme with disabled state 1`] = `
 
 exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, and incorrect for md breakpoints 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:479px) {
+  @media screen and (max-width: 479px) {
   .emotion-0 {
     background-color: red;
   }
@@ -83,7 +83,7 @@ exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactiveP
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .emotion-0 {
     background-color: blue;
   }
@@ -97,7 +97,7 @@ exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactiveP
 
 exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, and interactivePrimary030 for md breakpoints 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:479px) {
+  @media screen and (max-width: 479px) {
   .emotion-0 {
     background-color: red;
   }
@@ -107,13 +107,13 @@ exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactiveP
   }
 }
 
-@media screen and (min-width:480px) and (max-width:767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     background-color: green;
   }
@@ -127,25 +127,25 @@ exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactiveP
 
 exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, interactivePrimary030 for md, and interactivePrimary040 for lg breakpoints 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:479px) {
+  @media screen and (max-width: 479px) {
   .emotion-0 {
     background-color: red;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-0 {
     background-color: green;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     background-color: #FF00FF;
   }
@@ -159,25 +159,25 @@ exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactiveP
 
 exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, interactivePrimary030 for md, interactivePrimary040 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:479px) {
+  @media screen and (max-width: 479px) {
   .emotion-0 {
     background-color: red;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-0 {
     background-color: green;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     background-color: #FF00FF;
   }

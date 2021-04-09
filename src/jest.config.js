@@ -9,7 +9,6 @@ module.exports = {
   ],
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
-  snapshotSerializers: ['jest-emotion'],
   testRegex: '(.|-)test\\.tsx?$',
   testURL: 'http://localhost/',
   transform: {

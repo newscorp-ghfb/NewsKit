@@ -9,9 +9,6 @@ exports[`Paragraph renders Paragraph 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
@@ -36,9 +33,6 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
@@ -87,9 +81,6 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
@@ -105,24 +96,7 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
 
 exports[`Paragraph renders with drop cap 1`] = `
 <DocumentFragment>
-  .emotion-1 {
-  margin: 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-1 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-3 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -130,7 +104,21 @@ exports[`Paragraph renders with drop cap 1`] = `
   max-width: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
+  margin: 0;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-2 {
   margin: 0;
   float: left;
   margin-right: 0.15em;
@@ -138,33 +126,32 @@ exports[`Paragraph renders with drop cap 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:767px) {
-  .emotion-0 {
+@media screen and (max-width: 767px) {
+  .emotion-2 {
     font-size: 5.625em;
     line-height: 0.85;
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .emotion-0 {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
     font-size: 5.875em;
     line-height: 0.85;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-0 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     font-size: 6em;
     line-height: 0.85;
   }
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #0a0a0a;
 }
 
-.emotion-2 {
-  -webkit-clip: rect(0 0 0 0);
+.emotion-3 {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -176,21 +163,21 @@ exports[`Paragraph renders with drop cap 1`] = `
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <p
       aria-hidden="true"
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         p
       </span>
       aragraph component
     </p>
     <div
-      class="emotion-2"
+      class="emotion-3"
     >
       paragraph component
     </div>

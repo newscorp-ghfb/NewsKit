@@ -2,8 +2,9 @@
 
 exports[`Anatomy renders with mandatory props 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -11,7 +12,7 @@ exports[`Anatomy renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -21,8 +22,8 @@ exports[`Anatomy renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-7 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -31,8 +32,8 @@ exports[`Anatomy renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-7 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 66.66666666666667%;
@@ -42,15 +43,15 @@ exports[`Anatomy renders with mandatory props 1`] = `
   }
 }
 
-.emotion-6 {
+.emotion-1 {
   margin-bottom: 24px;
 }
 
-.emotion-5 {
+.emotion-2 {
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-3 {
   border-radius: 8px;
   position: relative;
   width: 100%;
@@ -60,11 +61,11 @@ exports[`Anatomy renders with mandatory props 1`] = `
   background-color: #F4F4F4;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #BBC3C9;
 }
 
-.emotion-2 {
+.emotion-4 {
   top: 0;
   left: 0;
   position: absolute;
@@ -76,37 +77,37 @@ exports[`Anatomy renders with mandatory props 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.emotion-1 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-0 {
+.emotion-6 {
   fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-6.emotion-6 {
   width: 48px;
   height: 48px;
 }
 
-.emotion-3 {
+.emotion-7 {
   display: none;
   height: auto;
   width: 100%;
@@ -116,26 +117,26 @@ exports[`Anatomy renders with mandatory props 1`] = `
 }
 
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-4"
+          class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <div
-              class="emotion-1"
+              class="emotion-5"
             >
               <svg
                 aria-hidden="true"
-                class="emotion-0"
+                class="emotion-6"
                 fill="currentColor"
                 viewBox="0 0 88 88"
                 xmlns="http://www.w3.org/2000/svg"
@@ -148,19 +149,16 @@ exports[`Anatomy renders with mandatory props 1`] = `
           </div>
           <img
             alt="Card Media"
-            class="emotion-3"
+            class="emotion-7"
             src="/static/placeholder-16x9.png"
           />
         </div>
       </div>
     </div>
   </div>
-  .emotion-5 {
-  margin-bottom: 24px;
-}
-
-.emotion-6 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -168,7 +166,7 @@ exports[`Anatomy renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-6 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 75%;
@@ -178,8 +176,8 @@ exports[`Anatomy renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-6 {
+@media screen and (min-width: 768px) {
+  .emotion-0 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -188,8 +186,8 @@ exports[`Anatomy renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-6 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 50%;
@@ -199,14 +197,18 @@ exports[`Anatomy renders with mandatory props 1`] = `
   }
 }
 
-.emotion-4 {
+.emotion-1 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: item-counter;
 }
 
-.emotion-0 {
+.emotion-3 {
   margin-bottom: 16px;
   counter-increment: item-counter;
   color: #555E74;
@@ -214,17 +216,14 @@ exports[`Anatomy renders with mandatory props 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0 svg {
+.emotion-3 svg {
   fill: #555E74;
 }
 
-.emotion-0::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -232,7 +231,7 @@ exports[`Anatomy renders with mandatory props 1`] = `
   margin-bottom: calc(-0.3799107142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -240,52 +239,49 @@ exports[`Anatomy renders with mandatory props 1`] = `
   margin-top: -0.4111607142857143em;
 }
 
-.emotion-0::before {
+.emotion-3::before {
   content: counter(item-counter) '. ';
   color: #555E74;
   font-family: 'DM Sans',sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   min-width: 24px;
 }
 
-.emotion-0::before svg {
+.emotion-3::before svg {
   fill: #555E74;
 }
 
 <div
-    class="emotion-6"
+    class="emotion-0"
   >
     <div
-      class="emotion-5"
+      class="emotion-1"
     >
       <ol
-        class="emotion-4"
+        class="emotion-2"
         role="list"
       >
         <li
-          class="emotion-0"
+          class="emotion-3"
         >
           Item
         </li>
         <li
-          class="emotion-0"
+          class="emotion-3"
         >
           Item
         </li>
         <li
-          class="emotion-0"
+          class="emotion-3"
         >
           Item
         </li>
         <li
-          class="emotion-0"
+          class="emotion-3"
         >
           Item
         </li>

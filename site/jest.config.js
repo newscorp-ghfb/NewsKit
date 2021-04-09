@@ -9,7 +9,6 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/../src/test/test-framework-setup.ts'],
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
-  snapshotSerializers: ['jest-emotion'],
   testRegex: '(.|-)test\\.tsx?$',
   testURL: 'http://localhost/',
   preset: 'ts-jest',

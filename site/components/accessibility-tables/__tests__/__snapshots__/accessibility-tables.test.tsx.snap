@@ -2,8 +2,9 @@
 
 exports[`Accessibility doesnt render tables if there is no data 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -11,7 +12,7 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
 }
 
 @media screen {
-  .emotion-2 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -21,8 +22,8 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-2 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
@@ -34,13 +35,15 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
   margin: 0 auto;
 }
 
-.emotion-0 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -50,43 +53,43 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
 }
 
 @media screen {
-  .emotion-0 {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-0 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-0 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-0 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -80px -12px 0 -12px;
   }
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
   >
     <div
       class="emotion-1"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
       />
     </div>
   </div>
@@ -95,8 +98,9 @@ exports[`Accessibility doesnt render tables if there is no data 1`] = `
 
 exports[`Accessibility renders aria interactions table if data is provided 1`] = `
 <DocumentFragment>
-  .emotion-22 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -104,7 +108,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen {
-  .emotion-22 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -114,26 +118,28 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-22 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-21 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-20 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -143,37 +149,38 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen {
-  .emotion-20 {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-20 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-20 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-20 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-20 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-.emotion-19 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -181,7 +188,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
 }
 
 @media screen {
-  .emotion-19 {
+  .emotion-3 {
     padding: 0 8px;
     margin-top: 80px;
     -webkit-flex-basis: 100%;
@@ -191,8 +198,8 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-19 {
+@media screen and (min-width: 768px) {
+  .emotion-3 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -201,8 +208,8 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-19 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     padding: 0 12px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -211,42 +218,39 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-4 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) {
+  .emotion-4 {
     margin-bottom: 20px;
   }
 }
 
-.emotion-0 {
+.emotion-5 {
   margin: 0;
   padding: 1px 0;
   color: #162740;
   display: inline-block;
 }
 
-.emotion-0 svg {
+.emotion-5 svg {
   fill: #162740;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-0 {
+@media screen and (max-width: 1439px) {
+  .emotion-5 {
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-5::before {
     content: '';
     display: block;
     height: 0;
@@ -254,7 +258,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     margin-bottom: -0.24062499999999998em;
   }
 
-  .emotion-0::after {
+  .emotion-5::after {
     content: '';
     display: block;
     height: 0;
@@ -263,19 +267,16 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
+@media screen and (min-width: 1440px) {
+  .emotion-5 {
     font-family: 'Poppins',sans-serif;
     font-size: 24px;
     line-height: 1.3333333333333333;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-5::before {
     content: '';
     display: block;
     height: 0;
@@ -283,7 +284,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     margin-bottom: -0.20729166666666665em;
   }
 
-  .emotion-0::after {
+  .emotion-5::after {
     content: '';
     display: block;
     height: 0;
@@ -292,33 +293,30 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-.emotion-18 {
+.emotion-6 {
   margin-bottom: 32px;
 }
 
-.emotion-2 {
+.emotion-7 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
 }
 
-.emotion-2 svg {
+.emotion-7 svg {
   fill: #555E74;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-2 {
+@media screen and (max-width: 1439px) {
+  .emotion-7 {
     font-family: 'DM Sans',sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-2::before {
+  .emotion-7::before {
     content: '';
     display: block;
     height: 0;
@@ -326,7 +324,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     margin-bottom: -0.415625em;
   }
 
-  .emotion-2::after {
+  .emotion-7::after {
     content: '';
     display: block;
     height: 0;
@@ -335,19 +333,16 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-2 {
+@media screen and (min-width: 1440px) {
+  .emotion-7 {
     font-family: 'DM Sans',sans-serif;
     font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-2::before {
+  .emotion-7::before {
     content: '';
     display: block;
     height: 0;
@@ -355,7 +350,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
     margin-bottom: -0.33229166666666665em;
   }
 
-  .emotion-2::after {
+  .emotion-7::after {
     content: '';
     display: block;
     height: 0;
@@ -364,60 +359,17 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   }
 }
 
-.emotion-17 {
+.emotion-8 {
   overflow-x: auto;
 }
 
-.emotion-16 {
+.emotion-9 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-4 {
-  border-style: solid;
-  border-color: #BBC3C9;
-  border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-  height: 40px;
-  text-align: left;
-  vertical-align: top;
-  min-width: 100px;
-  white-space: nowrap;
-}
-
-.emotion-15 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
 .emotion-10 {
-  padding: 16px 16px 16px 0;
-  min-width: 100px;
-  text-align: left;
-  vertical-align: top;
-}
-
-.emotion-3 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -426,9 +378,6 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -438,429 +387,7 @@ exports[`Accessibility renders aria interactions table if data is provided 1`] =
   white-space: nowrap;
 }
 
-.emotion-7 {
-  padding: 16px 16px 16px 0;
-  text-align: left;
-  vertical-align: top;
-}
-
-.emotion-9 {
-  margin-left: 0px;
-}
-
-.emotion-8 {
-  margin: 0;
-  padding: 0;
-  color: #555E74;
-  white-space: nowrap;
-  font-family: 'DM Mono',monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-8 svg {
-  fill: #555E74;
-}
-
-<div
-    class="emotion-22"
-  >
-    <div
-      class="emotion-21"
-    >
-      <div
-        class="emotion-20"
-      >
-        <div
-          class="emotion-19"
-        >
-          <div
-            class="emotion-1"
-          >
-            <span
-              class="emotion-0"
-            >
-              WAI-ARIA
-            </span>
-          </div>
-          <div
-            class="emotion-18"
-          >
-            <p
-              class="emotion-2"
-            >
-              Some random text
-            </p>
-            <div
-              class="emotion-17"
-            >
-              <table
-                class="emotion-16"
-              >
-                <thead>
-                  <tr>
-                    <th
-                      class="emotion-3"
-                    >
-                      Category
-                    </th>
-                    <th
-                      class="emotion-4"
-                    >
-                      Attribute
-                    </th>
-                    <th
-                      class="emotion-4"
-                    >
-                      Value
-                    </th>
-                    <th
-                      class="emotion-4"
-                    >
-                      Description
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr
-                    class="emotion-15"
-                  >
-                    <td
-                      class="emotion-7"
-                    >
-                      2
-                    </td>
-                    <td
-                      class="emotion-10"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <p
-                          class="emotion-8"
-                        >
-                          description
-                        </p>
-                      </div>
-                    </td>
-                    <td
-                      class="emotion-10"
-                    >
-                      <div
-                        class="emotion-12"
-                      >
-                        <p
-                          class="emotion-8"
-                        >
-                          value
-                        </p>
-                      </div>
-                    </td>
-                    <td
-                      class="emotion-10"
-                    >
-                      description
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Accessibility renders focus order table with keyCombo if data is provided 1`] = `
-<DocumentFragment>
-  .emotion-21 {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-21 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-21 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-.emotion-20 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-19 {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-19 {
-    margin: -80px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-19 {
-    margin: -80px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-19 {
-    margin: -80px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-19 {
-    margin: -80px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-19 {
-    margin: -80px -12px 0 -12px;
-  }
-}
-
-.emotion-18 {
-  box-sizing: border-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-18 {
-    padding: 0 8px;
-    margin-top: 80px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-18 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 83.33333333333334%;
-    -ms-flex-preferred-size: 83.33333333333334%;
-    flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-18 {
-    padding: 0 12px;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-@media screen and (max-width:767px) {
-  .emotion-1 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .emotion-1 {
-    margin-bottom: 20px;
-  }
-}
-
-.emotion-0 {
-  margin: 0;
-  padding: 1px 0;
-  color: #162740;
-  display: inline-block;
-}
-
-.emotion-0 svg {
-  fill: #162740;
-}
-
-@media screen and (max-width:1439px) {
-  .emotion-0 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.24062499999999998em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.490625em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 24px;
-    line-height: 1.3333333333333333;
-    font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20729166666666665em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.45729166666666665em;
-  }
-}
-
-.emotion-17 {
-  margin-bottom: 32px;
-}
-
-.emotion-2 {
-  margin: 0;
-  padding: 1px 0;
-  color: #555E74;
-}
-
-.emotion-2 svg {
-  fill: #555E74;
-}
-
-@media screen and (max-width:1439px) {
-  .emotion-2 {
-    font-family: 'DM Sans',sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-2::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.415625em;
-  }
-
-  .emotion-2::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.446875em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-2 {
-    font-family: 'DM Sans',sans-serif;
-    font-size: 18px;
-    line-height: 1.3333333333333333;
-    font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-2::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.33229166666666665em;
-  }
-
-  .emotion-2::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.36354166666666665em;
-  }
-}
-
-.emotion-16 {
-  overflow-x: auto;
-}
-
-.emotion-15 {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-}
-
-.emotion-3 {
+.emotion-11 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -869,30 +396,6 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-  height: 40px;
-  text-align: left;
-  vertical-align: top;
-  width: 100px;
-  white-space: nowrap;
-}
-
-.emotion-4 {
-  border-style: solid;
-  border-color: #BBC3C9;
-  border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -911,20 +414,483 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
+.emotion-15 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-16 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-17 {
+  margin-left: 0px;
+}
+
+.emotion-18 {
+  margin: 0;
+  padding: 0;
+  color: #555E74;
+  white-space: nowrap;
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.emotion-18 svg {
+  fill: #555E74;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <span
+              class="emotion-5"
+            >
+              WAI-ARIA
+            </span>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <p
+              class="emotion-7"
+            >
+              Some random text
+            </p>
+            <div
+              class="emotion-8"
+            >
+              <table
+                class="emotion-9"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="emotion-10"
+                    >
+                      Category
+                    </th>
+                    <th
+                      class="emotion-11"
+                    >
+                      Attribute
+                    </th>
+                    <th
+                      class="emotion-11"
+                    >
+                      Value
+                    </th>
+                    <th
+                      class="emotion-11"
+                    >
+                      Description
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="emotion-14"
+                  >
+                    <td
+                      class="emotion-15"
+                    >
+                      2
+                    </td>
+                    <td
+                      class="emotion-16"
+                    >
+                      <div
+                        class="emotion-17"
+                      >
+                        <p
+                          class="emotion-18"
+                        >
+                          description
+                        </p>
+                      </div>
+                    </td>
+                    <td
+                      class="emotion-16"
+                    >
+                      <div
+                        class="emotion-20"
+                      >
+                        <p
+                          class="emotion-18"
+                        >
+                          value
+                        </p>
+                      </div>
+                    </td>
+                    <td
+                      class="emotion-16"
+                    >
+                      description
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accessibility renders focus order table with keyCombo if data is provided 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -80px -12px 0 -12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -80px -12px 0 -12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 80px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-4 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin-bottom: 20px;
+  }
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #162740;
+  display: inline-block;
+}
+
+.emotion-5 svg {
+  fill: #162740;
+}
+
+@media screen and (max-width: 1439px) {
+  .emotion-5 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.24062499999999998em;
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.490625em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-5 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    line-height: 1.3333333333333333;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .emotion-5::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20729166666666665em;
+  }
+
+  .emotion-5::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.45729166666666665em;
+  }
+}
+
+.emotion-6 {
+  margin-bottom: 32px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+  color: #555E74;
+}
+
+.emotion-7 svg {
+  fill: #555E74;
+}
+
+@media screen and (max-width: 1439px) {
+  .emotion-7 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .emotion-7::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.415625em;
+  }
+
+  .emotion-7::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.446875em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-7 {
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    line-height: 1.3333333333333333;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .emotion-7::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.33229166666666665em;
+  }
+
+  .emotion-7::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.36354166666666665em;
+  }
+}
+
+.emotion-8 {
+  overflow-x: auto;
+}
+
+.emotion-9 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-10 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
+}
+
 .emotion-11 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-13 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-14 {
   padding: 16px 16px 16px 0;
   width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-10 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -936,15 +902,15 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   height: 24px;
 }
 
-.emotion-9 {
+.emotion-16 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -959,6 +925,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   color: #FFFFFF;
@@ -967,16 +934,16 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   white-space: nowrap;
 }
 
-.emotion-9 svg {
+.emotion-16 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-9 svg {
+.emotion-16 svg {
   fill: #FFFFFF;
 }
 
-.emotion-8 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -990,14 +957,14 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-7 {
+.emotion-18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1006,24 +973,21 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-7 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-18 {
     max-width: 100%;
   }
 }
 
-.emotion-6 {
+.emotion-19 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-19::before {
   content: '';
   display: block;
   height: 0;
@@ -1031,7 +995,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   margin-bottom: calc(-0.2549107142857143em + 1.2px);
 }
 
-.emotion-6::after {
+.emotion-19::after {
   content: '';
   display: block;
   height: 0;
@@ -1039,7 +1003,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   margin-top: -0.5049107142857143em;
 }
 
-.emotion-12 {
+.emotion-20 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
@@ -1047,7 +1011,7 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
   vertical-align: top;
 }
 
-.emotion-13 {
+.emotion-21 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
@@ -1055,54 +1019,54 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 }
 
 <div
-    class="emotion-21"
+    class="emotion-0"
   >
     <div
-      class="emotion-20"
+      class="emotion-1"
     >
       <div
-        class="emotion-19"
+        class="emotion-2"
       >
         <div
-          class="emotion-18"
+          class="emotion-3"
         >
           <div
-            class="emotion-1"
+            class="emotion-4"
           >
             <span
-              class="emotion-0"
+              class="emotion-5"
             >
               Focus order
             </span>
           </div>
           <div
-            class="emotion-17"
+            class="emotion-6"
           >
             <p
-              class="emotion-2"
+              class="emotion-7"
             >
               Some random text here
             </p>
             <div
-              class="emotion-16"
+              class="emotion-8"
             >
               <table
-                class="emotion-15"
+                class="emotion-9"
               >
                 <thead>
                   <tr>
                     <th
-                      class="emotion-3"
+                      class="emotion-10"
                     >
                       Order
                     </th>
                     <th
-                      class="emotion-4"
+                      class="emotion-11"
                     >
                       Element
                     </th>
                     <th
-                      class="emotion-4"
+                      class="emotion-11"
                     >
                       Role
                     </th>
@@ -1110,26 +1074,26 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
                 </thead>
                 <tbody>
                   <tr
-                    class="emotion-14"
+                    class="emotion-13"
                   >
                     <td
-                      class="emotion-11"
+                      class="emotion-14"
                     >
                       <div
-                        class="emotion-10"
+                        class="emotion-15"
                       >
                         <div
-                          class="emotion-9"
+                          class="emotion-16"
                           data-testid="flag"
                         >
                           <div
-                            class="emotion-8"
+                            class="emotion-17"
                           >
                             <div
-                              class="emotion-7"
+                              class="emotion-18"
                             >
                               <span
-                                class="emotion-6"
+                                class="emotion-19"
                               >
                                 1
                               </span>
@@ -1139,12 +1103,12 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
                       </div>
                     </td>
                     <td
-                      class="emotion-12"
+                      class="emotion-20"
                     >
                       element
                     </td>
                     <td
-                      class="emotion-13"
+                      class="emotion-21"
                     >
                       Role
                     </td>
@@ -1163,8 +1127,9 @@ exports[`Accessibility renders focus order table with keyCombo if data is provid
 
 exports[`Accessibility renders keyboard interactions table with keyCombo if data is provided 1`] = `
 <DocumentFragment>
-  .emotion-32 {
+  .emotion-0 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1172,7 +1137,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen {
-  .emotion-32 {
+  .emotion-0 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -1182,26 +1147,28 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-32 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-31 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-30 {
+.emotion-2 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1211,37 +1178,38 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen {
-  .emotion-30 {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-30 {
+@media screen and (min-width: 480px) {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-30 {
+@media screen and (min-width: 768px) {
+  .emotion-2 {
     margin: -80px -8px 0 -8px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-30 {
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-30 {
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
     margin: -80px -12px 0 -12px;
   }
 }
 
-.emotion-29 {
+.emotion-3 {
   box-sizing: border-box;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1249,7 +1217,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
 }
 
 @media screen {
-  .emotion-29 {
+  .emotion-3 {
     padding: 0 8px;
     margin-top: 80px;
     -webkit-flex-basis: 100%;
@@ -1259,8 +1227,8 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-29 {
+@media screen and (min-width: 768px) {
+  .emotion-3 {
     margin-left: 8.333333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -1269,8 +1237,8 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-29 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     padding: 0 12px;
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
@@ -1279,42 +1247,39 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-@media screen and (max-width:767px) {
-  .emotion-1 {
+@media screen and (max-width: 767px) {
+  .emotion-4 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) {
+  .emotion-4 {
     margin-bottom: 20px;
   }
 }
 
-.emotion-0 {
+.emotion-5 {
   margin: 0;
   padding: 1px 0;
   color: #162740;
   display: inline-block;
 }
 
-.emotion-0 svg {
+.emotion-5 svg {
   fill: #162740;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-0 {
+@media screen and (max-width: 1439px) {
+  .emotion-5 {
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-5::before {
     content: '';
     display: block;
     height: 0;
@@ -1322,7 +1287,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     margin-bottom: -0.24062499999999998em;
   }
 
-  .emotion-0::after {
+  .emotion-5::after {
     content: '';
     display: block;
     height: 0;
@@ -1331,19 +1296,16 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-0 {
+@media screen and (min-width: 1440px) {
+  .emotion-5 {
     font-family: 'Poppins',sans-serif;
     font-size: 24px;
     line-height: 1.3333333333333333;
     font-weight: 700;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-5::before {
     content: '';
     display: block;
     height: 0;
@@ -1351,7 +1313,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     margin-bottom: -0.20729166666666665em;
   }
 
-  .emotion-0::after {
+  .emotion-5::after {
     content: '';
     display: block;
     height: 0;
@@ -1360,33 +1322,30 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-.emotion-28 {
+.emotion-6 {
   margin-bottom: 32px;
 }
 
-.emotion-2 {
+.emotion-7 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
 }
 
-.emotion-2 svg {
+.emotion-7 svg {
   fill: #555E74;
 }
 
-@media screen and (max-width:1439px) {
-  .emotion-2 {
+@media screen and (max-width: 1439px) {
+  .emotion-7 {
     font-family: 'DM Sans',sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-2::before {
+  .emotion-7::before {
     content: '';
     display: block;
     height: 0;
@@ -1394,7 +1353,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     margin-bottom: -0.415625em;
   }
 
-  .emotion-2::after {
+  .emotion-7::after {
     content: '';
     display: block;
     height: 0;
@@ -1403,19 +1362,16 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-2 {
+@media screen and (min-width: 1440px) {
+  .emotion-7 {
     font-family: 'DM Sans',sans-serif;
     font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
-  .emotion-2::before {
+  .emotion-7::before {
     content: '';
     display: block;
     height: 0;
@@ -1423,7 +1379,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
     margin-bottom: -0.33229166666666665em;
   }
 
-  .emotion-2::after {
+  .emotion-7::after {
     content: '';
     display: block;
     height: 0;
@@ -1432,17 +1388,17 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   }
 }
 
-.emotion-27 {
+.emotion-8 {
   overflow-x: auto;
 }
 
-.emotion-26 {
+.emotion-9 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-3 {
+.emotion-10 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -1451,9 +1407,6 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -1463,7 +1416,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   white-space: nowrap;
 }
 
-.emotion-4 {
+.emotion-11 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -1472,9 +1425,6 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -1484,7 +1434,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   white-space: nowrap;
 }
 
-.emotion-25 {
+.emotion-12 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
@@ -1493,56 +1443,10 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-24 {
-  padding: 16px 16px 16px 0;
-  min-width: 100px;
-  text-align: left;
-  vertical-align: top;
-}
-
-.emotion-23 {
+.emotion-13 {
   padding: 16px 16px 16px 0;
   width: 100px;
   text-align: left;
@@ -1550,7 +1454,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   vertical-align: top;
 }
 
-.emotion-22 {
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1564,14 +1468,14 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1580,13 +1484,13 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-11 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-15 {
     max-width: 100%;
   }
 }
 
-.emotion-10 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1596,15 +1500,15 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   flex-direction: column;
 }
 
-.emotion-9 {
+.emotion-17 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1618,6 +1522,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   color: #555E74;
@@ -1627,27 +1532,60 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   margin-top: -4px;
 }
 
-.emotion-9 svg {
+.emotion-17 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-9 svg {
+.emotion-17 svg {
   fill: #555E74;
 }
 
-.emotion-6 {
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-19 {
+    max-width: 100%;
+  }
+}
+
+.emotion-21 {
   font-family: 'DM Mono',monospace;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4285714285714286;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-21::before {
   content: '';
   display: block;
   height: 0;
@@ -1655,7 +1593,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   margin-bottom: -0.4267857142857143em;
 }
 
-.emotion-6::after {
+.emotion-21::after {
   content: '';
   display: block;
   height: 0;
@@ -1663,7 +1601,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   margin-top: -0.3642857142857143em;
 }
 
-.emotion-12 {
+.emotion-23 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1672,55 +1610,62 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
   display: inline-block;
 }
 
-.emotion-12.emotion-12 {
+.emotion-23.emotion-23 {
   width: 16px;
   height: 16px;
 }
 
+.emotion-32 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
 <div
-    class="emotion-32"
+    class="emotion-0"
   >
     <div
-      class="emotion-31"
+      class="emotion-1"
     >
       <div
-        class="emotion-30"
+        class="emotion-2"
       >
         <div
-          class="emotion-29"
+          class="emotion-3"
         >
           <div
-            class="emotion-1"
+            class="emotion-4"
           >
             <span
-              class="emotion-0"
+              class="emotion-5"
             >
               Keyboard Interactions
             </span>
           </div>
           <div
-            class="emotion-28"
+            class="emotion-6"
           >
             <p
-              class="emotion-2"
+              class="emotion-7"
             >
               Some random text
             </p>
             <div
-              class="emotion-27"
+              class="emotion-8"
             >
               <table
-                class="emotion-26"
+                class="emotion-9"
               >
                 <thead>
                   <tr>
                     <th
-                      class="emotion-3"
+                      class="emotion-10"
                     >
                       Command
                     </th>
                     <th
-                      class="emotion-4"
+                      class="emotion-11"
                     >
                       Description
                     </th>
@@ -1728,35 +1673,35 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
                 </thead>
                 <tbody>
                   <tr
-                    class="emotion-25"
+                    class="emotion-12"
                   >
                     <td
-                      class="emotion-23"
+                      class="emotion-13"
                     >
                       <div
-                        class="emotion-22"
+                        class="emotion-14"
                       >
                         <div
-                          class="emotion-11"
+                          class="emotion-15"
                         >
                           <div
-                            class="emotion-10"
+                            class="emotion-16"
                           >
                             <div
-                              class="emotion-9"
+                              class="emotion-17"
                               data-testid="flag"
                             >
                               <div
-                                class="emotion-8"
+                                class="emotion-18"
                               >
                                 <div
-                                  class="emotion-5"
+                                  class="emotion-19"
                                 />
                                 <div
-                                  class="emotion-5"
+                                  class="emotion-19"
                                 >
                                   <span
-                                    class="emotion-6"
+                                    class="emotion-21"
                                   >
                                     ctrl
                                   </span>
@@ -1766,11 +1711,11 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
                           </div>
                         </div>
                         <div
-                          class="emotion-11"
+                          class="emotion-15"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-12 emotion-13"
+                            class="emotion-23 emotion-24"
                             fill="currentColor"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1786,26 +1731,26 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
                           </svg>
                         </div>
                         <div
-                          class="emotion-11"
+                          class="emotion-15"
                         >
                           <div
-                            class="emotion-10"
+                            class="emotion-16"
                           >
                             <div
-                              class="emotion-9"
+                              class="emotion-17"
                               data-testid="flag"
                             >
                               <div
-                                class="emotion-8"
+                                class="emotion-18"
                               >
                                 <div
-                                  class="emotion-5"
+                                  class="emotion-19"
                                 />
                                 <div
-                                  class="emotion-5"
+                                  class="emotion-19"
                                 >
                                   <span
-                                    class="emotion-6"
+                                    class="emotion-21"
                                   >
                                     esc
                                   </span>
@@ -1817,7 +1762,7 @@ exports[`Accessibility renders keyboard interactions table with keyCombo if data
                       </div>
                     </td>
                     <td
-                      class="emotion-24"
+                      class="emotion-32"
                     >
                       description
                     </td>

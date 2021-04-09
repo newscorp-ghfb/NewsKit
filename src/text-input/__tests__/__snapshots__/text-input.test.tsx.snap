@@ -2,97 +2,20 @@
 
 exports[`TextInput renders correctly with label and assistive text 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -111,25 +34,58 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
-  min-height: 12px;
+.emotion-2 {
+  position: relative;
 }
 
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -138,10 +94,45 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -150,11 +141,11 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -165,7 +156,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -175,7 +166,7 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -187,97 +178,20 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 
 exports[`TextInput renders correctly with label hidden 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -296,25 +210,58 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
-  min-height: 12px;
+.emotion-2 {
+  position: relative;
 }
 
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -323,10 +270,45 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -335,11 +317,11 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     />
     <div
@@ -349,7 +331,7 @@ exports[`TextInput renders correctly with label hidden 1`] = `
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
         aria-label="label"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -359,7 +341,7 @@ exports[`TextInput renders correctly with label hidden 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -371,97 +353,20 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 
 exports[`TextInput renders correctly without asistive text 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -480,16 +385,87 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   margin-top: -0.4625em;
 }
 
+.emotion-2 {
+  position: relative;
+}
+
 .emotion-3 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-3:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
   min-height: 12px;
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -499,14 +475,14 @@ exports[`TextInput renders correctly without asistive text 1`] = `
     >
       <input
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="true"
         type="text"
       />
     </div>
     <div
-      class="emotion-3"
+      class="emotion-4"
     />
   </div>
 </DocumentFragment>
@@ -514,26 +490,23 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 
 exports[`TextInput renders disabled text input 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   display: block;
   height: 0;
@@ -541,7 +514,7 @@ exports[`TextInput renders disabled text input 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   display: block;
   height: 0;
@@ -553,11 +526,7 @@ exports[`TextInput renders disabled text input 1`] = `
   position: relative;
 }
 
-.emotion-4 {
-  min-height: 12px;
-}
-
-.emotion-1 {
+.emotion-3 {
   box-sizing: border-box;
   width: 100%;
   cursor: not-allowed;
@@ -572,73 +541,40 @@ exports[`TextInput renders disabled text input 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
 }
 
-.emotion-1::-webkit-input-placeholder {
+.emotion-3::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::-moz-placeholder {
+.emotion-3::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-1:-ms-input-placeholder {
+.emotion-3:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::placeholder {
+.emotion-3::placeholder {
   color: #535353;
 }
 
-.emotion-1:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-1:disabled {
+.emotion-3:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #c0c0c0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
 }
 
 .emotion-3::before {
@@ -646,10 +582,41 @@ exports[`TextInput renders disabled text input 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #c0c0c0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -658,11 +625,11 @@ exports[`TextInput renders disabled text input 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -673,7 +640,7 @@ exports[`TextInput renders disabled text input 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         disabled=""
         id="mock-nk-1"
         spellcheck="false"
@@ -684,7 +651,7 @@ exports[`TextInput renders disabled text input 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         disabled=""
         id="mock-nk-1-assistive-text"
       >
@@ -697,26 +664,23 @@ exports[`TextInput renders disabled text input 1`] = `
 
 exports[`TextInput renders large text input 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   display: block;
   height: 0;
@@ -724,7 +688,7 @@ exports[`TextInput renders large text input 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   display: block;
   height: 0;
@@ -736,11 +700,7 @@ exports[`TextInput renders large text input 1`] = `
   position: relative;
 }
 
-.emotion-4 {
-  min-height: 12px;
-}
-
-.emotion-1 {
+.emotion-3 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -755,76 +715,39 @@ exports[`TextInput renders large text input 1`] = `
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 64px;
 }
 
-.emotion-1::-webkit-input-placeholder {
+.emotion-3::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::-moz-placeholder {
+.emotion-3::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-1:-ms-input-placeholder {
+.emotion-3:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::placeholder {
+.emotion-3::placeholder {
   color: #535353;
 }
 
-.emotion-1:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4277777777777778em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4902777777777778em;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -833,10 +756,45 @@ exports[`TextInput renders large text input 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4277777777777778em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -845,11 +803,11 @@ exports[`TextInput renders large text input 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -860,7 +818,7 @@ exports[`TextInput renders large text input 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -870,7 +828,7 @@ exports[`TextInput renders large text input 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -882,97 +840,20 @@ exports[`TextInput renders large text input 1`] = `
 
 exports[`TextInput renders readonly text input 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -991,25 +872,58 @@ exports[`TextInput renders readonly text input 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
-  min-height: 12px;
+.emotion-2 {
+  position: relative;
 }
 
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -1018,10 +932,45 @@ exports[`TextInput renders readonly text input 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -1030,11 +979,11 @@ exports[`TextInput renders readonly text input 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -1045,7 +994,7 @@ exports[`TextInput renders readonly text input 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         readonly=""
         spellcheck="false"
@@ -1056,7 +1005,7 @@ exports[`TextInput renders readonly text input 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -1068,135 +1017,20 @@ exports[`TextInput renders readonly text input 1`] = `
 
 exports[`TextInput renders small text input 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-4 {
-  min-height: 12px;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px;
-  margin-bottom: 8px;
-  min-height: 32px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -1215,12 +1049,118 @@ exports[`TextInput renders small text input 1`] = `
   margin-top: -0.4625em;
 }
 
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 8px;
+  margin-bottom: 8px;
+  min-height: 32px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-3:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -1231,7 +1171,7 @@ exports[`TextInput renders small text input 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -1241,7 +1181,7 @@ exports[`TextInput renders small text input 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -1253,30 +1193,19 @@ exports[`TextInput renders small text input 1`] = `
 
 exports[`TextInput renders text input with overrides 1`] = `
 <DocumentFragment>
-  .emotion-2 {
-  position: relative;
-}
-
-.emotion-4 {
-  min-height: 12px;
-}
-
-.emotion-0 {
+  .emotion-1 {
   display: block;
   color: #f000dc;
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 24px;
   margin-right: 8px;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   display: block;
   height: 0;
@@ -1284,7 +1213,7 @@ exports[`TextInput renders text input with overrides 1`] = `
   margin-bottom: calc(-0.4833333333333334em + 1px);
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   display: block;
   height: 0;
@@ -1292,7 +1221,11 @@ exports[`TextInput renders text input with overrides 1`] = `
   margin-top: calc(-0.5458333333333334em + -0.5px);
 }
 
-.emotion-1 {
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-3 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1301,43 +1234,10 @@ exports[`TextInput renders text input with overrides 1`] = `
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 8px;
   margin-bottom: 16px;
   min-height: 64px;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4277777777777778em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4902777777777778em;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #f000dc;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
 }
 
 .emotion-3::before {
@@ -1345,10 +1245,41 @@ exports[`TextInput renders text input with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.4277777777777778em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #f000dc;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -1357,11 +1288,11 @@ exports[`TextInput renders text input with overrides 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -1372,7 +1303,7 @@ exports[`TextInput renders text input with overrides 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -1382,7 +1313,7 @@ exports[`TextInput renders text input with overrides 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         Assistive Text
@@ -1394,26 +1325,23 @@ exports[`TextInput renders text input with overrides 1`] = `
 
 exports[`TextInput renders with different minHeight 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   display: block;
   height: 0;
@@ -1421,7 +1349,7 @@ exports[`TextInput renders with different minHeight 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   display: block;
   height: 0;
@@ -1433,45 +1361,7 @@ exports[`TextInput renders with different minHeight 1`] = `
   position: relative;
 }
 
-.emotion-4 {
-  min-height: 12px;
-}
-
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1486,46 +1376,43 @@ exports[`TextInput renders with different minHeight 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 64px;
 }
 
-.emotion-1::-webkit-input-placeholder {
+.emotion-3::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::-moz-placeholder {
+.emotion-3::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-1:-ms-input-placeholder {
+.emotion-3:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::placeholder {
+.emotion-3::placeholder {
   color: #535353;
 }
 
-.emotion-1:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-1:disabled {
+.emotion-3:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -1533,7 +1420,7 @@ exports[`TextInput renders with different minHeight 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-1::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -1541,12 +1428,47 @@ exports[`TextInput renders with different minHeight 1`] = `
   margin-top: -0.4625em;
 }
 
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -1557,7 +1479,7 @@ exports[`TextInput renders with different minHeight 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -1567,7 +1489,7 @@ exports[`TextInput renders with different minHeight 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -1580,96 +1502,23 @@ exports[`TextInput renders with different minHeight 1`] = `
 exports[`TextInput renders with fixed width 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  width: 160px;
+}
+
+.emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -1688,25 +1537,58 @@ exports[`TextInput renders with fixed width 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
-  min-height: 12px;
+.emotion-2 {
+  position: relative;
 }
 
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -1715,7 +1597,7 @@ exports[`TextInput renders with fixed width 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
@@ -1723,19 +1605,50 @@ exports[`TextInput renders with fixed width 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
 }
 
 .emotion-5 {
-  width: 160px;
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -1746,7 +1659,7 @@ exports[`TextInput renders with fixed width 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -1756,7 +1669,7 @@ exports[`TextInput renders with fixed width 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -1769,96 +1682,23 @@ exports[`TextInput renders with fixed width 1`] = `
 exports[`TextInput renders with full width 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  width: 100%;
+}
+
+.emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -1877,25 +1717,58 @@ exports[`TextInput renders with full width 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
-  min-height: 12px;
+.emotion-2 {
+  position: relative;
 }
 
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -1904,7 +1777,7 @@ exports[`TextInput renders with full width 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
@@ -1912,19 +1785,50 @@ exports[`TextInput renders with full width 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
 }
 
 .emotion-5 {
-  width: 100%;
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -1935,7 +1839,7 @@ exports[`TextInput renders with full width 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -1945,7 +1849,7 @@ exports[`TextInput renders with full width 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -1957,97 +1861,20 @@ exports[`TextInput renders with full width 1`] = `
 
 exports[`TextInput should render custom aria-label 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -2066,25 +1893,58 @@ exports[`TextInput should render custom aria-label 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
-  min-height: 12px;
+.emotion-2 {
+  position: relative;
 }
 
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -2093,10 +1953,45 @@ exports[`TextInput should render custom aria-label 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -2105,11 +2000,11 @@ exports[`TextInput should render custom aria-label 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -2121,7 +2016,7 @@ exports[`TextInput should render custom aria-label 1`] = `
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
         aria-label="my custom aria label"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         spellcheck="false"
         type="text"
@@ -2131,7 +2026,7 @@ exports[`TextInput should render custom aria-label 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText
@@ -2143,97 +2038,20 @@ exports[`TextInput should render custom aria-label 1`] = `
 
 exports[`TextInput should render custom placeholder 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -2252,25 +2070,58 @@ exports[`TextInput should render custom placeholder 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
-  min-height: 12px;
+.emotion-2 {
+  position: relative;
 }
 
 .emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
 .emotion-3:disabled {
+  border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
@@ -2279,10 +2130,45 @@ exports[`TextInput should render custom placeholder 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -2291,11 +2177,11 @@ exports[`TextInput should render custom placeholder 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
     label="label"
   >
     <label
-      class="emotion-0"
+      class="emotion-1"
       for="mock-nk-1"
     >
       label
@@ -2306,7 +2192,7 @@ exports[`TextInput should render custom placeholder 1`] = `
       <input
         aria-describedby="mock-nk-1-assistive-text"
         aria-invalid="false"
-        class="emotion-1"
+        class="emotion-3"
         id="mock-nk-1"
         placeholder="This is some text"
         spellcheck="false"
@@ -2317,7 +2203,7 @@ exports[`TextInput should render custom placeholder 1`] = `
       class="emotion-4"
     >
       <p
-        class="emotion-3"
+        class="emotion-5"
         id="mock-nk-1-assistive-text"
       >
         assistiveText

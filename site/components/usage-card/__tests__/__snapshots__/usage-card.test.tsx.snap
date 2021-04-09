@@ -2,18 +2,18 @@
 
 exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 <DocumentFragment>
-  .emotion-17 {
+  .emotion-0 {
   position: relative;
 }
 
-.emotion-6 {
+.emotion-1 {
   position: absolute;
   right: 16px;
   top: 16px;
   z-index: 1;
 }
 
-.emotion-5 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -23,15 +23,15 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   flex-direction: column;
 }
 
-.emotion-4 {
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -45,16 +45,17 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,14 +69,14 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -84,13 +85,28 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
     max-width: 100%;
   }
 }
 
-.emotion-16 {
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #d20600;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 32px;
+  height: 32px;
+  fill: #d20600;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   position: relative;
   display: -webkit-box;
@@ -102,43 +118,40 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   flex-direction: column;
 }
 
-.emotion-15 {
+.emotion-9 {
   box-sizing: border-box;
 }
 
-.emotion-14 {
+.emotion-10 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-14 a:not(.nk-card-link) {
+.emotion-10 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-11 {
   margin-bottom: 16px;
 }
 
-.emotion-7 {
+.emotion-12 {
   border-width: 0px;
   margin: 0;
   width: 100%;
 }
 
-.emotion-10 {
+.emotion-14 {
   font-family: "Source Serif Pro",serif;
   font-size: 24px;
   line-height: 1.1666666666666667;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-10::before {
+.emotion-14::before {
   content: '';
   display: block;
   height: 0;
@@ -146,7 +159,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-bottom: calc(-0.2333333333333334em + 1px);
 }
 
-.emotion-10::after {
+.emotion-14::after {
   content: '';
   display: block;
   height: 0;
@@ -154,7 +167,18 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-top: calc(-0.2958333333333334em + 1px);
 }
 
-.emotion-12 {
+.emotion-15 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #d20600;
+}
+
+.emotion-15 svg {
+  fill: #d20600;
+}
+
+.emotion-17 {
   margin: 0;
   padding: 1px 0;
   color: #2e2e2e;
@@ -162,17 +186,14 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-12 svg {
+.emotion-17 svg {
   fill: #2e2e2e;
 }
 
-.emotion-12::before {
+.emotion-17::before {
   content: '';
   display: block;
   height: 0;
@@ -180,7 +201,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-12::after {
+.emotion-17::after {
   content: '';
   display: block;
   height: 0;
@@ -188,54 +209,28 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #d20600;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 32px;
-  height: 32px;
-  fill: #d20600;
-}
-
-.emotion-9 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #d20600;
-}
-
-.emotion-9 svg {
-  fill: #d20600;
-}
-
 <div
-    class="emotion-17"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-4"
+          class="emotion-3"
           data-testid="flag"
         >
           <div
-            class="emotion-3"
+            class="emotion-4"
           >
             <div
-              class="emotion-2"
+              class="emotion-5"
             >
               <svg
                 aria-hidden="true"
-                class="emotion-0 emotion-1"
+                class="emotion-6 emotion-7"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -255,40 +250,40 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
       </div>
     </div>
     <div
-      class="emotion-16"
+      class="emotion-8"
     >
       <div
-        class="emotion-15"
+        class="emotion-9"
       >
         <div
-          class="emotion-14"
+          class="emotion-10"
         >
           <div
-            class="emotion-8"
+            class="emotion-11"
           >
             <hr
               aria-hidden="true"
-              class="emotion-7"
+              class="emotion-12"
               data-testid="divider"
             />
             <div
-              class="emotion-8"
+              class="emotion-11"
             />
             <section
-              class="emotion-10"
+              class="emotion-14"
             >
               <h1
-                class="nk-headline-heading emotion-9"
+                class="nk-headline-heading emotion-15"
               >
                 Do not
               </h1>
             </section>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-11"
           >
             <p
-              class="emotion-12"
+              class="emotion-17"
             >
               Description
             </p>
@@ -302,18 +297,18 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 <DocumentFragment>
-  .emotion-17 {
+  .emotion-0 {
   position: relative;
 }
 
-.emotion-6 {
+.emotion-1 {
   position: absolute;
   right: 16px;
   top: 16px;
   z-index: 1;
 }
 
-.emotion-5 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -323,15 +318,15 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   flex-direction: column;
 }
 
-.emotion-4 {
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -345,16 +340,17 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -368,14 +364,14 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -384,13 +380,13 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-6 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -399,13 +395,13 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-6.emotion-6 {
   width: 32px;
   height: 32px;
   fill: #0a782a;
 }
 
-.emotion-16 {
+.emotion-8 {
   box-sizing: border-box;
   position: relative;
   display: -webkit-box;
@@ -417,43 +413,40 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   flex-direction: column;
 }
 
-.emotion-15 {
+.emotion-9 {
   box-sizing: border-box;
 }
 
-.emotion-14 {
+.emotion-10 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-14 a:not(.nk-card-link) {
+.emotion-10 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-11 {
   margin-bottom: 16px;
 }
 
-.emotion-7 {
+.emotion-12 {
   border-width: 0px;
   margin: 0;
   width: 100%;
 }
 
-.emotion-10 {
+.emotion-14 {
   font-family: "Source Serif Pro",serif;
   font-size: 24px;
   line-height: 1.1666666666666667;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 1px 0px;
 }
 
-.emotion-10::before {
+.emotion-14::before {
   content: '';
   display: block;
   height: 0;
@@ -461,7 +454,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-bottom: calc(-0.2333333333333334em + 1px);
 }
 
-.emotion-10::after {
+.emotion-14::after {
   content: '';
   display: block;
   height: 0;
@@ -469,18 +462,18 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-top: calc(-0.2958333333333334em + 1px);
 }
 
-.emotion-9 {
+.emotion-15 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0a782a;
 }
 
-.emotion-9 svg {
+.emotion-15 svg {
   fill: #0a782a;
 }
 
-.emotion-12 {
+.emotion-17 {
   margin: 0;
   padding: 1px 0;
   color: #2e2e2e;
@@ -488,17 +481,14 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-12 svg {
+.emotion-17 svg {
   fill: #2e2e2e;
 }
 
-.emotion-12::before {
+.emotion-17::before {
   content: '';
   display: block;
   height: 0;
@@ -506,7 +496,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-12::after {
+.emotion-17::after {
   content: '';
   display: block;
   height: 0;
@@ -515,27 +505,27 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 <div
-    class="emotion-17"
+    class="emotion-0"
   >
     <div
-      class="emotion-6"
+      class="emotion-1"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-4"
+          class="emotion-3"
           data-testid="flag"
         >
           <div
-            class="emotion-3"
+            class="emotion-4"
           >
             <div
-              class="emotion-2"
+              class="emotion-5"
             >
               <svg
                 aria-hidden="true"
-                class="emotion-0 emotion-1"
+                class="emotion-6 emotion-7"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -555,40 +545,40 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
       </div>
     </div>
     <div
-      class="emotion-16"
+      class="emotion-8"
     >
       <div
-        class="emotion-15"
+        class="emotion-9"
       >
         <div
-          class="emotion-14"
+          class="emotion-10"
         >
           <div
-            class="emotion-8"
+            class="emotion-11"
           >
             <hr
               aria-hidden="true"
-              class="emotion-7"
+              class="emotion-12"
               data-testid="divider"
             />
             <div
-              class="emotion-8"
+              class="emotion-11"
             />
             <section
-              class="emotion-10"
+              class="emotion-14"
             >
               <h1
-                class="nk-headline-heading emotion-9"
+                class="nk-headline-heading emotion-15"
               >
                 Do
               </h1>
             </section>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-11"
           >
             <p
-              class="emotion-12"
+              class="emotion-17"
             >
               Description
             </p>

@@ -26,7 +26,9 @@ export const toNewsKitIcon = (
         ? props.theme.sizing[props.overrides.size]
         : null;
 
-    const StyledIcon = styled(PassedIcon)`
+    const toStyledIcon = (
+      Icon: React.ComponentType<EmotionIconProps>,
+    ) => styled(Icon)`
       // If not overridden, render SP CSS here, this allows parent SP to override Icon default.
       ${renderIconStylePreset(false)}
 
@@ -40,8 +42,8 @@ export const toNewsKitIcon = (
         ${renderIconStylePreset(true)}
       }
     `;
-
-    const Icon = props.theme.icons[`${emotionIconName}`] || StyledIcon;
-
+    const Icon =
+      props.theme.icons[`${emotionIconName}`] ||
+      toStyledIcon(PassedIcon as React.ComponentType<EmotionIconProps>);
     return <Icon title={props.title} {...props} />;
   });

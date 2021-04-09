@@ -1,8 +1,11 @@
-import baseStyled, {CreateStyled} from '@emotion/styled';
-import {Theme} from '../../theme';
+import '@emotion/react';
+import styled from '@emotion/styled';
 
-export {CSSObject, SerializedStyles} from '@emotion/core';
-export {css} from '@emotion/core';
+import {Theme as DefaultTheme} from '../../theme';
 
-// Cast styled with the Theme so we don't have to specify theme at every usage.
-export const styled = baseStyled as CreateStyled<Theme>;
+declare module '@emotion/react' {
+  export interface Theme extends DefaultTheme {}
+}
+
+export {Global, CSSObject, SerializedStyles, css} from '@emotion/react';
+export {styled};

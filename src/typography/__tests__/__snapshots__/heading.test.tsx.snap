@@ -9,9 +9,6 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -76,15 +73,12 @@ exports[`Headings renders H1 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -105,15 +99,12 @@ exports[`Headings renders H1 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -134,15 +125,12 @@ exports[`Headings renders H1 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -184,9 +172,6 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -251,15 +236,12 @@ exports[`Headings renders H2 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -280,15 +262,12 @@ exports[`Headings renders H2 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 28px;
     line-height: 1.1428571428571428;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -330,9 +309,6 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -397,15 +373,12 @@ exports[`Headings renders H3 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -426,15 +399,12 @@ exports[`Headings renders H3 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -476,9 +446,6 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -543,15 +510,12 @@ exports[`Headings renders H4 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -572,15 +536,12 @@ exports[`Headings renders H4 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -622,9 +583,6 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -690,9 +648,6 @@ exports[`Headings renders H5 with default styles 1`] = `
   font-size: 24px;
   line-height: 1.1666666666666667;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a0a0a;
 }
@@ -734,9 +689,6 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -802,9 +754,6 @@ exports[`Headings renders H6 with default styles 1`] = `
   font-size: 20px;
   line-height: 1.2;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a0a0a;
 }
@@ -846,9 +795,6 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -913,15 +859,12 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -942,15 +885,12 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -971,15 +911,12 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -1021,9 +958,6 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -1088,15 +1022,12 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -1117,15 +1048,12 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 28px;
     line-height: 1.1428571428571428;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -1167,9 +1095,6 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -1234,15 +1159,12 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -1263,15 +1185,12 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
     line-height: 1.1666666666666667;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -1313,9 +1232,6 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -1380,15 +1296,12 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -1409,15 +1322,12 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
     letter-spacing: 0;
   }
 
@@ -1459,9 +1369,6 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -1527,9 +1434,6 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   font-size: 24px;
   line-height: 1.1666666666666667;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a0a0a;
 }
@@ -1571,9 +1475,6 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
 }
@@ -1639,9 +1540,6 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   font-size: 20px;
   line-height: 1.2;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a0a0a;
 }

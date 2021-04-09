@@ -2,7 +2,7 @@
 
 exports[`Tab renders a selected tab correctly with overrides 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -19,8 +19,8 @@ exports[`Tab renders a selected tab correctly with overrides 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -35,14 +35,12 @@ exports[`Tab renders a selected tab correctly with overrides 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
   border-style: solid;
   border-color: #0a68c1;
@@ -51,58 +49,6 @@ exports[`Tab renders a selected tab correctly with overrides 1`] = `
 .emotion-1 svg {
   width: 24px;
   height: 24px;
-}
-
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-12px/2);
-  margin-right: calc(-12px/2);
-}
-
-<div
-    class="emotion-2"
-  >
-    <button
-      aria-selected="true"
-      class="emotion-1"
-      data-testid="tab"
-      role="tab"
-      tabindex="0"
-      type="button"
-    >
-      <div
-        class="emotion-0"
-      />
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tab renders disabled tab 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -119,64 +65,53 @@ exports[`Tab renders disabled tab 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
+  margin-left: calc(-12px/2);
+  margin-right: calc(-12px/2);
 }
 
-.emotion-1 {
+<div
+    class="emotion-0"
+  >
+    <button
+      aria-selected="true"
+      class="emotion-1"
+      data-testid="tab"
+      role="tab"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      />
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab renders disabled tab 1`] = `
+<DocumentFragment>
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -191,33 +126,91 @@ exports[`Tab renders disabled tab 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #e4e4e4;
   color: #c0c0c0;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #c0c0c0;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
       aria-selected="false"
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tab"
       disabled=""
       role="tab"
@@ -228,10 +221,10 @@ exports[`Tab renders disabled tab 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Tab Label
           </span>
@@ -244,7 +237,7 @@ exports[`Tab renders disabled tab 1`] = `
 
 exports[`Tab renders label and icon with fallback formatting 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -254,15 +247,15 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   flex-direction: column;
 }
 
-.emotion-5 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -277,56 +270,54 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-5:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -340,14 +331,14 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -356,24 +347,32 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-2 {
+.emotion-4 {
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-2::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -381,7 +380,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-2::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -389,37 +388,26 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-0 {
-  fill: #2e2e2e;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 48px;
-  height: 48px;
-}
-
 <div
-    class="emotion-6"
+    class="emotion-0"
   >
     <button
       aria-selected="false"
-      class="emotion-5"
+      class="emotion-1"
       data-testid="tab"
       role="tab"
       tabindex="-1"
       type="button"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0"
+            class="emotion-4"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -432,10 +420,10 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
           </svg>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-2"
+            class="emotion-6"
           >
             Tab Label
           </span>
@@ -448,7 +436,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
 
 exports[`Tab renders label with fallback formatting 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -458,15 +446,15 @@ exports[`Tab renders label with fallback formatting 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -481,52 +469,50 @@ exports[`Tab renders label with fallback formatting 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -544,14 +530,14 @@ exports[`Tab renders label with fallback formatting 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -560,24 +546,21 @@ exports[`Tab renders label with fallback formatting 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -585,7 +568,7 @@ exports[`Tab renders label with fallback formatting 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -594,11 +577,11 @@ exports[`Tab renders label with fallback formatting 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
       aria-selected="false"
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tab"
       role="tab"
       tabindex="-1"
@@ -608,10 +591,10 @@ exports[`Tab renders label with fallback formatting 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Tab Label
           </span>
@@ -624,7 +607,7 @@ exports[`Tab renders label with fallback formatting 1`] = `
 
 exports[`Tab renders large tab 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -634,51 +617,15 @@ exports[`Tab renders large tab 1`] = `
   flex-direction: column;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -693,121 +640,51 @@ exports[`Tab renders large tab 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      aria-selected="false"
-      class="emotion-3"
-      data-testid="tab"
-      role="tab"
-      tabindex="-1"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            Tab Label
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tab renders small tab 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -824,14 +701,14 @@ exports[`Tab renders small tab 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -840,21 +717,86 @@ exports[`Tab renders small tab 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      aria-selected="false"
+      class="emotion-1"
+      data-testid="tab"
+      role="tab"
+      tabindex="-1"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Tab Label
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab renders small tab 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -869,67 +811,98 @@ exports[`Tab renders small tab 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-0 {
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -937,7 +910,7 @@ exports[`Tab renders small tab 1`] = `
   margin-bottom: calc(-0.4833333333333334em + 1px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -946,11 +919,11 @@ exports[`Tab renders small tab 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
       aria-selected="false"
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tab"
       role="tab"
       tabindex="-1"
@@ -960,10 +933,10 @@ exports[`Tab renders small tab 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Tab Label
           </span>
@@ -976,7 +949,7 @@ exports[`Tab renders small tab 1`] = `
 
 exports[`Tab renders with a leading icon and custom iconSize 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -986,89 +959,15 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   flex-direction: column;
 }
 
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-2 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-2::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-2::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1083,75 +982,144 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   width: 48px;
   height: 48px;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-5:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-6"
+    class="emotion-0"
   >
     <button
       aria-selected="false"
-      class="emotion-5"
+      class="emotion-1"
       data-testid="tab"
       role="tab"
       tabindex="-1"
       type="button"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0"
+            class="emotion-4"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -1164,10 +1132,10 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
           </svg>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-2"
+            class="emotion-6"
           >
             Tab Label
           </span>
@@ -1180,7 +1148,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
 
 exports[`Tab renders with a trailing icon and custom spacing between elements 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1190,15 +1158,15 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   flex-direction: column;
 }
 
-.emotion-5 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1213,94 +1181,54 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-5:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
 .emotion-2 {
-  fill: #2e2e2e;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-2.emotion-2 {
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1314,14 +1242,14 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-12px/2);
   margin-right: calc(-12px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1330,41 +1258,76 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   margin-right: calc(12px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-6 {
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 48px;
+  height: 48px;
+}
+
 <div
-    class="emotion-6"
+    class="emotion-0"
   >
     <button
       aria-selected="false"
-      class="emotion-5"
+      class="emotion-1"
       data-testid="tab"
       role="tab"
       tabindex="-1"
       type="button"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Tab Label
           </span>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-2"
+            class="emotion-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -1384,7 +1347,7 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
 
 exports[`Tab renders with different minHeight 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1394,78 +1357,15 @@ exports[`Tab renders with different minHeight 1`] = `
   flex-direction: column;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1480,61 +1380,119 @@ exports[`Tab renders with different minHeight 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
       aria-selected="false"
-      class="emotion-3"
+      class="emotion-1"
       data-testid="tab"
       role="tab"
       tabindex="-1"
@@ -1544,10 +1502,10 @@ exports[`Tab renders with different minHeight 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Tab Label
           </span>
@@ -1560,7 +1518,7 @@ exports[`Tab renders with different minHeight 1`] = `
 
 exports[`Tab should render custom aria-label tab 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1570,15 +1528,15 @@ exports[`Tab should render custom aria-label tab 1`] = `
   flex-direction: column;
 }
 
-.emotion-5 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1593,56 +1551,54 @@ exports[`Tab should render custom aria-label tab 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-5:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1656,14 +1612,14 @@ exports[`Tab should render custom aria-label tab 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1672,24 +1628,21 @@ exports[`Tab should render custom aria-label tab 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1697,7 +1650,7 @@ exports[`Tab should render custom aria-label tab 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1705,47 +1658,47 @@ exports[`Tab should render custom aria-label tab 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-2 {
+.emotion-6 {
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-2.emotion-2 {
+.emotion-6.emotion-6 {
   width: 48px;
   height: 48px;
 }
 
 <div
-    class="emotion-6"
+    class="emotion-0"
   >
     <button
       aria-label="my custom aria label"
       aria-selected="false"
-      class="emotion-5"
+      class="emotion-1"
       data-testid="tab"
       role="tab"
       tabindex="-1"
       type="button"
     >
       <div
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             Tab Label
           </span>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-2"
+            class="emotion-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"

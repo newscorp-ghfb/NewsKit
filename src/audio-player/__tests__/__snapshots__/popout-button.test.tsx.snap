@@ -2,7 +2,7 @@
 
 exports[`PopoutButton renders correctly with default props 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -14,15 +14,15 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   height: 48px;
 }
 
-.emotion-4 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -37,47 +37,45 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-4 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-4:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-4:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -91,14 +89,14 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -107,13 +105,13 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -122,29 +120,29 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
   >
     <button
       aria-label="Open popout player"
-      class="emotion-4"
+      class="emotion-1"
       data-testid="audio-player-popout"
       type="button"
     >
       <div
-        class="emotion-3"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"

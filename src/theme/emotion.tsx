@@ -3,7 +3,7 @@ import {
   withTheme as _withTheme,
   useTheme as _useTheme,
   ThemeProvider as EmotionThemeProvider,
-} from 'emotion-theming';
+} from '@emotion/react';
 import {Theme, UncompiledTheme} from './types';
 import {compileTheme} from './compiler';
 
@@ -20,5 +20,3 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   theme,
   ...props
 }) => <EmotionThemeProvider {...props} theme={compileTheme(theme)} />;
-
-export {Global} from '@emotion/core';

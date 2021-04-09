@@ -2,21 +2,21 @@
 
 exports[`MonoPath with 2 level path should render as expected 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   margin-bottom: 4px;
   margin-left: 0px;
 }
 
-.emotion-1 {
+.emotion-2 {
   margin-bottom: 4px;
   margin-left: 16px;
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{
@@ -28,7 +28,7 @@ exports[`MonoPath with 2 level path should render as expected 1`] = `
       </span>
     </div>
     <div
-      class="emotion-1"
+      class="emotion-2"
     >
       <span
         data-props="{
@@ -45,26 +45,26 @@ exports[`MonoPath with 2 level path should render as expected 1`] = `
 
 exports[`MonoPath with 3 level path should render as expected 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   margin-bottom: 4px;
   margin-left: 0px;
 }
 
-.emotion-1 {
+.emotion-2 {
   margin-bottom: 4px;
   margin-left: 16px;
 }
 
-.emotion-2 {
+.emotion-3 {
   margin-bottom: 4px;
   margin-left: 32px;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-0"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{
@@ -76,7 +76,7 @@ exports[`MonoPath with 3 level path should render as expected 1`] = `
       </span>
     </div>
     <div
-      class="emotion-1"
+      class="emotion-2"
     >
       <span
         data-props="{
@@ -88,7 +88,7 @@ exports[`MonoPath with 3 level path should render as expected 1`] = `
       </span>
     </div>
     <div
-      class="emotion-2"
+      class="emotion-3"
     >
       <span
         data-props="{
@@ -105,15 +105,15 @@ exports[`MonoPath with 3 level path should render as expected 1`] = `
 
 exports[`MonoPath with single level path should render as expected 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   margin-left: 0px;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{

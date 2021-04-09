@@ -2,7 +2,7 @@
 
 exports[`Button Loading Button renders Large Button 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10,6 +10,50 @@ exports[`Button Loading Button renders Large Button 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 120px;
+  padding: 16px 24px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #d5ebff;
+  border-radius: 8px;
+  color: #0a68c1;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: progress;
+}
+
+.emotion-1 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-1 svg {
+  fill: #0a68c1;
 }
 
 .emotion-2 {
@@ -26,14 +70,14 @@ exports[`Button Loading Button renders Large Button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -42,75 +86,28 @@ exports[`Button Loading Button renders Large Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 64px;
-  min-width: 120px;
-  padding: 16px 24px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #d5ebff;
-  border-radius: 8px;
-  color: #0a68c1;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: progress;
-}
-
-.emotion-3 svg {
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-3 svg {
-  fill: #0a68c1;
-}
-
-.emotion-0 {
+.emotion-4 {
   width: 32px;
   height: 32px;
   stroke: #0a68c1;
 }
 
-.emotion-0 circle {
+.emotion-4 circle {
   r: calc(50% - 2px);
   fill: transparent;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   will-change: stroke-dasharray;
   will-change: stroke-dashoffset;
@@ -120,10 +117,10 @@ exports[`Button Loading Button renders Large Button 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -131,11 +128,11 @@ exports[`Button Loading Button renders Large Button 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0"
+            class="emotion-4"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +151,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
 
 exports[`Button Loading Button renders Small Button 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -162,6 +159,50 @@ exports[`Button Loading Button renders Small Button 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 64px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #d5ebff;
+  border-radius: 8px;
+  color: #0a68c1;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: progress;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-1 svg {
+  fill: #0a68c1;
 }
 
 .emotion-2 {
@@ -178,14 +219,14 @@ exports[`Button Loading Button renders Small Button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -194,75 +235,28 @@ exports[`Button Loading Button renders Small Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  min-width: 64px;
-  padding: 8px 12px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #d5ebff;
-  border-radius: 8px;
-  color: #0a68c1;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: progress;
-}
-
-.emotion-3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-3 svg {
-  fill: #0a68c1;
-}
-
-.emotion-0 {
+.emotion-4 {
   width: 16px;
   height: 16px;
   stroke: #0a68c1;
 }
 
-.emotion-0 circle {
+.emotion-4 circle {
   r: calc(50% - 2px);
   fill: transparent;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   will-change: stroke-dasharray;
   will-change: stroke-dashoffset;
@@ -272,10 +266,10 @@ exports[`Button Loading Button renders Small Button 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -283,11 +277,11 @@ exports[`Button Loading Button renders Small Button 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0"
+            class="emotion-4"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -306,7 +300,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
 
 exports[`Button Loading Button renders a button with fixed for minWidth and minHeight 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -316,78 +310,15 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   flex-direction: column;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -402,248 +333,42 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      class="emotion-3"
-      data-testid="button"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            click this!
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Button Loading Button renders a button with fixed for width and height 1`] = `
-<DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100px;
-  height: 100px;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100px;
-  height: 100px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #0a68c1;
-  border-radius: 8px;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-3 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-3 svg {
-  fill: #ffffff;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-3:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-3:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-3:disabled svg {
-  fill: #c0c0c0;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      class="emotion-3"
-      data-testid="button"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            click this!
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Button Loading Button renders a button with percentage for minWidth and minHeight 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -660,14 +385,14 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -676,24 +401,21 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -701,7 +423,7 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -709,15 +431,214 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with fixed for width and height 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #ffffff;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-1:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with percentage for minWidth and minHeight 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -732,248 +653,42 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      class="emotion-3"
-      data-testid="button"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            click this!
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Button Loading Button renders a button with percentage for width and height 1`] = `
-<DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #0a68c1;
-  border-radius: 8px;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-3 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-3 svg {
-  fill: #ffffff;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-3:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-3:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-3:disabled svg {
-  fill: #c0c0c0;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      class="emotion-3"
-      data-testid="button"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            click this!
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Button Loading Button renders a button with token set for minWidth and minHeight 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -990,14 +705,14 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1006,24 +721,21 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1031,7 +743,7 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1039,15 +751,214 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with percentage for width and height 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #ffffff;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-1:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with token set for minWidth and minHeight 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1062,248 +973,42 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      class="emotion-3"
-      data-testid="button"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            click this!
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Button Loading Button renders a button with token set for width and height 1`] = `
-<DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 160px;
-  height: 160px;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 160px;
-  height: 160px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #0a68c1;
-  border-radius: 8px;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-3 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-3 svg {
-  fill: #ffffff;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-3:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-3:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-3:disabled svg {
-  fill: #c0c0c0;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      class="emotion-3"
-      data-testid="button"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            click this!
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Button renders Large Button 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -1320,14 +1025,14 @@ exports[`Button renders Large Button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1336,21 +1041,244 @@ exports[`Button renders Large Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with token set for width and height 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 160px;
+  height: 160px;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 160px;
+  height: 160px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #ffffff;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-1:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button renders Large Button 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1365,109 +1293,42 @@ exports[`Button renders Large Button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-<div
-    class="emotion-4"
-  >
-    <button
-      class="emotion-3"
-      data-testid="button"
-      type="button"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-        >
-          <span
-            class="emotion-0"
-          >
-            click this!
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Button renders Small Button 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-2 {
@@ -1484,14 +1345,14 @@ exports[`Button renders Small Button 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1500,21 +1361,83 @@ exports[`Button renders Small Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button renders Small Button 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1529,58 +1452,89 @@ exports[`Button renders Small Button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-0 {
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1588,7 +1542,7 @@ exports[`Button renders Small Button 1`] = `
   margin-bottom: calc(-0.4833333333333334em + 1px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1597,10 +1551,10 @@ exports[`Button renders Small Button 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -1608,10 +1562,10 @@ exports[`Button renders Small Button 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>
@@ -1624,7 +1578,7 @@ exports[`Button renders Small Button 1`] = `
 
 exports[`Button renders button link when href passed 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1634,15 +1588,15 @@ exports[`Button renders button link when href passed 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1657,43 +1611,41 @@ exports[`Button renders button link when href passed 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -1711,14 +1663,14 @@ exports[`Button renders button link when href passed 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1727,24 +1679,21 @@ exports[`Button renders button link when href passed 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1752,7 +1701,7 @@ exports[`Button renders button link when href passed 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1761,10 +1710,10 @@ exports[`Button renders button link when href passed 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <a
-      class="emotion-3"
+      class="emotion-1"
       data-testid="buttonLink"
       href="http://localhost:6006"
     >
@@ -1772,10 +1721,10 @@ exports[`Button renders button link when href passed 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             test button click
           </span>
@@ -1788,70 +1737,7 @@ exports[`Button renders button link when href passed 1`] = `
 
 exports[`Button renders fixed-width Button 1`] = `
 <DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1862,15 +1748,15 @@ exports[`Button renders fixed-width Button 1`] = `
   width: 160px;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1885,51 +1771,109 @@ exports[`Button renders fixed-width Button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -1937,10 +1881,10 @@ exports[`Button renders fixed-width Button 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>
@@ -1953,70 +1897,7 @@ exports[`Button renders fixed-width Button 1`] = `
 
 exports[`Button renders full-width Button 1`] = `
 <DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2027,15 +1908,15 @@ exports[`Button renders full-width Button 1`] = `
   width: 100%;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2050,51 +1931,109 @@ exports[`Button renders full-width Button 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -2102,10 +2041,10 @@ exports[`Button renders full-width Button 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>
@@ -2118,7 +2057,7 @@ exports[`Button renders full-width Button 1`] = `
 
 exports[`Button renders text and icon button with fallback formatting 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2128,15 +2067,15 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2151,47 +2090,45 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-6 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-6:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-5 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2205,14 +2142,14 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2221,24 +2158,21 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2246,7 +2180,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2254,7 +2188,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-2 {
+.emotion-6 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2264,31 +2198,31 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 }
 
 <div
-    class="emotion-7"
+    class="emotion-0"
   >
     <button
-      class="emotion-6"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-2 emotion-3"
+            class="emotion-6 emotion-7"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -2311,7 +2245,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 
 exports[`Button renders with different spaceInset preset 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2321,78 +2255,15 @@ exports[`Button renders with different spaceInset preset 1`] = `
   flex-direction: column;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2407,51 +2278,109 @@ exports[`Button renders with different spaceInset preset 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -2459,10 +2388,10 @@ exports[`Button renders with different spaceInset preset 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>
@@ -2475,7 +2404,7 @@ exports[`Button renders with different spaceInset preset 1`] = `
 
 exports[`Button renders with different style preset 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2483,6 +2412,72 @@ exports[`Button renders with different style preset 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #0a68c1;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #0a68c1;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  border-color: #02509b;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #d5ebff;
+  border-color: #01396e;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1:disabled svg {
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2499,14 +2494,14 @@ exports[`Button renders with different style preset 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2515,24 +2510,21 @@ exports[`Button renders with different style preset 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2540,7 +2532,7 @@ exports[`Button renders with different style preset 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2548,79 +2540,11 @@ exports[`Button renders with different style preset 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #0a68c1;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #0a68c1;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-3 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-3 svg {
-  fill: #0a68c1;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #02509b;
-}
-
-.emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #01396e;
-}
-
-.emotion-3:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-3:disabled svg {
-  fill: #c0c0c0;
-}
-
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -2628,10 +2552,10 @@ exports[`Button renders with different style preset 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>
@@ -2644,7 +2568,7 @@ exports[`Button renders with different style preset 1`] = `
 
 exports[`Button renders with different typography preset 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2654,15 +2578,15 @@ exports[`Button renders with different typography preset 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2677,43 +2601,41 @@ exports[`Button renders with different typography preset 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -2731,14 +2653,14 @@ exports[`Button renders with different typography preset 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2747,24 +2669,21 @@ exports[`Button renders with different typography preset 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2772,7 +2691,7 @@ exports[`Button renders with different typography preset 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2781,10 +2700,10 @@ exports[`Button renders with different typography preset 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -2792,10 +2711,10 @@ exports[`Button renders with different typography preset 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>
@@ -2808,7 +2727,7 @@ exports[`Button renders with different typography preset 1`] = `
 
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2818,15 +2737,15 @@ exports[`Button renders with fallback formatting 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2841,43 +2760,41 @@ exports[`Button renders with fallback formatting 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-1 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -2895,14 +2812,14 @@ exports[`Button renders with fallback formatting 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2911,24 +2828,21 @@ exports[`Button renders with fallback formatting 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-0::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -2936,7 +2850,7 @@ exports[`Button renders with fallback formatting 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -2945,10 +2859,10 @@ exports[`Button renders with fallback formatting 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <button
-      class="emotion-3"
+      class="emotion-1"
       data-testid="button"
       type="button"
     >
@@ -2956,10 +2870,10 @@ exports[`Button renders with fallback formatting 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <span
-            class="emotion-0"
+            class="emotion-4"
           >
             click this!
           </span>

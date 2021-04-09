@@ -2,14 +2,56 @@
 
 exports[`Sidebar renders correctly when closed 1`] = `
 <DocumentFragment>
-  .emotion-10 {
+  .emotion-0 {
+  width: 276px;
+  padding: 0 24px;
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #F4F4F4;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    overflow: hidden;
+  }
+
+  .emotion-0:hover {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .emotion-0 {
+    overflow: auto;
+  }
+}
+
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #F4F4F4;
   padding-top: 16px;
@@ -20,23 +62,20 @@ exports[`Sidebar renders correctly when closed 1`] = `
   top: 0;
 }
 
-.emotion-4 {
+.emotion-2 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #555E74;
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   fill: #555E74;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-2 {
     vertical-align: text-bottom;
   }
 }
@@ -55,12 +94,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,42 +113,42 @@ exports[`Sidebar renders correctly when closed 1`] = `
   overflow: hidden;
 }
 
-.emotion-1 {
+.emotion-5 {
   display: inline-block;
   width: 160px;
 }
 
-.emotion-0 {
+.emotion-6 {
   fill: #162740;
   color: #162740;
 }
 
 @media screen {
-  .emotion-9 {
+  .emotion-7 {
     display: block;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-9 {
+@media screen and (min-width: 480px) {
+  .emotion-7 {
     display: block;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-9 {
+@media screen and (min-width: 768px) {
+  .emotion-7 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-9 {
+@media screen and (min-width: 1024px) {
+  .emotion-7 {
     display: none;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-9 {
+@media screen and (min-width: 1440px) {
+  .emotion-7 {
     display: none;
   }
 }
@@ -122,13 +161,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: flex;
 }
 
-.emotion-7 {
+.emotion-9 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-10 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -137,45 +176,39 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: inline-block;
 }
 
-.emotion-5.emotion-5 {
+.emotion-10.emotion-10 {
   width: 16px;
   height: 16px;
   fill: #243853;
 }
 
-.emotion-207 {
+.emotion-12 {
   font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-206 {
+.emotion-13 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-206:last-child {
+.emotion-13:last-child {
   margin-bottom: 24px;
 }
 
-.emotion-19 {
+.emotion-14 {
   margin-bottom: 24px;
 }
 
-.emotion-11 {
+.emotion-15 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -183,14 +216,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   padding: 8px 0;
 }
 
-.emotion-12 {
+.emotion-17 {
   font-family: 'Poppins',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -198,37 +228,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-top: 20px;
 }
 
-.emotion-15 {
+.emotion-18 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-15:hover:not(:disabled) {
+.emotion-18:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-15 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-18 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-13 {
+.emotion-20 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -241,19 +265,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #AEBFFF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-20 {
+.emotion-24 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -263,68 +287,26 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-208 {
-  width: 276px;
-  padding: 0 24px;
-  position: fixed;
-  overflow: auto;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  background-color: #F4F4F4;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-208 {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .emotion-208 {
-    overflow: hidden;
-  }
-
-  .emotion-208:hover {
-    overflow: auto;
-  }
-}
-
-@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-208 {
-    overflow: auto;
-  }
-}
-
 <div
-    class="emotion-208"
+    class="emotion-0"
     data-testid="sidebar"
     role="complementary"
   >
     <div
-      class="emotion-10"
+      class="emotion-1"
     >
       <a
-        class="emotion-4"
+        class="emotion-2"
         href="/"
       >
         <span
           class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
-              class="emotion-1"
+              class="emotion-5"
               viewBox="0 0 1587 347"
             >
               <title>
@@ -340,7 +322,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   transform="translate(-5.000000, 47.000000)"
                 >
                   <g
-                    class="emotion-0"
+                    class="emotion-6"
                     transform="translate(508.073657, 26.125170)"
                   >
                     <path
@@ -374,19 +356,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
         </span>
       </a>
       <div
-        class="emotion-9"
+        class="emotion-7"
       >
         <div
           class="emotion-8"
         >
           <div
-            class="emotion-7"
+            class="emotion-9"
             data-testid="close-icon"
             tabindex="0"
           >
             <svg
               aria-hidden="true"
-              class="emotion-5 emotion-6"
+              class="emotion-10 emotion-11"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -406,41 +388,41 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-207"
+      class="emotion-12"
       role="navigation"
     >
       <ul
-        class="emotion-206"
+        class="emotion-13"
         role="list"
       >
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/getting-started"
           >
             Getting Started
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/getting-started/code"
             >
               Code
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/getting-started/code/web"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/getting-started/code/web"
                   >
                     Web
@@ -450,14 +432,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/getting-started/code/instrumentation"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/getting-started/code/instrumentation"
                   >
                     Instrumentation
@@ -468,32 +450,32 @@ exports[`Sidebar renders correctly when closed 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/theming"
           >
             Theme
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/overview"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/overview"
                   >
                     Overview
@@ -503,14 +485,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/creating-a-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/creating-a-theme"
                   >
                     Creating a theme
@@ -520,14 +502,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/using-a-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/using-a-theme"
                   >
                     Using a theme
@@ -536,21 +518,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/theming/foundations"
             >
               Foundations
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/foundations/overview"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/foundations/overview"
                   >
                     Overview
@@ -560,14 +542,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/foundations/colours"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/foundations/colours"
                   >
                     Colours
@@ -577,14 +559,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/foundations/motions"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/foundations/motions"
                   >
                     Motions
@@ -593,21 +575,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/theming/presets"
             >
               Presets
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/presets/space-presets"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/presets/space-presets"
                   >
                     Space Presets
@@ -617,14 +599,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/presets/style-presets"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/presets/style-presets"
                   >
                     Style Presets
@@ -634,14 +616,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/presets/typography-presets"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/presets/typography-presets"
                   >
                     Typography Presets
@@ -650,21 +632,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/theming/component-defaults"
             >
               Component Defaults
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/component-defaults/overview"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/component-defaults/overview"
                   >
                     Overview
@@ -675,38 +657,38 @@ exports[`Sidebar renders correctly when closed 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/components"
           >
             Components
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/action"
             >
               Action
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/action/button"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/action/button"
                   >
                     Button
@@ -716,14 +698,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/action/share-bar"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/action/share-bar"
                   >
                     Share Bar
@@ -732,21 +714,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/inputs"
             >
               Inputs
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/inputs/form"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/inputs/form"
                   >
                     Form
@@ -756,14 +738,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/inputs/text-input"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/inputs/text-input"
                   >
                     Text Input
@@ -772,21 +754,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/layout"
             >
               Layout
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/block"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/block"
                   >
                     Block
@@ -796,14 +778,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/card"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/card"
                   >
                     Card
@@ -813,14 +795,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/divider"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/divider"
                   >
                     Divider
@@ -830,14 +812,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/grid"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/grid"
                   >
                     Grid
@@ -847,14 +829,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/scroll"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/scroll"
                   >
                     Scroll
@@ -864,14 +846,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/stack"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/stack"
                   >
                     Stack
@@ -881,14 +863,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/visibility"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/visibility"
                   >
                     Visibility
@@ -897,21 +879,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/media"
             >
               Media
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/aspect-ratio"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/aspect-ratio"
                   >
                     Aspect Ratio
@@ -921,14 +903,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/audio-player"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/audio-player"
                   >
                     Audio Player
@@ -938,14 +920,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/caption"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/caption"
                   >
                     Caption
@@ -955,14 +937,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/image"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/image"
                   >
                     Image
@@ -972,14 +954,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/volume-control"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/volume-control"
                   >
                     Volume Control
@@ -988,21 +970,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/navigation"
             >
               Navigation
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/navigation/link"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/navigation/link"
                   >
                     Link
@@ -1012,14 +994,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/navigation/tag"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/navigation/tag"
                   >
                     Tag
@@ -1029,14 +1011,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/navigation/title-bar"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/navigation/title-bar"
                   >
                     Title Bar
@@ -1045,21 +1027,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/selection-controls"
             >
               Selection Contols
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/selection-controls/tabs"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/selection-controls/tabs"
                   >
                     Tabs
@@ -1069,14 +1051,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/selection-controls/slider"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/selection-controls/slider"
                   >
                     Slider
@@ -1085,21 +1067,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/text-content"
             >
               Text Content
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/byline"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/byline"
                   >
                     Byline
@@ -1109,14 +1091,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/date-time"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/date-time"
                   >
                     Date Time
@@ -1126,14 +1108,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/flag"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/flag"
                   >
                     Flag
@@ -1143,14 +1125,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/headline"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/headline"
                   >
                     Headline
@@ -1160,14 +1142,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/ordered-list"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/ordered-list"
                   >
                     Ordered List
@@ -1177,14 +1159,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/standfirst"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/standfirst"
                   >
                     Standfirst
@@ -1194,14 +1176,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/text-block"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/text-block"
                   >
                     Text Block
@@ -1211,14 +1193,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/unordered-list"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/unordered-list"
                   >
                     Unordered List
@@ -1227,21 +1209,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/third-party-integrations"
             >
               Third Party Integrations
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/consent"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/consent"
                   >
                     Consent
@@ -1251,14 +1233,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/consent-settings-link"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/consent-settings-link"
                   >
                     Consent Settings Link
@@ -1268,14 +1250,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/experimentation-web"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/experimentation-web"
                   >
                     Experimentation Web
@@ -1285,14 +1267,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/tealium"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/tealium"
                   >
                     Tealium
@@ -1301,21 +1283,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/others"
             >
               Others
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/others/icons"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/others/icons"
                   >
                     Icons
@@ -1324,21 +1306,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/user-feedback"
             >
               User Feedback
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/user-feedback/progress-indicator"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/user-feedback/progress-indicator"
                   >
                     Progress Indicator
@@ -1349,32 +1331,32 @@ exports[`Sidebar renders correctly when closed 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/utils"
           >
             Utilities
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/emotion"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/emotion"
                   >
                     Emotion
@@ -1384,14 +1366,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/custom-to-newskit-icon"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/custom-to-newskit-icon"
                   >
                     customToNewsKitIcon
@@ -1401,14 +1383,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/get-css-from-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/get-css-from-theme"
                   >
                     getCssFromTheme
@@ -1418,14 +1400,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/get-from-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/get-from-theme"
                   >
                     getFromTheme
@@ -1435,14 +1417,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/get-defaults"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/get-defaults"
                   >
                     getComponentDefaults
@@ -1452,14 +1434,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/hooks"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/hooks"
                   >
                     Hooks
@@ -1470,32 +1452,32 @@ exports[`Sidebar renders correctly when closed 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/help"
           >
             Help
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/help/contact-us"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/help/contact-us"
                   >
                     Contact Us
@@ -1509,7 +1491,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </nav>
   </div>
   .emotion-0 {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -1523,7 +1505,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   z-index: 2;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     display: none;
   }
@@ -1538,7 +1520,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-208 {
+  .emotion-0 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -1549,45 +1531,45 @@ exports[`Sidebar renders correctly when open 1`] = `
   z-index: 3;
   background-color: #F4F4F4;
   -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
   transition: transform 300ms;
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-208 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-208 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
     overflow: hidden;
   }
 
-  .emotion-208:hover {
+  .emotion-0:hover {
     overflow: auto;
   }
 }
 
-@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-208 {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .emotion-0 {
     overflow: auto;
   }
 }
 
-.emotion-10 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #F4F4F4;
   padding-top: 16px;
@@ -1598,23 +1580,20 @@ exports[`Sidebar renders correctly when open 1`] = `
   top: 0;
 }
 
-.emotion-4 {
+.emotion-2 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #555E74;
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   fill: #555E74;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-2 {
     vertical-align: text-bottom;
   }
 }
@@ -1633,12 +1612,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1652,42 +1631,42 @@ exports[`Sidebar renders correctly when open 1`] = `
   overflow: hidden;
 }
 
-.emotion-1 {
+.emotion-5 {
   display: inline-block;
   width: 160px;
 }
 
-.emotion-0 {
+.emotion-6 {
   fill: #162740;
   color: #162740;
 }
 
 @media screen {
-  .emotion-9 {
+  .emotion-7 {
     display: block;
   }
 }
 
-@media screen and (min-width:480px) {
-  .emotion-9 {
+@media screen and (min-width: 480px) {
+  .emotion-7 {
     display: block;
   }
 }
 
-@media screen and (min-width:768px) {
-  .emotion-9 {
+@media screen and (min-width: 768px) {
+  .emotion-7 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-9 {
+@media screen and (min-width: 1024px) {
+  .emotion-7 {
     display: none;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .emotion-9 {
+@media screen and (min-width: 1440px) {
+  .emotion-7 {
     display: none;
   }
 }
@@ -1700,13 +1679,13 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: flex;
 }
 
-.emotion-7 {
+.emotion-9 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.emotion-5 {
+.emotion-10 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1715,45 +1694,39 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: inline-block;
 }
 
-.emotion-5.emotion-5 {
+.emotion-10.emotion-10 {
   width: 16px;
   height: 16px;
   fill: #243853;
 }
 
-.emotion-207 {
+.emotion-12 {
   font-family: 'DM Sans',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-206 {
+.emotion-13 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-206:last-child {
+.emotion-13:last-child {
   margin-bottom: 24px;
 }
 
-.emotion-19 {
+.emotion-14 {
   margin-bottom: 24px;
 }
 
-.emotion-11 {
+.emotion-15 {
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -1761,14 +1734,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   padding: 8px 0;
 }
 
-.emotion-12 {
+.emotion-17 {
   font-family: 'Poppins',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -1776,37 +1746,31 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-top: 20px;
 }
 
-.emotion-15 {
+.emotion-18 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-15:hover:not(:disabled) {
+.emotion-18:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-15 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-18 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-13 {
+.emotion-20 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   background-color: transparent;
   color: #162740;
@@ -1819,19 +1783,19 @@ exports[`Sidebar renders correctly when open 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #AEBFFF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-20 {
+.emotion-24 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 1px;
@@ -1842,26 +1806,26 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 <div
-    class="emotion-208"
+    class="emotion-0"
     data-testid="sidebar"
     open=""
     role="complementary"
   >
     <div
-      class="emotion-10"
+      class="emotion-1"
     >
       <a
-        class="emotion-4"
+        class="emotion-2"
         href="/"
       >
         <span
           class="emotion-3"
         >
           <div
-            class="emotion-2"
+            class="emotion-4"
           >
             <svg
-              class="emotion-1"
+              class="emotion-5"
               viewBox="0 0 1587 347"
             >
               <title>
@@ -1877,7 +1841,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                   transform="translate(-5.000000, 47.000000)"
                 >
                   <g
-                    class="emotion-0"
+                    class="emotion-6"
                     transform="translate(508.073657, 26.125170)"
                   >
                     <path
@@ -1911,19 +1875,19 @@ exports[`Sidebar renders correctly when open 1`] = `
         </span>
       </a>
       <div
-        class="emotion-9"
+        class="emotion-7"
       >
         <div
           class="emotion-8"
         >
           <div
-            class="emotion-7"
+            class="emotion-9"
             data-testid="close-icon"
             tabindex="0"
           >
             <svg
               aria-hidden="true"
-              class="emotion-5 emotion-6"
+              class="emotion-10 emotion-11"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1943,41 +1907,41 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-207"
+      class="emotion-12"
       role="navigation"
     >
       <ul
-        class="emotion-206"
+        class="emotion-13"
         role="list"
       >
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/getting-started"
           >
             Getting Started
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/getting-started/code"
             >
               Code
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/getting-started/code/web"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/getting-started/code/web"
                   >
                     Web
@@ -1987,14 +1951,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/getting-started/code/instrumentation"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/getting-started/code/instrumentation"
                   >
                     Instrumentation
@@ -2005,32 +1969,32 @@ exports[`Sidebar renders correctly when open 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/theming"
           >
             Theme
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/overview"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/overview"
                   >
                     Overview
@@ -2040,14 +2004,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/creating-a-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/creating-a-theme"
                   >
                     Creating a theme
@@ -2057,14 +2021,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/using-a-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/using-a-theme"
                   >
                     Using a theme
@@ -2073,21 +2037,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/theming/foundations"
             >
               Foundations
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/foundations/overview"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/foundations/overview"
                   >
                     Overview
@@ -2097,14 +2061,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/foundations/colours"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/foundations/colours"
                   >
                     Colours
@@ -2114,14 +2078,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/foundations/motions"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/foundations/motions"
                   >
                     Motions
@@ -2130,21 +2094,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/theming/presets"
             >
               Presets
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/presets/space-presets"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/presets/space-presets"
                   >
                     Space Presets
@@ -2154,14 +2118,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/presets/style-presets"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/presets/style-presets"
                   >
                     Style Presets
@@ -2171,14 +2135,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/presets/typography-presets"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/presets/typography-presets"
                   >
                     Typography Presets
@@ -2187,21 +2151,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/theming/component-defaults"
             >
               Component Defaults
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/theming/component-defaults/overview"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/theming/component-defaults/overview"
                   >
                     Overview
@@ -2212,38 +2176,38 @@ exports[`Sidebar renders correctly when open 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/components"
           >
             Components
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/action"
             >
               Action
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/action/button"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/action/button"
                   >
                     Button
@@ -2253,14 +2217,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/action/share-bar"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/action/share-bar"
                   >
                     Share Bar
@@ -2269,21 +2233,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/inputs"
             >
               Inputs
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/inputs/form"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/inputs/form"
                   >
                     Form
@@ -2293,14 +2257,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/inputs/text-input"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/inputs/text-input"
                   >
                     Text Input
@@ -2309,21 +2273,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/layout"
             >
               Layout
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/block"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/block"
                   >
                     Block
@@ -2333,14 +2297,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/card"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/card"
                   >
                     Card
@@ -2350,14 +2314,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/divider"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/divider"
                   >
                     Divider
@@ -2367,14 +2331,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/grid"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/grid"
                   >
                     Grid
@@ -2384,14 +2348,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/scroll"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/scroll"
                   >
                     Scroll
@@ -2401,14 +2365,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/stack"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/stack"
                   >
                     Stack
@@ -2418,14 +2382,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/layout/visibility"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/layout/visibility"
                   >
                     Visibility
@@ -2434,21 +2398,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/media"
             >
               Media
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/aspect-ratio"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/aspect-ratio"
                   >
                     Aspect Ratio
@@ -2458,14 +2422,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/audio-player"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/audio-player"
                   >
                     Audio Player
@@ -2475,14 +2439,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/caption"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/caption"
                   >
                     Caption
@@ -2492,14 +2456,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/image"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/image"
                   >
                     Image
@@ -2509,14 +2473,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/media/volume-control"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/media/volume-control"
                   >
                     Volume Control
@@ -2525,21 +2489,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/navigation"
             >
               Navigation
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/navigation/link"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/navigation/link"
                   >
                     Link
@@ -2549,14 +2513,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/navigation/tag"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/navigation/tag"
                   >
                     Tag
@@ -2566,14 +2530,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/navigation/title-bar"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/navigation/title-bar"
                   >
                     Title Bar
@@ -2582,21 +2546,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/selection-controls"
             >
               Selection Contols
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/selection-controls/tabs"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/selection-controls/tabs"
                   >
                     Tabs
@@ -2606,14 +2570,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/selection-controls/slider"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/selection-controls/slider"
                   >
                     Slider
@@ -2622,21 +2586,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/text-content"
             >
               Text Content
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/byline"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/byline"
                   >
                     Byline
@@ -2646,14 +2610,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/date-time"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/date-time"
                   >
                     Date Time
@@ -2663,14 +2627,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/flag"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/flag"
                   >
                     Flag
@@ -2680,14 +2644,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/headline"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/headline"
                   >
                     Headline
@@ -2697,14 +2661,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/ordered-list"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/ordered-list"
                   >
                     Ordered List
@@ -2714,14 +2678,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/standfirst"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/standfirst"
                   >
                     Standfirst
@@ -2731,14 +2695,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/text-block"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/text-block"
                   >
                     Text Block
@@ -2748,14 +2712,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/text-content/unordered-list"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/text-content/unordered-list"
                   >
                     Unordered List
@@ -2764,21 +2728,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/third-party-integrations"
             >
               Third Party Integrations
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/consent"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/consent"
                   >
                     Consent
@@ -2788,14 +2752,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/consent-settings-link"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/consent-settings-link"
                   >
                     Consent Settings Link
@@ -2805,14 +2769,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/experimentation-web"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/experimentation-web"
                   >
                     Experimentation Web
@@ -2822,14 +2786,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/third-party-integrations/tealium"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/third-party-integrations/tealium"
                   >
                     Tealium
@@ -2838,21 +2802,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/others"
             >
               Others
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/others/icons"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/others/icons"
                   >
                     Icons
@@ -2861,21 +2825,21 @@ exports[`Sidebar renders correctly when open 1`] = `
               </a>
             </div>
             <div
-              class="emotion-12"
+              class="emotion-17"
               id="/components/user-feedback"
             >
               User Feedback
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/components/user-feedback/progress-indicator"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/components/user-feedback/progress-indicator"
                   >
                     Progress Indicator
@@ -2886,32 +2850,32 @@ exports[`Sidebar renders correctly when open 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/utils"
           >
             Utilities
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/emotion"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/emotion"
                   >
                     Emotion
@@ -2921,14 +2885,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/custom-to-newskit-icon"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/custom-to-newskit-icon"
                   >
                     customToNewsKitIcon
@@ -2938,14 +2902,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/get-css-from-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/get-css-from-theme"
                   >
                     getCssFromTheme
@@ -2955,14 +2919,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/get-from-theme"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/get-from-theme"
                   >
                     getFromTheme
@@ -2972,14 +2936,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/get-defaults"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/get-defaults"
                   >
                     getComponentDefaults
@@ -2989,14 +2953,14 @@ exports[`Sidebar renders correctly when open 1`] = `
             </div>
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/utils/hooks"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/utils/hooks"
                   >
                     Hooks
@@ -3007,32 +2971,32 @@ exports[`Sidebar renders correctly when open 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="emotion-20"
+            class="emotion-24"
             data-testid="divider"
           />
         </li>
         <li
-          class="emotion-19"
+          class="emotion-14"
         >
           <div
-            class="emotion-11"
+            class="emotion-15"
             data-testid="/help"
           >
             Help
           </div>
           <div
-            class="emotion-19"
+            class="emotion-14"
           >
             <div>
               <a
-                class="emotion-15"
+                class="emotion-18"
                 href="/help/contact-us"
               >
                 <span
                   class="emotion-3"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-20"
                     data-testid="/help/contact-us"
                   >
                     Contact Us
@@ -3046,7 +3010,7 @@ exports[`Sidebar renders correctly when open 1`] = `
     </nav>
   </div>
   .emotion-0 {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -3060,7 +3024,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   z-index: 2;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .emotion-0 {
     display: none;
   }

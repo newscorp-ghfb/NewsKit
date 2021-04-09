@@ -1,9 +1,6 @@
-import {matchers} from 'jest-emotion';
+import {matchers, createSerializer} from '@emotion/jest';
 
-const emotionSerializer = require('jest-emotion');
-
-expect.addSnapshotSerializer(emotionSerializer);
-
+expect.addSnapshotSerializer(createSerializer());
 expect.extend(matchers);
 
 jest.mock('../utils/get-ssr-id', () => ({

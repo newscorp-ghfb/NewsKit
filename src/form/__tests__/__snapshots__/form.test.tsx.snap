@@ -2,25 +2,26 @@
 
 exports[`Form exposes the expected functions from useForm hook 1`] = `
 .emotion-0 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #0a0a0a;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -28,7 +29,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -36,11 +37,11 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
 }
 
-.emotion-1 {
+.emotion-4 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -55,46 +56,43 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
 }
 
-.emotion-1::-webkit-input-placeholder {
+.emotion-4::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::-moz-placeholder {
+.emotion-4::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-1:-ms-input-placeholder {
+.emotion-4:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::placeholder {
+.emotion-4::placeholder {
   color: #535353;
 }
 
-.emotion-1:focus:not(:disabled) {
+.emotion-4:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-1:disabled {
+.emotion-4:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -102,328 +100,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
-  min-height: 12px;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-6 {
-  margin-bottom: 24px;
-}
-
-.emotion-18 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-17 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #0a68c1;
-  border-radius: 8px;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-17 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-17 svg {
-  fill: #ffffff;
-}
-
-.emotion-17:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-17:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-17:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-17:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
-}
-
-.emotion-14 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-14::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-14::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-<form>
-  <div
-    class="emotion-6"
-  >
-    <div
-      class="emotion-5"
-      label="Email"
-    >
-      <label
-        class="emotion-0"
-        for="mock-nk-1"
-      >
-        Email
-      </label>
-      <div
-        class="emotion-2"
-      >
-        <input
-          aria-describedby="mock-nk-1-assistive-text"
-          aria-invalid="false"
-          class="emotion-1"
-          data-testid="text-input-email"
-          id="mock-nk-1"
-          name="email"
-          spellcheck="false"
-          type="text"
-          value="test"
-        />
-      </div>
-      <div
-        class="emotion-4"
-      >
-        <p
-          class="emotion-3"
-          id="mock-nk-1-assistive-text"
-        >
-          Your email
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    class="emotion-6"
-  >
-    <div
-      class="emotion-5"
-      label="Username"
-    >
-      <label
-        class="emotion-0"
-        for="mock-nk-1"
-      >
-        Username
-      </label>
-      <div
-        class="emotion-2"
-      >
-        <input
-          aria-describedby="mock-nk-1-assistive-text"
-          aria-invalid="false"
-          class="emotion-1"
-          data-testid="text-input-username"
-          id="mock-nk-1"
-          name="username"
-          spellcheck="false"
-          type="text"
-        />
-      </div>
-      <div
-        class="emotion-4"
-      >
-        <p
-          class="emotion-3"
-          id="mock-nk-1-assistive-text"
-        >
-          Your username
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    class="emotion-18"
-  >
-    <button
-      class="emotion-17"
-      data-testid="submit-button"
-      type="submit"
-    >
-      <div
-        class="emotion-16"
-      >
-        <div
-          class="emotion-15"
-        >
-          <span
-            class="emotion-14"
-          >
-            Submit
-          </span>
-        </div>
-      </div>
-    </button>
-  </div>
-</form>
-`;
-
-exports[`Form renders with error and with submit validation and revalidation mode  1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: block;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-0 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -432,254 +109,22 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-5 {
-  position: relative;
-}
-
-.emotion-7 {
   min-height: 12px;
-}
-
-.emotion-9 {
-  margin-bottom: 24px;
-}
-
-.emotion-24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-23 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: #0a68c1;
-  border-radius: 8px;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-23 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-23 svg {
-  fill: #ffffff;
-}
-
-.emotion-23:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-23:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-23:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-23:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-21 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-21 {
-    max-width: 100%;
-  }
-}
-
-.emotion-20 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-20::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-20::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #ef1703;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  caret-color: #d20600;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1 {
-  padding-right: 40px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  -webkit-transform: translate(0,-65%);
-  -ms-transform: translate(0,-65%);
-  transform: translate(0,-65%);
-}
-
-.emotion-2 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #d20600;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-2.emotion-2 {
-  width: 24px;
-  height: 24px;
-  fill: #d20600;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #d20600;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
+}
+
+.emotion-6:disabled {
+  color: #c0c0c0;
 }
 
 .emotion-6::before {
@@ -698,27 +143,555 @@ exports[`Form renders with error and with submit validation and revalidation mod
   margin-top: -0.4267857142857143em;
 }
 
+.emotion-14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-15 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-15 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-15 svg {
+  fill: #ffffff;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-15:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-15:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-17 {
+    max-width: 100%;
+  }
+}
+
+.emotion-18 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-18::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-18::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <form>
+  <div
+    class="emotion-0"
+  >
     <div
-      class="emotion-9"
+      class="emotion-1"
+      label="Email"
+    >
+      <label
+        class="emotion-2"
+        for="mock-nk-1"
+      >
+        Email
+      </label>
+      <div
+        class="emotion-3"
+      >
+        <input
+          aria-describedby="mock-nk-1-assistive-text"
+          aria-invalid="false"
+          class="emotion-4"
+          data-testid="text-input-email"
+          id="mock-nk-1"
+          name="email"
+          spellcheck="false"
+          type="text"
+          value="test"
+        />
+      </div>
+      <div
+        class="emotion-5"
+      >
+        <p
+          class="emotion-6"
+          id="mock-nk-1-assistive-text"
+        >
+          Your email
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      label="Username"
+    >
+      <label
+        class="emotion-2"
+        for="mock-nk-1"
+      >
+        Username
+      </label>
+      <div
+        class="emotion-3"
+      >
+        <input
+          aria-describedby="mock-nk-1-assistive-text"
+          aria-invalid="false"
+          class="emotion-4"
+          data-testid="text-input-username"
+          id="mock-nk-1"
+          name="username"
+          spellcheck="false"
+          type="text"
+        />
+      </div>
+      <div
+        class="emotion-5"
+      >
+        <p
+          class="emotion-6"
+          id="mock-nk-1-assistive-text"
+        >
+          Your username
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="emotion-14"
+  >
+    <button
+      class="emotion-15"
+      data-testid="submit-button"
+      type="submit"
     >
       <div
-        class="emotion-8"
+        class="emotion-16"
+      >
+        <div
+          class="emotion-17"
+        >
+          <span
+            class="emotion-18"
+          >
+            Submit
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Form renders with error and with submit validation and revalidation mode  1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  position: relative;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #ef1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  caret-color: #d20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translate(0, -65%);
+  -moz-transform: translate(0, -65%);
+  -ms-transform: translate(0, -65%);
+  transform: translate(0, -65%);
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #d20600;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  fill: #d20600;
+}
+
+.emotion-8 {
+  min-height: 12px;
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+  color: #d20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-9::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-9::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-20 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-21 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-21 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-21 svg {
+  fill: #ffffff;
+}
+
+.emotion-21:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-21:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-21:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-21:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-23 {
+    max-width: 100%;
+  }
+}
+
+.emotion-24 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-24::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-24::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<form>
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
         label="Email"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Email
         </label>
         <div
-          class="emotion-5"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-error-text"
             aria-invalid="true"
-            class="emotion-1"
+            class="emotion-4"
             data-testid="text-input-email"
             id="mock-nk-1"
             name="email"
@@ -727,11 +700,11 @@ exports[`Form renders with error and with submit validation and revalidation mod
             value="test"
           />
           <span
-            class="emotion-4"
+            class="emotion-5"
           >
             <svg
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-6 emotion-7"
               data-testid="error-icon"
               fill="currentColor"
               focusable="false"
@@ -749,11 +722,11 @@ exports[`Form renders with error and with submit validation and revalidation mod
           </span>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-8"
         >
           <p
             aria-live="polite"
-            class="emotion-6"
+            class="emotion-9"
             id="mock-nk-1-error-text"
             role="alert"
           >
@@ -763,25 +736,25 @@ exports[`Form renders with error and with submit validation and revalidation mod
       </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-0"
     >
       <div
-        class="emotion-8"
+        class="emotion-1"
         label="Username"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Username
         </label>
         <div
-          class="emotion-5"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-error-text"
             aria-invalid="true"
-            class="emotion-1"
+            class="emotion-4"
             data-testid="text-input-username"
             id="mock-nk-1"
             name="username"
@@ -789,11 +762,11 @@ exports[`Form renders with error and with submit validation and revalidation mod
             type="text"
           />
           <span
-            class="emotion-4"
+            class="emotion-5"
           >
             <svg
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-6 emotion-7"
               data-testid="error-icon"
               fill="currentColor"
               focusable="false"
@@ -811,11 +784,11 @@ exports[`Form renders with error and with submit validation and revalidation mod
           </span>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-8"
         >
           <p
             aria-live="polite"
-            class="emotion-6"
+            class="emotion-9"
             id="mock-nk-1-error-text"
             role="alert"
           >
@@ -825,10 +798,10 @@ exports[`Form renders with error and with submit validation and revalidation mod
       </div>
     </div>
     <div
-      class="emotion-24"
+      class="emotion-20"
     >
       <button
-        class="emotion-23"
+        class="emotion-21"
         data-testid="submit-button"
         type="submit"
       >
@@ -836,10 +809,10 @@ exports[`Form renders with error and with submit validation and revalidation mod
           class="emotion-22"
         >
           <div
-            class="emotion-21"
+            class="emotion-23"
           >
             <span
-              class="emotion-20"
+              class="emotion-24"
             >
               Submit
             </span>
@@ -854,25 +827,26 @@ exports[`Form renders with error and with submit validation and revalidation mod
 exports[`Form renders with error on blur 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #0a0a0a;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -880,7 +854,69 @@ exports[`Form renders with error on blur 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  position: relative;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #ef1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  caret-color: #d20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -889,10 +925,66 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-5 {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translate(0, -65%);
+  -moz-transform: translate(0, -65%);
+  -ms-transform: translate(0, -65%);
+  transform: translate(0, -65%);
 }
 
-.emotion-11 {
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #d20600;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  fill: #d20600;
+}
+
+.emotion-8 {
+  min-height: 12px;
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+  color: #d20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-9::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-9::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-14 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -907,46 +999,43 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
 }
 
-.emotion-11::-webkit-input-placeholder {
+.emotion-14::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-11::-moz-placeholder {
+.emotion-14::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-11:-ms-input-placeholder {
+.emotion-14:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-11::placeholder {
+.emotion-14::placeholder {
   color: #535353;
 }
 
-.emotion-11:focus:not(:disabled) {
+.emotion-14:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-14:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-11:disabled {
+.emotion-14:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-11::before {
+.emotion-14::before {
   content: '';
   display: block;
   height: 0;
@@ -954,7 +1043,7 @@ exports[`Form renders with error on blur 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-11::after {
+.emotion-14::after {
   content: '';
   display: block;
   height: 0;
@@ -962,11 +1051,7 @@ exports[`Form renders with error on blur 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-7 {
-  min-height: 12px;
-}
-
-.emotion-13 {
+.emotion-16 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -974,17 +1059,14 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-13:disabled {
+.emotion-16:disabled {
   color: #c0c0c0;
 }
 
-.emotion-13::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -992,7 +1074,7 @@ exports[`Form renders with error on blur 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -1000,11 +1082,7 @@ exports[`Form renders with error on blur 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-9 {
-  margin-bottom: 24px;
-}
-
-.emotion-21 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1014,15 +1092,15 @@ exports[`Form renders with error on blur 1`] = `
   flex-direction: column;
 }
 
-.emotion-20 {
+.emotion-18 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1037,43 +1115,41 @@ exports[`Form renders with error on blur 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-20 svg {
+.emotion-18 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-20 svg {
+.emotion-18 svg {
   fill: #ffffff;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-18:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-20:active:not(:disabled) {
+.emotion-18:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-20:disabled {
+.emotion-18:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-20:disabled svg {
+.emotion-18:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -1091,14 +1167,14 @@ exports[`Form renders with error on blur 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-18 {
+.emotion-20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1107,24 +1183,21 @@ exports[`Form renders with error on blur 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-18 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-20 {
     max-width: 100%;
   }
 }
 
-.emotion-17 {
+.emotion-21 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-17::before {
+.emotion-21::before {
   content: '';
   display: block;
   height: 0;
@@ -1132,126 +1205,7 @@ exports[`Form renders with error on blur 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-17::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #ef1703;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  caret-color: #d20600;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1 {
-  padding-right: 40px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  -webkit-transform: translate(0,-65%);
-  -ms-transform: translate(0,-65%);
-  transform: translate(0,-65%);
-}
-
-.emotion-2 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #d20600;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-2.emotion-2 {
-  width: 24px;
-  height: 24px;
-  fill: #d20600;
-}
-
-.emotion-6 {
-  margin: 0;
-  padding: 1px 0;
-  color: #d20600;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-6::after {
+.emotion-21::after {
   content: '';
   display: block;
   height: 0;
@@ -1261,25 +1215,25 @@ exports[`Form renders with error on blur 1`] = `
 
 <form>
     <div
-      class="emotion-9"
+      class="emotion-0"
     >
       <div
-        class="emotion-8"
+        class="emotion-1"
         label="Email"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Email
         </label>
         <div
-          class="emotion-5"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-error-text"
             aria-invalid="true"
-            class="emotion-1"
+            class="emotion-4"
             data-testid="text-input-email"
             id="mock-nk-1"
             name="email"
@@ -1288,11 +1242,11 @@ exports[`Form renders with error on blur 1`] = `
             value="test"
           />
           <span
-            class="emotion-4"
+            class="emotion-5"
           >
             <svg
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-6 emotion-7"
               data-testid="error-icon"
               fill="currentColor"
               focusable="false"
@@ -1310,11 +1264,11 @@ exports[`Form renders with error on blur 1`] = `
           </span>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-8"
         >
           <p
             aria-live="polite"
-            class="emotion-6"
+            class="emotion-9"
             id="mock-nk-1-error-text"
             role="alert"
           >
@@ -1324,25 +1278,25 @@ exports[`Form renders with error on blur 1`] = `
       </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-0"
     >
       <div
-        class="emotion-8"
+        class="emotion-1"
         label="Username"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Username
         </label>
         <div
-          class="emotion-5"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-assistive-text"
             aria-invalid="false"
-            class="emotion-11"
+            class="emotion-14"
             data-testid="text-input-username"
             id="mock-nk-1"
             name="username"
@@ -1351,10 +1305,10 @@ exports[`Form renders with error on blur 1`] = `
           />
         </div>
         <div
-          class="emotion-7"
+          class="emotion-8"
         >
           <p
-            class="emotion-13"
+            class="emotion-16"
             id="mock-nk-1-assistive-text"
           >
             Your username
@@ -1363,10 +1317,10 @@ exports[`Form renders with error on blur 1`] = `
       </div>
     </div>
     <div
-      class="emotion-21"
+      class="emotion-17"
     >
       <button
-        class="emotion-20"
+        class="emotion-18"
         data-testid="submit-button"
         type="submit"
       >
@@ -1374,10 +1328,10 @@ exports[`Form renders with error on blur 1`] = `
           class="emotion-19"
         >
           <div
-            class="emotion-18"
+            class="emotion-20"
           >
             <span
-              class="emotion-17"
+              class="emotion-21"
             >
               Submit
             </span>
@@ -1392,25 +1346,26 @@ exports[`Form renders with error on blur 1`] = `
 exports[`Form renders with error on submit 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #0a0a0a;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -1418,7 +1373,69 @@ exports[`Form renders with error on submit 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  position: relative;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #ef1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  caret-color: #d20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1427,18 +1444,66 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-5 {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translate(0, -65%);
+  -moz-transform: translate(0, -65%);
+  -ms-transform: translate(0, -65%);
+  transform: translate(0, -65%);
 }
 
-.emotion-7 {
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #d20600;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  fill: #d20600;
+}
+
+.emotion-8 {
   min-height: 12px;
 }
 
 .emotion-9 {
-  margin-bottom: 24px;
+  margin: 0;
+  padding: 1px 0;
+  color: #d20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
-.emotion-24 {
+.emotion-9::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-9::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1448,15 +1513,15 @@ exports[`Form renders with error on submit 1`] = `
   flex-direction: column;
 }
 
-.emotion-23 {
+.emotion-21 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1471,43 +1536,41 @@ exports[`Form renders with error on submit 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-23 svg {
+.emotion-21 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-23 svg {
+.emotion-21 svg {
   fill: #ffffff;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-21:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-21:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-23:disabled {
+.emotion-21:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-23:disabled svg {
+.emotion-21:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -1525,14 +1588,14 @@ exports[`Form renders with error on submit 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-21 {
+.emotion-23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1541,24 +1604,21 @@ exports[`Form renders with error on submit 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-21 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-23 {
     max-width: 100%;
   }
 }
 
-.emotion-20 {
+.emotion-24 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-20::before {
+.emotion-24::before {
   content: '';
   display: block;
   height: 0;
@@ -1566,7 +1626,7 @@ exports[`Form renders with error on submit 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-20::after {
+.emotion-24::after {
   content: '';
   display: block;
   height: 0;
@@ -1574,7 +1634,202 @@ exports[`Form renders with error on submit 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-1 {
+<form>
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+        label="Email"
+      >
+        <label
+          class="emotion-2"
+          for="mock-nk-1"
+        >
+          Email
+        </label>
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="mock-nk-1-error-text"
+            aria-invalid="true"
+            class="emotion-4"
+            data-testid="text-input-email"
+            id="mock-nk-1"
+            name="email"
+            spellcheck="false"
+            type="text"
+            value="test"
+          />
+          <span
+            class="emotion-5"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              data-testid="error-icon"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="emotion-8"
+        >
+          <p
+            aria-live="polite"
+            class="emotion-9"
+            id="mock-nk-1-error-text"
+            role="alert"
+          >
+            Please provide a valid email
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+        label="Username"
+      >
+        <label
+          class="emotion-2"
+          for="mock-nk-1"
+        >
+          Username
+        </label>
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="mock-nk-1-error-text"
+            aria-invalid="true"
+            class="emotion-4"
+            data-testid="text-input-username"
+            id="mock-nk-1"
+            name="username"
+            spellcheck="false"
+            type="text"
+          />
+          <span
+            class="emotion-5"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              data-testid="error-icon"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="emotion-8"
+        >
+          <p
+            aria-live="polite"
+            class="emotion-9"
+            id="mock-nk-1-error-text"
+            role="alert"
+          >
+            Required field
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-20"
+    >
+      <button
+        class="emotion-21"
+        data-testid="submit-button"
+        type="submit"
+      >
+        <div
+          class="emotion-22"
+        >
+          <div
+            class="emotion-23"
+          >
+            <span
+              class="emotion-24"
+            >
+              Submit
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`Form renders with error with 2 onBlur 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  position: relative;
+}
+
+.emotion-4 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1590,36 +1845,33 @@ exports[`Form renders with error on submit 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
 }
 
-.emotion-1 {
+.emotion-4 {
   padding-right: 40px;
 }
 
-.emotion-1::-webkit-input-placeholder {
+.emotion-4::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::-moz-placeholder {
+.emotion-4::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-1:-ms-input-placeholder {
+.emotion-4:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::placeholder {
+.emotion-4::placeholder {
   color: #535353;
 }
 
-.emotion-1::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -1627,255 +1879,7 @@ exports[`Form renders with error on submit 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  -webkit-transform: translate(0,-65%);
-  -ms-transform: translate(0,-65%);
-  transform: translate(0,-65%);
-}
-
-.emotion-2 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #d20600;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-2.emotion-2 {
-  width: 24px;
-  height: 24px;
-  fill: #d20600;
-}
-
-.emotion-6 {
-  margin: 0;
-  padding: 1px 0;
-  color: #d20600;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-<form>
-    <div
-      class="emotion-9"
-    >
-      <div
-        class="emotion-8"
-        label="Email"
-      >
-        <label
-          class="emotion-0"
-          for="mock-nk-1"
-        >
-          Email
-        </label>
-        <div
-          class="emotion-5"
-        >
-          <input
-            aria-describedby="mock-nk-1-error-text"
-            aria-invalid="true"
-            class="emotion-1"
-            data-testid="text-input-email"
-            id="mock-nk-1"
-            name="email"
-            spellcheck="false"
-            type="text"
-            value="test"
-          />
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-2 emotion-3"
-              data-testid="error-icon"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-              />
-            </svg>
-          </span>
-        </div>
-        <div
-          class="emotion-7"
-        >
-          <p
-            aria-live="polite"
-            class="emotion-6"
-            id="mock-nk-1-error-text"
-            role="alert"
-          >
-            Please provide a valid email
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="emotion-9"
-    >
-      <div
-        class="emotion-8"
-        label="Username"
-      >
-        <label
-          class="emotion-0"
-          for="mock-nk-1"
-        >
-          Username
-        </label>
-        <div
-          class="emotion-5"
-        >
-          <input
-            aria-describedby="mock-nk-1-error-text"
-            aria-invalid="true"
-            class="emotion-1"
-            data-testid="text-input-username"
-            id="mock-nk-1"
-            name="username"
-            spellcheck="false"
-            type="text"
-          />
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-2 emotion-3"
-              data-testid="error-icon"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-              />
-            </svg>
-          </span>
-        </div>
-        <div
-          class="emotion-7"
-        >
-          <p
-            aria-live="polite"
-            class="emotion-6"
-            id="mock-nk-1-error-text"
-            role="alert"
-          >
-            Required field
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="emotion-24"
-    >
-      <button
-        class="emotion-23"
-        data-testid="submit-button"
-        type="submit"
-      >
-        <div
-          class="emotion-22"
-        >
-          <div
-            class="emotion-21"
-          >
-            <span
-              class="emotion-20"
-            >
-              Submit
-            </span>
-          </div>
-        </div>
-      </button>
-    </div>
-  </form>
-</DocumentFragment>
-`;
-
-exports[`Form renders with error with 2 onBlur 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: block;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-0 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -1884,10 +1888,66 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-5 {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translate(0, -65%);
+  -moz-transform: translate(0, -65%);
+  -ms-transform: translate(0, -65%);
+  transform: translate(0, -65%);
 }
 
-.emotion-11 {
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #d20600;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  fill: #d20600;
+}
+
+.emotion-8 {
+  min-height: 12px;
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+  color: #d20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-9::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-9::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-14 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1902,46 +1962,43 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
 }
 
-.emotion-11::-webkit-input-placeholder {
+.emotion-14::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-11::-moz-placeholder {
+.emotion-14::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-11:-ms-input-placeholder {
+.emotion-14:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-11::placeholder {
+.emotion-14::placeholder {
   color: #535353;
 }
 
-.emotion-11:focus:not(:disabled) {
+.emotion-14:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-14:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-11:disabled {
+.emotion-14:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-11::before {
+.emotion-14::before {
   content: '';
   display: block;
   height: 0;
@@ -1949,7 +2006,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-11::after {
+.emotion-14::after {
   content: '';
   display: block;
   height: 0;
@@ -1957,11 +2014,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-7 {
-  min-height: 12px;
-}
-
-.emotion-13 {
+.emotion-16 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -1969,17 +2022,14 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-13:disabled {
+.emotion-16:disabled {
   color: #c0c0c0;
 }
 
-.emotion-13::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -1987,7 +2037,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -1995,11 +2045,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-9 {
-  margin-bottom: 24px;
-}
-
-.emotion-21 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2009,15 +2055,15 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   flex-direction: column;
 }
 
-.emotion-20 {
+.emotion-18 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2032,43 +2078,41 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-20 svg {
+.emotion-18 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-20 svg {
+.emotion-18 svg {
   fill: #ffffff;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-18:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-20:active:not(:disabled) {
+.emotion-18:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-20:disabled {
+.emotion-18:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-20:disabled svg {
+.emotion-18:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -2086,14 +2130,14 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-18 {
+.emotion-20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2102,24 +2146,21 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-18 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-20 {
     max-width: 100%;
   }
 }
 
-.emotion-17 {
+.emotion-21 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-17::before {
+.emotion-21::before {
   content: '';
   display: block;
   height: 0;
@@ -2127,7 +2168,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-17::after {
+.emotion-21::after {
   content: '';
   display: block;
   height: 0;
@@ -2135,49 +2176,152 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #ef1703;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  caret-color: #d20600;
+<form>
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+        label="Email"
+      >
+        <label
+          class="emotion-2"
+          for="mock-nk-1"
+        >
+          Email
+        </label>
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="mock-nk-1-error-text"
+            aria-invalid="true"
+            class="emotion-4"
+            data-testid="text-input-email"
+            id="mock-nk-1"
+            name="email"
+            spellcheck="false"
+            type="text"
+            value="test"
+          />
+          <span
+            class="emotion-5"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              data-testid="error-icon"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="emotion-8"
+        >
+          <p
+            aria-live="polite"
+            class="emotion-9"
+            id="mock-nk-1-error-text"
+            role="alert"
+          >
+            Please provide a valid email
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <div
+        class="emotion-1"
+        label="Username"
+      >
+        <label
+          class="emotion-2"
+          for="mock-nk-1"
+        >
+          Username
+        </label>
+        <div
+          class="emotion-3"
+        >
+          <input
+            aria-describedby="mock-nk-1-assistive-text"
+            aria-invalid="false"
+            class="emotion-14"
+            data-testid="text-input-username"
+            id="mock-nk-1"
+            name="username"
+            spellcheck="false"
+            type="text"
+          />
+        </div>
+        <div
+          class="emotion-8"
+        >
+          <p
+            class="emotion-16"
+            id="mock-nk-1-assistive-text"
+          >
+            Your username
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <button
+        class="emotion-18"
+        data-testid="submit-button"
+        type="submit"
+      >
+        <div
+          class="emotion-19"
+        >
+          <div
+            class="emotion-20"
+          >
+            <span
+              class="emotion-21"
+            >
+              Submit
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`Form renders with inputs 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: block;
+  color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  font-weight: 500;
   letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
+  margin-bottom: 16px;
+  margin-right: 4px;
 }
 
-.emotion-1 {
-  padding-right: 40px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
+.emotion-1 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-1::before {
@@ -2196,46 +2340,311 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-top: -0.4625em;
 }
 
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-3:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  -webkit-transform: translate(0,-65%);
-  -ms-transform: translate(0,-65%);
-  transform: translate(0,-65%);
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<form>
+    <div
+      class="emotion-0"
+      label="Email"
+    >
+      <label
+        class="emotion-1"
+        for="mock-nk-1"
+      >
+        Email
+      </label>
+      <div
+        class="emotion-2"
+      >
+        <input
+          aria-describedby="mock-nk-1-assistive-text"
+          aria-invalid="false"
+          class="emotion-3"
+          id="mock-nk-1"
+          name="email"
+          spellcheck="false"
+          type="text"
+        />
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <p
+          class="emotion-5"
+          id="mock-nk-1-assistive-text"
+        >
+          Your email
+        </p>
+      </div>
+    </div>
+    <div
+      class="emotion-0"
+      label="Username"
+    >
+      <label
+        class="emotion-1"
+        for="mock-nk-1"
+      >
+        Username
+      </label>
+      <div
+        class="emotion-2"
+      >
+        <input
+          aria-describedby="mock-nk-1-assistive-text"
+          aria-invalid="false"
+          class="emotion-3"
+          id="mock-nk-1"
+          name="username"
+          spellcheck="false"
+          type="text"
+        />
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <p
+          class="emotion-5"
+          id="mock-nk-1-assistive-text"
+        >
+          Your username
+        </p>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`Form renders with nested inputs 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 24px;
 }
 
 .emotion-2 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #d20600;
-  vertical-align: unset;
-  display: inline-block;
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
 }
 
-.emotion-2.emotion-2 {
-  width: 24px;
-  height: 24px;
-  fill: #d20600;
+.emotion-2 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  position: relative;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-4:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-4:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-5 {
+  min-height: 12px;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #d20600;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
+}
+
+.emotion-6:disabled {
+  color: #c0c0c0;
 }
 
 .emotion-6::before {
@@ -2254,512 +2663,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
-    <div
-      class="emotion-9"
-    >
-      <div
-        class="emotion-8"
-        label="Email"
-      >
-        <label
-          class="emotion-0"
-          for="mock-nk-1"
-        >
-          Email
-        </label>
-        <div
-          class="emotion-5"
-        >
-          <input
-            aria-describedby="mock-nk-1-error-text"
-            aria-invalid="true"
-            class="emotion-1"
-            data-testid="text-input-email"
-            id="mock-nk-1"
-            name="email"
-            spellcheck="false"
-            type="text"
-            value="test"
-          />
-          <span
-            class="emotion-4"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-2 emotion-3"
-              data-testid="error-icon"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-              />
-            </svg>
-          </span>
-        </div>
-        <div
-          class="emotion-7"
-        >
-          <p
-            aria-live="polite"
-            class="emotion-6"
-            id="mock-nk-1-error-text"
-            role="alert"
-          >
-            Please provide a valid email
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="emotion-9"
-    >
-      <div
-        class="emotion-8"
-        label="Username"
-      >
-        <label
-          class="emotion-0"
-          for="mock-nk-1"
-        >
-          Username
-        </label>
-        <div
-          class="emotion-5"
-        >
-          <input
-            aria-describedby="mock-nk-1-assistive-text"
-            aria-invalid="false"
-            class="emotion-11"
-            data-testid="text-input-username"
-            id="mock-nk-1"
-            name="username"
-            spellcheck="false"
-            type="text"
-          />
-        </div>
-        <div
-          class="emotion-7"
-        >
-          <p
-            class="emotion-13"
-            id="mock-nk-1-assistive-text"
-          >
-            Your username
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="emotion-21"
-    >
-      <button
-        class="emotion-20"
-        data-testid="submit-button"
-        type="submit"
-      >
-        <div
-          class="emotion-19"
-        >
-          <div
-            class="emotion-18"
-          >
-            <span
-              class="emotion-17"
-            >
-              Submit
-            </span>
-          </div>
-        </div>
-      </button>
-    </div>
-  </form>
-</DocumentFragment>
-`;
-
-exports[`Form renders with inputs 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: block;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-0 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
-  min-height: 12px;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-<form>
-    <div
-      class="emotion-5"
-      label="Email"
-    >
-      <label
-        class="emotion-0"
-        for="mock-nk-1"
-      >
-        Email
-      </label>
-      <div
-        class="emotion-2"
-      >
-        <input
-          aria-describedby="mock-nk-1-assistive-text"
-          aria-invalid="false"
-          class="emotion-1"
-          id="mock-nk-1"
-          name="email"
-          spellcheck="false"
-          type="text"
-        />
-      </div>
-      <div
-        class="emotion-4"
-      >
-        <p
-          class="emotion-3"
-          id="mock-nk-1-assistive-text"
-        >
-          Your email
-        </p>
-      </div>
-    </div>
-    <div
-      class="emotion-5"
-      label="Username"
-    >
-      <label
-        class="emotion-0"
-        for="mock-nk-1"
-      >
-        Username
-      </label>
-      <div
-        class="emotion-2"
-      >
-        <input
-          aria-describedby="mock-nk-1-assistive-text"
-          aria-invalid="false"
-          class="emotion-1"
-          id="mock-nk-1"
-          name="username"
-          spellcheck="false"
-          type="text"
-        />
-      </div>
-      <div
-        class="emotion-4"
-      >
-        <p
-          class="emotion-3"
-          id="mock-nk-1-assistive-text"
-        >
-          Your username
-        </p>
-      </div>
-    </div>
-  </form>
-</DocumentFragment>
-`;
-
-exports[`Form renders with nested inputs 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: block;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-0 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-2 {
-  position: relative;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  width: 100%;
-  cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2e2e2e;
-  text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  margin-bottom: 8px;
-  min-height: 48px;
-}
-
-.emotion-1::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-1:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-1::placeholder {
-  color: #535353;
-}
-
-.emotion-1:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
-.emotion-4 {
-  min-height: 12px;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-3:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-6 {
-  margin-bottom: 24px;
-}
-
-.emotion-18 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2769,15 +2673,15 @@ exports[`Form renders with nested inputs 1`] = `
   flex-direction: column;
 }
 
-.emotion-17 {
+.emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2792,43 +2696,41 @@ exports[`Form renders with nested inputs 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-17 svg {
+.emotion-15 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-17 svg {
+.emotion-15 svg {
   fill: #ffffff;
 }
 
-.emotion-17:hover:not(:disabled) {
+.emotion-15:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-17:active:not(:disabled) {
+.emotion-15:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-17:disabled {
+.emotion-15:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-17:disabled svg {
+.emotion-15:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -2846,14 +2748,14 @@ exports[`Form renders with nested inputs 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2862,24 +2764,21 @@ exports[`Form renders with nested inputs 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-15 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-17 {
     max-width: 100%;
   }
 }
 
-.emotion-14 {
+.emotion-18 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-14::before {
+.emotion-18::before {
   content: '';
   display: block;
   height: 0;
@@ -2887,7 +2786,7 @@ exports[`Form renders with nested inputs 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-14::after {
+.emotion-18::after {
   content: '';
   display: block;
   height: 0;
@@ -2897,25 +2796,25 @@ exports[`Form renders with nested inputs 1`] = `
 
 <form>
     <div
-      class="emotion-6"
+      class="emotion-0"
     >
       <div
-        class="emotion-5"
+        class="emotion-1"
         label="Email"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Email
         </label>
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-assistive-text"
             aria-invalid="false"
-            class="emotion-1"
+            class="emotion-4"
             data-testid="text-input-email"
             id="mock-nk-1"
             name="email"
@@ -2925,10 +2824,10 @@ exports[`Form renders with nested inputs 1`] = `
           />
         </div>
         <div
-          class="emotion-4"
+          class="emotion-5"
         >
           <p
-            class="emotion-3"
+            class="emotion-6"
             id="mock-nk-1-assistive-text"
           >
             Your email
@@ -2937,25 +2836,25 @@ exports[`Form renders with nested inputs 1`] = `
       </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-0"
     >
       <div
-        class="emotion-5"
+        class="emotion-1"
         label="Username"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Username
         </label>
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-assistive-text"
             aria-invalid="false"
-            class="emotion-1"
+            class="emotion-4"
             data-testid="text-input-username"
             id="mock-nk-1"
             name="username"
@@ -2964,10 +2863,10 @@ exports[`Form renders with nested inputs 1`] = `
           />
         </div>
         <div
-          class="emotion-4"
+          class="emotion-5"
         >
           <p
-            class="emotion-3"
+            class="emotion-6"
             id="mock-nk-1-assistive-text"
           >
             Your username
@@ -2976,10 +2875,10 @@ exports[`Form renders with nested inputs 1`] = `
       </div>
     </div>
     <div
-      class="emotion-18"
+      class="emotion-14"
     >
       <button
-        class="emotion-17"
+        class="emotion-15"
         data-testid="submit-button"
         type="submit"
       >
@@ -2987,10 +2886,10 @@ exports[`Form renders with nested inputs 1`] = `
           class="emotion-16"
         >
           <div
-            class="emotion-15"
+            class="emotion-17"
           >
             <span
-              class="emotion-14"
+              class="emotion-18"
             >
               Submit
             </span>
@@ -3005,25 +2904,26 @@ exports[`Form renders with nested inputs 1`] = `
 exports[`Form renders with onBlur validation 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
   display: block;
   color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #0a0a0a;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -3031,7 +2931,7 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -3039,11 +2939,11 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
 }
 
-.emotion-1 {
+.emotion-4 {
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -3058,46 +2958,43 @@ exports[`Form renders with onBlur validation 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
 }
 
-.emotion-1::-webkit-input-placeholder {
+.emotion-4::-webkit-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::-moz-placeholder {
+.emotion-4::-moz-placeholder {
   color: #535353;
 }
 
-.emotion-1:-ms-input-placeholder {
+.emotion-4:-ms-input-placeholder {
   color: #535353;
 }
 
-.emotion-1::placeholder {
+.emotion-4::placeholder {
   color: #535353;
 }
 
-.emotion-1:focus:not(:disabled) {
+.emotion-4:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-1:disabled {
+.emotion-4:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -3105,7 +3002,7 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-bottom: -0.4em;
 }
 
-.emotion-1::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -3113,11 +3010,11 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-4 {
+.emotion-5 {
   min-height: 12px;
 }
 
-.emotion-3 {
+.emotion-6 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -3125,17 +3022,14 @@ exports[`Form renders with onBlur validation 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-3:disabled {
+.emotion-6:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -3143,7 +3037,7 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-3::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -3151,11 +3045,7 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-6 {
-  margin-bottom: 24px;
-}
-
-.emotion-18 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3165,15 +3055,15 @@ exports[`Form renders with onBlur validation 1`] = `
   flex-direction: column;
 }
 
-.emotion-17 {
+.emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3188,43 +3078,41 @@ exports[`Form renders with onBlur validation 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
 }
 
-.emotion-17 svg {
+.emotion-15 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-17 svg {
+.emotion-15 svg {
   fill: #ffffff;
 }
 
-.emotion-17:hover:not(:disabled) {
+.emotion-15:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-17:active:not(:disabled) {
+.emotion-15:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-17:disabled {
+.emotion-15:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-17:disabled svg {
+.emotion-15:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -3242,14 +3130,14 @@ exports[`Form renders with onBlur validation 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3258,24 +3146,21 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-15 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-17 {
     max-width: 100%;
   }
 }
 
-.emotion-14 {
+.emotion-18 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-14::before {
+.emotion-18::before {
   content: '';
   display: block;
   height: 0;
@@ -3283,7 +3168,7 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-14::after {
+.emotion-18::after {
   content: '';
   display: block;
   height: 0;
@@ -3293,25 +3178,25 @@ exports[`Form renders with onBlur validation 1`] = `
 
 <form>
     <div
-      class="emotion-6"
+      class="emotion-0"
     >
       <div
-        class="emotion-5"
+        class="emotion-1"
         label="Email"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Email
         </label>
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-assistive-text"
             aria-invalid="false"
-            class="emotion-1"
+            class="emotion-4"
             data-testid="text-input-email"
             id="mock-nk-1"
             name="email"
@@ -3321,10 +3206,10 @@ exports[`Form renders with onBlur validation 1`] = `
           />
         </div>
         <div
-          class="emotion-4"
+          class="emotion-5"
         >
           <p
-            class="emotion-3"
+            class="emotion-6"
             id="mock-nk-1-assistive-text"
           >
             Your email
@@ -3333,25 +3218,25 @@ exports[`Form renders with onBlur validation 1`] = `
       </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-0"
     >
       <div
-        class="emotion-5"
+        class="emotion-1"
         label="Username"
       >
         <label
-          class="emotion-0"
+          class="emotion-2"
           for="mock-nk-1"
         >
           Username
         </label>
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <input
             aria-describedby="mock-nk-1-assistive-text"
             aria-invalid="false"
-            class="emotion-1"
+            class="emotion-4"
             data-testid="text-input-username"
             id="mock-nk-1"
             name="username"
@@ -3360,10 +3245,10 @@ exports[`Form renders with onBlur validation 1`] = `
           />
         </div>
         <div
-          class="emotion-4"
+          class="emotion-5"
         >
           <p
-            class="emotion-3"
+            class="emotion-6"
             id="mock-nk-1-assistive-text"
           >
             Your username
@@ -3372,10 +3257,10 @@ exports[`Form renders with onBlur validation 1`] = `
       </div>
     </div>
     <div
-      class="emotion-18"
+      class="emotion-14"
     >
       <button
-        class="emotion-17"
+        class="emotion-15"
         data-testid="submit-button"
         type="submit"
       >
@@ -3383,10 +3268,10 @@ exports[`Form renders with onBlur validation 1`] = `
           class="emotion-16"
         >
           <div
-            class="emotion-15"
+            class="emotion-17"
           >
             <span
-              class="emotion-14"
+              class="emotion-18"
             >
               Submit
             </span>

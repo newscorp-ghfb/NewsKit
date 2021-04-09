@@ -2,7 +2,7 @@
 
 exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16,14 +16,14 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -32,17 +32,17 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-0 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{}"
@@ -52,7 +52,7 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
       </span>
     </div>
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{
@@ -64,7 +64,7 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
       />
     </div>
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{}"
@@ -83,7 +83,7 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
       </span>
     </div>
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{
@@ -95,7 +95,7 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
       />
     </div>
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{}"
@@ -119,7 +119,7 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
 
 exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardReturn for the Rtn key 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -133,14 +133,14 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardRetu
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -149,17 +149,17 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardRetu
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-0 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{}"
@@ -183,7 +183,7 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardRetu
 
 exports[`MonoKeyboard with single key should render with no icon for unrecognised key 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,14 +197,14 @@ exports[`MonoKeyboard with single key should render with no icon for unrecognise
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -213,17 +213,17 @@ exports[`MonoKeyboard with single key should render with no icon for unrecognise
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-0 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
     max-width: 100%;
   }
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       <span
         data-props="{}"

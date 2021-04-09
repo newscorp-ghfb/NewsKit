@@ -3,7 +3,7 @@
 exports[`Overlay when closed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -26,7 +26,7 @@ exports[`Overlay when closed 1`] = `
 exports[`Overlay when hidden at breakpoint 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -39,7 +39,7 @@ exports[`Overlay when hidden at breakpoint 1`] = `
   transition: opacity 0.6s,right 0.3s;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     display: none;
   }
@@ -55,7 +55,7 @@ exports[`Overlay when hidden at breakpoint 1`] = `
 exports[`Overlay when open 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   overflow: auto;
   bottom: 0;
@@ -78,7 +78,7 @@ exports[`Overlay when open 1`] = `
 exports[`Overlay with z-index 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   overflow: auto;
   bottom: 0;

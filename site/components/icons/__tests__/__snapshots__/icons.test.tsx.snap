@@ -2,7 +2,7 @@
 
 exports[`Icons CheckIcon icon renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -12,15 +12,15 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   flex-direction: column;
 }
 
-.emotion-4 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -34,6 +34,7 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   border-style: solid;
@@ -43,16 +44,16 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   border-width: 1px;
 }
 
-.emotion-4 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-4 svg {
+.emotion-1 svg {
   fill: #148F39;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -66,14 +67,14 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -82,13 +83,13 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
     max-width: 100%;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -97,28 +98,28 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-4.emotion-4 {
   width: 32px;
   height: 32px;
   fill: #148F39;
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
   >
     <div
-      class="emotion-4"
+      class="emotion-1"
       data-testid="flag"
     >
       <div
-        class="emotion-3"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -141,7 +142,7 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
 
 exports[`Icons CrossIcon icon renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -151,51 +152,15 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   flex-direction: column;
 }
 
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -209,6 +174,7 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   border-style: solid;
@@ -218,16 +184,52 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   border-width: 1px;
 }
 
-.emotion-4 svg {
+.emotion-1 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-4 svg {
+.emotion-1 svg {
   fill: #D23F2D;
 }
 
-.emotion-0 {
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -236,28 +238,28 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-4.emotion-4 {
   width: 32px;
   height: 32px;
   fill: #D23F2D;
 }
 
 <div
-    class="emotion-5"
+    class="emotion-0"
   >
     <div
-      class="emotion-4"
+      class="emotion-1"
       data-testid="flag"
     >
       <div
-        class="emotion-3"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"

@@ -10,9 +10,6 @@ exports[`DateTime renders with fallback formatting 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   white-space: pre;
@@ -57,9 +54,6 @@ exports[`DateTime renders with overrides 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   white-space: pre;
@@ -88,9 +82,6 @@ exports[`DateTime renders with overrides 1`] = `
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   white-space: pre;
@@ -142,9 +133,6 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   white-space: pre;

@@ -2,47 +2,44 @@
 
 exports[`Link does not render the external icon even if the href is external 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
-.emotion-2 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
@@ -61,12 +58,12 @@ exports[`Link does not render the external icon even if the href is external 1`]
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
@@ -74,14 +71,14 @@ exports[`Link does not render the external icon even if the href is external 1`]
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="www.google.it"
   >
     <span
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         test link text
       </span>
@@ -92,47 +89,44 @@ exports[`Link does not render the external icon even if the href is external 1`]
 
 exports[`Link does not render the external icon if the href is internal 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
-.emotion-2 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
@@ -151,12 +145,12 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
@@ -164,14 +158,14 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="relative"
   >
     <span
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         test link text
       </span>
@@ -182,47 +176,44 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 
 exports[`Link renders as expected in default state 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
-.emotion-2 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
@@ -241,12 +232,12 @@ exports[`Link renders as expected in default state 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
@@ -254,14 +245,14 @@ exports[`Link renders as expected in default state 1`] = `
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="#"
   >
     <span
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         test link test
       </span>
@@ -272,59 +263,49 @@ exports[`Link renders as expected in default state 1`] = `
 
 exports[`Link renders the external icon even if the href is internal 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
-.emotion-6 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-6:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-6:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-6 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-0 {
-  margin: 0;
-  padding: 1px 0;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-5 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -338,14 +319,14 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -354,13 +335,20 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-2 {
     max-width: 100%;
   }
 }
 
-.emotion-2 {
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -369,32 +357,32 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   display: inline-block;
 }
 
-.emotion-2.emotion-2 {
+.emotion-5.emotion-5 {
   width: 16px;
   height: 16px;
 }
 
 <a
-    class="emotion-6"
+    class="emotion-0"
     href="/relative"
   >
     <span
-      class="emotion-5"
+      class="emotion-1"
     >
       <span
-        class="emotion-1"
+        class="emotion-2"
       >
         <span
-          class="emotion-0"
+          class="emotion-3"
         >
           test link text
         </span>
       </span>
       <span
-        class="emotion-1"
+        class="emotion-2"
       >
         <svg
-          class="emotion-2 emotion-3"
+          class="emotion-5 emotion-6"
           fill="currentColor"
           focusable="false"
           role="img"
@@ -420,47 +408,44 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 
 exports[`Link renders the external icon if the href is external 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
 }
 
-.emotion-2 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
@@ -479,12 +464,12 @@ exports[`Link renders the external icon if the href is external 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   display: inline-block;
@@ -492,14 +477,14 @@ exports[`Link renders the external icon if the href is external 1`] = `
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="www.google.it"
   >
     <span
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         test link text
       </span>
@@ -510,7 +495,29 @@ exports[`Link renders the external icon if the href is external 1`] = `
 
 exports[`Link renders with overrides 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #ef1703;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #a60100;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #23a248;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -524,52 +531,24 @@ exports[`Link renders with overrides 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
 .emotion-2 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #ef1703;
-}
-
-.emotion-2:visited:not(:disabled) {
-  color: #a60100;
-}
-
-.emotion-2:hover:not(:disabled) {
-  color: #23a248;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-0 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -577,7 +556,7 @@ exports[`Link renders with overrides 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -586,14 +565,14 @@ exports[`Link renders with overrides 1`] = `
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="#"
   >
     <span
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         test link test
       </span>
@@ -604,7 +583,55 @@ exports[`Link renders with overrides 1`] = `
 
 exports[`LinkStandalone renders as expected in default state 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #0a68c1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #7547a3;
+}
+
+.emotion-0:visited:not(:disabled) svg {
+  fill: #7547a3;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -618,27 +645,24 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -646,7 +670,7 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -654,66 +678,15 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-2 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-2 svg {
-  fill: #0a68c1;
-}
-
-.emotion-2:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-2:active:not(:disabled) {
-  color: #01396e;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-2:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-2:visited:not(:disabled) svg {
-  fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    vertical-align: text-bottom;
-  }
-}
-
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="#"
   >
     <span
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         test link test
       </span>

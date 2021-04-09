@@ -2,42 +2,36 @@
 
 exports[`Scroll renders horizontal scroll when no properties are set 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
-.emotion-0::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-0 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="horizontal"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -55,39 +49,16 @@ exports[`Scroll renders horizontal scroll with hidden arrows 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  height: 100%;
-  overflow-x: auto;
-  overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
-}
-
-.emotion-0::-webkit-scrollbar {
-  display: none;
-}
-
-.emotion-0 {
-  -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
-  scrollbar-width: none;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-1 button {
+.emotion-0 button {
   display: none;
 }
 
-.emotion-1:hover button {
+.emotion-0:hover button {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -96,17 +67,34 @@ exports[`Scroll renders horizontal scroll with hidden arrows 1`] = `
   animation: fade-in 1s;
 }
 
-.emotion-1:not(:hover) button {
+.emotion-0:not(:hover) button {
   -webkit-animation: fade-out 1s;
   animation: fade-out 1s;
 }
 
+.emotion-1 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.emotion-1::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-1 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="horizontal"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -122,42 +110,36 @@ exports[`Scroll renders horizontal scroll with hidden arrows 1`] = `
 
 exports[`Scroll renders horizontal scroll with visible arrows 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
-.emotion-0::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-0 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="horizontal"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -173,42 +155,36 @@ exports[`Scroll renders horizontal scroll with visible arrows 1`] = `
 
 exports[`Scroll renders scroll with overriden arrows style 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
-.emotion-0::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-0 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="horizontal"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -224,42 +200,36 @@ exports[`Scroll renders scroll with overriden arrows style 1`] = `
 
 exports[`Scroll renders vertical scroll 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
-.emotion-0::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-0 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="vertical"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -277,39 +247,16 @@ exports[`Scroll renders vertical scroll with hidden arrows 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  height: 100%;
-  overflow-x: auto;
-  overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
-}
-
-.emotion-0::-webkit-scrollbar {
-  display: none;
-}
-
-.emotion-0 {
-  -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
-  scrollbar-width: none;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-1 button {
+.emotion-0 button {
   display: none;
 }
 
-.emotion-1:hover button {
+.emotion-0:hover button {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -318,17 +265,34 @@ exports[`Scroll renders vertical scroll with hidden arrows 1`] = `
   animation: fade-in 1s;
 }
 
-.emotion-1:not(:hover) button {
+.emotion-0:not(:hover) button {
   -webkit-animation: fade-out 1s;
   animation: fade-out 1s;
 }
 
+.emotion-1 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.emotion-1::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-1 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="vertical"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -344,42 +308,36 @@ exports[`Scroll renders vertical scroll with hidden arrows 1`] = `
 
 exports[`Scroll renders vertical scroll with visible arrows 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
-.emotion-0::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-0 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="vertical"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -395,42 +353,36 @@ exports[`Scroll renders vertical scroll with visible arrows 1`] = `
 
 exports[`ScrollSnapAlignment ScrollBar Hide horizontal scroll bar on a horizontal scroll 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
-.emotion-0::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-0 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="horizontal"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -446,30 +398,27 @@ exports[`ScrollSnapAlignment ScrollBar Hide horizontal scroll bar on a horizonta
 
 exports[`ScrollSnapAlignment ScrollBar Show horizontal scroll bar on a horizontal scroll 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="horizontal"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -485,30 +434,27 @@ exports[`ScrollSnapAlignment ScrollBar Show horizontal scroll bar on a horizonta
 
 exports[`ScrollSnapAlignment ScrollBar Show vertical scroll bar on a vertical scroll 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
       aria-orientation="vertical"
-      class="emotion-0"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
@@ -525,9 +471,6 @@ exports[`ScrollSnapAlignment ScrollBar Show vertical scroll bar on a vertical sc
 exports[`ScrollSnapAlignment renders div with snap-align css styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  -webkit-scroll-snap-align: end;
-  -moz-scroll-snap-align: end;
-  -ms-scroll-snap-align: end;
   scroll-snap-align: end;
 }
 
@@ -545,58 +488,46 @@ exports[`ScrollSnapAlignment renders div with snap-align css styles 1`] = `
 
 exports[`ScrollSnapAlignment renders scroll with snapping enabled 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
-  -webkit-scroll-snap-type: x mandatory;
-  -moz-scroll-snap-type: x mandatory;
-  -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
 }
 
-.emotion-3::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-3 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
-.emotion-0 {
-  -webkit-scroll-snap-align: start;
-  -moz-scroll-snap-align: start;
-  -ms-scroll-snap-align: start;
+.emotion-2 {
   scroll-snap-align: start;
 }
 
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
       aria-orientation="horizontal"
-      class="emotion-3"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
       >
         <div>
           1
@@ -604,7 +535,7 @@ exports[`ScrollSnapAlignment renders scroll with snapping enabled 1`] = `
       </div>
       ,
       <div
-        class="emotion-0"
+        class="emotion-2"
       >
         <div>
           2
@@ -612,7 +543,7 @@ exports[`ScrollSnapAlignment renders scroll with snapping enabled 1`] = `
       </div>
       ,
       <div
-        class="emotion-0"
+        class="emotion-2"
       >
         <div>
           3
@@ -626,58 +557,46 @@ exports[`ScrollSnapAlignment renders scroll with snapping enabled 1`] = `
 
 exports[`ScrollSnapAlignment renders vertical scroll with snapping enabled 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-0 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-0 {
-  -webkit-scroll-snap-align: start;
-  -moz-scroll-snap-align: start;
-  -ms-scroll-snap-align: start;
-  scroll-snap-align: start;
-}
-
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
-  -webkit-scroll-snap-type: y mandatory;
-  -moz-scroll-snap-type: y mandatory;
-  -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
 }
 
-.emotion-3::-webkit-scrollbar {
+.emotion-1::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-3 {
+.emotion-1 {
   -ms-overflow-style: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
   scrollbar-width: none;
 }
 
+.emotion-2 {
+  scroll-snap-align: start;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
       aria-orientation="vertical"
-      class="emotion-3"
+      class="emotion-1"
       data-testid="scroll-container"
       tabindex="0"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
       >
         <div>
           1
@@ -685,7 +604,7 @@ exports[`ScrollSnapAlignment renders vertical scroll with snapping enabled 1`] =
       </div>
       ,
       <div
-        class="emotion-0"
+        class="emotion-2"
       >
         <div>
           2
@@ -693,7 +612,7 @@ exports[`ScrollSnapAlignment renders vertical scroll with snapping enabled 1`] =
       </div>
       ,
       <div
-        class="emotion-0"
+        class="emotion-2"
       >
         <div>
           3

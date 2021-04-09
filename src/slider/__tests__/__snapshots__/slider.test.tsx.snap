@@ -2,7 +2,7 @@
 
 exports[`slider labels should be rendered in horisontal slider with labelContainer and LabelPosition.Before 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,6 +15,7 @@ exports[`slider labels should be rendered in horisontal slider with labelContain
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -26,8 +27,8 @@ exports[`slider labels should be rendered in horisontal slider with labelContain
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   position: relative;
@@ -39,7 +40,7 @@ exports[`slider labels should be rendered in horisontal slider with labelContain
   padding: 0 calc(32px / 2);
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,19 +59,18 @@ exports[`slider labels should be rendered in horisontal slider with labelContain
   flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
     data-testid="slider"
   >
     <div
       class="emotion-1"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
       />
     </div>
     <div>
@@ -82,7 +82,7 @@ exports[`slider labels should be rendered in horisontal slider with labelContain
 
 exports[`slider labels should be rendered in vertical slider with labelContainer and LabelPosition.After 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -95,6 +95,7 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -106,8 +107,8 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   position: relative;
 }
@@ -118,7 +119,7 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   padding: calc(32px / 2) 0;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -137,12 +138,11 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
     data-testid="slider"
   >
     <div>
@@ -152,7 +152,7 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
       class="emotion-1"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
       />
     </div>
   </div>
@@ -161,7 +161,7 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
 
 exports[`slider labels should be rendered in vertical slider with labelContainer and LabelPosition.Before 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -174,6 +174,7 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -185,8 +186,8 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   position: relative;
 }
@@ -197,7 +198,7 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   padding: calc(32px / 2) 0;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -216,19 +217,18 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
     data-testid="slider"
   >
     <div
       class="emotion-1"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
       />
     </div>
     <div>
@@ -258,8 +258,8 @@ exports[`slider labels should not render labels by default 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   position: relative;
@@ -278,7 +278,7 @@ exports[`slider labels should not render labels by default 1`] = `
 
 exports[`slider labels should render custom component min, max labels 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -296,39 +296,11 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   position: relative;
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-right: 12px;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
 }
 
 .emotion-1 {
@@ -336,11 +308,8 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .emotion-1::before {
@@ -359,12 +328,37 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-left: 12px;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-2"
+    class="emotion-0"
     data-testid="slider"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
       data-testid="min-label"
     >
       <span>
@@ -375,7 +369,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
       react-range
     </div>
     <div
-      class="emotion-1"
+      class="emotion-2"
       data-testid="max-label"
     >
       <span>
@@ -388,7 +382,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
 
 exports[`slider labels should render horizontal labels 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -406,52 +400,11 @@ exports[`slider labels should render horizontal labels 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   position: relative;
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #535353;
-  margin-right: 12px;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-0 svg {
-  fill: #535353;
-}
-
-.emotion-0:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-0:disabled svg {
-  fill: #c0c0c0;
 }
 
 .emotion-1 {
@@ -459,9 +412,132 @@ exports[`slider labels should render horizontal labels 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #535353;
+  margin-right: 12px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-1 svg {
+  fill: #535353;
+}
+
+.emotion-1:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-1:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #535353;
+  margin-left: 12px;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 svg {
+  fill: #535353;
+}
+
+.emotion-2:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-2:disabled svg {
+  fill: #c0c0c0;
+}
+
+<div
+    class="emotion-0"
+    data-testid="slider"
+  >
+    <div
+      class="emotion-1"
+      data-testid="min-label"
+    >
+      0
+    </div>
+    <div>
+      react-range
+    </div>
+    <div
+      class="emotion-2"
+      data-testid="max-label"
+    >
+      100
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should render max label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
   letter-spacing: 0;
   color: #535353;
   margin-left: 12px;
@@ -496,105 +572,14 @@ exports[`slider labels should render horizontal labels 1`] = `
 }
 
 <div
-    class="emotion-2"
+    class="emotion-0"
     data-testid="slider"
   >
-    <div
-      class="emotion-0"
-      data-testid="min-label"
-    >
-      0
-    </div>
     <div>
       react-range
     </div>
     <div
       class="emotion-1"
-      data-testid="max-label"
-    >
-      100
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`slider labels should render max label 1`] = `
-<DocumentFragment>
-  .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #535353;
-  margin-left: 12px;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-0 svg {
-  fill: #535353;
-}
-
-.emotion-0:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-0:disabled svg {
-  fill: #c0c0c0;
-}
-
-<div
-    class="emotion-1"
-    data-testid="slider"
-  >
-    <div>
-      react-range
-    </div>
-    <div
-      class="emotion-0"
       data-testid="max-label"
     >
       0
@@ -605,7 +590,7 @@ exports[`slider labels should render max label 1`] = `
 
 exports[`slider labels should render min label 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -623,27 +608,24 @@ exports[`slider labels should render min label 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
   position: relative;
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
   margin-right: 12px;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   display: block;
   height: 0;
@@ -651,7 +633,7 @@ exports[`slider labels should render min label 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   display: block;
   height: 0;
@@ -659,24 +641,24 @@ exports[`slider labels should render min label 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-0:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
 <div
-    class="emotion-1"
+    class="emotion-0"
     data-testid="slider"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
       data-testid="min-label"
     >
       0
@@ -690,7 +672,7 @@ exports[`slider labels should render min label 1`] = `
 
 exports[`slider labels should render vertical labels 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -708,51 +690,10 @@ exports[`slider labels should render vertical labels 1`] = `
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   position: relative;
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #535353;
-  margin-top: 12px;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-0 svg {
-  fill: #535353;
-}
-
-.emotion-0:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-0:disabled svg {
-  fill: #c0c0c0;
 }
 
 .emotion-1 {
@@ -760,12 +701,9 @@ exports[`slider labels should render vertical labels 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
-  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .emotion-1::before {
@@ -796,12 +734,50 @@ exports[`slider labels should render vertical labels 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #535353;
+  margin-bottom: 12px;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 svg {
+  fill: #535353;
+}
+
+.emotion-2:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-2:disabled svg {
+  fill: #c0c0c0;
+}
+
 <div
-    class="emotion-2"
+    class="emotion-0"
     data-testid="slider"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
       data-testid="min-label"
     >
       0
@@ -810,7 +786,7 @@ exports[`slider labels should render vertical labels 1`] = `
       react-range
     </div>
     <div
-      class="emotion-1"
+      class="emotion-2"
       data-testid="max-label"
     >
       100
@@ -831,8 +807,8 @@ exports[`slider react-range Range function props renderThumb should render custo
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -895,8 +871,8 @@ exports[`slider react-range Range function props renderThumb should render custo
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -904,7 +880,6 @@ exports[`slider react-range Range function props renderThumb should render custo
   align-items: center;
   box-sizing: border-box;
   cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
@@ -958,9 +933,6 @@ exports[`slider react-range Range function props renderThumb should render defau
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
   top: -32px;
@@ -1011,8 +983,8 @@ exports[`slider react-range Range function props renderThumb should render dragg
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1020,7 +992,6 @@ exports[`slider react-range Range function props renderThumb should render dragg
   align-items: center;
   box-sizing: border-box;
   cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
@@ -1077,8 +1048,8 @@ exports[`slider react-range Range function props renderThumb should render multi
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1131,7 +1102,7 @@ exports[`slider react-range Range function props renderThumb should render multi
 
 exports[`slider react-range Range function props renderThumb should render range label slider thumb 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -1141,8 +1112,8 @@ exports[`slider react-range Range function props renderThumb should render range
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1152,27 +1123,27 @@ exports[`slider react-range Range function props renderThumb should render range
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   box-shadow: none;
   background-color: #e4e4e4;
   border-style: none;
@@ -1180,18 +1151,15 @@ exports[`slider react-range Range function props renderThumb should render range
   border-width: none;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
   top: -32px;
@@ -1202,7 +1170,7 @@ exports[`slider react-range Range function props renderThumb should render range
   text-align: center;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   display: block;
   height: 0;
@@ -1210,7 +1178,7 @@ exports[`slider react-range Range function props renderThumb should render range
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   display: block;
   height: 0;
@@ -1218,18 +1186,18 @@ exports[`slider react-range Range function props renderThumb should render range
   margin-top: -0.4625em;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
 <div
     aria-label="slider"
-    class="emotion-1"
+    class="emotion-0"
     data-testid="slider-thumb"
     values="25"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       25
     </div>
@@ -1239,7 +1207,7 @@ exports[`slider react-range Range function props renderThumb should render range
 
 exports[`slider react-range Range function props renderThumb should render slider thumb with an icon 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -1249,8 +1217,8 @@ exports[`slider react-range Range function props renderThumb should render slide
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1260,27 +1228,27 @@ exports[`slider react-range Range function props renderThumb should render slide
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   box-shadow: none;
   background-color: #e4e4e4;
   border-style: none;
@@ -1288,30 +1256,30 @@ exports[`slider react-range Range function props renderThumb should render slide
   border-width: none;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-0 {
+.emotion-1 {
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-0.emotion-0 {
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
 }
 
 <div
     aria-label="slider"
-    class="emotion-1"
+    class="emotion-0"
     data-testid="slider-thumb"
     values="25"
   >
     <svg
       aria-hidden="true"
-      class="emotion-0"
+      class="emotion-1"
       fill="currentColor"
       viewBox="0 0 88 88"
       xmlns="http://www.w3.org/2000/svg"
@@ -1336,8 +1304,8 @@ exports[`slider react-range Range function props renderThumb should render undra
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1390,7 +1358,7 @@ exports[`slider react-range Range function props renderThumb should render undra
 
 exports[`slider react-range Range function props renderThumb should render vertical slider thumb 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -1400,8 +1368,8 @@ exports[`slider react-range Range function props renderThumb should render verti
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1411,27 +1379,27 @@ exports[`slider react-range Range function props renderThumb should render verti
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   box-shadow: none;
   background-color: #e4e4e4;
   border-style: none;
@@ -1439,18 +1407,15 @@ exports[`slider react-range Range function props renderThumb should render verti
   border-width: none;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
   right: -32px;
@@ -1461,7 +1426,7 @@ exports[`slider react-range Range function props renderThumb should render verti
   text-align: center;
 }
 
-.emotion-0::before {
+.emotion-1::before {
   content: '';
   display: block;
   height: 0;
@@ -1469,7 +1434,7 @@ exports[`slider react-range Range function props renderThumb should render verti
   margin-bottom: -0.4em;
 }
 
-.emotion-0::after {
+.emotion-1::after {
   content: '';
   display: block;
   height: 0;
@@ -1477,18 +1442,18 @@ exports[`slider react-range Range function props renderThumb should render verti
   margin-top: -0.4625em;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
 <div
     aria-label="slider"
-    class="emotion-1"
+    class="emotion-0"
     data-testid="slider-thumb"
     values="25"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
       25
     </div>
@@ -1612,7 +1577,6 @@ exports[`slider react-range Range function props renderTrack should render grabb
   display: -ms-flexbox;
   display: flex;
   cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
   cursor: grabbing;
   -webkit-align-self: center;
   -ms-flex-item-align: center;

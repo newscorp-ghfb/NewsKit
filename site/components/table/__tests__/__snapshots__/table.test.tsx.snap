@@ -2,17 +2,17 @@
 
 exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` columm 1`] = `
 <DocumentFragment>
-  .emotion-16 {
+  .emotion-0 {
   overflow-x: auto;
 }
 
-.emotion-15 {
+.emotion-1 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-0 {
+.emotion-2 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -21,9 +21,6 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -33,28 +30,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   white-space: nowrap;
 }
 
-.emotion-10 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-2 {
-  padding: 16px 16px 16px 0;
-  text-align: left;
-  vertical-align: top;
-}
-
-.emotion-1 {
+.emotion-3 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -63,9 +39,6 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -75,14 +48,32 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   white-space: nowrap;
 }
 
-.emotion-9 {
+.emotion-4 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-5 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-6 {
   padding: 16px 16px 16px 0;
   width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -94,15 +85,15 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   height: 24px;
 }
 
-.emotion-7 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -117,6 +108,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   overflow: hidden;
   border-style: solid;
@@ -126,16 +118,16 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 1px;
 }
 
-.emotion-7 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-7 svg {
+.emotion-8 svg {
   fill: #148F39;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -149,14 +141,14 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
 
-.emotion-5 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -165,13 +157,13 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-10 {
     max-width: 100%;
   }
 }
 
-.emotion-3 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -180,38 +172,38 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-11.emotion-11 {
   fill: #148F39;
 }
 
-.emotion-12 {
+.emotion-16 {
   fill: #E4E4E4;
   vertical-align: unset;
   display: inline-block;
   margin: 0 6px;
 }
 
-.emotion-12.emotion-12 {
+.emotion-16.emotion-16 {
   width: 12px;
   height: 12px;
   fill: #E4E4E4;
 }
 
 <div
-    class="emotion-16"
+    class="emotion-0"
   >
     <table
-      class="emotion-15"
+      class="emotion-1"
     >
       <thead>
         <tr>
           <th
-            class="emotion-0"
+            class="emotion-2"
           >
             Column
           </th>
           <th
-            class="emotion-1"
+            class="emotion-3"
           >
             Required
           </th>
@@ -219,32 +211,32 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
       </thead>
       <tbody>
         <tr
-          class="emotion-10"
+          class="emotion-4"
         >
           <td
-            class="emotion-2"
+            class="emotion-5"
           >
             column
           </td>
           <td
-            class="emotion-9"
+            class="emotion-6"
           >
             <div
-              class="emotion-8"
+              class="emotion-7"
             >
               <div
-                class="emotion-7"
+                class="emotion-8"
                 data-testid="flag"
               >
                 <div
-                  class="emotion-6"
+                  class="emotion-9"
                 >
                   <div
-                    class="emotion-5"
+                    class="emotion-10"
                   >
                     <svg
                       aria-hidden="true"
-                      class="emotion-3 emotion-4"
+                      class="emotion-11 emotion-12"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -265,19 +257,19 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
           </td>
         </tr>
         <tr
-          class="emotion-10"
+          class="emotion-4"
         >
           <td
-            class="emotion-2"
+            class="emotion-5"
           >
             column
           </td>
           <td
-            class="emotion-9"
+            class="emotion-6"
           >
             <svg
               aria-hidden="true"
-              class="emotion-12"
+              class="emotion-16"
               fill="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -298,17 +290,17 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 
 exports[`Table renders with default styles 1`] = `
 <DocumentFragment>
-  .emotion-9 {
+  .emotion-0 {
   overflow-x: auto;
 }
 
-.emotion-8 {
+.emotion-1 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-0 {
+.emotion-2 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -317,9 +309,6 @@ exports[`Table renders with default styles 1`] = `
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -338,33 +327,30 @@ exports[`Table renders with default styles 1`] = `
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-2 {
+.emotion-5 {
   padding: 16px 16px 16px 0;
   text-align: left;
   vertical-align: top;
 }
 
 <div
-    class="emotion-9"
+    class="emotion-0"
   >
     <table
-      class="emotion-8"
+      class="emotion-1"
     >
       <thead>
         <tr>
           <th
-            class="emotion-0"
+            class="emotion-2"
           >
             Col
           </th>
           <th
-            class="emotion-0"
+            class="emotion-2"
           >
             Column
           </th>
@@ -375,12 +361,12 @@ exports[`Table renders with default styles 1`] = `
           class="emotion-4"
         >
           <td
-            class="emotion-2"
+            class="emotion-5"
           >
             col
           </td>
           <td
-            class="emotion-2"
+            class="emotion-5"
           >
             column
           </td>
@@ -389,12 +375,12 @@ exports[`Table renders with default styles 1`] = `
           class="emotion-4"
         >
           <td
-            class="emotion-2"
+            class="emotion-5"
           >
             col
           </td>
           <td
-            class="emotion-2"
+            class="emotion-5"
           >
             column
           </td>
@@ -407,17 +393,17 @@ exports[`Table renders with default styles 1`] = `
 
 exports[`Table wraps content with styledFlag if the column is either Name, Type or Default styles 1`] = `
 <DocumentFragment>
-  .emotion-20 {
+  .emotion-0 {
   overflow-x: auto;
 }
 
-.emotion-19 {
+.emotion-1 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-0 {
+.emotion-2 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -426,9 +412,6 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -438,28 +421,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   white-space: nowrap;
 }
 
-.emotion-10 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
 .emotion-3 {
-  padding: 16px 16px 16px 0;
-  text-align: left;
-  vertical-align: top;
-}
-
-.emotion-1 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -468,9 +430,6 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -480,14 +439,32 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   white-space: nowrap;
 }
 
+.emotion-5 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
 .emotion-6 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-7 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-4 {
+.emotion-9 {
   margin: 0;
   padding: 0;
   color: #555E74;
@@ -496,36 +473,33 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-4 svg {
+.emotion-9 svg {
   fill: #555E74;
 }
 
 <div
-    class="emotion-20"
+    class="emotion-0"
   >
     <table
-      class="emotion-19"
+      class="emotion-1"
     >
       <thead>
         <tr>
           <th
-            class="emotion-0"
+            class="emotion-2"
           >
             Name
           </th>
           <th
-            class="emotion-1"
+            class="emotion-3"
           >
             Type
           </th>
           <th
-            class="emotion-1"
+            class="emotion-3"
           >
             Default
           </th>
@@ -533,34 +507,34 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
       </thead>
       <tbody>
         <tr
-          class="emotion-10"
+          class="emotion-5"
         >
           <td
-            class="emotion-3"
+            class="emotion-6"
           >
             name
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 type
               </p>
             </div>
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 default
               </p>
@@ -568,34 +542,34 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           </td>
         </tr>
         <tr
-          class="emotion-10"
+          class="emotion-5"
         >
           <td
-            class="emotion-3"
+            class="emotion-6"
           >
             name
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 type
               </p>
             </div>
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 default
               </p>
@@ -610,17 +584,17 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 
 exports[`Table wraps content with styledFlag if the column is either Name, Type or Default styles 2`] = `
 <DocumentFragment>
-  .emotion-20 {
+  .emotion-0 {
   overflow-x: auto;
 }
 
-.emotion-19 {
+.emotion-1 {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-.emotion-0 {
+.emotion-2 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -629,9 +603,6 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -641,28 +612,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   white-space: nowrap;
 }
 
-.emotion-10 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
 .emotion-3 {
-  padding: 16px 16px 16px 0;
-  text-align: left;
-  vertical-align: top;
-}
-
-.emotion-1 {
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
@@ -671,9 +621,6 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.6;
   font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
@@ -683,14 +630,32 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   white-space: nowrap;
 }
 
+.emotion-5 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
 .emotion-6 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-7 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-4 {
+.emotion-9 {
   margin: 0;
   padding: 0;
   color: #555E74;
@@ -699,36 +664,33 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
 }
 
-.emotion-4 svg {
+.emotion-9 svg {
   fill: #555E74;
 }
 
 <div
-    class="emotion-20"
+    class="emotion-0"
   >
     <table
-      class="emotion-19"
+      class="emotion-1"
     >
       <thead>
         <tr>
           <th
-            class="emotion-0"
+            class="emotion-2"
           >
             Name
           </th>
           <th
-            class="emotion-1"
+            class="emotion-3"
           >
             Type
           </th>
           <th
-            class="emotion-1"
+            class="emotion-3"
           >
             Default
           </th>
@@ -736,34 +698,34 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
       </thead>
       <tbody>
         <tr
-          class="emotion-10"
+          class="emotion-5"
         >
           <td
-            class="emotion-3"
+            class="emotion-6"
           >
             name
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 type
               </p>
             </div>
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 default
               </p>
@@ -771,34 +733,34 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           </td>
         </tr>
         <tr
-          class="emotion-10"
+          class="emotion-5"
         >
           <td
-            class="emotion-3"
+            class="emotion-6"
           >
             name
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 type
               </p>
             </div>
           </td>
           <td
-            class="emotion-6"
+            class="emotion-7"
           >
             <div
-              class="emotion-5"
+              class="emotion-8"
             >
               <p
-                class="emotion-4"
+                class="emotion-9"
               >
                 default
               </p>

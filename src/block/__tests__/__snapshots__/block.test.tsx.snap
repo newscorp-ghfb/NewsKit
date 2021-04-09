@@ -3,7 +3,7 @@
 exports[`Block with no props renders an unstyled div 1`] = `
 <DocumentFragment>
   <div
-    class="css-151qm6o"
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
@@ -59,19 +59,19 @@ exports[`Block with props renders with spaceInset020 1`] = `
 
 exports[`Block with props renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:479px) {
+  @media screen and (max-width: 479px) {
   .emotion-0 {
     margin-bottom: 4px;
   }
 }
 
-@media screen and (min-width:480px) and (max-width:767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 8px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     margin-bottom: 12px;
   }

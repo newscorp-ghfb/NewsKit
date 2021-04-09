@@ -2,53 +2,50 @@
 
 exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
@@ -67,27 +64,24 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -95,7 +89,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -104,7 +98,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="#"
     role="button"
   >
@@ -112,7 +106,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         Some Custom Link Text
       </span>
@@ -123,53 +117,50 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
@@ -188,27 +179,24 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -216,7 +204,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -225,7 +213,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="#"
     role="button"
   >
@@ -233,7 +221,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         Some Custom Link Text With Styles
       </span>
@@ -244,53 +232,50 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 exports[`ConsentSettingsLink with no children renders link with default text 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: inline-block;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #0a68c1;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-0:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   color: #01396e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-0:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-0:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-2:visited:not(:disabled) svg {
+.emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-0 {
     vertical-align: text-bottom;
   }
 }
@@ -309,27 +294,24 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
   display: block;
 }
 
-.emotion-0::before {
+.emotion-2::before {
   content: '';
   display: block;
   height: 0;
@@ -337,7 +319,7 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-0::after {
+.emotion-2::after {
   content: '';
   display: block;
   height: 0;
@@ -346,7 +328,7 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 }
 
 <a
-    class="emotion-2"
+    class="emotion-0"
     href="#"
     role="button"
   >
@@ -354,7 +336,7 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
       class="emotion-1"
     >
       <span
-        class="emotion-0"
+        class="emotion-2"
       >
         Manage Consent
       </span>
