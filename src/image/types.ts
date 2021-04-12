@@ -35,7 +35,7 @@ export interface ImageContainerProps {
 export interface ImageProps
   extends HTMLImageElementWithNoSizes,
     ImageAlignmentProps {
-  hideLoadingIcon?: boolean;
+  placeholderIcon?: boolean;
   loadingAspectRatio?: string;
   captionText?: string;
   creditText?: string;

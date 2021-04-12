@@ -2282,7 +2282,6 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "#fafafa",
-        "borderRadius": "8px",
         "iconColor": "#c0c0c0",
       },
     },

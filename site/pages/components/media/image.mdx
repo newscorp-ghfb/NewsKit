@@ -31,8 +31,8 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     of the image. This is also used to determine the height or width of the
     image if only one dimension is provided.
   </Prop>
-  <Prop name="hideLoadingIcon" type="boolean" default={false}>
-    Hide the loading icon whilst the image is loading.
+  <Prop name="placeholderIcon" type="boolean" default={false}>
+    Show the placeholder icon whilst the image is loading.
   </Prop>
   <Prop name="captionText" type="string">
     If provided, supplies the caption component. captionText is the text of the
@@ -135,8 +135,8 @@ The aspect width/height is only used on loading state.
         'This is the credit text within the caption of the image component',
     },
     {
-      name: 'Hide loading icon',
-      propName: 'hideLoadingIcon',
+      name: 'Placeholder icon',
+      propName: 'placeholderIcon',
       options: [
         {
           label: 'Unset',

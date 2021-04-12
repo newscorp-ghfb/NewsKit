@@ -1389,7 +1389,6 @@ stylePresets.imageDefault = {
   },
   loading: {
     backgroundColor: '{{colors.interfaceSkeleton010}}',
-    borderRadius: '{{borders.borderRadiusDefault}}',
     iconColor: '{{colors.inkNonEssential}}',
   },
 };

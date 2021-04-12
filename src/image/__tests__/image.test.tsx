@@ -23,10 +23,10 @@ describe('Image', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders without icon', () => {
+  test('renders with placeholder icon', () => {
     const props = {
       ...defaultProps,
-      hideLoadingIcon: true,
+      placeholderIcon: true,
     };
     const fragment = renderToFragmentWithTheme(Image, props);
     expect(fragment).toMatchSnapshot();

@@ -21,6 +21,7 @@ export default {
             src="/placeholder-3x2.png"
             alt="Example Image"
             overrides={{width: '300px', height: '200px'}}
+            placeholderIcon
           />
         </Container>
       ),
@@ -35,6 +36,7 @@ export default {
             src="/placeholder-3x2.png"
             alt="Example Image"
             overrides={{width: '100%', height: '66%'}}
+            placeholderIcon
           />
         </Container>
       ),
@@ -49,6 +51,7 @@ export default {
             src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
+            placeholderIcon
           />
         </Container>
       ),
@@ -63,7 +66,6 @@ export default {
             src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
-            hideLoadingIcon
             overrides={{
               stylePreset: 'imageRoundedMedium',
             }}
@@ -83,7 +85,6 @@ export default {
             src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
-            hideLoadingIcon
             overrides={{
               stylePreset: {
                 xs: 'imageRoundedMedium',
@@ -104,7 +105,6 @@ export default {
             src="/placeholder-1x1.png"
             loadingAspectRatio="1:1"
             alt="Example Image"
-            hideLoadingIcon
             overrides={{
               stylePreset: 'imageCircle',
             }}
@@ -138,7 +138,23 @@ export default {
             src="/placeholder-3x2.invalid"
             loadingAspectRatio="3:2"
             alt="Example Image"
-            hideLoadingIcon
+          />
+        </Container>
+      ),
+    },
+    {
+      name: 'invalid-img-with-placeholder-icon',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>
+            Invalid image reference with placeholder Icon
+          </StorybookHeading>
+          <Image
+            placeholderIcon
+            src="/placeholder-3x2.invalid"
+            loadingAspectRatio="3:2"
+            alt="Example Image"
           />
         </Container>
       ),
@@ -150,7 +166,7 @@ export default {
         <Container>
           <StorybookHeading>Image With Caption</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
             captionText="Caption component with both caption and credit text"
@@ -166,7 +182,7 @@ export default {
         <Container>
           <StorybookHeading>Image With Caption Inset</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
             captionText="Caption component with both caption and credit text"
@@ -190,7 +206,7 @@ export default {
         <Container>
           <StorybookHeading>Image With Caption and Overrides</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
             captionText="Caption component with both caption and credit text"
@@ -218,7 +234,7 @@ export default {
             Image With Caption Inset and Overrides
           </StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
             captionText="Caption component with both caption and credit text"
