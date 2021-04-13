@@ -75,9 +75,9 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: center;
-  background-position: center;
-  height: 30vh;
+  -webkit-background-position: right;
+  background-position: right;
+  height: 18vh;
 }
 
 .emotion-4 {
@@ -649,19 +649,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 .emotion-3 {
   height: 100%;
-  width: 39.8vw;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    width: 20vw;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    width: 25.55vw;
-  }
 }
 
 .emotion-4 {
@@ -1299,9 +1286,9 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: center;
-  background-position: center;
-  height: 30vh;
+  -webkit-background-position: right;
+  background-position: right;
+  height: 18vh;
 }
 
 .emotion-4 {
@@ -1701,19 +1688,6 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 .emotion-3 {
   height: 100%;
-  width: 39.8vw;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    width: 20vw;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    width: 25.55vw;
-  }
 }
 
 .emotion-4 {
@@ -2127,6 +2101,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   transition-property: box-shadow;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2151,9 +2126,9 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 .emotion-2 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: center;
-  background-position: center;
-  height: 30vh;
+  -webkit-background-position: right;
+  background-position: right;
+  height: 18vh;
 }
 
 .emotion-3 {
@@ -2664,6 +2639,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
   transition-property: box-shadow;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2688,9 +2664,9 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 .emotion-2 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: center;
-  background-position: center;
-  height: 30vh;
+  -webkit-background-position: right;
+  background-position: right;
+  height: 18vh;
 }
 
 .emotion-3 {
@@ -3089,9 +3065,9 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: center;
-  background-position: center;
-  height: 30vh;
+  -webkit-background-position: right;
+  background-position: right;
+  height: 18vh;
 }
 
 .emotion-4 {
@@ -3449,19 +3425,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-3 {
   height: 100%;
-  width: 39.8vw;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    width: 20vw;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    width: 25.55vw;
-  }
 }
 
 .emotion-4 {
@@ -3833,6 +3796,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
   transition-property: box-shadow;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -3857,9 +3821,9 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 .emotion-2 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: center;
-  background-position: center;
-  height: 30vh;
+  -webkit-background-position: right;
+  background-position: right;
+  height: 18vh;
 }
 
 .emotion-3 {

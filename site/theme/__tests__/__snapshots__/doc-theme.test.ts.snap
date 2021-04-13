@@ -1988,7 +1988,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-m.svg)",
+        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -2953,6 +2953,35 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "roadmapCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.interfaceBrand030}}",
+        "iconColor": "{{colors.interfaceBrand030}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkWhite}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "roadmapCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "roadmapCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+      },
+    },
     "sidebarHeader": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -3295,6 +3324,37 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interface030}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+    },
+    "whatsnewCardButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+        "color": "{{colors.inkBrand030}}",
+        "iconColor": "{{colors.inkBrand030}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand030}}",
+        "iconColor": "{{colors.inkBrand030}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkWhite}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "whatsnewCardMedia": Object {
+      "base": Object {
+        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundPosition": "center left",
+        "backgroundSize": "cover",
       },
     },
   },

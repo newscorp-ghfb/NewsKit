@@ -303,6 +303,7 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
+
   contributeCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
@@ -320,7 +321,7 @@ export const stylePresets = {
   },
   contributeCardMedia: {
     base: {
-      backgroundImage: 'url(/static/feature-card-m.svg)',
+      backgroundImage: 'url(/static/landing/feature-card-contribute.svg)',
     },
   },
   contributeCardButton: {
@@ -351,6 +352,37 @@ export const stylePresets = {
       iconColor: '{{colors.inkBrand020}}',
     },
   },
+
+  roadmapCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  roadmapCardMedia: {
+    base: {
+      backgroundImage: 'url(/static/landing/feature-card-roadmap.svg)',
+    },
+  },
+  roadmapCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.interfaceBrand030}}',
+      iconColor: '{{colors.interfaceBrand030}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhite}}',
+      iconColor: '{{colors.inkWhite}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+  },
+
   patternsCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand060}}',
@@ -401,6 +433,39 @@ export const stylePresets = {
       iconColor: '{{colors.inkBrand030}}',
     },
   },
+
+  whatsnewCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand060}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  whatsnewCardMedia: {
+    base: {
+      backgroundImage: 'url(/static/landing/feature-card-whatsnew.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center left',
+    },
+  },
+  whatsnewCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkWhite}}',
+      iconColor: '{{colors.inkWhite}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand030}}',
+      iconColor: '{{colors.inkBrand030}}',
+    },
+  },
+
   buttonSolidInverse010: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',

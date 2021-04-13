@@ -24,10 +24,12 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
   href,
   stylePrefix,
   buttonLabel,
+  ...props
 }) => (
   <>
     <Visible xs sm>
       <StyledCardHorizontalInset
+        {...props}
         media={() => (
           <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
         )}
@@ -90,6 +92,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
     </Visible>
     <Visible md lg xl>
       <StyledCardHorizontalInset
+        {...props}
         media={() => (
           <StyledFeatureCardHorizontalMedia
             stylePreset={`${stylePrefix}Media`}
@@ -161,8 +164,10 @@ const FeatureCardVertical: React.FC<FeatureCardProps> = ({
   href,
   stylePrefix,
   buttonLabel,
+  ...props
 }) => (
   <StyledCardVerticalInset
+    {...props}
     media={() => (
       <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
     )}
