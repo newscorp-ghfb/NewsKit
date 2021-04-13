@@ -5,7 +5,7 @@ export enum MetaStatus {
 }
 
 export enum MetaFlagStylePresets {
-  Supported = 'flagSolidPositive',
+  Supported = 'flagBrand',
   Deprecated = 'flagSolidNegative',
   Beta = 'flagSolidNotice',
 }

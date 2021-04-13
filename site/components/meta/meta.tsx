@@ -1,140 +1,92 @@
 import React from 'react';
 import {
   Stack,
-  Flag,
   Block,
   Divider,
-  Button,
   StackChild,
   AlignSelfValues,
-  Link,
-  IconFilledGitHub,
   Flow,
-  Headline,
-  FlagSize,
-  IconFilledFigma,
   Hidden,
   Cell,
+  Grid,
 } from 'newskit';
-import {MetaProps, MetaFlagStylePresets} from './types';
+import {MetaProps} from './types';
+import {GitHubButton} from './github-button';
+import {FigmaButton} from './figma-button';
+import {Status} from './status';
+import {Introduced} from './introduce';
 
 export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
   <Cell xs={12} md={10} lg={8} mdOffset={1}>
-    <Block spaceStack={{xs: 'space080', md: 'space090'}}>
-      <Block spaceStack="space050">
-        <Hidden xs sm md lg>
-          <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
-            <Stack flow={Flow.HorizontalTop} spaceInline="space060">
-              <Stack flow={Flow.VerticalLeft} spaceInline="space030">
-                <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
-                  Status
-                </Headline>
-                <Flag
-                  size={FlagSize.Large}
-                  overrides={{
-                    stylePreset: MetaFlagStylePresets[status],
-                    typographyPreset: 'utilityLabel020',
-                  }}
-                >
-                  {status}
-                </Flag>
-              </Stack>
-              <StackChild alignSelf={AlignSelfValues.Stretch}>
-                <Divider vertical />
-              </StackChild>
-              <Stack flow={Flow.VerticalLeft} spaceInline="space050">
-                <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
-                  Introduced
-                </Headline>
-                <Link
-                  href="http://localhost:8081"
-                  overrides={{typographyPreset: 'utilityBody030'}}
-                >
-                  {introduced}
-                </Link>
-              </Stack>
-            </Stack>
-            <Stack flow="horizontal-center" spaceInline="space040">
-              <Button
-                overrides={{stylePreset: 'buttonOutlinedSecondary'}}
-                href={codeUrl}
-              >
-                <IconFilledGitHub />
-                View source code
-              </Button>
-              {figmaUrl && (
-                <Button
-                  overrides={{
-                    stylePreset: 'buttonOutlinedSecondary',
-                    minWidth: '176px',
-                  }}
-                  href={figmaUrl}
-                >
-                  <IconFilledFigma />
-                  View Design
-                </Button>
-              )}
-            </Stack>
+    <Block spaceStack={{xs: 'space080', md: 'space050'}}>
+      <Hidden xs sm>
+        <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
+          <Stack flow={Flow.HorizontalTop}>
+            <Status status={status} />
+            <StackChild alignSelf={AlignSelfValues.Stretch}>
+              <Block
+                spaceInline={{
+                  md: 'space060',
+                  lg: 'space020',
+                  xl: 'space040',
+                }}
+              />
+              <Divider vertical />
+              <Block
+                spaceInline={{
+                  md: 'space060',
+                  lg: 'space020',
+                  xl: 'space040',
+                }}
+              />
+            </StackChild>
+
+            <Introduced introduced={introduced} />
           </Stack>
-        </Hidden>
-        <Hidden xl>
-          <Stack
-            flow={Flow.VerticalLeft}
-            stackDistribution="space-between"
-            spaceInline="space050"
-          >
-            <Stack flow={Flow.HorizontalTop} spaceInline="space060">
-              <Stack flow={Flow.VerticalLeft} spaceInline="space030">
-                <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
-                  Status
-                </Headline>
-                <Flag
-                  size={FlagSize.Large}
-                  overrides={{
-                    stylePreset: MetaFlagStylePresets[status],
-                    typographyPreset: 'utilityLabel020',
-                  }}
-                >
-                  {status}
-                </Flag>
-              </Stack>
-              <StackChild alignSelf={AlignSelfValues.Stretch}>
-                <Divider vertical />
-              </StackChild>
-              <Stack flow={Flow.VerticalLeft} spaceInline="space050">
-                <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
-                  Introduced
-                </Headline>
-                <Link
-                  href="http://localhost:8081"
-                  overrides={{typographyPreset: 'utilityBody030'}}
-                >
-                  {introduced}
-                </Link>
-              </Stack>
-            </Stack>
-            <Stack flow="horizontal-center" spaceInline="space040">
-              <Button overrides={{stylePreset: 'buttonOutlinedSecondary'}}>
-                <IconFilledGitHub />
-                View source code
-              </Button>
-              {figmaUrl && (
-                <Button
-                  overrides={{
-                    stylePreset: 'buttonOutlinedSecondary',
-                    minWidth: '176px',
-                  }}
-                  href={figmaUrl}
-                >
-                  <IconFilledFigma />
-                  View Design
-                </Button>
-              )}
-            </Stack>
+          <Stack flow="horizontal-center" spaceInline="space040">
+            <StackChild alignSelf={AlignSelfValues.Stretch}>
+              <GitHubButton href={codeUrl} />
+            </StackChild>
+            <FigmaButton href={figmaUrl} />
           </Stack>
-        </Hidden>
-      </Block>
-      <Divider />
+        </Stack>
+      </Hidden>
+      <Hidden md lg xl>
+        <Stack flow={Flow.VerticalLeft} spaceInline="space050">
+          <StackChild alignSelf={AlignSelfValues.Stretch}>
+            <Cell xs={6}>
+              <Status status={status} />
+            </Cell>
+            <Cell xs={6}>
+              <Stack flow={Flow.HorizontalTop}>
+                <Divider vertical />
+                <Block spaceInline="space060" />
+                <Stack
+                  flow={Flow.VerticalLeft}
+                  spaceInline="space020"
+                  stackDistribution="space-evenly"
+                />
+                <Introduced introduced={introduced} />
+              </Stack>
+            </Cell>
+          </StackChild>
+          <StackChild alignSelf={AlignSelfValues.Stretch}>
+            <Grid xsMargin="space000">
+              <Cell xs={12}>
+                <Divider />
+                <Block spaceStack="space050" />
+                <GitHubButton href={codeUrl} />
+              </Cell>
+              <Cell xs={12}>
+                <FigmaButton href={figmaUrl} />
+                <Block spaceStack="space050" />
+                <Divider />
+              </Cell>
+            </Grid>
+          </StackChild>
+        </Stack>
+      </Hidden>
     </Block>
+    <Divider />
   </Cell>
 );
