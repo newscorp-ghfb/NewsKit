@@ -37,6 +37,15 @@ Object {
     "amber090": "#FF6000",
     "amber100": "#FF4B00",
     "black": "#000000",
+    "blackTint10": "rgba(10, 10, 10, 0.1)",
+    "blackTint20": "rgba(10, 10, 10, 0.2);",
+    "blackTint30": "rgba(10, 10, 10, 0.3);",
+    "blackTint40": "rgba(10, 10, 10, 0.4);",
+    "blackTint50": "rgba(10, 10, 10, 0.5);",
+    "blackTint60": "rgba(10, 10, 10, 0.6);",
+    "blackTint70": "rgba(10, 10, 10, 0.7);",
+    "blackTint80": "rgba(10, 10, 10, 0.8);",
+    "blackTint90": "rgba(10, 10, 10, 0.9);",
     "blue010": "#E0E7FF",
     "blue020": "#AEBFFF",
     "blue030": "#87A4FC",
@@ -191,6 +200,15 @@ Object {
     "whiteTint070": "rgba(255,255,255,0.7)",
     "whiteTint080": "rgba(255,255,255,0.8)",
     "whiteTint090": "rgba(255,255,255,0.9)",
+    "whiteTint10": "rgba(255,255,255, 0.1)",
+    "whiteTint20": "rgba(255,255,255, 0.2);",
+    "whiteTint30": "rgba(255,255,255, 0.3);",
+    "whiteTint40": "rgba(255,255,255, 0.4);",
+    "whiteTint50": "rgba(255,255,255, 0.5);",
+    "whiteTint60": "rgba(255,255,255, 0.6);",
+    "whiteTint70": "rgba(255,255,255, 0.7);",
+    "whiteTint80": "rgba(255,255,255, 0.8);",
+    "whiteTint90": "rgba(255,255,255, 0.9);",
     "youtube": "#FF0000",
   },
   "componentDefaults": Object {
@@ -737,9 +755,31 @@ Object {
       "typographyPreset": "editorialParagraph020",
     },
     "scroll": Object {
-      "arrows": Object {
-        "spaceInset": "spaceInset000",
-        "stylePreset": "iconButtonMinimalPrimary",
+      "horizontal": Object {
+        "controls": Object {
+          "button": Object {
+            "spaceInset": "spaceInset000",
+            "stylePreset": "iconButtonSolidPrimary",
+          },
+          "offset": "space040",
+        },
+        "overlays": Object {
+          "size": "sizing090",
+          "stylePreset": "scrollOverlaysHorizontal",
+        },
+      },
+      "vertical": Object {
+        "controls": Object {
+          "button": Object {
+            "spaceInset": "spaceInset000",
+            "stylePreset": "iconButtonSolidPrimary",
+          },
+          "offset": "space040",
+        },
+        "overlays": Object {
+          "size": "sizing090",
+          "stylePreset": "scrollOverlaysVertical",
+        },
       },
     },
     "shareBar": Object {
@@ -1064,11 +1104,23 @@ Object {
     "overlayDark030": "rgba(10, 10, 10, 0.6)",
     "overlayDark040": "rgba(10, 10, 10, 0.8)",
     "overlayDarkGradient010": "linear-gradient(90deg, rgba(51, 51, 51, 0) 0%, rgba(10, 10, 10, 1) 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
+    "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientInverseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)",
     "overlayLight010": "rgba(255, 255, 255, 0.2)",
     "overlayLight020": "rgba(255, 255, 255, 0.4)",
     "overlayLight030": "rgba(255, 255, 255, 0.6)",
     "overlayLight040": "rgba(255, 255, 255, 0.8)",
     "overlayLightGradient010": "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)",
+    "overlayTintBase010": "{{colors.blackTint20}}",
+    "overlayTintBase020": "{{colors.blackTint40}}",
+    "overlayTintBase030": "{{colors.blackTint60}}",
+    "overlayTintBase040": "{{colors.blackTint80}}",
+    "overlayTintInverse010": "{{colors.whiteTint20}}",
+    "overlayTintInverse020": "{{colors.whiteTint40}}",
+    "overlayTintInverse030": "{{colors.whiteTint60}}",
+    "overlayTintInverse040": "{{colors.whiteTint80}}",
   },
   "shadows": Object {
     "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
@@ -2900,7 +2952,7 @@ Object {
     },
     "overlay": Object {
       "base": Object {
-        "backgroundColor": "{{overlays.overlayDark040}}",
+        "backgroundColor": "{{overlays.overlayTintBase040}}",
       },
     },
     "patternsCardButton": Object {
@@ -2980,6 +3032,16 @@ Object {
     "roadmapCardMedia": Object {
       "base": Object {
         "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+      },
+    },
+    "scrollOverlaysHorizontal": Object {
+      "base": Object {
+        "backgroundImage": "{{overlays.overlayGradientInverseHorizontal}}",
+      },
+    },
+    "scrollOverlaysVertical": Object {
+      "base": Object {
+        "backgroundImage": "{{overlays.overlayGradientInverseVertical}}",
       },
     },
     "sidebarHeader": Object {

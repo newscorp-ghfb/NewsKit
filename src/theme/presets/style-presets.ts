@@ -1470,7 +1470,22 @@ stylePresets.headlineHeadingInteractive = {
 
 stylePresets.overlay = {
   base: {
-    backgroundColor: '{{overlays.overlayDark040}}',
+    backgroundColor: '{{overlays.overlayTintBase040}}',
+  },
+};
+
+//
+// Overlay
+//
+
+stylePresets.scrollOverlaysHorizontal = {
+  base: {
+    backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}',
+  },
+};
+stylePresets.scrollOverlaysVertical = {
+  base: {
+    backgroundImage: '{{overlays.overlayGradientInverseVertical}}',
   },
 };
 

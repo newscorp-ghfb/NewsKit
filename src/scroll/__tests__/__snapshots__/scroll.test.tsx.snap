@@ -45,7 +45,7 @@ exports[`Scroll renders horizontal scroll when no properties are set 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Scroll renders horizontal scroll with hidden arrows 1`] = `
+exports[`Scroll renders horizontal scroll with hidden controls 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -54,11 +54,11 @@ exports[`Scroll renders horizontal scroll with hidden arrows 1`] = `
   height: 100%;
 }
 
-.emotion-0 button {
+.emotion-0 .nk-scroll-controls {
   display: none;
 }
 
-.emotion-0:hover button {
+.emotion-0:hover .nk-scroll-controls {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -67,7 +67,7 @@ exports[`Scroll renders horizontal scroll with hidden arrows 1`] = `
   animation: fade-in 1s;
 }
 
-.emotion-0:not(:hover) button {
+.emotion-0:not(:hover) .nk-scroll-controls {
   -webkit-animation: fade-out 1s;
   animation: fade-out 1s;
 }
@@ -108,7 +108,7 @@ exports[`Scroll renders horizontal scroll with hidden arrows 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Scroll renders horizontal scroll with visible arrows 1`] = `
+exports[`Scroll renders horizontal scroll with visible controls 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -153,7 +153,7 @@ exports[`Scroll renders horizontal scroll with visible arrows 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Scroll renders scroll with overriden arrows style 1`] = `
+exports[`Scroll renders scroll with overriden controls style 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -243,7 +243,7 @@ exports[`Scroll renders vertical scroll 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Scroll renders vertical scroll with hidden arrows 1`] = `
+exports[`Scroll renders vertical scroll with hidden controls 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -252,11 +252,11 @@ exports[`Scroll renders vertical scroll with hidden arrows 1`] = `
   height: 100%;
 }
 
-.emotion-0 button {
+.emotion-0 .nk-scroll-controls {
   display: none;
 }
 
-.emotion-0:hover button {
+.emotion-0:hover .nk-scroll-controls {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -265,7 +265,7 @@ exports[`Scroll renders vertical scroll with hidden arrows 1`] = `
   animation: fade-in 1s;
 }
 
-.emotion-0:not(:hover) button {
+.emotion-0:not(:hover) .nk-scroll-controls {
   -webkit-animation: fade-out 1s;
   animation: fade-out 1s;
 }
@@ -306,7 +306,7 @@ exports[`Scroll renders vertical scroll with hidden arrows 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Scroll renders vertical scroll with visible arrows 1`] = `
+exports[`Scroll renders vertical scroll with visible controls 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;

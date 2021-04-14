@@ -5,9 +5,16 @@ import {Prop} from '../../../components/prop';
 import {CodeFromDefaultPresets} from '../../../components/code';
 import {Code} from '../../../components/code';
 import {InlineCode} from '../../../components/markdown-elements';
-import {ScrollSnap} from '../../../demo-components/scroll/scroll-snap';
+import {ScrollSnap, Box} from '../../../demo-components/scroll/scroll-snap';
 
-import {Scroll, ScrollSnapAlignment, Image, Link, UnorderedList} from 'newskit';
+import {
+  Scroll,
+  ScrollSnapAlignment,
+  Image,
+  Link,
+  UnorderedList,
+  styled,
+} from 'newskit';
 
 export default Layout;
 
@@ -32,13 +39,13 @@ By adding a scroll component to a block, you can enable the content within the b
     . Note: the user agent will determine how this behaves, with scrollbars
     generally being displayed on desktop devices.
   </Prop>
-  <Prop name="arrows" type="'hover' | 'static'" default="undefined">
-    This prop is optional. If provided, will display scroll arrow buttons. If
+  <Prop name="controls" type="'hover' | 'static'" default="undefined">
+    This prop is optional. If provided, will display scroll controls ( arrow buttons ). If
     <InlineCode>hover</InlineCode> is passed as a value, the scroll buttons will be visible only on
     hover. If <InlineCode>static</InlineCode> is provided, the buttons will persist on the screen.
   </Prop>
   <Prop name="stepDistance" type="number" default="160">
-    If scroll arrow buttons are enabled, this prop is used to set the scroll
+    If scroll controls ( arrow buttons ) are enabled, this prop is used to set the scroll
     step representing the number of pixels that an element's content is scrolled
     in either direction.
   </Prop>
@@ -58,14 +65,21 @@ By adding a scroll component to a block, you can enable the content within the b
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements.
-    <Prop name="arrows" type="object">
-      <Prop name="stylePreset" type="MQ<string>">
-        If provided, this overrides the stylePreset preset applied to the scroll
-        arrow buttons.
+    <Prop name="controls" type="object">
+      <Prop name="button" type="ButtonOverrides">
+        Overrides for the buttons, check <Link href="/components/action/button">Button component</Link> for detailed information.
       </Prop>
-      <Prop name="spaceInset" type="MQ<string>">
-        If provided, this overrides the padding space applied to scroll icon
-        buttons.
+      <Prop name="offset" type="MQ<string>">
+         Space between the controls buttons and edge of scroll container
+      </Prop>
+    </Prop>
+    <Prop name="overlays" type="object">
+        <Prop name="stylePreset" type="MQ<string>">
+          If provided, this overrides the style preset applied to the scroll overlays
+        </Prop>
+        <Prop name="size" type="MQ<string>">
+         Size of overlays depending on orientation ( width for horizontal, and height for vertical)
+        </Prop>
       </Prop>
     </Prop>
     Refer to the defaults below for the object structure:
@@ -76,7 +90,7 @@ By adding a scroll component to a block, you can enable the content within the b
       Override default preset
     </Link>{' '}
     page.
-  </Prop>
+
 </LegacyBlock>
 
 ## Playground
@@ -84,6 +98,11 @@ By adding a scroll component to a block, you can enable the content within the b
 <Playground
   componentName="Scroll"
   component={state => {
+    const Flex = styled.div`
+      display: flex;
+      align-items: center;
+      height: 100%;
+    `;
     const ContentWrapper = state.snapAlign
       ? ScrollSnapAlignment
       : React.Fragment;
@@ -91,13 +110,13 @@ By adding a scroll component to a block, you can enable the content within the b
       <LegacyBlock width="300px" height="200px">
         {!state.vertical && (
           <Scroll {...state}>
-            <ContentWrapper>
-              <Image
-                src="/static/placeholder-3x2.png"
-                alt="Example Image"
-                overrides={{width: '400px', height: '200px'}}
-              />
-            </ContentWrapper>
+            <Flex>
+              {Array.from({length: 10}, (_, i) => (
+                <ContentWrapper>
+                  <Box>{`Item ${i + 1}`}</Box>
+                </ContentWrapper>
+              ))}
+            </Flex>
           </Scroll>
         )}
         {state.vertical && (
@@ -149,11 +168,11 @@ By adding a scroll component to a block, you can enable the content within the b
       value: false,
     },
     {
-      name: 'Scroll With Arrows',
-      propName: 'arrows',
+      name: 'Scroll With Controls',
+      propName: 'controls',
       options: [
         {
-          label: 'no arrows',
+          label: 'no controls',
           value: undefined,
           isDefault: true,
         },
@@ -240,7 +259,7 @@ The ScrollSnapAlignment props are detailed below:
 </LegacyBlock>
 
 <Code>
-  {`<Scroll arrows="static" snapAlign="start">
+  {`<Scroll controls="static" snapAlign="start">
     <Flex>
       <ScrollSnapAlignment>
         <Box>Item 1</Box>
@@ -265,7 +284,7 @@ Also the `stepDistance` value should be:
   <>
     <b>Greater than</b> - the half width (or height if orientation is vertical)
     of the smallest item inside. Otherwise it might prevent the container from
-    scrolling when using the arrow buttons
+    scrolling when using the control buttons
   </>
   <>
     <b>Smaller than</b> - the width (or height if orientation is vertical) of
@@ -273,3 +292,7 @@ Also the `stepDistance` value should be:
     items at once
   </>
 </UnorderedList>
+
+### Accessibility
+
+- Scroll controls are excluded from focus order.

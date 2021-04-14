@@ -1,18 +1,41 @@
-import {IconButton} from '../icon-button';
+import {ThemeProp} from '../utils';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
-import {css, styled} from '../utils/style';
+import {
+  css,
+  getResponsiveSize,
+  getResponsiveSpace,
+  getStylePreset,
+  styled,
+} from '../utils/style';
 import {ScrollProps} from './types';
 
-const pseudoBasicStyle = `
+const getPseudoStyles = (props: ScrollProps & ThemeProp) => {
+  const {vertical} = props;
+  const defaultsPath = `scroll.${
+    vertical ? 'vertical' : 'horizontal'
+  }.overlays`;
+
+  return css`
     content: '';
     position: absolute;
     z-index: 1;
+    transition: all linear 0.3s;
+    ${getStylePreset(defaultsPath, `overlays`)(props)}
+    ${getResponsiveSize(
+      vertical ? 'height' : 'width',
+      defaultsPath,
+      `overlays`,
+      'size',
+    )(props)}
+    ${vertical ? `width: 100%;` : `height: 100%;`}
   `;
+};
 
 export const StyledScrollNav = styled.div<
-  Pick<ScrollProps, 'arrows' | 'vertical'> & {
+  Pick<ScrollProps, 'vertical' | 'overrides'> & {
     showStartShadow?: boolean;
     showEndShadow?: boolean;
+    controlsVariant?: ScrollProps['controls'];
   }
 >`
   box-sizing: border-box;
@@ -20,8 +43,8 @@ export const StyledScrollNav = styled.div<
   overflow: hidden;
   height: 100%;
 
-  ${({arrows}) =>
-    arrows === 'hover' &&
+  ${({controlsVariant}) =>
+    controlsVariant === 'hover' &&
     css`
       @keyframes fade-in {
         from {
@@ -41,84 +64,53 @@ export const StyledScrollNav = styled.div<
         }
       }
 
-      button {
+      .nk-scroll-controls {
         display: none;
       }
 
       :hover {
-        button {
+        .nk-scroll-controls {
           display: inline-flex;
           animation: fade-in 1s;
         }
       }
 
       :not(:hover) {
-        button {
+        .nk-scroll-controls {
           animation: fade-out 1s;
         }
       }
     `}
 
-  ${({showStartShadow, vertical}) =>
-    showStartShadow &&
-    css`
+  ${({showStartShadow, vertical, ...rest}) => {
+    if (!showStartShadow) return null;
+
+    return css`
       ::before {
-        ${pseudoBasicStyle};
-        ${vertical
-          ? `
-              top: 0;
-              left: 0;
-              right: 0;
-              height: 2.4em;
-            `
-          : `
-              top: 0;
-              left: 0;  
-              height: 100%;
-              width: 2.4em;
-            `}
-
-        background-image: linear-gradient(
-            ${vertical ? 'to top' : 'to left'},
-            rgba(255,255,255,0) 0%,
-            rgba(255,255,255,0.6)  50%
-          );
-        transition: all linear 0.3s;
+        ${getPseudoStyles({vertical, ...rest})};
+        top: 0;
+        left: 0;
       }
-    `}
+    `;
+  }}
 
-   ${({showEndShadow, vertical}) =>
-    showEndShadow &&
-    css`
+   ${({showEndShadow, vertical, ...rest}) => {
+    if (!showEndShadow) return null;
+
+    return css`
       ::after {
-        ${pseudoBasicStyle};
-        ${vertical
-          ? `
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2.4em;
-          `
-          : `
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 2.4em;
-          `}
-
-        background-image: linear-gradient(
-          ${vertical ? 'to bottom' : 'to right'},
-          rgba(255,255,255,0) 0%,
-          rgba(255,255,255,0.6)  50%
-        );
-        transition: all linear 0.3s;
+        ${getPseudoStyles({vertical, ...rest})};
+        right: 0;
+        bottom: 0;
+        transform: rotate(180deg);
       }
-    `}
+    `;
+  }}
 `;
 
 export const StyledScrollContainer = styled.div<
   Omit<ScrollProps, 'overrides'> & {
-    arrowsEnabled?: boolean;
+    controlsEnabled?: boolean;
   }
 >`
   box-sizing: border-box;
@@ -144,8 +136,8 @@ export const StyledScrollContainer = styled.div<
   }`}
 `;
 
-export const StyledScrollArrowButton = styled(IconButton)<
-  Pick<ScrollProps, 'vertical'> & {
+export const StyledScrollButtonContainer = styled.div<
+  Pick<ScrollProps, 'vertical' | 'overrides'> & {
     position: 'end' | 'start';
   }
 >`
@@ -158,13 +150,31 @@ export const StyledScrollArrowButton = styled(IconButton)<
   position: absolute;
   z-index: 2;
 
-  ${({vertical, position}) =>
-    css`
+  ${({vertical, position, ...props}) => {
+    let cssPosition = '';
+    if (vertical && position === 'start') {
+      cssPosition = 'top';
+    } else if (vertical && position === 'end') {
+      cssPosition = 'bottom';
+    } else if (!vertical && position === 'start') {
+      cssPosition = 'left';
+    } else {
+      cssPosition = 'right';
+    }
+
+    return css`
+      /* adjusting position ( top/right/left/bottom) based on offset */
+      ${getResponsiveSpace(
+        cssPosition,
+        `scroll.${vertical ? 'vertical' : 'horizontal'}.controls`,
+        `controls`,
+        'offset',
+      )(props)}
+
       ${vertical
         ? `
         left: 50%;
         transform: translateX(-50%);
-        ${position === 'start' ? `top: 0;` : `bottom: 0;`}
         svg{
           transform: rotate(90deg);
         }
@@ -172,9 +182,9 @@ export const StyledScrollArrowButton = styled(IconButton)<
         : `
         top: 50%;
         transform: translateY(-50%);
-        ${position === 'start' ? 'left: 0;' : 'right: 0;'}
         `}
-    `}
+    `;
+  }}}
 `;
 
 export const StyledScrollSnapAlignment = styled.div<

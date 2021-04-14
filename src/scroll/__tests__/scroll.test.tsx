@@ -78,51 +78,51 @@ describe('Scroll', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test(`renders horizontal scroll with visible arrows`, () => {
+  test(`renders horizontal scroll with visible controls`, () => {
     const {asFragment} = renderWithTheme(Scroll, {
       children: <Content />,
-      arrows: 'static',
+      controls: 'static',
     });
 
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test(`renders horizontal scroll with hidden arrows`, () => {
+  test(`renders horizontal scroll with hidden controls`, () => {
     const {asFragment} = renderWithTheme(Scroll, {
       children: <Content />,
-      arrows: 'hover',
+      controls: 'hover',
     });
 
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test(`renders vertical scroll with visible arrows`, () => {
-    const {asFragment} = renderWithTheme(Scroll, {
-      children: <Content />,
-      vertical: true,
-      arrows: 'static',
-    });
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  test(`renders vertical scroll with hidden arrows`, () => {
+  test(`renders vertical scroll with visible controls`, () => {
     const {asFragment} = renderWithTheme(Scroll, {
       children: <Content />,
       vertical: true,
-      arrows: 'hover',
+      controls: 'static',
     });
 
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test(`renders scroll with overriden arrows style`, () => {
+  test(`renders vertical scroll with hidden controls`, () => {
+    const {asFragment} = renderWithTheme(Scroll, {
+      children: <Content />,
+      vertical: true,
+      controls: 'hover',
+    });
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test(`renders scroll with overriden controls style`, () => {
     const {asFragment} = renderWithTheme(
       Scroll,
       {
         children: <Content />,
-        arrows: 'static',
-        overrides: {arrows: {stylePreset: 'scrollArrowsCustom'}},
+        controls: 'static',
+        overrides: {controls: {button: {stylePreset: 'scrollArrowsCustom'}}},
       },
       myCustomTheme,
     );
@@ -145,7 +145,7 @@ describe('Scroll', () => {
       <ThemeProvider theme={newskitLightTheme}>
         <Scroll
           vertical={vertical}
-          arrows="static"
+          controls="static"
           stepDistance={defaultStepDistance}
         >
           <Content />
@@ -153,7 +153,7 @@ describe('Scroll', () => {
       </ThemeProvider>
     );
 
-    test(`horizontally scrolls when arrow buttons click`, async () => {
+    test(`horizontally scrolls when control buttons click`, async () => {
       const {rerender} = render(<ScrollWithContentAndProps />);
       const scrollContainer = screen.getByTestId('scroll-container');
 
@@ -217,7 +217,7 @@ describe('Scroll', () => {
       expect(await screen.findByTestId('scroll-arrow-left')).toBeEnabled();
     });
 
-    test(`vertically scrolls when arrow buttons click`, async () => {
+    test(`vertically scrolls when control buttons click`, async () => {
       const {rerender} = render(<ScrollWithContentAndProps vertical />);
       const scrollContainer = screen.getByTestId('scroll-container');
 

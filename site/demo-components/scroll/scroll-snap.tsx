@@ -1,5 +1,11 @@
 import * as React from 'react';
-import {styled, Scroll, ScrollSnapAlignment} from 'newskit';
+import {
+  styled,
+  Scroll,
+  ScrollSnapAlignment,
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+} from 'newskit';
 
 const Container = styled.div`
   width: 250px;
@@ -10,21 +16,24 @@ const Flex = styled.div`
   display: flex;
 `;
 
-const Box = styled.div`
+export const Box = styled.div`
   box-sizing: border-box;
   flex: none;
   width: 100px;
   height: 100px;
-  background: #577ffb;
-  border: 1px solid red;
+  border: 1px solid;
+  color: #000;
   text-align: center;
   vertical-align: middle;
+  ${getColorCssFromTheme('background', 'interface020')}
+  ${getColorCssFromTheme('borderColor', 'interface040')}
+  ${getTypographyPresetFromTheme('utilityLabel030')}
   line-height: 100px;
 `;
 
 export const ScrollSnap = () => (
   <Container>
-    <Scroll arrows="static" snapAlign="start">
+    <Scroll controls="static" snapAlign="start">
       <Flex>
         <ScrollSnapAlignment>
           <Box>Item 1</Box>

@@ -3,17 +3,20 @@ import {debounce} from 'debounce';
 import {IconFilledChevronLeft, IconFilledChevronRight} from '../icons';
 import {ScrollProps} from './types';
 import {
-  StyledScrollArrowButton,
   StyledScrollContainer,
+  StyledScrollButtonContainer,
   StyledScrollNav,
 } from './styled';
 import {ScrollSnapAlignmentContextProvider} from './context';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme';
+import {IconButton} from '../icon-button';
+import {ButtonOverrides} from '../button';
+import {get} from '../utils/get';
 
 export const Scroll: React.FC<ScrollProps> = ({
   vertical = false,
-  arrows,
+  controls,
   stepDistance = 160,
   snapAlign,
   scrollBar = false,
@@ -21,9 +24,15 @@ export const Scroll: React.FC<ScrollProps> = ({
   overrides = {},
 }) => {
   const theme = useTheme();
-  const arrowsSettings: typeof overrides['arrows'] = {
-    ...theme.componentDefaults.scroll.arrows,
-    ...filterOutFalsyProperties(overrides.arrows),
+  const buttonComponentDefault = get(
+    theme,
+    `componentDefaults.scroll.${
+      vertical ? 'vertical' : 'horizontal'
+    }.controls.button`,
+  );
+  const buttonOverrides: ButtonOverrides = {
+    ...buttonComponentDefault,
+    ...filterOutFalsyProperties(get(overrides, 'controls.button')),
   };
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -66,16 +75,18 @@ export const Scroll: React.FC<ScrollProps> = ({
 
   useLayoutEffect(checkForScrollPosition);
 
-  const arrowsEnabled = Boolean(
-    arrows && (arrows === 'hover' || arrows === 'static'),
+  const controlsEnabled = Boolean(
+    controls && (controls === 'hover' || controls === 'static'),
   );
 
+  const iconSize = 'medium';
   return (
     <StyledScrollNav
-      {...{arrows}}
+      controlsVariant={controls}
       showStartShadow={canScrollStart}
       showEndShadow={canScrollEnd}
       vertical={vertical}
+      overrides={overrides}
     >
       <StyledScrollContainer
         vertical={vertical}
@@ -86,7 +97,7 @@ export const Scroll: React.FC<ScrollProps> = ({
         ref={scrollContainerRef}
         data-testid="scroll-container"
         onScroll={debounceCheckForScrollPosition}
-        arrowsEnabled={arrowsEnabled}
+        controlsEnabled={controlsEnabled}
       >
         {snapAlign ? (
           <ScrollSnapAlignmentContextProvider value={snapAlign}>
@@ -97,34 +108,46 @@ export const Scroll: React.FC<ScrollProps> = ({
         )}
       </StyledScrollContainer>
 
-      {arrowsEnabled && (
+      {controlsEnabled && (
         <>
           {canScrollEnd && (
-            <StyledScrollArrowButton
+            <StyledScrollButtonContainer
+              className="nk-scroll-controls"
               vertical={vertical}
               position="end"
-              aria-label={`Scroll ${vertical ? 'bottom' : 'right'}`}
-              overrides={arrowsSettings}
-              tabIndex={-1}
-              data-testid={`scroll-arrow-${vertical ? 'bottom' : 'right'}`}
-              onClick={() => scrollContainer(stepDistance)}
+              overrides={overrides}
             >
-              <IconFilledChevronRight />
-            </StyledScrollArrowButton>
+              <IconButton
+                aria-label={`Scroll ${vertical ? 'bottom' : 'right'}`}
+                overrides={buttonOverrides}
+                tabIndex={-1}
+                data-testid={`scroll-arrow-${vertical ? 'bottom' : 'right'}`}
+                onClick={() => scrollContainer(stepDistance)}
+                size={iconSize}
+              >
+                <IconFilledChevronRight />
+              </IconButton>
+            </StyledScrollButtonContainer>
           )}
 
           {canScrollStart && (
-            <StyledScrollArrowButton
+            <StyledScrollButtonContainer
+              className="nk-scroll-controls"
               vertical={vertical}
               position="start"
-              overrides={arrowsSettings}
-              tabIndex={-1}
-              aria-label={`Scroll ${vertical ? 'top' : 'left'}`}
-              data-testid={`scroll-arrow-${vertical ? 'top' : 'left'}`}
-              onClick={() => scrollContainer(-stepDistance)}
+              overrides={overrides}
             >
-              <IconFilledChevronLeft />
-            </StyledScrollArrowButton>
+              <IconButton
+                overrides={buttonOverrides}
+                tabIndex={-1}
+                aria-label={`Scroll ${vertical ? 'top' : 'left'}`}
+                data-testid={`scroll-arrow-${vertical ? 'top' : 'left'}`}
+                onClick={() => scrollContainer(-stepDistance)}
+                size={iconSize}
+              >
+                <IconFilledChevronLeft />
+              </IconButton>
+            </StyledScrollButtonContainer>
           )}
         </>
       )}

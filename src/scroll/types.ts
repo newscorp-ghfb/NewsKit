@@ -1,15 +1,20 @@
+import {ButtonOverrides} from '../button';
 import {MQ} from '../utils/style';
 
 export interface ScrollProps {
   vertical?: boolean;
-  arrows?: 'hover' | 'static';
+  controls?: 'hover' | 'static';
   stepDistance?: number;
   snapAlign?: 'start' | 'center' | 'end';
   scrollBar?: boolean;
   overrides?: {
-    arrows?: {
+    controls?: {
+      offset?: MQ<string>;
+      button?: ButtonOverrides;
+    };
+    overlays?: {
       stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
+      size?: MQ<string>;
     };
   };
 }

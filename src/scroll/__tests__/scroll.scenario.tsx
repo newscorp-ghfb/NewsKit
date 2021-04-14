@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Scroll, ScrollSnapAlignment} from '..';
-import {styled, getColorFromTheme} from '../../utils/style';
+import {styled, getColorCssFromTheme} from '../../utils/style';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
 import {Stack} from '../../stack/stack';
@@ -29,6 +29,11 @@ const myCustomTheme = createTheme({
           iconColor: '{{colors.inkNonEssential}}',
         },
       },
+      overlaysCustom: {
+        base: {
+          backgroundImage: '{{overlays.overlayGradientBaseHorizontal}}',
+        },
+      },
     },
   },
 });
@@ -40,7 +45,7 @@ const MainContainer = styled.div`
 `;
 
 const Container = styled(Block)<{width?: string; height?: string}>`
-  background-color: ${getColorFromTheme('neutral020')};
+  ${getColorCssFromTheme('backgroundColor', 'neutral020')};
   width: ${({width}) => width || '300px'};
   height: ${({height}) => height || '150px'};
 `;
@@ -110,13 +115,13 @@ export default {
       ),
     },
     {
-      name: 'scroll-arrows',
+      name: 'scroll-controls',
       type: 'story',
       component: () => (
         <MainContainer>
           <StorybookSubHeading>Scroll horizontal</StorybookSubHeading>
           <Container data-testid="horizontal-scroll-component">
-            <Scroll arrows="static">
+            <Scroll controls="static">
               <Stack flow="horizontal-center" spaceInline="space040">
                 {tags}
               </Stack>
@@ -125,7 +130,7 @@ export default {
 
           <StorybookSubHeading>Scroll vertical</StorybookSubHeading>
           <Container data-testid="vertical-scroll-component">
-            <Scroll vertical arrows="static">
+            <Scroll vertical controls="static">
               <Stack flow="vertical-left" spaceInline="space040">
                 {tags}
               </Stack>
@@ -133,13 +138,23 @@ export default {
           </Container>
 
           <StorybookSubHeading>
-            Scroll arrows with overrides
+            Scroll controls with overrides
           </StorybookSubHeading>
           <Container>
             <ThemeProvider theme={myCustomTheme}>
               <Scroll
-                arrows="hover"
-                overrides={{arrows: {stylePreset: 'scrollArrowsCustom'}}}
+                controls="hover"
+                overrides={{
+                  controls: {
+                    button: {
+                      stylePreset: 'scrollArrowsCustom',
+                    },
+                    offset: '0px',
+                  },
+                  overlays: {
+                    stylePreset: 'overlaysCustom',
+                  },
+                }}
               >
                 <Stack flow="horizontal-top">{tags}</Stack>
               </Scroll>
@@ -168,9 +183,9 @@ export default {
           </Container>
           <br />
 
-          <StorybookSubHeading>Scroll snap with arrows</StorybookSubHeading>
+          <StorybookSubHeading>Scroll snap with controls</StorybookSubHeading>
           <Container width="250px" height="100px">
-            <Scroll snapAlign="start" arrows="static" stepDistance={60}>
+            <Scroll snapAlign="start" controls="static" stepDistance={60}>
               <Flex>
                 {Array.from({length: 10}, (_, i) => (
                   <ScrollSnapAlignment>
@@ -184,7 +199,7 @@ export default {
 
           <StorybookSubHeading>Change snap position</StorybookSubHeading>
           <Container width="250px" height="100px">
-            <Scroll snapAlign="center" arrows="static">
+            <Scroll snapAlign="center" controls="static">
               <Flex>
                 {Array.from({length: 5}, (_, i) => (
                   <ScrollSnapAlignment>
@@ -206,7 +221,7 @@ export default {
 
           <StorybookSubHeading>with stack vertical</StorybookSubHeading>
           <Container>
-            <Scroll vertical snapAlign="start" arrows="static">
+            <Scroll vertical snapAlign="start" controls="static">
               <Stack flow="vertical-left">
                 {[...tags, ...tags].map(tag => (
                   <ScrollSnapAlignment>{tag}</ScrollSnapAlignment>
@@ -246,7 +261,7 @@ export default {
             Scroll horizontal with arrows and scroll-bar
           </StorybookSubHeading>
           <Container width="250px" height="100px">
-            <Scroll scrollBar arrows="static">
+            <Scroll scrollBar controls="static">
               <Flex>
                 {Array.from({length: 10}, (_, i) => (
                   <Box>{`Item ${i + 1}`}</Box>
@@ -255,10 +270,10 @@ export default {
             </Scroll>
           </Container>
           <StorybookSubHeading>
-            Scroll vertical with arrows and scroll-bar
+            Scroll vertical with controls and scroll-bar
           </StorybookSubHeading>
           <Container>
-            <Scroll scrollBar vertical arrows="static">
+            <Scroll scrollBar vertical controls="static">
               <Stack flow="vertical-left">
                 {[...tags, ...tags].map(tag => (
                   <>{tag}</>

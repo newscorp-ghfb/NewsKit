@@ -116,6 +116,7 @@ Array [
   "getMinWidth",
   "getMotionCssFromTheme",
   "getMotionFromTheme",
+  "getOverlayCssFromTheme",
   "getPresetStyles",
   "getResponsiveBorder",
   "getResponsiveMotion",

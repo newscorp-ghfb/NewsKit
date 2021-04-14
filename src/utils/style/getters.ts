@@ -177,3 +177,4 @@ export const getColorCssFromTheme = getXFromTheme('colors');
 export const getSizingCssFromTheme = getXFromTheme('sizing');
 export const getBorderCssFromTheme = getXFromTheme('borders');
 export const getShadowCssFromTheme = getXFromTheme('shadows');
+export const getOverlayCssFromTheme = getXFromTheme('overlays');

@@ -77,6 +77,28 @@ export const palettes = {
   purple090: '#3d1f5c',
   purple100: '#29143d',
 
+  blackTint10: 'rgba(10, 10, 10, 0.1)',
+  blackTint20: 'rgba(10, 10, 10, 0.2);',
+  blackTint30: 'rgba(10, 10, 10, 0.3);',
+  blackTint40: 'rgba(10, 10, 10, 0.4);',
+  blackTint50: 'rgba(10, 10, 10, 0.5);',
+  blackTint60: 'rgba(10, 10, 10, 0.6);',
+  blackTint70: 'rgba(10, 10, 10, 0.7);',
+  blackTint80: 'rgba(10, 10, 10, 0.8);',
+  blackTint90: 'rgba(10, 10, 10, 0.9);',
+  black: '#0A0A0A',
+
+  whiteTint10: 'rgba(255,255,255, 0.1)',
+  whiteTint20: 'rgba(255,255,255, 0.2);',
+  whiteTint30: 'rgba(255,255,255, 0.3);',
+  whiteTint40: 'rgba(255,255,255, 0.4);',
+  whiteTint50: 'rgba(255,255,255, 0.5);',
+  whiteTint60: 'rgba(255,255,255, 0.6);',
+  whiteTint70: 'rgba(255,255,255, 0.7);',
+  whiteTint80: 'rgba(255,255,255, 0.8);',
+  whiteTint90: 'rgba(255,255,255, 0.9);',
+  white: '#ffffff',
+
   socialTwitter: '#1da1f2',
   socialFacebook: '#1877f2',
   socialInstagram: '#c32aa3',
@@ -85,8 +107,6 @@ export const palettes = {
   socialReddit: '#ff4500',
   socialGithub: '#000000',
 
-  white: '#ffffff',
-  black: '#000000',
   transparent: 'transparent',
 };
 
