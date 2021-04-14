@@ -18,7 +18,7 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -87,7 +87,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-0::after {
@@ -113,7 +113,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-0::after {
@@ -139,7 +139,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -181,7 +181,7 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -250,7 +250,7 @@ exports[`Headings renders H2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -258,7 +258,7 @@ exports[`Headings renders H2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -276,7 +276,7 @@ exports[`Headings renders H2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-0::after {
@@ -318,7 +318,7 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -387,7 +387,7 @@ exports[`Headings renders H3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -413,7 +413,7 @@ exports[`Headings renders H3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -421,7 +421,7 @@ exports[`Headings renders H3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -455,7 +455,7 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -524,7 +524,7 @@ exports[`Headings renders H4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -550,7 +550,7 @@ exports[`Headings renders H4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -592,7 +592,7 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -657,7 +657,7 @@ exports[`Headings renders H5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-0::after {
@@ -665,7 +665,7 @@ exports[`Headings renders H5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-0 svg {
@@ -698,7 +698,7 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -763,7 +763,7 @@ exports[`Headings renders H6 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.128125em;
 }
 
 .emotion-0::after {
@@ -804,7 +804,7 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -873,7 +873,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-0::after {
@@ -899,7 +899,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-0::after {
@@ -925,7 +925,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -967,7 +967,7 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -1036,7 +1036,7 @@ exports[`Headings renders Heading2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -1044,7 +1044,7 @@ exports[`Headings renders Heading2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1062,7 +1062,7 @@ exports[`Headings renders Heading2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-0::after {
@@ -1104,7 +1104,7 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -1173,7 +1173,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -1199,7 +1199,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -1207,7 +1207,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1241,7 +1241,7 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -1310,7 +1310,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -1336,7 +1336,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -1378,7 +1378,7 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -1443,7 +1443,7 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-0::after {
@@ -1451,7 +1451,7 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-0 svg {
@@ -1484,7 +1484,7 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {
@@ -1549,7 +1549,7 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.128125em;
 }
 
 .emotion-0::after {

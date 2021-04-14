@@ -20,7 +20,7 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -46,7 +46,7 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -72,7 +72,7 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-0::after {
@@ -98,7 +98,7 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -194,7 +194,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -220,7 +220,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -246,7 +246,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-0::after {
@@ -272,7 +272,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -327,7 +327,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -353,7 +353,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-0::after {
@@ -379,7 +379,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-0::after {
@@ -405,7 +405,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -492,7 +492,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.09062500000000001em;
 }
 
 .emotion-0::after {

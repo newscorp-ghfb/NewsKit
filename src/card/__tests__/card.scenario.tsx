@@ -12,13 +12,13 @@ import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
 import {IconFilledImage} from '../../icons';
-import {getColorFromTheme, styled} from '../../utils/style';
+import {getColorCssFromTheme, styled} from '../../utils/style';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Link} from '../../link';
 
 const ContainerWithBackground = styled.div<{colorToken?: string}>`
-  background: ${({colorToken = 'white', ...props}) =>
-    getColorFromTheme(colorToken)(props)};
+  ${({colorToken = 'white', ...props}) =>
+    getColorCssFromTheme('background', colorToken)(props)};
 `;
 
 // Spacing
@@ -35,6 +35,7 @@ const cardTeaserLead = {
   md: 'space050',
   lg: 'space050',
 };
+const cardTeaserLeadInset = 'space010';
 const cardTeaserLeadInsetVariant = 'space000';
 const cardActions = 'space030';
 
@@ -1223,45 +1224,50 @@ export default {
       ),
     },
     {
-      name: 'card-horizontal-reverse-with-ratio',
+      name: 'card-with-cropping-text',
       type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card horizontal-reverse with ratio (3:1)
+            Card - Without Inset - Fix cropping text
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
-              <Cell xs={12} sm={6} md={5}>
+              <Cell xs={12} sm={4}>
                 <ThemeProvider theme={myCustomCardTheme}>
-                  <CardInset
-                    layout="horizontal-reverse"
+                  <Card
                     href="https://newskit.co.uk/"
-                    mediaInteractive
                     media={{
-                      src: '/placeholder-2x3.png',
+                      src: '/placeholder-3x2.png',
                       alt: 'Card Media',
-                      loadingAspectRatio: '2:3',
-                    }}
-                    overrides={{
-                      horizontalRatio: '3:1',
                     }}
                   >
-                    <Block spaceStack={cardTeaserHeadline}>
-                      <Headline kickerText="SHORT">
-                        title of the card describing the main content
-                      </Headline>
+                    <Block spaceStack={cardLabel}>
+                      <Flag
+                        overrides={{
+                          spaceInset: 'spaceInsetSquish000',
+                          stylePreset: 'cardLabel',
+                          typographyPreset:
+                            cardTypographyPresets.cardLabelSmall,
+                          minHeight: 'sizing000',
+                        }}
+                      >
+                        <IconFilledImage />
+                        IMAGE
+                      </Flag>
                     </Block>
-                    <TextBlock
-                      stylePreset="cardTeaserLead"
-                      typographyPreset={
-                        cardTypographyPresets.cardTeaserLeadSmall
-                      }
-                    >
-                      A short paragraph description of the article, outlining
-                      the main story and focus.
-                    </TextBlock>
-                  </CardInset>
+                    <Block spaceStack={cardTeaserLeadInset}>
+                      <TextBlock
+                        stylePreset="headlineHeadingInteractive"
+                        typographyPreset={
+                          cardTypographyPresets.cardTeaserLeadSmall
+                        }
+                      >
+                        A short paragraph description of the article, outlining
+                        the main story and focus. qg
+                      </TextBlock>
+                    </Block>
+                  </Card>
                 </ThemeProvider>
               </Cell>
             </Grid>
@@ -1540,16 +1546,17 @@ export default {
                         title of the card describing the main content
                       </Headline>
                     </Block>
-                    <TextBlock
-                      stylePreset="cardTeaserLead"
-                      typographyPreset={
-                        cardTypographyPresets.cardTeaserLeadSmall
-                      }
-                    >
-                      The bank holiday weekend has seen some mixed weather, but
-                      as the sun emerged, many in the UK took the opportunity to
-                      make the most of the lockdown easing.
-                    </TextBlock>
+                    <Block spaceStack={cardTeaserLeadInset}>
+                      <TextBlock
+                        stylePreset="cardTeaserLead"
+                        typographyPreset={
+                          cardTypographyPresets.cardTeaserLeadSmall
+                        }
+                      >
+                        A short paragraph description of the article, outlining
+                        the main story and focus.
+                      </TextBlock>
+                    </Block>
                   </Card>
                 </Cell>
                 <Cell xs={12} sm={6}>
@@ -1571,15 +1578,17 @@ export default {
                           title of the card describing the main content
                         </Headline>
                       </Block>
-                      <TextBlock
-                        stylePreset="cardTeaserLead"
-                        typographyPreset={
-                          cardTypographyPresets.cardTeaserLeadSmall
-                        }
-                      >
-                        A short paragraph description of the article, outlining
-                        the main story and focus.
-                      </TextBlock>
+                      <Block spaceStack={cardTeaserLeadInset}>
+                        <TextBlock
+                          stylePreset="cardTeaserLead"
+                          typographyPreset={
+                            cardTypographyPresets.cardTeaserLeadSmall
+                          }
+                        >
+                          A short paragraph description of the article,
+                          outlining the main story and focus.
+                        </TextBlock>
+                      </Block>
                     </Card>
                     <Card
                       layout="horizontal"
@@ -1598,15 +1607,17 @@ export default {
                           title of the card describing the main content
                         </Headline>
                       </Block>
-                      <TextBlock
-                        stylePreset="cardTeaserLead"
-                        typographyPreset={
-                          cardTypographyPresets.cardTeaserLeadSmall
-                        }
-                      >
-                        A short paragraph description of the article, outlining
-                        the main story and focus.
-                      </TextBlock>
+                      <Block spaceStack={cardTeaserLeadInset}>
+                        <TextBlock
+                          stylePreset="cardTeaserLead"
+                          typographyPreset={
+                            cardTypographyPresets.cardTeaserLeadSmall
+                          }
+                        >
+                          A short paragraph description of the article,
+                          outlining the main story and focus.
+                        </TextBlock>
+                      </Block>
                     </Card>
                     <Card
                       layout="horizontal"
@@ -1625,15 +1636,17 @@ export default {
                           title of the card describing the main content
                         </Headline>
                       </Block>
-                      <TextBlock
-                        stylePreset="cardTeaserLead"
-                        typographyPreset={
-                          cardTypographyPresets.cardTeaserLeadSmall
-                        }
-                      >
-                        A short paragraph description of the article, outlining
-                        the main story and focus.
-                      </TextBlock>
+                      <Block spaceStack={cardTeaserLeadInset}>
+                        <TextBlock
+                          stylePreset="cardTeaserLead"
+                          typographyPreset={
+                            cardTypographyPresets.cardTeaserLeadSmall
+                          }
+                        >
+                          A short paragraph description of the article,
+                          outlining the main story and focus.
+                        </TextBlock>
+                      </Block>
                     </Card>
                     <Card
                       layout="horizontal"
@@ -1652,15 +1665,17 @@ export default {
                           title of the card describing the main content
                         </Headline>
                       </Block>
-                      <TextBlock
-                        stylePreset="cardTeaserLead"
-                        typographyPreset={
-                          cardTypographyPresets.cardTeaserLeadSmall
-                        }
-                      >
-                        A short paragraph description of the article, outlining
-                        the main story and focus.
-                      </TextBlock>
+                      <Block spaceStack={cardTeaserLeadInset}>
+                        <TextBlock
+                          stylePreset="cardTeaserLead"
+                          typographyPreset={
+                            cardTypographyPresets.cardTeaserLeadSmall
+                          }
+                        >
+                          A short paragraph description of the article,
+                          outlining the main story and focus.
+                        </TextBlock>
+                      </Block>
                     </Card>
                   </Stack>
                 </Cell>

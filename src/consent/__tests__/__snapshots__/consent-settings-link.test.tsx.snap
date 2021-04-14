@@ -86,7 +86,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -201,7 +201,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -316,7 +316,7 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {

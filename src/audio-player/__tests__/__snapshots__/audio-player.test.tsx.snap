@@ -471,7 +471,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-22::after {
@@ -632,7 +632,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-31::after {
@@ -2007,7 +2007,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-47::after {
@@ -2161,7 +2161,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-56::after {
@@ -2330,7 +2330,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-73::after {
@@ -3447,7 +3447,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-40::after {
@@ -3599,7 +3599,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-49::after {
@@ -3767,7 +3767,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-66::after {
@@ -4783,7 +4783,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-40::after {
@@ -4935,7 +4935,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-49::after {
@@ -5103,7 +5103,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-66::after {
@@ -6110,7 +6110,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-40::after {
@@ -6222,7 +6222,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-49::after {
@@ -6408,7 +6408,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-66::after {
@@ -6416,7 +6416,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 .emotion-66 svg {

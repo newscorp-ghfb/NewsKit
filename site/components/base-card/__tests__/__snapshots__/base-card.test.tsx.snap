@@ -4,6 +4,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -49,7 +50,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-4::after {
@@ -57,7 +58,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-5 {
@@ -91,7 +92,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-6::after {
@@ -139,6 +140,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -248,7 +250,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-5::after {
@@ -256,7 +258,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-6 {
@@ -290,7 +292,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-7::after {
@@ -343,6 +345,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -407,7 +410,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-4::after {
@@ -415,7 +418,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-5 {
@@ -449,7 +452,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-6::after {
@@ -497,6 +500,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -587,7 +591,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-5::after {
@@ -595,7 +599,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-6 {
@@ -629,7 +633,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-7::after {

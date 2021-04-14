@@ -108,6 +108,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -156,7 +157,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-14::after {
@@ -164,7 +165,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-15 {
@@ -198,7 +199,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-17::after {
@@ -403,6 +404,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -451,7 +453,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.11145833333333338em;
 }
 
 .emotion-14::after {
@@ -459,7 +461,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-15 {
@@ -493,7 +495,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-17::after {

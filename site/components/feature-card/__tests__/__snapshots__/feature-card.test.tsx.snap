@@ -34,6 +34,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,7 +162,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -187,7 +188,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -213,7 +214,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -239,7 +240,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-8::after {
@@ -265,7 +266,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-8::after {
@@ -314,7 +315,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-11::after {
@@ -340,7 +341,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-11::after {
@@ -348,7 +349,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -452,7 +453,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-17::after {
@@ -460,7 +461,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 .emotion-19 {
@@ -606,6 +607,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -793,7 +795,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-9::after {
@@ -819,7 +821,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-9::after {
@@ -845,7 +847,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-9::after {
@@ -871,7 +873,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-9::after {
@@ -897,7 +899,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-9::after {
@@ -952,7 +954,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-12::after {
@@ -978,7 +980,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-12::after {
@@ -986,7 +988,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1086,7 +1088,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-17::after {
@@ -1094,7 +1096,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 .emotion-19 {
@@ -1245,6 +1247,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1372,7 +1375,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -1398,7 +1401,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -1424,7 +1427,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -1450,7 +1453,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-8::after {
@@ -1476,7 +1479,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-8::after {
@@ -1525,7 +1528,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-11::after {
@@ -1551,7 +1554,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-11::after {
@@ -1559,7 +1562,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1645,6 +1648,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1832,7 +1836,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-9::after {
@@ -1858,7 +1862,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-9::after {
@@ -1884,7 +1888,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-9::after {
@@ -1910,7 +1914,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-9::after {
@@ -1936,7 +1940,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-9::after {
@@ -1991,7 +1995,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-12::after {
@@ -2017,7 +2021,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-12::after {
@@ -2025,7 +2029,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -2090,6 +2094,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2212,7 +2217,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -2238,7 +2243,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -2264,7 +2269,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -2290,7 +2295,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-7::after {
@@ -2316,7 +2321,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-7::after {
@@ -2365,7 +2370,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-10::after {
@@ -2391,7 +2396,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-10::after {
@@ -2399,7 +2404,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -2503,7 +2508,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-16::after {
@@ -2511,7 +2516,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 .emotion-18 {
@@ -2628,6 +2633,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2750,7 +2756,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -2776,7 +2782,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -2802,7 +2808,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -2828,7 +2834,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-7::after {
@@ -2854,7 +2860,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-7::after {
@@ -2903,7 +2909,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-10::after {
@@ -2929,7 +2935,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-10::after {
@@ -2937,7 +2943,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -3024,6 +3030,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3114,7 +3121,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -3140,7 +3147,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -3166,7 +3173,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-7::after {
@@ -3192,7 +3199,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-7::after {
@@ -3218,7 +3225,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-7::after {
@@ -3267,7 +3274,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-10::after {
@@ -3293,7 +3300,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-10::after {
@@ -3301,7 +3308,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -3382,6 +3389,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3532,7 +3540,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -3558,7 +3566,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -3584,7 +3592,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-8::after {
@@ -3610,7 +3618,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-8::after {
@@ -3636,7 +3644,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-8::after {
@@ -3691,7 +3699,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-11::after {
@@ -3717,7 +3725,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-11::after {
@@ -3725,7 +3733,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -3785,6 +3793,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3870,7 +3879,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-6::after {
@@ -3896,7 +3905,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-6::after {
@@ -3922,7 +3931,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-6::after {
@@ -3948,7 +3957,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-6::after {
@@ -3974,7 +3983,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-6::after {
@@ -4023,7 +4032,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-9::after {
@@ -4049,7 +4058,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-9::after {
@@ -4057,7 +4066,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 

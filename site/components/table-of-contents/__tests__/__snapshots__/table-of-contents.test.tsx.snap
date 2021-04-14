@@ -78,7 +78,7 @@ exports[`TableOfContent should render with no errors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {

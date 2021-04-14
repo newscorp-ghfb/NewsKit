@@ -6,8 +6,8 @@ import {
   getStylePreset,
   getDefaultedValue,
   getSpacingFromTheme,
-  getSpacingStackHorizontal,
-  getSpacingStackVertical,
+  getSpacingInlineVertical,
+  getSpacingInlineHorizontal,
 } from '../utils/style';
 
 import {Stack} from '../stack';
@@ -18,6 +18,7 @@ export const StyledCardContainer = styled.div<
   Pick<CardProps, 'overrides' | 'layout' | 'className'> & HasHref
 >`
   box-sizing: border-box;
+  overflow: hidden;
   ${({hasHref, ...props}) => filterInteractiveStates('', hasHref)(props)}
   position: relative;
   display: flex;
@@ -44,13 +45,13 @@ export const StyledCardContainerMedia = styled.div<
     if (isHorizontal(layout) && isReverse(layout))
       return getDefaultedValue(
         getSpacingFromTheme,
-        'spaceStack',
+        'spaceInline',
         'marginLeft',
       )('card.mediaContainer', 'mediaContainer');
 
     return (isHorizontal(layout)
-      ? getSpacingStackVertical
-      : getSpacingStackHorizontal)('card.mediaContainer', 'mediaContainer');
+      ? getSpacingInlineHorizontal
+      : getSpacingInlineVertical)('card.mediaContainer', 'mediaContainer');
   }}
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}

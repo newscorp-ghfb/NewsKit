@@ -74,7 +74,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {
@@ -163,7 +163,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -327,7 +327,7 @@ exports[`Byline renders correctly with author's name, author's information and n
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {
@@ -459,7 +459,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {
@@ -548,7 +548,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -760,7 +760,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {
@@ -849,7 +849,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -1027,7 +1027,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {
@@ -1169,7 +1169,7 @@ exports[`Byline renders correctly with one author 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -1266,7 +1266,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-3::after {
@@ -1327,7 +1327,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-6::after {

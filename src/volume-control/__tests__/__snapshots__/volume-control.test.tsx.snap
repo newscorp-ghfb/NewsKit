@@ -41,7 +41,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -242,7 +242,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -425,7 +425,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -626,7 +626,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -809,7 +809,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -1010,7 +1010,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -1192,7 +1192,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -1393,7 +1393,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -1576,7 +1576,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -1777,7 +1777,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -1960,7 +1960,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -2161,7 +2161,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -2344,7 +2344,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -2545,7 +2545,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -2728,7 +2728,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -2929,7 +2929,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {
@@ -3112,7 +3112,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -3313,7 +3313,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-10::after {

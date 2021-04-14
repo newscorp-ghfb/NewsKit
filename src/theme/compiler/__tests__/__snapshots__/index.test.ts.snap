@@ -397,7 +397,7 @@ Object {
       },
       "horizontalRatio": "1:1",
       "mediaContainer": Object {
-        "spaceStack": Object {
+        "spaceInline": Object {
           "lg": "space050",
           "md": "space050",
           "sm": "space040",
@@ -424,7 +424,7 @@ Object {
       },
       "horizontalRatio": "1:1",
       "mediaContainer": Object {
-        "spaceStack": "space000",
+        "spaceInline": "space000",
         "stylePreset": "cardContainerMedia",
       },
       "stylePreset": "cardContainer",
@@ -925,42 +925,16 @@ Object {
   },
   "fonts": Object {
     "fontFamily010": Object {
-      "cropAdjustments": Object {
-        "12px": Object {
-          "bottom": -0.5,
-          "top": 1,
-        },
-        "14px": Object {
-          "top": 1.2,
-        },
-        "24px": Object {
-          "bottom": 1,
-          "top": 1,
-        },
-      },
       "cropConfig": Object {
         "bottom": 10,
-        "top": 8,
+        "top": 6.8,
       },
       "fontFamily": "\\"Noto Sans\\", sans-serif",
     },
     "fontFamily020": Object {
-      "cropAdjustments": Object {
-        "12px": Object {
-          "bottom": -0.5,
-          "top": 1,
-        },
-        "14px": Object {
-          "top": 1.2,
-        },
-        "24px": Object {
-          "bottom": 1,
-          "top": 1,
-        },
-      },
       "cropConfig": Object {
         "bottom": 10,
-        "top": 8,
+        "top": 4.1,
       },
       "fontFamily": "\\"Source Serif Pro\\", serif",
     },
@@ -1757,6 +1731,7 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "#ffffff",
         "color": "#2e2e2e",
       },
     },

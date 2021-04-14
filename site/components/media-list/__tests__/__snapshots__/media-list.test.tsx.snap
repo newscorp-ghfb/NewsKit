@@ -128,6 +128,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
+  overflow: hidden;
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
@@ -378,6 +379,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-19 {
   box-sizing: border-box;
+  overflow: hidden;
   border-radius: 4px;
   position: relative;
   display: -webkit-box;
@@ -647,6 +649,7 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
+  overflow: hidden;
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
@@ -862,6 +865,7 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-19 {
   box-sizing: border-box;
+  overflow: hidden;
   border-radius: 4px;
   position: relative;
   display: -webkit-box;
@@ -1244,7 +1248,7 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-13 {
   box-sizing: border-box;
-  border-radius: 20rem;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1341,7 +1345,7 @@ exports[`Media List renders with usage cards 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3799107142857143em + 1.2px);
+  margin-bottom: -0.3799107142857143em;
 }
 
 .emotion-22::after {

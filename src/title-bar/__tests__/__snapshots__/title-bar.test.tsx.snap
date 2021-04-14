@@ -55,7 +55,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -81,7 +81,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -107,7 +107,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -280,7 +280,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-9::after {
@@ -393,7 +393,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -419,7 +419,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -445,7 +445,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -655,7 +655,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -681,7 +681,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -707,7 +707,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -825,7 +825,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-2::after {
@@ -851,7 +851,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-2::after {
@@ -877,7 +877,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -885,7 +885,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -903,7 +903,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-2::after {
@@ -985,7 +985,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2055555555555556em;
+    margin-bottom: -0.08368055555555559em;
   }
 
   .emotion-2::after {
@@ -1011,7 +1011,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-2::after {
@@ -1037,7 +1037,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -1045,7 +1045,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1063,7 +1063,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.09955357142857141em;
   }
 
   .emotion-2::after {
@@ -1181,7 +1181,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -1207,7 +1207,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -1233,7 +1233,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -1327,7 +1327,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -1353,7 +1353,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -1379,7 +1379,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -1473,7 +1473,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -1499,7 +1499,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -1525,7 +1525,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -1619,7 +1619,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -1645,7 +1645,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -1671,7 +1671,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -1765,7 +1765,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -1791,7 +1791,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -1817,7 +1817,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -1911,7 +1911,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -1937,7 +1937,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -1963,7 +1963,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {
@@ -2057,7 +2057,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.09062500000000001em;
   }
 
   .emotion-2::after {
@@ -2083,7 +2083,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.07812500000000006em;
   }
 
   .emotion-2::after {
@@ -2109,7 +2109,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2333333333333334em;
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-2::after {

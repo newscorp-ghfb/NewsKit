@@ -2216,7 +2216,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3799107142857143em + 1.2px);
+  margin-bottom: -0.3799107142857143em;
 }
 
 .emotion-384::after {
@@ -7108,6 +7108,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 .emotion-381 {
   box-sizing: border-box;
+  overflow: hidden;
   border-radius: 4px;
   position: relative;
   display: -webkit-box;
@@ -7227,6 +7228,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 .emotion-395 {
   box-sizing: border-box;
+  overflow: hidden;
   border-radius: 4px;
   position: relative;
   display: -webkit-box;
@@ -33237,6 +33239,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
 
 .emotion-381 {
   box-sizing: border-box;
+  overflow: hidden;
   border-radius: 4px;
   position: relative;
   display: -webkit-box;
@@ -33386,6 +33389,7 @@ exports[`Component Page Template renders mandatory sections and options 1`] = `
 
 .emotion-395 {
   box-sizing: border-box;
+  overflow: hidden;
   border-radius: 4px;
   position: relative;
   display: -webkit-box;
@@ -38294,6 +38298,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 .emotion-376 {
   box-sizing: border-box;
+  overflow: hidden;
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
@@ -48087,6 +48092,7 @@ exports[`Component Page Template renders mandatory sections and states 1`] = `
 
 .emotion-380 {
   box-sizing: border-box;
+  overflow: hidden;
   border-radius: 4px;
   position: relative;
   display: -webkit-box;
@@ -53158,7 +53164,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 .emotion-388 {
   box-sizing: border-box;
-  border-radius: 20rem;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -53174,7 +53180,6 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   position: relative;
   margin-bottom: 16px;
-  border-radius: 20rem;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -53283,7 +53288,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3799107142857143em + 1.2px);
+  margin-bottom: -0.3799107142857143em;
 }
 
 .emotion-402::after {

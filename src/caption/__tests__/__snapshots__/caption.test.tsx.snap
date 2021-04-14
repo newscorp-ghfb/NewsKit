@@ -26,7 +26,7 @@ exports[`Caption renders correctly with default props and caption and credit tex
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -58,7 +58,7 @@ exports[`Caption renders correctly with default props and caption and credit tex
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-3::after {
@@ -66,7 +66,7 @@ exports[`Caption renders correctly with default props and caption and credit tex
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <div
@@ -128,7 +128,7 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -160,7 +160,7 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-3::after {
@@ -168,7 +168,7 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <div
@@ -226,7 +226,7 @@ exports[`CaptionInset renders correctly with default props and only caption text
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -291,7 +291,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.1958333333333334em;
 }
 
 .emotion-2::after {
@@ -299,7 +299,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-3 {
@@ -323,7 +323,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-3::after {
@@ -331,7 +331,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <div
@@ -377,7 +377,7 @@ exports[`renders correctly with default props and only caption text 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -430,7 +430,7 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.2333333333333334em + 1px);
+  margin-bottom: -0.1958333333333334em;
 }
 
 .emotion-2::after {
@@ -438,7 +438,7 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.2958333333333334em + 1px);
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-3 {
@@ -462,7 +462,7 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-3::after {
@@ -470,7 +470,7 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <div

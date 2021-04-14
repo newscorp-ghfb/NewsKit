@@ -1506,5 +1506,6 @@ stylePresets.drawerPanel = {
 stylePresets.cardContainer = {
   base: {
     color: '{{colors.inkBase}}',
+    backgroundColor: '{{colors.interface010}}',
   },
 };

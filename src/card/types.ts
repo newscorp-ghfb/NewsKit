@@ -7,7 +7,7 @@ export interface CardOverridesProps {
   horizontalRatio?: string;
   mediaContainer?: {
     stylePreset?: MQ<string>;
-    spaceStack?: MQ<string>;
+    spaceInline?: MQ<string>;
   };
   teaserContainer?: {
     stylePreset?: MQ<string>;

@@ -21,7 +21,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -47,7 +47,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -55,7 +55,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -87,7 +87,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -113,7 +113,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -121,7 +121,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -152,7 +152,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -178,7 +178,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -186,7 +186,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -213,7 +213,7 @@ exports[`Standfirst renders with custom typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.25em;
+  margin-bottom: -0.128125em;
 }
 
 .emotion-0::after {
@@ -251,7 +251,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.128125em;
   }
 
   .emotion-0::after {
@@ -277,7 +277,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: -0.11145833333333338em;
   }
 
   .emotion-0::after {
@@ -285,7 +285,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: -0.2958333333333334em;
   }
 }
 

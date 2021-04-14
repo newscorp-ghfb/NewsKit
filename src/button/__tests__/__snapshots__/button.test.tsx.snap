@@ -420,7 +420,7 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -581,7 +581,7 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -740,7 +740,7 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -901,7 +901,7 @@ exports[`Button Loading Button renders a button with percentage for width and he
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1060,7 +1060,7 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1221,7 +1221,7 @@ exports[`Button Loading Button renders a button with token set for width and hei
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1380,7 +1380,7 @@ exports[`Button renders Large Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -1539,7 +1539,7 @@ exports[`Button renders Small Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-4::after {
@@ -1547,7 +1547,7 @@ exports[`Button renders Small Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <div
@@ -1698,7 +1698,7 @@ exports[`Button renders button link when href passed 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1858,7 +1858,7 @@ exports[`Button renders fixed-width Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -2018,7 +2018,7 @@ exports[`Button renders full-width Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -2177,7 +2177,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -2365,7 +2365,7 @@ exports[`Button renders with different spaceInset preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -2529,7 +2529,7 @@ exports[`Button renders with different style preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -2688,7 +2688,7 @@ exports[`Button renders with different typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -2847,7 +2847,7 @@ exports[`Button renders with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {

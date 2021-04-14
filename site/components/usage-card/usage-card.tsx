@@ -44,7 +44,7 @@ export const UsageCard: React.FC<UsageCardProps> = ({
           stylePreset: 'cardMediaNonInteractive',
           mediaContainer: {
             stylePreset: 'cardMediaNonInteractive',
-            spaceStack: 'space040',
+            spaceInline: 'space040',
           },
         }}
       >

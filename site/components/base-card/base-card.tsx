@@ -19,7 +19,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
           spaceInset: 'space050',
         },
         mediaContainer: {
-          spaceStack: 'space000',
+          spaceInline: 'space000',
         },
       }
     : {
@@ -29,7 +29,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
           spaceInset: 'spaceInsetStretch010',
         },
         mediaContainer: {
-          spaceStack: 'space040',
+          spaceInline: 'space040',
         },
       };
   return (

@@ -112,7 +112,7 @@ exports[`Tag href renders as an anchor 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -260,7 +260,7 @@ exports[`Tag href renders in disable state as a div 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -408,7 +408,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -555,7 +555,7 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -716,7 +716,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-7::after {
@@ -897,7 +897,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-7::after {
@@ -1078,7 +1078,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-7::after {
@@ -1246,7 +1246,7 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1396,7 +1396,7 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1543,7 +1543,7 @@ exports[`Tag renders a tag with no paddings 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1691,7 +1691,7 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1841,7 +1841,7 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1989,7 +1989,7 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -2139,7 +2139,7 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -2286,7 +2286,7 @@ exports[`Tag renders in disabled state 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -2434,7 +2434,7 @@ exports[`Tag renders with Large size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -2581,7 +2581,7 @@ exports[`Tag renders with Medium size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -2728,7 +2728,7 @@ exports[`Tag renders with Small size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-4::after {
@@ -2736,7 +2736,7 @@ exports[`Tag renders with Small size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <div
@@ -2875,7 +2875,7 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -3022,7 +3022,7 @@ exports[`Tag renders with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {

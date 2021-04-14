@@ -296,7 +296,7 @@ describe('Card', () => {
           stylePreset: 'cardContainerMock',
           mediaContainer: {
             stylePreset: 'cardContainerMediaMock',
-            spaceStack: {
+            spaceInline: {
               xs: 'space050',
               sm: 'space050',
               md: 'space060',
@@ -412,7 +412,7 @@ describe('CardInset', () => {
           stylePreset: 'cardContainerMock',
           mediaContainer: {
             stylePreset: 'cardContainerMediaMock',
-            spaceStack: 'space000',
+            spaceInline: 'space000',
           },
           teaserContainer: {
             stylePreset: 'cardContainerTeaserMock',

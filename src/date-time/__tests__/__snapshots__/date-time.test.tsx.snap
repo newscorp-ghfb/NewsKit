@@ -24,7 +24,7 @@ exports[`DateTime renders with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-0::after {
@@ -64,7 +64,7 @@ exports[`DateTime renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-0::after {
@@ -92,7 +92,7 @@ exports[`DateTime renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-1::after {
@@ -100,7 +100,7 @@ exports[`DateTime renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <time>
@@ -147,7 +147,7 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-0::after {

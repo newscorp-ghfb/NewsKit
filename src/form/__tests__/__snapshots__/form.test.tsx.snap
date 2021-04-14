@@ -26,7 +26,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-2::after {
@@ -97,7 +97,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -132,7 +132,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -263,7 +263,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-18::after {
@@ -407,7 +407,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-2::after {
@@ -469,7 +469,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -529,7 +529,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-9::after {
@@ -660,7 +660,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-24::after {
@@ -851,7 +851,7 @@ exports[`Form renders with error on blur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-2::after {
@@ -913,7 +913,7 @@ exports[`Form renders with error on blur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -973,7 +973,7 @@ exports[`Form renders with error on blur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-9::after {
@@ -1040,7 +1040,7 @@ exports[`Form renders with error on blur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-14::after {
@@ -1071,7 +1071,7 @@ exports[`Form renders with error on blur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-16::after {
@@ -1202,7 +1202,7 @@ exports[`Form renders with error on blur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-21::after {
@@ -1370,7 +1370,7 @@ exports[`Form renders with error on submit 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-2::after {
@@ -1432,7 +1432,7 @@ exports[`Form renders with error on submit 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -1492,7 +1492,7 @@ exports[`Form renders with error on submit 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-9::after {
@@ -1623,7 +1623,7 @@ exports[`Form renders with error on submit 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-24::after {
@@ -1814,7 +1814,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-2::after {
@@ -1876,7 +1876,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -1936,7 +1936,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-9::after {
@@ -2003,7 +2003,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-14::after {
@@ -2034,7 +2034,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-16::after {
@@ -2165,7 +2165,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-21::after {
@@ -2329,7 +2329,7 @@ exports[`Form renders with inputs 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-1::after {
@@ -2400,7 +2400,7 @@ exports[`Form renders with inputs 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-3::after {
@@ -2435,7 +2435,7 @@ exports[`Form renders with inputs 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-5::after {
@@ -2546,7 +2546,7 @@ exports[`Form renders with nested inputs 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-2::after {
@@ -2617,7 +2617,7 @@ exports[`Form renders with nested inputs 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -2652,7 +2652,7 @@ exports[`Form renders with nested inputs 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -2783,7 +2783,7 @@ exports[`Form renders with nested inputs 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-18::after {
@@ -2928,7 +2928,7 @@ exports[`Form renders with onBlur validation 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-2::after {
@@ -2999,7 +2999,7 @@ exports[`Form renders with onBlur validation 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -3034,7 +3034,7 @@ exports[`Form renders with onBlur validation 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -3165,7 +3165,7 @@ exports[`Form renders with onBlur validation 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-18::after {

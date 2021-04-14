@@ -317,7 +317,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -342,7 +342,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -422,7 +422,7 @@ exports[`slider labels should render horizontal labels 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -460,7 +460,7 @@ exports[`slider labels should render horizontal labels 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -548,7 +548,7 @@ exports[`slider labels should render max label 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -630,7 +630,7 @@ exports[`slider labels should render min label 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -711,7 +711,7 @@ exports[`slider labels should render vertical labels 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-1::after {
@@ -749,7 +749,7 @@ exports[`slider labels should render vertical labels 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-2::after {
@@ -948,7 +948,7 @@ exports[`slider react-range Range function props renderThumb should render defau
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-0::after {
@@ -1175,7 +1175,7 @@ exports[`slider react-range Range function props renderThumb should render range
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-1::after {
@@ -1431,7 +1431,7 @@ exports[`slider react-range Range function props renderThumb should render verti
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-1::after {

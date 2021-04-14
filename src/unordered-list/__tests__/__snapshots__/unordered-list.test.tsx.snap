@@ -72,7 +72,7 @@ exports[`UnorderedList renders different types of children 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {
@@ -336,7 +336,7 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -524,7 +524,7 @@ exports[`UnorderedList renders with custom list item marker with different size 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -684,7 +684,7 @@ exports[`UnorderedList renders with defaults 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {
@@ -781,7 +781,7 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-3::after {

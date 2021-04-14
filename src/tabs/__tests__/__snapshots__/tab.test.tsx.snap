@@ -194,7 +194,7 @@ exports[`Tab renders disabled tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -377,7 +377,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -565,7 +565,7 @@ exports[`Tab renders label with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -736,7 +736,7 @@ exports[`Tab renders large tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-4::after {
@@ -907,7 +907,7 @@ exports[`Tab renders small tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4833333333333334em + 1px);
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-4::after {
@@ -915,7 +915,7 @@ exports[`Tab renders small tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: calc(-0.5458333333333334em + -0.5px);
+  margin-top: -0.5458333333333334em;
 }
 
 <div
@@ -1089,7 +1089,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-6::after {
@@ -1277,7 +1277,7 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1476,7 +1476,7 @@ exports[`Tab renders with different minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {
@@ -1647,7 +1647,7 @@ exports[`Tab should render custom aria-label tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.32678571428571435em;
 }
 
 .emotion-4::after {

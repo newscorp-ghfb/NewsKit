@@ -229,9 +229,6 @@ export const stylePresets = {
     },
   },
   cardMediaNonInteractive: {
-    base: {
-      borderRadius: '{{borders.borderRadiusDefault}}',
-    },
     loading: {
       backgroundColor: '{{colors.interfaceSkeleton010}}',
       iconColor: '{{colors.inkNonEssential}}',

@@ -38,41 +38,15 @@ export const fonts = {
   fontFamily010: {
     fontFamily: '"Noto Sans", sans-serif',
     cropConfig: {
-      top: 8,
+      top: 6.8,
       bottom: 10,
-    },
-    cropAdjustments: {
-      '{{fonts.fontSize010}}': {
-        top: 1,
-        bottom: -0.5,
-      },
-      '{{fonts.fontSize020}}': {
-        top: 1.2,
-      },
-      '{{fonts.fontSize070}}': {
-        top: 1,
-        bottom: 1,
-      },
     },
   } as FontConfig,
   fontFamily020: {
     fontFamily: '"Source Serif Pro", serif',
     cropConfig: {
-      top: 8,
+      top: 4.1,
       bottom: 10,
-    },
-    cropAdjustments: {
-      '{{fonts.fontSize010}}': {
-        top: 1,
-        bottom: -0.5,
-      },
-      '{{fonts.fontSize020}}': {
-        top: 1.2,
-      },
-      '{{fonts.fontSize070}}': {
-        top: 1,
-        bottom: 1,
-      },
     },
   } as FontConfig,
   fontFamily030: {
