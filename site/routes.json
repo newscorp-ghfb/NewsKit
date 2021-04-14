@@ -208,6 +208,11 @@
         "id": "/components/navigation",
         "subNav": [
           {
+            "title": "Drawer",
+            "page": true,
+            "id": "/components/navigation/drawer"
+          },
+          {
             "title": "Link",
             "page": true,
             "id": "/components/navigation/link"

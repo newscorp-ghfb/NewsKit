@@ -1,7 +1,8 @@
 import Playground from '../../../components/playground';
 import Prop from '../../../components/prop';
 import Layout from '../../../components/layout';
-import {Code} from '../../../components/code';
+import {Code, CodeFromFile, CodeFromDefaultPresets} from '../../../components/code';
+import {DrawerExample} from '../../../demo-components/drawer/drawer';
 
 import {Drawer} from 'newskit';
 
@@ -110,11 +111,10 @@ Drawers are appropriate for five or more information and action items and should
   </Prop>
 </LegacyBlock>
 
-## Playground
+### Examples
 
-## Rationale
-
-### Styling
+<DrawerExample />
+<CodeFromFile path="examples/drawer/drawer.tsx" />
 
 ### Accessibility
 

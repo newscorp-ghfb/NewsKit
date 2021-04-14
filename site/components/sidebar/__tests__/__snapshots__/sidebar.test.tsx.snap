@@ -978,6 +978,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
             <div>
               <a
                 class="emotion-18"
+                href="/components/navigation/drawer"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-20"
+                    data-testid="/components/navigation/drawer"
+                  >
+                    Drawer
+                  </div>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="emotion-18"
                 href="/components/navigation/link"
               >
                 <span
@@ -2493,6 +2510,23 @@ exports[`Sidebar renders correctly when open 1`] = `
               id="/components/navigation"
             >
               Navigation
+            </div>
+            <div>
+              <a
+                class="emotion-18"
+                href="/components/navigation/drawer"
+              >
+                <span
+                  class="emotion-3"
+                >
+                  <div
+                    class="emotion-20"
+                    data-testid="/components/navigation/drawer"
+                  >
+                    Drawer
+                  </div>
+                </span>
+              </a>
             </div>
             <div>
               <a
