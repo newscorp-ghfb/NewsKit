@@ -1,6 +1,7 @@
 import React from 'react';
-import {Cell, Block, TextBlock, Image} from 'newskit';
+import {Block, TextBlock, Image} from 'newskit';
 import {PageIntroductionProps} from './types';
+import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
 
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   type,
@@ -9,7 +10,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   hero,
 }) => (
   <>
-    <Cell xs={12} md={10} lg={8} mdOffset={1}>
+    <ComponentPageCell>
       <Block spaceStack={{xs: 'space040', md: 'space050'}}>
         <TextBlock
           stylePreset="inkBrand010"
@@ -33,8 +34,8 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           {name}
         </TextBlock>
       </Block>
-    </Cell>
-    <Cell xs={12} md={8} lg={6} mdOffset={1}>
+    </ComponentPageCell>
+    <ComponentPageCellCompact>
       <Block spaceStack={{xs: 'space080', md: 'space060'}}>
         <TextBlock
           stylePreset="inkBase"
@@ -46,11 +47,11 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           {introduction}
         </TextBlock>
       </Block>
-    </Cell>
-    <Cell xs={12} md={10} lg={8} mdOffset={1}>
+    </ComponentPageCellCompact>
+    <ComponentPageCell>
       <Block spaceStack={{xs: 'space080', md: 'space090'}}>
         <Image loadingAspectRatio="16:9" alt="" {...hero} />
       </Block>
-    </Cell>
+    </ComponentPageCell>
   </>
 );

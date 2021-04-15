@@ -18,18 +18,20 @@ jest.mock('../../mono', () => ({
   Mono: mockComp('Mono'),
 }));
 
-jest.mock('newskit', () => ({
-  ...(jest.requireActual('newskit') as any),
-  IconFilledAdd: mockComp('IconFilledAdd'),
-  IconOutlinedKeyboardArrowDown: mockComp('IconOutlinedKeyboardArrowDown'),
-  IconOutlinedKeyboardArrowLeft: mockComp('IconOutlinedKeyboardArrowLeft'),
-  IconOutlinedKeyboardArrowRight: mockComp('IconOutlinedKeyboardArrowRight'),
-  IconOutlinedKeyboardArrowUp: mockComp('IconOutlinedKeyboardArrowUp'),
-  IconOutlinedKeyboardBackspace: mockComp('IconOutlinedKeyboardBackspace'),
-  IconOutlinedKeyboardReturn: mockComp('IconOutlinedKeyboardReturn'),
-  IconOutlinedKeyboardTab: mockComp('IconOutlinedKeyboardTab'),
-  IconOutlinedSpaceBar: mockComp('IconOutlinedSpaceBar'),
-}));
+jest.mock(
+  'newskit',
+  require('../../../../utils/test-utils').mockNewsKitComponents(
+    'IconFilledAdd',
+    'IconOutlinedKeyboardArrowDown',
+    'IconOutlinedKeyboardArrowLeft',
+    'IconOutlinedKeyboardArrowRight',
+    'IconOutlinedKeyboardArrowUp',
+    'IconOutlinedKeyboardBackspace',
+    'IconOutlinedKeyboardReturn',
+    'IconOutlinedKeyboardTab',
+    'IconOutlinedSpaceBar',
+  ),
+);
 
 describe('MonoKeyboard', () => {
   describe('with single key', () => {

@@ -17,7 +17,7 @@ import {Status} from './status';
 import {Introduced} from './introduce';
 
 export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
-  <Cell xs={12} md={10} lg={8} mdOffset={1}>
+  <>
     <Block spaceStack={{xs: 'space080', md: 'space050'}}>
       <Hidden xs sm>
         <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
@@ -88,5 +88,5 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
       </Hidden>
     </Block>
     <Divider />
-  </Cell>
+  </>
 );

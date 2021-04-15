@@ -1,10 +1,11 @@
 import React from 'react';
-import {Cell, Grid, Link, Paragraph} from 'newskit';
+import {Grid, Link, Paragraph} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
 import {Separator} from '../../components/separator';
 import {MediaList} from '../../components/media-list';
+import {ComponentPageCell} from '../../components/layout-cells';
 
 const cards = [
   {
@@ -119,9 +120,9 @@ export default (layoutProps: LayoutProps) => (
           </Paragraph>
         </>
       </SectionIntroduction>
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <ComponentPageCell>
         <Separator />
-      </Cell>
+      </ComponentPageCell>
       <SectionIntroduction title="Principles" cellProps={{lg: 8}}>
         NewsKit design system and the NewsKit team is guided by a set of
         principles.

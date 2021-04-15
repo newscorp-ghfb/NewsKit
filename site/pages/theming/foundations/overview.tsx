@@ -1,10 +1,11 @@
 import React from 'react';
-import {Cell, Grid} from 'newskit';
+import {Grid} from 'newskit';
 import Layout, {LayoutProps} from '../../../components/layout';
 import {SectionIntroduction} from '../../../components/section-introduction';
 import {Separator} from '../../../components/separator';
 import {MediaList} from '../../../components/media-list';
 import {HeaderIndex} from '../../../components/header-index';
+import {ComponentPageCell} from '../../../components/layout-cells';
 
 const cardsContent = [
   {
@@ -107,9 +108,9 @@ export default (layoutProps: LayoutProps) => (
         parentCellProps={{lg: 10}}
         gridProps={{xsRowGutter: 'space050'}}
       />
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <ComponentPageCell>
         <Separator />
-      </Cell>
+      </ComponentPageCell>
     </Grid>
   </Layout>
 );

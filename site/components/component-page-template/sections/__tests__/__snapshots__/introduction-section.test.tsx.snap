@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IntroductionSection renders section as expected 1`] = `
+<DocumentFragment>
+  <div>
+    PageIntroduction Component with props:{
+  "dummy": "page intro props"
+}
+  </div>
+  <div
+    data-comp="NewsKit Cell"
+    data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"lg\\": 8,
+  \\"mdOffset\\": 1
+}"
+    data-testid="Cell"
+  >
+    <div>
+      Meta Component with props:{
+  "dummy": "meta props"
+}
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -54,7 +54,8 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
     <div
       class="emotion-1"
     >
-      <span
+      <div
+        data-comp="NewsKit IconFilledAdd"
         data-props="{
   \\"overrides\\": {
     \\"size\\": \\"iconSize010\\"
@@ -70,7 +71,8 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
         data-props="{}"
         data-testid="Mono"
       >
-        <span
+        <div
+          data-comp="NewsKit IconOutlinedKeyboardReturn"
           data-props="{
   \\"overrides\\": {
     \\"stylePreset\\": \\"inkBrand010\\",
@@ -85,7 +87,8 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
     <div
       class="emotion-1"
     >
-      <span
+      <div
+        data-comp="NewsKit IconFilledAdd"
         data-props="{
   \\"overrides\\": {
     \\"size\\": \\"iconSize010\\"
@@ -101,7 +104,8 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
         data-props="{}"
         data-testid="Mono"
       >
-        <span
+        <div
+          data-comp="NewsKit IconOutlinedKeyboardArrowLeft"
           data-props="{
   \\"overrides\\": {
     \\"stylePreset\\": \\"inkBrand010\\",
@@ -165,7 +169,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardRetu
         data-props="{}"
         data-testid="Mono"
       >
-        <span
+        <div
+          data-comp="NewsKit IconOutlinedKeyboardReturn"
           data-props="{
   \\"overrides\\": {
     \\"stylePreset\\": \\"inkBrand010\\",

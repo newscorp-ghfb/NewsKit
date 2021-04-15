@@ -7,6 +7,7 @@ import {SectionIntroduction} from '../../components/section-introduction';
 import {MediaList} from '../../components/media-list';
 import {Separator} from '../../components/separator';
 import {ContentText} from '../../components/text-section';
+import {ComponentPageCell} from '../../components/layout-cells';
 
 // Keeping this until mediaList starts supporting featureCards
 // const cardStyle = {
@@ -75,9 +76,9 @@ export default (layoutProps: LayoutProps) => (
         other users to benefit from.
       </SectionIntroduction>
       <MediaList cards={[...cards]} />
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <ComponentPageCell>
         <Separator />
-      </Cell>
+      </ComponentPageCell>
       <SectionIntroduction
         title="Feedback"
         image={{
@@ -147,9 +148,9 @@ export default (layoutProps: LayoutProps) => (
           .
         </ContentText>
       </Cell>
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <ComponentPageCell>
         <Separator />
-      </Cell>
+      </ComponentPageCell>
 
       <SectionIntroduction
         title="Share"
@@ -192,9 +193,9 @@ export default (layoutProps: LayoutProps) => (
           the NewsKit team can help.
         </ContentText>
       </Cell>
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <ComponentPageCell>
         <Separator />
-      </Cell>
+      </ComponentPageCell>
       <SectionIntroduction
         title="Create"
         image={{
@@ -203,7 +204,7 @@ export default (layoutProps: LayoutProps) => (
         }}
       />
 
-      <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <ComponentPageCell>
         <ContentText title="Build assets for design libraries" titleAs="h3">
           Designed something that you think other NewsKit users would benefit
           from? Whether that be a component or a structured layout of existing
@@ -262,7 +263,7 @@ export default (layoutProps: LayoutProps) => (
           </Link>
           . The NewsKit team can guide you through the contribution process.
         </ContentText>
-      </Cell>
+      </ComponentPageCell>
     </Grid>
   </Layout>
 );

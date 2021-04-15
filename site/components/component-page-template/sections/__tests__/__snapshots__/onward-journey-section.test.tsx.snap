@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OnwardJourneySection renders section as expected 1`] = `
+<DocumentFragment>
+  <div
+    data-comp="NewsKit Cell"
+    data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"lg\\": 8,
+  \\"mdOffset\\": 1
+}"
+    data-testid="Cell"
+  >
+    <div>
+      FeatureCard Component with props:{
+  "dummy": "onward journey/feature card props"
+}
+    </div>
+  </div>
+</DocumentFragment>
+`;

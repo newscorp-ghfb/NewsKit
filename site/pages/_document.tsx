@@ -3,7 +3,7 @@ import * as React from 'react';
 import Document, {Head, Main, NextScript, DocumentContext} from 'next/document';
 import {Consent, Tealium} from 'newskit';
 import Helmet from 'react-helmet';
-import Meta from '../components/meta';
+import {HTMLMeta} from '../components/html-meta';
 
 interface Props {
   production: boolean;
@@ -39,7 +39,7 @@ export default class MyDocument extends Document<Props> {
             `}
           </style>
           {helmet.script.toComponent()}
-          <Meta />
+          <HTMLMeta />
           <Consent
             sourcePointConfigNonTCFV1={{
               accountId: 259,

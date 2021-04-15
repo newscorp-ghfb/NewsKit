@@ -1,17 +1,13 @@
-import React from 'react';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
 import {Mono} from '..';
 
-jest.mock('newskit', () => ({
-  ...(jest.requireActual('newskit') as any),
-  Flag: ({children, ...props}: any) => (
-    <span data-name="Flag" data-props={JSON.stringify(props, null, 2)}>
-      {children}
-    </span>
+jest.mock(
+  'newskit',
+  require('../../../../utils/test-utils').mockNewsKitComponents(
+    'Flag',
+    'TextBlock',
   ),
-  TextBlock: (props: any) =>
-    `TextBlock - props: ${JSON.stringify(props, null, 2)}`,
-}));
+);
 
 describe('Mono', () => {
   describe('default', () => {
@@ -21,8 +17,8 @@ describe('Mono', () => {
       });
       expect(fragment).toMatchInlineSnapshot(`
         <DocumentFragment>
-          <span
-            data-name="Flag"
+          <div
+            data-comp="NewsKit Flag"
             data-props="{
           \\"overrides\\": {
             \\"typographyPreset\\": \\"utilityCode020\\",
@@ -31,9 +27,10 @@ describe('Mono', () => {
           \\"size\\": \\"medium\\",
           \\"className\\": \\"css-yct6su\\"
         }"
+            data-testid="Flag"
           >
             Child Text
-          </span>
+          </div>
         </DocumentFragment>
       `);
     });
@@ -46,12 +43,17 @@ describe('Mono', () => {
       });
       expect(fragment).toMatchInlineSnapshot(`
         <DocumentFragment>
-          TextBlock - props: {
-          "noCrop": true,
-          "stylePreset": "flagMinimalNeutral",
-          "typographyPreset": "utilityCode020",
-          "children": "Child Text"
-        }
+          <div
+            data-comp="NewsKit TextBlock"
+            data-props="{
+          \\"noCrop\\": true,
+          \\"stylePreset\\": \\"flagMinimalNeutral\\",
+          \\"typographyPreset\\": \\"utilityCode020\\"
+        }"
+            data-testid="TextBlock"
+          >
+            Child Text
+          </div>
         </DocumentFragment>
       `);
     });

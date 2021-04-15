@@ -1,18 +1,43 @@
-import {Button} from 'newskit';
+import React from 'react';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {MetaStatus} from '../../meta/types';
 import {ComponentPageTemplate} from '..';
 import {ComponentPageTemplateProps} from '../types';
-import {UsageKind} from '../../usage-card';
 
-const layoutProps = {
-  toggleTheme: () => {},
-  themeMode: '',
-  path: '/',
-};
+jest.mock('../../layout', () => ({children, ...props}: any) => (
+  <div data-comp="layout" data-props={JSON.stringify(props)}>
+    {children}
+  </div>
+));
+
+jest.mock(
+  'newskit',
+  require('../../../utils/test-utils').mockNewsKitComponents('Grid', 'Cell'),
+);
+
+jest.mock('../sections/accessibility-section');
+jest.mock('../sections/anatomy-section');
+jest.mock('../sections/behaviors-section');
+jest.mock('../sections/compliance-section');
+jest.mock('../sections/component-api-section');
+jest.mock('../sections/interactive-demo-section');
+jest.mock('../sections/introduction-section');
+jest.mock('../sections/onward-journey-section');
+jest.mock('../sections/options-section');
+jest.mock('../sections/related-components-section');
+jest.mock('../sections/seo-section');
+jest.mock('../sections/states-section');
+jest.mock('../sections/usage-section');
+jest.mock('../../table-of-contents', () => ({
+  TableOfContents: () => 'TableOfContents Component',
+}));
 
 const mandatoryProps: ComponentPageTemplateProps = {
-  layoutProps,
+  layoutProps: {
+    toggleTheme: ('toggle-theme-function' as any) as () => void,
+    themeMode: 'theme-mode',
+    path: '/the-path',
+  },
   componentDefaultsKey: 'component',
   pageIntroduction: {
     type: 'Component',
@@ -29,7 +54,7 @@ const mandatoryProps: ComponentPageTemplateProps = {
 };
 
 describe('Component Page Template', () => {
-  test('renders with mandatory sections', () => {
+  test('renders with mandatory sections only', () => {
     const fragment = renderToFragmentWithTheme(
       ComponentPageTemplate,
       mandatoryProps,
@@ -37,223 +62,29 @@ describe('Component Page Template', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders mandatory sections and interactiveDemo', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      interactiveDemo: {
-        introduction: 'Section introduction',
-        playground: {
-          componentName: 'ComponentName',
-          component: Button,
-          knobs: [
-            {
-              name: 'Content',
-              propName: 'children',
-              value: 'Button Content',
-            },
-          ],
+  [
+    ['Interactive Demo', 'interactiveDemo'],
+    ['Anatomy', 'anatomy'],
+    ['Options', 'options'],
+    ['States', 'states'],
+    ['Behaviors', 'behaviors'],
+    ['Usage', 'usage'],
+    ['Accessibility', 'accessibility'],
+    ['SEO', 'seo'],
+    ['Component API', 'componentAPI'],
+    ['Compliance', 'compliance'],
+    ['Related', 'related'],
+    ['Feature Card', 'featureCard'],
+  ].forEach(([section, prop]) => {
+    test(`renders the ${section} section when prop ${prop} is passed`, () => {
+      const props = {
+        ...mandatoryProps,
+        [prop]: {
+          'props for': `the ${section} section`,
         },
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and anatomy', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      anatomy: {
-        introduction: 'Component Anatomy',
-        list: ['Item', 'Item', 'Item', 'Item'],
-        media: {
-          src: '/static/placeholder-16x9.png',
-          alt: 'Component Anatomy',
-        },
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and options', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      options: {
-        introduction: 'Component options',
-        cards: [
-          {
-            title: 'Options',
-            description: 'Description',
-            media: {
-              src: '/static/placeholder-16x9.png',
-              alt: 'Card Media',
-            },
-          },
-        ],
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and states', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      states: {
-        introduction: 'Component states',
-        cards: [
-          {
-            title: 'States',
-            description: 'Description',
-            media: {
-              src: '/static/placeholder-16x9.png',
-              alt: 'Card Media',
-            },
-          },
-        ],
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and behaviors', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      behaviors: {
-        introduction: 'Component Behavior',
-        cards: [
-          {
-            title: 'Title',
-            description: 'Description',
-            media: {
-              src: '/static/placeholder-16x9.png',
-              alt: 'Component Behavior',
-            },
-          },
-        ],
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and usage', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      usage: {
-        introduction: 'Component Usage',
-        cards: [
-          {
-            description: 'Description',
-            kind: UsageKind.DO,
-            media: {
-              src: '/static/placeholder-16x9.png',
-              alt: 'src alt',
-            },
-          },
-        ],
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and focus order from accessibility', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      accessibility: {
-        introduction: 'Component Accessibility.',
-        focusOrder: {
-          title: 'Focus order',
-          description: 'Some random text here',
-          table: {
-            columns: ['Order', 'Element', 'Role'],
-            rows: [
-              {
-                order: ['1'],
-                element: 'element',
-                role: 'Role',
-              },
-            ],
-          },
-        },
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and seo', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      seo: {
-        title: 'SEO Considerations',
-        introduction: 'Seo text',
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and component API', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      componentAPI: {
-        introduction: 'Component API',
-        components: [
-          {
-            title: 'Button',
-            summary: 'Component Props',
-            propsTable: {
-              columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-              rows: [
-                {
-                  name: 'children',
-                  type: 'string',
-                  required: true,
-                  description: `Description`,
-                },
-              ],
-            },
-          },
-        ],
-      },
-    };
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and compliance', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      compliance: {interactive: true, variations: false, themes: null},
-    };
-
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders mandatory sections and related', () => {
-    const props: ComponentPageTemplateProps = {
-      ...mandatoryProps,
-      related: {
-        introduction: 'Related Components',
-        cards: [
-          {
-            title: 'Title',
-            description: 'Description',
-            href: 'http://localhost:8081/components/action/button',
-            media: {
-              src: '/static/placeholder-16x9.png',
-              alt: 'Card Media',
-            },
-          },
-        ],
-      },
-    };
-
-    const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
-    expect(fragment).toMatchSnapshot();
+      };
+      const fragment = renderToFragmentWithTheme(ComponentPageTemplate, props);
+      expect(fragment).toMatchSnapshot();
+    });
   });
 });

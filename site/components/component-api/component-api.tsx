@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, Cell, Tab, Tabs, TabSize} from 'newskit';
+import {Block, Cell, getSSRId, Tab, Tabs, TabSize} from 'newskit';
 import {Table} from '../table';
 import {ContentText} from '../text-section/content-text';
 import {ComponentAPIProps} from './types';
@@ -7,7 +7,7 @@ import {ComponentAPIProps} from './types';
 export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
   <Cell xs={12} lg={8} mdOffset={1}>
     {components.map(({title, summary, propsTable, overridesTable}) => (
-      <Block spaceStack="space070">
+      <Block key={getSSRId()} spaceStack="space070">
         {title && (
           <ContentText title={title} titleAs="span">
             {summary}

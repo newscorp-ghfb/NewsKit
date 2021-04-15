@@ -1,6 +1,7 @@
 import React from 'react';
-import {Block, TextBlock, TitleBar, Cell, Image} from 'newskit';
+import {Block, TextBlock, TitleBar, Image} from 'newskit';
 import {SectionIntroductionProps} from './types';
+import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
 
 export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   title,
@@ -8,7 +9,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   cellProps,
 }) => (
   <>
-    <Cell xs={12} md={8} lg={6} mdOffset={1} {...cellProps}>
+    <ComponentPageCellCompact {...cellProps}>
       <Block spaceStack="space050">
         <TitleBar
           headingAs="h2"
@@ -36,13 +37,13 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           </TextBlock>
         </Block>
       )}
-    </Cell>
-    <Cell xs={12} md={10} lg={8} mdOffset={1}>
+    </ComponentPageCellCompact>
+    <ComponentPageCell>
       {image && (
         <Block spaceStack={{xs: 'space060', md: 'space070'}}>
           <Image src={image.src} alt={image.alt || ''} />
         </Block>
       )}
-    </Cell>
+    </ComponentPageCell>
   </>
 );
