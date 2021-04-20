@@ -50,47 +50,57 @@ export default (layoutProps: LayoutProps) => (
                 required: true,
                 description: `Sets the content of the Banner.`,
               },
+              {
+                name: 'icon',
+                type: 'React.ReactElement<NewsKitIconProps>',
+                required: false,
+                description: `Icon used to indicate the status or intent of the Banner.`,
+              },
             ],
           },
           overridesTable: {
             columns: ['Name', 'Type', 'Description'],
             rows: [
               {
-                name: 'container',
-                type: 'object',
-                description:
-                  'Overrides for the most outer container of the Banner',
-              },
-              {
-                name: 'container.stylePreset',
+                name: 'stylePreset',
                 type: 'MQ<string>',
                 description: `If provided, this overrides the stylePreset applied to the Banner's most
                 outer container.`,
               },
               {
-                name: 'container.minHeight',
+                name: 'minHeight',
                 type: 'MQ<string>',
                 description: `If provided, this overrides the minHeight applied to the Banner's most
                 outer container.`,
               },
               {
-                name: 'container.spaceInset',
+                name: 'spaceInset',
                 type: 'MQ<string>',
                 description: `If provided, this overrides the spaceInset applied to the Banner's most
                 outer container`,
               },
               {
-                name: 'contentActionsContainer',
+                name: 'innerContainer',
                 type: 'object',
-                description: `Sets overrides to the container that holds the content and the action button.`,
+                description: `Sets overrides to the container that holds the content and the action buttons.`,
               },
               {
-                name: 'contentActionsContainer.maxWidth',
+                name: 'innerContainer.maxWidth',
                 type: 'MQ<string>',
                 description: `This override can be used to prevent the banner content and actions to
                 go out of the grid (content) bounds. It should usually be the same value
                 as the maxWidth for the grid at each beakpoint or the maxWidth that the main
                 content spans in a page.`,
+              },
+              {
+                name: 'innerContainer.icon',
+                type: 'object',
+                description: `Sets overrides to the container that holds the icon.`,
+              },
+              {
+                name: 'innerContainer.icon.spaceInline',
+                type: 'MQ<string>',
+                description: `Overrides the space between the icon and the content`,
               },
             ],
           },

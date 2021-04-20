@@ -282,12 +282,10 @@ Object {
       },
     },
     "banner": Object {
-      "container": Object {
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerContainerSolid",
-      },
-      "contentActionsContainer": Object {
+      "innerContainer": Object {
+        "icon": Object {
+          "spaceInline": "space030",
+        },
         "maxWidth": Object {
           "lg": "1024px",
           "md": "768px",
@@ -296,6 +294,9 @@ Object {
           "xs": "420px",
         },
       },
+      "minHeight": "sizing090",
+      "spaceInset": "spaceInset045",
+      "stylePreset": "bannerContainerSolid",
     },
     "button": Object {
       "large": Object {

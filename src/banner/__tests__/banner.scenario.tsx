@@ -6,6 +6,7 @@ import {
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils/style';
+import {IconFilledInfo, IconFilledWarning, IconFilledError} from '../../icons';
 
 const myCustomTheme = createTheme({
   name: 'banner-intents-theme',
@@ -67,7 +68,13 @@ export default {
           <StorybookHeading>Banner Intent</StorybookHeading>
           <StorybookSubHeading>Informative (default)</StorybookSubHeading>
           <BannerWrapper>
-            <Banner>
+            <Banner
+              icon={
+                <IconFilledInfo
+                  overrides={{size: 'iconSize020', stylePreset: 'inkInverse'}}
+                />
+              }
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Banner>
@@ -76,8 +83,13 @@ export default {
             <StorybookSubHeading>Notice</StorybookSubHeading>
             <BannerWrapper>
               <Banner
+                icon={
+                  <IconFilledWarning
+                    overrides={{size: 'iconSize020', stylePreset: 'inkInverse'}}
+                  />
+                }
                 overrides={{
-                  container: {stylePreset: 'bannerContainerSolidNotice'},
+                  stylePreset: 'bannerContainerSolidNotice',
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -87,8 +99,13 @@ export default {
             <StorybookSubHeading>Negative</StorybookSubHeading>
             <BannerWrapper>
               <Banner
+                icon={
+                  <IconFilledError
+                    overrides={{size: 'iconSize020', stylePreset: 'inkInverse'}}
+                  />
+                }
                 overrides={{
-                  container: {stylePreset: 'bannerContainerSolidNegative'},
+                  stylePreset: 'bannerContainerSolidNegative',
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

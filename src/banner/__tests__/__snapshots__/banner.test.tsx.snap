@@ -11,6 +11,123 @@ exports[`Banner renders with default props 1`] = `
 }
 
 .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-1 {
+    max-width: 420px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-1 {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    max-width: 1440px;
+  }
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+<div
+    class="emotion-0"
+    data-testid="banner-container"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <p
+          class="emotion-3"
+        >
+          test banner message
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Banner renders with icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-color: #128293;
+  color: #ffffff;
+  padding: 20px;
+  min-height: 64px;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -46,21 +163,67 @@ exports[`Banner renders with default props 1`] = `
 }
 
 .emotion-2 {
+  margin-right: 12px;
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #ffffff;
+  fill: #ffffff;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.emotion-6 {
   margin: 0;
   padding: 1px 0;
 }
 
 <div
     class="emotion-0"
+    data-testid="banner-container"
   >
     <div
       class="emotion-1"
     >
-      <p
+      <div
         class="emotion-2"
       >
-        test banner message
-      </p>
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+          />
+        </svg>
+      </div>
+      <div
+        class="emotion-5"
+      >
+        <p
+          class="emotion-6"
+        >
+          test banner message
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
