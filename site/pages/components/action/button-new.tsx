@@ -489,44 +489,7 @@ export default (layoutProps: LayoutProps) => (
     related={{
       introduction:
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',
-      cards: [
-        {
-          title: 'Title',
-          description: 'Description',
-          href: 'http://localhost:8081/components/action/button',
-          media: {
-            src: '/static/placeholder-16x9.png',
-            alt: 'Card Media',
-          },
-        },
-        {
-          title: 'Title',
-          description: 'Description',
-          href: 'http://localhost:8081/components/action/button',
-          media: {
-            src: '/static/placeholder-16x9.png',
-            alt: 'Card Media',
-          },
-        },
-        {
-          title: 'Title',
-          description: 'Description',
-          href: 'http://localhost:8081/components/action/button',
-          media: {
-            src: '/static/placeholder-16x9.png',
-            alt: 'Card Media',
-          },
-        },
-        {
-          title: 'Title',
-          description: 'Description',
-          href: 'http://localhost:8081/components/action/button',
-          media: {
-            src: '/static/placeholder-16x9.png',
-            alt: 'Card Media',
-          },
-        },
-      ],
+      related: ['Scroll'],
     }}
     accessibility={{
       introduction:

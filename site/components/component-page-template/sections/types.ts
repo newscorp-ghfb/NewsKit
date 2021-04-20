@@ -69,5 +69,7 @@ export type SEOSectionProps = Omit<SectionIntroductionProps, 'children'> &
   IntroductionText;
 export type ComponentAPISectionProps = ComponentAPIProps & IntroductionText;
 export type ComplianceSectionProps = ComplianceProps;
-export type RelatedComponentsSectionProps = MediaListProps & IntroductionText;
+export type RelatedComponentsSectionProps = {
+  related: string[];
+} & IntroductionText;
 export type OnwardJourneySectionProps = FeatureCardProps;

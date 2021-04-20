@@ -158,7 +158,9 @@
           {
             "title": "Scroll",
             "page": true,
-            "id": "/components/layout/scroll"
+            "id": "/components/layout/scroll",
+            "description": "Here lies the description for the scroll component",
+            "media": "/static/placeholder-16x9.png"
           },
           {
             "title": "Stack",

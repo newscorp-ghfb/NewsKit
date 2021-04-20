@@ -1,10 +1,12 @@
 import routes from '../routes.json';
 
-interface RouteObject {
+export interface RouteObject {
   title: string;
   id: string;
   page?: boolean;
   subNav?: RouteObject[];
+  media?: string;
+  description?: string;
 }
 
 const findRoute = (
