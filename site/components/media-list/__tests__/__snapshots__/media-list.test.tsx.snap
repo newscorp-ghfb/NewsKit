@@ -36,6 +36,11 @@ exports[`Media List renders with custom layout 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -552,6 +557,11 @@ exports[`Media List renders with default layout 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -1038,6 +1048,11 @@ exports[`Media List renders with usage cards 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;

@@ -1,11 +1,12 @@
 import React from 'react';
-import {Block, Cell, getSSRId, Tab, Tabs, TabSize} from 'newskit';
+import {Block, getSSRId, Tab, Tabs, TabSize} from 'newskit';
 import {Table} from '../table';
 import {ContentText} from '../text-section/content-text';
 import {ComponentAPIProps} from './types';
+import {ComponentPageCell} from '../layout-cells';
 
 export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
-  <Cell xs={12} lg={8} mdOffset={1}>
+  <ComponentPageCell>
     {components.map(({title, summary, propsTable, overridesTable}) => (
       <Block key={getSSRId()} spaceStack="space070">
         {title && (
@@ -27,5 +28,5 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
         )}
       </Block>
     ))}
-  </Cell>
+  </ComponentPageCell>
 );

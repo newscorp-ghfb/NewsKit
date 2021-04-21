@@ -119,10 +119,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-4 {
     padding: 0 12px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
   }
 }
 
@@ -284,6 +280,11 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-12 {
     padding: 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-12 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -396,6 +397,11 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-16 {
     padding: 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-16 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -806,6 +812,11 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;

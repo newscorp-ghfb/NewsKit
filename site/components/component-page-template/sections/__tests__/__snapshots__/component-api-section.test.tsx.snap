@@ -295,7 +295,6 @@ exports[`ComponentAPISection renders section as expected 1`] = `
           data-props="{
   \\"xs\\": 12,
   \\"md\\": 8,
-  \\"lg\\": 6,
   \\"mdOffset\\": 1
 }"
           data-testid="Cell"
@@ -336,7 +335,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
           data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 8,
+  \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
           data-testid="Cell"
@@ -345,7 +344,8 @@ exports[`ComponentAPISection renders section as expected 1`] = `
           data-comp="NewsKit Cell"
           data-props="{
   \\"xs\\": 12,
-  \\"lg\\": 8,
+  \\"md\\": 10,
+  \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
           data-testid="Cell"
@@ -482,7 +482,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
     data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 8,
+  \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
     data-testid="Cell"

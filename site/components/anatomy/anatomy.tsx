@@ -4,12 +4,12 @@ import {AnatomyProps} from './types';
 
 export const Anatomy: React.FC<AnatomyProps> = ({media, list}) => (
   <>
-    <Cell mdOffset={1} xs={12} md={10} lg={8}>
+    <Cell mdOffset={1} xs={12} md={10} xl={8}>
       <Block spaceStack="space050">
         <Image {...media} />
       </Block>
     </Cell>
-    <Cell xs={9} md={8} lg={6} mdOffset={1}>
+    <Cell xs={9} md={8} mdOffset={1}>
       <Block spaceStack="space050">
         <OrderedList
           overrides={{content: {typographyPreset: 'editorialCaption010'}}}

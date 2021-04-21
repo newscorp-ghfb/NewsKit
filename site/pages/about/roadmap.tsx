@@ -19,7 +19,7 @@ export default (layoutProps: LayoutProps) => (
         Here is the team’s focus over the coming months. This is updated
         regularly as our priorities change over time.
       </SectionIntroduction>
-      <Cell mdOffset={1} xs={12} md={10} lg={8}>
+      <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Block spaceStack="space090">
           <iframe
             title="airtable roadmap"
@@ -35,7 +35,7 @@ export default (layoutProps: LayoutProps) => (
           />
         </Block>
       </Cell>
-      <Cell mdOffset={1} xs={12} md={10} lg={8}>
+      <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Block spaceStack="space090">
           <TextBlock
             stylePreset="inkBase"

@@ -56,15 +56,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
         {compliance && <ComplianceSection {...compliance} />}
         {related && <RelatedComponentsSection {...related} />}
         {featureCard && <OnwardJourneySection {...featureCard} />}
-        <Cell
-          xsHidden
-          smHidden
-          mdHidden
-          lgOffset={9}
-          lg={3}
-          xlOffset={10}
-          xl={2}
-        >
+        <Cell xsHidden smHidden mdHidden lgHidden xlOffset={10} xl={2}>
           <TableOfContents />
         </Cell>
       </Grid>

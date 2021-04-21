@@ -85,7 +85,7 @@ export const MediaList: React.FC<MediaListProps> = ({
   };
 
   return (
-    <Cell xs={12} md={10} lg={8} mdOffset={1} {...parentCellProps}>
+    <Cell xs={12} md={10} xl={8} mdOffset={1} {...parentCellProps}>
       <Block spaceStack={spaceStack}>
         <Grid xsRowGutter="space080" xsMargin="space000" {...gridProps}>
           {renderBreakpointCards()}

@@ -25,6 +25,10 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
   }
 }
 
@@ -32,6 +36,11 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;
@@ -400,6 +409,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-0 {
     margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
   }
 }
 
@@ -407,6 +420,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   .emotion-0 {
     padding: 0 12px;
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
     -webkit-flex-basis: 66.66666666666667%;
     -ms-flex-preferred-size: 66.66666666666667%;
     flex-basis: 66.66666666666667%;

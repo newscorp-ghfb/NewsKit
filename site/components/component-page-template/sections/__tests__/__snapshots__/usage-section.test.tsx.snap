@@ -158,7 +158,6 @@ exports[`UsageSection renders section as expected 1`] = `
           data-props="{
   \\"xs\\": 12,
   \\"md\\": 8,
-  \\"lg\\": 6,
   \\"mdOffset\\": 1
 }"
           data-testid="Cell"
@@ -199,7 +198,7 @@ exports[`UsageSection renders section as expected 1`] = `
           data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 8,
+  \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
           data-testid="Cell"
@@ -273,7 +272,7 @@ exports[`UsageSection renders section as expected 1`] = `
     data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 8,
+  \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
     data-testid="Cell"
