@@ -7,8 +7,8 @@
   "fontFamily010": {
     "fontFamily": "'Poppins', sans-serif",
     "cropConfig": {
-      "top": 4.5,
-      "bottom": 12.5
+      "top": 7.5,
+      "bottom": 12
     },
     "cropAdjustments": {
       "__shallow": true,
@@ -17,7 +17,7 @@
         "bottom": 0
       },
       "{{fonts.fontSize020}}": {
-        "top": 1.2
+        "top": 0
       }
     }
   },

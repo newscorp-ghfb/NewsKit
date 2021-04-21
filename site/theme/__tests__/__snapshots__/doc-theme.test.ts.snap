@@ -1016,12 +1016,12 @@ Object {
           "top": -0.5,
         },
         "{{fonts.fontSize020}}": Object {
-          "top": 1.2,
+          "top": 0,
         },
       },
       "cropConfig": Object {
-        "bottom": 12.5,
-        "top": 4.5,
+        "bottom": 12,
+        "top": 7.5,
       },
       "fontFamily": "'Poppins', sans-serif",
     },

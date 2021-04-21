@@ -166,7 +166,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.20729166666666665em;
+  margin-bottom: -0.30104166666666665em;
 }
 
 .emotion-8::after {
@@ -174,7 +174,7 @@ exports[`Compliance renders N/A if null if a rule is passed with null 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.45729166666666665em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-9 {
@@ -820,7 +820,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.20729166666666665em;
+  margin-bottom: -0.30104166666666665em;
 }
 
 .emotion-8::after {
@@ -828,7 +828,7 @@ exports[`Compliance renders a tick, a cross and N/A true, false and null is pass
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.45729166666666665em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-9 {
@@ -1508,7 +1508,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.20729166666666665em;
+  margin-bottom: -0.30104166666666665em;
 }
 
 .emotion-8::after {
@@ -1516,7 +1516,7 @@ exports[`Compliance renders all compliance items with N/A if there are no rules 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.45729166666666665em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-9 {
@@ -2162,7 +2162,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.20729166666666665em;
+  margin-bottom: -0.30104166666666665em;
 }
 
 .emotion-8::after {
@@ -2170,7 +2170,7 @@ exports[`Compliance renders with cross if a rule is passed with false, otherwise
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.45729166666666665em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-9 {
@@ -2833,7 +2833,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.20729166666666665em;
+  margin-bottom: -0.30104166666666665em;
 }
 
 .emotion-8::after {
@@ -2841,7 +2841,7 @@ exports[`Compliance renders with tick if a rule is passed with true, otherwise r
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.45729166666666665em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-9 {

@@ -10,7 +10,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
 }) => (
   <>
     <ComponentPageCellCompact {...cellProps}>
-      <Block spaceStack="space050">
+      <Block spaceStack="space060">
         <TitleBar
           headingAs="h2"
           overrides={{

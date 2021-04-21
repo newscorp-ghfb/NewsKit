@@ -127,7 +127,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 }
 
 .emotion-5 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .emotion-6 {
@@ -168,7 +168,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.18348214285714293em;
+    margin-bottom: -0.2772321428571429em;
   }
 
   .emotion-8::after {
@@ -176,7 +176,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4334821428571429em;
+    margin-top: -0.4178571428571429em;
   }
 }
 
@@ -194,7 +194,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.140625em;
+    margin-bottom: -0.234375em;
   }
 
   .emotion-8::after {
@@ -202,7 +202,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.390625em;
+    margin-top: -0.375em;
   }
 }
 
@@ -241,7 +241,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.34062500000000007em;
+  margin-bottom: -0.43437500000000007em;
 }
 
 .emotion-11::after {
@@ -249,7 +249,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5906250000000001em;
+  margin-top: -0.5750000000000001em;
 }
 
 .emotion-12 {
@@ -440,7 +440,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.24062499999999998em;
+    margin-bottom: -0.334375em;
   }
 
   .emotion-18::after {
@@ -448,7 +448,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.490625em;
+    margin-top: -0.475em;
   }
 }
 
@@ -466,7 +466,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20729166666666665em;
+    margin-bottom: -0.30104166666666665em;
   }
 
   .emotion-18::after {
@@ -474,12 +474,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.45729166666666665em;
+    margin-top: -0.44166666666666665em;
   }
-}
-
-.emotion-19 {
-  margin-bottom: 32px;
 }
 
 .emotion-20 {
@@ -617,7 +613,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
                     </span>
                   </div>
                   <div
-                    class="emotion-19"
+                    class="emotion-5"
                   >
                     <p
                       class="emotion-20"
@@ -672,7 +668,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
                     </span>
                   </div>
                   <div
-                    class="emotion-19"
+                    class="emotion-5"
                   >
                     <p
                       class="emotion-20"
@@ -727,7 +723,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
                     </span>
                   </div>
                   <div
-                    class="emotion-19"
+                    class="emotion-5"
                   >
                     <p
                       class="emotion-20"

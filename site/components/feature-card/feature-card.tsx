@@ -44,7 +44,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
           },
         }}
       >
-        <Block spaceStack={{xs: 'space040', lg: 'space050'}}>
+        <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
           <Headline
             overrides={{
               // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
@@ -110,7 +110,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
         }}
       >
         <Stack stackDistribution={StackDistribution.Center}>
-          <Block spaceStack={{xs: 'space040', lg: 'space050'}}>
+          <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
             <Headline
               overrides={{
                 // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
@@ -181,7 +181,7 @@ const FeatureCardVertical: React.FC<FeatureCardProps> = ({
       },
     }}
   >
-    <Block spaceStack={{xs: 'space040', lg: 'space050'}}>
+    <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
       <Headline
         overrides={{
           // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502

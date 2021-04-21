@@ -8,7 +8,7 @@ exports[`StatesSection renders section as expected 1`] = `
 }
 
 .emotion-1 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .emotion-2 {
@@ -49,7 +49,7 @@ exports[`StatesSection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.18348214285714293em;
+    margin-bottom: -0.2772321428571429em;
   }
 
   .emotion-4::after {
@@ -57,7 +57,7 @@ exports[`StatesSection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4334821428571429em;
+    margin-top: -0.4178571428571429em;
   }
 }
 
@@ -75,7 +75,7 @@ exports[`StatesSection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.140625em;
+    margin-bottom: -0.234375em;
   }
 
   .emotion-4::after {
@@ -83,7 +83,7 @@ exports[`StatesSection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.390625em;
+    margin-top: -0.375em;
   }
 }
 
@@ -122,7 +122,7 @@ exports[`StatesSection renders section as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.34062500000000007em;
+  margin-bottom: -0.43437500000000007em;
 }
 
 .emotion-7::after {
@@ -130,7 +130,7 @@ exports[`StatesSection renders section as expected 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5906250000000001em;
+  margin-top: -0.5750000000000001em;
 }
 
 <div

@@ -131,7 +131,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3977678571428571em + 1.2px);
+  margin-bottom: -0.4915178571428571em;
 }
 
 .emotion-6::after {
@@ -139,7 +139,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6477678571428571em;
+  margin-top: -0.6321428571428571em;
 }
 
 .emotion-7 {
@@ -258,7 +258,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3977678571428571em + 1.2px);
+  margin-bottom: -0.4915178571428571em;
 }
 
 .emotion-14::after {
@@ -266,7 +266,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6477678571428571em;
+  margin-top: -0.6321428571428571em;
 }
 
 .emotion-15 {
@@ -428,7 +428,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.290625em;
+  margin-bottom: -0.384375em;
 }
 
 .emotion-26::after {
@@ -436,7 +436,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.540625em;
+  margin-top: -0.525em;
 }
 
 .emotion-27 {
@@ -610,7 +610,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3739583333333334em + -0.5px);
+  margin-bottom: calc(-0.4677083333333334em + -0.5px);
 }
 
 .emotion-35::after {
@@ -618,7 +618,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6239583333333334em;
+  margin-top: -0.6083333333333334em;
 }
 
 .emotion-36 {
@@ -1363,7 +1363,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3977678571428571em + 1.2px);
+  margin-bottom: -0.4915178571428571em;
 }
 
 .emotion-6::after {
@@ -1371,7 +1371,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6477678571428571em;
+  margin-top: -0.6321428571428571em;
 }
 
 .emotion-7 {
@@ -1490,7 +1490,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3977678571428571em + 1.2px);
+  margin-bottom: -0.4915178571428571em;
 }
 
 .emotion-14::after {
@@ -1498,7 +1498,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6477678571428571em;
+  margin-top: -0.6321428571428571em;
 }
 
 .emotion-15 {
@@ -1660,7 +1660,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.290625em;
+  margin-bottom: -0.384375em;
 }
 
 .emotion-26::after {
@@ -1668,7 +1668,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.540625em;
+  margin-top: -0.525em;
 }
 
 .emotion-27 {
@@ -1842,7 +1842,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3739583333333334em + -0.5px);
+  margin-bottom: calc(-0.4677083333333334em + -0.5px);
 }
 
 .emotion-35::after {
@@ -1850,7 +1850,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6239583333333334em;
+  margin-top: -0.6083333333333334em;
 }
 
 .emotion-36 {

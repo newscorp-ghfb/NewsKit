@@ -39,4 +39,7 @@ export const StyledFeatureCardVerticalMedia = styled.div<{stylePreset: string}>`
   background-size: cover;
   background-position: right;
   height: 18vh;
+  ${getMediaQueryFromTheme('lg')} {
+    height: 200px;
+  }
 `;

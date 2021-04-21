@@ -455,7 +455,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.24062499999999998em;
+    margin-bottom: -0.334375em;
   }
 
   .emotion-3::after {
@@ -463,7 +463,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.490625em;
+    margin-top: -0.475em;
   }
 }
 
@@ -481,7 +481,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20729166666666665em;
+    margin-bottom: -0.30104166666666665em;
   }
 
   .emotion-3::after {
@@ -489,7 +489,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.45729166666666665em;
+    margin-top: -0.44166666666666665em;
   }
 }
 
@@ -969,7 +969,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3739583333333334em + -0.5px);
+  margin-bottom: calc(-0.4677083333333334em + -0.5px);
 }
 
 .emotion-40::after {
@@ -977,7 +977,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6239583333333334em;
+  margin-top: -0.6083333333333334em;
 }
 
 .emotion-43 {
