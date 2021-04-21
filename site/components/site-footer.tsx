@@ -6,19 +6,28 @@ import {
   ConsentSettingsLink,
   IconFilledGitHub,
   getTypographyPresetFromTheme,
-  getColorFromTheme,
-  getSizingFromTheme,
-  getBorderFromTheme,
+  getColorCssFromTheme,
+  getSizingCssFromTheme,
   getMediaQueryFromTheme,
   styled,
   Link as NewsKitLink,
+  TextBlock,
 } from 'newskit';
 import {Link} from './link';
 
 const Footer = styled.footer`
   flex-shrink: 0;
-  padding: ${getSizingFromTheme('sizing050')} 0;
-  background: ${getColorFromTheme('interface010')};
+  ${getSizingCssFromTheme('paddingTop', {
+    xs: 'sizing070',
+    md: 'sizing080',
+    lg: 'sizing090',
+  })};
+  ${getSizingCssFromTheme('paddingBottom', {
+    xs: 'sizing070',
+    md: 'sizing080',
+    lg: 'sizing090',
+  })};
+  ${getColorCssFromTheme('background', 'interface020')}
   position: relative;
 
   &::before {
@@ -28,9 +37,6 @@ const Footer = styled.footer`
     right: -50%;
     left: -50%;
     transform: scale(0.5);
-    border-top-style: solid;
-    border-top-width: ${getBorderFromTheme('borderWidth010')};
-    border-top-color: ${getColorFromTheme('interface040')};
   }
 
   ${getMediaQueryFromTheme('sm')} {
@@ -42,49 +48,45 @@ const Footer = styled.footer`
   }
 `;
 
-const FooterCopy = styled.div`
+const FooterCopy = styled(TextBlock)`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  ${getTypographyPresetFromTheme('utilityBody010')};
-  color: ${getColorFromTheme('inkSubtle')};
+  text-align: center;
+  ${getMediaQueryFromTheme('md')} {
+    text-align: right;
+  }
 `;
 
 const FooterMenu = styled.div`
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
-
-  ${getMediaQueryFromTheme('md')} {
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-  }
+  flex-wrap: nowrap;
+  align-items: center;
+  ${getSizingCssFromTheme('paddingTop', {
+    md: 'sizing010',
+  })};
 `;
 
 const FooterLink = styled.span`
   flex-basis: 50%;
-  padding-top: ${getSizingFromTheme('sizing050')};
-  ${getTypographyPresetFromTheme('utilityLabel020')};
-
+  text-align: center;
+  ${getTypographyPresetFromTheme('utilityButton020')};
   ${getMediaQueryFromTheme('md')} {
     flex-basis: auto;
-    padding-top: 0;
-    padding-left: ${getSizingFromTheme('sizing050')};
   }
+  ${getSizingCssFromTheme('paddingLeft', {
+    md: 'sizing050',
+    lg: 'sizing080',
+  })};
 `;
 
 const year = new Date().getUTCFullYear();
 
 const SiteFooter: React.FC = () => (
   <Footer>
-    <Grid xsRowGutter="space000">
-      <Cell xs={12} md={4} mdOffset={1}>
-        <FooterCopy>
-          Copyright &copy; {year} News Corp. All rights reserved.
-        </FooterCopy>
-      </Cell>
-      <Cell xs={12} sm={6} md={6}>
+    <Grid xsRowGutter="space070">
+      <Cell xs={10} xsOffset={1} md={5} mdOffset={0}>
         <FooterMenu>
           <Hidden xs sm md lg xl>
             <FooterLink>
@@ -95,16 +97,32 @@ const SiteFooter: React.FC = () => (
             </FooterLink>
           </Hidden>
           <FooterLink>
-            <ConsentSettingsLink privacyManagerId="407619">
+            <ConsentSettingsLink
+              privacyManagerId="407619"
+              overrides={{
+                stylePreset: 'linkFooter',
+                typographyPreset: 'utilityButton020',
+              }}
+            >
               Privacy
             </ConsentSettingsLink>
+          </FooterLink>
+          <FooterLink>
+            <NewsKitLink
+              href="https://medium.com/newskit-design-system"
+              target="_blank"
+              external={false}
+              overrides={{stylePreset: 'linkFooter'}}
+            >
+              Blog
+            </NewsKitLink>
           </FooterLink>
           <FooterLink>
             <NewsKitLink
               href="https://www.newscareers.co.uk/"
               target="_blank"
               external={false}
-              overrides={{stylePreset: 'linkStandalone'}}
+              overrides={{stylePreset: 'linkFooter'}}
             >
               Careers
             </NewsKitLink>
@@ -117,6 +135,18 @@ const SiteFooter: React.FC = () => (
             </FooterLink>
           </Hidden>
         </FooterMenu>
+      </Cell>
+      <Cell xs={10} xsOffset={1} md={6}>
+        <FooterCopy
+          as="div"
+          stylePreset="inkSubtle"
+          typographyPreset={{
+            xs: 'utilityMeta010',
+            md: 'utilityMeta020',
+          }}
+        >
+          Copyright &copy; {year} News Corp. All rights reserved.
+        </FooterCopy>
       </Cell>
     </Grid>
   </Footer>

@@ -2834,6 +2834,20 @@ Object {
         "iconColor": "{{colors.interactiveInverse040}}",
       },
     },
+    "linkFooter": Object {
+      "active": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "textDecoration": "none",
+      },
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "underline",
+      },
+    },
     "linkInline": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",

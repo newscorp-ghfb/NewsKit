@@ -349,7 +349,20 @@ export const stylePresets = {
       iconColor: '{{colors.inkBrand020}}',
     },
   },
-
+  linkFooter: {
+    base: {
+      color: '{{colors.inkContrast}}',
+      textDecoration: 'none',
+    },
+    hover: {
+      color: '{{colors.inkSubtle}}',
+      textDecoration: 'underline',
+    },
+    active: {
+      color: '{{colors.inkNonEssential}}',
+      textDecoration: 'none',
+    },
+  },
   roadmapCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',

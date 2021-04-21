@@ -20,7 +20,8 @@ import {
 } from './sections';
 
 const WrapperWithPadding = styled.div`
-  padding: ${getSizingFromTheme('sizing060')} 0;
+  padding-top: ${getSizingFromTheme('sizing060')};
+  padding-bottom: ${getSizingFromTheme('sizing080')};
 `;
 
 export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
