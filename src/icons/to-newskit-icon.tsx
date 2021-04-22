@@ -2,7 +2,7 @@ import React from 'react';
 import {EmotionIconProps} from '@emotion-icons/emotion-icon';
 import {withTheme} from '../theme';
 import {NewsKitIconProps, SvgProps} from './types';
-import {getStylePreset, styled} from '../utils/style';
+import {getSizingCssFromTheme, getStylePreset, styled} from '../utils/style';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
@@ -21,11 +21,6 @@ export const toNewsKitIcon = (
 ) =>
   withTheme<NewsKitIconProps>(props => {
     const emotionIconName = PassedIcon.displayName;
-    const size =
-      props.overrides && props.overrides.size
-        ? props.theme.sizing[props.overrides.size]
-        : null;
-
     const toStyledIcon = (
       Icon: React.ComponentType<EmotionIconProps>,
     ) => styled(Icon)`
@@ -36,8 +31,11 @@ export const toNewsKitIcon = (
       display: inline-block;
       // https://css-tricks.com/the-sass-ampersand/#doubling-up-specificity
       && {
-        width: ${size};
-        height: ${size};
+        //we don't want the icon to have a default size hence using non defaulted functions
+        ${props.overrides?.size &&
+        getSizingCssFromTheme('width', props.overrides?.size)}
+        ${props.overrides?.size &&
+        getSizingCssFromTheme('height', props.overrides?.size)}
         // If overridden, render SP CSS here instead - this ensures we override fill color from parent SP.
         ${renderIconStylePreset(true)}
       }

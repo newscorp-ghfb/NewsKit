@@ -100,23 +100,34 @@ export default {
                 key={iconName}
               >
                 <Container>
-                  <Icon overrides={{size: 'iconSize020'}} />
-                  <Icon overrides={{size: 'iconSize040'}} />
                   <Constrain>
                     <Icon />
                   </Constrain>
+                  <Icon overrides={{size: 'iconSize020'}} />
+                  <Icon
+                    overrides={{
+                      size: {
+                        xs: 'iconSize010',
+                        sm: 'iconSize020',
+                        md: 'iconSize030',
+                        lg: 'iconSize040',
+                        xl: 'iconSize050',
+                      },
+                    }}
+                  />
                 </Container>
                 <Container>
                   <ThemeProvider theme={getTheme()}>
+                    <Constrain>
+                      <Icon
+                        overrides={{
+                          stylePreset: stylePresetOverride,
+                        }}
+                      />
+                    </Constrain>
                     <Icon
                       overrides={{
                         size: 'iconSize020',
-                        stylePreset: stylePresetOverride,
-                      }}
-                    />
-                    <Icon
-                      overrides={{
-                        size: 'iconSize030',
                         stylePreset: stylePresetOverride,
                       }}
                     />
@@ -124,15 +135,16 @@ export default {
                 </Container>
                 <Container dark>
                   <ThemeProvider theme={getTheme(newskitDarkTheme)}>
+                    <Constrain>
+                      <Icon
+                        overrides={{
+                          stylePreset: stylePresetOverride,
+                        }}
+                      />
+                    </Constrain>
                     <Icon
                       overrides={{
                         size: 'iconSize020',
-                        stylePreset: stylePresetOverride,
-                      }}
-                    />
-                    <Icon
-                      overrides={{
-                        size: 'iconSize030',
                         stylePreset: stylePresetOverride,
                       }}
                     />
@@ -153,28 +165,22 @@ export default {
             (Icon: React.ComponentType<NewsKitIconProps>) => (
               <div>
                 <ThemeProvider theme={getTheme()}>
-                  <Icon overrides={{size: 'iconSize020'}} />
+                  <Constrain>
+                    <Icon />
+                  </Constrain>
                   <Icon overrides={{size: 'iconSize030'}} />
-                  <Icon overrides={{size: 'iconSize040'}} />
+                  <Icon
+                    overrides={{
+                      size: {
+                        xs: 'iconSize010',
+                        sm: 'iconSize020',
+                        md: 'iconSize030',
+                        lg: 'iconSize040',
+                        xl: 'iconSize050',
+                      },
+                    }}
+                  />
 
-                  <Icon
-                    overrides={{
-                      size: 'iconSize020',
-                      stylePreset: 'iconCustom',
-                    }}
-                  />
-                  <Icon
-                    overrides={{
-                      size: 'iconSize030',
-                      stylePreset: 'iconCustom',
-                    }}
-                  />
-                  <Icon
-                    overrides={{
-                      size: 'iconSize040',
-                      stylePreset: 'iconCustom',
-                    }}
-                  />
                   <Constrain>
                     <Icon
                       overrides={{
@@ -182,6 +188,12 @@ export default {
                       }}
                     />
                   </Constrain>
+                  <Icon
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'iconCustom',
+                    }}
+                  />
                 </ThemeProvider>
               </div>
             ),

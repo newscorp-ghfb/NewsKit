@@ -7,6 +7,6 @@ export interface SvgProps extends React.SVGAttributes<SVGElement> {
 export interface NewsKitIconProps extends SvgProps {
   overrides?: {
     stylePreset?: MQ<string>;
-    size?: string;
+    size?: MQ<string>;
   };
 }
