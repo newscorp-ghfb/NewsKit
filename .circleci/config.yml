@@ -1045,7 +1045,7 @@ workflows:
             - eks_flux_deploy_dev
       - approve_publish_docs:
           type: approval
-          <<: *only_pr
+          <<: *only_develop
           requires:
             - eks_kubectl_deploy_dev
       - build_docs_prod:
@@ -1056,14 +1056,14 @@ workflows:
           name: eks_flux_deploy_dev_to_prod
           context: ncu-newskit-site-prod
           environment: prod
-          <<: *only_pr
+          <<: *only_develop
           requires:
             - build_docs_prod
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          <<: *only_pr
+          <<: *only_develop
           requires:
             - eks_flux_deploy_dev_to_prod
       - deploy_terraform:
