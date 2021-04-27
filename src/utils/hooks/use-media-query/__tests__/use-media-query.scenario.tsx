@@ -32,13 +32,12 @@ const ComponentBreakpoint = () => {
 };
 
 export default {
-  name: 'use-media-query-hook',
+  title: 'use-media-query-hook',
   children: [
     {
-      name: 'use-media-query-hook',
-      type: 'story',
+      storyName: 'use-media-query-hook',
       parameters: {eyes: {include: false}},
-      component: () => (
+      storyFn: () => (
         <>
           <StorybookHeading>useMediaQueryHooks </StorybookHeading>
           <MediaQueryProvider>

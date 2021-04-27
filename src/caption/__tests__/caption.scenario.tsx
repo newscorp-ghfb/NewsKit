@@ -12,12 +12,11 @@ const StyledDiv = styled.div`
   border: 1px solid black;
 `;
 export default {
-  name: 'caption',
+  title: 'caption',
   children: [
     {
-      name: 'caption',
-      type: 'story',
-      component: () => (
+      storyName: 'caption',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Caption</StorybookHeading>
           <StyledDiv>
@@ -52,9 +51,8 @@ export default {
       ),
     },
     {
-      name: 'caption-inset',
-      type: 'story',
-      component: () => (
+      storyName: 'caption-inset',
+      storyFn: () => (
         <Container>
           <StorybookHeading>CaptionInset component</StorybookHeading>
           <StyledDiv>

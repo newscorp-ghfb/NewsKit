@@ -33,12 +33,11 @@ const BannerWrapper = styled.div`
 `;
 
 export default {
-  name: 'banner',
+  title: 'banner',
   children: [
     {
-      name: 'banner-default',
-      type: 'story',
-      component: () => (
+      storyName: 'banner-default',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Banner</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
@@ -61,9 +60,8 @@ export default {
       ),
     },
     {
-      name: 'banner-intents',
-      type: 'story',
-      component: () => (
+      storyName: 'banner-intents',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Banner Intent</StorybookHeading>
           <StorybookSubHeading>Informative (default)</StorybookSubHeading>

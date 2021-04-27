@@ -12,12 +12,11 @@ const Container = styled.span<{color: string}>`
 `;
 
 export default {
-  name: 'visibility',
+  title: 'visibility',
   children: [
     {
-      name: 'visibility-component',
-      type: 'story',
-      component: () => (
+      storyName: 'visibility-component',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Visibility component</StorybookHeading>
           <Visible display="inline-block" xs>

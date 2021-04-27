@@ -22,12 +22,11 @@ const listData = [
 ];
 
 export default {
-  name: 'unordered-list',
+  title: 'unordered-list',
   children: [
     {
-      name: 'unordered-list-default',
-      type: 'story',
-      component: () => (
+      storyName: 'unordered-list-default',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Unordered list defaults</StorybookHeading>
           <UnorderedList>{listData}</UnorderedList>
@@ -35,9 +34,8 @@ export default {
       ),
     },
     {
-      name: 'unordered-list-with-marker',
-      type: 'story',
-      component: () => (
+      storyName: 'unordered-list-with-marker',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Unordered list</StorybookHeading>
           <StorybookSubHeading>with markers</StorybookSubHeading>

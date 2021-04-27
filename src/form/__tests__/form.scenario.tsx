@@ -24,12 +24,11 @@ const validateUserName = async (value: string) => {
 };
 
 export default {
-  name: 'form',
+  title: 'form',
   children: [
     {
-      name: 'form-with-submit-validation',
-      type: 'story',
-      component: () => (
+      storyName: 'form-with-submit-validation',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Form</StorybookHeading>
           <Block>
@@ -72,9 +71,8 @@ export default {
       ),
     },
     {
-      name: 'form-with-submit-validation-and-assistive-text',
-      type: 'story',
-      component: () => (
+      storyName: 'form-with-submit-validation-and-assistive-text',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Form</StorybookHeading>
           <Block>
@@ -119,9 +117,8 @@ export default {
       ),
     },
     {
-      name: 'form-sizes',
-      type: 'story',
-      component: () => (
+      storyName: 'form-sizes',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Form with</StorybookHeading>
           <Block>

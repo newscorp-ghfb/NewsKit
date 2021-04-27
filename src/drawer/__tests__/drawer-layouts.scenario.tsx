@@ -50,12 +50,11 @@ const myCustomTheme = createTheme({
 });
 
 export default {
-  name: 'drawer-layouts-only',
+  title: 'drawer-layouts-only',
   children: [
     {
-      name: 'right placement',
-      type: 'story',
-      component: () =>
+      storyName: 'right placement',
+      storyFn: () =>
         React.createElement(() => {
           const StyledCategoryRow = styled.div`
             border-bottom: 1px solid ${getColorFromTheme('interface050')};
@@ -99,9 +98,8 @@ export default {
         }),
     },
     {
-      name: 'left placement',
-      type: 'story',
-      component: () =>
+      storyName: 'left placement',
+      storyFn: () =>
         React.createElement(() => {
           const renderChildren = () => (
             <>
@@ -162,9 +160,8 @@ export default {
         }),
     },
     {
-      name: 'no header content',
-      type: 'story',
-      component: () =>
+      storyName: 'no header content',
+      storyFn: () =>
         React.createElement(() => (
           <>
             <StorybookHeading>Default with no header</StorybookHeading>
@@ -185,9 +182,8 @@ export default {
         )),
     },
     {
-      name: 'with overrides',
-      type: 'story',
-      component: () =>
+      storyName: 'with overrides',
+      storyFn: () =>
         React.createElement(() => (
           <>
             <StorybookHeading>Default with overrides</StorybookHeading>

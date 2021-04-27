@@ -119,12 +119,11 @@ const IconButtonIntentKindsScenario: React.FC<{
 );
 
 export default {
-  name: 'icon-button',
+  title: 'icon-button',
   children: [
     {
-      name: 'icon-button-sizes',
-      type: 'story',
-      component: () => (
+      storyName: 'icon-button-sizes',
+      storyFn: () => (
         <>
           <StorybookSubHeading>Icon Button Size</StorybookSubHeading>
           <Container>
@@ -149,9 +148,8 @@ export default {
       ),
     },
     {
-      name: 'icon-button-intent-primary',
-      type: 'story',
-      component: () => (
+      storyName: 'icon-button-intent-primary',
+      storyFn: () => (
         <IconButtonIntentKindsScenario
           name="Icon Button Intent Primary"
           buttonKinds={[
@@ -168,9 +166,8 @@ export default {
       ),
     },
     {
-      name: 'icon-button-intent-secondary',
-      type: 'story',
-      component: () => (
+      storyName: 'icon-button-intent-secondary',
+      storyFn: () => (
         <IconButtonIntentKindsScenario
           name="Icon Button Intent Secondary"
           buttonKinds={[
@@ -187,9 +184,8 @@ export default {
       ),
     },
     {
-      name: 'icon-button-intent-negative',
-      type: 'story',
-      component: () => (
+      storyName: 'icon-button-intent-negative',
+      storyFn: () => (
         <IconButtonIntentKindsScenario
           name="Icon Button Intent Negative"
           buttonKinds={[
@@ -206,9 +202,8 @@ export default {
       ),
     },
     {
-      name: 'icon-button-intent-positive',
-      type: 'story',
-      component: () => (
+      storyName: 'icon-button-intent-positive',
+      storyFn: () => (
         <IconButtonIntentKindsScenario
           name="Icon Button Intent Positive"
           buttonKinds={[
@@ -225,9 +220,8 @@ export default {
       ),
     },
     {
-      name: 'icon-button-inverse',
-      type: 'story',
-      component: () => (
+      storyName: 'icon-button-inverse',
+      storyFn: () => (
         <IconButtonIntentKindsScenario
           hasBackground
           name="Icon Button Inverse"
@@ -245,9 +239,8 @@ export default {
       ),
     },
     {
-      name: 'icon-button-link',
-      type: 'story',
-      component: () => (
+      storyName: 'icon-button-link',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>Icon button link</StorybookSubHeading>
           <Container>

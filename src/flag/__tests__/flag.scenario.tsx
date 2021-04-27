@@ -26,12 +26,11 @@ const Container = styled.div<{hasBlackBackground?: boolean}>`
 `;
 
 export default {
-  name: 'flag',
+  title: 'flag',
   children: [
     {
-      name: 'flag',
-      type: 'story',
-      component: () => (
+      storyName: 'flag',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Flag</StorybookHeading>
           <StorybookSubHeading>Solid</StorybookSubHeading>
@@ -118,9 +117,8 @@ export default {
       ),
     },
     {
-      name: 'inverse-flag',
-      type: 'story',
-      component: () => (
+      storyName: 'inverse-flag',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Inverse Flag</StorybookHeading>
           <Container hasBlackBackground>
@@ -162,9 +160,8 @@ export default {
       ),
     },
     {
-      name: 'flag-with-icons',
-      type: 'story',
-      component: () => (
+      storyName: 'flag-with-icons',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Flag</StorybookHeading>
           <StorybookSubHeading>with leading icon</StorybookSubHeading>

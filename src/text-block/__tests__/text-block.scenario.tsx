@@ -34,12 +34,11 @@ const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.';
 
 export default {
-  name: 'text-block',
+  title: 'text-block',
   children: [
     {
-      name: 'default',
-      type: 'story',
-      component: () => (
+      storyName: 'default',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>TextBlock default</StorybookHeading>
           <TextBlock>{bodyString}</TextBlock>
@@ -47,9 +46,8 @@ export default {
       ),
     },
     {
-      name: 'as different html tag',
-      type: 'story',
-      component: () => (
+      storyName: 'as different html tag',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>TextBlock</StorybookHeading>
           <StorybookSubHeading>As h3</StorybookSubHeading>
@@ -61,9 +59,8 @@ export default {
       ),
     },
     {
-      name: 'with overridden presets',
-      type: 'story',
-      component: () => (
+      storyName: 'with overridden presets',
+      storyFn: () => (
         <React.Fragment>
           <ThemeProvider theme={myCustomTheme}>
             <StorybookHeading>TextBlock</StorybookHeading>

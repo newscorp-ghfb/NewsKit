@@ -8,12 +8,11 @@ const Container = styled.div`
 `;
 
 export default {
-  name: '<%= componentFileName %>',
+  title: '<%= componentFileName %>',
   children: [ 
     {
-      name: '<%=componentFileName %>',
-      type: 'story',
-      component: () => (
+      storyName: '<%=componentFileName %>',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading><%= componentName  %></StorybookHeading>
           <Container>

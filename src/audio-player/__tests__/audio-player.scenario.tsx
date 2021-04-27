@@ -133,12 +133,11 @@ const myCustomTheme = createTheme({
 });
 
 export default {
-  name: 'audio-player',
+  title: 'audio-player',
   children: [
     {
-      name: 'audio-player',
-      type: 'story',
-      component: () => (
+      storyName: 'audio-player',
+      storyFn: () => (
         <>
           <StorybookHeading>Recored Audio Player</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
@@ -241,9 +240,8 @@ export default {
       ),
     },
     {
-      name: 'recorded-audio-player-with-onPlay',
-      type: 'story',
-      component: () => (
+      storyName: 'recorded-audio-player-with-onPlay',
+      storyFn: () => (
         <AudioPlayerContainer>
           <AudioPlayer
             src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3"
@@ -258,9 +256,8 @@ export default {
       ),
     },
     {
-      name: 'recorded-with-controls',
-      type: 'story',
-      component: () => (
+      storyName: 'recorded-with-controls',
+      storyFn: () => (
         <>
           <StorybookHeading>Recored Audio Player</StorybookHeading>
           <StorybookSubHeading>with popout link</StorybookSubHeading>

@@ -123,12 +123,11 @@ const ButtonIntentKindsScenario: React.FC<{
 );
 
 export default {
-  name: 'button',
+  title: 'button',
   children: [
     {
-      name: 'button-size',
-      type: 'story',
-      component: () => (
+      storyName: 'button-size',
+      storyFn: () => (
         <>
           <StorybookSubHeading>Button Size</StorybookSubHeading>
           <Container>
@@ -147,9 +146,8 @@ export default {
       ),
     },
     {
-      name: 'full-and-fixed-width-button',
-      type: 'story',
-      component: () => (
+      storyName: 'full-and-fixed-width-button',
+      storyFn: () => (
         <>
           <StorybookSubHeading>Full-Width Button</StorybookSubHeading>
           <Container>
@@ -197,9 +195,8 @@ export default {
       ),
     },
     {
-      name: 'button-intent-primary',
-      type: 'story',
-      component: () => (
+      storyName: 'button-intent-primary',
+      storyFn: () => (
         <ButtonIntentKindsScenario
           name="Button Intent Primary"
           buttonIntents={[
@@ -216,9 +213,8 @@ export default {
       ),
     },
     {
-      name: 'button-intent-secondary',
-      type: 'story',
-      component: () => (
+      storyName: 'button-intent-secondary',
+      storyFn: () => (
         <ButtonIntentKindsScenario
           name="Button Intent Secondary"
           buttonIntents={[
@@ -235,9 +231,8 @@ export default {
       ),
     },
     {
-      name: 'button-intent-negative',
-      type: 'story',
-      component: () => (
+      storyName: 'button-intent-negative',
+      storyFn: () => (
         <ButtonIntentKindsScenario
           name="Button Intent Negative"
           buttonIntents={[
@@ -254,9 +249,8 @@ export default {
       ),
     },
     {
-      name: 'button-intent-positive',
-      type: 'story',
-      component: () => (
+      storyName: 'button-intent-positive',
+      storyFn: () => (
         <ButtonIntentKindsScenario
           name="Button Intent Positive"
           buttonIntents={[
@@ -273,9 +267,8 @@ export default {
       ),
     },
     {
-      name: 'button-inverse',
-      type: 'story',
-      component: () => (
+      storyName: 'button-inverse',
+      storyFn: () => (
         <ButtonIntentKindsScenario
           hasBackground
           name="Button Inverse"
@@ -293,9 +286,8 @@ export default {
       ),
     },
     {
-      name: 'button-with-icons',
-      type: 'story',
-      component: () => (
+      storyName: 'button-with-icons',
+      storyFn: () => (
         <>
           <StorybookSubHeading>Button with leading icon</StorybookSubHeading>
           <Container>
@@ -351,9 +343,8 @@ export default {
       ),
     },
     {
-      name: 'button-with-icon-size-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'button-with-icon-size-overrides',
+      storyFn: () => (
         <>
           <StorybookSubHeading>
             Button with icon and inline overridden size
@@ -382,9 +373,8 @@ export default {
       ),
     },
     {
-      name: 'button-style-at-breakpoints',
-      type: 'story',
-      component: () => (
+      storyName: 'button-style-at-breakpoints',
+      storyFn: () => (
         <>
           <StorybookSubHeading>Button style at breakpoints</StorybookSubHeading>
           <Container>
@@ -404,9 +394,8 @@ export default {
       ),
     },
     {
-      name: 'button-link',
-      type: 'story',
-      component: () => (
+      storyName: 'button-link',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>Button link</StorybookSubHeading>
           <Container>

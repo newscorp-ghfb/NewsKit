@@ -42,12 +42,11 @@ const StyledHr = styled.hr`
 `;
 
 export default {
-  name: 'block',
+  title: 'block',
   children: [
     {
-      name: 'block',
-      type: 'story',
-      component: () => (
+      storyName: 'block',
+      storyFn: () => (
         <React.Fragment>
           <ThemeProvider theme={myCustomTheme}>
             <StorybookHeading>Block</StorybookHeading>

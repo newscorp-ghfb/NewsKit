@@ -45,12 +45,12 @@ const stackDistributionSet: any = () => {
   const sets = Object.values(['nowrap', 'wrap']).map(wrapType =>
     Object.values(Flow).map((flowKey: Flow) =>
       Object.values(StackDistribution).map(stackDistributionKey => ({
-        name: `stack distribution set ${stackDistributionKey}, ${flowKey}${
+        storyName: `stack distribution set ${stackDistributionKey}, ${flowKey}${
           wrapType === 'wrap' ? ', wrap' : ''
         }`,
-        type: 'story',
+
         parameters: {eyes: {include: wrapType !== 'wrap'}}, // TODO: Include all test when snapshots limit increases.
-        component: () => (
+        storyFn: () => (
           <MainContainer>
             <StorybookHeading>
               Stack distribution set to {stackDistributionKey} when {flowKey}
@@ -86,12 +86,11 @@ const stackDistributionSet: any = () => {
 const stackSets = stackDistributionSet().flat(2);
 
 export default {
-  name: 'stack',
+  title: 'stack',
   children: [
     {
-      name: 'stack-with-defaults-only',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-with-defaults-only',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack with defaults only</StorybookHeading>
           <Container>
@@ -105,9 +104,8 @@ export default {
       ),
     },
     {
-      name: 'stack-vertical-using-spaceInline-token',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-vertical-using-spaceInline-token',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack vertical using spaceInline token
@@ -123,9 +121,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-using-spaceInline-token',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-using-spaceInline-token',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack horizontal using spaceInline token
@@ -141,9 +138,8 @@ export default {
       ),
     },
     {
-      name: 'stack-vertical-using-spaceInline-spaceStack-tokens',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-vertical-using-spaceInline-spaceStack-tokens',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack vertical using spaceInline and spaceStack tokens
@@ -162,9 +158,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-using-spaceInline-spaceStack-tokens',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-using-spaceInline-spaceStack-tokens',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack horizontal using spaceInline spaceStack token
@@ -188,9 +183,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-inline',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-inline',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack horizontal inline</StorybookHeading>
           <Container hasWidth>
@@ -207,9 +201,8 @@ export default {
       ),
     },
     {
-      name: 'stack-vertical-inline',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-vertical-inline',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack vertical inline</StorybookHeading>
           <Container hasHeight>
@@ -228,9 +221,8 @@ export default {
       ),
     },
     {
-      name: 'stack-vertical-with-custom-height',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-vertical-with-custom-height',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack vertical with custom height (200px)
@@ -250,9 +242,8 @@ export default {
       ),
     },
     {
-      name: 'stack-vertical-with-siblings',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-vertical-with-siblings',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack vertical with siblings within a container that has height
@@ -277,9 +268,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-reverse',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-reverse',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack horizontal reverse</StorybookHeading>
           <Container>
@@ -296,9 +286,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-reverse-with-space',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-reverse-with-space',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack horizontal reverse with space
@@ -317,9 +306,8 @@ export default {
       ),
     },
     {
-      name: 'nested-stacks',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-stacks',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Nested stacks</StorybookHeading>
           <Container>
@@ -345,9 +333,8 @@ export default {
       ),
     },
     {
-      name: 'nested-horizontal-stacks',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-horizontal-stacks',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Nested horizontal stacks</StorybookHeading>
           <Container>
@@ -368,9 +355,8 @@ export default {
       ),
     },
     {
-      name: 'nested-stacks-with-space',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-stacks-with-space',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Nested stacks with space</StorybookHeading>
           <Container>
@@ -396,9 +382,8 @@ export default {
       ),
     },
     {
-      name: 'nested-horizontal-stacks-with-space',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-horizontal-stacks-with-space',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Nested horizontal stacks with space
@@ -426,9 +411,8 @@ export default {
       ),
     },
     {
-      name: 'nested-stacks-mixed-content',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-stacks-mixed-content',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Nested stacks with mixed content</StorybookHeading>
           <Container>
@@ -447,9 +431,8 @@ export default {
       ),
     },
     {
-      name: 'nested-horizontal-stacks-inline',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-horizontal-stacks-inline',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Nested horizontal stacks inline</StorybookHeading>
           <Container>
@@ -470,9 +453,8 @@ export default {
       ),
     },
     {
-      name: 'nested-horizontal-stacks-as-span',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-horizontal-stacks-as-span',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Nested horizontal stacks as span</StorybookHeading>
           <Container>
@@ -493,9 +475,8 @@ export default {
       ),
     },
     {
-      name: 'nested-horizontal-stacks-as-span-with-space',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-horizontal-stacks-as-span-with-space',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Nested horizontal stacks as span with space
@@ -518,9 +499,8 @@ export default {
       ),
     },
     {
-      name: 'stack-as-list',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-as-list',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack as a list</StorybookHeading>
           <Container>
@@ -534,9 +514,8 @@ export default {
       ),
     },
     {
-      name: 'stack-as-list-with-space',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-as-list-with-space',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack as list with space</StorybookHeading>
           <Container>
@@ -550,9 +529,8 @@ export default {
       ),
     },
     {
-      name: 'stack-as-list-with-space-wrap',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-as-list-with-space-wrap',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack as list with space wrap</StorybookHeading>
           <Container hasHeight>
@@ -578,9 +556,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-as-list',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-as-list',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Stack horizontal as a list</StorybookHeading>
           <Container>
@@ -594,9 +571,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-as-list-with-space',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-as-list-with-space',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack horizontal as list with space
@@ -617,9 +593,8 @@ export default {
       ),
     },
     {
-      name: 'stack-horizontal-as-list-with-space-wrap',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-horizontal-as-list-with-space-wrap',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack horizontal as list with space wrap
@@ -648,9 +623,8 @@ export default {
       ),
     },
     {
-      name: 'stack-as-list-with-nested-stack-as-child',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-as-list-with-nested-stack-as-child',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack as a list with nested stack as child
@@ -678,9 +652,8 @@ export default {
       ),
     },
     {
-      name: 'stack-as-list-with-space-and-nested-stack-as-child',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-as-list-with-space-and-nested-stack-as-child',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Stack as list with space and nested stack as child
@@ -708,9 +681,8 @@ export default {
       ),
     },
     {
-      name: 'nested-stacks-both-as-list',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-stacks-both-as-list',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Nested stacks both as list</StorybookHeading>
           <Container>
@@ -736,9 +708,8 @@ export default {
       ),
     },
     {
-      name: 'nested-stacks-both-as-list-with-space',
-      type: 'story',
-      component: () => (
+      storyName: 'nested-stacks-both-as-list-with-space',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>
             Nested stacks both as list with space

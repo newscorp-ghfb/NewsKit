@@ -75,14 +75,13 @@ const socialIconList = [
 const isSocialIcon = (iconName: string) => socialIconList.includes(iconName);
 
 export default {
-  name: 'icons',
+  title: 'icons',
   children: [
     {
-      name: 'custom-icons',
-      type: 'story',
-      component: () => (
+      storyName: 'custom-icons',
+      storyFn: () => (
         <>
-          {...Object.entries(remainingCustomIcons).map((entry: any) => {
+          {Object.entries(remainingCustomIcons).map((entry: any) => {
             const [iconName, Icon] = entry as [
               string,
               React.ComponentType<NewsKitIconProps>,
@@ -157,11 +156,10 @@ export default {
       ),
     },
     {
-      name: 'material-icons',
-      type: 'story',
-      component: () => (
+      storyName: 'material-icons',
+      storyFn: () => (
         <>
-          {...Object.values(materialIconsSample).map(
+          {Object.values(materialIconsSample).map(
             (Icon: React.ComponentType<NewsKitIconProps>) => (
               <div>
                 <ThemeProvider theme={getTheme()}>
@@ -202,9 +200,8 @@ export default {
       ),
     },
     {
-      name: 'overridden-icons',
-      type: 'story',
-      component: () => {
+      storyName: 'overridden-icons',
+      storyFn: () => {
         const MyCustomIcon = customToNewsKitIcon('IconFilledStop', props => (
           <Svg {...props} viewBox="0 0 429 422">
             <g

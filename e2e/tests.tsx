@@ -5,27 +5,25 @@ import React from 'react';
 
 interface Scenario {
   default: {
-    name: string;
+    title: string;
     children: [
       {
-        name: string;
-        type: string;
-        component: () => JSX.Element;
+        storyName: string;
+        storyFn: () => JSX.Element;
       },
     ];
   };
-  name: string;
-  component: () => JSX.Element;
 }
 
 const req = require.context('../src', true, /\.scenario\.tsx$/);
 const scenarios = req.keys().map(req) as Scenario[];
 
 const nameCounts = scenarios.reduce((acc, s) => {
-  if (!acc[s.default ? s.default.name : s.name]) {
-    acc[s.default ? s.default.name : s.name] = 1;
+  const {title} = s.default;
+  if (!acc[title]) {
+    acc[title] = 1;
   } else {
-    acc[s.default ? s.default.name : s.name] += 1;
+    acc[title] += 1;
   }
   return acc;
 }, {} as Record<string, number>);
@@ -55,9 +53,7 @@ export default function showTestcase() {
     return <A11yFail message={message} />;
   }
 
-  const scenario = scenarios.find(s =>
-    s.default ? s.default.name === name : s.name === name,
-  );
+  const scenario = scenarios.find(s => s.default.title === name);
 
   if (!scenario) {
     const message = `No scenario found with the name: '${name}.'`;
@@ -67,9 +63,8 @@ export default function showTestcase() {
 
   return (
     <div>
-      {scenario.default
-        ? scenario.default.children.map(({component}) => component())
-        : scenario.component()}
+      {scenario.default &&
+        scenario.default.children.map(({storyFn}) => storyFn())}
     </div>
   );
 }

@@ -24,12 +24,11 @@ const myCustomTheme = createTheme({
 });
 
 export default {
-  name: 'ordered-list',
+  title: 'ordered-list',
   children: [
     {
-      name: 'ordered-list',
-      type: 'story',
-      component: () => (
+      storyName: 'ordered-list',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Ordered list defaults</StorybookHeading>
           <OrderedList>{listData}</OrderedList>

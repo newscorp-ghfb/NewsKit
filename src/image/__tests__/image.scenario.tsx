@@ -9,12 +9,11 @@ const Container = styled.div`
 `;
 
 export default {
-  name: 'image',
+  title: 'image',
   children: [
     {
-      name: 'fixed height and width in px',
-      type: 'story',
-      component: () => (
+      storyName: 'fixed height and width in px',
+      storyFn: () => (
         <Container>
           <StorybookHeading>300px by 200px</StorybookHeading>
           <Image
@@ -27,9 +26,8 @@ export default {
       ),
     },
     {
-      name: 'fixed height and width in %',
-      type: 'story',
-      component: () => (
+      storyName: 'fixed height and width in %',
+      storyFn: () => (
         <Container>
           <StorybookHeading>100% by 60%</StorybookHeading>
           <Image
@@ -42,9 +40,8 @@ export default {
       ),
     },
     {
-      name: 'sharp-border-radius',
-      type: 'story',
-      component: () => (
+      storyName: 'sharp-border-radius',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Image with sharp border-radius</StorybookHeading>
           <Image
@@ -57,9 +54,8 @@ export default {
       ),
     },
     {
-      name: 'rounded-border-radius',
-      type: 'story',
-      component: () => (
+      storyName: 'rounded-border-radius',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Image with rounded border-radius</StorybookHeading>
           <Image
@@ -74,9 +70,8 @@ export default {
       ),
     },
     {
-      name: 'rounded-border-radius-with-mq',
-      type: 'story',
-      component: () => (
+      storyName: 'rounded-border-radius-with-mq',
+      storyFn: () => (
         <Container>
           <StorybookHeading>
             Image with rounded border-radius and mq
@@ -96,9 +91,8 @@ export default {
       ),
     },
     {
-      name: 'circle-border-radius',
-      type: 'story',
-      component: () => (
+      storyName: 'circle-border-radius',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Image with circle border-radius</StorybookHeading>
           <Image
@@ -113,9 +107,8 @@ export default {
       ),
     },
     {
-      name: 'valid-img',
-      type: 'story',
-      component: () => (
+      storyName: 'valid-img',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Valid image reference</StorybookHeading>
           <Image
@@ -127,9 +120,8 @@ export default {
       ),
     },
     {
-      name: 'invalid-img',
-      type: 'story',
-      component: () => (
+      storyName: 'invalid-img',
+      storyFn: () => (
         <Container>
           <StorybookHeading>
             Invalid image reference hiding logo
@@ -143,9 +135,8 @@ export default {
       ),
     },
     {
-      name: 'invalid-img-with-placeholder-icon',
-      type: 'story',
-      component: () => (
+      storyName: 'invalid-img-with-placeholder-icon',
+      storyFn: () => (
         <Container>
           <StorybookHeading>
             Invalid image reference with placeholder Icon
@@ -160,9 +151,8 @@ export default {
       ),
     },
     {
-      name: 'image-with-caption',
-      type: 'story',
-      component: () => (
+      storyName: 'image-with-caption',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Image With Caption</StorybookHeading>
           <Image
@@ -176,9 +166,8 @@ export default {
       ),
     },
     {
-      name: 'image-with-caption-inset',
-      type: 'story',
-      component: () => (
+      storyName: 'image-with-caption-inset',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Image With Caption Inset</StorybookHeading>
           <Image
@@ -200,9 +189,8 @@ export default {
       ),
     },
     {
-      name: 'image-with-caption-and-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'image-with-caption-and-overrides',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Image With Caption and Overrides</StorybookHeading>
           <Image
@@ -226,9 +214,8 @@ export default {
       ),
     },
     {
-      name: 'image-with-caption-inset-and-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'image-with-caption-inset-and-overrides',
+      storyFn: () => (
         <Container>
           <StorybookHeading>
             Image With Caption Inset and Overrides

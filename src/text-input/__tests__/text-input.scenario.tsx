@@ -66,12 +66,11 @@ const myCustomTheme = createTheme({
 const states = ['Default', 'Focus', 'Disabled', 'Read-Only'];
 
 export default {
-  name: 'text-input',
+  title: 'text-input',
   children: [
     {
-      name: 'text-input-size',
-      type: 'story',
-      component: () => (
+      storyName: 'text-input-size',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Text Input Sizes</StorybookHeading>
           <Container>
@@ -97,9 +96,8 @@ export default {
       ),
     },
     {
-      name: 'full-width-text-input',
-      type: 'story',
-      component: () => (
+      storyName: 'full-width-text-input',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Full-Width Text Input</StorybookHeading>
           <Container>
@@ -138,9 +136,8 @@ export default {
       ),
     },
     {
-      name: 'fixed-width-text-input',
-      type: 'story',
-      component: () => (
+      storyName: 'fixed-width-text-input',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Fixed-Width Text Input</StorybookHeading>
           <Container>
@@ -179,9 +176,8 @@ export default {
       ),
     },
     {
-      name: 'text-input-variations',
-      type: 'story',
-      component: () => (
+      storyName: 'text-input-variations',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Text Input Variations</StorybookHeading>
           <StorybookSubHeading>With Hidden Label</StorybookSubHeading>
@@ -204,9 +200,8 @@ export default {
       ),
     },
     {
-      name: 'text-input-states',
-      type: 'story',
-      component: () => (
+      storyName: 'text-input-states',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Text Input States</StorybookHeading>
           <Grid>
@@ -274,9 +269,8 @@ export default {
       ),
     },
     {
-      name: 'text-input-with-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'text-input-with-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Text Input With Overrides</StorybookHeading>
           <Container>

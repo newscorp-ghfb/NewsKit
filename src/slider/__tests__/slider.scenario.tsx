@@ -141,7 +141,7 @@ const VerticalContainerWithBorder = styled.div`
 
 const StyledCustomThumbLabel = styled.h1`
   margin: 0;
-  font-family: fantasy;
+  font-family: Arial;
   color: seagreen;
   bottom: -35px;
   position: relative;
@@ -151,12 +151,11 @@ const CustomThumbLabel: React.FC<ThumbLabelProps> = ({children, ...props}) => (
 );
 
 export default {
-  name: 'slider',
+  title: 'slider',
   children: [
     {
-      name: 'slider-1-and-2-thumbs',
-      type: 'story',
-      component: () => (
+      storyName: 'slider-1-and-2-thumbs',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>1 thumb slider</StorybookHeading>
           <ContainerWithBorder>
@@ -173,9 +172,8 @@ export default {
       ),
     },
     {
-      name: 'slider-with-text-labels',
-      type: 'story',
-      component: () => (
+      storyName: 'slider-with-text-labels',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Slider with text labels</StorybookHeading>
           <ContainerWithBorder>
@@ -227,9 +225,8 @@ export default {
       ),
     },
     {
-      name: 'slider-with-custom-labels',
-      type: 'story',
-      component: () => (
+      storyName: 'slider-with-custom-labels',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Slider with custom labels</StorybookHeading>
           <ContainerWithBorder>
@@ -272,9 +269,8 @@ export default {
       ),
     },
     {
-      name: 'slider-with-custom-style-preset',
-      type: 'story',
-      component: () => (
+      storyName: 'slider-with-custom-style-preset',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Slider with custom style presets</StorybookHeading>
           <ContainerWithBorder>
@@ -316,9 +312,8 @@ export default {
       ),
     },
     {
-      name: 'slider-with-custom-renders',
-      type: 'story',
-      component: () => (
+      storyName: 'slider-with-custom-renders',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Slider with custom renderers</StorybookHeading>
           <ContainerWithBorder>
@@ -368,9 +363,8 @@ export default {
       ),
     },
     {
-      name: 'slider-renders-vertical',
-      type: 'story',
-      component: () => (
+      storyName: 'slider-renders-vertical',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Vertical Slider examples</StorybookHeading>
           <FlexContainer>
@@ -428,9 +422,8 @@ export default {
       ),
     },
     {
-      name: 'slider-with-labels-before-and-after',
-      type: 'story',
-      component: () => (
+      storyName: 'slider-with-labels-before-and-after',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Vertical Slider with labels before and after

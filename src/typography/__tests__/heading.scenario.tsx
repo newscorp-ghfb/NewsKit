@@ -19,12 +19,11 @@ const myCustomTheme = createTheme({
 const title = 'We tell the stories that matter.';
 
 export default {
-  name: 'typography/heading',
+  title: 'typography/heading',
   children: [
     {
-      name: 'heading-default',
-      type: 'story',
-      component: () => (
+      storyName: 'heading-default',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Heading - default</StorybookHeading>
           <br />
@@ -43,9 +42,8 @@ export default {
       ),
     },
     {
-      name: 'heading-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'heading-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Heading with overrides</StorybookHeading>
           <ThemeProvider theme={myCustomTheme}>

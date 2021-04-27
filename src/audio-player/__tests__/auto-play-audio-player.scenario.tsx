@@ -10,12 +10,11 @@ const AudioPlayerContainer = styled.div`
 `;
 
 export default {
-  name: 'auto-play-audio-player',
+  title: 'auto-play-audio-player',
   children: [
     {
-      name: 'auto-play-audio-player',
-      type: 'story',
-      component: () => (
+      storyName: 'auto-play-audio-player',
+      storyFn: () => (
         <AudioPlayerContainer>
           <AudioPlayer
             src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"

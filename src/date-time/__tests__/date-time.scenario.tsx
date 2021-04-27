@@ -6,12 +6,11 @@ import {
 } from '../../test/storybook-comps';
 
 export default {
-  name: 'date-time',
+  title: 'date-time',
   children: [
     {
-      name: 'date-time',
-      type: 'story',
-      component: () => (
+      storyName: 'date-time',
+      storyFn: () => (
         <>
           <StorybookHeading>DateTime</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>

@@ -336,58 +336,61 @@ const renderCardInset = () => (
 );
 
 export default {
-  name: 'card',
+  title: 'card',
   children: [
     {
-      name: 'card-small-without-inset',
-      type: 'story',
-      parameters: {viewport: 'iphone5', eyes: {include: false}},
-      component: () => <React.Fragment>{renderCard()}</React.Fragment>,
+      storyName: 'card-small-without-inset',
+      parameters: {
+        viewport: {defaultViewport: 'iphone5'},
+        eyes: {include: false},
+      },
+      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
-      name: 'card-medium-without-inset',
-      type: 'story',
-      parameters: {viewport: 'ipad', eyes: {include: false}},
-      component: () => <React.Fragment>{renderCard()}</React.Fragment>,
+      storyName: 'card-medium-without-inset',
+      parameters: {viewport: {defaultViewport: 'ipad'}, eyes: {include: false}},
+      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
-      name: 'card-large-without-inset',
-      type: 'story',
-      parameters: {viewport: 'ipad12p', eyes: {include: false}},
-      component: () => <React.Fragment>{renderCard()}</React.Fragment>,
+      storyName: 'card-large-without-inset',
+      parameters: {
+        viewport: {defaultViewport: 'ipad12p'},
+        eyes: {include: false},
+      },
+      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
-      name: 'card-small-with-inset',
-      type: 'story',
-      parameters: {viewport: 'iphone5', eyes: {include: false}},
-      component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
+      storyName: 'card-small-with-inset',
+      parameters: {
+        viewport: {defaultViewport: 'iphone5'},
+        eyes: {include: false},
+      },
+      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
-      name: 'card-medium-with-inset',
-      type: 'story',
-      parameters: {viewport: 'ipad', eyes: {include: false}},
-      component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
+      storyName: 'card-medium-with-inset',
+      parameters: {viewport: {defaultViewport: 'ipad'}, eyes: {include: false}},
+      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
-      name: 'card-large-with-inset',
-      type: 'story',
-      parameters: {viewport: 'ipad12p', eyes: {include: false}},
-      component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
+      storyName: 'card-large-with-inset',
+      parameters: {
+        viewport: {defaultViewport: 'ipad12p'},
+        eyes: {include: false},
+      },
+      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
-      name: 'card-without-inset',
-      type: 'story',
-      component: () => <React.Fragment>{renderCard()}</React.Fragment>,
+      storyName: 'card-without-inset',
+      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
-      name: 'card-with-inset',
-      type: 'story',
-      component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
+      storyName: 'card-with-inset',
+      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
-      name: 'card-without-inset-containers-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'card-without-inset-containers-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card - Without Inset - Containers Overrides
@@ -426,9 +429,8 @@ export default {
       ),
     },
     {
-      name: 'card-with-inset-containers-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'card-with-inset-containers-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card - With Inset - Containers Overrides
@@ -466,9 +468,8 @@ export default {
       ),
     },
     {
-      name: 'card-with-media-link-and-headline',
-      type: 'story',
-      component: () => (
+      storyName: 'card-with-media-link-and-headline',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card with media, link and only Headline in cardBody
@@ -499,9 +500,8 @@ export default {
       ),
     },
     {
-      name: 'card-with-link-and-headline-and-mediaInteractive',
-      type: 'story',
-      component: () => (
+      storyName: 'card-with-link-and-headline-and-mediaInteractive',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card with link Headline and mediaInteractive set to true
@@ -533,9 +533,8 @@ export default {
       ),
     },
     {
-      name: 'card-with-link-and-no-headline',
-      type: 'story',
-      component: () => (
+      storyName: 'card-with-link-and-no-headline',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card - Without Inset - Container Overrides
@@ -588,9 +587,8 @@ export default {
       ),
     },
     {
-      name: 'card-with-link-headline-and-nested-links-in-card-body',
-      type: 'story',
-      component: () => (
+      storyName: 'card-with-link-headline-and-nested-links-in-card-body',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card with link, headline and nested links in cardBody
@@ -652,9 +650,8 @@ export default {
       ),
     },
     {
-      name: 'card-with-inset-no-media-and-link',
-      type: 'story',
-      component: () => (
+      storyName: 'card-with-inset-no-media-and-link',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card with inset, no media and link
@@ -690,10 +687,9 @@ export default {
       ),
     },
     {
-      name: 'card-without-inset-link-containers-and-headline-overrides',
-      type: 'story',
+      storyName: 'card-without-inset-link-containers-and-headline-overrides',
       parameters: {eyes: {include: false}},
-      component: () => (
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card - Without Inset - with Link and Containers & Headline Overrides
@@ -759,10 +755,9 @@ export default {
       ),
     },
     {
-      name: 'card-with-inset-link-containers-and-headline-overrides',
-      type: 'story',
+      storyName: 'card-with-inset-link-containers-and-headline-overrides',
       parameters: {eyes: {include: false}},
-      component: () => (
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card - With Inset - with Link and Containers & Headline Overrides
@@ -825,9 +820,8 @@ export default {
       ),
     },
     {
-      name: 'card-horizontal',
-      type: 'story',
-      component: () => (
+      storyName: 'card-horizontal',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Card Horizontal</StorybookHeading>
           <ContainerWithBackground>
@@ -866,9 +860,8 @@ export default {
       ),
     },
     {
-      name: 'card-horizontal-reverse-with-link',
-      type: 'story',
-      component: () => (
+      storyName: 'card-horizontal-reverse-with-link',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Card Horizontal-Reverse With Link</StorybookHeading>
           <ContainerWithBackground>
@@ -907,9 +900,8 @@ export default {
       ),
     },
     {
-      name: 'card-inset-horizontal-with-link-and-mediaInteractive',
-      type: 'story',
-      component: () => (
+      storyName: 'card-inset-horizontal-with-link-and-mediaInteractive',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             CardInset Horizontal with Link and mediaInteractive
@@ -952,9 +944,8 @@ export default {
       ),
     },
     {
-      name: 'card-inset-horizontal-reverse-with-link-and-mediaInteractive',
-      type: 'story',
-      component: () => (
+      storyName: 'card-inset-horizontal-reverse-with-link-and-mediaInteractive',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             CardInset Horizontal-Reverse with link and mediaInteractive
@@ -997,11 +988,10 @@ export default {
       ),
     },
     {
-      name:
+      storyName:
         'card-horizontal-without-inset-link-containers-and-headline-overrides',
-      type: 'story',
       parameters: {eyes: {include: false}},
-      component: () => (
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card Horizontal - Without Inset - with Link and Containers &
@@ -1068,11 +1058,10 @@ export default {
       ),
     },
     {
-      name:
+      storyName:
         'card-horizontal-reverse-with-inset-link-containers-and-headline-overrides',
-      type: 'story',
       parameters: {eyes: {include: false}},
-      component: () => (
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card Horizontal-reverse - With Inset - with Link and Containers &
@@ -1138,9 +1127,8 @@ export default {
       ),
     },
     {
-      name: 'card-horizontal-with-ratio',
-      type: 'story',
-      component: () => (
+      storyName: 'card-horizontal-with-ratio',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Card horizontal with ratio (3:1)</StorybookHeading>
           <ContainerWithBackground>
@@ -1181,9 +1169,8 @@ export default {
       ),
     },
     {
-      name: 'card-horizontal-with-ratio-falsy-value',
-      type: 'story',
-      component: () => (
+      storyName: 'card-horizontal-with-ratio-falsy-value',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Card horizontal with falsy value</StorybookHeading>
           <ContainerWithBackground>
@@ -1224,9 +1211,8 @@ export default {
       ),
     },
     {
-      name: 'card-with-cropping-text',
-      type: 'story',
-      component: () => (
+      storyName: 'card-with-cropping-text',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Card - Without Inset - Fix cropping text
@@ -1278,10 +1264,9 @@ export default {
     // The next scenario is only for showcase. It is excluded from Applitools.
     // Please don't place any other stories after this one.
     {
-      name: 'card-slices',
-      type: 'story',
+      storyName: 'card-slices',
       parameters: {eyes: {include: false}},
-      component: () => (
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Card Slices</StorybookHeading>
           <ThemeProvider theme={myCustomCardTheme}>

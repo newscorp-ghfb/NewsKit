@@ -34,12 +34,11 @@ const myCustomTheme = createTheme({
 });
 
 export default {
-  name: 'tag',
+  title: 'tag',
   children: [
     {
-      name: 'tag',
-      type: 'story',
-      component: () => (
+      storyName: 'tag',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tag</StorybookHeading>
           <StorybookSubHeading>Enabled/Disbaled</StorybookSubHeading>
@@ -127,9 +126,8 @@ export default {
       ),
     },
     {
-      name: 'inverse-tag',
-      type: 'story',
-      component: () => (
+      storyName: 'inverse-tag',
+      storyFn: () => (
         <React.Fragment>
           <Container hasBlackBackground>
             <Stack
@@ -153,9 +151,8 @@ export default {
       ),
     },
     {
-      name: 'tag-icon-sizes',
-      type: 'story',
-      component: () => (
+      storyName: 'tag-icon-sizes',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>
             With icon and inline overridden size

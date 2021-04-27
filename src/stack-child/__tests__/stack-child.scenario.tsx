@@ -23,12 +23,11 @@ const Container = styled.div<{
 `;
 
 export default {
-  name: 'stack-child',
+  title: 'stack-child',
   children: [
     {
-      name: 'stack-child-custom-order',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-child-custom-order',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>StackChild with custom order</StorybookHeading>
           <Container>
@@ -48,9 +47,8 @@ export default {
       ),
     },
     {
-      name: 'stack-child-with-stack-list',
-      type: 'story',
-      component: () => (
+      storyName: 'stack-child-with-stack-list',
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>StackChild with stack list</StorybookHeading>
           <Container>

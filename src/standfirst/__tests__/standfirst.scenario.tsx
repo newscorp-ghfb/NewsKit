@@ -29,12 +29,11 @@ const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight.';
 
 export default {
-  name: 'standfirst',
+  title: 'standfirst',
   children: [
     {
-      name: 'default',
-      type: 'story',
-      component: () => (
+      storyName: 'default',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>Standfirst - default</StorybookSubHeading>
           <Standfirst>{bodyString}</Standfirst>
@@ -42,9 +41,8 @@ export default {
       ),
     },
     {
-      name: 'with-as-prop',
-      type: 'story',
-      component: () => (
+      storyName: 'with-as-prop',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>Standfirst - as h3</StorybookSubHeading>
           <Standfirst as="h3">{bodyString}</Standfirst>
@@ -55,9 +53,8 @@ export default {
       ),
     },
     {
-      name: 'with-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'with-overrides',
+      storyFn: () => (
         <React.Fragment>
           <ThemeProvider theme={myCustomTheme}>
             <StorybookSubHeading>

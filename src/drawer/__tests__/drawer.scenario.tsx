@@ -14,13 +14,12 @@ const content =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra. Integer non velit vitae elit porta condimentum. Cras ultrices lectus eu porttitor volutpat. In hac habitasse platea dictumst. Integer maximus leo quis sapien aliquet finibus. Cras lobortis leo quis massa commodo ornare. Donec ac ligula sed mauris sodales pretium id eu nibh. Pellentesque et eros viverra, dignissim ante in, tincidunt eros. Curabitur mattis purus dolor, non aliquam sapien auctor quis. Morbi sit amet leo in urna dictum imperdiet vitae sed velit. In auctor nulla sed lectus ultricies dignissim. In mattis.';
 
 export default {
-  name: 'drawer',
+  title: 'drawer',
   children: [
     {
-      name: 'default',
-      type: 'story',
+      storyName: 'default',
       parameters: {eyes: {include: false}},
-      component: () =>
+      storyFn: () =>
         React.createElement(() => {
           const [isActive, setIsActive] = React.useState(false);
 
@@ -94,10 +93,9 @@ export default {
         }),
     },
     {
-      name: 'with aria attributes',
-      type: 'story',
+      storyName: 'with aria attributes',
       parameters: {eyes: {include: false}},
-      component: () =>
+      storyFn: () =>
         React.createElement(() => {
           const [isActive, setIsActive] = React.useState(false);
 
@@ -123,10 +121,10 @@ export default {
         }),
     },
     {
-      name: 'with custom autofocus',
-      type: 'story',
+      storyName: 'with custom autofocus',
+
       parameters: {eyes: {include: false}},
-      component: () =>
+      storyFn: () =>
         React.createElement(() => {
           const [isActive, setIsActive] = React.useState(false);
 

@@ -70,12 +70,11 @@ const myCustomTheme = createTheme({
 const states = ['Default', 'Selected', 'Disabled', 'Focus'];
 
 export default {
-  name: 'tab',
+  title: 'tab',
   children: [
     {
-      name: 'tab-size',
-      type: 'story',
-      component: () => (
+      storyName: 'tab-size',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tab Size</StorybookHeading>
           <Container>
@@ -101,9 +100,8 @@ export default {
       ),
     },
     {
-      name: 'tab-states',
-      type: 'story',
-      component: () => (
+      storyName: 'tab-states',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tab States</StorybookHeading>
           <Grid>
@@ -166,9 +164,8 @@ export default {
       ),
     },
     {
-      name: 'tab-icon',
-      type: 'story',
-      component: () => (
+      storyName: 'tab-icon',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon</StorybookHeading>
           <Container>
@@ -196,9 +193,8 @@ export default {
       ),
     },
     {
-      name: 'tab-icon & label',
-      type: 'story',
-      component: () => (
+      storyName: 'tab-icon & label',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
           <Container>
@@ -227,9 +223,8 @@ export default {
       ),
     },
     {
-      name: 'tab-with-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'tab-with-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tab With Overrides</StorybookHeading>
           <Container>
@@ -259,9 +254,8 @@ export default {
       ),
     },
     {
-      name: 'tab-with-icon-size-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'tab-with-icon-size-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>
             Tab With default IconSize and inline overridden icon size

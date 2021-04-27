@@ -21,12 +21,11 @@ const link = () => <Link href="/">Link</Link>;
 const button = () => <Button>Default button</Button>;
 
 export default {
-  name: 'title-bar',
+  title: 'title-bar',
   children: [
     {
-      name: 'title-bar',
-      type: 'story',
-      component: () => (
+      storyName: 'title-bar',
+      storyFn: () => (
         <React.Fragment>
           <TitleBar>Title bar default state</TitleBar>
           <br />
@@ -71,9 +70,8 @@ export default {
       ),
     },
     {
-      name: 'title-bar-as-h1toh6',
-      type: 'story',
-      component: () => (
+      storyName: 'title-bar-as-h1toh6',
+      storyFn: () => (
         <React.Fragment>
           <TitleBar headingAs="h1">Title bar as h1</TitleBar>
           <TitleBar headingAs="h2">Title bar as h2</TitleBar>

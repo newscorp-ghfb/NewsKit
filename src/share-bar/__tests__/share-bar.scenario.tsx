@@ -59,12 +59,11 @@ const ShareOnFacebookBtn = () => (
 );
 
 export default {
-  name: 'share-bar',
+  title: 'share-bar',
   children: [
     {
-      name: 'horizontal',
-      type: 'story',
-      component: () => (
+      storyName: 'horizontal',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>
             Share bar with horizontal items
@@ -142,9 +141,8 @@ export default {
       ),
     },
     {
-      name: 'vertical',
-      type: 'story',
-      component: () => (
+      storyName: 'vertical',
+      storyFn: () => (
         <React.Fragment>
           <StorybookSubHeading>
             Share bar with vertical items

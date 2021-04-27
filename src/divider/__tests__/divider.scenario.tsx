@@ -50,12 +50,11 @@ const InlineDividerContainer = styled(Block)`
 `;
 
 export default {
-  name: 'divider',
+  title: 'divider',
   children: [
     {
-      name: 'horizontal',
-      type: 'story',
-      component: () => (
+      storyName: 'horizontal',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Divider - Horizontal</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
@@ -108,9 +107,8 @@ export default {
       ),
     },
     {
-      name: 'vertical',
-      type: 'story',
-      component: () => (
+      storyName: 'vertical',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Divider - Vertical</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>

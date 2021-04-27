@@ -28,12 +28,11 @@ const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical.';
 
 export default {
-  name: 'typography/paragraph',
+  title: 'typography/paragraph',
   children: [
     {
-      name: 'paragraph',
-      type: 'story',
-      component: () => (
+      storyName: 'paragraph',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Paragraph</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
@@ -58,9 +57,8 @@ export default {
       ),
     },
     {
-      name: 'paragraph-with-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'paragraph-with-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Paragraph with overrides</StorybookHeading>
           <StorybookSubHeading>on paragraph</StorybookSubHeading>

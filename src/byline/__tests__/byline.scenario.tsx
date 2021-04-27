@@ -30,12 +30,11 @@ const myCustomTheme = createTheme({
 });
 
 export default {
-  name: 'byline',
+  title: 'byline',
   children: [
     {
-      name: 'byline',
-      type: 'story',
-      component: () => (
+      storyName: 'byline',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Byline</StorybookHeading>
           <StorybookSubHeading>default style variations</StorybookSubHeading>

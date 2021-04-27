@@ -78,12 +78,11 @@ const tags = [
 ].map(item => <Tag>{item}</Tag>);
 
 export default {
-  name: 'scroll',
+  title: 'scroll',
   children: [
     {
-      name: 'default',
-      type: 'story',
-      component: () => (
+      storyName: 'default',
+      storyFn: () => (
         <MainContainer>
           <StorybookSubHeading>Scroll horizontal</StorybookSubHeading>
           <Container>
@@ -115,9 +114,8 @@ export default {
       ),
     },
     {
-      name: 'scroll-controls',
-      type: 'story',
-      component: () => (
+      storyName: 'scroll-controls',
+      storyFn: () => (
         <MainContainer>
           <StorybookSubHeading>Scroll horizontal</StorybookSubHeading>
           <Container data-testid="horizontal-scroll-component">
@@ -164,11 +162,10 @@ export default {
       ),
     },
     {
-      name: 'scroll-snap',
-      type: 'story',
+      storyName: 'scroll-snap',
       parameters: {eyes: {include: false}},
-      component: () => (
-        <>
+      storyFn: () => (
+        <MainContainer>
           <StorybookSubHeading>Scroll snap - start</StorybookSubHeading>
           <Container width="250px" height="100px">
             <Scroll snapAlign="start">
@@ -230,13 +227,12 @@ export default {
             </Scroll>
           </Container>
           <br />
-        </>
+        </MainContainer>
       ),
     },
     {
-      name: 'scroll-bar',
-      type: 'story',
-      component: () => (
+      storyName: 'scroll-bar',
+      storyFn: () => (
         <MainContainer>
           <StorybookSubHeading>
             Scroll horizontal with scroll-bar

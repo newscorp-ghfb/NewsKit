@@ -15,12 +15,11 @@ const ChildContainer = styled.div`
 `;
 
 export default {
-  name: 'aspect-ratio',
+  title: 'aspect-ratio',
   children: [
     {
-      name: '1:1 aspect ratio',
-      type: 'story',
-      component: () => (
+      storyName: '1:1 aspect ratio',
+      storyFn: () => (
         <Container>
           <StorybookHeading>1:1 aspect ratio</StorybookHeading>
           <AspectRatio aspectRatio="1:1">
@@ -30,9 +29,8 @@ export default {
       ),
     },
     {
-      name: '3:2 aspect ratio',
-      type: 'story',
-      component: () => (
+      storyName: '3:2 aspect ratio',
+      storyFn: () => (
         <Container>
           <StorybookHeading>3:2 ratio</StorybookHeading>
           <AspectRatio aspectRatio="3:2">
@@ -42,9 +40,8 @@ export default {
       ),
     },
     {
-      name: '5:4 aspect ratio',
-      type: 'story',
-      component: () => (
+      storyName: '5:4 aspect ratio',
+      storyFn: () => (
         <Container>
           <StorybookHeading>5:4 aspect ratio</StorybookHeading>
           <AspectRatio aspectRatio="5:4">
@@ -54,9 +51,8 @@ export default {
       ),
     },
     {
-      name: '1:1 aspect ratio with 3:2 image',
-      type: 'story',
-      component: () => (
+      storyName: '1:1 aspect ratio with 3:2 image',
+      storyFn: () => (
         <Container>
           <StorybookHeading>1:1 aspect ratio with 3:2 image</StorybookHeading>
           <AspectRatio aspectRatio="1:1">
@@ -71,9 +67,8 @@ export default {
       ),
     },
     {
-      name: '3:2 aspect ratio with 1:1 image',
-      type: 'story',
-      component: () => (
+      storyName: '3:2 aspect ratio with 1:1 image',
+      storyFn: () => (
         <Container>
           <StorybookHeading>3:2 aspect ratio with 1:1 image</StorybookHeading>
           <AspectRatio aspectRatio="3:2">

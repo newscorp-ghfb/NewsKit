@@ -116,12 +116,11 @@ const titleBetweenIcons = (
 );
 
 export default {
-  name: 'tabs',
+  title: 'tabs',
   children: [
     {
-      name: 'tabs-distribution-start',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-distribution-start',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Distribution Start</StorybookHeading>
 
@@ -180,9 +179,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-distribution-grow',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-distribution-grow',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Distribution - Grow</StorybookHeading>
 
@@ -225,9 +223,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-distribution-equal',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-distribution-equal',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Distribution - Equal</StorybookHeading>
 
@@ -270,9 +267,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-scroll',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-scroll',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs with fixed height in container and scroll
@@ -329,9 +325,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-horizontal',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-horizontal',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Horizontal</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
@@ -361,9 +356,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-horizontal-icon-label',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-horizontal-icon-label',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Horizontal Label / Icon</StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
@@ -394,9 +388,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-vertical-icon-label',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-vertical-icon-label',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Vertical Label / Icon</StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
@@ -433,9 +426,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-horizontal-icon-and-label',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-horizontal-icon-and-label',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Horizontal Icon and Label</StorybookHeading>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
@@ -468,9 +460,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-vertical-icon-and-label',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-vertical-icon-and-label',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Vertical Icon and Label</StorybookHeading>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
@@ -503,9 +494,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-vertical',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-vertical',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Vertical</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
@@ -530,9 +520,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-vertical-variants-label-or-icon',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-vertical-variants-label-or-icon',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs Vertical Variants (Label or Icon)
@@ -559,9 +548,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-vertical-variants-icon-placement',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-vertical-variants-icon-placement',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs Vertical Variants (Icon Placement)
@@ -602,9 +590,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-horizontal-indicator-position-variants',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-horizontal-indicator-position-variants',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs Horizontal Indicator Position Variants
@@ -639,9 +626,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-vertical-indicator-position-variants',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-vertical-indicator-position-variants',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs Vertical Indicator Position Variants
@@ -678,9 +664,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-content',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-content',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs Content</StorybookHeading>
           <StorybookSubHeading>Tab with content</StorybookSubHeading>
@@ -711,9 +696,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-disabled-tab',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-disabled-tab',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs With Disabled Tab</StorybookHeading>
           <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
@@ -736,9 +720,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-fixed-tab-indicator-size',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-fixed-tab-indicator-size',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs With Fixed Tab Indicator Size
@@ -764,9 +747,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-fixed-tab-indicator-percentage-size',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-fixed-tab-indicator-percentage-size',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs With Fixed Tab Indicator Percentage Size
@@ -790,9 +772,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-fixed-tab-indicator-pixel-size',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-fixed-tab-indicator-pixel-size',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs With Fixed Tab Indicator Pixel Size
@@ -816,9 +797,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-custom-tab-bar-track-and-indicator-weight',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-custom-tab-bar-track-and-indicator-weight',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs With Custom Tab Bar Track And Indicator Weight
@@ -865,10 +845,9 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-custom-tab-bar-indicator-animation',
+      storyName: 'tabs-with-custom-tab-bar-indicator-animation',
       parameters: {eyes: {include: false}},
-      type: 'story',
-      component: () => (
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
             Tabs With Custom Tab Bar Indicator Animation
@@ -913,9 +892,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-presets-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-presets-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs with presets overides</StorybookHeading>
           <StorybookSubHeading>Vertical</StorybookSubHeading>
@@ -961,9 +939,8 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-align',
-      type: 'story',
-      component: () => (
+      storyName: 'tabs-with-align',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Tabs With Align</StorybookHeading>
           <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>

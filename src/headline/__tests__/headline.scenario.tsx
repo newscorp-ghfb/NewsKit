@@ -2,12 +2,11 @@ import * as React from 'react';
 import {Headline} from '..';
 
 export default {
-  name: 'headline',
+  title: 'headline',
   children: [
     {
-      name: 'headline',
-      type: 'story',
-      component: () => (
+      storyName: 'headline',
+      storyFn: () => (
         <React.Fragment>
           <Headline>Headline text with no kicker</Headline>
           <br />

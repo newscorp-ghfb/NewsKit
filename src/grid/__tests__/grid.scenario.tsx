@@ -15,12 +15,11 @@ const Content = styled.div`
 `;
 
 export default {
-  name: 'grid',
+  title: 'grid',
   children: [
     {
-      name: 'grid',
-      type: 'story',
-      component: () => (
+      storyName: 'grid',
+      storyFn: () => (
         <React.Fragment>
           <BorderedBox>
             <Grid>

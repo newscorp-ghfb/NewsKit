@@ -80,12 +80,11 @@ const VerticalContainer = styled.div`
 `;
 
 export default {
-  name: 'volume-control',
+  title: 'volume-control',
   children: [
     {
-      name: 'volume-control',
-      type: 'story',
-      component: () => (
+      storyName: 'volume-control',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>VolumeControl</StorybookHeading>
           <StorybookSubHeading>horizontal</StorybookSubHeading>
@@ -113,9 +112,8 @@ export default {
       ),
     },
     {
-      name: 'volume-control-with-overrides',
-      type: 'story',
-      component: () => (
+      storyName: 'volume-control-with-overrides',
+      storyFn: () => (
         <React.Fragment>
           <StorybookHeading>VolumeControl with overrides</StorybookHeading>
           <VerticalContainer>

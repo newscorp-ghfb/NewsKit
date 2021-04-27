@@ -75,12 +75,11 @@ const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
 );
 
 export default {
-  name: 'link',
+  title: 'link',
   children: [
     {
-      name: 'link',
-      type: 'story',
-      component: () => (
+      storyName: 'link',
+      storyFn: () => (
         <Container>
           {/* ------ Link inline -------- */}
           <StorybookHeading>Link inline</StorybookHeading>
@@ -182,9 +181,8 @@ export default {
       ),
     },
     {
-      name: 'link-inverse',
-      type: 'story',
-      component: () => (
+      storyName: 'link-inverse',
+      storyFn: () => (
         <Container hasBackground>
           {/* ------ Link inline -------- */}
           <StorybookHeading>Link inline</StorybookHeading>
@@ -268,9 +266,8 @@ export default {
       ),
     },
     {
-      name: 'link-within-text-paragraph',
-      type: 'story',
-      component: () => (
+      storyName: 'link-within-text-paragraph',
+      storyFn: () => (
         <Container>
           <StorybookHeading>Link in paragraph</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
