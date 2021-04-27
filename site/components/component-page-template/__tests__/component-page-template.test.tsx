@@ -54,7 +54,7 @@ const mandatoryProps: ComponentPageTemplateProps = {
 };
 
 describe('Component Page Template', () => {
-  test('renders with mandatory sections only', () => {
+  test('renders with mandatory props only', () => {
     const fragment = renderToFragmentWithTheme(
       ComponentPageTemplate,
       mandatoryProps,
@@ -74,7 +74,6 @@ describe('Component Page Template', () => {
     ['Component API', 'componentAPI'],
     ['Compliance', 'compliance'],
     ['Related', 'related'],
-    ['Feature Card', 'featureCard'],
   ].forEach(([section, prop]) => {
     test(`renders the ${section} section when prop ${prop} is passed`, () => {
       const props = {

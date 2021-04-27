@@ -369,11 +369,13 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
+
   roadmapCardMedia: {
     base: {
       backgroundImage: 'url(/static/landing/feature-card-roadmap.svg)',
     },
   },
+
   roadmapCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
@@ -450,6 +452,7 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
+
   whatsnewCardMedia: {
     base: {
       backgroundImage: 'url(/static/landing/feature-card-whatsnew.svg)',
@@ -457,6 +460,7 @@ export const stylePresets = {
       backgroundPosition: 'center left',
     },
   },
+
   whatsnewCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
@@ -475,7 +479,56 @@ export const stylePresets = {
       iconColor: '{{colors.inkBrand030}}',
     },
   },
+  needHelpCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  needHelpCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
 
+  needHelpCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactiveInverse030}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse050}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
+  needHelpCardMedia: {
+    base: {
+      backgroundImage: 'url(/static/card-feature-need-help.svg)',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center left',
+    },
+  },
   buttonSolidInverse010: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',

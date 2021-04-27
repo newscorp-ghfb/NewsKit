@@ -39,7 +39,6 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   componentAPI,
   compliance,
   related,
-  featureCard,
 }: ComponentPageTemplateProps) => (
   <Layout {...layoutProps} newPage>
     <WrapperWithPadding>
@@ -56,7 +55,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
         {componentAPI && <ComponentAPISection {...componentAPI} />}
         {compliance && <ComplianceSection {...compliance} />}
         {related && <RelatedComponentsSection {...related} />}
-        {featureCard && <OnwardJourneySection {...featureCard} />}
+        <OnwardJourneySection />
         <Cell xsHidden smHidden mdHidden lgHidden xlOffset={10} xl={2}>
           <TableOfContents />
         </Cell>

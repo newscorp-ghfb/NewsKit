@@ -76,8 +76,8 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: right;
-  background-position: right;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
   height: 18vh;
 }
 
@@ -1295,8 +1295,8 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: right;
-  background-position: right;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
   height: 18vh;
 }
 
@@ -2143,8 +2143,8 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 .emotion-2 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: right;
-  background-position: right;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
   height: 18vh;
 }
 
@@ -2688,8 +2688,8 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 .emotion-2 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: right;
-  background-position: right;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
   height: 18vh;
 }
 
@@ -3096,8 +3096,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: right;
-  background-position: right;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
   height: 18vh;
 }
 
@@ -3860,8 +3860,8 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 .emotion-2 {
   -webkit-background-size: cover;
   background-size: cover;
-  -webkit-background-position: right;
-  background-position: right;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
   height: 18vh;
 }
 

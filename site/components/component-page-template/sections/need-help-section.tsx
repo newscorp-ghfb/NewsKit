@@ -2,7 +2,7 @@ import React from 'react';
 import {FeatureCard} from '../../feature-card';
 import {ComponentPageCell} from '../../layout-cells';
 
-export const OnwardJourneySection = () => (
+export const NeedHelpSection = () => (
   <ComponentPageCell>
     <FeatureCard
       title="Need Help?"

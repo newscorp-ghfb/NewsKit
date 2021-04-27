@@ -14,7 +14,12 @@ exports[`OnwardJourneySection renders section as expected 1`] = `
   >
     <div>
       FeatureCard Component with props:{
-  "dummy": "onward journey/feature card props"
+  "title": "Need Help?",
+  "description": "Cant find what you are looking for?",
+  "buttonLabel": "Get In Touch",
+  "stylePrefix": "needHelpCard",
+  "layout": "horizontal",
+  "href": "needHelp"
 }
     </div>
   </div>

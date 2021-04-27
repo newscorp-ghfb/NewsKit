@@ -26,7 +26,6 @@ export const StyledCardVerticalInset = styled(CardInset)`
     min-height: 380px;
   }
 `;
-
 export const StyledFeatureCardHorizontalMedia = styled.div<{
   stylePreset: string;
 }>`
@@ -37,7 +36,7 @@ export const StyledFeatureCardHorizontalMedia = styled.div<{
 export const StyledFeatureCardVerticalMedia = styled.div<{stylePreset: string}>`
   ${({stylePreset}) => getStylePresetFromTheme(stylePreset)};
   background-size: cover;
-  background-position: right;
+  background-position: right bottom;
   height: 18vh;
   ${getMediaQueryFromTheme('lg')} {
     height: 200px;

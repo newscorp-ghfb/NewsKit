@@ -633,14 +633,5 @@ export default (layoutProps: LayoutProps) => (
       title: 'SEO Considerations',
       introduction: 'Seo text',
     }}
-    featureCard={{
-      title: 'Patterns',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis in arcu vitae posuere.',
-      buttonLabel: 'Read more',
-      stylePrefix: 'patternsCard',
-      layout: 'horizontal',
-      href: 'patterns',
-    }}
   />
 );

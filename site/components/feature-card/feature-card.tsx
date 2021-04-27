@@ -13,9 +13,9 @@ import {
 import {FeatureCardProps} from './types';
 import {
   StyledCardHorizontalInset,
-  StyledFeatureCardVerticalMedia,
-  StyledFeatureCardHorizontalMedia,
   StyledCardVerticalInset,
+  StyledFeatureCardHorizontalMedia,
+  StyledFeatureCardVerticalMedia,
 } from './styled';
 
 const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
@@ -24,6 +24,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
   href,
   stylePrefix,
   buttonLabel,
+  overrides,
   ...props
 }) => (
   <>
@@ -36,9 +37,11 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
         href={href}
         layout="vertical"
         overrides={{
+          ...overrides,
           stylePreset: `${stylePrefix}Container${
             href ? 'Interactive' : 'NonInteractive'
           }`,
+
           teaserContainer: {
             spaceInset: 'space050',
           },
@@ -101,6 +104,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
         href={href}
         layout="horizontal-reverse"
         overrides={{
+          ...overrides,
           stylePreset: `${stylePrefix}Container${
             href ? 'Interactive' : 'NonInteractive'
           }`,

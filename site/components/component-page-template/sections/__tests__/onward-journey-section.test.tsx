@@ -10,11 +10,7 @@ jest.mock('../../../feature-card/feature-card');
 
 describe('OnwardJourneySection', () => {
   test('renders section as expected', () => {
-    const props: any = {
-      dummy: 'onward journey/feature card props',
-    };
-
-    const fragment = renderToFragmentWithTheme(OnwardJourneySection, props);
+    const fragment = renderToFragmentWithTheme(OnwardJourneySection);
     expect(fragment).toMatchSnapshot();
   });
 });

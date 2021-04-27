@@ -12,7 +12,6 @@ import {
   ComponentAPISectionProps,
   ComplianceSectionProps,
   RelatedComponentsSectionProps,
-  OnwardJourneySectionProps,
 } from './sections/types';
 
 export interface ComponentPageTemplateProps extends IntroductionSectionProps {
@@ -29,5 +28,4 @@ export interface ComponentPageTemplateProps extends IntroductionSectionProps {
   componentAPI?: ComponentAPISectionProps;
   compliance?: ComplianceSectionProps;
   related?: RelatedComponentsSectionProps;
-  featureCard?: OnwardJourneySectionProps;
 }

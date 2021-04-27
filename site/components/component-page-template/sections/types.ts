@@ -6,7 +6,6 @@ import {PlaygroundProps} from '../../playground/types';
 import {AnatomyProps} from '../../anatomy';
 import {MediaListProps} from '../../media-list';
 import {PageIntroductionProps} from '../../page-introduction';
-import {FeatureCardProps} from '../../feature-card';
 
 type IntroductionText = {introduction: string};
 
@@ -72,4 +71,3 @@ export type ComplianceSectionProps = ComplianceProps;
 export type RelatedComponentsSectionProps = {
   related: string[];
 } & IntroductionText;
-export type OnwardJourneySectionProps = FeatureCardProps;
