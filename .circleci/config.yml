@@ -769,7 +769,7 @@ jobs:
             else
               if [ $currentBranch = develop ];
               then
-                export DOCKER_TAG=$(node -p "require('../package.json').version")-$CIRCLE_SHA1
+                export DOCKER_TAG=$(node -p "require('./package.json').version")-$CIRCLE_SHA1
               else
                 export DOCKER_TAG=$(node -p "require('./package.json').version")
               fi
