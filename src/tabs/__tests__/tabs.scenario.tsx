@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {TabSize, styled, Scroll, TextBlock} from '../..';
+import {TabSize, styled, Scroll, TextBlock, getColorCssFromTheme} from '../..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -66,6 +66,19 @@ const myCustomTheme = createTheme({
 
 const Spacer = styled.div`
   margin-bottom: 2em;
+`;
+
+const MainContainer = styled.div`
+  max-height: 768px;
+  max-width: 1024px;
+  margin: 0 auto;
+`;
+
+const Container = styled(Block)<{width?: string; height?: string}>`
+  ${getColorCssFromTheme('backgroundColor', 'neutral020')};
+  width: ${({width}) => width || '300px'};
+  height: ${({height}) => height || '250px'};
+  overflow: none;
 `;
 
 const LoremIpsum: React.FC<{textNumber: number; text?: Array<string>}> = ({
@@ -978,6 +991,43 @@ export default {
             <Tab label="Tab Three is Long">Content 3</Tab>
           </Tabs>
         </React.Fragment>
+      ),
+    },
+    {
+      name: 'tabs-with-overflow-and-scroll',
+      parameters: {eyes: {include: false}},
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>Tabs With Overflow and Scroll</StorybookHeading>
+          <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
+          <Tabs>
+            {Array.from(Array(15)).map((_, i) => (
+              <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
+            ))}
+          </Tabs>
+
+          <hr />
+
+          <Container>
+            <Tabs>
+              {Array.from(Array(15)).map((_, i) => (
+                <Tab label={`Tab text here  ${i}`}>Content {i}</Tab>
+              ))}
+            </Tabs>
+          </Container>
+
+          <hr />
+          <hr />
+
+          <Container>
+            <Tabs vertical>
+              {Array.from(Array(15)).map((_, i) => (
+                <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
+              ))}
+            </Tabs>
+          </Container>
+        </MainContainer>
       ),
     },
   ],

@@ -804,14 +804,37 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-33 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  z-index: 0;
   margin-bottom: 32px;
 }
 
 .emotion-34 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-35 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-35::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-35 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-36 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -837,21 +860,34 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: flex;
 }
 
-.emotion-35 {
+.emotion-37 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 
-.emotion-36 {
+.emotion-37>* {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-38 {
+  scroll-snap-align: start;
+}
+
+.emotion-39 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -862,7 +898,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 100%;
 }
 
-.emotion-37 {
+.emotion-40 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -898,47 +934,47 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   color: #577FFB;
 }
 
-.emotion-37 svg {
+.emotion-40 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-37 svg {
+.emotion-40 svg {
   fill: #555E74;
 }
 
-.emotion-37:hover:not(:disabled) {
+.emotion-40:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #577FFB;
 }
 
-.emotion-37:hover:not(:disabled) svg {
+.emotion-40:hover:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-37:active:not(:disabled) {
+.emotion-40:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #577FFB;
 }
 
-.emotion-37:active:not(:disabled) svg {
+.emotion-40:active:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-37:disabled {
+.emotion-40:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-37:disabled svg {
+.emotion-40:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-37 svg {
+.emotion-40 svg {
   fill: #577FFB;
 }
 
-.emotion-38 {
+.emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -959,7 +995,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-39 {
+.emotion-42 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -969,12 +1005,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-39 {
+  .emotion-42 {
     max-width: 100%;
   }
 }
 
-.emotion-40 {
+.emotion-43 {
   font-family: 'Poppins',sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -982,7 +1018,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-40::before {
+.emotion-43::before {
   content: '';
   display: block;
   height: 0;
@@ -990,7 +1026,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-bottom: calc(-0.4677083333333334em + -0.5px);
 }
 
-.emotion-40::after {
+.emotion-43::after {
   content: '';
   display: block;
   height: 0;
@@ -998,7 +1034,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-top: -0.6083333333333334em;
 }
 
-.emotion-43 {
+.emotion-45 {
+  scroll-snap-align: end;
+}
+
+.emotion-47 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1032,60 +1072,62 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   cursor: pointer;
 }
 
-.emotion-43 svg {
+.emotion-47 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-43 svg {
+.emotion-47 svg {
   fill: #555E74;
 }
 
-.emotion-43:hover:not(:disabled) {
+.emotion-47:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #577FFB;
 }
 
-.emotion-43:hover:not(:disabled) svg {
+.emotion-47:hover:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-43:active:not(:disabled) {
+.emotion-47:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #577FFB;
 }
 
-.emotion-43:active:not(:disabled) svg {
+.emotion-47:active:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-43:disabled {
+.emotion-47:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-43:disabled svg {
+.emotion-47:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-47 {
+.emotion-51 {
+  background-color: #577FFB;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-52 {
   background-color: #E4E4E4;
   display: block;
   position: absolute;
+  z-index: 1;
   width: 100%;
   height: 2px;
   bottom: 0px;
   left: 0px;
 }
 
-.emotion-48 {
-  background-color: #577FFB;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-
-.emotion-49 {
+.emotion-53 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -1252,26 +1294,22 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
           data-testid="tab-bar"
         >
           <div
-            aria-orientation="horizontal"
             class="emotion-34"
-            role="tablist"
           >
             <div
+              aria-orientation="horizontal"
               class="emotion-35"
-              data-testid="distribution-wrapper"
+              data-testid="scroll-container"
+              tabindex="0"
             >
               <div
+                aria-orientation="horizontal"
                 class="emotion-36"
+                role="tablist"
               >
-                <button
-                  aria-controls="mock-nk-1"
-                  aria-selected="true"
+                <div
                   class="emotion-37"
-                  data-testid="tab"
-                  id="mock-nk-1"
-                  role="tab"
-                  tabindex="0"
-                  type="button"
+                  data-testid="distribution-wrapper"
                 >
                   <div
                     class="emotion-38"
@@ -1279,67 +1317,90 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     <div
                       class="emotion-39"
                     >
-                      <span
+                      <button
+                        aria-controls="mock-nk-1"
+                        aria-selected="true"
                         class="emotion-40"
+                        data-testid="tab"
+                        id="mock-nk-1"
+                        role="tab"
+                        tabindex="0"
+                        type="button"
                       >
-                        Props
-                      </span>
+                        <div
+                          class="emotion-41"
+                        >
+                          <div
+                            class="emotion-42"
+                          >
+                            <span
+                              class="emotion-43"
+                            >
+                              Props
+                            </span>
+                          </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
-                </button>
-              </div>
-            </div>
-            <div
-              class="emotion-35"
-              data-testid="distribution-wrapper"
-            >
-              <div
-                class="emotion-36"
-              >
-                <button
-                  aria-controls="mock-nk-1"
-                  aria-selected="false"
-                  class="emotion-43"
-                  data-testid="tab"
-                  id="mock-nk-1"
-                  role="tab"
-                  tabindex="-1"
-                  type="button"
+                </div>
+                <div
+                  class="emotion-37"
+                  data-testid="distribution-wrapper"
                 >
                   <div
-                    class="emotion-38"
+                    class="emotion-45"
                   >
                     <div
                       class="emotion-39"
                     >
-                      <span
-                        class="emotion-40"
+                      <button
+                        aria-controls="mock-nk-1"
+                        aria-selected="false"
+                        class="emotion-47"
+                        data-testid="tab"
+                        id="mock-nk-1"
+                        role="tab"
+                        tabindex="-1"
+                        type="button"
                       >
-                        Overrides
-                      </span>
+                        <div
+                          class="emotion-41"
+                        >
+                          <div
+                            class="emotion-42"
+                          >
+                            <span
+                              class="emotion-43"
+                            >
+                              Overrides
+                            </span>
+                          </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
-                </button>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="emotion-51"
+                  data-testid="tab-bar-indicator"
+                  role="presentation"
+                  style="width: 0px; height: 2px; transform: translateX(0px);"
+                />
               </div>
             </div>
-            <div
-              class="emotion-47"
-              data-testid="tab-bar-track"
-              role="presentation"
-            />
-            <div
-              aria-hidden="true"
-              class="emotion-48"
-              data-testid="tab-bar-indicator"
-              role="presentation"
-              style="width: 0px; height: 2px; transform: translateX(0px);"
-            />
           </div>
+          <div
+            class="emotion-52"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
         <div
           aria-hidden="false"
           aria-labelledby="mock-nk-1"
-          class="emotion-49"
+          class="emotion-53"
           data-testid="tab-panel"
           role="tabpanel"
           tabindex="0"
@@ -1454,7 +1515,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         <div
           aria-hidden="true"
           aria-labelledby="mock-nk-1"
-          class="emotion-49"
+          class="emotion-53"
           data-testid="tab-panel"
           hidden=""
           role="tabpanel"

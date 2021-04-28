@@ -17,14 +17,14 @@ test('when element is undefined', () => {
 describe('getLayoutParams', () => {
   const element = document.createElement('div');
   Object.defineProperties(element, {
-    clientWidth: {
-      value: 80,
+    getBoundingClientRect: {
+      value: () => ({
+        width: 80,
+        height: 48,
+      }),
     },
     offsetLeft: {
       value: 0,
-    },
-    clientHeight: {
-      value: 48,
     },
     offsetTop: {
       value: 0,

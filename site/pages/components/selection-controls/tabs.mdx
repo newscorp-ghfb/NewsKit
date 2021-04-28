@@ -5,6 +5,7 @@ import {TextBoxSwatch} from '../../../components/theming-values/colors';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {CodeFromDefaultPresets, CodeFromFile} from '../../../components/code';
 import {InlineCode} from '../../../components/markdown-elements';
+import {TabsScrollSnap} from '../../../demo-components/tabs/tabs-scroll-snap.tsx';
 
 import {
   Tab,
@@ -188,8 +189,13 @@ Tabs have a number of props to facilitate a variety of uses:
         </Prop>
       </Prop>
     </Prop>
+    <Prop name="scroll" type="ScrollProps['overrides']">
+      If provided, this overrides the styles applied to the <Link href="/components/layout/scroll">Scroll</Link>.
+      Note: The same overrides object can be added in `components-defaults`.
+    </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="tabs" />
+
   </Prop>
 </LegacyBlock>
 
@@ -211,9 +217,8 @@ Here is an example of how the Tabs and Tab components are used.
           <TextBlock typographyPreset="utilityBody020">
             Stories of our Times | One remarkable story, told in depth, each
             day. Our daily news podcast takes you to the heart of the stories
-            that matter, with exclusive access and reporting. Published for
-            the start of your day and hosted by Manveen Rana and David
-            Aaronovitch.
+            that matter, with exclusive access and reporting. Published for the
+            start of your day and hosted by Manveen Rana and David Aaronovitch.
           </TextBlock>
         </Tab>
         <Tab label="Up next">
@@ -227,9 +232,8 @@ Here is an example of how the Tabs and Tab components are used.
           <TextBlock typographyPreset="utilityBody020">
             Stories of our Times | One remarkable story, told in depth, each
             day. Our daily news podcast takes you to the heart of the stories
-            that matter, with exclusive access and reporting. Published for
-            the start of your day and hosted by Manveen Rana and David
-            Aaronovitch.
+            that matter, with exclusive access and reporting. Published for the
+            start of your day and hosted by Manveen Rana and David Aaronovitch.
           </TextBlock>
         </Tab>
       </Tabs>
@@ -461,6 +465,13 @@ Here is an example of how the Tabs and Tab components are used.
     },
   ]}
 />
+
+## Tabs with scroll and scroll snaping
+
+When tabs exceed the Tabs container then a scroll with arrow buttons will appear.
+Scroll does not appear when `distribution` is set to `Equal`
+
+<TabsScrollSnap />
 
 ## Tabs Accessibility
 

@@ -79,7 +79,7 @@ export const Scroll: React.FC<ScrollProps> = ({
     controls && (controls === 'hover' || controls === 'static'),
   );
 
-  const iconSize = 'medium';
+  const iconSize = 'small';
   return (
     <StyledScrollNav
       controlsVariant={controls}

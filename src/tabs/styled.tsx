@@ -21,16 +21,16 @@ import {Button, ButtonProps} from '../button';
 
 const getFlexFromTabsDistribution = (
   distribution: TabsDistribution,
-  siblings: number,
+  vertical: boolean,
 ) => {
   switch (distribution) {
     case TabsDistribution.Grow:
-      return '1 0 auto';
+      return 'flex: 1 0 auto';
     case TabsDistribution.Equal:
-      return `0 0 ${100 / siblings}%`;
+      return `${vertical ? 'height' : 'width'}: 100%`;
     case TabsDistribution.Start:
     default:
-      return '0 0 auto';
+      return 'flex: 0 0 auto';
   }
 };
 
@@ -65,13 +65,16 @@ export const StyledTabGroup = styled.div<
 >`
   display: flex;
   flex-flow: ${({vertical}) => (vertical ? 'row' : 'column')};
+  // IE11 fix: this has to be max-height but IE11 wants height
+  ${({vertical}) => vertical && 'height: 100%;'}
 `;
 
 export const StyledTabsBar = styled.div<TabsBarProps>`
   /* By default, the height, it is being set to 100% by the Stack */
   /* it works with distribution Grow and Equal */
-
-  display: flex;
+  position: relative;
+  z-index: 0;
+  ${({vertical}) => vertical && 'max-height: 100%;'}
   ${({vertical}) =>
     (vertical ? getSpacingInlineHorizontal : getSpacingInlineVertical)(
       'tabs',
@@ -88,13 +91,17 @@ export const StyledInnerTabGroup = styled(Stack)<Pick<TabsProps, 'overrides'>>`
 
 export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   width: ${({vertical}) => (vertical ? '100%' : '')};
-  flex: ${({distribution, numberOfSiblings}) =>
-    getFlexFromTabsDistribution(
-      distribution as TabsDistribution,
-      numberOfSiblings,
-    )};
+  overflow: hidden;
+  ${({distribution, vertical}) =>
+    getFlexFromTabsDistribution(distribution as TabsDistribution, vertical)};
+
+  // adds 100% width to ScrollSnapAlignment component
+  > * {
+    width: 100%;
+    display: flex;
+  }
 `;
 
 export const StyledTabsBarIndicator = styled.div<
@@ -105,6 +112,7 @@ export const StyledTabsBarIndicator = styled.div<
     'selectionIndicator.indicator',
   )};
   position: absolute;
+  z-index: 2;
   ${({indicatorPosition, vertical}) =>
     alignmentPosition(indicatorPosition, vertical)};
 `;
@@ -115,6 +123,7 @@ export const StyledTabsBarTrack = styled.div<
   ${getStylePreset('tabs.selectionIndicator.track', 'selectionIndicator.track')}
   display: block;
   position: absolute;
+  z-index: 1;
   width: ${({vertical}) =>
     vertical
       ? getWeight('tabs.selectionIndicator.track', 'selectionIndicator.track')

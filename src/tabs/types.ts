@@ -2,6 +2,7 @@ import React from 'react';
 import {MQ} from '../utils/style';
 import {BaseFlagProps, BaseFlagOverrides} from '../flag';
 import {DividerProps} from '../divider';
+import {ScrollProps} from '../scroll';
 
 export enum TabAlign {
   Start = 'start',
@@ -52,6 +53,7 @@ export interface TabsProps {
         stylePreset?: MQ<string>;
       };
     };
+    scroll?: ScrollProps['overrides'];
   };
 }
 
@@ -66,7 +68,6 @@ export interface TabPanelProps {
 
 export interface DistributionWrapperProps {
   distribution: TabsDistribution;
-  numberOfSiblings: number;
   vertical: boolean;
 }
 

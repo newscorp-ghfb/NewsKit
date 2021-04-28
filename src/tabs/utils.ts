@@ -1,4 +1,5 @@
 // import ReactDOM from 'react-dom';
+import {ScrollProps} from '../scroll';
 import {Theme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {getBorderFromTheme, getMotionFromTheme} from '../utils/style';
@@ -18,11 +19,18 @@ export const getLayoutParams = (
 
   const params = vertical
     ? {
-        size: el.clientHeight,
+        // clientHeight and clientWidth return rounded value which can be different than painted one
+        // getBoundingClientRect returns the correct value as float
+        // but browsers also like to round up the value for the indicator
+        // so we end up with example: tab width: 150.67 and indicator width: 151px
+        // which adds 1px to the scroll and make arrows to be visible when then shoud not be
+        // for that we use Math.floor to round down the value
+        // which might make the indicator 1px smaller but prevents 1px scroll
+        size: Math.floor(el.getBoundingClientRect().height),
         distance: el.offsetTop,
       }
     : {
-        size: el.clientWidth,
+        size: Math.floor(el.getBoundingClientRect().width),
         distance: el.offsetLeft,
       };
 
@@ -165,4 +173,13 @@ export const getDescendantOnlyFromFirstChild = (
     currentElement = currentElement.childNodes && currentElement.childNodes[0];
   }
   return currentElement;
+};
+
+export const getScrollAlign = (
+  index: number,
+  tabArray: unknown[],
+): ScrollProps['snapAlign'] => {
+  if (index === 0) return 'start';
+  if (index === tabArray.length - 1) return 'end';
+  return 'center';
 };

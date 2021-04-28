@@ -29,11 +29,15 @@ import {
   parseKeyDown,
   getFirstParentElementWithRole,
   getDescendantOnlyFromFirstChild,
+  getScrollAlign,
 } from './utils';
 import {TabPanel} from './tab-panel';
 import {hasMatchingDisplayNameWith} from '../utils/component';
 import {getSSRId} from '../utils/get-ssr-id';
 import {get} from '../utils/get';
+import {Scroll, ScrollSnapAlignment} from '../scroll';
+import {deepMerge} from '../utils';
+import {filterOutFalsyProperties} from '../utils/filter-object';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -64,6 +68,14 @@ export const Tabs: React.FC<TabsProps> = ({
 }) => {
   const theme = useTheme();
   const align = getAlign(initialAlign, vertical);
+
+  const scrollOverrides = {
+    ...deepMerge(
+      {},
+      theme.componentDefaults.tabs.scroll,
+      filterOutFalsyProperties(overrides.scroll),
+    ),
+  };
 
   // filter out children which are not Tab component
   const tabsOnlyChildren = React.Children.toArray(
@@ -134,7 +146,7 @@ export const Tabs: React.FC<TabsProps> = ({
       'tablist',
     );
 
-    tabListElement.childNodes.forEach(innerNode => {
+    Array.from(tabListElement.childNodes).forEach(innerNode => {
       const element = getDescendantOnlyFromFirstChild(
         innerNode,
         'tab',
@@ -153,6 +165,9 @@ export const Tabs: React.FC<TabsProps> = ({
     const action = parseKeyDown(event, vertical);
 
     if (!action) return;
+
+    // prevent scrolling when you switch tabs using arrows
+    event.preventDefault();
 
     const keyboardActions = {
       [KEYBOARD_ACTION.previous]:
@@ -174,6 +189,12 @@ export const Tabs: React.FC<TabsProps> = ({
     // Focus the tab
     nextTab.focus();
     nextTab.click();
+    /* istanbul ignore next */
+    if ('scrollIntoView' in nextTab) {
+      requestAnimationFrame(() => {
+        nextTab.scrollIntoView();
+      });
+    }
   };
 
   // generate uniq IDs for a11y porpose
@@ -225,29 +246,30 @@ export const Tabs: React.FC<TabsProps> = ({
     acc.push(
       <StyledDistributionWrapper
         distribution={distribution || TabsDistribution.Start}
-        numberOfSiblings={array.length}
         data-testid="distribution-wrapper"
         vertical={vertical}
       >
-        <TabInternal
-          key={tab.key}
-          selected={tab.selected}
-          autoFocus={tab.autoFocus}
-          size={size}
-          onKeyDown={handleKeyDown}
-          onClick={() => setActiveTabIndex(tab.key)}
-          disabled={tab.disabled}
-          ref={tab.selected ? activeTabRef : undefined}
-          id={tab.id}
-          align={align}
-          overrides={{
-            ...tab.overrides,
-            width: '100%',
-            height: vertical ? '100%' : '',
-          }}
-        >
-          {getChildren(tab.label)}
-        </TabInternal>
+        <ScrollSnapAlignment snapAlign={getScrollAlign(index, array)}>
+          <TabInternal
+            key={tab.key}
+            selected={tab.selected}
+            autoFocus={tab.autoFocus}
+            size={size}
+            onKeyDown={handleKeyDown}
+            onClick={() => setActiveTabIndex(tab.key)}
+            disabled={tab.disabled}
+            ref={tab.selected ? activeTabRef : undefined}
+            id={tab.id}
+            align={align}
+            overrides={{
+              ...tab.overrides,
+              width: '100%',
+              height: vertical ? '100%' : '',
+            }}
+          >
+            {getChildren(tab.label)}
+          </TabInternal>
+        </ScrollSnapAlignment>
       </StyledDistributionWrapper>,
     );
 
@@ -268,40 +290,47 @@ export const Tabs: React.FC<TabsProps> = ({
         vertical={vertical}
         data-testid="tab-bar"
       >
-        <StyledInnerTabGroup
-          overrides={overrides}
-          flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
-          inline={!vertical}
-          role="tablist"
-          aria-orientation={vertical ? 'vertical' : 'horizontal'}
+        <Scroll
+          controls="static"
+          snapAlign="center"
+          vertical={vertical}
+          overrides={scrollOverrides}
         >
-          {tabs}
+          <StyledInnerTabGroup
+            overrides={overrides}
+            flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
+            inline={!vertical}
+            role="tablist"
+            aria-orientation={vertical ? 'vertical' : 'horizontal'}
+          >
+            {tabs}
 
-          <StyledTabsBarTrack
-            overrides={overrides}
-            vertical={vertical}
-            indicatorPosition={indicatorPosition}
-            role="presentation"
-            data-testid="tab-bar-track"
-            ref={tabsBarTrackRef}
-          />
-          <StyledTabsBarIndicator
-            overrides={overrides}
-            vertical={vertical}
-            indicatorPosition={indicatorPosition}
-            style={getTabsBarIndicatorStyle(
-              theme,
-              indicator.size,
-              indicator.distance,
-              vertical,
-              keyUpdated,
-              overrides,
-            )}
-            data-testid="tab-bar-indicator"
-            aria-hidden="true"
-            role="presentation"
-          />
-        </StyledInnerTabGroup>
+            <StyledTabsBarIndicator
+              overrides={overrides}
+              vertical={vertical}
+              indicatorPosition={indicatorPosition}
+              style={getTabsBarIndicatorStyle(
+                theme,
+                indicator.size,
+                indicator.distance,
+                vertical,
+                keyUpdated,
+                overrides,
+              )}
+              data-testid="tab-bar-indicator"
+              aria-hidden="true"
+              role="presentation"
+            />
+          </StyledInnerTabGroup>
+        </Scroll>
+        <StyledTabsBarTrack
+          overrides={overrides}
+          vertical={vertical}
+          indicatorPosition={indicatorPosition}
+          role="presentation"
+          data-testid="tab-bar-track"
+          ref={tabsBarTrackRef}
+        />
       </StyledTabsBar>
       {tabPanels}
     </StyledTabGroup>
