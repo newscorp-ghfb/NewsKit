@@ -152,6 +152,7 @@ exports[`Paragraph renders with drop cap 1`] = `
 }
 
 .emotion-3 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -176,11 +177,11 @@ exports[`Paragraph renders with drop cap 1`] = `
       </span>
       aragraph component
     </p>
-    <div
+    <span
       class="emotion-3"
     >
       paragraph component
-    </div>
+    </span>
   </div>
 </DocumentFragment>
 `;

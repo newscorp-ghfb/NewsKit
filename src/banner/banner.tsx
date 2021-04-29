@@ -5,10 +5,22 @@ import {
   StyledInnerContainer,
   StyledContentContainer,
   StyledIconContainer,
+  StyledMessageContainer,
 } from './styled';
 
-export const Banner: React.FC<BannerProps> = ({overrides, children, icon}) => (
-  <StyledBannerContainer data-testid="banner-container" overrides={overrides}>
+export const Banner: React.FC<BannerProps> = ({
+  overrides,
+  children,
+  icon,
+  ...restProps
+}) => (
+  <StyledBannerContainer
+    role="region"
+    aria-live="polite"
+    data-testid="banner-container"
+    overrides={overrides}
+    {...restProps}
+  >
     <StyledInnerContainer
       flow="horizontal-top"
       stackDistribution="flex-start"
@@ -18,7 +30,20 @@ export const Banner: React.FC<BannerProps> = ({overrides, children, icon}) => (
       {icon && (
         <StyledIconContainer overrides={overrides}>{icon}</StyledIconContainer>
       )}
-      <StyledContentContainer>{children}</StyledContentContainer>
+      <StyledContentContainer overrides={overrides}>
+        <StyledMessageContainer
+          overrides={overrides}
+          as={
+            typeof children === 'string' ||
+            (Array.isArray(children) &&
+              children.some(child => typeof child === 'string'))
+              ? 'p'
+              : 'div'
+          }
+        >
+          {children}
+        </StyledMessageContainer>
+      </StyledContentContainer>
     </StyledInnerContainer>
   </StyledBannerContainer>
 );

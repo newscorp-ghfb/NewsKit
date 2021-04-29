@@ -4,8 +4,10 @@ import {
   getStylePreset,
   getResponsiveSize,
   getResponsiveSpace,
+  getTypographyPreset,
 } from '../utils/style';
 import {Stack} from '../stack';
+import {TextBlock} from '../text-block';
 
 export const StyledBannerContainer = styled.div<BannerProps>`
   box-sizing: border-box;
@@ -29,7 +31,7 @@ export const StyledInnerContainer = styled(Stack)<
 
 export const StyledIconContainer = styled.div<Pick<BannerProps, 'overrides'>>`
   ${getResponsiveSpace(
-    'margin-right',
+    'marginRight',
     'banner.innerContainer.icon',
     'innerContainer.icon',
     'spaceInline',
@@ -38,4 +40,28 @@ export const StyledIconContainer = styled.div<Pick<BannerProps, 'overrides'>>`
 
 export const StyledContentContainer = styled.div<
   Pick<BannerProps, 'overrides'>
->``;
+>`
+  ${getResponsiveSpace(
+    'marginRight',
+    'banner.innerContainer.content',
+    'innerContainer.content',
+    'spaceInline',
+  )}
+`;
+
+export const StyledMessageContainer = styled(TextBlock)<
+  Pick<BannerProps, 'overrides'>
+>`
+  ${getTypographyPreset(
+    'banner.innerContainer.content.message',
+    'innerContainer.content.message',
+    {
+      withCrop: true,
+    },
+  )};
+
+  ${getStylePreset(
+    'banner.innerContainer.content.message',
+    'innerContainer.content.message',
+  )};
+`;

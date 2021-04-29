@@ -260,16 +260,17 @@ Object {
     },
     "banner": Object {
       "innerContainer": Object {
+        "content": Object {
+          "message": Object {
+            "stylePreset": "inkInverse",
+            "typographyPreset": "utilityBody010",
+          },
+          "spaceInline": "space030",
+        },
         "icon": Object {
           "spaceInline": "space030",
         },
-        "maxWidth": Object {
-          "lg": "1024px",
-          "md": "768px",
-          "sm": "480px",
-          "xl": "1440px",
-          "xs": "420px",
-        },
+        "maxWidth": "1920px",
       },
       "minHeight": "sizing090",
       "spaceInset": "spaceInset045",
@@ -1200,7 +1201,7 @@ Object {
     "bannerContainerSolid": Object {
       "base": Object {
         "backgroundColor": "#128293",
-        "color": "#ffffff",
+        "iconColor": "#ffffff",
       },
     },
     "buttonDefault": Object {

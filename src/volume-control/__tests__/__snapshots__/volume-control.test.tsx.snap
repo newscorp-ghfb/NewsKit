@@ -365,6 +365,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -375,12 +376,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -749,6 +750,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -759,12 +761,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -1133,6 +1135,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -1143,12 +1146,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -1516,6 +1519,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -1526,12 +1530,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -1900,6 +1904,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -1910,12 +1915,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -2284,6 +2289,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -2294,12 +2300,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -2668,6 +2674,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -2678,12 +2685,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -3052,6 +3059,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -3062,12 +3070,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;
 
@@ -3436,6 +3444,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
     </div>
   </div>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -3446,11 +3455,11 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
-  </div>
+  </span>
 </DocumentFragment>
 `;

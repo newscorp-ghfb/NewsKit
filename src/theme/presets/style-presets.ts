@@ -9,7 +9,7 @@ export const stylePresets: Record<string, StylePreset> = {};
 stylePresets.bannerContainerSolid = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
-    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
 };
 

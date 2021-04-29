@@ -1,7 +1,7 @@
 import {NewsKitIconProps} from '../icons';
 import {MQ} from '../utils/style';
 
-export interface BannerProps {
+export interface BannerProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   icon?: React.ReactElement<NewsKitIconProps>;
   overrides?: {
@@ -12,6 +12,13 @@ export interface BannerProps {
       maxWidth?: MQ<string>;
       icon?: {
         spaceInline?: MQ<string>;
+      };
+      content?: {
+        spaceInline?: MQ<string>;
+        message?: {
+          stylePreset?: MQ<string>;
+          typographyPreset?: MQ<string>;
+        };
       };
     };
   };

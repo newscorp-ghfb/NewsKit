@@ -644,6 +644,7 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-38 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -987,12 +988,12 @@ exports[`Audio Player live player renders as expected 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
+                <span
                   class="emotion-38"
                   id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
-                </div>
+                </span>
               </div>
             </div>
             <div
@@ -2173,6 +2174,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-63 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -2711,12 +2713,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
+                <span
                   class="emotion-63"
                   id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
-                </div>
+                </span>
               </div>
             </div>
             <div
@@ -2782,12 +2784,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
               </div>
             </div>
           </div>
-          <div
+          <span
             class="emotion-63"
             id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -3611,6 +3613,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-56 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -4109,12 +4112,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
+                <span
                   class="emotion-56"
                   id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
-                </div>
+                </span>
               </div>
             </div>
             <div
@@ -4174,12 +4177,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
               </div>
             </div>
           </div>
-          <div
+          <span
             class="emotion-56"
             id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -4947,6 +4950,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-56 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -5445,12 +5449,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
+                <span
                   class="emotion-56"
                   id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
-                </div>
+                </span>
               </div>
             </div>
             <div
@@ -5510,12 +5514,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
               </div>
             </div>
           </div>
-          <div
+          <span
             class="emotion-56"
             id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -6234,6 +6238,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-56 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -6754,12 +6759,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
+                <span
                   class="emotion-56"
                   id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
-                </div>
+                </span>
               </div>
             </div>
             <div
@@ -6819,12 +6824,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
               </div>
             </div>
           </div>
-          <div
+          <span
             class="emotion-56"
             id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
-          </div>
+          </span>
         </div>
       </div>
     </div>

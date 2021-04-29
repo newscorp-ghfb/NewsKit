@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextBlock} from 'newskit';
+import {Link, TextBlock} from 'newskit';
 import {MetaStatus} from '../../../components/meta/types';
 import {LayoutProps} from '../../../components/layout';
 import {ComponentPageTemplate} from '../../../components/component-page-template';
@@ -65,7 +65,7 @@ export default (layoutProps: LayoutProps) => (
                 name: 'stylePreset',
                 type: 'MQ<string>',
                 description: `If provided, this overrides the stylePreset applied to the Banner's most
-                outer container.`,
+                outer container. Can be used to override the colour of the icon and the message as well.`,
               },
               {
                 name: 'minHeight',
@@ -102,10 +102,102 @@ export default (layoutProps: LayoutProps) => (
                 type: 'MQ<string>',
                 description: `Overrides the space between the icon and the content`,
               },
+              {
+                name: 'content',
+                type: 'object',
+                description: `Sets overrides to the content container.`,
+              },
+              {
+                name: 'content.typographyPreset',
+                type: 'MQ<string>',
+                description: `Overrides the typography preset applied to the Banner content.`,
+              },
+              {
+                name: 'content.spaceInline',
+                type: 'MQ<string>',
+                description: `Overrides the spacing applied to the right hand side
+                (bottom for vertical orientation) of the content container.`,
+              },
             ],
           },
         },
       ],
+    }}
+    accessibility={{
+      introduction: `The Banner is a component that is not always present on the screen.
+      It can be visible during page load or it can appear on runtime - to announce important information,
+      warning, error or something else that requires user attention and action. In order to make this possible
+      the Banner uses live regions.`,
+      focusOrder: {
+        title: 'Focus order',
+        description: 'Some random text here',
+        table: {
+          columns: ['Order', 'Element', 'Role'],
+          rows: [
+            {
+              order: ['1'],
+              element: 'N/A',
+              role: 'N/A',
+            },
+            {
+              order: ['2'],
+              element: 'N/a',
+            },
+          ],
+        },
+      },
+      interaction: {
+        title: 'Keyboard Interactions',
+        description: 'Some random text',
+        table: {
+          columns: ['Command', 'Description'],
+          rows: [
+            {
+              command: ['ctrl', 'N/A'],
+              description: 'N/A',
+            },
+          ],
+        },
+      },
+      aria: {
+        title: 'WAI-ARIA',
+        description: 'Some random text',
+        table: {
+          columns: ['Category', 'Attribute', 'Value', 'Description'],
+          rows: [
+            {
+              category: 'Banner',
+              attribute: 'aria-role',
+              value: 'region',
+              description: `The region landmark role is used to identify an area in the document that counted as significant.
+              It is used to provide a generic landmark for people to be able to navigate
+              to easily when none of the other landmark roles are appropriate.`,
+            },
+            {
+              category: 'Banner',
+              attribute: 'aria-label',
+              value: 'Banner',
+              description: `Defines the Aria-label of the Banner.`,
+            },
+            {
+              category: 'Banner',
+              attribute: 'aria-live',
+              value: '"polite" (default) \n or "assertive" or "off"',
+              description: (
+                <>
+                  Description for aria live and link
+                  <Link
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions"
+                  >
+                    Mozilla docs
+                  </Link>
+                </>
+              ),
+            },
+          ],
+        },
+      },
     }}
   />
 );

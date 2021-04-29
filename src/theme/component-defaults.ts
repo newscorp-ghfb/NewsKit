@@ -73,15 +73,16 @@ export const componentDefaults = {
     spaceInset: 'spaceInset045',
     minHeight: 'sizing090',
     innerContainer: {
-      maxWidth: {
-        xs: '420px',
-        sm: '480px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1440px',
-      },
+      maxWidth: '1920px',
       icon: {
         spaceInline: 'space030',
+      },
+      content: {
+        spaceInline: 'space030',
+        message: {
+          stylePreset: 'inkInverse',
+          typographyPreset: 'utilityBody010',
+        },
       },
     },
   },

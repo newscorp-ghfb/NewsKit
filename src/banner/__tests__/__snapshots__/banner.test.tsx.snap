@@ -1,13 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner renders with default props 1`] = `
+exports[`Banner renders with content as react element 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
   background-color: #128293;
-  color: #ffffff;
   padding: 20px;
   min-height: 64px;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
 }
 
 .emotion-1 {
@@ -35,47 +38,227 @@ exports[`Banner renders with default props 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 479px) {
-  .emotion-1 {
-    max-width: 420px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-1 {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-1 {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-1 {
-    max-width: 1024px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-1 {
-    max-width: 1440px;
-  }
+.emotion-2 {
+  margin-right: 12px;
 }
 
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 svg {
+  fill: #ffffff;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 1px 0;
 }
 
 <div
+    aria-live="polite"
     class="emotion-0"
     data-testid="banner-container"
+    role="region"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <p
+            class="emotion-4"
+          >
+            Banner text
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Banner renders with content as string and link 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-color: #128293;
+  padding: 20px;
+  min-height: 64px;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  margin-right: 12px;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 svg {
+  fill: #ffffff;
+}
+
+.emotion-4 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #0a68c1;
+}
+
+.emotion-4 svg {
+  fill: #0a68c1;
+}
+
+.emotion-4:hover:not(:disabled) {
+  color: #02509b;
+}
+
+.emotion-4:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-4:active:not(:disabled) {
+  color: #01396e;
+}
+
+.emotion-4:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-4:visited:not(:disabled) {
+  color: #7547a3;
+}
+
+.emotion-4:visited:not(:disabled) svg {
+  fill: #7547a3;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-4 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
+}
+
+<div
+    aria-live="polite"
+    class="emotion-0"
+    data-testid="banner-container"
+    role="region"
   >
     <div
       class="emotion-1"
@@ -86,7 +269,123 @@ exports[`Banner renders with default props 1`] = `
         <p
           class="emotion-3"
         >
-          test banner message
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt
+          <a
+            class="emotion-4"
+            href="/"
+          >
+            <span
+              class="emotion-5"
+            >
+              <span
+                class="emotion-6"
+              >
+                NewsKit Link
+              </span>
+            </span>
+          </a>
+          ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Banner renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-color: #128293;
+  padding: 20px;
+  min-height: 64px;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  margin-right: 12px;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 svg {
+  fill: #ffffff;
+}
+
+<div
+    aria-live="polite"
+    class="emotion-0"
+    data-testid="banner-container"
+    role="region"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <p
+          class="emotion-3"
+        >
+          Banner text
         </p>
       </div>
     </div>
@@ -99,9 +398,12 @@ exports[`Banner renders with icon 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   background-color: #128293;
-  color: #ffffff;
   padding: 20px;
   min-height: 64px;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
 }
 
 .emotion-1 {
@@ -129,37 +431,8 @@ exports[`Banner renders with icon 1`] = `
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
+  max-width: 1920px;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 479px) {
-  .emotion-1 {
-    max-width: 420px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-1 {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-1 {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-1 {
-    max-width: 1024px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-1 {
-    max-width: 1440px;
-  }
 }
 
 .emotion-2 {
@@ -186,11 +459,39 @@ exports[`Banner renders with icon 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-6 svg {
+  fill: #ffffff;
 }
 
 <div
+    aria-live="polite"
     class="emotion-0"
     data-testid="banner-container"
+    role="region"
   >
     <div
       class="emotion-1"
@@ -216,12 +517,12 @@ exports[`Banner renders with icon 1`] = `
         </svg>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-2"
       >
         <p
           class="emotion-6"
         >
-          test banner message
+          Banner text
         </p>
       </div>
     </div>

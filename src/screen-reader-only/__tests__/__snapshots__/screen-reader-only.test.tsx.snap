@@ -3,6 +3,7 @@
 exports[`Screen reader only renders with description 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -13,11 +14,11 @@ exports[`Screen reader only renders with description 1`] = `
   width: 1px;
 }
 
-<div
+<span
     class="emotion-0"
     id="sr-only"
   >
     Description
-  </div>
+  </span>
 </DocumentFragment>
 `;

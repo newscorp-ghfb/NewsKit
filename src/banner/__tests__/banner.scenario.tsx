@@ -7,6 +7,9 @@ import {
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils/style';
 import {IconFilledInfo, IconFilledWarning, IconFilledError} from '../../icons';
+import {Button} from '../../button';
+import {ScreenReaderOnly} from '../../screen-reader-only';
+import {Link} from '../../link';
 
 const myCustomTheme = createTheme({
   name: 'banner-intents-theme',
@@ -15,13 +18,24 @@ const myCustomTheme = createTheme({
       bannerContainerSolidNotice: {
         base: {
           backgroundColor: '{{colors.interfaceNotice010}}',
-          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
         },
       },
       bannerContainerSolidNegative: {
         base: {
           backgroundColor: '{{colors.interfaceNegative010}}',
-          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+      },
+      bannerContainerSolidCustom: {
+        base: {
+          backgroundColor: '{{colors.interfaceSkeleton020}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+      },
+      bannerMessageCustom: {
+        base: {
+          color: '{{colors.inkContrast}}',
         },
       },
     },
@@ -38,7 +52,7 @@ export default {
     {
       storyName: 'banner-default',
       storyFn: () => (
-        <React.Fragment>
+        <>
           <StorybookHeading>Banner</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
           <BannerWrapper>
@@ -56,23 +70,17 @@ export default {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Banner>
           </BannerWrapper>
-        </React.Fragment>
+        </>
       ),
     },
     {
       storyName: 'banner-intents',
       storyFn: () => (
-        <React.Fragment>
+        <>
           <StorybookHeading>Banner Intent</StorybookHeading>
           <StorybookSubHeading>Informative (default)</StorybookSubHeading>
           <BannerWrapper>
-            <Banner
-              icon={
-                <IconFilledInfo
-                  overrides={{size: 'iconSize020', stylePreset: 'inkInverse'}}
-                />
-              }
-            >
+            <Banner icon={<IconFilledInfo overrides={{size: 'iconSize020'}} />}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Banner>
@@ -81,13 +89,16 @@ export default {
             <StorybookSubHeading>Notice</StorybookSubHeading>
             <BannerWrapper>
               <Banner
-                icon={
-                  <IconFilledWarning
-                    overrides={{size: 'iconSize020', stylePreset: 'inkInverse'}}
-                  />
-                }
+                icon={<IconFilledWarning overrides={{size: 'iconSize020'}} />}
                 overrides={{
                   stylePreset: 'bannerContainerSolidNotice',
+                  innerContainer: {
+                    content: {
+                      message: {
+                        stylePreset: 'inkInverse',
+                      },
+                    },
+                  },
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -99,11 +110,20 @@ export default {
               <Banner
                 icon={
                   <IconFilledError
-                    overrides={{size: 'iconSize020', stylePreset: 'inkInverse'}}
+                    overrides={{
+                      size: 'iconSize020',
+                    }}
                   />
                 }
                 overrides={{
                   stylePreset: 'bannerContainerSolidNegative',
+                  innerContainer: {
+                    content: {
+                      message: {
+                        stylePreset: 'inkInverse',
+                      },
+                    },
+                  },
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -111,8 +131,168 @@ export default {
               </Banner>
             </BannerWrapper>
           </ThemeProvider>
-        </React.Fragment>
+        </>
       ),
+    },
+    {
+      storyName: 'banner-variations',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Banner</StorybookHeading>
+          <StorybookSubHeading>with overrides</StorybookSubHeading>
+          <ThemeProvider theme={myCustomTheme}>
+            <BannerWrapper>
+              <Banner
+                icon={
+                  <IconFilledError
+                    overrides={{
+                      size: 'iconSize020',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                }
+                overrides={{
+                  stylePreset: 'bannerContainerSolidCustom',
+                  spaceInset: 'spaceInset060',
+                  minHeight: 'sizing100',
+                  innerContainer: {
+                    maxWidth: {
+                      xs: '420px',
+                      sm: '480px',
+                      md: '768px',
+                      lg: '1024px',
+                      xl: '1440px',
+                    },
+                    icon: {
+                      spaceInline: 'space060',
+                    },
+                    content: {
+                      spaceInline: 'space050',
+                      message: {
+                        stylePreset: 'inkContrast',
+                        typographyPreset: 'utilityBody030',
+                      },
+                    },
+                  },
+                }}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Banner>
+            </BannerWrapper>
+            <StorybookSubHeading>with link</StorybookSubHeading>
+            <BannerWrapper>
+              <Banner
+                icon={
+                  <IconFilledError
+                    overrides={{
+                      size: 'iconSize020',
+                    }}
+                  />
+                }
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt <Link href="/">NewsKit Link</Link> ut
+                labore et dolore magna aliqua.
+              </Banner>
+            </BannerWrapper>
+          </ThemeProvider>
+        </>
+      ),
+    },
+    {
+      storyName: 'banner-screen-reader-demo',
+      parameters: {eyes: {include: false}},
+      storyFn: () =>
+        React.createElement(() => {
+          const [isActive, setIsActive] = React.useState(false);
+          const [counter, setCounter] = React.useState(0);
+
+          const open = () => {
+            setIsActive(true);
+            setCounter(counter + 1);
+          };
+          const close = () => setIsActive(false);
+          return (
+            <>
+              <StorybookHeading>Banner</StorybookHeading>
+              <StorybookSubHeading>
+                Displays based on conditional rendering
+              </StorybookSubHeading>
+
+              <Button onClick={isActive ? close : open}>
+                {isActive ? 'Close' : 'Open'} Banner
+              </Button>
+              <BannerWrapper>
+                {isActive && (
+                  <Banner
+                    aria-label="Banner Info"
+                    icon={
+                      <IconFilledInfo
+                        overrides={{
+                          size: 'iconSize020',
+                          stylePreset: 'inkInverse',
+                        }}
+                      />
+                    }
+                  >
+                    <ScreenReaderOnly>Important Information:</ScreenReaderOnly>
+                    Test banner {counter} content opened: {counter} times
+                  </Banner>
+                )}
+              </BannerWrapper>
+              <hr />
+            </>
+          );
+        }),
+    },
+    {
+      storyName: 'banner-screen-reader-demo-2',
+      parameters: {eyes: {include: false}},
+      storyFn: () =>
+        React.createElement(() => {
+          const [isActive, setIsActive] = React.useState(false);
+          const [counter, setCounter] = React.useState(0);
+
+          const open = () => {
+            setIsActive(true);
+            setCounter(counter + 1);
+          };
+
+          const StyledWrapper = styled.div<{isActive?: boolean}>`
+            visibility: ${!isActive && 'hidden'};
+          `;
+          const close = () => setIsActive(false);
+          return (
+            <>
+              <StorybookHeading>Banner</StorybookHeading>
+              <StorybookSubHeading>
+                Displays by using visibility: hidden
+              </StorybookSubHeading>
+              <Button onClick={isActive ? close : open}>
+                {isActive ? 'Close' : 'Open'} Banner
+              </Button>
+              <BannerWrapper>
+                <StyledWrapper isActive>
+                  <Banner
+                    icon={
+                      <IconFilledInfo
+                        overrides={{
+                          size: 'iconSize020',
+                          stylePreset: 'inkInverse',
+                        }}
+                      />
+                    }
+                  >
+                    <ScreenReaderOnly>Important Information:</ScreenReaderOnly>
+                    Test banner {counter} content opened: {counter} times
+                  </Banner>
+                </StyledWrapper>
+              </BannerWrapper>
+              <hr />
+            </>
+          );
+        }),
     },
   ],
 };
