@@ -994,10 +994,9 @@ export default {
       ),
     },
     {
-      name: 'tabs-with-overflow-and-scroll',
+      storyName: 'tabs-with-overflow-and-scroll',
       parameters: {eyes: {include: false}},
-      type: 'story',
-      component: () => (
+      storyFn: () => (
         <MainContainer>
           <StorybookHeading>Tabs With Overflow and Scroll</StorybookHeading>
           <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
