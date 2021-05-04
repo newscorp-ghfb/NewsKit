@@ -1,0 +1,144 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {LegacyBlock} from '../../components/legacy-block';
+import {Block} from 'newskit';
+
+export default Layout;
+
+# Block
+
+## Overview
+
+The Block is a simple container component that can take margin, padding and style presets.
+For more information on the spacing preset, please refer to page [here](/theming/presets/space-presets).
+
+## Props
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="as" type="string" default="div">
+    This is a string name of the html element that the block can be converted
+    to. Block defaults as a div element, but it can be converted to a `span` by
+    using this prop.
+  </Prop>
+  <Prop name="stylePreset" type="MQ<string>">
+    If provided, applies style on the Block.
+  </Prop>
+  <Prop name="spaceInline" type="MQ<string>">
+    This is a spacing preset token which is applied as a margin on the right of
+    the Block. Use this to space inline content across the page.
+  </Prop>
+  <Prop name="spaceStack" type="MQ<string>">
+    This is a spacing preset token which is applied as a margin on the bottom of
+    the Block. Use this to space stacking content down the page.
+  </Prop>
+  <Prop name="spaceInset" type="MQ<string>">
+    If provided, applies padding on the Block. 
+    The padding space is evenly distributed on either side when `spaceInsetXXX` token is passed.
+    Tokens like `spaceInsetSquishXXX` and `spaceInsetStretchXXX` will also populated space values on all sides
+    but values for horizontal and vertical space will be different depending on the token type.
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="Block"
+  component={props => (
+    <div>
+      <LegacyBlock
+        height="sizing060"
+        width="sizing120"
+        backgroundColor="blue080"
+      />
+      <Block {...props} />
+      <LegacyBlock
+        height="sizing060"
+        width="sizing120"
+        backgroundColor="blue080"
+      />
+    </div>
+  )}
+  knobs={[
+    {
+      name: 'Children',
+      propName: 'children',
+      value: 'This is a block',
+    },
+    {
+      name: 'Render as',
+      propName: 'as',
+      options: [
+        {
+          label: 'Default (div)',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'span',
+          value: 'span',
+        },
+      ],
+    },
+    {
+      name: 'spaceInline',
+      propName: 'spaceInline',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'space020',
+          value: 'space020',
+        },
+      ],
+    },
+    {
+      name: 'spaceStack',
+      propName: 'spaceStack',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'space020',
+          value: 'space020',
+        },
+      ],
+    },
+    {
+      name: 'spaceInset',
+      propName: 'spaceInset',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'spaceInset030',
+          value: 'spaceInset030',
+        },
+      ],
+    },
+    {
+      name: 'stylePreset',
+      propName: 'stylePreset',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'flagSolid',
+          value: 'flagSolid',
+        },
+      ],
+    },
+  ]}
+/>

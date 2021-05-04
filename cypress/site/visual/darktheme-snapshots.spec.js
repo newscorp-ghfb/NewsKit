@@ -2,7 +2,7 @@
 
 // Note: only a subset of pages as a base for smoke tests
 const routes = {
-  audioPlayer: '/components/media/audio-player',
+  audioPlayer: '/components/audio-player',
 };
 
 Object.entries(routes).forEach(route => {

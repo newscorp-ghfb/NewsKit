@@ -1,6 +1,6 @@
 describe('table of content', () => {
   beforeEach(() => {
-    cy.mockConsentAndVisit('/components/action/button-new');
+    cy.mockConsentAndVisit('/components/button-new');
     cy.get('[href="#interactive-demo"]').as('TOCInteractiveDemo');
   });
 

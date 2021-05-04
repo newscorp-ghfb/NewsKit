@@ -100,34 +100,49 @@
     "id": "/components",
     "subNav": [
       {
-        "title": "Action",
-        "id": "/components/action",
+        "title": "Action & Inputs",
+        "id": "/components/action-and-inputs",
         "subNav": [
           {
             "title": "Button",
             "page": true,
-            "id": "/components/action/button"
+            "id": "/components/button"
+          },
+          {
+            "title": "Form",
+            "page": true,
+            "id": "/components/form"
           },
           {
             "title": "Share Bar",
             "page": true,
-            "id": "/components/action/share-bar"
-          }
-        ]
-      },
-      {
-        "title": "Inputs",
-        "id": "/components/inputs",
-        "subNav": [
+            "id": "/components/share-bar"
+          },
           {
-            "title": "Form",
+            "title": "Slider",
             "page": true,
-            "id": "/components/inputs/form"
+            "id": "/components/slider"
           },
           {
             "title": "Text Input",
             "page": true,
-            "id": "/components/inputs/text-input"
+            "id": "/components/text-input"
+          }
+        ]
+      },
+      {
+        "title": "Feedback & Status",
+        "id": "/components/feedback-and-status",
+        "subNav": [
+          {
+            "title": "Flag",
+            "page": true,
+            "id": "/components/flag"
+          },
+          {
+            "title": "Progress Indicator",
+            "page": true,
+            "id": "/components/progress-indicator"
           }
         ]
       },
@@ -136,41 +151,44 @@
         "id": "/components/layout",
         "subNav": [
           {
+            "title": "Aspect Ratio",
+            "page": true,
+            "id": "/components/aspect-ratio"
+          },
+          {
             "title": "Block",
             "page": true,
-            "id": "/components/layout/block"
+            "id": "/components/block"
           },
           {
             "title": "Card",
             "page": true,
-            "id": "/components/layout/card"
+            "id": "/components/card"
           },
           {
             "title": "Divider",
             "page": true,
-            "id": "/components/layout/divider"
+            "id": "/components/divider"
+          },
+          {
+            "title": "Drawer",
+            "page": true,
+            "id": "/components/drawer"
           },
           {
             "title": "Grid",
             "page": true,
-            "id": "/components/layout/grid"
-          },
-          {
-            "title": "Scroll",
-            "page": true,
-            "id": "/components/layout/scroll",
-            "description": "Here lies the description for the scroll component",
-            "media": "/static/placeholder-16x9.png"
+            "id": "/components/grid"
           },
           {
             "title": "Stack",
             "page": true,
-            "id": "/components/layout/stack"
+            "id": "/components/stack"
           },
           {
             "title": "Visibility",
             "page": true,
-            "id": "/components/layout/visibility"
+            "id": "/components/visibility"
           }
         ]
       },
@@ -179,29 +197,24 @@
         "id": "/components/media",
         "subNav": [
           {
-            "title": "Aspect Ratio",
-            "page": true,
-            "id": "/components/media/aspect-ratio"
-          },
-          {
             "title": "Audio Player",
             "page": true,
-            "id": "/components/media/audio-player"
+            "id": "/components/audio-player"
           },
           {
-            "title": "Caption",
+            "title": "Icons",
             "page": true,
-            "id": "/components/media/caption"
+            "id": "/components/icons"
           },
           {
             "title": "Image",
             "page": true,
-            "id": "/components/media/image"
+            "id": "/components/image"
           },
           {
             "title": "Volume Control",
             "page": true,
-            "id": "/components/media/volume-control"
+            "id": "/components/volume-control"
           }
         ]
       },
@@ -210,134 +223,103 @@
         "id": "/components/navigation",
         "subNav": [
           {
-            "title": "Drawer",
-            "page": true,
-            "id": "/components/navigation/drawer"
-          },
-          {
             "title": "Link",
             "page": true,
-            "id": "/components/navigation/link"
+            "id": "/components/link"
+          },
+          {
+            "title": "Scroll",
+            "page": true,
+            "id": "/components/scroll",
+            "description": "Here lies the description for the scroll component",
+            "media": "/static/placeholder-16x9.png"
+          },
+          {
+            "title": "Tabs",
+            "page": true,
+            "id": "/components/tabs"
           },
           {
             "title": "Tag",
             "page": true,
-            "id": "/components/navigation/tag"
+            "id": "/components/tag"
           },
           {
             "title": "Title Bar",
             "page": true,
-            "id": "/components/navigation/title-bar"
+            "id": "/components/title-bar"
           }
         ]
       },
       {
-        "title": "Selection Contols",
-        "id": "/components/selection-controls",
-        "subNav": [
-          {
-            "title": "Tabs",
-            "page": true,
-            "id": "/components/selection-controls/tabs"
-          },
-          {
-            "title": "Slider",
-            "page": true,
-            "id": "/components/selection-controls/slider"
-          }
-        ]
-      },
-      {
-        "title": "Text Content",
-        "id": "/components/text-content",
+        "title": "Text",
+        "id": "/components/text",
         "subNav": [
           {
             "title": "Byline",
             "page": true,
-            "id": "/components/text-content/byline"
+            "id": "/components/byline"
+          },
+          {
+            "title": "Caption",
+            "page": true,
+            "id": "/components/caption"
           },
           {
             "title": "Date Time",
             "page": true,
-            "id": "/components/text-content/date-time"
-          },
-          {
-            "title": "Flag",
-            "page": true,
-            "id": "/components/text-content/flag"
+            "id": "/components/date-time"
           },
           {
             "title": "Headline",
             "page": true,
-            "id": "/components/text-content/headline"
+            "id": "/components/headline"
           },
           {
             "title": "Ordered List",
             "page": true,
-            "id": "/components/text-content/ordered-list"
+            "id": "/components/ordered-list"
           },
           {
             "title": "Standfirst",
             "page": true,
-            "id": "/components/text-content/standfirst"
+            "id": "/components/standfirst"
           },
           {
             "title": "Text Block",
             "page": true,
-            "id": "/components/text-content/text-block"
+            "id": "/components/text-block"
           },
           {
             "title": "Unordered List",
             "page": true,
-            "id": "/components/text-content/unordered-list"
+            "id": "/components/unordered-list"
           }
         ]
       },
       {
         "title": "Third Party Integrations",
-        "id": "/components/third-party-integrations",
+        "id": "/components/third-party",
         "subNav": [
           {
             "title": "Consent",
             "page": true,
-            "id": "/components/third-party-integrations/consent"
+            "id": "/components/consent"
           },
           {
             "title": "Consent Settings Link",
             "page": true,
-            "id": "/components/third-party-integrations/consent-settings-link"
+            "id": "/components/consent-settings-link"
           },
           {
             "title": "Experimentation Web",
             "page": true,
-            "id": "/components/third-party-integrations/experimentation-web"
+            "id": "/components/experimentation-web"
           },
           {
             "title": "Tealium",
             "page": true,
-            "id": "/components/third-party-integrations/tealium"
-          }
-        ]
-      },
-      {
-        "title": "Others",
-        "id": "/components/others",
-        "subNav": [
-          {
-            "title": "Icons",
-            "page": true,
-            "id": "/components/others/icons"
-          }
-        ]
-      },
-      {
-        "title": "User Feedback",
-        "id": "/components/user-feedback",
-        "subNav": [
-          {
-            "title": "Progress Indicator",
-            "page": true,
-            "id": "/components/user-feedback/progress-indicator"
+            "id": "/components/tealium"
           }
         ]
       }

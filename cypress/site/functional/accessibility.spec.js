@@ -15,7 +15,7 @@ describe('Page accessibility', () => {
       if (
         path === `/theming/presets/typography-presets` ||
         path === `/pages/article` ||
-        path === `/components/layout/card`
+        path === `/components/card`
       ) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
         // More info on the rule here: https://www.w3.org/WAI/tutorials/page-structure/headings/

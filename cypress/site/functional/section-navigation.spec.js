@@ -2,7 +2,7 @@
 
 describe('section navigation', () => {
   it('should contain the correct section navigation links', () => {
-    cy.mockConsentAndVisit('/components/navigation/tag');
+    cy.mockConsentAndVisit('/components/tag');
     cy.get('[data-testid="section-navigation"]')
       .find('li > a')
       .each(el => {

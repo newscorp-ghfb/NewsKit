@@ -1,0 +1,200 @@
+import Playground, {withProps} from '../../components/playground';
+import Prop from '../../components/prop';
+import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../components/layout';
+import {
+  Card,
+  Tag,
+  TagSize,
+  Flow,
+  Stack,
+  StackDistribution,
+  Link,
+  UnorderedList,
+} from 'newskit';
+import {CodeFromDefaultPresets, CodeFromFile} from '../../components/code';
+import {CardVerticalMediumWithoutInset} from '../../demo-components/card/card-vertical-medium-without-inset';
+import {CardVerticalSmallWithInset} from '../../demo-components/card/card-vertical-small-with-inset';
+import {CardHorizontalMediumWithoutInset} from '../../demo-components/card/card-horizontal-medium-without-inset';
+import {InlineCode} from '../../components/markdown-elements';
+
+export default Layout;
+
+# Card
+
+## Overview
+
+Cards group content that allows users to browse a collection of related items and actions in a modular, easy-to-read way.
+There are three main areas to the card component: Media, Content and Action area.
+
+### Usage
+
+Cards are used to display a summary of content and will reveal more details upon interaction.
+
+### Variants
+
+There are two card variants - card without inset `<Card/>` card with inset `<CardInset/>`
+
+## Props
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="href" type="string | BaseLinkProps">
+    If provided, the Card will render with an anchor.
+    Both <InlineCode>string</InlineCode> and <InlineCode>BaseLinkProps</InlineCode> are supported,
+    <InlineCode>BaseLinkProps</InlineCode> is derived from <InlineCode>React.AnchorHTMLAttributes</InlineCode>,
+    providing access to all anchor props. For more details check the Interactivity section below.
+    <br />
+    <br />
+    <b>NOTE:</b> If href prop is not provided the card will omit all interactive states (hover and active)
+    from the style presets applied to the inner card containers.
+  </Prop>
+  <Prop name="layout" type="'vertical' | 'horizontal' | 'horizontal-reverse'" default="vertical">
+    The card supports three layouts:
+    <br />
+    <br />
+    <UnorderedList>
+      <>
+        <InlineCode>vertical</InlineCode> - The card is stacked vertically, displaying top to bottom:
+        media, content and action items.
+      </>
+      <>
+        <InlineCode>horizontal</InlineCode> - The card is laid out horizontally, media on the left
+        and content stacked above action items on right.
+      </>
+      <>
+        <InlineCode>horizontal-reverse</InlineCode> - The card is laid out horizontally,
+        content stacked above action items on left with media on the right.
+      </>
+    </UnorderedList>
+
+  </Prop>
+  <Prop name="media" type="ImageProps | React.ComponentType">
+    If this parameter is provided as <InlineCode>ImageProps</InlineCode> object (see <Link href="/components/image">Image documentation</Link>), it will render the media as an image.<br />
+    If this is provided as a custom React component, it will render the React component directly.
+  </Prop>
+  <Prop name="mediaInteractive" type="boolean" default={false}>
+    Removes the card media from link area. This prop only matters when the card is used as a link
+    and when custom media or video components are passed as cardMedia so the user can interact with the video (play, pause, etc...) without navigation to occur.
+    <br/>
+    <br/>
+    <b>NOTE:</b> If necessary, make sure your media element is tabbable  by adding <InlineCode>tabindex</InlineCode> to it.
+  </Prop>
+  <Prop name="children" type="Exclude<React.ReactNode, 'undefined'>" required>
+    This is the body of the Card. A card requires to have at least a heading. Each element of the body content should be wrapped within a <Link href="/components/layout/block">Block</Link> component
+    which is responsible for the spacing between the elements. Refer to the examples below.
+  </Prop>
+  <Prop name="actions" type="React.ComponentType">
+    If provided, the Card will render the React component being passed to the actions. This could be buttons, tags and/or links.
+    The actions section is typically placed at the bottom of the card and would only be clickable if the child components would be.<br />
+    If there are multiple items, it is advised to use the Stack component to display the items. Refer to the examples below.<br />
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    <Prop name="stylePreset" type="MQ<string>">
+      If provided, this overrides the style preset of the card.
+    </Prop>
+    <Prop name="horizontalRatio" type="string" default="1:1">
+      If provided, this sets the ratio between the MediaContainer and TeaserAndActionsContainer on a Card with horizontal layout. The ratio consists of two integers with a colon separating them (1:1),
+      where the first value is applied to the left side and the second value is applied to the right side of the card,
+      regardless if the layout is horizontal or horizontal-reverse.<br />
+      If 'none' is passed, we don't apply any ratio.<br />
+      If an invalid value is passed, the ratio will default to what is defined in component defaults<br /><br />
+      <b>NOTE:</b> This prop works for <InlineCode>horizontal</InlineCode> and <InlineCode>horizontal-reverse</InlineCode> layouts only.
+    </Prop>
+    <Prop name="mediaContainer" type="object">
+      <Prop name="stylePreset" type="MQ<string>">
+        If provided, this overrides the style preset applied to the passed media container.
+      </Prop>
+      <Prop name="spaceInline" type="MQ<SpacingPresetKeys>">
+        If provided, this overrides the space between the media container and the container that holds the content and actions area.
+      </Prop>
+    </Prop>
+    <Prop name="teaserContainer" type="object">
+      <Prop name="stylePreset" type="MQ<string>" >
+        If provided, this overrides the style preset applied to the teaser container.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<string>">
+        If provided, applies padding to the teaser container.
+      </Prop>
+    </Prop>
+    <Prop name="actionsContainer" type="object">
+      <Prop name="stylePreset" type="MQ<string>" >
+        If provided, this overrides the style preset applied to the actions container.
+      </Prop>
+      <Prop name="minHeight" type="string">
+        If provided, this sets a minimum height to the actions container. This can be a sizing
+        token from the theme, or any CSS length value.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<string>">
+        If provided, applies padding to the actions container.
+      </Prop>
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName='card' />
+    <br/>
+    <br/>
+    <b>NOTE:</b> The <InlineCode>headline</InlineCode> object represent the defaults that will be applied to the
+    <InlineCode>Headline</InlineCode> component used inside  the card.
+    <br/>
+    <br/>
+    <UnorderedList>
+      <>
+        <InlineCode>card.headline.nonInteractive</InlineCode> - will be applied by default to the headline when there is <b>no href</b> property
+      </>
+      <>
+        <InlineCode>card.headline.interactive</InlineCode> - will be applied by default to the headline when <b>href</b> property is provided
+      </>
+    </UnorderedList>
+    You are still able to override the default <InlineCode>Headline</InlineCode> styles by passing the overides directly to
+    the <Link href="/components/headline">Headline</Link> as shown on the examples below.
+  </Prop>
+</LegacyBlock>
+
+### Examples
+
+#### Vertical card
+
+##### Card without inset
+
+<CardVerticalMediumWithoutInset />
+<CodeFromFile path="examples/card/vertical-card-medium-without-inset.tsx" />
+
+##### Card with inset
+
+<CardVerticalSmallWithInset />
+<CodeFromFile path="examples/card/vertical-card-small-with-inset.tsx" />
+
+#### Horizontal card
+
+##### Card without inset
+
+<CardHorizontalMediumWithoutInset />
+<CodeFromFile path="examples/card/horizontal-card-medium-without-inset.tsx" />
+
+**NOTE:** When you use non-inset card without actions you will need to provide additional spacing to the teaser. Otherwise clipping (overflowing) on the last row might occur due to Line Height Cropping. For more information check <Link href="https://medium.com/eightshapes-llc/cropping-away-negative-impacts-of-line-height-84d744e016ce">this article on medium</Link>
+
+### Interactivity
+
+When the Card component has a `href` property (making it interactive), it is recommended
+to pass the [Headline](/components/headline) as a child,
+inside of the card content area. In this case the Headline will have a link applied to it,
+which will have various interactive states (hover, visited, avtive)
+and the Headline will have new component-defaults applied out of the box - <InlineCode>card.headline.interactive</InlineCode>
+(listed in the card defaults above), you can also pass your own custom overrides to the Headline.
+
+For this implementation, we use a z-index property in order to exclude the actions area and the media area
+(when we have mediaInteractive = true) from the link area.
+
+**NOTE:** It is not mandatory for the headline component to be direct child of the card content. It can be nested inside a structure,
+but make sure it does not have any parents with `position: relative` style applied as it will break the clickable area of the link.
+
+**NOTE:** Passing styled component created from the Headline to the card content would not work correctly when the card is used as a link.
+Instead use the Headline overrides to modify its styles. Otherwise, the interactivity of the link will not work as expected.
+
+### Accessibility
+
+- Always pass an `alt` prop to the card image regardless of whether you use the built in or a custom image component.
+- When creating a tab order for the different parts of the card, remember to put the headline before the image or media so that screen-reader users get the context before the image alt tag.
+- When passing custom interactive component (i.e. video) as card media remember to take care of making the media component visible for screen readers by adding tabindex if necessary.
+- Add aria-label prop to allow a user to describe the action that will be performed when the user interacts with the card. By default, this could be the headline text.
+- When nesting other components of the card, always follow those components' accessibility guidelines.

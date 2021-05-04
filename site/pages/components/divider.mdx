@@ -1,0 +1,177 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {LegacyBlock} from '../../components/legacy-block';
+import {Prop} from '../../components/prop';
+import {CodeFromFile, CodeFromDefaultPresets} from '../../components/code';
+import {
+  ExampleBlock,
+  BlockWithBorder,
+  StyledBlockForDivider,
+  InlineBlock,
+  InlineDividerContainer,
+} from '../../demo-components/divider/styled';
+
+import {
+  Divider,
+  Block,
+  Stack,
+  StackChild,
+  AlignSelfValues,
+  IconFilledCircle,
+} from 'newskit';
+
+export default Layout;
+
+# Divider
+
+## Overview
+
+A divider is a thin line that separates content helping to create visual grouped layouts.
+
+## Anatomy
+
+The divider is an `hr` tag that comprises of a styled border. It can flow horizontal or vertical.
+The divider is set to be 100% of its container's corresponding width or height depending on the flow of the divider.
+This means that if you want to restrain its size, you will need to wrap it in a container with the corresponding size.
+
+## Props
+
+The divider has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
+
+<LegacyBlock marginTop="sizing050">
+  <Prop name="vertical" type="boolean" default={false}>
+    If provided changes the flow of the divider to vertical.
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component. Here are the overrides that the Divider accepts:
+    <Prop name="stylePreset" type="MQ<string>">
+      If provided, overrides the style preset applied to the Divider. The style preset can modify the borderStyle,
+      borderColor and borderWidth.
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="divider" />
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="Divider"
+  component={state => {
+    const dimensions = {
+      width: state.vertical ? null : '100%',
+      height: state.vertical ? '198px' : null,
+    };
+    return (
+      <React.Fragment>
+        <LegacyBlock display="flex" {...dimensions}>
+          <Divider {...state} />
+        </LegacyBlock>
+      </React.Fragment>
+    );
+  }}
+  knobs={[
+    {
+      name: 'Vertical',
+      propName: 'vertical',
+      options: [
+        {
+          label: 'Unset',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+      ],
+    },
+  ]}
+/>
+
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults/overview).
+
+## Spacing
+
+The divider does not apply any spacing presets.
+So in order to add space around it, you will need to wrap it in a corresponding Block or Stack component,
+then you can apply the spacing presets to the container.
+Here are a few examples to demonstrate the usages of a container elements to set spacings:
+
+_Note: The divider always stretches to 100% of the corresponding size of the container._
+
+### Using Block component
+
+<CodeFromFile path="examples/divider/divider-horizontal-in-block.tsx" />
+
+In this example, we are using the Block component
+to add `margin-bottom` to each element by using `spaceStack: 'space020'`.
+Also, we have a container `StyledBlock` that has fixed width to restrain the divider's width.
+It will provide us with the following structure:
+
+<StyledBlockForDivider>
+  <Block overrides={{spaceStack: 'space020'}}>
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  </Block>
+  <Block overrides={{spaceStack: 'space020'}}>
+    <Divider />
+  </Block>
+  <Block overrides={{spaceStack: 'space020'}}>
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  </Block>
+  <Block overrides={{spaceStack: 'space020'}}>
+    <Divider />
+  </Block>
+  <Block>
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  </Block>
+</StyledBlockForDivider>
+
+<CodeFromFile path="examples/divider/divider-vertical-in-block.tsx" />
+
+In this example we have a horizontal layout of elements separated with vertical dividers.
+Each element is wrapped inside a Block component that has a spacing preset
+passed to set the `margin-right` of each element.
+The example will look like this:
+
+<Block>
+  <InlineBlock overrides={{spaceInline: 'space020'}}>
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  </InlineBlock>
+  <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
+    <Divider vertical />
+  </InlineDividerContainer>
+  <InlineBlock overrides={{spaceInline: 'space020'}}>
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  </InlineBlock>
+  <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
+    <Divider vertical />
+  </InlineDividerContainer>
+  <InlineBlock>
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  </InlineBlock>
+</Block>
+
+### Using Stack component
+
+<CodeFromFile path="examples/divider/divider-vertical-in-stack.tsx" />
+
+In this example we are using a wrapping `Stack` component with spacing set to `sizing030`.
+When you need to use the `Divider` inside a `Stack`,
+you will have to wrap it inside a `StackChild` component
+that has a property `alignSelf={AlignSelfValues.Stretch}` passed to it.
+This way the divider will automatically stretch to the size of the Stack container.
+
+<Stack flow="horizontal-center" stackDistribution="center" space="sizing030">
+  <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  <StackChild alignSelf={AlignSelfValues.Stretch}>
+    <Divider vertical />
+  </StackChild>
+  <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  <StackChild alignSelf={AlignSelfValues.Stretch}>
+    <Divider vertical />
+  </StackChild>
+  <IconFilledCircle overrides={{size: 'iconSize040'}} />
+</Stack>
+
+The same approach can be applied when using a horizontal `Divider` inside a vertical `Stack` layout.
