@@ -63,7 +63,7 @@ const Page: React.FC<{
             'Attribute',
             'Value',
             'Description',
-            'User supplied',
+            'User Supplied',
           ]}
           rows={[
             {
@@ -71,7 +71,7 @@ const Page: React.FC<{
               attribute: 'Ctrl',
               value: 'Ctrl',
               description: 'Lorem ipsum dolor sit amet',
-              usersupplied: true,
+              userSupplied: true,
             },
             {
               element: 'Label',
@@ -79,7 +79,7 @@ const Page: React.FC<{
               value: 'Ctrl',
               description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies laoreet finibus.',
-              usersupplied: true,
+              userSupplied: true,
             },
             {
               element: 'Label',
@@ -87,7 +87,7 @@ const Page: React.FC<{
               value: 'Ctrl',
               description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies laoreet finibus.',
-              usersupplied: true,
+              userSupplied: true,
             },
           ]}
         />
@@ -130,21 +130,21 @@ const Page: React.FC<{
       </Cell>
       <Cell xs="full-width" md={12}>
         <Table
-          columns={['Date', 'Release version', 'Notes']}
+          columns={['Date', 'Release Version', 'Notes']}
           rows={[
             {
               date: '12th March 2020',
-              releaseversion: '1.0.1',
+              releaseVersion: '1.0.1',
               notes: 'Notes go here',
             },
             {
               date: '30th September 2020',
-              releaseversion: '1.0.2',
+              releaseVersion: '1.0.2',
               notes: 'Notes go here',
             },
             {
               date: '25th December 2020',
-              releaseversion: '2.0.0',
+              releaseVersion: '2.0.0',
               notes: 'Notes go here',
             },
           ]}

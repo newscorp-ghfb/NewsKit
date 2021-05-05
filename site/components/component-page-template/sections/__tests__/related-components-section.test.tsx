@@ -1,5 +1,10 @@
-import {RelatedComponentsSection} from '..';
+import {RelatedComponentsSection, RelatedComponentsSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
+
+jest.mock(
+  'newskit',
+  require('../../../../utils/test-utils').mockNewsKitComponents('Grid', 'Cell'),
+);
 
 jest.mock('../../../../utils/get-route-object.ts', () => ({
   getByTitle: jest.fn(() => ({
@@ -13,7 +18,10 @@ jest.mock('../../../../utils/get-route-object.ts', () => ({
 
 describe('RelatedComponentsSection', () => {
   test('renders a RelatedComp with its data coming from routes', () => {
-    const props = {introduction: 'introduction', related: ['RelatedComp']};
+    const props: RelatedComponentsSectionProps = {
+      introduction: 'introduction',
+      related: ['RelatedComp'],
+    };
     const fragment = renderToFragmentWithTheme(RelatedComponentsSection, props);
     expect(fragment).toMatchSnapshot();
   });

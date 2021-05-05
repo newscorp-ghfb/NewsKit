@@ -1,3 +1,5 @@
+import {TableRow} from '../table';
+
 export interface ComponentAPIProps {
   components: SingleComponentAPIProps[];
 }
@@ -5,19 +7,21 @@ export interface ComponentAPIProps {
 export interface SingleComponentAPIProps {
   title?: string;
   summary?: string;
-  propsTable: PropsTableProps;
-  overridesTable?: PropsTableProps;
+  propsRows: PropsRowsProps[];
+  overridesRows?: OverridesRowsProps[];
 }
 
-export interface PropsTableProps {
-  columns: string[];
-  rows: PropsRowProps[];
-}
-
-export type PropsRowProps = {
-  name: string;
+interface CommonProps extends TableRow {
   type: string;
   description: string | JSX.Element;
   default?: string;
   required?: boolean;
-};
+}
+
+export interface PropsRowsProps extends CommonProps {
+  name: string;
+}
+
+export interface OverridesRowsProps extends CommonProps {
+  attribute: string;
+}

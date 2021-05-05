@@ -75,4 +75,23 @@ describe('Table', () => {
     const fragment = renderToFragmentWithTheme(Table, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders number values automatically if undefined', () => {
+    const props = {
+      columns: ['Item', 'Order', 'Description'],
+      rows: [
+        {
+          description: 'one',
+        },
+        {
+          description: 'two',
+        },
+        {
+          description: 'three',
+        },
+      ],
+    };
+    const fragment = renderToFragmentWithTheme(Table, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });

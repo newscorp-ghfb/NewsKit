@@ -1,6 +1,5 @@
-import {InteractiveDemoSection} from '..';
+import {InteractiveDemoSection, InteractiveDemoSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
-import {InteractiveDemoSectionProps} from '../types';
 
 jest.mock(
   'newskit',

@@ -288,6 +288,408 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 </DocumentFragment>
 `;
 
+exports[`Table renders number values automatically if undefined 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  overflow-x: auto;
+}
+
+.emotion-1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-2 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-5 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-6 {
+  padding: 16px 16px 16px 0;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  color: #FFFFFF;
+  background-color: #577FFB;
+  border-radius: 20rem;
+  white-space: nowrap;
+}
+
+.emotion-8 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-8 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
+.emotion-11 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.emotion-11::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-11::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+.emotion-18 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+<div
+    class="emotion-0"
+  >
+    <table
+      class="emotion-1"
+    >
+      <thead>
+        <tr>
+          <th
+            class="emotion-2"
+          >
+            Item
+          </th>
+          <th
+            class="emotion-2"
+          >
+            Order
+          </th>
+          <th
+            class="emotion-4"
+          >
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="emotion-5"
+        >
+          <td
+            class="emotion-6"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-9"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <span
+                      class="emotion-11"
+                    >
+                      1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-6"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-9"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <span
+                      class="emotion-11"
+                    >
+                      1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-18"
+          >
+            one
+          </td>
+        </tr>
+        <tr
+          class="emotion-5"
+        >
+          <td
+            class="emotion-6"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-9"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <span
+                      class="emotion-11"
+                    >
+                      2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-6"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-9"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <span
+                      class="emotion-11"
+                    >
+                      2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-18"
+          >
+            two
+          </td>
+        </tr>
+        <tr
+          class="emotion-5"
+        >
+          <td
+            class="emotion-6"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-9"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <span
+                      class="emotion-11"
+                    >
+                      3
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-6"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-8"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-9"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <span
+                      class="emotion-11"
+                    >
+                      3
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-18"
+          >
+            three
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Table renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -464,7 +866,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   vertical-align: top;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   color: #555E74;
@@ -476,7 +878,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   letter-spacing: 0;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #555E74;
 }
 
@@ -517,28 +919,20 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                type
-              </p>
-            </div>
+              type
+            </p>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                default
-              </p>
-            </div>
+              default
+            </p>
           </td>
         </tr>
         <tr
@@ -552,28 +946,20 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                type
-              </p>
-            </div>
+              type
+            </p>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                default
-              </p>
-            </div>
+              default
+            </p>
           </td>
         </tr>
       </tbody>
@@ -655,7 +1041,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   vertical-align: top;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   color: #555E74;
@@ -667,7 +1053,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   letter-spacing: 0;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #555E74;
 }
 
@@ -708,28 +1094,20 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                type
-              </p>
-            </div>
+              type
+            </p>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                default
-              </p>
-            </div>
+              default
+            </p>
           </td>
         </tr>
         <tr
@@ -743,28 +1121,20 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                type
-              </p>
-            </div>
+              type
+            </p>
           </td>
           <td
             class="emotion-7"
           >
-            <div
+            <p
               class="emotion-8"
             >
-              <p
-                class="emotion-9"
-              >
-                default
-              </p>
-            </div>
+              default
+            </p>
           </td>
         </tr>
       </tbody>

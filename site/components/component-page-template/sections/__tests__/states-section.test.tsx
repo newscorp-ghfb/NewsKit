@@ -1,6 +1,5 @@
-import {StatesSection} from '..';
+import {StatesSection, StatesSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
-import {StatesSectionProps} from '../types';
 
 jest.mock('../../../media-list/media-list');
 jest.mock(

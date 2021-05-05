@@ -18,28 +18,30 @@ The Text Input component consists of a label, input and assistive text.
 
 Text Input allows users to enter text into a UI. They typically appear in forms and dialogs.
 
-
 ## Props
 
 Text Input has a number of props to facilitate a variety of uses:
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="size" type="TextInputSize" enum={TextInputSize}
-    default={TextInputSize.Medium}>
+  <Prop name="size" type="TextInputSize" enum={TextInputSize} default="Medium">
     Optional size of the Text Input: Small, Medium or Large.
   </Prop>
   <Prop name="label" type="string" required>
-    Label text is used to inform users as to what information is requested for a text input. Every text input field should have a label.
+    Label text is used to inform users as to what information is requested for a
+    text input. Every text input field should have a label.
   </Prop>
-   <Prop name="name" type="string">
-    The name indentifier of the input field. It is required when the input is used inside a Form component. 
+  <Prop name="name" type="string">
+    The name indentifier of the input field. It is required when the input is
+    used inside a Form component.
   </Prop>
   <Prop name="hideLabel" type="boolean" default={false}>
     A prop can be set on the Text Input component to visually hide the label.
-    The label should remain readable by screen readers by setting the arial label attribute on the input to the value of the label text.
+    The label should remain readable by screen readers by setting the arial
+    label attribute on the input to the value of the label text.
   </Prop>
   <Prop name="assistiveText" type="string">
-    Assistive text gives context about a field’s input, such as how the input will be used. It will be displayed beneath the text input.
+    Assistive text gives context about a field’s input, such as how the input
+    will be used. It will be displayed beneath the text input.
   </Prop>
   <Prop name="disabled" type="boolean" default={false}>
     If true, the Text Input will render the disabled state of the style preset.
@@ -48,18 +50,23 @@ Text Input has a number of props to facilitate a variety of uses:
     If true, the Text Input will render the read only state of the style preset.
   </Prop>
   <Prop name="ariaLabel" type="string">
-    The aria-label attribute for the text input.
-    As stated above, if the label is hidden, the label text will be placed into the aria label attribute of the input
-    However, this can be overridden if the consumer sets aria-label prop.
+    The aria-label attribute for the text input. As stated above, if the label
+    is hidden, the label text will be placed into the aria label attribute of
+    the input However, this can be overridden if the consumer sets aria-label
+    prop.
   </Prop>
   <Prop name="rules" type="object">
-    The text input can take validation rules. The validation only works if the input is inside a Form component. For more information please see the Form component.
+    The text input can take validation rules. The validation only works if the
+    input is inside a Form component. For more information please see the Form
+    component.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
+    If provided, overrides the respective presets for the component and provided
+    elements.
     <Prop name="width" type="string">
-      If provided, this sets a fixed width to the text input. This can be a sizing token
-      from the theme, or any CSS length value, e.g. 100% for a full-width element.
+      If provided, this sets a fixed width to the text input. This can be a
+      sizing token from the theme, or any CSS length value, e.g. 100% for a
+      full-width element.
     </Prop>
     <Prop name="input" type="object">
       <Prop name="stylePreset" type="MQ<string>">
@@ -71,56 +78,64 @@ Text Input has a number of props to facilitate a variety of uses:
         prop.
       </Prop>
       <Prop name="typographyPreset" type="MQ<string>">
-        If provided, this overrides the type preset applied to the text input. Otherwise,
-        utilityBody020 or utilityBody030 is used depending on the `size` prop.
+        If provided, this overrides the type preset applied to the text input.
+        Otherwise, utilityBody020 or utilityBody030 is used depending on the
+        `size` prop.
       </Prop>
       <Prop name="spaceStack" type="MQ<string>">
-        This is a spacing preset token which is applied as a margin on the bottom of
-        the Block. Use this to space stacking content down the page.
+        This is a spacing preset token which is applied as a margin on the
+        bottom of the Block. Use this to space stacking content down the page.
       </Prop>
       <Prop name="minHeight" type="string">
-        If provided, this sets a minimum height to the Text Input. This can be a sizing
-        token from the theme, or any CSS length value. By default, sizing060,
-        sizing080 or sizing090 is used depending on the `size` prop.
+        If provided, this sets a minimum height to the Text Input. This can be a
+        sizing token from the theme, or any CSS length value. By default,
+        sizing060, sizing080 or sizing090 is used depending on the `size` prop.
       </Prop>
       <Prop name="iconSpace" type="SpacingPresetKeys">
-        Applies space between the validation icon and right side of the input field.
+        Applies space between the validation icon and right side of the input
+        field.
       </Prop>
       <Prop name="spaceInsetRight" type="SpacingPresetKeys">
-        This spacing value overrides the padding value (applied by the 
-        spaceInset token) on the right of the input when the validation
-        icon is showing. This avoids any input text rendering behind the
-        icon.
+        This spacing value overrides the padding value (applied by the
+        spaceInset token) on the right of the input when the validation icon is
+        showing. This avoids any input text rendering behind the icon.
       </Prop>
     </Prop>
     <Prop name="inputLabel" type="object">
       <Prop name="stylePreset" type="MQ<string>">
-        If provided, this overrides the style preset applied to the text input label.
+        If provided, this overrides the style preset applied to the text input
+        label.
       </Prop>
       <Prop name="typographyPreset" type="MQ<string>">
-        If provided, this overrides the type preset applied to the text input label. Otherwise,
-        label030 or label040 is used depending on the `size` prop.
+        If provided, this overrides the type preset applied to the text input
+        label. Otherwise, label030 or label040 is used depending on the `size`
+        prop.
       </Prop>
       <Prop name="spaceInline" type="MQ<string>">
-        This is a spacing preset token which is applied as a margin on the right of
-        the text input label. Use this to space inline content across the page.
+        This is a spacing preset token which is applied as a margin on the right
+        of the text input label. Use this to space inline content across the
+        page.
       </Prop>
       <Prop name="spaceStack" type="MQ<string>">
-        This is a spacing preset token which is applied as a margin on the bottom of
-        the text input label. Use this to space stacking content down the page.
+        This is a spacing preset token which is applied as a margin on the
+        bottom of the text input label. Use this to space stacking content down
+        the page.
       </Prop>
     </Prop>
     <Prop name="assistiveText" type="object">
       <Prop name="stylePreset" type="MQ<string>">
-        If provided, this overrides the style preset applied to the assistive text.
+        If provided, this overrides the style preset applied to the assistive
+        text.
       </Prop>
       <Prop name="typographyPreset" type="MQ<string>">
-        If provided, this overrides the type preset applied to the text input. Otherwise,
-        utilityLabel020 or utilityLabel030 is used depending on the `size` prop.
+        If provided, this overrides the type preset applied to the text input.
+        Otherwise, utilityLabel020 or utilityLabel030 is used depending on the
+        `size` prop.
       </Prop>
       <Prop name="minHeight" type="string">
         If provided, this sets a minimum height to the assistive text container.
-        This is used to prevent the layout shift in page when the assistive text shows and hides.
+        This is used to prevent the layout shift in page when the assistive text
+        shows and hides.
       </Prop>
     </Prop>
     Refer to the defaults below for the object structure:
@@ -132,9 +147,7 @@ Text Input has a number of props to facilitate a variety of uses:
 
 <Playground
   componentName="TextInput"
-  component={state => (
-    <TextInput label="Label" {...state} />
-  )}
+  component={state => <TextInput label="Label" {...state} />}
   knobs={[
     {
       name: 'Size',
@@ -163,13 +176,13 @@ Text Input has a number of props to facilitate a variety of uses:
           label: 'Default',
           value: {
             label: {
-              stylePreset: undefined
+              stylePreset: undefined,
             },
             input: {
-              stylePreset: undefined
+              stylePreset: undefined,
             },
             assistiveText: {
-              stylePreset: undefined
+              stylePreset: undefined,
             },
           },
           isDefault: true,
@@ -198,7 +211,7 @@ Text Input has a number of props to facilitate a variety of uses:
         {
           label: 'Diffierent presets',
           value: {
-            label:{
+            label: {
               typographyPreset: 'label050',
             },
             assistiveText: {
@@ -215,7 +228,7 @@ Text Input has a number of props to facilitate a variety of uses:
         {
           label: 'Default',
           value: {
-            label:{
+            label: {
               spaceStack: undefined,
             },
             input: {
@@ -245,7 +258,7 @@ Text Input has a number of props to facilitate a variety of uses:
         },
         {
           label: 'With Assistive Text',
-          value: 'Assistive text'
+          value: 'Assistive text',
         },
       ],
     },
@@ -260,7 +273,7 @@ Text Input has a number of props to facilitate a variety of uses:
         },
         {
           label: 'Custom Placeholder',
-          value: 'This is some text'
+          value: 'This is some text',
         },
       ],
     },
@@ -268,7 +281,7 @@ Text Input has a number of props to facilitate a variety of uses:
       name: 'Hide Label',
       propName: 'hideLabel',
       type: 'boolean',
-      value: false
+      value: false,
     },
     {
       name: 'Width',
@@ -285,7 +298,7 @@ Text Input has a number of props to facilitate a variety of uses:
           label: 'Full-width',
           value: {
             width: '100%',
-          }
+          },
         },
         {
           label: 'Fix-width',

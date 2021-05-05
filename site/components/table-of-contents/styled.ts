@@ -7,7 +7,7 @@ import {
 } from 'newskit';
 
 export const StyledTableOfContents = styled(Block)`
-  top: 435px;
+  top: 20vh;
   position: fixed;
 `;
 

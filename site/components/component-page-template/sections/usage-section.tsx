@@ -1,11 +1,13 @@
 import {Cell, Grid} from 'newskit';
 import React from 'react';
 import {SectionIntroduction} from '../../section-introduction';
-import {MediaList} from '../../media-list';
+import {MediaList, MediaListProps} from '../../media-list';
 import {Separator} from '../../separator';
 import {StyledSection} from './styled';
-import {UsageSectionProps} from './types';
+import {IntroductionText} from './types';
 import {ComponentPageCell} from '../../layout-cells';
+
+export type UsageSectionProps = MediaListProps & IntroductionText;
 
 export const UsageSection: React.FC<UsageSectionProps> = ({
   introduction,

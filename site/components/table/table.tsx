@@ -23,9 +23,9 @@ export const Table: React.FC<TableProps> = ({rows, columns}) => (
         </tr>
       </thead>
       <tbody>
-        {rows.map(row => (
+        {rows.map((row, i) => (
           <StyledTableRow key={getSSRId()}>
-            {renderCols(columns, row)}
+            {renderCols(columns, row, i)}
           </StyledTableRow>
         ))}
       </tbody>

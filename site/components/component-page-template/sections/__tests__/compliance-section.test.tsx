@@ -1,6 +1,5 @@
-import {ComplianceSection} from '..';
+import {ComplianceSection, ComplianceSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
-import {ComplianceSectionProps} from '../types';
 
 jest.mock('../../../table/table');
 jest.mock(
@@ -8,12 +7,11 @@ jest.mock(
   require('../../../../utils/test-utils').mockNewsKitComponents('Grid', 'Cell'),
 );
 
-// TODO: add tests after implementing Table
-describe.skip('ComplianceSection', () => {
+describe('ComplianceSection', () => {
   test('renders section as expected', () => {
     const props: ComplianceSectionProps = {
-      interactive: true,
-      variations: false,
+      behaviours: true,
+      states: false,
       themes: null,
     };
 

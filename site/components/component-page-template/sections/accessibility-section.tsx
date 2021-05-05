@@ -4,22 +4,51 @@ import React from 'react';
 import {SectionIntroduction} from '../../section-introduction';
 import {Separator} from '../../separator';
 import {StyledSection} from './styled';
-import {AccessibilitySectionProps} from './types';
+import {IntroductionText} from './types';
 
 import {ContentText} from '../../text-section/content-text';
 import {Table} from '../../table';
 import {ComponentPageCell} from '../../layout-cells';
 
+interface A11ySubSection<RowType> {
+  title: string;
+  description: string;
+  tableRows: RowType[];
+}
+export interface AccessibilityTablesProps {
+  focusOrder?: A11ySubSection<{
+    order: string | number;
+    element: string | JSX.Element;
+    role?: string;
+  }>;
+  aria?: A11ySubSection<{
+    element: string;
+    attribute: string | string[];
+    value: string | string[];
+    description: string | JSX.Element;
+    userSupplied?: true;
+  }>;
+  interaction?: A11ySubSection<{
+    command: string[];
+    description: string | JSX.Element;
+  }>;
+}
+
+export type AccessibilitySectionProps = AccessibilityTablesProps &
+  IntroductionText;
+
 const A11yTable: React.FC<
-  | AccessibilitySectionProps['focusOrder']
-  | AccessibilitySectionProps['interaction']
-  | AccessibilitySectionProps['aria']
-> = ({title, description, table}) => (
+  {columns: string[]} & (
+    | AccessibilitySectionProps['focusOrder']
+    | AccessibilitySectionProps['interaction']
+    | AccessibilitySectionProps['aria']
+  )
+> = ({title, description, columns, tableRows}) => (
   <ComponentPageCell>
     <ContentText title={title} titleAs="span">
       {description}
     </ContentText>
-    <Table {...table} />
+    <Table columns={columns} rows={tableRows} />
   </ComponentPageCell>
 );
 
@@ -38,9 +67,30 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
           </SectionIntroduction>
           <Cell xs={12}>
             <Grid xsRowGutter="space100" xsMargin="space000">
-              {focusOrder && focusOrder && <A11yTable {...focusOrder} />}
-              {interaction && interaction && <A11yTable {...interaction} />}
-              {aria && <A11yTable {...aria} />}
+              {focusOrder && (
+                <A11yTable
+                  columns={['Order', 'Element', 'Role']}
+                  {...focusOrder}
+                />
+              )}
+              {interaction && (
+                <A11yTable
+                  columns={['Command', 'Description']}
+                  {...interaction}
+                />
+              )}
+              {aria && (
+                <A11yTable
+                  columns={[
+                    'Element',
+                    'Attribute',
+                    'Value',
+                    'Description',
+                    'User Supplied',
+                  ]}
+                  {...aria}
+                />
+              )}
             </Grid>
           </Cell>
         </Grid>

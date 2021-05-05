@@ -12,7 +12,7 @@ import {
   ComponentAPISectionProps,
   ComplianceSectionProps,
   RelatedComponentsSectionProps,
-} from './sections/types';
+} from './sections';
 
 export interface ComponentPageTemplateProps extends IntroductionSectionProps {
   layoutProps: LayoutProps;

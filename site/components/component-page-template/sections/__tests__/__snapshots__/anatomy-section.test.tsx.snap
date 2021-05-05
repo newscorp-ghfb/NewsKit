@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ComponentAPISection renders section as expected 1`] = `
+exports[`AnatomySection renders section as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin-top: -24px;
@@ -133,154 +133,71 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   margin-top: -0.5750000000000001em;
 }
 
-@media screen and (max-width: 767px) {
-  .emotion-9 {
-    margin-bottom: 16px;
-  }
+.emotion-8 {
+  margin-bottom: 24px;
 }
 
-@media screen and (min-width: 768px) {
-  .emotion-9 {
-    margin-bottom: 20px;
-  }
+.emotion-9 {
+  width: 100%;
 }
 
 .emotion-10 {
-  margin: 0;
-  padding: 1px 0;
-  color: #162740;
-  display: inline-block;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+  height: 0;
+  border-radius: 8px;
+  background-color: #F4F4F4;
 }
 
 .emotion-10 svg {
-  fill: #162740;
+  fill: #BBC3C9;
 }
 
-@media screen and (max-width: 1439px) {
-  .emotion-10 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 700;
-    letter-spacing: 0;
-  }
-
-  .emotion-10::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.334375em;
-  }
-
-  .emotion-10::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.475em;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-10 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 24px;
-    line-height: 1.3333333333333333;
-    font-weight: 700;
-    letter-spacing: 0;
-  }
-
-  .emotion-10::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.30104166666666665em;
-  }
-
-  .emotion-10::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.44166666666666665em;
-  }
+.emotion-11 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .emotion-12 {
-  margin: 0;
-  padding: 1px 0;
-  color: #555E74;
-}
-
-.emotion-12 svg {
-  fill: #555E74;
-}
-
-@media screen and (max-width: 1439px) {
-  .emotion-12 {
-    font-family: 'DM Sans',sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: 0;
-  }
-
-  .emotion-12::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.415625em;
-  }
-
-  .emotion-12::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.446875em;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-12 {
-    font-family: 'DM Sans',sans-serif;
-    font-size: 18px;
-    line-height: 1.3333333333333333;
-    font-weight: 400;
-    letter-spacing: 0;
-  }
-
-  .emotion-12::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.33229166666666665em;
-  }
-
-  .emotion-12::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.36354166666666665em;
-  }
+  display: none;
+  height: auto;
+  width: 100%;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 <div
     data-comp="NewsKit Cell"
     data-props="{
-  \\"xs\\": 12
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
 }"
     data-testid="Cell"
   >
     <section
       class="emotion-0"
-      data-toc-indexed="API"
-      id="component-api"
+      data-toc-indexed="Anatomy"
+      id="anatomy"
     >
       <div
         data-comp="NewsKit Grid"
@@ -294,8 +211,9 @@ exports[`ComponentAPISection renders section as expected 1`] = `
           data-comp="NewsKit Cell"
           data-props="{
   \\"xs\\": 12,
-  \\"md\\": 8,
-  \\"mdOffset\\": 1
+  \\"md\\": 12,
+  \\"mdOffset\\": 0,
+  \\"lg\\": 12
 }"
           data-testid="Cell"
         >
@@ -314,7 +232,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
                   <h2
                     class="nk-headline-heading emotion-5"
                   >
-                    API
+                    Anatomy
                   </h2>
                 </section>
               </div>
@@ -326,7 +244,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
             <p
               class="emotion-7"
             >
-              component api introduction text goes here
+              anatomy introduction
             </p>
           </div>
         </div>
@@ -340,105 +258,61 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 }"
           data-testid="Cell"
         />
+      </div>
+      <div
+        class="emotion-8"
+      >
         <div
-          data-comp="NewsKit Cell"
-          data-props="{
-  \\"xs\\": 12,
-  \\"md\\": 10,
-  \\"xl\\": 8,
-  \\"mdOffset\\": 1
-}"
-          data-testid="Cell"
+          class="emotion-9"
         >
           <div
-            class="emotion-6"
+            class="emotion-10"
           >
             <div
-              class="emotion-9"
-            >
-              <span
-                class="emotion-10"
-              >
-                Component
-              </span>
-            </div>
-            <div
-              class="emotion-1"
-            >
-              <p
-                class="emotion-12"
-              >
-                Summary for the component variant
-              </p>
-            </div>
-            <div
-              data-comp="NewsKit Tabs"
-              data-props="{
-  \\"size\\": \\"medium\\"
-}"
-              data-testid="Tabs"
-            >
-              <div
-                data-comp="NewsKit Tab"
-                data-props="{
-  \\"label\\": \\"Props\\"
-}"
-                data-testid="Tab"
-              >
-                <div>
-                  Table Component with props:{
+              class="emotion-11"
+            />
+            <img
+              class="emotion-12"
+              src="https://example.com/image.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-8"
+      >
+        <div>
+          Table Component with props:{
   "columns": [
+    "Item",
     "Name",
-    "Type",
-    "Default",
     "Description",
-    "Required"
+    "Component",
+    "Optional"
   ],
   "rows": [
     {
-      "name": "children",
-      "type": "string",
-      "required": true,
+      "name": "row 1",
+      "description": "description 1",
+      "component": "Component1",
+      "optional": true
+    },
+    {
+      "name": "row 2",
       "description": {
+        "type": "span",
         "key": null,
         "ref": null,
         "props": {
-          "children": "The content of the Component is passed as the children."
+          "children": "description 2"
         },
         "_owner": null,
         "_store": {}
-      }
+      },
+      "component": "Component2"
     }
   ]
 }
-                </div>
-              </div>
-              <div
-                data-comp="NewsKit Tab"
-                data-props="{
-  \\"label\\": \\"Overrides\\"
-}"
-                data-testid="Tab"
-              >
-                <div>
-                  Table Component with props:{
-  "columns": [
-    "Attribute",
-    "Type",
-    "Description"
-  ],
-  "rows": [
-    {
-      "attribute": "spaceInset",
-      "type": "MQ&lt;string&gt;",
-      "description": "If provided, this overrides the padding of the Component."
-    }
-  ]
-}
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

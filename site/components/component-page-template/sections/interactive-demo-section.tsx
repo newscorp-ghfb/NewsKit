@@ -2,9 +2,14 @@ import {Block, Cell, Grid} from 'newskit';
 import React from 'react';
 import {SectionIntroduction} from '../../section-introduction';
 import {Playground} from '../../playground';
+import {PlaygroundProps} from '../../playground/types';
 import {StyledSection} from './styled';
-import {InteractiveDemoSectionProps} from './types';
 import {ComponentPageCell} from '../../layout-cells';
+
+export interface InteractiveDemoSectionProps {
+  introduction: string;
+  playground: PlaygroundProps;
+}
 
 export const InteractiveDemoSection: React.FC<InteractiveDemoSectionProps> = ({
   introduction,

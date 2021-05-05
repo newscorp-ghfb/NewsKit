@@ -1,49 +1,87 @@
-/* eslint-disable no-fallthrough */
 import React from 'react';
 import {Block, getSSRId} from 'newskit';
 import {Link} from '../link';
 import {getByTitle} from '../../utils/get-route-object';
-import {arrayify} from '../../utils/arrayify';
 import {StyledDataCell} from './styled';
-import {TableProps, TableRow} from './types';
+import {TableProps, TableRow, TableRowValue} from './types';
 import {columnMap} from './column-map';
 import {CheckIcon, CrossIcon, NullDotIcon} from '../icons';
 import {MonoPath, MonoKeyboard, CircleFlag, Mono} from '../flags';
 
-export const renderCols = (columns: TableProps['columns'], row: TableRow) =>
+const renderIcon = (value?: TableRowValue) => {
+  switch (value) {
+    case true:
+      return <CheckIcon size="small" />;
+
+    case false:
+      return <CrossIcon size="small" />;
+
+    case null:
+    default:
+      return <NullDotIcon />;
+  }
+};
+
+const renderSingleOrMultiple = (
+  renderer: (value: string) => React.ReactNode,
+  value: string | string[],
+): React.ReactNode =>
+  Array.isArray(value)
+    ? value.map((v, i, arr) => (
+        <Block
+          key={getSSRId()}
+          spaceStack={
+            // The row spacing between multiple flags in the cell
+            arr.length > 1 && i < arr.length - 1 ? 'space010' : undefined
+          }
+        >
+          {renderer(v)}
+        </Block>
+      ))
+    : renderer(value);
+
+export const renderCols = (
+  columns: TableProps['columns'],
+  row: TableRow,
+  rowIndex: number,
+) =>
   columns.map(columnName => {
     const config = columnMap[columnName];
     const cellType = (config && config.cellType) || 'text';
-    const cellValue = row[columnName.toLowerCase().replace(/\s/g, '')];
+    const cellValue =
+      row[
+        columnName
+          .toLowerCase()
+          .split(' ')
+          .map((x, i) => (i > 0 ? x.charAt(0).toUpperCase() + x.slice(1) : x))
+          .join('')
+      ];
     let cellContent: React.ReactNode;
 
     switch (cellType) {
       case 'number': {
-        cellContent = typeof cellValue !== 'undefined' && (
-          <CircleFlag>{cellValue}</CircleFlag>
-        );
+        const v = typeof cellValue === 'undefined' ? rowIndex + 1 : cellValue;
+        cellContent = <CircleFlag>{v}</CircleFlag>;
         break;
       }
 
       case 'path': {
-        cellContent = cellValue && <MonoPath>{cellValue.toString()}</MonoPath>;
+        cellContent =
+          cellValue &&
+          renderSingleOrMultiple(
+            v => <MonoPath>{v.toString()}</MonoPath>,
+            cellValue as string | string[],
+          );
         break;
       }
 
       case 'flag': {
         cellContent =
           cellValue &&
-          arrayify(cellValue).map((v, i, arr) => (
-            <Block
-              key={getSSRId()}
-              spaceStack={
-                // The row spacing between multiple flags in the cell
-                arr.length > 1 && i < arr.length - 1 ? 'space010' : undefined
-              }
-            >
-              <Mono minimal>{v}</Mono>
-            </Block>
-          ));
+          renderSingleOrMultiple(
+            v => <Mono minimal>{v}</Mono>,
+            cellValue as string | string[],
+          );
         break;
       }
 
@@ -55,44 +93,31 @@ export const renderCols = (columns: TableProps['columns'], row: TableRow) =>
       }
 
       case 'componentLink': {
-        const route = getByTitle(cellValue as string);
-        cellContent = route ? (
-          <Link
-            href={route.id}
-            overrides={{typographyPreset: 'utilityButton020'}}
-          >
-            {cellValue}
-          </Link>
-        ) : (
-          cellValue
-        );
+        cellContent =
+          cellValue &&
+          renderSingleOrMultiple(v => {
+            const route = getByTitle(v);
+            return route ? (
+              <Link
+                href={route.id}
+                overrides={{typographyPreset: 'utilityButton020'}}
+              >
+                {v}
+              </Link>
+            ) : (
+              v
+            );
+          }, cellValue as string | string[]);
         break;
       }
 
-      case 'checkIcon': {
-        // Fallthrough if checkIcon type and value is true (so we render the icon)
-        if (cellValue !== true) {
-          break;
-        }
-        // Fallthrough
-      }
-      case 'icon': {
-        switch (cellValue) {
-          case true:
-            cellContent = <CheckIcon size="small" />;
-            break;
-
-          case false:
-            cellContent = <CrossIcon size="small" />;
-            break;
-
-          case null:
-          default:
-            cellContent = <NullDotIcon />;
-            break;
-        }
+      case 'checkIcon':
+        cellContent = renderIcon(cellValue || null);
         break;
-      }
+
+      case 'icon':
+        cellContent = renderIcon(cellValue);
+        break;
 
       default:
         cellContent = cellValue;

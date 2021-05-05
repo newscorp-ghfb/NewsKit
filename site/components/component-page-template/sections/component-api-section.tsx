@@ -1,11 +1,13 @@
 import {Cell, Grid} from 'newskit';
 import React from 'react';
 import {SectionIntroduction} from '../../section-introduction';
-import {ComponentAPI} from '../../component-api';
+import {ComponentAPI, ComponentAPIProps} from '../../component-api';
 import {Separator} from '../../separator';
 import {StyledSection} from './styled';
-import {ComponentAPISectionProps} from './types';
+import {IntroductionText} from './types';
 import {ComponentPageCell} from '../../layout-cells';
+
+export type ComponentAPISectionProps = ComponentAPIProps & IntroductionText;
 
 export const ComponentAPISection: React.FC<ComponentAPISectionProps> = ({
   introduction,

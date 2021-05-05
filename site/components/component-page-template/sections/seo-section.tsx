@@ -1,10 +1,16 @@
 import {Cell, Grid} from 'newskit';
 import React from 'react';
-import {SectionIntroduction} from '../../section-introduction';
+import {
+  SectionIntroduction,
+  SectionIntroductionProps,
+} from '../../section-introduction';
 import {Separator} from '../../separator';
 import {StyledSection} from './styled';
-import {SEOSectionProps} from './types';
+import {IntroductionText} from './types';
 import {ComponentPageCell} from '../../layout-cells';
+
+export type SEOSectionProps = Omit<SectionIntroductionProps, 'children'> &
+  IntroductionText;
 
 export const SEOSection: React.FC<SEOSectionProps> = ({
   introduction,

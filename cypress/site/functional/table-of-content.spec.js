@@ -1,11 +1,11 @@
 describe('table of content', () => {
   beforeEach(() => {
     cy.mockConsentAndVisit('/components/button-new');
-    cy.get('[href="#interactive-demo"]').as('TOCInteractiveDemo');
+    cy.get('[href="#introduction"]').as('TOCIntroduction');
   });
 
-  it('should highlight the first section on load, Interactive Demo', () => {
-    cy.get('@TOCInteractiveDemo').should('have.attr', 'data-selected', 'true');
+  it('should highlight the first section on load, Introduction', () => {
+    cy.get('@TOCIntroduction').should('have.attr', 'data-selected', 'true');
   });
 
   it('highlighted Component API TOCSection after scrolling to the area', () => {
@@ -14,6 +14,6 @@ describe('table of content', () => {
     cy.scrollTo('bottom');
 
     cy.get('@TOCPropsSection').should('have.attr', 'data-selected', 'true');
-    cy.get('@TOCInteractiveDemo').should('have.attr', 'data-selected', 'false');
+    cy.get('@TOCIntroduction').should('have.attr', 'data-selected', 'false');
   });
 });

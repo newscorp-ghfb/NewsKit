@@ -41,85 +41,79 @@ export default (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'Banner',
-          propsTable: {
-            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-            rows: [
-              {
-                name: 'children',
-                type: "Exclude<React.ReactNode, 'undefined'>",
-                required: true,
-                description: `Sets the content of the Banner.`,
-              },
-              {
-                name: 'icon',
-                type: 'React.ReactElement<NewsKitIconProps>',
-                required: false,
-                description: `Icon used to indicate the status or intent of the Banner.`,
-              },
-            ],
-          },
-          overridesTable: {
-            columns: ['Name', 'Type', 'Description'],
-            rows: [
-              {
-                name: 'stylePreset',
-                type: 'MQ<string>',
-                description: `If provided, this overrides the stylePreset applied to the Banner's most
+          propsRows: [
+            {
+              name: 'children',
+              type: "Exclude<React.ReactNode, 'undefined'>",
+              required: true,
+              description: `Sets the content of the Banner.`,
+            },
+            {
+              name: 'icon',
+              type: 'React.ReactElement<NewsKitIconProps>',
+              required: false,
+              description: `Icon used to indicate the status or intent of the Banner.`,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              description: `If provided, this overrides the stylePreset applied to the Banner's most
                 outer container. Can be used to override the colour of the icon and the message as well.`,
-              },
-              {
-                name: 'minHeight',
-                type: 'MQ<string>',
-                description: `If provided, this overrides the minHeight applied to the Banner's most
+            },
+            {
+              attribute: 'minHeight',
+              type: 'MQ<string>',
+              description: `If provided, this overrides the minHeight applied to the Banner's most
                 outer container.`,
-              },
-              {
-                name: 'spaceInset',
-                type: 'MQ<string>',
-                description: `If provided, this overrides the spaceInset applied to the Banner's most
+            },
+            {
+              attribute: 'spaceInset',
+              type: 'MQ<string>',
+              description: `If provided, this overrides the spaceInset applied to the Banner's most
                 outer container`,
-              },
-              {
-                name: 'innerContainer',
-                type: 'object',
-                description: `Sets overrides to the container that holds the content and the action buttons.`,
-              },
-              {
-                name: 'innerContainer.maxWidth',
-                type: 'MQ<string>',
-                description: `This override can be used to prevent the banner content and actions to
+            },
+            {
+              attribute: 'innerContainer',
+              type: 'object',
+              description: `Sets overrides to the container that holds the content and the action buttons.`,
+            },
+            {
+              attribute: 'innerContainer.maxWidth',
+              type: 'MQ<string>',
+              description: `This override can be used to prevent the banner content and actions to
                 go out of the grid (content) bounds. It should usually be the same value
                 as the maxWidth for the grid at each beakpoint or the maxWidth that the main
                 content spans in a page.`,
-              },
-              {
-                name: 'innerContainer.icon',
-                type: 'object',
-                description: `Sets overrides to the container that holds the icon.`,
-              },
-              {
-                name: 'innerContainer.icon.spaceInline',
-                type: 'MQ<string>',
-                description: `Overrides the space between the icon and the content`,
-              },
-              {
-                name: 'content',
-                type: 'object',
-                description: `Sets overrides to the content container.`,
-              },
-              {
-                name: 'content.typographyPreset',
-                type: 'MQ<string>',
-                description: `Overrides the typography preset applied to the Banner content.`,
-              },
-              {
-                name: 'content.spaceInline',
-                type: 'MQ<string>',
-                description: `Overrides the spacing applied to the right hand side
+            },
+            {
+              attribute: 'innerContainer.icon',
+              type: 'object',
+              description: `Sets overrides to the container that holds the icon.`,
+            },
+            {
+              attribute: 'innerContainer.icon.spaceInline',
+              type: 'MQ<string>',
+              description: `Overrides the space between the icon and the content`,
+            },
+            {
+              attribute: 'content',
+              type: 'object',
+              description: `Sets overrides to the content container.`,
+            },
+            {
+              attribute: 'content.typographyPreset',
+              type: 'MQ<string>',
+              description: `Overrides the typography preset applied to the Banner content.`,
+            },
+            {
+              attribute: 'content.spaceInline',
+              type: 'MQ<string>',
+              description: `Overrides the spacing applied to the right hand side
                 (bottom for vertical orientation) of the content container.`,
-              },
-            ],
-          },
+            },
+          ],
         },
       ],
     }}
@@ -131,72 +125,63 @@ export default (layoutProps: LayoutProps) => (
       focusOrder: {
         title: 'Focus order',
         description: 'Some random text here',
-        table: {
-          columns: ['Order', 'Element', 'Role'],
-          rows: [
-            {
-              order: ['1'],
-              element: 'N/A',
-              role: 'N/A',
-            },
-            {
-              order: ['2'],
-              element: 'N/a',
-            },
-          ],
-        },
+        tableRows: [
+          {
+            order: 1,
+            element: 'N/A',
+            role: 'N/A',
+          },
+          {
+            order: 2,
+            element: 'N/a',
+          },
+        ],
       },
       interaction: {
         title: 'Keyboard Interactions',
         description: 'Some random text',
-        table: {
-          columns: ['Command', 'Description'],
-          rows: [
-            {
-              command: ['ctrl', 'N/A'],
-              description: 'N/A',
-            },
-          ],
-        },
+        tableRows: [
+          {
+            command: ['ctrl', 'N/A'],
+            description: 'N/A',
+          },
+        ],
       },
       aria: {
         title: 'WAI-ARIA',
         description: 'Some random text',
-        table: {
-          columns: ['Category', 'Attribute', 'Value', 'Description'],
-          rows: [
-            {
-              category: 'Banner',
-              attribute: 'aria-role',
-              value: 'region',
-              description: `The region landmark role is used to identify an area in the document that counted as significant.
+        tableRows: [
+          {
+            element: 'Banner',
+            attribute: 'aria-role',
+            value: 'region',
+            description: `The region landmark role is used to identify an area in the document that counted as significant.
               It is used to provide a generic landmark for people to be able to navigate
               to easily when none of the other landmark roles are appropriate.`,
-            },
-            {
-              category: 'Banner',
-              attribute: 'aria-label',
-              value: 'Banner',
-              description: `Defines the Aria-label of the Banner.`,
-            },
-            {
-              category: 'Banner',
-              attribute: 'aria-live',
-              value: '"polite" (default) \n or "assertive" or "off"',
-              description: (
-                <>
-                  Description for aria live and link
-                  <Link
-                    target="_blank"
-                    href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions"
-                  >
-                    Mozilla docs
-                  </Link>
-                </>
-              ),
-            },
-          ],
-        },
+          },
+          {
+            element: 'Banner',
+            attribute: 'aria-label',
+            value: 'Banner',
+            description: `Defines the Aria-label of the Banner.`,
+          },
+          {
+            element: 'Banner',
+            attribute: 'aria-live',
+            value: '"polite" (default) \n or "assertive" or "off"',
+            description: (
+              <>
+                Description for aria live and link
+                <Link
+                  target="_blank"
+                  href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions"
+                >
+                  Mozilla docs
+                </Link>
+              </>
+            ),
+          },
+        ],
       },
     }}
   />

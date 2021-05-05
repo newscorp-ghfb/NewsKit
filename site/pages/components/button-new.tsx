@@ -22,7 +22,7 @@ export default (layoutProps: LayoutProps) => (
       codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
     }}
-    compliance={{interactive: true, variations: false, themes: null}}
+    compliance={{options: true, states: false, themes: null}}
     usage={{
       introduction:
         'Add details of when and how to use this component. This could include do’s and don’ts to support guidance details.',
@@ -60,138 +60,129 @@ export default (layoutProps: LayoutProps) => (
           title: 'Button1',
           summary:
             'This is a summary of the button1 component, only needed if more than 1 comp',
-          propsTable: {
-            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-            rows: [
-              {
-                name: 'children',
-                type: 'string',
-                required: true,
-                description: `The content of the Button is passed as the child of the component.`,
-              },
-              {
-                name: 'size',
-                type: 'ButtonSize',
-                default: 'Medium',
-                description: `Optional size of the Button.`,
-              },
-              {
-                name: 'eventContext',
-                type: 'object',
-                description:
-                  "This props allows users to add extra event data to buttons' click events.",
-              },
-              {
-                name: 'eventOriginator',
-                type: 'string',
-                default: 'button',
-                description:
-                  "This props allows users to add event originator custom name. e.x.: 'play-button'.",
-              },
-            ],
-          },
+          propsRows: [
+            {
+              name: 'children',
+              type: 'string',
+              required: true,
+              description: `The content of the Button is passed as the child of the component.`,
+            },
+            {
+              name: 'size',
+              type: 'ButtonSize',
+              default: 'Medium',
+              description: `Optional size of the Button.`,
+            },
+            {
+              name: 'eventContext',
+              type: 'object',
+              description:
+                "This props allows users to add extra event data to buttons' click events.",
+            },
+            {
+              name: 'eventOriginator',
+              type: 'string',
+              default: 'button',
+              description:
+                "This props allows users to add event originator custom name. e.x.: 'play-button'.",
+            },
+          ],
         },
         {
           title: 'Button2',
           summary:
             'This is a summary of the button2 component, only needed if more than 1 comp',
-          propsTable: {
-            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-            rows: [
-              {
-                name: 'children',
-                type: 'string',
-                required: true,
-                description: `The content of the Button is passed as the child of the component.`,
-              },
-              {
-                name: 'size',
-                type: 'ButtonSize',
-                default: 'Medium',
-                description: `Optional size of the Button.`,
-              },
-              {
-                name: 'eventContext',
-                type: 'object',
-                description:
-                  "This props allows users to add extra event data to buttons' click events.",
-              },
-              {
-                name: 'eventOriginator',
-                type: 'string',
-                default: 'button',
-                description:
-                  "This props allows users to add event originator custom name. e.x.: 'play-button'.",
-              },
-            ],
-          },
-          overridesTable: {
-            columns: ['Name', 'Type', 'Description'],
-            rows: [
-              {
-                name: 'spaceInset',
-                type: 'MQ<string>',
-                description:
-                  'If provided, this overrides the padding of the Button.',
-              },
-              {
-                name: 'stylePreset',
-                type: 'MQ<string>',
-                description: `If provided, this overrides the style preset applied to the Button.`,
-              },
-              {
-                name: 'typographyPreset',
-                type: 'MQ<string>',
-                description:
-                  'If provided, this overrides the typography preset applied to the Button.',
-              },
-              {
-                name: 'spaceInline',
-                type: 'MQ<string>',
-                description:
-                  'If provided, this overrides the space between multiple children in the underlying Stack. If less than 2 children are passed, this prop is irrelevant.',
-              },
-              {
-                name: 'iconSize',
-                type: 'string',
-                description: (
-                  <>
-                    If provided, this overrides the icon size of any child
-                    icons. Otherwise, iconSize010, iconSize020 or iconSize030 is
-                    used depending on the `size` prop. If no icons are present
-                    in the Button&apos;s children then this prop is irrelevant.
-                    <br />
-                    <br />
-                    <i>
-                      Note: You can also set the icon size by passing it
-                      directly as a size prop to the icon, but by doing this you
-                      will override the iconSize passed from overrides. We
-                      discourage this approach but we will keep the
-                      functionality in case it is needed.
-                    </i>
-                  </>
-                ),
-              },
-              {
-                name: 'width',
-                type: 'string',
-                description:
-                  'If provided, this sets a fixed width to the Button. This can be a sizing token from the theme, or any CSS length value, e.g. 100% for a full-width element.',
-              },
-              {
-                name: 'height',
-                type: 'string',
-                description:
-                  'If provided, this sets a fixed height to the Button. This can be a sizing token from the theme, or any CSS length value.',
-              },
-              {
-                name: 'minHeight',
-                type: 'string',
-                description:
-                  'If provided, this sets a minimum height to the Flag. This can be a sizing token from the theme, or any CSS length value. By default, sizing050 or sizing060 is used depending on the `size` prop.',
-              },
-            ],
-          },
+          propsRows: [
+            {
+              name: 'children',
+              type: 'string',
+              required: true,
+              description: `The content of the Button is passed as the child of the component.`,
+            },
+            {
+              name: 'size',
+              type: 'ButtonSize',
+              default: 'Medium',
+              description: `Optional size of the Button.`,
+            },
+            {
+              name: 'eventContext',
+              type: 'object',
+              description:
+                "This props allows users to add extra event data to buttons' click events.",
+            },
+            {
+              name: 'eventOriginator',
+              type: 'string',
+              default: 'button',
+              description:
+                "This props allows users to add event originator custom name. e.x.: 'play-button'.",
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'spaceInset',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the padding of the Button.',
+            },
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              description: `If provided, this overrides the style preset applied to the Button.`,
+            },
+            {
+              attribute: 'typographyPreset',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the typography preset applied to the Button.',
+            },
+            {
+              attribute: 'spaceInline',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the space between multiple children in the underlying Stack. If less than 2 children are passed, this prop is irrelevant.',
+            },
+            {
+              attribute: 'iconSize',
+              type: 'string',
+              description: (
+                <>
+                  If provided, this overrides the icon size of any child icons.
+                  Otherwise, iconSize010, iconSize020 or iconSize030 is used
+                  depending on the `size` prop. If no icons are present in the
+                  Button&apos;s children then this prop is irrelevant.
+                  <br />
+                  <br />
+                  <i>
+                    Note: You can also set the icon size by passing it directly
+                    as a size prop to the icon, but by doing this you will
+                    override the iconSize passed from overrides. We discourage
+                    this approach but we will keep the functionality in case it
+                    is needed.
+                  </i>
+                </>
+              ),
+            },
+            {
+              attribute: 'width',
+              type: 'string',
+              description:
+                'If provided, this sets a fixed width to the Button. This can be a sizing token from the theme, or any CSS length value, e.g. 100% for a full-width element.',
+            },
+            {
+              attribute: 'height',
+              type: 'string',
+              description:
+                'If provided, this sets a fixed height to the Button. This can be a sizing token from the theme, or any CSS length value.',
+            },
+            {
+              attribute: 'minHeight',
+              type: 'string',
+              description:
+                'If provided, this sets a minimum height to the Flag. This can be a sizing token from the theme, or any CSS length value. By default, sizing050 or sizing060 is used depending on the `size` prop.',
+            },
+          ],
         },
       ],
     }}
@@ -350,7 +341,25 @@ export default (layoutProps: LayoutProps) => (
     anatomy={{
       introduction:
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',
-      list: ['Item', 'Item', 'Item', 'Item'],
+      rows: [
+        {
+          name: 'Container',
+          description:
+            'Some infomation on the container bit of this component.',
+          component: 'Stack',
+          optional: undefined,
+        },
+        {
+          name: 'Divider',
+          description: (
+            <>
+              More than one thing exists in the component, this is the second.
+            </>
+          ),
+          component: 'Divider',
+          optional: true,
+        },
+      ],
       media: {
         src: '/static/placeholder-16x9.png',
         alt: 'Card Media',
@@ -497,136 +506,69 @@ export default (layoutProps: LayoutProps) => (
       focusOrder: {
         title: 'Focus order',
         description: 'Some random text here',
-        table: {
-          columns: ['Order', 'Element', 'Role'],
-          rows: [
-            {
-              order: ['1'],
-              element: 'element',
-              role: 'Role',
-            },
-            {
-              order: ['2'],
-              element: 'element',
-            },
-            {
-              order: ['3'],
-              element: 'element',
-            },
-            {
-              order: ['4'],
-              element: 'element',
-            },
-            {
-              order: ['5'],
-              element: 'element',
-            },
-            {
-              order: ['6'],
-              element: 'element',
-            },
-            {
-              order: ['7'],
-              element: 'element',
-            },
-            {
-              order: ['8'],
-              element: 'element',
-            },
-          ],
-        },
+        tableRows: [
+          {
+            order: 1,
+            element: 'element',
+            role: 'Role',
+          },
+          {
+            order: 2,
+            element: 'element',
+          },
+          {
+            order: 3,
+            element: 'element',
+          },
+        ],
       },
       interaction: {
         title: 'Keyboard Interactions',
         description: 'Some random text',
-        table: {
-          columns: ['Command', 'Description'],
-          rows: [
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-            {
-              command: ['ctrl', 'esc'],
-              description: 'description',
-            },
-          ],
-        },
+        tableRows: [
+          {
+            command: ['Ctrl', 'Up'],
+            description: 'description',
+          },
+          {
+            command: ['Ctrl', 'Down'],
+            description: 'description',
+          },
+          {
+            command: ['Ctrl', 'Left'],
+            description: 'description',
+          },
+          {
+            command: ['Ctrl', 'Right'],
+            description: 'description',
+          },
+        ],
       },
       aria: {
         title: 'WAI-ARIA',
         description: 'Some random text',
-        table: {
-          columns: ['Category', 'Attribute', 'Value', 'Description'],
-          rows: [
-            {
-              category: '2',
-              attribute: 'description',
-              value: 'value',
-              description: 'description',
-            },
-            {
-              category: '3',
-              attribute: 'description',
-              value: 'value',
-              description: 'description',
-            },
-            {
-              category: '4',
-              attribute: 'description',
-              value: 'value',
-              description: 'description',
-            },
-            {
-              category: '5',
-              attribute: 'description',
-              value: 'value',
-              description: 'description',
-            },
-            {
-              category: '6',
-              attribute: 'description',
-              value: 'value',
-              description: 'description',
-            },
-            {
-              category: '7',
-              attribute: 'description',
-              value: 'value',
-              description: 'description',
-            },
-            {
-              category: '8',
-              attribute: 'description',
-              value: 'value',
-              description: 'description',
-            },
-          ],
-        },
+        tableRows: [
+          {
+            element: 'one',
+            attribute: ['attribute 1', 'attribute 2'],
+            value: ['value 1', 'value 2'],
+            description: 'description',
+            userSupplied: true,
+          },
+          {
+            element: 'two',
+            attribute: 'attribute',
+            value: 'value',
+            description: 'description',
+          },
+          {
+            element: 'three',
+            attribute: 'attribute',
+            value: 'value',
+            description: 'description',
+            userSupplied: true,
+          },
+        ],
       },
     }}
     seo={{

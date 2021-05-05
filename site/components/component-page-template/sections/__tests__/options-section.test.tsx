@@ -1,6 +1,5 @@
-import {OptionsSection} from '..';
+import {OptionsSection, OptionsSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
-import {OptionsSectionProps} from '../types';
 
 jest.mock('../../../media-list/media-list');
 jest.mock(

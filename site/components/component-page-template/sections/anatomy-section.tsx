@@ -1,28 +1,57 @@
-import {Cell, Grid} from 'newskit';
+import {Grid, Block, Image, ImageProps} from 'newskit';
 import React from 'react';
 import {SectionIntroduction} from '../../section-introduction';
-import {Anatomy} from '../../anatomy';
 import {Separator} from '../../separator';
+import {Table} from '../../table';
 import {StyledSection} from './styled';
-import {AnatomySectionProps} from './types';
+import {IntroductionText} from './types';
 import {ComponentPageCell} from '../../layout-cells';
+
+export interface AnatomyProps {
+  media: ImageProps;
+  rows: {
+    name: string;
+    description: string | JSX.Element;
+    component: string;
+    optional?: boolean;
+  }[];
+}
+
+export type AnatomySectionProps = AnatomyProps & IntroductionText;
 
 export const AnatomySection: React.FC<AnatomySectionProps> = ({
   introduction,
-  ...anatomy
+  media,
+  rows,
 }) => (
   <>
-    <Cell xs={12}>
+    <ComponentPageCell>
       <StyledSection id="anatomy" data-toc-indexed="Anatomy">
+        {/* TODO: this Grid can be removed when the Cell is removed from
+        SectionIntroduction */}
         <Grid lgMargin="space000" xsRowGutter="space000">
-          <SectionIntroduction title="Anatomy">
+          <SectionIntroduction
+            title="Anatomy"
+            cellProps={{
+              md: 12,
+              lg: 12,
+              mdOffset: 0,
+            }}
+          >
             {introduction}
           </SectionIntroduction>
-          {/* TODO: replace with table */}
-          <Anatomy {...anatomy} />
         </Grid>
+        <Block spaceStack="space050">
+          <Image {...media} />
+        </Block>
+        <Block spaceStack="space050">
+          <Table
+            columns={['Item', 'Name', 'Description', 'Component', 'Optional']}
+            rows={rows}
+          />
+        </Block>
       </StyledSection>
-    </Cell>
+    </ComponentPageCell>
     <ComponentPageCell>
       <Separator />
     </ComponentPageCell>

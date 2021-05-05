@@ -3,40 +3,8 @@
 exports[`RelatedComponentsSection renders a RelatedComp with its data coming from routes 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-0 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
+  margin-top: -24px;
+  padding-top: 24px;
 }
 
 .emotion-1 {
@@ -165,237 +133,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin-top: -0.5750000000000001em;
 }
 
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-3"
-        >
-          <section
-            class="emotion-4"
-          >
-            <h2
-              class="nk-headline-heading emotion-5"
-            >
-              Related Components
-            </h2>
-          </section>
-        </div>
-      </div>
-    </div>
-    <div
-      class="emotion-6"
-    >
-      <p
-        class="emotion-7"
-      >
-        introduction
-      </p>
-    </div>
-  </div>
-  .emotion-0 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-0 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 83.33333333333334%;
-    -ms-flex-preferred-size: 83.33333333333334%;
-    flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-<div
-    class="emotion-0"
-  />
-  .emotion-0 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-0 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 83.33333333333334%;
-    -ms-flex-preferred-size: 83.33333333333334%;
-    flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-.emotion-1 {
+.emotion-8 {
   margin-bottom: 120px;
 }
 
-.emotion-2 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-4 {
-    padding: 0 8px;
-    margin-top: 48px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-4 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-4 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-}
-
-.emotion-5 {
+.emotion-9 {
   box-sizing: border-box;
   overflow: hidden;
   border-style: solid;
@@ -416,11 +158,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   height: 100%;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-9:hover:not(:disabled) {
   box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-6 {
+.emotion-10 {
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -428,16 +170,16 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
+  .emotion-10 {
     min-height: 1px;
   }
 }
 
-.emotion-7 {
+.emotion-11 {
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-12 {
   border-radius: 8px;
   position: relative;
   width: 100%;
@@ -447,11 +189,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   background-color: #F4F4F4;
 }
 
-.emotion-8 svg {
+.emotion-12 svg {
   fill: #BBC3C9;
 }
 
-.emotion-9 {
+.emotion-13 {
   top: 0;
   left: 0;
   position: absolute;
@@ -471,7 +213,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin: 0;
 }
 
-.emotion-10 {
+.emotion-14 {
   display: none;
   height: auto;
   width: 100%;
@@ -480,60 +222,60 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   border-radius: inherit;
 }
 
-.emotion-11 {
+.emotion-15 {
   box-sizing: border-box;
 }
 
-.emotion-12 {
+.emotion-16 {
   box-sizing: border-box;
   color: inherit;
   padding: 24px;
 }
 
-.emotion-12 a:not(.nk-card-link) {
+.emotion-16 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-13 {
+.emotion-17 {
   margin-bottom: 20px;
 }
 
-.emotion-14 {
+.emotion-18 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
 }
 
-.emotion-14 .nk-headline-kicker {
+.emotion-18 .nk-headline-kicker {
   color: #577FFB;
 }
 
-.emotion-14:hover:not(:disabled) .nk-headline-kicker {
+.emotion-18:hover:not(:disabled) .nk-headline-kicker {
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-14:active:not(:disabled) .nk-headline-kicker {
+.emotion-18:active:not(:disabled) .nk-headline-kicker {
   color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-14:visited:not(:disabled) .nk-headline-kicker {
+.emotion-18:visited:not(:disabled) .nk-headline-kicker {
   color: #503B8C;
 }
 
-.emotion-14 .nk-headline-heading {
+.emotion-18 .nk-headline-heading {
   color: #162740;
 }
 
-.emotion-14 .nk-headline-heading svg {
+.emotion-18 .nk-headline-heading svg {
   fill: #162740;
 }
 
-.emotion-14:before {
+.emotion-18:before {
   content: '';
   top: 0;
   right: 0;
@@ -544,7 +286,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   z-index: 1;
 }
 
-.emotion-15 {
+.emotion-19 {
   font-family: 'Poppins',sans-serif;
   font-size: 24px;
   line-height: 1.3333333333333333;
@@ -553,7 +295,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   padding: 1px 0px;
 }
 
-.emotion-15::before {
+.emotion-19::before {
   content: '';
   display: block;
   height: 0;
@@ -561,7 +303,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin-bottom: -0.30104166666666665em;
 }
 
-.emotion-15::after {
+.emotion-19::after {
   content: '';
   display: block;
   height: 0;
@@ -569,18 +311,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin-top: -0.44166666666666665em;
 }
 
-.emotion-16 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #162740;
-}
-
-.emotion-16 svg {
-  fill: #162740;
-}
-
-.emotion-17 {
+.emotion-21 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -591,11 +322,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   letter-spacing: 0;
 }
 
-.emotion-17 svg {
+.emotion-21 svg {
   fill: #555E74;
 }
 
-.emotion-17::before {
+.emotion-21::before {
   content: '';
   display: block;
   height: 0;
@@ -603,7 +334,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin-bottom: -0.415625em;
 }
 
-.emotion-17::after {
+.emotion-21::after {
   content: '';
   display: block;
   height: 0;
@@ -612,79 +343,166 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 <div
-    class="emotion-0"
+    data-comp="NewsKit Cell"
+    data-props="{
+  \\"xs\\": 12
+}"
+    data-testid="Cell"
   >
-    <div
-      class="emotion-1"
+    <section
+      class="emotion-0"
+      data-toc-indexed="Related"
+      id="related"
     >
       <div
-        class="emotion-2"
+        data-comp="NewsKit Grid"
+        data-props="{
+  \\"lgMargin\\": \\"space000\\",
+  \\"xsRowGutter\\": \\"space000\\"
+}"
+        data-testid="Grid"
       >
         <div
-          class="emotion-3"
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 8,
+  \\"mdOffset\\": 1
+}"
+          data-testid="Cell"
         >
           <div
-            class="emotion-4"
+            class="emotion-1"
           >
             <div
-              class="emotion-5"
+              class="emotion-2"
             >
               <div
-                class="emotion-6"
+                class="emotion-3"
+              >
+                <section
+                  class="emotion-4"
+                >
+                  <h2
+                    class="nk-headline-heading emotion-5"
+                  >
+                    Related Components
+                  </h2>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <p
+              class="emotion-7"
+            >
+              introduction
+            </p>
+          </div>
+        </div>
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+          data-testid="Cell"
+        />
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+          data-testid="Cell"
+        >
+          <div
+            class="emotion-8"
+          >
+            <div
+              data-comp="NewsKit Grid"
+              data-props="{
+  \\"xsRowGutter\\": \\"space080\\",
+  \\"xsMargin\\": \\"space000\\"
+}"
+              data-testid="Grid"
+            >
+              <div
+                data-comp="NewsKit Cell"
+                data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 6,
+  \\"xl\\": 3
+}"
+                data-testid="Cell"
               >
                 <div
-                  class="emotion-7"
+                  class="emotion-9"
                 >
                   <div
-                    class="emotion-8"
+                    class="emotion-10"
                   >
                     <div
-                      class="emotion-9"
-                    />
-                    <img
-                      alt=""
-                      class="emotion-10"
-                      src="/static/placeholder-16x9.png"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                class="emotion-11"
-              >
-                <div
-                  class="emotion-12"
-                >
-                  <div
-                    class="emotion-13"
-                  >
-                    <a
-                      class="nk-card-link emotion-14"
-                      href="/group/page/related"
+                      class="emotion-11"
                     >
-                      <section
-                        class="emotion-15"
+                      <div
+                        class="emotion-12"
                       >
-                        <h1
-                          class="nk-headline-heading emotion-16"
-                        >
-                          RelatedComp
-                        </h1>
-                      </section>
-                    </a>
+                        <div
+                          class="emotion-13"
+                        />
+                        <img
+                          alt=""
+                          class="emotion-14"
+                          src="/static/placeholder-16x9.png"
+                        />
+                      </div>
+                    </div>
                   </div>
-                  <p
-                    class="emotion-17"
+                  <div
+                    class="emotion-15"
                   >
-                    Here lies the description for the related component
-                  </p>
+                    <div
+                      class="emotion-16"
+                    >
+                      <div
+                        class="emotion-17"
+                      >
+                        <a
+                          class="nk-card-link emotion-18"
+                          href="/group/page/related"
+                        >
+                          <section
+                            class="emotion-19"
+                          >
+                            <h1
+                              class="nk-headline-heading emotion-5"
+                            >
+                              RelatedComp
+                            </h1>
+                          </section>
+                        </a>
+                      </div>
+                      <p
+                        class="emotion-21"
+                      >
+                        Here lies the description for the related component
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </DocumentFragment>
 `;

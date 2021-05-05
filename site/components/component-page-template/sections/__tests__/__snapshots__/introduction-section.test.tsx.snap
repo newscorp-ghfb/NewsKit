@@ -2,26 +2,54 @@
 
 exports[`IntroductionSection renders section as expected 1`] = `
 <DocumentFragment>
-  <div>
-    PageIntroduction Component with props:{
-  "dummy": "page intro props"
+  .emotion-0 {
+  margin-top: -24px;
+  padding-top: 24px;
 }
-  </div>
-  <div
+
+<div
     data-comp="NewsKit Cell"
     data-props="{
+  \\"xs\\": 12
+}"
+    data-testid="Cell"
+  >
+    <section
+      class="emotion-0"
+      data-toc-indexed="Introduction"
+      id="introduction"
+    >
+      <div
+        data-comp="NewsKit Grid"
+        data-props="{
+  \\"lgMargin\\": \\"space000\\",
+  \\"xsRowGutter\\": \\"space000\\"
+}"
+        data-testid="Grid"
+      >
+        <div>
+          PageIntroduction Component with props:{
+  "dummy": "page intro props"
+}
+        </div>
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
-    data-testid="Cell"
-  >
-    <div>
-      Meta Component with props:{
+          data-testid="Cell"
+        >
+          <div>
+            Meta Component with props:{
   "dummy": "meta props"
 }
-    </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </DocumentFragment>
 `;

@@ -1,6 +1,5 @@
-import {SEOSection} from '..';
+import {SEOSection, SEOSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
-import {SEOSectionProps} from '../types';
 
 jest.mock('../../../media-list/media-list');
 jest.mock(

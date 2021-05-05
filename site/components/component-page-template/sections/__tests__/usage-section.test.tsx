@@ -1,7 +1,6 @@
 import {UsageKind} from '../../../usage-card/types';
-import {UsageSection} from '..';
+import {UsageSection, UsageSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
-import {UsageSectionProps} from '../types';
 
 jest.mock('../../../media-list/media-list');
 jest.mock(

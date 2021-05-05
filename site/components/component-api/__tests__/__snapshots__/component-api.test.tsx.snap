@@ -141,7 +141,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   vertical-align: top;
 }
 
-.emotion-13 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   color: #555E74;
@@ -153,18 +153,18 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-13 svg {
+.emotion-12 svg {
   fill: #555E74;
 }
 
-.emotion-16 {
+.emotion-15 {
   padding: 16px 16px 16px 0;
   width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-17 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -176,7 +176,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   height: 24px;
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -209,16 +209,16 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   border-width: 1px;
 }
 
-.emotion-18 svg {
+.emotion-17 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-18 svg {
+.emotion-17 svg {
   fill: #148F39;
 }
 
-.emotion-19 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -239,7 +239,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-20 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -249,12 +249,12 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-20 {
+  .emotion-19 {
     max-width: 100%;
   }
 }
 
-.emotion-21 {
+.emotion-20 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -263,7 +263,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   display: inline-block;
 }
 
-.emotion-21.emotion-21 {
+.emotion-20.emotion-20 {
   fill: #148F39;
 }
 
@@ -320,15 +320,11 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
               <td
                 class="emotion-11"
               >
-                <div
+                <p
                   class="emotion-12"
                 >
-                  <p
-                    class="emotion-13"
-                  >
-                    string
-                  </p>
-                </div>
+                  string
+                </p>
               </td>
               <td
                 class="emotion-11"
@@ -339,24 +335,24 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
                 Description.
               </td>
               <td
-                class="emotion-16"
+                class="emotion-15"
               >
                 <div
-                  class="emotion-17"
+                  class="emotion-16"
                 >
                   <div
-                    class="emotion-18"
+                    class="emotion-17"
                     data-testid="flag"
                   >
                     <div
-                      class="emotion-19"
+                      class="emotion-18"
                     >
                       <div
-                        class="emotion-20"
+                        class="emotion-19"
                       >
                         <svg
                           aria-hidden="true"
-                          class="emotion-21 emotion-22"
+                          class="emotion-20 emotion-21"
                           fill="currentColor"
                           focusable="false"
                           viewBox="0 0 24 24"
@@ -666,7 +662,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   vertical-align: top;
 }
 
-.emotion-17 {
+.emotion-16 {
   margin: 0;
   padding: 0;
   color: #555E74;
@@ -678,18 +674,18 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-17 svg {
+.emotion-16 svg {
   fill: #555E74;
 }
 
-.emotion-20 {
+.emotion-19 {
   padding: 16px 16px 16px 0;
   width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-21 {
+.emotion-20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -701,7 +697,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   height: 24px;
 }
 
-.emotion-22 {
+.emotion-21 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -734,16 +730,16 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   border-width: 1px;
 }
 
-.emotion-22 svg {
+.emotion-21 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-22 svg {
+.emotion-21 svg {
   fill: #148F39;
 }
 
-.emotion-23 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -764,7 +760,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-24 {
+.emotion-23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -774,12 +770,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-24 {
+  .emotion-23 {
     max-width: 100%;
   }
 }
 
-.emotion-25 {
+.emotion-24 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -788,11 +784,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: inline-block;
 }
 
-.emotion-25.emotion-25 {
+.emotion-24.emotion-24 {
   fill: #148F39;
 }
 
-.emotion-32 {
+.emotion-31 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -803,20 +799,20 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   flex-flow: column;
 }
 
-.emotion-33 {
+.emotion-32 {
   position: relative;
   z-index: 0;
   margin-bottom: 32px;
 }
 
-.emotion-34 {
+.emotion-33 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-35 {
+.emotion-34 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
@@ -825,16 +821,16 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   scroll-snap-type: x mandatory;
 }
 
-.emotion-35::-webkit-scrollbar {
+.emotion-34::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-35 {
+.emotion-34 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.emotion-36 {
+.emotion-35 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -860,7 +856,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: flex;
 }
 
-.emotion-37 {
+.emotion-36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -875,7 +871,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-37>* {
+.emotion-36>* {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -883,11 +879,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   display: flex;
 }
 
-.emotion-38 {
+.emotion-37 {
   scroll-snap-align: start;
 }
 
-.emotion-39 {
+.emotion-38 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -898,7 +894,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 100%;
 }
 
-.emotion-40 {
+.emotion-39 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -914,9 +910,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  min-height: 48px;
   width: 100%;
-  padding: 24px 16px;
+  padding: 12px 16px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -934,47 +930,47 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   color: #577FFB;
 }
 
-.emotion-40 svg {
-  width: 16px;
-  height: 16px;
+.emotion-39 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-40 svg {
+.emotion-39 svg {
   fill: #555E74;
 }
 
-.emotion-40:hover:not(:disabled) {
+.emotion-39:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #577FFB;
 }
 
-.emotion-40:hover:not(:disabled) svg {
+.emotion-39:hover:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-40:active:not(:disabled) {
+.emotion-39:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #577FFB;
 }
 
-.emotion-40:active:not(:disabled) svg {
+.emotion-39:active:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-40:disabled {
+.emotion-39:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-40:disabled svg {
+.emotion-39:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-40 svg {
+.emotion-39 svg {
   fill: #577FFB;
 }
 
-.emotion-41 {
+.emotion-40 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -995,7 +991,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-42 {
+.emotion-41 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1005,40 +1001,40 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-42 {
+  .emotion-41 {
     max-width: 100%;
   }
 }
 
-.emotion-43 {
+.emotion-42 {
   font-family: 'Poppins',sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 600;
   letter-spacing: 0;
 }
 
-.emotion-43::before {
+.emotion-42::before {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4677083333333334em + -0.5px);
+  margin-bottom: -0.3486607142857143em;
 }
 
-.emotion-43::after {
+.emotion-42::after {
   content: '';
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6083333333333334em;
+  margin-top: -0.4892857142857143em;
 }
 
-.emotion-45 {
+.emotion-44 {
   scroll-snap-align: end;
 }
 
-.emotion-47 {
+.emotion-46 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1054,9 +1050,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  min-height: 48px;
   width: 100%;
-  padding: 24px 16px;
+  padding: 12px 16px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1072,43 +1068,43 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   cursor: pointer;
 }
 
-.emotion-47 svg {
-  width: 16px;
-  height: 16px;
+.emotion-46 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-47 svg {
+.emotion-46 svg {
   fill: #555E74;
 }
 
-.emotion-47:hover:not(:disabled) {
+.emotion-46:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #577FFB;
 }
 
-.emotion-47:hover:not(:disabled) svg {
+.emotion-46:hover:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-47:active:not(:disabled) {
+.emotion-46:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #577FFB;
 }
 
-.emotion-47:active:not(:disabled) svg {
+.emotion-46:active:not(:disabled) svg {
   fill: #577FFB;
 }
 
-.emotion-47:disabled {
+.emotion-46:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-47:disabled svg {
+.emotion-46:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-51 {
+.emotion-50 {
   background-color: #577FFB;
   position: absolute;
   z-index: 2;
@@ -1116,7 +1112,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   left: 0px;
 }
 
-.emotion-52 {
+.emotion-51 {
   background-color: #E4E4E4;
   display: block;
   position: absolute;
@@ -1127,10 +1123,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   left: 0px;
 }
 
-.emotion-53 {
+.emotion-52 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
+}
+
+.emotion-81 {
+  margin-left: 0px;
 }
 
 <div
@@ -1204,15 +1204,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               <td
                 class="emotion-15"
               >
-                <div
+                <p
                   class="emotion-16"
                 >
-                  <p
-                    class="emotion-17"
-                  >
-                    string
-                  </p>
-                </div>
+                  string
+                </p>
               </td>
               <td
                 class="emotion-15"
@@ -1223,24 +1219,24 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                 Description
               </td>
               <td
-                class="emotion-20"
+                class="emotion-19"
               >
                 <div
-                  class="emotion-21"
+                  class="emotion-20"
                 >
                   <div
-                    class="emotion-22"
+                    class="emotion-21"
                     data-testid="flag"
                   >
                     <div
-                      class="emotion-23"
+                      class="emotion-22"
                     >
                       <div
-                        class="emotion-24"
+                        class="emotion-23"
                       >
                         <svg
                           aria-hidden="true"
-                          class="emotion-25 emotion-26"
+                          class="emotion-24 emotion-25"
                           fill="currentColor"
                           focusable="false"
                           viewBox="0 0 24 24"
@@ -1286,41 +1282,41 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         </p>
       </div>
       <div
-        class="emotion-32"
+        class="emotion-31"
         data-testid="tab-group"
       >
         <div
-          class="emotion-33"
+          class="emotion-32"
           data-testid="tab-bar"
         >
           <div
-            class="emotion-34"
+            class="emotion-33"
           >
             <div
               aria-orientation="horizontal"
-              class="emotion-35"
+              class="emotion-34"
               data-testid="scroll-container"
               tabindex="0"
             >
               <div
                 aria-orientation="horizontal"
-                class="emotion-36"
+                class="emotion-35"
                 role="tablist"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-36"
                   data-testid="distribution-wrapper"
                 >
                   <div
-                    class="emotion-38"
+                    class="emotion-37"
                   >
                     <div
-                      class="emotion-39"
+                      class="emotion-38"
                     >
                       <button
                         aria-controls="mock-nk-1"
                         aria-selected="true"
-                        class="emotion-40"
+                        class="emotion-39"
                         data-testid="tab"
                         id="mock-nk-1"
                         role="tab"
@@ -1328,13 +1324,13 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                         type="button"
                       >
                         <div
-                          class="emotion-41"
+                          class="emotion-40"
                         >
                           <div
-                            class="emotion-42"
+                            class="emotion-41"
                           >
                             <span
-                              class="emotion-43"
+                              class="emotion-42"
                             >
                               Props
                             </span>
@@ -1345,19 +1341,19 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-37"
+                  class="emotion-36"
                   data-testid="distribution-wrapper"
                 >
                   <div
-                    class="emotion-45"
+                    class="emotion-44"
                   >
                     <div
-                      class="emotion-39"
+                      class="emotion-38"
                     >
                       <button
                         aria-controls="mock-nk-1"
                         aria-selected="false"
-                        class="emotion-47"
+                        class="emotion-46"
                         data-testid="tab"
                         id="mock-nk-1"
                         role="tab"
@@ -1365,13 +1361,13 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                         type="button"
                       >
                         <div
-                          class="emotion-41"
+                          class="emotion-40"
                         >
                           <div
-                            class="emotion-42"
+                            class="emotion-41"
                           >
                             <span
-                              class="emotion-43"
+                              class="emotion-42"
                             >
                               Overrides
                             </span>
@@ -1383,7 +1379,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                 </div>
                 <div
                   aria-hidden="true"
-                  class="emotion-51"
+                  class="emotion-50"
                   data-testid="tab-bar-indicator"
                   role="presentation"
                   style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -1392,7 +1388,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
             </div>
           </div>
           <div
-            class="emotion-52"
+            class="emotion-51"
             data-testid="tab-bar-track"
             role="presentation"
           />
@@ -1400,7 +1396,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         <div
           aria-hidden="false"
           aria-labelledby="mock-nk-1"
-          class="emotion-53"
+          class="emotion-52"
           data-testid="tab-panel"
           role="tabpanel"
           tabindex="0"
@@ -1452,15 +1448,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   <td
                     class="emotion-15"
                   >
-                    <div
+                    <p
                       class="emotion-16"
                     >
-                      <p
-                        class="emotion-17"
-                      >
-                        string
-                      </p>
-                    </div>
+                      string
+                    </p>
                   </td>
                   <td
                     class="emotion-15"
@@ -1471,24 +1463,24 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     Description
                   </td>
                   <td
-                    class="emotion-20"
+                    class="emotion-19"
                   >
                     <div
-                      class="emotion-21"
+                      class="emotion-20"
                     >
                       <div
-                        class="emotion-22"
+                        class="emotion-21"
                         data-testid="flag"
                       >
                         <div
-                          class="emotion-23"
+                          class="emotion-22"
                         >
                           <div
-                            class="emotion-24"
+                            class="emotion-23"
                           >
                             <svg
                               aria-hidden="true"
-                              class="emotion-25 emotion-26"
+                              class="emotion-24 emotion-25"
                               fill="currentColor"
                               focusable="false"
                               viewBox="0 0 24 24"
@@ -1515,7 +1507,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         <div
           aria-hidden="true"
           aria-labelledby="mock-nk-1"
-          class="emotion-53"
+          class="emotion-52"
           data-testid="tab-panel"
           hidden=""
           role="tabpanel"
@@ -1530,9 +1522,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
               <thead>
                 <tr>
                   <th
-                    class="emotion-8"
+                    class="emotion-9"
                   >
-                    Name
+                    Attribute
                   </th>
                   <th
                     class="emotion-9"
@@ -1551,22 +1543,26 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   class="emotion-13"
                 >
                   <td
-                    class="emotion-14"
+                    class="emotion-15"
                   >
-                    spaceInset
+                    <div
+                      class="emotion-81"
+                    >
+                      <p
+                        class="emotion-16"
+                      >
+                        spaceInset
+                      </p>
+                    </div>
                   </td>
                   <td
                     class="emotion-15"
                   >
-                    <div
+                    <p
                       class="emotion-16"
                     >
-                      <p
-                        class="emotion-17"
-                      >
-                        MQ&lt;string&gt;
-                      </p>
-                    </div>
+                      MQ&lt;string&gt;
+                    </p>
                   </td>
                   <td
                     class="emotion-15"

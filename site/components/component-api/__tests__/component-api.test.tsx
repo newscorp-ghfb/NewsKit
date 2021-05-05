@@ -7,17 +7,14 @@ describe('ComponentAPI', () => {
     const props: ComponentAPIProps = {
       components: [
         {
-          propsTable: {
-            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-            rows: [
-              {
-                name: 'children',
-                type: 'string',
-                required: true,
-                description: `Description.`,
-              },
-            ],
-          },
+          propsRows: [
+            {
+              name: 'children',
+              type: 'string',
+              required: true,
+              description: `Description.`,
+            },
+          ],
         },
       ],
     };
@@ -34,42 +31,33 @@ describe('ComponentAPI', () => {
         {
           title: 'Button1',
           summary: 'Component Props',
-          propsTable: {
-            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-            rows: [
-              {
-                name: 'children',
-                type: 'string',
-                required: true,
-                description: `Description`,
-              },
-            ],
-          },
+          propsRows: [
+            {
+              name: 'children',
+              type: 'string',
+              required: true,
+              description: `Description`,
+            },
+          ],
         },
         {
           title: 'Button2',
           summary: 'Component Props',
-          propsTable: {
-            columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-            rows: [
-              {
-                name: 'children',
-                type: 'string',
-                required: true,
-                description: `Description`,
-              },
-            ],
-          },
-          overridesTable: {
-            columns: ['Name', 'Type', 'Description'],
-            rows: [
-              {
-                name: 'spaceInset',
-                type: 'MQ<string>',
-                description: 'Description.',
-              },
-            ],
-          },
+          propsRows: [
+            {
+              name: 'children',
+              type: 'string',
+              required: true,
+              description: `Description`,
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'spaceInset',
+              type: 'MQ<string>',
+              description: 'Description.',
+            },
+          ],
         },
       ],
     };

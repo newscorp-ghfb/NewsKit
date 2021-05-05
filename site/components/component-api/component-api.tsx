@@ -7,26 +7,35 @@ import {ComponentPageCell} from '../layout-cells';
 
 export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
   <ComponentPageCell>
-    {components.map(({title, summary, propsTable, overridesTable}) => (
-      <Block key={getSSRId()} spaceStack="space070">
-        {title && (
-          <ContentText title={title} titleAs="span">
-            {summary}
-          </ContentText>
-        )}
-        {overridesTable ? (
-          <Tabs size={TabSize.Small}>
-            <Tab label="Props">
-              <Table {...propsTable} />
-            </Tab>
-            <Tab label="Overrides">
-              <Table {...overridesTable} />
-            </Tab>
-          </Tabs>
-        ) : (
-          <Table {...propsTable} />
-        )}
-      </Block>
-    ))}
+    {components.map(({title, summary, propsRows, overridesRows}) => {
+      const propsTable = (
+        <Table
+          columns={['Name', 'Type', 'Default', 'Description', 'Required']}
+          rows={propsRows}
+        />
+      );
+      return (
+        <Block key={getSSRId()} spaceStack="space070">
+          {title && (
+            <ContentText title={title} titleAs="span">
+              {summary}
+            </ContentText>
+          )}
+          {overridesRows ? (
+            <Tabs size={TabSize.Medium}>
+              <Tab label="Props">{propsTable}</Tab>
+              <Tab label="Overrides">
+                <Table
+                  columns={['Attribute', 'Type', 'Description']}
+                  rows={overridesRows}
+                />
+              </Tab>
+            </Tabs>
+          ) : (
+            propsTable
+          )}
+        </Block>
+      );
+    })}
   </ComponentPageCell>
 );

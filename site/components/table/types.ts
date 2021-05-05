@@ -19,10 +19,16 @@ export interface ColumnMapObject extends TableCellProps {
     | 'componentLink';
 }
 
-export type TableRow = Record<
-  string,
-  number | string | string[] | boolean | null | undefined | JSX.Element
->;
+export type TableRowValue =
+  | number
+  | string
+  | string[]
+  | boolean
+  | null
+  | undefined
+  | JSX.Element;
+
+export type TableRow = Record<string, TableRowValue>;
 
 export interface TableProps {
   columns: string[];

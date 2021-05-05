@@ -1,18 +1,27 @@
 import React from 'react';
-import {Meta} from '../../meta';
-import {PageIntroduction} from '../../page-introduction';
-import {IntroductionSectionProps} from './types';
+import {Grid, Cell} from 'newskit';
+import {Meta, MetaProps} from '../../meta';
+import {PageIntroduction, PageIntroductionProps} from '../../page-introduction';
 import {ComponentPageCell} from '../../layout-cells';
+import {StyledSection} from './styled';
+
+export interface IntroductionSectionProps {
+  pageIntroduction: PageIntroductionProps;
+  meta: MetaProps;
+}
 
 export const IntroductionSection: React.FC<IntroductionSectionProps> = ({
   pageIntroduction,
   meta,
 }) => (
-  <>
-    {/* TODO: add styled section and "Intro" to TOC */}
-    <PageIntroduction {...pageIntroduction} />
-    <ComponentPageCell>
-      <Meta {...meta} />
-    </ComponentPageCell>
-  </>
+  <Cell xs={12}>
+    <StyledSection id="introduction" data-toc-indexed="Introduction">
+      <Grid lgMargin="space000" xsRowGutter="space000">
+        <PageIntroduction {...pageIntroduction} />
+        <ComponentPageCell>
+          <Meta {...meta} />
+        </ComponentPageCell>
+      </Grid>
+    </StyledSection>
+  </Cell>
 );
