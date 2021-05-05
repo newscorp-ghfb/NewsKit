@@ -10,7 +10,7 @@ import {
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: ${getSizingFromTheme('sizing070')};
+  width: ${getSizingFromTheme('sizing090')};
   height: ${getSizingFromTheme('sizing070')};
   overflow: hidden;
 `;
@@ -18,7 +18,6 @@ const LogoWrapper = styled.div`
 interface StyledNewsKitMobileLogo {
   viewBox?: string;
   $color: string;
-  size: string;
 }
 
 type NewsKitMobileLogoProps = Omit<StyledNewsKitMobileLogo, '$color'> & {
@@ -29,8 +28,8 @@ const LogoSvg = styled.svg<StyledNewsKitMobileLogo>`
   display: inline-block;
   fill: ${getColorFromTheme('inkBase', '$color')};
   color: ${getColorFromTheme('inkBase', '$color')};
-  width: ${getSizingFromTheme(undefined, 'size')};
-  height: ${getSizingFromTheme(undefined, 'size')};
+  width: ${getSizingFromTheme('sizing080')};
+  height: ${getSizingFromTheme('sizing060')};
 `;
 
 type LogoWithTheme = NewsKitMobileLogoProps & {theme: Theme};

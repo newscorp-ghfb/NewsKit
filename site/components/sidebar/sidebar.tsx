@@ -1,14 +1,14 @@
 import * as React from 'react';
 import {
   Visible,
-  getSizingFromTheme,
-  getColorFromTheme,
   getMediaQueryFromTheme,
   styled,
   IconFilledClose,
   Devices,
   getDeviceQueryFromTheme,
   css,
+  getColorCssFromTheme,
+  getSpacingCssFromTheme,
 } from 'newskit';
 
 import {LegacyBlock} from '../legacy-block';
@@ -16,8 +16,6 @@ import {LegacyBlock} from '../legacy-block';
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
 import {handleEnterKeyPress} from '../../helpers/a11y';
-import {NewsKitLogo} from '../logo';
-import {Link} from '../link';
 
 interface SidebarProps {
   path: string;
@@ -30,22 +28,22 @@ interface SidebarWrapperProps {
 
 const SidebarWrapper = styled.div<SidebarWrapperProps>`
   width: 276px;
-  padding: 0 ${getSizingFromTheme('sizing050')};
+  ${getSpacingCssFromTheme('paddingLeft', 'space050')};
+  ${getSpacingCssFromTheme('paddingRight', 'space050')};
   position: fixed;
   overflow: auto;
   bottom: 0;
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: ${getColorFromTheme('interface020')};
+  ${getColorCssFromTheme('backgroundColor', 'interface020')};
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
+  ${getSpacingCssFromTheme('marginTop', 'space090')};
 
   ${getMediaQueryFromTheme('lg')} {
+    ${getSpacingCssFromTheme('marginTop', 'space100')};
     transform: translateX(0);
-  }
-
-  ${getMediaQueryFromTheme('lg')} {
     overflow: hidden;
     &:hover {
       overflow: auto;
@@ -63,9 +61,9 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
 const SidebarHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: ${getColorFromTheme('interface020')};
-  padding-top: ${getSizingFromTheme('sizing040')};
-  padding-bottom: ${getSizingFromTheme('sizing060')};
+  ${getColorCssFromTheme('backgroundColor', 'interface020')};
+  ${getSpacingCssFromTheme('paddingTop', 'space040')};
+  ${getSpacingCssFromTheme('paddingBottom', 'space060')};
   width: 100%;
   position: sticky;
   top: 0;
@@ -87,9 +85,6 @@ const Sidebar: React.FC<SidebarProps> = ({
       role="complementary"
     >
       <SidebarHeader>
-        <Link href="/" overrides={{stylePreset: 'inkBase'}}>
-          <NewsKitLogo size="sizing120" />
-        </Link>
         <Visible xs sm md>
           <LegacyBlock display="flex" height="100%">
             <IconWrapper

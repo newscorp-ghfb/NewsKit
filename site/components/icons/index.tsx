@@ -1,5 +1,5 @@
 export * from './check-icon';
 export * from './cross-icon';
-export {MoonIcon} from './moon-icon';
+export {DarkIcon} from './dark-icon';
 export * from './null-dot-icon';
-export {SunIcon} from './sun-icon';
+export {LightIcon} from './light-icon';

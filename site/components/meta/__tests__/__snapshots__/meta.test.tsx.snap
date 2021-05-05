@@ -537,7 +537,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-30:hover:not(:disabled) {
-  background-color: #E4E4E4;
+  background-color: #EBEBEB;
   border-color: #243853;
 }
 
@@ -1769,7 +1769,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-30:hover:not(:disabled) {
-  background-color: #E4E4E4;
+  background-color: #EBEBEB;
   border-color: #243853;
 }
 

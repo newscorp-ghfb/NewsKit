@@ -2,68 +2,61 @@ import * as React from 'react';
 import {
   Grid,
   Cell,
-  Hidden,
-  getColorFromTheme,
-  getFontsFromTheme,
   getMediaQueryFromTheme,
-  getSizingFromTheme,
-  getShadowFromTheme,
   getTypographyPresetFromTheme,
   styled,
   IconFilledMenu,
-  IconFilledSearch,
+  Visible,
+  BreakpointKeys,
+  Stack,
+  StackDistribution,
+  Flow,
+  getColorCssFromTheme,
+  getSpacingCssFromTheme,
+  getShadowCssFromTheme,
+  getSizingCssFromTheme,
 } from 'newskit';
 
-import {LegacyBlock} from './legacy-block';
 import {Link} from './link';
-import {NewsKitMobileLogo} from './logo';
+import {NewsKitLogo, NewsKitMobileLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 
 const Header = styled.header`
   flex-shrink: 0;
-  position: relative;
+  position: fixed;
   top: 0;
-  z-index: 1;
-  min-height: 72px;
-  background-color: ${getColorFromTheme('interface010')};
+  right: 0;
+  left: 0;
+  z-index: 4;
+  ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
   ${getTypographyPresetFromTheme('utilityLabel020')}
-  padding: ${getSizingFromTheme('sizing030')} 0;
-  box-shadow: ${getShadowFromTheme('shadow030')};
+  ${getSpacingCssFromTheme('paddingTop', 'space020')};
+  ${getSpacingCssFromTheme('paddingBottom', 'space020')};
+  ${getShadowCssFromTheme('boxShadow', 'shadow030')};
+  ${getSizingCssFromTheme('height', 'sizing090')};
 
   ${getMediaQueryFromTheme('lg')} {
-    min-height: 72px;
-    box-shadow: none; // Remove this line when header links are displayed
+    ${getSpacingCssFromTheme('paddingTop', 'space030')};
+    ${getSpacingCssFromTheme('paddingBottom', 'space030')};
+    ${getShadowCssFromTheme('boxShadow', 'shadow040')};
+    ${getSizingCssFromTheme('height', 'sizing100')};
   }
+`;
+
+const StyledGrid = styled(Grid)`
+  position: sticky;
 `;
 
 const MobileMenu = styled.div`
   font-size: 0;
   align-self: center;
-  margin-right: ${getSizingFromTheme('sizing040')};
-`;
-
-const NavigationList = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-
-  li {
-    margin-right: ${getSizingFromTheme('sizing060')};
-    font-weight: ${getFontsFromTheme('fontWeight030')};
-  }
-`;
-
-const SearchContainer = styled.div`
-  display: flex;
-  align-items: center;
-  height: 100%;
+  ${getSpacingCssFromTheme('marginRight', 'space040')};
 `;
 
 const MobileLogo: React.FC = () => (
   <Link href="/" overrides={{stylePreset: 'inkBase'}}>
-    <NewsKitMobileLogo color="inkBase" size="sizing070" />
+    <NewsKitMobileLogo color="inkBase" />
   </Link>
 );
 
@@ -77,71 +70,60 @@ type HeaderRef = HTMLElement;
 
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode}, ref) => {
-    const renderMobileNavigation = (handleClick: () => void) => (
-      <LegacyBlock display="flex" data-testid="logo-container">
+    const renderMobileNavigation = (
+      handleClick: () => void,
+      breakpoint?: BreakpointKeys,
+    ) => (
+      <Stack data-testid="logo-container" flow={Flow.HorizontalCenter}>
         <MobileMenu
           onClick={handleClick}
           onKeyDown={handleEnterKeyPress(handleClick)}
           tabIndex={0}
           data-testid="mobile-menu-icon"
         >
-          <IconFilledMenu overrides={{size: 'iconSize020'}} />
+          <IconFilledMenu
+            overrides={{size: 'iconSize030', stylePreset: 'inkBrand010'}}
+          />
         </MobileMenu>
-        <MobileLogo />
-      </LegacyBlock>
+        {breakpoint === 'xs' ? (
+          <MobileLogo />
+        ) : (
+          <Link href="/" overrides={{stylePreset: 'inkBase'}}>
+            <NewsKitLogo />
+          </Link>
+        )}
+      </Stack>
     );
 
     return (
       <Header data-testid="header-navigation" ref={ref}>
-        <Grid>
-          <Cell xs={12}>
-            <LegacyBlock
-              display="flex"
-              alignItems="center"
-              height="100%"
-              minHeight="40px"
+        <StyledGrid maxWidth="9999px">
+          <Cell xs={6}>
+            <Stack
+              flow={Flow.HorizontalCenter}
+              stackDistribution={StackDistribution.Start}
             >
-              <Hidden lg xl>
-                {renderMobileNavigation(handleSidebarClick)}
-              </Hidden>
-
-              <LegacyBlock
-                display="flex"
-                flexGrow={1}
-                justifyContent="flex-end"
-              >
-                <Hidden xs sm md lg xl>
-                  <nav>
-                    <NavigationList>
-                      <li>
-                        <Link href="/components" color="inkSubtle">
-                          Components
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/styleguides" color="inkSubtle">
-                          Styleguides
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/resources" color="inkSubtle">
-                          Resources
-                        </Link>
-                      </li>
-                    </NavigationList>
-                  </nav>
-                </Hidden>
-
-                <Hidden xs sm md lg xl>
-                  <SearchContainer data-testid="search">
-                    <IconFilledSearch />
-                  </SearchContainer>
-                </Hidden>
-                <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
-              </LegacyBlock>
-            </LegacyBlock>
+              <Visible xs sm>
+                {renderMobileNavigation(handleSidebarClick, 'xs')}
+              </Visible>
+              <Visible md>{renderMobileNavigation(handleSidebarClick)}</Visible>
+              <Visible lg xl>
+                <Link href="/" overrides={{stylePreset: 'inkBase'}}>
+                  <NewsKitLogo />
+                </Link>
+              </Visible>
+            </Stack>
           </Cell>
-        </Grid>
+          <Cell xs={6}>
+            <Stack
+              flow={Flow.HorizontalCenter}
+              stackDistribution={StackDistribution.End}
+              flexGrow={1}
+            >
+              <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
+            </Stack>
+          </Cell>
+        </StyledGrid>
       </Header>
     );
   },

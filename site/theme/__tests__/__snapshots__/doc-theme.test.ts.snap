@@ -108,7 +108,7 @@ Object {
     "interactivePrimary040": "{{colors.blue050}}",
     "interactivePrimary050": "{{colors.blue070}}",
     "interactiveSecondary010": "{{colors.neutral080}}",
-    "interactiveSecondary020": "{{colors.neutral090}}",
+    "interactiveSecondary020": "{{colors.neutral070}}",
     "interactiveSecondary030": "{{colors.neutral050}}",
     "interactiveSecondary040": "{{colors.neutral060}}",
     "interactiveSecondary050": "{{colors.neutral070}}",
@@ -1351,15 +1351,14 @@ Object {
     },
     "buttonLightDarkToggle": Object {
       "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
       },
       "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "iconColor": "{{colors.inkBrand010}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
       },
     },
     "buttonMinimalInverse": Object {

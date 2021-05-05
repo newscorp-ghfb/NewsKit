@@ -9,24 +9,23 @@ import {
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: ${getSizingFromTheme('sizing120')};
-  height: ${getSizingFromTheme('sizing070')};
+  height: 52px;
   overflow: hidden;
 `;
 
 interface StyledLogoProps {
   viewBox?: string;
-  size: string;
 }
 
 const LogoSvg = styled.svg<StyledLogoProps>`
   display: inline-block;
-  width: ${getSizingFromTheme(undefined, 'size')};
+  width: 183px;
+  height: ${getSizingFromTheme('sizing070')};
 `;
 
 const StyledText = styled.g`
-  fill: ${getColorFromTheme('inkContrast')};
-  color: ${getColorFromTheme('inkContrast')};
+  fill: ${getColorFromTheme('interface060')};
+  color: ${getColorFromTheme('interface060')};
 `;
 
 const NewsKitLogo = React.forwardRef<HTMLDivElement, StyledLogoProps>(

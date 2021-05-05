@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {IconButton} from 'newskit';
-import {SunIcon, MoonIcon} from './icons';
+import {ButtonSize, IconButton} from 'newskit';
+import {LightIcon, DarkIcon} from './icons';
 
 interface ThemeSwitchProps {
   toggle: () => void;
@@ -14,6 +14,7 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
 
   return (
     <IconButton
+      size={ButtonSize.Medium}
       eventContext={{
         currentThemeMode: themeMode,
       }}
@@ -27,7 +28,7 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
         stylePreset: 'buttonLightDarkToggle',
       }}
     >
-      {isDark() ? <SunIcon /> : <MoonIcon />}
+      {isDark() ? <LightIcon /> : <DarkIcon />}
     </IconButton>
   );
 };

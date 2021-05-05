@@ -2,11 +2,11 @@ import * as React from 'react';
 import {MDXProvider} from '@mdx-js/react';
 import {
   Grid,
-  getColorFromTheme,
   getMediaQueryFromTheme,
   Cell,
   styled,
-  getSizingFromTheme,
+  getSpacingCssFromTheme,
+  getColorCssFromTheme,
 } from 'newskit';
 
 import SiteHeader from './site-header';
@@ -29,14 +29,17 @@ const Container = styled.div<Pick<LayoutProps, 'hideSidebar'>>`
   width: 100%;
   display: flex;
   flex-direction: column;
+  ${getSpacingCssFromTheme('paddingTop', 'space090')};
   ${getMediaQueryFromTheme('lg')} {
     padding-left: ${({hideSidebar}) => !hideSidebar && '276px'};
+    ${getSpacingCssFromTheme('paddingTop', 'space100')};
   }
 `;
 
 const BodyWrapper = styled.main`
   flex: 1 0 auto;
-  background-color: ${getColorFromTheme('interfaceBackground')};
+  ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
+  ${getSpacingCssFromTheme('paddingTop', 'space030')};
 `;
 
 export interface LayoutProps {
@@ -62,7 +65,8 @@ type PageSection = React.ReactElement<{
 }>[];
 
 const WrapperWithPadding = styled.div`
-  padding: ${getSizingFromTheme('sizing060')} 0;
+  ${getSpacingCssFromTheme('paddingTop', 'space060')};
+  ${getSpacingCssFromTheme('paddingBottom', 'space060')};
 `;
 
 class Layout extends React.Component<LayoutProps, LayoutState> {
@@ -159,15 +163,14 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             handleSidebarClick={this.toggleSidebar}
           />
         )}
-
+        <SiteHeader
+          handleSidebarClick={this.toggleSidebar}
+          toggleTheme={toggleTheme}
+          themeMode={themeMode}
+          ref={this.headerRef}
+          data-test-id="siteHeader"
+        />
         <Container hideSidebar={hideSidebar}>
-          <SiteHeader
-            handleSidebarClick={this.toggleSidebar}
-            toggleTheme={toggleTheme}
-            themeMode={themeMode}
-            ref={this.headerRef}
-          />
-
           {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}
           <Playground componentName={false} />
 

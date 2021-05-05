@@ -146,7 +146,7 @@
   "interactivePrimary040": "{{colors.blue060}}",
   "interactivePrimary050": "{{colors.blue080}}",
 
-  "interactiveSecondary010": "{{colors.neutral030}}",
+  "interactiveSecondary010": "{{colors.neutral020}}",
   "interactiveSecondary020": "{{colors.neutral040}}",
   "interactiveSecondary030": "{{colors.neutral080}}",
   "interactiveSecondary040": "{{colors.neutral090}}",

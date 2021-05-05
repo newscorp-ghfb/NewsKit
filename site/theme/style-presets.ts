@@ -1,15 +1,14 @@
 export const stylePresets = {
   buttonLightDarkToggle: {
     base: {
-      backgroundColor: '{{colors.interactivePrimary010}}',
+      backgroundColor: '{{colors.interactiveSecondary010}}',
       borderRadius: '{{borders.borderRadiusCircle}}',
-      iconColor: '{{colors.inkBrand010}}',
     },
     hover: {
-      backgroundColor: '{{colors.interactivePrimary020}}',
+      backgroundColor: '{{colors.interactiveSecondary020}}',
     },
     active: {
-      backgroundColor: '{{colors.interactivePrimary020}}',
+      backgroundColor: '{{colors.interactiveSecondary020}}',
     },
   },
   linkSectionNavigation: {
