@@ -3,6 +3,7 @@ import {
   Block,
   Button,
   Cell,
+  CellProps,
   Flow,
   getColorCssFromTheme,
   getMediaQueryFromTheme,
@@ -12,6 +13,7 @@ import {
   styled,
   TextBlock,
 } from 'newskit';
+import {HeroImage} from '../components/illustrations/landing-page/hero-image';
 import {SectionIntroduction} from '../components/section-introduction';
 import {MediaList} from '../components/media-list';
 import Layout, {LayoutProps} from '../components/layout';
@@ -24,7 +26,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Foundations',
-    href: '#',
+    href: '/theming/foundations/overview',
     description:
       'These standardised styles define the look and feel of UI components. e.g. colours, fonts, shadows and sizing.',
   },
@@ -34,7 +36,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Theming',
-    href: '#',
+    href: '/theming/creating-a-theme',
     description:
       'Creating and applying themes allow you to tailor your experience to your unique brand requirements.',
   },
@@ -44,55 +46,40 @@ const cardsContent = [
       alt: '',
     },
     title: 'Components',
-    href: '#',
+    href: '/components/button-new',
     description:
       'NewsKit’s flexible UI components are built to best practices to ensure usability, performance and accessibility. ',
   },
 ];
 
-const Header = styled(Grid)`
-  ${getSizingCssFromTheme('paddingTop', {
-    md: 'sizing100',
-    lg: '191px',
-    xl: '176px',
-  })};
-  ${getSizingCssFromTheme('paddingBottom', {
-    xs: 'sizing090',
-    md: 'sizing110',
-    lg: 'sizing090',
-    xl: 'sizing090',
-  })};
-
-  ${getMediaQueryFromTheme('xs')} {
-    height: 736px;
+const DotsContainer = styled.div`
+  background-image: url(/static/landing/landing-texture-dots.svg);
+  background-repeat: no-repeat;
+  ${getMediaQueryFromTheme('xs', 'md')} {
+    background-image: unset;
   }
-
   ${getMediaQueryFromTheme('md')} {
-    background-image: url(/static/landing/landing-texture-dots.svg);
-    background-repeat: no-repeat;
-    background-position: left 80%;
-    height: 899px;
+    background-position: -10% 50%;
   }
-
   ${getMediaQueryFromTheme('lg')} {
-    background-image: url(/static/landing/landing-texture-dots.svg);
-    background-repeat: no-repeat;
-    background-position: left 95%;
-    height: 881px;
+    background-position: -5% 54%;
   }
-
   ${getMediaQueryFromTheme('xl')} {
-    background-image: url(/static/landing/landing-texture-dots.svg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    height: 868px;
+    background-position: 0 54%;
+  }
+`;
+
+const Header = styled(Grid)`
+  padding: 80px 0;
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    padding-bottom: 40px;
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    min-height: 700px;
   }
 `;
 
 const Explore = styled(Grid)`
-  ${getSizingCssFromTheme('paddingTop', {
-    lg: 'sizing100',
-  })};
   ${getSizingCssFromTheme('paddingBottom', {
     xs: 'sizing090',
     md: 'sizing080',
@@ -118,118 +105,183 @@ const FindOutMore = styled.section`
   })};
 `;
 
+const HeroImageContainer = styled(Cell)`
+  text-align: right;
+  svg {
+    height: auto;
+    max-width: 125%;
+    margin-right: -30%;
+
+    ${getMediaQueryFromTheme('xs', 'sm')} {
+      max-width: 130%;
+      margin-top: -80%;
+      padding-bottom: 24px;
+    }
+    ${getMediaQueryFromTheme('sm', 'md')} {
+      margin-top: -55%;
+    }
+    ${getMediaQueryFromTheme('md', 'lg')} {
+      margin-top: -75%;
+    }
+    ${getMediaQueryFromTheme('lg')} {
+      margin-top: -35%;
+    }
+    ${getMediaQueryFromTheme('xl')} {
+      max-width: 105%;
+      margin-right: -25%;
+    }
+  }
+`;
+
+const HeroTextContainer = styled(Cell)`
+  ${getMediaQueryFromTheme('xs', 'sm')} {
+    margin-top: 0;
+  }
+  ${getMediaQueryFromTheme('sm', 'md')} {
+    margin-top: -50px;
+  }
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    z-index: 2;
+  }
+`;
+
+const heroTextCellProps: CellProps = {
+  xs: 12,
+  xsOrder: 2,
+  sm: 10,
+  md: 6,
+  mdOffset: 1,
+  mdOrder: 1,
+  lg: 5,
+  xl: 4,
+  xlOffset: 1,
+};
+const heroImageCellProps: CellProps = {
+  xs: 7,
+  xsOffset: 5,
+  xsOrder: 1,
+  mdOrder: 2,
+  lg: 6,
+  lgOffset: 0,
+  xl: 6,
+};
+
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage hideSidebar path="/index-new">
-    <Header lgMargin="sizing000" xsRowGutter="space000">
-      <Cell xs={12} md={7} lg={6} xl={4} mdOffset={1}>
-        <Block spaceStack="space045">
-          <TextBlock
-            as="h1"
-            noCrop
-            stylePreset="inkSubtle"
-            typographyPreset={{
-              xs: 'editorialHeadline060',
-              md: 'editorialHeadline070',
-              lg: 'editorialHeadline080',
-              xl: 'editorialHeadline080',
-            }}
-          >
-            Collaborate
-          </TextBlock>
-          <TextBlock
-            as="h1"
-            noCrop
-            stylePreset="inkBrand010"
-            typographyPreset={{
-              xs: 'editorialHeadline060',
-              md: 'editorialHeadline070',
-              lg: 'editorialHeadline080',
-              xl: 'editorialHeadline080',
-            }}
-          >
-            Create
-          </TextBlock>
-          <TextBlock
-            as="h1"
-            noCrop
-            stylePreset="inkBrand020"
-            typographyPreset={{
-              xs: 'editorialHeadline060',
-              md: 'editorialHeadline070',
-              lg: 'editorialHeadline080',
-              xl: 'editorialHeadline080',
-            }}
-          >
-            Innovate
-          </TextBlock>
-        </Block>
-        <Block spaceStack="space070">
-          <TextBlock
-            stylePreset="inkBase"
-            typographyPreset={{
-              xs: 'editorialSubheadline010',
-              md: 'editorialSubheadline020',
-              lg: 'editorialSubheadline020',
-              xl: 'editorialSubheadline020',
-            }}
-          >
-            Components and guidelines to help increase the speed of creation and
-            innovation in News UK’s digital teams.
-          </TextBlock>
-        </Block>
-        <Block spaceStack="space045">
-          <TextBlock
-            stylePreset="inkSubtle"
-            typographyPreset={{
-              xs: 'utilityLabel010',
-              md: 'utilityLabel020',
-              lg: 'utilityLabel020',
-              xl: 'utilityLabel020',
-            }}
-          >
-            Get started
-          </TextBlock>
-        </Block>
-        <Stack flow={Flow.HorizontalTop} spaceInline="space030">
-          <Button href="#" overrides={{width: 'sizing110'}}>
-            Design
-          </Button>
-          <Button
-            href="#"
-            overrides={{
-              stylePreset: 'buttonOutlinedPrimary',
-              width: 'sizing110',
-            }}
-          >
-            Code
-          </Button>
-        </Stack>
-      </Cell>
-    </Header>
-    <Explore lgMargin="sizing000" xsRowGutter="space000">
-      <SectionIntroduction
-        title="Explore"
-        cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
-      >
-        Subheading about the explore section to go here
-      </SectionIntroduction>
-      <MediaList
-        layout="3-span"
-        cards={cardsContent}
-        parentCellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
-        gridProps={{xsRowGutter: 'space050'}}
-      />
-    </Explore>
+    <DotsContainer>
+      <Header xsColumnGutter="space000" xsRowGutter="space000">
+        <HeroTextContainer {...heroTextCellProps}>
+          <Stack flow="vertical-left" stackDistribution="center" wrap="nowrap">
+            <Block spaceStack={{xs: 'space050', md: 'space055'}}>
+              <TextBlock
+                as="h1"
+                stylePreset="inkSubtle"
+                typographyPreset={{
+                  xs: 'editorialHeadline060',
+                  md: 'editorialHeadline070',
+                  lg: 'editorialHeadline080',
+                }}
+              >
+                Collaborate
+              </TextBlock>
+            </Block>
+            <Block spaceStack={{xs: 'space050', md: 'space055'}}>
+              <TextBlock
+                as="h1"
+                stylePreset="inkBrand010"
+                typographyPreset={{
+                  xs: 'editorialHeadline060',
+                  md: 'editorialHeadline070',
+                  lg: 'editorialHeadline080',
+                }}
+              >
+                Create
+              </TextBlock>
+            </Block>
+            <Block spaceStack={{xs: 'space060', md: 'space070'}}>
+              <TextBlock
+                as="h1"
+                stylePreset="inkBrand020"
+                typographyPreset={{
+                  xs: 'editorialHeadline060',
+                  md: 'editorialHeadline070',
+                  lg: 'editorialHeadline080',
+                }}
+              >
+                Innovate
+              </TextBlock>
+            </Block>
+            <Block spaceStack={{xs: 'space060', md: 'space070'}}>
+              <TextBlock
+                stylePreset="inkBase"
+                typographyPreset={{
+                  xs: 'editorialSubheadline010',
+                  md: 'editorialSubheadline020',
+                }}
+              >
+                Components and guidelines to help increase the speed of creation
+                and innovation in News UK’s digital teams.
+              </TextBlock>
+            </Block>
+            <Block spaceStack="space045">
+              <TextBlock
+                stylePreset="inkSubtle"
+                typographyPreset={{
+                  xs: 'utilityLabel010',
+                  md: 'utilityLabel020',
+                }}
+              >
+                Get started
+              </TextBlock>
+            </Block>
+            <Stack
+              flow={Flow.HorizontalTop}
+              spaceInline="space030"
+              height="unset"
+            >
+              <Button
+                href="/about/introduction"
+                overrides={{width: 'sizing110'}}
+              >
+                Design
+              </Button>
+              <Button
+                href="/getting-started/code/web"
+                overrides={{
+                  stylePreset: 'buttonOutlinedPrimary',
+                  width: 'sizing110',
+                }}
+              >
+                Code
+              </Button>
+            </Stack>
+          </Stack>
+        </HeroTextContainer>
+        <HeroImageContainer {...heroImageCellProps}>
+          <HeroImage />
+        </HeroImageContainer>
+      </Header>
+      <Explore xsRowGutter="space000">
+        <SectionIntroduction
+          title="Explore"
+          cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
+        />
+        <MediaList
+          layout="3-span"
+          cards={cardsContent}
+          parentCellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
+          gridProps={{xsRowGutter: 'space050'}}
+        />
+      </Explore>
+    </DotsContainer>
     <FindOutMore>
-      <Grid lgMargin="sizing000" xsRowGutter="space000">
+      <Grid xsRowGutter="space000">
         <SectionIntroduction
           title="Find out more"
           cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
-        >
-          Subheading about the find out more section to go here
-        </SectionIntroduction>
+        />
       </Grid>
-      <Grid lgMargin="sizing000" xsRowGutter="space040" mdRowGutter="space050">
+      <Grid xsRowGutter="space040" mdRowGutter="space050">
         <Cell xs={12} xl={10} xlOffset={1}>
           <FeatureCard
             title="What's new?"
@@ -237,6 +289,7 @@ export default (layoutProps: LayoutProps) => (
             stylePrefix="whatsnewCard"
             layout="horizontal"
             buttonLabel="Read more"
+            buttonHref="/components/button-new"
           />
         </Cell>
         <Cell xs={12} md={6} xl={5} xlOffset={1}>
@@ -246,6 +299,7 @@ export default (layoutProps: LayoutProps) => (
             stylePrefix="roadmapCard"
             layout="vertical"
             buttonLabel="Read more"
+            buttonHref="/about/roadmap"
           />
         </Cell>
         <Cell xs={12} md={6} xl={5}>
@@ -255,6 +309,7 @@ export default (layoutProps: LayoutProps) => (
             stylePrefix="contributeCard"
             layout="vertical"
             buttonLabel="Read more"
+            buttonHref="/about/contribute"
           />
         </Cell>
       </Grid>

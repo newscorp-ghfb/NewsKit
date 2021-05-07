@@ -24,6 +24,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
   href,
   stylePrefix,
   buttonLabel,
+  buttonHref,
   overrides,
   ...props
 }) => (
@@ -80,6 +81,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
         {buttonLabel && (
           <Block spaceStack="space020">
             <Button
+              href={buttonHref}
               size={ButtonSize.Small}
               overrides={{
                 stylePreset: `${stylePrefix}Button`,
@@ -146,6 +148,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
           </Block>
           {buttonLabel && (
             <Button
+              href={buttonHref}
               size={ButtonSize.Small}
               overrides={{
                 stylePreset: `${stylePrefix}Button`,
@@ -168,6 +171,7 @@ const FeatureCardVertical: React.FC<FeatureCardProps> = ({
   href,
   stylePrefix,
   buttonLabel,
+  buttonHref,
   ...props
 }) => (
   <StyledCardVerticalInset
@@ -218,6 +222,7 @@ const FeatureCardVertical: React.FC<FeatureCardProps> = ({
     {buttonLabel && (
       <Block spaceStack="space020">
         <Button
+          href={buttonHref}
           size={ButtonSize.Small}
           overrides={{
             stylePreset: `${stylePrefix}Button`,

@@ -921,7 +921,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #808E99;
+  color: #677483;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1061,7 +1061,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #808E99;
+  color: #677483;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

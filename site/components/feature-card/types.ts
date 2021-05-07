@@ -6,5 +6,6 @@ export interface FeatureCardProps
   description: string;
   stylePrefix: string;
   layout?: 'vertical' | 'horizontal';
+  buttonHref?: string;
   buttonLabel?: string;
 }

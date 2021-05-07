@@ -7,14 +7,17 @@ import {
   styled,
   getSpacingCssFromTheme,
   getColorCssFromTheme,
+  ThemeProvider,
 } from 'newskit';
 
+import {blueSubThemeDark, blueSubThemeLight} from '../theme/doc-theme';
 import SiteHeader from './site-header';
 import SiteFooter from './site-footer';
 import Sidebar from './sidebar';
 import SectionNavigation from './section-navigation';
 import markdownElements from './markdown-elements';
 import {Playground} from './playground';
+import {DebugDropdown} from './debug-dropdown';
 
 const LayoutWrapper = styled.div`
   display: flex;
@@ -40,6 +43,7 @@ const BodyWrapper = styled.main`
   flex: 1 0 auto;
   ${getColorCssFromTheme('backgroundColor', 'interfaceBackground')};
   ${getSpacingCssFromTheme('paddingTop', 'space030')};
+  overflow: hidden;
 `;
 
 export interface LayoutProps {
@@ -53,6 +57,7 @@ interface LayoutState {
   sidebarOpen: boolean;
   headerHeight: number;
   sectionNavHeight: number;
+  debugDropdownVisible: boolean;
 }
 
 interface Heading {
@@ -80,6 +85,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
       sidebarOpen: false,
       headerHeight: 0,
       sectionNavHeight: 0,
+      debugDropdownVisible: false,
     };
 
     this.headerRef = React.createRef<HTMLElement>();
@@ -96,10 +102,23 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
     if (sectionNavNode) {
       this.setState({sectionNavHeight: sectionNavNode.clientHeight});
     }
+    if (typeof window !== 'undefined') {
+      window.addEventListener('keydown', event => {
+        if (event.keyCode === 192) {
+          this.toggleDebugDropdown();
+        }
+      });
+    }
   }
 
   toggleSidebar = () => {
     this.setState(({sidebarOpen}) => ({sidebarOpen: !sidebarOpen}));
+  };
+
+  toggleDebugDropdown = () => {
+    this.setState(({debugDropdownVisible}) => ({
+      debugDropdownVisible: !debugDropdownVisible,
+    }));
   };
 
   renderNavigation = () => {
@@ -144,7 +163,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
   };
 
   render() {
-    const {sidebarOpen} = this.state;
+    const {sidebarOpen, debugDropdownVisible} = this.state;
     const {
       hideSidebar,
       path,
@@ -156,6 +175,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
     return (
       <LayoutWrapper>
+        {debugDropdownVisible && <DebugDropdown />}
         {!hideSidebar && (
           <Sidebar
             path={path}
@@ -176,7 +196,13 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
           <BodyWrapper>
             {path.endsWith('-new') || newPage ? (
-              children
+              <ThemeProvider
+                theme={
+                  themeMode === 'light' ? blueSubThemeLight : blueSubThemeDark
+                }
+              >
+                {children}
+              </ThemeProvider>
             ) : (
               <Grid>
                 <Cell xs={12} lg={10} lgOffset={1}>

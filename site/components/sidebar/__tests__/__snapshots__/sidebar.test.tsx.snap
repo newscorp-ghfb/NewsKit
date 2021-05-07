@@ -213,7 +213,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   background-color: transparent;
   color: #162740;
   box-sizing: border-box;
-  color: #808E99;
+  color: #677483;
   cursor: 'pointer';
   min-height: 32px;
   min-width: 230px;
@@ -1626,7 +1626,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   background-color: transparent;
   color: #162740;
   box-sizing: border-box;
-  color: #808E99;
+  color: #677483;
   cursor: 'pointer';
   min-height: 32px;
   min-width: 230px;

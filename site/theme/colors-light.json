@@ -68,7 +68,7 @@
   "neutral100": "#162740",
   "neutral090": "#243853",
   "neutral080": "#555E74",
-  "neutral070": "#6E7D8D",
+  "neutral070": "#677483",
   "neutral060": "#808E99",
   "neutral050": "#96A2AB",
   "neutral040": "#BBC3C9",
@@ -97,7 +97,7 @@
 
   "inkBase": "{{colors.neutral080}}",
   "inkContrast": "{{colors.neutral100}}",
-  "inkSubtle": "{{colors.neutral060}}",
+  "inkSubtle": "{{colors.neutral070}}",
   "inkNonEssential": "{{colors.neutral040}}",
   "inkInverse": "{{colors.white}}",
   "inkPositive": "{{colors.green070}}",
