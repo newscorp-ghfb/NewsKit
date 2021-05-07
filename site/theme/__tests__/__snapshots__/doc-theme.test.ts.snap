@@ -2947,6 +2947,20 @@ Object {
         "iconColor": "{{colors.interactiveInverse040}}",
       },
     },
+    "linkTopNavigation": Object {
+      "active": Object {
+        "color": "{{colors.inkContrast}}",
+        "textDecoration": "none",
+      },
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.inkSubtle}}",
+        "textDecoration": "none",
+      },
+    },
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",

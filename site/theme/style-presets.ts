@@ -22,6 +22,20 @@ export const stylePresets = {
       color: '{{colors.interactivePrimary050}}',
     },
   },
+  linkTopNavigation: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+      textDecoration: 'none',
+    },
+    hover: {
+      color: '{{colors.inkSubtle}}',
+      textDecoration: 'none',
+    },
+    active: {
+      color: '{{colors.inkContrast}}',
+      textDecoration: 'none',
+    },
+  },
   tableHeader: {
     base: {
       borderStyle: 'solid',

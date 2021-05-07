@@ -15,9 +15,9 @@ import {
   getSpacingCssFromTheme,
   getShadowCssFromTheme,
   getSizingCssFromTheme,
+  Link,
 } from 'newskit';
 
-import {Link} from './link';
 import {NewsKitLogo, NewsKitMobileLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
@@ -119,7 +119,52 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               flow={Flow.HorizontalCenter}
               stackDistribution={StackDistribution.End}
               flexGrow={1}
+              spaceInline="space070"
             >
+              <Visible lg xl>
+                <Stack
+                  flow={Flow.HorizontalCenter}
+                  stackDistribution={StackDistribution.End}
+                  spaceInline="space070"
+                >
+                  <Link
+                    href="/about/introduction"
+                    overrides={{
+                      stylePreset: 'linkTopNavigation',
+                      typographyPreset: 'utilityButton020',
+                    }}
+                  >
+                    About
+                  </Link>
+                  <Link
+                    href="/getting-started/code/web"
+                    overrides={{
+                      stylePreset: 'linkTopNavigation',
+                      typographyPreset: 'utilityButton020',
+                    }}
+                  >
+                    Guides
+                  </Link>
+                  <Link
+                    href="/theming/foundations/overview"
+                    overrides={{
+                      stylePreset: 'linkTopNavigation',
+                      typographyPreset: 'utilityButton020',
+                    }}
+                  >
+                    Foundations
+                  </Link>
+                  <Link
+                    href="/components/button-new"
+                    overrides={{
+                      stylePreset: 'linkTopNavigation',
+                      typographyPreset: 'utilityButton020',
+                    }}
+                  >
+                    Components
+                  </Link>
+                </Stack>
+              </Visible>
               <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
             </Stack>
           </Cell>
