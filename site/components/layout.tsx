@@ -176,13 +176,12 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
     return (
       <LayoutWrapper>
         {debugDropdownVisible && <DebugDropdown />}
-        {!hideSidebar && (
-          <Sidebar
-            path={path}
-            sidebarOpen={sidebarOpen}
-            handleSidebarClick={this.toggleSidebar}
-          />
-        )}
+        <Sidebar
+          path={path}
+          sidebarOpen={sidebarOpen}
+          handleSidebarClick={this.toggleSidebar}
+          hideSidebar={hideSidebar}
+        />
         <SiteHeader
           handleSidebarClick={this.toggleSidebar}
           toggleTheme={toggleTheme}

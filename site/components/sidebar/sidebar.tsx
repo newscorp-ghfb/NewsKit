@@ -21,9 +21,11 @@ interface SidebarProps {
   path: string;
   sidebarOpen: boolean;
   handleSidebarClick: () => void;
+  hideSidebar?: boolean;
 }
 interface SidebarWrapperProps {
   open: boolean;
+  hideSidebar?: boolean;
 }
 
 const SidebarWrapper = styled.div<SidebarWrapperProps>`
@@ -42,6 +44,7 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   ${getSpacingCssFromTheme('marginTop', 'space090')};
 
   ${getMediaQueryFromTheme('lg')} {
+    display: ${({hideSidebar}) => hideSidebar && 'none'};
     ${getSpacingCssFromTheme('marginTop', 'space100')};
     transform: translateX(0);
     overflow: hidden;
@@ -77,12 +80,14 @@ const Sidebar: React.FC<SidebarProps> = ({
   path,
   sidebarOpen,
   handleSidebarClick,
+  hideSidebar,
 }) => (
   <React.Fragment>
     <SidebarWrapper
       open={sidebarOpen}
       data-testid="sidebar"
       role="complementary"
+      hideSidebar={hideSidebar}
     >
       <SidebarHeader>
         <Visible xs sm md>
