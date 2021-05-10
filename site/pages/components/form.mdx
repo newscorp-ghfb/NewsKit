@@ -29,10 +29,15 @@ On form submission, if there are validation errors present, the `onSubmitInvalid
 
 ## Validation
 
-The Form component handles validation. This only works with the TextInput. The validation rules need to be passed to the TextInput. For more information about the validation rules:
+The Form component handles validation. This only works with the TextInput. The validation rules need to be passed to the TextInput. For more information about the validation rules: 
 [React Hook Form, apply validation](https://react-hook-form.com/get-started/#Applyvalidation) and [React Hook Form, register](https://react-hook-form.com/api/#register)
 
 <CodeFromFile path="examples/form/validated-form.tsx" />
+
+The Form component also supports schema validation. To use an external validation library, for example `Yup`, you can pass `yupResolver(schema)` to the resolver prop. For more information about schema validation with React Hook Form:
+[React Hook Form, schema validation](https://react-hook-form.com/get-started/#SchemaValidation)
+
+<CodeFromFile path="examples/form/form-with-schema-validation.tsx" /> 
 
 ## Props
 
@@ -63,6 +68,9 @@ The Form component handles validation. This only works with the TextInput. The v
   <Prop name="defaultValues" type="Record<string, string>">
    The defaultValue for an input is used as the initial value when a component is first rendered, before a user interacts with it. 
    The defaultValues object uses the form element names as keys.
+  </Prop>
+  <Prop name="resolver" type="Resolver<Record<string, string>, object>">
+   The resolver will validate your input data against the schema and return with either errors or a valid result.
   </Prop>
 </LegacyBlock>
 

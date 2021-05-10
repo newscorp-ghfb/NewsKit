@@ -71,6 +71,7 @@
     "@commitlint/load": "8.0.0",
     "@commitlint/parse": "8.0.0",
     "@commitlint/read": "8.0.0",
+    "@hookform/resolvers": "^1.0.0",
     "@mapbox/rehype-prism": "^0.3.1",
     "@mdx-js/loader": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
@@ -170,7 +171,8 @@
     "unist-util-find": "^1.0.1",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
-    "yo": "^3.1.1"
+    "yo": "^3.1.1",
+    "yup": "^0.32.9"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.11.2",

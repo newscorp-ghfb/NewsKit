@@ -1,4 +1,6 @@
 import * as React from 'react';
+import {yupResolver} from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 import {Form} from '..';
 import {
   StorybookHeading,
@@ -22,6 +24,11 @@ const validateUserName = async (value: string) => {
   await sleep(1000);
   return value !== 'newskit' || 'This username is already taken';
 };
+
+const schema = yup.object().shape({
+  email: yup.string().email().required(),
+  username: yup.string().required(),
+});
 
 export default {
   title: 'form',
@@ -67,6 +74,38 @@ export default {
               <Button type="submit">Submit</Button>
             </Form>
           </Block>
+        </React.Fragment>
+      ),
+    },
+    {
+      storyName: 'form-with-resolver',
+      storyFn: () => (
+        <React.Fragment>
+          <div data-testid="yup-resolver">
+            <StorybookHeading>Form</StorybookHeading>
+            <Block>
+              <StorybookSubHeading>Yup Schema Validation</StorybookSubHeading>
+              <Form onSubmit={onSubmit} resolver={yupResolver(schema)}>
+                <Block spaceStack="space050">
+                  <TextInput
+                    label="Email"
+                    name="email"
+                    data-testid="email-input"
+                  />
+                </Block>
+                <Block spaceStack="space050">
+                  <TextInput
+                    label="Username"
+                    name="username"
+                    data-testid="username-input"
+                  />
+                </Block>
+                <Button type="submit" data-testid="submit-button">
+                  Submit
+                </Button>
+              </Form>
+            </Block>
+          </div>
         </React.Fragment>
       ),
     },

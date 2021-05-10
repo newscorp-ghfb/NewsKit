@@ -18,6 +18,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     validationMode = 'onSubmit',
     reValidationMode = 'onBlur',
     defaultValues = {},
+    resolver,
   } = props;
 
   const [fieldsHadError, setFieldsHadError] = useState<FieldsHadErrorObject>(
@@ -28,6 +29,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     mode: validationMode,
     reValidateMode: reValidationMode,
     defaultValues,
+    resolver,
   });
 
   const setAllFieldsHadErrorToFalse = useCallback(() => {

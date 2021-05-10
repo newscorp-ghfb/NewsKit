@@ -1,4 +1,5 @@
 import {
+  Resolver,
   SubmitErrorHandler,
   SubmitHandler,
   UseFormMethods,
@@ -20,6 +21,7 @@ export interface FormProps {
   validationMode?: 'onBlur' | 'onSubmit';
   reValidationMode?: 'onBlur' | 'onSubmit';
   defaultValues?: Record<string, string>;
+  resolver?: Resolver<Record<string, string>, object>;
 }
 
 export interface FormRef {
