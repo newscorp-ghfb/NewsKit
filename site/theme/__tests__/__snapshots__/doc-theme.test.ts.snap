@@ -496,7 +496,13 @@ Object {
       "panel": Object {
         "maxSize": "100%",
         "minSize": "20px",
-        "size": "30%",
+        "size": Object {
+          "lg": "333px",
+          "md": "310px",
+          "sm": "309px",
+          "xl": "354px",
+          "xs": "305px",
+        },
         "stylePreset": "drawerPanel",
       },
     },

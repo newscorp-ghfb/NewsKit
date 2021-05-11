@@ -2,10 +2,10 @@
 
 // Note: only a subset of pages as a base for smoke tests
 const routes = {
-  articleByline: '/components/text-content/byline',
-  audioPlayer: '/components/media/audio-player',
-  dateTime: '/components/text-content/date-time',
-  icons: '/components/others/icons',
+  articleByline: '/components/byline',
+  audioPlayer: '/components/audio-player',
+  dateTime: '/components/date-time',
+  icons: '/components/icons',
   spacePresets: '/theming/presets/space-presets',
   typography: '/theming/presets/typography-presets',
   welcome: '/index',

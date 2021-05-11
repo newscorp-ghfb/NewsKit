@@ -23,13 +23,42 @@ exports[`Drawer layout renders closed drawer 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  width: 30%;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    width: 354px;
+  }
 }
 
 .emotion-1 {
@@ -331,13 +360,42 @@ exports[`Drawer layout renders default left position 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  width: 30%;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    width: 354px;
+  }
 }
 
 .emotion-1 {
@@ -661,13 +719,42 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  width: 30%;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    width: 354px;
+  }
 }
 
 .emotion-1 {
@@ -981,13 +1068,42 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  width: 30%;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    width: 354px;
+  }
 }
 
 .emotion-1 {
@@ -1590,13 +1706,42 @@ exports[`Drawer layout renders drawer without header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  width: 30%;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    width: 354px;
+  }
 }
 
 .emotion-1 {
@@ -1898,13 +2043,42 @@ exports[`Drawer layout renders right position 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  width: 30%;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    width: 354px;
+  }
 }
 
 .emotion-1 {

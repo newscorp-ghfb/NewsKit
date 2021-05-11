@@ -270,15 +270,13 @@ export const componentDefaults = {
       stylePreset: 'drawerPanel',
       maxSize: '100%',
       minSize: '20px',
-      size: '30%',
-      // Use the object below when PPDSC-1422 is resolved
-      // size: {
-      //   xs: '90%',
-      //   sm: '40%',
-      //   md: '30%',
-      //   lg: '25%',
-      //   xl: '20%',
-      // },
+      size: {
+        xs: '305px',
+        sm: '309px',
+        md: '310px',
+        lg: '333px',
+        xl: '354px',
+      },
     },
     header: {
       spaceInset: 'spaceInsetSquish040',
