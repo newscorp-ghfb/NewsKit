@@ -8,7 +8,9 @@ import {
   Block,
   getColorFromTheme,
   getSpacingFromTheme,
+  ImageProps,
 } from 'newskit';
+import {renderComponent} from 'newskit/utils/component';
 import React from 'react';
 import {HeaderIndexProps} from './types';
 
@@ -50,7 +52,9 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
         mdOffset={6}
         lgOffset={0}
       >
-        <Image src={media.src} alt="" />
+        {renderComponent(media) || (
+          <Image src={(media as ImageProps).src} alt="" />
+        )}
       </Cell>
       <Cell xs={11} md={8} lg={6} mdOffset={1}>
         <Block spaceStack={{xs: 'space060', md: 'space090'}}>

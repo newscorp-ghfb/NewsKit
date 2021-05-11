@@ -401,6 +401,11 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   }
 }
 
+.emotion-1 {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
   .emotion-1 {
     margin-bottom: 0;

@@ -23,7 +23,7 @@ export const ContentText: React.FC<ContentTextProps> = ({
       </Block>
     )}
     {children && (
-      <Block spaceStack="space060">
+      <Block spaceStack="space070">
         <TextBlock
           stylePreset="inkBase"
           typographyPreset={{

@@ -7,7 +7,7 @@ import {ComponentPageCell} from '../layout-cells';
 
 export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
   <ComponentPageCell>
-    {components.map(({title, summary, propsRows, overridesRows}) => {
+    {components.map(({title, summary, propsRows, overridesRows}, i, arr) => {
       const propsTable = (
         <Table
           columns={['Name', 'Type', 'Default', 'Description', 'Required']}
@@ -15,7 +15,10 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
         />
       );
       return (
-        <Block key={getSSRId()} spaceStack="space070">
+        <Block
+          key={getSSRId()}
+          spaceStack={i !== arr.length - 1 ? 'space100' : undefined}
+        >
           {title && (
             <ContentText title={title} titleAs="span">
               {summary}
@@ -26,7 +29,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
               <Tab label="Props">{propsTable}</Tab>
               <Tab label="Overrides">
                 <Table
-                  columns={['Attribute', 'Type', 'Description']}
+                  columns={['Attribute', 'Type', 'Default', 'Description']}
                   rows={overridesRows}
                 />
               </Tab>

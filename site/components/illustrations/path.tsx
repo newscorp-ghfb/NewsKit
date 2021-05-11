@@ -10,8 +10,8 @@ export const Path: React.FC<SVGAttributes<SVGPathElement>> = ({
   return (
     <path
       {...props}
-      fill={fill ? theme.colors[fill] : undefined}
-      stroke={stroke ? theme.colors[stroke] : undefined}
+      fill={fill ? theme.colors[fill] || fill : undefined}
+      stroke={stroke ? theme.colors[stroke] || stroke : undefined}
     />
   );
 };

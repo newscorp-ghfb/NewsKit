@@ -1,7 +1,12 @@
 import React from 'react';
-import {Block, TextBlock, Image} from 'newskit';
+import {Block, TextBlock, Image, ImageProps} from 'newskit';
+import {Illustration} from '../illustrations/illustration-loader';
 import {PageIntroductionProps} from './types';
 import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
+
+const heroIsImage = (hero: PageIntroductionProps['hero']): hero is ImageProps =>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Boolean((hero as any).src);
 
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   type,
@@ -49,8 +54,15 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </Block>
     </ComponentPageCellCompact>
     <ComponentPageCell>
-      <Block spaceStack={{xs: 'space000', md: 'space030', lg: 'space010'}}>
-        <Image loadingAspectRatio="16:9" alt="" {...hero} />
+      <Block
+        stylePreset="imageRoundedMedium"
+        spaceStack={{xs: 'space000', md: 'space030', lg: 'space010'}}
+      >
+        {heroIsImage(hero) ? (
+          <Image loadingAspectRatio="16:9" alt="" {...hero} />
+        ) : (
+          <Illustration path={hero.illustration} />
+        )}
       </Block>
     </ComponentPageCell>
   </>

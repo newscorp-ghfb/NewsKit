@@ -107,7 +107,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 }
 
 .emotion-6 {
-  margin-bottom: 48px;
+  margin-bottom: 80px;
 }
 
 .emotion-7 {
@@ -139,10 +139,6 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.5750000000000001em;
-}
-
-.emotion-8 {
-  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -221,7 +217,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
 }
 
 .emotion-11 {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .emotion-12 {
@@ -370,7 +366,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
           data-testid="Cell"
         >
           <div
-            class="emotion-8"
+            class="emotion-3"
           >
             <div
               class="emotion-9"
@@ -444,6 +440,7 @@ exports[`ComponentAPISection renders section as expected 1`] = `
   "columns": [
     "Attribute",
     "Type",
+    "Default",
     "Description"
   ],
   "rows": [

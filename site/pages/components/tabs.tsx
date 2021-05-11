@@ -24,8 +24,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Navigation',
       name: 'Tabs',
       hero: {
-        src: '/static/tabs/component-tabs-hero.svg',
-        alt: '',
+        illustration: 'components/tabs-illustration',
       },
       introduction:
         'Tabs allow users to alternate between views within the same context.',
@@ -272,13 +271,10 @@ export default (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  If provided, this overrides the divider styling, {''}
-                  <Link
-                    target="_blank"
-                    href="https://newskit.ceng-dev.newsuk.tech/components/divider"
-                  >
+                  If provided, this overrides the divider styling,{' '}
+                  <Link target="_blank" href="/components/divider">
                     see divider component
-                  </Link>
+                  </Link>{' '}
                   for full documentation.
                 </>
               ),
@@ -289,13 +285,10 @@ export default (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  If provided, this overrides the scroll styling,
-                  <Link
-                    target="_blank"
-                    href="https://newskit.ceng-dev.newsuk.tech/components/scroll"
-                  >
+                  If provided, this overrides the scroll styling,{' '}
+                  <Link target="_blank" href="/components/scroll">
                     see scroll component
-                  </Link>
+                  </Link>{' '}
                   for full documentation.
                 </>
               ),
@@ -341,10 +334,7 @@ export default (layoutProps: LayoutProps) => (
             {
               attribute: 'minHeight',
               type: 'MQ<string>',
-              default: [
-                'tab.small.minHeight = sizing060',
-                'tab.medium.minHeight = sizing080',
-              ],
+              default: ['Small = sizing060', 'Medium = sizing080'],
               description:
                 'If provided with a sizing token, will override  the minHeight of the Tab.',
             },
@@ -358,7 +348,9 @@ export default (layoutProps: LayoutProps) => (
               attribute: 'iconSize',
               type: 'string',
               default: [
-                'tab.small.iconSize=iconSize010, tab.medium.iconSize=iconSize020, tab.largel.iconSize=iconSize030',
+                'Small = iconSize010',
+                'Medium = iconSize020',
+                'Large = iconSize030',
               ],
               description:
                 'If provided with a sizing token, will override the minWidth of the Tab. ',
@@ -373,7 +365,9 @@ export default (layoutProps: LayoutProps) => (
               attribute: 'typographyPreset',
               type: 'MQ<string>',
               default: [
-                'tab.small.typographyPreset=utilityButton010, tab.medium.typographyPreset=utilityButton030 ,tab.large.typographyPreset=utilityButton030',
+                'Small = utilityButton010',
+                'Medium = utilityButton030',
+                'Large = utilityButton030',
               ],
               description:
                 'If provided, this overrides the selection indicator typography of the text label in the Tab.',
@@ -383,7 +377,9 @@ export default (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
 
               default: [
-                'tab.small.spaceInset=spaceInsetSquish020, tab.medium.spaceInset=spaceInsetSquish030, tab.large.spaceInset=spaceInsetSquish030',
+                'Small = spaceInsetSquish020',
+                'Medium = spaceInsetSquish030',
+                'Large = spaceInsetSquish030',
               ],
               description:
                 'If provided, this overrides the inset space within the Tab.',
@@ -824,26 +820,33 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Alignment',
           description: (
-            <UnorderedList
-              overrides={{
-                content: {
-                  stylePreset: 'inkBase',
-                  typographyPreset: 'editorialParagraph020',
-                },
-              }}
-            >
-              <>
-                <Mono>Start</Mono>Aligns the Tab item label and icons to the
-                left.
-              </>
-              <>
-                <Mono>Grow</Mono> Centers the Tab item label and icons.
-              </>
-              <>
-                <Mono>Equal</Mono> Aligns the Tab item label and icons to the
-                right.
-              </>
-            </UnorderedList> // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            <>
+              <UnorderedList
+                overrides={{
+                  content: {
+                    stylePreset: 'inkBase',
+                    typographyPreset: 'editorialParagraph020',
+                  },
+                }}
+              >
+                <>
+                  <Mono>Start</Mono>Aligns the Tab item label and icons to the
+                  left.
+                </>
+                <>
+                  <Mono>Center</Mono> Centers the Tab item label and icons.
+                </>
+                <>
+                  <Mono>End</Mono> Aligns the Tab item label and icons to the
+                  right.
+                </>
+              </UnorderedList>
+              <p>
+                NOTE - The default alignment depends on the orientation. When
+                Tabs are vertical it’s <Mono>Start</Mono> and when Tabs are
+                horizontal it’s <Mono>Center</Mono>.
+              </p>
+            </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
 
           media: {
@@ -959,7 +962,15 @@ export default (layoutProps: LayoutProps) => (
       related: ['Scroll'],
     }}
     accessibility={{
-      introduction: 'Tabs implement the latest WAI-ARIA Tabs specifications.',
+      introduction: (
+        <>
+          Tabs implement the latest{' '}
+          <Link href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role">
+            WAI-ARIA Tabs specifications
+          </Link>
+          .
+        </>
+      ),
       focusOrder: {
         title: 'Focus order',
         tableRows: [

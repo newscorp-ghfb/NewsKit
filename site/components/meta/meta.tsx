@@ -86,6 +86,6 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
         </Stack>
       </Hidden>
     </Block>
-    <Block spaceStack={{xs: 'space000', md: 'space090'}} />
+    <Block spaceStack={{xs: 'space000', md: 'space100'}} />
   </>
 );

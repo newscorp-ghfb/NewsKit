@@ -107,7 +107,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 .emotion-6 {
-  margin-bottom: 48px;
+  margin-bottom: 80px;
 }
 
 .emotion-7 {

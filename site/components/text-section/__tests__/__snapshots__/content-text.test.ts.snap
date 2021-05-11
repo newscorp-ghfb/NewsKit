@@ -3,7 +3,7 @@
 exports[`ContentText renders with only the description 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .emotion-1 {
@@ -254,7 +254,7 @@ exports[`ContentText renders with title and description 1`] = `
     </p>
   </div>
   .emotion-0 {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .emotion-1 {

@@ -99,7 +99,7 @@
   },
 
   "editorialParagraph020": {
-    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "lineHeight": "{{fonts.fontLineHeight050}}",
     "fontWeight": "{{fonts.fontWeight010}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
     "fontFamily": "{{fonts.fontFamily020.fontFamily}}"

@@ -575,4 +575,19 @@ export const stylePresets = {
       color: '{{colors.inkSubtle}}',
     },
   },
+  imageRoundedMedium: {
+    base: {
+      overflow: 'hidden',
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } as any,
+  },
+  sidebar: {
+    base: {
+      backgroundColor: '{{colors.interface020}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interface040}}',
+      borderWidth:
+        '{{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+    },
+  },
 };

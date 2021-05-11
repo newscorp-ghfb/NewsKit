@@ -1,3 +1,3 @@
 export interface IntroductionText {
-  introduction: string;
+  introduction: string | React.ReactElement;
 }

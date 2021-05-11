@@ -78,7 +78,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-7 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.4285714285714286;
   font-weight: 600;
   letter-spacing: 0;
   background-color: transparent;
@@ -86,10 +86,26 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   box-sizing: border-box;
   color: #577FFB;
   cursor: 'pointer';
-  min-height: 32px;
   min-width: 230px;
-  padding: 8px 12px;
+  padding: 12px;
+  margin: 4px 0;
   text-overflow: ellipsis;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
 }
 
 .emotion-7:hover:not(:disabled) {
@@ -129,7 +145,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-15 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.4285714285714286;
   font-weight: 600;
   letter-spacing: 0;
   background-color: transparent;
@@ -137,10 +153,26 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   box-sizing: border-box;
   color: #677483;
   cursor: 'pointer';
-  min-height: 32px;
   min-width: 230px;
-  padding: 8px 12px;
+  padding: 12px;
+  margin: 4px 0;
   text-overflow: ellipsis;
+}
+
+.emotion-15::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-15::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
 }
 
 .emotion-15:hover:not(:disabled) {
@@ -377,7 +409,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-7 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.4285714285714286;
   font-weight: 600;
   letter-spacing: 0;
   background-color: transparent;
@@ -385,10 +417,26 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   box-sizing: border-box;
   color: #677483;
   cursor: 'pointer';
-  min-height: 32px;
   min-width: 230px;
-  padding: 8px 12px;
+  padding: 12px;
+  margin: 4px 0;
   text-overflow: ellipsis;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
 }
 
 .emotion-7:hover:not(:disabled) {

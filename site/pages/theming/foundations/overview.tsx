@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid} from 'newskit';
+import {HeaderImage} from '../../../components/illustrations/foundations/header-image';
 import Layout, {LayoutProps} from '../../../components/layout';
 import {SectionIntroduction} from '../../../components/section-introduction';
 import {Separator} from '../../../components/separator';
@@ -92,10 +93,7 @@ const cardsContent = [
 
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
-    <HeaderIndex
-      title="Foundations"
-      media={{src: '/static/foundations-overview-hero.svg'}}
-    >
+    <HeaderIndex title="Foundations" media={HeaderImage}>
       NewsKit foundations define the visual elements that inform the look and
       feel of UI components.
     </HeaderIndex>

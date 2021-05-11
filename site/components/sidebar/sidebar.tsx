@@ -9,6 +9,7 @@ import {
   css,
   getColorCssFromTheme,
   getSpacingCssFromTheme,
+  getStylePresetFromTheme,
 } from 'newskit';
 
 import {LegacyBlock} from '../legacy-block';
@@ -38,10 +39,10 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   top: 0;
   left: 0;
   z-index: 3;
-  ${getColorCssFromTheme('backgroundColor', 'interface020')};
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
   ${getSpacingCssFromTheme('marginTop', 'space090')};
+  ${getStylePresetFromTheme('sidebar')};
 
   ${getMediaQueryFromTheme('lg')} {
     display: ${({hideSidebar}) => hideSidebar && 'none'};

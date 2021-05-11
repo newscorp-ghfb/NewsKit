@@ -10,15 +10,17 @@ import {
 export const StyledLinkItem = styled.div<{
   active: boolean;
 }>`
-  ${getTypographyPresetFromTheme('utilityButton020')};
+  ${getTypographyPresetFromTheme('utilityButton020', undefined, {
+    withCrop: true,
+  })};
   ${getStylePresetFromTheme('sidebarNavItem')};
   box-sizing: border-box;
   color: ${({active}) =>
     active ? getColorFromTheme('inkBrand010') : getColorFromTheme('inkSubtle')};
   cursor: 'pointer';
-  min-height: ${getSizingFromTheme('sizing060')};
   min-width: 230px;
-  padding: ${getSpacingFromTheme('spaceInsetSquish020')};
+  padding: ${getSpacingFromTheme('spaceInset030')};
+  margin: ${({theme}) => `${theme.spacePresets.space010} 0`};
   text-overflow: ellipsis;
 `;
 

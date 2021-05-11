@@ -1,6 +1,6 @@
 describe('table of content', () => {
   beforeEach(() => {
-    cy.mockConsentAndVisit('/components/tabs-new');
+    cy.mockConsentAndVisit('/components/tabs');
     cy.get('[href="#introduction"]').as('TOCIntroduction');
   });
 

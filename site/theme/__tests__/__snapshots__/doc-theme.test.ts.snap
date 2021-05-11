@@ -1020,7 +1020,7 @@ Object {
       "cropAdjustments": Object {
         "{{fonts.fontSize010}}": Object {
           "bottom": 0,
-          "top": -0.5,
+          "top": 1.5,
         },
         "{{fonts.fontSize020}}": Object {
           "top": 0,
@@ -1056,7 +1056,7 @@ Object {
     "fontLineHeight020": 1.3333333333333333,
     "fontLineHeight030": 1.4,
     "fontLineHeight040": 1.5,
-    "fontLineHeight050": 1.6,
+    "fontLineHeight050": 1.62,
     "fontLineHeight060": 2,
     "fontLineHeight150": 1.75,
     "fontSize010": "12px",
@@ -2699,6 +2699,7 @@ Object {
     "imageRoundedMedium": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
       },
       "loading": Object {
         "backgroundColor": "{{colors.interfaceSkeleton010}}",
@@ -3113,6 +3114,14 @@ Object {
     "scrollOverlaysVertical": Object {
       "base": Object {
         "backgroundImage": "{{overlays.overlayGradientInverseVertical}}",
+      },
+    },
+    "sidebar": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interface040}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}} {{borders.borderWidth000}}",
       },
     },
     "sidebarHeader": Object {
@@ -3580,7 +3589,7 @@ Object {
       "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight010}}",
       "letterSpacing": "{{fonts.fontLetterSpacing010}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
+      "lineHeight": "{{fonts.fontLineHeight050}}",
     },
     "editorialParagraph030": Object {
       "fontFamily": "{{fonts.fontFamily020.fontFamily}}",

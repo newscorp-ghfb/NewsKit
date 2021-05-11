@@ -107,7 +107,7 @@ exports[`SEOSection renders section as expected 1`] = `
 }
 
 .emotion-6 {
-  margin-bottom: 48px;
+  margin-bottom: 80px;
 }
 
 .emotion-7 {

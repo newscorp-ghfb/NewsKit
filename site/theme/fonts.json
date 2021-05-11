@@ -13,7 +13,7 @@
     "cropAdjustments": {
       "__shallow": true,
       "{{fonts.fontSize010}}": {
-        "top": -0.5,
+        "top": 1.5,
         "bottom": 0
       },
       "{{fonts.fontSize020}}": {
@@ -50,6 +50,6 @@
   "fontLineHeight010": 1.2,
   "fontLineHeight020": 1.3333333333333333,
   "fontLineHeight030": 1.4,
-  "fontLineHeight050": 1.6,
+  "fontLineHeight050": 1.62,
   "fontLineHeight150": 1.75
 }

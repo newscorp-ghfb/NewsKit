@@ -48,10 +48,6 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   }
 }
 
-.emotion-1 {
-  margin-bottom: 40px;
-}
-
 .emotion-2 {
   overflow-x: auto;
 }
@@ -69,7 +65,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -87,7 +83,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -105,7 +101,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -429,7 +425,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-1 {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 767px) {
@@ -508,7 +504,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-4 {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .emotion-5 {
@@ -590,7 +586,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -608,7 +604,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -626,7 +622,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -1129,7 +1125,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 100%;
 }
 
-.emotion-81 {
+.emotion-82 {
   margin-left: 0px;
 }
 
@@ -1261,7 +1257,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
       </div>
     </div>
     <div
-      class="emotion-1"
+      class="emotion-26"
     >
       <div
         class="emotion-2"
@@ -1534,6 +1530,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                   <th
                     class="emotion-9"
                   >
+                    Default
+                  </th>
+                  <th
+                    class="emotion-9"
+                  >
                     Description
                   </th>
                 </tr>
@@ -1546,7 +1547,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     class="emotion-15"
                   >
                     <div
-                      class="emotion-81"
+                      class="emotion-82"
                     >
                       <p
                         class="emotion-16"
@@ -1564,6 +1565,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                       MQ&lt;string&gt;
                     </p>
                   </td>
+                  <td
+                    class="emotion-15"
+                  />
                   <td
                     class="emotion-15"
                   >

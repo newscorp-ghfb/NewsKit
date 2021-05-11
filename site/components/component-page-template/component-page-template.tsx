@@ -42,7 +42,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
 }: ComponentPageTemplateProps) => (
   <Layout {...layoutProps} newPage>
     <WrapperWithPadding>
-      <Grid xsMargin="space000" xsRowGutter="space000">
+      <Grid xsRowGutter="space000">
         <IntroductionSection pageIntroduction={pageIntroduction} meta={meta} />
         {interactiveDemo && <InteractiveDemoSection {...interactiveDemo} />}
         {anatomy && <AnatomySection {...anatomy} />}

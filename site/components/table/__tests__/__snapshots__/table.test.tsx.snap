@@ -19,7 +19,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -37,7 +37,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -307,7 +307,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -325,7 +325,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -709,7 +709,7 @@ exports[`Table renders with default styles 1`] = `
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -812,7 +812,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -830,7 +830,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -987,7 +987,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;
@@ -1005,7 +1005,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   color: #162740;
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 700;
   letter-spacing: 0;
   margin-bottom: 16px;

@@ -136,6 +136,7 @@ export default class MyApp extends App<Props, State> {
               styles={css`
                 html {
                   scroll-behavior: smooth;
+                  scroll-padding-top: 90px;
                 }
                 @font-face {
                   font-family: 'DM Sans';

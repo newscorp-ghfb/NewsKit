@@ -1,9 +1,12 @@
+import {ImageProps} from 'newskit';
+
 export interface PageIntroductionProps {
   type: string;
   name: string;
   introduction: React.ReactNode;
-  hero: {
-    src: string;
-    alt?: string;
-  };
+  hero:
+    | {
+        illustration: string;
+      }
+    | ImageProps;
 }
