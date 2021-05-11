@@ -16,7 +16,7 @@ export const StatesSection: React.FC<StatesSectionProps> = ({
   <>
     <Cell xs={12}>
       <StyledSection id="states" data-toc-indexed="States">
-        <Grid lgMargin="space000" xsRowGutter="space000">
+        <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction title="States">
             {introduction}
           </SectionIntroduction>

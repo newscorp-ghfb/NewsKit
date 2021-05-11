@@ -21,6 +21,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-3 {
@@ -39,7 +41,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   cursor: default;
   border: none;
@@ -101,8 +104,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-6.emotion-6 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: #d20600;
 }
 
@@ -184,8 +187,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   padding: 1px 0;
   color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -199,7 +202,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-17::after {
@@ -207,7 +210,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4625em;
 }
 
 <div
@@ -317,6 +320,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-3 {
@@ -335,8 +340,9 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
-  padding: 0;
+  width: 32px;
+  height: 32px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -397,8 +403,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-6.emotion-6 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: #0a782a;
 }
 
@@ -480,8 +486,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   padding: 1px 0;
   color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -495,7 +501,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.36250000000000004em;
 }
 
 .emotion-17::after {
@@ -503,7 +509,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4625em;
 }
 
 <div

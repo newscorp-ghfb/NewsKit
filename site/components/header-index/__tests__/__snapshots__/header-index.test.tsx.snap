@@ -231,7 +231,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-9 {
-    margin-bottom: 40px;
+    margin-bottom: 64px;
   }
 }
 

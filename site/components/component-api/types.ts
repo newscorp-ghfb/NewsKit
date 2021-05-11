@@ -12,9 +12,9 @@ export interface SingleComponentAPIProps {
 }
 
 interface CommonProps extends TableRow {
-  type: string;
+  type: string | string[];
   description: string | JSX.Element;
-  default?: string;
+  default?: string | string[];
   required?: boolean;
 }
 

@@ -75,7 +75,7 @@ const FooterLink = styled.span`
   ${getMediaQueryFromTheme('md')} {
     flex-basis: auto;
   }
-  ${getSizingCssFromTheme('paddingLeft', {
+  ${getSizingCssFromTheme('paddingRight', {
     md: 'sizing050',
     lg: 'sizing080',
   })};
@@ -85,8 +85,8 @@ const year = new Date().getUTCFullYear();
 
 const SiteFooter: React.FC = () => (
   <Footer>
-    <Grid xsRowGutter="space070">
-      <Cell xs={10} xsOffset={1} md={5} mdOffset={0}>
+    <Grid xsRowGutter="space000">
+      <Cell xs={10} xsOffset={1} md={4} mdOffset={1}>
         <FooterMenu>
           <Hidden xs sm md lg xl>
             <FooterLink>
@@ -136,7 +136,7 @@ const SiteFooter: React.FC = () => (
           </Hidden>
         </FooterMenu>
       </Cell>
-      <Cell xs={10} xsOffset={1} md={6}>
+      <Cell xs={10} xsOffset={1} md={5}>
         <FooterCopy
           as="div"
           stylePreset="inkSubtle"

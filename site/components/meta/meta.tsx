@@ -18,6 +18,7 @@ import {Introduced} from './introduce';
 
 export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
   <>
+    <Block spaceStack="space060" />
     <Block spaceStack={{xs: 'space080', md: 'space050'}}>
       <Hidden xs sm>
         <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
@@ -27,20 +28,15 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
               <Block
                 spaceInline={{
                   md: 'space060',
-                  lg: 'space020',
-                  xl: 'space040',
                 }}
               />
               <Divider vertical />
               <Block
                 spaceInline={{
                   md: 'space060',
-                  lg: 'space020',
-                  xl: 'space040',
                 }}
               />
             </StackChild>
-
             <Introduced introduced={introduced} />
           </Stack>
           <Stack flow="horizontal-center" spaceInline="space040">
@@ -50,7 +46,10 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
             <FigmaButton href={figmaUrl} />
           </Stack>
         </Stack>
+        <Block spaceStack="space050" />
+        <Divider />
       </Hidden>
+
       <Hidden md lg xl>
         <Stack flow={Flow.VerticalLeft} spaceInline="space050">
           <StackChild alignSelf={AlignSelfValues.Stretch}>
@@ -87,6 +86,6 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
         </Stack>
       </Hidden>
     </Block>
-    <Divider />
+    <Block spaceStack={{xs: 'space000', md: 'space090'}} />
   </>
 );

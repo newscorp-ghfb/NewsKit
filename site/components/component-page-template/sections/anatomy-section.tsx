@@ -1,18 +1,18 @@
-import {Grid, Block, Image, ImageProps} from 'newskit';
+import {Grid, Block, Image, ImageProps, Cell} from 'newskit';
 import React from 'react';
 import {SectionIntroduction} from '../../section-introduction';
-import {Separator} from '../../separator';
 import {Table} from '../../table';
 import {StyledSection} from './styled';
 import {IntroductionText} from './types';
 import {ComponentPageCell} from '../../layout-cells';
+import {Separator} from '../../separator';
 
 export interface AnatomyProps {
   media: ImageProps;
   rows: {
     name: string;
     description: string | JSX.Element;
-    component: string;
+    component: string | string[];
     optional?: boolean;
   }[];
 }
@@ -25,33 +25,32 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
   rows,
 }) => (
   <>
-    <ComponentPageCell>
+    <Cell xs={12}>
       <StyledSection id="anatomy" data-toc-indexed="Anatomy">
-        {/* TODO: this Grid can be removed when the Cell is removed from
-        SectionIntroduction */}
-        <Grid lgMargin="space000" xsRowGutter="space000">
-          <SectionIntroduction
-            title="Anatomy"
-            cellProps={{
-              md: 12,
-              lg: 12,
-              mdOffset: 0,
-            }}
-          >
+        <Grid xsMargin="space000" xsRowGutter="space000">
+          <SectionIntroduction title="Anatomy">
             {introduction}
           </SectionIntroduction>
+          <ComponentPageCell>
+            <Block spaceStack="space050">
+              <Image {...media} />
+            </Block>
+            <Block spaceStack="space000">
+              <Table
+                columns={[
+                  'Item',
+                  'Name',
+                  'Description',
+                  'Component',
+                  'Optional',
+                ]}
+                rows={rows}
+              />
+            </Block>
+          </ComponentPageCell>
         </Grid>
-        <Block spaceStack="space050">
-          <Image {...media} />
-        </Block>
-        <Block spaceStack="space050">
-          <Table
-            columns={['Item', 'Name', 'Description', 'Component', 'Optional']}
-            rows={rows}
-          />
-        </Block>
       </StyledSection>
-    </ComponentPageCell>
+    </Cell>
     <ComponentPageCell>
       <Separator />
     </ComponentPageCell>

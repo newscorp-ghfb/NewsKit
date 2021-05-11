@@ -37,7 +37,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
       <Block spaceStack="space045">
         <Headline
           overrides={{
-            typographyPreset: 'editorialHeadline030',
+            typographyPreset: 'editorialHeadline020',
             heading: {
               stylePreset: 'inkContrast',
             },

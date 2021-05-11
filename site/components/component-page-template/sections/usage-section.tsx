@@ -16,7 +16,7 @@ export const UsageSection: React.FC<UsageSectionProps> = ({
   <>
     <Cell xs={12}>
       <StyledSection id="usage" data-toc-indexed="Usage">
-        <Grid lgMargin="space000" xsRowGutter="space000">
+        <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction title="Usage">
             {introduction}
           </SectionIntroduction>

@@ -10,6 +10,7 @@ export const GitHubButton: React.FC<{href?: string}> = ({href}) =>
         stylePreset: 'buttonOutlinedSecondary',
         minWidth: '176px',
         width: '100%',
+        minHeight: '44px',
       }}
       href={href}
       target="_blank"

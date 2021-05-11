@@ -12,7 +12,7 @@ import {ComponentPageCell} from '../../layout-cells';
 
 interface A11ySubSection<RowType> {
   title: string;
-  description: string;
+  description?: string;
   tableRows: RowType[];
 }
 export interface AccessibilityTablesProps {

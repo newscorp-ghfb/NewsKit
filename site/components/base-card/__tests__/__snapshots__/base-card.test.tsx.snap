@@ -38,8 +38,8 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 
 .emotion-4 {
   font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
+  font-size: 20px;
+  line-height: 1.2;
   font-weight: 600;
   letter-spacing: 0;
   padding: 1px 0px;
@@ -50,7 +50,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.128125em;
 }
 
 .emotion-4::after {
@@ -58,7 +58,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 .emotion-5 {
@@ -238,8 +238,8 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 
 .emotion-5 {
   font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
+  font-size: 20px;
+  line-height: 1.2;
   font-weight: 600;
   letter-spacing: 0;
   padding: 1px 0px;
@@ -250,7 +250,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.128125em;
 }
 
 .emotion-5::after {
@@ -258,7 +258,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 .emotion-6 {
@@ -398,8 +398,8 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
 
 .emotion-4 {
   font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
+  font-size: 20px;
+  line-height: 1.2;
   font-weight: 600;
   letter-spacing: 0;
   padding: 1px 0px;
@@ -410,7 +410,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.128125em;
 }
 
 .emotion-4::after {
@@ -418,7 +418,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 .emotion-5 {
@@ -579,8 +579,8 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 
 .emotion-5 {
   font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
+  font-size: 20px;
+  line-height: 1.2;
   font-weight: 600;
   letter-spacing: 0;
   padding: 1px 0px;
@@ -591,7 +591,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.128125em;
 }
 
 .emotion-5::after {
@@ -599,7 +599,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 .emotion-6 {

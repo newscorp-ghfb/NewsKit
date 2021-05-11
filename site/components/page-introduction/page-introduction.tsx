@@ -11,7 +11,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
 }) => (
   <>
     <ComponentPageCell>
-      <Block spaceStack={{xs: 'space040', md: 'space050'}}>
+      <Block spaceStack={{xs: 'space060', md: 'space070'}}>
         <TextBlock
           stylePreset="inkBrand010"
           typographyPreset={{
@@ -21,7 +21,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           {type}
         </TextBlock>
       </Block>
-      <Block spaceStack={{xs: 'space040', md: 'space050'}}>
+      <Block spaceStack={{xs: 'space050', md: 'space070'}}>
         <TextBlock
           as="h1"
           stylePreset="inkContrast"
@@ -36,7 +36,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </Block>
     </ComponentPageCell>
     <ComponentPageCellCompact>
-      <Block spaceStack={{xs: 'space080', md: 'space060'}}>
+      <Block spaceStack={{xs: 'space070', md: 'space080'}}>
         <TextBlock
           stylePreset="inkBase"
           typographyPreset={{
@@ -49,7 +49,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </Block>
     </ComponentPageCellCompact>
     <ComponentPageCell>
-      <Block spaceStack={{xs: 'space080', md: 'space090'}}>
+      <Block spaceStack={{xs: 'space000', md: 'space030', lg: 'space010'}}>
         <Image loadingAspectRatio="16:9" alt="" {...hero} />
       </Block>
     </ComponentPageCell>

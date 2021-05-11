@@ -7,8 +7,8 @@ import {StyledSection} from './styled';
 import {Table} from '../../table';
 
 const features = {
-  options: {
-    title: 'Options',
+  variations: {
+    title: 'Variations',
     description: 'Relevant variations (style, size, orientation etc.)',
   },
   states: {
@@ -48,6 +48,11 @@ const features = {
     title: 'Available in UI kit',
     description: 'Included within Figma Web Gallery file.',
   },
+  design: {
+    title: 'Design specifications',
+    description:
+      'Detailed design specification including sizing, spacing and design tokens defined.',
+  },
   themes: {
     title: 'Themes',
     description: 'Displays correctly across light and dark themes.',
@@ -63,23 +68,23 @@ const columns = Object.keys(features) as ComplianceFeatures[];
 
 export const ComplianceSection: React.FC<ComplianceSectionProps> = props => (
   <>
-    <ComponentPageCell>
-      <StyledSection id="compliance" data-toc-indexed="Compliance">
-        {/* TODO: this Grid can be removed when the Cell is removed from
+    <StyledSection id="compliance" data-toc-indexed="Compliance">
+      {/* TODO: this Grid can be removed when the Cell is removed from
         SectionIntroduction */}
-        <Grid lgMargin="space000" xsRowGutter="space000">
-          <SectionIntroduction
-            title="Compliance"
-            cellProps={{
-              md: 12,
-              lg: 12,
-              mdOffset: 0,
-            }}
-          >
-            All of the components in the NewsKit design system go through a
-            comprehensive set of checks to ensure that we are producing
-            compliant and best practice components.
-          </SectionIntroduction>
+      <Grid lgMargin="space000" xsRowGutter="space000">
+        <SectionIntroduction
+          title="Compliance"
+          cellProps={{
+            md: 12,
+            lg: 12,
+            mdOffset: 0,
+          }}
+        >
+          All of the components in the NewsKit design system go through a
+          comprehensive set of checks to ensure that we are producing compliant
+          and best practice components.
+        </SectionIntroduction>
+        <ComponentPageCell>
           <Cell xs={12}>
             <Table
               columns={['Feature', 'Description', 'Status']}
@@ -90,9 +95,9 @@ export const ComplianceSection: React.FC<ComplianceSectionProps> = props => (
               }))}
             />
           </Cell>
-        </Grid>
-      </StyledSection>
-    </ComponentPageCell>
+        </ComponentPageCell>
+      </Grid>
+    </StyledSection>
     <ComponentPageCell>
       <Separator />
     </ComponentPageCell>

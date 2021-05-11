@@ -2,6 +2,13 @@
 
 exports[`Meta renders with mandatory props 1`] = `
 <DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 32px;
+}
+
+<div
+    class="emotion-0"
+  />
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 48px;
@@ -119,8 +126,8 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-6 {
   font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
   font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
@@ -131,7 +138,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4915178571428571em;
+  margin-bottom: -0.4121527777777778em;
 }
 
 .emotion-6::after {
@@ -139,7 +146,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6321428571428571em;
+  margin-top: -0.5527777777777778em;
 }
 
 .emotion-7 {
@@ -240,7 +247,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-13 {
-  margin-bottom: 4px;
+  padding: 4px;
 }
 
 .emotion-14 {
@@ -285,21 +292,9 @@ exports[`Meta renders with mandatory props 1`] = `
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .emotion-16 {
     margin-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-16 {
-    margin-right: 8px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-16 {
-    margin-right: 16px;
   }
 }
 
@@ -331,8 +326,8 @@ exports[`Meta renders with mandatory props 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-top: calc(-20px/2);
-  margin-bottom: calc(-20px/2);
+  margin-top: calc(-24px/2);
+  margin-bottom: calc(-24px/2);
 }
 
 .emotion-20 {
@@ -340,8 +335,8 @@ exports[`Meta renders with mandatory props 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: calc(20px/2);
-  margin-bottom: calc(20px/2);
+  margin-top: calc(24px/2);
+  margin-bottom: calc(24px/2);
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -505,7 +500,7 @@ exports[`Meta renders with mandatory props 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  min-height: 44px;
   width: 100%;
   padding: 8px 12px;
   cursor: default;
@@ -636,58 +631,51 @@ exports[`Meta renders with mandatory props 1`] = `
   }
 }
 
+.emotion-37 {
+  margin-bottom: 24px;
+}
+
+.emotion-38 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
 @media screen {
-  .emotion-37 {
+  .emotion-39 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-37 {
+  .emotion-39 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-37 {
+  .emotion-39 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-37 {
+  .emotion-39 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-37 {
+  .emotion-39 {
     display: none;
   }
 }
 
-.emotion-38 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
-}
-
-.emotion-39 {
+.emotion-41 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -700,12 +688,12 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-39 {
+  .emotion-41 {
     max-width: 100%;
   }
 }
 
-.emotion-40 {
+.emotion-42 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -715,7 +703,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-40 {
+  .emotion-42 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 50%;
@@ -726,17 +714,17 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-40 {
+  .emotion-42 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-55 {
+.emotion-57 {
   margin-right: 32px;
 }
 
-.emotion-56 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -757,19 +745,19 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-56:before,
-.emotion-56:after {
+.emotion-58:before,
+.emotion-58:after {
   content: '';
   display: block;
 }
 
-.emotion-66 {
+.emotion-68 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-67 {
+.emotion-69 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -787,36 +775,36 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-67 {
+  .emotion-69 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-67 {
+  .emotion-69 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-67 {
+  .emotion-69 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-67 {
+  .emotion-69 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-67 {
+  .emotion-69 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-68 {
+.emotion-70 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -826,7 +814,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen {
-  .emotion-68 {
+  .emotion-70 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -837,24 +825,10 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-68 {
+  .emotion-70 {
     padding: 0 12px;
     margin-top: 24px;
   }
-}
-
-.emotion-69 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-.emotion-70 {
-  margin-bottom: 24px;
 }
 
 <div
@@ -1019,18 +993,26 @@ exports[`Meta renders with mandatory props 1`] = `
           />
         </div>
       </div>
+      <div
+        class="emotion-37"
+      />
+      <hr
+        aria-hidden="true"
+        class="emotion-38"
+        data-testid="divider"
+      />
     </div>
     <div
-      class="emotion-37"
+      class="emotion-39"
     >
       <div
-        class="emotion-38"
+        class="emotion-19"
       >
         <div
-          class="emotion-39"
+          class="emotion-41"
         >
           <div
-            class="emotion-40"
+            class="emotion-42"
           >
             <div
               class="emotion-4"
@@ -1081,7 +1063,7 @@ exports[`Meta renders with mandatory props 1`] = `
             </div>
           </div>
           <div
-            class="emotion-40"
+            class="emotion-42"
           >
             <div
               class="emotion-3"
@@ -1092,10 +1074,10 @@ exports[`Meta renders with mandatory props 1`] = `
                 data-testid="divider"
               />
               <div
-                class="emotion-55"
+                class="emotion-57"
               />
               <div
-                class="emotion-56"
+                class="emotion-58"
               />
               <div
                 class="emotion-19"
@@ -1136,24 +1118,24 @@ exports[`Meta renders with mandatory props 1`] = `
           </div>
         </div>
         <div
-          class="emotion-39"
+          class="emotion-41"
         >
           <div
-            class="emotion-66"
+            class="emotion-68"
           >
             <div
-              class="emotion-67"
+              class="emotion-69"
             >
               <div
-                class="emotion-68"
+                class="emotion-70"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-69"
+                  class="emotion-38"
                   data-testid="divider"
                 />
                 <div
-                  class="emotion-70"
+                  class="emotion-37"
                 />
                 <div
                   class="emotion-29"
@@ -1197,14 +1179,14 @@ exports[`Meta renders with mandatory props 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-68"
+                class="emotion-70"
               >
                 <div
-                  class="emotion-70"
+                  class="emotion-37"
                 />
                 <hr
                   aria-hidden="true"
-                  class="emotion-69"
+                  class="emotion-38"
                   data-testid="divider"
                 />
               </div>
@@ -1214,26 +1196,33 @@ exports[`Meta renders with mandatory props 1`] = `
       </div>
     </div>
   </div>
+  @media screen and (max-width: 767px) {
   .emotion-0 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
+    margin-bottom: 0;
+  }
 }
 
-<hr
-    aria-hidden="true"
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-bottom: 64px;
+  }
+}
+
+<div
     class="emotion-0"
-    data-testid="divider"
   />
 </DocumentFragment>
 `;
 
 exports[`Meta renders with mandatory props and figma button 1`] = `
 <DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 32px;
+}
+
+<div
+    class="emotion-0"
+  />
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 48px;
@@ -1351,8 +1340,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-6 {
   font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
   font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
@@ -1363,7 +1352,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4915178571428571em;
+  margin-bottom: -0.4121527777777778em;
 }
 
 .emotion-6::after {
@@ -1371,7 +1360,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6321428571428571em;
+  margin-top: -0.5527777777777778em;
 }
 
 .emotion-7 {
@@ -1472,7 +1461,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-13 {
-  margin-bottom: 4px;
+  padding: 4px;
 }
 
 .emotion-14 {
@@ -1517,21 +1506,9 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .emotion-16 {
     margin-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-16 {
-    margin-right: 8px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-16 {
-    margin-right: 16px;
   }
 }
 
@@ -1563,8 +1540,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-top: calc(-20px/2);
-  margin-bottom: calc(-20px/2);
+  margin-top: calc(-24px/2);
+  margin-bottom: calc(-24px/2);
 }
 
 .emotion-20 {
@@ -1572,8 +1549,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: calc(20px/2);
-  margin-bottom: calc(20px/2);
+  margin-top: calc(24px/2);
+  margin-bottom: calc(24px/2);
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1737,7 +1714,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  min-height: 44px;
   width: 100%;
   padding: 8px 12px;
   cursor: default;
@@ -1868,58 +1845,51 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   }
 }
 
+.emotion-44 {
+  margin-bottom: 24px;
+}
+
+.emotion-45 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
 @media screen {
-  .emotion-44 {
+  .emotion-46 {
     display: block;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-44 {
+  .emotion-46 {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-44 {
+  .emotion-46 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-44 {
+  .emotion-46 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-44 {
+  .emotion-46 {
     display: none;
   }
 }
 
-.emotion-45 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
-}
-
-.emotion-46 {
+.emotion-48 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1932,12 +1902,12 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-46 {
+  .emotion-48 {
     max-width: 100%;
   }
 }
 
-.emotion-47 {
+.emotion-49 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -1947,7 +1917,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-47 {
+  .emotion-49 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 50%;
@@ -1958,17 +1928,17 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-47 {
+  .emotion-49 {
     padding: 0 12px;
     margin-top: 24px;
   }
 }
 
-.emotion-62 {
+.emotion-64 {
   margin-right: 32px;
 }
 
-.emotion-63 {
+.emotion-65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1989,19 +1959,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-63:before,
-.emotion-63:after {
+.emotion-65:before,
+.emotion-65:after {
   content: '';
   display: block;
 }
 
-.emotion-73 {
+.emotion-75 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-74 {
+.emotion-76 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2019,36 +1989,36 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-74 {
+  .emotion-76 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-74 {
+  .emotion-76 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-74 {
+  .emotion-76 {
     margin: -16px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-74 {
+  .emotion-76 {
     margin: -24px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-74 {
+  .emotion-76 {
     margin: -24px -12px 0 -12px;
   }
 }
 
-.emotion-75 {
+.emotion-77 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2058,7 +2028,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen {
-  .emotion-75 {
+  .emotion-77 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -2069,24 +2039,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-75 {
+  .emotion-77 {
     padding: 0 12px;
     margin-top: 24px;
   }
-}
-
-.emotion-76 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-.emotion-77 {
-  margin-bottom: 24px;
 }
 
 <div
@@ -2308,18 +2264,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
           </div>
         </div>
       </div>
+      <div
+        class="emotion-44"
+      />
+      <hr
+        aria-hidden="true"
+        class="emotion-45"
+        data-testid="divider"
+      />
     </div>
     <div
-      class="emotion-44"
+      class="emotion-46"
     >
       <div
-        class="emotion-45"
+        class="emotion-19"
       >
         <div
-          class="emotion-46"
+          class="emotion-48"
         >
           <div
-            class="emotion-47"
+            class="emotion-49"
           >
             <div
               class="emotion-4"
@@ -2370,7 +2334,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
             </div>
           </div>
           <div
-            class="emotion-47"
+            class="emotion-49"
           >
             <div
               class="emotion-3"
@@ -2381,10 +2345,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 data-testid="divider"
               />
               <div
-                class="emotion-62"
+                class="emotion-64"
               />
               <div
-                class="emotion-63"
+                class="emotion-65"
               />
               <div
                 class="emotion-19"
@@ -2425,24 +2389,24 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
           </div>
         </div>
         <div
-          class="emotion-46"
+          class="emotion-48"
         >
           <div
-            class="emotion-73"
+            class="emotion-75"
           >
             <div
-              class="emotion-74"
+              class="emotion-76"
             >
               <div
-                class="emotion-75"
+                class="emotion-77"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-76"
+                  class="emotion-45"
                   data-testid="divider"
                 />
                 <div
-                  class="emotion-77"
+                  class="emotion-44"
                 />
                 <div
                   class="emotion-29"
@@ -2486,7 +2450,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-75"
+                class="emotion-77"
               >
                 <div
                   class="emotion-29"
@@ -2545,11 +2509,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
                   </a>
                 </div>
                 <div
-                  class="emotion-77"
+                  class="emotion-44"
                 />
                 <hr
                   aria-hidden="true"
-                  class="emotion-76"
+                  class="emotion-45"
                   data-testid="divider"
                 />
               </div>
@@ -2559,20 +2523,20 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
       </div>
     </div>
   </div>
+  @media screen and (max-width: 767px) {
   .emotion-0 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
+    margin-bottom: 0;
+  }
 }
 
-<hr
-    aria-hidden="true"
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-bottom: 64px;
+  }
+}
+
+<div
     class="emotion-0"
-    data-testid="divider"
   />
 </DocumentFragment>
 `;

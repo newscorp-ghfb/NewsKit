@@ -2,7 +2,25 @@
 
 exports[`IntroductionSection renders section as expected 1`] = `
 <DocumentFragment>
+  @media screen and (max-width: 767px) {
   .emotion-0 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    margin-bottom: 40px;
+  }
+}
+
+.emotion-1 {
   margin-top: -24px;
   padding-top: 24px;
 }
@@ -14,15 +32,18 @@ exports[`IntroductionSection renders section as expected 1`] = `
 }"
     data-testid="Cell"
   >
-    <section
+    <div
       class="emotion-0"
+    />
+    <section
+      class="emotion-1"
       data-toc-indexed="Introduction"
       id="introduction"
     >
       <div
         data-comp="NewsKit Grid"
         data-props="{
-  \\"lgMargin\\": \\"space000\\",
+  \\"xsMargin\\": \\"space000\\",
   \\"xsRowGutter\\": \\"space000\\"
 }"
         data-testid="Grid"
@@ -37,6 +58,7 @@ exports[`IntroductionSection renders section as expected 1`] = `
           data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
+  \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"

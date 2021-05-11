@@ -5,7 +5,7 @@ import {MetaFlagStylePresets} from './types';
 export const Status: React.FC<{status?: string}> = ({status}) =>
   status ? (
     <Stack flow={Flow.VerticalLeft} spaceInline="space040">
-      <Headline overrides={{typographyPreset: 'utilityLabel010'}}>
+      <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
         Status
       </Headline>
       <Flag
@@ -14,7 +14,7 @@ export const Status: React.FC<{status?: string}> = ({status}) =>
           stylePreset: MetaFlagStylePresets.Supported,
         }}
       >
-        <Block spaceStack="space010">
+        <Block spaceInset="space010">
           <TextBlock typographyPreset="utilityLabel010">{status}</TextBlock>
         </Block>
       </Flag>

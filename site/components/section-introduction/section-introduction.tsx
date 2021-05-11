@@ -1,16 +1,15 @@
 import React from 'react';
-import {Block, TextBlock, TitleBar, Image} from 'newskit';
+import {Cell, Block, TextBlock, TitleBar, Image} from 'newskit';
 import {SectionIntroductionProps} from './types';
-import {ComponentPageCell, ComponentPageCellCompact} from '../layout-cells';
 
 export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   title,
   children,
-  cellProps,
+  image,
 }) => (
   <>
-    <ComponentPageCellCompact {...cellProps}>
-      <Block spaceStack="space060">
+    <Cell xs={12} mdOffset={1} md={10} lg={9} xl={7}>
+      <Block spaceStack={{xs: 'space050', md: 'space060'}}>
         <TitleBar
           headingAs="h2"
           overrides={{
@@ -19,7 +18,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
               stylePreset: 'inkContrast',
               typographyPreset: {
                 xs: 'editorialHeadline040',
-                md: 'editorialHeadline060',
+                md: 'editorialHeadline050',
               },
             },
           }}
@@ -28,7 +27,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
         </TitleBar>
       </Block>
       {children && (
-        <Block spaceStack="space070">
+        <Block spaceStack="space080">
           <TextBlock
             stylePreset="inkBase"
             typographyPreset="editorialSubheadline020"
@@ -37,13 +36,13 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           </TextBlock>
         </Block>
       )}
-    </ComponentPageCellCompact>
-    <ComponentPageCell>
+    </Cell>
+    <Cell xs={12} mdOffset={1} md={8} xl={7}>
       {image && (
         <Block spaceStack={{xs: 'space060', md: 'space070'}}>
           <Image src={image.src} alt={image.alt || ''} />
         </Block>
       )}
-    </ComponentPageCell>
+    </Cell>
   </>
 );

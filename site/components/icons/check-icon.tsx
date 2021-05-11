@@ -5,14 +5,14 @@ export const CheckIcon: React.FC<{size?: FlagProps['size']}> = ({size}) => (
   <Flag
     overrides={{
       stylePreset: 'checkIconContainer',
-      spaceInset: 'spaceInsetSquish000',
-      width: size === 'small' ? 'sizing050' : undefined,
-      height: size === 'small' ? 'sizing050' : undefined,
+      spaceInset: 'spaceInsetSquish010',
+      width: size === 'small' ? 'sizing050' : 'sizing060',
+      height: size === 'small' ? 'sizing050' : 'sizing060',
     }}
   >
     <IconOutlinedCheck
       overrides={{
-        size: size === 'small' ? undefined : 'iconSize030',
+        size: size === 'small' ? undefined : 'iconSize020',
         stylePreset: 'iconPositive',
       }}
     />

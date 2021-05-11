@@ -7,8 +7,16 @@ exports[`SEOSection renders section as expected 1`] = `
   padding-top: 24px;
 }
 
-.emotion-1 {
-  margin-bottom: 32px;
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    margin-bottom: 32px;
+  }
 }
 
 .emotion-2 {
@@ -64,8 +72,8 @@ exports[`SEOSection renders section as expected 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-4 {
     font-family: 'Poppins',sans-serif;
-    font-size: 40px;
-    line-height: 1.2;
+    font-size: 32px;
+    line-height: 1.25;
     font-weight: 700;
     letter-spacing: 0;
   }
@@ -75,7 +83,7 @@ exports[`SEOSection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.234375em;
+    margin-bottom: -0.259375em;
   }
 
   .emotion-4::after {
@@ -83,7 +91,7 @@ exports[`SEOSection renders section as expected 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.4em;
   }
 }
 
@@ -99,7 +107,7 @@ exports[`SEOSection renders section as expected 1`] = `
 }
 
 .emotion-6 {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .emotion-7 {
@@ -148,7 +156,7 @@ exports[`SEOSection renders section as expected 1`] = `
       <div
         data-comp="NewsKit Grid"
         data-props="{
-  \\"lgMargin\\": \\"space000\\",
+  \\"xsMargin\\": \\"space000\\",
   \\"xsRowGutter\\": \\"space000\\"
 }"
         data-testid="Grid"
@@ -157,8 +165,10 @@ exports[`SEOSection renders section as expected 1`] = `
           data-comp="NewsKit Cell"
           data-props="{
   \\"xs\\": 12,
-  \\"md\\": 8,
-  \\"mdOffset\\": 1
+  \\"mdOffset\\": 1,
+  \\"md\\": 10,
+  \\"lg\\": 9,
+  \\"xl\\": 7
 }"
           data-testid="Cell"
         >
@@ -197,9 +207,9 @@ exports[`SEOSection renders section as expected 1`] = `
           data-comp="NewsKit Cell"
           data-props="{
   \\"xs\\": 12,
-  \\"md\\": 10,
-  \\"xl\\": 8,
-  \\"mdOffset\\": 1
+  \\"mdOffset\\": 1,
+  \\"md\\": 8,
+  \\"xl\\": 7
 }"
           data-testid="Cell"
         />
@@ -245,6 +255,7 @@ exports[`SEOSection renders section as expected 1`] = `
     data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
+  \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"

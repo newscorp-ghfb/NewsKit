@@ -16,7 +16,7 @@ export const ComponentAPISection: React.FC<ComponentAPISectionProps> = ({
   <>
     <Cell xs={12}>
       <StyledSection id="component-api" data-toc-indexed="API">
-        <Grid lgMargin="space000" xsRowGutter="space000">
+        <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction title="API">{introduction}</SectionIntroduction>
           <ComponentAPI {...componentAPI} />
         </Grid>

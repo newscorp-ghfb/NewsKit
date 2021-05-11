@@ -66,7 +66,7 @@ export const UsageCard: React.FC<UsageCardProps> = ({
         <Block spaceStack="space040">
           <TextBlock
             stylePreset="inkBase"
-            typographyPreset="editorialParagraph010"
+            typographyPreset="editorialParagraph020"
           >
             {description}
           </TextBlock>

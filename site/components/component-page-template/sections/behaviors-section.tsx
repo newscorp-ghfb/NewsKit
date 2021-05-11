@@ -16,7 +16,7 @@ export const BehaviorsSection: React.FC<BehaviorsSectionProps> = ({
   <>
     <Cell xs={12}>
       <StyledSection id="behaviors" data-toc-indexed="Behaviours">
-        <Grid lgMargin="space000" xsRowGutter="space000">
+        <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction title="Behaviours">
             {introduction}
           </SectionIntroduction>

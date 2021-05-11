@@ -155,7 +155,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     Foundations
                   </Link>
                   <Link
-                    href="/components/button-new"
+                    href="/components/tabs-new"
                     overrides={{
                       stylePreset: 'linkTopNavigation',
                       typographyPreset: 'utilityButton020',

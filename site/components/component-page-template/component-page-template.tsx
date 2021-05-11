@@ -20,8 +20,8 @@ import {
 } from './sections';
 
 const WrapperWithPadding = styled.div`
-  padding-top: ${getSizingFromTheme('sizing060')};
-  padding-bottom: ${getSizingFromTheme('sizing080')};
+  padding-top: ${getSizingFromTheme('sizing090')};
+  padding-bottom: ${getSizingFromTheme('sizing090')};
 `;
 
 export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
@@ -42,7 +42,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
 }: ComponentPageTemplateProps) => (
   <Layout {...layoutProps} newPage>
     <WrapperWithPadding>
-      <Grid lgMargin="sizing000" xsRowGutter="sizing000">
+      <Grid xsMargin="space000" xsRowGutter="space000">
         <IntroductionSection pageIntroduction={pageIntroduction} meta={meta} />
         {interactiveDemo && <InteractiveDemoSection {...interactiveDemo} />}
         {anatomy && <AnatomySection {...anatomy} />}

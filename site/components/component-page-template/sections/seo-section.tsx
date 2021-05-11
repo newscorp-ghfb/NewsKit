@@ -19,7 +19,7 @@ export const SEOSection: React.FC<SEOSectionProps> = ({
   <>
     <Cell xs={12}>
       <StyledSection id="seo" data-toc-indexed="SEO">
-        <Grid lgMargin="space000" xsRowGutter="space000">
+        <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction title={seo.title}>
             {introduction}
           </SectionIntroduction>

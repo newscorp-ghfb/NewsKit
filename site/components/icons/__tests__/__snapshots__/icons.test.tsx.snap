@@ -10,6 +10,8 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-1 {
@@ -28,8 +30,9 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
-  padding: 0;
+  width: 32px;
+  height: 32px;
+  padding: 4px 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -99,8 +102,8 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
 }
 
 .emotion-4.emotion-4 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: #148F39;
 }
 
@@ -150,6 +153,8 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-1 {
@@ -168,7 +173,8 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   cursor: default;
   border: none;
@@ -239,8 +245,8 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
 }
 
 .emotion-4.emotion-4 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: #D23F2D;
 }
 

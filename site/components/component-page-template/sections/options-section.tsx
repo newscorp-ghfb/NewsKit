@@ -16,7 +16,7 @@ export const OptionsSection: React.FC<OptionsSectionProps> = ({
   <>
     <Cell xs={12}>
       <StyledSection id="options" data-toc-indexed="Options">
-        <Grid lgMargin="space000" xsRowGutter="space000">
+        <Grid xsMargin="space000" xsRowGutter="space000">
           <SectionIntroduction title="Options">
             {introduction}
           </SectionIntroduction>
@@ -24,7 +24,7 @@ export const OptionsSection: React.FC<OptionsSectionProps> = ({
             {...options}
             cardsLayout={{
               xs: 'vertical',
-              sm: 'horizontal',
+              sm: 'vertical',
               md: 'horizontal',
               lg: 'horizontal',
               xl: 'horizontal',

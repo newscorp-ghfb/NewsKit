@@ -6,14 +6,14 @@ export const CrossIcon: React.FC<{size?: FlagProps['size']}> = ({size}) => (
     size={size}
     overrides={{
       stylePreset: 'crossIconContainer',
-      spaceInset: 'spaceInsetSquish000',
-      width: size === 'small' ? 'sizing050' : undefined,
-      height: size === 'small' ? 'sizing050' : undefined,
+      spaceInset: 'spaceInset000',
+      width: size === 'small' ? 'sizing050' : 'sizing060',
+      height: size === 'small' ? 'sizing050' : 'sizing060',
     }}
   >
     <IconOutlinedClose
       overrides={{
-        size: size === 'small' ? undefined : 'iconSize030',
+        size: size === 'small' ? undefined : 'iconSize020',
         stylePreset: 'iconNegative',
       }}
     />

@@ -53,7 +53,7 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
         <Image src={media.src} alt="" />
       </Cell>
       <Cell xs={11} md={8} lg={6} mdOffset={1}>
-        <Block spaceStack={{xs: 'space060', md: 'space070'}}>
+        <Block spaceStack={{xs: 'space060', md: 'space090'}}>
           <TextBlock
             as="h1"
             stylePreset="inkContrast"
