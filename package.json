@@ -190,6 +190,7 @@
     "dequal": "^1.0.0",
     "react-focus-lock": "^2.5.0",
     "react-hook-form": "^6.10.1",
+    "react-hot-toast": "^1.0.2",
     "react-range": "^1.5.3"
   },
   "resolutions": {

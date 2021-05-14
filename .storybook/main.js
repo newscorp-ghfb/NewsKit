@@ -20,10 +20,13 @@ module.exports = {
   webpackFinal: async config => {
     // These dependencies are not transpiled so they do not work on IE11
     // that's why we need to exclude them  (include in transpilation)
-    config.module.rules[0].exclude = /node_modules\/(?!(yup|react-hook-form)\/).*/;
+    config.module.rules[0].exclude = /node_modules\/(?!(yup|react-hook-form|goober)\/).*/;
 
     return {
       ...config,
+      module: {
+        rules: [...config.module.rules],
+      },
       resolve: {
         ...config.resolve,
         alias: {

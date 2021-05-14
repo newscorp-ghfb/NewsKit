@@ -1,0 +1,1070 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast API render toast at bottom-center position 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="action"
+    type="button"
+  >
+    action
+  </button>
+  @keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.1);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.1);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0) scale(0.1);
+    -moz-transform: translate3d(0,100%,0) scale(0.1);
+    -ms-transform: translate3d(0,100%,0) scale(0.1);
+    transform: translate3d(0,100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0) scale(0.1);
+    -moz-transform: translate3d(0,100%,0) scale(0.1);
+    -ms-transform: translate3d(0,100%,0) scale(0.1);
+    transform: translate3d(0,100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  pointer-events: none;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+}
+
+.emotion-1 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-1>* {
+  pointer-events: initial;
+}
+
+.emotion-2 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-2>* {
+  pointer-events: none;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast API render toast at bottom-left position 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="action"
+    type="button"
+  >
+    action
+  </button>
+  @keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.1);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.1);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.1);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0) scale(0.1);
+    -moz-transform: translate3d(0,100%,0) scale(0.1);
+    -ms-transform: translate3d(0,100%,0) scale(0.1);
+    transform: translate3d(0,100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0) scale(0.1);
+    -moz-transform: translate3d(0,100%,0) scale(0.1);
+    -ms-transform: translate3d(0,100%,0) scale(0.1);
+    transform: translate3d(0,100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0) scale(0.1);
+    -moz-transform: translate3d(0,100%,0) scale(0.1);
+    -ms-transform: translate3d(0,100%,0) scale(0.1);
+    transform: translate3d(0,100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  pointer-events: none;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+}
+
+.emotion-1 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 8px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  bottom: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-1>* {
+  pointer-events: initial;
+}
+
+.emotion-2 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 8px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  bottom: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-2>* {
+  pointer-events: none;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast API render toast at bottom-right position 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="action"
+    type="button"
+  >
+    action
+  </button>
+  @keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.1);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,100%,0) scale(0.1);
+    -moz-transform: translate3d(0,100%,0) scale(0.1);
+    -ms-transform: translate3d(0,100%,0) scale(0.1);
+    transform: translate3d(0,100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  pointer-events: none;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+}
+
+.emotion-1 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 8px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  bottom: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-1>* {
+  pointer-events: initial;
+}
+
+.emotion-2 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 8px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  bottom: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-2>* {
+  pointer-events: none;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="bottom: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast API render toast at top-center position 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="action"
+    type="button"
+  >
+    action
+  </button>
+  @keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.1);
+    transform: translate3d(0, -100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.1);
+    transform: translate3d(0, -100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,-100%,0) scale(0.1);
+    -moz-transform: translate3d(0,-100%,0) scale(0.1);
+    -ms-transform: translate3d(0,-100%,0) scale(0.1);
+    transform: translate3d(0,-100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  pointer-events: none;
+  left: 10px;
+  right: 10px;
+  top: 20px;
+}
+
+.emotion-1 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-1>* {
+  pointer-events: initial;
+}
+
+.emotion-2 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-2>* {
+  pointer-events: none;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      style="top: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="top: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast API render toast at top-left position 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="action"
+    type="button"
+  >
+    action
+  </button>
+  @keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.1);
+    transform: translate3d(0, -100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.1);
+    transform: translate3d(0, -100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.1);
+    transform: translate3d(0, -100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,-100%,0) scale(0.1);
+    -moz-transform: translate3d(0,-100%,0) scale(0.1);
+    -ms-transform: translate3d(0,-100%,0) scale(0.1);
+    transform: translate3d(0,-100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,-100%,0) scale(0.1);
+    -moz-transform: translate3d(0,-100%,0) scale(0.1);
+    -ms-transform: translate3d(0,-100%,0) scale(0.1);
+    transform: translate3d(0,-100%,0) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  pointer-events: none;
+  left: 10px;
+  right: 10px;
+  top: 20px;
+}
+
+.emotion-1 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 8px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  top: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-1>* {
+  pointer-events: initial;
+}
+
+.emotion-2 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 8px;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  top: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-2>* {
+  pointer-events: none;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      style="top: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="top: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+    <div
+      class="emotion-2"
+      style="top: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast API render toast at top-right position 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="action"
+    type="button"
+  >
+    action
+  </button>
+  @keyframes animation-0 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.1);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.1);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.1);
+    transform: translate3d(0, -100%, 0) scale(0.1);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  pointer-events: none;
+  left: 10px;
+  right: 10px;
+  top: 20px;
+}
+
+.emotion-1 {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 8px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  top: 0;
+  transition-property: top,bottom;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+  animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-1>* {
+  pointer-events: initial;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      style="top: 0px;"
+    >
+      <div>
+        message
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
