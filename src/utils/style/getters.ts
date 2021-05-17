@@ -171,10 +171,10 @@ export const getFontSizingFromTheme = (
   return getFontSizing(fontSize, theme.fonts[lineHeightKey]);
 };
 
-export const getSpacingCssFromTheme = getXFromTheme('spacePresets');
-export const getMotionCssFromTheme = getXFromTheme('motions');
-export const getColorCssFromTheme = getXFromTheme('colors');
-export const getSizingCssFromTheme = getXFromTheme('sizing');
 export const getBorderCssFromTheme = getXFromTheme('borders');
-export const getShadowCssFromTheme = getXFromTheme('shadows');
+export const getColorCssFromTheme = getXFromTheme('colors');
+export const getMotionCssFromTheme = getXFromTheme('motions');
 export const getOverlayCssFromTheme = getXFromTheme('overlays');
+export const getShadowCssFromTheme = getXFromTheme('shadows');
+export const getSizingCssFromTheme = getXFromTheme('sizing');
+export const getSpacingCssFromTheme = getXFromTheme('spacePresets');
