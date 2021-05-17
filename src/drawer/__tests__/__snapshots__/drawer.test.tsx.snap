@@ -329,7 +329,7 @@ exports[`Drawer layout renders default left position 1`] = `
   left: 0;
   z-index: 70;
   cursor: pointer;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10,10,10,0.8);
 }
 
 <div
@@ -688,7 +688,7 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
   left: 0;
   z-index: 70;
   cursor: pointer;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10,10,10,0.8);
 }
 
 <div
@@ -1037,7 +1037,7 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
   left: 0;
   z-index: 70;
   cursor: pointer;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10,10,10,0.8);
 }
 
 <div
@@ -1675,7 +1675,7 @@ exports[`Drawer layout renders drawer without header 1`] = `
   left: 0;
   z-index: 70;
   cursor: pointer;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10,10,10,0.8);
 }
 
 <div
@@ -2012,7 +2012,7 @@ exports[`Drawer layout renders right position 1`] = `
   left: 0;
   z-index: 70;
   cursor: pointer;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10,10,10,0.8);
 }
 
 <div

@@ -9,13 +9,13 @@ export const overlays = {
   overlayGradientBaseHorizontal:
     'linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)',
 
-  overlayTintInverse010: '{{colors.whiteTint20}}',
-  overlayTintInverse020: '{{colors.whiteTint40}}',
-  overlayTintInverse030: '{{colors.whiteTint60}}',
-  overlayTintInverse040: '{{colors.whiteTint80}}',
+  overlayTintInverse010: '{{colors.whiteTint020}}',
+  overlayTintInverse020: '{{colors.whiteTint040}}',
+  overlayTintInverse030: '{{colors.whiteTint060}}',
+  overlayTintInverse040: '{{colors.whiteTint080}}',
 
-  overlayTintBase010: '{{colors.blackTint20}}',
-  overlayTintBase020: '{{colors.blackTint40}}',
-  overlayTintBase030: '{{colors.blackTint60}}',
-  overlayTintBase040: '{{colors.blackTint80}}',
+  overlayTintBase010: '{{colors.blackTint020}}',
+  overlayTintBase020: '{{colors.blackTint040}}',
+  overlayTintBase030: '{{colors.blackTint060}}',
+  overlayTintBase040: '{{colors.blackTint080}}',
 };
