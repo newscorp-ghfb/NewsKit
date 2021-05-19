@@ -924,6 +924,27 @@ Object {
       },
       "stylePreset": "titleBar",
     },
+    "toast": Object {
+      "content": Object {
+        "message": Object {
+          "stylePreset": "inkInverse",
+          "typographyPreset": "utilityBody010",
+        },
+      },
+      "icon": Object {
+        "spaceInline": "space030",
+      },
+      "maxWidth": Object {
+        "lg": "38%",
+        "md": "45%",
+        "sm": "60%",
+        "xl": "31%",
+        "xs": "90%",
+      },
+      "minHeight": "sizing080",
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastSolidNeutral",
+    },
     "unorderedList": Object {
       "content": Object {
         "stylePreset": "inkBase",
@@ -2817,6 +2838,13 @@ Object {
       "visited": Object {
         "color": "{{colors.interactiveVisited010}}",
         "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "toastSolidNeutral": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "volumeControlButtons": Object {

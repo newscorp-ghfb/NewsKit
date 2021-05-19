@@ -15,8 +15,8 @@ import {getVerticalPosition} from './utils';
 export const ToastProvider = ({
   position = 'bottom-center',
   autoHideDuration = 6000,
-  horizontalOffset = '16px',
-  verticalOffset = '16px',
+  horizontalOffset = 'space040',
+  verticalOffset = 'space040',
 }: ToastProviderProps) => {
   const {toasts, handlers} = useToaster({duration: autoHideDuration});
   const {startPause, endPause, calculateOffset, updateHeight} = handlers;
@@ -25,17 +25,19 @@ export const ToastProvider = ({
   // focus in and out are not supported by react
   // so we need to use the native way
   useEffect(() => {
+    const toastContainerElement = toastContainerRef.current;
+
     /* istanbul ignore else */
-    if (toastContainerRef.current) {
-      toastContainerRef.current.addEventListener('focusin', startPause);
-      toastContainerRef.current.addEventListener('focusout', endPause);
+    if (toastContainerElement) {
+      toastContainerElement.addEventListener('focusin', startPause);
+      toastContainerElement.addEventListener('focusout', endPause);
     }
 
     return () => {
       /* istanbul ignore else */
-      if (toastContainerRef.current) {
-        toastContainerRef.current.removeEventListener('focusin', startPause);
-        toastContainerRef.current.removeEventListener('focusout', endPause);
+      if (toastContainerElement) {
+        toastContainerElement.removeEventListener('focusin', startPause);
+        toastContainerElement.removeEventListener('focusout', endPause);
       }
     };
   }, [startPause, endPause]);

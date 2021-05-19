@@ -710,6 +710,27 @@ export const componentDefaults = {
       },
     },
   },
+  toast: {
+    stylePreset: 'toastSolidNeutral',
+    spaceInset: 'spaceInset030',
+    minHeight: 'sizing080',
+    maxWidth: {
+      xs: '90%',
+      sm: '60%',
+      md: '45%',
+      lg: '38%',
+      xl: '31%',
+    },
+    icon: {
+      spaceInline: 'space030',
+    },
+    content: {
+      message: {
+        stylePreset: 'inkInverse',
+        typographyPreset: 'utilityBody010',
+      },
+    },
+  },
   unorderedList: {
     spaceStack: 'space040',
     content: {

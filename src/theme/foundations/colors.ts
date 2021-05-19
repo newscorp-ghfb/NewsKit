@@ -164,7 +164,7 @@ export const colors = {
   interfaceBrand020: '{{colors.blue020}}',
   interfaceInformative010: '{{colors.teal070}}',
   interfaceInformative020: '{{colors.teal010}}',
-  interfaceNotice010: '{{colors.amber080}}',
+  interfaceNotice010: '{{colors.amber090}}',
   interfaceNotice020: '{{colors.amber010}}',
   interfaceNegative010: '{{colors.red070}}',
   interfaceNegative020: '{{colors.red010}}',

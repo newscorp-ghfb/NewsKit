@@ -1,37 +1,256 @@
 import React from 'react';
-import {styled} from '../../utils';
-import {toast, ToastProvider} from '..';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
+import {createTheme, compileTheme, ThemeProvider} from '../../theme';
+import {styled, withDefaultProps} from '../../utils';
+import {
+  IconFilledInfo,
+  IconFilledWarning,
+  IconFilledError,
+  IconFilledCheckCircle,
+} from '../../icons';
+import {toast, ToastProvider, Toast} from '..';
+import {Link} from '../../link';
 
-const ToastBase = styled.div`
+const CustomToast = styled.div`
   padding: 1em;
   border: 1px solid currentColor;
   max-width: 240px;
   background: #fff;
   box-sizing: border-box;
-`;
-
-const ToastSuccess = styled(ToastBase)`
-  color: green;
-`;
-const ToastError = styled(ToastBase)`
   color: red;
 `;
+
+const myCustomTheme = compileTheme(
+  createTheme({
+    name: 'toast-intents-theme',
+    overrides: {
+      stylePresets: {
+        toastSolidInformative: {
+          base: {
+            backgroundColor: '{{colors.interfaceInformative010}}',
+            borderRadius: '{{borders.borderRadiusRounded020}}',
+            iconColor: '{{colors.inkInverse}}',
+          },
+        },
+        toastSolidNotice: {
+          base: {
+            backgroundColor: '{{colors.interfaceNotice010}}',
+            borderRadius: '{{borders.borderRadiusRounded020}}',
+            iconColor: '{{colors.inkInverse}}',
+          },
+        },
+        toastSolidPositive: {
+          base: {
+            backgroundColor: '{{colors.interfacePositive010}}',
+            borderRadius: '{{borders.borderRadiusRounded020}}',
+            iconColor: '{{colors.inkInverse}}',
+          },
+        },
+        toastSolidNegative: {
+          base: {
+            backgroundColor: '{{colors.interfaceNegative010}}',
+            borderRadius: '{{borders.borderRadiusRounded020}}',
+            iconColor: '{{colors.inkInverse}}',
+          },
+        },
+        toastWithOverrides: {
+          base: {
+            backgroundColor: '#fdda9b',
+            borderRadius: '2px',
+            iconColor: 'red',
+          },
+        },
+      },
+    },
+  }),
+);
+
+const ToastInformative = withDefaultProps(Toast, {
+  icon: (
+    <IconFilledInfo
+      overrides={{
+        size: 'iconSize020',
+      }}
+    />
+  ),
+  overrides: {stylePreset: 'toastSolidInformative'},
+});
+
+const ToastNotice = withDefaultProps(Toast, {
+  icon: (
+    <IconFilledWarning
+      overrides={{
+        size: 'iconSize020',
+      }}
+    />
+  ),
+  overrides: {stylePreset: 'toastSolidNotice'},
+});
+
+const ToastPositive = withDefaultProps(Toast, {
+  icon: (
+    <IconFilledCheckCircle
+      overrides={{
+        size: 'iconSize020',
+      }}
+    />
+  ),
+  overrides: {stylePreset: 'toastSolidPositive'},
+});
+
+const ToastNegative = withDefaultProps(Toast, {
+  icon: (
+    <IconFilledError
+      overrides={{
+        size: 'iconSize020',
+      }}
+    />
+  ),
+  overrides: {stylePreset: 'toastSolidNegative'},
+});
+
+const toastLink = (
+  <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+    with link
+  </Link>
+);
 
 export default {
   title: 'toast',
   children: [
     {
+      storyName: 'toast-default',
+      storyFn: () => (
+        <ThemeProvider theme={myCustomTheme}>
+          <StorybookHeading>Toast</StorybookHeading>
+          <StorybookSubHeading>default</StorybookSubHeading>
+          <Toast>Short text</Toast>
+          <StorybookSubHeading>with long text</StorybookSubHeading>
+          <Toast>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Toast>
+          <StorybookSubHeading>with Icon</StorybookSubHeading>
+          <Toast
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+          >
+            Short text
+          </Toast>
+          <StorybookSubHeading>with Icon and long text</StorybookSubHeading>
+          <Toast
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Toast>
+          <StorybookSubHeading>with link</StorybookSubHeading>
+          <Toast
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt {toastLink} ut labore et dolore magna
+            aliqua.
+          </Toast>
+        </ThemeProvider>
+      ),
+    },
+
+    {
+      storyName: 'toast-intents',
+      storyFn: () => (
+        <ThemeProvider theme={myCustomTheme}>
+          <StorybookHeading>Toast with Intents</StorybookHeading>
+          <StorybookSubHeading>Neutral ( default )</StorybookSubHeading>
+          <Toast>Neutral message {toastLink}</Toast>
+
+          <StorybookSubHeading>Informative</StorybookSubHeading>
+          <ToastInformative>Informative message {toastLink}</ToastInformative>
+
+          <StorybookSubHeading>Notice</StorybookSubHeading>
+          <ToastNotice>Notice message {toastLink}</ToastNotice>
+
+          <StorybookSubHeading>Positive</StorybookSubHeading>
+          <ToastPositive>Positive Message {toastLink}</ToastPositive>
+
+          <StorybookSubHeading>Negative</StorybookSubHeading>
+          <ToastNegative>Negative message {toastLink}</ToastNegative>
+        </ThemeProvider>
+      ),
+    },
+    {
+      storyName: 'toast-overrides',
+      storyFn: () => (
+        <ThemeProvider theme={myCustomTheme}>
+          <StorybookHeading>Toast with overrides</StorybookHeading>
+          <Toast
+            role="alert"
+            aria-live="assertive"
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize030',
+                }}
+              />
+            }
+            overrides={{
+              spaceInset: '20px',
+              stylePreset: 'toastWithOverrides',
+              icon: {
+                spaceInline: 'space040',
+              },
+              content: {
+                message: {
+                  typographyPreset: 'utilityBody020',
+                  stylePreset: 'ink',
+                },
+              },
+            }}
+          >
+            Short text
+          </Toast>
+        </ThemeProvider>
+      ),
+    },
+    {
       storyName: 'toast-api',
+      parameters: {
+        eyes: {include: false},
+      },
       storyFn: () => {
+        const notifyNeutral = () =>
+          toast(<Toast>Your account has been updated</Toast>, {
+            autoHideDuration: 10000,
+          });
         const notifySuccess = () =>
           toast(
-            <ToastSuccess data-testid="alert-success">
-              Success message
-            </ToastSuccess>,
+            <ToastPositive data-testid="alert-success">
+              Password successfully updated
+            </ToastPositive>,
           );
         const notifyError = () =>
           toast(({onClose}) => (
-            <ToastError data-testid="alert-error">
+            <CustomToast data-testid="alert-error">
               Error message{' '}
               <button
                 type="button"
@@ -40,11 +259,15 @@ export default {
               >
                 X
               </button>
-            </ToastError>
+            </CustomToast>
           ));
 
         return (
-          <React.Fragment>
+          <ThemeProvider theme={myCustomTheme}>
+            <StorybookHeading>Toast API</StorybookHeading>
+            <button type="button" onClick={notifyNeutral}>
+              Neutral
+            </button>
             <button
               type="button"
               data-testid="action-success"
@@ -66,7 +289,7 @@ export default {
               horizontalOffset="10px"
               position="bottom-center"
             />
-          </React.Fragment>
+          </ThemeProvider>
         );
       },
     },

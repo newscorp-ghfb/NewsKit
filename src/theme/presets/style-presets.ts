@@ -1509,3 +1509,13 @@ stylePresets.cardContainer = {
     backgroundColor: '{{colors.interface010}}',
   },
 };
+
+// Toast
+
+stylePresets.toastSolidNeutral = {
+  base: {
+    backgroundColor: '{{colors.interfaceNeutral010}}',
+    borderRadius: '{{borders.borderRadiusRounded020}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};

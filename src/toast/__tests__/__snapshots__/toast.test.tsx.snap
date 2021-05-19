@@ -1068,3 +1068,586 @@ exports[`Toast API render toast at top-right position 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`Toast Component renders with content as react element 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #535353;
+  border-radius: 8px;
+  min-height: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    max-width: 38%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    max-width: 31%;
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 svg {
+  fill: #ffffff;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+}
+
+<div
+    aria-live="polite"
+    class="emotion-0"
+    data-testid="toast-container"
+    role="status"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <p
+          class="emotion-3"
+        >
+          toast message
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast Component renders with content as string and link 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #535353;
+  border-radius: 8px;
+  min-height: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    max-width: 38%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    max-width: 31%;
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 svg {
+  fill: #ffffff;
+}
+
+.emotion-3 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  fill: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #02509b;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #01396e;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-3:visited:not(:disabled) {
+  color: #7547a3;
+}
+
+.emotion-3:visited:not(:disabled) svg {
+  fill: #7547a3;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
+}
+
+<div
+    aria-live="polite"
+    class="emotion-0"
+    data-testid="toast-container"
+    role="status"
+  >
+    <div
+      class="emotion-1"
+    >
+      <p
+        class="emotion-2"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt
+        <a
+          class="emotion-3"
+          href="/"
+        >
+          <span
+            class="emotion-4"
+          >
+            <span
+              class="emotion-5"
+            >
+              NewsKit Link
+            </span>
+          </span>
+        </a>
+        ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast Component renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #535353;
+  border-radius: 8px;
+  min-height: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    max-width: 38%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    max-width: 31%;
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 svg {
+  fill: #ffffff;
+}
+
+<div
+    aria-live="polite"
+    class="emotion-0"
+    data-testid="toast-container"
+    role="status"
+  >
+    <div
+      class="emotion-1"
+    >
+      <p
+        class="emotion-2"
+      >
+        toast message
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toast Component renders with icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #535353;
+  border-radius: 8px;
+  min-height: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-0 {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-0 {
+    max-width: 38%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    max-width: 31%;
+  }
+}
+
+.emotion-1 {
+  margin-right: 12px;
+}
+
+.emotion-1 svg {
+  display: block;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-5 svg {
+  fill: #ffffff;
+}
+
+<div
+    aria-live="polite"
+    class="emotion-0"
+    data-testid="toast-container"
+    role="status"
+  >
+    <div
+      class="emotion-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <p
+        class="emotion-5"
+      >
+        toast message
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

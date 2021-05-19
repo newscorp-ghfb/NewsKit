@@ -1,11 +1,16 @@
 import {keyframes} from '@emotion/react';
+import {TextBlock} from '../text-block';
 import {
   getSpacingCssFromTheme,
   getMotionCssFromTheme,
   styled,
   MQ,
+  getStylePreset,
+  getResponsiveSize,
+  getTypographyPreset,
+  getResponsiveSpace,
 } from '../utils/style';
-import {ToastProviderProps, ToastPosition} from './types';
+import {ToastProviderProps, ToastPosition, ToastProps} from './types';
 import {
   getHorizontalPosition,
   getVerticalPosition,
@@ -74,5 +79,41 @@ export const StyledToastBar = styled.div<{
   > * {
     // allow events to all direct children
     pointer-events: ${({visible}) => (visible ? 'initial' : 'none')};
+  }
+`;
+
+export const StyledToastContainer = styled.div<ToastProps>`
+  ${getStylePreset('toast', '')};
+  ${getResponsiveSize('width', 'toast', '', 'width')}
+  ${getResponsiveSize('minWidth', 'toast', '', 'minWidth')}
+  ${getResponsiveSize('maxWidth', 'toast', '', 'maxWidth')}
+  ${getResponsiveSize('minHeight', 'toast', '', 'minHeight')}
+  ${getResponsiveSpace('padding', 'toast', '', 'spaceInset')}
+  box-sizing: border-box;
+  display: inline-flex;
+`;
+
+export const StyledContentContainer = styled.div<Pick<ToastProps, 'overrides'>>`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const StyledMessageContainer = styled(TextBlock)<
+  Pick<ToastProps, 'overrides'>
+>`
+  ${getTypographyPreset('toast.content.message', 'content.message', {
+    withCrop: true,
+  })};
+
+  ${getStylePreset('toast.content.message', 'content.message')};
+`;
+
+export const StyledIconContainer = styled.div<Pick<ToastProps, 'overrides'>>`
+  ${getResponsiveSpace('marginRight', 'toast.icon', 'icon', 'spaceInline')}
+
+  // clean inline space
+  svg {
+    display: block;
   }
 `;

@@ -1,8 +1,21 @@
 import React from 'react';
 import {fireEvent, waitForElementToBeRemoved} from '@testing-library/react';
 import hotToast from 'react-hot-toast';
-import {ToastProvider, ToastProviderProps, ToastPosition, toast} from '..';
-import {renderWithTheme} from '../../test/test-utils';
+import {
+  ToastProvider,
+  ToastProviderProps,
+  ToastPosition,
+  toast,
+  Toast,
+  ToastProps,
+} from '..';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
+import {IconFilledWarning} from '../../icons';
+import {TextBlock} from '../../text-block';
+import {Link} from '../../link';
 
 const ToastExample = ({
   action = () => null,
@@ -22,7 +35,46 @@ const ToastExample = ({
 
 describe('Toast', () => {
   describe('Component', () => {
-    // TODO in other PR
+    const toastMessage = 'toast message';
+    test('renders with default props', () => {
+      const props: ToastProps = {
+        children: toastMessage,
+      };
+      const fragment = renderToFragmentWithTheme(Toast, props) as any;
+
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with icon', () => {
+      const props: ToastProps = {
+        children: toastMessage,
+        icon: <IconFilledWarning overrides={{size: 'iconSize020'}} />,
+      };
+      const fragment = renderToFragmentWithTheme(Toast, props) as any;
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with content as react element', () => {
+      const props: ToastProps = {
+        children: <TextBlock>{toastMessage}</TextBlock>,
+      };
+      const fragment = renderToFragmentWithTheme(Toast, props) as any;
+
+      expect(fragment).toMatchSnapshot();
+    });
+    test('renders with content as string and link', () => {
+      const props: ToastProps = {
+        children: [
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt`,
+          <Link href="/">NewsKit Link</Link>,
+          `ut labore et dolore magna aliqua.`,
+        ],
+      };
+      const fragment = renderToFragmentWithTheme(Toast, props) as any;
+
+      expect(fragment).toMatchSnapshot();
+    });
   });
 
   describe('API', () => {

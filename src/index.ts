@@ -33,6 +33,7 @@ export * from './tabs';
 export * from './tag';
 export * from './tealium';
 export * from './text-block';
+export * from './toast';
 export * from './text-input';
 export * from './theme';
 export * from './title-bar';

@@ -131,7 +131,7 @@ Object {
     "interfaceNegative010": "#d20600",
     "interfaceNegative020": "#ffe6e5",
     "interfaceNeutral010": "#535353",
-    "interfaceNotice010": "#ff7200",
+    "interfaceNotice010": "#ff6000",
     "interfaceNotice020": "#ffeecf",
     "interfacePositive010": "#0a782a",
     "interfacePositive020": "#e6faeb",
@@ -917,6 +917,27 @@ Object {
         "xs": "spaceInsetSquish030",
       },
       "stylePreset": "titleBar",
+    },
+    "toast": Object {
+      "content": Object {
+        "message": Object {
+          "stylePreset": "inkInverse",
+          "typographyPreset": "utilityBody010",
+        },
+      },
+      "icon": Object {
+        "spaceInline": "space030",
+      },
+      "maxWidth": Object {
+        "lg": "38%",
+        "md": "45%",
+        "sm": "60%",
+        "xl": "31%",
+        "xs": "90%",
+      },
+      "minHeight": "sizing080",
+      "spaceInset": "spaceInset030",
+      "stylePreset": "toastSolidNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -2899,6 +2920,13 @@ Object {
       "visited": Object {
         "color": "#7547a3",
         "iconColor": "#7547a3",
+      },
+    },
+    "toastSolidNeutral": Object {
+      "base": Object {
+        "backgroundColor": "#535353",
+        "borderRadius": "8px",
+        "iconColor": "#ffffff",
       },
     },
     "uppercaseInkBase": Object {
