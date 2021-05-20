@@ -33,8 +33,14 @@ export const createInitState = (
   mqPerBreakpoint: MediaQueries,
 ): BreakpointState =>
   Object.entries(mqPerBreakpoint).reduce((state, [breakpointKey, mqString]) => {
-    const mql = window.matchMedia(mqString);
-    return {...state, [breakpointKey]: mql.matches};
+    /* istanbul ignore else */
+    if (typeof window !== 'undefined') {
+      const mql = window.matchMedia(mqString);
+      return {...state, [breakpointKey]: mql.matches};
+      // eslint-disable-next-line no-else-return
+    } else {
+      return state;
+    }
   }, {} as BreakpointState);
 
 export const getCurrentBreakpointKey = (

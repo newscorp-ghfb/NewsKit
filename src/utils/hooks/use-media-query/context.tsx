@@ -40,25 +40,28 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
       mqHandler: (event: MediaQueryListEvent) => void;
     }[] = [];
 
-    Object.entries(mqPerBreakpoint).forEach(([breakpointKey, mqString]) => {
-      const mqList = window.matchMedia(mqString);
-      const mqHandler = (event: MediaQueryListEvent) => {
-        setBreakpointState(prev => {
-          const newState = {
-            ...prev,
-            [breakpointKey]: event.matches,
-          };
-          return newState;
+    /* istanbul ignore else */
+    if (typeof window !== 'undefined') {
+      Object.entries(mqPerBreakpoint).forEach(([breakpointKey, mqString]) => {
+        const mqList = window.matchMedia(mqString);
+        const mqHandler = (event: MediaQueryListEvent) => {
+          setBreakpointState(prev => {
+            const newState = {
+              ...prev,
+              [breakpointKey]: event.matches,
+            };
+            return newState;
+          });
+        };
+
+        addMQEventListener(mqList, mqHandler);
+
+        mqListenersRegistry.push({
+          mqList,
+          mqHandler,
         });
-      };
-
-      addMQEventListener(mqList, mqHandler);
-
-      mqListenersRegistry.push({
-        mqList,
-        mqHandler,
       });
-    });
+    }
 
     return () => {
       mqListenersRegistry.forEach(({mqList, mqHandler}) => {
