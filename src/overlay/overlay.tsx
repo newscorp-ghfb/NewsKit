@@ -1,8 +1,15 @@
 import React from 'react';
+import {CSSTransition} from 'react-transition-group';
 import {useLockBodyScroll} from '../utils/hooks';
-import {styled, getStylePreset, MQ} from '../utils/style';
+import {
+  styled,
+  getStylePreset,
+  MQ,
+  getMotionCssFromTheme,
+} from '../utils/style';
 
 interface OverlayProps {
+  open: boolean;
   onClick?: () => void;
   overrides?: {
     stylePreset?: MQ<string>;
@@ -19,10 +26,41 @@ const StyledOverlay = styled.div<Pick<OverlayProps, 'overrides'>>`
   z-index: 70;
   cursor: pointer;
   ${getStylePreset('overlay', '')}
+
+  &.nk-overlay-enter {
+    opacity: 0;
+  }
+  &.nk-overlay-enter-active {
+    opacity: 1;
+
+    transition-property: opacity;
+    ${getMotionCssFromTheme('transitionDuration', 'motionDuration010')}
+  }
+  &.nk-overlay-exit {
+    opacity: 1;
+  }
+  &.nk-overlay-exit-active {
+    opacity: 0;
+
+    transition-property: opacity;
+    ${getMotionCssFromTheme('transitionDuration', 'motionDuration010')}
+  }
 `;
 
-export const Overlay: React.FC<OverlayProps> = props => {
+const BaseOverlay: React.FC<Omit<OverlayProps, 'open'>> = props => {
   useLockBodyScroll();
 
   return <StyledOverlay data-testid="overlay" {...props} />;
 };
+
+export const Overlay: React.FC<OverlayProps> = ({open, ...props}) => (
+  <CSSTransition
+    in={open}
+    timeout={1000}
+    classNames="nk-overlay"
+    mountOnEnter
+    unmountOnExit
+  >
+    <BaseOverlay {...props} />
+  </CSSTransition>
+);

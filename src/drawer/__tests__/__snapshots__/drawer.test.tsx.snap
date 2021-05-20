@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Drawer layout renders closed drawer 1`] = `
+exports[`Drawer layout renders closed drawer visually hidden but remains in the DOM tree 1`] = `
 <DocumentFragment>
   <div
     data-focus-guard="true"
@@ -18,17 +18,25 @@ exports[`Drawer layout renders closed drawer 1`] = `
   top: 0;
   left: 0;
   z-index: 80;
-  display: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
 }
 
 @media screen and (max-width: 479px) {
@@ -61,6 +69,133 @@ exports[`Drawer layout renders closed drawer 1`] = `
   }
 }
 
+.emotion-0.nk-drawer-enter,
+.emotion-0.nk-drawer-exit-done {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-0.nk-drawer-enter-done,
+.emotion-0.nk-drawer-exit {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.emotion-0.nk-drawer-exit-active {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter,
+  .emotion-0.nk-drawer-exit-done {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-0.nk-drawer-enter-done,
+  .emotion-0.nk-drawer-exit {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .emotion-0.nk-drawer-exit-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   box-sizing: border-box;
   min-height: 48px;
@@ -89,7 +224,8 @@ exports[`Drawer layout renders closed drawer 1`] = `
 }
 
 .emotion-3 {
-  padding: 8px;
+  box-sizing: border-box;
+  margin: 8px;
   width: 48px;
   height: 48px;
   margin-right: auto;
@@ -114,6 +250,7 @@ exports[`Drawer layout renders closed drawer 1`] = `
 }
 
 .emotion-6 {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -150,6 +287,7 @@ exports[`Drawer layout renders closed drawer 1`] = `
   text-decoration: none;
   width: 48px;
   height: 48px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -332,6 +470,26 @@ exports[`Drawer layout renders default left position 1`] = `
   background-color: rgba(10,10,10,0.8);
 }
 
+.emotion-0.nk-overlay-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-overlay-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
+.emotion-0.nk-overlay-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-overlay-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
 <div
     class="emotion-0"
     data-testid="overlay"
@@ -352,20 +510,25 @@ exports[`Drawer layout renders default left position 1`] = `
   top: 0;
   left: 0;
   z-index: 80;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
 }
 
 @media screen and (max-width: 479px) {
@@ -398,6 +561,133 @@ exports[`Drawer layout renders default left position 1`] = `
   }
 }
 
+.emotion-0.nk-drawer-enter,
+.emotion-0.nk-drawer-exit-done {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-0.nk-drawer-enter-done,
+.emotion-0.nk-drawer-exit {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.emotion-0.nk-drawer-exit-active {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter,
+  .emotion-0.nk-drawer-exit-done {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-0.nk-drawer-enter-done,
+  .emotion-0.nk-drawer-exit {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .emotion-0.nk-drawer-exit-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   box-sizing: border-box;
   min-height: 48px;
@@ -426,6 +716,7 @@ exports[`Drawer layout renders default left position 1`] = `
 }
 
 .emotion-3 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -434,7 +725,6 @@ exports[`Drawer layout renders default left position 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
   padding: 16px 24px;
 }
 
@@ -444,7 +734,8 @@ exports[`Drawer layout renders default left position 1`] = `
 }
 
 .emotion-5 {
-  padding: 8px;
+  box-sizing: border-box;
+  margin: 8px;
   width: 48px;
   height: 48px;
   margin-right: auto;
@@ -464,6 +755,7 @@ exports[`Drawer layout renders default left position 1`] = `
 }
 
 .emotion-8 {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -500,6 +792,7 @@ exports[`Drawer layout renders default left position 1`] = `
   text-decoration: none;
   width: 48px;
   height: 48px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -593,7 +886,7 @@ exports[`Drawer layout renders default left position 1`] = `
     <div
       aria-label="drawer"
       aria-modal="true"
-      class="emotion-0"
+      class="nk-drawer-enter-done emotion-0"
       data-testid="drawer"
       role="dialog"
     >
@@ -691,6 +984,26 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
   background-color: rgba(10,10,10,0.8);
 }
 
+.emotion-0.nk-overlay-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-overlay-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
+.emotion-0.nk-overlay-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-overlay-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
 <div
     class="emotion-0"
     data-testid="overlay"
@@ -711,20 +1024,25 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
   top: 0;
   left: 0;
   z-index: 80;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
 }
 
 @media screen and (max-width: 479px) {
@@ -757,6 +1075,133 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
   }
 }
 
+.emotion-0.nk-drawer-enter,
+.emotion-0.nk-drawer-exit-done {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-0.nk-drawer-enter-done,
+.emotion-0.nk-drawer-exit {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.emotion-0.nk-drawer-exit-active {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter,
+  .emotion-0.nk-drawer-exit-done {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-0.nk-drawer-enter-done,
+  .emotion-0.nk-drawer-exit {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .emotion-0.nk-drawer-exit-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   box-sizing: border-box;
   min-height: 48px;
@@ -785,6 +1230,7 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-3 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -793,12 +1239,12 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
   padding: 16px 24px;
 }
 
 .emotion-4 {
-  padding: 8px;
+  box-sizing: border-box;
+  margin: 8px;
   width: 48px;
   height: 48px;
   margin-right: auto;
@@ -818,6 +1264,7 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-6 {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -854,6 +1301,7 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
   text-decoration: none;
   width: 48px;
   height: 48px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -948,7 +1396,7 @@ exports[`Drawer layout renders drawer with aria-ariaLabelledby attribute 1`] = `
       aria-label="drawer"
       aria-labelledby="headerLabel"
       aria-modal="true"
-      class="emotion-0"
+      class="nk-drawer-enter-done emotion-0"
       data-testid="drawer"
       role="dialog"
     >
@@ -1040,6 +1488,26 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
   background-color: rgba(10,10,10,0.8);
 }
 
+.emotion-0.nk-overlay-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-overlay-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
+.emotion-0.nk-overlay-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-overlay-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
 <div
     class="emotion-0"
     data-testid="overlay"
@@ -1060,20 +1528,25 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
   top: 0;
   left: 0;
   z-index: 80;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
 }
 
 @media screen and (max-width: 479px) {
@@ -1106,6 +1579,133 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
   }
 }
 
+.emotion-0.nk-drawer-enter,
+.emotion-0.nk-drawer-exit-done {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-0.nk-drawer-enter-done,
+.emotion-0.nk-drawer-exit {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.emotion-0.nk-drawer-exit-active {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter,
+  .emotion-0.nk-drawer-exit-done {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-0.nk-drawer-enter-done,
+  .emotion-0.nk-drawer-exit {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .emotion-0.nk-drawer-exit-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   box-sizing: border-box;
   min-height: 48px;
@@ -1134,7 +1734,8 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
 }
 
 .emotion-3 {
-  padding: 8px;
+  box-sizing: border-box;
+  margin: 8px;
   width: 48px;
   height: 48px;
   margin-right: auto;
@@ -1154,6 +1755,7 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
 }
 
 .emotion-5 {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -1190,6 +1792,7 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
   text-decoration: none;
   width: 48px;
   height: 48px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1284,7 +1887,7 @@ exports[`Drawer layout renders drawer with aria-describedby attribute 1`] = `
       aria-describedby="description purpose"
       aria-label="drawer"
       aria-modal="true"
-      class="emotion-0"
+      class="nk-drawer-enter-done emotion-0"
       data-testid="drawer"
       role="dialog"
     >
@@ -1378,6 +1981,26 @@ exports[`Drawer layout renders drawer with overrides 1`] = `
   background-color: #ffeecf;
 }
 
+.emotion-0.nk-overlay-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-overlay-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
+.emotion-0.nk-overlay-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-overlay-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
 <div
     class="emotion-0"
     data-testid="overlay"
@@ -1398,20 +2021,152 @@ exports[`Drawer layout renders drawer with overrides 1`] = `
   top: 0;
   left: 0;
   z-index: 80;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 50%;
   max-width: 40%;
   min-width: 200px;
   height: 100%;
   background-color: #e6faeb;
   box-shadow: 0px 0px 16px 14px rgba(169,183,172,0.9);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter,
+.emotion-0.nk-drawer-exit-done {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-0.nk-drawer-enter-done,
+.emotion-0.nk-drawer-exit {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.emotion-0.nk-drawer-exit-active {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter,
+  .emotion-0.nk-drawer-exit-done {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-0.nk-drawer-enter-done,
+  .emotion-0.nk-drawer-exit {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .emotion-0.nk-drawer-exit-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-1 {
@@ -1446,7 +2201,8 @@ exports[`Drawer layout renders drawer with overrides 1`] = `
 }
 
 .emotion-3 {
-  padding: 8px;
+  box-sizing: border-box;
+  margin: 8px;
   width: 48px;
   height: 48px;
   margin-right: auto;
@@ -1471,6 +2227,7 @@ exports[`Drawer layout renders drawer with overrides 1`] = `
 }
 
 .emotion-6 {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -1507,6 +2264,7 @@ exports[`Drawer layout renders drawer with overrides 1`] = `
   text-decoration: none;
   width: 48px;
   height: 48px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1589,7 +2347,7 @@ exports[`Drawer layout renders drawer with overrides 1`] = `
     <div
       aria-label="drawer"
       aria-modal="true"
-      class="emotion-0"
+      class="nk-drawer-enter-done emotion-0"
       data-testid="drawer"
       role="dialog"
     >
@@ -1678,6 +2436,26 @@ exports[`Drawer layout renders drawer without header 1`] = `
   background-color: rgba(10,10,10,0.8);
 }
 
+.emotion-0.nk-overlay-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-overlay-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
+.emotion-0.nk-overlay-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-overlay-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
 <div
     class="emotion-0"
     data-testid="overlay"
@@ -1698,20 +2476,25 @@ exports[`Drawer layout renders drawer without header 1`] = `
   top: 0;
   left: 0;
   z-index: 80;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
 }
 
 @media screen and (max-width: 479px) {
@@ -1744,6 +2527,133 @@ exports[`Drawer layout renders drawer without header 1`] = `
   }
 }
 
+.emotion-0.nk-drawer-enter,
+.emotion-0.nk-drawer-exit-done {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-0.nk-drawer-enter-done,
+.emotion-0.nk-drawer-exit {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.emotion-0.nk-drawer-exit-active {
+  -webkit-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            -100%,
+            0,
+            0
+          );
+  visibility: hidden;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter,
+  .emotion-0.nk-drawer-exit-done {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-0.nk-drawer-enter-done,
+  .emotion-0.nk-drawer-exit {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .emotion-0.nk-drawer-exit-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   box-sizing: border-box;
   min-height: 48px;
@@ -1772,7 +2682,8 @@ exports[`Drawer layout renders drawer without header 1`] = `
 }
 
 .emotion-3 {
-  padding: 8px;
+  box-sizing: border-box;
+  margin: 8px;
   width: 48px;
   height: 48px;
   margin-right: auto;
@@ -1797,6 +2708,7 @@ exports[`Drawer layout renders drawer without header 1`] = `
 }
 
 .emotion-6 {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -1833,6 +2745,7 @@ exports[`Drawer layout renders drawer without header 1`] = `
   text-decoration: none;
   width: 48px;
   height: 48px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1926,7 +2839,7 @@ exports[`Drawer layout renders drawer without header 1`] = `
     <div
       aria-label="drawer"
       aria-modal="true"
-      class="emotion-0"
+      class="nk-drawer-enter-done emotion-0"
       data-testid="drawer"
       role="dialog"
     >
@@ -2015,6 +2928,26 @@ exports[`Drawer layout renders right position 1`] = `
   background-color: rgba(10,10,10,0.8);
 }
 
+.emotion-0.nk-overlay-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-overlay-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
+.emotion-0.nk-overlay-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-overlay-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
 <div
     class="emotion-0"
     data-testid="overlay"
@@ -2035,20 +2968,25 @@ exports[`Drawer layout renders right position 1`] = `
   top: 0;
   right: 0;
   z-index: 80;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  visibility: hidden;
 }
 
 @media screen and (max-width: 479px) {
@@ -2081,6 +3019,133 @@ exports[`Drawer layout renders right position 1`] = `
   }
 }
 
+.emotion-0.nk-drawer-enter,
+.emotion-0.nk-drawer-exit-done {
+  -webkit-transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  visibility: hidden;
+}
+
+.emotion-0.nk-drawer-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+.emotion-0.nk-drawer-enter-done,
+.emotion-0.nk-drawer-exit {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.emotion-0.nk-drawer-exit-active {
+  -webkit-transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  -moz-transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  -ms-transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  transform: translate3d(
+            100%,
+            0,
+            0
+          );
+  visibility: hidden;
+  transition-property: transform,visibility;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter,
+  .emotion-0.nk-drawer-exit-done {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .emotion-0.nk-drawer-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-0.nk-drawer-enter-done,
+  .emotion-0.nk-drawer-exit {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .emotion-0.nk-drawer-exit-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity,visibility;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
 .emotion-1 {
   box-sizing: border-box;
   min-height: 48px;
@@ -2109,6 +3174,7 @@ exports[`Drawer layout renders right position 1`] = `
 }
 
 .emotion-3 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2117,7 +3183,6 @@ exports[`Drawer layout renders right position 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
   padding: 16px 24px;
 }
 
@@ -2127,7 +3192,8 @@ exports[`Drawer layout renders right position 1`] = `
 }
 
 .emotion-5 {
-  padding: 8px;
+  box-sizing: border-box;
+  margin: 8px;
   width: 48px;
   height: 48px;
   margin-left: auto;
@@ -2147,6 +3213,7 @@ exports[`Drawer layout renders right position 1`] = `
 }
 
 .emotion-8 {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   right: 0;
@@ -2183,6 +3250,7 @@ exports[`Drawer layout renders right position 1`] = `
   text-decoration: none;
   width: 48px;
   height: 48px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -2276,7 +3344,7 @@ exports[`Drawer layout renders right position 1`] = `
     <div
       aria-label="drawer"
       aria-modal="true"
-      class="emotion-0"
+      class="nk-drawer-enter-done emotion-0"
       data-testid="drawer"
       role="dialog"
     >

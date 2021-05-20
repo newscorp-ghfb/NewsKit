@@ -1,5 +1,6 @@
 import React, {useRef} from 'react';
 import FocusLock from 'react-focus-lock';
+import {CSSTransition} from 'react-transition-group';
 import {Overlay} from '../overlay/overlay';
 import {
   StyledDrawerPanel,
@@ -52,15 +53,9 @@ export const Drawer: React.FC<DrawerProps> = ({
   const closeButtonSettings: typeof overrides['closeButton'] = {
     ...theme.componentDefaults.drawer.closeButton,
     ...filterOutFalsyProperties(overrides.closeButton),
-    // TODO: Remove when PPDSC-1449 is resolved
-    ...{spaceInset: theme.componentDefaults.drawer.closeButton},
   };
 
-  const triggerClose = () => {
-    if (onDismiss && isOpen) {
-      onDismiss();
-    }
-  };
+  const triggerClose = () => isOpen && onDismiss && onDismiss();
 
   const handleEscape = () => {
     triggerClose();
@@ -103,58 +98,68 @@ export const Drawer: React.FC<DrawerProps> = ({
 
   return (
     <>
-      {isOpen && (
-        <Overlay onClick={handleOverlayClick} overrides={overlaySettings} />
-      )}
+      <Overlay
+        open={isOpen}
+        onClick={handleOverlayClick}
+        overrides={overlaySettings}
+      />
+
       <FocusLock
         disabled={!isOpen}
         onActivation={handleOnLockActivation}
         onDeactivation={handleOnLockDeactivation}
       >
-        <StyledDrawerPanel
-          isOpen={isOpen}
-          role="dialog"
-          aria-label="drawer"
-          aria-describedby={ariaDescribedby}
-          aria-labelledby={ariaLabelledby}
-          aria-modal="true"
-          data-testid="drawer"
-          overrides={overrides}
-          placement={placement}
-          {...props}
-        >
-          <StyledDrawerHeader overrides={overrides} ref={headerRef}>
-            <Stack flow="horizontal-center" flowReverse={placement === 'left'}>
-              {header && (
-                <StyledDrawerHeaderContent>{header}</StyledDrawerHeaderContent>
-              )}
-              <StyledFillSpaceCloseButton
-                overrides={overrides}
-                placement={placement}
-              />
-            </Stack>
-          </StyledDrawerHeader>
-          <StyledDrawerContent data-testid="drawer-content">
-            {children}
-          </StyledDrawerContent>
-          <StyledCloseButtonContainer
-            placement={placement}
+        <CSSTransition in={isOpen} timeout={1000} classNames="nk-drawer" appear>
+          <StyledDrawerPanel
+            isOpen={isOpen}
+            role="dialog"
+            aria-label="drawer"
+            aria-describedby={ariaDescribedby}
+            aria-labelledby={ariaLabelledby}
+            aria-modal="true"
+            data-testid="drawer"
             overrides={overrides}
-            style={{
-              ...centerCloseButton(headerHeight),
-            }}
-            // Move props directly to IconButton when PPDSC-1449 is fixed
+            placement={placement}
+            {...props}
           >
-            <IconButton
-              aria-label="close drawer"
-              onClick={handleCloseButtonClick}
-              overrides={closeButtonSettings}
-              size={ButtonSize.Medium}
+            <StyledDrawerHeader overrides={overrides} ref={headerRef}>
+              <Stack
+                flow="horizontal-center"
+                flowReverse={placement === 'left'}
+              >
+                {header && (
+                  <StyledDrawerHeaderContent>
+                    {header}
+                  </StyledDrawerHeaderContent>
+                )}
+                <StyledFillSpaceCloseButton
+                  overrides={overrides}
+                  placement={placement}
+                />
+              </Stack>
+            </StyledDrawerHeader>
+            <StyledDrawerContent data-testid="drawer-content">
+              {children}
+            </StyledDrawerContent>
+            <StyledCloseButtonContainer
+              placement={placement}
+              overrides={overrides}
+              style={{
+                ...centerCloseButton(headerHeight),
+              }}
+              // Move props directly to IconButton when PPDSC-1449 is fixed
             >
-              <IconFilledClose />
-            </IconButton>
-          </StyledCloseButtonContainer>
-        </StyledDrawerPanel>
+              <IconButton
+                aria-label="close drawer"
+                onClick={handleCloseButtonClick}
+                overrides={closeButtonSettings}
+                size={ButtonSize.Medium}
+              >
+                <IconFilledClose />
+              </IconButton>
+            </StyledCloseButtonContainer>
+          </StyledDrawerPanel>
+        </CSSTransition>
       </FocusLock>
     </>
   );

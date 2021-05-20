@@ -28,7 +28,7 @@ describe('Overlay', () => {
 
     const fragment = renderToFragmentWithTheme(
       Overlay,
-      {overrides: {stylePreset: 'overlayCustom'}},
+      {open: true, overrides: {stylePreset: 'overlayCustom'}},
       myCustomTheme,
     );
     expect(fragment).toMatchSnapshot();
@@ -37,6 +37,7 @@ describe('Overlay', () => {
   test('onclick calls event handler', () => {
     const mockCallBack = jest.fn();
     const overlay = renderWithTheme(Overlay, {
+      open: true,
       onClick: mockCallBack,
     }).getByTestId('overlay');
 

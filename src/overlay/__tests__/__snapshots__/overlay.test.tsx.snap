@@ -1,25 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Overlay renders with default props 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 70;
-  cursor: pointer;
-  background-color: rgba(10,10,10,0.8);
-}
-
-<div
-    class="emotion-0"
-    data-testid="overlay"
-  />
-</DocumentFragment>
-`;
+exports[`Overlay renders with default props 1`] = `<DocumentFragment />`;
 
 exports[`Overlay renders with overrides 1`] = `
 <DocumentFragment>
@@ -33,6 +14,26 @@ exports[`Overlay renders with overrides 1`] = `
   z-index: 70;
   cursor: pointer;
   background-color: #ffeecf;
+}
+
+.emotion-0.nk-overlay-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-overlay-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 100ms;
+}
+
+.emotion-0.nk-overlay-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-overlay-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 100ms;
 }
 
 <div

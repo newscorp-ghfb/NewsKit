@@ -184,6 +184,7 @@
     "@emotion/styled": "^11.1.5",
     "@seznam/compose-react-refs": "^1.0.5",
     "@types/debounce": "^1.2.0",
+    "@types/react-transition-group": "^4.4.1",
     "@types/resize-observer-browser": "^0.1.5",
     "date-fns": "^2.6.0",
     "debounce": "^1.2.0",
@@ -191,7 +192,8 @@
     "react-focus-lock": "^2.5.0",
     "react-hook-form": "^6.10.1",
     "react-hot-toast": "^1.0.2",
-    "react-range": "^1.5.3"
+    "react-range": "^1.5.3",
+    "react-transition-group": "^4.4.1"
   },
   "resolutions": {
     "react": "16.9.0",

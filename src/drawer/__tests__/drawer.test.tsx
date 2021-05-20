@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import {fireEvent, wait} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React, {useRef, useState} from 'react';
@@ -8,6 +9,38 @@ import {
 import {createTheme} from '../../theme';
 import {Drawer} from '../drawer';
 import {TextBlock} from '../../text-block';
+
+jest.mock('react-transition-group', () => {
+  const FakeTransition = jest.fn(({children}) => children);
+  const FakeCSSTransition = jest.fn(props => {
+    const modifyChildren = (
+      child: React.DetailedReactHTMLElement<{className: string}, HTMLElement>,
+    ) => {
+      const className = `nk-drawer-enter-done`;
+
+      return React.cloneElement(child, {
+        className,
+      });
+    };
+
+    if (props.appear && props.in) {
+      return (
+        <FakeTransition>
+          {React.Children.map(props.children, child => modifyChildren(child))}
+        </FakeTransition>
+      );
+    }
+
+    if (props.appear) {
+      return <FakeTransition>{props.children}</FakeTransition>;
+    }
+    if (props.in) {
+      return <FakeTransition>{props.children}</FakeTransition>;
+    }
+    return null;
+  });
+  return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
+});
 
 const drawerBody = <TextBlock>Drawer body content</TextBlock>;
 
@@ -44,14 +77,14 @@ describe('Drawer layout', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders closed drawer', () => {
+  test('renders closed drawer visually hidden but remains in the DOM tree', () => {
     const {asFragment, getByTestId} = renderWithTheme(Drawer, {
       open: false,
       onDismiss: () => {},
       children: drawerBody,
     });
     expect(asFragment()).toMatchSnapshot();
-    expect(getByTestId('drawer')).not.toBeVisible();
+    expect(getByTestId('drawer')).toBeInTheDocument();
   });
 
   test('renders drawer with overrides', () => {
@@ -200,20 +233,6 @@ describe('Drawer closing', () => {
     fireEvent.click(drawerCloseIcon);
 
     expect(mockCallBack).toHaveBeenCalled();
-  });
-
-  test("doesn't invoke onDismiss callback if open prop is false", () => {
-    const mockCallBack = jest.fn();
-    const drawerCloseIcon = renderWithTheme(Drawer, {
-      open: false,
-      onDismiss: mockCallBack,
-      header: drawerHeader,
-      children: drawerBody,
-    }).getByLabelText('close drawer');
-
-    fireEvent.click(drawerCloseIcon);
-
-    expect(mockCallBack).not.toHaveBeenCalled();
   });
 });
 
