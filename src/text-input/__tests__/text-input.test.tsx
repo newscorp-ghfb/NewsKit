@@ -1,4 +1,5 @@
 import React, {createRef} from 'react';
+import {fireEvent} from '@testing-library/react';
 import {TextInput, TextInputProps} from '..';
 import {
   renderToFragmentWithTheme,
@@ -7,35 +8,38 @@ import {
 import {TextInputSize} from '../types';
 import {createTheme} from '../../theme';
 
-const renderTextInputWithLabelAndAssistiveText = (props: TextInputProps) => (
-  <TextInput label="label" assistiveText="assistiveText" {...props} />
-);
-
-const renderTextInputWithoutAssistiveText = (props: TextInputProps) => (
-  <TextInput label="label" {...props} spellCheck />
-);
-
-const renderTextInputWithLabelHidden = (props: TextInputProps) => (
-  <TextInput label="label" hideLabel assistiveText="assistiveText" {...props} />
+const renderTextInput = (props: TextInputProps) => (
+  <TextInput
+    assistiveText="Assistive Text"
+    data-testid="text-input-email"
+    {...props}
+  />
 );
 
 describe('TextInput', () => {
   test('renders correctly with label and assistive text', () => {
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-    );
+    const props: TextInputProps = {
+      label: 'label',
+    };
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders correctly without asistive text', () => {
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithoutAssistiveText,
-    );
+    const props: TextInputProps = {
+      label: 'label',
+      spellCheck: true,
+    };
+    const fragment = renderToFragmentWithTheme(TextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders correctly with label hidden', () => {
-    const fragment = renderToFragmentWithTheme(renderTextInputWithLabelHidden);
+    const props: TextInputProps = {
+      label: 'label',
+      hideLabel: true,
+    };
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -43,12 +47,8 @@ describe('TextInput', () => {
     const props: TextInputProps = {
       size: TextInputSize.Small,
       label: 'label',
-      assistiveText: 'assistiveText',
     };
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -56,12 +56,8 @@ describe('TextInput', () => {
     const props: TextInputProps = {
       size: TextInputSize.Large,
       label: 'label',
-      assistiveText: 'assistiveText',
     };
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -69,12 +65,8 @@ describe('TextInput', () => {
     const props: TextInputProps = {
       disabled: true,
       label: 'label',
-      assistiveText: 'assistiveText',
     };
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -82,12 +74,8 @@ describe('TextInput', () => {
     const props: TextInputProps = {
       readOnly: true,
       label: 'label',
-      assistiveText: 'assistiveText',
     };
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -100,40 +88,29 @@ describe('TextInput', () => {
         },
       },
     };
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with fixed width', () => {
     const props: TextInputProps = {
       label: 'label',
-      assistiveText: 'assistiveText',
       overrides: {
         width: 'sizing120',
       },
     };
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with full width', () => {
     const props: TextInputProps = {
       label: 'label',
-      assistiveText: 'assistiveText',
       overrides: {
         width: '100%',
       },
     };
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -141,13 +118,9 @@ describe('TextInput', () => {
     const props: TextInputProps = {
       label: 'label',
       ariaLabel: 'my custom aria label',
-      assistiveText: 'assistiveText',
     };
 
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -155,13 +128,9 @@ describe('TextInput', () => {
     const props: TextInputProps = {
       label: 'label',
       placeholder: 'This is some text',
-      assistiveText: 'assistiveText',
     };
 
-    const fragment = renderToFragmentWithTheme(
-      renderTextInputWithLabelAndAssistiveText,
-      props,
-    );
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -190,7 +159,6 @@ describe('TextInput', () => {
     });
     const props: TextInputProps = {
       label: 'label',
-      assistiveText: 'Assistive Text',
       overrides: {
         label: {
           stylePreset: 'textInputLabelCustom',
@@ -212,7 +180,7 @@ describe('TextInput', () => {
       },
     };
     const fragment = renderToFragmentWithTheme(
-      TextInput,
+      renderTextInput,
       props,
       myCustomTheme,
     ) as any;
@@ -234,5 +202,35 @@ describe('TextInput', () => {
       inputRef.current.focus();
     }
     expect(inputRef.current).toHaveFocus();
+  });
+
+  it('calls onBlur passed from the props', () => {
+    const onBlur = jest.fn();
+    const props: TextInputProps = {
+      label: 'label',
+      placeholder: 'This is some text',
+      onBlur,
+    };
+
+    const {getByTestId} = renderWithTheme(renderTextInput, props);
+    fireEvent.blur(getByTestId('text-input-email'));
+
+    expect(onBlur).toHaveBeenCalled();
+  });
+
+  it('calls onChange passed from the props', () => {
+    const onChange = jest.fn();
+    const props: TextInputProps = {
+      label: 'label',
+      placeholder: 'This is some text',
+      onChange,
+    };
+
+    const {getByTestId} = renderWithTheme(renderTextInput, props);
+    fireEvent.change(getByTestId('text-input-email'), {
+      target: {value: 'test'},
+    });
+
+    expect(onChange).toHaveBeenCalled();
   });
 });

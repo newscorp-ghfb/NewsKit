@@ -6,7 +6,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import {useForm, FormProvider} from 'react-hook-form/dist/index.ie11';
+import {useForm, FormProvider} from 'react-hook-form';
 import {FormProps, FormRef, FieldsHadErrorObject} from './types';
 import {FormValidationContextProvider} from './context';
 
@@ -63,12 +63,16 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       }) as typeof formContext.reset,
       clearValidation: () => {
         setAllFieldsHadErrorToFalse();
-        formContext.reset(formContext.getValues(), {
-          // Don't reset these properties of the form context
-          isSubmitted: true,
-          touched: true,
-          submitCount: true,
-        });
+        formContext.reset(
+          {},
+          {
+            // Don't reset these properties of the form context
+            keepValues: true,
+            keepIsSubmitted: true,
+            keepTouched: true,
+            keepSubmitCount: true,
+          },
+        );
       },
       watch: formContext.watch,
       setError: formContext.setError,

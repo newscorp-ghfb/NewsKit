@@ -1,7 +1,7 @@
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
-import {AudioPlayer} from '../audio-player';
+import {AudioPlayer} from '..';
 import {AudioPlayerProps} from '../types';
 import {createTheme} from '../../theme';
 

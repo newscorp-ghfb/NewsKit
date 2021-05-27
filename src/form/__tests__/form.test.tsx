@@ -1,6 +1,6 @@
 import React from 'react';
 import {fireEvent, act} from '@testing-library/react';
-import {useForm} from 'react-hook-form/dist/index.ie11';
+import {useForm} from 'react-hook-form';
 import {Form, FormRef} from '..';
 import {
   renderToFragmentWithTheme,
@@ -11,8 +11,8 @@ import {Block} from '../../block';
 import {Button} from '../../button';
 
 let actualRHF: any;
-jest.mock('react-hook-form/dist/index.ie11', () => {
-  actualRHF = jest.requireActual('react-hook-form/dist/index.ie11');
+jest.mock('react-hook-form', () => {
+  actualRHF = jest.requireActual('react-hook-form');
   return {
     ...actualRHF,
     useForm: jest.fn().mockImplementation(actualRHF.useForm),
@@ -369,17 +369,17 @@ describe('Form', () => {
   });
 
   test('exposes the expected functions from useForm hook', async () => {
-    const useFormMockMethods = {
+    const useFormReturnMock = {
       watch: 'watch-function',
       setError: 'setError-function',
       setValue: 'setValue-function',
       getValues: 'getValues-function',
       trigger: 'trigger-function',
       handleSubmit: () => {},
-      register: () => {},
+      register: (name: string) => ({name}),
     };
 
-    (useForm as jest.Mock).mockReturnValue(useFormMockMethods);
+    (useForm as jest.Mock).mockReturnValue(useFormReturnMock);
     const ref = React.createRef<HTMLFormElement>();
     const defaultValues = {
       myValue: 'this is default',
@@ -398,11 +398,11 @@ describe('Form', () => {
     });
 
     expect(ref.current).toBeDefined();
-    expect(ref.current!.watch).toBe(useFormMockMethods.watch);
-    expect(ref.current!.setError).toBe(useFormMockMethods.setError);
-    expect(ref.current!.setValue).toBe(useFormMockMethods.setValue);
-    expect(ref.current!.getValues).toBe(useFormMockMethods.getValues);
-    expect(ref.current!.trigger).toBe(useFormMockMethods.trigger);
+    expect(ref.current!.watch).toBe(useFormReturnMock.watch);
+    expect(ref.current!.setError).toBe(useFormReturnMock.setError);
+    expect(ref.current!.setValue).toBe(useFormReturnMock.setValue);
+    expect(ref.current!.getValues).toBe(useFormReturnMock.getValues);
+    expect(ref.current!.trigger).toBe(useFormReturnMock.trigger);
     expect(ref.current!.element).toMatchSnapshot();
   });
 });

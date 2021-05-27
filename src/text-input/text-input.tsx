@@ -1,5 +1,5 @@
 import React, {useEffect, useContext} from 'react';
-import {useFormContext} from 'react-hook-form/dist/index.ie11';
+import {useFormContext} from 'react-hook-form';
 import composeRefs from '@seznam/compose-react-refs';
 import {TextInputProps, TextInputSize} from './types';
 import {getSSRId} from '../utils/get-ssr-id';
@@ -41,17 +41,18 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
     const {validationMode, setFieldsHadError, fieldsHadError} = useContext(
       FormValidationContext,
     );
-    const formContext = useFormContext();
 
-    const hadError = name
-      ? fieldsHadError[name] && fieldsHadError[name].hadError
-      : undefined;
-    const errorText =
-      formContext &&
-      formContext.errors &&
-      name &&
-      formContext.errors[name] &&
-      formContext.errors[name].message;
+    const formContext = useFormContext();
+    const {register, formState} = formContext || {
+      register: nameField => ({nameField}),
+    };
+
+    const {errors, isSubmitSuccessful} = formState || {};
+    const {ref: inputRef, onBlur, onChange, ...rest} = register(name!, rules);
+
+    const hadError = name ? fieldsHadError[name]?.hadError : undefined;
+
+    const errorText = name && errors?.[name]?.message;
 
     useEffect(() => {
       if (!hadError && errorText && name) {
@@ -71,20 +72,6 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
     const assistiveTextId =
       (errorText && `${id}-error-text`) ||
       (assistiveText && `${id}-assistive-text`);
-
-    const handleOnBlur = ({target: {value}}: {target: {value: string}}) => {
-      if (
-        validationMode === 'onBlur' &&
-        !hadError &&
-        name &&
-        (errorText || value)
-      ) {
-        const updateForFieldsHadError: FieldsHadErrorObject = {};
-
-        updateForFieldsHadError[name] = {hadError: true};
-        setFieldsHadError(updateForFieldsHadError);
-      }
-    };
 
     const spaceInsetRight = getToken(
       {theme, overrides},
@@ -107,9 +94,41 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       'iconSize',
     );
 
-    const valid =
-      formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
+    const valid = isSubmitSuccessful || (hadError && !errorText);
 
+    const eventHandlerOnBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+      // RHF's onBlur function
+      if (onBlur) {
+        onBlur(e);
+      }
+      // cunstom onBlur function
+      if (
+        validationMode === 'onBlur' &&
+        !hadError &&
+        name &&
+        (errorText || e.target.value)
+      ) {
+        const updateForFieldsHadError: FieldsHadErrorObject = {};
+
+        updateForFieldsHadError[name] = {hadError: true};
+        setFieldsHadError(updateForFieldsHadError);
+      }
+      // onBlur function passed in the props
+      if (props.onBlur) {
+        props.onBlur(e);
+      }
+    };
+
+    const eventHandlerOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      // RHF's onChange function
+      if (onChange) {
+        onChange(e);
+      }
+      // onChange function passed in the props
+      if (props.onChange) {
+        props.onChange(e);
+      }
+    };
     return (
       <StyledTextInputContainer label={label} overrides={overrides}>
         <StyledLabel $size={size} htmlFor={id} overrides={overrides}>
@@ -117,8 +136,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
         </StyledLabel>
         <InputIconContainer>
           <StyledInput
-            ref={composeRefs(formContext?.register(rules), ref)}
-            name={name}
+            {...rest}
+            ref={composeRefs(inputRef, ref)}
             type="text"
             placeholder={placeholder}
             id={id}
@@ -131,7 +150,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
             invalid={!!errorText}
             valid={valid}
             aria-invalid={!!errorText}
-            onBlur={handleOnBlur}
+            onBlur={eventHandlerOnBlur}
+            onChange={eventHandlerOnChange}
             spaceInsetRight={spaceInsetRight}
             spellCheck={spellCheck}
           />

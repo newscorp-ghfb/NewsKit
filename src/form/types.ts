@@ -2,7 +2,7 @@ import {
   Resolver,
   SubmitErrorHandler,
   SubmitHandler,
-  UseFormMethods,
+  UseFormReturn,
 } from 'react-hook-form';
 
 export interface FormError extends Object {
@@ -26,12 +26,12 @@ export interface FormProps {
 
 export interface FormRef {
   clearValidation: () => void;
-  reset: UseFormMethods['reset'];
-  watch: UseFormMethods['watch'];
-  setError: UseFormMethods['setError'];
-  setValue: UseFormMethods['setValue'];
-  getValues: UseFormMethods['getValues'];
-  trigger: UseFormMethods['trigger'];
+  reset: UseFormReturn['reset'];
+  watch: UseFormReturn['watch'];
+  setError: UseFormReturn['setError'];
+  setValue: UseFormReturn['setValue'];
+  getValues: UseFormReturn['getValues'];
+  trigger: UseFormReturn['trigger'];
   element: HTMLFormElement | null;
 }
 

@@ -47,7 +47,7 @@ export const isResponsive = (
   prop: unknown,
   breakpoints: Breakpoints,
 ): prop is Record<keyof Breakpoints, unknown> =>
-  prop &&
+  !!prop &&
   typeof prop === 'object' &&
   Object.keys(breakpoints).some(bp =>
     Object.prototype.hasOwnProperty.call(prop, bp),

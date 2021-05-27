@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import '@emotion/react';
 import styled from '@emotion/styled';
 

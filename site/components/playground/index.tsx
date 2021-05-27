@@ -32,11 +32,11 @@ const isMultiChoiceKnobConfig = (
   Boolean(config && (config as MultiChoiceKnobConfig).options);
 
 const isInputKnobConfig = (config: unknown): config is InputKnobConfig =>
-  config &&
+  !!config &&
   ['string', 'number'].includes(typeof (config as InputKnobConfig).value);
 
 const isBooleanKnobConfig = (config: unknown): config is BooleanKnobConfig =>
-  config && typeof (config as BooleanKnobConfig).value === 'boolean';
+  !!config && typeof (config as BooleanKnobConfig).value === 'boolean';
 
 const renderKnob = (
   state: Record<string, unknown>,
