@@ -14,6 +14,7 @@ module.exports = {
         actions: false,
       },
     },
+    'storybook-addon-performance/register',
   ],
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved

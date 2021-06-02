@@ -1,5 +1,7 @@
 import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
+import {withPerformance} from 'storybook-addon-performance';
+
 
 import {ThemeProvider} from '../src/theme'
 import {newskitLightTheme} from '../src/theme';
@@ -28,4 +30,5 @@ export const decorators = [
       <Story />
     </ThemeProvider>
   ),
+  withPerformance
 ];
