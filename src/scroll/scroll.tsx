@@ -1,4 +1,4 @@
-import React, {useRef, useLayoutEffect, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {debounce} from 'debounce';
 import {IconFilledChevronLeft, IconFilledChevronRight} from '../icons';
 import {ScrollProps} from './types';
@@ -13,6 +13,7 @@ import {useTheme} from '../theme';
 import {IconButton} from '../icon-button';
 import {ButtonOverrides} from '../button';
 import {get} from '../utils/get';
+import {useIsomorphicLayoutEffect} from '../utils/hooks';
 
 const SCROLL_THRESHOLD = 0.99;
 
@@ -85,7 +86,7 @@ export const Scroll: React.FC<ScrollProps> = ({
 
   const debounceCheckForScrollPosition = debounce(checkForScrollPosition, 100);
 
-  useLayoutEffect(checkForScrollPosition);
+  useIsomorphicLayoutEffect(checkForScrollPosition);
 
   const controlsEnabled = Boolean(
     controls && (controls === 'hover' || controls === 'static'),

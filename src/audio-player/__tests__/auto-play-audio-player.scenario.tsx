@@ -17,7 +17,7 @@ export default {
       storyFn: () => (
         <AudioPlayerContainer>
           <AudioPlayer
-            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            src="/00-otrr-introduction-free-sample.mp3"
             title="Auto Play Test"
             captionSrc="captions.vtt"
             ariaLandmark="audio player with autoplay"

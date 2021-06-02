@@ -260,20 +260,20 @@ The ScrollSnapAlignment props are detailed below:
 
 <Code>
   {`<Scroll controls="static" snapAlign="start">
-    <Flex>
+    <Stack flow="horizontal-top">
       <ScrollSnapAlignment>
-        <Box>Item 1</Box>
+        <Block>Item 1</Block>
       </ScrollSnapAlignment>
       <ScrollSnapAlignment>
-        <Box>Item 2</Box>
+        <Block>Item 2</Block>
       </ScrollSnapAlignment>
       <ScrollSnapAlignment snapAlign="end">
-        <Box>Item 3</Box>
+        <Block>Item 3</Block>
       </ScrollSnapAlignment>
       <ScrollSnapAlignment>
-        <Box>Item 3</Box>
+        <Block>Item 3</Block>
       </ScrollSnapAlignment>
-    </Flex>
+    </Stack>
   </Scroll>`}
 </Code>
 

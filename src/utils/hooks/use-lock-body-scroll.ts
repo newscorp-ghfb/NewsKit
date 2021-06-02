@@ -1,8 +1,8 @@
-import {useLayoutEffect} from 'react';
+import {useEffect} from 'react';
 
 // TODO: improve scroll lock https://medium.com/react-camp/how-to-fight-the-body-scroll-2b00267b37ac should be supported in all browsers and devices
 export const useLockBodyScroll = () => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     let originalStyle: string | null = window.getComputedStyle(document.body)
       .overflow;
 

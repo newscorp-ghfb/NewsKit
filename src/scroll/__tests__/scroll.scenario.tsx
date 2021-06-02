@@ -7,6 +7,7 @@ import {Stack} from '../../stack/stack';
 import {Block} from '../../block';
 import {Image} from '../../image';
 import {createTheme, ThemeProvider} from '../../theme';
+import {getSSRId} from '../../utils';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-scroll-theme',
@@ -75,7 +76,7 @@ const tags = [
   'showing',
   'multiple',
   'tags',
-].map(item => <Tag>{item}</Tag>);
+].map(item => <Tag key={getSSRId()}>{item}</Tag>);
 
 export default {
   title: 'scroll',
@@ -171,7 +172,7 @@ export default {
             <Scroll snapAlign="start">
               <Flex>
                 {Array.from({length: 10}, (_, i) => (
-                  <ScrollSnapAlignment>
+                  <ScrollSnapAlignment key={getSSRId()}>
                     <Box>{`Item ${i + 1}`}</Box>
                   </ScrollSnapAlignment>
                 ))}
@@ -185,7 +186,7 @@ export default {
             <Scroll snapAlign="start" controls="static" stepDistance={60}>
               <Flex>
                 {Array.from({length: 10}, (_, i) => (
-                  <ScrollSnapAlignment>
+                  <ScrollSnapAlignment key={getSSRId()}>
                     <Box>{`Item ${i + 1}`}</Box>
                   </ScrollSnapAlignment>
                 ))}
@@ -199,7 +200,7 @@ export default {
             <Scroll snapAlign="center" controls="static">
               <Flex>
                 {Array.from({length: 5}, (_, i) => (
-                  <ScrollSnapAlignment>
+                  <ScrollSnapAlignment key={getSSRId()}>
                     <Box>{`Item ${i + 1}`}</Box>
                   </ScrollSnapAlignment>
                 ))}
@@ -207,7 +208,7 @@ export default {
                   <Box>Item 6 end</Box>
                 </ScrollSnapAlignment>
                 {Array.from({length: 5}, (_, i) => (
-                  <ScrollSnapAlignment>
+                  <ScrollSnapAlignment key={getSSRId()}>
                     <Box>{`Item ${i + 7}`}</Box>
                   </ScrollSnapAlignment>
                 ))}
@@ -221,7 +222,9 @@ export default {
             <Scroll vertical snapAlign="start" controls="static">
               <Stack flow="vertical-left">
                 {[...tags, ...tags].map(tag => (
-                  <ScrollSnapAlignment>{tag}</ScrollSnapAlignment>
+                  <ScrollSnapAlignment key={getSSRId()}>
+                    {tag}
+                  </ScrollSnapAlignment>
                 ))}
               </Stack>
             </Scroll>
@@ -260,7 +263,7 @@ export default {
             <Scroll scrollBar controls="static">
               <Flex>
                 {Array.from({length: 10}, (_, i) => (
-                  <Box>{`Item ${i + 1}`}</Box>
+                  <Box key={getSSRId()}>{`Item ${i + 1}`}</Box>
                 ))}
               </Flex>
             </Scroll>
@@ -272,7 +275,7 @@ export default {
             <Scroll scrollBar vertical controls="static">
               <Stack flow="vertical-left">
                 {[...tags, ...tags].map(tag => (
-                  <>{tag}</>
+                  <React.Fragment key={getSSRId()}>{tag}</React.Fragment>
                 ))}
               </Stack>
             </Scroll>
