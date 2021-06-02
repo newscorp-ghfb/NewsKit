@@ -17,7 +17,7 @@ export default {
       storyFn: () => (
         <AudioPlayerContainer>
           <AudioPlayer
-            src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
             title="Auto Play Test"
             captionSrc="captions.vtt"
             ariaLandmark="audio player with autoplay"

@@ -14,6 +14,8 @@ import {IconButton} from '../icon-button';
 import {ButtonOverrides} from '../button';
 import {get} from '../utils/get';
 
+const SCROLL_THRESHOLD = 0.99;
+
 export const Scroll: React.FC<ScrollProps> = ({
   vertical = false,
   controls,
@@ -62,12 +64,22 @@ export const Scroll: React.FC<ScrollProps> = ({
       } = scrollContainerRef.current;
 
       setCanScrollStart(scrollTop > 0);
-      setCanScrollEnd(scrollTop !== scrollHeight - clientHeight);
+      // In cases when browser is zoomed the scrollTop is decimal value instead of int
+      // that brakes the following condition: scrollTop !== scrollHeight - clientHeight
+      // for example:
+      // scrollTop = 917.272705078125; scrollHeight = 1941; clientHeight = 1024
+      // scrollTop will always be different from scrollWidth - clientWidth
+      //
+      // That is why we added SCROLL_THRESHOLD and the buttons will be hidden when is smaller than it.
+      setCanScrollEnd(
+        scrollHeight - clientHeight - scrollTop > SCROLL_THRESHOLD,
+      );
     } else {
       const {scrollLeft, scrollWidth, clientWidth} = scrollContainerRef.current;
-
       setCanScrollStart(scrollLeft > 0);
-      setCanScrollEnd(scrollLeft !== scrollWidth - clientWidth);
+      setCanScrollEnd(
+        scrollWidth - clientWidth - scrollLeft > SCROLL_THRESHOLD,
+      );
     }
   };
 
