@@ -92,6 +92,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
         <form
           ref={formRef}
           onSubmit={formContext.handleSubmit(onSubmit, onSubmitInvalid)}
+          noValidate
         >
           {children}
         </form>

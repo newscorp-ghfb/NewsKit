@@ -274,7 +274,9 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+  novalidate=""
+>
   <div
     class="emotion-0"
   >
@@ -671,7 +673,9 @@ exports[`Form renders with error and with submit validation and revalidation mod
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+    novalidate=""
+  >
     <div
       class="emotion-0"
     >
@@ -1213,7 +1217,9 @@ exports[`Form renders with error on blur 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+    novalidate=""
+  >
     <div
       class="emotion-0"
     >
@@ -1634,7 +1640,9 @@ exports[`Form renders with error on submit 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+    novalidate=""
+  >
     <div
       class="emotion-0"
     >
@@ -2176,7 +2184,9 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+    novalidate=""
+  >
     <div
       class="emotion-0"
     >
@@ -2446,7 +2456,9 @@ exports[`Form renders with inputs 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+    novalidate=""
+  >
     <div
       class="emotion-0"
       label="Email"
@@ -2794,7 +2806,9 @@ exports[`Form renders with nested inputs 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+    novalidate=""
+  >
     <div
       class="emotion-0"
     >
@@ -3176,7 +3190,9 @@ exports[`Form renders with onBlur validation 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<form>
+<form
+    novalidate=""
+  >
     <div
       class="emotion-0"
     >
