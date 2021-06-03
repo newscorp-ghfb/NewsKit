@@ -30,6 +30,8 @@ export interface ToastProps extends React.AriaAttributes {
   ariaLive?: 'assertive' | 'off' | 'polite';
   children: Exclude<React.ReactNode, 'undefined'>;
   icon?: React.ReactElement<NewsKitIconProps>;
+  actions?: React.ComponentType;
+  title?: string;
   overrides?: {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
@@ -40,19 +42,22 @@ export interface ToastProps extends React.AriaAttributes {
     icon?: {
       spaceInline?: MQ<string>;
     };
+    divider?: {
+      stylePreset?: MQ<string>;
+    };
     content?: {
-      /*
-      NOTE: this might come in the future
-      spaceInline?: MQ<string>;
+      spaceStack?: MQ<string>;
       title?: {
         stylePreset?: MQ<string>;
         typographyPreset?: MQ<string>;
       };
-      */
       message?: {
         stylePreset?: MQ<string>;
         typographyPreset?: MQ<string>;
       };
+    };
+    contentAndActions?: {
+      spaceInline: MQ<string>;
     };
   };
 }

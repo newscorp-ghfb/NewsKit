@@ -91,12 +91,26 @@ export const StyledToastContainer = styled.div<ToastProps>`
   ${getResponsiveSpace('padding', 'toast', '', 'spaceInset')}
   box-sizing: border-box;
   display: inline-flex;
+  align-items: center;
 `;
 
-export const StyledContentContainer = styled.div<Pick<ToastProps, 'overrides'>>`
+export const StyledToastInnerContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+`;
+
+export const StyledContentContainer = styled.div<
+  Pick<ToastProps, 'overrides' | 'actions'>
+>`
+  align-self: center;
+  ${props =>
+    props.actions &&
+    getResponsiveSpace(
+      'marginRight',
+      'toast.contentAndActions',
+      'contentAndActions',
+      'spaceInline',
+    )(props)}
 `;
 
 export const StyledMessageContainer = styled(TextBlock)<
@@ -109,6 +123,23 @@ export const StyledMessageContainer = styled(TextBlock)<
   ${getStylePreset('toast.content.message', 'content.message')};
 `;
 
+export const StyledTitleContainer = styled(TextBlock)<
+  Pick<ToastProps, 'overrides'>
+>`
+  ${getTypographyPreset('toast.content.title', 'content.title', {
+    withCrop: true,
+  })};
+
+  ${getStylePreset('toast.content.title', 'content.title')};
+
+  ${getResponsiveSpace(
+    'marginBottom',
+    'toast.content',
+    'content',
+    'spaceStack',
+  )}
+`;
+
 export const StyledIconContainer = styled.div<Pick<ToastProps, 'overrides'>>`
   ${getResponsiveSpace('marginRight', 'toast.icon', 'icon', 'spaceInline')}
 
@@ -116,4 +147,18 @@ export const StyledIconContainer = styled.div<Pick<ToastProps, 'overrides'>>`
   svg {
     display: block;
   }
+`;
+
+export const StyledDividerContainer = styled.div<Pick<ToastProps, 'overrides'>>`
+  align-self: stretch;
+  ${getResponsiveSpace(
+    'marginRight',
+    'toast.contentAndActions',
+    'contentAndActions',
+    'spaceInline',
+  )}
+`;
+
+export const StyledActionsContainer = styled.div`
+  align-self: center;
 `;

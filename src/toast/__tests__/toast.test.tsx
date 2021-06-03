@@ -16,6 +16,7 @@ import {
 import {IconFilledWarning} from '../../icons';
 import {TextBlock} from '../../text-block';
 import {Link} from '../../link';
+import {Button, compileTheme, createTheme} from '../..';
 
 const ToastExample = ({
   action = () => null,
@@ -36,6 +37,9 @@ const ToastExample = ({
 describe('Toast', () => {
   describe('Component', () => {
     const toastMessage = 'toast message';
+    const icon = <IconFilledWarning overrides={{size: 'iconSize020'}} />;
+    const title = 'Toast title';
+    const actions = () => <Button size="small">undo</Button>;
     test('renders with default props', () => {
       const props: ToastProps = {
         children: toastMessage,
@@ -48,7 +52,7 @@ describe('Toast', () => {
     test('renders with icon', () => {
       const props: ToastProps = {
         children: toastMessage,
-        icon: <IconFilledWarning overrides={{size: 'iconSize020'}} />,
+        icon,
       };
       const fragment = renderToFragmentWithTheme(Toast, props) as any;
       expect(fragment).toMatchSnapshot();
@@ -73,6 +77,77 @@ describe('Toast', () => {
       };
       const fragment = renderToFragmentWithTheme(Toast, props) as any;
 
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with actions', () => {
+      const props: ToastProps = {
+        children: toastMessage,
+        actions,
+      };
+      const fragment = renderToFragmentWithTheme(Toast, props) as any;
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with title', () => {
+      const props: ToastProps = {
+        children: toastMessage,
+        title,
+      };
+      const fragment = renderToFragmentWithTheme(Toast, props) as any;
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with overrides and all props', () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-theme',
+        overrides: {
+          stylePresets: {
+            toastWithOverrides: {
+              base: {
+                backgroundColor: '#fdda9b',
+                borderRadius: '2px',
+                iconColor: 'red',
+              },
+            },
+          },
+        },
+      });
+      const props: ToastProps = {
+        children: toastMessage,
+        icon,
+        title,
+        actions,
+        overrides: {
+          spaceInset: '20px',
+          stylePreset: 'toastWithOverrides',
+          icon: {
+            spaceInline: 'space040',
+          },
+          content: {
+            spaceStack: 'space050',
+            title: {
+              typographyPreset: 'utilityHeading020',
+              stylePreset: 'ink',
+            },
+            message: {
+              typographyPreset: 'utilityBody020',
+              stylePreset: 'ink',
+            },
+          },
+          divider: {
+            stylePreset: 'dividerVertical',
+          },
+          contentAndActions: {
+            spaceInline: 'space010',
+          },
+        },
+      };
+      const fragment = renderToFragmentWithTheme(
+        Toast,
+        props,
+        compileTheme(myCustomTheme),
+      ) as any;
       expect(fragment).toMatchSnapshot();
     });
   });

@@ -9,11 +9,11 @@ describe('table of content', () => {
   });
 
   it('highlighted Component API TOCSection after scrolling to the area', () => {
-    cy.get('[href="#component-api"]').as('TOCPropsSection');
+    cy.get('[href="#component-api"]').as('TOCAPISection');
 
-    cy.scrollTo('bottom');
+    cy.get('#component-api').scrollIntoView();
 
-    cy.get('@TOCPropsSection').should('have.attr', 'data-selected', 'true');
+    cy.get('@TOCAPISection').should('have.attr', 'data-selected', 'true');
     cy.get('@TOCIntroduction').should('have.attr', 'data-selected', 'false');
   });
 });

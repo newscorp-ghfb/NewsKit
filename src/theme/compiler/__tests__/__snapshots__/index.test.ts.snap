@@ -946,6 +946,17 @@ Object {
           "stylePreset": "inkInverse",
           "typographyPreset": "utilityBody010",
         },
+        "spaceStack": "space010",
+        "title": Object {
+          "stylePreset": "inkInverse",
+          "typographyPreset": "utilityHeading010",
+        },
+      },
+      "contentAndActions": Object {
+        "spaceInline": "space030",
+      },
+      "divider": Object {
+        "stylePreset": "dividerInverse",
       },
       "icon": Object {
         "spaceInline": "space030",
@@ -957,7 +968,6 @@ Object {
         "xl": "31%",
         "xs": "90%",
       },
-      "minHeight": "sizing080",
       "spaceInset": "spaceInset030",
       "stylePreset": "toastSolidNeutral",
     },
@@ -1807,6 +1817,13 @@ Object {
     "dividerHorizontal": Object {
       "base": Object {
         "borderColor": "#e4e4e4",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+      },
+    },
+    "dividerInverse": Object {
+      "base": Object {
+        "borderColor": "rgba(255,255,255,0.5)",
         "borderStyle": "solid",
         "borderWidth": "1px",
       },

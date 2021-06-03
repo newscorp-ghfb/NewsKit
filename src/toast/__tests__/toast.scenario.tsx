@@ -13,6 +13,7 @@ import {
 } from '../../icons';
 import {toast, ToastProvider, Toast} from '..';
 import {Link} from '../../link';
+import {Button} from '../../button';
 
 const CustomToast = styled.div`
   padding: 1em;
@@ -61,6 +62,13 @@ const myCustomTheme = compileTheme(
             backgroundColor: '#fdda9b',
             borderRadius: '2px',
             iconColor: 'red',
+          },
+        },
+        customDivider: {
+          base: {
+            borderStyle: 'dotted',
+            borderColor: 'red',
+            borderWidth: '3px',
           },
         },
       },
@@ -175,6 +183,120 @@ export default {
         </ThemeProvider>
       ),
     },
+    {
+      storyName: 'toast-title',
+      storyFn: () => (
+        <ThemeProvider theme={myCustomTheme}>
+          <StorybookHeading>Toast with title</StorybookHeading>
+          <Toast title="Title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </Toast>
+          <hr />
+          <Toast
+            title="Title"
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </Toast>
+          <hr />
+          <Toast
+            title="Title"
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+            actions={() => (
+              <Button
+                size="small"
+                overrides={{stylePreset: 'buttonMinimalInverse'}}
+              >
+                undo
+              </Button>
+            )}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </Toast>
+        </ThemeProvider>
+      ),
+    },
+    {
+      storyName: 'toast-actions',
+      storyFn: () => (
+        <ThemeProvider theme={myCustomTheme}>
+          <StorybookHeading>Toast with actions</StorybookHeading>
+          <Toast
+            actions={() => (
+              <Button
+                size="small"
+                overrides={{stylePreset: 'buttonMinimalInverse'}}
+              >
+                undo
+              </Button>
+            )}
+          >
+            Lorem ipsum dolor sit amet
+          </Toast>
+          <hr />
+          <Toast
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+            actions={() => (
+              <Button
+                size="small"
+                overrides={{stylePreset: 'buttonMinimalInverse'}}
+              >
+                undo
+              </Button>
+            )}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Toast>
+          <hr />
+          <Toast
+            icon={
+              <IconFilledError
+                overrides={{
+                  size: 'iconSize020',
+                }}
+              />
+            }
+            actions={() => (
+              <>
+                <Button
+                  size="small"
+                  overrides={{stylePreset: 'buttonMinimalInverse'}}
+                >
+                  undo
+                </Button>
+                <Button
+                  size="small"
+                  overrides={{stylePreset: 'buttonMinimalInverse'}}
+                >
+                  redo
+                </Button>
+              </>
+            )}
+          >
+            Lorem ipsum
+          </Toast>
+        </ThemeProvider>
+      ),
+    },
 
     {
       storyName: 'toast-intents',
@@ -213,6 +335,12 @@ export default {
                 }}
               />
             }
+            title="Title"
+            actions={() => (
+              <Button size="small" overrides={{stylePreset: 'buttonMinimal'}}>
+                undo
+              </Button>
+            )}
             overrides={{
               spaceInset: '20px',
               stylePreset: 'toastWithOverrides',
@@ -220,10 +348,21 @@ export default {
                 spaceInline: 'space040',
               },
               content: {
+                spaceStack: '5px',
+                title: {
+                  typographyPreset: 'utilityBody030',
+                  stylePreset: 'ink',
+                },
                 message: {
                   typographyPreset: 'utilityBody020',
                   stylePreset: 'ink',
                 },
+              },
+              divider: {
+                stylePreset: 'customDivider',
+              },
+              contentAndActions: {
+                spaceInline: 'space040',
               },
             }}
           >
@@ -239,9 +378,31 @@ export default {
       },
       storyFn: () => {
         const notifyNeutral = () =>
-          toast(<Toast>Your account has been updated</Toast>, {
-            autoHideDuration: 10000,
-          });
+          toast(
+            <Toast
+              role="alert"
+              icon={
+                <IconFilledCheckCircle
+                  overrides={{
+                    size: 'iconSize020',
+                  }}
+                />
+              }
+              actions={() => (
+                <Button
+                  size="small"
+                  overrides={{stylePreset: 'buttonMinimalInverse'}}
+                >
+                  undo
+                </Button>
+              )}
+            >
+              Your account has been updated
+            </Toast>,
+            {
+              autoHideDuration: 10000,
+            },
+          );
         const notifySuccess = () =>
           toast(
             <ToastPositive data-testid="alert-success">

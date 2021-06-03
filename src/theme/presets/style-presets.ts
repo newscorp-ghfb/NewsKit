@@ -1427,6 +1427,14 @@ stylePresets.dividerHorizontal = {
 };
 stylePresets.dividerVertical = stylePresets.dividerHorizontal;
 
+stylePresets.dividerInverse = {
+  base: {
+    borderStyle: 'solid',
+    borderColor: '{{colors.whiteTint050}}',
+    borderWidth: '{{borders.borderWidthDefault}}',
+  },
+};
+
 //
 // Headline
 //
