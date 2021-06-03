@@ -1,15 +1,20 @@
 import * as React from 'react';
-import {Banner} from '..';
+import {Banner, BannerProps} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils/style';
-import {IconFilledInfo, IconFilledWarning, IconFilledError} from '../../icons';
-import {Button} from '../../button';
-import {ScreenReaderOnly} from '../../screen-reader-only';
+import {
+  IconFilledInfo,
+  IconFilledWarning,
+  IconFilledError,
+  IconFilledClose,
+} from '../../icons';
+import {Button, ButtonOrButtonLinkProps} from '../../button';
 import {Link} from '../../link';
+import {Visible} from '../../grid';
 
 const myCustomTheme = createTheme({
   name: 'banner-intents-theme',
@@ -46,6 +51,157 @@ const BannerWrapper = styled.div`
   margin-bottom: 24px;
 `;
 
+const StyledFullWidthVisible = styled(Visible)`
+  width: 100%;
+`;
+
+export const BannerWithState: React.FC<BannerProps> = ({
+  children,
+  ...restProps
+}) => {
+  const [isActive, setIsActive] = React.useState(true);
+
+  const close = () => setIsActive(false);
+  const action = () => {
+    // eslint-disable-next-line no-console
+    console.log('CTA Called!');
+  };
+  return (
+    <>
+      {isActive && (
+        <>
+          <Banner
+            actions={[
+              () => (
+                <>
+                  <StyledFullWidthVisible xs sm>
+                    <CTABtn
+                      size="small"
+                      onClick={() => {
+                        action();
+                      }}
+                    >
+                      CTA button
+                    </CTABtn>
+                  </StyledFullWidthVisible>
+                  <StyledFullWidthVisible md lg xl>
+                    <CTABtn
+                      size="medium"
+                      onClick={() => {
+                        action();
+                      }}
+                    >
+                      CTA button
+                    </CTABtn>
+                  </StyledFullWidthVisible>
+                </>
+              ),
+              () => (
+                <>
+                  <StyledFullWidthVisible xs sm>
+                    <CloseBtn size="small" onClick={close}>
+                      Close
+                    </CloseBtn>
+                  </StyledFullWidthVisible>
+                  <StyledFullWidthVisible md lg xl>
+                    <CloseBtn size="medium" onClick={close}>
+                      <IconFilledClose />
+                    </CloseBtn>
+                  </StyledFullWidthVisible>
+                </>
+              ),
+            ]}
+            aria-label="Banner Info"
+            icon={
+              <IconFilledInfo
+                overrides={{
+                  size: 'iconSize020',
+                  stylePreset: 'inkInverse',
+                }}
+              />
+            }
+            {...restProps}
+          >
+            {children ||
+              `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
+          </Banner>
+        </>
+      )}
+    </>
+  );
+};
+
+export const BannerIntentNegative: React.FC<BannerProps> = ({
+  children,
+  ...restProps
+}) => (
+  <BannerWithState
+    icon={
+      <IconFilledError
+        overrides={{
+          size: 'iconSize020',
+        }}
+      />
+    }
+    overrides={{
+      stylePreset: 'bannerContainerSolidNegative',
+      content: {
+        message: {
+          stylePreset: 'inkInverse',
+        },
+      },
+    }}
+    {...restProps}
+  >
+    {children}
+  </BannerWithState>
+);
+
+export const BannerIntentNotice: React.FC<BannerProps> = ({
+  children,
+  ...restProps
+}) => (
+  <BannerWithState
+    icon={<IconFilledWarning overrides={{size: 'iconSize020'}} />}
+    overrides={{
+      stylePreset: 'bannerContainerSolidNotice',
+      content: {
+        message: {
+          stylePreset: 'inkInverse',
+        },
+      },
+    }}
+    {...restProps}
+  >
+    {children}
+  </BannerWithState>
+);
+
+const CTABtn = ({
+  children,
+  overrides,
+  ...restProps
+}: ButtonOrButtonLinkProps) => (
+  <Button
+    overrides={{stylePreset: 'buttonSolidInverse', width: '100%', ...overrides}}
+    {...restProps}
+  >
+    {children || 'CTA Button'}
+  </Button>
+);
+const CloseBtn = ({children, ...restProps}: ButtonOrButtonLinkProps) => (
+  <Button
+    overrides={{
+      stylePreset: 'buttonOutlinedInverse',
+      width: '100%',
+    }}
+    {...restProps}
+  >
+    {children || 'Close'}
+  </Button>
+);
+
 export default {
   title: 'banner',
   children: [
@@ -56,11 +212,36 @@ export default {
           <StorybookHeading>Banner</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
           <BannerWrapper>
-            <Banner>Short text</Banner>
+            <BannerWithState
+              icon={
+                <IconFilledInfo
+                  overrides={{
+                    size: 'iconSize020',
+                    stylePreset: 'inkInverse',
+                  }}
+                />
+              }
+              actions={[() => <CTABtn />]}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </BannerWithState>
           </BannerWrapper>
-          <StorybookSubHeading>with bigger content</StorybookSubHeading>
+          <StorybookSubHeading>
+            with bigger content and two CTA buttons
+          </StorybookSubHeading>
           <BannerWrapper>
-            <Banner>
+            <BannerWithState
+              icon={
+                <IconFilledInfo
+                  overrides={{
+                    size: 'iconSize020',
+                    stylePreset: 'inkInverse',
+                  }}
+                />
+              }
+              actions={[() => <CTABtn />, () => <CTABtn>CTA Button 2</CTABtn>]}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -68,7 +249,7 @@ export default {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Banner>
+            </BannerWithState>
           </BannerWrapper>
         </>
       ),
@@ -80,55 +261,27 @@ export default {
           <StorybookHeading>Banner Intent</StorybookHeading>
           <StorybookSubHeading>Informative (default)</StorybookSubHeading>
           <BannerWrapper>
-            <Banner icon={<IconFilledInfo overrides={{size: 'iconSize020'}} />}>
+            <BannerWithState
+              icon={<IconFilledInfo overrides={{size: 'iconSize020'}} />}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Banner>
+            </BannerWithState>
           </BannerWrapper>
           <ThemeProvider theme={myCustomTheme}>
             <StorybookSubHeading>Notice</StorybookSubHeading>
             <BannerWrapper>
-              <Banner
-                icon={<IconFilledWarning overrides={{size: 'iconSize020'}} />}
-                overrides={{
-                  stylePreset: 'bannerContainerSolidNotice',
-                  innerContainer: {
-                    content: {
-                      message: {
-                        stylePreset: 'inkInverse',
-                      },
-                    },
-                  },
-                }}
-              >
+              <BannerIntentNotice>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Banner>
+              </BannerIntentNotice>
             </BannerWrapper>
             <StorybookSubHeading>Negative</StorybookSubHeading>
             <BannerWrapper>
-              <Banner
-                icon={
-                  <IconFilledError
-                    overrides={{
-                      size: 'iconSize020',
-                    }}
-                  />
-                }
-                overrides={{
-                  stylePreset: 'bannerContainerSolidNegative',
-                  innerContainer: {
-                    content: {
-                      message: {
-                        stylePreset: 'inkInverse',
-                      },
-                    },
-                  },
-                }}
-              >
+              <BannerIntentNegative>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Banner>
+              </BannerIntentNegative>
             </BannerWrapper>
           </ThemeProvider>
         </>
@@ -142,7 +295,7 @@ export default {
           <StorybookSubHeading>with overrides</StorybookSubHeading>
           <ThemeProvider theme={myCustomTheme}>
             <BannerWrapper>
-              <Banner
+              <BannerWithState
                 icon={
                   <IconFilledError
                     overrides={{
@@ -151,38 +304,42 @@ export default {
                     }}
                   />
                 }
+                actions={[() => <CTABtn />]}
+                layout={{
+                  xs: 'vertical',
+                  sm: 'horizontal',
+                  md: 'vertical',
+                }}
                 overrides={{
                   stylePreset: 'bannerContainerSolidCustom',
                   spaceInset: 'spaceInset060',
                   minHeight: 'sizing100',
-                  innerContainer: {
-                    maxWidth: {
-                      xs: '420px',
-                      sm: '480px',
-                      md: '768px',
-                      lg: '1024px',
-                      xl: '1440px',
-                    },
-                    icon: {
-                      spaceInline: 'space060',
-                    },
-                    content: {
-                      spaceInline: 'space050',
-                      message: {
-                        stylePreset: 'inkContrast',
-                        typographyPreset: 'utilityBody030',
-                      },
+                  maxWidth: {
+                    xs: '420px',
+                    sm: '480px',
+                    md: '768px',
+                    lg: '1024px',
+                    xl: '1440px',
+                  },
+                  icon: {
+                    spaceInline: 'space060',
+                  },
+                  content: {
+                    spaceInline: 'space050',
+                    message: {
+                      stylePreset: 'inkContrast',
+                      typographyPreset: 'utilityBody030',
                     },
                   },
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Banner>
+              </BannerWithState>
             </BannerWrapper>
             <StorybookSubHeading>with link</StorybookSubHeading>
             <BannerWrapper>
-              <Banner
+              <BannerWithState
                 icon={
                   <IconFilledError
                     overrides={{
@@ -194,105 +351,11 @@ export default {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt <Link href="/">NewsKit Link</Link> ut
                 labore et dolore magna aliqua.
-              </Banner>
+              </BannerWithState>
             </BannerWrapper>
           </ThemeProvider>
         </>
       ),
-    },
-    {
-      storyName: 'banner-screen-reader-demo',
-      parameters: {eyes: {include: false}},
-      storyFn: () =>
-        React.createElement(() => {
-          const [isActive, setIsActive] = React.useState(false);
-          const [counter, setCounter] = React.useState(0);
-
-          const open = () => {
-            setIsActive(true);
-            setCounter(counter + 1);
-          };
-          const close = () => setIsActive(false);
-          return (
-            <>
-              <StorybookHeading>Banner</StorybookHeading>
-              <StorybookSubHeading>
-                Displays based on conditional rendering
-              </StorybookSubHeading>
-
-              <Button onClick={isActive ? close : open}>
-                {isActive ? 'Close' : 'Open'} Banner
-              </Button>
-              <BannerWrapper>
-                {isActive && (
-                  <Banner
-                    aria-label="Banner Info"
-                    icon={
-                      <IconFilledInfo
-                        overrides={{
-                          size: 'iconSize020',
-                          stylePreset: 'inkInverse',
-                        }}
-                      />
-                    }
-                  >
-                    <ScreenReaderOnly>Important Information:</ScreenReaderOnly>
-                    Test banner {counter} content opened: {counter} times
-                  </Banner>
-                )}
-              </BannerWrapper>
-              <hr />
-            </>
-          );
-        }),
-    },
-    {
-      storyName: 'banner-screen-reader-demo-2',
-      parameters: {eyes: {include: false}},
-      storyFn: () =>
-        React.createElement(() => {
-          const [isActive, setIsActive] = React.useState(false);
-          const [counter, setCounter] = React.useState(0);
-
-          const open = () => {
-            setIsActive(true);
-            setCounter(counter + 1);
-          };
-
-          const StyledWrapper = styled.div<{isActive?: boolean}>`
-            visibility: ${!isActive && 'hidden'};
-          `;
-          const close = () => setIsActive(false);
-          return (
-            <>
-              <StorybookHeading>Banner</StorybookHeading>
-              <StorybookSubHeading>
-                Displays by using visibility: hidden
-              </StorybookSubHeading>
-              <Button onClick={isActive ? close : open}>
-                {isActive ? 'Close' : 'Open'} Banner
-              </Button>
-              <BannerWrapper>
-                <StyledWrapper isActive>
-                  <Banner
-                    icon={
-                      <IconFilledInfo
-                        overrides={{
-                          size: 'iconSize020',
-                          stylePreset: 'inkInverse',
-                        }}
-                      />
-                    }
-                  >
-                    <ScreenReaderOnly>Important Information:</ScreenReaderOnly>
-                    Test banner {counter} content opened: {counter} times
-                  </Banner>
-                </StyledWrapper>
-              </BannerWrapper>
-              <hr />
-            </>
-          );
-        }),
     },
   ],
 };

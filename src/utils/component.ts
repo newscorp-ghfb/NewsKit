@@ -56,7 +56,7 @@ export const hasMatchingDisplayNameWith = (
   return false;
 };
 
-export const renderComponent = (node?: any) => {
+export const renderIfReactComponent = (node?: any) => {
   if (isReactComponent(node)) {
     return React.createElement(node as React.ComponentType);
   }

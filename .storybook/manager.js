@@ -1,5 +1,5 @@
-import { addons } from '@storybook/addons';
+import {addons} from '@storybook/addons';
 
 addons.setConfig({
-    showPanel: true,
+  showPanel: true,
 });

@@ -10,7 +10,7 @@ import {
   getSpacingFromTheme,
   ImageProps,
 } from 'newskit';
-import {renderComponent} from 'newskit/utils/component';
+import {renderIfReactComponent} from 'newskit/utils/component';
 import React from 'react';
 import {HeaderIndexProps} from './types';
 
@@ -52,7 +52,7 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
         mdOffset={6}
         lgOffset={0}
       >
-        {renderComponent(media) || (
+        {renderIfReactComponent(media) || (
           <Image src={(media as ImageProps).src} alt="" />
         )}
       </Cell>

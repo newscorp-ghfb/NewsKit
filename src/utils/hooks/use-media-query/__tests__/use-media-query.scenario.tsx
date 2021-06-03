@@ -1,9 +1,5 @@
 import * as React from 'react';
-import {
-  useMediaQueryObject,
-  useBreakpointKey,
-  MediaQueryProvider,
-} from '../index';
+import {useMediaQueryObject, useBreakpointKey} from '../index';
 
 import {
   StorybookHeading,
@@ -11,6 +7,7 @@ import {
 } from '../../../../test/storybook-comps';
 import {MQ} from '../../../style/types';
 import {styled} from '../../../style';
+import {MediaQueryProvider} from '../context';
 
 const StyledDiv = styled.div`
   border: 2px solid black;
@@ -36,11 +33,11 @@ export default {
   children: [
     {
       storyName: 'use-media-query-hook',
-      parameters: {eyes: {include: false}},
+      parameters: {eyes: {include: false}, disableMediaQueryDecorator: true},
       storyFn: () => (
         <>
-          <StorybookHeading>useMediaQueryHooks </StorybookHeading>
           <MediaQueryProvider>
+            <StorybookHeading>useMediaQueryHooks </StorybookHeading>
             <StorybookSubHeading>useMediaQueryObject</StorybookSubHeading>
             <ComponentMediaQueryObject
               mq={{

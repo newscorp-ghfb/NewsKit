@@ -11,57 +11,69 @@ import {TextBlock} from '../text-block';
 
 export const StyledBannerContainer = styled.div<BannerProps>`
   box-sizing: border-box;
-  ${getStylePreset('banner', '')};
-  ${getResponsiveSpace('padding', 'banner', '', 'spaceInset')}
-  ${getResponsiveSize('minHeight', 'banner', '', 'minHeight')}
+  ${({layout}) => getStylePreset(`banner.${layout}`, '')};
+  ${({layout}) =>
+    getResponsiveSpace('padding', `banner.${layout}`, '', 'spaceInset')}
+  ${({layout}) =>
+    getResponsiveSize('minHeight', `banner.${layout}`, '', 'minHeight')}
 `;
 
-export const StyledInnerContainer = styled(Stack)<
-  Pick<BannerProps, 'overrides'>
+export const StyledMaxWidthContainer = styled(Stack)<
+  Pick<BannerProps, 'overrides' | 'layout'>
 >`
   box-sizing: border-box;
-  ${getResponsiveSize(
-    'maxWidth',
-    'banner.innerContainer',
-    'innerContainer',
-    'maxWidth',
-  )}
+  ${({layout}) =>
+    getResponsiveSize('maxWidth', `banner.${layout}`, '', 'maxWidth')}
   margin: 0 auto;
 `;
 
-export const StyledIconContainer = styled.div<Pick<BannerProps, 'overrides'>>`
-  ${getResponsiveSpace(
-    'marginRight',
-    'banner.innerContainer.icon',
-    'innerContainer.icon',
-    'spaceInline',
-  )}
+export const StyledIconContentContainer = styled(Stack)<
+  Pick<BannerProps, 'overrides' | 'layout'>
+>`
+  flex: 1;
+  ${({layout}) => layout === 'vertical' && 'align-self: stretch;'}
+  ${({layout}) =>
+    getResponsiveSpace(
+      layout === 'vertical' ? 'marginBottom' : 'marginRight',
+      `banner.${layout}.content`,
+      'content',
+      'spaceInline',
+    )}
 `;
 
-export const StyledContentContainer = styled.div<
-  Pick<BannerProps, 'overrides'>
+export const StyledIconContainer = styled.div<
+  Pick<BannerProps, 'overrides' | 'layout'>
 >`
-  ${getResponsiveSpace(
-    'marginRight',
-    'banner.innerContainer.content',
-    'innerContainer.content',
-    'spaceInline',
-  )}
+  display: flex;
+  ${({layout}) =>
+    getResponsiveSpace(
+      'marginRight',
+      `banner.${layout}.icon`,
+      'icon',
+      'spaceInline',
+    )}
+`;
+
+export const StyledContentContainer = styled.div`
+  flex: 1;
+  align-self: center;
 `;
 
 export const StyledMessageContainer = styled(TextBlock)<
-  Pick<BannerProps, 'overrides'>
+  Pick<BannerProps, 'overrides' | 'layout'>
 >`
-  ${getTypographyPreset(
-    'banner.innerContainer.content.message',
-    'innerContainer.content.message',
-    {
+  ${({layout}) =>
+    getTypographyPreset(`banner.${layout}.content.message`, 'content.message', {
       withCrop: true,
-    },
-  )};
+    })};
 
-  ${getStylePreset(
-    'banner.innerContainer.content.message',
-    'innerContainer.content.message',
-  )};
+  ${({layout}) =>
+    getStylePreset(`banner.${layout}.content.message`, 'content.message')};
+`;
+
+export const StyledActionsContainer = styled(Stack)<
+  Pick<BannerProps, 'overrides' | 'layout'>
+>`
+  ${({layout}) =>
+    layout === 'vertical' ? 'align-self: stretch;' : 'align-self: center;'}
 `;

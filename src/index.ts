@@ -1,5 +1,6 @@
 export * from './aspect-ratio';
 export * from './audio-player';
+export * from './banner';
 export * from './byline';
 export * from './block';
 export * from './button';

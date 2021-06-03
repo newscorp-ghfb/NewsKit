@@ -276,7 +276,10 @@ Object {
       },
     },
     "banner": Object {
-      "innerContainer": Object {
+      "horizontal": Object {
+        "actions": Object {
+          "spaceInline": "space040",
+        },
         "content": Object {
           "message": Object {
             "stylePreset": "inkInverse",
@@ -288,10 +291,29 @@ Object {
           "spaceInline": "space030",
         },
         "maxWidth": "1920px",
+        "minHeight": "sizing090",
+        "spaceInset": "spaceInset045",
+        "stylePreset": "bannerContainerSolid",
       },
-      "minHeight": "sizing090",
-      "spaceInset": "spaceInset045",
-      "stylePreset": "bannerContainerSolid",
+      "vertical": Object {
+        "actions": Object {
+          "spaceInline": "space050",
+        },
+        "content": Object {
+          "message": Object {
+            "stylePreset": "inkInverse",
+            "typographyPreset": "utilityBody010",
+          },
+          "spaceInline": "space030",
+        },
+        "icon": Object {
+          "spaceInline": "space030",
+        },
+        "maxWidth": "1920px",
+        "minHeight": "sizing090",
+        "spaceInset": "spaceInset045",
+        "stylePreset": "bannerContainerSolid",
+      },
     },
     "button": Object {
       "large": Object {

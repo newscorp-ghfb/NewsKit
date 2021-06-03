@@ -4,3 +4,4 @@ export * from './use-keypress';
 export * from './use-lock-body-scroll';
 export * from './use-media-query';
 export * from './use-resize-observer';
+export * from './use-react-keys';

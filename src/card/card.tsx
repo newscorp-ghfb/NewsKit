@@ -10,7 +10,10 @@ import {
   StyledCardLink,
 } from './styled';
 import {Flow, StackDistribution} from '../stack';
-import {renderComponent, hasMatchingDisplayNameWith} from '../utils/component';
+import {
+  renderIfReactComponent,
+  hasMatchingDisplayNameWith,
+} from '../utils/component';
 import {deepMap} from '../utils/react-children-utilities';
 import {Headline} from '../headline';
 import {BaseLinkProps} from '../link';
@@ -27,7 +30,7 @@ import {getHorizontalRatio} from './utils';
 const cardHeadlineKey = '1';
 
 const renderMedia = (media: CardProps['media']) =>
-  renderComponent(media) || (
+  renderIfReactComponent(media) || (
     <Image loadingAspectRatio="3:2" {...(media as ImageProps)} />
   );
 
@@ -214,7 +217,7 @@ export const Card: React.FC<CardProps> = ({
             wrap="nowrap"
             overrides={overrides}
           >
-            {renderComponent(actions)}
+            {renderIfReactComponent(actions)}
           </StyledCardContainerActions>
         )}
       </StyledCardContainerTeaserAndActions>

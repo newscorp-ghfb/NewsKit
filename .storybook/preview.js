@@ -3,11 +3,11 @@ import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
 
 
-import {ThemeProvider} from '../src/theme'
+import {ThemeProvider} from '../src/theme';
 import {newskitLightTheme} from '../src/theme';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: {argTypesRegex: '^on[A-Z].*'},
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -17,7 +17,7 @@ export const parameters = {
   viewport: {
     viewports: INITIAL_VIEWPORTS,
   },
-}
+};
 
 const getThemeFromContext = ({kind}) =>
   [['', newskitLightTheme]].find(([name, theme]) =>

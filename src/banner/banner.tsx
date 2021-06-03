@@ -1,49 +1,48 @@
 import React from 'react';
-import {BannerProps} from './types';
-import {
-  StyledBannerContainer,
-  StyledInnerContainer,
-  StyledContentContainer,
-  StyledIconContainer,
-  StyledMessageContainer,
-} from './styled';
+import {BannerInternalProps, BannerProps} from './types';
+import {Visible} from '../grid/visibility';
+import {BannerInternal} from './banner-internal';
+import {useTheme} from '../theme';
+import {MQ} from '../utils';
+import {getVisibleBreakpointsForLayout} from './utils';
 
 export const Banner: React.FC<BannerProps> = ({
-  overrides,
-  children,
-  icon,
+  layout = {
+    xs: 'vertical',
+    md: 'horizontal',
+  },
   ...restProps
-}) => (
-  <StyledBannerContainer
-    role="region"
-    aria-live="polite"
-    data-testid="banner-container"
-    overrides={overrides}
-    {...restProps}
-  >
-    <StyledInnerContainer
-      flow="horizontal-top"
-      stackDistribution="flex-start"
-      wrap="nowrap"
-      overrides={overrides}
-    >
-      {icon && (
-        <StyledIconContainer overrides={overrides}>{icon}</StyledIconContainer>
+}) => {
+  let layoutHasMQ = false;
+  const theme = useTheme();
+
+  let horizontalBreakpoints: MQ<boolean> = {};
+  let verticalBreakpoints: MQ<boolean> = {};
+  if (typeof layout === 'object') {
+    layoutHasMQ = true;
+    ({
+      verticalBreakpoints,
+      horizontalBreakpoints,
+    } = getVisibleBreakpointsForLayout(layout, theme));
+  }
+
+  return (
+    <>
+      {layoutHasMQ ? (
+        <>
+          <Visible {...verticalBreakpoints}>
+            <BannerInternal {...restProps} layout="vertical" />
+          </Visible>
+          <Visible {...horizontalBreakpoints}>
+            <BannerInternal {...restProps} layout="horizontal" />
+          </Visible>
+        </>
+      ) : (
+        <BannerInternal
+          {...restProps}
+          layout={layout as BannerInternalProps['layout']}
+        />
       )}
-      <StyledContentContainer overrides={overrides}>
-        <StyledMessageContainer
-          overrides={overrides}
-          as={
-            typeof children === 'string' ||
-            (Array.isArray(children) &&
-              children.some(child => typeof child === 'string'))
-              ? 'p'
-              : 'div'
-          }
-        >
-          {children}
-        </StyledMessageContainer>
-      </StyledContentContainer>
-    </StyledInnerContainer>
-  </StyledBannerContainer>
-);
+    </>
+  );
+};
