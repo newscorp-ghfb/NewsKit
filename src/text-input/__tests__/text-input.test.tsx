@@ -176,6 +176,7 @@ describe('TextInput', () => {
         assistiveText: {
           stylePreset: 'assistiveTextCustom',
           typographyPreset: 'utilityLabel030',
+          minHeight: 'sizing050',
         },
       },
     };

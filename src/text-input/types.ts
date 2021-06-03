@@ -35,6 +35,7 @@ export interface TextInputProps
     assistiveText?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
+      minHeight?: string;
     };
   };
 }

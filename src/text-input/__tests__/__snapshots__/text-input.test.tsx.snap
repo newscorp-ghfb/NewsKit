@@ -1263,7 +1263,7 @@ exports[`TextInput renders text input with overrides 1`] = `
 }
 
 .emotion-4 {
-  min-height: 12px;
+  min-height: 24px;
 }
 
 .emotion-5 {

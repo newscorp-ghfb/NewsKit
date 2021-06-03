@@ -172,7 +172,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
             </IconContainer>
           )}
         </InputIconContainer>
-        <StyledAssistiveTextContainer $size={size}>
+        <StyledAssistiveTextContainer $size={size} overrides={overrides}>
           {(assistiveText || errorText) && !valid && (
             <StyledAssistiveText
               $size={size}

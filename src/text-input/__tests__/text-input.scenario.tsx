@@ -290,6 +290,7 @@ export default {
                   assistiveText: {
                     stylePreset: 'inputContainerCustom',
                     typographyPreset: 'utilityLabel030',
+                    minHeight: 'sizing050',
                   },
                 }}
               />
