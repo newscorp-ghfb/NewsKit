@@ -4,15 +4,10 @@ const onSubmit = (data: any) => {
 
 <Form onSubmit={onSubmit}>
   <Block overrides={{spaceStack: 'space050'}}>
-    <TextInput
+  <EmailInput
       label="Email"
       name="email"
-    />
-  </Block>
-  <Block overrides={{spaceStack: 'space050'}}>
-    <TextInput
-      label="Username"
-      name="username"
+      assistiveText="Your email"
     />
   </Block>
   <Button type="submit">Submit</Button>

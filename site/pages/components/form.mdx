@@ -4,8 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromFile} from '../../components/code';
-
-import {Form, TextInput, Block, Button, styled} from 'newskit';
+import {Form, TextInput, Block, Button, styled, EmailInput} from 'newskit';
 
 export default Layout;
 
@@ -17,9 +16,9 @@ The Form component is used for processing form data; it's based on [React Hook F
 
 ## Usage
 
-The Form component is used by wrapping around form fields, such as the TextInput. On submission, it passes the form data to the provided callback function. 
+The Form component is used by wrapping around form fields, such as the Email Input and Text Input. On submission, it passes the form data to the provided callback function.
 The inputs don't need to be direct children of the Form component and can be nested inside other elements.
-A submit button is required to be passed to the Form component, and the name property is required on the input. 
+A submit button is required to be passed to the Form component, and the name property is required on the input.
 
 <CodeFromFile path="examples/form/form.tsx" />
 
@@ -29,7 +28,7 @@ On form submission, if there are validation errors present, the `onSubmitInvalid
 
 ## Validation
 
-The Form component handles validation. This only works with the TextInput. The validation rules need to be passed to the TextInput. For more information about the validation rules: 
+The Form component handles validation. This only works with the Email Input and Text Input. The validation rules need to be passed to the TextInput. For more information about the validation rules:
 [React Hook Form, apply validation](https://react-hook-form.com/get-started/#Applyvalidation) and [React Hook Form, register](https://react-hook-form.com/api/#register)
 
 <CodeFromFile path="examples/form/validated-form.tsx" />
@@ -37,40 +36,48 @@ The Form component handles validation. This only works with the TextInput. The v
 The Form component also supports schema validation. To use an external validation library, for example `Yup`, you can pass `yupResolver(schema)` to the resolver prop. For more information about schema validation with React Hook Form:
 [React Hook Form, schema validation](https://react-hook-form.com/get-started/#SchemaValidation)
 
-<CodeFromFile path="examples/form/form-with-schema-validation.tsx" /> 
+<CodeFromFile path="examples/form/form-with-schema-validation.tsx" />{' '}
 
 ## Props
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="children" type="Exclude<React.ReactNode, 'undefined'>" required>
-    The form requires to have at least a TextInput and a submit button.  
+    The form requires to have at least a TextInput or EmailInput and a submit
+    button.
   </Prop>
   <Prop name="onSubmit" type="SubmitHandler" required>
-    Function called when form is submitted without validation errors.
-    The data parameter consists of an object where the input field names are associated with the input values.
-    For more information about the type 'SubmitHandler', please visit &nbsp;
-     <a href="https://react-hook-form.com/ts#SubmitHandler">
-       React Hook Form's documentation
+    Function called when form is submitted without validation errors. The data
+    parameter consists of an object where the input field names are associated
+    with the input values. For more information about the type 'SubmitHandler',
+    please visit &nbsp;
+    <a href="https://react-hook-form.com/ts#SubmitHandler">
+      React Hook Form's documentation
     </a>
   </Prop>
-   <Prop name="onSubmitInvalid" type="SubmitErrorHandler">
-    Similar to onSubmit, this function is called when submission is attempted but fails with validation errors.
-    It receives an object of form element names as keys, with FormError objects as values. 
-    FormError objects consist of the type and message of the error, along with a ref to the offending form field element.
-    Type "SubmitErrorHandler" is similar to type "SubmitHandler" except that it accepts the errors parameter rather than data. 
+  <Prop name="onSubmitInvalid" type="SubmitErrorHandler">
+    Similar to onSubmit, this function is called when submission is attempted
+    but fails with validation errors. It receives an object of form element
+    names as keys, with FormError objects as values. FormError objects consist
+    of the type and message of the error, along with a ref to the offending form
+    field element. Type "SubmitErrorHandler" is similar to type "SubmitHandler"
+    except that it accepts the errors parameter rather than data.
   </Prop>
   <Prop name="validationMode" type="onSubmit | onValidation" default="onSubmit">
-    This option allows you to configure when input fields getting validated. Currently 'onSubmit' and 'onBlur' are supported.  
+    This option allows you to configure when input fields getting validated.
+    Currently 'onSubmit' and 'onBlur' are supported.
   </Prop>
-   <Prop name="reValidationMode" type="onSubmit | onValidation" default="onBlur">
-    This option allows you to configure when input fields getting revalidated. Currently 'onSubmit' and 'onBlur' are supported.  
+  <Prop name="reValidationMode" type="onSubmit | onValidation" default="onBlur">
+    This option allows you to configure when input fields getting revalidated.
+    Currently 'onSubmit' and 'onBlur' are supported.
   </Prop>
   <Prop name="defaultValues" type="Record<string, string>">
-   The defaultValue for an input is used as the initial value when a component is first rendered, before a user interacts with it. 
-   The defaultValues object uses the form element names as keys.
+    The defaultValue for an input is used as the initial value when a component
+    is first rendered, before a user interacts with it. The defaultValues object
+    uses the form element names as keys.
   </Prop>
   <Prop name="resolver" type="Resolver<Record<string, string>, object>">
-   The resolver will validate your input data against the schema and return with either errors or a valid result.
+    The resolver will validate your input data against the schema and return
+    with either errors or a valid result.
   </Prop>
 </LegacyBlock>
 
@@ -78,49 +85,28 @@ The Form component also supports schema validation. To use an external validatio
   componentName="Form"
   component={state => {
     const onSubmit = data => console.log('Submitted data:', data);
-    
     const Container = styled.div`
       width: 300px;
-    `
-    
+    `;
     return (
       <React.Fragment>
         <LegacyBlock display="flex">
           <Container>
-              <Form onSubmit={onSubmit} validationMode={state.validationMode} reValidationMode={state.reValidationMode}>
-                <Block overrides={{spaceStack: 'space060'}}>
-                  <TextInput
-                    label="Email"
-                    name="email"
-                    assistiveText="Your email"
-                    rules={{
-                      required: 'Required field',
-                      pattern: {
-                        value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                        message: 'Please provide a valid email',
-                      },
-                    }}
-                  />
-                </Block>
-                <Block overrides={{spaceStack: 'space060'}}>
-                  <TextInput
-                    label="Username"
-                    name="username"
-                    assistiveText="Your username"
-                    rules={{
-                      required: 'Required field',
-                      minLength: { value: 5, message: 'Usernames must be at least 5 characters long' },
-                    }}
-                  />
-                </Block>
+            <Form
+              onSubmit={onSubmit}
+              validationMode={state.validationMode}
+              reValidationMode={state.reValidationMode}
+            >
+              <Block overrides={{spaceStack: 'space060'}}>
+                <EmailInput label="Email" name="Email" placeholder="Placeholder" {...state} />
                 <Button type="submit">Submit</Button>
-              </Form>
+              </Block>
+            </Form>
           </Container>
         </LegacyBlock>
       </React.Fragment>
     );
-    }
-  }
+  }}
   knobs={[
     {
       name: 'Validation Mode',
@@ -149,6 +135,6 @@ The Form component also supports schema validation. To use an external validatio
           value: 'onSubmit',
         },
       ],
-    }
+    },
   ]}
 />

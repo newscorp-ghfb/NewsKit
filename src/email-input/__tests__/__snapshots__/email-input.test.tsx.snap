@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailInput renders correctly with label hidden 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-1 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-3:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <label
+      class="emotion-1"
+      for="mock-nk-1"
+    />
+    <div
+      class="emotion-2"
+    >
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
+        class="emotion-3"
+        id="mock-nk-1"
+        spellcheck="false"
+        type="email"
+      />
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <p
+        class="emotion-5"
+        id="mock-nk-1-assistive-text"
+      >
+        assistiveText
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

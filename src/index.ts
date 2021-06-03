@@ -40,3 +40,4 @@ export * from './title-bar';
 export * from './typography';
 export * from './volume-control';
 export * from './utils/hooks/use-media-query';
+export * from './email-input';

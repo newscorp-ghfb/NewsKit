@@ -4,6 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
+import {CodeFromFile} from '../../components/code';
 import {TextInput, TextInputSize} from 'newskit';
 
 export default Layout;
@@ -17,6 +18,17 @@ The Text Input component consists of a label, input and assistive text.
 ## Usage
 
 Text Input allows users to enter text into a UI. They typically appear in forms and dialogs.
+
+
+## Email Input Component
+An Email Input component is also available.
+The EmailInput component is built on top of the TextInput component and it shares the same defaults and props of TextInput. 
+The email input comes with a set of validation rules. The validation only works if the email input component is inside a Form component. 
+For more information please see the Form component.
+<LegacyBlock >
+  <CodeFromFile path="examples/email-input/email-input.tsx" />
+</LegacyBlock>
+
 
 ## Props
 
