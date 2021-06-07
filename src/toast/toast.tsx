@@ -14,6 +14,7 @@ import {
 } from './styled';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import {splitAriaProps} from '../utils/a11y';
 
 export const Toast: React.FC<ToastProps> = ({
   overrides,
@@ -21,6 +22,8 @@ export const Toast: React.FC<ToastProps> = ({
   icon,
   actions,
   title,
+  ariaLive = 'polite',
+  role = 'status',
   ...restProps
 }) => {
   const theme = useTheme();
@@ -29,8 +32,14 @@ export const Toast: React.FC<ToastProps> = ({
     ...filterOutFalsyProperties(overrides?.divider),
   };
 
+  const {aria, rest} = splitAriaProps(restProps);
+
   return (
-    <StyledToastContainer data-testid="toast-container" overrides={overrides}>
+    <StyledToastContainer
+      data-testid="toast-container"
+      overrides={overrides}
+      {...rest}
+    >
       <StyledToastInnerContainer>
         {icon && (
           <StyledIconContainer aria-hidden="true" overrides={overrides}>
@@ -38,11 +47,11 @@ export const Toast: React.FC<ToastProps> = ({
           </StyledIconContainer>
         )}
         <StyledContentContainer
-          role="status"
-          aria-live="polite"
+          role={role}
+          aria-live={ariaLive}
+          {...aria}
           overrides={overrides}
           actions={actions}
-          {...restProps}
         >
           {title && (
             <StyledTitleContainer overrides={overrides}>

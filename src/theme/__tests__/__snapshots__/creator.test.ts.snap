@@ -678,6 +678,25 @@ Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
     },
+    "inlineMessage": Object {
+      "content": Object {
+        "message": Object {
+          "stylePreset": "inkBase",
+          "typographyPreset": "utilityBody010",
+        },
+        "spaceStack": "space030",
+        "title": Object {
+          "stylePreset": "inkContrast",
+          "typographyPreset": "utilityHeading010",
+        },
+      },
+      "icon": Object {
+        "spaceInline": "space020",
+      },
+      "maxWidth": "100%",
+      "spaceInset": "spaceInset030",
+      "stylePreset": "inlineMessage",
+    },
     "link": Object {
       "externalIcon": Object {
         "size": "iconSize010",
@@ -2446,6 +2465,17 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inlineMessage": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative020}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInformative}}",
       },
     },
     "linkEmail": Object {

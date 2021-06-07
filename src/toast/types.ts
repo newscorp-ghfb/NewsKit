@@ -26,7 +26,7 @@ export type ToastAsFunction = (props: {
 }) => React.ReactNode;
 
 export interface ToastProps extends React.AriaAttributes {
-  role?: 'status' | 'alert';
+  role?: string;
   ariaLive?: 'assertive' | 'off' | 'polite';
   children: Exclude<React.ReactNode, 'undefined'>;
   icon?: React.ReactElement<NewsKitIconProps>;

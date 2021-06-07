@@ -1527,3 +1527,17 @@ stylePresets.toastSolidNeutral = {
     iconColor: '{{colors.inkInverse}}',
   },
 };
+// Inline Message
+
+stylePresets.inlineMessage = {
+  base: {
+    backgroundColor: '{{colors.interfaceInformative020}}',
+    borderColor: '{{colors.interfaceInformative010}}',
+    borderStyle: 'solid',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}',
+    iconColor: '{{colors.inkInformative}}',
+    color: '{{colors.inkInverse}}',
+  },
+};

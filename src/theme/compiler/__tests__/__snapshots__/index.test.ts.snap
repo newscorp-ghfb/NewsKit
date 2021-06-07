@@ -679,6 +679,25 @@ Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
     },
+    "inlineMessage": Object {
+      "content": Object {
+        "message": Object {
+          "stylePreset": "inkBase",
+          "typographyPreset": "utilityBody010",
+        },
+        "spaceStack": "space030",
+        "title": Object {
+          "stylePreset": "inkContrast",
+          "typographyPreset": "utilityHeading010",
+        },
+      },
+      "icon": Object {
+        "spaceInline": "space020",
+      },
+      "maxWidth": "100%",
+      "spaceInset": "spaceInset030",
+      "stylePreset": "inlineMessage",
+    },
     "link": Object {
       "externalIcon": Object {
         "size": "iconSize010",
@@ -2537,6 +2556,17 @@ Object {
       "base": Object {
         "color": "#535353",
         "iconColor": "#535353",
+      },
+    },
+    "inlineMessage": Object {
+      "base": Object {
+        "backgroundColor": "#e8f6f8",
+        "borderColor": "#128293",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "borderWidth": "0 0 0 4px",
+        "color": "#ffffff",
+        "iconColor": "#128293",
       },
     },
     "linkEmail": Object {

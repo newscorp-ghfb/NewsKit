@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineMessage renders with Title 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #e8f6f8;
+  border-color: #128293;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 0 0 0 4px;
+  color: #ffffff;
+  max-width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 svg {
+  fill: #128293;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.emotion-2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin-bottom: 12px;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.23750000000000002em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
+}
+
+.emotion-3 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #2e2e2e;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 svg {
+  fill: #2e2e2e;
+}
+
+<div
+    class="emotion-0"
+    data-testid="inline-message"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        aria-live="off"
+        class="emotion-2"
+        role="region"
+      >
+        <p
+          class="emotion-3"
+        >
+          Your title here
+        </p>
+        <p
+          class="emotion-4"
+        >
+          Your message text here
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InlineMessage renders with Title and Icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #e8f6f8;
+  border-color: #128293;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 0 0 0 4px;
+  color: #ffffff;
+  max-width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 svg {
+  fill: #128293;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.emotion-2 {
+  margin-right: 8px;
+}
+
+.emotion-2 svg {
+  display: block;
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin-bottom: 12px;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.23750000000000002em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
+}
+
+.emotion-6 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #2e2e2e;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-7 svg {
+  fill: #2e2e2e;
+}
+
+<div
+    class="emotion-0"
+    data-testid="inline-message"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+          />
+        </svg>
+      </div>
+      <div
+        aria-live="off"
+        class="emotion-5"
+        role="region"
+      >
+        <p
+          class="emotion-6"
+        >
+          Your title here
+        </p>
+        <p
+          class="emotion-7"
+        >
+          Your message text here
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InlineMessage renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #e8f6f8;
+  border-color: #128293;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 0 0 0 4px;
+  color: #ffffff;
+  max-width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 svg {
+  fill: #128293;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.emotion-2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #2e2e2e;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+}
+
+<div
+    class="emotion-0"
+    data-testid="inline-message"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        aria-live="off"
+        class="emotion-2"
+        role="region"
+      >
+        <p
+          class="emotion-3"
+        >
+          Your message text here
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InlineMessage renders with overrides and all props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: lightpink;
+  border-width: 1px 4px;
+  border-color: deeppink;
+  border-style: solid;
+  border-radius: 3px;
+  max-width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 svg {
+  fill: deeppink;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.emotion-2 {
+  margin-right: 24px;
+}
+
+.emotion-2 svg {
+  display: block;
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.1680555555555556em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.2680555555555556em;
+}
+
+.emotion-6 svg {
+  fill: #ffffff;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-7 svg {
+  fill: #ffffff;
+}
+
+<div
+    class="emotion-0"
+    data-testid="inline-message"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+          />
+        </svg>
+      </div>
+      <div
+        aria-live="off"
+        class="emotion-5"
+        role="region"
+      >
+        <p
+          class="emotion-6"
+        >
+          Your title here
+        </p>
+        <p
+          class="emotion-7"
+        >
+          Your message text here
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

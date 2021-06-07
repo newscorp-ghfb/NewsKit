@@ -763,6 +763,25 @@ export const componentDefaults = {
       spaceInline: 'space030',
     },
   },
+  inlineMessage: {
+    stylePreset: 'inlineMessage',
+    spaceInset: 'spaceInset030',
+    maxWidth: '100%',
+    icon: {
+      spaceInline: 'space020',
+    },
+    content: {
+      spaceStack: 'space030',
+      title: {
+        stylePreset: 'inkContrast',
+        typographyPreset: 'utilityHeading010',
+      },
+      message: {
+        stylePreset: 'inkBase',
+        typographyPreset: 'utilityBody010',
+      },
+    },
+  },
   unorderedList: {
     spaceStack: 'space040',
     content: {
