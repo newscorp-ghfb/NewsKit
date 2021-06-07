@@ -32,6 +32,7 @@ export interface FormRef {
   setValue: UseFormReturn['setValue'];
   getValues: UseFormReturn['getValues'];
   trigger: UseFormReturn['trigger'];
+  control: UseFormReturn['control'];
   element: HTMLFormElement | null;
 }
 

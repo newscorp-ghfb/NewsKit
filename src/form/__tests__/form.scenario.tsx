@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import {Form} from '..';
+import 'react-phone-number-input/style.css';
+import {Form, FormRef} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -10,6 +11,9 @@ import {Button} from '../../button';
 import {TextInput, TextInputSize} from '../../text-input';
 import {Block} from '../../block';
 import {Stack} from '../../stack';
+
+const PhoneInputWithCountry = require('react-phone-number-input/react-hook-form')
+  .default;
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -278,6 +282,61 @@ export default {
           </Block>
         </React.Fragment>
       ),
+    },
+    {
+      storyName: 'form-with-phone-input',
+      parameters: {eyes: {include: false}},
+      storyFn: () => {
+        const FormWithPhoneInput: React.FC = () => {
+          const formRef = React.useRef<FormRef>(null);
+          const [value, setValue] = React.useState();
+          return (
+            <Block>
+              <Stack
+                flow="horizontal-center"
+                stackDistribution="space-between"
+                spaceInline="space030"
+              >
+                <Form ref={formRef} onSubmit={onSubmit} validationMode="onBlur">
+                  <Block spaceStack="space050">
+                    <TextInput
+                      size={TextInputSize.Small}
+                      label="Username"
+                      name="username"
+                      assistiveText="Your username"
+                      rules={{
+                        required: 'Required field',
+                        minLength: {
+                          value: 5,
+                          message:
+                            'Usernames must be at least 5 characters long',
+                        },
+                        validate: validateUserName,
+                      }}
+                    />
+                  </Block>
+                  <Block>
+                    <PhoneInputWithCountry
+                      placeholder="Enter phone number"
+                      name="phonenumber"
+                      control={formRef.current?.control}
+                      value={value}
+                      onChange={setValue}
+                    />
+                  </Block>
+                  <Button type="submit">Submit</Button>
+                </Form>
+              </Stack>
+            </Block>
+          );
+        };
+        return (
+          <React.Fragment>
+            <StorybookHeading>Form with Telephone number</StorybookHeading>
+            <FormWithPhoneInput />
+          </React.Fragment>
+        );
+      },
     },
   ],
 };

@@ -7434,6 +7434,11 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+country-flag-icons@^1.0.2:
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/country-flag-icons/-/country-flag-icons-1.2.10.tgz#c60fdf25883abacd28fbbf3842b920890f944591"
+  integrity sha512-nG+kGe4wVU9M+EsLUhP4buSuNdBH0leTm0Fv6RToXxO9BbbxUKV9VUq+9AcztnW7nEnweK7WYdtJsfyNLmQugQ==
+
 cp-file@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/cp-file/-/cp-file-7.0.0.tgz#b9454cfd07fe3b974ab9ea0e5f29655791a9b8cd"
@@ -10999,6 +11004,13 @@ inline-style-parser@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.1.1.tgz#ec8a3b429274e9c0a1f1c4ffa9453a7fef72cea1"
 
+input-format@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/input-format/-/input-format-0.3.6.tgz#b9b167dbd16435eb3c0012347964b230ea0024c8"
+  integrity sha512-SbUu43CDVV5GlC8Xi6NYBUoiU+tLpN/IMYyQl0mzSXDiU1w0ql8wpcwjDOFpaCVLySLoreLUimhI82IA5y42Pw==
+  dependencies:
+    prop-types "^15.7.2"
+
 inquirer@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.0.0.tgz#e8c20303ddc15bbfc2c12a6213710ccd9e1413d8"
@@ -12414,6 +12426,11 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+libphonenumber-js@^1.9.19:
+  version "1.9.19"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.19.tgz#2e49c86185ed1aa67f2906fb20d752c8837a5c29"
+  integrity sha512-RjStfSE63LvXQEBw7pgQHPkY35z8feiMjC9wLvL1Hbt8PbhxpRrACwMXmLQgabb+IpVdcEx+olh8ll7UDXXkfA==
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
@@ -15671,6 +15688,17 @@ react-markings@^1.2.0:
 react-node-resolver@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-node-resolver/-/react-node-resolver-1.0.1.tgz#1798a729c0e218bf2f0e8ddf79c550d4af61d83a"
+
+react-phone-number-input@^3.1.23:
+  version "3.1.23"
+  resolved "https://registry.yarnpkg.com/react-phone-number-input/-/react-phone-number-input-3.1.23.tgz#8e8d2b7fb98d94514721d05ca5c58bd31f8d06e1"
+  integrity sha512-UuIRC4UIwjuC7itrLKH0slq7f6ZDulQt9TB6clPhoevYeu/0yB86bQLKoHaTWCxxY1rYUPGctzR1OzNgBngP/Q==
+  dependencies:
+    classnames "^2.2.5"
+    country-flag-icons "^1.0.2"
+    input-format "^0.3.6"
+    libphonenumber-js "^1.9.19"
+    prop-types "^15.7.2"
 
 react-popper-tooltip@^3.1.1:
   version "3.1.1"

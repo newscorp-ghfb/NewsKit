@@ -80,6 +80,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
       getValues: formContext.getValues,
       trigger: formContext.trigger,
       element: formRef.current,
+      control: formContext.control,
     }),
     [defaultValues, formContext, setAllFieldsHadErrorToFalse],
   );

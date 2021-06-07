@@ -375,6 +375,7 @@ describe('Form', () => {
       setValue: 'setValue-function',
       getValues: 'getValues-function',
       trigger: 'trigger-function',
+      control: 'control-function',
       handleSubmit: () => {},
       register: (name: string) => ({name}),
     };
