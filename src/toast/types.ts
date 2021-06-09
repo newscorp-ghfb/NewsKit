@@ -46,10 +46,10 @@ export interface ToastProps extends React.AriaAttributes {
       stylePreset?: MQ<string>;
     };
     content?: {
-      spaceStack?: MQ<string>;
       title?: {
         stylePreset?: MQ<string>;
         typographyPreset?: MQ<string>;
+        spaceStack?: MQ<string>;
       };
       message?: {
         stylePreset?: MQ<string>;

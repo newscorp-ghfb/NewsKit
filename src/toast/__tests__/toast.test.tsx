@@ -125,10 +125,10 @@ describe('Toast', () => {
             spaceInline: 'space040',
           },
           content: {
-            spaceStack: 'space050',
             title: {
               typographyPreset: 'utilityHeading020',
               stylePreset: 'ink',
+              spaceStack: 'space050',
             },
             message: {
               typographyPreset: 'utilityBody020',

@@ -29,34 +29,6 @@ const myCustomTheme = compileTheme(
     name: 'toast-intents-theme',
     overrides: {
       stylePresets: {
-        toastSolidInformative: {
-          base: {
-            backgroundColor: '{{colors.interfaceInformative010}}',
-            borderRadius: '{{borders.borderRadiusRounded020}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-        },
-        toastSolidNotice: {
-          base: {
-            backgroundColor: '{{colors.interfaceNotice010}}',
-            borderRadius: '{{borders.borderRadiusRounded020}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-        },
-        toastSolidPositive: {
-          base: {
-            backgroundColor: '{{colors.interfacePositive010}}',
-            borderRadius: '{{borders.borderRadiusRounded020}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-        },
-        toastSolidNegative: {
-          base: {
-            backgroundColor: '{{colors.interfaceNegative010}}',
-            borderRadius: '{{borders.borderRadiusRounded020}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-        },
         toastWithOverrides: {
           base: {
             backgroundColor: '#fdda9b',
@@ -84,7 +56,7 @@ const ToastInformative = withDefaultProps(Toast, {
       }}
     />
   ),
-  overrides: {stylePreset: 'toastSolidInformative'},
+  overrides: {stylePreset: 'toastInformative'},
 });
 
 const ToastNotice = withDefaultProps(Toast, {
@@ -95,7 +67,7 @@ const ToastNotice = withDefaultProps(Toast, {
       }}
     />
   ),
-  overrides: {stylePreset: 'toastSolidNotice'},
+  overrides: {stylePreset: 'toastNotice'},
 });
 
 const ToastPositive = withDefaultProps(Toast, {
@@ -106,7 +78,7 @@ const ToastPositive = withDefaultProps(Toast, {
       }}
     />
   ),
-  overrides: {stylePreset: 'toastSolidPositive'},
+  overrides: {stylePreset: 'toastPositive'},
 });
 
 const ToastNegative = withDefaultProps(Toast, {
@@ -117,7 +89,7 @@ const ToastNegative = withDefaultProps(Toast, {
       }}
     />
   ),
-  overrides: {stylePreset: 'toastSolidNegative'},
+  overrides: {stylePreset: 'toastNegative'},
 });
 
 const toastLink = (
@@ -348,8 +320,8 @@ export default {
                 spaceInline: 'space040',
               },
               content: {
-                spaceStack: '5px',
                 title: {
+                  spaceStack: '5px',
                   typographyPreset: 'utilityBody030',
                   stylePreset: 'ink',
                 },
@@ -377,6 +349,44 @@ export default {
         eyes: {include: false},
       },
       storyFn: () => {
+        const ToastWithState = () => {
+          const [state, setState] = React.useState(false);
+          const onClick = () => setState(true);
+          return (
+            <Toast
+              role="alert"
+              overrides={{
+                stylePreset: !state ? 'toastNotice' : 'toastPositive',
+              }}
+              icon={
+                <IconFilledCheckCircle
+                  overrides={{
+                    size: 'iconSize020',
+                  }}
+                />
+              }
+              actions={
+                !state
+                  ? () => (
+                      <Button
+                        size="small"
+                        overrides={{stylePreset: 'buttonMinimalInverse'}}
+                        onClick={onClick}
+                      >
+                        undo
+                      </Button>
+                    )
+                  : undefined
+              }
+            >
+              {!state ? 'Your account has been updated' : 'Action reversed'}
+            </Toast>
+          );
+        };
+
+        const notifyWithToggle = () =>
+          toast(<ToastWithState />, {autoHideDuration: 5000});
+
         const notifyNeutral = () =>
           toast(
             <Toast
@@ -442,6 +452,9 @@ export default {
               onClick={notifyError}
             >
               Error with duration
+            </button>
+            <button onClick={notifyWithToggle} type="button">
+              with toggle
             </button>
 
             <ToastProvider

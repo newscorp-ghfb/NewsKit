@@ -733,7 +733,7 @@ export const componentDefaults = {
     },
   },
   toast: {
-    stylePreset: 'toastSolidNeutral',
+    stylePreset: 'toastNeutral',
     spaceInset: 'spaceInset030',
     maxWidth: {
       xs: '90%',
@@ -749,10 +749,10 @@ export const componentDefaults = {
       stylePreset: 'dividerInverse',
     },
     content: {
-      spaceStack: 'space010',
       title: {
         stylePreset: 'inkInverse',
         typographyPreset: 'utilityHeading010',
+        spaceStack: 'space010',
       },
       message: {
         stylePreset: 'inkInverse',
@@ -771,8 +771,8 @@ export const componentDefaults = {
       spaceInline: 'space020',
     },
     content: {
-      spaceStack: 'space030',
       title: {
+        spaceStack: 'space030',
         stylePreset: 'inkContrast',
         typographyPreset: 'utilityHeading010',
       },

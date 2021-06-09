@@ -134,8 +134,8 @@ export const StyledTitleContainer = styled(TextBlock)<
 
   ${getResponsiveSpace(
     'marginBottom',
-    'toast.content',
-    'content',
+    'toast.content.title',
+    'content.title',
     'spaceStack',
   )}
 `;

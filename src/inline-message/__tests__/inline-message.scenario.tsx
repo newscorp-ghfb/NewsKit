@@ -93,12 +93,12 @@ export default {
                 spaceInline: 'space050',
               },
               content: {
-                spaceStack: 'space050',
                 message: {
                   typographyPreset: 'utilityBody020',
                   stylePreset: 'inkInverse',
                 },
                 title: {
+                  spaceStack: 'space050',
                   typographyPreset: 'utilityHeading020',
                   stylePreset: 'inkInverse',
                 },

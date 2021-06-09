@@ -64,7 +64,6 @@ describe('InlineMessage', () => {
           spaceInline: 'space050',
         },
         content: {
-          spaceStack: 'space050',
           message: {
             typographyPreset: 'utilityBody020',
             stylePreset: 'inkInverse',
@@ -72,6 +71,7 @@ describe('InlineMessage', () => {
           title: {
             typographyPreset: 'utilityHeading020',
             stylePreset: 'inkInverse',
+            spaceStack: 'space050',
           },
         },
       },

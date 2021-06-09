@@ -760,8 +760,8 @@ Object {
           "stylePreset": "inkBase",
           "typographyPreset": "utilityBody010",
         },
-        "spaceStack": "space030",
         "title": Object {
+          "spaceStack": "space030",
           "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
@@ -1040,8 +1040,8 @@ Object {
           "stylePreset": "inkInverse",
           "typographyPreset": "utilityBody010",
         },
-        "spaceStack": "space010",
         "title": Object {
+          "spaceStack": "space010",
           "stylePreset": "inkInverse",
           "typographyPreset": "utilityHeading010",
         },
@@ -1063,7 +1063,7 @@ Object {
         "xs": "90%",
       },
       "spaceInset": "spaceInset030",
-      "stylePreset": "toastSolidNeutral",
+      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -3514,9 +3514,37 @@ Object {
         "iconColor": "{{colors.interactiveVisited010}}",
       },
     },
-    "toastSolidNeutral": Object {
+    "toastInformative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "toastNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "toastNeutral": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "toastNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "toastPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusRounded020}}",
         "iconColor": "{{colors.inkInverse}}",
       },
