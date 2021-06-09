@@ -32,6 +32,7 @@ Array [
   "FlagSize",
   "Flow",
   "Form",
+  "FormController",
   "Global",
   "Grid",
   "H1",
