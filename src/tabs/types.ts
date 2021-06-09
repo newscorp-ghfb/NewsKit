@@ -76,6 +76,7 @@ export interface TabProps {
   children: React.ReactNode;
   ariaLabel?: string;
   autoFocus?: boolean;
+  dataTestId?: string;
   overrides?: BaseFlagOverrides;
   disabled?: boolean;
 }
@@ -88,6 +89,7 @@ export interface TabInternalProps extends BaseFlagProps<BaseFlagOverrides> {
   ariaLabel?: string;
   tabKey?: number;
   autoFocus?: boolean;
+  dataTestId?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   onKeyDown?: (event: React.KeyboardEvent<HTMLButtonElement>) => void;
   onMouseDown?: (event: React.MouseEvent<HTMLButtonElement>) => void;

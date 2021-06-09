@@ -241,7 +241,6 @@ export const Tabs: React.FC<TabsProps> = ({
     }
     return tab;
   };
-
   const tabs = tabData.reduce((acc, tab, index, array) => {
     acc.push(
       <StyledDistributionWrapper
@@ -254,6 +253,7 @@ export const Tabs: React.FC<TabsProps> = ({
             key={tab.key}
             selected={tab.selected}
             autoFocus={tab.autoFocus}
+            dataTestId={tab.dataTestId}
             size={size}
             onKeyDown={handleKeyDown}
             onClick={() => setActiveTabIndex(tab.key)}

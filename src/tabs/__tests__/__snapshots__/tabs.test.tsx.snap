@@ -398,7 +398,7 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -435,7 +435,7 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -472,7 +472,7 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -930,7 +930,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -967,7 +967,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -1004,7 +1004,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -5198,7 +5198,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -5235,7 +5235,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -5272,7 +5272,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -5744,7 +5744,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -5781,7 +5781,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -5818,7 +5818,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -6276,7 +6276,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -6313,7 +6313,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -6350,7 +6350,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -6822,7 +6822,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -6859,7 +6859,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -6896,7 +6896,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -7354,7 +7354,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -7391,7 +7391,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -7428,7 +7428,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -7900,7 +7900,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -7937,7 +7937,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -7974,7 +7974,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -8432,7 +8432,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -8469,7 +8469,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -8506,7 +8506,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -8964,7 +8964,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -9001,7 +9001,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -9038,7 +9038,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -9510,7 +9510,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -9547,7 +9547,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -9584,7 +9584,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -10082,7 +10082,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -10128,7 +10128,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -10174,7 +10174,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -10487,11 +10487,11 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -10525,47 +10525,47 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -10573,7 +10573,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -10584,7 +10584,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -10661,7 +10661,16 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -10674,7 +10683,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -10682,7 +10691,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -10718,7 +10727,16 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -10731,7 +10749,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -10739,7 +10757,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -10775,7 +10793,16 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -10785,7 +10812,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 4px; transform: translateX(0px);"
@@ -10794,7 +10821,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -10802,7 +10829,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -10812,7 +10839,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -10823,7 +10850,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -11233,7 +11260,7 @@ exports[`Tabs renders with default styles 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -11270,7 +11297,7 @@ exports[`Tabs renders with default styles 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -11307,7 +11334,7 @@ exports[`Tabs renders with default styles 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -11792,7 +11819,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -11838,7 +11865,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -11884,7 +11911,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -12197,11 +12224,11 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -12235,47 +12262,47 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -12283,7 +12310,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -12294,7 +12321,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -12371,7 +12398,16 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -12384,7 +12420,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -12392,7 +12428,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -12428,7 +12464,16 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -12441,7 +12486,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -12449,7 +12494,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -12485,7 +12530,16 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -12495,7 +12549,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -12504,7 +12558,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -12512,7 +12566,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -12522,7 +12576,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -12533,7 +12587,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -12798,11 +12852,11 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -12836,47 +12890,47 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -12884,7 +12938,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -12895,7 +12949,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -12972,7 +13026,16 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -12985,7 +13048,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -12993,7 +13056,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -13029,7 +13092,16 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -13042,7 +13114,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -13050,7 +13122,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -13086,7 +13158,16 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -13096,7 +13177,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -13105,7 +13186,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -13113,7 +13194,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -13123,7 +13204,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -13134,7 +13215,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -13399,11 +13480,11 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -13437,47 +13518,47 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -13485,7 +13566,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -13496,7 +13577,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -13573,7 +13654,16 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -13586,7 +13676,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -13594,7 +13684,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -13630,7 +13720,16 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -13643,7 +13742,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -13651,7 +13750,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -13687,7 +13786,16 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -13697,7 +13805,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -13706,7 +13814,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -13714,7 +13822,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -13724,7 +13832,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -13735,7 +13843,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -14000,11 +14108,11 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -14038,47 +14146,47 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -14086,7 +14194,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -14097,7 +14205,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -14174,7 +14282,16 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -14187,7 +14304,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -14195,7 +14312,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -14231,7 +14348,16 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -14244,7 +14370,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -14252,7 +14378,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -14288,7 +14414,16 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -14298,7 +14433,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -14307,7 +14442,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -14315,7 +14450,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -14325,7 +14460,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -14336,7 +14471,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -15160,11 +15295,11 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -15203,47 +15338,47 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   text-align: left;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -15251,7 +15386,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   right: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -15262,7 +15397,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   right: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -15339,7 +15474,16 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -15352,7 +15496,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -15360,7 +15504,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -15396,7 +15540,16 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -15409,7 +15562,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -15417,7 +15570,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -15453,7 +15606,16 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -15463,7 +15625,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -15472,7 +15634,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -15480,7 +15642,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -15490,7 +15652,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -15501,7 +15663,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -15775,11 +15937,11 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -15818,47 +15980,47 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   text-align: right;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -15866,7 +16028,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   right: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -15877,7 +16039,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   right: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -15954,7 +16116,16 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -15967,7 +16138,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -15975,7 +16146,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -16011,7 +16182,16 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -16024,7 +16204,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -16032,7 +16212,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -16068,7 +16248,16 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -16078,7 +16267,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -16087,7 +16276,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -16095,7 +16284,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -16105,7 +16294,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -16116,7 +16305,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -16526,7 +16715,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -16563,7 +16752,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -16600,7 +16789,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -16913,11 +17102,11 @@ exports[`Tabs renders with overrides 1`] = `
   margin-top: -0.4625em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -16951,47 +17140,47 @@ exports[`Tabs renders with overrides 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -16999,7 +17188,7 @@ exports[`Tabs renders with overrides 1`] = `
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -17010,7 +17199,7 @@ exports[`Tabs renders with overrides 1`] = `
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -17087,7 +17276,16 @@ exports[`Tabs renders with overrides 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -17100,7 +17298,7 @@ exports[`Tabs renders with overrides 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -17108,7 +17306,7 @@ exports[`Tabs renders with overrides 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -17144,7 +17342,16 @@ exports[`Tabs renders with overrides 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -17157,7 +17364,7 @@ exports[`Tabs renders with overrides 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -17165,7 +17372,7 @@ exports[`Tabs renders with overrides 1`] = `
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -17201,7 +17408,16 @@ exports[`Tabs renders with overrides 1`] = `
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -17211,7 +17427,7 @@ exports[`Tabs renders with overrides 1`] = `
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -17220,7 +17436,7 @@ exports[`Tabs renders with overrides 1`] = `
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -17228,7 +17444,7 @@ exports[`Tabs renders with overrides 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -17238,7 +17454,7 @@ exports[`Tabs renders with overrides 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -17249,7 +17465,7 @@ exports[`Tabs renders with overrides 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -17659,7 +17875,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -17696,7 +17912,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -17733,7 +17949,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -18191,7 +18407,7 @@ exports[`Tabs renders with sizing 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -18228,7 +18444,7 @@ exports[`Tabs renders with sizing 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -18265,7 +18481,7 @@ exports[`Tabs renders with sizing 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -18723,7 +18939,7 @@ exports[`Tabs sets active on click 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          First tab
                         </span>
                       </div>
                     </div>
@@ -18760,7 +18976,7 @@ exports[`Tabs sets active on click 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Second tab
                         </span>
                       </div>
                     </div>
@@ -18797,7 +19013,7 @@ exports[`Tabs sets active on click 1`] = `
                         <span
                           class="emotion-11"
                         >
-                          Medium tab
+                          Third tab
                         </span>
                       </div>
                     </div>
@@ -19110,11 +19326,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -19148,54 +19364,54 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
   display: none;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -19205,7 +19421,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   display: none;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -19282,7 +19498,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -19295,7 +19520,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -19303,7 +19528,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -19339,7 +19564,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -19352,7 +19586,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -19360,7 +19594,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -19396,7 +19630,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -19406,7 +19649,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -19415,7 +19658,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -19423,7 +19666,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -19433,7 +19676,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -19444,7 +19687,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -19709,11 +19952,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -19747,47 +19990,47 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -19795,7 +20038,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -19806,7 +20049,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -19883,7 +20126,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -19896,7 +20148,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -19904,7 +20156,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -19940,7 +20192,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -19953,7 +20214,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -19961,7 +20222,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -19997,7 +20258,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -20007,7 +20277,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -20016,7 +20286,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -20024,7 +20294,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -20034,7 +20304,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -20045,7 +20315,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -20310,11 +20580,11 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -20348,47 +20618,47 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -20396,7 +20666,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -20407,7 +20677,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -20484,7 +20754,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -20497,7 +20776,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -20505,7 +20784,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -20541,7 +20820,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -20554,7 +20842,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -20562,7 +20850,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -20598,7 +20886,16 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -20608,7 +20905,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -20617,7 +20914,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -20625,7 +20922,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -20635,7 +20932,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -20646,7 +20943,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -20920,11 +21217,11 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -20963,54 +21260,54 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   text-align: left;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
   display: none;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -21020,7 +21317,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   display: none;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -21097,7 +21394,16 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -21110,7 +21416,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -21118,7 +21424,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -21154,7 +21460,16 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -21167,7 +21482,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -21175,7 +21490,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -21211,7 +21526,16 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -21221,7 +21545,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -21230,7 +21554,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -21238,7 +21562,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -21248,7 +21572,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -21259,7 +21583,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -21533,11 +21857,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -21576,47 +21900,47 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-align: left;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -21624,7 +21948,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   right: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -21635,7 +21959,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   right: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -21712,7 +22036,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -21725,7 +22058,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -21733,7 +22066,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -21769,7 +22102,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -21782,7 +22124,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -21790,7 +22132,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -21826,7 +22168,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -21836,7 +22187,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -21845,7 +22196,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -21853,7 +22204,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -21863,7 +22214,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -21874,7 +22225,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -22148,11 +22499,11 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-18 {
   scroll-snap-align: center;
 }
 
-.emotion-18 {
+.emotion-20 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -22191,47 +22542,47 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-align: left;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-20 svg {
   fill: #2e2e2e;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #e6f4ff;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) svg {
+.emotion-20:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #d5ebff;
   color: #0a68c1;
 }
 
-.emotion-18:active:not(:disabled) svg {
+.emotion-20:active:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-18:disabled {
+.emotion-20:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-20:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-30 {
   scroll-snap-align: end;
 }
 
-.emotion-35 {
+.emotion-41 {
   background-color: #0a68c1;
   position: absolute;
   z-index: 2;
@@ -22239,7 +22590,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   left: 0px;
 }
 
-.emotion-36 {
+.emotion-42 {
   background-color: #e4e4e4;
   display: block;
   position: absolute;
@@ -22250,7 +22601,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   left: 0px;
 }
 
-.emotion-37 {
+.emotion-43 {
   margin: 0;
   padding: 1px 0;
   width: 100%;
@@ -22327,7 +22678,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -22340,7 +22700,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-16"
+                class="emotion-18"
               >
                 <div
                   class="emotion-7"
@@ -22348,7 +22708,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -22384,7 +22744,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -22397,7 +22766,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-26"
+                class="emotion-30"
               >
                 <div
                   class="emotion-7"
@@ -22405,7 +22774,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                   <button
                     aria-controls="mock-nk-1"
                     aria-selected="false"
-                    class="emotion-18"
+                    class="emotion-20"
                     data-testid="tab"
                     id="mock-nk-1"
                     role="tab"
@@ -22441,7 +22810,16 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                         <span
                           class="emotion-14"
                         >
-                          Medium tab
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
                         </span>
                       </div>
                     </div>
@@ -22451,7 +22829,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
             </div>
             <div
               aria-hidden="true"
-              class="emotion-35"
+              class="emotion-41"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -22460,7 +22838,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
         </div>
       </div>
       <div
-        class="emotion-36"
+        class="emotion-42"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -22468,7 +22846,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -22478,7 +22856,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -22489,7 +22867,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-37"
+      class="emotion-43"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"

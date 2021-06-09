@@ -17,6 +17,7 @@ export const TabInternal = React.forwardRef<
       selected,
       id,
       align = TabAlign.Center,
+      dataTestId = 'tab',
       ...props
     },
     ref,
@@ -29,7 +30,7 @@ export const TabInternal = React.forwardRef<
 
     return (
       <TabButton
-        data-testid="tab"
+        data-testid={dataTestId}
         role="tab"
         aria-label={ariaLabel}
         ref={ref}

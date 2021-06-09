@@ -308,7 +308,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               name: 'label',
-              type: '	React.ReactNode',
+              type: 'React.ReactNode',
               description: 'Label of the Tab item.',
             },
             {
@@ -322,6 +322,19 @@ export default (layoutProps: LayoutProps) => (
               type: 'boolean',
               default: 'false',
               description: 'If true, renders a Tab in a disabled state.',
+            },
+            {
+              name: 'autoFocus',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'If true, this Tab will be auto-focussed. Only one item on the page can be auto-focussed.',
+            },
+            {
+              name: 'dataTestId',
+              type: 'string',
+              default: 'tab',
+              description: 'Defines the data-testid attribute of the Tab item.',
             },
           ],
           overridesRows: [

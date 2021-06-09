@@ -14,9 +14,9 @@ import {KEYBOARD_ARROWS} from '../utils';
 const renderTabsDefault = (props: TabsProps) => <Tabs {...props} />;
 
 const tabsWithLabel = [
-  <Tab label="Medium tab">First tab content</Tab>,
-  <Tab label="Medium tab">Second tab content</Tab>,
-  <Tab label="Medium tab">Third tab content</Tab>,
+  <Tab label="First tab">First tab content</Tab>,
+  <Tab label="Second tab">Second tab content</Tab>,
+  <Tab label="Third tab">Third tab content</Tab>,
 ];
 
 const tabsWithIcons = [
@@ -25,18 +25,17 @@ const tabsWithIcons = [
   <Tab label={<IconFilledEmail />}>Third tab content</Tab>,
 ];
 
-const tabWithLabelAndIcon = (
+const tabWithLabelAndIcon = (name: string) => (
   <>
     <IconFilledEmail />
-    Medium tab
+    {name} tab
   </>
 );
 
 const tabsWithLabelAndIcons = [
-  <Tab label={tabWithLabelAndIcon}>First tab content</Tab>,
-
-  <Tab label={tabWithLabelAndIcon}>Second tab content</Tab>,
-  <Tab label={tabWithLabelAndIcon}>Third tab content</Tab>,
+  <Tab label={tabWithLabelAndIcon('First')}>First tab content</Tab>,
+  <Tab label={tabWithLabelAndIcon('Second')}>Second tab content</Tab>,
+  <Tab label={tabWithLabelAndIcon('Third')}>Third tab content</Tab>,
 ];
 
 const selectedTabStyled = 'color: #0a68c1';
@@ -120,6 +119,23 @@ describe('Tabs', () => {
 
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
+  });
+
+  it('supports custom data-testid', async () => {
+    const props: TabsProps = {
+      children: [
+        <Tab label="First tab">First tab content</Tab>,
+        <Tab label="Second tab">Second tab content</Tab>,
+        <Tab dataTestId="last-tab" label="Third tab">
+          Third tab content
+        </Tab>,
+      ],
+    };
+    const {getByTestId} = renderWithTheme(renderTabsDefault, props);
+
+    const tab = getByTestId('last-tab');
+
+    expect(tab).toBeDefined();
   });
 
   it('sets active on click', async () => {
