@@ -2,8 +2,9 @@ import {
   styled,
   getSizingFromTheme,
   getTypographyPreset,
-  getSpacingInset,
   getStylePreset,
+  getResponsiveSpace,
+  getResponsiveSize,
 } from '../utils/style';
 
 import {BaseFlagProps, BaseFlagOverrides} from './types';
@@ -36,35 +37,32 @@ export const StyledBaseFlag = styled.div<
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  ${({theme, overrides}) => {
-    const getSizing = (tokenName: string) => {
-      const token = getToken({theme, overrides}, '', '', tokenName);
-      return getSizingFromTheme(
-        token,
-        undefined,
-      )({
-        theme,
-      });
-    };
-    const minHeight = getSizing('minHeight');
-    const minWidth = getSizing('minWidth');
-    const width = getSizing('width');
-    const height = getSizing('height');
-    const iconSize = getSizing('iconSize');
 
-    return {
-      minHeight: overrides && overrides.height ? null : minHeight,
-      minWidth: overrides && overrides.width ? null : minWidth,
-      width,
-      height,
-      svg: {
-        width: iconSize,
-        height: iconSize,
-      },
-    };
-  }}
+  ${props =>
+    getResponsiveSize(
+      minHeight =>
+        props.overrides && props.overrides.height ? '' : {minHeight},
+      '',
+      '',
+      'minHeight',
+    )(props)};
+  ${props =>
+    getResponsiveSize(
+      minWidth => (props.overrides && props.overrides.width ? '' : {minWidth}),
+      '',
+      '',
+      'minWidth',
+    )(props)};
+  ${getResponsiveSize('width', '', '', 'width')};
+  ${getResponsiveSize('height', '', '', 'height')};
+  ${getResponsiveSpace('padding', '', '', 'spaceInset')};
+  ${getResponsiveSize('maxWidth', '', '', 'maxWidth')};
+  ${getResponsiveSize('maxHeight', '', '', 'maxHeight')};
 
-  ${getSpacingInset('', '')}
+  svg {
+    ${getResponsiveSize('width', '', '', 'iconSize')};
+    ${getResponsiveSize('height', '', '', 'iconSize')};
+  }
 
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
 

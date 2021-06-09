@@ -6,7 +6,7 @@ import {LegacyBlock} from '../../components/legacy-block';
 import {Flag, FlagSize, Sub} from 'newskit';
 import {CodeFromDefaultPresets} from '../../components/code';
 export default Layout;
-import {InverseTheme} from '../../components/inverse-theme'
+import {InverseTheme} from '../../components/inverse-theme';
 
 # Flag
 
@@ -38,8 +38,8 @@ Flags have a number of props to facilitate a variety of uses:
     preset.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Here are the overrides that the Flag accepts:
+    If provided, overrides the respective presets for the component and provided
+    elements. Here are the overrides that the Flag accepts:
     <Prop name="spaceInset" type="MQ<string>">
       If provided, this overrides the padding of the Flag. Otherwise,
       spaceInsetSquish010 or spaceInsetSquish020 is used depending on the `size`
@@ -49,35 +49,48 @@ Flags have a number of props to facilitate a variety of uses:
       If provided, this overrides the style preset applied to the Flag.
     </Prop>
     <Prop name="typographyPreset" type="MQ<string>">
-      If provided, this overrides the typography preset applied to the Flag. Otherwise,
-      utilityLabel010 or utilityLabel030 is used depending on the `size` prop.
+      If provided, this overrides the typography preset applied to the Flag.
+      Otherwise, utilityLabel010 or utilityLabel030 is used depending on the
+      `size` prop.
     </Prop>
     <Prop name="spaceInline" type="MQ<string>">
       If provided, this overrides the space between multiple children in the
-      underlying Stack. If less than 2 children are passed, this prop is irrelevant. 
+      underlying Stack. If less than 2 children are passed, this prop is
+      irrelevant.
     </Prop>
-    <Prop name="iconSize" type="string">
+    <Prop name="iconSize" type="MQ<string>">
       If provided, this overrides the icon size of any child icons. If no icons
       are present in the Flag's children then this prop is irrelevant.
       <br />
       <br />
-      <i>Note: You can also set the icon size by passing it directly as a size prop to the icon,
-      but by doing this you will override the iconSize passed from overrides.
-      We discourage this approach but we will keep the functionality
-      in case it is needed.</i>
+      <i>
+        Note: You can also set the icon size by passing it directly as a size
+        prop to the icon, but by doing this you will override the iconSize
+        passed from overrides. We discourage this approach but we will keep the
+        functionality in case it is needed.
+      </i>
     </Prop>
-    <Prop name="width" type="string">
-      If provided, this sets a fixed width to the Flag. This can be a sizing token
-      from the theme, or any CSS length value, e.g. 100% for a full-width element.
+    <Prop name="width" type="MQ<string>">
+      If provided, this sets a fixed width to the Flag. This can be a sizing
+      token from the theme, or any CSS length value, e.g. 100% for a full-width
+      element.
     </Prop>
-    <Prop name="height" type="string">
+    <Prop name="height" type="MQ<string>">
       If provided, this sets a fixed height to the Flag. This can be a sizing
       token from the theme, or any CSS length value.
     </Prop>
-    <Prop name="minHeight" type="string">
+    <Prop name="minHeight" type="MQ<string>">
       If provided, this sets a minimum height to the Flag. This can be a sizing
       token from the theme, or any CSS length value. By default, sizing050 or
       sizing060 is used depending on the `size` prop.
+    </Prop>
+    <Prop name="maxHeight" type="MQ<string>">
+      If provided, this sets a maximum height to the Flag. This can be a sizing
+      token from the theme, or any CSS length value.
+    </Prop>
+    <Prop name="maxWidth" type="MQ<string>">
+      If provided, this sets a maximum width to the Flag. This can be a sizing
+      token from the theme, or any CSS length value.
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="flag" />
@@ -190,21 +203,21 @@ NewsKit provides six types of predefined style preset flags variants.
 
 ### Types
 
-| StylePreset    |  Flag                                                            | 
-| -------------- | :--------------------------------------------------------------: |
-| flagSolid      |  <Flag overrides={{stylePreset: 'flagSolid'}}> Text </Flag>      | 
-| flagSolidLive  |  <Flag overrides={{stylePreset: 'flagSolidLive'}}> Text </Flag>  | 
-| flagMinimal    |  <Flag overrides={{stylePreset: 'flagMinimal'}}> Text </Flag>    | 
+| StylePreset   |                              Flag                              |
+| ------------- | :------------------------------------------------------------: |
+| flagSolid     |   <Flag overrides={{stylePreset: 'flagSolid'}}> Text </Flag>   |
+| flagSolidLive | <Flag overrides={{stylePreset: 'flagSolidLive'}}> Text </Flag> |
+| flagMinimal   |  <Flag overrides={{stylePreset: 'flagMinimal'}}> Text </Flag>  |
 
 Inverse presets
 
 <InverseTheme>
 
-| StylePreset             |  Flag                                                                                               | 
-| ----------------------- | :--------------------------------------------------------------------------------------------------:| 
-| flagSolidInverse        |  <InverseTheme><Flag overrides={{stylePreset: 'flagSolidInverse'}}> Text </Flag></InverseTheme>     | 
-| flagSolidLiveInverse    |  <InverseTheme><Flag overrides={{stylePreset: 'flagSolidLiveInverse'}}> Text </Flag></InverseTheme> | 
-| flagMinimalInverse      |  <InverseTheme><Flag overrides={{stylePreset: 'flagMinimalInverse'}}> Text </Flag></InverseTheme>   | 
+| StylePreset          |                                                Flag                                                |
+| -------------------- | :------------------------------------------------------------------------------------------------: |
+| flagSolidInverse     |   <InverseTheme><Flag overrides={{stylePreset: 'flagSolidInverse'}}> Text </Flag></InverseTheme>   |
+| flagSolidLiveInverse | <InverseTheme><Flag overrides={{stylePreset: 'flagSolidLiveInverse'}}> Text </Flag></InverseTheme> |
+| flagMinimalInverse   |  <InverseTheme><Flag overrides={{stylePreset: 'flagMinimalInverse'}}> Text </Flag></InverseTheme>  |
 
 </InverseTheme>
 

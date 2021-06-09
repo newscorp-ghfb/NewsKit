@@ -11,11 +11,13 @@ export interface BaseFlagOverrides {
   stylePreset?: MQ<string>;
   spaceInset?: MQ<string>;
   spaceInline?: MQ<string>;
-  width?: string;
-  height?: string;
-  minWidth?: string;
-  minHeight?: string;
-  iconSize?: string;
+  width?: MQ<string>;
+  height?: MQ<string>;
+  minWidth?: MQ<string>;
+  minHeight?: MQ<string>;
+  maxWidth?: MQ<string>;
+  maxHeight?: MQ<string>;
+  iconSize?: MQ<string>;
 }
 
 export interface BaseFlagProps<TOverrides> {

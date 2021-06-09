@@ -359,7 +359,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               attribute: 'iconSize',
-              type: 'string',
+              type: 'MQ<string>',
               default: [
                 'Small = iconSize010',
                 'Medium = iconSize020',
@@ -403,6 +403,18 @@ export default (layoutProps: LayoutProps) => (
               default: 'space020',
               description:
                 'If provided, this overrides the space between the icon and the label in the Tab.',
+            },
+            {
+              attribute: 'maxWidth',
+              type: 'MQ<string>',
+              description:
+                'If provided, this sets a maximum height to the Tab. This can be a sizing token from the theme, or any CSS length value.',
+            },
+            {
+              attribute: 'minWidth',
+              type: 'MQ<string>',
+              description:
+                'If provided, this sets a maximum width to the Tab. This can be a sizing token from the theme, or any CSS length value.',
             },
           ],
         },
