@@ -807,6 +807,11 @@ Object {
         },
       },
     },
+    "structuredListItem": Object {
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "large": Object {
         "iconSize": "iconSize030",
@@ -2807,6 +2812,22 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
+      },
+    },
+    "structuredListItem": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "borderColor": "#f0f0f0",
+        "borderStyle": "solid",
+        "borderWidth": "0 0 1px 0",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
       },
     },
     "tab": Object {

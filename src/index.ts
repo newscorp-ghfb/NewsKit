@@ -30,6 +30,7 @@ export * from './slider';
 export * from './stack-child';
 export * from './stack';
 export * from './standfirst';
+export * from './structured-list';
 export * from './tabs';
 export * from './tag';
 export * from './tealium';

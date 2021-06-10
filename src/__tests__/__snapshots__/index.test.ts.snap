@@ -73,6 +73,8 @@ Array [
   "StackDistribution",
   "Standfirst",
   "StatefulSlider",
+  "StructuredListCell",
+  "StructuredListItem",
   "Sub",
   "Subscript",
   "Sup",

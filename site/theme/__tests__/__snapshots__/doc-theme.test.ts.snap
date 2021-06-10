@@ -882,6 +882,11 @@ Object {
         },
       },
     },
+    "structuredListItem": Object {
+      "minHeight": "sizing100",
+      "spaceInset": "spaceInsetStretch040",
+      "stylePreset": "structuredListItem",
+    },
     "tab": Object {
       "large": Object {
         "iconSize": "iconSize030",
@@ -3306,6 +3311,22 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
+      },
+    },
+    "structuredListItem": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "borderColor": "{{colors.interface030}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {

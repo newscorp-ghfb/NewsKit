@@ -1560,6 +1560,26 @@ stylePresets.toastNegative = {
 
 // Inline Message
 
+// StructuredList
+stylePresets.structuredListItem = {
+  base: {
+    borderStyle: 'solid',
+    borderColor: '{{colors.interface030}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveSecondary010}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveSecondary020}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.transparent}}',
+  },
+};
+
+// Inline Message
 stylePresets.inlineMessage = {
   base: {
     backgroundColor: '{{colors.interfaceInformative020}}',
