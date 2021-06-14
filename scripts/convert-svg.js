@@ -1,9 +1,14 @@
 // This script is for patching up and creating TSX files from the SVGs we get from Luke's Figma plugin
+// See https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/3341713531/Documentation+-+Writing+Guidelines+for+engineers#Converting-illustrations
 
 /* eslint-disable no-template-curly-in-string */
 const fs = require('fs');
 const path = require('path');
 
+/*
+ * === TARGET FOLDER HERE ===
+ * Replace the string at the end of the "paths" array with the folder you have put the SVG files in.
+ */
 const paths = [__dirname, '../site/components/illustrations/components'];
 
 const files = fs.readdirSync(path.resolve(...paths));
