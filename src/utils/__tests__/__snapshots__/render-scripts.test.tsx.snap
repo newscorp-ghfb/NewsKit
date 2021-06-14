@@ -49,3 +49,37 @@ exports[`RenderScripts renders inline and external scripts via ReactHelmet 1`] =
   </div>
 </DocumentFragment>
 `;
+
+exports[`RenderScripts renders scripts and correctly parses objects with events 1`] = `
+<DocumentFragment>
+  <script
+    type="text/javascript"
+  >
+    {
+            "onMessageReady":  () =&gt; {
+            console.log('onMessageReady');
+          },
+            "onConsentReady": function onConsentReady(consentUUID, euconsent) {
+            console.log('onConsentReady');
+            }
+          }
+        }
+      }
+  </script>
+</DocumentFragment>
+`;
+
+exports[`RenderScripts renders scripts and correctly parses objects with events via ReactHelmet 1`] = `
+<DocumentFragment>
+  <div>
+    MockReactHelmet props: {
+  "script": [
+    {
+      "type": "text/javascript",
+      "innerHTML": "{\\n            \\"onMessageReady\\":  () =&gt; {\\n            console.log('onMessageReady');\\n          },\\n            \\"onConsentReady\\": function onConsentReady(consentUUID, euconsent) {\\n            console.log('onConsentReady');\\n            }\\n          }\\n        }\\n      }"
+    }
+  ]
+}
+  </div>
+</DocumentFragment>
+`;

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import * as React from 'react';
 import {Helmet} from 'react-helmet';
 import {Consent} from '../consent';
@@ -55,6 +56,28 @@ describe('Consent', () => {
         expect(fragment).toMatchSnapshot();
       });
 
+      test('the Consent version 2 renders correctly with events', () => {
+        const fragment = renderToFragment(
+          <Consent
+            sourcePointConfigTCFV2={{
+              accountId: 259,
+              propertyHref: 'https://newskit.dev-news.co.uk',
+              baseEndpoint: 'https://cmp.newskit.co.uk',
+              events: {
+                onMessageReady: () => {
+                  console.log('onMessageReady');
+                },
+                onConsentReady() {
+                  console.log('onConsentReady');
+                },
+              },
+            }}
+            reactHelmet={helmet}
+          />,
+        );
+        expect(fragment).toMatchSnapshot();
+      });
+
       describe('nonTCF', () => {
         test('the Consent version 2 renders correctly with default baseEndpoint', () => {
           const fragment = renderToFragment(
@@ -90,6 +113,28 @@ describe('Consent', () => {
                 accountId: 259,
                 propertyHref: 'https://newskit.dev-news.co.uk',
                 baseEndpoint: 'https://cmp.newskit.co.uk/',
+              }}
+              reactHelmet={helmet}
+            />,
+          );
+          expect(fragment).toMatchSnapshot();
+        });
+
+        test('the Consent version 2 renders correctly with events', () => {
+          const fragment = renderToFragment(
+            <Consent
+              sourcePointConfigNonTCFV1={{
+                accountId: 259,
+                propertyHref: 'https://newskit.dev-news.co.uk',
+                baseEndpoint: 'https://cmp.newskit.co.uk',
+                events: {
+                  onMessageReady: () => {
+                    console.log('onMessageReady');
+                  },
+                  onConsentReady() {
+                    console.log('onConsentReady');
+                  },
+                },
               }}
               reactHelmet={helmet}
             />,

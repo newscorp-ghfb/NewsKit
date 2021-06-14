@@ -31,6 +31,17 @@ export interface RenderScriptsProps extends RenderScriptsReactHelmetProp {
   scripts: ScriptData[];
 }
 
+const parseContent = (content: string) =>
+  content.includes('__FUNC__')
+    ? content
+        .replace(
+          // eslint-disable-next-line no-useless-escape
+          /\"*__FUNC__\"*/g,
+          '',
+        )
+        .replace(/\\n*/g, String.fromCharCode(10))
+    : content;
+
 export const RenderScripts: React.FC<RenderScriptsProps> = ({
   scripts,
   reactHelmet: ReactHelmet,
@@ -48,9 +59,8 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
               scriptProps.src = scriptData.src;
               scriptProps.async = scriptData.async;
             } else {
-              scriptProps.innerHTML = scriptData.content;
+              scriptProps.innerHTML = parseContent(scriptData.content);
             }
-
             return scriptProps;
           }),
         ]}
@@ -70,7 +80,7 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
           : {
               key: getSSRId(),
               dangerouslySetInnerHTML: {
-                __html: scriptData.content,
+                __html: parseContent(scriptData.content),
               },
             };
         return <script type="text/javascript" {...scriptProps} />;

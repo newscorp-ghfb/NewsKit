@@ -20,8 +20,26 @@ describe('RenderScripts', () => {
     },
   ];
 
+  const scriptsWithFunctions: RenderScriptsProps['scripts'] = [
+    {
+      content: `{
+            "onMessageReady": "__FUNC__ () => {\n            console.log('onMessageReady');\n          }__FUNC__",
+            "onConsentReady": "__FUNC__function onConsentReady(consentUUID, euconsent) {\n            console.log('onConsentReady');\n            }__FUNC__"
+          }
+        }
+      }`,
+    },
+  ];
+
   test('renders inline and external scripts as script tags', () => {
     const fragment = renderToFragment(<RenderScripts scripts={scripts} />);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders scripts and correctly parses objects with events', () => {
+    const fragment = renderToFragment(
+      <RenderScripts scripts={scriptsWithFunctions} />,
+    );
     expect(fragment).toMatchSnapshot();
   });
 
@@ -32,6 +50,20 @@ describe('RenderScripts', () => {
 
     const fragment = renderToFragment(
       <RenderScripts scripts={scripts} reactHelmet={MockReactHelmet} />,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders scripts and correctly parses objects with events via ReactHelmet', () => {
+    const MockReactHelmet: React.FC = props => (
+      <div>MockReactHelmet props: {JSON.stringify(props, null, 2)}</div>
+    );
+
+    const fragment = renderToFragment(
+      <RenderScripts
+        scripts={scriptsWithFunctions}
+        reactHelmet={MockReactHelmet}
+      />,
     );
     expect(fragment).toMatchSnapshot();
   });

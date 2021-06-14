@@ -1,4 +1,5 @@
 /* eslint react/no-array-index-key: 0 */
+
 import * as React from 'react';
 import Document, {Head, Main, NextScript, DocumentContext} from 'next/document';
 import {Consent, Tealium} from 'newskit';
@@ -44,7 +45,6 @@ export default class MyDocument extends Document<Props> {
             sourcePointConfigNonTCFV1={{
               accountId: 259,
               propertyHref: 'https://newskit.co.uk',
-              // propertyHref: 'https://newskit.dev-news.co.uk', // to test stage https://documentation.sourcepoint.com/consent_mp/campaigns/viewing-a-stage-campaign
             }}
             reactHelmet={Helmet}
           />
