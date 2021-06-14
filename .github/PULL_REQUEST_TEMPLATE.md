@@ -22,6 +22,7 @@ BREAKING CHANGE: renames the foobar component's prop foo to bar
  - [ ] Written accessibility tests against the component
  - [ ] Written functional tests against the component and/or NewsKit site
  - [ ] Updated relevant documentation
+ - [ ] Updated the release notes for the [next release version](https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2349695021/Release%2BNotes%2BCode%2B-%2BWeb%2BDocumentation)
  - [ ] Discussed with QA and/or design about any visual changes
 
 **I have tested manually:**
