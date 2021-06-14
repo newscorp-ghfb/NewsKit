@@ -34,10 +34,10 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   display: flex;
   cursor: -webkit-grabbing;
   cursor: grabbing;
+  box-sizing: border-box;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  box-sizing: border-box;
   background-color: #f0f0f0;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);

@@ -37,6 +37,7 @@ interface CommonProps {
 
 export interface StyledTrackProps extends CommonProps {
   dragged: boolean;
+  labelPosition?: LabelPosition;
 }
 
 export interface ThumbLabelProps extends StyledTrackProps {

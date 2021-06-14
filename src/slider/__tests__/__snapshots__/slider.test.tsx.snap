@@ -88,13 +88,13 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
   -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -103,9 +103,9 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -114,7 +114,6 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
 }
 
 .emotion-1 {
-  height: 100%;
   margin-left: 12px;
   padding: calc(32px / 2) 0;
 }
@@ -133,9 +132,9 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
@@ -167,13 +166,13 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
   -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -182,9 +181,9 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -193,7 +192,6 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
 }
 
 .emotion-1 {
-  height: 100%;
   margin-right: 12px;
   padding: calc(32px / 2) 0;
 }
@@ -212,9 +210,9 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
@@ -1469,10 +1467,10 @@ exports[`slider react-range Range function props renderTrack should render defau
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  box-sizing: border-box;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  box-sizing: border-box;
   background-color: #f0f0f0;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
@@ -1507,10 +1505,10 @@ exports[`slider react-range Range function props renderTrack should render disab
   display: -ms-flexbox;
   display: flex;
   cursor: not-allowed;
+  box-sizing: border-box;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  box-sizing: border-box;
   background-color: #e4e4e4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
@@ -1542,10 +1540,10 @@ exports[`slider react-range Range function props renderTrack should render disab
   display: -ms-flexbox;
   display: flex;
   cursor: not-allowed;
+  box-sizing: border-box;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  box-sizing: border-box;
   background-color: #e4e4e4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
@@ -1578,10 +1576,10 @@ exports[`slider react-range Range function props renderTrack should render grabb
   display: flex;
   cursor: -webkit-grabbing;
   cursor: grabbing;
+  box-sizing: border-box;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  box-sizing: border-box;
   background-color: #f0f0f0;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
@@ -1616,10 +1614,10 @@ exports[`slider react-range Range function props renderTrack should render multi
   display: -ms-flexbox;
   display: flex;
   cursor: inherit;
+  box-sizing: border-box;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  box-sizing: border-box;
   background-color: #f0f0f0;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
@@ -1654,10 +1652,10 @@ exports[`slider react-range Range function props renderTrack should render verti
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  box-sizing: border-box;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  box-sizing: border-box;
   background-color: #f0f0f0;
   border-radius: 20rem;
   margin: calc(32px/2) calc(32px/2 - 12px/2);

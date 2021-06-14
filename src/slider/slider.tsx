@@ -78,6 +78,7 @@ export const Slider: React.FC<SliderProps> = ({
         aria-valuemin={min}
         aria-valuemax={Math.floor(max)}
         aria-orientation={vertical ? 'vertical' : 'horizontal'}
+        labelPosition={labelPosition}
         style={getTrackBackgroundStyle(
           theme,
           sliderTrackStylePreset,
@@ -180,6 +181,7 @@ export const Slider: React.FC<SliderProps> = ({
       <Stack
         flow={labelFlowMap[vertical ? 1 : 0][labelPosition]}
         stackDistribution={StackDistribution.SpaceBetween}
+        flowReverse={vertical}
         flexGrow
       >
         {minimumLabel}
@@ -188,13 +190,21 @@ export const Slider: React.FC<SliderProps> = ({
     </LabelContainer>
   );
 
+  let flow = vertical ? Flow.VerticalCenter : Flow.HorizontalCenter;
+  let flowReverse = vertical;
+
+  if (vertical && labelPosition !== LabelPosition.Inline) {
+    flow = Flow.HorizontalStretch;
+    flowReverse = false;
+  }
+
   return (
     <StackContainer
       vertical={vertical}
       inline={vertical}
-      flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
+      flow={flow}
       stackDistribution={StackDistribution.Center}
-      flowReverse={vertical}
+      flowReverse={flowReverse}
       wrap={!inlineLabels}
       flexGrow
       data-testid={dataTestId}

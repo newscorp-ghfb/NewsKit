@@ -60,8 +60,6 @@ export const LabelContainer = styled.div<
   Pick<SliderProps, 'labelPosition' | 'overrides'> & VerticalProp
 >`
   width: ${ifVertical(undefined, '100%')};
-  height: ${ifVertical('100%')};
-
   margin-top: ${({labelPosition, vertical}) =>
     !vertical && labelPosition === LabelPosition.After
       ? getSpace('slider.labels', 'labels')
@@ -93,8 +91,9 @@ export const LabelContainer = styled.div<
 export const StyledTrack = styled.div<StyledTrackProps>`
   display: flex;
   cursor: ${getCursor};
-  align-self: center;
   box-sizing: border-box;
+  ${({labelPosition}) =>
+    labelPosition === LabelPosition.Inline && {alignSelf: 'center'}}
 
   ${({disabled}) =>
     getStylePreset('slider.track', 'track', {
@@ -113,8 +112,18 @@ export const StyledTrack = styled.div<StyledTrackProps>`
       : `margin: calc(${trackMargin}) calc(${halfThumb});`;
   }};
 
-  height: ${({vertical}) =>
-    vertical ? '100%' : getSize('slider.track', 'track')};
+  ${({vertical, labelPosition, ...rest}) => {
+    if (!vertical) {
+      return {height: getSize('slider.track', 'track')(rest)};
+    }
+    /* istanbul ignore else */
+    if (labelPosition === LabelPosition.Inline) {
+      return {height: '100%'};
+    }
+    /* istanbul ignore next */
+    return '';
+  }}
+
   width: ${({vertical}) =>
     vertical ? getSize('slider.track', 'track') : '100%'};
 `;

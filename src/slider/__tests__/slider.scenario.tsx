@@ -132,12 +132,26 @@ const ContainerWithBorder = styled.div`
   display: flex;
 `;
 
-const VerticalContainerWithBorder = styled.div`
+type FlexContainerWithBorderType = {
+  direction?: 'vertical' | 'horizontal';
+  children: React.ReactNode | Element;
+};
+
+const FlexContainerWithBorder = styled.div<FlexContainerWithBorderType>`
   border: solid 1px red;
   display: inline-flex;
   height: 300px;
   margin: 0 24px;
+  ${({direction}) =>
+    direction === 'vertical' ? 'height: 300px' : 'width: 300px'}}
 `;
+
+const VerticalContainerWithBorder = (props: FlexContainerWithBorderType) => (
+  <FlexContainerWithBorder direction="vertical" {...props} />
+);
+const HorizontalContainerWithBorder = (props: FlexContainerWithBorderType) => (
+  <FlexContainerWithBorder direction="horizontal" {...props} />
+);
 
 const StyledCustomThumbLabel = styled.h1`
   margin: 0;
@@ -453,6 +467,17 @@ export default {
                 labelPosition={LabelPosition.After}
               />
             </VerticalContainerWithBorder>
+            <HorizontalContainerWithBorder>
+              <StatefulSlider
+                values={[50]}
+                max={100}
+                min={0}
+                minLabel="0%"
+                maxLabel="100%"
+                thumbLabel
+                labelPosition={LabelPosition.After}
+              />
+            </HorizontalContainerWithBorder>
           </FlexContainer>
         </React.Fragment>
       ),

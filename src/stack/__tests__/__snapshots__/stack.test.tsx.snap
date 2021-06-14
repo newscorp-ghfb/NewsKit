@@ -4081,6 +4081,1117 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 </DocumentFragment>
 `;
 
+exports[`Stack renders where the stack flow is horizontal-stretch and only spaceInline is set to space090 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and only spaceInline is set to space090 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and only spaceStack is set to space090 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and only spaceStack is set to space090 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the spaceInline & spaceStack is set to space000 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the spaceInline & spaceStack is set to space000 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the spaceInline & spaceStack is set to space090 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the spaceInline & spaceStack is set to space090 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the spaceInline & spaceStack is set to space120 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-160px/2);
+  margin-right: calc(-160px/2);
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the spaceInline & spaceStack is set to space120 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-160px/2);
+  margin-right: calc(-160px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the stack distribution is center 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the stack distribution is flex-end 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the stack distribution is flex-start 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the stack distribution is space-around 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the stack distribution is space-between 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is horizontal-stretch and the stack distribution is space-evenly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.emotion-0:before,
+.emotion-0:after {
+  content: '';
+  display: block;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Stack renders where the stack flow is horizontal-top and only spaceInline is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -8481,6 +9592,1117 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.emotion-0:before,
+.emotion-0:after {
+  content: '';
+  display: block;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and only spaceInline is set to space090 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and only spaceInline is set to space090 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and only spaceStack is set to space090 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and only spaceStack is set to space090 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the spaceInline & spaceStack is set to space000 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the spaceInline & spaceStack is set to space000 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the spaceInline & spaceStack is set to space090 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+  margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the spaceInline & spaceStack is set to space090 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the spaceInline & spaceStack is set to space120 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+  margin-left: calc(-160px/2);
+  margin-right: calc(-160px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the spaceInline & spaceStack is set to space120 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    max-width: 100%;
+  }
+}
+
+.emotion-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 1
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 2
+      </div>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        child 3
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the stack distribution is center 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the stack distribution is flex-end 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the stack distribution is flex-start 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the stack distribution is space-around 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the stack distribution is space-between 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.emotion-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #8ee1a6;
+  border: 1px solid #ff8a8a;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      child 1
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 2
+    </div>
+    <div
+      class="emotion-1"
+    >
+      child 3
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-stretch and the stack distribution is space-evenly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;

@@ -19,21 +19,25 @@ const alignmentDictionary = {
   'vertical-left': 'flex-start',
   'vertical-center': 'center',
   'vertical-right': 'flex-end',
+  'vertical-stretch': 'stretch',
   'horizontal-top': 'flex-start',
   'horizontal-center': 'center',
   'horizontal-bottom': 'flex-end',
+  'horizontal-stretch': 'stretch',
 };
 
 const horizontalFlows = [
   Flow.HorizontalBottom,
   Flow.HorizontalCenter,
   Flow.HorizontalTop,
+  Flow.HorizontalStretch,
 ];
 
 const verticalFlows = [
   Flow.VerticalLeft,
   Flow.VerticalCenter,
   Flow.VerticalRight,
+  Flow.VerticalStretch,
 ];
 
 export const hasSpacing = (theme: Theme, spaceToken: SizingKeys) =>

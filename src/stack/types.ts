@@ -11,9 +11,11 @@ export interface CommonStackProps {
     | 'vertical-left'
     | 'vertical-center'
     | 'vertical-right'
+    | 'vertical-stretch'
     | 'horizontal-top'
     | 'horizontal-center'
-    | 'horizontal-bottom';
+    | 'horizontal-bottom'
+    | 'horizontal-stretch';
   stackDistribution:
     | StackDistribution
     | 'flex-start'
@@ -60,9 +62,11 @@ export enum Flow {
   VerticalLeft = 'vertical-left',
   VerticalCenter = 'vertical-center',
   VerticalRight = 'vertical-right',
+  VerticalStretch = 'vertical-stretch',
   HorizontalTop = 'horizontal-top',
   HorizontalCenter = 'horizontal-center',
   HorizontalBottom = 'horizontal-bottom',
+  HorizontalStretch = 'horizontal-stretch',
 }
 
 export enum StackDistribution {
