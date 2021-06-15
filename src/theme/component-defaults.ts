@@ -70,7 +70,7 @@ export const componentDefaults = {
   },
   banner: {
     horizontal: {
-      stylePreset: 'bannerContainerSolid',
+      stylePreset: 'bannerInformative',
       spaceInset: 'spaceInset045',
       minHeight: 'sizing090',
       maxWidth: '1920px',
@@ -86,10 +86,13 @@ export const componentDefaults = {
       },
       actions: {
         spaceInline: 'space040',
+        closeButton: {
+          stylePreset: 'iconButtonMinimalInverse',
+        },
       },
     },
     vertical: {
-      stylePreset: 'bannerContainerSolid',
+      stylePreset: 'bannerInformative',
       spaceInset: 'spaceInset045',
       minHeight: 'sizing090',
       maxWidth: '1920px',
@@ -97,7 +100,7 @@ export const componentDefaults = {
         spaceInline: 'space030',
       },
       content: {
-        spaceInline: 'space030',
+        spaceInline: 'space050',
         message: {
           stylePreset: 'inkInverse',
           typographyPreset: 'utilityBody010',
@@ -105,6 +108,9 @@ export const componentDefaults = {
       },
       actions: {
         spaceInline: 'space050',
+        closeButton: {
+          stylePreset: 'buttonOutlinedInverse',
+        },
       },
     },
   },

@@ -278,6 +278,9 @@ Object {
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
+          "closeButton": Object {
+            "stylePreset": "iconButtonMinimalInverse",
+          },
           "spaceInline": "space040",
         },
         "content": Object {
@@ -293,10 +296,13 @@ Object {
         "maxWidth": "1920px",
         "minHeight": "sizing090",
         "spaceInset": "spaceInset045",
-        "stylePreset": "bannerContainerSolid",
+        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
+          "closeButton": Object {
+            "stylePreset": "buttonOutlinedInverse",
+          },
           "spaceInline": "space050",
         },
         "content": Object {
@@ -304,7 +310,7 @@ Object {
             "stylePreset": "inkInverse",
             "typographyPreset": "utilityBody010",
           },
-          "spaceInline": "space030",
+          "spaceInline": "space050",
         },
         "icon": Object {
           "spaceInline": "space030",
@@ -312,7 +318,7 @@ Object {
         "maxWidth": "1920px",
         "minHeight": "sizing090",
         "spaceInset": "spaceInset045",
-        "stylePreset": "bannerContainerSolid",
+        "stylePreset": "bannerInformative",
       },
     },
     "button": Object {
@@ -1298,9 +1304,21 @@ Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
       },
     },
-    "bannerContainerSolid": Object {
+    "bannerInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "bannerNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "bannerNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice010}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },

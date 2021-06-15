@@ -6,12 +6,7 @@ import {
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils/style';
-import {
-  IconFilledInfo,
-  IconFilledWarning,
-  IconFilledError,
-  IconFilledClose,
-} from '../../icons';
+import {IconFilledInfo, IconFilledWarning, IconFilledError} from '../../icons';
 import {Button, ButtonOrButtonLinkProps} from '../../button';
 import {Link} from '../../link';
 import {Visible} from '../../grid';
@@ -20,18 +15,6 @@ const myCustomTheme = createTheme({
   name: 'banner-intents-theme',
   overrides: {
     stylePresets: {
-      bannerContainerSolidNotice: {
-        base: {
-          backgroundColor: '{{colors.interfaceNotice010}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
-      },
-      bannerContainerSolidNegative: {
-        base: {
-          backgroundColor: '{{colors.interfaceNegative010}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
-      },
       bannerContainerSolidCustom: {
         base: {
           backgroundColor: '{{colors.interfaceSkeleton020}}',
@@ -41,6 +24,42 @@ const myCustomTheme = createTheme({
       bannerMessageCustom: {
         base: {
           color: '{{colors.inkContrast}}',
+        },
+      },
+      bannerActionsCustom: {
+        base: {
+          color: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.white}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.neutral050}}',
+        },
+      },
+      bannerCloseCustomHorizontal: {
+        base: {
+          color: '{{colors.inkContrast}}',
+          iconColor: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.transparent}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+          borderColor: '{{colors.transparent}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.neutral050}}',
+        },
+      },
+      bannerCloseCustomVertical: {
+        base: {
+          color: '{{colors.inkContrast}}',
+          iconColor: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.transparent}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+          borderStyle: 'solid',
+          borderWidth: '1px',
+          borderColor: '{{colors.inkContrast}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.neutral050}}',
         },
       },
     },
@@ -76,7 +95,6 @@ export const BannerWithState: React.FC<BannerProps> = ({
                 <>
                   <StyledFullWidthVisible xs sm>
                     <CTABtn
-                      size="small"
                       onClick={() => {
                         action();
                       }}
@@ -86,27 +104,13 @@ export const BannerWithState: React.FC<BannerProps> = ({
                   </StyledFullWidthVisible>
                   <StyledFullWidthVisible md lg xl>
                     <CTABtn
-                      size="medium"
+                      size="small"
                       onClick={() => {
                         action();
                       }}
                     >
                       CTA button
                     </CTABtn>
-                  </StyledFullWidthVisible>
-                </>
-              ),
-              () => (
-                <>
-                  <StyledFullWidthVisible xs sm>
-                    <CloseBtn size="small" onClick={close}>
-                      Close
-                    </CloseBtn>
-                  </StyledFullWidthVisible>
-                  <StyledFullWidthVisible md lg xl>
-                    <CloseBtn size="medium" onClick={close}>
-                      <IconFilledClose />
-                    </CloseBtn>
                   </StyledFullWidthVisible>
                 </>
               ),
@@ -120,6 +124,7 @@ export const BannerWithState: React.FC<BannerProps> = ({
                 }}
               />
             }
+            onClose={close}
             {...restProps}
           >
             {children ||
@@ -131,6 +136,21 @@ export const BannerWithState: React.FC<BannerProps> = ({
     </>
   );
 };
+
+export const BannerIntentNotice: React.FC<BannerProps> = ({
+  children,
+  ...restProps
+}) => (
+  <BannerWithState
+    icon={<IconFilledWarning overrides={{size: 'iconSize020'}} />}
+    overrides={{
+      stylePreset: 'bannerNotice',
+    }}
+    {...restProps}
+  >
+    {children}
+  </BannerWithState>
+);
 
 export const BannerIntentNegative: React.FC<BannerProps> = ({
   children,
@@ -145,12 +165,7 @@ export const BannerIntentNegative: React.FC<BannerProps> = ({
       />
     }
     overrides={{
-      stylePreset: 'bannerContainerSolidNegative',
-      content: {
-        message: {
-          stylePreset: 'inkInverse',
-        },
-      },
+      stylePreset: 'bannerNegative',
     }}
     {...restProps}
   >
@@ -158,24 +173,10 @@ export const BannerIntentNegative: React.FC<BannerProps> = ({
   </BannerWithState>
 );
 
-export const BannerIntentNotice: React.FC<BannerProps> = ({
-  children,
-  ...restProps
-}) => (
-  <BannerWithState
-    icon={<IconFilledWarning overrides={{size: 'iconSize020'}} />}
-    overrides={{
-      stylePreset: 'bannerContainerSolidNotice',
-      content: {
-        message: {
-          stylePreset: 'inkInverse',
-        },
-      },
-    }}
-    {...restProps}
-  >
-    {children}
-  </BannerWithState>
+const bannerLink = (
+  <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+    with link
+  </Link>
 );
 
 const CTABtn = ({
@@ -190,17 +191,6 @@ const CTABtn = ({
     {children || 'CTA Button'}
   </Button>
 );
-const CloseBtn = ({children, ...restProps}: ButtonOrButtonLinkProps) => (
-  <Button
-    overrides={{
-      stylePreset: 'buttonOutlinedInverse',
-      width: '100%',
-    }}
-    {...restProps}
-  >
-    {children || 'Close'}
-  </Button>
-);
 
 export default {
   title: 'banner',
@@ -213,6 +203,7 @@ export default {
           <StorybookSubHeading>default</StorybookSubHeading>
           <BannerWrapper>
             <BannerWithState
+              aria-label="Banner default"
               icon={
                 <IconFilledInfo
                   overrides={{
@@ -221,7 +212,6 @@ export default {
                   }}
                 />
               }
-              actions={[() => <CTABtn />]}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -232,6 +222,7 @@ export default {
           </StorybookSubHeading>
           <BannerWrapper>
             <BannerWithState
+              aria-label="Banner with bigger content"
               icon={
                 <IconFilledInfo
                   overrides={{
@@ -262,28 +253,27 @@ export default {
           <StorybookSubHeading>Informative (default)</StorybookSubHeading>
           <BannerWrapper>
             <BannerWithState
+              aria-label="Informative Banner"
               icon={<IconFilledInfo overrides={{size: 'iconSize020'}} />}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </BannerWithState>
           </BannerWrapper>
-          <ThemeProvider theme={myCustomTheme}>
-            <StorybookSubHeading>Notice</StorybookSubHeading>
-            <BannerWrapper>
-              <BannerIntentNotice>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </BannerIntentNotice>
-            </BannerWrapper>
-            <StorybookSubHeading>Negative</StorybookSubHeading>
-            <BannerWrapper>
-              <BannerIntentNegative>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </BannerIntentNegative>
-            </BannerWrapper>
-          </ThemeProvider>
+          <StorybookSubHeading>Notice</StorybookSubHeading>
+          <BannerWrapper>
+            <BannerIntentNotice aria-label="Notice">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </BannerIntentNotice>
+          </BannerWrapper>
+          <StorybookSubHeading>Negative</StorybookSubHeading>
+          <BannerWrapper>
+            <BannerIntentNegative aria-label="Error">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </BannerIntentNegative>
+          </BannerWrapper>
         </>
       ),
     },
@@ -296,6 +286,7 @@ export default {
           <ThemeProvider theme={myCustomTheme}>
             <BannerWrapper>
               <BannerWithState
+                aria-label="Banner with overrides"
                 icon={
                   <IconFilledError
                     overrides={{
@@ -304,7 +295,11 @@ export default {
                     }}
                   />
                 }
-                actions={[() => <CTABtn />]}
+                actions={[
+                  () => (
+                    <CTABtn overrides={{stylePreset: 'bannerActionsCustom'}} />
+                  ),
+                ]}
                 layout={{
                   xs: 'vertical',
                   sm: 'horizontal',
@@ -331,6 +326,15 @@ export default {
                       typographyPreset: 'utilityBody030',
                     },
                   },
+                  actions: {
+                    closeButton: {
+                      stylePreset: {
+                        xs: 'bannerCloseCustomVertical',
+                        sm: 'bannerCloseCustomHorizontal',
+                        md: 'bannerCloseCustomVertical',
+                      },
+                    },
+                  },
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -340,6 +344,7 @@ export default {
             <StorybookSubHeading>with link</StorybookSubHeading>
             <BannerWrapper>
               <BannerWithState
+                aria-label="Banner with link"
                 icon={
                   <IconFilledError
                     overrides={{
@@ -349,8 +354,8 @@ export default {
                 }
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt <Link href="/">NewsKit Link</Link> ut
-                labore et dolore magna aliqua.
+                eiusmod tempor incididunt {bannerLink} ut labore et dolore magna
+                aliqua.
               </BannerWithState>
             </BannerWrapper>
           </ThemeProvider>

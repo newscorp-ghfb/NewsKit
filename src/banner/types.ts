@@ -5,6 +5,8 @@ export interface BannerBaseProps extends React.AriaAttributes {
   actions?: React.ComponentType[];
   children: Exclude<React.ReactNode, 'undefined'>;
   icon?: React.ReactElement<NewsKitIconProps>;
+  closeButtonLabel?: string;
+  onClose?: () => void;
   overrides?: {
     stylePreset?: MQ<string>;
     minHeight?: MQ<string>;
@@ -22,6 +24,9 @@ export interface BannerBaseProps extends React.AriaAttributes {
     };
     actions?: {
       spaceInline?: MQ<string>;
+      closeButton?: {
+        stylePreset?: MQ<string>;
+      };
     };
   };
 }

@@ -14,6 +14,11 @@ import {Flow, StackDistribution} from '../stack';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {useTheme} from '../theme';
 import {useReactKeys} from '../utils/hooks/use-react-keys';
+import {Button, ButtonProps} from '../button';
+import {IconFilledClose} from '../icons';
+import {filterOutFalsyProperties} from '../utils/filter-object';
+import {IconButton} from '../icon-button';
+import {deepMerge} from '../utils';
 
 export const BannerInternal: React.FC<BannerInternalProps> = ({
   actions,
@@ -21,9 +26,20 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
   icon,
   overrides,
   layout,
+  closeButtonLabel = 'Close',
+  onClose,
   ...restProps
 }) => {
   const theme = useTheme();
+  const closeButtonStyles: ButtonProps['overrides'] = {
+    // TODO: provide mergeBreakpointObject function as param here
+    // when PPDSC-1502 is merged
+    ...deepMerge(
+      {},
+      theme.componentDefaults.banner[layout].actions.closeButton,
+      filterOutFalsyProperties(overrides?.actions?.closeButton),
+    ),
+  };
 
   const actionsCount = actions ? actions.length : 0;
   const actionKeys = useReactKeys(actionsCount);
@@ -31,8 +47,6 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
   const actionsSpacing =
     overrides?.actions?.spaceInline ||
     theme.componentDefaults.banner[layout].actions.spaceInline;
-
-  const hasActions = Array.isArray(actions) && actionKeys.length;
 
   return (
     <StyledBannerContainer
@@ -79,7 +93,7 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
             </StyledMessageContainer>
           </StyledContentContainer>
         </StyledIconContentContainer>
-        {hasActions && (
+        {(actions?.length || onClose) && (
           <StyledActionsContainer
             flow={
               layout === 'vertical'
@@ -90,7 +104,25 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
             spaceInline={actionsSpacing}
             layout={layout}
           >
+            {onClose && layout === 'vertical' && (
+              <StackChild
+                key="banner-close-button"
+                alignSelf={AlignSelfValues.Stretch}
+              >
+                <Button
+                  overrides={{
+                    ...closeButtonStyles,
+                    width: '100%',
+                  }}
+                  onClick={onClose}
+                  data-testid="banner-close-button"
+                >
+                  {closeButtonLabel}
+                </Button>
+              </StackChild>
+            )}
             {actions &&
+              actionKeys.length &&
               actions.map((action, idx) => (
                 <StackChild
                   key={actionKeys[idx]}
@@ -103,6 +135,17 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
                   {renderIfReactComponent(action)}
                 </StackChild>
               ))}
+            {onClose && layout === 'horizontal' && (
+              <IconButton
+                data-testid="banner-close-button"
+                aria-label={closeButtonLabel}
+                size="small"
+                overrides={closeButtonStyles}
+                onClick={onClose}
+              >
+                <IconFilledClose />
+              </IconButton>
+            )}
           </StyledActionsContainer>
         )}
       </StyledMaxWidthContainer>

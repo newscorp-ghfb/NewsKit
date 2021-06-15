@@ -279,6 +279,9 @@ Object {
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
+          "closeButton": Object {
+            "stylePreset": "iconButtonMinimalInverse",
+          },
           "spaceInline": "space040",
         },
         "content": Object {
@@ -294,10 +297,13 @@ Object {
         "maxWidth": "1920px",
         "minHeight": "sizing090",
         "spaceInset": "spaceInset045",
-        "stylePreset": "bannerContainerSolid",
+        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
+          "closeButton": Object {
+            "stylePreset": "buttonOutlinedInverse",
+          },
           "spaceInline": "space050",
         },
         "content": Object {
@@ -305,7 +311,7 @@ Object {
             "stylePreset": "inkInverse",
             "typographyPreset": "utilityBody010",
           },
-          "spaceInline": "space030",
+          "spaceInline": "space050",
         },
         "icon": Object {
           "spaceInline": "space030",
@@ -313,7 +319,7 @@ Object {
         "maxWidth": "1920px",
         "minHeight": "sizing090",
         "spaceInset": "spaceInset045",
-        "stylePreset": "bannerContainerSolid",
+        "stylePreset": "bannerInformative",
       },
     },
     "button": Object {
@@ -1299,9 +1305,21 @@ Object {
         "backgroundColor": "#02509b",
       },
     },
-    "bannerContainerSolid": Object {
+    "bannerInformative": Object {
       "base": Object {
         "backgroundColor": "#128293",
+        "iconColor": "#ffffff",
+      },
+    },
+    "bannerNegative": Object {
+      "base": Object {
+        "backgroundColor": "#d20600",
+        "iconColor": "#ffffff",
+      },
+    },
+    "bannerNotice": Object {
+      "base": Object {
+        "backgroundColor": "#ff6000",
         "iconColor": "#ffffff",
       },
     },

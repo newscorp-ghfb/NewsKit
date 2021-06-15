@@ -6,9 +6,21 @@ export const stylePresets: Record<string, StylePreset> = {};
 // Banner
 //
 
-stylePresets.bannerContainerSolid = {
+stylePresets.bannerInformative = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
+stylePresets.bannerNotice = {
+  base: {
+    backgroundColor: '{{colors.interfaceNotice010}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
+stylePresets.bannerNegative = {
+  base: {
+    backgroundColor: '{{colors.interfaceNegative010}}',
     iconColor: '{{colors.inkInverse}}',
   },
 };
