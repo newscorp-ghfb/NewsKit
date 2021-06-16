@@ -146,22 +146,21 @@ const tabTextAlign = {
   end: 'right',
 };
 
-export const TabButton = styled(Button)<
+export const StyledTabButton = styled(Button)<
   Omit<ButtonProps, 'loading'> & TabInternalProps
 >`
   ${({selected}) =>
     selected && getStylePreset('tab', '', {isSelected: selected})}
 
   ${({align}) =>
-    align && align !== TabAlign.Center
-      ? {
-          justifyContent: tabFlexAlign[align],
-          textAlign: tabTextAlign[align] as TextAlignProperty,
-        }
-      : ''}
+    align &&
+    align !== TabAlign.Center && {
+      justifyContent: tabFlexAlign[align],
+      textAlign: tabTextAlign[align] as TextAlignProperty,
+    }}
 `;
 
-export const TabPanelBlock = styled(TextBlock)<
+export const StyledTabPanelBlock = styled(TextBlock)<
   TextBlockProps & {selected: boolean}
 >`
   width: 100%;

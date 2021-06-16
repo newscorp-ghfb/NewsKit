@@ -2,7 +2,7 @@ import React from 'react';
 import {TabAlign, TabInternalProps, TabSize} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
-import {TabButton} from './styled';
+import {StyledTabButton} from './styled';
 
 export const TabInternal = React.forwardRef<
   HTMLButtonElement,
@@ -29,7 +29,7 @@ export const TabInternal = React.forwardRef<
     };
 
     return (
-      <TabButton
+      <StyledTabButton
         data-testid={dataTestId}
         role="tab"
         aria-label={ariaLabel}
@@ -44,7 +44,7 @@ export const TabInternal = React.forwardRef<
         align={align}
       >
         {children}
-      </TabButton>
+      </StyledTabButton>
     );
   },
 );

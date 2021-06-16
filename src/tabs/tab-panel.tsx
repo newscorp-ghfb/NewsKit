@@ -1,6 +1,6 @@
 import React from 'react';
 import {TabPanelProps} from './types';
-import {TabPanelBlock} from './styled';
+import {StyledTabPanelBlock} from './styled';
 
 export const TabPanel: React.FC<TabPanelProps> = ({
   children,
@@ -8,7 +8,7 @@ export const TabPanel: React.FC<TabPanelProps> = ({
   /* istanbul ignore next */
   selected = false,
 }) => (
-  <TabPanelBlock
+  <StyledTabPanelBlock
     data-testid="tab-panel"
     as="div"
     aria-labelledby={id}
@@ -19,5 +19,5 @@ export const TabPanel: React.FC<TabPanelProps> = ({
     hidden={!selected}
   >
     {children}
-  </TabPanelBlock>
+  </StyledTabPanelBlock>
 );

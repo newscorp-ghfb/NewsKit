@@ -477,6 +477,25 @@ export const componentDefaults = {
     stylePreset: 'iconDefault',
     size: 'iconSize020',
   },
+  inlineMessage: {
+    stylePreset: 'inlineMessage',
+    spaceInset: 'spaceInset030',
+    maxWidth: '100%',
+    icon: {
+      spaceInline: 'space020',
+    },
+    content: {
+      title: {
+        spaceStack: 'space030',
+        stylePreset: 'inkContrast',
+        typographyPreset: 'utilityHeading010',
+      },
+      message: {
+        stylePreset: 'inkBase',
+        typographyPreset: 'utilityBody010',
+      },
+    },
+  },
   link: {
     stylePreset: 'linkInline',
     spaceInline: 'space010',
@@ -488,6 +507,27 @@ export const componentDefaults = {
     stylePreset: 'linkStandalone',
     typographyPreset: 'utilityLabel020',
   },
+  menu: {
+    spaceInline: 'space020',
+  },
+  menuItem: {
+    horizontal: {
+      minHeight: 'sizing080',
+      stylePreset: 'menuItemHorizontal',
+      iconSize: 'iconSize020',
+      spaceInline: 'space020',
+      spaceInset: 'spaceInsetSquish030',
+    },
+    vertical: {
+      minHeight: 'sizing080',
+      stylePreset: 'menuItemVertical',
+      iconSize: 'iconSize020',
+      spaceInline: 'space020',
+      spaceInset: 'spaceInsetSquish030',
+    },
+  },
+  menuItemGroup: {},
+  menuDivider: {},
   orderedList: {
     spaceInline: 'space040',
     content: {
@@ -772,25 +812,6 @@ export const componentDefaults = {
     },
     contentAndActions: {
       spaceInline: 'space030',
-    },
-  },
-  inlineMessage: {
-    stylePreset: 'inlineMessage',
-    spaceInset: 'spaceInset030',
-    maxWidth: '100%',
-    icon: {
-      spaceInline: 'space020',
-    },
-    content: {
-      title: {
-        spaceStack: 'space030',
-        stylePreset: 'inkContrast',
-        typographyPreset: 'utilityHeading010',
-      },
-      message: {
-        stylePreset: 'inkBase',
-        typographyPreset: 'utilityBody010',
-      },
     },
   },
   unorderedList: {

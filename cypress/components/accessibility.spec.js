@@ -1,6 +1,4 @@
 const a11yComponentRules = [
-  {name: 'byline'},
-  {name: 'headline'},
   {name: 'audio-player'},
   // color-contrast rule is being disabled for the banner
   // because of an error with the notice variant of the banner.
@@ -9,27 +7,48 @@ const a11yComponentRules = [
   {name: 'banner', disabledRules: ['color-contrast']},
   {name: 'block'},
   // Color contrast rule is being disabled for button, tab and text-input as when a button component
-  // is in disabled the span contained inside the button fails the rule. This might need a fix. As it is stopping us from testing color.
+  // is in disabled the span contained inside the button fails the rule.
+  // This might need a fix as it is stopping us from testing color.
   // contrast of few components.
   {name: 'button', disabledRules: ['color-contrast']},
+  {name: 'byline'},
+  // {name: 'caption'},
+  // {name: 'card'},
   {name: 'date-time'},
   {name: 'divider'},
+  // {name: 'drawer'},
+  // {name: 'email-input'},
+  {name: 'flag'},
+  // {name: 'form'},
+  // {name: 'grid'},
+  {name: 'headline'},
+  {name: 'icon-button'},
   {name: 'icons'},
   {name: 'image'},
+  // {name: 'inline-message'},
+  //  {name: 'link'},
+  {name: 'menu'},
   {name: 'ordered-list'},
+  // {name: 'overlay'},
+  // {name: 'screen-reader-only'},
   {name: 'scroll'},
   {name: 'share-bar'},
   {name: 'slider'},
+  // {name: 'stack'},
+  // {name: 'stack-child'},
   {name: 'standfirst'},
+  // {name: 'structured-list'},
   {name: 'tab', disabledRules: ['color-contrast']},
+  // {name: 'tabs'},
+  {name: 'tag'},
   {name: 'text-block'},
   {name: 'text-input', disabledRules: ['color-contrast']},
-  {name: 'volume-control'},
-  {name: 'tag'},
-  {name: 'flag'},
+  // {name: 'title-bar'},
+  // {name: 'toast'},
   {name: 'typography/heading'},
   {name: 'typography/paragraph'},
   {name: 'unordered-list'},
+  {name: 'volume-control'},
 ];
 
 a11yComponentRules.forEach(component => {

@@ -1604,3 +1604,150 @@ stylePresets.inlineMessage = {
     color: '{{colors.inkInverse}}',
   },
 };
+
+// Menu
+
+stylePresets.menuItemVertical = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+    color: '{{colors.inkSubtle}}',
+    iconColor: '{{colors.inkSubtle}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactivePrimary010}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactivePrimary030}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+    color: '{{colors.interactivePrimary030}}',
+    iconColor: '{{colors.interactivePrimary030}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactivePrimary020}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactivePrimary040}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+    color: '{{colors.interactivePrimary040}}',
+    iconColor: '{{colors.interactivePrimary040}}',
+  },
+  selected: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactivePrimary030}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+    color: '{{colors.interactivePrimary030}}',
+    iconColor: '{{colors.interactivePrimary030}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+};
+
+stylePresets.menuItemHorizontal = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.inkSubtle}}',
+    iconColor: '{{colors.inkSubtle}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.inkContrast}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+  active: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+
+    color: '{{colors.inkContrast}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+  selected: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactivePrimary030}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+};
+
+stylePresets.menuItemHorizontalInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.interactiveInverse040}}',
+    iconColor: '{{colors.interactiveInverse040}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse030}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse030}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+  selected: {
+    backgroundColor: '{{colors.interactiveInverse030}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactiveInverse030}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.transparent}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+    color: '{{colors.interactiveInverse020}}',
+    iconColor: '{{colors.interactiveInverse020}}',
+  },
+};
