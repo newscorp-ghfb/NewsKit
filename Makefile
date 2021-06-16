@@ -41,9 +41,6 @@ build_storybook:
 build_docs:
 	SITE_ENV=${SITE_ENV} yarn build:docs
 
-build_docs_prod:
-	SITE_ENV='production' yarn build:docs
-
 unit_test_docs:
 	yarn test:unit:ci --projects=site
 

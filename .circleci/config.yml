@@ -336,7 +336,7 @@ jobs:
           at: ~/project
       - run:
           name: Build
-          command: make build_docs_prod
+          command: make build_docs
       - persist_to_workspace:
           root: ./
           paths:
