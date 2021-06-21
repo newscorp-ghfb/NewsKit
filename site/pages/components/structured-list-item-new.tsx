@@ -129,6 +129,20 @@ export default (layoutProps: LayoutProps) => (
           },
         ],
       },
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab'],
+            description:
+              'When focus is outside of the StructuredList, it moves focus to the first list item (if it’s interactive). If focus is on a list item, it moves focus to the next element on the page.',
+          },
+          {
+            command: ['Rtn'],
+            description: 'Activates the list item.',
+          },
+        ],
+      },
       aria: {
         title: 'WAI-ARIA',
         tableRows: [

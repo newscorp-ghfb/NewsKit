@@ -27,8 +27,18 @@ export const StyledWrapper = styled.div<StructuredListCellProps>`
 `;
 
 export const StyledListItemContainer = styled.li<
-  Pick<StructuredListItemProps, 'overrides' | 'ariaLabel'>
+  Pick<StructuredListItemProps, 'overrides' | 'ariaLabel' | 'disabled'>
 >`
+  cursor: ${({disabled}) => disabled && 'not-allowed'};
   list-style: none;
   width: 100%;
+`;
+
+export const StyledLink = styled.a<StructuredListItemProps>`
+  text-decoration: none;
+`;
+
+export const StyledIconWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `;

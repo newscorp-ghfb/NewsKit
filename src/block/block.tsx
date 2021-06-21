@@ -7,7 +7,7 @@ import {
   getStylePresetFromTheme,
 } from '../utils/style';
 
-export interface BlockProps {
+export interface BlockProps extends React.HTMLAttributes<HTMLDivElement> {
   as?: keyof JSX.IntrinsicElements;
   stylePreset?: MQ<string>;
   spaceInset?: MQ<string>;

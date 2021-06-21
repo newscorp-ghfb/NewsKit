@@ -5,9 +5,9 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {IconFilledError, IconOutlinedArrowForwardIos} from '../../icons';
-import {createTheme, Stack, TextBlock, ThemeProvider} from '../..';
-import {Flow, StackDistribution} from '../../stack';
+import {createTheme, TextBlock, ThemeProvider} from '../..';
 import {Block} from '../../block';
+import {StyledIconWrapper} from '../styled';
 
 const myCustomTheme = createTheme({
   name: 'structuredList-theme',
@@ -33,13 +33,13 @@ const myCustomTheme = createTheme({
 });
 
 export default {
-  title: 'structured-list-item',
+  title: 'structured-list',
   children: [
     {
-      storyName: 'structured-list-item-default',
+      storyName: 'structured-list-default',
       storyFn: () => (
         <>
-          <StorybookHeading>StructuredListItem</StorybookHeading>
+          <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
           <Block spaceStack="space050">
             <StructuredListItem>
@@ -60,17 +60,70 @@ export default {
                 </TextBlock>
               </StructuredListCell>
               <StructuredListCell>
-                <Stack
-                  stackDistribution={StackDistribution.End}
-                  flow={Flow.HorizontalTop}
-                >
+                <StyledIconWrapper>
                   <IconOutlinedArrowForwardIos
                     overrides={{
                       size: 'iconSize010',
                       stylePreset: 'inkContrast',
                     }}
                   />
-                </Stack>
+                </StyledIconWrapper>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <StyledIconWrapper>
+                  <IconOutlinedArrowForwardIos
+                    overrides={{
+                      size: 'iconSize010',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </StyledIconWrapper>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <StyledIconWrapper>
+                  <IconOutlinedArrowForwardIos
+                    overrides={{
+                      size: 'iconSize010',
+                      stylePreset: 'inkContrast',
+                    }}
+                  />
+                </StyledIconWrapper>
               </StructuredListCell>
             </StructuredListItem>
           </Block>
@@ -78,10 +131,10 @@ export default {
       ),
     },
     {
-      storyName: 'structured-list-item-with-two-cells',
+      storyName: 'structured-list-with-two-cells',
       storyFn: () => (
         <>
-          <StorybookHeading>StructuredListItem</StorybookHeading>
+          <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>with two cells</StorybookSubHeading>
           <Block spaceStack="space050">
             <StructuredListItem>
@@ -153,10 +206,10 @@ export default {
       ),
     },
     {
-      storyName: 'structured-list-item-with-one-cell',
+      storyName: 'structured-list-with-one-cell',
       storyFn: () => (
         <>
-          <StorybookHeading>StructuredListItem</StorybookHeading>
+          <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>with one cell</StorybookSubHeading>
           <Block spaceStack="space050">
             <StructuredListItem>
@@ -187,10 +240,10 @@ export default {
       ),
     },
     {
-      storyName: 'structured-list-item-with-overrides',
+      storyName: 'structured-list-with-overrides',
       storyFn: () => (
         <>
-          <StorybookHeading>StructuredListItem</StorybookHeading>
+          <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>With overrides</StorybookSubHeading>
           <ThemeProvider theme={myCustomTheme}>
             <Block spaceStack="space050">
@@ -283,6 +336,218 @@ export default {
               </StructuredListItem>
             </Block>
           </ThemeProvider>
+        </>
+      ),
+    },
+    {
+      storyName: 'structured-list-interactive-default',
+      storyFn: () => (
+        <>
+          <StorybookHeading>StructuredList</StorybookHeading>
+          <StorybookSubHeading>with internal link</StorybookSubHeading>
+          <Block spaceStack="space050">
+            <StructuredListItem href="/">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem href="/">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem href="/">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+          </Block>
+          <Block spaceStack="space050">
+            <StorybookSubHeading>with external link</StorybookSubHeading>
+            <StructuredListItem href="http://apple.com">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem href="http://apple.com">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem href="http://apple.com">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+          </Block>
+          <Block spaceStack="space050">
+            <StorybookSubHeading>with disabled link</StorybookSubHeading>
+            <StructuredListItem href="/" disabled>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+          </Block>
+        </>
+      ),
+    },
+    {
+      storyName: 'structured-list-interactive-with-custom-icon',
+      storyFn: () => (
+        <>
+          <StorybookHeading>StructuredList</StorybookHeading>
+          <StorybookSubHeading>with custom icon</StorybookSubHeading>
+          <StructuredListItem href="http://apple.com">
+            <StructuredListCell>
+              <TextBlock
+                stylePreset="inkContrast"
+                typographyPreset="utilityHeading010"
+              >
+                Label
+              </TextBlock>
+            </StructuredListCell>
+            <StructuredListCell>
+              <TextBlock
+                stylePreset="inkSubtle"
+                typographyPreset="utilityBody020"
+              >
+                A short description of the label
+              </TextBlock>
+            </StructuredListCell>
+            <StructuredListCell>
+              <StyledIconWrapper>
+                <IconFilledError
+                  overrides={{
+                    size: 'iconSize010',
+                    stylePreset: 'inkContrast',
+                  }}
+                />
+              </StyledIconWrapper>
+            </StructuredListCell>
+          </StructuredListItem>
+          <StructuredListItem href="http://apple.com">
+            <StructuredListCell>
+              <TextBlock
+                stylePreset="inkContrast"
+                typographyPreset="utilityHeading010"
+              >
+                Label
+              </TextBlock>
+            </StructuredListCell>
+            <StructuredListCell>
+              <TextBlock
+                stylePreset="inkSubtle"
+                typographyPreset="utilityBody020"
+              >
+                A short description of the label
+              </TextBlock>
+            </StructuredListCell>
+            <StructuredListCell>
+              <StyledIconWrapper>
+                <IconFilledError
+                  overrides={{
+                    size: 'iconSize010',
+                    stylePreset: 'inkContrast',
+                  }}
+                />
+              </StyledIconWrapper>
+            </StructuredListCell>
+          </StructuredListItem>
+          <StructuredListItem href="http://apple.com">
+            <StructuredListCell>
+              <TextBlock
+                stylePreset="inkContrast"
+                typographyPreset="utilityHeading010"
+              >
+                Label
+              </TextBlock>
+            </StructuredListCell>
+            <StructuredListCell pullRight>
+              <StyledIconWrapper>
+                <IconFilledError
+                  overrides={{
+                    size: 'iconSize010',
+                    stylePreset: 'inkContrast',
+                  }}
+                />
+              </StyledIconWrapper>
+            </StructuredListCell>
+          </StructuredListItem>
         </>
       ),
     },

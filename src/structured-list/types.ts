@@ -7,6 +7,7 @@ export interface StructuredListItemProps {
   ariaLabel?: string;
   role?: string;
   disabled?: boolean;
+  href?: string;
   overrides?: {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
