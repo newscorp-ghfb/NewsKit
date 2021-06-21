@@ -3,7 +3,7 @@ import {Menu, MenuItem} from '..';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {IconFilledAddCircleOutline} from '../../icons';
 import {compileTheme, createTheme} from '../..';
-import {MenuItemAlign, MenuItemSize} from '../types';
+import {MenuItemAlign, MenuItemDistribution, MenuItemSize} from '../types';
 
 const href = 'http://';
 
@@ -115,7 +115,7 @@ describe('Menu', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  it('renders with menu items positioned at the start', () => {
+  it('renders with menu items aligned at the start', () => {
     const props = {
       children: menuContent,
       align: MenuItemAlign.Start,
@@ -125,7 +125,7 @@ describe('Menu', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  it('renders with menu items positioned at the end', () => {
+  it('renders with menu items aligned at the end', () => {
     const props = {
       children: menuContent,
       align: MenuItemAlign.End,
@@ -139,6 +139,47 @@ describe('Menu', () => {
     const props = {
       children: menuContent,
       size: MenuItemSize.Small,
+    };
+
+    const fragment = renderToFragmentWithTheme(Menu, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it('renders with large size menu items', () => {
+    const props = {
+      children: menuContent,
+      size: MenuItemSize.Large,
+    };
+
+    const fragment = renderToFragmentWithTheme(Menu, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it('renders with menu items equal distribution', () => {
+    const props = {
+      children: menuContent,
+      distribution: MenuItemDistribution.Equal,
+    };
+
+    const fragment = renderToFragmentWithTheme(Menu, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it('renders with menu items grow distribution', () => {
+    const props = {
+      children: menuContent,
+      distribution: MenuItemDistribution.Grow,
+    };
+
+    const fragment = renderToFragmentWithTheme(Menu, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it('renders vertically with menu items grow distribution', () => {
+    const props = {
+      children: menuContent,
+      distribution: MenuItemDistribution.Equal,
+      vertical: true,
     };
 
     const fragment = renderToFragmentWithTheme(Menu, props);

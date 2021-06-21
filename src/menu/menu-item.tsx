@@ -12,9 +12,13 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   selected,
   ...rest
 }) => {
-  const {vertical, size, align, overrides: menuOverrides} = useContext(
-    MenuContext,
-  );
+  const {
+    vertical,
+    size,
+    align,
+    distribution,
+    overrides: menuOverrides,
+  } = useContext(MenuContext);
 
   const theme = useTheme();
   const buttonOverrides: MenuItemProps['overrides'] = {
@@ -29,7 +33,11 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   };
 
   return (
-    <StyledMenuItem vertical={vertical} overrides={menuOverrides}>
+    <StyledMenuItem
+      vertical={vertical}
+      distribution={distribution}
+      overrides={menuOverrides}
+    >
       <StyledButton
         {...buttonProps}
         align={align}

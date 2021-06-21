@@ -27,7 +27,8 @@ const a11yComponentRules = [
   {name: 'image'},
   // {name: 'inline-message'},
   //  {name: 'link'},
-  {name: 'menu'},
+  // Disabled links are not required to meet the color contrast rules
+  {name: 'menu', disabledRules: ['color-contrast']},
   {name: 'ordered-list'},
   // {name: 'overlay'},
   // {name: 'screen-reader-only'},

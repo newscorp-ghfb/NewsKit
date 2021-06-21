@@ -514,14 +514,12 @@ export const componentDefaults = {
     horizontal: {
       minHeight: 'sizing080',
       stylePreset: 'menuItemHorizontal',
-      iconSize: 'iconSize020',
       spaceInline: 'space020',
       spaceInset: 'spaceInsetSquish030',
     },
     vertical: {
       minHeight: 'sizing080',
       stylePreset: 'menuItemVertical',
-      iconSize: 'iconSize020',
       spaceInline: 'space020',
       spaceInset: 'spaceInsetSquish030',
     },

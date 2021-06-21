@@ -112,14 +112,37 @@ describe('Button', () => {
       href: 'http://localhost:6006',
     };
 
-    const {getByRole, asFragment} = await renderWithTheme((() => (
+    const {getByTestId, asFragment} = await renderWithTheme((() => (
       <Button {...props}>test button click</Button>
     )) as React.FC);
 
     expect(asFragment()).toMatchSnapshot();
 
-    expect(getByRole('link')).toBeInTheDocument();
-    expect(getByRole('link')).toHaveAttribute('href', 'http://localhost:6006');
+    expect(getByTestId('buttonLink')).toBeInTheDocument();
+    expect(getByTestId('buttonLink')).toHaveAttribute(
+      'href',
+      'http://localhost:6006',
+    );
+  });
+
+  test('renders button link with disabled link', async () => {
+    const props: ButtonLinkProps = {
+      href: 'http://localhost:6006',
+      disabled: true,
+    };
+
+    const {getByTestId, asFragment} = await renderWithTheme((() => (
+      <Button {...props}>test button click</Button>
+    )) as React.FC);
+
+    expect(asFragment()).toMatchSnapshot();
+
+    expect(getByTestId('buttonLink')).toBeInTheDocument();
+    expect(getByTestId('buttonLink')).toHaveAttribute(
+      'href',
+      // eslint-disable-next-line no-script-url
+      'javascript:void(0)',
+    );
   });
 
   test('handles correctly passed onClick event handler', async () => {

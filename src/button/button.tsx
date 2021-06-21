@@ -40,13 +40,18 @@ export const Button = React.forwardRef<
       ? {
           'data-testid': 'buttonLink',
           ...emotionAs('a'),
+          ...linkOrButtonProps,
+          href: disabled
+            ? // eslint-disable-next-line no-script-url
+              'javascript:void(0)'
+            : linkOrButtonProps.href,
         }
       : {
           type: 'button',
           'data-testid': 'button',
           ...emotionAs('button'),
+          ...linkOrButtonProps,
         }),
-    ...linkOrButtonProps,
     onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => {
       fireEvent({
         originator:

@@ -4,6 +4,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  width: 100%;
 }
 
 .emotion-0 ul {
@@ -15,11 +16,20 @@ exports[`Menu renders horizontally with menu items 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-2 {
@@ -80,10 +90,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -92,10 +99,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -104,10 +108,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -176,7 +176,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 <nav
-    aria-label="Menu"
     class="emotion-0"
     data-testid="menu-container"
     role="navigation"
@@ -299,6 +298,7 @@ exports[`Menu renders vertically with menu items 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  height: 100%;
 }
 
 .emotion-0 ul {
@@ -313,11 +313,21 @@ exports[`Menu renders vertically with menu items 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100%;
 }
 
 .emotion-1 {
   box-sizing: border-box;
   margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-2 {
@@ -384,9 +394,7 @@ exports[`Menu renders vertically with menu items 1`] = `
 
 .emotion-3:hover:not(:disabled) {
   background-color: #e6f4ff;
-  border-style: solid;
   border-color: #0a68c1;
-  border-width: 0 2px 0 0;
   color: #0a68c1;
 }
 
@@ -396,9 +404,7 @@ exports[`Menu renders vertically with menu items 1`] = `
 
 .emotion-3:active:not(:disabled) {
   background-color: #d5ebff;
-  border-style: solid;
   border-color: #02509b;
-  border-width: 0 2px 0 0;
   color: #02509b;
 }
 
@@ -407,10 +413,6 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 2px 0 0;
   color: #c0c0c0;
 }
 
@@ -479,7 +481,6 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 <nav
-    aria-label="Menu"
     class="emotion-0"
     data-testid="menu-container"
     role="navigation"
@@ -598,10 +599,11 @@ exports[`Menu renders vertically with menu items 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items positioned at the end 1`] = `
+exports[`Menu renders vertically with menu items grow distribution 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  height: 100%;
 }
 
 .emotion-0 ul {
@@ -613,11 +615,617 @@ exports[`Menu renders with menu items positioned at the end 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #535353;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  border-color: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  border-color: #02509b;
+  color: #02509b;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-3:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-3:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Menu renders with large size menu items 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0 ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #535353;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #02509b;
+  color: #0a0a0a;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-color: #01396e;
+  color: #0a0a0a;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-3:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Menu renders with menu items aligned at the end 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0 ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-2 {
@@ -683,10 +1291,7 @@ exports[`Menu renders with menu items positioned at the end 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -695,10 +1300,7 @@ exports[`Menu renders with menu items positioned at the end 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -707,10 +1309,6 @@ exports[`Menu renders with menu items positioned at the end 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -779,7 +1377,6 @@ exports[`Menu renders with menu items positioned at the end 1`] = `
 }
 
 <nav
-    aria-label="Menu"
     class="emotion-0"
     data-testid="menu-container"
     role="navigation"
@@ -898,10 +1495,11 @@ exports[`Menu renders with menu items positioned at the end 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Menu renders with menu items positioned at the start 1`] = `
+exports[`Menu renders with menu items aligned at the start 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  width: 100%;
 }
 
 .emotion-0 ul {
@@ -913,11 +1511,20 @@ exports[`Menu renders with menu items positioned at the start 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-2 {
@@ -983,10 +1590,7 @@ exports[`Menu renders with menu items positioned at the start 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -995,10 +1599,7 @@ exports[`Menu renders with menu items positioned at the start 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -1007,10 +1608,6 @@ exports[`Menu renders with menu items positioned at the start 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -1079,7 +1676,592 @@ exports[`Menu renders with menu items positioned at the start 1`] = `
 }
 
 <nav
-    aria-label="Menu"
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Menu renders with menu items equal distribution 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0 ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #535353;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #02509b;
+  color: #0a0a0a;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-color: #01396e;
+  color: #0a0a0a;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-3:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li
+        class="emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <a
+            class="emotion-3"
+            data-testid="buttonLink"
+            href="http://"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <span
+                  class="emotion-6"
+                >
+                  Menu item
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Menu renders with menu items grow distribution 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0 ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #535353;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #02509b;
+  color: #0a0a0a;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-color: #01396e;
+  color: #0a0a0a;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-3:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
+    max-width: 100%;
+  }
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<nav
     class="emotion-0"
     data-testid="menu-container"
     role="navigation"
@@ -1202,6 +2384,7 @@ exports[`Menu renders with small size menu items 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  width: 100%;
 }
 
 .emotion-0 ul {
@@ -1213,11 +2396,20 @@ exports[`Menu renders with small size menu items 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .emotion-1 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-2 {
@@ -1269,8 +2461,8 @@ exports[`Menu renders with small size menu items 1`] = `
 }
 
 .emotion-3 svg {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-3 svg {
@@ -1278,10 +2470,7 @@ exports[`Menu renders with small size menu items 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -1290,10 +2479,7 @@ exports[`Menu renders with small size menu items 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -1302,10 +2488,6 @@ exports[`Menu renders with small size menu items 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -1374,7 +2556,6 @@ exports[`Menu renders with small size menu items 1`] = `
 }
 
 <nav
-    aria-label="Menu"
     class="emotion-0"
     data-testid="menu-container"
     role="navigation"
@@ -1498,6 +2679,14 @@ exports[`MenuItem renders in different sizes 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-1 {
@@ -1558,10 +2747,7 @@ exports[`MenuItem renders in different sizes 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -1570,10 +2756,7 @@ exports[`MenuItem renders in different sizes 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -1582,10 +2765,6 @@ exports[`MenuItem renders in different sizes 1`] = `
 }
 
 .emotion-2:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -1688,6 +2867,14 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-1 {
@@ -1753,10 +2940,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -1765,10 +2949,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -1777,10 +2958,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-2:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -1917,6 +3094,14 @@ exports[`MenuItem renders with default props 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-1 {
@@ -1977,10 +3162,7 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -1989,10 +3171,7 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -2001,10 +3180,6 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-2:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -2107,6 +3282,14 @@ exports[`MenuItem renders with icon 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-1 {
@@ -2167,10 +3350,7 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #02509b;
   color: #0a0a0a;
 }
 
@@ -2179,10 +3359,7 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
+  border-color: #01396e;
   color: #0a0a0a;
 }
 
@@ -2191,10 +3368,6 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-2:disabled {
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
   color: #c0c0c0;
 }
 
@@ -2326,6 +3499,14 @@ exports[`MenuItem renders with overrides 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .emotion-1 {

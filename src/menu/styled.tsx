@@ -1,10 +1,26 @@
 import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
-import {MenuItemAlign, MenuProps} from './types';
+import {MenuItemAlign, MenuItemDistribution, MenuProps} from './types';
+
+const getFlexFromTabsDistribution = (
+  distribution: MenuItemDistribution,
+  vertical: boolean,
+) => {
+  switch (distribution) {
+    case MenuItemDistribution.Grow:
+      return 'flex: 1 0 auto';
+    case MenuItemDistribution.Equal:
+      return `${vertical ? 'height' : 'width'}: 100%`;
+    case MenuItemDistribution.Start:
+    default:
+      return 'flex: 0 0 auto';
+  }
+};
 
 export const StyledMenuContainer = styled.nav<MenuProps>`
   box-sizing: border-box;
+  ${({vertical}) => (vertical ? 'height: 100%;' : 'width: 100%;')}
 
   ul {
     box-sizing: border-box;
@@ -14,13 +30,15 @@ export const StyledMenuContainer = styled.nav<MenuProps>`
 
     display: flex;
     ${({vertical}) => vertical && 'flex-direction: column;'}
+
+    ${({vertical}) => (vertical ? 'height: 100%;' : 'width: 100%;')}
   }
 
   ${getStylePreset('menu', '')};
 `;
 
 export const StyledMenuItem = styled.li<
-  Pick<MenuProps, 'vertical'> & Pick<MenuProps, 'overrides'>
+  Pick<MenuProps, 'vertical' | 'distribution'> & Pick<MenuProps, 'overrides'>
 >`
   box-sizing: border-box;
 
@@ -31,6 +49,16 @@ export const StyledMenuItem = styled.li<
       '',
       'spaceInline',
     )}
+
+  display: flex;
+  // align-items: stretch;
+  width: ${({vertical}) => (vertical ? '100%' : '')};
+  overflow: hidden;
+  ${({distribution, vertical}) =>
+    getFlexFromTabsDistribution(
+      distribution as MenuItemDistribution,
+      vertical as boolean,
+    )};
 `;
 
 const menuItemFlexAlign = {

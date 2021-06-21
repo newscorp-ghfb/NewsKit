@@ -64,10 +64,10 @@ export const Tabs: React.FC<TabsProps> = ({
   distribution,
   initialSelectedIndex = 0,
   indicatorPosition = TabsIndicatorPosition.End,
-  align: initialAlign,
+  align: passedAlign,
 }) => {
   const theme = useTheme();
-  const align = getAlign(initialAlign, vertical);
+  const align = getAlign(passedAlign, vertical);
 
   const scrollOverrides = {
     ...deepMerge(

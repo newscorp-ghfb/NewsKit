@@ -6,8 +6,9 @@ import {
 import {createTheme, compileTheme, ThemeProvider} from '../../theme';
 import {IconFilledAddCircleOutline} from '../../icons';
 import {Menu, MenuItem} from '..';
-import {MenuItemAlign, MenuItemSize} from '../types';
+import {MenuItemAlign, MenuItemDistribution, MenuItemSize} from '../types';
 import {styled} from '../../utils';
+import {getSSRId} from '../../utils/get-ssr-id';
 
 const href = 'http://newskit.co.uk';
 
@@ -31,6 +32,8 @@ const myCustomTheme = compileTheme(
   }),
 );
 
+// TODO: use random gen for aria labels
+
 export default {
   title: 'menu',
   children: [
@@ -39,8 +42,7 @@ export default {
       storyFn: () => (
         <>
           <StorybookHeading>Menu horizontal</StorybookHeading>
-          <StorybookSubHeading>Menu horizontal</StorybookSubHeading>
-          <Menu ariaLabel="Menu 1">
+          <Menu aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item 1</MenuItem>
             <MenuItem href={href}>Menu item 2</MenuItem>
             <MenuItem href={href}>Menu item 3</MenuItem>
@@ -56,7 +58,7 @@ export default {
       storyFn: () => (
         <>
           <StorybookHeading>Menu vertical</StorybookHeading>
-          <Menu vertical ariaLabel="Menu 2">
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item 1</MenuItem>
             <MenuItem href={href}>Menu item 2</MenuItem>
             <MenuItem href={href}>Menu item 3</MenuItem>
@@ -68,17 +70,72 @@ export default {
       ),
     },
     {
+      storyName: 'menu item - states',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu horizontal</StorybookHeading>
+          <StorybookSubHeading>Menu horizontal</StorybookSubHeading>
+          <Menu aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuItem href={href} selected>
+              Menu item 2
+            </MenuItem>
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuItem href={href} disabled>
+              Menu item 4
+            </MenuItem>
+            <MenuItem href={href}>Menu item 5</MenuItem>
+          </Menu>
+          <br />
+          <br />
+          <StorybookSubHeading>Menu vertical</StorybookSubHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuItem href={href} selected>
+              Menu item 2
+            </MenuItem>
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuItem href={href} disabled>
+              Menu item 4
+            </MenuItem>
+          </Menu>
+        </>
+      ),
+    },
+    {
       storyName: 'menu item - sizes',
       storyFn: () => (
         <>
           <StorybookHeading>Menu items in different sizes</StorybookHeading>
           <StorybookSubHeading>Small menu items</StorybookSubHeading>
-          <Menu size={MenuItemSize.Small} ariaLabel="Menu 3">
+          <Menu size={MenuItemSize.Small} aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>
               <IconFilledAddCircleOutline /> Menu item 1
               <IconFilledAddCircleOutline />
             </MenuItem>
-            <MenuItem href={href} selected>
+            <MenuItem href={href}>
+              <IconFilledAddCircleOutline />
+              Menu item 2
+              <IconFilledAddCircleOutline />
+            </MenuItem>
+            <MenuItem href={href}>
+              <IconFilledAddCircleOutline /> Menu item 3
+              <IconFilledAddCircleOutline />
+            </MenuItem>
+            <MenuItem href={href}>
+              <IconFilledAddCircleOutline /> Menu item 4
+              <IconFilledAddCircleOutline />
+            </MenuItem>
+          </Menu>
+          <br />
+          <br />
+          <StorybookSubHeading>Medium menu items</StorybookSubHeading>
+          <Menu size={MenuItemSize.Medium} aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>
+              <IconFilledAddCircleOutline /> Menu item 1
+              <IconFilledAddCircleOutline />
+            </MenuItem>
+            <MenuItem href={href}>
               <IconFilledAddCircleOutline />
               Menu item 2
               <IconFilledAddCircleOutline />
@@ -95,11 +152,11 @@ export default {
           <br />
           <br />
           <StorybookSubHeading>Large menu items</StorybookSubHeading>
-          <Menu size={MenuItemSize.Large} ariaLabel="Menu 4">
+          <Menu size={MenuItemSize.Large} aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>
               <IconFilledAddCircleOutline /> Menu item 1
             </MenuItem>
-            <MenuItem href={href} selected>
+            <MenuItem href={href}>
               <IconFilledAddCircleOutline />
               Menu item 2
             </MenuItem>
@@ -121,6 +178,7 @@ export default {
 
           & > div {
             width: 500px;
+            border: 1px dashed lightgrey;
           }
         `;
         return (
@@ -130,7 +188,12 @@ export default {
             </StorybookHeading>
             <Flex>
               <div>
-                <Menu vertical align={MenuItemAlign.Start} ariaLabel="Menu 5">
+                <StorybookSubHeading>Left alignment</StorybookSubHeading>
+                <Menu
+                  vertical
+                  align={MenuItemAlign.Start}
+                  aria-label={`Menu ${getSSRId()}`}
+                >
                   <MenuItem href={href}>Menu item 1</MenuItem>
                   <MenuItem href={href}>Menu item 2</MenuItem>
                   <MenuItem href={href}>Menu item 3</MenuItem>
@@ -140,7 +203,12 @@ export default {
                 </Menu>
               </div>
               <div>
-                <Menu vertical align={MenuItemAlign.End} ariaLabel="Menu 6">
+                <StorybookSubHeading>Right alignment</StorybookSubHeading>
+                <Menu
+                  vertical
+                  align={MenuItemAlign.End}
+                  aria-label={`Menu ${getSSRId()}`}
+                >
                   <MenuItem href={href}>Menu item 1</MenuItem>
                   <MenuItem href={href}>Menu item 2</MenuItem>
                   <MenuItem href={href}>Menu item 3</MenuItem>
@@ -155,6 +223,50 @@ export default {
       },
     },
     {
+      storyName: 'menu item - distribution',
+      storyFn: () => (
+        <>
+          <StorybookHeading>
+            Menu items with different distributions
+          </StorybookHeading>
+          <StorybookSubHeading>Start</StorybookSubHeading>
+          <Menu
+            distribution={MenuItemDistribution.Start}
+            aria-label={`Menu ${getSSRId()}`}
+          >
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuItem href={href}>Menu item 2</MenuItem>
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuItem href={href}>Menu item 4</MenuItem>
+          </Menu>
+          <br />
+          <br />
+          <StorybookSubHeading>Equal</StorybookSubHeading>
+          <Menu
+            distribution={MenuItemDistribution.Equal}
+            aria-label={`Menu ${getSSRId()}`}
+          >
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuItem href={href}>Menu item 2 more text</MenuItem>
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuItem href={href}>Menu item 4 text</MenuItem>
+          </Menu>
+          <br />
+          <br />
+          <StorybookSubHeading>Grow</StorybookSubHeading>
+          <Menu
+            distribution={MenuItemDistribution.Grow}
+            aria-label={`Menu ${getSSRId()}`}
+          >
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuItem href={href}>Menu item 2 more text</MenuItem>
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuItem href={href}>Menu item 4 text</MenuItem>
+          </Menu>
+        </>
+      ),
+    },
+    {
       storyName: 'menu item - overrides',
       storyFn: () => {
         const menuItemOverrides = {
@@ -164,7 +276,7 @@ export default {
           <>
             <ThemeProvider theme={myCustomTheme}>
               <StorybookHeading>Menu items with overrides</StorybookHeading>
-              <Menu ariaLabel="Menu 7">
+              <Menu aria-label={`Menu ${getSSRId()}`}>
                 <MenuItem href={href} overrides={menuItemOverrides}>
                   Menu item 1
                 </MenuItem>
@@ -204,7 +316,7 @@ export default {
           <>
             <StorybookHeading>Menu horizontal inverse</StorybookHeading>
             <InverseContainer>
-              <Menu ariaLabel="Menu 8">
+              <Menu aria-label={`Menu ${getSSRId()}`}>
                 <MenuItem href={href} overrides={inverseOverrides}>
                   Menu item 1
                 </MenuItem>
