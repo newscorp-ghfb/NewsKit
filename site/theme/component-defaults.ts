@@ -57,6 +57,16 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish010',
     },
   },
+  inlineMessage: {
+    spaceInset: 'spaceInset040',
+    width: '100%',
+    content: {
+      message: {
+        stylePreset: 'inkInformative',
+        typographyPreset: 'utilityMeta020',
+      },
+    },
+  },
   tab: {
     small: {
       spaceInset: 'spaceInsetStretch040',

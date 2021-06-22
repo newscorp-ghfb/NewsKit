@@ -17,6 +17,7 @@ export * from './grid';
 export * from './headline';
 export * from './icon-button';
 export * from './icons';
+export * from './inline-message';
 export * from './image';
 export * from './instrumentation';
 export * from './link';

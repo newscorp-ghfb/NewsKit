@@ -147,16 +147,6 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
-  infoNotice: {
-    base: {
-      backgroundColor: '{{colors.interfaceInformative020}}',
-      iconColor: '{{colors.inkInformative}}',
-      color: '{{colors.inkInformative}}',
-      borderColor: '{{colors.interfaceInformative010}}',
-      borderWidth: '{{borders.borderWidth010}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-    },
-  },
   flagSolidPositive: {
     base: {
       color: '{{colors.inkInverse}}',

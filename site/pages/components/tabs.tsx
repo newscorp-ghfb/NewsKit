@@ -294,6 +294,8 @@ export default (layoutProps: LayoutProps) => (
               ),
             },
           ],
+          infoNotice:
+            'To support resizing of the selected tab indicator this component uses the ResizeObserver API this is not supported in Internet explorer, if you require support we suggest you add a pollyfill to your application.',
         },
         {
           title: 'Tab',
@@ -1011,6 +1013,8 @@ export default (layoutProps: LayoutProps) => (
           },
         ],
       },
+      infoNoticeFocus: 'Scroll controls are not focussable.',
+
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [
@@ -1054,6 +1058,7 @@ export default (layoutProps: LayoutProps) => (
           },
         ],
       },
+
       aria: {
         title: 'WAI-ARIA',
         tableRows: [
@@ -1107,6 +1112,8 @@ export default (layoutProps: LayoutProps) => (
           },
         ],
       },
+      infoNoticeAria:
+        ' By default, ariaLabel will match the Tab text label. Where a Tab item text label is not visible on the screen I.E. if there is only an icon in a Tab item, a string should be parsed to the title prop on the icon.',
     }}
     seo={{
       title: 'SEO Considerations',

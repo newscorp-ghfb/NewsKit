@@ -1,6 +1,5 @@
 import React from 'react';
-import {Cell, Link, Grid} from 'newskit';
-import {InfoNotice} from '../../components/info-notice';
+import {Cell, Link, Grid, InlineMessage} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -228,7 +227,10 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentText title="Write some code" titleAs="h3">
           <br />
-          <InfoNotice>Currently only applicable for News UK teams.</InfoNotice>
+          <InlineMessage role="region" aria-label="contribute">
+            Currently only applicable for News UK teams.
+          </InlineMessage>
+          <br />
           <br />
           There’s a lot of code that has been written and there’s a lot more
           left to write. Whether you have built a new component or have a small

@@ -763,8 +763,8 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkBase",
-          "typographyPreset": "utilityBody010",
+          "stylePreset": "inkInformative",
+          "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
@@ -776,8 +776,9 @@ Object {
         "spaceInline": "space020",
       },
       "maxWidth": "100%",
-      "spaceInset": "spaceInset030",
+      "spaceInset": "spaceInset040",
       "stylePreset": "inlineMessage",
+      "width": "100%",
     },
     "link": Object {
       "externalIcon": Object {
@@ -2877,16 +2878,6 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
-      },
-    },
-    "infoNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative020}}",
-        "borderColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
       },
     },
     "inlineMessage": Object {

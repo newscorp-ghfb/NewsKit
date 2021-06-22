@@ -52,6 +52,7 @@ Array [
   "IconButton",
   "Image",
   "IndeterminateProgressIndicator",
+  "InlineMessage",
   "InstrumentationProvider",
   "LabelPosition",
   "Link",

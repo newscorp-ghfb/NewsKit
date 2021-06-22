@@ -438,6 +438,17 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   \\"mdOffset\\": 1
 }"
               data-testid="Cell"
+            />
+            <div
+              data-comp="NewsKit Cell"
+              data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"lg\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+              data-testid="Cell"
             >
               <div
                 class="emotion-8"
@@ -555,6 +566,17 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 }
               </div>
             </div>
+            <div
+              data-comp="NewsKit Cell"
+              data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"lg\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+              data-testid="Cell"
+            />
           </div>
         </div>
       </div>

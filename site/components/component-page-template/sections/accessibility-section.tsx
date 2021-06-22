@@ -1,6 +1,5 @@
-import {Grid, Cell} from 'newskit';
+import {Grid, Cell, InlineMessage} from 'newskit';
 import React from 'react';
-
 import {SectionIntroduction} from '../../section-introduction';
 import {Separator} from '../../separator';
 import {StyledSection} from './styled';
@@ -15,6 +14,7 @@ interface A11ySubSection<RowType> {
   description?: string;
   tableRows: RowType[];
 }
+
 export interface AccessibilityTablesProps {
   focusOrder?: A11ySubSection<{
     order: string | number;
@@ -32,6 +32,8 @@ export interface AccessibilityTablesProps {
     command: string[];
     description: string | JSX.Element;
   }>;
+  infoNoticeFocus?: React.ReactNode;
+  infoNoticeAria?: React.ReactNode;
 }
 
 export type AccessibilitySectionProps = AccessibilityTablesProps &
@@ -57,6 +59,8 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
   focusOrder,
   interaction,
   aria,
+  infoNoticeFocus,
+  infoNoticeAria,
 }) => (
   <>
     <Cell xs={12}>
@@ -73,6 +77,13 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
                   {...focusOrder}
                 />
               )}
+              <ComponentPageCell>
+                {infoNoticeFocus && (
+                  <InlineMessage role="region" aria-label="Focus notice">
+                    {infoNoticeFocus}
+                  </InlineMessage>
+                )}
+              </ComponentPageCell>
               {interaction && (
                 <A11yTable
                   columns={['Command', 'Description']}
@@ -91,6 +102,13 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
                   {...aria}
                 />
               )}
+              <ComponentPageCell>
+                {infoNoticeAria && (
+                  <InlineMessage role="region" aria-label="Wai Aria notice">
+                    {infoNoticeAria}
+                  </InlineMessage>
+                )}
+              </ComponentPageCell>
             </Grid>
           </Cell>
         </Grid>
