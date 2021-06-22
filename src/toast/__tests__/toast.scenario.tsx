@@ -469,3 +469,5 @@ export default {
     },
   ],
 };
+
+export const disabledRules = ['color-contrast'];

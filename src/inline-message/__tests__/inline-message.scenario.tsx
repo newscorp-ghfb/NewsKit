@@ -15,7 +15,7 @@ const myCustomTheme = compileTheme(
       stylePresets: {
         customInlineMessage: {
           base: {
-            backgroundColor: 'lightpink',
+            backgroundColor: '#a05a64',
             borderWidth: '1px 4px',
             borderColor: 'deeppink',
             borderStyle: 'solid',
@@ -48,29 +48,35 @@ export default {
           <StorybookSubHeading>default</StorybookSubHeading>
           <InlineMessage>Short text</InlineMessage>
           <StorybookSubHeading>with long text</StorybookSubHeading>
-          <InlineMessage>
+          <InlineMessage aria-label="short text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </InlineMessage>
           <StorybookSubHeading>with Icon</StorybookSubHeading>
-          <InlineMessage icon={icon}>Short text</InlineMessage>
+          <InlineMessage icon={icon} aria-label="short text and icon">
+            Short text
+          </InlineMessage>
           <StorybookSubHeading>with Icon and long text</StorybookSubHeading>
-          <InlineMessage icon={icon}>
+          <InlineMessage icon={icon} aria-label="icon and long text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </InlineMessage>
           <StorybookSubHeading>with link</StorybookSubHeading>
-          <InlineMessage icon={icon}>
+          <InlineMessage icon={icon} aria-label="icon and link">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt {link} ut labore et dolore magna aliqua.
           </InlineMessage>
           <StorybookSubHeading>with title</StorybookSubHeading>
-          <InlineMessage title="Your title here">
+          <InlineMessage title="Your title here" aria-label="title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </InlineMessage>
           <StorybookSubHeading>with title and icon</StorybookSubHeading>
-          <InlineMessage title="Your title here" icon={icon}>
+          <InlineMessage
+            title="Your title here"
+            icon={icon}
+            aria-label="title and icon"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </InlineMessage>
@@ -86,6 +92,7 @@ export default {
           <InlineMessage
             title="Your title here"
             icon={icon}
+            aria-label="overrides"
             overrides={{
               stylePreset: 'customInlineMessage',
               spaceInset: 'spaceInset050',

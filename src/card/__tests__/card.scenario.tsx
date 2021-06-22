@@ -100,7 +100,7 @@ const myCustomCardTheme = createTheme({
       },
       cardContainerTeaserMock: {
         base: {
-          backgroundColor: '{{colors.amber020}}',
+          backgroundColor: '{{colors.neutral010}}',
         },
         hover: {
           backgroundColor: '{{colors.amber040}}',

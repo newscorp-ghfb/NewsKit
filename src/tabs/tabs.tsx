@@ -261,6 +261,7 @@ export const Tabs: React.FC<TabsProps> = ({
             ref={tab.selected ? activeTabRef : undefined}
             id={tab.id}
             align={align}
+            ariaLabel={tab.ariaLabel}
             overrides={{
               ...tab.overrides,
               width: '100%',

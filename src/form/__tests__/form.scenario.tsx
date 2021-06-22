@@ -316,12 +316,15 @@ export default {
                     />
                   </Block>
                   <Block>
+                    {/* eslint-disable-next-line jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */}
+                    <label htmlFor="phone-number">Phone number</label>
                     <PhoneInputWithCountry
                       placeholder="Enter phone number"
                       name="phonenumber"
                       control={formRef.current?.control}
                       value={value}
                       onChange={setValue}
+                      id="phone-number"
                     />
                   </Block>
                   <Button type="submit">Submit</Button>

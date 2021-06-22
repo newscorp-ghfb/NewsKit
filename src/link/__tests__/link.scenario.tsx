@@ -12,9 +12,9 @@ const myCustomTheme = createTheme({
   name: 'my-custom-link-theme',
   overrides: {
     colors: {
-      inkLinkBase: '{{colors.red060}}',
-      inkLinkHover: '{{colors.green060}}',
-      inkLinkVisited: '{{colors.red080}}',
+      inkLinkBase: '{{colors.red080}}',
+      inkLinkHover: '{{colors.green080}}',
+      inkLinkVisited: '{{colors.red090}}',
     },
     stylePresets: {
       linkCustom: {

@@ -84,3 +84,5 @@ export default {
     },
   ],
 };
+
+export const disabledRules = ['heading-order'];

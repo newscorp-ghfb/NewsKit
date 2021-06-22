@@ -84,8 +84,16 @@ export default {
                 open
                 onDismiss={() => {}}
                 placement="right"
-                // eslint-disable-next-line prettier/prettier
-                header={<><IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} /><LinkStandalone href="www.test.com">Link button</LinkStandalone></>}
+                header={
+                  <>
+                    <IconFilledAddCircleOutline
+                      overrides={{size: 'iconSize010'}}
+                    />
+                    <LinkStandalone href="www.test.com">
+                      Link button
+                    </LinkStandalone>
+                  </>
+                }
               >
                 <div>
                   {Array.from({length: 16}, (_, i) => (
@@ -223,3 +231,5 @@ export default {
     },
   ],
 };
+
+export const disabledRules = ['tabindex'];

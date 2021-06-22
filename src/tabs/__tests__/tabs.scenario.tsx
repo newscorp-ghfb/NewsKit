@@ -157,13 +157,13 @@ export default {
           <Spacer />
 
           <Tabs size={TabSize.Medium} divider>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -387,13 +387,13 @@ export default {
           </Tabs>
           <StorybookSubHeading>Icon Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider>
-            <Tab aria-label="tab label" label={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -407,31 +407,31 @@ export default {
           <StorybookHeading>Tabs Vertical Label / Icon</StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider vertical>
-            <Tab aria-label="tab label" label="Medium tab">
+            <Tab ariaLabel="tab label" label="Medium tab">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label="Medium tab" disabled>
+            <Tab ariaLabel="tab label" label="Medium tab" disabled>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label="Medium tab">
+            <Tab ariaLabel="tab label" label="Medium tab">
               <LoremIpsum textNumber={3} />
             </Tab>
-            <Tab aria-label="tab label" label="Medium tab">
+            <Tab ariaLabel="tab label" label="Medium tab">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
           <StorybookSubHeading>Icon Only</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider vertical>
-            <Tab aria-label="tab label" label={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label={<IconFilledEmail />} disabled>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />} disabled>
               <LoremIpsum textNumber={3} />
             </Tab>
-            <Tab aria-label="tab label" label={<IconFilledEmail />}>
+            <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
               <LoremIpsum textNumber={4} />
             </Tab>
           </Tabs>
@@ -445,13 +445,13 @@ export default {
           <StorybookHeading>Tabs Horizontal Icon and Label</StorybookHeading>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <Tabs size={TabSize.Small} divider>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -459,13 +459,13 @@ export default {
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -479,13 +479,13 @@ export default {
           <StorybookHeading>Tabs Vertical Icon and Label</StorybookHeading>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <Tabs size={TabSize.Medium} divider vertical>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -493,13 +493,13 @@ export default {
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <Tabs size={TabSize.Large} divider vertical>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -575,13 +575,13 @@ export default {
           </Tabs>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               Content 1
             </Tab>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               Content 2
             </Tab>
-            <Tab aria-label="tab label" label={titleAndLeftIcon}>
+            <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
               Content 3
             </Tab>
           </Tabs>
@@ -589,13 +589,13 @@ export default {
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <Tabs size={TabSize.Medium} vertical divider>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               Content 1
             </Tab>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               Content 2
             </Tab>
-            <Tab aria-label="tab label" label={titleBetweenIcons}>
+            <Tab ariaLabel="tab label" label={titleBetweenIcons}>
               Content 3
             </Tab>
           </Tabs>

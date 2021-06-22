@@ -553,3 +553,5 @@ export default {
     },
   ],
 };
+
+export const disabledRules = ['listitem'];
