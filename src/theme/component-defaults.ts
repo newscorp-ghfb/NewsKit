@@ -79,6 +79,11 @@ export const componentDefaults = {
       },
       content: {
         spaceInline: 'space030',
+        title: {
+          stylePreset: 'inkInverse',
+          typographyPreset: 'utilityHeading010',
+          spaceStack: 'space030',
+        },
         message: {
           stylePreset: 'inkInverse',
           typographyPreset: 'utilityBody010',
@@ -101,6 +106,11 @@ export const componentDefaults = {
       },
       content: {
         spaceInline: 'space050',
+        title: {
+          stylePreset: 'inkInverse',
+          typographyPreset: 'utilityHeading010',
+          spaceStack: 'space030',
+        },
         message: {
           stylePreset: 'inkInverse',
           typographyPreset: 'utilityBody010',

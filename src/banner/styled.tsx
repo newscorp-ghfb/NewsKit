@@ -54,6 +54,26 @@ export const StyledIconContainer = styled.div<
     )}
 `;
 
+export const StyledTitleContainer = styled(TextBlock)<
+  Pick<BannerProps, 'overrides' | 'layout'>
+>`
+  ${({layout}) =>
+    getTypographyPreset(`banner.${layout}.content.title`, 'content.title', {
+      withCrop: true,
+    })};
+
+  ${({layout}) =>
+    getStylePreset(`banner.${layout}.content.title`, 'content.title')};
+
+  ${({layout}) =>
+    getResponsiveSpace(
+      'marginBottom',
+      `banner.${layout}.content.title`,
+      'content.title',
+      'spaceStack',
+    )}
+`;
+
 export const StyledContentContainer = styled.div`
   flex: 1;
   align-self: center;

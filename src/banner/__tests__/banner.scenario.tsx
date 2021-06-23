@@ -125,6 +125,7 @@ export const BannerWithState: React.FC<BannerProps> = ({
               />
             }
             onClose={close}
+            title="Some banner title"
             {...restProps}
           >
             {children ||
@@ -200,21 +201,12 @@ export default {
       storyFn: () => (
         <>
           <StorybookHeading>Banner</StorybookHeading>
-          <StorybookSubHeading>default</StorybookSubHeading>
+          <StorybookSubHeading>
+            default (Informative intent)
+          </StorybookSubHeading>
           <BannerWrapper>
-            <BannerWithState
-              aria-label="Banner default"
-              icon={
-                <IconFilledInfo
-                  overrides={{
-                    size: 'iconSize020',
-                    stylePreset: 'inkInverse',
-                  }}
-                />
-              }
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <BannerWithState aria-label="Banner default">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </BannerWithState>
           </BannerWrapper>
           <StorybookSubHeading>
@@ -223,23 +215,11 @@ export default {
           <BannerWrapper>
             <BannerWithState
               aria-label="Banner with bigger content"
-              icon={
-                <IconFilledInfo
-                  overrides={{
-                    size: 'iconSize020',
-                    stylePreset: 'inkInverse',
-                  }}
-                />
-              }
               actions={[() => <CTABtn />, () => <CTABtn>CTA Button 2</CTABtn>]}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              enim ad minim veniam, quis nostrud exercitation.
             </BannerWithState>
           </BannerWrapper>
         </>
@@ -250,28 +230,16 @@ export default {
       storyFn: () => (
         <>
           <StorybookHeading>Banner Intent</StorybookHeading>
-          <StorybookSubHeading>Informative (default)</StorybookSubHeading>
-          <BannerWrapper>
-            <BannerWithState
-              aria-label="Informative Banner"
-              icon={<IconFilledInfo overrides={{size: 'iconSize020'}} />}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </BannerWithState>
-          </BannerWrapper>
           <StorybookSubHeading>Notice</StorybookSubHeading>
           <BannerWrapper>
             <BannerIntentNotice aria-label="Notice">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </BannerIntentNotice>
           </BannerWrapper>
           <StorybookSubHeading>Negative</StorybookSubHeading>
           <BannerWrapper>
             <BannerIntentNegative aria-label="Error">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </BannerIntentNegative>
           </BannerWrapper>
         </>
@@ -279,6 +247,42 @@ export default {
     },
     {
       storyName: 'banner-variations',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Banner variations</StorybookHeading>
+          <StorybookSubHeading>
+            with link and without icon and actions
+          </StorybookSubHeading>
+          <BannerWrapper>
+            <BannerWithState
+              icon={undefined}
+              actions={[]}
+              aria-label="Banner with link and without icon and actions"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt {bannerLink} ut labore et dolore magna
+              aliqua.
+            </BannerWithState>
+          </BannerWrapper>
+          <StorybookSubHeading>
+            without title and close button
+          </StorybookSubHeading>
+          <BannerWrapper>
+            <BannerWithState
+              title={undefined}
+              onClose={undefined}
+              aria-label="Banner without title and close button"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt {bannerLink} ut labore et dolore magna
+              aliqua.
+            </BannerWithState>
+          </BannerWrapper>
+        </>
+      ),
+    },
+    {
+      storyName: 'banner-with-overrides',
       storyFn: () => (
         <>
           <StorybookHeading>Banner</StorybookHeading>
@@ -321,6 +325,11 @@ export default {
                   },
                   content: {
                     spaceInline: 'space050',
+                    title: {
+                      stylePreset: 'inkContrast',
+                      typographyPreset: 'utilityHeading030',
+                      spaceStack: 'space050',
+                    },
                     message: {
                       stylePreset: 'inkContrast',
                       typographyPreset: 'utilityBody030',
@@ -339,23 +348,6 @@ export default {
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </BannerWithState>
-            </BannerWrapper>
-            <StorybookSubHeading>with link</StorybookSubHeading>
-            <BannerWrapper>
-              <BannerWithState
-                aria-label="Banner with link"
-                icon={
-                  <IconFilledError
-                    overrides={{
-                      size: 'iconSize020',
-                    }}
-                  />
-                }
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt {bannerLink} ut labore et dolore magna
-                aliqua.
               </BannerWithState>
             </BannerWrapper>
           </ThemeProvider>

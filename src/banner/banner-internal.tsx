@@ -8,6 +8,7 @@ import {
   StyledMessageContainer,
   StyledActionsContainer,
   StyledIconContentContainer,
+  StyledTitleContainer,
 } from './styled';
 import {renderIfReactComponent} from '../utils/component';
 import {Flow, StackDistribution} from '../stack';
@@ -29,6 +30,7 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
   layout,
   closeButtonLabel = 'Close',
   onClose,
+  title,
   ...restProps
 }) => {
   const theme = useTheme();
@@ -77,6 +79,15 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
             </StyledIconContainer>
           )}
           <StyledContentContainer>
+            {title && (
+              <StyledTitleContainer
+                as="span"
+                layout={layout}
+                overrides={overrides}
+              >
+                {title}
+              </StyledTitleContainer>
+            )}
             <StyledMessageContainer
               layout={layout}
               overrides={overrides}

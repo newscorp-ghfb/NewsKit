@@ -4,8 +4,9 @@ import {MQ} from '../utils/style';
 export interface BannerBaseProps extends React.AriaAttributes {
   actions?: React.ComponentType[];
   children: Exclude<React.ReactNode, 'undefined'>;
-  icon?: React.ReactElement<NewsKitIconProps>;
   closeButtonLabel?: string;
+  icon?: React.ReactElement<NewsKitIconProps>;
+  title?: string;
   onClose?: () => void;
   overrides?: {
     stylePreset?: MQ<string>;
@@ -17,6 +18,11 @@ export interface BannerBaseProps extends React.AriaAttributes {
     };
     content?: {
       spaceInline?: MQ<string>;
+      title?: {
+        stylePreset?: MQ<string>;
+        typographyPreset?: MQ<string>;
+        spaceStack?: MQ<string>;
+      };
       message?: {
         stylePreset?: MQ<string>;
         typographyPreset?: MQ<string>;

@@ -11,6 +11,7 @@ import {Link} from '../../link';
 import {Button} from '../../button';
 
 const layouts: BannerProps['layout'][] = ['horizontal', 'vertical'];
+const bannerTitle = 'Banner title';
 const bannerMessage = 'Banner text';
 const closeLabel = 'Close banner';
 const bannerIcon = (
@@ -37,6 +38,16 @@ describe('Banner', () => {
     const props: BannerProps = {
       children: bannerMessage,
       icon: bannerIcon,
+    };
+    const fragment = renderToFragmentWithTheme(Banner, props) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with title', () => {
+    const props: BannerProps = {
+      children: bannerMessage,
+      title: bannerTitle,
     };
     const fragment = renderToFragmentWithTheme(Banner, props) as any;
 

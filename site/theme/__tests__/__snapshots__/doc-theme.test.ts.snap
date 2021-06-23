@@ -304,6 +304,11 @@ Object {
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
+          "title": Object {
+            "spaceStack": "space030",
+            "stylePreset": "inkInverse",
+            "typographyPreset": "utilityHeading010",
+          },
         },
         "icon": Object {
           "spaceInline": "space030",
@@ -326,6 +331,11 @@ Object {
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
+          "title": Object {
+            "spaceStack": "space030",
+            "stylePreset": "inkInverse",
+            "typographyPreset": "utilityHeading010",
+          },
         },
         "icon": Object {
           "spaceInline": "space030",
