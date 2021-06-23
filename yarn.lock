@@ -2871,7 +2871,7 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@emotion-icons/emotion-icon@4.0.0", "@emotion-icons/emotion-icon@^4.0.0":
+"@emotion-icons/emotion-icon@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@emotion-icons/emotion-icon/-/emotion-icon-4.0.0.tgz#d0eb1331c01461b309e58dbcec735ff4d8bd5408"
   integrity sha512-Kxu6WgspOrGzBObPMp0xy+V4HaCNDTUAurxPM26Twnj+Tal4luktV2dQBJX9ElEfV59zVFsUs1DiuOdsxUNtPw==
@@ -2879,7 +2879,7 @@
     "@babel/runtime" "^7.12.5"
     "@emotion/is-prop-valid" "^1.0.0"
 
-"@emotion-icons/material-outlined@^3.8.0":
+"@emotion-icons/material-outlined@3.8.0":
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/@emotion-icons/material-outlined/-/material-outlined-3.8.0.tgz#90312c292da477635d411386eee2efc29faf28fd"
   integrity sha512-NaCYNeJc4rtIy7yMFJe3yEkeyjcESFdDFGZ1KYTvgQsc6Xyuf1A8RMcBsJxI2+w+csLfmg2uTCoNx63IIAiuyw==
@@ -2887,7 +2887,7 @@
     "@babel/runtime" "^7.12.13"
     "@emotion-icons/emotion-icon" "4.0.0"
 
-"@emotion-icons/material@^3.9.0":
+"@emotion-icons/material@3.9.0":
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@emotion-icons/material/-/material-3.9.0.tgz#52c5a973c07cfcab870758eb1375f3dbc6f731df"
   integrity sha512-JMAT0bz1KWg8VuFWHrtBMl/SN53ZKdx3s8t/4sg1MG8U0oECVrR8rCnam2Us29cDi2KtPjMJF4nJ5URs0M6fKA==
