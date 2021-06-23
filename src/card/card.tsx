@@ -17,10 +17,11 @@ import {
 import {deepMap} from '../utils/react-children-utilities';
 import {Headline} from '../headline';
 import {BaseLinkProps} from '../link';
-import {Theme, useTheme} from '../theme';
+import {BreakpointKeys, Theme, useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {deepMerge} from '../utils/deep-merge';
 import {getHorizontalRatio} from './utils';
+import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 // This key is needed to for the card headline (and to the link when it is wrapped)
 // to avoid missing key prop warning from react.
@@ -45,7 +46,7 @@ const addHrefToLinkProps = (props: object, href: string | BaseLinkProps) =>
         ...props,
       };
 
-const getCardHeadlineSettings = (
+const getCardHeadlineOverrides = (
   headline: React.ReactNode,
   theme: Theme,
   href?: string | BaseLinkProps,
@@ -55,19 +56,20 @@ const getCardHeadlineSettings = (
     : theme.componentDefaults.card.headline.nonInteractive;
 
   const {
-    overrides: headlineOverrides,
+    overrides: userHeadlineOverrides,
     ...restHeadlineProps
   } = (headline as React.ReactElement).props;
-  const headlineSettings = {
+
+  const headlineOverrides = {
     ...deepMerge(
-      {},
+      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
       cardHeadlineDefaults,
-      filterOutFalsyProperties(headlineOverrides),
+      filterOutFalsyProperties(userHeadlineOverrides),
     ),
   };
 
   return {
-    headlineSettings,
+    headlineOverrides,
     restHeadlineProps,
   };
 };
@@ -84,7 +86,7 @@ const findAndDecorateCardHeadline = (
     }
 
     hasHeadline = true;
-    const {headlineSettings, restHeadlineProps} = getCardHeadlineSettings(
+    const {headlineOverrides, restHeadlineProps} = getCardHeadlineOverrides(
       child,
       theme,
       href,
@@ -93,7 +95,7 @@ const findAndDecorateCardHeadline = (
     const CardHeadline = (
       <Headline
         {...restHeadlineProps}
-        overrides={headlineSettings}
+        overrides={headlineOverrides}
         key={cardHeadlineKey}
       />
     );
@@ -104,7 +106,7 @@ const findAndDecorateCardHeadline = (
     const linkPropsWithHref = addHrefToLinkProps(
       {
         className: 'nk-card-link',
-        overrides: headlineSettings,
+        overrides: headlineOverrides,
       },
       href,
     );

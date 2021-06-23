@@ -12,13 +12,14 @@ import {
 import {renderIfReactComponent} from '../utils/component';
 import {Flow, StackDistribution} from '../stack';
 import {AlignSelfValues, StackChild} from '../stack-child';
-import {useTheme} from '../theme';
+import {BreakpointKeys, useTheme} from '../theme';
 import {useReactKeys} from '../utils/hooks/use-react-keys';
 import {Button, ButtonProps} from '../button';
 import {IconFilledClose} from '../icons';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {IconButton} from '../icon-button';
 import {deepMerge} from '../utils';
+import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 export const BannerInternal: React.FC<BannerInternalProps> = ({
   actions,
@@ -32,10 +33,8 @@ export const BannerInternal: React.FC<BannerInternalProps> = ({
 }) => {
   const theme = useTheme();
   const closeButtonStyles: ButtonProps['overrides'] = {
-    // TODO: provide mergeBreakpointObject function as param here
-    // when PPDSC-1502 is merged
     ...deepMerge(
-      {},
+      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
       theme.componentDefaults.banner[layout].actions.closeButton,
       filterOutFalsyProperties(overrides?.actions?.closeButton),
     ),

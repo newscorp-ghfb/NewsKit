@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    'airbnb-typescript',
-    'plugin:prettier/recommended',
-    'prettier',
-  ],
+  extends: ['airbnb-typescript', 'plugin:prettier/recommended', 'prettier'],
   plugins: ['cup', 'header', 'prettier', 'react-hooks'],
   env: {
     jest: true,
@@ -14,7 +10,7 @@ module.exports = {
     context: true,
     cy: true,
     Cypress: true,
-    window: true
+    window: true,
   },
   rules: {
     'no-undef': 'off',
@@ -38,8 +34,9 @@ module.exports = {
         trailingComma: 'all',
         bracketSpacing: false,
         arrowParens: 'avoid',
-      }
+      },
     ],
+    'no-plusplus': ['error', {allowForLoopAfterthoughts: true}],
   },
   overrides: [
     {

@@ -11,7 +11,7 @@ import {
   StyledFillSpaceCloseButton,
 } from './styled';
 import {DrawerProps} from './types';
-import {useTheme} from '../theme';
+import {BreakpointKeys, useTheme} from '../theme';
 import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useKeypress} from '../utils/hooks';
@@ -21,6 +21,7 @@ import {ButtonSize} from '../button';
 import {get} from '../utils/get';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {Stack} from '../stack';
+import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 /* istanbul ignore next */
 const centerCloseButton = (top: number) => ({
@@ -42,17 +43,20 @@ export const Drawer: React.FC<DrawerProps> = ({
 }) => {
   const theme = useTheme();
 
-  const overlaySettings = {
+  const overlayOverrides = {
     ...deepMerge(
-      {},
+      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
       theme.componentDefaults.drawer.overlay,
       filterOutFalsyProperties(overrides.overlay),
     ),
   };
 
-  const closeButtonSettings: typeof overrides['closeButton'] = {
-    ...theme.componentDefaults.drawer.closeButton,
-    ...filterOutFalsyProperties(overrides.closeButton),
+  const closeButtonOverrides: typeof overrides['closeButton'] = {
+    ...deepMerge(
+      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
+      theme.componentDefaults.drawer.closeButton,
+      filterOutFalsyProperties(overrides.closeButton),
+    ),
   };
 
   const triggerClose = () => isOpen && onDismiss && onDismiss();
@@ -101,7 +105,7 @@ export const Drawer: React.FC<DrawerProps> = ({
       <Overlay
         open={isOpen}
         onClick={handleOverlayClick}
-        overrides={overlaySettings}
+        overrides={overlayOverrides}
       />
 
       <FocusLock
@@ -152,7 +156,7 @@ export const Drawer: React.FC<DrawerProps> = ({
               <IconButton
                 aria-label="close drawer"
                 onClick={handleCloseButtonClick}
-                overrides={closeButtonSettings}
+                overrides={closeButtonOverrides}
                 size={ButtonSize.Medium}
               >
                 <IconFilledClose />

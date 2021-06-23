@@ -1,4 +1,5 @@
 import {deepMerge} from '../deep-merge';
+import {mergeBreakpointObject} from '../merge-breakpoint-object';
 
 describe('deepMerge', () => {
   test('performs deep merge on target', () => {
@@ -60,5 +61,84 @@ describe('deepMerge', () => {
     const source2 = {foo: 3, quux: 4} as any;
     const ret = deepMerge({}, target, source1, source2);
     expect(ret).toEqual({foo: 3, baz: 3, quux: 4});
+  });
+
+  test('use callback to shallow merge', () => {
+    const target = {foo: 1, bar: 2, mq: {xs: 1, sm: 2}} as any;
+    const source1 = {foo: 2, baz: 3, mq: {xs: 2, lg: 2}} as any;
+    // @ts-ignore
+    const fn = (obj: any) => obj?.xs;
+    const ret = deepMerge(fn, target, source1);
+    expect(ret).toEqual({foo: 2, bar: 2, baz: 3, mq: {xs: 2, lg: 2}});
+  });
+
+  test('merge nested string value with media query object', () => {
+    const ret = deepMerge(
+      mergeBreakpointObject(['xs', 'md']),
+      {foo: 'bar'},
+      {foo: {xs: 1, md: 2}},
+    );
+    expect(ret).toEqual({foo: {xs: 1, md: 2}});
+  });
+
+  test('merge nested media query object with string value', () => {
+    const ret = deepMerge(
+      mergeBreakpointObject(['xs', 'md']),
+
+      {foo: {xs: 1, md: 2}},
+      {foo: 'bar'},
+    );
+    expect(ret).toEqual({foo: 'bar'});
+  });
+
+  test('merge media query object with string', () => {
+    const ret = deepMerge(
+      mergeBreakpointObject(['xs', 'md']),
+      {xs: 1, md: 2},
+      'bar',
+    );
+    expect(ret).toEqual('bar');
+  });
+
+  test('merge text and object', () => {
+    const ret = deepMerge(
+      {size: 'iconSize040'},
+      {
+        size: {
+          lg: 'iconSize040',
+          md: 'iconSize030',
+          sm: 'iconSize020',
+          xl: 'iconSize050',
+          xs: 'iconSize010',
+        },
+      },
+    );
+    expect(ret).toEqual({
+      size: {
+        lg: 'iconSize040',
+        md: 'iconSize030',
+        sm: 'iconSize020',
+        xl: 'iconSize050',
+        xs: 'iconSize010',
+      },
+    });
+  });
+
+  test('merge object and text', () => {
+    const ret = deepMerge(
+      {
+        size: {
+          lg: 'iconSize040',
+          md: 'iconSize030',
+          sm: 'iconSize020',
+          xl: 'iconSize050',
+          xs: 'iconSize010',
+        },
+      },
+      {size: 'iconSize040'},
+    );
+    expect(ret).toEqual({
+      size: 'iconSize040',
+    });
   });
 });

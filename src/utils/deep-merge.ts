@@ -1,32 +1,44 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+type DeepMergeCallback = (obj: any) => boolean;
+
 const isCloneable = (obj: unknown) =>
   Array.isArray(obj) || {}.toString.call(obj) === '[object Object]';
 
-export function deepMerge(...sources: Array<any>) {
-  let res = {} as any;
+export function deepMerge(
+  callbackFn?: DeepMergeCallback | any,
+  ...partSources: Array<any>
+) {
+  let result = {} as any;
+  const hasCallbackFn = typeof callbackFn === 'function';
+  const sources = hasCallbackFn ? partSources : [callbackFn, ...partSources];
   const iLen = sources.length;
-  for (let i = 0; i < iLen; i += 1) {
-    const obj = sources[i] || {};
-    if (obj.__shallow) {
+  for (let sourceIdx = 0; sourceIdx < iLen; sourceIdx += 1) {
+    const obj = sources[sourceIdx] || {};
+    if (obj.__shallow || (hasCallbackFn && callbackFn(obj))) {
       const {__shallow, ...filteredObj} = obj as Record<string, unknown>;
-      res = filteredObj;
-    } else {
+      result = filteredObj;
+    } else if (isCloneable(obj)) {
       const entries = Object.entries(obj);
       const jLen = entries.length;
-      for (let j = 0; j < jLen; j += 1) {
-        const [key, value] = entries[j];
+      for (let entryIdx = 0; entryIdx < jLen; entryIdx += 1) {
+        const [key, value] = entries[entryIdx];
         if (isCloneable(value)) {
-          res[key] = deepMerge(
-            (res[key] || {}) as Record<string, unknown>,
+          result[key] = deepMerge(
+            hasCallbackFn ? callbackFn : {},
+            (result[key] || {}) as Record<string, unknown>,
             value as {},
           );
+        } else if (isCloneable(result)) {
+          result[key] = value;
         } else {
-          res[key] = value;
+          result = obj;
         }
       }
+    } else {
+      result = obj;
     }
   }
-  return res;
+  return result;
 }

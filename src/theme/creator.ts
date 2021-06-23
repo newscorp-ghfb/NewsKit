@@ -1,6 +1,8 @@
 import {deepMerge} from '../utils/deep-merge';
 
 import {
+  BreakpointKeys,
+  Breakpoints,
   ThemeBase,
   ThemeLoggerFunction,
   ThemeOverrides,
@@ -12,6 +14,7 @@ import * as presets from './presets';
 
 import {componentDefaults} from './component-defaults';
 import {get} from '../utils/get';
+import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 interface CreateThemeArgs {
   name?: string;
@@ -66,5 +69,17 @@ export const createTheme = ({
     deepDuplicationChecker(warningLogger, baseTheme || newskitLight, overrides);
   }
 
-  return deepMerge(newskitLight, baseTheme, overrides, {name, themeVersion: 1});
+  /* istanbul ignore next */
+  const breakpointsKeys = (overrides?.breakpoints
+    ? /* istanbul ignore next */
+      overrides?.breakpoints
+    : newskitLight.breakpoints) as Breakpoints;
+
+  return deepMerge(
+    mergeBreakpointObject(Object.keys(breakpointsKeys) as BreakpointKeys[]),
+    newskitLight,
+    baseTheme,
+    overrides,
+    {name, themeVersion: 1},
+  );
 };

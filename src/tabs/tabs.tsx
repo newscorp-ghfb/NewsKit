@@ -20,7 +20,7 @@ import {Flow} from '../stack';
 import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {TabInternal} from './tab-internal';
-import {useTheme} from '../theme';
+import {BreakpointKeys, useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {
   getTabsBarIndicatorStyle,
@@ -38,6 +38,7 @@ import {get} from '../utils/get';
 import {Scroll, ScrollSnapAlignment} from '../scroll';
 import {deepMerge} from '../utils';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -71,7 +72,7 @@ export const Tabs: React.FC<TabsProps> = ({
 
   const scrollOverrides = {
     ...deepMerge(
-      {},
+      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
       theme.componentDefaults.tabs.scroll,
       filterOutFalsyProperties(overrides.scroll),
     ),

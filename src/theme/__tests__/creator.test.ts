@@ -18,6 +18,37 @@ describe('themeing functions', () => {
       );
     });
 
+    test('should override breakpoints', () => {
+      const breakpoints = {
+        xs: 0,
+        sm: 380,
+        md: 668,
+        lg: 968,
+      };
+
+      expect(
+        createTheme({
+          overrides: {
+            breakpoints,
+          },
+        }),
+      ).toHaveProperty('breakpoints', breakpoints);
+    });
+
+    test('should not override breakpoints when undefined', () => {
+      expect(
+        createTheme({
+          overrides: undefined,
+        }),
+      ).toHaveProperty('breakpoints', {
+        xs: 0,
+        sm: 480,
+        md: 768,
+        lg: 1024,
+        xl: 1440,
+      });
+    });
+
     describe('checkOverrides option', () => {
       test('should warn when override has same value as base theme', () => {
         const warningLogger = jest.fn();
