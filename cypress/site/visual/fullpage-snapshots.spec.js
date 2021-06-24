@@ -6,8 +6,8 @@ const routes = {
   audioPlayer: '/components/audio-player',
   dateTime: '/components/date-time',
   icons: '/components/icons',
-  spacePresets: '/theming/presets/space-presets',
-  typography: '/theming/presets/typography-presets',
+  spacePresets: '/foundations/presets/space-presets',
+  typography: '/foundations/presets/typography-presets',
   welcome: '/index',
 };
 
