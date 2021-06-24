@@ -2,10 +2,13 @@ import React from 'react';
 import {
   Flow,
   IconOutlinedArrowForwardIos,
+  Link,
   Stack,
   StackDistribution,
   StructuredListCell,
   StructuredListItem,
+  StructuredList,
+  TextBlock,
 } from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -19,7 +22,7 @@ export default (layoutProps: LayoutProps) => (
       name: 'Structured List',
       hero: {
         src: '/static/button-hero.svg',
-        alt: 'structured-list-item-demo-image',
+        alt: 'structured-list-demo-image',
       },
       introduction:
         'Structured lists group content that is similar or related.',
@@ -27,7 +30,7 @@ export default (layoutProps: LayoutProps) => (
     componentDefaultsKey="structuredList"
     meta={{
       status: MetaStatus.Beta,
-      introduced: 'v3.X.0',
+      introduced: 'v3.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
     }}
@@ -37,32 +40,106 @@ export default (layoutProps: LayoutProps) => (
       playground: {
         componentName: 'StructuredList',
         component: state => (
-          <StructuredListItem {...state}>
-            <StructuredListCell>Label</StructuredListCell>
-            <StructuredListCell>
-              A short description of the label
-            </StructuredListCell>
-            <StructuredListCell>
-              <Stack
-                stackDistribution={StackDistribution.End}
-                flow={Flow.HorizontalTop}
-              >
-                <IconOutlinedArrowForwardIos
-                  overrides={{size: 'iconSize010'}}
-                />
-              </Stack>
-            </StructuredListCell>
-          </StructuredListItem>
+          <StructuredList divider {...state} ariaLabel="list">
+            <StructuredListItem href="/" ariaLabel="interactive list item">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem ariaLabel="list item 1">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <Stack
+                  stackDistribution={StackDistribution.End}
+                  flow={Flow.HorizontalCenter}
+                >
+                  <IconOutlinedArrowForwardIos
+                    overrides={{size: 'iconSize010'}}
+                  />
+                </Stack>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem ariaLabel="list item 2">
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkContrast"
+                  typographyPreset="utilityHeading010"
+                >
+                  Label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset="utilityBody020"
+                >
+                  A short description of the label
+                </TextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <Stack
+                  stackDistribution={StackDistribution.End}
+                  flow={Flow.HorizontalCenter}
+                >
+                  <IconOutlinedArrowForwardIos
+                    overrides={{size: 'iconSize010'}}
+                  />
+                </Stack>
+              </StructuredListCell>
+            </StructuredListItem>
+          </StructuredList>
         ),
-        knobs: [],
+        knobs: [
+          {
+            name: 'Divider',
+            propName: 'divider',
+            type: 'boolean',
+            value: false,
+          },
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ] as any,
       },
     }}
     anatomy={{
       introduction: 'Structure Lists contain three required elements.',
       rows: [
         {
+          name: 'StructuredList',
+          description: 'Includes a list of structuredListItem',
+          component: ['Grid, Cell'],
+          optional: undefined,
+        },
+        {
           name: 'structuredListItem',
-          description: 'Includes a list of Cells',
+          description: 'Includes a list of structuredListCell',
           component: ['Grid, Cell'],
           optional: undefined,
         },
@@ -141,6 +218,14 @@ export default (layoutProps: LayoutProps) => (
             command: ['Rtn'],
             description: 'Activates the list item.',
           },
+          {
+            command: ['Up arrow'],
+            description: 'Focuses the previous list item.',
+          },
+          {
+            command: ['Down arrow'],
+            description: 'Focuses the next list item.',
+          },
         ],
       },
       aria: {
@@ -151,7 +236,7 @@ export default (layoutProps: LayoutProps) => (
             attribute: 'arialabel',
             value: '',
             description:
-              'Aria-label attribute is used to define the name of the structured list',
+              'aria-label attribute is used to define the name of the structured list',
             userSupplied: true,
           },
           {
@@ -159,7 +244,7 @@ export default (layoutProps: LayoutProps) => (
             attribute: 'arialabel',
             value: '',
             description:
-              'Aria-label attribute is used to define the name of the listitem',
+              'aria-label attribute is used to define the name of the listitem',
             userSupplied: true,
           },
         ],
@@ -170,6 +255,48 @@ export default (layoutProps: LayoutProps) => (
         'StructuredList have a number of props to facilitate a variety of uses:',
       components: [
         {
+          title: 'StructuredList',
+          summary:
+            'A StructuredList has a range of props that can be used to define an appropriate experience for different use cases.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              required: true,
+              description: 'An array of StructuredListItem components',
+            },
+            {
+              name: 'ariaLabel',
+              type: 'string',
+              description:
+                'Defines the aria-label attribute of the StructuredList',
+            },
+            {
+              name: 'divider',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'If true, renders a divider component between structured list items in a Structured list.',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'divider',
+              type: "DividerProps['overrides']",
+              default: 'dividerHorizontal',
+              description: (
+                <>
+                  If provided, this overrides the divider styling,{' '}
+                  <Link target="_blank" href="/components/divider">
+                    see divider component
+                  </Link>{' '}
+                  for full documentation.
+                </>
+              ),
+            },
+          ],
+        },
+        {
           title: 'StructuredListItem',
           summary:
             'A StructuredListItem has a range of props that can be used to define an appropriate experience for different use cases.',
@@ -179,6 +306,13 @@ export default (layoutProps: LayoutProps) => (
               type: 'React.ReactNode',
               required: true,
               description: 'An array of StructuredListCell components',
+            },
+            {
+              name: 'href',
+              type: 'string',
+              required: false,
+              description:
+                'If supplied, ensures the list item is interactive linking to the href, sets a chevron icon to last cell in the list item and applies the listitem.stylePreset.',
             },
             {
               name: 'ariaLabel',
@@ -198,20 +332,35 @@ export default (layoutProps: LayoutProps) => (
             {
               attribute: 'stylePreset',
               type: 'MQ<string>',
+              default: 'structuredListItem',
               description: `If provided, this overrides the stylePreset applied to the StructuredListItem's most
                 outer container. Can be used to override the background color of the StructuredListItem.`,
             },
             {
               attribute: 'minHeight',
               type: 'MQ<string>',
+              default: 'sizing100',
               description: `If provided, this overrides the minHeight applied to the StructuredListItem's most
                 outer container.`,
             },
             {
               attribute: 'spaceInset',
               type: 'MQ<string>',
+              default: 'spaceInsetStretch040',
               description: `If provided, this overrides the spaceInset applied to the StructuredListItem's most
                 outer container`,
+            },
+            {
+              attribute: 'icon.size',
+              type: 'string',
+              default: 'iconSize010',
+              description: `If provided with a sizing token, this will override the size of StructuredListItem's default icon.`,
+            },
+            {
+              attribute: 'icon.stylePreset',
+              type: 'MQ<string>',
+              default: 'inkContrast',
+              description: `If provided, this overrides the stylePreset applied to the StructuredListItem's default icon`,
             },
           ],
         },

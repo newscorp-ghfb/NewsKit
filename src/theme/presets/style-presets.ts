@@ -1574,12 +1574,6 @@ stylePresets.toastNegative = {
 
 // StructuredList
 stylePresets.structuredListItem = {
-  base: {
-    borderStyle: 'solid',
-    borderColor: '{{colors.interface030}}',
-    borderWidth:
-      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}',
-  },
   hover: {
     backgroundColor: '{{colors.interactiveSecondary010}}',
   },

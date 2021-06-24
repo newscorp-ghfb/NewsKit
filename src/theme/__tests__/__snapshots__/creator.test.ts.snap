@@ -841,7 +841,16 @@ Object {
         },
       },
     },
+    "structuredList": Object {
+      "divider": Object {
+        "stylePreset": "dividerHorizontal",
+      },
+    },
     "structuredListItem": Object {
+      "icon": Object {
+        "size": "iconSize010",
+        "stylePreset": "inkContrast",
+      },
       "minHeight": "sizing100",
       "spaceInset": "spaceInsetStretch040",
       "stylePreset": "structuredListItem",
@@ -2865,11 +2874,6 @@ Object {
     "structuredListItem": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "base": Object {
-        "borderColor": "{{colors.interface030}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",

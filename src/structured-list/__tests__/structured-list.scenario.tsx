@@ -1,13 +1,20 @@
 import * as React from 'react';
-import {StructuredListItem, StructuredListCell} from '..';
+import {StructuredListItem, StructuredListCell, StructuredList} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {IconFilledError, IconOutlinedArrowForwardIos} from '../../icons';
-import {createTheme, TextBlock, ThemeProvider} from '../..';
+import {
+  createTheme,
+  Flow,
+  Stack,
+  StackDistribution,
+  TextBlock,
+  ThemeProvider,
+  withDefaultProps,
+} from '../..';
 import {Block} from '../../block';
-import {StyledIconWrapper} from '../styled';
 
 const myCustomTheme = createTheme({
   name: 'structuredList-theme',
@@ -16,10 +23,6 @@ const myCustomTheme = createTheme({
       structuredListItemCustom: {
         base: {
           backgroundColor: '{{colors.amber010}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.red020}}',
-          borderWidth:
-            '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
         },
         hover: {
           backgroundColor: '{{colors.green010}}',
@@ -28,9 +31,79 @@ const myCustomTheme = createTheme({
           backgroundColor: '{{colors.teal050}}',
         },
       },
+      dividerCustomPreset: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.purple010}}',
+          borderWidth: '{{borders.borderWidth020}}',
+        },
+      },
     },
   },
 });
+
+const arrowIcon = (
+  <Stack stackDistribution={StackDistribution.End} flow={Flow.HorizontalCenter}>
+    <IconOutlinedArrowForwardIos
+      overrides={{
+        size: 'iconSize010',
+        stylePreset: 'inkContrast',
+      }}
+    />
+  </Stack>
+);
+const StructuredListWithDivider = withDefaultProps(StructuredList, {
+  divider: true,
+  ariaLabel: 'list',
+});
+const ListItemWithInternalLink = withDefaultProps(StructuredListItem, {
+  href: '/',
+  ariaLabel: 'list item',
+});
+const ListItemWithExternalLink = withDefaultProps(StructuredListItem, {
+  href: 'http://apple.com',
+  ariaLabel: 'list item',
+});
+
+const HeadingTextBlock = withDefaultProps(TextBlock, {
+  stylePreset: 'inkContrast',
+  typographyPreset: 'utilityHeading010',
+});
+const BodyTextBlock = withDefaultProps(TextBlock, {
+  stylePreset: 'inkSubtle',
+  typographyPreset: 'utilityBody020',
+});
+
+const listItemWithThreeCells = (
+  <StructuredListItem ariaLabel="list item">
+    <StructuredListCell>
+      <HeadingTextBlock>Label</HeadingTextBlock>
+    </StructuredListCell>
+    <StructuredListCell>
+      <BodyTextBlock>A short description of the label</BodyTextBlock>
+    </StructuredListCell>
+    <StructuredListCell>{arrowIcon}</StructuredListCell>
+  </StructuredListItem>
+);
+
+const listItemWithTwoCells = (
+  <StructuredListItem ariaLabel="list item">
+    <StructuredListCell>
+      <HeadingTextBlock>Label</HeadingTextBlock>
+    </StructuredListCell>
+    <StructuredListCell>
+      <BodyTextBlock>A short description of the label</BodyTextBlock>
+    </StructuredListCell>
+  </StructuredListItem>
+);
+
+const listItemWithOneCell = (
+  <StructuredListItem ariaLabel="list item">
+    <StructuredListCell>
+      <HeadingTextBlock>Label</HeadingTextBlock>
+    </StructuredListCell>
+  </StructuredListItem>
+);
 
 export default {
   title: 'structured-list',
@@ -41,92 +114,25 @@ export default {
         <>
           <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>default</StorybookSubHeading>
-          <Block spaceStack="space050">
-            <StructuredListItem>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <StyledIconWrapper>
-                  <IconOutlinedArrowForwardIos
-                    overrides={{
-                      size: 'iconSize010',
-                      stylePreset: 'inkContrast',
-                    }}
-                  />
-                </StyledIconWrapper>
-              </StructuredListCell>
-            </StructuredListItem>
-            <StructuredListItem>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <StyledIconWrapper>
-                  <IconOutlinedArrowForwardIos
-                    overrides={{
-                      size: 'iconSize010',
-                      stylePreset: 'inkContrast',
-                    }}
-                  />
-                </StyledIconWrapper>
-              </StructuredListCell>
-            </StructuredListItem>
-            <StructuredListItem>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <StyledIconWrapper>
-                  <IconOutlinedArrowForwardIos
-                    overrides={{
-                      size: 'iconSize010',
-                      stylePreset: 'inkContrast',
-                    }}
-                  />
-                </StyledIconWrapper>
-              </StructuredListCell>
-            </StructuredListItem>
-          </Block>
+          <StructuredList ariaLabel="list">
+            {listItemWithThreeCells}
+            {listItemWithThreeCells}
+            {listItemWithThreeCells}
+          </StructuredList>
+        </>
+      ),
+    },
+    {
+      storyName: 'structured-list-with-divider',
+      storyFn: () => (
+        <>
+          <StorybookHeading>StructuredList</StorybookHeading>
+          <StorybookSubHeading>with divider</StorybookSubHeading>
+          <StructuredListWithDivider>
+            {listItemWithThreeCells}
+            {listItemWithThreeCells}
+            {listItemWithThreeCells}
+          </StructuredListWithDivider>
         </>
       ),
     },
@@ -136,71 +142,71 @@ export default {
         <>
           <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>with two cells</StorybookSubHeading>
-          <Block spaceStack="space050">
-            <StructuredListItem>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
-          </Block>
+          <StructuredListWithDivider>
+            {listItemWithTwoCells}
+            {listItemWithTwoCells}
+            {listItemWithTwoCells}
+          </StructuredListWithDivider>
+        </>
+      ),
+    },
+    {
+      storyName: 'structured-list-with-two-cells-and-pullRight',
+      storyFn: () => (
+        <>
           <StorybookSubHeading>
             with two cells and pullRight on the 1st
           </StorybookSubHeading>
           <Block spaceStack="space050">
-            <StructuredListItem>
-              <StructuredListCell pullRight>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
+            <StructuredListWithDivider>
+              <StructuredListItem ariaLabel="list item">
+                <StructuredListCell pullRight>
+                  <HeadingTextBlock>Label</HeadingTextBlock>
+                </StructuredListCell>
+                <StructuredListCell>
+                  <BodyTextBlock>
+                    A short description of the label
+                  </BodyTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+              <StructuredListItem ariaLabel="list item">
+                <StructuredListCell pullRight>
+                  <HeadingTextBlock>Label</HeadingTextBlock>
+                </StructuredListCell>
+                <StructuredListCell>
+                  <BodyTextBlock>
+                    A short description of the label
+                  </BodyTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+            </StructuredListWithDivider>
           </Block>
           <StorybookSubHeading>
             with two cells and pullRight on the 2nd
           </StorybookSubHeading>
           <Block spaceStack="space050">
-            <StructuredListItem>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell pullRight>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
+            <StructuredListWithDivider>
+              <StructuredListItem ariaLabel="list item">
+                <StructuredListCell>
+                  <HeadingTextBlock>Label</HeadingTextBlock>
+                </StructuredListCell>
+                <StructuredListCell pullRight>
+                  <BodyTextBlock>
+                    A short description of the label
+                  </BodyTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+              <StructuredListItem ariaLabel="list item">
+                <StructuredListCell>
+                  <HeadingTextBlock>Label</HeadingTextBlock>
+                </StructuredListCell>
+                <StructuredListCell pullRight>
+                  <BodyTextBlock>
+                    A short description of the label
+                  </BodyTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+            </StructuredListWithDivider>
           </Block>
         </>
       ),
@@ -212,257 +218,78 @@ export default {
           <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>with one cell</StorybookSubHeading>
           <Block spaceStack="space050">
-            <StructuredListItem>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
+            <StructuredListWithDivider>
+              {listItemWithOneCell}
+              {listItemWithOneCell}
+            </StructuredListWithDivider>
           </Block>
           <StorybookSubHeading>with one cell and pullRight</StorybookSubHeading>
           <Block spaceStack="space050">
-            <StructuredListItem>
-              <StructuredListCell pullRight>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
+            <StructuredListWithDivider>
+              <StructuredListItem ariaLabel="list item">
+                <StructuredListCell pullRight>
+                  <HeadingTextBlock>Label</HeadingTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+              <StructuredListItem ariaLabel="list item">
+                <StructuredListCell pullRight>
+                  <BodyTextBlock>Label</BodyTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+            </StructuredListWithDivider>
           </Block>
         </>
       ),
     },
     {
-      storyName: 'structured-list-with-overrides',
-      storyFn: () => (
-        <>
-          <StorybookHeading>StructuredList</StorybookHeading>
-          <StorybookSubHeading>With overrides</StorybookSubHeading>
-          <ThemeProvider theme={myCustomTheme}>
-            <Block spaceStack="space050">
-              <StructuredListItem
-                ariaLabel="customAriaLabel"
-                overrides={{
-                  stylePreset: 'structuredListItemCustom',
-                  spaceInset: 'spaceInset060',
-                  minHeight: 'sizing090',
-                }}
-              >
-                <StructuredListCell>
-                  <TextBlock
-                    stylePreset="inkContrast"
-                    typographyPreset="utilityHeading010"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </TextBlock>
-                </StructuredListCell>
-                <StructuredListCell>
-                  <TextBlock
-                    stylePreset="inkSubtle"
-                    typographyPreset="utilityBody020"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </TextBlock>
-                </StructuredListCell>
-                <StructuredListCell>
-                  <IconFilledError
-                    overrides={{
-                      size: 'iconSize030',
-                      stylePreset: 'inkSubtle',
-                    }}
-                  />
-                </StructuredListCell>
-              </StructuredListItem>
-            </Block>
-          </ThemeProvider>
-          <StorybookSubHeading>two cells with overrides</StorybookSubHeading>
-          <ThemeProvider theme={myCustomTheme}>
-            <Block spaceStack="space050">
-              <StructuredListItem
-                overrides={{
-                  stylePreset: 'structuredListItemCustom',
-                  spaceInset: 'spaceInset060',
-                  minHeight: 'sizing090',
-                }}
-              >
-                <StructuredListCell>
-                  <TextBlock
-                    stylePreset="inkContrast"
-                    typographyPreset="utilityHeading010"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </TextBlock>
-                </StructuredListCell>
-                <StructuredListCell>
-                  <TextBlock
-                    stylePreset="inkSubtle"
-                    typographyPreset="utilityBody020"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </TextBlock>
-                </StructuredListCell>
-              </StructuredListItem>
-            </Block>
-          </ThemeProvider>
-          <StorybookSubHeading>one cell with overrides</StorybookSubHeading>
-          <ThemeProvider theme={myCustomTheme}>
-            <Block spaceStack="space050">
-              <StructuredListItem
-                overrides={{
-                  stylePreset: 'structuredListItemCustom',
-                  spaceInset: 'spaceInset060',
-                  minHeight: 'sizing090',
-                }}
-              >
-                <StructuredListCell>
-                  <TextBlock
-                    stylePreset="inkContrast"
-                    typographyPreset="utilityHeading010"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </TextBlock>
-                </StructuredListCell>
-              </StructuredListItem>
-            </Block>
-          </ThemeProvider>
-        </>
-      ),
-    },
-    {
-      storyName: 'structured-list-interactive-default',
+      storyName: 'structured-list-interactive',
       storyFn: () => (
         <>
           <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>with internal link</StorybookSubHeading>
-          <Block spaceStack="space050">
-            <StructuredListItem href="/">
+          <StructuredListWithDivider>
+            <ListItemWithInternalLink ariaLabel="list item">
               <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
+                <HeadingTextBlock>Label</HeadingTextBlock>
               </StructuredListCell>
               <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
+                <BodyTextBlock>A short description of the label</BodyTextBlock>
               </StructuredListCell>
-            </StructuredListItem>
-            <StructuredListItem href="/">
+            </ListItemWithInternalLink>
+            <ListItemWithInternalLink>
               <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+            </ListItemWithInternalLink>
+          </StructuredListWithDivider>
+
+          <StorybookSubHeading>with external link</StorybookSubHeading>
+          <StructuredListWithDivider>
+            <ListItemWithExternalLink ariaLabel="list item">
+              <StructuredListCell>
+                <HeadingTextBlock>Label</HeadingTextBlock>
               </StructuredListCell>
               <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
+                <BodyTextBlock>A short description of the label</BodyTextBlock>
               </StructuredListCell>
-            </StructuredListItem>
-            <StructuredListItem href="/">
+            </ListItemWithExternalLink>
+            <ListItemWithExternalLink>
               <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+            </ListItemWithExternalLink>
+          </StructuredListWithDivider>
+          <StorybookSubHeading>with disabled link</StorybookSubHeading>
+          <StructuredListWithDivider>
+            <StructuredListItem href="/" disabled ariaLabel="list item">
+              <StructuredListCell>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <BodyTextBlock>A short description of the label</BodyTextBlock>
               </StructuredListCell>
             </StructuredListItem>
-          </Block>
-          <Block spaceStack="space050">
-            <StorybookSubHeading>with external link</StorybookSubHeading>
-            <StructuredListItem href="http://apple.com">
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
-            <StructuredListItem href="http://apple.com">
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
-            <StructuredListItem href="http://apple.com">
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
-          </Block>
-          <Block spaceStack="space050">
-            <StorybookSubHeading>with disabled link</StorybookSubHeading>
-            <StructuredListItem href="/" disabled>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
-          </Block>
+          </StructuredListWithDivider>
         </>
       ),
     },
@@ -472,82 +299,131 @@ export default {
         <>
           <StorybookHeading>StructuredList</StorybookHeading>
           <StorybookSubHeading>with custom icon</StorybookSubHeading>
-          <StructuredListItem href="http://apple.com">
-            <StructuredListCell>
-              <TextBlock
-                stylePreset="inkContrast"
-                typographyPreset="utilityHeading010"
+          <StructuredListWithDivider>
+            <ListItemWithExternalLink>
+              <StructuredListCell>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <BodyTextBlock>A short description of the label</BodyTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>{arrowIcon}</StructuredListCell>
+            </ListItemWithExternalLink>
+            <ListItemWithExternalLink>
+              <StructuredListCell>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell pullRight>{arrowIcon}</StructuredListCell>
+            </ListItemWithExternalLink>
+          </StructuredListWithDivider>
+        </>
+      ),
+    },
+    {
+      storyName: 'structured-list-with-overrides',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Non-interactive StructuredList</StorybookHeading>
+          <StorybookSubHeading>with overrides</StorybookSubHeading>
+          <ThemeProvider theme={myCustomTheme}>
+            <StructuredList
+              ariaLabel="list"
+              divider
+              overrides={{
+                divider: {
+                  stylePreset: 'dividerCustomPreset',
+                },
+              }}
+            >
+              <StructuredListItem
+                ariaLabel="list item"
+                overrides={{
+                  stylePreset: 'structuredListItemCustom',
+                  spaceInset: 'spaceInset060',
+                  minHeight: 'sizing090',
+                }}
               >
-                Label
-              </TextBlock>
-            </StructuredListCell>
-            <StructuredListCell>
-              <TextBlock
-                stylePreset="inkSubtle"
-                typographyPreset="utilityBody020"
+                <StructuredListCell>
+                  <HeadingTextBlock>Lorem ipsum</HeadingTextBlock>
+                </StructuredListCell>
+                <StructuredListCell>
+                  <BodyTextBlock>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    aliquet lorem massa, et lacinia ipsum tristique id.
+                    Phasellus sed posuere lacus.
+                  </BodyTextBlock>
+                </StructuredListCell>
+                <StructuredListCell>
+                  <Stack
+                    stackDistribution={StackDistribution.End}
+                    flow={Flow.HorizontalCenter}
+                  >
+                    <IconFilledError
+                      overrides={{
+                        size: 'iconSize020',
+                        stylePreset: 'inkSubtle',
+                      }}
+                    />
+                  </Stack>
+                </StructuredListCell>
+              </StructuredListItem>
+              <StructuredListItem
+                ariaLabel="list item"
+                overrides={{
+                  stylePreset: 'structuredListItemCustom',
+                  spaceInset: 'spaceInset060',
+                  minHeight: 'sizing090',
+                }}
               >
-                A short description of the label
-              </TextBlock>
-            </StructuredListCell>
-            <StructuredListCell>
-              <StyledIconWrapper>
-                <IconFilledError
-                  overrides={{
-                    size: 'iconSize010',
-                    stylePreset: 'inkContrast',
-                  }}
-                />
-              </StyledIconWrapper>
-            </StructuredListCell>
-          </StructuredListItem>
-          <StructuredListItem href="http://apple.com">
-            <StructuredListCell>
-              <TextBlock
-                stylePreset="inkContrast"
-                typographyPreset="utilityHeading010"
+                <StructuredListCell>
+                  <HeadingTextBlock>Lorem ipsum</HeadingTextBlock>
+                </StructuredListCell>
+                <StructuredListCell>
+                  <BodyTextBlock>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    aliquet lorem massa, et lacinia ipsum tristique id.
+                    Phasellus sed posuere lacus.
+                  </BodyTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+            </StructuredList>
+            <StorybookHeading>Interactive StructuredList</StorybookHeading>
+            <StorybookSubHeading>with overrides</StorybookSubHeading>
+            <StructuredList
+              ariaLabel="list"
+              divider
+              overrides={{
+                divider: {
+                  stylePreset: 'dividerCustomPreset',
+                },
+              }}
+            >
+              <StructuredListItem
+                href="/"
+                ariaLabel="list item"
+                overrides={{
+                  stylePreset: 'structuredListItemCustom',
+                  spaceInset: 'spaceInset060',
+                  minHeight: 'sizing090',
+                  icon: {
+                    size: 'iconSize020',
+                    stylePreset: 'inkSubtle',
+                  },
+                }}
               >
-                Label
-              </TextBlock>
-            </StructuredListCell>
-            <StructuredListCell>
-              <TextBlock
-                stylePreset="inkSubtle"
-                typographyPreset="utilityBody020"
-              >
-                A short description of the label
-              </TextBlock>
-            </StructuredListCell>
-            <StructuredListCell>
-              <StyledIconWrapper>
-                <IconFilledError
-                  overrides={{
-                    size: 'iconSize010',
-                    stylePreset: 'inkContrast',
-                  }}
-                />
-              </StyledIconWrapper>
-            </StructuredListCell>
-          </StructuredListItem>
-          <StructuredListItem href="http://apple.com">
-            <StructuredListCell>
-              <TextBlock
-                stylePreset="inkContrast"
-                typographyPreset="utilityHeading010"
-              >
-                Label
-              </TextBlock>
-            </StructuredListCell>
-            <StructuredListCell pullRight>
-              <StyledIconWrapper>
-                <IconFilledError
-                  overrides={{
-                    size: 'iconSize010',
-                    stylePreset: 'inkContrast',
-                  }}
-                />
-              </StyledIconWrapper>
-            </StructuredListCell>
-          </StructuredListItem>
+                <StructuredListCell>
+                  <HeadingTextBlock>Lorem ipsum</HeadingTextBlock>
+                </StructuredListCell>
+                <StructuredListCell>
+                  <BodyTextBlock>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    aliquet lorem massa, et lacinia ipsum tristique id.
+                    Phasellus sed posuere lacus.
+                  </BodyTextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+            </StructuredList>
+          </ThemeProvider>
         </>
       ),
     },

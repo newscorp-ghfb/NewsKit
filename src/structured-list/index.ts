@@ -1,2 +1,2 @@
-export * from './structured-list-item';
+export * from './structured-list';
 export * from './types';

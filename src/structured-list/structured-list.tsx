@@ -1,15 +1,19 @@
 import React from 'react';
-import {StructuredListCellProps, StructuredListItemProps} from './types';
+import {
+  StructuredListCellProps,
+  StructuredListItemProps,
+  StructuredListProps,
+} from './types';
 import {Cell, Grid} from '../grid';
 import {
   StyledGrid,
-  StyledIconWrapper,
   StyledLink,
   StyledListItemContainer,
+  StyledListWrapper,
   StyledWrapper,
 } from './styled';
-import {IconFilledLaunch, IconOutlinedArrowForwardIos} from '../icons';
-import {isLinkExternal} from '../link/utils';
+import {Divider} from '../divider';
+import {StructuredListIcon} from './structured-list-icon';
 
 export const StructuredListCell: React.FC<StructuredListCellProps> = ({
   children,
@@ -21,11 +25,6 @@ export const StructuredListCell: React.FC<StructuredListCellProps> = ({
   </>
 );
 
-const iconOverrides = {
-  size: 'iconSize010',
-  stylePreset: 'inkContrast',
-};
-
 export const StructuredListItem: React.FC<StructuredListItemProps> = ({
   children,
   ariaLabel,
@@ -34,11 +33,25 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
   href,
 }) => {
   const childrenArray = React.Children.toArray(children);
-  const cellCount = childrenArray.length;
   const pullRightOnFirst =
     React.isValidElement(childrenArray[0]) && childrenArray[0].props.pullRight;
   const pullRightOnSecond =
     React.isValidElement(childrenArray[1]) && childrenArray[1].props.pullRight;
+
+  if (href && childrenArray.length === 2 && !pullRightOnSecond) {
+    childrenArray.push(
+      <StructuredListCell>
+        <StructuredListIcon href={href} overrides={overrides} />
+      </StructuredListCell>,
+    );
+  }
+  if (href && childrenArray.length === 1) {
+    childrenArray.push(
+      <StructuredListCell pullRight>
+        <StructuredListIcon href={href} overrides={overrides} />
+      </StructuredListCell>,
+    );
+  }
 
   const innerGrid = (
     <Grid xsRowGutter="space040" xsColumnGutter="space000" xsMargin="space000">
@@ -52,63 +65,7 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
   );
 
   const renderCells = () => {
-    if (
-      // custom icon
-      cellCount === 3 ||
-      (cellCount === 2 && pullRightOnSecond)
-    ) {
-      return (
-        <>
-          <Cell xs={10}>{cellCount === 3 ? innerGrid : childrenArray[0]}</Cell>
-          <Cell xs={2}>
-            {childrenArray[2] ? childrenArray[2] : childrenArray[1]}
-          </Cell>
-        </>
-      );
-    }
-    if (
-      // default icon
-      (cellCount === 2 && !pullRightOnFirst && !pullRightOnSecond) ||
-      (cellCount === 1 && !pullRightOnSecond)
-    ) {
-      return (
-        <>
-          <Cell xs={10}>{cellCount === 2 ? innerGrid : childrenArray[0]}</Cell>
-          <Cell xs={2}>
-            <StyledWrapper>
-              <StyledIconWrapper>
-                {href && isLinkExternal(href) ? (
-                  <IconFilledLaunch overrides={iconOverrides} />
-                ) : (
-                  <IconOutlinedArrowForwardIos overrides={iconOverrides} />
-                )}
-              </StyledIconWrapper>
-            </StyledWrapper>
-          </Cell>
-        </>
-      );
-    }
-    return <></>;
-  };
-
-  const renderListItemWithHref = () => (
-    <StyledLink
-      as={disabled ? 'span' : 'a'}
-      href={href}
-      aria-disabled={disabled && 'true'}
-    >
-      <StyledGrid
-        xsRowGutter="space000"
-        xsMargin="space000"
-        overrides={overrides}
-      >
-        {renderCells()}
-      </StyledGrid>
-    </StyledLink>
-  );
-
-  const renderListItemWithoutHref = () => {
-    if (cellCount === 3) {
+    if (childrenArray.length === 3) {
       return (
         <StyledGrid
           xsRowGutter="space000"
@@ -120,7 +77,7 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
         </StyledGrid>
       );
     }
-    if (cellCount === 2) {
+    if (childrenArray.length === 2) {
       return (
         <StyledGrid
           xsRowGutter="space040"
@@ -145,7 +102,7 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
         </StyledGrid>
       );
     }
-    if (cellCount === 1) {
+    if (childrenArray.length === 1) {
       return (
         <StyledGrid
           xsRowGutter="space000"
@@ -171,7 +128,40 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
       overrides={overrides}
       disabled={disabled}
     >
-      {href ? renderListItemWithHref() : renderListItemWithoutHref()}
+      {href ? (
+        <StyledLink
+          as={disabled ? 'span' : 'a'}
+          href={href}
+          aria-disabled={disabled && 'true'}
+        >
+          {renderCells()}
+        </StyledLink>
+      ) : (
+        renderCells()
+      )}
     </StyledListItemContainer>
+  );
+};
+
+export const StructuredList: React.FC<StructuredListProps> = ({
+  children,
+  ariaLabel,
+  divider,
+  overrides = {},
+}) => {
+  const structuredListChildren = React.Children.toArray(children);
+  return (
+    <StyledListWrapper overrides={overrides} aria-label={ariaLabel}>
+      {structuredListChildren.reduce(
+        (acc: React.ReactNode[], listItem, index, array) => {
+          acc.push(listItem);
+          if (divider && index < array.length - 1) {
+            acc.push(<Divider overrides={overrides.divider} />);
+          }
+          return acc;
+        },
+        [],
+      )}
+    </StyledListWrapper>
   );
 };

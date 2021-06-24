@@ -3,32 +3,58 @@ import {StructuredListItem} from '..';
 import {TextBlock} from '../..';
 import {IconOutlinedKeyboardArrowRight} from '../../icons';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {StructuredListCell} from '../structured-list-item';
+import {StructuredListCell, StructuredList} from '../structured-list';
 import {StructuredListItemProps} from '../types';
 
-const renderStructuredListItemDefault = (props: StructuredListItemProps) => (
-  <StructuredListItem ariaLabel="Structured list" {...props} />
+const renderDefault = (props: StructuredListItemProps) => (
+  <StructuredList ariaLabel="list" divider>
+    <StructuredListItem ariaLabel="list item" {...props} />
+    <StructuredListItem ariaLabel="list item" {...props} />
+  </StructuredList>
 );
 
 const renderWithExternalLink = (props: StructuredListItemProps) => (
-  <StructuredListItem
-    ariaLabel="Structured list"
-    href="http://apple.com"
-    {...props}
-  />
+  <StructuredList ariaLabel="list" divider>
+    <StructuredListItem
+      ariaLabel="list item"
+      href="http://apple.com"
+      {...props}
+    />
+    <StructuredListItem
+      ariaLabel="list item"
+      href="http://apple.com"
+      {...props}
+    />
+  </StructuredList>
 );
 
 const renderWithInternalLink = (props: StructuredListItemProps) => (
-  <StructuredListItem ariaLabel="Structured list" href="/" {...props} />
+  <StructuredList ariaLabel="list" divider>
+    <StructuredListItem ariaLabel="list item" href="/" {...props} />
+    <StructuredListItem ariaLabel="list item" href="/" {...props} />
+  </StructuredList>
 );
 
 const renderWithDisabledLink = (props: StructuredListItemProps) => (
-  <StructuredListItem
-    ariaLabel="Structured list"
-    href="/"
-    disabled
-    {...props}
-  />
+  <StructuredList ariaLabel="list" divider>
+    <StructuredListItem ariaLabel="list item" href="/" disabled {...props} />
+    <StructuredListItem ariaLabel="list item" href="/" disabled {...props} />
+  </StructuredList>
+);
+
+const renderWithDividerOverrides = (props: StructuredListItemProps) => (
+  <StructuredList
+    ariaLabel="list"
+    divider
+    overrides={{
+      divider: {
+        stylePreset: 'inkContrast',
+      },
+    }}
+  >
+    <StructuredListItem ariaLabel="list item" {...props} />
+    <StructuredListItem ariaLabel="list item" {...props} />
+  </StructuredList>
 );
 
 const StructuredListCellDefault = [
@@ -123,86 +149,62 @@ const FourCells = [
   </StructuredListCell>,
 ];
 
-describe('StructuredListItem', () => {
+describe('StructuredList', () => {
   describe('without-href', () => {
     test('renders with default style', () => {
       const props: StructuredListItemProps = {
         children: StructuredListCellDefault,
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with two cells default style', () => {
       const props: StructuredListItemProps = {
         children: TwoCellsDefault,
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with two cells with pullRight on the first', () => {
       const props: StructuredListItemProps = {
         children: TwoCellsWithPullrightOnFirst,
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with two cells with pullRight on the second', () => {
       const props: StructuredListItemProps = {
         children: TwoCellsWithPullrightOnSecond,
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with one cell default', () => {
       const props: StructuredListItemProps = {
         children: OneCellDefault,
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with one cell with pullRight', () => {
       const props: StructuredListItemProps = {
         children: OneCellWithPullright,
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with more than 3 children', () => {
       const props: StructuredListItemProps = {
         children: FourCells,
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with texts only and no cells', () => {
       const props: StructuredListItemProps = {
         children: 'No Cells',
       };
-      const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
-        props,
-      );
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
     test('renders with overrides', () => {
@@ -216,7 +218,7 @@ describe('StructuredListItem', () => {
       };
 
       const fragment = renderToFragmentWithTheme(
-        renderStructuredListItemDefault,
+        renderWithDividerOverrides,
         props,
       );
       expect(fragment).toMatchSnapshot();

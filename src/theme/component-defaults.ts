@@ -619,6 +619,15 @@ export const componentDefaults = {
     stylePreset: 'structuredListItem',
     spaceInset: 'spaceInsetStretch040',
     minHeight: 'sizing100',
+    icon: {
+      size: 'iconSize010',
+      stylePreset: 'inkContrast',
+    },
+  },
+  structuredList: {
+    divider: {
+      stylePreset: 'dividerHorizontal',
+    },
   },
   tab: {
     small: {
