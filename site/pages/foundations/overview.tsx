@@ -1,12 +1,12 @@
 import React from 'react';
 import {Grid} from 'newskit';
-import {HeaderImage} from '../../../components/illustrations/foundations/header-image';
-import Layout, {LayoutProps} from '../../../components/layout';
-import {SectionIntroduction} from '../../../components/section-introduction';
-import {Separator} from '../../../components/separator';
-import {MediaList} from '../../../components/media-list';
-import {HeaderIndex} from '../../../components/header-index';
-import {ComponentPageCell} from '../../../components/layout-cells';
+import {HeaderImage} from '../../components/illustrations/foundations/header-image';
+import Layout, {LayoutProps} from '../../components/layout';
+import {SectionIntroduction} from '../../components/section-introduction';
+import {Separator} from '../../components/separator';
+import {MediaList} from '../../components/media-list';
+import {HeaderIndex} from '../../components/header-index';
+import {ComponentPageCell} from '../../components/layout-cells';
 
 const cardsContent = [
   {

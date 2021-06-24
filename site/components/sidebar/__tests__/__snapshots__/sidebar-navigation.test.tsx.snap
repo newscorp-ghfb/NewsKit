@@ -24,19 +24,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-bottom: 24px;
 }
 
-.emotion-3 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-  font-weight: 700;
-  letter-spacing: 0;
-  background-color: transparent;
-  color: #162740;
-  min-height: 40px;
-  padding: 8px 0;
-}
-
-.emotion-5 {
+.emotion-4 {
   display: inline-block;
   transition-property: color;
   transition-duration: 200ms;
@@ -45,18 +33,18 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   text-decoration: none;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
+  .emotion-4 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -75,7 +63,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -84,7 +72,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   background-color: transparent;
   color: #162740;
   box-sizing: border-box;
-  color: #577FFB;
   cursor: 'pointer';
   min-width: 230px;
   padding: 12px;
@@ -92,7 +79,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-7::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -100,91 +87,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin-bottom: -0.3486607142857143em;
 }
 
-.emotion-7::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
   width: 0;
   margin-top: -0.4892857142857143em;
-}
-
-.emotion-7:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-radius: 20rem;
-  color: #162740;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #AEBFFF;
-  border-radius: 20rem;
-  color: #162740;
-}
-
-.emotion-8 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-.emotion-12 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 700;
-  letter-spacing: 0;
-  background-color: transparent;
-  color: #162740;
-  min-height: 32px;
-  margin-top: 20px;
-}
-
-.emotion-15 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 600;
-  letter-spacing: 0;
-  background-color: transparent;
-  color: #162740;
-  box-sizing: border-box;
-  color: #677483;
-  cursor: 'pointer';
-  min-width: 230px;
-  padding: 12px;
-  margin: 4px 0;
-  text-overflow: ellipsis;
-}
-
-.emotion-15::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3486607142857143em;
-}
-
-.emotion-15::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4892857142857143em;
-}
-
-.emotion-15:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  border-radius: 20rem;
-  color: #162740;
-}
-
-.emotion-15:active:not(:disabled) {
-  background-color: #AEBFFF;
-  border-radius: 20rem;
-  color: #162740;
 }
 
 <nav
@@ -200,126 +108,21 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-3"
-          data-testid="/group1"
-        >
-          Group 1
-        </div>
-        <div
           class="emotion-2"
         >
           <div>
             <a
-              class="emotion-5"
+              class="emotion-4"
               href="/group1/page1"
             >
               <span
-                class="emotion-6"
+                class="emotion-5"
               >
                 <div
-                  class="emotion-7"
+                  class="emotion-6"
                   data-testid="/group1/page1"
                 >
                   Group 1 Page 1
-                </div>
-              </span>
-            </a>
-          </div>
-        </div>
-        <hr
-          aria-hidden="true"
-          class="emotion-8"
-          data-testid="divider"
-        />
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-3"
-          data-testid="/group2"
-        >
-          Group 2
-        </div>
-        <div
-          class="emotion-2"
-        >
-          <div
-            class="emotion-12"
-            id="/group2/page1"
-          >
-            Group 2 Page 1
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page1/a"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-15"
-                  data-testid="/group2/page1/a"
-                >
-                  Group 2 Page 1 a
-                </div>
-              </span>
-            </a>
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page1/b"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-15"
-                  data-testid="/group2/page1/b"
-                >
-                  Group 2 Page 1 b
-                </div>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-12"
-            id="/group2/page2"
-          >
-            Group 2 Page 2
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page2/a"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-15"
-                  data-testid="/group2/page2/a"
-                >
-                  Group 2 Page 2 a
-                </div>
-              </span>
-            </a>
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page2/b"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-15"
-                  data-testid="/group2/page2/b"
-                >
-                  Group 2 Page 2 b
                 </div>
               </span>
             </a>
@@ -351,23 +154,44 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin-bottom: 24px;
 }
 
+<nav
+    aria-label="Sidebar"
+    class="emotion-0"
+    role="navigation"
+  >
+    <ul
+      class="emotion-1"
+      role="list"
+    />
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation should render only routes under current section 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: 'DM Sans',sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-1:last-child {
+  margin-bottom: 24px;
+}
+
 .emotion-2 {
   margin-bottom: 24px;
 }
 
-.emotion-3 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-  font-weight: 700;
-  letter-spacing: 0;
-  background-color: transparent;
-  color: #162740;
-  min-height: 40px;
-  padding: 8px 0;
-}
-
-.emotion-5 {
+.emotion-4 {
   display: inline-block;
   transition-property: color;
   transition-duration: 200ms;
@@ -376,18 +200,18 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   text-decoration: none;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
+  .emotion-4 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -406,16 +230,15 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
   letter-spacing: 0;
   background-color: transparent;
-  color: #162740;
-  box-sizing: border-box;
   color: #677483;
+  box-sizing: border-box;
   cursor: 'pointer';
   min-width: 230px;
   padding: 12px;
@@ -423,7 +246,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-7::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -431,7 +254,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin-bottom: -0.3486607142857143em;
 }
 
-.emotion-7::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -439,38 +262,16 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin-top: -0.4892857142857143em;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #E0E7FF;
   border-radius: 20rem;
   color: #162740;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #AEBFFF;
   border-radius: 20rem;
   color: #162740;
-}
-
-.emotion-8 {
-  border-style: solid;
-  border-color: #E4E4E4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-.emotion-12 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 700;
-  letter-spacing: 0;
-  background-color: transparent;
-  color: #162740;
-  min-height: 32px;
-  margin-top: 20px;
 }
 
 <nav
@@ -486,126 +287,21 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
         class="emotion-2"
       >
         <div
-          class="emotion-3"
-          data-testid="/group1"
-        >
-          Group 1
-        </div>
-        <div
           class="emotion-2"
         >
           <div>
             <a
-              class="emotion-5"
+              class="emotion-4"
               href="/group1/page1"
             >
               <span
-                class="emotion-6"
+                class="emotion-5"
               >
                 <div
-                  class="emotion-7"
+                  class="emotion-6"
                   data-testid="/group1/page1"
                 >
                   Group 1 Page 1
-                </div>
-              </span>
-            </a>
-          </div>
-        </div>
-        <hr
-          aria-hidden="true"
-          class="emotion-8"
-          data-testid="divider"
-        />
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-3"
-          data-testid="/group2"
-        >
-          Group 2
-        </div>
-        <div
-          class="emotion-2"
-        >
-          <div
-            class="emotion-12"
-            id="/group2/page1"
-          >
-            Group 2 Page 1
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page1/a"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-7"
-                  data-testid="/group2/page1/a"
-                >
-                  Group 2 Page 1 a
-                </div>
-              </span>
-            </a>
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page1/b"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-7"
-                  data-testid="/group2/page1/b"
-                >
-                  Group 2 Page 1 b
-                </div>
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-12"
-            id="/group2/page2"
-          >
-            Group 2 Page 2
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page2/a"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-7"
-                  data-testid="/group2/page2/a"
-                >
-                  Group 2 Page 2 a
-                </div>
-              </span>
-            </a>
-          </div>
-          <div>
-            <a
-              class="emotion-5"
-              href="/group2/page2/b"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-7"
-                  data-testid="/group2/page2/b"
-                >
-                  Group 2 Page 2 b
                 </div>
               </span>
             </a>

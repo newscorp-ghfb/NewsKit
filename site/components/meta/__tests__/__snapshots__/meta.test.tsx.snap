@@ -128,7 +128,7 @@ exports[`Meta renders with mandatory props 1`] = `
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 1px 0px;
 }
@@ -1342,7 +1342,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0;
   padding: 1px 0px;
 }

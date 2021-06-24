@@ -1,18 +1,22 @@
 // /<reference types="Cypress" />
 
 import siteRoutes from '../../../site/routes.json';
-import {flatRoutes} from '../../support/commands';
-
-const pages = flatRoutes(siteRoutes, 'title');
 
 describe('Documentation Site - sidebar component', () => {
   before(() => {
     cy.mockConsentAndVisit('/');
   });
 
-  pages.forEach(title => {
-    it(`should contain ${title}`, () => {
-      cy.contains(title).should('exist');
+  siteRoutes.forEach(route => {
+    it(`should contain ${route.title} section routes`, () => {
+      if (route.title === 'Guides') {
+        cy.visit('/getting-started/code/web');
+      } else {
+        cy.visit(route.subNav[0].id);
+      }
+      route.subNav.forEach(subRoute =>
+        cy.contains(subRoute.title).should('exist'),
+      );
     });
   });
 });

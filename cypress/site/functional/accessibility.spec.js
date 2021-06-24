@@ -13,7 +13,7 @@ describe('Page accessibility', () => {
       cy.mockConsentAndVisit(path);
       cy.injectAxe();
       if (
-        path === `/theming/presets/typography-presets` ||
+        path === `/foundations/presets/typography-presets` ||
         path === `/pages/article` ||
         path === `/components/card`
       ) {

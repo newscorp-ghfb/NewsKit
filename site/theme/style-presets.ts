@@ -83,7 +83,7 @@ export const stylePresets = {
   sidebarNavItem: {
     base: {
       backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.inkSubtle}}',
     },
     hover: {
       backgroundColor: '{{colors.interactivePrimary010}}',
@@ -95,10 +95,22 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.inkContrast}}',
     },
+    selected: {
+      color: '{{colors.inkContrast}}',
+    },
   },
   sidebarHeader: {
     base: {
       backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkContrast}}',
+    },
+  },
+
+  headerNavItem: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+    },
+    selected: {
       color: '{{colors.inkContrast}}',
     },
   },

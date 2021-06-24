@@ -1,5 +1,4 @@
 import React, {useEffect, useRef} from 'react';
-import {Divider} from 'newskit';
 import {Link} from '../link';
 import routes from '../../routes.json';
 import {
@@ -7,7 +6,6 @@ import {
   StyledNavigationWrapper,
   StyledLinkItem,
   StyledSidebarNav,
-  StyledFirstLevelHeader,
   StyledSecondLevelHeader,
   StyledNavigationSection,
 } from './styled';
@@ -32,7 +30,7 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
   return (
     <div ref={ref}>
       <Link href={page.id} overrides={{stylePreset: 'linkNoUnderline'}}>
-        <StyledLinkItem data-testid={page.id} active={active}>
+        <StyledLinkItem data-testid={page.id} $selected={active}>
           {page.title}
         </StyledLinkItem>
       </Link>
@@ -54,54 +52,45 @@ const NavigationSection: React.FC<NavigationSectionProps> = ({
   </>
 );
 
-const Section: React.FC<SectionProps> = ({
-  section,
-  activePagePath,
-  lastSection,
-}) => {
-  const mainSectionHeader = section.title;
-
-  return (
-    <StyledSectionContainer>
-      <StyledFirstLevelHeader data-testid={section.id}>
-        {mainSectionHeader}
-      </StyledFirstLevelHeader>
-      <StyledNavigationSection>
-        {section.subNav.map(subNav => {
-          if ((subNav as NavigationSectionType).subNav) {
-            return (
-              <NavigationSection
-                key={subNav.id}
-                navigationSection={subNav as NavigationSectionType}
-                activePagePath={activePagePath}
-              />
-            );
-          }
+const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
+  <StyledSectionContainer>
+    <StyledNavigationSection>
+      {section.subNav.map(subNav => {
+        if ((subNav as NavigationSectionType).subNav) {
           return (
-            <PageLink
+            <NavigationSection
               key={subNav.id}
-              page={subNav as PageType}
-              active={subNav.id === activePagePath}
+              navigationSection={subNav as NavigationSectionType}
+              activePagePath={activePagePath}
             />
           );
-        })}
-      </StyledNavigationSection>
-      {lastSection ? null : <Divider />}
-    </StyledSectionContainer>
+        }
+        return (
+          <PageLink
+            key={subNav.id}
+            page={subNav as PageType}
+            // TODO: can rollback to subNav.id === activePagePath after https://nidigitalsolutions.jira.com/browse/PPDSE-312
+            active={activePagePath.includes(subNav.id)}
+          />
+        );
+      })}
+    </StyledNavigationSection>
+  </StyledSectionContainer>
+);
+
+export const SidebarNav: React.FC<SidebarNavProps> = ({path}) => {
+  const currentRoute = path.match(/\/[A-z\d-]*/g);
+  const currentSection =
+    currentRoute && routes.filter(({id}) => id === currentRoute[0]);
+
+  return (
+    <StyledSidebarNav role="navigation" aria-label="Sidebar">
+      <StyledNavigationWrapper role="list">
+        {currentSection &&
+          currentSection.map(section => (
+            <Section key={section.id} section={section} activePagePath={path} />
+          ))}
+      </StyledNavigationWrapper>
+    </StyledSidebarNav>
   );
 };
-
-export const SidebarNav: React.FC<SidebarNavProps> = ({path}) => (
-  <StyledSidebarNav role="navigation" aria-label="Sidebar">
-    <StyledNavigationWrapper role="list">
-      {routes.map((section, index) => (
-        <Section
-          key={section.id}
-          section={section}
-          activePagePath={path}
-          lastSection={index === routes.length - 1}
-        />
-      ))}
-    </StyledNavigationWrapper>
-  </StyledSidebarNav>
-);

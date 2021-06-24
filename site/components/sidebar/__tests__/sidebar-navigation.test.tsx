@@ -67,6 +67,12 @@ describe('Sidebar navigation', () => {
     ).toMatchSnapshot();
   });
 
+  test('should render only routes under current section', () => {
+    expect(
+      renderToFragmentWithTheme(SidebarNav, {path: '/group1'}),
+    ).toMatchSnapshot();
+  });
+
   test('should match snapshot with active link', () => {
     expect(
       renderToFragmentWithTheme(SidebarNav, {path: '/group1/page1'}),

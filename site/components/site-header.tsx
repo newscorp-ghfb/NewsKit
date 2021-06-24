@@ -16,11 +16,14 @@ import {
   getShadowCssFromTheme,
   getSizingCssFromTheme,
   Link,
+  getStylePresetFromTheme,
+  Scroll,
+  Block,
 } from 'newskit';
-
 import {NewsKitLogo, NewsKitMobileLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
+import routes from '../routes.json';
 
 const Header = styled.header`
   flex-shrink: 0;
@@ -34,7 +37,6 @@ const Header = styled.header`
   ${getSpacingCssFromTheme('paddingTop', 'space020')};
   ${getSpacingCssFromTheme('paddingBottom', 'space020')};
   ${getShadowCssFromTheme('boxShadow', 'shadow030')};
-  ${getSizingCssFromTheme('height', 'sizing090')};
 
   ${getMediaQueryFromTheme('lg')} {
     ${getSpacingCssFromTheme('paddingTop', 'space030')};
@@ -54,6 +56,23 @@ const MobileMenu = styled.div`
   ${getSpacingCssFromTheme('marginRight', 'space040')};
 `;
 
+export const StyledLinkItem = styled.div<{
+  $selected: boolean;
+}>`
+  ${getTypographyPresetFromTheme('utilityButton020', undefined, {
+    withCrop: true,
+  })};
+  ${({$selected, ...props}) =>
+    getStylePresetFromTheme('headerNavItem', undefined, {
+      isSelected: $selected,
+    })(props)}
+  box-sizing: border-box;
+`;
+
+const StyledVisible = styled(Visible)`
+  height: 100%;
+`;
+
 const MobileLogo: React.FC = () => (
   <Link href="/" overrides={{stylePreset: 'inkBase'}}>
     <NewsKitMobileLogo color="inkBase" />
@@ -64,27 +83,37 @@ interface HeaderProps {
   handleSidebarClick: () => void;
   toggleTheme: () => void;
   themeMode: string;
+  path: string;
 }
 
 type HeaderRef = HTMLElement;
 
+type NavItemProps = {
+  title: string;
+  id: string;
+};
+
+const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
+
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
-  ({handleSidebarClick, toggleTheme, themeMode}, ref) => {
+  ({handleSidebarClick, toggleTheme, themeMode, path}, ref) => {
     const renderMobileNavigation = (
       handleClick: () => void,
       breakpoint?: BreakpointKeys,
     ) => (
       <Stack data-testid="logo-container" flow={Flow.HorizontalCenter}>
-        <MobileMenu
-          onClick={handleClick}
-          onKeyDown={handleEnterKeyPress(handleClick)}
-          tabIndex={0}
-          data-testid="mobile-menu-icon"
-        >
-          <IconFilledMenu
-            overrides={{size: 'iconSize030', stylePreset: 'inkBrand010'}}
-          />
-        </MobileMenu>
+        {!path.split('/')[1].includes('index') && (
+          <MobileMenu
+            onClick={handleClick}
+            onKeyDown={handleEnterKeyPress(handleClick)}
+            tabIndex={0}
+            data-testid="mobile-menu-icon"
+          >
+            <IconFilledMenu
+              overrides={{size: 'iconSize030', stylePreset: 'inkBrand010'}}
+            />
+          </MobileMenu>
+        )}
         {breakpoint === 'xs' ? (
           <MobileLogo />
         ) : (
@@ -95,10 +124,33 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
       </Stack>
     );
 
+    const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
+      items.map(({title, id}) => (
+        <Block spaceInset="spaceInset010">
+          <Link
+            href={id}
+            overrides={{
+              stylePreset: 'linkTopNavigation',
+              typographyPreset: 'utilityButton020',
+            }}
+          >
+            <StyledLinkItem
+              aria-current={
+                currentRoute.split('/')[1].includes(id.split('/')[1]) ||
+                undefined
+              }
+              $selected={currentRoute.split('/')[1].includes(id.split('/')[1])}
+            >
+              {title}
+            </StyledLinkItem>
+          </Link>
+        </Block>
+      ));
+
     return (
       <Header data-testid="header-navigation" ref={ref}>
         <StyledGrid maxWidth="9999px">
-          <Cell xs={6}>
+          <Cell xs={6} xsOrder={1}>
             <Stack
               flow={Flow.HorizontalCenter}
               stackDistribution={StackDistribution.Start}
@@ -114,59 +166,37 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               </Visible>
             </Stack>
           </Cell>
-          <Cell xs={6}>
-            <Stack
-              flow={Flow.HorizontalCenter}
-              stackDistribution={StackDistribution.End}
-              flexGrow={1}
-              spaceInline="space070"
-            >
-              <Visible lg xl>
+          <Cell xs={12} lg={5} xsOrder={3} lgOrder={2}>
+            <StyledVisible lg xl>
+              <Stack
+                flow={Flow.HorizontalCenter}
+                stackDistribution={StackDistribution.End}
+                flexGrow={1}
+                spaceInline="space070"
+              >
                 <Stack
                   flow={Flow.HorizontalCenter}
                   stackDistribution={StackDistribution.End}
                   spaceInline="space070"
                 >
-                  <Link
-                    href="/about/introduction"
-                    overrides={{
-                      stylePreset: 'linkTopNavigation',
-                      typographyPreset: 'utilityButton020',
-                    }}
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/getting-started/code/web"
-                    overrides={{
-                      stylePreset: 'linkTopNavigation',
-                      typographyPreset: 'utilityButton020',
-                    }}
-                  >
-                    Guides
-                  </Link>
-                  <Link
-                    href="/theming/foundations/overview"
-                    overrides={{
-                      stylePreset: 'linkTopNavigation',
-                      typographyPreset: 'utilityButton020',
-                    }}
-                  >
-                    Foundations
-                  </Link>
-                  <Link
-                    href="/components/overview"
-                    overrides={{
-                      stylePreset: 'linkTopNavigation',
-                      typographyPreset: 'utilityButton020',
-                    }}
-                  >
-                    Components
-                  </Link>
+                  {renderNavItems(navItems, path)}
                 </Stack>
-              </Visible>
-              <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
-            </Stack>
+              </Stack>
+            </StyledVisible>
+            <Visible xs sm md>
+              <Scroll>
+                <Stack
+                  flow={Flow.HorizontalCenter}
+                  stackDistribution={StackDistribution.SpaceAround}
+                  spaceInline="space070"
+                >
+                  {renderNavItems(navItems, path)}
+                </Stack>
+              </Scroll>
+            </Visible>
+          </Cell>
+          <Cell xs={1} xsOrder={2} lgOrder={3} xsOffset={5} lgOffset={0}>
+            <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />
           </Cell>
         </StyledGrid>
       </Header>

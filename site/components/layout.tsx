@@ -187,6 +187,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
           toggleTheme={toggleTheme}
           themeMode={themeMode}
           ref={this.headerRef}
+          path={path}
           data-test-id="siteHeader"
         />
         <Container hideSidebar={hideSidebar}>

@@ -2289,6 +2289,14 @@ Object {
         "iconColor": "{{colors.inkInverse}}",
       },
     },
+    "headerNavItem": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+      },
+      "selected": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "headlineHeadingInteractive": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -3326,11 +3334,14 @@ Object {
       },
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
-        "color": "{{colors.inkContrast}}",
+        "color": "{{colors.inkSubtle}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+      "selected": Object {
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -3994,14 +4005,14 @@ Object {
     "utilityLabel020": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize040}}",
-      "fontWeight": "{{fonts.fontWeight040}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing010}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
       "fontSize": "{{fonts.fontSize060}}",
-      "fontWeight": "{{fonts.fontWeight040}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing010}}",
       "lineHeight": "{{fonts.fontLineHeight020}}",
     },

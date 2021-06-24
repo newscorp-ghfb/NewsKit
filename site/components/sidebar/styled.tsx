@@ -4,19 +4,20 @@ import {
   getStylePresetFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
-  getColorFromTheme,
 } from 'newskit';
 
 export const StyledLinkItem = styled.div<{
-  active: boolean;
+  $selected: boolean;
 }>`
   ${getTypographyPresetFromTheme('utilityButton020', undefined, {
     withCrop: true,
   })};
-  ${getStylePresetFromTheme('sidebarNavItem')};
+  ${({$selected, ...props}) =>
+    getStylePresetFromTheme('sidebarNavItem', undefined, {
+      isSelected: $selected,
+    })(props)}
   box-sizing: border-box;
-  color: ${({active}) =>
-    active ? getColorFromTheme('inkBrand010') : getColorFromTheme('inkSubtle')};
+
   cursor: 'pointer';
   min-width: 230px;
   padding: ${getSpacingFromTheme('spaceInset030')};

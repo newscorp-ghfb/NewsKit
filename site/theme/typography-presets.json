@@ -251,14 +251,12 @@
   "utilityLabel020": {
     "fontSize": "{{fonts.fontSize040}}",
     "lineHeight": "{{fonts.fontLineHeight040}}",
-    "fontWeight": "{{fonts.fontWeight040}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}"
   },
 
   "utilityLabel030": {
     "fontSize": "{{fonts.fontSize060}}",
     "lineHeight": "{{fonts.fontLineHeight020}}",
-    "fontWeight": "{{fonts.fontWeight040}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}"
   },
 

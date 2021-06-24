@@ -1,11 +1,44 @@
 [
+
   {
-    "title": "Getting Started",
+    "title": "About",
+    "id": "/about",
+    "subNav": [
+      {
+        "title": "Introduction",
+        "page": true,
+        "id": "/about/introduction"
+      },
+      {
+        "title": "Release Notes",
+        "page": true,
+        "id": "/about/release-notes"
+      },
+      {
+        "title": "Roadmap",
+        "page": true,
+        "id": "/about/roadmap"
+      },
+      {
+        "title": "Contribute",
+        "page": true,
+        "id": "/about/contribute"
+      },
+      {
+        "title": "Contact Us",
+        "page": true,
+        "id": "/about/contact-us"
+      }
+    ]
+  },
+
+  {
+    "title": "Guides",
     "id": "/getting-started",
     "subNav": [
       {
         "title": "Code",
-        "id": "/getting-started/code",
+        "id": "/getting-started/code/web",
         "subNav": [
           {
             "title": "Web",
@@ -22,83 +55,81 @@
     ]
   },
   {
-    "title": "Theme",
-    "id": "/theming",
+    "title": "Foundations",
+    "id": "/foundations",
     "subNav": [
       {
         "title": "Overview",
         "page": true,
-        "id": "/theming/overview"
+        "id": "/foundations/overview"
       },
       {
-        "title": "Creating a theme",
+        "title": "Colours",
         "page": true,
-        "id": "/theming/creating-a-theme"
+        "id": "/foundations/colours"
       },
       {
-        "title": "Using a theme",
+        "title": "Motions",
         "page": true,
-        "id": "/theming/using-a-theme"
-      },
-      {
-        "title": "Foundations",
-        "id": "/theming/foundations",
-        "subNav": [
-          {
-            "title": "Overview",
-            "page": true,
-            "id": "/theming/foundations/overview"
-          },
-          {
-            "title": "Colours",
-            "page": true,
-            "id": "/theming/foundations/colours"
-          },
-          {
-            "title": "Motions",
-            "page": true,
-            "id": "/theming/foundations/motions"
-          }
-        ]
+        "id": "/foundations/motions"
       },
       {
         "title": "Presets",
-        "id": "/theming/presets",
+        "id": "/foundations/presets",
         "subNav": [
           {
             "title": "Space Presets",
             "page": true,
-            "id": "/theming/presets/space-presets"
+            "id": "/foundations/presets/space-presets"
           },
           {
             "title": "Style Presets",
             "page": true,
-            "id": "/theming/presets/style-presets"
+            "id": "/foundations/presets/style-presets"
           },
           {
             "title": "Typography Presets",
             "page": true,
-            "id": "/theming/presets/typography-presets"
+            "id": "/foundations/presets/typography-presets"
           }
         ]
       },
       {
-        "title": "Component Defaults",
-        "id": "/theming/component-defaults",
+        "title": "Theming",
+        "id": "/foundations/theming",
         "subNav": [
           {
             "title": "Overview",
             "page": true,
-            "id": "/theming/component-defaults/overview"
+            "id": "/foundations/theming/overview"
+          },
+          {
+            "title": "Creating a theme",
+            "page": true,
+            "id": "/foundations/theming/creating-a-theme"
+          },
+          {
+            "title": "Using a theme",
+            "page": true,
+            "id": "/foundations/theming/using-a-theme"
+          },
+          {
+            "title": "Component Defaults",
+            "page": true,
+            "id": "/foundations/theming/component-defaults"
           }
-        ]
+          ]
       }
-    ]
-  },
+      ]},
   {
     "title": "Components",
     "id": "/components",
     "subNav": [
+      {
+        "title": "Overview",
+        "page": true,
+        "id": "/components/overview"
+      },
       {
         "title": "Actions & Inputs",
         "description": "Components that allow users to take action on a feature or enable users to input data.",
@@ -399,53 +430,42 @@
             "illustration": "components/badge-illustration"
           }
         ]
-      }
-    ]
-  },
-  {
-    "title": "Utilities",
-    "id": "/utils",
-    "subNav": [
-      {
-        "title": "Emotion",
-        "page": true,
-        "id": "/utils/emotion"
       },
       {
-        "title": "customToNewsKitIcon",
-        "page": true,
-        "id": "/utils/custom-to-newskit-icon"
-      },
-      {
-        "title": "getCssFromTheme",
-        "page": true,
-        "id": "/utils/get-css-from-theme"
-      },
-      {
-        "title": "getFromTheme",
-        "page": true,
-        "id": "/utils/get-from-theme"
-      },
-      {
-        "title": "getComponentDefaults",
-        "page": true,
-        "id": "/utils/get-defaults"
-      },
-      {
-        "title": "Hooks",
-        "page": true,
-        "id": "/utils/hooks"
-      }
-    ]
-  },
-  {
-    "title": "Help",
-    "id": "/help",
-    "subNav": [
-      {
-        "title": "Contact Us",
-        "page": true,
-        "id": "/help/contact-us"
+        "title": "Utilities",
+        "id": "/utils",
+        "subNav": [
+          {
+            "title": "Emotion",
+            "page": true,
+            "id": "/components/utils/emotion"
+          },
+          {
+            "title": "customToNewsKitIcon",
+            "page": true,
+            "id": "/components/utils/custom-to-newskit-icon"
+          },
+          {
+            "title": "getCssFromTheme",
+            "page": true,
+            "id": "/components/utils/get-css-from-theme"
+          },
+          {
+            "title": "getFromTheme",
+            "page": true,
+            "id": "/components/utils/get-from-theme"
+          },
+          {
+            "title": "getComponentDefaults",
+            "page": true,
+            "id": "/components/utils/get-defaults"
+          },
+          {
+            "title": "Hooks",
+            "page": true,
+            "id": "/components/utils/hooks"
+          }
+        ]
       }
     ]
   }

@@ -12,7 +12,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 import routes from '../../routes.json';
 
 const componentCategories: any =
-  routes.find(r => r.title === 'Components')?.subNav || [];
+  routes.find(r => r.title === 'Components')?.subNav?.slice(1) || [];
 
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>

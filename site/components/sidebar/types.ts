@@ -21,7 +21,7 @@ export type NavigationSectionType = {
 };
 
 type SectionPropType = {
-  title: string;
+  title?: string;
   id: string;
   subNav: Array<PageType | NavigationSectionType>;
 };
@@ -39,7 +39,6 @@ export interface NavigationSectionProps {
 export interface SectionProps {
   section: SectionPropType;
   activePagePath: string;
-  lastSection: boolean;
 }
 
 export interface SidebarNavProps {
