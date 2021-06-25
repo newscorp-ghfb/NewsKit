@@ -8735,7 +8735,7 @@ es6-iterator@2.0.3, es6-iterator@~2.0.3:
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
 
-es6-promise@^4.0.3, es6-promise@^4.2.5:
+es6-promise@^4.0.3:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
 
@@ -12594,10 +12594,9 @@ locate-path@^6.0.0:
     p-locate "^5.0.0"
 
 locutus@^2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.11.tgz#83f85109971fd3dd620482a04381916e4a31d4f0"
-  dependencies:
-    es6-promise "^4.2.5"
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.15.tgz#d75b9100713aaaf30be8b38ed6543910498c0db0"
+  integrity sha512-2xWC4RkoAoCVXEb/stzEgG1TNgd+mrkLBj6TuEDNyUoKeQ2XzDTyJUC23sMiqbL6zJmJSP3w59OZo+zc4IBOmA==
 
 lodash-es@^4.17.15:
   version "4.17.21"
