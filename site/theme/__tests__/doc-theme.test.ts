@@ -1,37 +1,67 @@
-import {compileTheme, createTheme} from 'newskit';
-import {docsThemeLight, docsThemeDark, darkOverrides} from '../doc-theme';
+import {
+  compileTheme,
+  createTheme,
+  ThemeOverrides,
+  UncompiledTheme,
+} from 'newskit';
+import {
+  docsThemeLight,
+  docsThemeDark,
+  darkOverrides,
+  foundationsThemeLight,
+  foundationsThemeDark,
+  patternsThemeLight,
+  patternsThemeDark,
+  accessibilityThemeLight,
+  accessibilityThemeDark,
+  foundationsLightOverrides,
+  patternsDarkOverrides,
+  accessibilityLightOverrides,
+  foundationsDarkOverrides,
+  patternsLightOverrides,
+  accessibilityDarkOverrides,
+} from '../doc-theme';
 
-describe('Docs Light theme', () => {
-  it('should compile without errors', () => {
-    const errorLogger = jest.fn();
+type Test = [string, UncompiledTheme, ThemeOverrides];
 
-    compileTheme(docsThemeLight, {errorLogger});
-
-    expect(errorLogger).not.toHaveBeenCalled();
-  });
-});
-
-describe('Docs Dark theme', () => {
-  it('should match expected snapshot', () => {
-    expect(docsThemeDark).toMatchSnapshot();
-  });
-
-  it('should not override uneccessarily', () => {
-    const warningLogger = jest.fn();
-
-    createTheme({
-      overrides: darkOverrides,
-      checkOverrides: true,
-      warningLogger,
+describe('Docs theme', () => {
+  ([
+    ['docsThemeLight', docsThemeLight, undefined],
+    ['docsThemeDark', docsThemeDark, darkOverrides],
+    ['foundationsThemeLight', foundationsThemeLight, foundationsLightOverrides],
+    ['foundationsThemeDark', foundationsThemeDark, foundationsDarkOverrides],
+    ['patternsThemeLight', patternsThemeLight, patternsLightOverrides],
+    ['patternsThemeDark', patternsThemeDark, patternsDarkOverrides],
+    [
+      'accessibilityThemeLight',
+      accessibilityThemeLight,
+      accessibilityLightOverrides,
+    ],
+    [
+      'accessibilityThemeDark',
+      accessibilityThemeDark,
+      accessibilityDarkOverrides,
+    ],
+  ] as Test[]).forEach(([themeName, theme, themeOverrides]) => {
+    it(`should match expected snapshot for ${themeName}`, () => {
+      expect(theme).toMatchSnapshot();
     });
-    expect(warningLogger).not.toHaveBeenCalled();
-  });
 
-  it('should compile without errors', () => {
-    const errorLogger = jest.fn();
+    it(`should compile ${themeName} without errors`, () => {
+      const errorLogger = jest.fn();
+      compileTheme(theme, {errorLogger});
 
-    compileTheme(docsThemeDark, {errorLogger});
+      expect(errorLogger).not.toHaveBeenCalled();
+    });
 
-    expect(errorLogger).not.toHaveBeenCalled();
+    it(`should not override ${themeName} uneccessarily`, () => {
+      const warningLogger = jest.fn();
+      createTheme({
+        overrides: themeOverrides,
+        checkOverrides: true,
+        warningLogger,
+      });
+      expect(warningLogger).not.toHaveBeenCalled();
+    });
   });
 });

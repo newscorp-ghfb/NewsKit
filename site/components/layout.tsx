@@ -10,7 +10,7 @@ import {
   ThemeProvider,
 } from 'newskit';
 
-import {blueSubThemeDark, blueSubThemeLight} from '../theme/doc-theme';
+import {docsThemeDark, docsThemeLight} from '../theme/doc-theme';
 import SiteHeader from './site-header';
 import SiteFooter from './site-footer';
 import Sidebar from './sidebar';
@@ -197,9 +197,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
           <BodyWrapper>
             {path.endsWith('-new') || newPage ? (
               <ThemeProvider
-                theme={
-                  themeMode === 'light' ? blueSubThemeLight : blueSubThemeDark
-                }
+                theme={themeMode === 'light' ? docsThemeLight : docsThemeDark}
               >
                 {children}
               </ThemeProvider>

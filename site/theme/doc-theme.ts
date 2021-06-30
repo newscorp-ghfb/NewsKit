@@ -8,6 +8,78 @@ import borders from './borders.json';
 import {stylePresets} from './style-presets';
 import {componentDefaults} from './component-defaults';
 
+export const foundationsLightOverrides = {
+  colors: {
+    inkBrand010: '{{colors.purple050}}',
+    inkBrand020: '{{colors.purple080}}',
+    interfaceBrand010: '{{colors.purple020}}',
+    interfaceBrand020: '{{colors.purple030}}',
+    interfaceBrand030: '{{colors.purple050}}',
+    interfaceBrand040: '{{colors.purple060}}',
+    interfaceBrand050: '{{colors.purple080}}',
+  },
+};
+
+export const foundationsDarkOverrides = {
+  colors: {
+    inkBrand010: '{{colors.purple040}}',
+    inkBrand020: '{{colors.purple020}}',
+    interfaceBrand010: '{{colors.purple090}}',
+    interfaceBrand020: '{{colors.purple080}}',
+    interfaceBrand030: '{{colors.purple050}}',
+    interfaceBrand040: '{{colors.purple040}}',
+    interfaceBrand050: '{{colors.purple020}}',
+  },
+};
+
+export const patternsLightOverrides = {
+  colors: {
+    inkBrand010: '{{colors.teal050}}',
+    inkBrand020: '{{colors.teal080}}',
+    interfaceBrand010: '{{colors.teal020}}',
+    interfaceBrand020: '{{colors.teal030}}',
+    interfaceBrand030: '{{colors.teal050}}',
+    interfaceBrand040: '{{colors.teal070}}',
+    interfaceBrand050: '{{colors.teal080}}',
+  },
+};
+
+export const patternsDarkOverrides = {
+  colors: {
+    inkBrand010: '{{colors.teal040}}',
+    inkBrand020: '{{colors.teal020}}',
+    interfaceBrand010: '{{colors.teal090}}',
+    interfaceBrand020: '{{colors.teal080}}',
+    interfaceBrand030: '{{colors.teal050}}',
+    interfaceBrand040: '{{colors.teal040}}',
+    interfaceBrand050: '{{colors.teal020}}',
+  },
+};
+
+export const accessibilityLightOverrides = {
+  colors: {
+    inkBrand010: '{{colors.neutral050}}',
+    inkBrand020: '{{colors.neutral080}}',
+    interfaceBrand010: '{{colors.neutral020}}',
+    interfaceBrand020: '{{colors.neutral040}}',
+    interfaceBrand030: '{{colors.neutral050}}',
+    interfaceBrand040: '{{colors.neutral070}}',
+    interfaceBrand050: '{{colors.neutral080}}',
+  },
+};
+
+export const accessibilityDarkOverrides = {
+  colors: {
+    inkBrand010: '{{colors.neutral050}}',
+    inkBrand020: '{{colors.neutral030}}',
+    interfaceBrand010: '{{colors.neutral090}}',
+    interfaceBrand020: '{{colors.neutral080}}',
+    interfaceBrand030: '{{colors.neutral050}}',
+    interfaceBrand040: '{{colors.neutral040}}',
+    interfaceBrand050: '{{colors.neutral020}}',
+  },
+};
+
 export const [lightOverrides, darkOverrides] = [colorsLight, colorsDark].map(
   colors => ({
     colors,
@@ -37,87 +109,38 @@ export const docsThemeDark = createTheme({
   overrides: darkOverrides,
 });
 
-// TODO: unit test these colour overrides like we do the light/dark base themes
-export const blueSubThemeLight = createTheme({
-  name: 'docs-blue-light',
+export const foundationsThemeLight = createTheme({
+  name: 'docs-foundations-light',
   baseTheme: docsThemeLight,
-  overrides: {
-    colors: {
-      illustrationPalette010: '{{colors.blue010}}',
-      illustrationPalette020: '{{colors.blue020}}',
-      illustrationPalette030: '{{colors.blue030}}',
-      illustrationPalette040: '{{colors.blue040}}',
-      illustrationPalette050: '{{colors.blue050}}',
-      illustrationPalette060: '{{colors.blue060}}',
-      illustrationPalette070: '{{colors.blue070}}',
-      illustrationPalette080: '{{colors.blue080}}',
-      illustrationPalette090: '{{colors.blue090}}',
-      illustrationPalette100: '{{colors.blue100}}',
-      illustrationHighlight010: '{{colors.blue040}}',
-      illustrationSubtle010: '{{colors.neutral060}}',
-      illustrationShadow010: '{{colors.neutral040}}',
-      illustrationGradient010:
-        'linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)',
-      illustrationBackground010: '#F0F3FF',
-      illustrationBackground020: '{{colors.neutral010}}',
-      illustrationBorder010: '{{colors.neutral020}}',
-      illustrationBorder020: '{{colors.neutral040}}',
-      illustrationDisabled: '{{colors.neutral020}}',
-      illustrationInterface010: '{{colors.white}}',
-      illustrationInterface020: '{{colors.blue010}}',
-      illustrationInterface030: '{{colors.blue020}}',
-      illustrationInterface040: '{{colors.blue030}}',
-      illustrationInterface050: '{{colors.blue040}}',
-      illustrationInterface060: '{{colors.blue050}}',
-      illustrationInterface070: '{{colors.blue060}}',
-      illustrationInterface080: '{{colors.blue070}}',
-      illustrationInterface090: '{{colors.blue080}}',
-      illustrationInterface100: '{{colors.blue090}}',
-      anatomySubtle: '{{colors.blue020}}',
-      anatomyBorder010: '{{colors.blue020}}',
-      anatomyBorder020: '{{colors.blue070}}',
-    },
-  },
+  overrides: foundationsLightOverrides,
 });
 
-export const blueSubThemeDark = createTheme({
-  name: 'docs-blue-dark',
+export const foundationsThemeDark = createTheme({
+  name: 'docs-foundations-dark',
   baseTheme: docsThemeDark,
-  overrides: {
-    colors: {
-      illustrationPalette010: '{{colors.blue010}}',
-      illustrationPalette020: '{{colors.blue020}}',
-      illustrationPalette030: '{{colors.blue030}}',
-      illustrationPalette040: '{{colors.blue040}}',
-      illustrationPalette050: '{{colors.blue050}}',
-      illustrationPalette060: '{{colors.blue060}}',
-      illustrationPalette070: '{{colors.blue070}}',
-      illustrationPalette080: '{{colors.blue080}}',
-      illustrationPalette090: '{{colors.blue090}}',
-      illustrationPalette100: '{{colors.blue100}}',
-      illustrationHighlight010: '{{colors.white}}',
-      illustrationSubtle010: '{{colors.blue080}}',
-      illustrationShadow010: '{{colors.neutral100}}',
-      illustrationGradient010:
-        'linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)',
-      illustrationBackground010: '{{colors.neutral090}}',
-      illustrationBackground020: '{{colors.neutral090}}',
-      illustrationBorder010: '{{colors.blue070}}',
-      illustrationBorder020: '{{colors.blue060}}',
-      illustrationDisabled: '{{colors.blue080}}',
-      illustrationInterface010: '{{colors.blue050}}',
-      illustrationInterface020: '{{colors.blue070}}',
-      illustrationInterface030: '{{colors.blue070}}',
-      illustrationInterface040: '{{colors.blue080}}',
-      illustrationInterface050: '{{colors.blue090}}',
-      illustrationInterface060: '{{colors.blue100}}',
-      illustrationInterface070: '{{colors.blue020}}',
-      illustrationInterface080: '{{colors.blue030}}',
-      illustrationInterface090: '{{colors.blue050}}',
-      illustrationInterface100: '{{colors.blue010}}',
-      anatomySubtle: '{{colors.blue040}}',
-      anatomyBorder010: '{{colors.blue080}}',
-      anatomyBorder020: '{{colors.blue040}}',
-    },
-  },
+  overrides: foundationsDarkOverrides,
+});
+
+export const patternsThemeLight = createTheme({
+  name: 'docs-patterns-light',
+  baseTheme: docsThemeLight,
+  overrides: patternsLightOverrides,
+});
+
+export const patternsThemeDark = createTheme({
+  name: 'docs-patterns-dark',
+  baseTheme: docsThemeDark,
+  overrides: patternsDarkOverrides,
+});
+
+export const accessibilityThemeLight = createTheme({
+  name: 'docs-accessibility-light',
+  baseTheme: docsThemeLight,
+  overrides: accessibilityLightOverrides,
+});
+
+export const accessibilityThemeDark = createTheme({
+  name: 'docs-accessibility-dark',
+  baseTheme: docsThemeDark,
+  overrides: accessibilityDarkOverrides,
 });

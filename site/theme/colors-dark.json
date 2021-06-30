@@ -51,5 +51,29 @@
   "interactiveNegative020": "{{colors.red100}}",
 
   "interactiveDisabled010": "{{colors.neutral100}}",
-  "interactiveVisited010": "{{colors.purple030}}"
+  "interactiveVisited010": "{{colors.purple030}}",
+
+  "illustrationHighlight010": "{{colors.white}}",  
+  "illustrationSubtle010": "{{colors.blue080}}",
+  "illustrationShadow010": "{{colors.neutral100}}",
+  "illustrationGradient010":
+    "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
+  "illustrationBackground010": "{{colors.neutral090}}",
+  "illustrationBackground020": "{{colors.neutral090}}",
+  "illustrationBorder010": "{{colors.blue070}}",
+  "illustrationBorder020": "{{colors.blue060}}",
+  "illustrationDisabled": "{{colors.blue080}}",
+  "illustrationInterface010": "{{colors.blue050}}",
+  "illustrationInterface020": "{{colors.blue070}}",
+  "illustrationInterface030": "{{colors.blue070}}",
+  "illustrationInterface040": "{{colors.blue080}}",
+  "illustrationInterface050": "{{colors.blue090}}",
+  "illustrationInterface060": "{{colors.blue100}}",
+  "illustrationInterface070": "{{colors.blue020}}",
+  "illustrationInterface080": "{{colors.blue030}}",
+  "illustrationInterface090": "{{colors.blue050}}",
+  "illustrationInterface100": "{{colors.blue010}}",
+  "anatomySubtle": "{{colors.blue040}}",
+  "anatomyBorder010": "{{colors.blue080}}",
+  "anatomyBorder020": "{{colors.blue040}}"
 }
