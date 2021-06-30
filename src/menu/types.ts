@@ -1,3 +1,4 @@
+import {DividerOverrides} from '../divider';
 import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 import {MQ} from '../utils';
 
@@ -13,20 +14,27 @@ export enum MenuItemSize {
   Large = 'large',
 }
 
-export enum MenuItemDistribution {
-  Start = 'start',
-  Grow = 'grow',
-  Equal = 'equal',
-}
-
 export interface MenuProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   vertical?: boolean;
   size?: MenuItemSize;
   align?: MenuItemAlign;
-  distribution?: MenuItemDistribution;
   overrides?: {
-    spaceInline?: MQ<string>; // -> space between menuItems or menuItemsGroup
+    spaceInline?: MQ<string>; // -> space between menuItems
+  };
+}
+
+export interface MenuGroupProps extends React.AriaAttributes {
+  children: Exclude<React.ReactNode, 'undefined'>;
+  title?: React.ReactNode;
+  overrides?: {
+    spaceInline?: MQ<string>; // -> space between menuGroups
+    title?: {
+      typographyPreset?: MQ<string>;
+      stylePreset?: MQ<string>;
+      spaceInline?: MQ<string>;
+      spaceInset?: MQ<string>;
+    };
   };
 }
 
@@ -37,4 +45,10 @@ export interface MenuItemProps
   href: string;
   selected?: boolean;
   onClick?: () => {};
+}
+
+export interface MenuDividerProps extends DividerOverrides {
+  overrides?: {
+    spaceInline?: MQ<string>;
+  };
 }

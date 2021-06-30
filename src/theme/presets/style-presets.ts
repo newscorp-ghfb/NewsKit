@@ -1586,6 +1586,7 @@ stylePresets.structuredListItem = {
 };
 
 // Inline Message
+
 stylePresets.inlineMessage = {
   base: {
     backgroundColor: '{{colors.interfaceInformative020}}',
@@ -1645,12 +1646,12 @@ stylePresets.menuItemHorizontal = {
     iconColor: '{{colors.inkSubtle}}',
   },
   hover: {
-    borderColor: '{{colors.interactivePrimary040}}',
+    borderColor: '{{colors.interactivePrimary030}}',
     color: '{{colors.inkContrast}}',
     iconColor: '{{colors.inkContrast}}',
   },
   active: {
-    borderColor: '{{colors.interactivePrimary050}}',
+    borderColor: '{{colors.interactivePrimary030}}',
     color: '{{colors.inkContrast}}',
     iconColor: '{{colors.inkContrast}}',
   },

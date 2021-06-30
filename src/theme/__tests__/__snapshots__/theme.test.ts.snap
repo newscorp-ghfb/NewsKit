@@ -734,7 +734,14 @@ Object {
     "menu": Object {
       "spaceInline": "space020",
     },
-    "menuDivider": Object {},
+    "menuGroup": Object {
+      "spaceInline": "space050",
+      "title": Object {
+        "spaceInline": "space050",
+        "stylePreset": "inkSubtle",
+        "typographyPreset": "utilityHeading030",
+      },
+    },
     "menuItem": Object {
       "horizontal": Object {
         "minHeight": "sizing080",
@@ -749,7 +756,6 @@ Object {
         "stylePreset": "menuItemVertical",
       },
     },
-    "menuItemGroup": Object {},
     "orderedList": Object {
       "content": Object {
         "stylePreset": "inkBase",
@@ -2712,7 +2718,7 @@ Object {
     },
     "menuItemHorizontal": Object {
       "active": Object {
-        "borderColor": "{{colors.interactivePrimary050}}",
+        "borderColor": "{{colors.interactivePrimary030}}",
         "color": "{{colors.inkContrast}}",
         "iconColor": "{{colors.inkContrast}}",
       },
@@ -2729,7 +2735,7 @@ Object {
         "iconColor": "{{colors.inkNonEssential}}",
       },
       "hover": Object {
-        "borderColor": "{{colors.interactivePrimary040}}",
+        "borderColor": "{{colors.interactivePrimary030}}",
         "color": "{{colors.inkContrast}}",
         "iconColor": "{{colors.inkContrast}}",
       },

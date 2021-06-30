@@ -1,12 +1,7 @@
 import React from 'react';
 import {MenuContextProvider} from './context';
-import {
-  MenuItemAlign,
-  MenuItemDistribution,
-  MenuItemSize,
-  MenuProps,
-} from './types';
-import {StyledMenuContainer} from './styled';
+import {MenuItemAlign, MenuItemSize, MenuProps} from './types';
+import {StyledMenu} from './styled';
 
 const getAlign = (align: MenuItemAlign | undefined, vertical: boolean) => {
   if (!align) {
@@ -21,16 +16,13 @@ export const Menu: React.FC<MenuProps> = ({
   vertical = false,
   size = MenuItemSize.Medium,
   align: passedAlign,
-  distribution = MenuItemDistribution.Start,
   ...rest
 }) => {
   const align = getAlign(passedAlign, vertical);
 
   return (
-    <MenuContextProvider
-      value={{vertical, size, align, distribution, overrides}}
-    >
-      <StyledMenuContainer
+    <MenuContextProvider value={{vertical, size, align, overrides}}>
+      <StyledMenu
         role="navigation"
         data-testid="menu-container"
         overrides={overrides}
@@ -38,7 +30,7 @@ export const Menu: React.FC<MenuProps> = ({
         {...rest}
       >
         <ul>{children}</ul>
-      </StyledMenuContainer>
+      </StyledMenu>
     </MenuContextProvider>
   );
 };

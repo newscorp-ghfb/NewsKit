@@ -728,7 +728,14 @@ Object {
     "menu": Object {
       "spaceInline": "space020",
     },
-    "menuDivider": Object {},
+    "menuGroup": Object {
+      "spaceInline": "space050",
+      "title": Object {
+        "spaceInline": "space050",
+        "stylePreset": "inkSubtle",
+        "typographyPreset": "utilityHeading030",
+      },
+    },
     "menuItem": Object {
       "horizontal": Object {
         "minHeight": "sizing080",
@@ -743,7 +750,6 @@ Object {
         "stylePreset": "menuItemVertical",
       },
     },
-    "menuItemGroup": Object {},
     "orderedList": Object {
       "content": Object {
         "stylePreset": "inkBase",
@@ -2794,7 +2800,7 @@ Object {
     },
     "menuItemHorizontal": Object {
       "active": Object {
-        "borderColor": "#01396e",
+        "borderColor": "#0a68c1",
         "color": "#0a0a0a",
         "iconColor": "#0a0a0a",
       },
@@ -2811,7 +2817,7 @@ Object {
         "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "borderColor": "#02509b",
+        "borderColor": "#0a68c1",
         "color": "#0a0a0a",
         "iconColor": "#0a0a0a",
       },

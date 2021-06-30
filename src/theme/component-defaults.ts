@@ -515,8 +515,14 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish030',
     },
   },
-  menuItemGroup: {},
-  menuDivider: {},
+  menuGroup: {
+    spaceInline: 'space050',
+    title: {
+      typographyPreset: 'utilityHeading030',
+      stylePreset: 'inkSubtle',
+      spaceInline: 'space050',
+    },
+  },
   orderedList: {
     spaceInline: 'space040',
     content: {

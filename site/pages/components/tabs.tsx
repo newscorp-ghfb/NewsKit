@@ -267,7 +267,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               attribute: 'divider',
-              type: "DividerProps['overrides']",
+              type: 'DividerOverrides',
               default: '',
               description: (
                 <>

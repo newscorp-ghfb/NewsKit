@@ -1,11 +1,12 @@
 import React from 'react';
 import {styled, getStylePreset, MQ} from '../utils/style';
 
+export interface DividerOverrides {
+  stylePreset?: MQ<string>;
+}
 export interface DividerProps {
   vertical?: boolean;
-  overrides?: {
-    stylePreset?: MQ<string>;
-  };
+  overrides?: DividerOverrides;
 }
 
 const StyledDivider = styled.hr<DividerProps>`

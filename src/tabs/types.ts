@@ -1,7 +1,7 @@
 import React from 'react';
 import {MQ} from '../utils/style';
 import {BaseFlagProps, BaseFlagOverrides} from '../flag';
-import {DividerProps} from '../divider';
+import {DividerOverrides} from '../divider';
 import {ScrollProps} from '../scroll';
 
 export enum TabAlign {
@@ -39,7 +39,7 @@ export interface TabsProps {
   align?: TabAlign;
   overrides?: {
     spaceInline?: MQ<string>;
-    divider?: DividerProps['overrides'];
+    divider?: DividerOverrides;
     selectionIndicator?: {
       track?: {
         weight?: MQ<string>;

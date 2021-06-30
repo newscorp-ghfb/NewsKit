@@ -5,8 +5,8 @@ import {
 } from '../../test/storybook-comps';
 import {createTheme, compileTheme, ThemeProvider} from '../../theme';
 import {IconFilledAddCircleOutline} from '../../icons';
-import {Menu, MenuItem} from '..';
-import {MenuItemAlign, MenuItemDistribution, MenuItemSize} from '../types';
+import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
+import {MenuItemAlign, MenuItemSize} from '../types';
 import {styled} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 
@@ -32,16 +32,22 @@ const myCustomTheme = compileTheme(
   }),
 );
 
-// TODO: use random gen for aria labels
+const MenuGroupTitle = () => (
+  <>
+    <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
+    <span id="custom-menu-title"> Menu Group Title Custom Component </span>
+    <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
+  </>
+);
 
 export default {
   title: 'menu',
   children: [
     {
-      storyName: 'menu-horizontal',
+      storyName: 'menu items - horizontal',
       storyFn: () => (
         <>
-          <StorybookHeading>Menu horizontal</StorybookHeading>
+          <StorybookHeading>Menu items - horizontal</StorybookHeading>
           <Menu aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item 1</MenuItem>
             <MenuItem href={href}>Menu item 2</MenuItem>
@@ -54,10 +60,10 @@ export default {
       ),
     },
     {
-      storyName: 'menu-vertical',
+      storyName: 'menu items - vertical',
       storyFn: () => (
         <>
-          <StorybookHeading>Menu vertical</StorybookHeading>
+          <StorybookHeading>Menu items - vertical</StorybookHeading>
           <Menu vertical aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item 1</MenuItem>
             <MenuItem href={href}>Menu item 2</MenuItem>
@@ -70,11 +76,11 @@ export default {
       ),
     },
     {
-      storyName: 'menu item - states',
+      storyName: 'menu items - states',
       storyFn: () => (
         <>
-          <StorybookHeading>Menu horizontal</StorybookHeading>
-          <StorybookSubHeading>Menu horizontal</StorybookSubHeading>
+          <StorybookHeading>Menu items - states</StorybookHeading>
+          <StorybookSubHeading>Menu items horizontal</StorybookSubHeading>
           <Menu aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item 1</MenuItem>
             <MenuItem href={href} selected>
@@ -88,7 +94,7 @@ export default {
           </Menu>
           <br />
           <br />
-          <StorybookSubHeading>Menu vertical</StorybookSubHeading>
+          <StorybookSubHeading>Menu items vertical</StorybookSubHeading>
           <Menu vertical aria-label={`Menu ${getSSRId()}`}>
             <MenuItem href={href}>Menu item 1</MenuItem>
             <MenuItem href={href} selected>
@@ -103,7 +109,7 @@ export default {
       ),
     },
     {
-      storyName: 'menu item - sizes',
+      storyName: 'menu items - sizes',
       storyFn: () => (
         <>
           <StorybookHeading>Menu items in different sizes</StorybookHeading>
@@ -171,7 +177,7 @@ export default {
       ),
     },
     {
-      storyName: 'menu item - alignment',
+      storyName: 'menu items - alignment',
       storyFn: () => {
         const Flex = styled.div`
           display: flex;
@@ -223,51 +229,7 @@ export default {
       },
     },
     {
-      storyName: 'menu item - distribution',
-      storyFn: () => (
-        <>
-          <StorybookHeading>
-            Menu items with different distributions
-          </StorybookHeading>
-          <StorybookSubHeading>Start</StorybookSubHeading>
-          <Menu
-            distribution={MenuItemDistribution.Start}
-            aria-label={`Menu ${getSSRId()}`}
-          >
-            <MenuItem href={href}>Menu item 1</MenuItem>
-            <MenuItem href={href}>Menu item 2</MenuItem>
-            <MenuItem href={href}>Menu item 3</MenuItem>
-            <MenuItem href={href}>Menu item 4</MenuItem>
-          </Menu>
-          <br />
-          <br />
-          <StorybookSubHeading>Equal</StorybookSubHeading>
-          <Menu
-            distribution={MenuItemDistribution.Equal}
-            aria-label={`Menu ${getSSRId()}`}
-          >
-            <MenuItem href={href}>Menu item 1</MenuItem>
-            <MenuItem href={href}>Menu item 2 more text</MenuItem>
-            <MenuItem href={href}>Menu item 3</MenuItem>
-            <MenuItem href={href}>Menu item 4 text</MenuItem>
-          </Menu>
-          <br />
-          <br />
-          <StorybookSubHeading>Grow</StorybookSubHeading>
-          <Menu
-            distribution={MenuItemDistribution.Grow}
-            aria-label={`Menu ${getSSRId()}`}
-          >
-            <MenuItem href={href}>Menu item 1</MenuItem>
-            <MenuItem href={href}>Menu item 2 more text</MenuItem>
-            <MenuItem href={href}>Menu item 3</MenuItem>
-            <MenuItem href={href}>Menu item 4 text</MenuItem>
-          </Menu>
-        </>
-      ),
-    },
-    {
-      storyName: 'menu item - overrides',
+      storyName: 'menu items - overrides',
       storyFn: () => {
         const menuItemOverrides = {
           stylePreset: 'menuItemCustom',
@@ -302,7 +264,7 @@ export default {
       },
     },
     {
-      storyName: 'menu-inverse',
+      storyName: 'menu items - inverse',
       storyFn: () => {
         const InverseContainer = styled.div`
           background: black;
@@ -314,7 +276,7 @@ export default {
 
         return (
           <>
-            <StorybookHeading>Menu horizontal inverse</StorybookHeading>
+            <StorybookHeading>Menu items horizontal inverse</StorybookHeading>
             <InverseContainer>
               <Menu aria-label={`Menu ${getSSRId()}`}>
                 <MenuItem href={href} overrides={inverseOverrides}>
@@ -341,7 +303,400 @@ export default {
         );
       },
     },
+    {
+      storyName: 'menu groups - vertical',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu groups - vertical</StorybookHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+            </MenuGroup>
+
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+              <MenuItem href={href}>Group 2-item 4</MenuItem>
+            </MenuGroup>
+
+            <MenuGroup
+              title={() => <MenuGroupTitle />}
+              aria-labelledby="custom-menu-title"
+            >
+              <MenuItem href={href}>Group 3-item 1</MenuItem>
+              <MenuItem href={href}>Group 3-item 2</MenuItem>
+            </MenuGroup>
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu groups - horizontal',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu groups - horizontal</StorybookHeading>
+          <Menu aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+            </MenuGroup>
+
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+              <MenuItem href={href}>Group 2-item 4</MenuItem>
+            </MenuGroup>
+
+            <MenuGroup title="Group 3">
+              <MenuItem href={href}>Group 3-item 1</MenuItem>
+              <MenuItem href={href}>Group 3-item 2</MenuItem>
+            </MenuGroup>
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu groups - nested',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu groups - nested</StorybookHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+            </MenuGroup>
+
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+
+              <MenuGroup title="Group 2 - Nested Group 1">
+                <MenuItem href={href}>Group 3-item 1</MenuItem>
+                <MenuItem href={href}>Group 3-item 2</MenuItem>
+              </MenuGroup>
+
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+              <MenuItem href={href}>Group 2-item 4</MenuItem>
+            </MenuGroup>
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - menu items only',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu - menu items only</StorybookHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 2</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 4</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 5</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 6</MenuItem>
+            <MenuDivider />
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - menu items only (horizontal)',
+      storyFn: () => (
+        <>
+          <StorybookHeading>
+            Menu - menu items only (horizontal)
+          </StorybookHeading>
+          <Menu aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 2</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 4</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 5</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>Menu item 6</MenuItem>
+            <MenuDivider />
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - menu groups only',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu - menu groups only</StorybookHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+            </MenuGroup>
+            <MenuDivider />
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+            </MenuGroup>
+            <MenuDivider />
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - menu groups only (horizontal)',
+      storyFn: () => (
+        <>
+          <StorybookHeading>
+            Menu - menu groups only (horizontal)
+          </StorybookHeading>
+          <Menu aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+            </MenuGroup>
+            <MenuDivider />
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+            </MenuGroup>
+            <MenuDivider />
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - menu groups only (dividers within groups)',
+      storyFn: () => (
+        <>
+          <StorybookHeading>
+            Menu - menu groups only (dividers within groups)
+          </StorybookHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+              <MenuDivider />
+            </MenuGroup>
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+              <MenuDivider />
+            </MenuGroup>
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName:
+        'menu - menu groups only (horizontal) (dividers within groups)',
+      storyFn: () => (
+        <>
+          <StorybookHeading>
+            Menu - menu groups only (horizontal) (dividers within groups)
+          </StorybookHeading>
+          <Menu aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+              <MenuDivider />
+            </MenuGroup>
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+              <MenuDivider />
+            </MenuGroup>
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - items and groups',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu - items and groups</StorybookHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>item 1</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>item 2</MenuItem>
+            <MenuDivider />
+
+            <MenuGroup title="Group 1" overrides={{spaceInline: 'space020'}}>
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+              {/* <MenuDivider /> */}
+            </MenuGroup>
+
+            <MenuDivider overrides={{spaceInline: 'space020'}} />
+
+            <MenuItem href={href}>item 3</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>item 4</MenuItem>
+            <MenuDivider />
+
+            <MenuGroup title="Group 2" overrides={{spaceInline: 'space020'}}>
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+            </MenuGroup>
+
+            <MenuDivider overrides={{spaceInline: 'space020'}} />
+
+            <MenuItem href={href}>item 5</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>item 6</MenuItem>
+            <MenuDivider />
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - items and groups (horizontal)',
+      storyFn: () => (
+        <>
+          <StorybookHeading>
+            Menu - items and groups (horizontal)
+          </StorybookHeading>
+          <Menu aria-label={`Menu ${getSSRId()}`}>
+            <MenuItem href={href}>item 1</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>item 2</MenuItem>
+            <MenuDivider />
+
+            <MenuGroup title="Group 1">
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+              <MenuDivider />
+            </MenuGroup>
+
+            {/* <MenuDivider /> */}
+
+            <MenuItem href={href}>item 3</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>item 4</MenuItem>
+            <MenuDivider />
+
+            <MenuGroup title="Group 2">
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuDivider />
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+            </MenuGroup>
+
+            <MenuDivider />
+
+            <MenuItem href={href}>item 5</MenuItem>
+            <MenuDivider />
+            <MenuItem href={href}>item 6</MenuItem>
+            <MenuDivider />
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu items - horizontal, no space',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu items - horizontal</StorybookHeading>
+          <Menu
+            aria-label={`Menu ${getSSRId()}`}
+            overrides={{spaceInline: 'space000'}}
+          >
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuItem href={href}>Menu item 2</MenuItem>
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuItem href={href}>Menu item 4</MenuItem>
+            <MenuItem href={href}>Menu item 5</MenuItem>
+            <MenuItem href={href}>Menu item 6</MenuItem>
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu items - vertical, no space',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu items - vertical</StorybookHeading>
+          <Menu
+            vertical
+            aria-label={`Menu ${getSSRId()}`}
+            overrides={{spaceInline: 'space000'}}
+          >
+            <MenuItem href={href}>Menu item 1</MenuItem>
+            <MenuItem href={href}>Menu item 2</MenuItem>
+            <MenuItem href={href}>Menu item 3</MenuItem>
+            <MenuItem href={href}>Menu item 4</MenuItem>
+            <MenuItem href={href}>Menu item 5</MenuItem>
+            <MenuItem href={href}>Menu item 6</MenuItem>
+          </Menu>
+        </>
+      ),
+    },
+    {
+      storyName: 'menu - aligned title',
+      storyFn: () => (
+        <>
+          <StorybookHeading>Menu - menu groups only</StorybookHeading>
+          <Menu vertical aria-label={`Menu ${getSSRId()}`}>
+            <MenuGroup
+              title="Group 1"
+              overrides={{title: {spaceInset: 'space040'}}}
+            >
+              <MenuItem href={href}>Group 1-item 1</MenuItem>
+              <MenuItem href={href}>Group 1-item 2</MenuItem>
+              <MenuItem href={href}>Group 1-item 3</MenuItem>
+            </MenuGroup>
+            <MenuDivider />
+            <MenuGroup
+              title="Group 2"
+              overrides={{title: {spaceInset: 'space040'}}}
+            >
+              <MenuItem href={href}>Group 2-item 1</MenuItem>
+              <MenuItem href={href}>Group 2-item 2</MenuItem>
+              <MenuItem href={href}>Group 2-item 3</MenuItem>
+            </MenuGroup>
+            <MenuGroup
+              title="Group 3"
+              overrides={{title: {spaceInset: 'space040'}}}
+            >
+              <MenuItem href={href}>Group 3-item 1</MenuItem>
+            </MenuGroup>
+            <MenuDivider />
+          </Menu>
+        </>
+      ),
+    },
   ],
 };
 
 export const disabledRules = ['color-contrast'];
+
+// Unique ID of the Menu item

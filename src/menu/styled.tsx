@@ -1,28 +1,14 @@
 import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';
-import {MenuItemAlign, MenuItemDistribution, MenuProps} from './types';
+import {MenuItemAlign, MenuGroupProps, MenuProps} from './types';
 
-const getFlexFromTabsDistribution = (
-  distribution: MenuItemDistribution,
-  vertical: boolean,
-) => {
-  switch (distribution) {
-    case MenuItemDistribution.Grow:
-      return 'flex: 1 0 auto';
-    case MenuItemDistribution.Equal:
-      return `${vertical ? 'height' : 'width'}: 100%`;
-    case MenuItemDistribution.Start:
-    default:
-      return 'flex: 0 0 auto';
-  }
-};
-
-export const StyledMenuContainer = styled.nav<MenuProps>`
+export const StyledMenu = styled.nav<MenuProps>`
   box-sizing: border-box;
+
   ${({vertical}) => (vertical ? 'height: 100%;' : 'width: 100%;')}
 
-  ul {
+  > ul {
     box-sizing: border-box;
     list-style-type: none;
     margin: 0;
@@ -34,11 +20,58 @@ export const StyledMenuContainer = styled.nav<MenuProps>`
     ${({vertical}) => (vertical ? 'height: 100%;' : 'width: 100%;')}
   }
 
+  li:last-of-type {
+    ${({vertical}) => (vertical ? 'margin-bottom:0;' : 'margin-right: 0')}
+  }
+
   ${getStylePreset('menu', '')};
 `;
 
+export const StyledMenuGroup = styled.li<
+  Pick<MenuProps, 'vertical'> & MenuGroupProps
+>`
+  box-sizing: border-box;
+
+  ${({vertical}) =>
+    getResponsiveSpace(
+      vertical ? 'marginBottom' : 'marginRight',
+      vertical ? `menuGroup` : `menu`,
+      '',
+      'spaceInline',
+    )}
+
+  > ul {
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    ${({vertical}) => !vertical && 'display: flex;'}
+  }
+`;
+
+export const StyledMenuGroupTitle = styled.div<
+  Pick<MenuProps, 'vertical'> & MenuGroupProps
+>`
+  box-sizing: border-box;
+
+  ${getResponsiveSpace(
+    'marginBottom',
+    'menuGroup.title',
+    'title',
+    'spaceInline',
+  )}
+
+  ${getResponsiveSpace(
+    space => ({paddingLeft: space, paddingRight: space}),
+    'menuGroup.title',
+    'title',
+    'spaceInset',
+  )}
+`;
+
 export const StyledMenuItem = styled.li<
-  Pick<MenuProps, 'vertical' | 'distribution'> & Pick<MenuProps, 'overrides'>
+  Pick<MenuProps, 'vertical'> & Pick<MenuProps, 'overrides'>
 >`
   box-sizing: border-box;
 
@@ -49,16 +82,6 @@ export const StyledMenuItem = styled.li<
       '',
       'spaceInline',
     )}
-
-  display: flex;
-  // align-items: stretch;
-  width: ${({vertical}) => (vertical ? '100%' : '')};
-  overflow: hidden;
-  ${({distribution, vertical}) =>
-    getFlexFromTabsDistribution(
-      distribution as MenuItemDistribution,
-      vertical as boolean,
-    )};
 `;
 
 const menuItemFlexAlign = {
@@ -84,4 +107,30 @@ export const StyledButton = styled(Button)<{
       justifyContent: menuItemFlexAlign[align],
       textAlign: menuItemTextAlign[align] as TextAlignProperty,
     }}
+`;
+
+export const StyledMenuDivider = styled.li<
+  Pick<MenuProps, 'vertical'> & Pick<MenuProps, 'overrides'>
+>`
+  box-sizing: border-box;
+
+  .nk-menu-group + & {
+    ${({vertical}) =>
+      getResponsiveSpace(
+        vertical ? 'marginBottom' : 'marginRight',
+        `menuGroup`,
+        '',
+        'spaceInline',
+      )}
+  }
+
+  .nk-menu-item + & {
+    ${({vertical}) =>
+      getResponsiveSpace(
+        vertical ? 'marginBottom' : 'marginRight',
+        `menu`,
+        '',
+        'spaceInline',
+      )}
+  }
 `;

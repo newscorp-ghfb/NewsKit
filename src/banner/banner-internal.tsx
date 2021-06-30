@@ -14,7 +14,7 @@ import {renderIfReactComponent} from '../utils/component';
 import {Flow, StackDistribution} from '../stack';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {BreakpointKeys, useTheme} from '../theme';
-import {useReactKeys} from '../utils/hooks/use-react-keys';
+import {useReactKeys} from '../utils/hooks';
 import {Button, ButtonProps} from '../button';
 import {IconFilledClose} from '../icons';
 import {filterOutFalsyProperties} from '../utils/filter-object';

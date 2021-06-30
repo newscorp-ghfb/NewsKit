@@ -1,6 +1,6 @@
 import React from 'react';
 import {ToastProps} from './types';
-import {Divider, DividerProps} from '../divider';
+import {Divider, DividerOverrides} from '../divider';
 import {renderIfReactComponent} from '../utils/component';
 import {
   StyledToastContainer,
@@ -27,7 +27,7 @@ export const Toast: React.FC<ToastProps> = ({
   ...restProps
 }) => {
   const theme = useTheme();
-  const dividerOverrides: DividerProps['overrides'] = {
+  const dividerOverrides: DividerOverrides = {
     ...theme.componentDefaults.toast.divider,
     ...filterOutFalsyProperties(overrides?.divider),
   };

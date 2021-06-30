@@ -21,6 +21,7 @@ export * from './inline-message';
 export * from './image';
 export * from './instrumentation';
 export * from './link';
+export * from './menu';
 export * from './ordered-list';
 export * from './unordered-list';
 export * from './utils';
