@@ -601,19 +601,6 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  copy_dev_baselines_to_master:
-    <<: *working_directory
-    executor: java
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Copy Dev Baselines to Master
-          command: |
-            curl -L "https://dl.bintray.com/applitoolseyes/generic/EyesUtilities_1.3.1.jar" -o EyesUtilities_1.3.1.jar
-            java -jar EyesUtilities_1.3.1.jar copyBaselines -s develop -t master -k ${APPLITOOLS_API_KEY_WITH_MERGE_CREDENTIALS}
-
   create_release_candidate:
     <<: *working_directory
     executor: node
@@ -1149,13 +1136,6 @@ workflows:
           requires:
             - init_aws
     # master jobs
-      - approve_deployment:
-          type: approval
-          <<: *only_master
-      - copy_dev_baselines_to_master:
-          <<: *only_master
-          requires:
-            - approve_deployment
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_master
@@ -1171,7 +1151,6 @@ workflows:
           environment: prod
           <<: *only_master
           requires:
-            - approve_deployment
             - publish_npm
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_prod
