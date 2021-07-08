@@ -999,14 +999,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -1022,14 +1028,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -1045,14 +1057,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -5145,14 +5163,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -5168,14 +5192,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -5191,14 +5221,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -9291,14 +9327,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -9314,14 +9356,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -9337,14 +9385,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -13437,14 +13491,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -13460,14 +13520,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -13483,14 +13549,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -17583,14 +17655,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -17606,14 +17684,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -17629,14 +17713,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -21729,14 +21819,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -21752,14 +21848,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -21775,14 +21877,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -25875,14 +25983,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -25898,14 +26012,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -25921,14 +26041,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -30021,14 +30147,20 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
         "input": Object {
-          "iconSize": "iconSize030",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space080",
+          },
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody030",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize030",
+            "spaceInset": "space080",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -30044,14 +30176,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",
@@ -30067,14 +30205,20 @@ Object {
           "typographyPreset": "utilityLabel020",
         },
         "input": Object {
-          "iconSize": "iconSize020",
-          "iconSpace": "space030",
+          "leadingIcon": Object {
+            "iconOffset": "space030",
+            "spaceInset": "space070",
+          },
           "minHeight": "sizing060",
           "spaceInset": "spaceInset020",
-          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
           "typographyPreset": "utilityBody020",
+          "validationIcon": Object {
+            "iconOffset": "space030",
+            "iconSize": "iconSize020",
+            "spaceInset": "space070",
+          },
         },
         "label": Object {
           "spaceInline": "space010",

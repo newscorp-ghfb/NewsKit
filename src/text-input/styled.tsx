@@ -1,40 +1,23 @@
 import {
   styled,
   getTypographyPreset,
-  getSpacingStackHorizontal,
-  getSpacingInlineHorizontal,
-  getMinHeight,
-  getSpacingInset,
-  getSizingFromTheme,
   getStylePreset,
-  getSpacingFromTheme,
   MQ,
+  getResponsiveSpace,
+  getResponsiveSize,
+  getResponsiveSpacingStackHorizontal,
+  getResponsiveSpacingInlineHorizontal,
 } from '../utils/style';
 import {TextInputProps, TextInputSize} from './types';
 import {TextBlock, TextBlockProps} from '../text-block';
-import {getToken} from '../utils/get-token';
 import {Block, BlockProps} from '../block';
 
 export const StyledTextInputContainer = styled.div<TextInputProps>`
-  ${({theme, overrides}) => {
-    const getSizing = (tokenName: string) => {
-      const token = getToken({theme, overrides}, '', '', tokenName);
-      return getSizingFromTheme(
-        token,
-        undefined,
-      )({
-        theme,
-      });
-    };
-    const width = getSizing('width');
-    return {
-      width,
-    };
-  }}
+  ${getResponsiveSize('width', 'textInput', '', 'width')}
 `;
 
 interface StyledTextInputProps
-  extends Pick<TextInputProps, 'overrides' | 'disabled'> {
+  extends Pick<TextInputProps, 'overrides' | 'disabled' | 'icon'> {
   $size: TextInputSize;
   stylePreset?: MQ<string>;
   id?: string;
@@ -42,25 +25,60 @@ interface StyledTextInputProps
   valid?: boolean;
   role?: string;
   dataTestId?: string;
-  spaceInsetRight?: string;
+  hasIcon?: boolean;
 }
 
 export const InputIconContainer = styled.div`
   position: relative;
 `;
 
-export const IconContainer = styled.span<{iconSpace: string}>`
+export const IconContainer = styled.span<StyledTextInputProps>`
   display: flex;
   position: absolute;
-  right: ${({iconSpace}) => getSpacingFromTheme(iconSpace)};
   top: 50%;
   transform: translate(0, -65%);
+  pointer-events: none;
+
+  ${({valid, invalid, $size, ...rest}) =>
+    valid || invalid
+      ? getResponsiveSpace(
+          'right',
+          `textInput.${$size}.input.validationIcon`,
+          'input.validationIcon',
+          'iconOffset',
+        )(rest)
+      : ''}
+
+  ${({icon, $size, ...rest}) =>
+    icon &&
+    getResponsiveSpace(
+      'left',
+      `textInput.${$size}.input.leadingIcon`,
+      'input.leadingIcon',
+      'iconOffset',
+    )(rest)}
 `;
 
 export const StyledInput = styled.input<StyledTextInputProps>`
   & {
-    padding-right: ${({spaceInsetRight, valid, invalid}) =>
-      (valid || invalid) && getSpacingFromTheme(spaceInsetRight)};
+    ${({valid, invalid, $size, ...rest}) =>
+      valid || invalid
+        ? getResponsiveSpace(
+            'paddingRight',
+            `textInput.${$size}.input.validationIcon`,
+            'input.validationIcon',
+            'spaceInset',
+          )(rest)
+        : ''}
+    ${({hasIcon, $size, ...rest}) =>
+      hasIcon
+        ? getResponsiveSpace(
+            'paddingLeft',
+            `textInput.${$size}.input.leadingIcon`,
+            'input.leadingIcon',
+            'spaceInset',
+          )(rest)
+        : ''}
   }
   box-sizing: border-box;
   width: 100%;
@@ -74,11 +92,25 @@ export const StyledInput = styled.input<StyledTextInputProps>`
     getTypographyPreset(`textInput.${$size}.input`, 'input', {
       withCrop: true,
     })}
-  ${({$size}) => getSpacingInset(`textInput.${$size}.input`, 'input')}
-  ${({$size}) => getSpacingStackHorizontal(`textInput.${$size}.input`, 'input')}
+  
   ${({$size}) =>
-    getSpacingInlineHorizontal(`textInput.${$size}.input`, 'input')} 
-  min-height: ${({$size}) => getMinHeight(`textInput.${$size}.input`, 'input')}
+    getResponsiveSpace(
+      'padding',
+      `textInput.${$size}.input`,
+      'input',
+      'spaceInset',
+    )}
+  ${({$size}) =>
+    getResponsiveSpacingStackHorizontal(`textInput.${$size}.input`, 'input')}
+  ${({$size}) =>
+    getResponsiveSpacingInlineHorizontal(`textInput.${$size}.input`, 'input')}
+  ${({$size}) =>
+    getResponsiveSize(
+      'minHeight',
+      `textInput.${$size}.input`,
+      'input',
+      'minHeight',
+    )}
 `;
 
 export const StyledLabel = styled.label<StyledTextInputProps>`
@@ -89,9 +121,9 @@ export const StyledLabel = styled.label<StyledTextInputProps>`
       withCrop: true,
     })}
     ${({$size}) =>
-    getSpacingStackHorizontal(`textInput.${$size}.label`, 'label')}
+    getResponsiveSpacingStackHorizontal(`textInput.${$size}.label`, 'label')}
     ${({$size}) =>
-    getSpacingInlineHorizontal(`textInput.${$size}.label`, 'label')};
+    getResponsiveSpacingInlineHorizontal(`textInput.${$size}.label`, 'label')}
 `;
 
 export const StyledAssistiveText = styled(TextBlock)<
@@ -113,6 +145,11 @@ export const StyledAssistiveText = styled(TextBlock)<
 export const StyledAssistiveTextContainer = styled(Block)<
   Omit<BlockProps, 'overrides'> & StyledTextInputProps
 >`
-  min-height: ${({$size}) =>
-    getMinHeight(`textInput.${$size}.assistiveText`, 'assistiveText')};
+  ${({$size}) =>
+    getResponsiveSize(
+      'minHeight',
+      `textInput.${$size}.assistiveText`,
+      'assistiveText',
+      'minHeight',
+    )};
 `;

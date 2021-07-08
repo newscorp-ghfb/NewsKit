@@ -1,3 +1,4 @@
+import {NewsKitIconProps} from '../icons';
 import {MQ} from '../utils/style';
 
 export enum TextInputSize {
@@ -16,6 +17,7 @@ export interface TextInputProps
   ariaLabel?: string;
   rules?: Record<string, string | object>;
   dataTestId?: string;
+  icon?: React.ReactElement<NewsKitIconProps>;
   overrides?: {
     width?: string;
     input?: {
@@ -25,6 +27,15 @@ export interface TextInputProps
       typographyPreset?: MQ<string>;
       spaceStack?: MQ<string>;
       spaceInline?: MQ<string>;
+      leadingIcon?: {
+        iconOffset?: MQ<string>;
+        spaceInset?: MQ<string>;
+      };
+      validationIcon?: {
+        iconOffset?: MQ<string>;
+        spaceInset?: MQ<string>;
+        iconSize?: MQ<string>;
+      };
     };
     label?: {
       stylePreset?: MQ<string>;

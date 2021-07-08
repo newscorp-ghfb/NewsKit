@@ -7,6 +7,7 @@ import {
 } from '../../test/test-utils';
 import {TextInputSize} from '../types';
 import {createTheme} from '../../theme';
+import {IconFilledSearch} from '../../icons';
 
 const renderTextInput = (props: TextInputProps) => (
   <TextInput
@@ -233,5 +234,50 @@ describe('TextInput', () => {
     });
 
     expect(onChange).toHaveBeenCalled();
+  });
+
+  test('renders text input with leading icon', () => {
+    const props: TextInputProps = {
+      label: 'label',
+      icon: (
+        <IconFilledSearch
+          overrides={{
+            size: 'iconSize020',
+            stylePreset: 'inkSubtle',
+          }}
+        />
+      ),
+    };
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders text input with overrides for leading and validation icon', () => {
+    const props: TextInputProps = {
+      label: 'label',
+      icon: (
+        <IconFilledSearch
+          overrides={{
+            size: 'iconSize020',
+            stylePreset: 'inkSubtle',
+          }}
+        />
+      ),
+      overrides: {
+        input: {
+          leadingIcon: {
+            iconOffset: 'space040',
+            spaceInset: 'space080',
+          },
+          validationIcon: {
+            iconOffset: 'space040',
+            spaceInset: 'space080',
+            iconSize: 'iconSize030',
+          },
+        },
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderTextInput, props);
+    expect(fragment).toMatchSnapshot();
   });
 });

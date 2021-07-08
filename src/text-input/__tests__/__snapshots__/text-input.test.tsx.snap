@@ -1197,6 +1197,239 @@ exports[`TextInput renders small text input 1`] = `
 </DocumentFragment>
 `;
 
+exports[`TextInput renders text input with leading icon 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-1 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -65%);
+  -moz-transform: translate(0, -65%);
+  -ms-transform: translate(0, -65%);
+  transform: translate(0, -65%);
+  pointer-events: none;
+  left: 12px;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #535353;
+  fill: #535353;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+  color: #535353;
+  fill: #535353;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-6 {
+  padding-left: 40px;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-6::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-6::placeholder {
+  color: #535353;
+}
+
+.emotion-6:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-6:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-7 {
+  min-height: 12px;
+}
+
+.emotion-8 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-8:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+    label="label"
+  >
+    <label
+      class="emotion-1"
+      for="mock-nk-1"
+    >
+      label
+    </label>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+        </svg>
+      </span>
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
+        class="emotion-6"
+        data-testid="text-input-email"
+        id="mock-nk-1"
+        spellcheck="false"
+        type="text"
+      />
+    </div>
+    <div
+      class="emotion-7"
+    >
+      <p
+        class="emotion-8"
+        id="mock-nk-1-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`TextInput renders text input with overrides 1`] = `
 <DocumentFragment>
   .emotion-1 {
@@ -1321,6 +1554,239 @@ exports[`TextInput renders text input with overrides 1`] = `
     >
       <p
         class="emotion-5"
+        id="mock-nk-1-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders text input with overrides for leading and validation icon 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-1 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -65%);
+  -moz-transform: translate(0, -65%);
+  -ms-transform: translate(0, -65%);
+  transform: translate(0, -65%);
+  pointer-events: none;
+  left: 12px;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #535353;
+  fill: #535353;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+  color: #535353;
+  fill: #535353;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-6 {
+  padding-left: 48px;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-6::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-6::placeholder {
+  color: #535353;
+}
+
+.emotion-6:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-6:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-7 {
+  min-height: 12px;
+}
+
+.emotion-8 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-8:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+    label="label"
+  >
+    <label
+      class="emotion-1"
+      for="mock-nk-1"
+    >
+      label
+    </label>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+        </svg>
+      </span>
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        aria-invalid="false"
+        class="emotion-6"
+        data-testid="text-input-email"
+        id="mock-nk-1"
+        spellcheck="false"
+        type="text"
+      />
+    </div>
+    <div
+      class="emotion-7"
+    >
+      <p
+        class="emotion-8"
         id="mock-nk-1-assistive-text"
       >
         Assistive Text

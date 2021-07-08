@@ -488,12 +488,13 @@ exports[`Form renders with error and with submit validation and revalidation mod
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 12px;
   top: 50%;
   -webkit-transform: translate(0, -65%);
   -moz-transform: translate(0, -65%);
   -ms-transform: translate(0, -65%);
   transform: translate(0, -65%);
+  pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {
@@ -934,12 +935,13 @@ exports[`Form renders with error on blur 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 12px;
   top: 50%;
   -webkit-transform: translate(0, -65%);
   -moz-transform: translate(0, -65%);
   -ms-transform: translate(0, -65%);
   transform: translate(0, -65%);
+  pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {
@@ -1455,12 +1457,13 @@ exports[`Form renders with error on submit 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 12px;
   top: 50%;
   -webkit-transform: translate(0, -65%);
   -moz-transform: translate(0, -65%);
   -ms-transform: translate(0, -65%);
   transform: translate(0, -65%);
+  pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {
@@ -1901,12 +1904,13 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 12px;
   top: 50%;
   -webkit-transform: translate(0, -65%);
   -moz-transform: translate(0, -65%);
   -ms-transform: translate(0, -65%);
   transform: translate(0, -65%);
+  pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {

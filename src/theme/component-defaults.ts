@@ -690,9 +690,15 @@ export const componentDefaults = {
         minHeight: 'sizing060',
         typographyPreset: 'utilityBody020',
         spaceStack: 'space020',
-        iconSize: 'iconSize020',
-        iconSpace: 'space030',
-        spaceInsetRight: 'space070',
+        leadingIcon: {
+          iconOffset: 'space030',
+          spaceInset: 'space070',
+        },
+        validationIcon: {
+          iconOffset: 'space030',
+          spaceInset: 'space070',
+          iconSize: 'iconSize020',
+        },
       },
       assistiveText: {
         stylePreset: 'textInputAssistiveText',
@@ -713,9 +719,15 @@ export const componentDefaults = {
         minHeight: 'sizing080',
         typographyPreset: 'utilityBody020',
         spaceStack: 'space020',
-        iconSize: 'iconSize020',
-        iconSpace: 'space030',
-        spaceInsetRight: 'space070',
+        leadingIcon: {
+          iconOffset: 'space030',
+          spaceInset: 'space070',
+        },
+        validationIcon: {
+          iconOffset: 'space030',
+          spaceInset: 'space070',
+          iconSize: 'iconSize020',
+        },
       },
       assistiveText: {
         stylePreset: 'textInputAssistiveText',
@@ -736,9 +748,15 @@ export const componentDefaults = {
         minHeight: 'sizing090',
         typographyPreset: 'utilityBody030',
         spaceStack: 'space020',
-        iconSize: 'iconSize030',
-        iconSpace: 'space030',
-        spaceInsetRight: 'space080',
+        leadingIcon: {
+          iconOffset: 'space030',
+          spaceInset: 'space080',
+        },
+        validationIcon: {
+          iconOffset: 'space030',
+          spaceInset: 'space080',
+          iconSize: 'iconSize030',
+        },
       },
       assistiveText: {
         stylePreset: 'textInputAssistiveText',

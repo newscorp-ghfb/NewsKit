@@ -10,6 +10,7 @@ import {Grid, Cell} from '../../grid';
 import {Block} from '../../block';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {ThemeProvider, createTheme} from '../../theme';
+import {IconFilledSearch} from '../../icons';
 
 const Container = styled.div`
   ${getMediaQueryFromTheme('md')} {
@@ -295,6 +296,97 @@ export default {
                 }}
               />
             </ThemeProvider>
+          </Container>
+        </React.Fragment>
+      ),
+    },
+    {
+      storyName: 'text-input-with-leading-icon',
+      storyFn: () => (
+        <React.Fragment>
+          <StorybookHeading>Text Input With Leading Icon</StorybookHeading>
+          <Container>
+            <Stack
+              flow="horizontal-center"
+              spaceInline="space070"
+              spaceStack="space050"
+              wrap="wrap"
+            >
+              <Block>
+                <StorybookSubHeading>Small</StorybookSubHeading>
+                <TextInput
+                  size={TextInputSize.Small}
+                  label="Label"
+                  assistiveText="Assistive text"
+                  icon={
+                    <IconFilledSearch
+                      overrides={{
+                        size: 'iconSize020',
+                        stylePreset: 'inkSubtle',
+                      }}
+                    />
+                  }
+                />
+              </Block>
+              <Block>
+                <StorybookSubHeading>Medium</StorybookSubHeading>
+                <TextInput
+                  size={TextInputSize.Medium}
+                  label="Label"
+                  assistiveText="Assistive text"
+                  icon={
+                    <IconFilledSearch
+                      overrides={{
+                        size: 'iconSize020',
+                        stylePreset: 'inkSubtle',
+                      }}
+                    />
+                  }
+                />
+              </Block>
+              <Block>
+                <StorybookSubHeading>Large</StorybookSubHeading>
+                <TextInput
+                  size={TextInputSize.Large}
+                  label="Label"
+                  assistiveText="Assistive text"
+                  icon={
+                    <IconFilledSearch
+                      overrides={{
+                        size: 'iconSize030',
+                        stylePreset: 'inkSubtle',
+                      }}
+                    />
+                  }
+                />
+              </Block>
+              <Block>
+                <StorybookSubHeading>
+                  Medium with custom iconOffset and spaceInset
+                </StorybookSubHeading>
+                <TextInput
+                  size={TextInputSize.Medium}
+                  label="Label"
+                  assistiveText="Assistive text"
+                  icon={
+                    <IconFilledSearch
+                      overrides={{
+                        size: 'iconSize020',
+                        stylePreset: 'inkSubtle',
+                      }}
+                    />
+                  }
+                  overrides={{
+                    input: {
+                      leadingIcon: {
+                        spaceInset: 'space080',
+                        iconOffset: 'space040',
+                      },
+                    },
+                  }}
+                />
+              </Block>
+            </Stack>
           </Container>
         </React.Fragment>
       ),

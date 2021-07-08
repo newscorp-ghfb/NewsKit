@@ -72,6 +72,9 @@ Text Input has a number of props to facilitate a variety of uses:
     input is inside a Form component. For more information please see the Form
     component.
   </Prop>
+  <Prop name="icon" type="React.ReactElement<NewsKitIconProps>">
+    This prop allows the text input component to take a leading icon, for example, the search icon.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements.
@@ -103,14 +106,30 @@ Text Input has a number of props to facilitate a variety of uses:
         sizing token from the theme, or any CSS length value. By default,
         sizing060, sizing080 or sizing090 is used depending on the `size` prop.
       </Prop>
-      <Prop name="iconSpace" type="SpacingPresetKeys">
-        Applies space between the validation icon and right side of the input
-        field.
+      <Prop name="leadingIcon" type="object">
+        <Prop name="iconOffset" type="MQ<string>">
+          Applies space between the leading icon and left side of the input
+          field.
+        </Prop>
+        <Prop name="spaceInset" type="MQ<string>">
+          This spacing value overrides the padding value (applied by the
+          spaceInset token) on the left of the input when the leading icon is
+          showing. This avoids any input text rendering behind the icon.
+        </Prop>
       </Prop>
-      <Prop name="spaceInsetRight" type="SpacingPresetKeys">
-        This spacing value overrides the padding value (applied by the
-        spaceInset token) on the right of the input when the validation icon is
-        showing. This avoids any input text rendering behind the icon.
+      <Prop name="validationIcon" type="object">
+        <Prop name="iconOffset" type="MQ<string>">
+          Applies space between the validation icon and right side of the input
+          field.
+        </Prop>
+        <Prop name="spaceInset" type="MQ<string>">
+          This spacing value overrides the padding value (applied by the
+          spaceInset token) on the right of the input when the validation icon is
+          showing. This avoids any input text rendering behind the icon.
+        </Prop>
+        <Prop name="iconSize" type="MQ<string>">
+          Overrides the iconSize of the validation icon.
+        </Prop>
       </Prop>
     </Prop>
     <Prop name="inputLabel" type="object">

@@ -26,6 +26,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       size = TextInputSize.Medium,
       label,
       disabled,
+      icon,
       hideLabel = false,
       ariaLabel,
       placeholder,
@@ -73,24 +74,10 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       (errorText && `${id}-error-text`) ||
       (assistiveText && `${id}-assistive-text`);
 
-    const spaceInsetRight = getToken(
+    const validationIconSize = getToken(
       {theme, overrides},
-      `textInput.${size}.input`,
-      'input',
-      'spaceInsetRight',
-    );
-
-    const iconSpace = getToken(
-      {theme, overrides},
-      `textInput.${size}.input`,
-      'input',
-      'iconSpace',
-    );
-
-    const iconSize = getToken(
-      {theme, overrides},
-      `textInput.${size}.input`,
-      'input',
+      `textInput.${size}.input.validationIcon`,
+      'input.validationIcon',
       'iconSize',
     );
 
@@ -135,6 +122,11 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
           {!hideLabel && label}
         </StyledLabel>
         <InputIconContainer>
+          {icon && (
+            <IconContainer $size={size} icon={icon}>
+              {icon}
+            </IconContainer>
+          )}
           <StyledInput
             {...rest}
             ref={composeRefs(inputRef, ref)}
@@ -152,21 +144,27 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
             aria-invalid={!!errorText}
             onBlur={eventHandlerOnBlur}
             onChange={eventHandlerOnChange}
-            spaceInsetRight={spaceInsetRight}
+            hasIcon={!!icon}
             spellCheck={spellCheck}
           />
           {(!!errorText || valid) && (
-            <IconContainer iconSpace={iconSpace}>
+            <IconContainer $size={size} valid={valid} invalid={!!errorText}>
               {(!!errorText && (
                 <IconFilledError
                   data-testid="error-icon"
-                  overrides={{size: iconSize, stylePreset: 'iconNegative'}}
+                  overrides={{
+                    size: validationIconSize,
+                    stylePreset: 'iconNegative',
+                  }}
                 />
               )) ||
                 (valid && (
                   <IconFilledCheckCircle
                     data-testid="tick-icon"
-                    overrides={{size: iconSize, stylePreset: 'iconPositive'}}
+                    overrides={{
+                      size: validationIconSize,
+                      stylePreset: 'iconPositive',
+                    }}
                   />
                 ))}
             </IconContainer>
