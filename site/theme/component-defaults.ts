@@ -75,4 +75,36 @@ export const componentDefaults = {
   tabs: {
     spaceInline: 'space060',
   },
+  banner: {
+    horizontal: {
+      content: {
+        title: {
+          stylePreset: 'inkWhite',
+        },
+        message: {
+          stylePreset: 'inkWhite',
+        },
+      },
+      actions: {
+        closeButton: {
+          stylePreset: 'buttonMinimalInverseDocs',
+        },
+      },
+    },
+    vertical: {
+      content: {
+        title: {
+          stylePreset: 'inkWhite',
+        },
+        message: {
+          stylePreset: 'inkWhite',
+        },
+      },
+      actions: {
+        closeButton: {
+          stylePreset: 'buttonOutlinedInverseDocs',
+        },
+      },
+    },
+  },
 };

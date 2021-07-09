@@ -222,8 +222,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -326,19 +326,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -353,19 +353,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -1543,6 +1543,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -1639,6 +1660,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -2915,6 +2964,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {
@@ -4281,7 +4335,7 @@ Object {
     "inkHeadingLinkActive": "#2F75D7",
     "inkHeadingLinkHover": "#2F75D7",
     "inkHeadingLinkVisited": "{{colors.inkContrast}}",
-    "inkInformative": "{{colors.teal070}}",
+    "inkInformative": "{{colors.teal060}}",
     "inkInverse": "{{colors.white}}",
     "inkNegative": "{{colors.red070}}",
     "inkNonEssential": "{{colors.neutral040}}",
@@ -4331,7 +4385,7 @@ Object {
     "interfaceBrand040": "{{colors.neutral070}}",
     "interfaceBrand050": "{{colors.neutral080}}",
     "interfaceBrand060": "{{colors.teal050}}",
-    "interfaceInformative010": "{{colors.teal070}}",
+    "interfaceInformative010": "{{colors.teal060}}",
     "interfaceInformative020": "{{colors.teal010}}",
     "interfaceNegative010": "{{colors.red070}}",
     "interfaceNegative020": "{{colors.red010}}",
@@ -4386,8 +4440,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -4490,19 +4544,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -4517,19 +4571,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -5707,6 +5761,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -5803,6 +5878,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -7079,6 +7182,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {
@@ -8550,8 +8658,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -8654,19 +8762,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -8681,19 +8789,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -9871,6 +9979,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -9967,6 +10096,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -11243,6 +11400,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {
@@ -12609,7 +12771,7 @@ Object {
     "inkHeadingLinkActive": "#2F75D7",
     "inkHeadingLinkHover": "#2F75D7",
     "inkHeadingLinkVisited": "{{colors.inkContrast}}",
-    "inkInformative": "{{colors.teal070}}",
+    "inkInformative": "{{colors.teal060}}",
     "inkInverse": "{{colors.white}}",
     "inkNegative": "{{colors.red070}}",
     "inkNonEssential": "{{colors.neutral040}}",
@@ -12659,7 +12821,7 @@ Object {
     "interfaceBrand040": "{{colors.blue060}}",
     "interfaceBrand050": "{{colors.blue080}}",
     "interfaceBrand060": "{{colors.teal050}}",
-    "interfaceInformative010": "{{colors.teal070}}",
+    "interfaceInformative010": "{{colors.teal060}}",
     "interfaceInformative020": "{{colors.teal010}}",
     "interfaceNegative010": "{{colors.red070}}",
     "interfaceNegative020": "{{colors.red010}}",
@@ -12714,8 +12876,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -12818,19 +12980,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -12845,19 +13007,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -14035,6 +14197,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -14131,6 +14314,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -15407,6 +15618,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {
@@ -16878,8 +17094,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -16982,19 +17198,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -17009,19 +17225,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -18199,6 +18415,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -18295,6 +18532,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -19571,6 +19836,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {
@@ -20937,7 +21207,7 @@ Object {
     "inkHeadingLinkActive": "#2F75D7",
     "inkHeadingLinkHover": "#2F75D7",
     "inkHeadingLinkVisited": "{{colors.inkContrast}}",
-    "inkInformative": "{{colors.teal070}}",
+    "inkInformative": "{{colors.teal060}}",
     "inkInverse": "{{colors.white}}",
     "inkNegative": "{{colors.red070}}",
     "inkNonEssential": "{{colors.neutral040}}",
@@ -20987,7 +21257,7 @@ Object {
     "interfaceBrand040": "{{colors.purple060}}",
     "interfaceBrand050": "{{colors.purple080}}",
     "interfaceBrand060": "{{colors.teal050}}",
-    "interfaceInformative010": "{{colors.teal070}}",
+    "interfaceInformative010": "{{colors.teal060}}",
     "interfaceInformative020": "{{colors.teal010}}",
     "interfaceNegative010": "{{colors.red070}}",
     "interfaceNegative020": "{{colors.red010}}",
@@ -21042,8 +21312,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -21146,19 +21416,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -21173,19 +21443,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -22363,6 +22633,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -22459,6 +22750,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -23735,6 +24054,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {
@@ -25206,8 +25530,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -25310,19 +25634,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -25337,19 +25661,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -26527,6 +26851,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -26623,6 +26968,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -27899,6 +28272,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {
@@ -29265,7 +29643,7 @@ Object {
     "inkHeadingLinkActive": "#2F75D7",
     "inkHeadingLinkHover": "#2F75D7",
     "inkHeadingLinkVisited": "{{colors.inkContrast}}",
-    "inkInformative": "{{colors.teal070}}",
+    "inkInformative": "{{colors.teal060}}",
     "inkInverse": "{{colors.white}}",
     "inkNegative": "{{colors.red070}}",
     "inkNonEssential": "{{colors.neutral040}}",
@@ -29315,7 +29693,7 @@ Object {
     "interfaceBrand040": "{{colors.teal070}}",
     "interfaceBrand050": "{{colors.teal080}}",
     "interfaceBrand060": "{{colors.teal050}}",
-    "interfaceInformative010": "{{colors.teal070}}",
+    "interfaceInformative010": "{{colors.teal060}}",
     "interfaceInformative020": "{{colors.teal010}}",
     "interfaceNegative010": "{{colors.red070}}",
     "interfaceNegative020": "{{colors.red010}}",
@@ -29370,8 +29748,8 @@ Object {
     "teal030": "#81D2DA",
     "teal040": "#65BBC4",
     "teal050": "#41A0AA",
-    "teal060": "#2C8C96",
-    "teal070": "#20676F",
+    "teal060": "#06808E",
+    "teal070": "#0D575E",
     "teal080": "#0C4E55",
     "teal090": "#09414a",
     "teal100": "#083136",
@@ -29474,19 +29852,19 @@ Object {
       "horizontal": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
+            "stylePreset": "buttonMinimalInverseDocs",
           },
           "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space030",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -29501,19 +29879,19 @@ Object {
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
+            "stylePreset": "buttonOutlinedInverseDocs",
           },
           "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityBody010",
           },
           "spaceInline": "space050",
           "title": Object {
             "spaceStack": "space030",
-            "stylePreset": "inkInverse",
+            "stylePreset": "inkWhite",
             "typographyPreset": "utilityHeading010",
           },
         },
@@ -30691,6 +31069,27 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
       },
     },
+    "buttonMinimalInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkWhite}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
     "buttonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveNegative020}}",
@@ -30787,6 +31186,34 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedInverseDocs": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.interactiveInverse030}}",
         "iconColor": "{{colors.inkInverse}}",
       },
       "disabled": Object {
@@ -32063,6 +32490,11 @@ Object {
     "indeterminateProgressIndicatorSecondary": Object {
       "base": Object {
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkWhite": Object {
+      "base": Object {
+        "color": "{{colors.white}}",
       },
     },
     "inlineMessage": Object {

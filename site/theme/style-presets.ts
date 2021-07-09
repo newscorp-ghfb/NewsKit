@@ -592,4 +592,58 @@ export const stylePresets = {
         '{{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
     },
   },
+  inkWhite: {
+    base: {
+      color: '{{colors.white}}',
+    },
+  },
+  buttonMinimalInverseDocs: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkInverse}}',
+      iconColor: '{{colors.inkWhite}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse010}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+    },
+    disabled: {
+      color: '{{colors.inkNonEssential}}',
+      iconColor: '{{colors.inkNonEssential}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+    },
+  },
+  buttonOutlinedInverseDocs: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interactiveInverse030}}',
+      borderWidth: '{{borders.borderWidth010}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.interactiveInverse030}}',
+      iconColor: '{{colors.inkInverse}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse010}}',
+      borderColor: '{{colors.interactiveInverse040}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      borderColor: '{{colors.interactiveInverse050}}',
+    },
+    disabled: {
+      borderColor: '{{colors.interactiveDisabled010}}',
+      color: '{{colors.inkNonEssential}}',
+      iconColor: '{{colors.inkNonEssential}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      borderStyle: 'none',
+    },
+  },
 };

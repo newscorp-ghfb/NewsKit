@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {
+  Banner,
   Block,
   Button,
   Cell,
@@ -8,10 +9,12 @@ import {
   getColorCssFromTheme,
   getMediaQueryFromTheme,
   getSizingCssFromTheme,
+  getSpacingCssFromTheme,
   Grid,
   Stack,
   styled,
   TextBlock,
+  Visible,
 } from 'newskit';
 import {HeroImage} from '../components/illustrations/landing-page/hero-image';
 import {SectionIntroduction} from '../components/section-introduction';
@@ -105,8 +108,9 @@ const FindOutMore = styled.section`
   })};
 `;
 
-const HeroImageContainer = styled(Cell)`
+const HeroImageContainerCommon = styled(Cell)`
   text-align: right;
+
   svg {
     height: auto;
     max-width: 125%;
@@ -114,12 +118,9 @@ const HeroImageContainer = styled(Cell)`
 
     ${getMediaQueryFromTheme('xs', 'sm')} {
       max-width: 130%;
-      margin-top: -80%;
       padding-bottom: 24px;
     }
-    ${getMediaQueryFromTheme('sm', 'md')} {
-      margin-top: -55%;
-    }
+
     ${getMediaQueryFromTheme('md', 'lg')} {
       margin-top: -75%;
     }
@@ -129,6 +130,27 @@ const HeroImageContainer = styled(Cell)`
     ${getMediaQueryFromTheme('xl')} {
       max-width: 105%;
       margin-right: -25%;
+    }
+  }
+`;
+
+const HeroImageContainerWithoutBanner = styled(HeroImageContainerCommon)`
+  svg {
+    ${getMediaQueryFromTheme('xs', 'sm')} {
+      margin-top: -80%;
+    }
+    ${getMediaQueryFromTheme('sm', 'md')} {
+      margin-top: -55%;
+    }
+  }
+`;
+const HeroImageContainerBanner = styled(HeroImageContainerCommon)`
+  svg {
+    ${getMediaQueryFromTheme('xs', 'sm')} {
+      margin-top: -100%;
+    }
+    ${getMediaQueryFromTheme('sm', 'md')} {
+      margin-top: -66%;
     }
   }
 `;
@@ -166,153 +188,235 @@ const heroImageCellProps: CellProps = {
   xl: 6,
 };
 
-export default (layoutProps: LayoutProps) => (
-  <Layout {...layoutProps} newPage hideSidebar path="/index-new">
-    <DotsContainer>
-      <Header xsColumnGutter="space000" xsRowGutter="space000">
-        <HeroTextContainer {...heroTextCellProps}>
-          <Stack flow="vertical-left" stackDistribution="center" wrap="nowrap">
-            <Block spaceStack={{xs: 'space050', md: 'space055'}}>
-              <TextBlock
-                as="h1"
-                stylePreset="inkSubtle"
-                typographyPreset={{
-                  xs: 'editorialHeadline060',
-                  md: 'editorialHeadline070',
-                  lg: 'editorialHeadline080',
-                }}
-              >
-                Collaborate
-              </TextBlock>
-            </Block>
-            <Block spaceStack={{xs: 'space050', md: 'space055'}}>
-              <TextBlock
-                as="h1"
-                stylePreset="inkBrand010"
-                typographyPreset={{
-                  xs: 'editorialHeadline060',
-                  md: 'editorialHeadline070',
-                  lg: 'editorialHeadline080',
-                }}
-              >
-                Create
-              </TextBlock>
-            </Block>
-            <Block spaceStack={{xs: 'space060', md: 'space070'}}>
-              <TextBlock
-                as="h1"
-                stylePreset="inkBrand020"
-                typographyPreset={{
-                  xs: 'editorialHeadline060',
-                  md: 'editorialHeadline070',
-                  lg: 'editorialHeadline080',
-                }}
-              >
-                Innovate
-              </TextBlock>
-            </Block>
-            <Block spaceStack={{xs: 'space060', md: 'space070'}}>
-              <TextBlock
-                stylePreset="inkBase"
-                typographyPreset={{
-                  xs: 'editorialSubheadline010',
-                  md: 'editorialSubheadline020',
-                }}
-              >
-                Components and guidelines to help increase the speed of creation
-                and innovation in News UK’s digital teams.
-              </TextBlock>
-            </Block>
-            <Block spaceStack="space045">
-              <TextBlock
-                stylePreset="inkSubtle"
-                typographyPreset={{
-                  xs: 'utilityLabel010',
-                  md: 'utilityLabel020',
-                }}
-              >
-                Get started
-              </TextBlock>
-            </Block>
+const StyledFullWidthVisible = styled(Visible)`
+  width: 100%;
+`;
+
+const BannerWrapper = styled.div`
+  position: relative;
+  ${getSpacingCssFromTheme(
+    space => ({
+      marginTop: `-${space}`,
+    }),
+    {xs: 'space000', lg: 'space030'},
+  )}
+  ${getSpacingCssFromTheme('paddingTop', {xs: '40px', md: '43px', lg: '0px'})}
+`;
+
+export default (layoutProps: LayoutProps) => {
+  const [bannerIsActive, setBannerIsActive] = React.useState(true);
+  const bannerOnClose = () => {
+    setBannerIsActive(false);
+    window.localStorage.setItem('newskit-banner-show', 'false');
+  };
+
+  React.useEffect(() => {
+    const storageValue =
+      (typeof window !== 'undefined' &&
+        window.localStorage.getItem('newskit-banner-show')) ||
+      'true';
+    setBannerIsActive(storageValue !== 'false');
+  }, []);
+
+  const bannerActions = [
+    () => {
+      const commonButtonProp = {
+        href:
+          'https://www.newscareers.co.uk/vacancies/vacancy-search-results.aspx',
+
+        children: 'View roles',
+      };
+
+      const stylePreset = 'patternsCardButton';
+      return (
+        <>
+          <StyledFullWidthVisible xs sm>
+            <Button
+              {...commonButtonProp}
+              overrides={{width: '100%', stylePreset}}
+            />
+          </StyledFullWidthVisible>
+          <StyledFullWidthVisible md lg xl>
+            <Button
+              {...commonButtonProp}
+              size="small"
+              overrides={{stylePreset}}
+            />
+          </StyledFullWidthVisible>
+        </>
+      );
+    },
+  ];
+
+  const HeroImageContainer = bannerIsActive
+    ? HeroImageContainerBanner
+    : HeroImageContainerWithoutBanner;
+
+  return (
+    <Layout {...layoutProps} newPage hideSidebar path="/index-new">
+      {bannerIsActive && (
+        <BannerWrapper>
+          <Banner
+            title="We’re hiring"
+            actions={bannerActions}
+            onClose={bannerOnClose}
+          >
+            Looking for your next role? We have a range of product development
+            opportunities.
+          </Banner>
+        </BannerWrapper>
+      )}
+
+      <DotsContainer>
+        <Header xsColumnGutter="space000" xsRowGutter="space000">
+          <HeroTextContainer {...heroTextCellProps}>
             <Stack
-              flow={Flow.HorizontalTop}
-              spaceInline="space030"
-              height="unset"
+              flow="vertical-left"
+              stackDistribution="center"
+              wrap="nowrap"
             >
-              <Button
-                href="/about/introduction"
-                overrides={{width: 'sizing110'}}
+              <Block spaceStack={{xs: 'space050', md: 'space055'}}>
+                <TextBlock
+                  as="h1"
+                  stylePreset="inkSubtle"
+                  typographyPreset={{
+                    xs: 'editorialHeadline060',
+                    md: 'editorialHeadline070',
+                    lg: 'editorialHeadline080',
+                  }}
+                >
+                  Collaborate
+                </TextBlock>
+              </Block>
+              <Block spaceStack={{xs: 'space050', md: 'space055'}}>
+                <TextBlock
+                  as="h1"
+                  stylePreset="inkBrand010"
+                  typographyPreset={{
+                    xs: 'editorialHeadline060',
+                    md: 'editorialHeadline070',
+                    lg: 'editorialHeadline080',
+                  }}
+                >
+                  Create
+                </TextBlock>
+              </Block>
+              <Block spaceStack={{xs: 'space060', md: 'space070'}}>
+                <TextBlock
+                  as="h1"
+                  stylePreset="inkBrand020"
+                  typographyPreset={{
+                    xs: 'editorialHeadline060',
+                    md: 'editorialHeadline070',
+                    lg: 'editorialHeadline080',
+                  }}
+                >
+                  Innovate
+                </TextBlock>
+              </Block>
+              <Block spaceStack={{xs: 'space060', md: 'space070'}}>
+                <TextBlock
+                  stylePreset="inkBase"
+                  typographyPreset={{
+                    xs: 'editorialSubheadline010',
+                    md: 'editorialSubheadline020',
+                  }}
+                >
+                  Components and guidelines to help increase the speed of
+                  creation and innovation in News UK’s digital teams.
+                </TextBlock>
+              </Block>
+              <Block spaceStack="space045">
+                <TextBlock
+                  stylePreset="inkSubtle"
+                  typographyPreset={{
+                    xs: 'utilityLabel010',
+                    md: 'utilityLabel020',
+                  }}
+                >
+                  Get started
+                </TextBlock>
+              </Block>
+              <Stack
+                flow={Flow.HorizontalTop}
+                spaceInline="space030"
+                height="unset"
               >
-                Design
-              </Button>
-              <Button
-                href="/getting-started/code/web"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  width: 'sizing110',
-                }}
-              >
-                Code
-              </Button>
+                <Button
+                  href="/about/introduction"
+                  overrides={{width: 'sizing110'}}
+                >
+                  Design
+                </Button>
+                <Button
+                  href="/getting-started/code/web"
+                  overrides={{
+                    stylePreset: 'buttonOutlinedPrimary',
+                    width: 'sizing110',
+                  }}
+                >
+                  Code
+                </Button>
+              </Stack>
             </Stack>
-          </Stack>
-        </HeroTextContainer>
-        <HeroImageContainer {...heroImageCellProps}>
-          <HeroImage />
-        </HeroImageContainer>
-      </Header>
-      <Explore xsRowGutter="space000">
-        <SectionIntroduction
-          title="Explore"
-          cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
-        />
-        <MediaList
-          layout="3-span"
-          cards={cardsContent}
-          parentCellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
-          gridProps={{xsRowGutter: 'space050'}}
-        />
-      </Explore>
-    </DotsContainer>
-    <FindOutMore>
-      <Grid xsRowGutter="space000">
-        <SectionIntroduction
-          title="Find out more"
-          cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
-        />
-      </Grid>
-      <Grid xsRowGutter="space040" mdRowGutter="space050">
-        <Cell xs={12} xl={10} xlOffset={1}>
-          <FeatureCard
-            title="What's new?"
-            description="NewsKit is constantly evolving. View announcements about the latest updates to the NewsKit design system."
-            stylePrefix="whatsnewCard"
-            layout="horizontal"
-            buttonLabel="Read more"
-            buttonHref="/components/tabs"
+          </HeroTextContainer>
+          <HeroImageContainer {...heroImageCellProps}>
+            <HeroImage />
+          </HeroImageContainer>
+        </Header>
+        <Explore xsRowGutter="space000">
+          <SectionIntroduction
+            title="Explore"
+            cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
           />
-        </Cell>
-        <Cell xs={12} md={6} xl={5} xlOffset={1}>
-          <FeatureCard
-            title="Roadmap"
-            description="The NewsKit roadmap is updated regularly to ensure priorities are aligned to the business goals. "
-            stylePrefix="roadmapCard"
-            layout="vertical"
-            buttonLabel="Read more"
-            buttonHref="/about/roadmap"
+          <MediaList
+            layout="3-span"
+            cards={cardsContent}
+            parentCellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
+            gridProps={{xsRowGutter: 'space050'}}
           />
-        </Cell>
-        <Cell xs={12} md={6} xl={5}>
-          <FeatureCard
-            title="Contribute"
-            description="Contributions needed! There are many ways to share your great work and ideas with the community."
-            stylePrefix="contributeCard"
-            layout="vertical"
-            buttonLabel="Read more"
-            buttonHref="/about/contribute"
+        </Explore>
+      </DotsContainer>
+      <FindOutMore>
+        <Grid xsRowGutter="space000">
+          <SectionIntroduction
+            title="Find out more"
+            cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
           />
-        </Cell>
-      </Grid>
-    </FindOutMore>
-  </Layout>
-);
+        </Grid>
+        <Grid xsRowGutter="space040" mdRowGutter="space050">
+          <Cell xs={12} xl={10} xlOffset={1}>
+            <FeatureCard
+              title="What's new?"
+              description="NewsKit is constantly evolving. View announcements about the latest updates to the NewsKit design system."
+              stylePrefix="whatsnewCard"
+              layout="horizontal"
+              buttonLabel="Read more"
+              buttonHref="/components/tabs"
+            />
+          </Cell>
+          <Cell xs={12} md={6} xl={5} xlOffset={1}>
+            <FeatureCard
+              title="Roadmap"
+              description="The NewsKit roadmap is updated regularly to ensure priorities are aligned to the business goals. "
+              stylePrefix="roadmapCard"
+              layout="vertical"
+              buttonLabel="Read more"
+              buttonHref="/about/roadmap"
+            />
+          </Cell>
+          <Cell xs={12} md={6} xl={5}>
+            <FeatureCard
+              title="Contribute"
+              description="Contributions needed! There are many ways to share your great work and ideas with the community."
+              stylePrefix="contributeCard"
+              layout="vertical"
+              buttonLabel="Read more"
+              buttonHref="/about/contribute"
+            />
+          </Cell>
+        </Grid>
+      </FindOutMore>
+    </Layout>
+  );
+};

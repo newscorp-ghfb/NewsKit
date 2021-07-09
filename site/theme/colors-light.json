@@ -13,8 +13,8 @@
   "teal100": "#083136",
   "teal90": "#093E43",
   "teal080": "#0C4E55",
-  "teal070": "#20676F",
-  "teal060": "#2C8C96",
+  "teal070": "#0D575E",
+  "teal060": "#06808E",
   "teal050": "#41A0AA",
   "teal040": "#65BBC4",
   "teal030": "#81D2DA",
@@ -103,7 +103,7 @@
   "inkPositive": "{{colors.green070}}",
   "inkNegative": "{{colors.red070}}",
   "inkNotice": "{{colors.amber080}}",
-  "inkInformative": "{{colors.teal070}}",
+  "inkInformative": "{{colors.teal060}}",
 
   "inkBrand010": "{{colors.blue040}}",
   "inkBrand020": "{{colors.blue080}}",
@@ -132,7 +132,7 @@
   "interfaceNegative020": "{{colors.red010}}",
   "interfaceNotice010": "{{colors.amber080}}",
   "interfaceNotice020": "{{colors.amber010}}",
-  "interfaceInformative010": "{{colors.teal070}}",
+  "interfaceInformative010": "{{colors.teal060}}",
   "interfaceInformative020": "{{colors.teal010}}",
 
   "interfaceNeutral010": "{{colors.neutral080}}",
