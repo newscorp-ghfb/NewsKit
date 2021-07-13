@@ -1,2 +1,2 @@
 export {InlineMessage} from './inline-message';
-export {InlineMessageProps} from './types';
+export type {InlineMessageProps} from './types';

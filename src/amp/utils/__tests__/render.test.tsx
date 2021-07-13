@@ -40,5 +40,5 @@ describe('amp renderToStaticMarkup test suite', () => {
       });
     }
     expect(result.status).toEqual('PASS');
-  });
+  }, 10000);
 });

@@ -26,7 +26,7 @@ describe('Documentation Site - header-navigation component', () => {
     before(() => cy.viewport('iphone-5'));
 
     it('should contain burger menu when on mobile', () => {
-      cy.visit('/about/introduction');
+      cy.mockConsentAndVisit('/about/introduction');
       cy.get(sidebarTestID).should('exist').and('not.be.visible');
       cy.get(hamburgerIconTestID).first().click();
       cy.get(sidebarTestID).should('be.visible');

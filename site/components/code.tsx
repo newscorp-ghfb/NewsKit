@@ -28,7 +28,7 @@ export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
     <LegacyBlock>
       <SyntaxHighlighter
         data-testid="sample-code"
-        tabIndex={0}
+        codeTagProps={{tabIndex: 0}}
         language={language}
         style={highlighterTheme}
         customStyle={{overflow: 'auto', padding: '1em'}}

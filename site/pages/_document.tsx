@@ -1,7 +1,13 @@
 /* eslint react/no-array-index-key: 0 */
 
 import * as React from 'react';
-import Document, {Head, Main, NextScript, DocumentContext} from 'next/document';
+import Document, {
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  Html,
+} from 'next/document';
 import {Consent, Tealium} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
@@ -10,6 +16,10 @@ interface Props {
   production: boolean;
   productionSiteEnv: boolean;
 }
+
+// Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
+const Base = () =>
+  process.env.BASE_URI ? <base href={process.env.BASE_URI} /> : <></>;
 
 export default class MyDocument extends Document<Props> {
   static async getInitialProps(ctx: DocumentContext) {
@@ -26,8 +36,9 @@ export default class MyDocument extends Document<Props> {
   render() {
     const helmet = Helmet.rewind();
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
+          <Base />
           <style>
             {`
             *, ::after, ::before {
@@ -58,7 +69,7 @@ export default class MyDocument extends Document<Props> {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

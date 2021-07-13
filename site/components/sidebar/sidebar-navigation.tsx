@@ -47,7 +47,11 @@ const NavigationSection: React.FC<NavigationSectionProps> = ({
       {navigationSection.title}
     </StyledSecondLevelHeader>
     {navigationSection.subNav.map(page => (
-      <PageLink key={page.id} page={page} active={page.id === activePagePath} />
+      <PageLink
+        key={page.id}
+        page={page}
+        active={activePagePath.includes(page.id)}
+      />
     ))}
   </>
 );

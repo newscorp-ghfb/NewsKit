@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   slack: circleci/slack@3.4.1
+  aws-cli: circleci/aws-cli@2.0.0
 
 slack_status: &slack_status
   channel: '#nuk-pp-newskit'
@@ -53,21 +54,26 @@ executors:
 
   node:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14.17.1
 
   node-large:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14.17.1
     resource_class: large
+
+  node-xlarge:
+    docker:
+      - image: circleci/node:14.17.1
+    resource_class: xlarge
 
   cypress:
     docker:
-      - image: cypress/browsers:node12.16.2-chrome81-ff75
+      - image: cypress/browsers:node14.16.0-chrome90-ff88
     resource_class: large
 
   java:
     docker:
-     - image: circleci/openjdk:8u252-jdk-buster
+      - image: circleci/openjdk:8u252-jdk-buster
 
 commands:
   terraform_init:
@@ -78,7 +84,7 @@ commands:
       terraform_arg:
         description: provide terraform arguments
         type: string
-        default: ""
+        default: ''
     steps:
       - run:
           name: Terraform init
@@ -95,7 +101,7 @@ commands:
       terraform_arg:
         description: provide terraform arguments
         type: string
-        default: ""
+        default: ''
     steps:
       - run:
           name: Terraform plan
@@ -136,19 +142,19 @@ commands:
       aws_access_key_id:
         description: AWS Access Key Id
         type: string
-        default: "${AWS_ACCESS_KEY_ID}"
+        default: '${AWS_ACCESS_KEY_ID}'
       aws_secret_key:
         description: AWS Secret Key
         type: string
-        default: "${AWS_SECRET_ACCESS_KEY}"
+        default: '${AWS_SECRET_ACCESS_KEY}'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "${AWS_ASSUME_ROLE_ARN}"
+        default: '${AWS_ASSUME_ROLE_ARN}'
       job_type:
         description: The job type to be used
         type: string
-        default: "default"
+        default: 'default'
     steps:
       - run:
           name: Assume role
@@ -179,7 +185,7 @@ commands:
       job_type:
         description: The job type to be used
         type: string
-        default: "default"
+        default: 'default'
     steps:
       - run:
           name: Assume role file
@@ -218,7 +224,7 @@ commands:
 jobs:
   install_deps:
     <<: *working_directory
-    executor: node
+    executor: node-large
     steps:
       - checkout
       - restore_cache:
@@ -278,7 +284,7 @@ jobs:
 
   build_components:
     <<: *working_directory
-    executor: node
+    executor: node-large
     steps:
       - checkout
       - attach_workspace:
@@ -327,6 +333,25 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  build_docs_pr:
+    <<: *working_directory
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: |
+            export SITE_BASE_URL=${SITE_BASE_URL}
+            make build_docs_pr
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public/*
+      - slack/status:
+          <<: *slack_status
+
   build_docs_prod:
     <<: *working_directory
     executor: node
@@ -346,7 +371,7 @@ jobs:
 
   build_test_e2e:
     <<: *working_directory
-    executor: node
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
@@ -363,7 +388,7 @@ jobs:
 
   test_unit_comps:
     <<: *working_directory
-    executor: node-large
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
@@ -382,7 +407,7 @@ jobs:
 
   test_unit_docs:
     <<: *working_directory
-    executor: node-large
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
@@ -416,7 +441,7 @@ jobs:
     parameters:
       job_type:
         type: string
-        default: "default"
+        default: 'default'
     <<: *working_directory
     executor: python
     steps:
@@ -444,12 +469,12 @@ jobs:
         default: true
       environment:
         type: string
-        default: ""
+        default: ''
     <<: *working_directory
     executor: terraform
     steps:
       - add_ssh_keys:
-          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+          fingerprints: '7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80'
       - checkout
       - attach_workspace:
           at: ~/project
@@ -521,7 +546,7 @@ jobs:
 
             fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
       - run:
-          name: "Setup Applitools environment variables"
+          name: 'Setup Applitools environment variables'
           <<: *applitools_defaults
       - run:
           name: Run Applitools Storybook Component Tests
@@ -531,8 +556,6 @@ jobs:
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
       - slack/status:
           <<: *slack_status
-
-
 
   test_visual_docs:
     <<: *cypress_defaults
@@ -545,7 +568,7 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
-          name: "Setup Applitools environment variables"
+          name: 'Setup Applitools environment variables'
           <<: *applitools_defaults
       - run:
           name: Run Applitools Docs Site Visual Tests
@@ -610,7 +633,7 @@ jobs:
           name: install hub
           command: make install_hub
       - add_ssh_keys:
-          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+          fingerprints: '7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80'
       - run:
           name: Set github identity
           command: make set_git_identity
@@ -661,31 +684,31 @@ jobs:
       aws_region:
         description: AWS Region
         type: string
-        default: "${AWS_DEFAULT_REGION}"
+        default: '${AWS_DEFAULT_REGION}'
       aws_access_key_id:
         description: AWS Access Key Id
         type: string
-        default: "${AWS_ACCESS_KEY_ID}"
+        default: '${AWS_ACCESS_KEY_ID}'
       aws_secret_key:
         description: AWS Secret Key
         type: string
-        default: "${AWS_SECRET_ACCESS_KEY}"
+        default: '${AWS_SECRET_ACCESS_KEY}'
       aws_ecr_url:
         description: AWS Account URL
         type: string
-        default: "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
+        default: '${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "${AWS_ASSUME_ROLE_ARN}"
+        default: '${AWS_ASSUME_ROLE_ARN}'
       ecr_repo:
         description: ECR REPO
         type: string
-        default: "${AWS_RESOURCE_NAME_PREFIX}"
+        default: '${AWS_RESOURCE_NAME_PREFIX}'
       docker_version:
         description: Docker Image Tag
         type: string
-        default: "dev"
+        default: 'dev'
     executor: node
     steps:
       - checkout
@@ -695,8 +718,8 @@ jobs:
       - run:
           name: Install python and pip
           command: |
-                    sudo apt-get update
-                    sudo apt-get install python-pip python-dev
+            sudo apt-get update
+            sudo apt-get install python-pip python-dev
       - run:
           name: Install awscli
           command: sudo pip install awscli
@@ -727,6 +750,24 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  push_s3:
+    executor: aws-cli/default #TODO: refactor other steps to use this orb it's much cleaner, install and setup can then be moved into the shared aws step
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - aws-cli/install
+      - aws-cli/setup
+      - run:
+          name: Upload to s3
+          command: |
+            export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/')
+            aws s3 cp public $s3Path_docs --recursive
+            export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/' 'storybook')
+            aws s3 cp dist-storybook $s3Path_storybook --recursive
+      - slack/status:
+          <<: *slack_status
+
   eks_flux_deploy:
     # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
     parameters:
@@ -734,20 +775,20 @@ jobs:
         type: string
       substitution_dir:
         type: string
-        default: "eks/manifests"
+        default: 'eks/manifests'
       flux_repo_url:
         type: string
-        default: "git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git"
+        default: 'git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git'
       flux_repo_name:
         type: string
-        default: "ncu-flux-newskit-site"
+        default: 'ncu-flux-newskit-site'
     executor: flux-deploy
     steps:
       - setup_remote_docker
       - checkout
         # We have to add the ssh key so that Circle has permissions to checkout the private repo
       - add_ssh_keys:
-          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+          fingerprints: '7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80'
       - run:
           name: Push config to flux repo
           command: |
@@ -782,25 +823,25 @@ jobs:
       aws_region:
         description: AWS Region
         type: string
-        default: "${AWS_DEFAULT_REGION}"
+        default: '${AWS_DEFAULT_REGION}'
       aws_access_key_id:
         description: AWS Access Key Id
         type: string
-        default: "${AWS_ACCESS_KEY_ID}"
+        default: '${AWS_ACCESS_KEY_ID}'
       aws_secret_key:
         description: AWS Secret Key
         type: string
-        default: "${AWS_SECRET_ACCESS_KEY}"
+        default: '${AWS_SECRET_ACCESS_KEY}'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "${AWS_ASSUME_ROLE_ARN}"
+        default: '${AWS_ASSUME_ROLE_ARN}'
     executor: kubectl-deploy
     steps:
       - checkout
       - setup_remote_docker
       - add_ssh_keys:
-          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+          fingerprints: '7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80'
       - run:
           name: Deploy to EKS
           command: |
@@ -892,7 +933,7 @@ require_dep: &require_dep
 workflows:
   build_and_deploy:
     jobs:
-    # common jobs
+      # common jobs
       - install_deps:
           <<: *ignore_trigger_release
       - install_cypress:
@@ -947,7 +988,7 @@ workflows:
           requires:
             - build_docs
             - install_cypress
-    # PR jobs
+      # PR jobs
       - run_visual_tests:
           <<: *only_pr
           type: approval
@@ -963,8 +1004,8 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_docs
-            - install_cypress
             - test_visual_comps
+            - install_cypress
       - init_aws:
           <<: *ignore_trigger_release
           context: ncu-product-platforms-context
@@ -996,8 +1037,32 @@ workflows:
           tf_env: false
           requires:
             - init_aws
+      - deploy_terraform:
+          <<: *only_pr
+          name: deploy_terraform_s3_pr
+          package: s3
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          environment: pr
+          requires:
+            - init_aws
+      - build_docs_pr:
+          <<: *only_pr
+          name: build_docs_pr
+          context: ncu-newskit-site-dev
+          requires:
+            - build_components
+      - push_s3:
+          <<: *only_pr
+          name: deploy_to_s3
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_terraform_s3_dev
+            - build_docs_pr
+            - build_storybook
 
-    # PR & Develop jobs
+      # PR & Develop jobs
       - approve_publish_npm_dev:
           type: approval
           <<: *only_pr_and_develop
@@ -1014,7 +1079,7 @@ workflows:
             - test_e2e_docs
             - approve_publish_npm_dev
 
-    # develop jobs
+      # develop jobs
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
@@ -1088,8 +1153,16 @@ workflows:
           tf_env: false
           requires:
             - init_aws
+      - deploy_terraform:
+          <<: *only_develop
+          name: deploy_terraform_s3_dev
+          package: s3
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - deploy_terraform_s3_pr
 
-    # release jobs
+      # release jobs
       - create_release_candidate:
           <<: *only_trigger_release
       - build_push_docker_ecr:

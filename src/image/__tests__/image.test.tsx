@@ -57,8 +57,9 @@ describe('Image', () => {
 
   test('renders with defaults after load', () => {
     const {getByRole, asFragment} = renderWithTheme(Image, defaultProps);
-    const image = getByRole('img');
+    const image = getByRole('img', {hidden: true});
     fireEvent.load(image);
+    getByRole('img');
     expect(asFragment()).toMatchSnapshot();
   });
 

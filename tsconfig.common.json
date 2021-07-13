@@ -12,6 +12,7 @@
     "esModuleInterop": true,
     "preserveSymlinks": true,
     "noImplicitAny": true,
-    "resolveJsonModule" : true
+    "resolveJsonModule" : true,
+    "isolatedModules": true
   }
 }

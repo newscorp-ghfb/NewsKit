@@ -1,6 +1,6 @@
 export {toast, ToastProvider} from './toast-provider';
 export {Toast} from './toast';
-export {
+export type {
   ToastOptions,
   ToastPosition,
   ToastProps,

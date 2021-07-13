@@ -55,6 +55,7 @@ export const Scroll: React.FC<ScrollProps> = ({
   };
 
   const checkForScrollPosition = () => {
+    /* istanbul ignore if */
     if (!scrollContainerRef.current) return;
 
     if (vertical) {

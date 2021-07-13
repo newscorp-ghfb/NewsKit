@@ -10,6 +10,11 @@ CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
 # SITE_ENV is for differentiating between newskit.co.uk and dev
 SITE_ENV=$(shell node -p "/(^release.*)|(^master$$)/.test('${CURRENT_BRANCH}') ? 'production' : 'development'")
 
+# Cleans branch into a url friendly format 
+BASE_PATH=$(shell node -p "require('./scripts/branch-name-to-url.js').branchNameToUrl('${CURRENT_BRANCH}')")
+
+BASE_URI= ${SITE_BASE_URL}${BASE_PATH}/
+
 # patch/minor/major
 UPDATE_TYPE = ${shell echo ${CURRENT_BRANCH}| cut -d'-' -f 3}
 
@@ -40,6 +45,9 @@ build_storybook:
 
 build_docs:
 	SITE_ENV=${SITE_ENV} yarn build:docs
+
+build_docs_pr:
+	BASE_PATH=${BASE_PATH} BASE_URI=${BASE_URI} SITE_ENV=${SITE_ENV} yarn build:docs
 
 unit_test_docs:
 	yarn test:unit:ci --projects=site

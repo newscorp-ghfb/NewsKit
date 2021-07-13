@@ -25,38 +25,38 @@ import {FeatureCard} from '../components/feature-card';
 const cardsContent = [
   {
     media: {
-      src: '../static/landing/landing-foundations.svg',
+      src: 'static/landing/landing-foundations.svg',
       alt: '',
     },
     title: 'Foundations',
-    href: '/theming/foundations/overview',
+    href: 'theming/foundations/overview',
     description:
       'These standardised styles define the look and feel of UI components. e.g. colours, fonts, shadows and sizing.',
   },
   {
     media: {
-      src: '../static/landing/landing-components.svg',
+      src: 'static/landing/landing-components.svg',
       alt: '',
     },
     title: 'Components',
-    href: '/components/overview',
+    href: 'components/overview',
     description:
       'NewsKit’s flexible UI components are built to best practices to ensure usability, performance and accessibility. ',
   },
   {
     media: {
-      src: '../static/landing/landing-theming.svg',
+      src: 'static/landing/landing-theming.svg',
       alt: '',
     },
     title: 'Theming',
-    href: '/theming/creating-a-theme',
+    href: 'theming/creating-a-theme',
     description:
       'Creating and applying themes allow you to tailor your experience to your unique brand requirements.',
   },
 ];
 
 const DotsContainer = styled.div`
-  background-image: url(/static/landing/landing-texture-dots.svg);
+  background-image: url(static/landing/landing-texture-dots.svg);
   background-repeat: no-repeat;
   ${getMediaQueryFromTheme('xs', 'md')} {
     background-image: unset;
@@ -92,15 +92,15 @@ const Explore = styled(Grid)`
 `;
 
 const FindOutMore = styled.section`
-  ${getColorCssFromTheme('background-color', 'interface020')}
+  ${getColorCssFromTheme('backgroundColor', 'interface020')};
   ${getMediaQueryFromTheme('md')} {
-    background-image: url(/static/landing/landing-waves.svg);
+    background-image: url(static/landing/landing-waves.svg);
     background-repeat: no-repeat;
     background-position: left 60%;
   }
 
-  ${getSizingCssFromTheme('padding-top', {xs: 'sizing090', lg: `sizing100`})};
-  ${getSizingCssFromTheme('padding-bottom', {
+  ${getSizingCssFromTheme('paddingTop', {xs: 'sizing090', lg: `sizing100`})};
+  ${getSizingCssFromTheme('paddingBottom', {
     xs: 'sizing050',
     md: 'sizing050',
     lg: `sizing100`,

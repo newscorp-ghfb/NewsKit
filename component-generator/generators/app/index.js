@@ -1,8 +1,8 @@
 const Generator = require('yeoman-generator');
-const createFileFromTemplate = require('./helpers/create-file-from-template.js');
-const prepareTemplateData = require('./helpers/prepare-template-data.js');
-const addLinkToSite = require('./helpers/add-link-to-site.js');
-const addExportToIndex = require('./helpers/add-export-to-index.js');
+const createFileFromTemplate = require('./helpers/create-file-from-template');
+const prepareTemplateData = require('./helpers/prepare-template-data');
+const addLinkToSite = require('./helpers/add-link-to-site');
+const addExportToIndex = require('./helpers/add-export-to-index');
 
 module.exports = class extends Generator {
   prompting() {

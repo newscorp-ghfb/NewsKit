@@ -17,7 +17,7 @@ export default {
       storyFn: () => (
         <AudioPlayerContainer>
           <AudioPlayer
-            src="/00-otrr-introduction-free-sample.mp3"
+            src="/audio-player-song.mp3"
             title="Auto Play Test"
             captionSrc="captions.vtt"
             ariaLandmark="audio player with autoplay"

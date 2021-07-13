@@ -11,4 +11,5 @@ module.exports = {
   ],
   waitBeforeScreenshot: 5000,
   concurrency: 20,
+  showLogs: false, // TODO: disable before merge
 };

@@ -2,6 +2,15 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "isolatedModules": false,
-    "jsx": "react"
-  },
+    "jsx": "react",
+    "paths": {
+      "newskit": [
+        "../src"
+      ],
+      "newskit/*": [
+        "../src/*"
+      ],
+      "@components/page-title": ["./components/page-title.tsx"]
+    }
+  }
 }

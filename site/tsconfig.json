@@ -1,15 +1,23 @@
 {
   "extends": "../tsconfig.common.json",
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "newskit": [
+      "newskit/theme/foundations/colors": [
+        "../src/theme/foundations/colors"
+      ],
+      "newskit/test/test-utils": [
+        "../src/test/test-utils.tsx"
+      ],
+      "newskit/utils/component": [
+        "../src/utils/component"
+      ],
+      "newskit*": [
         "../src"
       ],
-      "newskit/*": [
-        "../src/*"
-      ],
-      "@components/page-title": ["./components/page-title.tsx"]
+      "@components/page-title": [
+        "./components/page-title.tsx"
+      ]
     },
     "lib": [
       "dom",
@@ -26,7 +34,6 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "module": "esnext",
-    "isolatedModules": true,
     "jsx": "preserve"
   },
   "exclude": [

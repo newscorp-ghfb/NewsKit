@@ -1,6 +1,5 @@
 import React from 'react';
-import {fireEvent, render} from '@testing-library/react';
-import {screen} from '@testing-library/dom';
+import {fireEvent, render, screen} from '@testing-library/react';
 import {Scroll, ScrollSnapAlignment} from '..';
 import {createTheme, newskitLightTheme, ThemeProvider} from '../../theme';
 import {

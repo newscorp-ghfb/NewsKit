@@ -220,7 +220,7 @@ export default class MyApp extends App<Props, State> {
 
                 @font-face {
                   font-family: 'Poppins';
-                  src: url('/static/fonts/poppins-extrabold-webfont.woff2') π
+                  src: url('/static/fonts/poppins-extrabold-webfont.woff2')
                       format('woff2'),
                     url('/static/fonts/poppins-extrabold-webfont.woff')
                       format('woff');

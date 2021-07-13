@@ -1,2 +1,2 @@
-export {UnorderedListProps} from './types';
+export type {UnorderedListProps} from './types';
 export {UnorderedList} from './unordered-list';
