@@ -3,12 +3,14 @@ import {
   styled,
   Link,
   getStylePreset,
-  getSpacingInsetFromTheme,
+  getSpacingCssFromTheme,
+  getSizingCssFromTheme,
 } from 'newskit';
 
 export const StyledTableOfContents = styled(Block)`
-  top: 20vh;
   position: fixed;
+  transition: 0.2s top, bottom ease-in;
+  will-change: top, bottom;
 `;
 
 export const StyledContentsNavItem = styled(Link)<{
@@ -21,6 +23,6 @@ export const StyledContentsNavItem = styled(Link)<{
   border-left-width: ${({...props}) =>
     getStylePreset('contentsNavItem')(props).borderWidth};
 
-  min-height: ${({theme}) => theme.sizing.sizing060};
-  ${getSpacingInsetFromTheme('spaceInset040')}
+  ${getSizingCssFromTheme('minHeight', 'sizing060')}
+  ${getSpacingCssFromTheme('padding', 'spaceInsetSquish030')}
 `;

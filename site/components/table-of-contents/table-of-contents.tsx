@@ -3,6 +3,7 @@ import {Stack, Flow} from 'newskit';
 import {StyledTableOfContents, StyledContentsNavItem} from './styled';
 import {ContentsNavItemProps} from './types';
 import {contentsObserver} from './contents-observer';
+import {useCalculatePosition} from './use-calculate-position';
 
 export const TableOfContents: React.FC = () => {
   const [activeItem, setActiveItem] = useState<number>();
@@ -29,6 +30,8 @@ export const TableOfContents: React.FC = () => {
     setActiveItem(activeElement);
   };
 
+  const {direction, size} = useCalculatePosition();
+
   useEffect(() => {
     if (!contentsInfo) {
       getContentInfo();
@@ -48,9 +51,8 @@ export const TableOfContents: React.FC = () => {
       href={href as string}
       overrides={{
         stylePreset: 'contentsNavItem',
-        typographyPreset: 'utilityButton020',
+        typographyPreset: 'utilityButton010',
       }}
-      onClick={() => setActiveItem(itemKey)}
       itemKey={itemKey}
       isSelected={(activeItem || 0) === itemKey}
       data-selected={(activeItem || 0) === itemKey}
@@ -60,7 +62,7 @@ export const TableOfContents: React.FC = () => {
   );
 
   return (
-    <StyledTableOfContents>
+    <StyledTableOfContents style={{[direction]: size}} id="toc-navigation">
       <Stack flow={Flow.VerticalLeft}>
         {contentsInfo &&
           contentsInfo.map((info, index) => (

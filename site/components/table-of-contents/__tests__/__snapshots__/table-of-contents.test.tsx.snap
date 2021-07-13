@@ -3,8 +3,10 @@
 exports[`TableOfContent should render with no errors 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  top: 20vh;
   position: fixed;
+  -webkit-transition: 0.2s top,bottom ease-in;
+  transition: 0.2s top,bottom ease-in;
+  will-change: top,bottom;
 }
 
 .emotion-1 {
@@ -33,7 +35,7 @@ exports[`TableOfContent should render with no errors 1`] = `
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   border-width: 0;
   min-height: 32px;
-  padding: 16px;
+  padding: 12px 16px;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -65,8 +67,8 @@ exports[`TableOfContent should render with no errors 1`] = `
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
   font-weight: 500;
   letter-spacing: 0;
   display: inline-block;
@@ -78,7 +80,7 @@ exports[`TableOfContent should render with no errors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.4458333333333334em;
 }
 
 .emotion-4::after {
@@ -86,11 +88,13 @@ exports[`TableOfContent should render with no errors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.5458333333333334em;
 }
 
 <div
     class="emotion-0"
+    id="toc-navigation"
+    style="bottom: 832px;"
   >
     <div
       class="emotion-1"
