@@ -5,4 +5,5 @@ export interface SectionIntroductionProps {
   title: string;
   cellProps?: CellProps;
   image?: ImageProps;
+  subHeadingSpaceStack?: string;
 }

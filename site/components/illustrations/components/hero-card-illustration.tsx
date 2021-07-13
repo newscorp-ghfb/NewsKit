@@ -4,7 +4,7 @@ import {Svg} from '../svg';
 import {Path} from '../path';
 import {Rect} from '../rect';
 
-export const CardIllustration: React.FC = () => {
+export const HeroCardIllustration: React.FC = () => {
   const filter0 = getSSRId();
   return (
     <Svg
@@ -22,11 +22,11 @@ export const CardIllustration: React.FC = () => {
           width="390.869"
           height="497.893"
           rx="12"
-          fill="illustrationPalette030"
+          fill="illustrationPalette040"
         />
         <Path
           d="M476 141C476 134.373 481.373 129 488 129H855C861.627 129 867 134.373 867 141V339H476V141Z"
-          fill="illustrationPalette040"
+          fill="illustrationPalette060"
         />
         <Rect
           x="507.536"
@@ -115,4 +115,4 @@ export const CardIllustration: React.FC = () => {
     </Svg>
   );
 };
-export default CardIllustration;
+export default HeroCardIllustration;

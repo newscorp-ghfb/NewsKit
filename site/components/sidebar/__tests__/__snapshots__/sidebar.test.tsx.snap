@@ -47,20 +47,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  background-color: #F4F4F4;
-  padding-top: 16px;
-  padding-bottom: 32px;
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  padding: 48px;
 }
 
 @media screen {
@@ -265,20 +252,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  background-color: #F4F4F4;
-  padding-top: 16px;
-  padding-bottom: 32px;
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  padding: 48px;
 }
 
 @media screen {

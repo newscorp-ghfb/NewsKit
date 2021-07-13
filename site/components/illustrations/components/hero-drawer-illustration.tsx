@@ -3,7 +3,7 @@ import {Svg} from '../svg';
 import {Path} from '../path';
 import {Rect} from '../rect';
 
-export const DrawerIllustration: React.FC = () => (
+export const HeroDrawerIllustration: React.FC = () => (
   <Svg
     width="1344"
     height="759"
@@ -11,14 +11,14 @@ export const DrawerIllustration: React.FC = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <Rect width="1344" height="759" fill="illustrationBackground" />
+    <Rect width="1344" height="759" fill="illustrationBackground020" />
     <Rect
       x="219"
       y="111"
       width="905"
       height="538"
       rx="16"
-      fill="illustrationPalette040"
+      fill="illustrationPalette060"
     />
     <Rect
       x="219"
@@ -26,7 +26,7 @@ export const DrawerIllustration: React.FC = () => (
       width="299"
       height="538"
       rx="16"
-      fill="illustrationPalette030"
+      fill="illustrationPalette040"
     />
     <Path
       fill-rule="evenodd"
@@ -36,4 +36,4 @@ export const DrawerIllustration: React.FC = () => (
     />
   </Svg>
 );
-export default DrawerIllustration;
+export default HeroDrawerIllustration;

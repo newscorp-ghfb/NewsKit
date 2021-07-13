@@ -217,7 +217,7 @@
             "page": true,
             "id": "/components/card",
             "description": "Contain preview content and actions about a single subject.",
-            "illustration": "components/card-illustration"
+            "illustration": "components/hero-card-illustration"
           },
           {
             "title": "Divider",
@@ -231,7 +231,7 @@
             "page": true,
             "id": "/components/drawer",
             "description": "A layout panel that slides out the side of the screen revealing content like navigation or filters.",
-            "illustration": "components/drawer-illustration"
+            "illustration": "components/hero-drawer-illustration"
           },
           {
             "title": "Grid",
@@ -406,14 +406,14 @@
             "page": true,
             "id": "/components/consent",
             "description": "Non-visual component which embeds the consent management script.",
-            "illustration": "components/toast-illustration"
+            "illustration": "components/hero-consent-illustration"
           },
           {
             "title": "Consent Settings Link",
             "page": true,
             "id": "/components/consent-settings-link",
             "description": "A link which opens the consent manager dialog, requires the Consent component.",
-            "illustration": "components/url-illustration"
+            "illustration": "components/hero-consent-settings-illustration"
           },
           {
             "title": "Experimentation Web",
@@ -427,7 +427,7 @@
             "page": true,
             "id": "/components/tealium",
             "description": "Non-visual component which embeds the Tealium tag manager script.",
-            "illustration": "components/badge-illustration"
+            "illustration": "components/hero-tealium-illustration"
           }
         ]
       },

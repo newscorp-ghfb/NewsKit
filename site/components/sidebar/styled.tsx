@@ -26,14 +26,13 @@ export const StyledLinkItem = styled.div<{
 `;
 
 export const StyledFirstLevelHeader = styled.div`
-  ${getTypographyPresetFromTheme('utilityHeading020')};
+  ${getTypographyPresetFromTheme('utilityLabel020')};
   ${getStylePresetFromTheme('sidebarHeader')};
   min-height: ${getSizingFromTheme('sizing070')};
-  padding: ${getSpacingFromTheme('space020')} ${getSpacingFromTheme('space000')};
+  padding: ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space000')};
 `;
-
 export const StyledSecondLevelHeader = styled.div`
-  ${getTypographyPresetFromTheme('utilityHeading010')};
+  ${getTypographyPresetFromTheme('utilityLabel020')};
   ${getStylePresetFromTheme('sidebarHeader')};
   min-height: ${getSizingFromTheme('sizing060')};
   margin-top: ${getSpacingFromTheme('space045')};

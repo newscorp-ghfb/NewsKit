@@ -16,11 +16,11 @@ import {
   TextBlock,
   Visible,
 } from 'newskit';
-import {HeroImage} from '../components/illustrations/landing-page/hero-image';
 import {SectionIntroduction} from '../components/section-introduction';
+import {HeroImage} from '../components/illustrations/landing-page/hero-image';
 import {MediaList} from '../components/media-list';
 import Layout, {LayoutProps} from '../components/layout';
-import {FeatureCard} from '../components/feature-card';
+import {FeatureCardsForIndex} from '../components/index-cards';
 
 const cardsContent = [
   {
@@ -385,36 +385,7 @@ export default (layoutProps: LayoutProps) => {
           />
         </Grid>
         <Grid xsRowGutter="space040" mdRowGutter="space050">
-          <Cell xs={12} xl={10} xlOffset={1}>
-            <FeatureCard
-              title="What's new?"
-              description="NewsKit is constantly evolving. View announcements about the latest updates to the NewsKit design system."
-              stylePrefix="whatsnewCard"
-              layout="horizontal"
-              buttonLabel="Read more"
-              buttonHref="/components/tabs"
-            />
-          </Cell>
-          <Cell xs={12} md={6} xl={5} xlOffset={1}>
-            <FeatureCard
-              title="Roadmap"
-              description="The NewsKit roadmap is updated regularly to ensure priorities are aligned to the business goals. "
-              stylePrefix="roadmapCard"
-              layout="vertical"
-              buttonLabel="Read more"
-              buttonHref="/about/roadmap"
-            />
-          </Cell>
-          <Cell xs={12} md={6} xl={5}>
-            <FeatureCard
-              title="Contribute"
-              description="Contributions needed! There are many ways to share your great work and ideas with the community."
-              stylePrefix="contributeCard"
-              layout="vertical"
-              buttonLabel="Read more"
-              buttonHref="/about/contribute"
-            />
-          </Cell>
+          <FeatureCardsForIndex />
         </Grid>
       </FindOutMore>
     </Layout>

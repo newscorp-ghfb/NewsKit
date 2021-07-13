@@ -1,5 +1,12 @@
 import React from 'react';
-import {Cell, Link, Grid, InlineMessage} from 'newskit';
+import {
+  Cell,
+  Link,
+  Grid,
+  InlineMessage,
+  getSizingCssFromTheme,
+  styled,
+} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -25,6 +32,11 @@ import {ComponentPageCell} from '../../components/layout-cells';
 //     typographyPreset: 'editorialParagraph010',
 //   },
 // };
+
+const WrapperWithPadding = styled.div`
+  ${getSizingCssFromTheme('paddingTop', 'sizing080')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing080')}
+`;
 
 const cards = [
   {
@@ -59,25 +71,26 @@ const cards = [
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
+    <WrapperWithPadding />
     <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction
         type="About"
         name="Contribute"
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
-        hero={{
-          src: '/static/about/contribute/contribute-banner-introduction.svg',
-          alt: '',
-        }}
+        hero={{illustration: 'components/hero-contribute-illustration'}}
       />
+
       <SectionIntroduction title="How to contribute">
         There are a lot of ways to contribute to the NewsKit community and
         Design System; from submitting a proposal to designing a new feature for
         other users to benefit from.
       </SectionIntroduction>
+
       <MediaList cards={[...cards]} />
       <ComponentPageCell>
         <Separator />
       </ComponentPageCell>
+
       <SectionIntroduction
         title="Feedback"
         image={{
@@ -85,6 +98,7 @@ export default (layoutProps: LayoutProps) => (
           alt: '',
         }}
       />
+
       <Cell xs={12} md={8} lg={7} mdOffset={1}>
         <ContentText title="Participate in use research" titleAs="h3">
           We strive to build a Design System that best meets user needs, so we
@@ -116,7 +130,6 @@ export default (layoutProps: LayoutProps) => (
           NewsKit products including the design library, codebase or this
           website. If you encounter a bug, please report it to us using the{' '}
           <Link
-            overrides={{typographyPreset: 'utilityButton030'}}
             target="_blank"
             href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
           >
@@ -150,7 +163,6 @@ export default (layoutProps: LayoutProps) => (
       <ComponentPageCell>
         <Separator />
       </ComponentPageCell>
-
       <SectionIntroduction
         title="Share"
         image={{

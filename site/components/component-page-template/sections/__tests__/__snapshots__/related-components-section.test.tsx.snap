@@ -142,7 +142,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 .emotion-8 {
-  margin-bottom: 120px;
+  margin-bottom: 64px;
 }
 
 .emotion-9 {
@@ -151,7 +151,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #EBEBEB;
+  border-color: #E4E4E4;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -167,7 +167,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }
 
 .emotion-9:hover:not(:disabled) {
-  box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
 }
 
 .emotion-10 {
@@ -185,105 +185,63 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 
 .emotion-11 {
   width: 100%;
+  height: auto;
 }
 
 .emotion-12 {
-  border-radius: 8px;
-  position: relative;
-  width: 100%;
-  padding-top: 66%;
-  height: 0;
-  border-radius: 8px;
-  background-color: #F4F4F4;
-}
-
-.emotion-12 svg {
-  fill: #BBC3C9;
-}
-
-.emotion-13 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-14 {
-  display: none;
-  height: auto;
-  width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
-}
-
-.emotion-15 {
   box-sizing: border-box;
 }
 
-.emotion-16 {
+.emotion-13 {
   box-sizing: border-box;
   color: inherit;
   padding: 24px;
 }
 
-.emotion-16 a:not(.nk-card-link) {
+.emotion-13 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-17 {
+.emotion-14 {
   margin-bottom: 20px;
 }
 
-.emotion-18 {
+.emotion-15 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
 }
 
-.emotion-18 .nk-headline-kicker {
+.emotion-15 .nk-headline-kicker {
   color: #577FFB;
 }
 
-.emotion-18:hover:not(:disabled) .nk-headline-kicker {
+.emotion-15:hover:not(:disabled) .nk-headline-kicker {
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-18:active:not(:disabled) .nk-headline-kicker {
+.emotion-15:active:not(:disabled) .nk-headline-kicker {
   color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-18:visited:not(:disabled) .nk-headline-kicker {
+.emotion-15:visited:not(:disabled) .nk-headline-kicker {
   color: #503B8C;
 }
 
-.emotion-18 .nk-headline-heading {
+.emotion-15 .nk-headline-heading {
   color: #162740;
 }
 
-.emotion-18 .nk-headline-heading svg {
+.emotion-15 .nk-headline-heading svg {
   fill: #162740;
 }
 
-.emotion-18:before {
+.emotion-15:before {
   content: '';
   top: 0;
   right: 0;
@@ -294,7 +252,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   z-index: 1;
 }
 
-.emotion-19 {
+.emotion-16 {
   font-family: 'Poppins',sans-serif;
   font-size: 20px;
   line-height: 1.4;
@@ -303,7 +261,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   padding: 1px 0px;
 }
 
-.emotion-19::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -311,7 +269,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin-bottom: -0.334375em;
 }
 
-.emotion-19::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -319,7 +277,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin-top: -0.475em;
 }
 
-.emotion-21 {
+.emotion-18 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -330,11 +288,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   letter-spacing: 0;
 }
 
-.emotion-21 svg {
+.emotion-18 svg {
   fill: #555E74;
 }
 
-.emotion-21::before {
+.emotion-18::before {
   content: '';
   display: block;
   height: 0;
@@ -342,7 +300,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   margin-bottom: -0.415625em;
 }
 
-.emotion-21::after {
+.emotion-18::after {
   content: '';
   display: block;
   height: 0;
@@ -374,10 +332,10 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
           data-comp="NewsKit Cell"
           data-props="{
   \\"xs\\": 12,
-  \\"mdOffset\\": 1,
-  \\"md\\": 10,
-  \\"lg\\": 9,
-  \\"xl\\": 7
+  \\"md\\": 8,
+  \\"lg\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
 }"
           data-testid="Cell"
         >
@@ -417,8 +375,8 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
           data-props="{
   \\"xs\\": 12,
   \\"mdOffset\\": 1,
-  \\"md\\": 8,
-  \\"xl\\": 7
+  \\"md\\": 10,
+  \\"xl\\": 8
 }"
           data-testid="Cell"
         />
@@ -458,38 +416,42 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
                   <div
                     class="emotion-10"
                   >
-                    <div
+                    <svg
                       class="emotion-11"
+                      fill="none"
+                      height="1600"
+                      viewBox="0 0 1600 1600"
+                      width="1600"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <div
-                        class="emotion-12"
-                      >
-                        <div
-                          class="emotion-13"
-                        />
-                        <img
-                          alt=""
-                          class="emotion-14"
-                          src="/static/placeholder-16x9.png"
-                        />
-                      </div>
-                    </div>
+                      <rect
+                        fill="illustration-Background020"
+                        height="1600"
+                        width="1600"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M1020.59 586.74H579.412C571.29 586.74 564.706 593.339 564.706 601.48V999.458C564.706 1007.6 571.29 1014.2 579.412 1014.2H1020.59C1028.71 1014.2 1035.29 1007.6 1035.29 999.458V601.48C1035.29 593.339 1028.71 586.74 1020.59 586.74ZM579.412 572C563.168 572 550 585.199 550 601.48V999.458C550 1015.74 563.168 1028.94 579.412 1028.94H1020.59C1036.83 1028.94 1050 1015.74 1050 999.458V601.48C1050 585.199 1036.83 572 1020.59 572H579.412ZM722.249 702.981C722.249 728.415 701.898 749.033 676.794 749.033C651.69 749.033 631.339 728.415 631.339 702.981C631.339 677.547 651.69 656.928 676.794 656.928C701.898 656.928 722.249 677.547 722.249 702.981ZM709.872 832.119C703.597 823.903 691.078 824.573 685.706 833.411L609.592 958.639C603.615 968.472 610.654 981.091 622.116 981.091H979.082C990.092 981.091 997.182 969.356 992.108 959.532L892.423 766.558C887.131 756.315 872.718 755.87 866.812 765.768L786.838 899.781C781.512 908.707 768.916 909.432 762.611 901.176L709.872 832.119Z"
+                        fill="#E4E4E4"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
                   </div>
                   <div
-                    class="emotion-15"
+                    class="emotion-12"
                   >
                     <div
-                      class="emotion-16"
+                      class="emotion-13"
                     >
                       <div
-                        class="emotion-17"
+                        class="emotion-14"
                       >
                         <a
-                          class="nk-card-link emotion-18"
+                          class="nk-card-link emotion-15"
                           href="/group/page/related"
                         >
                           <section
-                            class="emotion-19"
+                            class="emotion-16"
                           >
                             <h1
                               class="nk-headline-heading emotion-5"
@@ -500,7 +462,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
                         </a>
                       </div>
                       <p
-                        class="emotion-21"
+                        class="emotion-18"
                       >
                         Here lies the description for the related component
                       </p>

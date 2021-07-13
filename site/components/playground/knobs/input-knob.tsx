@@ -29,8 +29,8 @@ export const HiddenLabel = styled.label`
 
 export const StyledLabel = styled.label`
   display: block;
-  margin: ${getSizingFromTheme('sizing040')} 0px;
-  ${getTypographyPresetFromTheme('utilityLabel030')};
+  margin: ${getSizingFromTheme('sizing030')} 0px;
+  ${getTypographyPresetFromTheme('utilityLabel020')};
   color: ${getColorFromTheme('inkBase')};
 `;
 
@@ -40,9 +40,10 @@ export const StyledInput = styled.input`
   padding: ${getSizingFromTheme('sizing020')};
   background-color: ${getColorFromTheme('interface020')};
   color: ${getColorFromTheme('inkContrast')};
+  margin-bottom: ${getSizingFromTheme('sizing040')};
 
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   box-sizing: border-box;
   border-radius: ${({theme}) => theme.borders.borderRadiusDefault};
   border-style: solid;

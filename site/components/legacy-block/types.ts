@@ -22,6 +22,7 @@ interface CommonProps {
   borderRight?: Responsive<string>;
   borderBottom?: Responsive<string>;
   borderLeft?: Responsive<string>;
+  borderRadius?: Responsive<string>;
   borderStyle?: Responsive<BorderStyleProperty>;
   borderWidth?: Responsive<string>;
   borderColor?: Responsive<string | ColorProperty>;

@@ -6,13 +6,13 @@ exports[`HeaderIndex renders without crashing 1`] = `
   background-color: #F4F4F4;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .emotion-0 {
     margin-bottom: 64px;
   }
@@ -231,7 +231,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-9 {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
   }
 }
 

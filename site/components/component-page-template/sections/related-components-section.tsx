@@ -1,5 +1,6 @@
 import React from 'react';
 import {Cell, Grid} from 'newskit';
+import {getIllustrationComponent} from '../../illustrations/illustration-loader';
 import {SectionIntroduction} from '../../section-introduction';
 import {MediaList} from '../../media-list';
 import {getByTitle} from '../../../utils/get-route-object';
@@ -12,10 +13,10 @@ export type RelatedComponentsSectionProps = {
 
 const getRelatedComponents = (related: string[]) =>
   related.map(component => {
-    const {title, media, description, id} = getByTitle(component) || {};
+    const {title, description, id} = getByTitle(component) || {};
     return {
       title,
-      media: {src: media, alt: ''},
+      media: getIllustrationComponent('components/scroll-illustration'),
       description,
       href: id,
     };
@@ -32,7 +33,7 @@ export const RelatedComponentsSection: React.FC<RelatedComponentsSectionProps> =
           {introduction}
         </SectionIntroduction>
         <MediaList
-          spaceStack="space110"
+          spaceStack="space090"
           layout="4-span"
           cards={getRelatedComponents(related)}
         />

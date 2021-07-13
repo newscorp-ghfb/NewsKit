@@ -21,6 +21,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           stylePreset="inkBrand010"
           typographyPreset={{
             xs: 'editorialHeadline010',
+            md: 'editorialHeadline030',
           }}
         >
           {type}

@@ -71,6 +71,10 @@ const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
       value: props.borderLeft,
     })
     .apply({
+      property: 'borderRadius',
+      value: props.borderRadius,
+    })
+    .apply({
       property: 'borderStyle',
       value: props.borderStyle,
     })

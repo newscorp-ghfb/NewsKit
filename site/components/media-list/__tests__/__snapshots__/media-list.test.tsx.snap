@@ -137,7 +137,7 @@ exports[`Media List renders with custom layout 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #EBEBEB;
+  border-color: #E4E4E4;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -153,7 +153,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-5:hover:not(:disabled) {
-  box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
 }
 
 .emotion-6 {
@@ -663,7 +663,7 @@ exports[`Media List renders with default layout 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #EBEBEB;
+  border-color: #E4E4E4;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -679,7 +679,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-5:hover:not(:disabled) {
-  box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
 }
 
 .emotion-6 {

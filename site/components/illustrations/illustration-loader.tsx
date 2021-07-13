@@ -1,6 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import {EmptyStateIllustration} from './components/empty-state-illustration';
+import {PlaceholderIllustration} from './components/placeholder-illustration';
 
 const cache: Record<string, React.ComponentType> = {};
 
@@ -10,7 +10,7 @@ export const getIllustrationComponent = (path: string) => {
   }
   const Component = dynamic(() => import(`./${path}`), {
     ssr: false,
-    loading: () => <EmptyStateIllustration />,
+    loading: () => <PlaceholderIllustration />,
   });
   Component.displayName = 'IllustrationLoaderComponent';
   cache[path] = Component;

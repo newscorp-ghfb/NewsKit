@@ -1,33 +1,66 @@
 import React from 'react';
-import {Cell, Block, TextBlock, TitleBar, Image} from 'newskit';
+import {Cell, Block, TitleBar, Image, TextBlock} from 'newskit';
+import {ComponentPageCellCompact} from '../layout-cells';
 import {SectionIntroductionProps} from './types';
 
 export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   title,
-  children,
+  cellProps,
   image,
+  children,
+  subHeadingSpaceStack = 'space100',
 }) => (
   <>
-    <Cell xs={12} mdOffset={1} md={10} lg={9} xl={7}>
-      <Block spaceStack={{xs: 'space050', md: 'space060'}}>
-        <TitleBar
-          headingAs="h2"
-          overrides={{
-            spaceInset: 'space000',
-            heading: {
-              stylePreset: 'inkContrast',
-              typographyPreset: {
-                xs: 'editorialHeadline040',
-                md: 'editorialHeadline050',
+    <ComponentPageCellCompact {...cellProps}>
+      {title === 'How to contribute' ? (
+        <>
+          <Block
+            spaceStack={{
+              xs: 'space080',
+              md: 'space090',
+              lg: 'space090',
+              xl: 'space100',
+            }}
+          />
+          <Block spaceStack={{xs: 'space050', md: 'space060'}}>
+            <TitleBar
+              headingAs="h2"
+              overrides={{
+                spaceInset: 'space000',
+                heading: {
+                  stylePreset: 'inkContrast',
+                  typographyPreset: {
+                    xs: 'editorialHeadline040',
+                    md: 'editorialHeadline050',
+                  },
+                },
+              }}
+            >
+              {title}
+            </TitleBar>
+          </Block>
+        </>
+      ) : (
+        <Block spaceStack={{xs: 'space050', md: 'space060'}}>
+          <TitleBar
+            headingAs="h2"
+            overrides={{
+              spaceInset: 'space000',
+              heading: {
+                stylePreset: 'inkContrast',
+                typographyPreset: {
+                  xs: 'editorialHeadline040',
+                  md: 'editorialHeadline050',
+                },
               },
-            },
-          }}
-        >
-          {title}
-        </TitleBar>
-      </Block>
+            }}
+          >
+            {title}
+          </TitleBar>
+        </Block>
+      )}
       {children && (
-        <Block spaceStack="space100">
+        <Block spaceStack={subHeadingSpaceStack}>
           <TextBlock
             stylePreset="inkBase"
             typographyPreset="editorialSubheadline020"
@@ -36,8 +69,9 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           </TextBlock>
         </Block>
       )}
-    </Cell>
-    <Cell xs={12} mdOffset={1} md={8} xl={7}>
+    </ComponentPageCellCompact>
+
+    <Cell xs={12} mdOffset={1} md={10} xl={8}>
       {image && (
         <Block spaceStack={{xs: 'space060', md: 'space070'}}>
           <Image src={image.src} alt={image.alt || ''} />

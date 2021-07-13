@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Link, Paragraph} from 'newskit';
+import {getSizingCssFromTheme, Grid, Link, Paragraph, styled} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -7,6 +7,10 @@ import {Separator} from '../../components/separator';
 import {MediaList} from '../../components/media-list';
 import {ComponentPageCell} from '../../components/layout-cells';
 
+const WrapperWithPadding = styled.div`
+  ${getSizingCssFromTheme('paddingTop', 'sizing080')};
+  ${getSizingCssFromTheme('marginBottom', 'sizing080')}
+`;
 const cards = [
   {
     media: {
@@ -78,60 +82,65 @@ const cards = [
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
-    <Grid lgMargin="sizing000" xsRowGutter="sizing000">
+    <WrapperWithPadding />
+    <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction
         type="About"
         name="Introduction"
         introduction="NewsKit is News UK’s design system. It provides interactive building blocks and guidelines for crafting cohesive digital product interfaces and accelerating development.
           build better products faster."
-        hero={{src: '/static/roadmap-hero.svg'}}
-      />
-      <SectionIntroduction title="Introduction" cellProps={{lg: 8}}>
-        <>
-          <Paragraph>
-            The design system aims to improve the consistency and quality of
-            digital products and experiences, enabling the design and
-            development process to be more efficient and focused, establishing a
-            common language between designer and engineer, and providing clear,
-            considered guidance around design and engineering best practices.
-          </Paragraph>
-          <br />
-          <Paragraph>
-            NewsKit currently serves a wide range of designers and developers at
-            News UK building digital products and experiences with a view to
-            becoming publicly open source in the future.
-          </Paragraph>
-          <br />
-          <Paragraph>
-            It is maintained by a core centralised team at News UK with
-            contributions from other product teams to evolve and improve
-            NewsKit.
-          </Paragraph>
-          <br />
-          <Paragraph>
-            The UI library is built using{' '}
-            <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2349139141/Designing+with+NewsKit+-+Web+Documentation">
-              Figma for design
-            </Link>{' '}
-            and{' '}
-            <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2348942613/Engineering+with+NewsKit+-+Web+Documentation">
-              React for the codebase.
-            </Link>
-          </Paragraph>
-        </>
-      </SectionIntroduction>
-      <ComponentPageCell>
-        <Separator />
-      </ComponentPageCell>
-      <SectionIntroduction title="Principles" cellProps={{lg: 8}}>
-        NewsKit design system and the NewsKit team is guided by a set of
-        principles.
-      </SectionIntroduction>
-      <MediaList
-        layout="2-span"
-        cards={cards}
-        gridProps={{xsRowGutter: 'space050'}}
+        hero={{
+          illustration:
+            'components/introduction-hero-stepping-stones-illustration',
+        }}
       />
     </Grid>
+
+    <SectionIntroduction title="Introduction" cellProps={{lg: 8}}>
+      <>
+        <Paragraph>
+          The design system aims to improve the consistency and quality of
+          digital products and experiences, enabling the design and development
+          process to be more efficient and focused, establishing a common
+          language between designer and engineer, and providing clear,
+          considered guidance around design and engineering best practices.
+        </Paragraph>
+        <br />
+        <Paragraph>
+          NewsKit currently serves a wide range of designers and developers at
+          News UK building digital products and experiences with a view to
+          becoming publicly open source in the future.
+        </Paragraph>
+        <br />
+        <Paragraph>
+          It is maintained by a core centralised team at News UK with
+          contributions from other product teams to evolve and improve NewsKit.
+        </Paragraph>
+        <br />
+        <Paragraph>
+          The UI library is built using{' '}
+          <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2349139141/Designing+with+NewsKit+-+Web+Documentation">
+            Figma for design
+          </Link>{' '}
+          and{' '}
+          <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2348942613/Engineering+with+NewsKit+-+Web+Documentation">
+            React for the codebase.
+          </Link>
+        </Paragraph>
+      </>
+    </SectionIntroduction>
+    <ComponentPageCell>
+      <Separator />
+    </ComponentPageCell>
+    <SectionIntroduction title="Principles" cellProps={{lg: 8}}>
+      NewsKit design system and the NewsKit team is guided by a set of
+      principles.
+    </SectionIntroduction>
+    <MediaList
+      layout="2-span"
+      cards={cards}
+      gridProps={{xsRowGutter: 'space050'}}
+    />
+    <WrapperWithPadding />
   </Layout>
 );

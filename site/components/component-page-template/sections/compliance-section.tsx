@@ -75,9 +75,9 @@ export const ComplianceSection: React.FC<ComplianceSectionProps> = props => (
         <SectionIntroduction
           title="Compliance"
           cellProps={{
-            md: 12,
-            lg: 12,
-            mdOffset: 0,
+            md: 10,
+            lg: 10,
+            mdOffset: 1,
           }}
         >
           All of the components in the NewsKit design system go through a

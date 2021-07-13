@@ -75,7 +75,7 @@ const StyledLabel = styled.label<StyledLabelProps>`
   }
 
   :hover {
-    background-color: ${getColorFromTheme('interactivePrimary010')};
+    background-color: ${getColorFromTheme('interactiveSecondary010')};
   }
 `;
 

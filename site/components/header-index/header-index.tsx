@@ -24,7 +24,7 @@ const StyledGrid = styled(Grid)`
 const HeaderIndexContainer = styled.div`
   background-color: ${getColorFromTheme('interface020')};
   ${getSpacingFromTheme(
-    {xs: 'space080', lg: 'space090'},
+    {xs: 'space080', md: 'space090'},
     undefined,
     'marginBottom',
   )}
@@ -57,7 +57,7 @@ export const HeaderIndex: React.FC<HeaderIndexProps> = ({
         )}
       </Cell>
       <Cell xs={11} md={8} lg={6} mdOffset={1}>
-        <Block spaceStack={{xs: 'space060', md: 'space090'}}>
+        <Block spaceStack={{xs: 'space060', md: 'space070'}}>
           <TextBlock
             as="h1"
             stylePreset="inkContrast"

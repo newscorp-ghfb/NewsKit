@@ -4,7 +4,6 @@ import {
   Cell,
   Hidden,
   ConsentSettingsLink,
-  IconFilledGitHub,
   getTypographyPresetFromTheme,
   getColorCssFromTheme,
   getSizingCssFromTheme,
@@ -12,20 +11,18 @@ import {
   styled,
   Link as NewsKitLink,
   TextBlock,
+  CellProps,
+  Block,
 } from 'newskit';
 import {Link} from './link';
 
 const Footer = styled.footer`
   flex-shrink: 0;
-  ${getSizingCssFromTheme('paddingTop', {
-    xs: 'sizing070',
-    md: 'sizing080',
-    lg: 'sizing090',
-  })};
+
   ${getSizingCssFromTheme('paddingBottom', {
     xs: 'sizing070',
-    md: 'sizing080',
-    lg: 'sizing090',
+    md: 'sizing000',
+    lg: 'sizing040',
   })};
   ${getColorCssFromTheme('background', 'interface020')}
   position: relative;
@@ -55,6 +52,7 @@ const FooterCopy = styled(TextBlock)`
   text-align: center;
   ${getMediaQueryFromTheme('md')} {
     text-align: right;
+    top: 10%;
   }
 `;
 
@@ -80,76 +78,92 @@ const FooterLink = styled.span`
     lg: 'sizing080',
   })};
 `;
+interface FooterProps {
+  cellProps?: CellProps;
+  footerCopyCellProps?: CellProps;
+}
 
 const year = new Date().getUTCFullYear();
+const SiteFooter: React.FC<FooterProps> = ({
+  cellProps = {xs: 12, md: 10, lg: 8, mdOffset: 1},
+  footerCopyCellProps = {
+    xs: 10,
+    xsOffset: 1,
+    md: 8,
+    mdOffset: 3,
+    lg: 10,
+    lgOffset: 1,
+    xl: 8,
+    xlOffset: 3,
+  },
+}) => (
+  <>
+    <Footer>
+      <Block spaceStack={{xs: 'space080', md: 'space080', lg: 'space090'}} />
+      <Grid xsRowGutter="space060" mdRowGutter="space000">
+        <Cell {...cellProps}>
+          <FooterMenu>
+            <Hidden xs sm md lg xl>
+              <FooterLink>
+                <Link href="/cookies">Cookies</Link>
+              </FooterLink>
+              <FooterLink>
+                <Link href="/terms">Terms</Link>
+              </FooterLink>
+            </Hidden>
 
-const SiteFooter: React.FC = () => (
-  <Footer>
-    <Grid xsRowGutter="space000">
-      <Cell xs={10} xsOffset={1} md={4} mdOffset={1}>
-        <FooterMenu>
-          <Hidden xs sm md lg xl>
             <FooterLink>
-              <Link href="/cookies">Cookies</Link>
+              <ConsentSettingsLink
+                privacyManagerId="407619"
+                overrides={{
+                  stylePreset: 'linkFooter',
+                  typographyPreset: 'utilityButton020',
+                }}
+              >
+                Privacy
+              </ConsentSettingsLink>
             </FooterLink>
             <FooterLink>
-              <Link href="/terms">Terms</Link>
+              <NewsKitLink
+                href="https://medium.com/newskit-design-system"
+                target="_blank"
+                external={false}
+                overrides={{stylePreset: 'linkFooter'}}
+              >
+                Blog
+              </NewsKitLink>
             </FooterLink>
-          </Hidden>
-          <FooterLink>
-            <ConsentSettingsLink
-              privacyManagerId="407619"
-              overrides={{
-                stylePreset: 'linkFooter',
-                typographyPreset: 'utilityButton020',
-              }}
-            >
-              Privacy
-            </ConsentSettingsLink>
-          </FooterLink>
-          <FooterLink>
-            <NewsKitLink
-              href="https://medium.com/newskit-design-system"
-              target="_blank"
-              external={false}
-              overrides={{stylePreset: 'linkFooter'}}
-            >
-              Blog
-            </NewsKitLink>
-          </FooterLink>
-          <FooterLink>
-            <NewsKitLink
-              href="https://www.newscareers.co.uk/"
-              target="_blank"
-              external={false}
-              overrides={{stylePreset: 'linkFooter'}}
-            >
-              Careers
-            </NewsKitLink>
-          </FooterLink>
-          <Hidden xs sm md lg xl>
+
             <FooterLink>
-              <Link href="/" external={false}>
-                <IconFilledGitHub overrides={{size: 'iconSize020'}} />
-              </Link>
+              <NewsKitLink
+                href="https://www.newscareers.co.uk/"
+                target="_blank"
+                external={false}
+                overrides={{stylePreset: 'linkFooter'}}
+              >
+                Careers
+              </NewsKitLink>
             </FooterLink>
-          </Hidden>
-        </FooterMenu>
-      </Cell>
-      <Cell xs={10} xsOffset={1} md={5}>
-        <FooterCopy
-          as="div"
-          stylePreset="inkSubtle"
-          typographyPreset={{
-            xs: 'utilityMeta010',
-            md: 'utilityMeta020',
-          }}
-        >
-          Copyright &copy; {year} News Corp. All rights reserved.
-        </FooterCopy>
-      </Cell>
-    </Grid>
-  </Footer>
+          </FooterMenu>
+        </Cell>
+
+        <Cell {...footerCopyCellProps}>
+          <FooterCopy
+            as="div"
+            stylePreset="inkSubtle"
+            typographyPreset={{
+              xs: 'utilityMeta010',
+              md: 'utilityMeta020',
+            }}
+          >
+            <Block spaceStack="space060">
+              Copyright &copy; {year} News Corp. All rights reserved.
+            </Block>
+          </FooterCopy>
+        </Cell>
+      </Grid>
+    </Footer>
+  </>
 );
 
 export default SiteFooter;

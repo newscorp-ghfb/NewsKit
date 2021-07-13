@@ -282,7 +282,7 @@ export const stylePresets = {
       borderStyle: 'solid',
       borderRadius: '{{borders.borderRadiusRounded030}}',
       borderWidth: '{{borders.borderWidth010}}',
-      borderColor: '{{colors.neutral020}}',
+      borderColor: '{{colors.interface040}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -378,19 +378,21 @@ export const stylePresets = {
       textDecoration: 'none',
     },
   },
+  roadmapCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand030}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
   roadmapCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
-
-  roadmapCardMedia: {
-    base: {
-      backgroundImage: 'url(/static/landing/feature-card-roadmap.svg)',
-    },
-  },
-
   roadmapCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
@@ -407,6 +409,21 @@ export const stylePresets = {
       backgroundColor: '{{colors.interactiveInverse050}}',
       color: '{{colors.inkBrand020}}',
       iconColor: '{{colors.inkBrand020}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactiveInverse020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
+  roadmapCardMedia: {
+    base: {
+      backgroundImage: 'url(/static/landing/feature-card-roadmap.svg)',
     },
   },
 
@@ -461,21 +478,22 @@ export const stylePresets = {
     },
   },
 
+  whatsnewCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand060}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+
   whatsnewCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand060}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
   },
-
-  whatsnewCardMedia: {
-    base: {
-      backgroundImage: 'url(/static/landing/feature-card-whatsnew.svg)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center left',
-    },
-  },
-
   whatsnewCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
@@ -490,8 +508,16 @@ export const stylePresets = {
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand030}}',
-      iconColor: '{{colors.inkBrand030}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+  },
+
+  whatsnewCardMedia: {
+    base: {
+      backgroundImage: 'url(/static/landing/feature-card-whatsnew.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center left',
     },
   },
   needHelpCardContainerInteractive: {
@@ -522,8 +548,8 @@ export const stylePresets = {
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand010}}',
-      iconColor: '{{colors.inkBrand010}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
     },
     disabled: {
       backgroundColor: '{{colors.interactiveInverse020}}',

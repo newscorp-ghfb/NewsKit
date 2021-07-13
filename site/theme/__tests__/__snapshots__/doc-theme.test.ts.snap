@@ -1259,12 +1259,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.28)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.28)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.28)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.28)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.28)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.28)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -1472,7 +1472,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -3286,8 +3286,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -3404,10 +3404,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -3835,8 +3854,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -3848,6 +3867,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {
@@ -5477,12 +5505,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.08)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.08)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.08)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.08)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.08)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.08)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -5690,7 +5718,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -7504,8 +7532,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -7622,10 +7650,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -8053,8 +8100,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -8066,6 +8113,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {
@@ -9695,12 +9751,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.28)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.28)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.28)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.28)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.28)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.28)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -9908,7 +9964,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -11722,8 +11778,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -11840,10 +11896,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -12271,8 +12346,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -12284,6 +12359,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {
@@ -13913,12 +13997,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.08)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.08)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.08)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.08)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.08)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.08)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -14126,7 +14210,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -15940,8 +16024,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -16058,10 +16142,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -16489,8 +16592,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -16502,6 +16605,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {
@@ -18131,12 +18243,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.28)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.28)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.28)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.28)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.28)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.28)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -18344,7 +18456,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -20158,8 +20270,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -20276,10 +20388,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -20707,8 +20838,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -20720,6 +20851,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {
@@ -22349,12 +22489,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.08)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.08)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.08)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.08)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.08)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.08)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -22562,7 +22702,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -24376,8 +24516,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -24494,10 +24634,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -24925,8 +25084,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -24938,6 +25097,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {
@@ -26567,12 +26735,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.28)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.28)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.28)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.28)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.28)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.28)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -26780,7 +26948,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -28594,8 +28762,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -28712,10 +28880,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -29143,8 +29330,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -29156,6 +29343,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {
@@ -30785,12 +30981,12 @@ Object {
     "overlayTintInverse040": "{{colors.whiteTint080}}",
   },
   "shadows": Object {
-    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
-    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
-    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
-    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+    "shadow010": "0 0 2px 0 rgba(10,10,10,0.08)",
+    "shadow020": "0 2px 4px 0 rgba(10,10,10,0.08)",
+    "shadow030": "0 4px 8px 0 rgba(10,10,10,0.08)",
+    "shadow040": "0 8px 16px 0 rgba(10,10,10,0.08)",
+    "shadow050": "0 16px 24px 0 rgba(10,10,10,0.08)",
+    "shadow060": "0 20px 32px 0 rgba(10,10,10,0.08)",
   },
   "sizing": Object {
     "iconSize005": "{{sizing.sizing020}}",
@@ -30998,7 +31194,7 @@ Object {
     },
     "baseCardInteractive": Object {
       "base": Object {
-        "borderColor": "{{colors.neutral020}}",
+        "borderColor": "{{colors.interface040}}",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -32812,8 +33008,8 @@ Object {
     "needHelpCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -32930,10 +33126,29 @@ Object {
         "color": "{{colors.interfaceBrand030}}",
         "iconColor": "{{colors.interfaceBrand030}}",
       },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "roadmapCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand030}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "roadmapCardContainerNonInteractive": Object {
@@ -33361,8 +33576,8 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
@@ -33374,6 +33589,15 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkWhite}}",
         "iconColor": "{{colors.inkWhite}}",
+      },
+    },
+    "whatsnewCardContainerInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand060}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "hover": Object {
+        "boxShadow": "{{shadows.shadow040}}",
       },
     },
     "whatsnewCardContainerNonInteractive": Object {

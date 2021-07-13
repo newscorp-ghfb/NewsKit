@@ -81,7 +81,8 @@ export const accessibilityDarkOverrides = {
 };
 
 export const [lightOverrides, darkOverrides] = [colorsLight, colorsDark].map(
-  colors => ({
+  ({colors, shadows}) => ({
+    shadows,
     colors,
     stylePresets,
     typographyPresets,

@@ -216,8 +216,29 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
               </Grid>
             )}
           </BodyWrapper>
-
-          <SiteFooter />
+          {path === '/index' ? (
+            <SiteFooter
+              cellProps={{
+                xs: 12,
+                md: 10,
+                lg: 8,
+                lgOffset: 0,
+                mdOffset: 0,
+                xlOffset: 1,
+              }}
+              footerCopyCellProps={{
+                xs: 10,
+                xsOffset: 1,
+                md: 10,
+                mdOffset: 2,
+                lg: 10,
+                lgOffset: 2,
+                xlOffset: 1,
+              }}
+            />
+          ) : (
+            <SiteFooter />
+          )}
         </Container>
       </LayoutWrapper>
     );

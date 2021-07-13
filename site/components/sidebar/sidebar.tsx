@@ -7,9 +7,9 @@ import {
   Devices,
   getDeviceQueryFromTheme,
   css,
-  getColorCssFromTheme,
   getSpacingCssFromTheme,
   getStylePresetFromTheme,
+  Block,
 } from 'newskit';
 
 import {LegacyBlock} from '../legacy-block';
@@ -62,17 +62,6 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   )};
 `;
 
-const SidebarHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  ${getColorCssFromTheme('backgroundColor', 'interface020')};
-  ${getSpacingCssFromTheme('paddingTop', 'space040')};
-  ${getSpacingCssFromTheme('paddingBottom', 'space060')};
-  width: 100%;
-  position: sticky;
-  top: 0;
-`;
-
 const IconWrapper = styled.div`
   align-self: center;
 `;
@@ -90,7 +79,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       role="complementary"
       hideSidebar={hideSidebar}
     >
-      <SidebarHeader>
+      <Block spaceInset="space080">
         <Visible xs sm md>
           <LegacyBlock display="flex" height="100%">
             <IconWrapper
@@ -108,7 +97,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             </IconWrapper>
           </LegacyBlock>
         </Visible>
-      </SidebarHeader>
+      </Block>
       <SidebarNav path={path} />
     </SidebarWrapper>
 

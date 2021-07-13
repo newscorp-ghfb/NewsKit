@@ -21,7 +21,6 @@ import {isComponent} from './utils';
 const PlaygroundContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border: solid 1px ${getColorFromTheme('interface030')};
   box-shadow: 0 3px 4px 2px ${getColorFromTheme('interface010')};
   background-color: ${getColorFromTheme('interface010')};
 `;
@@ -154,11 +153,12 @@ export const Playground: React.FC<
 
   const commonBlockProps: Partial<LegacyBlockProps> = {
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'start',
+    alignItems: 'start',
     flexDirection: 'column',
     border: 'solid 1px',
     borderColor: 'interface030',
+    borderRadius: '12px 12px 0px 0px',
     color: 'inkBase',
   };
 
@@ -176,9 +176,9 @@ export const Playground: React.FC<
       <LegacyBlock
         data-testid="playground-element"
         {...commonBlockProps}
-        minHeight="200px"
-        backgroundColor="transparent"
-        padding="sizing080"
+        minHeight="280px"
+        backgroundColor="interface010"
+        padding="sizing070"
       >
         <ErrorBoundary key={errorBoundaryKey}>
           <Component {...state} />
@@ -189,10 +189,17 @@ export const Playground: React.FC<
           Component
         </Selector>
       )}
-      <LegacyBlock {...commonBlockProps} alignItems="left" padding="sizing030">
+      <LegacyBlock
+        {...commonBlockProps}
+        alignItems="left"
+        padding="sizing070"
+        overflow="scroll"
+        maxHeight="450px"
+        borderRadius="0px 0px 0px 0px"
+      >
         {knobs.map(renderKnob(state, updateState))}
       </LegacyBlock>
-      <LegacyBlock {...commonBlockProps}>
+      <LegacyBlock {...commonBlockProps} borderRadius="0px 0px 12px 12px">
         <CodeExample
           componentName={selectedCompName}
           source={source.code || source.error}
