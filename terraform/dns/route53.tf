@@ -20,3 +20,12 @@ resource "aws_route53_record" "origin" {
   ttl      = "360"
   records  = ["${each.value}.${var.cluster_domain}"]
 }
+
+resource "aws_route53_record" "cert" {
+  for_each = var.cert
+  zone_id  = aws_route53_zone.newskit.zone_id
+  name     = "${each.key}"
+  type     = "CNAME"
+  ttl      = "900"
+  records  = ["${each.value}"]
+}
