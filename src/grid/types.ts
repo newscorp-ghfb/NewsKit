@@ -1,4 +1,6 @@
-export interface GridProps {
+import {HTMLAttributes} from 'react';
+
+export interface GridProps extends HTMLAttributes<HTMLDivElement> {
   xsMargin?: string;
   smMargin?: string;
   mdMargin?: string;
@@ -20,7 +22,7 @@ export interface GridProps {
   maxWidth?: string;
 }
 
-export interface CellProps {
+export interface CellProps extends HTMLAttributes<HTMLDivElement> {
   xs?: number | 'full-width';
   sm?: number | 'full-width';
   md?: number | 'full-width';

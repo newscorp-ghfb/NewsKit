@@ -12,11 +12,14 @@ export interface StructuredListProps {
   };
 }
 
+export type StructuredListCellAlign = 'start' | 'center' | 'end';
+
 export interface StructuredListItemProps {
   children: React.ReactNode | React.ReactNode[];
   ariaLabel?: string;
   disabled?: boolean;
   href?: string;
+  linkIconAlign?: StructuredListCellAlign;
   overrides?: {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
@@ -31,4 +34,5 @@ export interface StructuredListItemProps {
 export interface StructuredListCellProps extends CellProps {
   children: React.ReactNode;
   pullRight?: boolean;
+  align?: StructuredListCellAlign;
 }

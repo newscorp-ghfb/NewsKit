@@ -9,5 +9,5 @@ declare module '@emotion/react' {
 }
 
 export type {CSSObject, SerializedStyles} from '@emotion/react';
-export {Global, css} from '@emotion/react';
+export {Global, css, keyframes} from '@emotion/react';
 export {styled};

@@ -1,4 +1,4 @@
-import {Grid} from '../grid';
+import {Cell, CellProps, Grid} from '../grid';
 import {
   StructuredListCellProps,
   StructuredListItemProps,
@@ -11,6 +11,17 @@ import {
   styled,
 } from '../utils';
 
+const getAlign = (align: string) => {
+  switch (align) {
+    case 'center':
+      return 'align-self: center';
+    case 'end':
+      return 'align-self: flex-end';
+    default:
+      return '';
+  }
+};
+
 export const StyledGrid = styled(Grid)<
   Pick<StructuredListItemProps, 'overrides'>
 >`
@@ -19,7 +30,6 @@ export const StyledGrid = styled(Grid)<
   ${getResponsiveSize('minHeight', 'structuredListItem', '', 'minHeight')}
 `;
 export const StyledWrapper = styled.div<StructuredListCellProps>`
-  height: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -42,4 +52,11 @@ export const StyledListWrapper = styled.ul<StructuredListProps>`
   list-style: none;
   padding-left: 0;
   width: 100%;
+  margin: 0;
+`;
+
+export const StyledCell = styled(Cell)<
+  Pick<StructuredListCellProps, 'align'> & CellProps
+>`
+  ${({align}) => getAlign(align || 'start')}
 `;

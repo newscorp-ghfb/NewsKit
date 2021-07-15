@@ -304,5 +304,24 @@ describe('StructuredList', () => {
       const fragment = renderToFragmentWithTheme(renderWithDisabledLink, props);
       expect(fragment).toMatchSnapshot();
     });
+
+    test('renders with alignment on icon end', () => {
+      const props: StructuredListItemProps = {
+        children: TwoCellsDefault,
+        linkIconAlign: 'end',
+      };
+
+      const fragment = renderToFragmentWithTheme(renderWithInternalLink, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    test('renders with alignment on icon center', () => {
+      const props: StructuredListItemProps = {
+        children: TwoCellsDefault,
+        linkIconAlign: 'center',
+      };
+
+      const fragment = renderToFragmentWithTheme(renderWithInternalLink, props);
+      expect(fragment).toMatchSnapshot();
+    });
   });
 });

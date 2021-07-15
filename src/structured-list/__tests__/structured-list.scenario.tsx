@@ -427,6 +427,37 @@ export default {
         </>
       ),
     },
+    {
+      storyName: 'structured-list-alignment',
+      storyFn: () => (
+        <StructuredList ariaLabel="list" divider>
+          <StructuredListItem href="/" linkIconAlign="center">
+            <StructuredListCell align="end">Label</StructuredListCell>
+            <StructuredListCell>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              aliquet lorem massa, et lacinia ipsum tristique id. Phasellus sed
+              posuere lacus.
+            </StructuredListCell>
+          </StructuredListItem>
+          <StructuredListItem href="/" linkIconAlign="center">
+            <StructuredListCell>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              aliquet lorem massa, et lacinia ipsum tristique id. Phasellus sed
+              posuere lacus.
+            </StructuredListCell>
+          </StructuredListItem>
+          <StructuredListItem>
+            <StructuredListCell align="end">Label</StructuredListCell>
+            <StructuredListCell>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              aliquet lorem massa, et lacinia ipsum tristique id. Phasellus sed
+              posuere lacus.
+            </StructuredListCell>
+            <StructuredListCell align="end">{arrowIcon}</StructuredListCell>
+          </StructuredListItem>
+        </StructuredList>
+      ),
+    },
   ],
 };
 

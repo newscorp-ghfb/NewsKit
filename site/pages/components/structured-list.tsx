@@ -327,6 +327,13 @@ export default (layoutProps: LayoutProps) => (
               description:
                 'If true, renders a StructuredListItem in a disabled state',
             },
+            {
+              name: 'linkIconAlign',
+              type: `'start' | 'center' | 'end'`,
+              default: 'start',
+              description:
+                'Vertically align the Icon when the StructuredListItem is Link',
+            },
           ],
           overridesRows: [
             {
@@ -365,15 +372,15 @@ export default (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'StucturedListCell',
+          title: 'StructuredListCell',
           summary:
-            'A StucturedListCell has a range of props that can be used to define an appropriate experience for different use cases.',
+            'A StructuredListCell has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description: 'Content rendered inside the Stuctured List Cell',
+              description: 'Content rendered inside the Structured List Cell',
             },
             {
               name: 'pullRight',
@@ -381,6 +388,12 @@ export default (layoutProps: LayoutProps) => (
               default: 'false',
               description:
                 'If true, the cell with pullRight prop will be pulled to the right',
+            },
+            {
+              name: 'align',
+              type: `'start' | 'center' | 'end'`,
+              default: 'start',
+              description: 'Vertically align the content',
             },
           ],
         },

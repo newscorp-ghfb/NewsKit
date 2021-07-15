@@ -173,6 +173,7 @@ Array [
   "instrumentationMiddleware",
   "isButtonLink",
   "isResponsive",
+  "keyframes",
   "mergeContexts",
   "newskitDarkTheme",
   "newskitDarkThemeOverrides",

@@ -1208,7 +1208,7 @@ workflows:
           environment: staging
           requires:
             - init_aws
-    # master jobs
+      # master jobs
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_master
