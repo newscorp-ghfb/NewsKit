@@ -155,33 +155,6 @@ export default {
       storyFn: () => (
         <>
           <StorybookSubHeading>
-            with two cells and pullRight on the 1st
-          </StorybookSubHeading>
-          <Block spaceStack="space050">
-            <StructuredListWithDivider>
-              <StructuredListItem ariaLabel="list item">
-                <StructuredListCell pullRight>
-                  <HeadingTextBlock>Label</HeadingTextBlock>
-                </StructuredListCell>
-                <StructuredListCell>
-                  <BodyTextBlock>
-                    A short description of the label
-                  </BodyTextBlock>
-                </StructuredListCell>
-              </StructuredListItem>
-              <StructuredListItem ariaLabel="list item">
-                <StructuredListCell pullRight>
-                  <HeadingTextBlock>Label</HeadingTextBlock>
-                </StructuredListCell>
-                <StructuredListCell>
-                  <BodyTextBlock>
-                    A short description of the label
-                  </BodyTextBlock>
-                </StructuredListCell>
-              </StructuredListItem>
-            </StructuredListWithDivider>
-          </Block>
-          <StorybookSubHeading>
             with two cells and pullRight on the 2nd
           </StorybookSubHeading>
           <Block spaceStack="space050">
@@ -221,21 +194,6 @@ export default {
             <StructuredListWithDivider>
               {listItemWithOneCell}
               {listItemWithOneCell}
-            </StructuredListWithDivider>
-          </Block>
-          <StorybookSubHeading>with one cell and pullRight</StorybookSubHeading>
-          <Block spaceStack="space050">
-            <StructuredListWithDivider>
-              <StructuredListItem ariaLabel="list item">
-                <StructuredListCell pullRight>
-                  <HeadingTextBlock>Label</HeadingTextBlock>
-                </StructuredListCell>
-              </StructuredListItem>
-              <StructuredListItem ariaLabel="list item">
-                <StructuredListCell pullRight>
-                  <BodyTextBlock>Label</BodyTextBlock>
-                </StructuredListCell>
-              </StructuredListItem>
             </StructuredListWithDivider>
           </Block>
         </>
@@ -282,6 +240,41 @@ export default {
           <StorybookSubHeading>with disabled link</StorybookSubHeading>
           <StructuredListWithDivider>
             <StructuredListItem href="/" disabled ariaLabel="list item">
+              <StructuredListCell>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <BodyTextBlock>A short description of the label</BodyTextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+          </StructuredListWithDivider>
+        </>
+      ),
+    },
+    {
+      storyName: 'structured-list-combined',
+      storyFn: () => (
+        <>
+          <StorybookHeading>StructuredList combines</StorybookHeading>
+          <StorybookSubHeading>with internal link</StorybookSubHeading>
+          <StructuredListWithDivider>
+            <StructuredListItem ariaLabel="list item" href="/">
+              <StructuredListCell>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <BodyTextBlock>A short description of the label</BodyTextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem>
+              <StructuredListCell>
+                <HeadingTextBlock>Label</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <BodyTextBlock>A short description of the label</BodyTextBlock>
+              </StructuredListCell>
+            </StructuredListItem>
+            <StructuredListItem>
               <StructuredListCell>
                 <HeadingTextBlock>Label</HeadingTextBlock>
               </StructuredListCell>

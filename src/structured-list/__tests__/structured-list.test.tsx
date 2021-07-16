@@ -86,19 +86,6 @@ const TwoCellsDefault = [
   </StructuredListCell>,
 ];
 
-const TwoCellsWithPullrightOnFirst = [
-  <StructuredListCell pullRight>
-    <TextBlock stylePreset="inkContrast" typographyPreset="utilityHeading010">
-      Label
-    </TextBlock>
-  </StructuredListCell>,
-  <StructuredListCell>
-    <TextBlock stylePreset="inkSubtle" typographyPreset="utilityBody020">
-      A short description of the label
-    </TextBlock>
-  </StructuredListCell>,
-];
-
 const TwoCellsWithPullrightOnSecond = [
   <StructuredListCell>
     <TextBlock stylePreset="inkContrast" typographyPreset="utilityHeading010">
@@ -114,14 +101,6 @@ const TwoCellsWithPullrightOnSecond = [
 
 const OneCellDefault = [
   <StructuredListCell>
-    <TextBlock stylePreset="inkContrast" typographyPreset="utilityHeading010">
-      Label
-    </TextBlock>
-  </StructuredListCell>,
-];
-
-const OneCellWithPullright = [
-  <StructuredListCell pullRight>
     <TextBlock stylePreset="inkContrast" typographyPreset="utilityHeading010">
       Label
     </TextBlock>
@@ -165,13 +144,7 @@ describe('StructuredList', () => {
       const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
-    test('renders with two cells with pullRight on the first', () => {
-      const props: StructuredListItemProps = {
-        children: TwoCellsWithPullrightOnFirst,
-      };
-      const fragment = renderToFragmentWithTheme(renderDefault, props);
-      expect(fragment).toMatchSnapshot();
-    });
+
     test('renders with two cells with pullRight on the second', () => {
       const props: StructuredListItemProps = {
         children: TwoCellsWithPullrightOnSecond,
@@ -186,13 +159,7 @@ describe('StructuredList', () => {
       const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();
     });
-    test('renders with one cell with pullRight', () => {
-      const props: StructuredListItemProps = {
-        children: OneCellWithPullright,
-      };
-      const fragment = renderToFragmentWithTheme(renderDefault, props);
-      expect(fragment).toMatchSnapshot();
-    });
+
     test('renders with more than 3 children', () => {
       const props: StructuredListItemProps = {
         children: FourCells,
@@ -249,14 +216,7 @@ describe('StructuredList', () => {
       const fragment = renderToFragmentWithTheme(renderWithExternalLink, props);
       expect(fragment).toMatchSnapshot();
     });
-    test('renders two cells with pullRightOnFirst and href', () => {
-      const props: StructuredListItemProps = {
-        children: TwoCellsWithPullrightOnFirst,
-      };
 
-      const fragment = renderToFragmentWithTheme(renderWithExternalLink, props);
-      expect(fragment).toMatchSnapshot();
-    });
     test('renders two cells with pullRightOnSecond and href', () => {
       const props: StructuredListItemProps = {
         children: TwoCellsWithPullrightOnSecond,
@@ -282,14 +242,7 @@ describe('StructuredList', () => {
       const fragment = renderToFragmentWithTheme(renderWithExternalLink, props);
       expect(fragment).toMatchSnapshot();
     });
-    test('renders one cell pullRight with href', () => {
-      const props: StructuredListItemProps = {
-        children: OneCellWithPullright,
-      };
 
-      const fragment = renderToFragmentWithTheme(renderWithExternalLink, props);
-      expect(fragment).toMatchSnapshot();
-    });
     test('renders four cells with href', () => {
       const props: StructuredListItemProps = {
         children: FourCells,

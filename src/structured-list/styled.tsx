@@ -23,9 +23,14 @@ const getAlign = (align: string) => {
 };
 
 export const StyledGrid = styled(Grid)<
-  Pick<StructuredListItemProps, 'overrides'>
+  Pick<StructuredListItemProps, 'overrides'> & {hasHref: boolean}
 >`
-  ${getStylePreset('structuredListItem', '')};
+  ${props =>
+    getStylePreset(
+      'structuredListItem',
+      '',
+      props.hasHref ? {} : {omitStates: ['active', 'hover', 'focus']},
+    )(props)};
   ${getResponsiveSpace('padding', 'structuredListItem', '', 'spaceInset')}
   ${getResponsiveSize('minHeight', 'structuredListItem', '', 'minHeight')}
 `;

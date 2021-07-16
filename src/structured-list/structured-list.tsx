@@ -42,10 +42,8 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
   linkIconAlign,
 }) => {
   const childrenArray = React.Children.toArray(children);
-  const pullRightOnFirst = getPullRight(childrenArray[0]);
-  const pullRightOnSecond = getPullRight(childrenArray[1]);
 
-  if (href && childrenArray.length === 2 && !pullRightOnSecond) {
+  if (href && childrenArray.length === 2 && !getPullRight(childrenArray[1])) {
     childrenArray.push(
       <StructuredListCell align={linkIconAlign} key="link-icon">
         <StructuredListIcon href={href} overrides={overrides} />
@@ -75,6 +73,8 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
     </Grid>
   );
 
+  const hasHref = Boolean(href);
+
   const renderCells = () => {
     if (childrenArray.length === 3) {
       return (
@@ -82,6 +82,7 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
           xsRowGutter="space000"
           xsMargin="space000"
           overrides={overrides}
+          hasHref={hasHref}
         >
           <Cell xs={10}>{innerGrid}</Cell>
           <StyledCell xs={2} align={alignCell3}>
@@ -91,27 +92,23 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
       );
     }
     if (childrenArray.length === 2) {
+      const pullRightOnSecond = getPullRight(childrenArray[1]);
       return (
         <StyledGrid
           xsRowGutter="space040"
           mdRowGutter="space000"
           xsMargin="space000"
           overrides={overrides}
+          hasHref={hasHref}
         >
           <StyledCell
             xs={12}
-            md={!(pullRightOnFirst || pullRightOnSecond) ? 4 : 6}
-            mdOffset={pullRightOnFirst ? 4 : undefined}
+            md={pullRightOnSecond ? 10 : 4}
             align={alignCell1}
           >
             {childrenArray[0]}
           </StyledCell>
-          <StyledCell
-            xs={12}
-            md={!(pullRightOnFirst || pullRightOnSecond) ? 8 : 2}
-            mdOffset={pullRightOnSecond ? 4 : undefined}
-            align={alignCell2}
-          >
+          <StyledCell xs={12} md={pullRightOnSecond ? 2 : 8} align={alignCell2}>
             {childrenArray[1]}
           </StyledCell>
         </StyledGrid>
@@ -123,13 +120,9 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
           xsRowGutter="space000"
           xsMargin="space000"
           overrides={overrides}
+          hasHref={hasHref}
         >
-          <StyledCell
-            xs={12}
-            md={pullRightOnFirst ? 2 : undefined}
-            mdOffset={pullRightOnFirst ? 10 : undefined}
-            align={alignCell1}
-          >
+          <StyledCell xs={12} align={alignCell1}>
             {childrenArray[0]}
           </StyledCell>
         </StyledGrid>
