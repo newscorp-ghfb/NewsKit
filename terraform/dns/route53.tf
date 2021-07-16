@@ -27,5 +27,6 @@ resource "aws_route53_record" "cert" {
   name     = "${each.key}"
   type     = "CNAME"
   ttl      = "900"
-  records  = ["${each.value}"]
+  # records  = ["${each.value}"]
+  records  = ["${dev.example.com}"]
 }
