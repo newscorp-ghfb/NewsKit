@@ -1,10 +1,7 @@
 import React from 'react';
-import {Grid, Cell} from 'newskit';
-import {SectionIntroduction} from '../../section-introduction';
-import {Separator} from '../../separator';
 import {ComponentPageCell} from '../../layout-cells';
-import {StyledSection} from './styled';
 import {Table} from '../../table';
+import {CommonSection} from './common-section';
 
 const features = {
   variations: {
@@ -67,39 +64,20 @@ export type ComplianceSectionProps = Partial<
 const columns = Object.keys(features) as ComplianceFeatures[];
 
 export const ComplianceSection: React.FC<ComplianceSectionProps> = props => (
-  <>
-    <StyledSection id="compliance" data-toc-indexed="Compliance">
-      {/* TODO: this Grid can be removed when the Cell is removed from
-        SectionIntroduction */}
-      <Grid lgMargin="space000" xsRowGutter="space000">
-        <SectionIntroduction
-          title="Compliance"
-          cellProps={{
-            md: 10,
-            lg: 10,
-            mdOffset: 1,
-          }}
-        >
-          All of the components in the NewsKit design system go through a
-          comprehensive set of checks to ensure that we are producing compliant
-          and best practice components.
-        </SectionIntroduction>
-        <ComponentPageCell>
-          <Cell xs={12}>
-            <Table
-              columns={['Feature', 'Description', 'Status']}
-              rows={columns.map(col => ({
-                feature: features[col].title,
-                description: features[col].description,
-                status: props[col],
-              }))}
-            />
-          </Cell>
-        </ComponentPageCell>
-      </Grid>
-    </StyledSection>
+  <CommonSection
+    title="Compliance"
+    id="compliance"
+    introduction="All of the components in the NewsKit design system go through a comprehensive set of checks to ensure that we are producing compliant and best practice components."
+  >
     <ComponentPageCell>
-      <Separator />
+      <Table
+        columns={['Feature', 'Description', 'Status']}
+        rows={columns.map(col => ({
+          feature: features[col].title,
+          description: features[col].description,
+          status: props[col],
+        }))}
+      />
     </ComponentPageCell>
-  </>
+  </CommonSection>
 );

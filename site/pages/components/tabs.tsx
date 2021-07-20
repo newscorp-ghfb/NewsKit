@@ -691,7 +691,7 @@ export default (layoutProps: LayoutProps) => (
         {
           name: 'Tab',
           description: 'Includes a label, icon',
-          component: ['Text', 'Block', 'Icons'],
+          component: ['Text Block', 'Icons'],
           optional: undefined,
         },
         {

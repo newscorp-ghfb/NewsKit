@@ -323,7 +323,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
       <div
         data-comp="NewsKit Grid"
         data-props="{
-  \\"lgMargin\\": \\"space000\\",
+  \\"xsMargin\\": \\"space000\\",
   \\"xsRowGutter\\": \\"space000\\"
 }"
         data-testid="Grid"

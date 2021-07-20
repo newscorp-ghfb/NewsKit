@@ -133,6 +133,23 @@ export const stylePresets = {
       borderColor: '{{colors.interactivePrimary030}}',
     },
   },
+  componentPageTabs: {
+    base: {
+      borderRadius: 'borderRadiusSharp',
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkSubtle}}',
+    },
+    hover: {
+      color: '{{colors.inkBase}}',
+    },
+    active: {
+      color: '{{colors.inkBase}}',
+    },
+    selected: {
+      color: '{{colors.inkContrast}}',
+      borderColor: '{{colors.interactivePrimary030}}',
+    },
+  },
   checkIconContainer: {
     base: {
       borderStyle: 'solid',
@@ -670,6 +687,32 @@ export const stylePresets = {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
       borderStyle: 'none',
+    },
+  },
+  dividerInverse: {
+    base: {
+      borderColor: '{{colors.blackTint020}}',
+    },
+  },
+  toastText: {
+    base: {
+      color: '{{colors.neutral100}}',
+    },
+  },
+  toastIcon: {
+    base: {
+      iconColor: '{{colors.neutral100}}',
+    },
+  },
+  toastButton: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.neutral100}}',
+      iconColor: '{{colors.neutral100}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactiveInverse010}}',
     },
   },
 };

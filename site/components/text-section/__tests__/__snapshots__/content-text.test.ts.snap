@@ -82,16 +82,8 @@ exports[`ContentText renders with only the description 1`] = `
 
 exports[`ContentText renders with only the title 1`] = `
 <DocumentFragment>
-  @media screen and (max-width: 767px) {
   .emotion-0 {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 40px;
 }
 
 .emotion-1 {

@@ -396,7 +396,11 @@ exports[`ComponentAPISection renders section as expected 1`] = `
               <div
                 data-comp="NewsKit Tab"
                 data-props="{
-  \\"label\\": \\"Props\\"
+  \\"label\\": \\"Props\\",
+  \\"overrides\\": {
+    \\"typographyPreset\\": \\"utilityButton020\\",
+    \\"stylePreset\\": \\"componentPageTabs\\"
+  }
 }"
                 data-testid="Tab"
               >
@@ -431,7 +435,11 @@ exports[`ComponentAPISection renders section as expected 1`] = `
               <div
                 data-comp="NewsKit Tab"
                 data-props="{
-  \\"label\\": \\"Overrides\\"
+  \\"label\\": \\"Overrides\\",
+  \\"overrides\\": {
+    \\"typographyPreset\\": \\"utilityButton020\\",
+    \\"stylePreset\\": \\"componentPageTabs\\"
+  }
 }"
                 data-testid="Tab"
               >

@@ -107,4 +107,21 @@ export const componentDefaults = {
       },
     },
   },
+  toast: {
+    maxWidth: {
+      xs: '90vw',
+      sm: '60vw',
+      md: '45vw',
+      lg: '38vw',
+      xl: '31vw',
+    },
+    content: {
+      title: {
+        stylePreset: 'toastText',
+      },
+      message: {
+        stylePreset: 'toastText',
+      },
+    },
+  },
 };

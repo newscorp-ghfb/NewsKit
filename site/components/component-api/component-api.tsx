@@ -8,13 +8,67 @@ import {ComponentPageCell} from '../layout-cells';
 export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
   <ComponentPageCell>
     {components.map(
-      ({title, summary, propsRows, overridesRows, infoNotice}, i, arr) => {
-        const propsTable = (
-          <Table
-            columns={['Name', 'Type', 'Default', 'Description', 'Required']}
-            rows={propsRows}
-          />
-        );
+      (
+        {title, summary, propsRows, argsRows, overridesRows, infoNotice},
+        i,
+        arr,
+      ) => {
+        const tabs: {label: string; content: React.ReactNode}[] = [];
+
+        if (propsRows) {
+          tabs.push({
+            label: 'Props',
+            content: (
+              <Table
+                columns={['Name', 'Type', 'Default', 'Description', 'Required']}
+                rows={propsRows}
+              />
+            ),
+          });
+        }
+
+        if (argsRows) {
+          tabs.push({
+            label: 'Arguments',
+            content: (
+              <Table
+                columns={[
+                  'Argument',
+                  'Type',
+                  'Default',
+                  'Description',
+                  'Required',
+                ]}
+                rows={argsRows}
+              />
+            ),
+          });
+        }
+
+        if (overridesRows) {
+          tabs.push({
+            label: 'Overrides',
+            content: (
+              <>
+                <Table
+                  columns={['Attribute', 'Type', 'Default', 'Description']}
+                  rows={overridesRows}
+                />
+                {infoNotice && (
+                  <InlineMessage role="region" aria-label="Support resizing">
+                    {infoNotice}
+                  </InlineMessage>
+                )}
+              </>
+            ),
+          });
+        }
+
+        const tabOverrides = {
+          typographyPreset: 'utilityButton020',
+          stylePreset: 'componentPageTabs',
+        };
+
         return (
           <Block spaceStack={i !== arr.length - 1 ? 'space100' : undefined}>
             {title && (
@@ -22,24 +76,16 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
                 {summary}
               </ContentText>
             )}
-            {overridesRows ? (
+            {tabs.length > 1 && (
               <Tabs size={TabSize.Medium}>
-                <Tab label="Props">{propsTable}</Tab>
-                <Tab label="Overrides">
-                  <Table
-                    columns={['Attribute', 'Type', 'Default', 'Description']}
-                    rows={overridesRows}
-                  />
-                  {infoNotice && (
-                    <InlineMessage role="region" aria-label="Support resizing">
-                      {infoNotice}
-                    </InlineMessage>
-                  )}
-                </Tab>
+                {tabs.map(({label, content}) => (
+                  <Tab label={label} overrides={tabOverrides}>
+                    {content}
+                  </Tab>
+                ))}
               </Tabs>
-            ) : (
-              propsTable
             )}
+            {tabs.length === 1 && tabs[0].content}
           </Block>
         );
       },

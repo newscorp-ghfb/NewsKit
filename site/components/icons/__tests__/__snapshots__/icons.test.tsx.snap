@@ -41,7 +41,7 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   appearance: none;
   overflow: hidden;
   border-style: solid;
-  border-color: #148F39;
+  border-color: #67CF86;
   background-color: #E6FAEB;
   border-radius: 50%;
   border-width: 1px;
@@ -184,7 +184,7 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   appearance: none;
   overflow: hidden;
   border-style: solid;
-  border-color: #D23F2D;
+  border-color: #ED6B5A;
   background-color: #FFE8E5;
   border-radius: 50%;
   border-width: 1px;

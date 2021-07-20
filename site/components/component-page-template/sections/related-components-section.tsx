@@ -1,11 +1,9 @@
 import React from 'react';
-import {Cell, Grid} from 'newskit';
 import {getIllustrationComponent} from '../../illustrations/illustration-loader';
-import {SectionIntroduction} from '../../section-introduction';
 import {MediaList} from '../../media-list';
 import {getByTitle} from '../../../utils/get-route-object';
 import {IntroductionText} from './types';
-import {StyledSection} from './styled';
+import {CommonSection} from './common-section';
 
 export type RelatedComponentsSectionProps = {
   related: string[];
@@ -21,23 +19,21 @@ const getRelatedComponents = (related: string[]) =>
       href: id,
     };
   });
-
 export const RelatedComponentsSection: React.FC<RelatedComponentsSectionProps> = ({
   introduction,
   related,
 }) => (
-  <Cell xs={12}>
-    <StyledSection id="related" data-toc-indexed="Related">
-      <Grid lgMargin="space000" xsRowGutter="space000">
-        <SectionIntroduction title="Related Components">
-          {introduction}
-        </SectionIntroduction>
-        <MediaList
-          spaceStack="space090"
-          layout="4-span"
-          cards={getRelatedComponents(related)}
-        />
-      </Grid>
-    </StyledSection>
-  </Cell>
+  <CommonSection
+    title="Related Components"
+    toc="Related"
+    id="related"
+    introduction={introduction}
+    hideSeparator
+  >
+    <MediaList
+      spaceStack="space090"
+      layout="4-span"
+      cards={getRelatedComponents(related).filter(component => component.title)}
+    />
+  </CommonSection>
 );

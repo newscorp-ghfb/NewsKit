@@ -41,7 +41,12 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           </Block>
         </>
       ) : (
-        <Block spaceStack={{xs: 'space050', md: 'space060'}}>
+        <Block
+          spaceStack={
+            // we want larger stack when children is not present so align with the rest of titles
+            children ? {xs: 'space050', md: 'space060'} : subHeadingSpaceStack
+          }
+        >
           <TitleBar
             headingAs="h2"
             overrides={{

@@ -122,6 +122,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
+  border-width: 0;
 }
 
 .emotion-10 {
@@ -199,7 +200,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   appearance: none;
   overflow: hidden;
   border-style: solid;
-  border-color: #148F39;
+  border-color: #67CF86;
   background-color: #E6FAEB;
   border-radius: 50%;
   border-width: 1px;
@@ -643,6 +644,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
+  border-width: 0;
 }
 
 .emotion-14 {
@@ -720,7 +722,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   appearance: none;
   overflow: hidden;
   border-style: solid;
-  border-color: #148F39;
+  border-color: #67CF86;
   background-color: #E6FAEB;
   border-radius: 50%;
   border-width: 1px;
@@ -916,14 +918,17 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  border-radius: borderRadiusSharp;
   background-color: transparent;
   color: #677483;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #577FFB;
+  color: #162740;
+  border-color: #577FFB;
 }
 
 .emotion-39 svg {
@@ -931,39 +936,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   height: 24px;
 }
 
-.emotion-39 svg {
-  fill: #555E74;
-}
-
 .emotion-39:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #577FFB;
-}
-
-.emotion-39:hover:not(:disabled) svg {
-  fill: #577FFB;
+  color: #555E74;
 }
 
 .emotion-39:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #577FFB;
-}
-
-.emotion-39:active:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-39:disabled {
-  background-color: #E4E4E4;
-  color: #BBC3C9;
-}
-
-.emotion-39:disabled svg {
-  fill: #BBC3C9;
-}
-
-.emotion-39 svg {
-  fill: #577FFB;
+  color: #555E74;
 }
 
 .emotion-40 {
@@ -1056,6 +1034,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  border-radius: borderRadiusSharp;
   background-color: transparent;
   color: #677483;
   transition-property: background-color;
@@ -1069,35 +1048,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   height: 24px;
 }
 
-.emotion-46 svg {
-  fill: #555E74;
-}
-
 .emotion-46:hover:not(:disabled) {
-  background-color: #E0E7FF;
-  color: #577FFB;
-}
-
-.emotion-46:hover:not(:disabled) svg {
-  fill: #577FFB;
+  color: #555E74;
 }
 
 .emotion-46:active:not(:disabled) {
-  background-color: #AEBFFF;
-  color: #577FFB;
-}
-
-.emotion-46:active:not(:disabled) svg {
-  fill: #577FFB;
-}
-
-.emotion-46:disabled {
-  background-color: #E4E4E4;
-  color: #BBC3C9;
-}
-
-.emotion-46:disabled svg {
-  fill: #BBC3C9;
+  color: #555E74;
 }
 
 .emotion-50 {

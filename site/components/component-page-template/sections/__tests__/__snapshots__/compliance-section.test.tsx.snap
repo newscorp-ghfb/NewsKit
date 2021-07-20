@@ -141,86 +141,86 @@ exports[`ComplianceSection renders section as expected 1`] = `
   margin-top: -0.5750000000000001em;
 }
 
-<section
-    class="emotion-0"
-    data-toc-indexed="Compliance"
-    id="compliance"
-  >
-    <div
-      data-comp="NewsKit Grid"
-      data-props="{
-  \\"lgMargin\\": \\"space000\\",
-  \\"xsRowGutter\\": \\"space000\\"
+<div
+    data-comp="NewsKit Cell"
+    data-props="{
+  \\"xs\\": 12
 }"
-      data-testid="Grid"
+    data-testid="Cell"
+  >
+    <section
+      class="emotion-0"
+      data-toc-indexed="Compliance"
+      id="compliance"
     >
       <div
-        data-comp="NewsKit Cell"
+        data-comp="NewsKit Grid"
         data-props="{
+  \\"xsMargin\\": \\"space000\\",
+  \\"xsRowGutter\\": \\"space000\\"
+}"
+        data-testid="Grid"
+      >
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
   \\"xs\\": 12,
-  \\"md\\": 10,
+  \\"md\\": 8,
   \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
-        data-testid="Cell"
-      >
-        <div
-          class="emotion-1"
+          data-testid="Cell"
         >
           <div
-            class="emotion-2"
+            class="emotion-1"
           >
             <div
-              class="emotion-3"
+              class="emotion-2"
             >
-              <section
-                class="emotion-4"
+              <div
+                class="emotion-3"
               >
-                <h2
-                  class="nk-headline-heading emotion-5"
+                <section
+                  class="emotion-4"
                 >
-                  Compliance
-                </h2>
-              </section>
+                  <h2
+                    class="nk-headline-heading emotion-5"
+                  >
+                    Compliance
+                  </h2>
+                </section>
+              </div>
             </div>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <p
+              class="emotion-7"
+            >
+              All of the components in the NewsKit design system go through a comprehensive set of checks to ensure that we are producing compliant and best practice components.
+            </p>
           </div>
         </div>
         <div
-          class="emotion-6"
-        >
-          <p
-            class="emotion-7"
-          >
-            All of the components in the NewsKit design system go through a comprehensive set of checks to ensure that we are producing compliant and best practice components.
-          </p>
-        </div>
-      </div>
-      <div
-        data-comp="NewsKit Cell"
-        data-props="{
+          data-comp="NewsKit Cell"
+          data-props="{
   \\"xs\\": 12,
   \\"mdOffset\\": 1,
   \\"md\\": 10,
   \\"xl\\": 8
 }"
-        data-testid="Cell"
-      />
-      <div
-        data-comp="NewsKit Cell"
-        data-props="{
+          data-testid="Cell"
+        />
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
-}"
-        data-testid="Cell"
-      >
-        <div
-          data-comp="NewsKit Cell"
-          data-props="{
-  \\"xs\\": 12
 }"
           data-testid="Cell"
         >
@@ -284,8 +284,8 @@ exports[`ComplianceSection renders section as expected 1`] = `
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-top: 40px;

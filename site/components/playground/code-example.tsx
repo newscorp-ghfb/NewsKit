@@ -48,6 +48,7 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
     height="100%"
     width="100%"
     justifyContent="space-between"
+    font="utilityCode030"
   >
     {source && (
       <LegacyBlock

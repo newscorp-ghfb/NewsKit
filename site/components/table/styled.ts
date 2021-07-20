@@ -25,9 +25,10 @@ export const StyledHeader = styled.th<TableCellProps>`
   white-space: nowrap;
 `;
 
-export const StyledTableRow = styled.tr`
+export const StyledTableRow = styled.tr<{last?: boolean}>`
   ${getStylePresetFromTheme('tableRow')}
   ${getTypographyPresetFromTheme('utilityBody020')}
+  ${({last}) => last && {borderWidth: 0}}
 `;
 
 export const StyledDataCell = styled.td<TableCellProps>`

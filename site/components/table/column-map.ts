@@ -14,6 +14,7 @@ const large = {
 export const columnMap: Record<string, ColumnMapObject> = {
   Item: {...small, cellType: 'number'},
   Order: {...small, cellType: 'number'},
+  Argument: {...small, cellType: 'number'},
   Optional: {...small, cellType: 'icon'},
   Required: {...small, cellType: 'icon'},
   Status: {...small, cellType: 'icon'},

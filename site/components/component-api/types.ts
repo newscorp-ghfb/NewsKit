@@ -7,7 +7,8 @@ export interface ComponentAPIProps {
 export interface SingleComponentAPIProps {
   title?: string;
   summary?: string;
-  propsRows: PropsRowsProps[];
+  propsRows?: PropsRowsProps[];
+  argsRows?: ArgumentsRowsProps[];
   overridesRows?: OverridesRowsProps[];
   infoNotice?: React.ReactNode;
 }
@@ -25,4 +26,7 @@ export interface PropsRowsProps extends CommonProps {
 
 export interface OverridesRowsProps extends CommonProps {
   attribute: string;
+}
+export interface ArgumentsRowsProps extends CommonProps {
+  order: number;
 }

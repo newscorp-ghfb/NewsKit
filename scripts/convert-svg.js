@@ -37,15 +37,24 @@ files
       .replace(`clipPath="url(#clip0)"`, 'clipPath={`url(#${clip0})`}>')
       .replace(`clipPath="url(#clip1)"`, 'clipPath={`url(#${clip1})`}>')
       .replace(`clipPath="url(#clip2)"`, 'clipPath={`url(#${clip2})`}>')
+      .replace(`clip-path="url(#clip0)"`, 'clipPath={`url(#${clip0})`}')
+      .replace(`clip-path="url(#clip1)"`, 'clipPath={`url(#${clip1})`}')
+      .replace(`clip-path="url(#clip2)"`, 'clipPath={`url(#${clip2})`}')
       .replace(`id="filter0_d"`, 'id={filter0}')
+      .replace(`id="filter1_d"`, 'id={filter1}')
+      .replace(`id="filter2_d"`, 'id={filter2}')
       .replace(`filter="url(#filter0_d)"`, 'filter={`url(#${filter0})`}')
+      .replace(`filter="url(#filter1_d)"`, 'filter={`url(#${filter1})`}')
+      .replace(`filter="url(#filter2_d)"`, 'filter={`url(#${filter2})`}')
       .replace(/fill=" /g, 'fill="')
       .replace(/<path/g, '<Path')
       .replace(/<rect/g, '<Rect')
       .replace(/<circle/g, '<Circle')
       .replace(/<ellipse/g, '<Ellipse')
       .replace('<svg', '<Svg')
-      .replace('</svg', '</Svg');
+      .replace('</svg', '</Svg')
+      .replace(/color-interpolation-filters/g, 'colorInterpolationFilters')
+      .replace(/flood-opacity/g, 'floodOpacity');
 
     const filename2 = filename
       .replace('components-', '')
@@ -57,11 +66,11 @@ files
     const compName = `${filename2}Illustration`;
     const newFile = `import React from 'react';
 import {getSSRId} from 'newskit';
-${file.includes('Svg') ? `import {Svg} from '../svg';` : ''}
-${file.includes('Path') ? `import {Path} from '../path';` : ''}
-${file.includes('Rect') ? `import {Rect} from '../rect';` : ''}
-${file.includes('Circle') ? `import {Circle} from '../circle';` : ''}
-${file.includes('Ellipse') ? `import {Ellipse} from '../ellipse';` : ''}
+${file.includes('Svg') ? `import {Svg} from '../../svg';` : ''}
+${file.includes('Path') ? `import {Path} from '../../path';` : ''}
+${file.includes('Rect') ? `import {Rect} from '../../rect';` : ''}
+${file.includes('Circle') ? `import {Circle} from '../../circle';` : ''}
+${file.includes('Ellipse') ? `import {Ellipse} from '../../ellipse';` : ''}
 
 export const ${compName}: React.FC = () => {
   ${file.includes('mask0') ? 'const mask0 = getSSRId();' : ''}
@@ -72,6 +81,8 @@ export const ${compName}: React.FC = () => {
   ${file.includes('clip1') ? 'const clip1 = getSSRId();' : ''}
   ${file.includes('clip2') ? 'const clip2 = getSSRId();' : ''}
   ${file.includes('filter0') ? 'const filter0 = getSSRId();' : ''}
+  ${file.includes('filter1') ? 'const filter1 = getSSRId();' : ''}
+  ${file.includes('filter2') ? 'const filter2 = getSSRId();' : ''}
   return (
     ${file}
   );

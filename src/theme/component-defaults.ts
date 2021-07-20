@@ -815,24 +815,24 @@ export const componentDefaults = {
       lg: '38%',
       xl: '31%',
     },
-    icon: {
-      spaceInline: 'space030',
-    },
-    divider: {
-      stylePreset: 'dividerInverse',
-    },
     content: {
+      message: {
+        stylePreset: 'inkInverse',
+        typographyPreset: 'utilityBody010',
+      },
       title: {
         stylePreset: 'inkInverse',
         typographyPreset: 'utilityHeading010',
         spaceStack: 'space010',
       },
-      message: {
-        stylePreset: 'inkInverse',
-        typographyPreset: 'utilityBody010',
-      },
     },
     contentAndActions: {
+      spaceInline: 'space030',
+    },
+    divider: {
+      stylePreset: 'dividerInverse',
+    },
+    icon: {
       spaceInline: 'space030',
     },
   },

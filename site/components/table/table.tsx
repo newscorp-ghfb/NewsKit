@@ -1,5 +1,4 @@
 import React from 'react';
-import {getSSRId} from 'newskit';
 import {
   StyledHeader,
   StyledTable,
@@ -24,7 +23,7 @@ export const Table: React.FC<TableProps> = ({rows, columns}) => (
       </thead>
       <tbody>
         {rows.map((row, i) => (
-          <StyledTableRow key={getSSRId()}>
+          <StyledTableRow last={i === rows.length - 1}>
             {renderCols(columns, row, i)}
           </StyledTableRow>
         ))}

@@ -9,7 +9,12 @@ export const ContentText: React.FC<ContentTextProps> = ({
 }) => (
   <>
     {title && (
-      <Block spaceStack={{xs: 'space040', md: 'space045'}}>
+      <Block
+        spaceStack={
+          // we want larger stack when children is not present so align with the rest of titles
+          children ? {xs: 'space040', md: 'space045'} : 'space070'
+        }
+      >
         <TextBlock
           as={titleAs}
           stylePreset="inkContrast"

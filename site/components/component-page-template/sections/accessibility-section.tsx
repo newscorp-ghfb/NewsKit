@@ -1,10 +1,7 @@
 import {Grid, Cell, InlineMessage} from 'newskit';
 import React from 'react';
-import {SectionIntroduction} from '../../section-introduction';
-import {Separator} from '../../separator';
-import {StyledSection} from './styled';
 import {IntroductionText} from './types';
-
+import {CommonSection} from './common-section';
 import {ContentText} from '../../text-section/content-text';
 import {Table} from '../../table';
 import {ComponentPageCell} from '../../layout-cells';
@@ -62,60 +59,50 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
   infoNoticeFocus,
   infoNoticeAria,
 }) => (
-  <>
+  <CommonSection
+    title="Accessibility Considerations"
+    id="accessibility"
+    toc="Accessibility"
+    introduction={introduction}
+  >
     <Cell xs={12}>
-      <StyledSection id="accessibility" data-toc-indexed="Accessibility">
-        <Grid lgMargin="space000" xsRowGutter="space000">
-          <SectionIntroduction title="Accessibility Considerations">
-            {introduction}
-          </SectionIntroduction>
-          <Cell xs={12}>
-            <Grid xsRowGutter="space100" xsMargin="space000">
-              {focusOrder && (
-                <A11yTable
-                  columns={['Order', 'Element', 'Role']}
-                  {...focusOrder}
-                />
-              )}
-              <ComponentPageCell>
-                {infoNoticeFocus && (
-                  <InlineMessage role="region" aria-label="Focus notice">
-                    {infoNoticeFocus}
-                  </InlineMessage>
-                )}
-              </ComponentPageCell>
-              {interaction && (
-                <A11yTable
-                  columns={['Command', 'Description']}
-                  {...interaction}
-                />
-              )}
-              {aria && (
-                <A11yTable
-                  columns={[
-                    'Element',
-                    'Attribute',
-                    'Value',
-                    'Description',
-                    'User Supplied',
-                  ]}
-                  {...aria}
-                />
-              )}
-              <ComponentPageCell>
-                {infoNoticeAria && (
-                  <InlineMessage role="region" aria-label="Wai Aria notice">
-                    {infoNoticeAria}
-                  </InlineMessage>
-                )}
-              </ComponentPageCell>
-            </Grid>
-          </Cell>
-        </Grid>
-      </StyledSection>
+      <Grid xsRowGutter="space100" xsMargin="space000">
+        {focusOrder && (
+          <A11yTable columns={['Order', 'Element', 'Role']} {...focusOrder} />
+        )}
+
+        {infoNoticeFocus && (
+          <ComponentPageCell>
+            <InlineMessage role="region" aria-label="Focus notice">
+              {infoNoticeFocus}
+            </InlineMessage>
+          </ComponentPageCell>
+        )}
+
+        {interaction && (
+          <A11yTable columns={['Command', 'Description']} {...interaction} />
+        )}
+        {aria && (
+          <A11yTable
+            columns={[
+              'Element',
+              'Attribute',
+              'Value',
+              'Description',
+              'User Supplied',
+            ]}
+            {...aria}
+          />
+        )}
+
+        {infoNoticeAria && (
+          <ComponentPageCell>
+            <InlineMessage role="region" aria-label="Wai Aria notice">
+              {infoNoticeAria}
+            </InlineMessage>
+          </ComponentPageCell>
+        )}
+      </Grid>
     </Cell>
-    <ComponentPageCell>
-      <Separator />
-    </ComponentPageCell>
-  </>
+  </CommonSection>
 );

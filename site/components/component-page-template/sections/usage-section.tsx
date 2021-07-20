@@ -1,11 +1,7 @@
-import {Cell, Grid} from 'newskit';
 import React from 'react';
-import {SectionIntroduction} from '../../section-introduction';
 import {MediaList, MediaListProps} from '../../media-list';
-import {Separator} from '../../separator';
-import {StyledSection} from './styled';
 import {IntroductionText} from './types';
-import {ComponentPageCell} from '../../layout-cells';
+import {CommonSection} from './common-section';
 
 export type UsageSectionProps = MediaListProps & IntroductionText;
 
@@ -13,24 +9,12 @@ export const UsageSection: React.FC<UsageSectionProps> = ({
   introduction,
   ...usage
 }) => (
-  <>
-    <Cell xs={12}>
-      <StyledSection id="usage" data-toc-indexed="Usage">
-        <Grid xsMargin="space000" xsRowGutter="space000">
-          <SectionIntroduction title="Usage">
-            {introduction}
-          </SectionIntroduction>
-          <MediaList
-            gridProps={{xsRowGutter: 'space050'}}
-            cardType="usage"
-            layout="2-span"
-            {...usage}
-          />
-        </Grid>
-      </StyledSection>
-    </Cell>
-    <ComponentPageCell>
-      <Separator />
-    </ComponentPageCell>
-  </>
+  <CommonSection title="Usage" id="usage" introduction={introduction}>
+    <MediaList
+      gridProps={{xsRowGutter: 'space050'}}
+      cardType="usage"
+      layout="2-span"
+      {...usage}
+    />
+  </CommonSection>
 );

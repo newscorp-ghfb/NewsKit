@@ -1,5 +1,4 @@
 [
-
   {
     "title": "About",
     "id": "/about",
@@ -118,9 +117,10 @@
             "page": true,
             "id": "/foundations/theming/component-defaults"
           }
-          ]
+        ]
       }
-      ]},
+    ]
+  },
   {
     "title": "Components",
     "id": "/components",
@@ -190,6 +190,13 @@
             "id": "/components/progress-indicator",
             "description": "Demonstrates the progress of a system action e.g. waiting for a page to load.",
             "illustration": "components/progress-indicator-illustration"
+          },
+          {
+            "title": "Toast",
+            "page": true,
+            "id": "/components/toast",
+            "description": "A Toast communicates confirmation of an action or a low-priority message that does not need to completely interrupt the user experience.",
+            "illustration": "components/toast/toast-illustration"
           }
         ]
       },

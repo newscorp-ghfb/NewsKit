@@ -1198,7 +1198,7 @@ exports[`Media List renders with usage cards 1`] = `
   appearance: none;
   overflow: hidden;
   border-style: solid;
-  border-color: #148F39;
+  border-color: #67CF86;
   background-color: #E6FAEB;
   border-radius: 50%;
   border-width: 1px;
@@ -1298,7 +1298,7 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-17 {
   border-style: solid;
-  border-color: #148F39;
+  border-color: #67CF86;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -1401,7 +1401,7 @@ exports[`Media List renders with usage cards 1`] = `
   appearance: none;
   overflow: hidden;
   border-style: solid;
-  border-color: #D23F2D;
+  border-color: #ED6B5A;
   background-color: #FFE8E5;
   border-radius: 50%;
   border-width: 1px;
@@ -1433,7 +1433,7 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-36 {
   border-style: solid;
-  border-color: #D23F2D;
+  border-color: #ED6B5A;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;

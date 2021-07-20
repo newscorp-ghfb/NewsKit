@@ -1,14 +1,13 @@
-import {Grid, Block, Image, ImageProps, Cell} from 'newskit';
+import {Block, Image, ImageProps} from 'newskit';
+import {renderIfReactComponent} from 'newskit/utils/component';
 import React from 'react';
-import {SectionIntroduction} from '../../section-introduction';
 import {Table} from '../../table';
-import {StyledSection} from './styled';
 import {IntroductionText} from './types';
 import {ComponentPageCell} from '../../layout-cells';
-import {Separator} from '../../separator';
+import {CommonSection} from './common-section';
 
 export interface AnatomyProps {
-  media: ImageProps;
+  media: ImageProps | JSX.Element | React.ComponentType;
   rows: {
     name: string;
     description: string | JSX.Element;
@@ -24,35 +23,17 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
   media,
   rows,
 }) => (
-  <>
-    <Cell xs={12}>
-      <StyledSection id="anatomy" data-toc-indexed="Anatomy">
-        <Grid xsMargin="space000" xsRowGutter="space000">
-          <SectionIntroduction title="Anatomy">
-            {introduction}
-          </SectionIntroduction>
-          <ComponentPageCell>
-            <Block spaceStack="space050">
-              <Image {...media} />
-            </Block>
-            <Block spaceStack="space000">
-              <Table
-                columns={[
-                  'Item',
-                  'Name',
-                  'Description',
-                  'Component',
-                  'Optional',
-                ]}
-                rows={rows}
-              />
-            </Block>
-          </ComponentPageCell>
-        </Grid>
-      </StyledSection>
-    </Cell>
+  <CommonSection title="Anatomy" id="anatomy" introduction={introduction}>
     <ComponentPageCell>
-      <Separator />
+      <Block spaceStack="space050">
+        {renderIfReactComponent(media) || <Image {...(media as ImageProps)} />}
+      </Block>
+      <Block spaceStack="space000">
+        <Table
+          columns={['Item', 'Name', 'Description', 'Component', 'Optional']}
+          rows={rows}
+        />
+      </Block>
     </ComponentPageCell>
-  </>
+  </CommonSection>
 );
