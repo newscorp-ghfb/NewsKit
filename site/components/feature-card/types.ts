@@ -1,11 +1,19 @@
-import {CardProps} from 'newskit';
+import {CardProps, MQ} from 'newskit';
 
 export interface FeatureCardProps
-  extends Omit<CardProps, 'children' | 'layout'> {
-  title: string;
-  description: string;
-  stylePrefix: string;
+  extends Omit<CardProps, 'children' | 'layout' | 'overrides'> {
+  title?: string;
+  description?: string;
+  stylePrefix?: string;
   layout?: 'vertical' | 'horizontal';
   buttonHref?: string;
   buttonLabel?: string;
+  overrides?: {
+    title?: {
+      typographyPreset?: MQ<string>;
+    };
+    description?: {
+      typographyPreset?: MQ<string>;
+    };
+  };
 }

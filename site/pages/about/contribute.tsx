@@ -15,23 +15,15 @@ import {Separator} from '../../components/separator';
 import {ContentText} from '../../components/text-section';
 import {ComponentPageCell} from '../../components/layout-cells';
 
-// Keeping this until mediaList starts supporting featureCards
-// const cardStyle = {
-//   card: {
-//     stylePreset: 'cardContainerNonInteractive010',
-//   },
-//   title: {
-//     stylePreset: 'inkWhiteContrast',
-//     typographyPreset: {
-//       xs: 'editorialHeadline020',
-//       lg: 'editorialHeadline030',
-//     },
-//   },
-//   description: {
-//     stylePreset: 'inkWhiteSubtle',
-//     typographyPreset: 'editorialParagraph010',
-//   },
-// };
+const cardoverrides = {
+  title: {
+    typographyPreset: 'editorialHeadline030',
+  },
+  description: {
+    typographyPreset: 'editorialParagraph020',
+  },
+};
+const {title, description} = cardoverrides;
 
 const WrapperWithPadding = styled.div`
   ${getSizingCssFromTheme('paddingTop', 'sizing080')};
@@ -40,30 +32,46 @@ const WrapperWithPadding = styled.div`
 
 const cards = [
   {
+    media: {
+      src: '../../static/about/contribute/contribute-card-feedback.svg',
+      alt: '',
+    },
+
     title: 'Feedback',
     description:
       'Stay in contact with the NewsKit team and help it progress in a positive direction.',
-    media: {
-      src: '/static/about/contribute/contribute-card-feedback.svg',
-      alt: '',
+    stylePrefix: 'featureCard',
+    overrides: {
+      title,
+      description,
     },
   },
   {
+    media: {
+      src: '../../static/about/contribute/contribute-card-share.svg',
+      alt: '',
+    },
     title: 'Share',
     description:
       'Promote the Design System, answer questions and help your team integrate.',
-    media: {
-      src: '/static/about/contribute/contribute-card-share.svg',
-      alt: '',
+    stylePrefix: 'featureCard',
+    overrides: {
+      title,
+      description,
     },
   },
   {
+    media: {
+      src: '../../static/about/contribute/contribute-card-create.svg',
+      alt: '',
+    },
     title: 'Create',
+    stylePrefix: 'featureCard',
     description:
       'Write code or design assets for the Design System for other users to reuse.',
-    media: {
-      src: '/static/about/contribute/contribute-card-create.svg',
-      alt: '',
+    overrides: {
+      title,
+      description,
     },
   },
 ];
@@ -85,9 +93,14 @@ export default (layoutProps: LayoutProps) => (
         Design System; from submitting a proposal to designing a new feature for
         other users to benefit from.
       </SectionIntroduction>
-
-      <MediaList cards={[...cards]} />
       <ComponentPageCell>
+        <MediaList
+          layout="3-span"
+          cardType="feature"
+          cards={cards}
+          parentCellProps={{md: 'full-width', lg: 12, mdOffset: 0, xl: 12}}
+        />
+
         <Separator />
       </ComponentPageCell>
 
@@ -139,6 +152,21 @@ export default (layoutProps: LayoutProps) => (
           team to address.
         </ContentText>
 
+        <ContentText title="Report a bug" titleAs="h3">
+          Software glitches and pesky bugs can occasionally make their way into
+          NewsKit products including the design library, codebase or this
+          website. If you encounter a bug, please report it to us using the{' '}
+          <Link
+            overrides={{typographyPreset: 'utilityButton030'}}
+            target="_blank"
+            href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
+          >
+            bug submission form
+          </Link>
+          . Reports submitted in this fashion will be directed to the NewsKit
+          team to address.
+        </ContentText>
+
         <ContentText
           title="Propose an enhancement or request a feature"
           titleAs="h3"
@@ -163,6 +191,7 @@ export default (layoutProps: LayoutProps) => (
       <ComponentPageCell>
         <Separator />
       </ComponentPageCell>
+
       <SectionIntroduction
         title="Share"
         image={{

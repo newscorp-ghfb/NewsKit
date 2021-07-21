@@ -1,13 +1,16 @@
 import React from 'react';
+import {StyledComponent} from '@emotion/styled';
 import {Cell, Grid, Block, Visible, BreakpointKeys, styled} from 'newskit';
-import {UsageCard} from '../usage-card';
-import {BaseCard} from '../base-card';
+import {UsageCard, UsageCardProps} from '../usage-card';
+import {BaseCard, BaseCardProps} from '../base-card';
 import {MediaListProps} from './types';
-import {spanListConfig} from './span-list-config'
+import {spanListConfig} from './span-list-config';
+import {FeatureCard, FeatureCardProps} from '../feature-card';
 
 const CardTypes = {
   usage: UsageCard,
   base: BaseCard,
+  feature: FeatureCard,
 };
 
 export const MediaList: React.FC<MediaListProps> = ({
@@ -23,7 +26,11 @@ export const MediaList: React.FC<MediaListProps> = ({
   const renderCards = (cardListOrientation?: 'vertical' | 'horizontal') => {
     const cardListToRender = [];
     const CardComponent = CardTypes[cardType];
-    const StyledCardComponent = styled(CardComponent)`
+    const StyledCardComponent = styled(
+      CardComponent as StyledComponent<
+        BaseCardProps | UsageCardProps | FeatureCardProps | MediaListProps
+      >,
+    )`
       height: 100%;
     `;
 
@@ -45,7 +52,7 @@ export const MediaList: React.FC<MediaListProps> = ({
           <Cell {...cellColumnList}>
             <StyledCardComponent
               layout={cardListOrientation}
-              overrides={{horizontalRatio}}
+              overrides={{horizontalRatio} as {}}
               {...cardProps}
             />
           </Cell>

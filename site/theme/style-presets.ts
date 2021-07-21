@@ -495,6 +495,32 @@ export const stylePresets = {
     },
   },
 
+  principleCard: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  principleCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand050}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+
+  featureCard: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand040}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+  featureCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interfaceBrand040}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+    },
+  },
+
   whatsnewCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand060}}',
@@ -505,12 +531,12 @@ export const stylePresets = {
     },
   },
 
-  whatsnewCardContainerNonInteractive: {
+  /*   whatsnewCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand060}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
     },
-  },
+  }, */
   whatsnewCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',

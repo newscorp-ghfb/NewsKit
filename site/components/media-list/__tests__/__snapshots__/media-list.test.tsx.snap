@@ -1012,6 +1012,1046 @@ exports[`Media List renders with default layout 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Media List renders with feature cardscards 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    margin-top: 48px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+  }
+}
+
+@media screen {
+  .emotion-5 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-5 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-5 {
+    display: none;
+  }
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-6 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-6 {
+    min-height: 304px;
+  }
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-7 {
+    min-height: 1px;
+  }
+}
+
+.emotion-8 {
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
+  height: 18vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-8 {
+    height: 200px;
+  }
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  color: inherit;
+  padding: 24px;
+}
+
+.emotion-10 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-11 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-11 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-12 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-12 .nk-headline-kicker {
+  color: #577FFB;
+}
+
+.emotion-12:hover:not(:disabled) .nk-headline-kicker {
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-12:active:not(:disabled) .nk-headline-kicker {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-12:visited:not(:disabled) .nk-headline-kicker {
+  color: #503B8C;
+}
+
+.emotion-12 .nk-headline-heading {
+  color: #FFFFFF;
+}
+
+.emotion-12 .nk-headline-heading svg {
+  fill: #FFFFFF;
+}
+
+.emotion-12:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-13 {
+  padding: 1px 0px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .emotion-13 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 28px;
+    line-height: 1.2857142857142858;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .emotion-13::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2772321428571429em;
+  }
+
+  .emotion-13::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4178571428571429em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-13 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .emotion-13::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.234375em;
+  }
+
+  .emotion-13::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.375em;
+  }
+}
+
+.emotion-14 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.emotion-14 svg {
+  fill: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-15 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-15 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-16 {
+  margin: 0;
+  padding: 1px 0;
+  color: rgba(255,255,255,0.8);
+}
+
+.emotion-16 svg {
+  fill: rgba(255,255,255,0.8);
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-16 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .emotion-16::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.384375em;
+  }
+
+  .emotion-16::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.525em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-16 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .emotion-16::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.43437500000000007em;
+  }
+
+  .emotion-16::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.5750000000000001em;
+  }
+}
+
+.emotion-17 {
+  margin-bottom: 8px;
+}
+
+.emotion-18 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 64px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-19 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-21 {
+    max-width: 100%;
+  }
+}
+
+.emotion-22 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.emotion-22::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4677083333333334em + 1.5px);
+}
+
+.emotion-22::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.6083333333333334em;
+}
+
+.emotion-24 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #555E74;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-24.emotion-24 {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen {
+  .emotion-26 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-26 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-26 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-26 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-26 {
+    display: block;
+  }
+}
+
+.emotion-27 {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-27 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-27 {
+    min-height: 304px;
+  }
+}
+
+.emotion-28 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 0;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-28 {
+    min-height: 1px;
+  }
+}
+
+.emotion-29 {
+  height: 100%;
+}
+
+.emotion-30 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-30 {
+    min-width: 1px;
+  }
+}
+
+.emotion-31 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: inherit;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-31 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-31 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-31 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-31 {
+    padding: 32px;
+  }
+}
+
+.emotion-31 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-48 {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
+  height: 100%;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <div
+                    class="emotion-8"
+                  />
+                </div>
+                <div
+                  class="emotion-9"
+                >
+                  <div
+                    class="emotion-10"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <a
+                        class="nk-card-link emotion-12"
+                        href="/"
+                      >
+                        <section
+                          class="emotion-13"
+                        >
+                          <h1
+                            class="nk-headline-heading emotion-14"
+                          >
+                            Feature Card
+                          </h1>
+                        </section>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-15"
+                    >
+                      <p
+                        class="emotion-16"
+                      >
+                        This is a feature card.
+                      </p>
+                    </div>
+                    <div
+                      class="emotion-17"
+                    >
+                      <div
+                        class="emotion-18"
+                      >
+                        <button
+                          class="emotion-19"
+                          data-testid="button"
+                          type="button"
+                        >
+                          <div
+                            class="emotion-20"
+                          >
+                            <div
+                              class="emotion-21"
+                            >
+                              <span
+                                class="emotion-22"
+                              >
+                                needHelpCard
+                              </span>
+                            </div>
+                            <div
+                              class="emotion-21"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="emotion-24 emotion-25"
+                                fill="currentColor"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                                <path
+                                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-26"
+            >
+              <div
+                class="emotion-27"
+              >
+                <div
+                  class="emotion-28"
+                >
+                  <div
+                    class="emotion-29"
+                  />
+                </div>
+                <div
+                  class="emotion-30"
+                >
+                  <div
+                    class="emotion-31"
+                  >
+                    <div
+                      class="emotion-32"
+                    >
+                      <div
+                        class="emotion-11"
+                      >
+                        <a
+                          class="nk-card-link emotion-12"
+                          href="/"
+                        >
+                          <section
+                            class="emotion-13"
+                          >
+                            <h1
+                              class="nk-headline-heading emotion-14"
+                            >
+                              Feature Card
+                            </h1>
+                          </section>
+                        </a>
+                      </div>
+                      <div
+                        class="emotion-15"
+                      >
+                        <p
+                          class="emotion-16"
+                        >
+                          This is a feature card.
+                        </p>
+                      </div>
+                      <div
+                        class="emotion-18"
+                      >
+                        <button
+                          class="emotion-19"
+                          data-testid="button"
+                          type="button"
+                        >
+                          <div
+                            class="emotion-20"
+                          >
+                            <div
+                              class="emotion-21"
+                            >
+                              <span
+                                class="emotion-22"
+                              >
+                                needHelpCard
+                              </span>
+                            </div>
+                            <div
+                              class="emotion-21"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="emotion-24 emotion-25"
+                                fill="currentColor"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                                <path
+                                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-48"
+            >
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <div
+                    class="emotion-11"
+                  >
+                    <a
+                      class="nk-card-link emotion-12"
+                      href="/"
+                    >
+                      <section
+                        class="emotion-13"
+                      >
+                        <h1
+                          class="nk-headline-heading emotion-14"
+                        >
+                          Feature Card
+                        </h1>
+                      </section>
+                    </a>
+                  </div>
+                  <div
+                    class="emotion-15"
+                  >
+                    <p
+                      class="emotion-16"
+                    >
+                      This is a feature card.
+                    </p>
+                  </div>
+                  <div
+                    class="emotion-17"
+                  >
+                    <div
+                      class="emotion-18"
+                    >
+                      <button
+                        class="emotion-19"
+                        data-testid="button"
+                        type="button"
+                      >
+                        <div
+                          class="emotion-20"
+                        >
+                          <div
+                            class="emotion-21"
+                          >
+                            <span
+                              class="emotion-22"
+                            >
+                              needHelpCard
+                            </span>
+                          </div>
+                          <div
+                            class="emotion-21"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="emotion-24 emotion-25"
+                              fill="currentColor"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Media List renders with usage cards 1`] = `
 <DocumentFragment>
   .emotion-0 {

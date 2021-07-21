@@ -28,6 +28,26 @@ describe('FeatureCard', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('Renders overrides when card is horizontal', () => {
+    const props: FeatureCardProps = {
+      title: 'Interactive Horizontal Card',
+      description: 'I am interactive',
+      stylePrefix: 'patternsCard',
+      layout: 'horizontal',
+      href: 'href',
+      overrides: {
+        title: {
+          typographyPreset: 'editorialHeadline040',
+        },
+        description: {
+          typographyPreset: 'editorialSubheadline020',
+        },
+      },
+    };
+    const fragment = renderToFragmentWithTheme(FeatureCard, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('Renders non-interactive horizontal card', () => {
     const props: FeatureCardProps = {
       title: 'Non-Interactive Horizontal Card',

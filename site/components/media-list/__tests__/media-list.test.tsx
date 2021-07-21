@@ -1,3 +1,4 @@
+import {FeatureCardProps} from '../../feature-card';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {MediaList} from '../media-list';
 
@@ -26,6 +27,22 @@ const UsageCardDont = {
   kind: 'dont',
 };
 
+const FeatureCardHorizontal = {
+  title: 'Feature Card',
+  description: 'This is a feature card.',
+  buttonLabel: 'needHelpCard',
+  layout: 'horizontal',
+  href: '/',
+} as FeatureCardProps;
+
+const FeatureCardVertical = {
+  title: 'Feature Card',
+  description: 'This is a feature card.',
+  buttonLabel: 'needHelpCard',
+  layout: 'vertical',
+  href: '/',
+} as FeatureCardProps;
+
 describe('Media List', () => {
   test('renders with default layout', () => {
     const fragment = renderToFragmentWithTheme(MediaList, {
@@ -38,6 +55,14 @@ describe('Media List', () => {
     const fragment = renderToFragmentWithTheme(MediaList, {
       cards: [UsageCardDo, UsageCardDont],
       cardType: 'usage',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with feature cardscards', () => {
+    const fragment = renderToFragmentWithTheme(MediaList, {
+      cards: [FeatureCardHorizontal, FeatureCardVertical],
+      cardType: 'feature',
     });
     expect(fragment).toMatchSnapshot();
   });

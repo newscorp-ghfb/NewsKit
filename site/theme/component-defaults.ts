@@ -67,6 +67,20 @@ export const componentDefaults = {
       },
     },
   },
+  featureCard: {
+    title: {
+      typographyPreset: {
+        sm: 'editorialHeadline040',
+        lg: 'editorialHeadline060',
+      },
+    },
+    description: {
+      typographyPreset: {
+        xs: 'editorialSubheadline010',
+        lg: 'editorialSubheadline020',
+      },
+    },
+  },
   tab: {
     small: {
       spaceInset: 'spaceInsetStretch040',

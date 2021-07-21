@@ -22,9 +22,6 @@ export const StyledCardVerticalInset = styled(CardInset)`
   transition-duration: ${getMotionFromTheme('motionDuration020')};
   transition-timing-function: ${getMotionFromTheme('motionEaseOut')};
   height: 100%;
-  ${getMediaQueryFromTheme('lg')} {
-    min-height: 380px;
-  }
 `;
 export const StyledFeatureCardHorizontalMedia = styled.div<{
   stylePreset: string;

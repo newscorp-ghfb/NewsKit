@@ -589,6 +589,20 @@ Object {
         "zIndex": 80,
       },
     },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
+      },
+    },
     "flag": Object {
       "large": Object {
         "iconSize": "iconSize010",
@@ -2346,6 +2360,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -3452,6 +3478,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -3957,12 +3995,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {
@@ -4914,6 +4946,20 @@ Object {
         },
         "stylePreset": "drawerPanel",
         "zIndex": 80,
+      },
+    },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
       },
     },
     "flag": Object {
@@ -6673,6 +6719,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -7779,6 +7837,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -8284,12 +8354,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {
@@ -9241,6 +9305,20 @@ Object {
         },
         "stylePreset": "drawerPanel",
         "zIndex": 80,
+      },
+    },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
       },
     },
     "flag": Object {
@@ -11000,6 +11078,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -12106,6 +12196,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -12611,12 +12713,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {
@@ -13568,6 +13664,20 @@ Object {
         },
         "stylePreset": "drawerPanel",
         "zIndex": 80,
+      },
+    },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
       },
     },
     "flag": Object {
@@ -15327,6 +15437,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -16433,6 +16555,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -16938,12 +17072,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {
@@ -17895,6 +18023,20 @@ Object {
         },
         "stylePreset": "drawerPanel",
         "zIndex": 80,
+      },
+    },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
       },
     },
     "flag": Object {
@@ -19654,6 +19796,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -20760,6 +20914,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -21265,12 +21431,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {
@@ -22222,6 +22382,20 @@ Object {
         },
         "stylePreset": "drawerPanel",
         "zIndex": 80,
+      },
+    },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
       },
     },
     "flag": Object {
@@ -23981,6 +24155,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -25087,6 +25273,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -25592,12 +25790,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {
@@ -26549,6 +26741,20 @@ Object {
         },
         "stylePreset": "drawerPanel",
         "zIndex": 80,
+      },
+    },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
       },
     },
     "flag": Object {
@@ -28308,6 +28514,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -29414,6 +29632,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -29919,12 +30149,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {
@@ -30876,6 +31100,20 @@ Object {
         },
         "stylePreset": "drawerPanel",
         "zIndex": 80,
+      },
+    },
+    "featureCard": Object {
+      "description": Object {
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+      "title": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline060",
+          "sm": "editorialHeadline040",
+        },
       },
     },
     "flag": Object {
@@ -32635,6 +32873,18 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
+    "featureCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "featureCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand040}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -33741,6 +33991,18 @@ Object {
         "backgroundSize": "cover",
       },
     },
+    "principleCard": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
+    "principleCardContainerNonInteractive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand050}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+      },
+    },
     "roadmapCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
@@ -34246,12 +34508,6 @@ Object {
       },
       "hover": Object {
         "boxShadow": "{{shadows.shadow040}}",
-      },
-    },
-    "whatsnewCardContainerNonInteractive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceBrand060}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
       },
     },
     "whatsnewCardMedia": Object {

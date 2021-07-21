@@ -1,10 +1,11 @@
 import {GridProps, MQ, CellProps} from 'newskit';
+import {FeatureCardProps} from '../feature-card';
 import {UsageCardProps} from '../usage-card';
 import {BaseCardProps} from '../base-card';
 
 export interface MediaListProps {
   cards: Array<MediaItem>;
-  cardType?: 'base' | 'usage';
+  cardType?: 'base' | 'usage' | 'feature';
   cardsLayout?: MQ<'horizontal' | 'vertical'>;
   layout?:
     | '1-span'
@@ -18,4 +19,4 @@ export interface MediaListProps {
   horizontalRatio?: string;
   parentCellProps?: CellProps;
 }
-export type MediaItem = BaseCardProps & UsageCardProps;
+export type MediaItem = BaseCardProps | UsageCardProps | FeatureCardProps;

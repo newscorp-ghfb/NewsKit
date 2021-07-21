@@ -9,7 +9,9 @@ import {
   Button,
   IconFilledChevronRight,
   ButtonSize,
+  useTheme,
 } from 'newskit';
+import {getToken} from '../../../src/utils/get-token';
 import {FeatureCardProps} from './types';
 import {
   StyledCardHorizontalInset,
@@ -27,143 +29,150 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
   buttonHref,
   overrides,
   ...props
-}) => (
-  <>
-    <Visible xs sm>
-      <StyledCardHorizontalInset
-        {...props}
-        media={() => (
-          <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
-        )}
-        href={href}
-        layout="vertical"
-        overrides={{
-          ...overrides,
-          stylePreset: `${stylePrefix}Container${
-            href ? 'Interactive' : 'NonInteractive'
-          }`,
+}) => {
+  const theme = useTheme();
+  const titleTypographyPreset = getToken(
+    {theme, overrides},
+    '',
+    'title',
+    'typographyPreset',
+  );
+  const descriptionTypographyPreset = getToken(
+    {theme, overrides},
+    '',
+    'description',
+    'typographyPreset',
+  );
 
-          teaserContainer: {
-            spaceInset: 'space050',
-          },
-        }}
-      >
-        <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
-          <Headline
-            overrides={{
-              // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
-              typographyPreset: {
-                xs: 'editorialHeadline040',
-                sm: 'editorialHeadline040',
-                md: 'editorialHeadline040',
-                lg: 'editorialHeadline060',
-                xl: 'editorialHeadline060',
-              },
-              heading: {
-                stylePreset: 'inkWhite',
-              },
-            }}
-          >
-            {title}
-          </Headline>
-        </Block>
-        <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
-          <TextBlock
-            stylePreset="inkWhiteTint080"
-            typographyPreset={{
-              xs: 'editorialSubheadline010',
-              lg: 'editorialSubheadline020',
-            }}
-          >
-            {description}
-          </TextBlock>
-        </Block>
-        {buttonLabel && (
-          <Block spaceStack="space020">
-            <Button
-              href={buttonHref}
-              size={ButtonSize.Small}
-              overrides={{
-                stylePreset: `${stylePrefix}Button`,
-                typographyPreset: 'utilityButton010',
-              }}
-            >
-              {buttonLabel}
-              <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-            </Button>
-          </Block>
-        )}
-      </StyledCardHorizontalInset>
-    </Visible>
-    <Visible md lg xl>
-      <StyledCardHorizontalInset
-        {...props}
-        media={() => (
-          <StyledFeatureCardHorizontalMedia
-            stylePreset={`${stylePrefix}Media`}
-          />
-        )}
-        href={href}
-        layout="horizontal-reverse"
-        overrides={{
-          ...overrides,
-          stylePreset: `${stylePrefix}Container${
-            href ? 'Interactive' : 'NonInteractive'
-          }`,
-          teaserContainer: {
-            spaceInset: {md: 'space050', lg: 'space060'},
-          },
-        }}
-      >
-        <Stack stackDistribution={StackDistribution.Center}>
-          <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
-            <Headline
-              overrides={{
-                // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
-                typographyPreset: {
-                  xs: 'editorialHeadline040',
-                  sm: 'editorialHeadline040',
-                  md: 'editorialHeadline040',
-                  lg: 'editorialHeadline060',
-                  xl: 'editorialHeadline060',
-                },
-                heading: {
-                  stylePreset: 'inkWhite',
-                },
-              }}
-            >
-              {title}
-            </Headline>
-          </Block>
-          <Block spaceStack={{xs: 'space040', lg: 'space050', xl: 'space050'}}>
-            <TextBlock
-              stylePreset="inkWhiteTint080"
-              typographyPreset={{
-                xs: 'editorialSubheadline010',
-                lg: 'editorialSubheadline020',
-              }}
-            >
-              {description}
-            </TextBlock>
-          </Block>
-          {buttonLabel && (
-            <Button
-              href={buttonHref}
-              size={ButtonSize.Small}
-              overrides={{
-                stylePreset: `${stylePrefix}Button`,
-                typographyPreset: 'utilityButton010',
-              }}
-            >
-              {buttonLabel}
-              <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-            </Button>
+  return (
+    <>
+      <Visible xs sm>
+        <StyledCardHorizontalInset
+          {...props}
+          media={() => (
+            <StyledFeatureCardVerticalMedia
+              stylePreset={`${stylePrefix}Media`}
+            />
           )}
-        </Stack>
-      </StyledCardHorizontalInset>
-    </Visible>
-  </>
-);
+          href={href}
+          layout="vertical"
+          overrides={{
+            ...overrides,
+            stylePreset: `${stylePrefix}Container${
+              href ? 'Interactive' : 'NonInteractive'
+            }`,
+
+            teaserContainer: {
+              spaceInset: 'space050',
+            },
+          }}
+        >
+          {title && (
+            <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
+              <Headline
+                overrides={{
+                  typographyPreset: titleTypographyPreset,
+                  heading: {
+                    stylePreset: 'inkWhite',
+                  },
+                }}
+              >
+                {title}
+              </Headline>
+            </Block>
+          )}
+          {description && (
+            <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
+              <TextBlock
+                stylePreset="inkWhiteTint080"
+                typographyPreset={descriptionTypographyPreset}
+              >
+                {description}
+              </TextBlock>
+            </Block>
+          )}
+          {buttonLabel && (
+            <Block spaceStack="space020">
+              <Button
+                href={buttonHref}
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: `${stylePrefix}Button`,
+                  typographyPreset: 'utilityButton010',
+                }}
+              >
+                {buttonLabel}
+                <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+              </Button>
+            </Block>
+          )}
+        </StyledCardHorizontalInset>
+      </Visible>
+      <Visible md lg xl>
+        <StyledCardHorizontalInset
+          {...props}
+          media={() => (
+            <StyledFeatureCardHorizontalMedia
+              stylePreset={`${stylePrefix}Media`}
+            />
+          )}
+          href={href}
+          layout="horizontal-reverse"
+          overrides={{
+            ...overrides,
+            stylePreset: `${stylePrefix}Container${
+              href ? 'Interactive' : 'NonInteractive'
+            }`,
+            teaserContainer: {
+              spaceInset: {md: 'space050', lg: 'space060'},
+            },
+          }}
+        >
+          <Stack stackDistribution={StackDistribution.Center}>
+            {title && (
+              <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
+                <Headline
+                  overrides={{
+                    // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
+                    typographyPreset: titleTypographyPreset,
+                    heading: {
+                      stylePreset: 'inkWhite',
+                    },
+                  }}
+                >
+                  {title}
+                </Headline>
+              </Block>
+            )}
+            {description && (
+              <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
+                <TextBlock
+                  stylePreset="inkWhiteTint080"
+                  typographyPreset={descriptionTypographyPreset}
+                >
+                  {description}
+                </TextBlock>
+              </Block>
+            )}
+            {buttonLabel && (
+              <Button
+                href={buttonHref}
+                size={ButtonSize.Small}
+                overrides={{
+                  stylePreset: `${stylePrefix}Button`,
+                  typographyPreset: 'utilityButton010',
+                }}
+              >
+                {buttonLabel}
+                <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+              </Button>
+            )}
+          </Stack>
+        </StyledCardHorizontalInset>
+      </Visible>
+    </>
+  );
+};
 
 const FeatureCardVertical: React.FC<FeatureCardProps> = ({
   title,
@@ -172,74 +181,128 @@ const FeatureCardVertical: React.FC<FeatureCardProps> = ({
   stylePrefix,
   buttonLabel,
   buttonHref,
+  media,
+  overrides,
   ...props
-}) => (
-  <StyledCardVerticalInset
-    {...props}
-    media={() => (
-      <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
-    )}
-    href={href}
-    overrides={{
-      stylePreset: `${stylePrefix}Container${
-        href ? 'Interactive' : 'NonInteractive'
-      }`,
-      teaserContainer: {
-        spaceInset: 'space050',
-      },
-    }}
-  >
-    <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
-      <Headline
-        overrides={{
-          // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
-          typographyPreset: {
-            xs: 'editorialHeadline040',
-            sm: 'editorialHeadline040',
-            md: 'editorialHeadline040',
-            lg: 'editorialHeadline060',
-            xl: 'editorialHeadline060',
-          },
-          heading: {
-            stylePreset: 'inkWhite',
-          },
-        }}
-      >
-        {title}
-      </Headline>
-    </Block>
-    <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
-      <TextBlock
-        stylePreset="inkWhiteTint080"
-        typographyPreset={{
-          xs: 'editorialSubheadline010',
-          lg: 'editorialSubheadline020',
-        }}
-      >
-        {description}
-      </TextBlock>
-    </Block>
-    {buttonLabel && (
-      <Block spaceStack="space020">
-        <Button
-          href={buttonHref}
-          size={ButtonSize.Small}
-          overrides={{
-            stylePreset: `${stylePrefix}Button`,
-            typographyPreset: 'utilityButton010',
-          }}
-        >
-          {buttonLabel}
-          <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-        </Button>
-      </Block>
-    )}
-  </StyledCardVerticalInset>
-);
-
-export const FeatureCard: React.FC<FeatureCardProps> = ({layout, ...rest}) =>
-  layout === 'horizontal' ? (
-    <FeatureCardHorizontal {...rest} />
-  ) : (
-    <FeatureCardVertical {...rest} />
+}) => {
+  const indexCards = ['roadmapCard', 'contributeCard', 'patternsCard'];
+  const mediaValue = () => (
+    <StyledFeatureCardVerticalMedia stylePreset={`${stylePrefix}Media`} />
   );
+  const theme = useTheme();
+  const titleTypographyPreset = getToken(
+    {theme, overrides},
+    '',
+    'title',
+    'typographyPreset',
+  );
+  const descriptionTypographyPreset = getToken(
+    {theme, overrides},
+    '',
+    'description',
+    'typographyPreset',
+  );
+  return (
+    <StyledCardVerticalInset
+      {...props}
+      media={indexCards.includes(stylePrefix as string) ? mediaValue : media}
+      href={href}
+      overrides={{
+        stylePreset: `${stylePrefix}Container${
+          href ? 'Interactive' : 'NonInteractive'
+        }`,
+
+        teaserContainer: {
+          spaceInset: 'space050',
+        },
+      }}
+    >
+      {title && (
+        <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
+          <Headline
+            overrides={{
+              // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
+              typographyPreset: titleTypographyPreset,
+
+              heading: {
+                stylePreset: 'inkWhite',
+              },
+            }}
+          >
+            {title}
+          </Headline>
+        </Block>
+      )}
+      {description && (
+        <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
+          <TextBlock
+            stylePreset="inkWhiteTint080"
+            typographyPreset={descriptionTypographyPreset}
+          >
+            {description}
+          </TextBlock>
+        </Block>
+      )}
+      {buttonLabel && (
+        <Block spaceStack="space020">
+          <Button
+            href={buttonHref}
+            size={ButtonSize.Small}
+            overrides={{
+              stylePreset: `${stylePrefix}Button`,
+              typographyPreset: 'utilityButton010',
+            }}
+          >
+            {buttonLabel}
+            <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+          </Button>
+        </Block>
+      )}
+    </StyledCardVerticalInset>
+  );
+};
+
+export const FeatureCard: React.FC<FeatureCardProps> = ({
+  layout,
+  overrides,
+  ...rest
+}) => {
+  const theme = useTheme();
+  const titleTypographyPreset = getToken(
+    {theme, overrides},
+    'featureCard.title',
+    'title',
+    'typographyPreset',
+  );
+  const descriptionTypographyPreset = getToken(
+    {theme, overrides},
+    'featureCard.description',
+    'description',
+    'typographyPreset',
+  );
+  return layout === 'horizontal' ? (
+    <FeatureCardHorizontal
+      overrides={{
+        title: {
+          typographyPreset: titleTypographyPreset,
+        },
+        description: {
+          typographyPreset: descriptionTypographyPreset,
+        },
+      }}
+      {...rest}
+    />
+  ) : (
+    <FeatureCardVertical
+      overrides={{
+        title: {
+          typographyPreset: titleTypographyPreset,
+        },
+        description: {
+          typographyPreset: descriptionTypographyPreset,
+        },
+      }}
+      {...rest}
+    />
+  );
+};
