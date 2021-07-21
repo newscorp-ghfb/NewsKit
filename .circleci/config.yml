@@ -333,6 +333,23 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  build_docs_prod:
+    <<: *working_directory
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: make build_docs_prod
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public/*
+      - slack/status:
+          <<: *slack_status
+
   build_docs_pr:
     <<: *working_directory
     executor: node
@@ -345,23 +362,6 @@ jobs:
           command: |
             export SITE_BASE_URL=${SITE_BASE_URL}
             make build_docs_pr
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - public/*
-      - slack/status:
-          <<: *slack_status
-
-  build_docs_prod:
-    <<: *working_directory
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Build
-          command: make build_docs
       - persist_to_workspace:
           root: ./
           paths:
@@ -1106,26 +1106,32 @@ workflows:
           requires:
             - eks_flux_deploy_dev
       - approve_publish_docs:
-          type: approval
           <<: *only_develop
-          requires:
+          type: approval
+          requires: 
             - eks_kubectl_deploy_dev
       - build_docs_prod:
+          <<: *only_develop
           name: 'build_docs_prod'
           requires:
             - approve_publish_docs
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_prod
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_prod
       - eks_flux_deploy:
+          <<: *only_develop
           name: eks_flux_deploy_dev_to_prod
           context: ncu-newskit-site-prod
           environment: prod
-          <<: *only_develop
           requires:
-            - build_docs_prod
+            - build_push_docker_ecr_prod
       - eks_kubectl_deploy:
+          <<: *only_develop
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
-          <<: *only_develop
           requires:
             - eks_flux_deploy_dev_to_prod
       - deploy_terraform:
