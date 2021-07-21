@@ -522,6 +522,9 @@ Object {
       "header": Object {
         "spaceInset": "spaceInsetSquish040",
       },
+      "overlay": Object {
+        "zIndex": 70,
+      },
       "panel": Object {
         "maxSize": "100%",
         "minSize": "20px",
@@ -533,6 +536,7 @@ Object {
           "xs": "305px",
         },
         "stylePreset": "drawerPanel",
+        "zIndex": 80,
       },
     },
     "flag": Object {
@@ -748,6 +752,38 @@ Object {
         "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "menuItemVertical",
+      },
+    },
+    "modal": Object {
+      "closeButton": Object {
+        "spaceInset": "spaceInset020",
+        "stylePreset": "iconButtonMinimalSecondary",
+      },
+      "content": Object {
+        "spaceInset": "spaceInset050",
+      },
+      "header": Object {
+        "spaceInset": "spaceInsetSquish040",
+      },
+      "overlay": Object {
+        "zIndex": 70,
+      },
+      "panel": Object {
+        "maxHeight": Object {
+          "md": "80vh",
+          "xs": "95vh",
+        },
+        "minHeight": "15vh",
+        "stylePreset": "modalPanel",
+        "topOffset": "20vh",
+        "width": Object {
+          "lg": "38vw",
+          "md": "45vw",
+          "sm": "60vw",
+          "xl": "31vw",
+          "xs": "90vw",
+        },
+        "zIndex": 80,
       },
     },
     "orderedList": Object {
@@ -2906,6 +2942,13 @@ Object {
         "borderColor": "#0a68c1",
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
+      },
+    },
+    "modalPanel": Object {
+      "base": Object {
+        "backgroundColor": "#ffffff",
+        "borderRadius": "0",
+        "boxShadow": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
       },
     },
     "overlay": Object {

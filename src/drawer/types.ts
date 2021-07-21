@@ -1,39 +1,13 @@
-import {MQ} from '../utils/style';
+import {BaseDialogProps} from '../dialog/types';
+import {MQ} from '../utils';
 
-export interface DrawerProps {
-  open: boolean;
-  onDismiss: () => void;
-  placement?: 'left' | 'right';
-  header?: React.ReactNode;
-  children: Exclude<React.ReactNode, 'undefined'>;
-  ariaDescribedby?: string;
-  ariaLabelledby?: string;
-  restoreFocusTo?: HTMLElement;
+// Refactor into interface -> https://stackoverflow.com/questions/53636756/typescript-interface-extending-another-interface-with-nested-properties
+export type DrawerProps = BaseDialogProps & {
   overrides?: {
-    overlay?: {
-      stylePreset?: MQ<string>;
-    };
     panel?: {
-      stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
       size?: MQ<string>;
-      maxSize: MQ<string>;
-      minSize: MQ<string>;
-    };
-    header?: {
-      stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
-    };
-    content?: {
-      spaceInset?: MQ<string>;
-    };
-    closeButton?: {
-      stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
+      maxSize?: MQ<string>;
+      minSize?: MQ<string>;
     };
   };
-}
-
-export interface DrawerHeaderProps {
-  onCloseButtonClick: () => void;
-}
+};

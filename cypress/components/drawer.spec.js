@@ -31,7 +31,7 @@ describe('drawer', () => {
 
       cy.get('[data-testid="drawer"]')
         .first()
-        .find('[data-testid="drawer-content"]')
+        .find('[data-testid="dialog-content"]')
         .scrollTo('bottom')
         .its('scrollY')
         .should('not.equal', 0);

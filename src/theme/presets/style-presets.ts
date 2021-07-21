@@ -1699,3 +1699,15 @@ stylePresets.menuItemHorizontalInverse = {
     iconColor: '{{colors.interactiveInverse020}}',
   },
 };
+
+//
+// Modal
+//
+
+stylePresets.modalPanel = {
+  base: {
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    backgroundColor: '{{colors.interfaceBackground}}',
+    boxShadow: '{{shadows.shadow050}}',
+  },
+};

@@ -6,16 +6,19 @@ import {
   getStylePreset,
   MQ,
   getMotionCssFromTheme,
+  getResponsiveSpace,
 } from '../utils/style';
 
 interface OverlayProps {
   open: boolean;
   onClick?: () => void;
   overrides?: {
+    zIndex?: number;
     stylePreset?: MQ<string>;
   };
 }
 
+// getResponsiveSpace('zIndex') will be replaced with a new function once PPDSC-1711 is done
 const StyledOverlay = styled.div<Pick<OverlayProps, 'overrides'>>`
   box-sizing: border-box;
   position: fixed;
@@ -23,7 +26,7 @@ const StyledOverlay = styled.div<Pick<OverlayProps, 'overrides'>>`
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 70;
+  ${getResponsiveSpace('zIndex', `overlay`, '', 'zIndex')};
   cursor: pointer;
   ${getStylePreset('overlay', '')}
 

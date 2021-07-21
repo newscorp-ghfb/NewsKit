@@ -304,7 +304,11 @@ export const componentDefaults = {
     stylePreset: 'dividerHorizontal',
   },
   drawer: {
+    overlay: {
+      zIndex: 70,
+    },
     panel: {
+      zIndex: 80,
       stylePreset: 'drawerPanel',
       maxSize: '100%',
       minSize: '20px',
@@ -314,6 +318,38 @@ export const componentDefaults = {
         md: '310px',
         lg: '333px',
         xl: '354px',
+      },
+    },
+    header: {
+      spaceInset: 'spaceInsetSquish040',
+    },
+    content: {
+      spaceInset: 'spaceInset050',
+    },
+    closeButton: {
+      stylePreset: 'iconButtonMinimalSecondary',
+      spaceInset: 'spaceInset020',
+    },
+  },
+  modal: {
+    overlay: {
+      zIndex: 70,
+    },
+    panel: {
+      zIndex: 80,
+      stylePreset: 'modalPanel',
+      topOffset: '20vh',
+      width: {
+        xs: '90vw',
+        sm: '60vw',
+        md: '45vw',
+        lg: '38vw',
+        xl: '31vw',
+      },
+      minHeight: '15vh',
+      maxHeight: {
+        xs: '95vh',
+        md: '80vh',
       },
     },
     header: {

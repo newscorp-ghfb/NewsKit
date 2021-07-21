@@ -3,12 +3,13 @@ import {
   css,
   styled,
   getStylePreset,
-  getResponsiveSpace,
   getResponsiveSize,
-  getSizingCssFromTheme,
   getMotionCssFromTheme,
 } from '../utils/style';
+import {BaseDialogView} from '../dialog';
 import {DrawerProps} from './types';
+
+type DrawerPanelProps = Pick<DrawerProps, 'placement' | 'overrides' | 'open'>;
 
 const placementOptions = {
   left: {
@@ -21,14 +22,6 @@ const placementOptions = {
   },
 };
 
-type DrawerOnlyOverridesAndPlacementProps = Pick<
-  DrawerProps,
-  'placement' | 'overrides'
->;
-type DrawerPanelProps = DrawerOnlyOverridesAndPlacementProps & {
-  isOpen: boolean;
-};
-
 const verticalSize = (
   props: DrawerPanelProps & {
     theme: Theme;
@@ -36,8 +29,8 @@ const verticalSize = (
 ) => css`
   ${getResponsiveSize('width', 'drawer.panel', 'panel', 'size')(props)}
   ${getResponsiveSize('maxWidth', 'drawer.panel', 'panel', 'maxSize')(props)}
-  ${getResponsiveSize('minWidth', 'drawer.panel', 'panel', 'minSize')(props)}
-  height: 100%;
+    ${getResponsiveSize('minWidth', 'drawer.panel', 'panel', 'minSize')(props)}
+    height: 100%;
 `;
 
 const placementSize = {
@@ -45,22 +38,15 @@ const placementSize = {
   right: verticalSize,
 };
 
-export const StyledDrawerPanel = styled.div<DrawerPanelProps>`
-  box-sizing: border-box;
-
-  position: fixed;
-  ${({placement}) => placementOptions[placement!]};
-  z-index: 80;
-  flex-direction: column;
-  overflow: hidden;
-
-  display: flex;
-
-  ${({placement, ...props}) => placementSize[placement!](props)}
+export const StyledDrawer = styled(BaseDialogView, {
+  shouldForwardProp: prop => prop !== 'open',
+})<DrawerPanelProps>`
+  ${({placement = 'left'}) => placementOptions[placement!]};
+  ${({placement = 'left', ...props}) => placementSize[placement!](props)}
 
   ${getStylePreset('drawer.panel', 'panel')};
 
-  ${({placement, ...props}) =>
+  ${({placement = 'left', ...props}) =>
     css`
       transform: translate3d(${placement === 'left' ? '-100%' : '100%'}, 0, 0);
       visibility: hidden;
@@ -161,56 +147,4 @@ export const StyledDrawerPanel = styled.div<DrawerPanelProps>`
         }
       }
     `};
-`;
-
-export const StyledDrawerHeader = styled.div<DrawerOnlyOverridesAndPlacementProps>`
-  box-sizing: border-box;
-  ${getStylePreset('drawer.header', 'header')};
-  ${getSizingCssFromTheme('minHeight', 'sizing080')}
-  flex-shrink: 0; //fix min-height issues
-`;
-
-export const StyledDrawerHeaderContent = styled.div<
-  Pick<DrawerProps, 'placement'>
->`
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  ${getResponsiveSpace('padding', 'drawer.header', 'header', 'spaceInset')}
-`;
-
-export const StyledDrawerContent = styled.div`
-  box-sizing: border-box;
-  flex-grow: 1;
-  overflow: hidden auto;
-  ${getResponsiveSpace('padding', 'drawer.content', 'content', 'spaceInset')}
-`;
-
-// This elements is needed to fill the space behind close button which is positioned absolute
-export const StyledFillSpaceCloseButton = styled.div<DrawerOnlyOverridesAndPlacementProps>`
-  box-sizing: border-box;
-  ${getResponsiveSpace(
-    'margin',
-    'drawer.closeButton',
-    'closeButton',
-    'spaceInset',
-  )}
-  ${getResponsiveSize('width', 'iconButton.medium', '', 'width')}  
-  ${getResponsiveSize('height', 'iconButton.medium', '', 'height')}
-  ${({placement}) =>
-    placement === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
-  flex-shrink: 0;
-`;
-
-export const StyledCloseButtonContainer = styled.div<DrawerOnlyOverridesAndPlacementProps>`
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  ${({placement}) => `${placement}: 0;`}
-  ${getResponsiveSpace(
-    'padding',
-    'drawer.closeButton',
-    'closeButton',
-    'spaceInset',
-  )}
 `;

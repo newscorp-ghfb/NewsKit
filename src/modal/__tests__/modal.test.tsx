@@ -1,5 +1,5 @@
 /* eslint-disable react/destructuring-assignment */
-import {fireEvent, waitFor} from '@testing-library/react';
+import {fireEvent, wait} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React, {useRef, useState} from 'react';
 import {
@@ -7,7 +7,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {createTheme} from '../../theme';
-import {Drawer} from '../drawer';
+import {Modal} from '../modal';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
 
@@ -17,7 +17,7 @@ jest.mock('react-transition-group', () => {
     const modifyChildren = (
       child: React.DetailedReactHTMLElement<{className: string}, HTMLElement>,
     ) => {
-      const className = `nk-drawer-enter-done`;
+      const className = `nk-modal-enter-done`;
 
       return React.cloneElement(child, {
         className,
@@ -43,37 +43,37 @@ jest.mock('react-transition-group', () => {
   return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
 });
 
-const drawerBody = <TextBlock>Drawer body content</TextBlock>;
+const modalBody = <TextBlock>Modal body content</TextBlock>;
 
-const drawerHeader = <TextBlock>Drawer header content</TextBlock>;
+const modalHeader = <TextBlock>Modal header content</TextBlock>;
 
-describe('Drawer', () => {
-  sharedDialogTests(Drawer, drawerHeader, drawerBody);
+describe('Modal', () => {
+  sharedDialogTests(Modal, modalHeader, modalBody);
 
-  test('renders with different placement', () => {
-    const fragment = renderToFragmentWithTheme(Drawer, {
+  test('renders with different closePosition', () => {
+    const fragment = renderToFragmentWithTheme(Modal, {
       open: true,
       onDismiss: () => {},
-      header: drawerHeader,
-      children: drawerBody,
-      placement: 'right',
+      header: modalHeader,
+      children: modalBody,
+      closePosition: 'left',
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders closed drawer visually hidden but remains in the DOM tree', () => {
-    const {asFragment, getByTestId} = renderWithTheme(Drawer, {
+  test('renders nothing if modal is closed', () => {
+    const {asFragment} = renderWithTheme(Modal, {
       open: false,
+      header: modalHeader,
+      children: modalBody,
       onDismiss: () => {},
-      children: drawerBody,
     });
     expect(asFragment()).toMatchSnapshot();
-    expect(getByTestId('drawer')).toBeInTheDocument();
   });
 
-  test('renders drawer with overrides', () => {
+  test('renders modal with overrides', () => {
     const myCustomTheme = createTheme({
-      name: 'my-custom-drawer-theme',
+      name: 'my-custom-modal-theme',
       overrides: {
         stylePresets: {
           overlayCustom: {
@@ -81,13 +81,13 @@ describe('Drawer', () => {
               backgroundColor: '{{colors.amber010}}',
             },
           },
-          drawerPanelCustom: {
+          modalPanelCustom: {
             base: {
               backgroundColor: '{{colors.green010}}',
               boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
             },
           },
-          drawerHeaderCustom: {
+          modalHeaderCustom: {
             base: {
               backgroundColor: '{{colors.transparent}}',
               borderStyle: 'none none solid none',
@@ -95,7 +95,7 @@ describe('Drawer', () => {
               borderColor: '{{colors.red060}}',
             },
           },
-          drawerCloseButtonCustom: {
+          modalCloseButtonCustom: {
             base: {
               borderWidth: '{{borders.borderWidth010}}',
               borderStyle: 'solid',
@@ -113,30 +113,37 @@ describe('Drawer', () => {
     });
 
     const fragment = renderToFragmentWithTheme(
-      Drawer,
+      Modal,
       {
         open: true,
         onDismiss: () => {},
-        children: drawerBody,
+        children: modalBody,
         overrides: {
           overlay: {
             stylePreset: 'overlayCustom',
           },
           panel: {
-            stylePreset: 'drawerPanelCustom',
-            size: '50%',
-            maxSize: '40%',
-            minSize: '200px',
+            stylePreset: 'modalPanelCustom',
+            topOffset: '15vh',
+            width: '600px',
+            height: '500px',
+            minWidth: '20vw',
+            maxWidth: '80vw',
+            minHeight: '20vh',
+            maxHeight: {
+              xs: '90vh',
+              md: '85vh',
+            },
           },
           header: {
             spaceInset: 'spaceInset000',
-            stylePreset: 'drawerHeaderCustom',
+            stylePreset: 'modalHeaderCustom',
           },
           content: {
             spaceInset: 'spaceInset060',
           },
           closeButton: {
-            stylePreset: 'drawerCloseButtonCustom',
+            stylePreset: 'modalCloseButtonCustom',
           },
         },
       },
@@ -146,9 +153,9 @@ describe('Drawer', () => {
   });
 });
 
-describe('Drawer focus management', () => {
+describe('Modal focus management', () => {
   test('focus on first interactive element', async () => {
-    const {findByTestId} = renderWithTheme(Drawer, {
+    const {findByTestId} = renderWithTheme(Modal, {
       open: true,
       onDismiss: () => {},
       children: (
@@ -158,14 +165,14 @@ describe('Drawer focus management', () => {
       ),
     });
 
-    await waitFor(async () => {
+    await wait(async () => {
       const element = await findByTestId('interactive-element');
       expect(element).toHaveFocus();
     });
   });
 
   test('focus on custom element using data-autofocus attr', async () => {
-    const {findByTestId} = renderWithTheme(Drawer, {
+    const {findByTestId} = renderWithTheme(Modal, {
       open: true,
       onDismiss: () => {},
       children: (
@@ -183,14 +190,14 @@ describe('Drawer focus management', () => {
       ),
     });
 
-    await waitFor(async () => {
+    await wait(async () => {
       const element = await findByTestId('interactive-element');
       expect(element).toHaveFocus();
     });
   });
 
   test('return focus to the last focused element on close', async () => {
-    const DrawerPage = () => {
+    const ModalPage = () => {
       const [isOpen, setOpen] = useState(false);
       return (
         <>
@@ -201,22 +208,22 @@ describe('Drawer focus management', () => {
           >
             toggle
           </button>
-          <Drawer open={isOpen} onDismiss={() => setOpen(false)}>
+          <Modal open={isOpen} onDismiss={() => setOpen(false)}>
             content with
             <button type="button" data-testid="interactive-element">
               button
             </button>
-          </Drawer>
+          </Modal>
         </>
       );
     };
     const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
-      DrawerPage,
+      ModalPage,
     );
     let toggleButton = getByTestId('toggle');
     toggleButton.focus();
     fireEvent.click(toggleButton);
-    await waitFor(async () => {
+    await wait(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
       expect(interactiveElement).toHaveFocus();
@@ -231,14 +238,14 @@ describe('Drawer focus management', () => {
 
     fireEvent.click(closeButton);
 
-    await waitFor(async () => {
+    await wait(async () => {
       toggleButton = await findByTestId('toggle');
       expect(toggleButton).toHaveFocus();
     });
   });
 
   test('return focus to restoreFocusTo element on close', async () => {
-    const DrawerPage = () => {
+    const ModalPage = () => {
       const [isOpen, setOpen] = useState(false);
       const restoreFocusRef = useRef(null);
       return (
@@ -251,7 +258,7 @@ describe('Drawer focus management', () => {
             toggle
           </button>
 
-          <Drawer
+          <Modal
             open={isOpen}
             onDismiss={() => setOpen(false)}
             restoreFocusTo={restoreFocusRef.current || undefined}
@@ -260,7 +267,7 @@ describe('Drawer focus management', () => {
             <button type="button" data-testid="interactive-element">
               button
             </button>
-          </Drawer>
+          </Modal>
           <button
             type="button"
             data-testid="restoreFocusTo"
@@ -272,12 +279,12 @@ describe('Drawer focus management', () => {
       );
     };
     const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
-      DrawerPage,
+      ModalPage,
     );
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
     fireEvent.click(toggleButton);
-    await waitFor(async () => {
+    await wait(async () => {
       // first interactive element is focused
       const interactiveElement = await findByTestId('interactive-element');
       expect(interactiveElement).toHaveFocus();
@@ -292,7 +299,7 @@ describe('Drawer focus management', () => {
 
     fireEvent.click(closeButton);
 
-    await waitFor(async () => {
+    await wait(async () => {
       const restoreFocusButton = await findByTestId('restoreFocusTo');
       expect(restoreFocusButton).toHaveFocus();
     });
