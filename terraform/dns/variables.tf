@@ -6,6 +6,10 @@ variable "zone_name" {
   description = "Hosted zone name"
 }
 
+variable "distribution_domain_name" {
+  description = "CloudFront Distribution domain name"
+}
+
 variable "domain_mapping" {
   type        = map(string)
   description = "Subdomains to set records for"
@@ -20,6 +24,6 @@ variable "cluster_domain" {
 }
 
 variable "cert" {
-  type        = map(string)
-  default     = {}
+  type    = map(string)
+  default = {}
 }

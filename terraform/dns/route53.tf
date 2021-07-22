@@ -3,13 +3,13 @@ resource "aws_route53_zone" "newskit" {
   tags = local.tags
 }
 
-resource "aws_route53_record" "akamai" {
+resource "aws_route53_record" "cdn" {
   for_each = var.domain_mapping
   zone_id  = aws_route53_zone.newskit.zone_id
   name     = each.key
   type     = "CNAME"
   ttl      = "360"
-  records  = ["www.${var.zone_name}.edgesuite.net"]
+  records  = [var.distribution_domain_name]
 }
 
 resource "aws_route53_record" "origin" {
@@ -27,6 +27,5 @@ resource "aws_route53_record" "cert" {
   name     = "${each.key}"
   type     = "CNAME"
   ttl      = "900"
-  # records  = ["${each.value}"]
-  records  = ["${dev.example.com}"]
+  records  = ["${each.value}"]
 }
