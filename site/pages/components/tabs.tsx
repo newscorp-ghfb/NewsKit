@@ -208,6 +208,12 @@ export default (layoutProps: LayoutProps) => (
               description:
                 'Defines the index of the initially selected Tab item.',
             },
+            {
+              name: 'onChange',
+              type: '(selectedIndex:number):void',
+              default: '',
+              description: 'Callback fired when selected tab changes.',
+            },
           ],
           overridesRows: [
             {

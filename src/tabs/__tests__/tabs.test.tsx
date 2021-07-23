@@ -372,6 +372,20 @@ describe('Tabs', () => {
     });
     expect(fragmentRight).toMatchSnapshot();
   });
+
+  test('with onChange event', () => {
+    const onChange = jest.fn();
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      onChange,
+    };
+    const {getAllByTestId} = renderWithTheme(renderTabsDefault, props);
+
+    const tab = getAllByTestId('tab')[1];
+    fireEvent.click(tab);
+    expect(onChange).toHaveBeenCalledTimes(1);
+    expect(onChange).toHaveBeenCalledWith(1);
+  });
 });
 
 const tabs = [

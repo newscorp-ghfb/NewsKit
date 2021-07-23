@@ -66,6 +66,7 @@ export const Tabs: React.FC<TabsProps> = ({
   initialSelectedIndex = 0,
   indicatorPosition = TabsIndicatorPosition.End,
   align: passedAlign,
+  onChange,
 }) => {
   const theme = useTheme();
   const align = getAlign(passedAlign, vertical);
@@ -89,6 +90,12 @@ export const Tabs: React.FC<TabsProps> = ({
   const [activeTabIndex, setActiveTabIndex] = useState(() =>
     validateInitialSelectedIndex(initialSelectedIndex, children),
   );
+  const changeActiveTab = (selectedIndex: number) => {
+    setActiveTabIndex(selectedIndex);
+    if (onChange && typeof onChange === 'function') {
+      onChange(selectedIndex);
+    }
+  };
   const [indicator, setIndicator] = useState({
     size: 0,
     distance: 0,
@@ -257,7 +264,7 @@ export const Tabs: React.FC<TabsProps> = ({
             dataTestId={tab.dataTestId}
             size={size}
             onKeyDown={handleKeyDown}
-            onClick={() => setActiveTabIndex(tab.key)}
+            onClick={() => changeActiveTab(tab.key)}
             disabled={tab.disabled}
             ref={tab.selected ? activeTabRef : undefined}
             id={tab.id}

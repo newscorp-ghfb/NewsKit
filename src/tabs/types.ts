@@ -37,6 +37,7 @@ export interface TabsProps {
   initialSelectedIndex?: number;
   indicatorPosition?: TabsIndicatorPosition;
   align?: TabAlign;
+  onChange?: (selectedIndex: number) => void;
   overrides?: {
     spaceInline?: MQ<string>;
     divider?: DividerOverrides;
