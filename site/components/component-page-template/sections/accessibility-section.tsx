@@ -1,4 +1,4 @@
-import {Grid, Cell, InlineMessage} from 'newskit';
+import {Grid, Cell, InlineMessage, Block} from 'newskit';
 import React from 'react';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
@@ -29,8 +29,8 @@ export interface AccessibilityTablesProps {
     command: string[];
     description: string | JSX.Element;
   }>;
-  infoNoticeFocus?: React.ReactNode;
-  infoNoticeAria?: React.ReactNode;
+  infoNoticeFocus?: React.ReactNode | React.ReactNode[];
+  infoNoticeAria?: React.ReactNode | React.ReactNode[];
 }
 
 export type AccessibilitySectionProps = AccessibilityTablesProps &
@@ -50,6 +50,37 @@ const A11yTable: React.FC<
     <Table columns={columns} rows={tableRows} />
   </ComponentPageCell>
 );
+
+const renderInfoNotice = (
+  notice: React.ReactNode | React.ReactNode[],
+  label: string,
+) => {
+  if (Array.isArray(notice)) {
+    return (
+      <ComponentPageCell>
+        {notice.map((note, index) => (
+          <Block
+            spaceStack={index < notice.length - 1 ? 'space030' : 'space000'}
+          >
+            <InlineMessage role="region" aria-label={`${label} ${index}`}>
+              {note}
+            </InlineMessage>
+          </Block>
+        ))}
+      </ComponentPageCell>
+    );
+  }
+  if (notice !== undefined) {
+    return (
+      <ComponentPageCell>
+        <InlineMessage role="region" aria-label={label}>
+          {notice}
+        </InlineMessage>
+      </ComponentPageCell>
+    );
+  }
+  return null;
+};
 
 export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
   introduction,
@@ -71,13 +102,7 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
           <A11yTable columns={['Order', 'Element', 'Role']} {...focusOrder} />
         )}
 
-        {infoNoticeFocus && (
-          <ComponentPageCell>
-            <InlineMessage role="region" aria-label="Focus notice">
-              {infoNoticeFocus}
-            </InlineMessage>
-          </ComponentPageCell>
-        )}
+        {renderInfoNotice(infoNoticeFocus, 'Focus notice')}
 
         {interaction && (
           <A11yTable columns={['Command', 'Description']} {...interaction} />
@@ -95,13 +120,7 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
           />
         )}
 
-        {infoNoticeAria && (
-          <ComponentPageCell>
-            <InlineMessage role="region" aria-label="Wai Aria notice">
-              {infoNoticeAria}
-            </InlineMessage>
-          </ComponentPageCell>
-        )}
+        {renderInfoNotice(infoNoticeAria, 'WAI Aria notice')}
       </Grid>
     </Cell>
   </CommonSection>

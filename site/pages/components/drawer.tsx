@@ -1,0 +1,467 @@
+import React from 'react';
+import {Drawer, DrawerProps, OrderedList} from 'newskit';
+
+import {UsageKind} from '../../components/usage-card';
+import {MetaStatus} from '../../components/meta/types';
+import {LayoutProps} from '../../components/layout';
+import {ComponentPageTemplate} from '../../components/component-page-template';
+
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const Playground = ({open, ...state}: {open: boolean}) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsOpen(open);
+  }, [open]);
+
+  return (
+    <>
+      <Drawer
+        {...(state as DrawerProps)}
+        open={isOpen}
+        onDismiss={() => setIsOpen(false)}
+      >
+        Content
+      </Drawer>
+    </>
+  );
+};
+
+export default (layoutProps: LayoutProps) => (
+  <ComponentPageTemplate
+    layoutProps={layoutProps}
+    pageIntroduction={{
+      type: 'Layout',
+      name: 'Drawer',
+      hero: {
+        illustration: 'components/drawer/drawer-illustration',
+      },
+      introduction:
+        'A Drawer is a layout panel that slides out the side of the screen revealing content like navigation or filters.',
+    }}
+    componentDefaultsKey="drawer"
+    meta={{
+      status: MetaStatus.Supported,
+      introduced: 'v3.0.0',
+      codeUrl:
+        'https://github.com/newscorp-ghfb/ncu-newskit/tree/develop/src/drawer',
+      figmaUrl:
+        'https://www.figma.com/file/VYOAzpSq02PoR7cci6SJlE/?node-id=324%3A2',
+    }}
+    interactiveDemo={{
+      introduction:
+        'This demo allows you to preview the Drawer component, its variations, and configuration options.',
+      playground: {
+        componentName: 'Drawer',
+        // @ts-ignore
+        component: Playground,
+        knobs: [
+          {
+            name: 'open',
+            propName: 'open',
+            value: false,
+          },
+          {
+            name: 'placement',
+            propName: 'placement',
+            options: [
+              {
+                label: 'Left',
+                value: 'left',
+                isDefault: true,
+              },
+              {
+                label: 'Right',
+                value: 'right',
+              },
+            ],
+          },
+          {
+            name: 'Header',
+            propName: 'header',
+            value: '',
+          },
+        ],
+      },
+    }}
+    anatomy={{
+      introduction:
+        'The Drawer contains four required elements and one optional element.',
+      rows: [
+        {
+          name: 'Overlay',
+          description: 'Obscures the page content behind the panel',
+          component: ['Overlay'],
+          optional: undefined,
+        },
+        {
+          name: 'Panel',
+          description: 'Contains the Panel Header and Panel Content',
+          component: ['Block'],
+          optional: undefined,
+        },
+        {
+          name: 'Header',
+          description:
+            'An area to display content at the top of a panel eg a title',
+          component: ['Block'],
+          optional: undefined,
+        },
+        {
+          name: 'Close Button',
+          description: 'Icon Button for closing the Drawer',
+          component: ['Icon Button'],
+          optional: undefined,
+        },
+        {
+          name: 'Content',
+          description: 'An area to display any content eg a menu',
+          component: ['Block'],
+          optional: true,
+        },
+      ],
+      media: getIllustrationComponent(
+        'components/drawer/drawer-anatomy-illustration',
+      ),
+    }}
+    options={{
+      introduction:
+        'The Drawer has options that can be used to provide an appropriate experience for different use cases.',
+      cards: [
+        {
+          title: 'Width',
+          description:
+            'The width of a Drawer can be customised appropriately, allowing for more or less space as needed.',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-options-width-illustration',
+          ),
+        },
+        {
+          title: 'Placement',
+          description:
+            'The Drawer can appear from the left (default), or right side of the screen. The close Icon Button is positioned on the same side where the Drawer originates from.',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-options-placement-illustration',
+          ),
+        },
+      ],
+    }}
+    behaviors={{
+      introduction:
+        'The following guidance describes how the Drawer component behaves.',
+      cards: [
+        {
+          title: 'Animation',
+          description:
+            'When the Drawer is launched, the overlay fades in and the Drawer panel slides in from the edge of the screen. When the Drawer is dismissed, the same animation in reverse occurs.',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-behaviours-animation-illustration',
+          ),
+        },
+        {
+          title: 'Triggering & Closing the Drawer',
+          description:
+            'The Drawer visibility is controlled via the open prop on the component, hidden by default. To handle closing the Drawer the user will need to supply and handle via the onDismiss callback. This will be triggered when the user clicks on the close Icon Button, the overlay, or by pressing the Esc keyboard key.',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-behaviours-triggering-closing-illustration',
+          ),
+        },
+        {
+          title: 'Content overflow',
+          description:
+            'When the content is too long to fit vertically, content overflows and a Scroll component is applied. The header becomes fixed and the content can then independently scroll to bring overflowed content into view.',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-behaviours-content-overflow-illustration',
+          ),
+        },
+        {
+          title: 'Disable page scrolling when launched',
+          description:
+            'When a Drawer is present the content behind is not scrollable (scroll-locked).',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-behaviours-disable-page-scrolling-illustration',
+          ),
+        },
+      ],
+    }}
+    usage={{
+      introduction:
+        'The following guidance describes how and when to appropriately use a Drawer component.',
+      cards: [
+        {
+          description:
+            'Drawers are appropriate for navigation, for filtering content, or for use in checkout flows. ',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/drawer/drawer-do-1-illustration',
+          ),
+        },
+        {
+          description:
+            'Avoid using Drawers for top-level navigation items when there is space for them to be exposed on larger screens. ',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent(
+            'components/drawer/drawer-dont-1-illustration',
+          ),
+        },
+        {
+          description:
+            'Use a Drawer for secondary content that is not required to be persistent but required to be easily accessed.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/drawer/drawer-do-2-illustration',
+          ),
+        },
+        {
+          description:
+            'Avoid nesting tiered Drawers to prevent usability issues. Consider using an alternative component such as an Accordion or rethink the page structure.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent(
+            'components/drawer/drawer-dont-2-illustration',
+          ),
+        },
+      ],
+    }}
+    accessibility={{
+      introduction:
+        'The Drawer has the following accessibility considerations:',
+      focusOrder: {
+        title: 'Focus order',
+        tableRows: [
+          {
+            order: 1,
+            element: 'header',
+            role:
+              'Focusses to the content (children) passed to the header area, focusing on any interactive elements.',
+          },
+          {
+            order: 2,
+            element: 'content',
+            role:
+              'Focusses to the content (children) passed to the content area, focusing on any interactive elements.',
+          },
+          {
+            order: 3,
+            element: 'closeButton',
+            role: 'Focusses to the close Icon Button in the header.',
+          },
+        ],
+      },
+      infoNoticeFocus: [
+        'Upon opening, focus will be transferred to the first interactive element in the specified order ie if there are interactive elements passed to the header, then this will be the first focusable element.',
+        'If you want to change the element that gets focus then add a data-autofocus attribute to the HTML element you want to be focused on.',
+      ],
+
+      interaction: {
+        title: 'Keyboard Interactions',
+        tableRows: [
+          {
+            command: ['Tab'],
+            description:
+              'When the Drawer is active it will maintain focus trapping. The user will only be able to tab through it and its children.',
+          },
+          {
+            command: ['Shift', 'Tab'],
+            description:
+              'When the Drawer is active it will maintain focus trapping. The user will only be able to tab through it and its children.',
+          },
+          {
+            command: ['Esc'],
+            description: 'Closes the Drawer and overlay.',
+          },
+        ],
+      },
+
+      aria: {
+        title: 'WAI-ARIA',
+        tableRows: [
+          {
+            element: 'drawer',
+            attribute: 'ariaLabelledby',
+            value: 'string',
+            description: 'Defines the Aria-label of the Drawer',
+            userSupplied: true,
+          },
+          {
+            element: 'drawer',
+            attribute: 'ariaDescribedby',
+            value: 'string',
+            description: 'Describes the purpose of the Drawer',
+            userSupplied: true,
+          },
+        ],
+      },
+    }}
+    seo={{
+      title: 'SEO Considerations',
+      introduction: (
+        <OrderedList
+          overrides={{
+            content: {
+              stylePreset: 'inkBase',
+              typographyPreset: 'editorialParagraph020',
+            },
+          }}
+        >
+          {[
+            'Ensure all text, icons, and images are visible in the Drawer so that information can be crawled and indexed.',
+            'The Drawer component and its content are rendered to the DOM, but only visible to the user when the Drawer is open.',
+          ]}
+        </OrderedList>
+      ),
+    }}
+    componentAPI={{
+      introduction:
+        'The Drawer has a range of props that can be used to define an appropriate experience for different use cases.',
+      components: [
+        {
+          title: 'Props',
+          summary: `The Drawer has a range of props that can be used to define an appropriate experience for different use cases.`,
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              required: true,
+              description: `Displays supplied content in the Drawer panel content area.`,
+            },
+            {
+              name: 'open',
+              type: 'boolean',
+              default: 'false',
+              required: true,
+              description: 'Defines if the Drawer is open.',
+            },
+            {
+              name: 'onDismiss',
+              type: 'function',
+              required: true,
+              description:
+                'If provided, a callback which is invoked on dismissing the Drawer through either clicking the close Icon Button, overlay, or pressing the Esc key.',
+            },
+            {
+              name: 'header',
+              type: 'React.ReactNode',
+              description:
+                'If provided, sets the content of the Drawer header.',
+            },
+            {
+              name: 'placement',
+              type: ['left', 'right'],
+              default: 'left',
+              description:
+                'Defines the edge of the screen from which the Drawer enters from.',
+            },
+            {
+              name: 'restoreFocusTo',
+              type: 'HTMLElement',
+              description:
+                'If provided, returns focus to the specified element after the Drawer is closed. If not provided, focus will return to the focused element prior to the Drawer opening.',
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'closeButton.stylePreset',
+              type: 'MQ<string>',
+              default: 'iconButtonMinimalSecondary',
+              description:
+                'If provided, this overrides the style preset applied to the Drawer close Icon Button.',
+            },
+            {
+              attribute: 'closeButton.spaceInset',
+              type: 'MQ<string>',
+              default: 'spaceInset020',
+              description:
+                'If provided, this overrides the padding space set in the Drawer close Icon Button.',
+            },
+            {
+              attribute: 'content.spaceInset',
+              type: 'MQ<string>',
+              default: 'spaceInset050',
+              description:
+                'If provided, this overrides the padding space set in the Drawer content container.',
+            },
+            {
+              attribute: 'header.stylePreset',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the style preset applied to the Drawer header.',
+            },
+            {
+              attribute: 'header.spaceInset',
+              type: 'MQ<string>',
+              default: 'spaceInsetSquish040',
+              description:
+                'If provided, this overrides the padding space set in Drawer header content container.',
+            },
+            {
+              attribute: 'overlay.stylePreset',
+              type: 'MQ<string>',
+              default: 'overlay',
+              description:
+                'If provided, this overrides the style preset applied to the Overlay.',
+            },
+            {
+              attribute: 'panel.stylePreset',
+              type: 'MQ<string>',
+              default: 'drawerPanel',
+              description:
+                'If provided, this overrides the style preset applied to the Drawer panel.',
+            },
+            {
+              attribute: 'panel.spaceInset',
+              type: 'MQ<string>',
+              default: '',
+              description: 'Overrides the spaceInset of the Modal panel.',
+            },
+            {
+              attribute: 'panel.size',
+              type: 'MQ<string>',
+              default: [
+                'xs = 305px',
+                'sm = 309px',
+                'md = 310px',
+                'lg = 333px',
+                'xl =354px',
+              ],
+              description:
+                'If provided, this overrides the size of the Drawer panel when placed to the left or right.',
+            },
+            {
+              attribute: 'panel.maxSize',
+              type: 'MQ<string>',
+              default: '100%',
+              description:
+                'If provided, this overrides the max-size property of the Drawer panel.',
+            },
+            {
+              attribute: 'panel.minSize',
+              type: 'MQ<string>',
+              default: '20px',
+              description:
+                'If provided, this overrides the min-size property of the Drawer panel.',
+            },
+          ],
+        },
+      ],
+    }}
+    related={{
+      introduction: '',
+      related: ['Modal', 'Menu', 'Button'],
+    }}
+    compliance={{
+      states: true,
+      variations: true,
+      themes: true,
+      behaviours: true,
+      usage: true,
+      accessibility: true,
+      seo: true,
+      performance: false,
+      design: true,
+      props: true,
+      uiKit: true,
+    }}
+  />
+);

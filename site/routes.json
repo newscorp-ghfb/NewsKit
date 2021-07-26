@@ -238,7 +238,7 @@
             "page": true,
             "id": "/components/drawer",
             "description": "A layout panel that slides out the side of the screen revealing content like navigation or filters.",
-            "illustration": "components/hero-drawer-illustration"
+            "illustration": "components/drawer/drawer-illustration"
           },
           {
             "title": "Grid",
