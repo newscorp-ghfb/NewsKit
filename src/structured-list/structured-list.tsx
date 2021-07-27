@@ -158,14 +158,21 @@ export const StructuredList: React.FC<StructuredListProps> = ({
   divider,
   overrides = {},
 }) => {
-  const structuredListChildren = React.Children.toArray(children);
+  const structuredListChildren = React.Children.toArray(
+    children,
+  ) as React.ReactElement<StructuredListItemProps>[];
   return (
     <StyledListWrapper overrides={overrides} aria-label={ariaLabel}>
       {structuredListChildren.reduce(
-        (acc: React.ReactNode[], listItem, index, array) => {
+        (acc: React.ReactElement[], listItem, index, array) => {
           acc.push(listItem);
           if (divider && index < array.length - 1) {
-            acc.push(<Divider overrides={overrides.divider} />);
+            acc.push(
+              <Divider
+                overrides={overrides.divider}
+                key={`divider-${index || listItem.key}`}
+              />,
+            );
           }
           return acc;
         },

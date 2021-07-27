@@ -287,6 +287,9 @@ export default {
                   input: {
                     stylePreset: 'inputContainerCustom',
                     typographyPreset: 'utilityBody030',
+                    spaceInset: 'spaceInset040',
+                    minHeight: 'sizing090',
+                    spaceStack: 'space000',
                   },
                   assistiveText: {
                     stylePreset: 'inputContainerCustom',
@@ -378,6 +381,7 @@ export default {
                   }
                   overrides={{
                     input: {
+                      spaceStack: 'space000',
                       leadingIcon: {
                         spaceInset: 'space080',
                         iconOffset: 'space040',

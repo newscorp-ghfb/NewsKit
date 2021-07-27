@@ -261,7 +261,8 @@ export default (layoutProps: LayoutProps) => (
           propsRows: [
             {
               name: 'children',
-              type: 'React.ReactNode',
+              type:
+                'React.ReactElement<StructuredListProps> | React.ReactElement<StructuredListProps>[]',
               required: true,
               description: 'An array of StructuredListItem components',
             },
@@ -303,7 +304,7 @@ export default (layoutProps: LayoutProps) => (
           propsRows: [
             {
               name: 'children',
-              type: 'React.ReactNode',
+              type: 'React.ReactNode | React.ReactNode[]',
               required: true,
               description: 'An array of StructuredListCell components',
             },

@@ -715,7 +715,7 @@ export const componentDefaults = {
   textInput: {
     small: {
       label: {
-        stylePreset: 'inkContrast',
+        stylePreset: 'textInputLabel',
         typographyPreset: 'utilityLabel030',
         spaceStack: 'space040',
         spaceInline: 'space010',
@@ -744,7 +744,7 @@ export const componentDefaults = {
     },
     medium: {
       label: {
-        stylePreset: 'inkContrast',
+        stylePreset: 'textInputLabel',
         typographyPreset: 'utilityLabel030',
         spaceStack: 'space040',
         spaceInline: 'space010',
@@ -773,7 +773,7 @@ export const componentDefaults = {
     },
     large: {
       label: {
-        stylePreset: 'inkContrast',
+        stylePreset: 'textInputLabel',
         typographyPreset: 'utilityLabel030',
         spaceStack: 'space040',
         spaceInline: 'space010',

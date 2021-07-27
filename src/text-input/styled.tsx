@@ -12,7 +12,9 @@ import {TextInputProps, TextInputSize} from './types';
 import {TextBlock, TextBlockProps} from '../text-block';
 import {Block, BlockProps} from '../block';
 
-export const StyledTextInputContainer = styled.div<TextInputProps>`
+export const StyledTextInputContainer = styled.div<
+  Omit<TextInputProps, 'label'>
+>`
   ${getResponsiveSize('width', 'textInput', '', 'width')}
 `;
 
@@ -28,15 +30,17 @@ interface StyledTextInputProps
   hasIcon?: boolean;
 }
 
-export const InputIconContainer = styled.div`
+export const InputIconContainer = styled.div<StyledTextInputProps>`
   position: relative;
+  ${({$size}) =>
+    getResponsiveSpacingStackHorizontal(`textInput.${$size}.input`, 'input')}
 `;
 
 export const IconContainer = styled.span<StyledTextInputProps>`
   display: flex;
   position: absolute;
   top: 50%;
-  transform: translate(0, -65%);
+  transform: translate(0, -50%);
   pointer-events: none;
 
   ${({valid, invalid, $size, ...rest}) =>
@@ -83,10 +87,11 @@ export const StyledInput = styled.input<StyledTextInputProps>`
   box-sizing: border-box;
   width: 100%;
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
-  ${({$size, invalid, valid}) =>
+  ${({$size, invalid, valid, disabled}) =>
     getStylePreset(`textInput.${$size}.input`, 'input', {
       isInvalid: invalid,
       isValid: valid,
+      isDisabled: disabled,
     })}
   ${({$size}) =>
     getTypographyPreset(`textInput.${$size}.input`, 'input', {
@@ -101,10 +106,6 @@ export const StyledInput = styled.input<StyledTextInputProps>`
       'spaceInset',
     )}
   ${({$size}) =>
-    getResponsiveSpacingStackHorizontal(`textInput.${$size}.input`, 'input')}
-  ${({$size}) =>
-    getResponsiveSpacingInlineHorizontal(`textInput.${$size}.input`, 'input')}
-  ${({$size}) =>
     getResponsiveSize(
       'minHeight',
       `textInput.${$size}.input`,
@@ -115,7 +116,12 @@ export const StyledInput = styled.input<StyledTextInputProps>`
 
 export const StyledLabel = styled.label<StyledTextInputProps>`
   display: block;
-  ${({$size}) => getStylePreset(`textInput.${$size}.label`, 'label')}
+  ${({$size, invalid, valid, disabled}) =>
+    getStylePreset(`textInput.${$size}.label`, 'label', {
+      isInvalid: invalid,
+      isValid: valid,
+      isDisabled: disabled,
+    })}
   ${({$size}) =>
     getTypographyPreset(`textInput.${$size}.label`, 'label', {
       withCrop: true,

@@ -990,7 +990,7 @@ Object {
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
-          "stylePreset": "inkContrast",
+          "stylePreset": "textInputLabel",
           "typographyPreset": "utilityLabel030",
         },
       },
@@ -1019,7 +1019,7 @@ Object {
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
-          "stylePreset": "inkContrast",
+          "stylePreset": "textInputLabel",
           "typographyPreset": "utilityLabel030",
         },
       },
@@ -1048,7 +1048,7 @@ Object {
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
-          "stylePreset": "inkContrast",
+          "stylePreset": "textInputLabel",
           "typographyPreset": "utilityLabel030",
         },
       },
@@ -3079,6 +3079,14 @@ Object {
       },
       "valid": Object {
         "color": "{{colors.inkPositive}}",
+      },
+    },
+    "textInputLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
       },
     },
     "titleBar": Object {

@@ -974,6 +974,15 @@ stylePresets.textInput = {
   },
 };
 
+stylePresets.textInputLabel = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
+  },
+};
+
 stylePresets.textInputAssistiveText = {
   base: {
     color: '{{colors.inkSubtle}}',

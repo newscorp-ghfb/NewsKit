@@ -4,7 +4,9 @@ import {CellProps} from '../grid';
 import {MQ} from '../utils/style';
 
 export interface StructuredListProps {
-  children: React.ReactNode | React.ReactNode[];
+  children:
+    | React.ReactElement<StructuredListProps>
+    | React.ReactElement<StructuredListProps>[];
   ariaLabel?: string;
   divider?: boolean;
   overrides?: {

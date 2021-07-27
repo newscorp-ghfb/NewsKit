@@ -117,11 +117,20 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
       }
     };
     return (
-      <StyledTextInputContainer label={label} overrides={overrides}>
-        <StyledLabel $size={size} htmlFor={id} overrides={overrides}>
-          {!hideLabel && label}
-        </StyledLabel>
-        <InputIconContainer>
+      <StyledTextInputContainer overrides={overrides}>
+        {!hideLabel && (
+          <StyledLabel
+            $size={size}
+            disabled={disabled}
+            invalid={!!errorText}
+            valid={valid}
+            htmlFor={id}
+            overrides={overrides}
+          >
+            {label}
+          </StyledLabel>
+        )}
+        <InputIconContainer $size={size} overrides={overrides}>
           {icon && (
             <IconContainer $size={size} icon={icon}>
               {icon}
