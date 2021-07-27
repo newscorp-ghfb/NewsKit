@@ -87,6 +87,18 @@
 		]
 	},
 	{
+		"title": "modal-layouts-only",
+		"disabledRules": [
+			"tabindex"
+		]
+	},
+	{
+		"title": "modal",
+		"disabledRules": [
+			"tabindex"
+		]
+	},
+	{
 		"title": "ordered-list"
 	},
 	{

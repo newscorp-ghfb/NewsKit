@@ -5,6 +5,7 @@ import {StorybookHeading} from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {Link} from '../../link';
 import {TextInput} from '../../text-input';
+import {Block} from '../../block';
 
 const Box = styled.div`
   width: 400px;
@@ -22,9 +23,13 @@ export default {
       storyFn: () =>
         React.createElement(() => {
           const [isActive, setIsActive] = React.useState(false);
+          const [placement, setPlacement] = React.useState('left');
 
           const open = () => setIsActive(true);
           const close = () => setIsActive(false);
+
+          const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
+            setPlacement((ev.target as HTMLInputElement).value);
 
           return (
             <div data-testid="scrollable-drawer">
@@ -32,6 +37,46 @@ export default {
               <Button onClick={open} data-testid="drawer-open-button">
                 Open Drawer
               </Button>
+              <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+                <label htmlFor="drawer_top">
+                  top:
+                  <input
+                    type="radio"
+                    value="top"
+                    id="drawer_top"
+                    name="placement"
+                  />
+                </label>
+                <label htmlFor="drawer_left">
+                  left:
+                  <input
+                    type="radio"
+                    value="left"
+                    id="drawer_left"
+                    name="placement"
+                    defaultChecked
+                  />
+                </label>
+                <label htmlFor="drawer_bottom">
+                  bottom:
+                  <input
+                    type="radio"
+                    value="bottom"
+                    id="drawer_bottom"
+                    name="placement"
+                  />
+                </label>
+                <label htmlFor="drawer_right">
+                  right:
+                  <input
+                    type="radio"
+                    value="right"
+                    id="drawer_right"
+                    name="placement"
+                  />
+                </label>
+              </Block>
+
               <p>SCROLL DOWN </p>
               <Box>
                 {Array.from({length: 5}, (_, i) => (
@@ -48,6 +93,7 @@ export default {
               <Drawer
                 open={isActive}
                 onDismiss={close}
+                placement={placement as 'top' | 'left' | 'right' | 'bottom'}
                 header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
               >
                 <p>

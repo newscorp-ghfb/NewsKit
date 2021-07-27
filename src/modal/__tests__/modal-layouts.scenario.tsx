@@ -2,9 +2,27 @@ import React from 'react';
 import {Modal} from '..';
 import {createTheme, ThemeProvider} from '../../theme';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {LinkStandalone} from '../../link';
+import {LinkStandalone, Link} from '../../link';
+import {Button} from '../../button';
+import {Stack} from '../../stack';
+import {H1, P} from '../../typography';
 
-import {modalContent} from './modal.scenario';
+const modalContent = (
+  <Stack
+    flow="vertical-center"
+    stackDistribution="center"
+    spaceInline="space020"
+  >
+    <H1>You need an account</H1>
+    <p contentEditable>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam. (Double click for more text :) )
+    </p>
+    <Button>Register for a free account</Button>
+    <P>Already have an account?</P>
+    <Link href="/">Sign in here</Link>
+  </Stack>
+);
 
 const myCustomTheme = createTheme({
   name: 'my-custom-modal-theme',

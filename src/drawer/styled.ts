@@ -20,6 +20,14 @@ const placementOptions = {
     top: 0,
     right: 0,
   },
+  top: {
+    top: 0,
+    left: 0,
+  },
+  bottom: {
+    bottom: 0,
+    left: 0,
+  },
 };
 
 const verticalSize = (
@@ -33,9 +41,29 @@ const verticalSize = (
     height: 100%;
 `;
 
+const horizontalSize = (
+  props: DrawerPanelProps & {
+    theme: Theme;
+  },
+) => css`
+  ${getResponsiveSize('height', 'drawer.panel', 'panel', 'size')(props)}
+  ${getResponsiveSize('maxHeight', 'drawer.panel', 'panel', 'maxSize')(props)}
+    ${getResponsiveSize('minHeight', 'drawer.panel', 'panel', 'minSize')(props)}
+    width: 100%;
+`;
+
 const placementSize = {
   left: verticalSize,
   right: verticalSize,
+  top: horizontalSize,
+  bottom: horizontalSize,
+};
+
+const transitions = {
+  left: '-100%, 0, 0',
+  right: '100%, 0, 0',
+  top: '0, -100%, 0',
+  bottom: '0, 100%, 0',
 };
 
 export const StyledDrawer = styled(BaseDialogView, {
@@ -48,16 +76,12 @@ export const StyledDrawer = styled(BaseDialogView, {
 
   ${({placement = 'left', ...props}) =>
     css`
-      transform: translate3d(${placement === 'left' ? '-100%' : '100%'}, 0, 0);
+      transform: translate3d(${transitions[placement]});
       visibility: hidden;
 
       &.nk-drawer-enter,
       &.nk-drawer-exit-done {
-        transform: translate3d(
-          ${placement === 'left' ? '-100%' : '100%'},
-          0,
-          0
-        );
+        transform: translate3d(${transitions[placement]});
         visibility: hidden;
       }
       &.nk-drawer-enter-active {
@@ -80,11 +104,7 @@ export const StyledDrawer = styled(BaseDialogView, {
         visibility: visible;
       }
       &.nk-drawer-exit-active {
-        transform: translate3d(
-          ${placement === 'left' ? '-100%' : '100%'},
-          0,
-          0
-        );
+        transform: translate3d(${transitions[placement]});
         visibility: hidden;
 
         transition-property: transform, visibility;

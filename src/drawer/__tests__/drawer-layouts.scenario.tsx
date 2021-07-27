@@ -49,61 +49,56 @@ const myCustomTheme = createTheme({
   },
 });
 
+const StyledCategoryRow = styled.div`
+  border-bottom: 1px solid ${getColorFromTheme('interface050')};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  color: ${getColorFromTheme('interactiveSecondary050')};
+`;
+
+const CategoryRow = ({children}: {children: string}) => (
+  <StyledCategoryRow>
+    <LinkStandalone href="/" overrides={{typographyPreset: 'utilityButton020'}}>
+      {children}
+    </LinkStandalone>
+    <IconFilledChevronRight overrides={{size: 'sizing040'}} />
+  </StyledCategoryRow>
+);
+
 export default {
   title: 'drawer-layouts-only',
   children: [
     {
       storyName: 'right placement',
       storyFn: () =>
-        React.createElement(() => {
-          const StyledCategoryRow = styled.div`
-            border-bottom: 1px solid ${getColorFromTheme('interface050')};
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 6px 0;
-            color: ${getColorFromTheme('interactiveSecondary050')};
-          `;
-
-          const CategoryRow = ({children}: {children: string}) => (
-            <StyledCategoryRow>
-              <LinkStandalone
-                href="/"
-                overrides={{typographyPreset: 'utilityButton020'}}
-              >
-                {children}
-              </LinkStandalone>
-              <IconFilledChevronRight overrides={{size: 'sizing040'}} />
-            </StyledCategoryRow>
-          );
-
-          return (
-            <>
-              <StorybookHeading>Drawer placed on the right</StorybookHeading>
-              <Drawer
-                open
-                onDismiss={() => {}}
-                placement="right"
-                header={
-                  <>
-                    <IconFilledAddCircleOutline
-                      overrides={{size: 'iconSize010'}}
-                    />
-                    <LinkStandalone href="www.test.com">
-                      Link button
-                    </LinkStandalone>
-                  </>
-                }
-              >
-                <div>
-                  {Array.from({length: 16}, (_, i) => (
-                    <CategoryRow>{`CATEGORY ${i + 1}`}</CategoryRow>
-                  ))}
-                </div>
-              </Drawer>
-            </>
-          );
-        }),
+        React.createElement(() => (
+          <>
+            <StorybookHeading>Drawer placed on the right</StorybookHeading>
+            <Drawer
+              open
+              onDismiss={() => {}}
+              placement="right"
+              header={
+                <>
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize010'}}
+                  />
+                  <LinkStandalone href="www.test.com">
+                    Link button
+                  </LinkStandalone>
+                </>
+              }
+            >
+              <div>
+                {Array.from({length: 16}, (_, i) => (
+                  <CategoryRow>{`CATEGORY ${i + 1}`}</CategoryRow>
+                ))}
+              </div>
+            </Drawer>
+          </>
+        )),
     },
     {
       storyName: 'left placement',
@@ -166,6 +161,66 @@ export default {
             </>
           );
         }),
+    },
+    {
+      storyName: 'top placement',
+      storyFn: () =>
+        React.createElement(() => (
+          <>
+            <StorybookHeading>Drawer placed on the top</StorybookHeading>
+            <Drawer
+              open
+              onDismiss={() => {}}
+              placement="top"
+              header={
+                <>
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize010'}}
+                  />
+                  <LinkStandalone href="www.test.com">
+                    Link button
+                  </LinkStandalone>
+                </>
+              }
+            >
+              <div>
+                {Array.from({length: 5}, (_, i) => (
+                  <CategoryRow>{`CATEGORY ${i + 1}`}</CategoryRow>
+                ))}
+              </div>
+            </Drawer>
+          </>
+        )),
+    },
+    {
+      storyName: 'bottom placement',
+      storyFn: () =>
+        React.createElement(() => (
+          <>
+            <StorybookHeading>Drawer placed on the bottom</StorybookHeading>
+            <Drawer
+              open
+              onDismiss={() => {}}
+              placement="bottom"
+              header={
+                <>
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize010'}}
+                  />
+                  <LinkStandalone href="www.test.com">
+                    Link button
+                  </LinkStandalone>
+                </>
+              }
+            >
+              <div>
+                {Array.from({length: 4}, (_, i) => (
+                  <CategoryRow>{`CATEGORY ${i + 1}`}</CategoryRow>
+                ))}
+              </div>
+            </Drawer>
+          </>
+        )),
     },
     {
       storyName: 'no header content',

@@ -15,7 +15,7 @@ const Box = styled.div`
 const scrollContent =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra. Integer non velit vitae elit porta condimentum. Cras ultrices lectus eu porttitor volutpat. In hac habitasse platea dictumst. Integer maximus leo quis sapien aliquet finibus. Cras lobortis leo quis massa commodo ornare. Donec ac ligula sed mauris sodales pretium id eu nibh. Pellentesque et eros viverra, dignissim ante in, tincidunt eros. Curabitur mattis purus dolor, non aliquam sapien auctor quis. Morbi sit amet leo in urna dictum imperdiet vitae sed velit. In auctor nulla sed lectus ultricies dignissim. In mattis.';
 
-export const modalContent = (
+const modalContent = (
   <Stack
     flow="vertical-center"
     stackDistribution="center"
@@ -185,3 +185,5 @@ export default {
     },
   ],
 };
+
+export const disabledRules = ['tabindex']; // Because of scenario 'open on page load'

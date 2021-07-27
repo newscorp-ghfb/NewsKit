@@ -7,7 +7,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {createTheme} from '../../theme';
-import {Drawer} from '../drawer';
+import {Drawer, DrawerProps} from '..';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
 
@@ -60,6 +60,20 @@ describe('Drawer', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test.each(['right', 'top', 'bottom'])(
+    'renders with menu items aligned at the %s',
+    placement => {
+      const fragment = renderToFragmentWithTheme(Drawer, {
+        open: true,
+        onDismiss: () => {},
+        header: drawerHeader,
+        children: drawerBody,
+        placement: placement as DrawerProps['placement'],
+      });
+      expect(fragment).toMatchSnapshot();
+    },
+  );
 
   test('renders closed drawer visually hidden but remains in the DOM tree', () => {
     const {asFragment, getByTestId} = renderWithTheme(Drawer, {

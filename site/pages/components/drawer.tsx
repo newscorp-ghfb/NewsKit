@@ -75,6 +75,14 @@ export default (layoutProps: LayoutProps) => (
                 label: 'Right',
                 value: 'right',
               },
+              {
+                label: 'Top',
+                value: 'top',
+              },
+              {
+                label: 'Bottom',
+                value: 'bottom',
+              },
             ],
           },
           {
@@ -106,7 +114,7 @@ export default (layoutProps: LayoutProps) => (
           description:
             'An area to display content at the top of a panel eg a title',
           component: ['Block'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Close Button',
@@ -118,7 +126,7 @@ export default (layoutProps: LayoutProps) => (
           name: 'Content',
           description: 'An area to display any content eg a menu',
           component: ['Block'],
-          optional: true,
+          optional: undefined,
         },
       ],
       media: getIllustrationComponent(
@@ -130,19 +138,27 @@ export default (layoutProps: LayoutProps) => (
         'The Drawer has options that can be used to provide an appropriate experience for different use cases.',
       cards: [
         {
+          title: 'Placement',
+          description:
+            'The Drawer can appear from the left (default), right, top, or bottom of the screen. When appearing from the left or right of the screen, the close Icon Button is positioned on the same side where the Drawer originates from. When appearing from the top or bottom of the screen, the close Icon Button is positioned on the right as default.',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-options-placement-illustration',
+          ),
+        },
+        {
           title: 'Width',
           description:
-            'The width of a Drawer can be customised appropriately, allowing for more or less space as needed.',
+            'When the placement of the Drawer is set to either left or right, the width of a Drawer can be customised appropriately, with the height being 100%.',
           media: getIllustrationComponent(
             'components/drawer/drawer-options-width-illustration',
           ),
         },
         {
-          title: 'Placement',
+          title: 'Height',
           description:
-            'The Drawer can appear from the left (default), or right side of the screen. The close Icon Button is positioned on the same side where the Drawer originates from.',
+            'When the placement of the Drawer is set to either top or bottom, the height of a Drawer can be customised appropriately, with the width being 100%.',
           media: getIllustrationComponent(
-            'components/drawer/drawer-options-placement-illustration',
+            'components/drawer/drawer-options-height-illustration',
           ),
         },
       ],
@@ -154,7 +170,7 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Animation',
           description:
-            'When the Drawer is launched, the overlay fades in and the Drawer panel slides in from the edge of the screen. When the Drawer is dismissed, the same animation in reverse occurs.',
+            'When the Drawer is launched, the overlay fades in from 0% to 100% opacity (transitions) and the Drawer panel slides in from the edge of the screen (transforms:translate the x or y axis). When the Drawer is dismissed, the same animation in reverse occurs.',
           media: getIllustrationComponent(
             'components/drawer/drawer-behaviours-animation-illustration',
           ),
@@ -170,7 +186,7 @@ export default (layoutProps: LayoutProps) => (
         {
           title: 'Content overflow',
           description:
-            'When the content is too long to fit vertically, content overflows and a Scroll component is applied. The header becomes fixed and the content can then independently scroll to bring overflowed content into view.',
+            'When the content is too long to fit, content overflows and Scroll is applied. The header becomes fixed and the content can then independently scroll to bring overflowed content into view.',
           media: getIllustrationComponent(
             'components/drawer/drawer-behaviours-content-overflow-illustration',
           ),
@@ -191,7 +207,7 @@ export default (layoutProps: LayoutProps) => (
       cards: [
         {
           description:
-            'Drawers are appropriate for navigation, for filtering content, or for use in checkout flows. ',
+            'Drawers are appropriate for navigation, for filtering content, or for use in checkout flows.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/drawer/drawer-do-1-illustration',
@@ -199,7 +215,7 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Avoid using Drawers for top-level navigation items when there is space for them to be exposed on larger screens. ',
+            'Avoid using Drawers for top-level navigation items when there is space for them to be exposed on larger screens.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/drawer/drawer-dont-1-illustration',
@@ -207,7 +223,7 @@ export default (layoutProps: LayoutProps) => (
         },
         {
           description:
-            'Use a Drawer for secondary content that is not required to be persistent but required to be easily accessed.',
+            'Drawers should be in close proximity to the content it’s attributed to.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/drawer/drawer-do-2-illustration',
@@ -323,7 +339,7 @@ export default (layoutProps: LayoutProps) => (
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description: `Displays supplied content in the Drawer panel content area.`,
+              description: `Content to be rendered inside the Drawer panel content area.`,
             },
             {
               name: 'open',
@@ -347,10 +363,10 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               name: 'placement',
-              type: ['left', 'right'],
+              type: ['left', 'right', 'top', 'bottom'],
               default: 'left',
               description:
-                'Defines the edge of the screen from which the Drawer enters from.',
+                'Defines the edge of the screen from which the Drawer enters and exits from.',
             },
             {
               name: 'restoreFocusTo',
@@ -361,25 +377,59 @@ export default (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'closeButton.stylePreset',
+              attribute: 'overlay.stylePreset',
               type: 'MQ<string>',
-              default: 'iconButtonMinimalSecondary',
+              default: 'overlay',
               description:
-                'If provided, this overrides the style preset applied to the Drawer close Icon Button.',
+                'If provided, this overrides the style preset applied to the Overlay.',
             },
             {
-              attribute: 'closeButton.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInset020',
+              attribute: 'overlay.zIndex',
+              type: 'number',
+              default: '70',
               description:
-                'If provided, this overrides the padding space set in the Drawer close Icon Button.',
+                'If provided, this overrides the zIndex of the Overlay.',
             },
             {
-              attribute: 'content.spaceInset',
+              attribute: 'panel.stylePreset',
               type: 'MQ<string>',
-              default: 'spaceInset050',
+              default: 'drawerPanel',
               description:
-                'If provided, this overrides the padding space set in the Drawer content container.',
+                'If provided, this overrides the style preset applied to the Drawer panel.',
+            },
+            {
+              attribute: 'panel.size',
+              type: 'MQ<string>',
+              default: [
+                'xs = 305px',
+                'sm = 309px',
+                'md = 310px',
+                'lg = 333px',
+                'xl =354px',
+              ],
+              description:
+                'If provided, this overrides the size of the Drawer panel when placed to the left or right. Can accept variable height or variable width depending on the orientation. (size = width for left/right Drawer | size=height for top/bottom Drawer).',
+            },
+            {
+              attribute: 'panel.maxSize',
+              type: 'MQ<string>',
+              default: '100%',
+              description:
+                'If provided, this overrides the max-size property of the Drawer panel. Can accept variable height or variable width depending on the orientation.',
+            },
+            {
+              attribute: 'panel.minSize',
+              type: 'MQ<string>',
+              default: '20px',
+              description:
+                'If provided, this overrides the min-size property of the Drawer panel. Can accept variable height or variable width depending on the orientation.',
+            },
+            {
+              attribute: 'panel.zIndex',
+              type: 'number',
+              default: '80',
+              description:
+                'If provided, this overrides the zIndex of the Drawer panel.',
             },
             {
               attribute: 'header.stylePreset',
@@ -396,51 +446,25 @@ export default (layoutProps: LayoutProps) => (
                 'If provided, this overrides the padding space set in Drawer header content container.',
             },
             {
-              attribute: 'overlay.stylePreset',
+              attribute: 'content.spaceInset',
               type: 'MQ<string>',
-              default: 'overlay',
+              default: 'spaceInset050',
               description:
-                'If provided, this overrides the style preset applied to the Overlay.',
+                'If provided, this overrides the padding space set in the Drawer content container.',
             },
             {
-              attribute: 'panel.stylePreset',
+              attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
-              default: 'drawerPanel',
+              default: 'iconButtonMinimalSecondary',
               description:
-                'If provided, this overrides the style preset applied to the Drawer panel.',
+                'If provided, this overrides the style preset applied to the Drawer close Icon Button.',
             },
             {
-              attribute: 'panel.spaceInset',
+              attribute: 'closeButton.spaceInset',
               type: 'MQ<string>',
-              default: '',
-              description: 'Overrides the spaceInset of the Modal panel.',
-            },
-            {
-              attribute: 'panel.size',
-              type: 'MQ<string>',
-              default: [
-                'xs = 305px',
-                'sm = 309px',
-                'md = 310px',
-                'lg = 333px',
-                'xl =354px',
-              ],
+              default: 'spaceInset020',
               description:
-                'If provided, this overrides the size of the Drawer panel when placed to the left or right.',
-            },
-            {
-              attribute: 'panel.maxSize',
-              type: 'MQ<string>',
-              default: '100%',
-              description:
-                'If provided, this overrides the max-size property of the Drawer panel.',
-            },
-            {
-              attribute: 'panel.minSize',
-              type: 'MQ<string>',
-              default: '20px',
-              description:
-                'If provided, this overrides the min-size property of the Drawer panel.',
+                'If provided, this overrides the padding space set in the Drawer close Icon Button.',
             },
           ],
         },
@@ -448,7 +472,7 @@ export default (layoutProps: LayoutProps) => (
     }}
     related={{
       introduction: '',
-      related: ['Modal', 'Menu', 'Button'],
+      related: ['Modal', 'Menu'],
     }}
     compliance={{
       states: true,

@@ -9,7 +9,6 @@ export interface BaseDialogOverridesProps {
   panel?: {
     zIndex?: number;
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
   };
   header?: {
     stylePreset?: MQ<string>;
@@ -28,7 +27,7 @@ export interface BaseDialogViewProps extends HTMLAttributes<HTMLDivElement> {
   path: string;
   handleCloseButtonClick: () => void;
 
-  placement?: 'left' | 'right';
+  placement?: 'left' | 'right' | 'top' | 'bottom';
   header?: React.ReactNode;
   children: Exclude<React.ReactNode, 'undefined'>;
   ariaDescribedby?: string;

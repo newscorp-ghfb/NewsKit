@@ -70,7 +70,7 @@ export const StyledCloseButtonContainer = styled.div<
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  ${({placement}) => `${placement}: 0;`}
+  ${({placement}) => (placement === 'left' ? `left:0;` : `right: 0;`)}
   ${({path}) =>
     getResponsiveSpace(
       'padding',

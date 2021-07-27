@@ -26,101 +26,101 @@ export const DrawerOptionsPlacementIllustration: React.FC = () => {
         />
         <g filter={`url(#${filter0})`}>
           <Rect
-            width="354.254"
-            height="601.444"
+            width="303"
+            height="477"
             rx="6.06751"
-            transform="matrix(-1 0 0 1 922.254 118)"
+            transform="matrix(-1 0 0 1 897 181)"
             fill="illustrationInterface010"
           />
         </g>
         <Rect
-          width="298.458"
-          height="8.60743"
-          rx="4.30372"
-          transform="matrix(-1 0 0 1 894.854 253.613)"
+          width="245.86"
+          height="8.61897"
+          rx="4.30949"
+          transform="matrix(-1 0 0 1 867.883 316.463)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="298.458"
-          height="8.60743"
-          rx="4.30372"
-          transform="matrix(-1 0 0 1 894.854 401.853)"
+          width="245.86"
+          height="8.61896"
+          rx="4.30948"
+          transform="matrix(-1 0 0 1 867.883 464.901)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="298.458"
-          height="9.56382"
+          width="245.86"
+          height="9.57664"
           rx="4.56472"
-          transform="matrix(-1 0 0 1 894.854 276.566)"
+          transform="matrix(-1 0 0 1 867.883 339.447)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="298.458"
-          height="9.56382"
+          width="245.86"
+          height="9.57663"
           rx="4.56472"
-          transform="matrix(-1 0 0 1 894.854 300.476)"
+          transform="matrix(-1 0 0 1 867.883 363.388)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="298.458"
-          height="9.56382"
+          width="245.86"
+          height="9.57663"
           rx="4.56472"
-          transform="matrix(-1 0 0 1 894.854 424.805)"
+          transform="matrix(-1 0 0 1 867.883 487.884)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="298.458"
-          height="9.56384"
+          width="245.86"
+          height="9.57664"
           rx="4.56472"
-          transform="matrix(-1 0 0 1 894 377.943)"
+          transform="matrix(-1 0 0 1 867.18 440.959)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="150.688"
-          height="8.60745"
-          rx="4.30372"
-          transform="matrix(-1 0 0 1 747 206.75)"
+          width="124.131"
+          height="8.61897"
+          rx="4.30949"
+          transform="matrix(-1 0 0 1 746.086 269.537)"
           fill="illustrationInterface030"
         />
         <Rect
-          width="298.458"
-          height="9.56383"
+          width="245.86"
+          height="9.57665"
           rx="4.56472"
-          transform="matrix(-1 0 0 1 894 229.358)"
+          transform="matrix(-1 0 0 1 867.18 292.175)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="150.688"
-          height="8.60743"
-          rx="4.30372"
-          transform="matrix(-1 0 0 1 747 355.946)"
+          width="124.131"
+          height="8.61899"
+          rx="4.30949"
+          transform="matrix(-1 0 0 1 746.086 418.933)"
           fill="illustrationInterface030"
         />
         <Rect
-          width="298.458"
-          height="9.56387"
-          rx="4.56472"
-          transform="matrix(-1 0 0 1 894.854 680.492)"
+          width="246"
+          height="7"
+          rx="3.5"
+          transform="matrix(-1 0 0 1 868 628)"
           fill="illustrationInterface020"
         />
         <Rect
-          width="298.458"
-          height="10.5202"
-          rx="4.56472"
-          transform="matrix(-1 0 0 1 894.854 656.583)"
+          width="246"
+          height="8"
+          rx="4"
+          transform="matrix(-1 0 0 1 868 609)"
           fill="illustrationInterface020"
         />
         <mask
           id={mask0}
           mask-type="alpha"
           maskUnits="userSpaceOnUse"
-          x="585"
-          y="149"
-          width="31"
-          height="32"
+          x="609"
+          y="204"
+          width="32"
+          height="31"
         >
           <Path
-            d="M591.438 157.69L593.238 155.89L600.374 163.026L607.51 155.89L609.31 157.69L602.174 164.826L609.31 171.962L607.51 173.762L600.374 166.626L593.238 173.762L591.438 171.962L598.574 164.826L591.438 157.69Z"
+            d="M616.076 212.214L617.876 210.414L625.012 217.55L632.148 210.414L633.948 212.214L626.812 219.35L633.948 226.486L632.148 228.286L625.012 221.15L617.876 228.286L616.076 226.486L623.212 219.35L616.076 212.214Z"
             fill="#0A0A0A"
           />
         </mask>
@@ -128,7 +128,7 @@ export const DrawerOptionsPlacementIllustration: React.FC = () => {
           <Rect
             width="30.6382"
             height="30.6382"
-            transform="matrix(-1 0 0 1 615.693 149.507)"
+            transform="matrix(-1 0 0 1 640.331 204.031)"
             fill="illustrationHighlight010"
           />
         </g>
@@ -138,6 +138,22 @@ export const DrawerOptionsPlacementIllustration: React.FC = () => {
         />
         <Path
           d="M1369.97 399.049C1368.76 398.164 1367.05 399.031 1367.05 400.533L1367.05 436.16C1367.05 437.662 1368.76 438.529 1369.97 437.644L1394.4 419.831C1395.41 419.098 1395.41 417.597 1394.4 416.863L1369.97 399.049Z"
+          fill="illustrationHighlight010"
+        />
+        <Path
+          d="M727.356 106.238C726.471 107.452 727.338 109.156 728.84 109.156L764.467 109.156C765.969 109.156 766.836 107.452 765.951 106.238L748.138 81.809C747.404 80.8031 745.904 80.8031 745.17 81.8089L727.356 106.238Z"
+          fill="illustrationHighlight010"
+        />
+        <Path
+          d="M727.356 73.1837C726.471 74.3972 727.338 76.1021 728.84 76.1021L764.467 76.1021C765.969 76.1021 766.836 74.3973 765.951 73.1837L748.138 48.7545C747.404 47.7487 745.904 47.7486 745.17 48.7545L727.356 73.1837Z"
+          fill="illustrationHighlight010"
+        />
+        <Path
+          d="M727.356 731.918C726.471 730.705 727.338 729 728.84 729L764.467 729C765.969 729 766.836 730.705 765.951 731.918L748.138 756.348C747.404 757.353 745.904 757.353 745.17 756.348L727.356 731.918Z"
+          fill="illustrationHighlight010"
+        />
+        <Path
+          d="M727.356 764.973C726.471 763.759 727.338 762.054 728.84 762.054L764.467 762.054C765.969 762.054 766.836 763.759 765.951 764.973L748.138 789.402C747.404 790.408 745.904 790.408 745.17 789.402L727.356 764.973Z"
           fill="illustrationHighlight010"
         />
         <Path
@@ -152,10 +168,10 @@ export const DrawerOptionsPlacementIllustration: React.FC = () => {
       <defs>
         <filter
           id={filter0}
-          x="552"
-          y="110"
-          width="386.254"
-          height="633.444"
+          x="578"
+          y="173"
+          width="335"
+          height="509"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -164,6 +180,7 @@ export const DrawerOptionsPlacementIllustration: React.FC = () => {
             in="SourceAlpha"
             type="matrix"
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
           />
           <feOffset dy="8" />
           <feGaussianBlur stdDeviation="8" />
