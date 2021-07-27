@@ -9,7 +9,7 @@ const path = require('path');
  * === TARGET FOLDER HERE ===
  * Replace the string at the end of the "paths" array with the folder you have put the SVG files in.
  */
-const paths = [__dirname, '../site/components/illustrations/components/drawer'];
+const paths = [__dirname, '../site/components/illustrations/components'];
 
 const files = fs.readdirSync(path.resolve(...paths));
 const upper = str => `${str[0].toUpperCase()}${str.substr(1)}`;

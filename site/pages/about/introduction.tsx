@@ -138,8 +138,7 @@ export default (layoutProps: LayoutProps) => (
         introduction="NewsKit is News UK’s design system. It provides interactive building blocks and guidelines for crafting cohesive digital product interfaces and accelerating development.
           build better products faster."
         hero={{
-          illustration:
-            'components/introduction-hero-stepping-stones-illustration',
+          illustration: 'about/introduction-hero-stepping-stones-illustration',
         }}
       />
       <SectionIntroduction title="Introduction" cellProps={{lg: 8}}>

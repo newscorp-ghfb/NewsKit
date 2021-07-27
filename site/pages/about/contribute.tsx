@@ -85,7 +85,7 @@ export default (layoutProps: LayoutProps) => (
         type="About"
         name="Contribute"
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
-        hero={{illustration: 'components/hero-contribute-illustration'}}
+        hero={{illustration: 'about/hero-contribute-illustration'}}
       />
 
       <SectionIntroduction title="How to contribute">
