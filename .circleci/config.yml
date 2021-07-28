@@ -60,11 +60,15 @@ executors:
     docker:
       - image: circleci/node:14.17.1
     resource_class: large
+    environment:
+      NODE_OPTIONS: --max_old_space_size=7680
 
   node-xlarge:
     docker:
       - image: circleci/node:14.17.1
     resource_class: xlarge
+    environment:
+      NODE_OPTIONS: --max_old_space_size=15872
 
   cypress:
     docker:
@@ -388,7 +392,7 @@ jobs:
 
   test_unit_comps:
     <<: *working_directory
-    executor: node-xlarge
+    executor: node-large
     steps:
       - checkout
       - attach_workspace:
@@ -407,7 +411,7 @@ jobs:
 
   test_unit_docs:
     <<: *working_directory
-    executor: node-xlarge
+    executor: node-large
     steps:
       - checkout
       - attach_workspace:

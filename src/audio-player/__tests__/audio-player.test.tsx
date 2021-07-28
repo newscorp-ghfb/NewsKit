@@ -83,7 +83,7 @@ describe('Audio Player', () => {
       mediaElement[k] = jest.fn();
     });
     window.open = jest.fn();
-    jest.useFakeTimers();
+    jest.useFakeTimers('legacy');
   });
 
   test('live player renders as expected', () => {

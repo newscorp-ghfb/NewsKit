@@ -39,7 +39,8 @@ const testsConfig = files.map(filePath => {
             node => node.id.name === 'disabledRules',
           ).length,
       );
-      const [disableRuleObj] = exportNamedDeclaration.declaration.declarations;
+      const [disableRuleObj] =
+        exportNamedDeclaration?.declaration?.declarations || [];
       // take the values from the named export disabledRules
       if (disableRuleObj) {
         disabledRules = disableRuleObj.init.elements.map(node => node.value);
