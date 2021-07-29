@@ -59,7 +59,9 @@
     "generate:install": "cd ./component-generator && yarn && yarn link",
     "generate:run": "yo newskit-component",
     "generate:component": "yarn generate:install && yarn generate:run",
-    "generate:uninstall": "cd ./component-generator && yarn && yarn unlink"
+    "generate:uninstall": "cd ./component-generator && yarn && yarn unlink",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@applitools/eyes-cypress": "^3.18.7",
@@ -78,10 +80,10 @@
     "@mdx-js/loader": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
     "@next/mdx": "^9.3.5",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
-    "@storybook/react": "^6.2.9",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/react": "^6.3.6",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.2.6",
     "@testing-library/react-hooks": "^3.2.1",
