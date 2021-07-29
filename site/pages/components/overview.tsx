@@ -36,7 +36,7 @@ export default (layoutProps: LayoutProps) => (
             ) : (
               <Cell xs={12}>
                 <SectionIntroduction
-                  subHeadingSpaceStack="space000"
+                  subHeadingSpaceStack="space080"
                   title={title}
                   cellProps={{lg: 8}}
                 >

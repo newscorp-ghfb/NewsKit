@@ -106,8 +106,16 @@ exports[`InteractiveDemoSection renders section as expected 1`] = `
   fill: #162740;
 }
 
-.emotion-6 {
-  margin-bottom: 80px;
+@media screen and (max-width: 1023px) {
+  .emotion-6 {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-6 {
+    margin-bottom: 80px;
+  }
 }
 
 .emotion-7 {
@@ -243,7 +251,7 @@ exports[`InteractiveDemoSection renders section as expected 1`] = `
   </div>
   @media screen and (max-width: 767px) {
   .emotion-0 {
-    margin-top: 40px;
+    margin-top: 64px;
   }
 }
 

@@ -178,6 +178,13 @@
         "id": "/components/feedback-and-status",
         "subNav": [
           {
+            "title": "Banner",
+            "page": true,
+            "id": "/components/banner",
+            "description": "Demonstrates the progress of a system action e.g. waiting for a page to load.",
+            "illustration": "components/banner/banner-illustration"
+          },
+          {
             "title": "Flag",
             "page": true,
             "id": "/components/flag",

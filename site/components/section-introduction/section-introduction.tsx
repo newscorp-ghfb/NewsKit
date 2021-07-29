@@ -8,7 +8,7 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
   cellProps,
   image,
   children,
-  subHeadingSpaceStack = 'space100',
+  subHeadingSpaceStack = {xs: 'space060', md: 'space060', lg: 'space070'},
 }) => (
   <>
     <ComponentPageCellCompact {...cellProps}>

@@ -83,7 +83,7 @@ Object {
     "illustrationBackground020": "{{colors.neutral090}}",
     "illustrationBorder010": "{{colors.blue070}}",
     "illustrationBorder020": "{{colors.blue060}}",
-    "illustrationDisabled": "{{colors.blue080}}",
+    "illustrationDisabled": "{{colors.blue070}}",
     "illustrationGradient010": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
     "illustrationHighlight010": "{{colors.white}}",
     "illustrationInterface010": "{{colors.blue050}}",
@@ -599,7 +599,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -1500,6 +1500,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {
@@ -4966,7 +4971,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -5867,6 +5872,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {
@@ -8817,7 +8827,7 @@ Object {
     "illustrationBackground020": "{{colors.neutral090}}",
     "illustrationBorder010": "{{colors.blue070}}",
     "illustrationBorder020": "{{colors.blue060}}",
-    "illustrationDisabled": "{{colors.blue080}}",
+    "illustrationDisabled": "{{colors.blue070}}",
     "illustrationGradient010": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
     "illustrationHighlight010": "{{colors.white}}",
     "illustrationInterface010": "{{colors.blue050}}",
@@ -9333,7 +9343,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -10234,6 +10244,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {
@@ -13700,7 +13715,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -14601,6 +14616,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {
@@ -17551,7 +17571,7 @@ Object {
     "illustrationBackground020": "{{colors.neutral090}}",
     "illustrationBorder010": "{{colors.blue070}}",
     "illustrationBorder020": "{{colors.blue060}}",
-    "illustrationDisabled": "{{colors.blue080}}",
+    "illustrationDisabled": "{{colors.blue070}}",
     "illustrationGradient010": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
     "illustrationHighlight010": "{{colors.white}}",
     "illustrationInterface010": "{{colors.blue050}}",
@@ -18067,7 +18087,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -18968,6 +18988,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {
@@ -22434,7 +22459,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -23335,6 +23360,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {
@@ -26285,7 +26315,7 @@ Object {
     "illustrationBackground020": "{{colors.neutral090}}",
     "illustrationBorder010": "{{colors.blue070}}",
     "illustrationBorder020": "{{colors.blue060}}",
-    "illustrationDisabled": "{{colors.blue080}}",
+    "illustrationDisabled": "{{colors.blue070}}",
     "illustrationGradient010": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
     "illustrationHighlight010": "{{colors.white}}",
     "illustrationInterface010": "{{colors.blue050}}",
@@ -26801,7 +26831,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -27702,6 +27732,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {
@@ -31168,7 +31203,7 @@ Object {
       "title": Object {
         "typographyPreset": Object {
           "lg": "editorialHeadline060",
-          "sm": "editorialHeadline040",
+          "xs": "editorialHeadline040",
         },
       },
     },
@@ -32069,6 +32104,11 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "bannerIcon": Object {
+      "base": Object {
+        "iconColor": "{{colors.white}}",
       },
     },
     "bannerInformative": Object {

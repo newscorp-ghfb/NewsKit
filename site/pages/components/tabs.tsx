@@ -10,6 +10,7 @@ import {
   TextBlock,
   UnorderedList,
 } from 'newskit';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {parseEnumValues} from '../../utils/parse-enum-values';
 import {Mono} from '../../components/flags';
 import {UsageKind} from '../../components/usage-card';
@@ -57,109 +58,97 @@ export default (layoutProps: LayoutProps) => (
           description:
             'Use tabs to alternate between views within the same context.',
           kind: UsageKind.DO,
-          media: {
-            src: '/static/tabs/tabs-do-01.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-01-illustration',
+          ),
         },
         {
           description:
             'Avoid using Tabs to navigate to different pages and anchoring to different sections on a page. A Navigation component is a more appropriate component for this purpose.',
           kind: UsageKind.DONT,
-          media: {
-            src: '/static/tabs/tabs-dont-01.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-dont-01-illustration',
+          ),
         },
         {
           description:
             'Use Tabs when users have two or more content views to choose from.',
           kind: UsageKind.DO,
-          media: {
-            src: '/static/tabs/tabs-do-02.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-02-illustration',
+          ),
         },
         {
           description:
             'Avoid using Tabs when there are more than five or more content views to choose from. Consider using an alternative component such as a Selector to reduce the users cognitive load.',
           kind: UsageKind.DONT,
-          media: {
-            src: '/static/tabs/tabs-dont-02.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-dont-02-illustration',
+          ),
         },
         {
           description:
             'All Tab items should be consistent in size e.g. small, medium or large Tab item. This is to ensure Tab items have equal importance. ',
           kind: UsageKind.DO,
-          media: {
-            src: '/static/tabs/tabs-do-03.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-03-illustration',
+          ),
         },
         {
           description:
             'Don’t mix Tab items that include an icon or don’t include an icon. This is to ensure Tab items have equal importance.',
           kind: UsageKind.DONT,
-          media: {
-            src: '/static/tabs/tabs-dont-03.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-dont-03-illustration',
+          ),
         },
         {
           description:
             'Tab labels should be in sentence case. This helps with scannability and legibility.',
           kind: UsageKind.DO,
-          media: {
-            src: '/static/tabs/tabs-do-04.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-04-illustration',
+          ),
         },
         {
           description:
             'Tab labels shouldnt be truncated. Keep it short, clear, and fully visible.',
           kind: UsageKind.DONT,
-          media: {
-            src: '/static/tabs/tabs-dont-04.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-dont-04-illustration',
+          ),
         },
         {
           description:
             'Tabs should be in close proximity to the content it’s changing.',
           kind: UsageKind.DO,
-          media: {
-            src: '/static/tabs/tabs-do-05.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-05-illustration',
+          ),
         },
         {
           description:
             'Avoid nesting Tabs to prevent usability issues. Consider using an alternative component such as an Accordion or rethink the page structure.',
           kind: UsageKind.DONT,
-          media: {
-            src: '/static/tabs/tabs-dont-05.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-dont-05-illustration',
+          ),
         },
         {
           description:
             'The Tab shouldn’t fall out of view of the content. If the content is too large to display with the Tabs in the same viewport, then ensure the Tabs become fixed (sticky).',
           kind: UsageKind.DO,
-          media: {
-            src: '/static/tabs/tabs-do-06.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-06-illustration',
+          ),
         },
         {
           description:
             'Tabs in the vertical orientation should be used when horizontal space is less generous and when the list of sections is greater than can be presented to the user in a horizontal format.',
           kind: UsageKind.DO,
-          media: {
-            src: '/static/tabs/tabs-do-07.svg',
-            alt: 'src alt',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-do-07-illustration',
+          ),
         },
       ],
     }}
@@ -697,7 +686,7 @@ export default (layoutProps: LayoutProps) => (
         {
           name: 'Tab',
           description: 'Includes a label, icon',
-          component: ['Text Block', 'Icons'],
+          component: ['Text Block', 'Icon'],
           optional: undefined,
         },
         {
@@ -725,10 +714,9 @@ export default (layoutProps: LayoutProps) => (
           optional: undefined,
         },
       ],
-      media: {
-        src: '/static/tabs/tabs-anatomy.svg',
-        alt: 'Card Media',
-      },
+      media: getIllustrationComponent(
+        'components/tabs/anatomy-tabs-illustration',
+      ),
     }}
     options={{
       introduction:
@@ -738,81 +726,72 @@ export default (layoutProps: LayoutProps) => (
           title: 'Size',
           description:
             'There are three sizes of the Tabs; small, medium, and large. Tab label, icon, and the tab container change size. Tabs match the same height as three button sizes, to align when used together.',
-          media: {
-            src: '/static/tabs/tabs-options-size.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-size-illustration',
+          ),
         },
         {
           title: 'Icons (leading & trailing)',
           description:
             'Icons can be displayed in Tab items and can be positioned either before (leading) or after (trailing) the label in the Tab.',
-          media: {
-            src: '/static/tabs/tabs-options-icons.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-icons-illustration',
+          ),
         },
         {
           title: 'Label',
           description:
             'Labels can be displayed in Tab items. A label can give more context to what content will be displayed when a Tab is selected. ',
-          media: {
-            src: '/static/tabs/tabs-options-label.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-label-illustration',
+          ),
         },
         {
           title: 'Orientation',
           description: 'Tabs can be displayed horizontally or vertically. ',
-          media: {
-            src: '/static/tabs/tabs-options-orientation.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-orientation-illustration',
+          ),
         },
         {
           title: 'Indicator Position',
           description:
             'The Tabs indicator position can be displayed on the bottom of the Tab for the horizontal orientation and left or right of the Tab for the vertical orientation.',
-          media: {
-            src: '/static/tabs/tabs-options-indicator-position.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-indicator-position-illustration',
+          ),
         },
         {
           title: 'Indicator Size',
           description:
             'The size of a Tab indicator can be defined appropriately to give more or less affordance, using either: full-width of the tab, fixed-width/fixed-height (based on orientation) or a percentage of the Tab height/width (based on orientation).',
-          media: {
-            src: '/static/tabs/tabs-options-indicator-size.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-indicator-size-illustration',
+          ),
         },
         {
           title: 'Indicator Weight',
           description:
             'The weight of a Tab indicator can be customised appropriately to give more or less affordance.',
-          media: {
-            src: '/static/tabs/tabs-options-indicator-weight.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-indicator-weight-illustration',
+          ),
         },
         {
           title: 'Track Weight',
           description:
             'The weight of a Tab track can be customised appropriately to give more or less affordance.',
-          media: {
-            src: '/static/tabs/tabs-options-track-weight.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-track-weight-illustration',
+          ),
         },
         {
           title: 'Dividers',
           description:
             'Dividers can be displayed in Tabs in between Tab items. Dividers in Tabs match the same width/height (depending on orientation) of the Tab items.',
-          media: {
-            src: '/static/tabs/tabs-options-dividers.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-dividers-illustration',
+          ),
         },
         {
           title: 'Distribution',
@@ -826,11 +805,10 @@ export default (layoutProps: LayoutProps) => (
               }}
             >
               <>
-                <Mono>Start</Mono>
-                Aligns the Tab items to the left of the content area for
-                horizontal orientation (default) and to the top for vertical
-                orientation. The width of the Tab Group is defined by the width
-                of its children.
+                <Mono>Start</Mono>&nbsp; Aligns the Tab items to the left of the
+                content area for horizontal orientation (default) and to the top
+                for vertical orientation. The width of the Tab Group is defined
+                by the width of its children.
               </>
               <>
                 <Mono>Grow</Mono> Spreads all Tab items across the content area,
@@ -845,10 +823,9 @@ export default (layoutProps: LayoutProps) => (
             </UnorderedList> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
 
-          media: {
-            src: '/static/tabs/tabs-options-distribution.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-distribution-illustration',
+          ),
         },
         {
           title: 'Alignment',
@@ -863,8 +840,8 @@ export default (layoutProps: LayoutProps) => (
                 }}
               >
                 <>
-                  <Mono>Start</Mono>Aligns the Tab item label and icons to the
-                  left.
+                  <Mono>Start</Mono>&nbsp;Aligns the Tab item label and icons to
+                  the left.
                 </>
                 <>
                   <Mono>Center</Mono> Centers the Tab item label and icons.
@@ -882,10 +859,9 @@ export default (layoutProps: LayoutProps) => (
             </> // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ) as any,
 
-          media: {
-            src: '/static/tabs/tabs-options-alignment.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-options-alignment-illustration',
+          ),
         },
       ],
     }}
@@ -897,55 +873,49 @@ export default (layoutProps: LayoutProps) => (
           title: 'Base',
           description:
             'Tab items have a base state. This is the base style of the Tab item before it has been interacted with by a user.',
-          media: {
-            src: '/static/tabs/tabs-states-base.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-states-base-illustration',
+          ),
         },
         {
           title: 'Hover',
           description:
             'Tab items have a hover state. The style of the Tab item changes to visually communicate and provide feedback to the user that the Tab item is an interactive element.',
-          media: {
-            src: '/static/tabs/tabs-states-hover.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-states-hover-illustration',
+          ),
         },
         {
           title: 'Active',
           description:
             'Tab items have an active state. The style of the Tab item changes to visually communicate and provide feedback to the user that the Tab item has been interacted with.',
-          media: {
-            src: '/static/tabs/tabs-states-active.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-states-active-illustration',
+          ),
         },
         {
           title: 'Selected',
           description:
             'Tab items have a selected state. The style of the Tab item changes to visually communicate and provide feedback to the user that the Tab item has been selected.',
-          media: {
-            src: '/static/tabs/tabs-states-selected.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-states-selected-illustration',
+          ),
         },
         {
           title: 'Disabled',
           description:
             'Tab items in a disabled state communicate that a Tab item exists, but is not available to the user in that scenario. When the user’s cursor hovers over a Tab item in a disabled state, the cursor shows as not-allowed. Disabled tab items are often used to maintain layout consistency and communicate that a Tab item may become available if another condition has been met.',
-          media: {
-            src: '/static/tabs/tabs-states-disabled.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-states-disabled-illustration',
+          ),
         },
         {
           title: 'Focus',
           description:
             'Tab items in a focus state communicate that a user has highlighted a Tab item, using an input method such as a keyboard or voice.',
-          media: {
-            src: '/static/tabs/tabs-states-focus.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-states-focus-illustration',
+          ),
         },
       ],
     }}
@@ -956,37 +926,33 @@ export default (layoutProps: LayoutProps) => (
           title: 'Animation',
           description:
             'When the user selects a Tab item, the indicator slides along the track of the Tabs to the newly selected Tab item. At the time of selection, the Tabs content changes immediately.',
-          media: {
-            src: '/static/tabs/tabs-behaviours-animation.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-behaviours-animation-illustration',
+          ),
         },
         {
           title: 'Selected',
           description:
             'Only one tab item can be selected at any given time. This property changes an individual tab item’s selected state.',
-          media: {
-            src: '/static/tabs/tabs-behaviours-selected.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-behaviours-selected-illustration',
+          ),
         },
         {
           title: 'Tabs Overflow',
           description:
             'When there are too many Tabs to fit horizontally across the viewport, a Scroll component is applied. On a desktop, the controls (buttons) are rendered on the scroll.',
-          media: {
-            src: '/static/tabs/tabs-behaviours-tab-overflow.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-behaviours-tab-overflow-illustration',
+          ),
         },
         {
           title: 'Label Overflow Wrap',
           description:
             'When the label in a Tab item is too long for the available horizontal space, it wraps to form another line.',
-          media: {
-            src: '/static/tabs/tabs-behaviours-label-wrap.svg',
-            alt: 'Card Media',
-          },
+          media: getIllustrationComponent(
+            'components/tabs/tabs-behaviours-label-wrap-illustration',
+          ),
         },
       ],
     }}

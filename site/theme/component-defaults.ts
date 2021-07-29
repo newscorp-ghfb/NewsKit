@@ -73,7 +73,7 @@ export const componentDefaults = {
   featureCard: {
     title: {
       typographyPreset: {
-        sm: 'editorialHeadline040',
+        xs: 'editorialHeadline040',
         lg: 'editorialHeadline060',
       },
     },

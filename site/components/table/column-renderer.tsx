@@ -22,6 +22,11 @@ const renderIcon = (value?: TableRowValue) => {
   }
 };
 
+const remapComponents: {[id: string]: string} = {
+  'Icon Button': 'Button',
+  Icon: 'Icons',
+};
+
 const renderSingleOrMultiple = (
   renderer: (value: string) => React.ReactNode,
   value: string | string[],
@@ -96,7 +101,8 @@ export const renderCols = (
         cellContent =
           cellValue &&
           renderSingleOrMultiple(v => {
-            const route = getByTitle(v);
+            const remapped = remapComponents[v];
+            const route = getByTitle(remapped || v);
             return route ? (
               <Link
                 href={route.id}

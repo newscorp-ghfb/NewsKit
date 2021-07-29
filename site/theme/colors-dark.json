@@ -64,7 +64,7 @@
     "illustrationBackground020": "{{colors.neutral090}}",
     "illustrationBorder010": "{{colors.blue070}}",
     "illustrationBorder020": "{{colors.blue060}}",
-    "illustrationDisabled": "{{colors.blue080}}",
+    "illustrationDisabled": "{{colors.blue070}}",
     "illustrationInterface010": "{{colors.blue050}}",
     "illustrationInterface020": "{{colors.blue070}}",
     "illustrationInterface030": "{{colors.blue080}}",

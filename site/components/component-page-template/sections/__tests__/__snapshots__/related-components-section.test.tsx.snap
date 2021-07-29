@@ -106,8 +106,16 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   fill: #162740;
 }
 
-.emotion-6 {
-  margin-bottom: 80px;
+@media screen and (max-width: 1023px) {
+  .emotion-6 {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-6 {
+    margin-bottom: 80px;
+  }
 }
 
 .emotion-7 {

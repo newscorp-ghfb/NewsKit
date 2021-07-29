@@ -26,7 +26,13 @@ export const CommonSection = ({
     <Cell xs={12}>
       <StyledSection id={id} data-toc-indexed={toc || title}>
         <Grid xsMargin="space000" xsRowGutter="space000">
-          <SectionIntroduction title={title}>
+          <SectionIntroduction
+            subHeadingSpaceStack={{
+              xs: 'space080',
+              lg: 'space100',
+            }}
+            title={title}
+          >
             {introduction}
           </SectionIntroduction>
           {children}

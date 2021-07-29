@@ -741,4 +741,9 @@ export const stylePresets = {
       backgroundColor: '{{colors.interactiveInverse010}}',
     },
   },
+  bannerIcon: {
+    base: {
+      iconColor: '{{colors.white}}',
+    },
+  },
 };

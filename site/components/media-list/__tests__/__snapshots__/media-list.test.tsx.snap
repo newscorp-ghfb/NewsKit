@@ -1310,7 +1310,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   padding: 1px 0px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .emotion-13 {
     font-family: 'Poppins',sans-serif;
     font-size: 28px;

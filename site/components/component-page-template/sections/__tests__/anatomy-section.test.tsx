@@ -1,4 +1,5 @@
 import React from 'react';
+import {getIllustrationComponent} from '../../../illustrations/illustration-loader';
 import {AnatomySection, AnatomySectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../../utils/test-utils';
 
@@ -12,9 +13,7 @@ describe('AnatomySection', () => {
   test('renders section as expected', () => {
     const props: AnatomySectionProps = {
       introduction: 'anatomy introduction',
-      media: {
-        src: 'https://example.com/image.png',
-      },
+      media: getIllustrationComponent('https://example.com/image.png'),
       rows: [
         {
           name: 'row 1',

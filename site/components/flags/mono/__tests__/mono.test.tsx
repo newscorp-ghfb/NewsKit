@@ -24,7 +24,7 @@ describe('Mono', () => {
             \\"typographyPreset\\": \\"utilityCode020\\",
             \\"stylePreset\\": \\"flagSolidNeutral\\"
           },
-          \\"size\\": \\"medium\\",
+          \\"size\\": \\"small\\",
           \\"className\\": \\"css-yct6su\\"
         }"
             data-testid="Flag"

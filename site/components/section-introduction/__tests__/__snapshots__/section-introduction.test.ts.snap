@@ -151,8 +151,22 @@ exports[`SectionIntroduction renders with all props 1`] = `
   fill: #162740;
 }
 
-.emotion-6 {
-  margin-bottom: 80px;
+@media screen and (max-width: 767px) {
+  .emotion-6 {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-6 {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-6 {
+    margin-bottom: 40px;
+  }
 }
 
 .emotion-7 {

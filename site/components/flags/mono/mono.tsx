@@ -26,7 +26,7 @@ export const Mono: React.FC<MonoProps> = ({
         stylePreset: 'flagSolidNeutral',
         ...overrides,
       }}
-      size="medium"
+      size="small"
     >
       {children}
     </StyledFlag>

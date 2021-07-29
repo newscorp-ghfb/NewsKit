@@ -34,12 +34,21 @@ files
       .replace(`id="clip0"`, 'id={clip0}')
       .replace(`id="clip1"`, 'id={clip1}')
       .replace(`id="clip2"`, 'id={clip2}')
+      .replace(`id="clip3"`, 'id={clip3}')
+      .replace(`id="clip4"`, 'id={clip4}')
+      .replace(`id="clip5"`, 'id={clip5}')
       .replace(`clipPath="url(#clip0)"`, 'clipPath={`url(#${clip0})`}>')
       .replace(`clipPath="url(#clip1)"`, 'clipPath={`url(#${clip1})`}>')
       .replace(`clipPath="url(#clip2)"`, 'clipPath={`url(#${clip2})`}>')
+      .replace(`clipPath="url(#clip3)"`, 'clipPath={`url(#${clip3})`}>')
+      .replace(`clipPath="url(#clip4)"`, 'clipPath={`url(#${clip4})`}>')
+      .replace(`clipPath="url(#clip5)"`, 'clipPath={`url(#${clip5})`}>')
       .replace(`clip-path="url(#clip0)"`, 'clipPath={`url(#${clip0})`}')
       .replace(`clip-path="url(#clip1)"`, 'clipPath={`url(#${clip1})`}')
       .replace(`clip-path="url(#clip2)"`, 'clipPath={`url(#${clip2})`}')
+      .replace(`clip-path="url(#clip4)"`, 'clipPath={`url(#${clip4})`}')
+      .replace(`clip-path="url(#clip5)"`, 'clipPath={`url(#${clip5})`}')
+
       .replace(`id="filter0_d"`, 'id={filter0}')
       .replace(`id="filter1_d"`, 'id={filter1}')
       .replace(`id="filter2_d"`, 'id={filter2}')
@@ -81,6 +90,9 @@ export const ${compName}: React.FC = () => {
   ${file.includes('clip0') ? 'const clip0 = getSSRId();' : ''}
   ${file.includes('clip1') ? 'const clip1 = getSSRId();' : ''}
   ${file.includes('clip2') ? 'const clip2 = getSSRId();' : ''}
+  ${file.includes('clip3') ? 'const clip3 = getSSRId();' : ''}
+  ${file.includes('clip4') ? 'const clip4 = getSSRId();' : ''}
+  ${file.includes('clip5') ? 'const clip5 = getSSRId();' : ''}
   ${file.includes('filter0') ? 'const filter0 = getSSRId();' : ''}
   ${file.includes('filter1') ? 'const filter1 = getSSRId();' : ''}
   ${file.includes('filter2') ? 'const filter2 = getSSRId();' : ''}

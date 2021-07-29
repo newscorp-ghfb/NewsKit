@@ -7,6 +7,7 @@ export interface RouteObject {
   subNav?: RouteObject[];
   media?: string;
   description?: string;
+  illustration?: string;
 }
 
 const findRoute = (

@@ -11,10 +11,10 @@ export type RelatedComponentsSectionProps = {
 
 const getRelatedComponents = (related: string[]) =>
   related.map(component => {
-    const {title, description, id} = getByTitle(component) || {};
+    const {title, description, id, illustration} = getByTitle(component) || {};
     return {
       title,
-      media: getIllustrationComponent('components/scroll-illustration'),
+      media: getIllustrationComponent(illustration as string),
       description,
       href: id,
     };
