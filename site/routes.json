@@ -154,7 +154,7 @@
             "page": true,
             "id": "/components/share-bar",
             "description": "Used anywhere a user would like to easily share something with social media.",
-            "illustration": "components/share-bar-illustration"
+            "illustration": "components/share-bar/share-bar-illustration"
           },
           {
             "title": "Slider",

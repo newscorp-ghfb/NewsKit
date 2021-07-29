@@ -1,3 +1,4 @@
+import React from 'react';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {Table} from '..';
 
@@ -88,6 +89,22 @@ describe('Table', () => {
         },
         {
           description: 'three',
+        },
+      ],
+    };
+    const fragment = renderToFragmentWithTheme(Table, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders links correctly', () => {
+    const props = {
+      columns: ['Component'],
+      rows: [
+        {
+          component: 'Button',
+        },
+        {
+          component: <span>test</span>,
         },
       ],
     };

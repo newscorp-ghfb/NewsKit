@@ -69,6 +69,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({
 
   return (
     <StyledShareBarContainer
+      role="region"
       inline={vertical}
       flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
       {...rest}

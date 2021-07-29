@@ -1,6 +1,5 @@
 import React from 'react';
-import {Block, getSSRId} from 'newskit';
-import {Link} from '../link';
+import {Block, getSSRId, Link} from 'newskit';
 import {getByTitle} from '../../utils/get-route-object';
 import {StyledDataCell} from './styled';
 import {TableProps, TableRow, TableRowValue} from './types';
@@ -105,8 +104,8 @@ export const renderCols = (
             const route = getByTitle(remapped || v);
             return route ? (
               <Link
-                href={route.id}
                 overrides={{typographyPreset: 'utilityButton020'}}
+                href={route.id}
               >
                 {v}
               </Link>

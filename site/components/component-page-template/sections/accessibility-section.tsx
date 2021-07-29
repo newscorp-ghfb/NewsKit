@@ -54,6 +54,7 @@ const A11yTable: React.FC<
 const renderInfoNotice = (
   notice: React.ReactNode | React.ReactNode[],
   label: string,
+  title?: string,
 ) => {
   if (Array.isArray(notice)) {
     return (
@@ -62,7 +63,11 @@ const renderInfoNotice = (
           <Block
             spaceStack={index < notice.length - 1 ? 'space030' : 'space000'}
           >
-            <InlineMessage role="region" aria-label={`${label} ${index}`}>
+            <InlineMessage
+              role="region"
+              aria-label={`${label} ${index}`}
+              title={title}
+            >
               {note}
             </InlineMessage>
           </Block>
@@ -73,7 +78,7 @@ const renderInfoNotice = (
   if (notice !== undefined) {
     return (
       <ComponentPageCell>
-        <InlineMessage role="region" aria-label={label}>
+        <InlineMessage role="region" aria-label={label} title={title}>
           {notice}
         </InlineMessage>
       </ComponentPageCell>
@@ -102,7 +107,7 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
           <A11yTable columns={['Order', 'Element', 'Role']} {...focusOrder} />
         )}
 
-        {renderInfoNotice(infoNoticeFocus, 'Focus notice')}
+        {renderInfoNotice(infoNoticeFocus, 'Note')}
 
         {interaction && (
           <A11yTable columns={['Command', 'Description']} {...interaction} />
@@ -120,7 +125,7 @@ export const AccessibilitySection: React.FC<AccessibilitySectionProps> = ({
           />
         )}
 
-        {renderInfoNotice(infoNoticeAria, 'WAI Aria notice')}
+        {renderInfoNotice(infoNoticeAria, 'WAI Aria notice', 'Note')}
       </Grid>
     </Cell>
   </CommonSection>

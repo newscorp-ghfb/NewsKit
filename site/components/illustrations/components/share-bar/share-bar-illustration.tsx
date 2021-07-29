@@ -1,8 +1,8 @@
 import React from 'react';
-import {Path} from '../path';
-import {Rect} from '../rect';
-import {Circle} from '../circle';
-import {Svg} from '../svg';
+import {Path} from '../../path';
+import {Rect} from '../../rect';
+import {Circle} from '../../circle';
+import {Svg} from '../../svg';
 
 export const ShareBarIllustration: React.FC = () => (
   <Svg

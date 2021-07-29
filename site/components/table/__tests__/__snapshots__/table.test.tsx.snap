@@ -301,6 +301,213 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 </DocumentFragment>
 `;
 
+exports[`Table renders links correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  overflow-x: auto;
+}
+
+.emotion-1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-2 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #162740;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.62;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.emotion-3 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4 {
+  padding: 16px 16px 16px 0;
+  min-width: 100px;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.emotion-5 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #577FFB;
+}
+
+.emotion-5 svg {
+  fill: #577FFB;
+}
+
+.emotion-5:hover:not(:disabled) {
+  color: #3358CC;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) {
+  color: #213A82;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #213A82;
+}
+
+.emotion-5:visited:not(:disabled) {
+  color: #503B8C;
+}
+
+.emotion-5:visited:not(:disabled) svg {
+  fill: #503B8C;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+.emotion-8 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  border-width: 0;
+}
+
+<div
+    class="emotion-0"
+  >
+    <table
+      class="emotion-1"
+    >
+      <thead>
+        <tr>
+          <th
+            class="emotion-2"
+          >
+            Component
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="emotion-3"
+        >
+          <td
+            class="emotion-4"
+          >
+            <a
+              class="emotion-5"
+              href="/components/button"
+            >
+              <span
+                class="emotion-6"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  Button
+                </span>
+              </span>
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="emotion-8"
+        >
+          <td
+            class="emotion-4"
+          >
+            <span>
+              test
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Table renders number values automatically if undefined 1`] = `
 <DocumentFragment>
   .emotion-0 {
