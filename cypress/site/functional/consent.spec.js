@@ -1,6 +1,5 @@
-// TO DO: This test is failing. Will skip for now and investigate the reason
 describe('Consent component', () => {
-  it.skip('should show up and verify cookie banner does not pop up anymore once user accepts the cookie consent', () => {
+  it('should show up and verify cookie banner does not pop up anymore once user accepts the cookie consent', () => {
     // They have been set for the previous tests in order to be able to run them correctly.
     // For the purpose of the following test they need to be cleared first.
     cy.clearCookie('euconsent-v2');

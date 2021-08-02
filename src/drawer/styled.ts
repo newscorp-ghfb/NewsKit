@@ -69,12 +69,13 @@ const transitions = {
 export const StyledDrawer = styled(BaseDialogView, {
   shouldForwardProp: prop => prop !== 'open',
 })<DrawerPanelProps>`
-  ${({placement = 'left'}) => placementOptions[placement!]};
-  ${({placement = 'left', ...props}) => placementSize[placement!](props)}
+  ${({placement}) => placementOptions[placement!]};
+  ${({placement, ...props}) => placementSize[placement!](props)}
 
   ${getStylePreset('drawer.panel', 'panel')};
 
-  ${({placement = 'left', ...props}) =>
+  ${({placement, ...props}) =>
+    placement &&
     css`
       transform: translate3d(${transitions[placement]});
       visibility: hidden;

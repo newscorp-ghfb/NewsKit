@@ -6,8 +6,7 @@ import {BaseDialogFunctionProps} from './types';
 
 export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
   children,
-  /* istanbul ignore next */
-  open = false,
+  open,
   onDismiss,
   restoreFocusTo = undefined,
   renderOverlay,

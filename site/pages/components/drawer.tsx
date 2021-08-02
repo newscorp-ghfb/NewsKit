@@ -86,6 +86,26 @@ export default (layoutProps: LayoutProps) => (
             ],
           },
           {
+            name: 'closePosition',
+            propName: 'closePosition',
+            options: [
+              {
+                label: 'Unset',
+                isDefault: true,
+                value: undefined,
+              },
+              {
+                label: 'Left',
+                value: 'left',
+                isDefault: true,
+              },
+              {
+                label: 'Right',
+                value: 'right',
+              },
+            ],
+          },
+          {
             name: 'Header',
             propName: 'header',
             value: '',
@@ -143,6 +163,14 @@ export default (layoutProps: LayoutProps) => (
             'The Drawer can appear from the left (default), right, top, or bottom of the screen. When appearing from the left or right of the screen, the close Icon Button is positioned on the same side where the Drawer originates from. When appearing from the top or bottom of the screen, the close Icon Button is positioned on the right as default.',
           media: getIllustrationComponent(
             'components/drawer/drawer-options-placement-illustration',
+          ),
+        },
+        {
+          title: 'Close Position',
+          description:
+            'The position of the close button in the Drawer header is set to left as default for left placement, and right for right placement. For top and bottom placement, it is set to the right. Users have the option to set the close button position to either left or right for all four placements.',
+          media: getIllustrationComponent(
+            'components/drawer/drawer-options-close-position-illustration',
           ),
         },
         {
@@ -367,6 +395,13 @@ export default (layoutProps: LayoutProps) => (
               default: 'left',
               description:
                 'Defines the edge of the screen from which the Drawer enters and exits from.',
+            },
+            {
+              name: 'closePosition',
+              type: ['left', 'right'],
+              default: 'left',
+              description:
+                'closePosition is set to left as default for left placement, and right for right placement. For top and bottom placement, it is set to the right. If provided, users can set the position of the close icon button.',
             },
             {
               name: 'restoreFocusTo',

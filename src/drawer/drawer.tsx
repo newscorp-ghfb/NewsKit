@@ -11,8 +11,11 @@ import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
-  open,
+  /* istanbul ignore next */
+  open = false,
   onDismiss,
+  placement = 'left',
+  closePosition = placement === 'left' ? 'left' : 'right',
   restoreFocusTo,
   overrides,
   ...props
@@ -48,6 +51,8 @@ export const Drawer: React.FC<DrawerProps> = ({
             path="drawer"
             data-testid="drawer"
             aria-label="drawer"
+            placement={placement}
+            closePosition={closePosition}
             overrides={overrides}
             {...props}
           >

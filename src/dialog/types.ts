@@ -27,7 +27,7 @@ export interface BaseDialogViewProps extends HTMLAttributes<HTMLDivElement> {
   path: string;
   handleCloseButtonClick: () => void;
 
-  placement?: 'left' | 'right' | 'top' | 'bottom';
+  closePosition?: 'left' | 'right';
   header?: React.ReactNode;
   children: Exclude<React.ReactNode, 'undefined'>;
   ariaDescribedby?: string;

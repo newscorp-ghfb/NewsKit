@@ -561,7 +561,7 @@ exports[`Modal renders modal with overrides 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden auto;
-  padding: 24px;
+  padding: 32px;
 }
 
 .emotion-5 {

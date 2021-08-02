@@ -1125,7 +1125,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden auto;
-  padding: 24px;
+  padding: 32px;
 }
 
 .emotion-5 {
@@ -2262,7 +2262,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Drawer renders with different placement 1`] = `
+exports[`Drawer renders with left placement and right closePosition 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -2323,17 +2323,17 @@ exports[`Drawer renders with different placement 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   top: 0;
-  right: 0;
+  left: 0;
   max-width: 100%;
   min-width: 20px;
   height: 100%;
   border-radius: 0;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
   visibility: hidden;
 }
 
@@ -2369,10 +2369,10 @@ exports[`Drawer renders with different placement 1`] = `
 
 .emotion-0.nk-drawer-enter,
 .emotion-0.nk-drawer-exit-done {
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
   visibility: hidden;
 }
 
@@ -2397,10 +2397,10 @@ exports[`Drawer renders with different placement 1`] = `
 }
 
 .emotion-0.nk-drawer-exit-active {
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
   visibility: hidden;
   transition-property: transform,visibility;
   transition-duration: 200ms;

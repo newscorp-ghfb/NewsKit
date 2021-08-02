@@ -47,7 +47,8 @@ export const StyledDialogContent = styled.div<BaseDialogViewOverridesAndPathProp
 
 // This elements is needed to fill the space behind close button which is positioned absolute
 export const StyledFillSpaceCloseButton = styled.div<
-  BaseDialogViewOverridesAndPathProps & Pick<BaseDialogViewProps, 'placement'>
+  BaseDialogViewOverridesAndPathProps &
+    Pick<BaseDialogViewProps, 'closePosition'>
 >`
   box-sizing: border-box;
   ${({path}) =>
@@ -59,18 +60,19 @@ export const StyledFillSpaceCloseButton = styled.div<
     )}
   ${getResponsiveSize('width', 'iconButton.medium', '', 'width')}  
   ${getResponsiveSize('height', 'iconButton.medium', '', 'height')}
-  ${({placement}) =>
-    placement === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
+  ${({closePosition}) =>
+    closePosition === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
   flex-shrink: 0;
 `;
 
 export const StyledCloseButtonContainer = styled.div<
-  BaseDialogViewOverridesAndPathProps & Pick<BaseDialogViewProps, 'placement'>
+  BaseDialogViewOverridesAndPathProps &
+    Pick<BaseDialogViewProps, 'closePosition'>
 >`
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  ${({placement}) => (placement === 'left' ? `left:0;` : `right: 0;`)}
+  ${({closePosition}) => (closePosition === 'left' ? `left: 0;` : `right: 0;`)}
   ${({path}) =>
     getResponsiveSpace(
       'padding',

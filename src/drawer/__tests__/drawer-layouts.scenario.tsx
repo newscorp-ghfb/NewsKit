@@ -223,6 +223,37 @@ export default {
         )),
     },
     {
+      storyName: 'right placement with closePosition set to left',
+      storyFn: () =>
+        React.createElement(() => (
+          <>
+            <StorybookHeading>Drawer placed on the right</StorybookHeading>
+            <Drawer
+              open
+              onDismiss={() => {}}
+              placement="right"
+              closePosition="left"
+              header={
+                <>
+                  <IconFilledAddCircleOutline
+                    overrides={{size: 'iconSize010'}}
+                  />
+                  <LinkStandalone href="www.test.com">
+                    Link button
+                  </LinkStandalone>
+                </>
+              }
+            >
+              <div>
+                {Array.from({length: 16}, (_, i) => (
+                  <CategoryRow>{`CATEGORY ${i + 1}`}</CategoryRow>
+                ))}
+              </div>
+            </Drawer>
+          </>
+        )),
+    },
+    {
       storyName: 'no header content',
       storyFn: () =>
         React.createElement(() => (

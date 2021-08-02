@@ -30,7 +30,7 @@ export const BaseDialogView: React.FC<BaseDialogViewProps> = ({
   path,
 
   overrides = {},
-  placement = 'left',
+  closePosition,
   header,
   ariaDescribedby,
   ariaLabelledby,
@@ -62,7 +62,7 @@ export const BaseDialogView: React.FC<BaseDialogViewProps> = ({
       {...props}
     >
       <StyledDialogHeader overrides={overrides} ref={headerRef} path={path}>
-        <Stack flow="horizontal-center" flowReverse={placement === 'left'}>
+        <Stack flow="horizontal-center" flowReverse={closePosition === 'left'}>
           {header && (
             <StyledDialogHeaderContent path={path}>
               {header}
@@ -71,16 +71,20 @@ export const BaseDialogView: React.FC<BaseDialogViewProps> = ({
           <StyledFillSpaceCloseButton
             path={path}
             overrides={overrides}
-            placement={placement}
+            closePosition={closePosition}
           />
         </Stack>
       </StyledDialogHeader>
-      <StyledDialogContent data-testid="dialog-content" path={path}>
+      <StyledDialogContent
+        data-testid="dialog-content"
+        path={path}
+        overrides={overrides}
+      >
         {children}
       </StyledDialogContent>
       <StyledCloseButtonContainer
         path={path}
-        placement={placement}
+        closePosition={closePosition}
         overrides={overrides}
         style={{
           ...centerCloseButton(headerHeight),

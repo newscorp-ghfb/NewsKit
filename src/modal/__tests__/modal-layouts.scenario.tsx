@@ -86,7 +86,7 @@ export default {
         )),
     },
     {
-      storyName: 'close button on the left',
+      storyName: 'with close button on the left',
       storyFn: () =>
         React.createElement(() => (
           <>

@@ -11,10 +11,11 @@ import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 export const Modal: React.FC<ModalProps> = ({
   children,
-  open,
+  /* istanbul ignore next */
+  open = false,
   onDismiss,
   restoreFocusTo,
-  closePosition: placement = 'right',
+  closePosition = 'right',
   overrides,
   ...props
 }) => {
@@ -54,7 +55,7 @@ export const Modal: React.FC<ModalProps> = ({
             path="modal"
             data-testid="modal"
             aria-label="modal"
-            placement={placement}
+            closePosition={closePosition}
             overrides={overrides}
             {...props}
           >

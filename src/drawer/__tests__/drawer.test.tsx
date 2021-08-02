@@ -50,17 +50,6 @@ const drawerHeader = <TextBlock>Drawer header content</TextBlock>;
 describe('Drawer', () => {
   sharedDialogTests(Drawer, drawerHeader, drawerBody);
 
-  test('renders with different placement', () => {
-    const fragment = renderToFragmentWithTheme(Drawer, {
-      open: true,
-      onDismiss: () => {},
-      header: drawerHeader,
-      children: drawerBody,
-      placement: 'right',
-    });
-    expect(fragment).toMatchSnapshot();
-  });
-
   test.each(['right', 'top', 'bottom'])(
     'renders with menu items aligned at the %s',
     placement => {
@@ -74,6 +63,18 @@ describe('Drawer', () => {
       expect(fragment).toMatchSnapshot();
     },
   );
+
+  test('renders with left placement and right closePosition', () => {
+    const fragment = renderToFragmentWithTheme(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      header: drawerHeader,
+      children: drawerBody,
+      placement: 'left',
+      closePosition: 'right',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 
   test('renders closed drawer visually hidden but remains in the DOM tree', () => {
     const {asFragment, getByTestId} = renderWithTheme(Drawer, {
