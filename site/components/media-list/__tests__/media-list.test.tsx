@@ -3,7 +3,6 @@ import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {MediaList} from '../media-list';
 
 const interactiveCard = {
-  label: 'Interactive',
   description: 'interactive card',
   media: {
     src: '/static/placeholder-16x9.png',
@@ -13,7 +12,6 @@ const interactiveCard = {
 };
 
 const staticCard = {
-  label: 'Static Card',
   title: 'static',
   description: 'card with optional title ',
 };

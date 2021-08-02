@@ -1261,6 +1261,25 @@ export default {
         </React.Fragment>
       ),
     },
+    {
+      storyName: 'card-with-custom-html-attr-onclick',
+      storyFn: () => (
+        <Card
+          onClick={e => {
+            e.preventDefault();
+            console.log('onclick event');
+          }}
+          href="https://newskit.co.uk/"
+          media={{
+            src: '/placeholder-3x2.png',
+            alt: 'Card Media',
+          }}
+          actions={cardLargeTags}
+        >
+          {cardLargeBody}
+        </Card>
+      ),
+    },
     // The next scenario is only for showcase. It is excluded from Applitools.
     // Please don't place any other stories after this one.
     {

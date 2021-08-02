@@ -168,7 +168,7 @@ export const Card: React.FC<CardProps> = ({
   actions,
   children,
   overrides = {},
-  className,
+  ...restProps
 }) => {
   const hasHref = Boolean(href);
   const theme = useTheme();
@@ -180,10 +180,10 @@ export const Card: React.FC<CardProps> = ({
 
   return (
     <StyledCardContainer
-      className={className}
       hasHref={hasHref}
       layout={layout}
       overrides={overrides}
+      {...restProps}
     >
       {media && (
         <StyledCardContainerMedia

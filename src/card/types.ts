@@ -1,3 +1,4 @@
+import React from 'react';
 import {ImageProps} from '../image/types';
 import {BaseLinkProps} from '../link/types';
 import {MQ} from '../utils/style';
@@ -24,8 +25,7 @@ export type HasHref = {
   hasHref?: boolean;
 };
 
-export interface CardProps {
-  className?: string;
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   href?: string | BaseLinkProps;
   layout?: 'vertical' | 'horizontal' | 'horizontal-reverse';
   media?: ImageProps | React.ComponentType;

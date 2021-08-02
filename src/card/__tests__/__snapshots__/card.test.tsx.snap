@@ -2961,6 +2961,195 @@ exports[`Card renders with card items 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Card renders with custom html attributes and onClick event 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #2e2e2e;
+  background-color: #ffffff;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-1 {
+    min-height: 1px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-2 {
+  width: 100%;
+}
+
+.emotion-3 {
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+  height: 0;
+  border-radius: 0;
+  background-color: #fafafa;
+}
+
+.emotion-3 svg {
+  fill: #c0c0c0;
+}
+
+.emotion-4 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-5 {
+  display: none;
+  height: auto;
+  width: 100%;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+  border-radius: inherit;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.emotion-7 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-8 {
+  margin-bottom: 4px;
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-9::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-9::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    aria-label="test-label"
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          />
+          <img
+            alt="Card Media"
+            class="emotion-5"
+            src="/placeholder-16x9.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-7"
+      >
+        <div
+          class="emotion-8"
+        >
+          <p
+            class="emotion-9"
+          >
+            Example Card text
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Card renders without card items 1`] = `
 <DocumentFragment>
   .emotion-0 {

@@ -1,6 +1,10 @@
 import * as React from 'react';
+import {fireEvent} from '@testing-library/react';
 import {Card} from '..';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {Image} from '../../image';
 import {Stack} from '../../stack';
 import {Tag} from '../../tag';
@@ -317,6 +321,19 @@ describe('Card', () => {
       myCustomCardTheme,
     );
     expect(fragment).toMatchSnapshot();
+  });
+  test('renders with custom html attributes and onClick event', async () => {
+    const mockOnClick = jest.fn();
+    const {findByLabelText, asFragment} = renderWithTheme(Card, {
+      media: customMediaComponent,
+      children: cardBody,
+      'aria-label': 'test-label',
+      onClick: mockOnClick,
+    });
+    const element = await findByLabelText('test-label');
+    fireEvent.click(element);
+    expect(mockOnClick).toHaveBeenCalled();
+    expect(asFragment()).toMatchSnapshot();
   });
 });
 
