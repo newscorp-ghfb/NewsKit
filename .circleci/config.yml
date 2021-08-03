@@ -23,6 +23,7 @@ cypress_defaults: &cypress_defaults
 applitools_defaults: &applitools_defaults
   command: |
     export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
+    export APPLITOOLS_PARENT_BRANCH_NAME=develop
     export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
     export APPLITOOLS_DONT_CLOSE_BATCHES=true
     echo "export APPLITOOLS_BATCH_ID=${APPLITOOLS_BATCH_ID}" >> $BASH_ENV
