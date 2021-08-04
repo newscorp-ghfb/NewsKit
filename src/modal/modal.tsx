@@ -54,7 +54,6 @@ export const Modal: React.FC<ModalProps> = ({
             handleCloseButtonClick={handleCloseButtonClick}
             path="modal"
             data-testid="modal"
-            aria-label="modal"
             closePosition={closePosition}
             overrides={overrides}
             {...props}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import {DrawerProps} from './types';
 import {StyledDrawer} from './styled';
@@ -8,6 +8,7 @@ import {BreakpointKeys, useTheme} from '../theme';
 import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
+import {setDrawerElementFocusability} from './utils';
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
@@ -21,6 +22,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   ...props
 }) => {
   const theme = useTheme();
+  const drawerRef = useRef<HTMLDivElement>(null);
 
   const overlayOverrides = {
     ...deepMerge(
@@ -29,6 +31,10 @@ export const Drawer: React.FC<DrawerProps> = ({
       filterOutFalsyProperties(overrides && overrides.overlay),
     ),
   };
+
+  useEffect(() => {
+    setDrawerElementFocusability(open, drawerRef);
+  }, [open, drawerRef]);
 
   return (
     <BaseDialogFunction
@@ -46,14 +52,15 @@ export const Drawer: React.FC<DrawerProps> = ({
       {handleCloseButtonClick => (
         <CSSTransition in={open} timeout={1000} classNames="nk-drawer" appear>
           <StyledDrawer
+            aria-hidden={!open}
             open={open}
             handleCloseButtonClick={handleCloseButtonClick}
             path="drawer"
             data-testid="drawer"
-            aria-label="drawer"
             placement={placement}
             closePosition={closePosition}
             overrides={overrides}
+            ref={drawerRef}
             {...props}
           >
             {children}

@@ -312,4 +312,41 @@ describe('Drawer focus management', () => {
       expect(restoreFocusButton).toHaveFocus();
     });
   });
+
+  test("focusable Drawer's children should have tabindex -1 when it is closed", async () => {
+    const DrawerPage = () => {
+      const [isOpen, setOpen] = useState(false);
+
+      return (
+        <>
+          <button
+            type="button"
+            data-testid="toggle"
+            onClick={() => setOpen(!isOpen)}
+          >
+            toggle
+          </button>
+
+          <Drawer open={isOpen} onDismiss={() => setOpen(false)}>
+            content with
+            <button type="button" data-testid="interactive-element">
+              button
+            </button>
+          </Drawer>
+          <button type="button" data-testid="restoreFocusTo">
+            another button
+          </button>
+        </>
+      );
+    };
+    const {getByTestId} = renderWithTheme(DrawerPage);
+    const toggleButton = getByTestId('toggle');
+
+    expect(getByTestId('interactive-element')).toHaveAttribute(
+      'tabindex',
+      '-1',
+    );
+    fireEvent.click(toggleButton);
+    expect(getByTestId('interactive-element')).not.toHaveAttribute('tabindex');
+  });
 });

@@ -78,18 +78,18 @@ export const StyledDrawer = styled(BaseDialogView, {
     placement &&
     css`
       transform: translate3d(${transitions[placement]});
-      visibility: hidden;
+      opacity: 0;
 
       &.nk-drawer-enter,
       &.nk-drawer-exit-done {
         transform: translate3d(${transitions[placement]});
-        visibility: hidden;
+        opacity: 0;
       }
       &.nk-drawer-enter-active {
         transform: translate3d(0, 0, 0);
-        visibility: visible;
+        opacity: 1;
 
-        transition-property: transform, visibility;
+        transition-property: transform, opacity;
         ${getMotionCssFromTheme(
           'transitionDuration',
           'motionDuration020',
@@ -102,13 +102,13 @@ export const StyledDrawer = styled(BaseDialogView, {
       &.nk-drawer-enter-done,
       &.nk-drawer-exit {
         transform: translate3d(0, 0, 0);
-        visibility: visible;
+        opacity: 1;
       }
       &.nk-drawer-exit-active {
         transform: translate3d(${transitions[placement]});
-        visibility: hidden;
+        opacity: 0;
 
-        transition-property: transform, visibility;
+        transition-property: transform, opacity;
         ${getMotionCssFromTheme(
           'transitionDuration',
           'motionDuration020',
@@ -120,22 +120,16 @@ export const StyledDrawer = styled(BaseDialogView, {
       }
 
       @media (prefers-reduced-motion: reduce) {
-        transform: translate3d(0, 0, 0);
         opacity: 0;
-        visibility: hidden;
 
         &.nk-drawer-enter,
         &.nk-drawer-exit-done {
-          transform: translate3d(0, 0, 0);
           opacity: 0;
-          visibility: hidden;
         }
         &.nk-drawer-enter-active {
-          transform: translate3d(0, 0, 0);
           opacity: 1;
-          visibility: visible;
 
-          transition-property: opacity, visibility;
+          transition-property: opacity;
           ${getMotionCssFromTheme(
             'transitionDuration',
             'motionDuration020',
@@ -147,16 +141,12 @@ export const StyledDrawer = styled(BaseDialogView, {
         }
         &.nk-drawer-enter-done,
         &.nk-drawer-exit {
-          transform: translate3d(0, 0, 0);
           opacity: 1;
-          visibility: visible;
         }
         &.nk-drawer-exit-active {
-          transform: translate3d(0, 0, 0);
           opacity: 0;
-          visibility: hidden;
 
-          transition-property: opacity, visibility;
+          transition-property: opacity;
           ${getMotionCssFromTheme(
             'transitionDuration',
             'motionDuration020',

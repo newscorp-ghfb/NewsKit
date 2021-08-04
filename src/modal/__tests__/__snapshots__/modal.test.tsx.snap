@@ -324,7 +324,6 @@ exports[`Modal renders default 1`] = `
     data-focus-lock-disabled="false"
   >
     <div
-      aria-label="modal"
       aria-modal="true"
       class="nk-modal-enter-done emotion-0"
       data-testid="modal"
@@ -688,7 +687,6 @@ exports[`Modal renders modal with overrides 1`] = `
     data-focus-lock-disabled="false"
   >
     <div
-      aria-label="modal"
       aria-modal="true"
       class="nk-modal-enter-done emotion-0"
       data-testid="modal"
@@ -1087,7 +1085,6 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
     data-focus-lock-disabled="false"
   >
     <div
-      aria-label="modal"
       aria-labelledby="headerLabel"
       aria-modal="true"
       class="nk-modal-enter-done emotion-0"
@@ -1476,7 +1473,6 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   >
     <div
       aria-describedby="description purpose"
-      aria-label="modal"
       aria-modal="true"
       class="nk-modal-enter-done emotion-0"
       data-testid="modal"
@@ -1883,7 +1879,6 @@ exports[`Modal renders with different closePosition 1`] = `
     data-focus-lock-disabled="false"
   >
     <div
-      aria-label="modal"
       aria-modal="true"
       class="nk-modal-enter-done emotion-0"
       data-testid="modal"
@@ -2281,7 +2276,6 @@ exports[`Modal renders without header 1`] = `
     data-focus-lock-disabled="false"
   >
     <div
-      aria-label="modal"
       aria-modal="true"
       class="nk-modal-enter-done emotion-0"
       data-testid="modal"

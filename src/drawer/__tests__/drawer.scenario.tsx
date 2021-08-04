@@ -167,7 +167,7 @@ export default {
         }),
     },
     {
-      storyName: 'with custom autofocus',
+      storyName: 'with restore focus and custom autofocus',
 
       parameters: {eyes: {include: false}},
       storyFn: () =>
@@ -177,6 +177,10 @@ export default {
           const open = () => setIsActive(true);
           const close = () => setIsActive(false);
 
+          const elementToRestoreFocusTo = document.getElementById(
+            'test-button',
+          ) as HTMLElement | undefined;
+
           return (
             <div data-testid="scrollable-drawer">
               <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
@@ -184,8 +188,16 @@ export default {
               <Button onClick={open} data-testid="drawer-open-button">
                 Open Drawer
               </Button>
+              <br />
+              <br />
+              <Button id="test-button">Takes refocus</Button>
 
-              <Drawer open={isActive} onDismiss={close} header="Header">
+              <Drawer
+                open={isActive}
+                onDismiss={close}
+                header="Header"
+                restoreFocusTo={elementToRestoreFocusTo}
+              >
                 <TextInput label="First name" />
                 <TextInput label="Last name" />
                 <TextInput label="Phone number" />

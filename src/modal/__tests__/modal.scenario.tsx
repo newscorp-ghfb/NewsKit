@@ -176,7 +176,56 @@ export default {
                     voluptatem accusantium doloremque laudantium, totam rem
                     aperiam. (Double click for more text :) )
                   </p>
-                  <Button data-autofocus>Register for a free account</Button>
+                  <Button>Register for a free account</Button>
+                  <Button data-autofocus>Middle Button with focus</Button>
+                  <Button>Something else</Button>
+                </Stack>
+              </Modal>
+            </div>
+          );
+        }),
+    },
+    {
+      storyName: 'with custom restore focus',
+      parameters: {eyes: {include: false}},
+      storyFn: () =>
+        React.createElement(() => {
+          const [isActive, setIsActive] = React.useState(false);
+
+          const open = () => setIsActive(true);
+          const close = () => setIsActive(false);
+          const elementToRestoreFocusTo = document.getElementById(
+            'test-button',
+          ) as HTMLElement | undefined;
+
+          return (
+            <div data-testid="scrollable-modal">
+              <StorybookHeading>Modal with custom auto-focus</StorybookHeading>
+              <p>Modal with autofocus using data-autofocus attribute</p>
+              <Button onClick={open} data-testid="modal-open-button">
+                Open modal
+              </Button>
+              <Button id="test-button">Button to restore focus to</Button>
+              <Modal
+                open={isActive}
+                onDismiss={close}
+                ariaLabelledby="modalHeader"
+                ariaDescribedby="description purpose"
+                header={<div id="modalHeader">Overriden modal header</div>}
+                restoreFocusTo={elementToRestoreFocusTo}
+              >
+                <Stack
+                  flow="vertical-center"
+                  stackDistribution="center"
+                  spaceInline="space020"
+                >
+                  <H1>You need an account</H1>
+                  <p contentEditable>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam. (Double click for more text :) )
+                  </p>
+                  <Button>Register for a free account</Button>
                 </Stack>
               </Modal>
             </div>
