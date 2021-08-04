@@ -1597,12 +1597,14 @@ exports[`Card renders media section if the media data is provided 1`] = `
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -1785,12 +1787,14 @@ exports[`Card renders media section with a custom component 1`] = `
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -1973,12 +1977,14 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -2161,12 +2167,14 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -2350,12 +2358,14 @@ exports[`Card renders media section with overrides 1`] = `
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -2538,12 +2548,14 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -3053,12 +3065,14 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -3276,12 +3290,14 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 112px;
   width: 200px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -3483,12 +3499,14 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 112px;
   width: 200px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -3690,12 +3708,14 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 112px;
   width: 200px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -3900,12 +3920,14 @@ exports[`Card with horizontal layout renders correctly 1`] = `
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 112px;
   width: 200px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -4110,12 +4132,14 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 112px;
   width: 200px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -4320,12 +4344,14 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 112px;
   width: 200px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -4530,12 +4556,14 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 112px;
   width: 200px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -5212,12 +5240,14 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {
@@ -6599,12 +6629,14 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-5 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-6 {

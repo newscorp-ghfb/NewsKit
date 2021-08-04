@@ -5,3 +5,4 @@ export * from './use-lock-body-scroll';
 export * from './use-media-query';
 export * from './use-resize-observer';
 export * from './use-react-keys';
+export * from './use-intersection';

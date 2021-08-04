@@ -41,6 +41,10 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
   <Prop name="creditText" type="string">
     If provided, supplies the credit text of the caption component.
   </Prop>
+  <Prop name="renderOnServer" type="boolean">
+    This prop need to be set to `true` when the Image component is rendered on
+    the server without client-side javascript.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements.

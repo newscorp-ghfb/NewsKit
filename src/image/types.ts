@@ -11,6 +11,8 @@ import {
 import {MQ} from '../utils/style';
 import {CaptionOverrides} from '../caption';
 
+type LoadingType = 'lazy' | 'eager' | 'auto';
+
 interface HTMLImageElementWithNoSizes
   extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'height' | 'width'> {}
 
@@ -26,6 +28,7 @@ export interface StyledImageProps
   $loading: boolean;
   maxHeight?: MaxHeightProperty<string>;
   maxWidth?: MaxWidthProperty<string>;
+  loading?: LoadingType;
 }
 export interface ImageContainerProps {
   paddingTop?: PaddingTopProperty<number>;
@@ -39,6 +42,8 @@ export interface ImageProps
   loadingAspectRatio?: string;
   captionText?: string;
   creditText?: string;
+  renderOnServer?: boolean;
+  loading?: LoadingType;
   overrides?: {
     height?: HeightProperty<string>;
     width?: WidthProperty<string>;

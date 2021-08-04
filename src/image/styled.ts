@@ -25,7 +25,10 @@ export const ImageContainer = styled(Block)<
 `;
 
 export const StyledImage = styled.img<StyledImageProps>`
-  display: ${({$loading}) => ($loading ? 'none' : 'block')};
+  opacity: ${({$loading}) => ($loading ? '0' : '1')};
+  display: block;
+  border-radius: inherit;
+
   ${({
     $height: height = 'auto',
     $width: width = '100%',
@@ -33,6 +36,7 @@ export const StyledImage = styled.img<StyledImageProps>`
     maxWidth,
     fit: objectFit,
     position: objectPosition,
+    $loading,
   }) => ({
     height,
     width,
@@ -40,9 +44,11 @@ export const StyledImage = styled.img<StyledImageProps>`
     maxWidth,
     objectFit,
     objectPosition,
+    top: $loading ? 0 : undefined,
+    left: $loading ? 0 : undefined,
+    position: $loading ? 'absolute' : undefined,
+    animation: !$loading ? 'fadeIn 300ms' : undefined,
   })}
-  animation: fadeIn 300ms;
-  border-radius: inherit;
   @keyframes fadeIn {
     from {
       opacity: 0;

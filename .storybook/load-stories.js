@@ -7,7 +7,14 @@ const req = require.context('../src', true, /\.scenario\.tsx$/);
 const scenarios = req.keys().map(req);
 import {MediaQueryProvider} from '../src/utils/hooks';
 
-const unlimitedScenarios = ['grid', 'card', 'drawer', 'modal'];
+const unlimitedScenarios = [
+  'grid',
+  'card',
+  'drawer',
+  'modal',
+  'image',
+  'image-e2e',
+];
 
 const Container = styled.div`
   max-width: 1024px;

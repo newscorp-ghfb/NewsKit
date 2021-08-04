@@ -244,5 +244,32 @@ export default {
         </Container>
       ),
     },
+    {
+      storyName: 'lazy-loading',
+      parameters: {eyes: {include: false}},
+      storyFn: () => {
+        const getImages = (num: number) => {
+          const images = [];
+          for (let i = 1; i <= num; i++) {
+            const width = 400 + i;
+            images.push(
+              <Image
+                key={width}
+                src={`https://placekitten.com/${width}/${width}`}
+                // width and height are needed for lazy loading
+                overrides={{width: width.toString(), height: width.toString()}}
+                loadingAspectRatio="1:1"
+                loading="lazy"
+                alt={`Cat ${i}`}
+                placeholderIcon
+              />,
+            );
+          }
+          return images;
+        };
+
+        return <div>{getImages(30)}</div>;
+      },
+    },
   ],
 };

@@ -42,12 +42,14 @@ exports[`Image Image with caption renders with caption and overrides 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-5 {
@@ -196,12 +198,14 @@ exports[`Image Image with caption renders with caption component 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-5 {
@@ -345,12 +349,14 @@ exports[`Image Image with caption renders with caption inset 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 @media screen and (max-width: 767px) {
@@ -506,12 +512,14 @@ exports[`Image Image with caption renders with caption inset and overrides 1`] =
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 @media screen and (max-width: 767px) {
@@ -650,12 +658,14 @@ exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect 
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 300px;
   width: 100px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -718,12 +728,14 @@ exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 a
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 300px;
   width: 100px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -786,12 +798,14 @@ exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect rati
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -854,12 +868,14 @@ exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect 
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -922,12 +938,14 @@ exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`]
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -990,12 +1008,14 @@ exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 100px;
   width: 100px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1058,12 +1078,14 @@ exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: auto;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1126,12 +1148,14 @@ exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect r
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 300px;
   width: 100px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1194,12 +1218,14 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 300px;
   width: 100px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1215,6 +1241,75 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
         alt="Example Image"
         class="emotion-3"
         src="/placeholder-3x2.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Image render with incorect path 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+}
+
+.emotion-1 {
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+  height: 0;
+  border-radius: 0;
+  background-color: #fafafa;
+}
+
+.emotion-1 svg {
+  fill: #c0c0c0;
+}
+
+.emotion-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-3 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      />
+      <img
+        class="emotion-3"
+        src="incorrect-path"
       />
     </div>
   </div>
@@ -1262,12 +1357,14 @@ exports[`Image renders with defaults 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1305,12 +1402,13 @@ exports[`Image renders with defaults after load 1`] = `
 }
 
 .emotion-2 {
+  opacity: 1;
   display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
-  border-radius: inherit;
 }
 
 <div
@@ -1370,14 +1468,16 @@ exports[`Image renders with max height and width 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
   max-height: 500;
   max-width: 500;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1440,14 +1540,16 @@ exports[`Image renders with object-fit and object-position 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
   object-fit: cover;
   object-position: 50% 50%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1535,12 +1637,14 @@ exports[`Image renders with placeholder icon 1`] = `
 }
 
 .emotion-6 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1617,12 +1721,14 @@ exports[`Image stylePreset renders with invalidPreset 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1678,12 +1784,14 @@ exports[`Image stylePreset renders with maskRound 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1739,12 +1847,14 @@ exports[`Image stylePreset renders with maskSemiRounded 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1760,6 +1870,48 @@ exports[`Image stylePreset renders with maskSemiRounded 1`] = `
         alt="Example Image"
         class="emotion-3"
         src="/placeholder-3x2.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Image stylePreset with loading=lazy 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 3px;
+}
+
+.emotion-1 {
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+  border-radius: 0;
+}
+
+.emotion-2 {
+  opacity: 1;
+  display: block;
+  border-radius: inherit;
+  height: 3px;
+  width: 3px;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <img
+        alt="Example Image"
+        class="emotion-2"
+        loading="lazy"
+        src=""
       />
     </div>
   </div>
@@ -1834,12 +1986,14 @@ exports[`Image stylePreset with mq 1`] = `
 }
 
 .emotion-3 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: 3px;
   width: 3px;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 <div
@@ -1854,6 +2008,48 @@ exports[`Image stylePreset with mq 1`] = `
       <img
         alt="Example Image"
         class="emotion-3"
+        src="/placeholder-3x2.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Image stylePreset with renderOnServer & loading=lazy 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 3px;
+}
+
+.emotion-1 {
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+  border-radius: 0;
+}
+
+.emotion-2 {
+  opacity: 1;
+  display: block;
+  border-radius: inherit;
+  height: 3px;
+  width: 3px;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <img
+        alt="Example Image"
+        class="emotion-2"
+        loading="lazy"
         src="/placeholder-3x2.png"
       />
     </div>

@@ -208,12 +208,14 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-11 {
@@ -734,12 +736,14 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-10 {
-  display: none;
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
   height: auto;
   width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .emotion-11 {

@@ -14,6 +14,7 @@ import {Caption} from '../caption';
 import {MQ} from '../utils/style';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
+import {useIntersection} from '../utils/hooks/use-intersection';
 
 export const useClientSide = (
   render: () => boolean | void,
@@ -62,15 +63,21 @@ const ImageComponent: React.FC<ImageProps> = ({
   loadingAspectRatio,
   placeholderIcon = false,
   overrides = {},
+  renderOnServer = false,
+  loading,
+  src,
   ...props
 }) => {
   const theme = useTheme();
   const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
-  const [loading, setLoading] = useState(true);
-  const onLoad = useCallback(() => loading && setLoading(false), [
-    loading,
-    setLoading,
+  const [isLoading, setIsLoading] = useState(!renderOnServer);
+  const [hasError, setError] = useState(false);
+  const onLoad = useCallback(() => isLoading && setIsLoading(false), [
+    isLoading,
+    setIsLoading,
   ]);
+  const onError = useCallback(() => setError(true), [setError]);
+
   const imageContainerStylePreset = getToken(
     {theme, overrides},
     'image',
@@ -132,15 +139,58 @@ const ImageComponent: React.FC<ImageProps> = ({
     'typographyPreset',
   );
 
+  const lazyBoundary = '256px'; // its arbitrary
+  const isLazy = loading === 'lazy' && typeof window !== 'undefined';
+  const hasNativeLazyLoadSupport =
+    typeof window !== 'undefined' && 'loading' in HTMLImageElement.prototype;
+
+  const disableIntersection = useCallback(() => {
+    if (!isLazy) return true;
+    return hasNativeLazyLoadSupport;
+  }, [isLazy, hasNativeLazyLoadSupport]);
+
+  const [setRef, isIntersected] = useIntersection<HTMLImageElement>({
+    rootMargin: lazyBoundary,
+    // useIntersection is not needed when native lazy loading is supported or loading is not lazy
+    disabled: disableIntersection(),
+  });
+
+  const isVisible = !isLazy || isIntersected;
+
+  // This code can be removed once Safari start supporting loading=lazy
+  const getSource = useCallback(() => {
+    if ((isLazy && hasNativeLazyLoadSupport) || renderOnServer) {
+      return src;
+    }
+    // This if statements is returning  the same as above,
+    // however I give native lazy loading priority when to load the image
+    /* istanbul ignore next */
+    if (!hasNativeLazyLoadSupport && isLazy && isVisible) {
+      return src;
+    }
+    if (!hasNativeLazyLoadSupport && isLazy && !isVisible) {
+      return '';
+    }
+    return src;
+  }, [isVisible, isLazy, src, hasNativeLazyLoadSupport, renderOnServer]);
+
+  const currentSrc = getSource();
+
+  const showLoading = useCallback(() => {
+    if (hasError && currentSrc !== '') return true;
+    if (!renderOnServer && isLoading) return true;
+    return false;
+  }, [hasError, renderOnServer, isLoading, currentSrc]);
+
   return (
-    <StyledImageAndCaptionContainer $width={aspectWidth}>
+    <StyledImageAndCaptionContainer $width={aspectWidth} ref={setRef}>
       <ImageContainer
-        $loading={loading}
+        $loading={showLoading()}
         paddingTop={paddingTop}
         stylePreset={imageContainerStylePreset}
         spaceStack={getSpaceStackValue(captionText, captionSpaceInset)}
       >
-        {loading && (
+        {showLoading() && (
           <LoadingContainer>
             {placeholderIcon && (
               <IconContainer>
@@ -159,9 +209,12 @@ const ImageComponent: React.FC<ImageProps> = ({
           $height={aspectHeight}
           maxWidth={maxWidth}
           maxHeight={maxHeight}
-          ref={imageRef}
           onLoad={onLoad}
-          $loading={loading}
+          onError={onError}
+          $loading={showLoading()}
+          loading={loading}
+          ref={imageRef}
+          src={currentSrc}
         />
       </ImageContainer>
       {captionText &&

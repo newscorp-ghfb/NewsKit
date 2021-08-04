@@ -63,6 +63,15 @@ describe('Image', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('render with incorect path', () => {
+    const {getByRole, asFragment} = renderWithTheme(Image, {
+      src: 'incorrect-path',
+    });
+    const image = getByRole('img');
+    fireEvent.error(image);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   describe('loadingAspectRatio', () => {
     const props = {
       src: '/placeholder-3x2.png',
@@ -290,6 +299,25 @@ describe('Image', () => {
         },
       };
 
+      const fragment = renderToFragmentWithTheme(Image, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    test('with loading=lazy', () => {
+      const props = {
+        ...defaultProps,
+        loading: 'lazy',
+      };
+      // @ts-ignore
+      const fragment = renderToFragmentWithTheme(Image, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    test('with renderOnServer & loading=lazy', () => {
+      const props = {
+        ...defaultProps,
+        loading: 'lazy',
+        renderOnServer: true,
+      };
+      // @ts-ignore
       const fragment = renderToFragmentWithTheme(Image, props);
       expect(fragment).toMatchSnapshot();
     });
