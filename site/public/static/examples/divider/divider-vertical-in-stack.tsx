@@ -1,17 +1,14 @@
-import {Divider, Stack, StackChild, AlignSelfValues, IconFilledCircle} from "newskit";
+import {Divider, Stack, StackChild, IconFilledCircle} from "newskit";
 
+export const Example = () => (
 <Stack
-  flow="horizontal-center"
+  flow="horizontal-stretch"
   stackDistribution="center"
-  space="sizing030"
+  spaceInline="space030"
 >
   <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  <StackChild alignSelf={AlignSelfValues.Stretch}>
+  <StackChild>
     <Divider vertical />
   </StackChild>
   <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  <StackChild alignSelf={AlignSelfValues.Stretch}>
-    <Divider vertical />
-  </StackChild>
-  <IconFilledCircle overrides={{size: 'iconSize040'}} />
-</Stack>
+</Stack>)

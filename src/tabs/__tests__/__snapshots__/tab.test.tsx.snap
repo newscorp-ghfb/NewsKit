@@ -359,11 +359,6 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   display: inline-block;
 }
 
-.emotion-4.emotion-4 {
-  width: 48px;
-  height: 48px;
-}
-
 .emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1071,11 +1066,6 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   display: inline-block;
 }
 
-.emotion-4.emotion-4 {
-  width: 48px;
-  height: 48px;
-}
-
 .emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1292,11 +1282,6 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
-}
-
-.emotion-6.emotion-6 {
-  width: 48px;
-  height: 48px;
 }
 
 <div
@@ -1662,11 +1647,6 @@ exports[`Tab should render custom aria-label tab 1`] = `
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
-}
-
-.emotion-6.emotion-6 {
-  width: 48px;
-  height: 48px;
 }
 
 <div

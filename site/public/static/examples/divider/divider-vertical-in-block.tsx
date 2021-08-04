@@ -1,32 +1,23 @@
-import {Divider, Block, IconFilledCircle, getSizingFromTheme, styled} from "newskit";
+import { Divider, Block, IconFilledCircle, getSizingCssFromTheme, styled } from 'newskit';
 
-const InlineIconContainer = styled(Block)`
+export const InlineBlock = styled(Block)`
   display: inline-block;
 `;
 
-const InlineDividerContainer = styled(Block)`
+export const InlineDividerContainer = styled(Block)`
   display: inline-block;
-  height: ${getSizingFromTheme('iconSize040')};
+  ${getSizingCssFromTheme('height', 'sizing090')};
 `;
 
-<Block>
-  <InlineIconContainer overrides={{marginPreset: 'spaceInline020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </InlineIconContainer>
-  <InlineDividerContainer
-    overrides={{marginPreset: 'spaceInline020'}}
-  >
-    <Divider vertical />
-  </InlineDividerContainer>
-  <InlineIconContainer overrides={{marginPreset: 'spaceInline020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </InlineIconContainer>
-  <InlineDividerContainer
-    overrides={{marginPreset: 'spaceInline020'}}
-  >
-    <Divider vertical />
-  </InlineDividerContainer>
-  <InlineIconContainer>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </InlineIconContainer>
-</Block>
+export const Example = () => (
+  <Block>
+    <InlineBlock spaceInline="space020">
+      <IconFilledCircle overrides={{ size: 'sizing090' }} />
+    </InlineBlock>
+    <InlineDividerContainer spaceInline="space020">
+      <Divider vertical />
+    </InlineDividerContainer>
+    <InlineBlock spaceInline="space020">
+      <IconFilledCircle overrides={{ size: 'sizing090' }} />
+    </InlineBlock>
+  </Block>)

@@ -1,7 +1,8 @@
-import {Block, getSizingFromTheme, styled} from 'newskit';
+import {Block, getSizingCssFromTheme, styled} from 'newskit';
 
 export const StyledBlockForDivider = styled(Block)`
-  width: ${getSizingFromTheme('iconSize040')};
+  ${getSizingCssFromTheme('width', 'sizing090')};
+  line-height: 0;
 `;
 
 export const InlineBlock = styled(Block)`
@@ -10,5 +11,5 @@ export const InlineBlock = styled(Block)`
 
 export const InlineDividerContainer = styled(Block)`
   display: inline-block;
-  height: ${getSizingFromTheme('iconSize040')};
+  ${getSizingCssFromTheme('height', 'sizing090')};
 `;

@@ -1,23 +1,19 @@
-import {Divider, Block, IconFilledCircle, getSizingFromTheme, styled} from 'newskit';
+import {Divider, Block, IconFilledCircle, getSizingCssFromTheme, styled} from 'newskit';
 
 const StyledBlock = styled(Block)`
-  width: ${getSizingFromTheme('iconSize040')};
+  ${getSizingCssFromTheme('width', 'sizing090')};
+  line-height:0;
 `;
 
+export const Example = () => (
 <StyledBlock>
-  <Block overrides={{marginPreset: 'spaceStack020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  <Block spaceStack="space020">
+    <IconFilledCircle />
   </Block>
-  <Block overrides={{marginPreset: 'spaceStack020'}}>
+  <Block spaceStack="space020">
     <Divider />
   </Block>
-  <Block overrides={{marginPreset: 'spaceStack020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  <Block spaceStack="space020">
+    <IconFilledCircle />
   </Block>
-  <Block overrides={{marginPreset: 'spaceStack020'}}>
-    <Divider />
-  </Block>
-  <Block>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </Block>
-</StyledBlock>;
+</StyledBlock>);

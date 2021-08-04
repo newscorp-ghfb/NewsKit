@@ -43,10 +43,11 @@ The divider has a number of props to facilitate a variety of uses. Custom and re
     If provided changes the flow of the divider to vertical.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component. Here are the overrides that the Divider accepts:
+    If provided, overrides the respective presets for the component. Here are
+    the overrides that the Divider accepts:
     <Prop name="stylePreset" type="MQ<string>">
-      If provided, overrides the style preset applied to the Divider. The style preset can modify the borderStyle,
-      borderColor and borderWidth.
+      If provided, overrides the style preset applied to the Divider. The style
+      preset can modify the borderStyle, borderColor and borderWidth.
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="divider" />
@@ -100,78 +101,61 @@ Here are a few examples to demonstrate the usages of a container elements to set
 
 _Note: The divider always stretches to 100% of the corresponding size of the container._
 
-### Using Block component
+### With Stack
 
-<CodeFromFile path="examples/divider/divider-horizontal-in-block.tsx" />
+In this example, we demonstrate how to use the divider inside a Stack.  We use `flow=horizontal-stretch` 
+and wrap the `Divider` in a `StackChild` to get it to stretch to the height of the container. 
 
-In this example, we are using the Block component
-to add `margin-bottom` to each element by using `spaceStack: 'space020'`.
-Also, we have a container `StyledBlock` that has fixed width to restrain the divider's width.
-It will provide us with the following structure:
-
-<StyledBlockForDivider>
-  <Block overrides={{spaceStack: 'space020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </Block>
-  <Block overrides={{spaceStack: 'space020'}}>
-    <Divider />
-  </Block>
-  <Block overrides={{spaceStack: 'space020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </Block>
-  <Block overrides={{spaceStack: 'space020'}}>
-    <Divider />
-  </Block>
-  <Block>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </Block>
-</StyledBlockForDivider>
-
-<CodeFromFile path="examples/divider/divider-vertical-in-block.tsx" />
-
-In this example we have a horizontal layout of elements separated with vertical dividers.
-Each element is wrapped inside a Block component that has a spacing preset
-passed to set the `margin-right` of each element.
-The example will look like this:
-
-<Block>
-  <InlineBlock overrides={{spaceInline: 'space020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </InlineBlock>
-  <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
-    <Divider vertical />
-  </InlineDividerContainer>
-  <InlineBlock overrides={{spaceInline: 'space020'}}>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </InlineBlock>
-  <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
-    <Divider vertical />
-  </InlineDividerContainer>
-  <InlineBlock>
-    <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  </InlineBlock>
-</Block>
-
-### Using Stack component
-
-<CodeFromFile path="examples/divider/divider-vertical-in-stack.tsx" />
-
-In this example we are using a wrapping `Stack` component with spacing set to `sizing030`.
-When you need to use the `Divider` inside a `Stack`,
-you will have to wrap it inside a `StackChild` component
-that has a property `alignSelf={AlignSelfValues.Stretch}` passed to it.
-This way the divider will automatically stretch to the size of the Stack container.
-
-<Stack flow="horizontal-center" stackDistribution="center" space="sizing030">
+<Stack
+  flow="horizontal-stretch"
+  stackDistribution="center"
+  spaceInline="space030"
+>
   <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  <StackChild alignSelf={AlignSelfValues.Stretch}>
-    <Divider vertical />
-  </StackChild>
-  <IconFilledCircle overrides={{size: 'iconSize040'}} />
-  <StackChild alignSelf={AlignSelfValues.Stretch}>
+  <StackChild>
     <Divider vertical />
   </StackChild>
   <IconFilledCircle overrides={{size: 'iconSize040'}} />
 </Stack>
 
-The same approach can be applied when using a horizontal `Divider` inside a vertical `Stack` layout.
+<CodeFromFile path="examples/divider/divider-vertical-in-stack.tsx" />
+
+### With Block
+#### horizontal Divider
+
+In this example, we demonstrate the divider as a visual separator between two block elements. 
+The container `StyledBlock` is being used to constrain the divider's width.  
+
+<StyledBlockForDivider>
+  <Block spaceStack="space020">
+    <IconFilledCircle />
+  </Block>
+  <Block spaceStack="space020">
+    <Divider />
+  </Block>
+  <Block spaceStack="space020">
+    <IconFilledCircle />
+  </Block>
+</StyledBlockForDivider>
+
+<CodeFromFile path="examples/divider/divider-horizontal-in-block.tsx" />
+
+#### Vertical Divider
+
+In this example, we demonstrate the vertical divider, used as a visual separator between two inline blocks.
+We use `InlineDividerContainer` to constrain the height of the block.
+
+<Block>
+  <InlineBlock spaceInline="space020">
+    <IconFilledCircle overrides={{size: 'sizing090'}} />
+  </InlineBlock>
+  <InlineDividerContainer spaceInline="space020">
+    <Divider vertical />
+  </InlineDividerContainer>
+  <InlineBlock spaceInline="space020">
+    <IconFilledCircle overrides={{size: 'sizing090'}} />
+  </InlineBlock>
+</Block>
+
+<CodeFromFile path="examples/divider/divider-vertical-in-block.tsx" />
+

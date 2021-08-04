@@ -2,6 +2,8 @@ import * as React from 'react';
 import {createTheme, ThemeProvider} from '../../theme';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {H6, H5, H4, H3, H2, H1} from '..';
+import {TextBlock} from '../../text-block';
+import {Grid, Cell} from '../../grid';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-heading-theme',
@@ -38,6 +40,69 @@ export default {
           <H5>Default H5 - {title}</H5>
           <br />
           <H6>Default H6 - {title}</H6>
+        </React.Fragment>
+      ),
+    },
+    {
+      storyName: 'crop vs no crop',
+      storyFn: () => (
+        <React.Fragment>
+          <Grid>
+            <Cell xs={6}>
+              <h1>cropped</h1>
+              <TextBlock typographyPreset="editorialHeadline010">
+                editorialHeadline010
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline020">
+                editorialHeadline020
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline030">
+                editorialHeadline030
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline040">
+                editorialHeadline040
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline050">
+                editorialHeadline050
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline060">
+                editorialHeadline060
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline070">
+                editorialHeadline070
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline080">
+                editorialHeadline080
+              </TextBlock>
+            </Cell>
+            <Cell xs={6}>
+              <h1>not cropped</h1>
+              <TextBlock typographyPreset="editorialHeadline010" noCrop>
+                editorialHeadline010
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline020" noCrop>
+                editorialHeadline020
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline030" noCrop>
+                editorialHeadline030
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline040" noCrop>
+                editorialHeadline040
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline050" noCrop>
+                editorialHeadline050
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline060" noCrop>
+                editorialHeadline060
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline070" noCrop>
+                editorialHeadline070
+              </TextBlock>
+              <TextBlock typographyPreset="editorialHeadline080" noCrop>
+                editorialHeadline080
+              </TextBlock>
+            </Cell>
+          </Grid>
         </React.Fragment>
       ),
     },
