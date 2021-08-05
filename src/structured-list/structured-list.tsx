@@ -40,20 +40,26 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
   overrides,
   href,
   linkIconAlign,
+  ...props
 }) => {
   const childrenArray = React.Children.toArray(children);
+  const hasHref = Boolean(href);
 
-  if (href && childrenArray.length === 2 && !getPullRight(childrenArray[1])) {
+  if (
+    hasHref &&
+    childrenArray.length === 2 &&
+    !getPullRight(childrenArray[1])
+  ) {
     childrenArray.push(
       <StructuredListCell align={linkIconAlign} key="link-icon">
         <StructuredListIcon href={href} overrides={overrides} />
       </StructuredListCell>,
     );
   }
-  if (href && childrenArray.length === 1) {
+  if (hasHref && childrenArray.length === 1) {
     childrenArray.push(
       <StructuredListCell pullRight align={linkIconAlign} key="link-icon">
-        <StructuredListIcon href={href} />
+        <StructuredListIcon href={href} overrides={overrides} />
       </StructuredListCell>,
     );
   }
@@ -72,8 +78,6 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
       </StyledCell>
     </Grid>
   );
-
-  const hasHref = Boolean(href);
 
   const renderCells = () => {
     if (childrenArray.length === 3) {
@@ -137,11 +141,13 @@ export const StructuredListItem: React.FC<StructuredListItemProps> = ({
       overrides={overrides}
       disabled={disabled}
     >
-      {href ? (
+      {hasHref ? (
         <StyledLink
           as={disabled ? 'span' : 'a'}
           href={href}
+          data-testid="list-item-link"
           aria-disabled={disabled && 'true'}
+          {...props}
         >
           {renderCells()}
         </StyledLink>
@@ -157,12 +163,13 @@ export const StructuredList: React.FC<StructuredListProps> = ({
   ariaLabel,
   divider,
   overrides = {},
+  ...props
 }) => {
   const structuredListChildren = React.Children.toArray(
     children,
   ) as React.ReactElement<StructuredListItemProps>[];
   return (
-    <StyledListWrapper overrides={overrides} aria-label={ariaLabel}>
+    <StyledListWrapper overrides={overrides} aria-label={ariaLabel} {...props}>
       {structuredListChildren.reduce(
         (acc: React.ReactElement[], listItem, index, array) => {
           acc.push(listItem);

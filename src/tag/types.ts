@@ -1,3 +1,4 @@
+import React from 'react';
 import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 
 export enum TagSize {
@@ -6,6 +7,6 @@ export enum TagSize {
   Large = 'large',
 }
 
-export interface TagProps extends BaseFlagProps<BaseFlagOverrides> {
-  href?: string;
-}
+export interface TagProps
+  extends BaseFlagProps<BaseFlagOverrides>,
+    React.AnchorHTMLAttributes<HTMLAnchorElement> {}

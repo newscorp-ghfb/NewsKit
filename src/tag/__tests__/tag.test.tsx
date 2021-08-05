@@ -1,5 +1,8 @@
 import React from 'react';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {Tag, TagSize, TagProps} from '..';
 import {IconFilledEmail} from '../../icons';
 
@@ -77,13 +80,27 @@ describe('Tag', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('href renders as an anchor and user can pass anchor attributes', () => {
+    const props: TagProps = {
+      href: '#',
+      target: '_blank',
+    };
+
+    const {getByTestId, asFragment} = renderWithTheme(renderTagWithText, props);
+
+    expect(asFragment()).toMatchSnapshot();
+    expect(getByTestId('tag')).toHaveAttribute('target', '_blank');
+  });
+
   test('href renders in disable state as a div', () => {
     const props: TagProps = {
       href: '#',
       disabled: true,
     };
-    const fragment = renderToFragmentWithTheme(renderTagWithText, props);
-    expect(fragment).toMatchSnapshot();
+    const {getByTestId, asFragment} = renderWithTheme(renderTagWithText, props);
+
+    expect(asFragment()).toMatchSnapshot();
+    expect(getByTestId('tag')).toHaveAttribute('disabled');
   });
 
   test.each(tagSizeKeys)('renders with %s size', currentSize => {

@@ -40,6 +40,7 @@ exports[`StructuredList with href renders four cells with href 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       />
     </li>
@@ -54,6 +55,7 @@ exports[`StructuredList with href renders four cells with href 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       />
     </li>
@@ -321,6 +323,7 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -385,6 +388,7 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -702,6 +706,7 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -767,6 +772,7 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -1175,6 +1181,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -1260,6 +1267,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -1710,6 +1718,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -1799,6 +1808,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -2253,6 +2263,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -2343,6 +2354,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -2681,6 +2693,7 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -2730,6 +2743,7 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="http://apple.com"
       >
         <div
@@ -3147,6 +3161,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -3237,6 +3252,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -3695,6 +3711,7 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -3785,7 +3802,557 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
     >
       <a
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <p
+                        class="emotion-10"
+                      >
+                        Label
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <p
+                        class="emotion-13"
+                      >
+                        A short description of the label
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-14"
+            >
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-16"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-17 emotion-18"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                      opacity="0.87"
+                    />
+                    <path
+                      d="M6.49 20.13l1.77 1.77 9.9-9.9-9.9-9.9-1.77 1.77L14.62 12l-8.13 8.13z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`StructuredList with href renders with anchor attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.emotion-1 {
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.emotion-2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 24px 16px;
+  min-height: 80px;
+}
+
+@media screen {
+  .emotion-4 {
+    margin: -0px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-4 {
+    margin: -0px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin: -0px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-4:disabled {
+  background-color: transparent;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-5 {
+    padding: 0 8px;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    padding: 0 12px;
+  }
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-7 {
+    margin: -16px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-7 {
+    margin: -16px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-7 {
+    margin: -16px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-7 {
+    margin: -16px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-7 {
+    margin: -16px 0px 0 0px;
+  }
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-8 {
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-8 {
+    -webkit-flex-basis: 41.66666666666667%;
+    -ms-flex-preferred-size: 41.66666666666667%;
+    flex-basis: 41.66666666666667%;
+    max-width: 41.66666666666667%;
+  }
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.emotion-10 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-10::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.23750000000000002em;
+}
+
+.emotion-10::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
+}
+
+.emotion-11 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-11 {
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-11 {
+    -webkit-flex-basis: 58.333333333333336%;
+    -ms-flex-preferred-size: 58.333333333333336%;
+    flex-basis: 58.333333333333336%;
+    max-width: 58.333333333333336%;
+  }
+}
+
+.emotion-13 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-13 svg {
+  fill: #535353;
+}
+
+.emotion-13::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-13::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-14 {
+    padding: 0 8px;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    max-width: 16.666666666666668%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-14 {
+    padding: 0 12px;
+  }
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.emotion-17 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #0a0a0a;
+  fill: #0a0a0a;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-17.emotion-17 {
+  width: 16px;
+  height: 16px;
+  color: #0a0a0a;
+  fill: #0a0a0a;
+}
+
+.emotion-19 {
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<ul
+    aria-label="list"
+    class="emotion-0"
+  >
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="/"
+        target="_blank"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <p
+                        class="emotion-10"
+                      >
+                        Label
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <p
+                        class="emotion-13"
+                      >
+                        A short description of the label
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-14"
+            >
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-16"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-17 emotion-18"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                      opacity="0.87"
+                    />
+                    <path
+                      d="M6.49 20.13l1.77 1.77 9.9-9.9-9.9-9.9-1.77 1.77L14.62 12l-8.13 8.13z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <hr
+      aria-hidden="true"
+      class="emotion-19"
+      data-testid="divider"
+    />
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+        data-testid="list-item-link"
+        href="/"
+        target="_blank"
       >
         <div
           class="emotion-3"
@@ -4131,6 +4698,7 @@ exports[`StructuredList with href renders with disabled link 1`] = `
       <span
         aria-disabled="true"
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div
@@ -4198,6 +4766,7 @@ exports[`StructuredList with href renders with disabled link 1`] = `
       <span
         aria-disabled="true"
         class="emotion-2"
+        data-testid="list-item-link"
         href="/"
       >
         <div

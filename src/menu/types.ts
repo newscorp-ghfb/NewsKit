@@ -40,7 +40,8 @@ export interface MenuGroupProps extends React.AriaAttributes {
 
 type MenuItemOverrides = Omit<BaseFlagOverrides, 'width' | 'height'>;
 export interface MenuItemProps
-  extends Omit<BaseFlagProps<MenuItemOverrides>, 'loading'> {
+  extends Omit<BaseFlagProps<MenuItemOverrides>, 'loading'>,
+    React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: Exclude<React.ReactNode, 'undefined'>;
   href: string;
   selected?: boolean;

@@ -16,7 +16,8 @@ export interface StructuredListProps {
 
 export type StructuredListCellAlign = 'start' | 'center' | 'end';
 
-export interface StructuredListItemProps {
+export interface StructuredListItemProps
+  extends React.AnchorHTMLAttributes<HTMLElement> {
   children: React.ReactNode | React.ReactNode[];
   ariaLabel?: string;
   disabled?: boolean;

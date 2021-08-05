@@ -59,10 +59,12 @@ const StructuredListWithDivider = withDefaultProps(StructuredList, {
 const ListItemWithInternalLink = withDefaultProps(StructuredListItem, {
   href: '/',
   ariaLabel: 'list item',
+  target: '_blank',
 });
 const ListItemWithExternalLink = withDefaultProps(StructuredListItem, {
   href: 'http://apple.com',
   ariaLabel: 'list item',
+  target: '_blank',
 });
 
 const HeadingTextBlock = withDefaultProps(TextBlock, {

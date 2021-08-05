@@ -2,7 +2,10 @@ import React from 'react';
 import {StructuredListItem} from '..';
 import {TextBlock} from '../..';
 import {IconOutlinedKeyboardArrowRight} from '../../icons';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {StructuredListCell, StructuredList} from '../structured-list';
 import {StructuredListItemProps} from '../types';
 
@@ -39,6 +42,23 @@ const renderWithDisabledLink = (props: StructuredListItemProps) => (
   <StructuredList ariaLabel="list" divider>
     <StructuredListItem ariaLabel="list item" href="/" disabled {...props} />
     <StructuredListItem ariaLabel="list item" href="/" disabled {...props} />
+  </StructuredList>
+);
+
+const renderWithAnchorAttributes = (props: StructuredListItemProps) => (
+  <StructuredList ariaLabel="list" divider>
+    <StructuredListItem
+      ariaLabel="list item"
+      href="/"
+      target="_blank"
+      {...props}
+    />
+    <StructuredListItem
+      ariaLabel="list item"
+      href="/"
+      target="_blank"
+      {...props}
+    />
   </StructuredList>
 );
 
@@ -275,6 +295,20 @@ describe('StructuredList', () => {
 
       const fragment = renderToFragmentWithTheme(renderWithInternalLink, props);
       expect(fragment).toMatchSnapshot();
+    });
+    test('renders with anchor attributes', () => {
+      const props: StructuredListItemProps = {
+        children: TwoCellsDefault,
+      };
+      const {getAllByTestId, asFragment} = renderWithTheme(
+        renderWithAnchorAttributes,
+        props,
+      );
+      expect(asFragment()).toMatchSnapshot();
+      expect(getAllByTestId('list-item-link')[0]).toHaveAttribute(
+        'target',
+        '_blank',
+      );
     });
   });
 });

@@ -1,6 +1,9 @@
 import React from 'react';
 import {Menu, MenuDivider, MenuGroup, MenuItem} from '..';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {IconFilledAddCircleOutline} from '../../icons';
 import {compileTheme, createTheme} from '../..';
 import {MenuItemAlign, MenuItemSize} from '../types';
@@ -83,6 +86,17 @@ describe('MenuItem', () => {
     };
     const fragment = renderToFragmentWithTheme(MenuItem, props);
     expect(fragment).toMatchSnapshot();
+  });
+  it('renders menu item with anchor attributes', () => {
+    const props = {
+      children: menuItemContent,
+      href,
+      target: '_blank',
+    };
+    const {getAllByTestId, asFragment} = renderWithTheme(MenuItem, props);
+
+    expect(asFragment()).toMatchSnapshot();
+    expect(getAllByTestId('buttonLink')[0]).toHaveAttribute('target', '_blank');
   });
   it('renders with overrides', () => {
     const myCustomTheme = compileTheme(
