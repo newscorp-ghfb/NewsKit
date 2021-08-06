@@ -25,6 +25,7 @@ export const Scroll: React.FC<ScrollProps> = ({
   scrollBar = false,
   children,
   overrides = {},
+  ...props
 }) => {
   const theme = useTheme();
   const buttonComponentDefault = get(
@@ -103,9 +104,10 @@ export const Scroll: React.FC<ScrollProps> = ({
       overrides={overrides}
     >
       <StyledScrollContainer
+        tabIndex={0}
+        {...props}
         vertical={vertical}
         aria-orientation={vertical ? 'vertical' : 'horizontal'}
-        tabIndex={0}
         snapAlign={snapAlign}
         scrollBar={scrollBar}
         ref={scrollContainerRef}

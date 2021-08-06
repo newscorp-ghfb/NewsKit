@@ -304,6 +304,7 @@ export const Tabs: React.FC<TabsProps> = ({
           snapAlign="center"
           vertical={vertical}
           overrides={scrollOverrides}
+          tabIndex={undefined}
         >
           <StyledInnerTabGroup
             overrides={overrides}

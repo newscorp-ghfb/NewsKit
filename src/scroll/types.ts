@@ -1,7 +1,7 @@
 import {ButtonOverrides} from '../button';
 import {MQ} from '../utils/style';
 
-export interface ScrollProps {
+export interface ScrollProps extends React.HTMLAttributes<HTMLDivElement> {
   vertical?: boolean;
   controls?: 'hover' | 'static';
   stepDistance?: number;
