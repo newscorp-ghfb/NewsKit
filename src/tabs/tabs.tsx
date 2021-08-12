@@ -15,10 +15,9 @@ import {
   StyledTabsBarIndicator,
   StyledTabGroup,
   StyledDistributionWrapper,
+  StyledDividerWrapper,
 } from './styled';
 import {Flow} from '../stack';
-import {Divider} from '../divider';
-import {AlignSelfValues, StackChild} from '../stack-child';
 import {TabInternal} from './tab-internal';
 import {BreakpointKeys, useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
@@ -33,12 +32,13 @@ import {
 } from './utils';
 import {TabPanel} from './tab-panel';
 import {hasMatchingDisplayNameWith} from '../utils/component';
-import {getSSRId} from '../utils/get-ssr-id';
+import {useReactKeys} from '../utils/hooks';
 import {get} from '../utils/get';
 import {Scroll, ScrollSnapAlignment} from '../scroll';
 import {deepMerge} from '../utils';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
+import {Divider} from '../divider';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -205,17 +205,15 @@ export const Tabs: React.FC<TabsProps> = ({
     }
   };
 
-  // generate uniq IDs for a11y porpose
-  const [ariaIds, setAriaIds] = useState<string[]>([]);
-
-  React.useEffect(() => {
-    const ids: string[] = tabsOnlyChildren.map(() => getSSRId());
-    setAriaIds(ids);
-  }, [tabsOnlyChildren.length]); // eslint-disable-line react-hooks/exhaustive-deps
+  // generate uniq IDs for a11y purposes
+  const ariaIds = useReactKeys(tabsOnlyChildren.length);
 
   const tabPanels = tabsOnlyChildren.map(
     (child: React.ReactElement<TabProps>, index) => {
+      /* istanbul ignore next */
+      const key = child.key || `panel-${index}`;
       const tabPanelProps = {
+        key,
         children: child.props.children,
         selected: index === activeTabIndex,
         id: ariaIds[index],
@@ -226,18 +224,26 @@ export const Tabs: React.FC<TabsProps> = ({
   );
 
   const tabData = tabsOnlyChildren.map(
-    (child: React.ReactElement<TabProps>, index) => ({
-      key: index,
-      selected: index === activeTabIndex,
-      id: ariaIds[index],
-      ...child.props,
-    }),
+    (child: React.ReactElement<TabProps>, index) => {
+      /* istanbul ignore next */
+      const key = child.key || `tab-${index}`;
+      return {
+        key,
+        selected: index === activeTabIndex,
+        id: ariaIds[index],
+        ...child.props,
+      };
+    },
   );
 
-  const addStackDivider = (key: number) => (
-    <StackChild key={`${key}-divider`} alignSelf={AlignSelfValues.Stretch}>
+  const addStackDivider = (key: React.Key) => (
+    <StyledDividerWrapper
+      key={`${key}-divider`}
+      vertical={!vertical}
+      overrides={overrides}
+    >
       <Divider overrides={overrides.divider} vertical={!vertical} />
-    </StackChild>
+    </StyledDividerWrapper>
   );
 
   const getChildren = (
@@ -255,6 +261,9 @@ export const Tabs: React.FC<TabsProps> = ({
         distribution={distribution || TabsDistribution.Start}
         data-testid="distribution-wrapper"
         vertical={vertical}
+        last={array.length === index + 1}
+        key={`${tab.key}-wrapper`}
+        overrides={overrides}
       >
         <ScrollSnapAlignment snapAlign={getScrollAlign(index, array)}>
           <TabInternal
@@ -264,7 +273,7 @@ export const Tabs: React.FC<TabsProps> = ({
             dataTestId={tab.dataTestId}
             size={size}
             onKeyDown={handleKeyDown}
-            onClick={() => changeActiveTab(tab.key)}
+            onClick={() => changeActiveTab(index)}
             disabled={tab.disabled}
             ref={tab.selected ? activeTabRef : undefined}
             id={tab.id}

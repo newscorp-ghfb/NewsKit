@@ -41,6 +41,9 @@ export interface TabsProps {
   overrides?: {
     spaceInline?: MQ<string>;
     divider?: DividerOverrides;
+    tab?: {
+      spaceInline?: MQ<string>;
+    };
     selectionIndicator?: {
       track?: {
         weight?: MQ<string>;
@@ -70,6 +73,8 @@ export interface TabPanelProps {
 export interface DistributionWrapperProps {
   distribution: TabsDistribution;
   vertical: boolean;
+  last: boolean;
+  overrides?: TabsProps['overrides'];
 }
 
 export interface TabProps {

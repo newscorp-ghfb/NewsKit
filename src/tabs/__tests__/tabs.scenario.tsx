@@ -144,13 +144,13 @@ export default {
             divider
             initialSelectedIndex={10}
           >
-            <Tab label="H tab 1">
+            <Tab label="H tab 1" key="tab-1">
               <LoremIpsum textNumber={1} />
             </Tab>
-            <Tab label={titleCanHaveIcons}>
+            <Tab label={titleCanHaveIcons} key="tab-2">
               <LoremIpsum textNumber={2} />
             </Tab>
-            <Tab label="H tab 3, three">
+            <Tab label="H tab 3, three" key="tab-3">
               <LoremIpsum textNumber={3} />
             </Tab>
           </Tabs>
@@ -915,9 +915,11 @@ export default {
               size={TabSize.Small}
               overrides={{
                 spaceInline: {
-                  xs: 'space020',
-                  md: 'space050',
-                  xl: 'space080',
+                  xs: 'space010',
+                  lg: 'space080',
+                },
+                tab: {
+                  spaceInline: 'space020',
                 },
                 selectionIndicator: {
                   track: {

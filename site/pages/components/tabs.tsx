@@ -213,6 +213,13 @@ export default (layoutProps: LayoutProps) => (
                 'If provided, this overrides the space between the Tabs and the Tab Panel.',
             },
             {
+              attribute: 'tab.spaceInline',
+              type: 'MQ<string>',
+              default: '',
+              description:
+                'If provided, this overrides the space between each Tab and divider',
+            },
+            {
               attribute: 'selectionIndicator.track.stylePreset',
               type: 'MQ<string>',
               default: 'tabBarTrack',

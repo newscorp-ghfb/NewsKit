@@ -2,9 +2,8 @@ import {TextAlignProperty} from 'csstype';
 import {
   styled,
   getStylePreset,
-  getWeight,
-  getSpacingInlineVertical,
-  getSpacingInlineHorizontal,
+  getResponsiveSpace,
+  getResponsiveBorder,
 } from '../utils/style';
 import {
   TabsProps,
@@ -75,11 +74,14 @@ export const StyledTabsBar = styled.div<TabsBarProps>`
   position: relative;
   z-index: 0;
   ${({vertical}) => vertical && 'max-height: 100%;'}
+
   ${({vertical}) =>
-    (vertical ? getSpacingInlineHorizontal : getSpacingInlineVertical)(
+    getResponsiveSpace(
+      vertical ? 'marginRight' : 'marginBottom',
       'tabs',
       '',
-    )}
+      'spaceInline',
+    )};
 `;
 
 export const StyledInnerTabGroup = styled(Stack)<Pick<TabsProps, 'overrides'>>`
@@ -96,6 +98,17 @@ export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`
   overflow: hidden;
   ${({distribution, vertical}) =>
     getFlexFromTabsDistribution(distribution as TabsDistribution, vertical)};
+
+  ${({vertical, last}) =>
+    getResponsiveSpace(
+      spaceValue => {
+        const value = last ? 0 : spaceValue;
+        return {[vertical ? 'marginBottom' : 'marginRight']: value};
+      },
+      'tabs.tab',
+      'tab',
+      'spaceInline',
+    )}
 
   // adds 100% width to ScrollSnapAlignment component
   > * {
@@ -124,14 +137,18 @@ export const StyledTabsBarTrack = styled.div<
   display: block;
   position: absolute;
   z-index: 1;
-  width: ${({vertical}) =>
-    vertical
-      ? getWeight('tabs.selectionIndicator.track', 'selectionIndicator.track')
-      : '100%'};
-  height: ${({vertical}) =>
-    vertical
-      ? '100%'
-      : getWeight('tabs.selectionIndicator.track', 'selectionIndicator.track')};
+
+  ${({vertical}) =>
+    getResponsiveBorder(
+      borderSize =>
+        vertical
+          ? {width: borderSize, height: '100%'}
+          : {width: '100%', height: borderSize},
+      'tabs.selectionIndicator.track',
+      'selectionIndicator.track',
+      'weight',
+    )}
+
   ${({indicatorPosition, vertical}) =>
     alignmentPosition(indicatorPosition, vertical)};
 `;
@@ -164,4 +181,18 @@ export const StyledTabPanelBlock = styled(TextBlock)<
   TextBlockProps & {selected: boolean}
 >`
   width: 100%;
+`;
+
+export const StyledDividerWrapper = styled.div<
+  Pick<TabsProps, 'overrides' | 'vertical'>
+>`
+  display: inline-flex;
+  align-self: stretch;
+  ${({vertical}) =>
+    getResponsiveSpace(
+      vertical ? 'marginRight' : 'marginBottom',
+      'tabs.tab',
+      'tab',
+      'spaceInline',
+    )}
 `;

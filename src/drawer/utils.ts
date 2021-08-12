@@ -31,6 +31,7 @@ export const setDrawerElementFocusability = (
   open: boolean,
   ref: React.RefObject<HTMLDivElement>,
 ) => {
+  /* istanbul ignore else */
   if (ref && ref.current) {
     const dialog = ref.current;
     if (dialog) {

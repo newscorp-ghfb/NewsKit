@@ -33,9 +33,15 @@ const tabWithLabelAndIcon = (name: string) => (
 );
 
 const tabsWithLabelAndIcons = [
-  <Tab label={tabWithLabelAndIcon('First')}>First tab content</Tab>,
-  <Tab label={tabWithLabelAndIcon('Second')}>Second tab content</Tab>,
-  <Tab label={tabWithLabelAndIcon('Third')}>Third tab content</Tab>,
+  <Tab label={tabWithLabelAndIcon('First')} key="tab-1">
+    First tab content
+  </Tab>,
+  <Tab label={tabWithLabelAndIcon('Second')} key="tab-2">
+    Second tab content
+  </Tab>,
+  <Tab label={tabWithLabelAndIcon('Third')} key="tab-3">
+    Third tab content
+  </Tab>,
 ];
 
 const selectedTabStyled = 'color: #0a68c1';
@@ -114,6 +120,21 @@ describe('Tabs', () => {
       size: TabSize.Large,
       overrides: {
         spaceInline: 'space050',
+        tab: {spaceInline: 'space020'},
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders with overrides vertical', () => {
+    const props: TabsProps = {
+      children: tabsWithLabelAndIcons,
+      size: TabSize.Large,
+      vertical: true,
+      overrides: {
+        spaceInline: 'space050',
+        tab: {spaceInline: 'space020'},
       },
     };
 
