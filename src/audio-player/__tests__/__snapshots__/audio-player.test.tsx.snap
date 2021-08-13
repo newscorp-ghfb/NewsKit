@@ -826,7 +826,9 @@ exports[`Audio Player live player renders as expected 1`] = `
                       class="emotion-10"
                     >
                       <button
+                        aria-busy="true"
                         aria-label="Play"
+                        aria-live="polite"
                         aria-pressed="false"
                         class="emotion-11"
                         data-testid="audio-player-play-button"
@@ -1157,7 +1159,9 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
 }
 
 <button
+  aria-busy="true"
   aria-label="Play"
+  aria-live="polite"
   aria-pressed="false"
   class="emotion-0"
   data-testid="audio-player-play-button"
@@ -1433,7 +1437,9 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
 }
 
 <button
+  aria-busy="true"
   aria-label="Play"
+  aria-live="polite"
   aria-pressed="false"
   class="emotion-0"
   data-testid="audio-player-play-button"
@@ -3824,7 +3830,9 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       class="emotion-10"
                     >
                       <button
+                        aria-busy="true"
                         aria-label="Play"
+                        aria-live="polite"
                         aria-pressed="false"
                         class="emotion-11"
                         data-testid="audio-player-play-button"
@@ -5158,7 +5166,9 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                       class="emotion-10"
                     >
                       <button
+                        aria-busy="true"
                         aria-label="Play"
+                        aria-live="polite"
                         aria-pressed="false"
                         class="emotion-11"
                         data-testid="audio-player-play-button"
@@ -6465,7 +6475,9 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                       class="emotion-10"
                     >
                       <button
+                        aria-busy="true"
                         aria-label="Play"
+                        aria-live="polite"
                         aria-pressed="false"
                         class="emotion-11"
                         data-testid="audio-player-play-button"

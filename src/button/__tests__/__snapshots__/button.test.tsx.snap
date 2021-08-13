@@ -120,6 +120,8 @@ exports[`Button Loading Button renders Large Button 1`] = `
     class="emotion-0"
   >
     <button
+      aria-busy="true"
+      aria-live="polite"
       class="emotion-1"
       data-testid="button"
       type="button"
@@ -269,6 +271,8 @@ exports[`Button Loading Button renders Small Button 1`] = `
     class="emotion-0"
   >
     <button
+      aria-busy="true"
+      aria-live="polite"
       class="emotion-1"
       data-testid="button"
       type="button"
@@ -1854,10 +1858,10 @@ exports[`Button renders button link with disabled link 1`] = `
     class="emotion-0"
   >
     <a
+      aria-disabled="true"
       class="emotion-1"
       data-testid="buttonLink"
-      disabled=""
-      href="javascript:void(0)"
+      role="link"
     >
       <div
         class="emotion-2"

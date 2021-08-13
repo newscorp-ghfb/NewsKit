@@ -14,16 +14,20 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 
 const BaseFlag = React.forwardRef<
   HTMLDivElement,
-  BaseFlagProps<BaseFlagOverrides>
->(({children, overrides, loading, ...props}, ref) => {
+  BaseFlagProps<BaseFlagOverrides> & {as?: keyof JSX.IntrinsicElements}
+>(({children, overrides, loading, disabled, as, ...props}, ref) => {
   const theme = useTheme();
+
   return (
     <IE11FixContainer overrides={overrides}>
       <StyledBaseFlag
         {...props}
         $loading={loading}
+        $disabled={disabled} // Used to avoid passing disabled HTML attribute to an anchor link
+        disabled={as !== 'a' && disabled}
         overrides={overrides}
         ref={ref}
+        as={as}
       >
         <Stack
           spaceInline={getToken({theme, overrides}, '', '', 'spaceInline')}

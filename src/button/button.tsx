@@ -14,15 +14,7 @@ export const Button = React.forwardRef<
   const theme = useTheme();
   const {fireEvent} = useInstrumentation();
 
-  const {
-    children,
-    overrides = {},
-    size = ButtonSize.Medium,
-    disabled,
-    loading,
-    eventContext,
-    eventOriginator,
-  } = props;
+  const {children, overrides = {}, size = ButtonSize.Medium, loading} = props;
 
   const buttonSettings: typeof overrides = {
     ...theme.componentDefaults.button[size],
@@ -35,43 +27,59 @@ export const Button = React.forwardRef<
 
   const getProps = <TProps extends React.HTMLAttributes<HTMLElement>>(
     linkOrButtonProps: TProps,
-  ): Omit<TProps, 'size'> => ({
-    ...(isButtonLink(linkOrButtonProps) && Boolean(linkOrButtonProps.href)
-      ? {
-          'data-testid': 'buttonLink',
-          ...emotionAs('a'),
-          ...linkOrButtonProps,
-          href: disabled
-            ? // eslint-disable-next-line no-script-url
-              'javascript:void(0)'
-            : linkOrButtonProps.href,
+  ): Omit<TProps, 'size'> => {
+    const {
+      disabled,
+      eventContext,
+      eventOriginator,
+      ...rest
+    } = linkOrButtonProps as ButtonOrButtonLinkProps;
+    const isLink =
+      isButtonLink(linkOrButtonProps) && Boolean(linkOrButtonProps.href);
+    const href = isButtonLink(linkOrButtonProps) && linkOrButtonProps.href;
+
+    const disabledLinkProps = {
+      href: undefined,
+      role: 'link',
+      'aria-disabled': 'true',
+    };
+
+    return {
+      ...(isLink
+        ? {
+            'data-testid': 'buttonLink',
+            ...emotionAs('a'),
+            ...rest,
+            href,
+            disabled,
+            ...(disabled && disabledLinkProps),
+          }
+        : {
+            type: 'button',
+            'data-testid': 'button',
+            ...emotionAs('button'),
+            ...rest,
+            disabled,
+            ...(loading && {
+              'aria-busy': 'true',
+              'aria-live': 'polite',
+            }),
+          }),
+      onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => {
+        fireEvent({
+          originator: eventOriginator || (isLink ? 'link' : 'button'),
+          trigger: EventTrigger.Click,
+          context: {
+            ...eventContext,
+          },
+        });
+        if (linkOrButtonProps.onClick) {
+          linkOrButtonProps.onClick!(event);
         }
-      : {
-          type: 'button',
-          'data-testid': 'button',
-          ...emotionAs('button'),
-          ...linkOrButtonProps,
-        }),
-    onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => {
-      fireEvent({
-        originator:
-          eventOriginator ||
-          (isButtonLink(linkOrButtonProps) && Boolean(linkOrButtonProps.href)
-            ? 'link'
-            : 'button'),
-        trigger: EventTrigger.Click,
-        context: {
-          ...eventContext,
-        },
-      });
-      if (linkOrButtonProps.onClick) {
-        linkOrButtonProps.onClick!(event);
-      }
-    },
-    disabled,
-    loading,
-    overrides: buttonSettings,
-  });
+      },
+      overrides: buttonSettings,
+    };
+  };
 
   return (
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

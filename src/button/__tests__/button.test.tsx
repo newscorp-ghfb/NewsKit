@@ -138,11 +138,7 @@ describe('Button', () => {
     expect(asFragment()).toMatchSnapshot();
 
     expect(getByTestId('buttonLink')).toBeInTheDocument();
-    expect(getByTestId('buttonLink')).toHaveAttribute(
-      'href',
-      // eslint-disable-next-line no-script-url
-      'javascript:void(0)',
-    );
+    expect(getByTestId('buttonLink')).not.toHaveAttribute('href');
   });
 
   test('handles correctly passed onClick event handler', async () => {

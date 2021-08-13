@@ -412,6 +412,12 @@ export default {
               Another link to newskit.co.uk
             </Button>
           </Container>
+          <StorybookSubHeading>Button link disabled</StorybookSubHeading>
+          <Container>
+            <Button href="https://www.newskit.co.uk/" disabled>
+              Another link to newskit.co.uk
+            </Button>
+          </Container>
         </React.Fragment>
       ),
     },

@@ -31,23 +31,19 @@ export const setDrawerElementFocusability = (
   open: boolean,
   ref: React.RefObject<HTMLDivElement>,
 ) => {
-  /* istanbul ignore else */
-  if (ref && ref.current) {
-    const dialog = ref.current;
-    if (dialog) {
-      const focusableElements = dialog.querySelectorAll(
-        tabbableElements.join(),
-      );
-      if (open) {
-        focusableElements.forEach(element => {
-          element.removeAttribute('tabindex');
-        });
-      }
-      if (!open) {
-        focusableElements.forEach(element => {
-          element.setAttribute('tabindex', '-1');
-        });
-      }
-    }
+  /* istanbul ignore next */
+  if (!ref || !ref.current) return;
+
+  const dialog = ref.current;
+  const focusableElements = dialog.querySelectorAll(tabbableElements.join());
+  if (open) {
+    focusableElements.forEach(element => {
+      element.removeAttribute('tabindex');
+    });
+  }
+  if (!open) {
+    focusableElements.forEach(element => {
+      element.setAttribute('tabindex', '-1');
+    });
   }
 };

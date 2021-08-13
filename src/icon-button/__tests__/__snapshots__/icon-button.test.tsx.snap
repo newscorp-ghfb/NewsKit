@@ -122,7 +122,9 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
     class="emotion-0"
   >
     <button
+      aria-busy="true"
       aria-label="Test icon button"
+      aria-live="polite"
       class="emotion-1"
       data-testid="button"
       type="button"

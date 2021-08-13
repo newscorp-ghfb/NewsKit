@@ -72,6 +72,7 @@ const calculateMargins = (negative?: boolean) => ({
     ? getSpaceInHalf(theme, spaceInline, negative)
     : '';
 
+  /* istanbul ignore else */
   if (verticalFlows.includes(flow as Flow)) {
     margins.marginTop = halfSpaceInline;
     margins.marginBottom = halfSpaceInline;
@@ -80,9 +81,7 @@ const calculateMargins = (negative?: boolean) => ({
       margins.marginLeft = halfSpaceStack;
       margins.marginRight = halfSpaceStack;
     }
-  } /* istanbul ignore next */ else if (
-    horizontalFlows.includes(flow as Flow)
-  ) {
+  } else if (horizontalFlows.includes(flow as Flow)) {
     margins.marginLeft = halfSpaceInline;
     margins.marginRight = halfSpaceInline;
 

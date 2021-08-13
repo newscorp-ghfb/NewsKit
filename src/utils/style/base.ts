@@ -82,9 +82,9 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
           breakpointKeys.includes(breakpointKey),
       )
       .reduce((acc, [key, presetKey], index, arr) => {
+        /* istanbul ignore next */
         const preset =
           section[presetKey] ||
-          /* istanbul ignore next */
           (canHaveNonThemeValue && isValidUnit(themeKey, presetKey)
             ? presetKey
             : '');

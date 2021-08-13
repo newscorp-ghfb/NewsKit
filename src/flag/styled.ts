@@ -27,9 +27,10 @@ export const IE11FixContainer = styled.div<BaseFlagProps<BaseFlagOverrides>>`
   }}
 `;
 
-export const StyledBaseFlag = styled.div<
+export const StyledBaseFlag = styled('div')<
   Omit<BaseFlagProps<BaseFlagOverrides>, 'loading'> & {
     $loading?: BaseFlagProps<BaseFlagOverrides>['loading'];
+    $disabled?: BaseFlagProps<BaseFlagOverrides>['disabled'];
   }
 >`
   box-sizing: border-box;
@@ -64,7 +65,7 @@ export const StyledBaseFlag = styled.div<
     ${getResponsiveSize('height', '', '', 'iconSize')};
   }
 
-  cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
+  cursor: ${({$disabled}) => ($disabled ? 'not-allowed' : 'default')};
 
   // Button related styles
   border: none;
@@ -72,9 +73,9 @@ export const StyledBaseFlag = styled.div<
   overflow: hidden;
   // End of button related styles
 
-  ${({disabled, $loading}) =>
+  ${({$disabled, $loading}) =>
     getStylePreset('', '', {
-      isDisabled: disabled,
+      isDisabled: $disabled,
       isLoading: $loading,
     })}
 `;
