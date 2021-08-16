@@ -204,6 +204,13 @@
             "id": "/components/toast",
             "description": "A Toast communicates confirmation of an action or a low-priority message that does not need to completely interrupt the user experience.",
             "illustration": "components/toast/toast-illustration"
+          },
+          {
+            "title": "Inline Message",
+            "page": true,
+            "id": "/components/inline-message",
+            "description": "An Inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.",
+            "illustration": "components/toast/toast-illustration"
           }
         ]
       },

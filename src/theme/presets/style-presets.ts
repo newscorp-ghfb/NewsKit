@@ -1579,8 +1579,6 @@ stylePresets.toastNegative = {
   },
 };
 
-// Inline Message
-
 // StructuredList
 stylePresets.structuredListItem = {
   hover: {
@@ -1596,7 +1594,7 @@ stylePresets.structuredListItem = {
 
 // Inline Message
 
-stylePresets.inlineMessage = {
+stylePresets.inlineMessageInformative = {
   base: {
     backgroundColor: '{{colors.interfaceInformative020}}',
     borderColor: '{{colors.interfaceInformative010}}',
@@ -1606,6 +1604,32 @@ stylePresets.inlineMessage = {
       '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}',
     iconColor: '{{colors.inkInformative}}',
     color: '{{colors.inkInverse}}',
+  },
+};
+
+stylePresets.inlineMessageNegative = {
+  base: {
+    backgroundColor: '{{colors.interfaceNegative020}}',
+    borderColor: '{{colors.interfaceNegative010}}',
+    borderStyle: 'solid',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}',
+    iconColor: '{{colors.inkNegative}}',
+    color: '{{colors.inkBase}}',
+  },
+};
+
+stylePresets.inlineMessageNotice = {
+  base: {
+    backgroundColor: '{{colors.interfaceNotice020}}',
+    borderColor: '{{colors.interfaceNotice010}}',
+    borderStyle: 'solid',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderWidth:
+      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}',
+    iconColor: '{{colors.inkNotice}}',
+    color: '{{colors.inkBase}}',
   },
 };
 

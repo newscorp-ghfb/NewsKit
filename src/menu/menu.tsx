@@ -29,7 +29,8 @@ export const Menu: React.FC<MenuProps> = ({
         vertical={vertical}
         {...rest}
       >
-        <ul>{children}</ul>
+        {/* eslint-disable jsx-a11y/no-redundant-roles  */}
+        <ul role="list">{children}</ul>
       </StyledMenu>
     </MenuContextProvider>
   );

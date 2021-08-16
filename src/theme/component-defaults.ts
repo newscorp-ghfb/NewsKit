@@ -873,11 +873,10 @@ export const componentDefaults = {
     },
   },
   inlineMessage: {
-    stylePreset: 'inlineMessage',
+    stylePreset: 'inlineMessageInformative',
     spaceInset: 'spaceInset030',
-    maxWidth: '100%',
     icon: {
-      spaceInline: 'space020',
+      spaceInline: 'space030',
     },
     content: {
       title: {

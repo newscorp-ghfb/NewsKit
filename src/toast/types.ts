@@ -25,7 +25,7 @@ export type ToastAsFunction = (props: {
   id: ToastID;
 }) => React.ReactNode;
 
-export interface ToastProps extends React.AriaAttributes {
+export interface ToastProps extends React.HTMLAttributes<HTMLElement> {
   role?: string;
   ariaLive?: 'assertive' | 'off' | 'polite';
   children: Exclude<React.ReactNode, 'undefined'>;

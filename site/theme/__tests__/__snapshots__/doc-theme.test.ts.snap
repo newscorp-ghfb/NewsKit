@@ -787,11 +787,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -3055,7 +3054,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -3064,6 +3063,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {
@@ -5159,11 +5180,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -7427,7 +7447,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -7436,6 +7456,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {
@@ -9531,11 +9573,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -11799,7 +11840,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -11808,6 +11849,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {
@@ -13903,11 +13966,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -16171,7 +16233,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -16180,6 +16242,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {
@@ -18275,11 +18359,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -20543,7 +20626,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -20552,6 +20635,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {
@@ -22647,11 +22752,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -24915,7 +25019,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -24924,6 +25028,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {
@@ -27019,11 +27145,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -29287,7 +29412,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -29296,6 +29421,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {
@@ -31391,11 +31538,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset040",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
       "width": "100%",
     },
     "link": Object {
@@ -33659,7 +33805,7 @@ Object {
         "color": "{{colors.white}}",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative020}}",
         "borderColor": "{{colors.interfaceInformative010}}",
@@ -33668,6 +33814,28 @@ Object {
         "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "borderColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice020}}",
+        "borderColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkNotice}}",
       },
     },
     "linkEmail": Object {

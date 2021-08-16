@@ -712,11 +712,10 @@ Object {
         },
       },
       "icon": Object {
-        "spaceInline": "space020",
+        "spaceInline": "space030",
       },
-      "maxWidth": "100%",
       "spaceInset": "spaceInset030",
-      "stylePreset": "inlineMessage",
+      "stylePreset": "inlineMessageInformative",
     },
     "link": Object {
       "externalIcon": Object {
@@ -2679,7 +2678,7 @@ Object {
         "iconColor": "#535353",
       },
     },
-    "inlineMessage": Object {
+    "inlineMessageInformative": Object {
       "base": Object {
         "backgroundColor": "#e8f6f8",
         "borderColor": "#128293",
@@ -2688,6 +2687,28 @@ Object {
         "borderWidth": "0 0 0 4px",
         "color": "#ffffff",
         "iconColor": "#128293",
+      },
+    },
+    "inlineMessageNegative": Object {
+      "base": Object {
+        "backgroundColor": "#ffe6e5",
+        "borderColor": "#d20600",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "borderWidth": "0 0 0 4px",
+        "color": "#2e2e2e",
+        "iconColor": "#d20600",
+      },
+    },
+    "inlineMessageNotice": Object {
+      "base": Object {
+        "backgroundColor": "#ffeecf",
+        "borderColor": "#ff6000",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "borderWidth": "0 0 0 4px",
+        "color": "#2e2e2e",
+        "iconColor": "#ff7200",
       },
     },
     "linkEmail": Object {

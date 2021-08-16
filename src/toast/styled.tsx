@@ -63,7 +63,6 @@ export const StyledToastBar = styled.div<{
   flex-direction: column;
   ${({position, ...props}) =>
     getSpacingCssFromTheme(getSpaceBetweenToasts(position), 'space020')(props)}
-
   ${({position}) => ({
     alignItems: getHorizontalPosition(position),
     [getVerticalPosition(position)]: 0,
@@ -75,7 +74,6 @@ export const StyledToastBar = styled.div<{
   ${getMotionCssFromTheme('transitionTimingFunction', 'motionEaseInAndOut')};
   ${getMotionCssFromTheme('animationDuration', 'motionDuration020')}
   ${getMotionCssFromTheme('animationTimingFunction', 'motionEaseInAndOut')};
-
   > * {
     // allow events to all direct children
     pointer-events: ${({visible}) => (visible ? 'initial' : 'none')};
@@ -119,7 +117,6 @@ export const StyledMessageContainer = styled(TextBlock)<
   ${getTypographyPreset('toast.content.message', 'content.message', {
     withCrop: true,
   })};
-
   ${getStylePreset('toast.content.message', 'content.message')};
 `;
 
@@ -129,9 +126,7 @@ export const StyledTitleContainer = styled(TextBlock)<
   ${getTypographyPreset('toast.content.title', 'content.title', {
     withCrop: true,
   })};
-
   ${getStylePreset('toast.content.title', 'content.title')};
-
   ${getResponsiveSpace(
     'marginBottom',
     'toast.content.title',
@@ -142,7 +137,6 @@ export const StyledTitleContainer = styled(TextBlock)<
 
 export const StyledIconContainer = styled.div<Pick<ToastProps, 'overrides'>>`
   ${getResponsiveSpace('marginRight', 'toast.icon', 'icon', 'spaceInline')}
-
   // clean inline space
   svg {
     display: block;

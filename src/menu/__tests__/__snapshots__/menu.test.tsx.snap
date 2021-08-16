@@ -215,7 +215,9 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-group emotion-1"
       >
@@ -570,7 +572,9 @@ exports[`Menu renders horizontally with menu group 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-group emotion-1"
       >
@@ -872,7 +876,9 @@ exports[`Menu renders horizontally with menu items 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -1206,7 +1212,9 @@ exports[`Menu renders vertically with menu dividers 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-group emotion-1"
       >
@@ -1567,7 +1575,9 @@ exports[`Menu renders vertically with menu group 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-group emotion-1"
       >
@@ -1879,7 +1889,9 @@ exports[`Menu renders vertically with menu items 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -2179,7 +2191,9 @@ exports[`Menu renders with Large size menu items 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -2469,7 +2483,9 @@ exports[`Menu renders with Large size menu items 2`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -2769,7 +2785,9 @@ exports[`Menu renders with Medium size menu items 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -3059,7 +3077,9 @@ exports[`Menu renders with Medium size menu items 2`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -3359,7 +3379,9 @@ exports[`Menu renders with Small size menu items 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -3649,7 +3671,9 @@ exports[`Menu renders with Small size menu items 2`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -3939,7 +3963,9 @@ exports[`Menu renders with default props 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -4234,7 +4260,9 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -4524,7 +4552,9 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -4824,7 +4854,9 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -5119,7 +5151,9 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -5419,7 +5453,9 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -5714,7 +5750,9 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
     data-testid="menu-container"
     role="navigation"
   >
-    <ul>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >

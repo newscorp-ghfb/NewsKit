@@ -1,7 +1,8 @@
+import {EmailInputProps} from './types';
 import {TextInput} from '../text-input';
 import {withDefaultProps} from '../utils';
 
-export const EmailInput = withDefaultProps(TextInput, {
+export const EmailInput = withDefaultProps<EmailInputProps>(TextInput, {
   type: 'email',
   rules: {
     required: 'Required field',
