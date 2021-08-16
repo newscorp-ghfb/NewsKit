@@ -22,6 +22,7 @@ export * from './image';
 export * from './instrumentation';
 export * from './link';
 export * from './menu';
+export * from './modal';
 export * from './ordered-list';
 export * from './unordered-list';
 export * from './utils';

@@ -62,6 +62,7 @@ Array [
   "MenuDivider",
   "MenuGroup",
   "MenuItem",
+  "Modal",
   "OrderedList",
   "P",
   "Paragraph",
