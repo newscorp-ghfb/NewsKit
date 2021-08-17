@@ -3,6 +3,7 @@ import {MQ} from '../utils/style';
 import {BaseFlagProps, BaseFlagOverrides} from '../flag';
 import {DividerOverrides} from '../divider';
 import {ScrollProps} from '../scroll';
+import {Override} from '../utils/overrides';
 
 export enum TabAlign {
   Start = 'start',
@@ -57,7 +58,7 @@ export interface TabsProps {
         stylePreset?: MQ<string>;
       };
     };
-    scroll?: ScrollProps['overrides'];
+    scroll?: Override<ScrollProps>;
   };
 }
 

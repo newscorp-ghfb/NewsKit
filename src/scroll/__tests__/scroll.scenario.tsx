@@ -148,7 +148,7 @@ export default {
                     button: {
                       stylePreset: 'scrollArrowsCustom',
                     },
-                    offset: '0px',
+                    offset: '10px',
                   },
                   overlays: {
                     stylePreset: 'overlaysCustom',

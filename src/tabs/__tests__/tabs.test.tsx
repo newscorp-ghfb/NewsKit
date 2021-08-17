@@ -407,6 +407,30 @@ describe('Tabs', () => {
     expect(onChange).toHaveBeenCalledTimes(1);
     expect(onChange).toHaveBeenCalledWith(1);
   });
+
+  test('with custom scroll props', () => {
+    const props: TabsProps = {
+      children: tabsWithLabelAndIcons,
+      overrides: {scroll: {props: {controls: 'hover', scrollBar: true}}},
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('with custom scroll component', () => {
+    const props: TabsProps = {
+      children: tabsWithLabelAndIcons,
+      overrides: {
+        scroll: ({children}) => (
+          <div data-test-id="custom-scroll">{children}</div>
+        ),
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
 const tabs = [

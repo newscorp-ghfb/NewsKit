@@ -60,6 +60,23 @@ const myCustomTheme = createTheme({
           borderWidth: '{{borders.borderWidth030}}',
         },
       },
+      scrollArrowsCustom: {
+        base: {
+          backgroundColor: '{{colors.amber010}}',
+          color: '{{colors.purple050}}',
+          iconColor: '{{colors.purple050}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber020}}',
+        },
+        active: {
+          backgroundColor: '{{colors.amber060}}',
+        },
+        disabled: {
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+      },
     },
   },
 });
@@ -1031,5 +1048,78 @@ export default {
         </MainContainer>
       ),
     },
+    {
+      storyName: 'tabs-with-scroll-overrides',
+      parameters: {eyes: {include: false}},
+      storyFn: () => (
+        <ThemeProvider theme={myCustomTheme}>
+          <MainContainer>
+            <StorybookHeading>Tabs With Scroll Overrides</StorybookHeading>
+            <StorybookSubHeading>
+              Tabs Horizontal With Scroll Overridies via Component
+            </StorybookSubHeading>
+            <Tabs
+              overrides={{
+                scroll: ({children, vertical}) => (
+                  <Scroll
+                    controls="hover"
+                    snapAlign="center"
+                    vertical={vertical}
+                  >
+                    {children}
+                  </Scroll>
+                ),
+              }}
+            >
+              {Array.from(Array(15)).map((_, i) => (
+                <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
+              ))}
+            </Tabs>
+            <hr />
+            <Tabs
+              overrides={{
+                scroll: ({children}) => <CustomScroll>{children}</CustomScroll>,
+              }}
+            >
+              {Array.from(Array(15)).map((_, i) => (
+                <Tab label={`Tab text here  ${i}`}>Content {i}</Tab>
+              ))}
+            </Tabs>
+
+            <StorybookSubHeading>
+              Tabs Horizontal With Scroll Overridies via Props
+            </StorybookSubHeading>
+            <Tabs
+              overrides={{
+                scroll: {
+                  props: {
+                    scrollBar: true,
+                    controls: 'hover',
+                    overrides: {
+                      controls: {
+                        button: {
+                          stylePreset: 'scrollArrowsCustom',
+                        },
+                        offset: '0px',
+                      },
+                    },
+                  },
+                },
+              }}
+            >
+              {Array.from(Array(15)).map((_, i) => (
+                <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
+              ))}
+            </Tabs>
+          </MainContainer>
+        </ThemeProvider>
+      ),
+    },
   ],
 };
+
+const CustomScroll = styled.div`
+  max-width: 100%;
+  overflow: auto;
+  border: 5px solid red;
+`;

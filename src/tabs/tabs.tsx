@@ -19,7 +19,7 @@ import {
 } from './styled';
 import {Flow} from '../stack';
 import {TabInternal} from './tab-internal';
-import {BreakpointKeys, useTheme} from '../theme';
+import {useTheme} from '../theme';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {
   getTabsBarIndicatorStyle,
@@ -35,9 +35,8 @@ import {hasMatchingDisplayNameWith} from '../utils/component';
 import {useReactKeys} from '../utils/hooks';
 import {get} from '../utils/get';
 import {Scroll, ScrollSnapAlignment} from '../scroll';
-import {deepMerge} from '../utils';
-import {filterOutFalsyProperties} from '../utils/filter-object';
-import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
+import {getComponentOverrides} from '../utils/overrides';
+import {withDefaultProps} from '../utils';
 import {Divider} from '../divider';
 
 /* istanbul ignore next */
@@ -56,6 +55,12 @@ const getAlign = (align: TabAlign | undefined, vertical: boolean) => {
   return align;
 };
 
+const DefaultScroll = withDefaultProps(
+  Scroll,
+  {controls: 'static', snapAlign: 'center'},
+  'tabs.scroll',
+);
+
 export const Tabs: React.FC<TabsProps> = ({
   children,
   overrides = {},
@@ -71,13 +76,15 @@ export const Tabs: React.FC<TabsProps> = ({
   const theme = useTheme();
   const align = getAlign(passedAlign, vertical);
 
-  const scrollOverrides = {
-    ...deepMerge(
-      mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults.tabs.scroll,
-      filterOutFalsyProperties(overrides.scroll),
-    ),
-  };
+  const [ScrollComponent, scrollProps] = getComponentOverrides(
+    /* istanbul ignore next */
+    overrides?.scroll,
+    DefaultScroll,
+    {
+      vertical,
+      tabIndex: undefined,
+    },
+  );
 
   // filter out children which are not Tab component
   const tabsOnlyChildren = React.Children.toArray(
@@ -308,13 +315,7 @@ export const Tabs: React.FC<TabsProps> = ({
         vertical={vertical}
         data-testid="tab-bar"
       >
-        <Scroll
-          controls="static"
-          snapAlign="center"
-          vertical={vertical}
-          overrides={scrollOverrides}
-          tabIndex={undefined}
-        >
+        <ScrollComponent {...scrollProps}>
           <StyledInnerTabGroup
             overrides={overrides}
             flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
@@ -341,7 +342,7 @@ export const Tabs: React.FC<TabsProps> = ({
               role="presentation"
             />
           </StyledInnerTabGroup>
-        </Scroll>
+        </ScrollComponent>
         <StyledTabsBarTrack
           overrides={overrides}
           vertical={vertical}

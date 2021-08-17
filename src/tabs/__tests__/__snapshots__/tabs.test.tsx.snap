@@ -19719,6 +19719,1238 @@ exports[`Tabs sets active on click 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Tabs with custom scroll component 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-1 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-3>* {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  scroll-snap-align: start;
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-6:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-6:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-6 svg {
+  fill: #0a68c1;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-8 {
+    max-width: 100%;
+  }
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-12 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-12::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-12::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-16 {
+  scroll-snap-align: center;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-18 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-18 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-18:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-18:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-18:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-18:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-18:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-18:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-28 {
+  scroll-snap-align: end;
+}
+
+.emotion-39 {
+  background-color: #0a68c1;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-40 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-41 {
+  margin: 0;
+  padding: 1px 0;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+    data-testid="tab-group"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tab-bar"
+    >
+      <div
+        data-test-id="custom-scroll"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="emotion-2"
+          role="tablist"
+        >
+          <div
+            class="emotion-3"
+            data-testid="distribution-wrapper"
+          >
+            <div
+              class="emotion-4"
+            >
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="true"
+                  class="emotion-6"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <div
+                    class="emotion-7"
+                  >
+                    <div
+                      class="emotion-8"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-9 emotion-10"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-8"
+                    >
+                      <span
+                        class="emotion-12"
+                      >
+                        First
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-8"
+                    >
+                      <span
+                        class="emotion-12"
+                      >
+                         tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-3"
+            data-testid="distribution-wrapper"
+          >
+            <div
+              class="emotion-16"
+            >
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-18"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-7"
+                  >
+                    <div
+                      class="emotion-8"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-9 emotion-10"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-8"
+                    >
+                      <span
+                        class="emotion-12"
+                      >
+                        Second
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-8"
+                    >
+                      <span
+                        class="emotion-12"
+                      >
+                         tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-3"
+            data-testid="distribution-wrapper"
+          >
+            <div
+              class="emotion-28"
+            >
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-18"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-7"
+                  >
+                    <div
+                      class="emotion-8"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="emotion-9 emotion-10"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="emotion-8"
+                    >
+                      <span
+                        class="emotion-12"
+                      >
+                        Third
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-8"
+                    >
+                      <span
+                        class="emotion-12"
+                      >
+                         tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="emotion-39"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-40"
+        data-testid="tab-bar-track"
+        role="presentation"
+      />
+    </div>
+    <div
+      aria-hidden="false"
+      aria-labelledby="mock-nk-1"
+      class="emotion-41"
+      data-testid="tab-panel"
+      role="tabpanel"
+      tabindex="0"
+    >
+      First tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-41"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Second tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-41"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Third tab content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tabs with custom scroll props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-1 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-2 .nk-scroll-controls {
+  display: none;
+}
+
+.emotion-2:hover .nk-scroll-controls {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-animation: fade-in 1s;
+  animation: fade-in 1s;
+}
+
+.emotion-2:not(:hover) .nk-scroll-controls {
+  -webkit-animation: fade-out 1s;
+  animation: fade-out 1s;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-5>* {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 {
+  scroll-snap-align: start;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-8:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-8 svg {
+  fill: #0a68c1;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-10 {
+    max-width: 100%;
+  }
+}
+
+.emotion-11 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-14 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-14::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-14::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-18 {
+  scroll-snap-align: center;
+}
+
+.emotion-20 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-20 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-20 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-20:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-20:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-20:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-20:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-20:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-20:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-30 {
+  scroll-snap-align: end;
+}
+
+.emotion-41 {
+  background-color: #0a68c1;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-42 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-43 {
+  margin: 0;
+  padding: 1px 0;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+    data-testid="tab-group"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tab-bar"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="emotion-3"
+          data-testid="scroll-container"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="emotion-4"
+            role="tablist"
+          >
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <button
+                    aria-controls="mock-nk-1"
+                    aria-selected="true"
+                    class="emotion-8"
+                    data-testid="tab"
+                    id="mock-nk-1"
+                    role="tab"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <div
+                        class="emotion-10"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-11 emotion-12"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                          First
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-18"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <button
+                    aria-controls="mock-nk-1"
+                    aria-selected="false"
+                    class="emotion-20"
+                    data-testid="tab"
+                    id="mock-nk-1"
+                    role="tab"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <div
+                        class="emotion-10"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-11 emotion-12"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                          Second
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-30"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <button
+                    aria-controls="mock-nk-1"
+                    aria-selected="false"
+                    class="emotion-20"
+                    data-testid="tab"
+                    id="mock-nk-1"
+                    role="tab"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <div
+                        class="emotion-10"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-11 emotion-12"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                          Third
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-10"
+                      >
+                        <span
+                          class="emotion-14"
+                        >
+                           tab
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="emotion-41"
+              data-testid="tab-bar-indicator"
+              role="presentation"
+              style="width: 0px; height: 2px; transform: translateX(0px);"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-42"
+        data-testid="tab-bar-track"
+        role="presentation"
+      />
+    </div>
+    <div
+      aria-hidden="false"
+      aria-labelledby="mock-nk-1"
+      class="emotion-43"
+      data-testid="tab-panel"
+      role="tabpanel"
+      tabindex="0"
+    >
+      First tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-43"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Second tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-43"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Third tab content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`tabs indicatorPosition renders horizontal tabs with no selection indicator displayed 1`] = `
 <DocumentFragment>
   .emotion-0 {
