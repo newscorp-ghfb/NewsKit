@@ -345,9 +345,6 @@ export default {
     },
     {
       storyName: 'toast-api',
-      parameters: {
-        eyes: {include: false},
-      },
       storyFn: () => {
         const ToastWithState = () => {
           const [state, setState] = React.useState(false);
@@ -465,6 +462,9 @@ export default {
             />
           </ThemeProvider>
         );
+      },
+      parameters: {
+        eyes: {include: false},
       },
     },
   ],

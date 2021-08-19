@@ -340,45 +340,47 @@ export default {
   children: [
     {
       storyName: 'card-small-without-inset',
+      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
       parameters: {
         viewport: {defaultViewport: 'iphone5'},
         eyes: {include: false},
       },
-      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
       storyName: 'card-medium-without-inset',
-      parameters: {viewport: {defaultViewport: 'ipad'}, eyes: {include: false}},
       storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
+      parameters: {viewport: {defaultViewport: 'ipad'}, eyes: {include: false}},
     },
     {
       storyName: 'card-large-without-inset',
+      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
       parameters: {
         viewport: {defaultViewport: 'ipad12p'},
         eyes: {include: false},
       },
-      storyFn: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
       storyName: 'card-small-with-inset',
+
+      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
       parameters: {
         viewport: {defaultViewport: 'iphone5'},
         eyes: {include: false},
       },
-      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
       storyName: 'card-medium-with-inset',
-      parameters: {viewport: {defaultViewport: 'ipad'}, eyes: {include: false}},
       storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
+      parameters: {viewport: {defaultViewport: 'ipad'}, eyes: {include: false}},
     },
     {
       storyName: 'card-large-with-inset',
+
+      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
       parameters: {
         viewport: {defaultViewport: 'ipad12p'},
         eyes: {include: false},
       },
-      storyFn: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
       storyName: 'card-without-inset',
@@ -688,7 +690,6 @@ export default {
     },
     {
       storyName: 'card-without-inset-link-containers-and-headline-overrides',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
@@ -753,10 +754,10 @@ export default {
           </ContainerWithBackground>
         </React.Fragment>
       ),
+      parameters: {eyes: {include: false}},
     },
     {
       storyName: 'card-with-inset-link-containers-and-headline-overrides',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
@@ -818,6 +819,7 @@ export default {
           </ContainerWithBackground>
         </React.Fragment>
       ),
+      parameters: {eyes: {include: false}},
     },
     {
       storyName: 'card-horizontal',
@@ -990,7 +992,6 @@ export default {
     {
       storyName:
         'card-horizontal-without-inset-link-containers-and-headline-overrides',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
@@ -1056,11 +1057,11 @@ export default {
           </ContainerWithBackground>
         </React.Fragment>
       ),
+      parameters: {eyes: {include: false}},
     },
     {
       storyName:
         'card-horizontal-reverse-with-inset-link-containers-and-headline-overrides',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <React.Fragment>
           <StorybookHeading>
@@ -1125,6 +1126,7 @@ export default {
           </ContainerWithBackground>
         </React.Fragment>
       ),
+      parameters: {eyes: {include: false}},
     },
     {
       storyName: 'card-horizontal-with-ratio',
@@ -1284,7 +1286,6 @@ export default {
     // Please don't place any other stories after this one.
     {
       storyName: 'card-slices',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Card Slices</StorybookHeading>
@@ -1691,6 +1692,7 @@ export default {
           </ThemeProvider>
         </React.Fragment>
       ),
+      parameters: {eyes: {include: false}},
     },
     // Please don't place any other stories after this one.
     // If you want to add a new story add it before the one above.

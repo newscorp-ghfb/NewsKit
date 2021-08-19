@@ -3,18 +3,31 @@ const path = require('path');
 const toPath = _path => path.join(process.cwd(), _path);
 
 module.exports = {
-  stories: ['./load-stories.js'],
+  stories: ['../src/**/*.stories.tsx'],
   addons: [
     '@storybook/addon-links',
     {
       name: '@storybook/addon-essentials',
       options: {
         docs: false,
-        controls: false,
+        controls: true,
         actions: false,
       },
     },
     'storybook-addon-performance/register',
+    {
+      name: '@storybook/addon-storysource',
+      options: {
+        rule: {
+          test: [/\.stories\.tsx$/],
+          include: [path.resolve(__dirname, '../src')],
+        },
+        loaderOptions: {
+          parser: 'typescript', //This might not be needed
+          prettierConfig: {printWidth: 80, singleQuote: false},
+        },
+      },
+    },
   ],
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved
@@ -42,6 +55,6 @@ module.exports = {
     };
   },
   typescript: {
-    reactDocgen : false // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
-  }
+    reactDocgen: false, // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
+  },
 };

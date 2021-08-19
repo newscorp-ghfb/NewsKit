@@ -164,7 +164,6 @@ export default {
     },
     {
       storyName: 'scroll-snap',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <MainContainer>
           <StorybookSubHeading>Scroll snap - start</StorybookSubHeading>
@@ -232,6 +231,7 @@ export default {
           <br />
         </MainContainer>
       ),
+      parameters: {eyes: {include: false}},
     },
     {
       storyName: 'scroll-bar',

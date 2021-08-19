@@ -10,7 +10,6 @@ export default {
   children: [
     {
       storyName: 'screen-reader-only',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <React.Fragment>
           <StorybookHeading>Screen reader only</StorybookHeading>
@@ -22,6 +21,7 @@ export default {
           </ScreenReaderOnly>
         </React.Fragment>
       ),
+      parameters: {eyes: {include: false}},
     },
   ],
 };

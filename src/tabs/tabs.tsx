@@ -77,7 +77,7 @@ export const Tabs: React.FC<TabsProps> = ({
   const align = getAlign(passedAlign, vertical);
 
   const [ScrollComponent, scrollProps] = getComponentOverrides(
-    /* istanbul ignore next */
+    /* istanbul ignore next  */
     overrides?.scroll,
     DefaultScroll,
     {

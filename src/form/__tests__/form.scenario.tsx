@@ -285,7 +285,6 @@ export default {
     },
     {
       storyName: 'form-with-phone-input',
-      parameters: {eyes: {include: false}},
       storyFn: () => {
         const FormWithPhoneInput: React.FC = () => {
           const formRef = React.useRef<FormRef>(null);
@@ -340,6 +339,7 @@ export default {
           </React.Fragment>
         );
       },
+      parameters: {eyes: {include: false}},
     },
   ],
 };

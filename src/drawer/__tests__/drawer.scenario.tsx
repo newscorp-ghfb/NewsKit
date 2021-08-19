@@ -19,7 +19,6 @@ export default {
   children: [
     {
       storyName: 'default',
-      parameters: {eyes: {include: false}},
       storyFn: () =>
         React.createElement(() => {
           const [isActive, setIsActive] = React.useState(false);
@@ -137,10 +136,10 @@ export default {
             </div>
           );
         }),
+      parameters: {eyes: {include: false}},
     },
     {
       storyName: 'with aria attributes',
-      parameters: {eyes: {include: false}},
       storyFn: () =>
         React.createElement(() => {
           const [isActive, setIsActive] = React.useState(false);
@@ -165,11 +164,10 @@ export default {
             </>
           );
         }),
+      parameters: {eyes: {include: false}},
     },
     {
       storyName: 'with restore focus and custom autofocus',
-
-      parameters: {eyes: {include: false}},
       storyFn: () =>
         React.createElement(() => {
           const [isActive, setIsActive] = React.useState(false);
@@ -213,6 +211,7 @@ export default {
             </div>
           );
         }),
+      parameters: {eyes: {include: false}},
     },
   ],
 };

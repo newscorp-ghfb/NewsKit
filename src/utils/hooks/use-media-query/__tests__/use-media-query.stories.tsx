@@ -29,30 +29,31 @@ const ComponentBreakpoint = () => {
 };
 
 export default {
-  title: 'use-media-query-hook',
-  children: [
-    {
-      storyName: 'use-media-query-hook',
-      storyFn: () => (
-        <>
-          <MediaQueryProvider>
-            <StorybookHeading>useMediaQueryHooks </StorybookHeading>
-            <StorybookSubHeading>useMediaQueryObject</StorybookSubHeading>
-            <ComponentMediaQueryObject
-              mq={{
-                xs: 'xs',
-                sm: 'sm',
-                md: 'md',
-                lg: 'lg',
-                xl: 'xl',
-              }}
-            />
-            <StorybookSubHeading>useBreakpointKey</StorybookSubHeading>
-            <ComponentBreakpoint />
-          </MediaQueryProvider>
-        </>
-      ),
-      parameters: {eyes: {include: false}, disableMediaQueryDecorator: true},
-    },
-  ],
+  title: 'NewsKit Light/use-media-query-hook',
+  component: () => 'None',
+};
+
+export const StoryUseMediaQueryHook = () => (
+  <>
+    <MediaQueryProvider>
+      <StorybookHeading>useMediaQueryHooks </StorybookHeading>
+      <StorybookSubHeading>useMediaQueryObject</StorybookSubHeading>
+      <ComponentMediaQueryObject
+        mq={{
+          xs: 'xs',
+          sm: 'sm',
+          md: 'md',
+          lg: 'lg',
+          xl: 'xl',
+        }}
+      />
+      <StorybookSubHeading>useBreakpointKey</StorybookSubHeading>
+      <ComponentBreakpoint />
+    </MediaQueryProvider>
+  </>
+);
+StoryUseMediaQueryHook.storyName = 'use-media-query-hook';
+StoryUseMediaQueryHook.parameters = {
+  eyes: {include: false},
+  disableMediaQueryDecorator: true,
 };

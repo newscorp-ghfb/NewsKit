@@ -246,7 +246,6 @@ export default {
     },
     {
       storyName: 'lazy-loading',
-      parameters: {eyes: {include: false}},
       storyFn: () => {
         const getImages = (num: number) => {
           const images = [];
@@ -270,6 +269,7 @@ export default {
 
         return <div>{getImages(30)}</div>;
       },
+      parameters: {eyes: {include: false}},
     },
   ],
 };

@@ -74,10 +74,7 @@ const StyledFullWidthVisible = styled(Visible)`
   width: 100%;
 `;
 
-export const BannerWithState: React.FC<BannerProps> = ({
-  children,
-  ...restProps
-}) => {
+const BannerWithState: React.FC<BannerProps> = ({children, ...restProps}) => {
   const [isActive, setIsActive] = React.useState(true);
 
   const close = () => setIsActive(false);
@@ -138,7 +135,7 @@ export const BannerWithState: React.FC<BannerProps> = ({
   );
 };
 
-export const BannerIntentNotice: React.FC<BannerProps> = ({
+const BannerIntentNotice: React.FC<BannerProps> = ({
   children,
   ...restProps
 }) => (
@@ -153,7 +150,7 @@ export const BannerIntentNotice: React.FC<BannerProps> = ({
   </BannerWithState>
 );
 
-export const BannerIntentNegative: React.FC<BannerProps> = ({
+const BannerIntentNegative: React.FC<BannerProps> = ({
   children,
   ...restProps
 }) => (

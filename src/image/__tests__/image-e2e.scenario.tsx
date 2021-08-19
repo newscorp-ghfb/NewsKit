@@ -11,7 +11,6 @@ export default {
   children: [
     {
       storyName: 'e2e-test',
-      parameters: {eyes: {include: false}},
       storyFn: () => (
         <ImageContainer>
           <p>Scroll down</p>
@@ -25,6 +24,7 @@ export default {
           />
         </ImageContainer>
       ),
+      parameters: {eyes: {include: false}},
     },
   ],
 };
