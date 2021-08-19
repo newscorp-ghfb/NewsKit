@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {Block, Cell, Grid} from 'newskit';
+import Head from 'next/head';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {Separator} from '../../components/separator';
 import {HeaderImage} from '../../components/illustrations/components/header-image';
@@ -16,6 +17,13 @@ const componentCategories: any =
 
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
+    <Head>
+      <title key="title">Components overview - NewsKit design system</title>
+      <meta
+        name="Description"
+        content="Components are key building blocks of the NewsKit design system."
+      />
+    </Head>
     <HeaderIndex title="Components" media={HeaderImage}>
       Components are key building blocks of the NewsKit design system.
     </HeaderIndex>

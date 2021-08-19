@@ -7,6 +7,7 @@ import {
   Link,
   styled,
 } from 'newskit';
+import Head from 'next/head';
 import {Separator} from '../../components/separator';
 import {ComponentPageCell} from '../../components/layout-cells';
 import Layout, {LayoutProps} from '../../components/layout';
@@ -20,6 +21,13 @@ const WrapperWithPadding = styled.div`
 
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
+    <Head>
+      <title key="title">Contact us | NewsKit design system</title>
+      <meta
+        name="Description"
+        content="Have a question about our design system? The NewsKit team is here to help you."
+      />
+    </Head>
     <WrapperWithPadding />
 
     <PageIntroduction

@@ -38,6 +38,11 @@ const PlaygroundContainer = styled.div`
 
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
+    headTags={{
+      title: 'Banner | Newskit design system',
+      description:
+        'A Banner communicates essential information without blocking an experience. They are positioned at the top of the screen, so they are noticeable. They require user action to disappear.',
+    }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Components',

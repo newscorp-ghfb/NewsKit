@@ -1,5 +1,6 @@
 import React from 'react';
 import {Cell, Grid} from 'newskit';
+import Head from 'next/head';
 import {HeaderImage} from '../../components/illustrations/foundations/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -93,6 +94,13 @@ const cardsContent = [
 
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
+    <Head>
+      <title key="title">Foundations overview | NewsKit design system</title>
+      <meta
+        name="Description"
+        content="NewsKit foundations define the visual elements that inform the look and feel of UI components."
+      />
+    </Head>
     <HeaderIndex title="Foundations" media={HeaderImage}>
       NewsKit foundations define the visual elements that inform the look and
       feel of UI components.

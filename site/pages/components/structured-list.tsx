@@ -16,6 +16,10 @@ import {ComponentPageTemplate} from '../../components/component-page-template';
 
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
+    headTags={{
+      title: 'StructuredList | Newskit design system',
+      description: '',
+    }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Component',

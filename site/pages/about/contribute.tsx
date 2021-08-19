@@ -7,6 +7,7 @@ import {
   getSizingCssFromTheme,
   styled,
 } from 'newskit';
+import Head from 'next/head';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -79,6 +80,13 @@ const cards = [
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
+    <Head>
+      <title key="title">Contribute | NewsKit design system</title>
+      <meta
+        name="Description"
+        content="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
+      />
+    </Head>
     <WrapperWithPadding />
     <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction

@@ -33,6 +33,10 @@ jest.mock('../../table-of-contents', () => ({
 }));
 
 const mandatoryProps: ComponentPageTemplateProps = {
+  headTags: {
+    title: 'title tag text',
+    description: 'description for SEO',
+  },
   layoutProps: {
     toggleTheme: ('toggle-theme-function' as any) as () => void,
     themeMode: 'theme-mode',

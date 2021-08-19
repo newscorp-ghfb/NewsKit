@@ -23,6 +23,11 @@ const PlaygroundContainer = styled.div`
 
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
+    headTags={{
+      title: 'Toast | Newskit design system',
+      description:
+        'A Toast communicates confirmation of an action or a low-priority message that does not need to completely interrupt the user experience.',
+    }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Feedback & Status',

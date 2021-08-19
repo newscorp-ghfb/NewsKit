@@ -7,6 +7,7 @@ import {
   Paragraph,
   styled,
 } from 'newskit';
+import Head from 'next/head';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -130,6 +131,13 @@ const cards = [
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
+    <Head>
+      <title key="title">About | NewsKit design system</title>
+      <meta
+        name="Description"
+        content="NewsKit is News UK’s design system. It provides interactive building blocks and guidelines for crafting cohesive digital product interfaces and accelerating development. build better products faster."
+      />
+    </Head>
     <WrapperWithPadding />
     <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction

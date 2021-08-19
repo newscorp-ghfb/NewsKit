@@ -15,6 +15,10 @@ import {
 } from './sections';
 
 export interface ComponentPageTemplateProps extends IntroductionSectionProps {
+  headTags: {
+    title: string;
+    description: string;
+  };
   layoutProps: LayoutProps;
   componentDefaultsKey: string;
   interactiveDemo?: InteractiveDemoSectionProps;

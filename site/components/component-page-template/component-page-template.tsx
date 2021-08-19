@@ -1,5 +1,6 @@
 import React from 'react';
 import {Cell, Grid, getSizingFromTheme, styled} from 'newskit';
+import Head from 'next/head';
 import Layout from '../layout';
 import {TableOfContents} from '../table-of-contents';
 import {ComponentPageTemplateProps} from './types';
@@ -25,6 +26,7 @@ const WrapperWithPadding = styled.div`
 `;
 
 export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
+  headTags,
   layoutProps,
   pageIntroduction,
   meta,
@@ -41,6 +43,10 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   related,
 }: ComponentPageTemplateProps) => (
   <Layout {...layoutProps} newPage>
+    <Head>
+      <title>{headTags.title}</title>
+      <meta name="Description" content={headTags.description} />
+    </Head>
     <WrapperWithPadding>
       <Grid xsRowGutter="space000">
         <IntroductionSection pageIntroduction={pageIntroduction} meta={meta} />

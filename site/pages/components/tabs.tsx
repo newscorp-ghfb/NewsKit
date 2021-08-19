@@ -20,6 +20,11 @@ import {ComponentPageTemplate} from '../../components/component-page-template';
 
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
+    headTags={{
+      title: 'Tabs | Newskit design system',
+      description:
+        'Tabs allow users to alternate between views within the same context.',
+    }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Navigation',
