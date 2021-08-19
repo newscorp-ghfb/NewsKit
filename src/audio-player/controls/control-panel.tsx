@@ -38,7 +38,7 @@ export interface ControlPanelProps extends TrackControlProps {
 }
 
 export const ButtonsContainer = styled(Stack)`
-  min-width: 316px;
+  min-width: 100%;
 `;
 
 export const ControlPanel: React.FC<ControlPanelProps> = React.memo(

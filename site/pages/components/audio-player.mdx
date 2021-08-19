@@ -64,6 +64,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       to the start of the track.
     </b>
   </Prop>
+  <Prop name="hidePreviousTrack" type="boolean">
+    Will hide the previous track button.
+  </Prop>
   <Prop name="onNextTrack" type="function">
     Will display the next track button, provided function is executed on click.
   </Prop>
@@ -72,6 +75,12 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   </Prop>
   <Prop name="disablePreviousTrack" type="boolean">
     Disable the previous track button.
+  </Prop>
+   <Prop name="hideVolumeControl" type="boolean">
+    If provided it hides the volumne control.
+  </Prop>
+   <Prop name=" hideSeekButtons" type="boolean">
+    If provided it hides the seek buttons.
   </Prop>
   <Prop name="popoutHref" type="string">
     Url to player hosted by itself on page. Will open in a new window and pause

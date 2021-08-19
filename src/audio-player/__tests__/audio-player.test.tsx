@@ -313,7 +313,30 @@ describe('Audio Player', () => {
     fireEvent.click(getByTestId('audio-player-skip-previous'));
     expect(onPreviousTrack).not.toHaveBeenCalled();
   });
-
+  test('hides previousTrack as expected', () => {
+    const props = {
+      ...recordedAudioProps,
+      hidePreviousTrack: true,
+    };
+    const {asFragment} = renderWithTheme(AudioPlayer, props);
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('hides volume control as expected', () => {
+    const props = {
+      ...recordedAudioProps,
+      hideVolumeControl: true,
+    };
+    const {asFragment} = renderWithTheme(AudioPlayer, props);
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('hides seek buttons as expected', () => {
+    const props = {
+      ...recordedAudioProps,
+      hideSeekButtons: true,
+    };
+    const {asFragment} = renderWithTheme(AudioPlayer, props);
+    expect(asFragment()).toMatchSnapshot();
+  });
   test('changing src maintains expected playback state', () => {
     const {getByTestId, rerender} = renderWithTheme(
       AudioPlayer,

@@ -10,6 +10,9 @@ export interface AudioPlayerProps
   popoutHref?: string;
   live?: boolean;
   ariaLandmark?: string;
+  hideVolumeControl?: boolean;
+  hidePreviousTrack?: boolean;
+  hideSeekButtons?: boolean;
   overrides?: {
     seekBar?: {
       slider?: SliderOverrideProps;

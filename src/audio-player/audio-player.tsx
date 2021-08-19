@@ -22,7 +22,6 @@ import {
 import {StyledTrack} from '../slider/styled';
 import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style';
-import {getSSRId} from '../utils/get-ssr-id';
 import {LabelPosition} from '../slider/types';
 import {AudioEvents, AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
@@ -30,6 +29,7 @@ import {StackChild} from '../stack-child';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import {useReactKeys} from '../utils/hooks';
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
@@ -40,6 +40,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     popoutHref,
     overrides = {},
     src,
+    hidePreviousTrack = false,
+    hideVolumeControl = false,
+    hideSeekButtons = false,
     ariaLandmark = 'audio player',
     autoPlay,
     children,
@@ -223,7 +226,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     ? formatTrackTime(trackPositionArr[0], duration)
     : '';
 
-  const srOnlyForwardRewind = getSSRId();
+  const [srOnlyForwardRewind] = useReactKeys(1);
 
   return (
     <PlayerContainer aria-label={ariaLandmark}>
@@ -263,14 +266,16 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               <ControlPanel
                 onNextTrack={onNextTrack ? onClickNext : undefined}
                 disableNextTrack={disableNextTrack}
-                onPreviousTrack={onClickPrevious}
+                onPreviousTrack={
+                  hidePreviousTrack ? undefined : onClickPrevious
+                }
                 disablePreviousTrack={isPrevTrackBtnDisabled}
                 live={live}
                 showControls={showControls}
                 loading={loading}
                 playing={playing}
-                onClickBackward={onClickBackward}
-                onClickForward={onClickForward}
+                onClickBackward={hideSeekButtons ? undefined : onClickBackward}
+                onClickForward={hideSeekButtons ? undefined : onClickForward}
                 togglePlay={togglePlay}
                 overrides={{
                   ...controlButtonsDefaults,
@@ -286,14 +291,16 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 md
                 targetDevices={[Devices.iPadPro, Devices.iPad]}
               >
-                <VolumeControl
-                  volume={volume}
-                  onChange={onChangeVolumeSlider}
-                  overrides={{
-                    ...volumeControlDefaults,
-                    ...filterOutFalsyProperties(volumeControlOverrides),
-                  }}
-                />
+                {!hideVolumeControl && (
+                  <VolumeControl
+                    volume={volume}
+                    onChange={onChangeVolumeSlider}
+                    overrides={{
+                      ...volumeControlDefaults,
+                      ...filterOutFalsyProperties(volumeControlOverrides),
+                    }}
+                  />
+                )}
               </ControlContainer>
             </StackChild>
             <StackChild order={3}>

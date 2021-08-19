@@ -145,6 +145,7 @@ export default {
             <AudioPlayer
               {...recordedAudioProps}
               ariaLandmark="audio player default"
+              hideVolumeControl
             />
           </AudioPlayerContainer>
           <StorybookSubHeading>with overrides</StorybookSubHeading>
@@ -286,6 +287,53 @@ export default {
               disableNextTrack
               disablePreviousTrack
               ariaLandmark="audio player with disabled controls"
+            />
+          </AudioPlayerContainer>
+        </>
+      ),
+    },
+    {
+      storyName: 'recorded-with-hidden-controls',
+      storyFn: () => (
+        <>
+          <StorybookSubHeading>with hidden volume control</StorybookSubHeading>
+          <AudioPlayerContainer>
+            <AudioPlayer
+              {...recordedAudioProps}
+              hideVolumeControl
+              onNextTrack={() => {}}
+              onPreviousTrack={() => {}}
+              ariaLandmark="audio player with hidden controls"
+            />
+          </AudioPlayerContainer>
+
+          <StorybookSubHeading>with hidden previous track</StorybookSubHeading>
+          <AudioPlayerContainer>
+            <AudioPlayer
+              {...recordedAudioProps}
+              hidePreviousTrack
+              ariaLandmark="audio player with hidden previous track"
+            />
+          </AudioPlayerContainer>
+
+          <StorybookSubHeading>with hidden seek buttons</StorybookSubHeading>
+          <AudioPlayerContainer>
+            <AudioPlayer
+              {...recordedAudioProps}
+              onNextTrack={() => {}}
+              onPreviousTrack={() => {}}
+              hideSeekButtons
+              ariaLandmark="audio player with hidden seek buttons"
+            />
+          </AudioPlayerContainer>
+          <StorybookSubHeading>hide all controls</StorybookSubHeading>
+          <AudioPlayerContainer>
+            <AudioPlayer
+              {...recordedAudioProps}
+              hideVolumeControl
+              hidePreviousTrack
+              hideSeekButtons
+              ariaLandmark="audio player "
             />
           </AudioPlayerContainer>
         </>
