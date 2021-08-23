@@ -1,9 +1,22 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {createTheme} from '../../theme';
 import {getTypographyPresetFromTheme, styled, MQ} from '../style';
 
 interface TestTextProp {
   typographyPreset: MQ<string>;
 }
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-typography',
+  overrides: {
+    typographyPresets: {
+      editorialParagraph030: {
+        fontSmooth: 'always',
+        fontStretch: 'condensed',
+      },
+    },
+  },
+});
 
 const TestText = styled.p<TestTextProp>`
   ${getTypographyPresetFromTheme('editorialParagraph030', 'typographyPreset')}
@@ -65,6 +78,15 @@ describe('TypographyPreset', () => {
         wrong: 'editorialHeading020',
       } as any,
     });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with fontSmooth and fontStretch', () => {
+    const fragment = renderToFragmentWithTheme(
+      TestText,
+      undefined,
+      myCustomTheme,
+    );
     expect(fragment).toMatchSnapshot();
   });
 });

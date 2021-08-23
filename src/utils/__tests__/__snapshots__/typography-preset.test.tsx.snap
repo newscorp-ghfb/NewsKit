@@ -168,6 +168,24 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
 </DocumentFragment>
 `;
 
+exports[`TypographyPreset renders with fontSmooth and fontStretch 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-smooth: always;
+  font-stretch: condensed;
+}
+
+<p
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`TypographyPreset renders with override editorialParagraph010 1`] = `
 <DocumentFragment>
   .emotion-0 {

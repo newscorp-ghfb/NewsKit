@@ -54,6 +54,8 @@ export interface TypographyPreset {
   lineHeight?: string | number | Function;
   letterSpacing?: string | number | Function;
   fontStyle?: string | Function;
+  fontSmooth?: string;
+  fontStretch?: string;
 }
 export type TypographyPresetKeys = keyof TypographyPreset;
 export type FontKeys = keyof Fonts;
