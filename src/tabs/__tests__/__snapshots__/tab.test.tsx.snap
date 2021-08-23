@@ -51,6 +51,10 @@ exports[`Tab renders a selected tab correctly with overrides 1`] = `
   height: 24px;
 }
 
+.emotion-1:focus {
+  outline-offset: -1px;
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,6 +147,10 @@ exports[`Tab renders disabled tab 1`] = `
 
 .emotion-1 svg {
   fill: #c0c0c0;
+}
+
+.emotion-1:focus {
+  outline-offset: -1px;
 }
 
 .emotion-2 {
@@ -315,6 +323,10 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
 
 .emotion-1:disabled svg {
   fill: #c0c0c0;
+}
+
+.emotion-1:focus {
+  outline-offset: -1px;
 }
 
 .emotion-2 {
@@ -511,6 +523,10 @@ exports[`Tab renders label with fallback formatting 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-1:focus {
+  outline-offset: -1px;
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -680,6 +696,10 @@ exports[`Tab renders large tab 1`] = `
 
 .emotion-1:disabled svg {
   fill: #c0c0c0;
+}
+
+.emotion-1:focus {
+  outline-offset: -1px;
 }
 
 .emotion-2 {
@@ -853,6 +873,10 @@ exports[`Tab renders small tab 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-1:focus {
+  outline-offset: -1px;
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1022,6 +1046,10 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
 
 .emotion-1:disabled svg {
   fill: #c0c0c0;
+}
+
+.emotion-1:focus {
+  outline-offset: -1px;
 }
 
 .emotion-2 {
@@ -1218,6 +1246,10 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   fill: #c0c0c0;
 }
 
+.emotion-1:focus {
+  outline-offset: -1px;
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1412,6 +1444,10 @@ exports[`Tab renders with different minHeight 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-1:focus {
+  outline-offset: -1px;
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1581,6 +1617,10 @@ exports[`Tab should render custom aria-label tab 1`] = `
 
 .emotion-1:disabled svg {
   fill: #c0c0c0;
+}
+
+.emotion-1:focus {
+  outline-offset: -1px;
 }
 
 .emotion-2 {

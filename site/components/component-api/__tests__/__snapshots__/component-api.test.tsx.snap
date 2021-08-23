@@ -944,6 +944,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   color: #555E74;
 }
 
+.emotion-39:focus {
+  outline-offset: -1px;
+}
+
 .emotion-40 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1054,6 +1058,10 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-46:active:not(:disabled) {
   color: #555E74;
+}
+
+.emotion-46:focus {
+  outline-offset: -1px;
 }
 
 .emotion-50 {

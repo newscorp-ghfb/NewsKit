@@ -95,7 +95,6 @@ const Container = styled(Block)<{width?: string; height?: string}>`
   ${getColorCssFromTheme('backgroundColor', 'neutral020')};
   width: ${({width}) => width || '300px'};
   height: ${({height}) => height || '250px'};
-  overflow: none;
 `;
 
 const LoremIpsum: React.FC<{textNumber: number; text?: Array<string>}> = ({
