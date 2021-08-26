@@ -1,6 +1,9 @@
+import {MQ} from '../utils/style/types';
 import {AlignSelfValues} from '../stack-child';
 
-export interface CommonStackProps {
+export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
+
+export interface CommonStackPropsWithoutMQ {
   spaceStack: string;
   spaceInline: string;
   flexGrow: boolean | number;
@@ -16,6 +19,7 @@ export interface CommonStackProps {
     | 'horizontal-center'
     | 'horizontal-bottom'
     | 'horizontal-stretch';
+
   stackDistribution:
     | StackDistribution
     | 'flex-start'
@@ -24,17 +28,28 @@ export interface CommonStackProps {
     | 'space-around'
     | 'space-between'
     | 'space-evenly';
+
   inline: boolean;
-  as?: keyof JSX.IntrinsicElements;
   height?: string;
 }
 
+type AddMQ<T> = {[P in keyof T]: MQ<T[P]>};
+
+type CommonStackProps = AddMQ<CommonStackPropsWithoutMQ> & {
+  as?: keyof JSX.IntrinsicElements;
+};
+
+export type DefaultStackProps = CommonStackPropsWithoutMQ & {
+  wrap: FlexWrap;
+};
+
 export interface StyledStackProps extends CommonStackProps {
-  $wrap: boolean | 'wrap' | 'nowrap';
+  $wrap: MQ<FlexWrap>;
+  $height?: MQ<string>;
 }
 
 export interface StackProps extends Partial<CommonStackProps> {
-  wrap?: boolean | 'wrap' | 'nowrap';
+  wrap?: MQ<FlexWrap>;
   list?: boolean;
   ariaLabel?: string;
   role?: string;
@@ -45,7 +60,7 @@ export interface ChildProps
     StyledStackProps,
     'spaceInline' | 'spaceStack' | 'flow' | '$wrap'
   > {
-  order?: number;
+  order?: MQ<number>;
 }
 
 export interface StyledChildProps
@@ -53,7 +68,7 @@ export interface StyledChildProps
     StyledStackProps,
     'spaceInline' | 'spaceStack' | 'flow' | '$wrap' | 'as'
   > {
-  $order?: number;
+  $order?: MQ<number>;
   $alignSelf?: AlignSelfValues;
   flexGrow?: boolean | number;
 }

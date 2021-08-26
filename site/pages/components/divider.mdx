@@ -22,6 +22,8 @@ import {
 
 export default Layout;
 
+
+
 # Divider
 
 ## Overview
@@ -39,7 +41,7 @@ This means that if you want to restrain its size, you will need to wrap it in a 
 The divider has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
 
 <LegacyBlock marginTop="sizing050">
-  <Prop name="vertical" type="boolean" default={false}>
+  <Prop name="vertical" type="MQ<boolean>" default={false}>
     If provided changes the flow of the divider to vertical.
   </Prop>
   <Prop name="overrides" type="object">
@@ -103,8 +105,8 @@ _Note: The divider always stretches to 100% of the corresponding size of the con
 
 ### With Stack
 
-In this example, we demonstrate how to use the divider inside a Stack.  We use `flow=horizontal-stretch` 
-and wrap the `Divider` in a `StackChild` to get it to stretch to the height of the container. 
+In this example, we demonstrate how to use the divider inside a Stack. We use `flow=horizontal-stretch`
+and wrap the `Divider` in a `StackChild` to get it to stretch to the height of the container.
 
 <Stack
   flow="horizontal-stretch"
@@ -121,10 +123,11 @@ and wrap the `Divider` in a `StackChild` to get it to stretch to the height of t
 <CodeFromFile path="examples/divider/divider-vertical-in-stack.tsx" />
 
 ### With Block
+
 #### horizontal Divider
 
-In this example, we demonstrate the divider as a visual separator between two block elements. 
-The container `StyledBlock` is being used to constrain the divider's width.  
+In this example, we demonstrate the divider as a visual separator between two block elements.
+The container `StyledBlock` is being used to constrain the divider's width.
 
 <StyledBlockForDivider>
   <Block spaceStack="space020">
@@ -158,4 +161,3 @@ We use `InlineDividerContainer` to constrain the height of the block.
 </Block>
 
 <CodeFromFile path="examples/divider/divider-vertical-in-block.tsx" />
-

@@ -8,67 +8,63 @@ import {Stack, Tag, Flow, StackChild} from 'newskit';
 
 export default Layout;
 
+
 # Stack & Stack Child
-
 ## Stack Overview
-
 The Stack component is a low-level foundational component used to layout items in a horizontal or vertical stack, with even spacing between the items. Distribution requires the Stacks parent to have a width and height values set.
-
 ## Stack Props
-
 The Stack has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
-
 <LegacyBlock marginTop="sizing050">
   <Prop
     name="flow"
-    type="Flow.VerticalLeft | Flow.VerticalCenter | Flow.VerticalRight | Flow.VerticalStretch | Flow.HorizontalTop | Flow.HorizontalCenter | Flow.HorizontalBottom | Flow.HorizontalStretch"
+    type="MQ<Flow.VerticalLeft | Flow.VerticalCenter | Flow.VerticalRight | Flow.VerticalStretch | Flow.HorizontalTop | Flow.HorizontalCenter | Flow.HorizontalBottom | Flow.HorizontalStretch>"
     default="Flow.Vertical"
   >
     If provided, defines the flow direction of the stack contents.
   </Prop>
-  <Prop name="inline" type="boolean">
+  <Prop name="inline" type="MQ<boolean>">
     If provided, changes the `display` to inline-flex.
   </Prop>
   <Prop
     name="stackDistribution"
-    type="StackDistribution"
+    type="MQ<StackDistribution>"
     default="StackDistribution.SpaceAround"
   >
     If provided, defines the type of spacing used to layout the items in the
     stack.
   </Prop>
-  <Prop name="spaceInline" type="string">
+  <Prop name="spaceInline" type="MQ<string>">
     When the Stack has a horizontal flow, this property is used to set
     horizontal spacing between each item. When the Stack has a vertical flow,
     this property is used to set vertical spacing between each item.
   </Prop>
-  <Prop name="spaceStack" type="string">
+  <Prop name="spaceStack" type="MQ<string>">
     When the Stack has a horizontal flow and its items are allowed to wrap, this
     property is used to set space between the rows. When the Stack has a
     vertical flow and its items are allowed to wrap, this property is used to
     set space between the columns.
   </Prop>
-  <Prop name="height" type="string" default="100%">
+  <Prop name="height" type="MQ<string>" default="100%">
     If provided, defines the height of the Stack. In a scenario where we have a
     Stack with siblings within a container that has defined height, we would
     need to set height:auto to the Stack, otherwise the container wouldn't
     calculate it's own height correctly.
   </Prop>
-  <Prop name="wrap" type="wrap | nowrap">
+  <Prop name="wrap" type="MQ<wrap | nowrap | wrap-reverse>">
     If provided, defines if the content of the stack wraps.
   </Prop>
-  <Prop name="list" type="boolean">
+  <Prop name="list" type="MQ<boolean>">
     If provided, the stack container renders as 'ul' and every child element is
     wrapped inside a 'li'.
   </Prop>
-  <Prop name="flexGrow" type="boolean | number">
+  <Prop name="flexGrow" type="MQ<boolean | number>">
     CSS property sets the flex grow factor of a flex item{' '}
     <a href="https://www.w3.org/TR/css-flexbox/#main-size"> main size. </a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow">
       More information
     </a>
   </Prop>
-  <Prop name="flexShrink" type="boolean | number">
+  <Prop name="flexShrink" type="MQ<boolean | number>">
     CSS property sets the flex shrink factor of a flex item. If the size of all
     flex items is larger than the flex container, items shrink to fit according
     to flex-shrink.
@@ -76,7 +72,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
       More information
     </a>
   </Prop>
-  <Prop name="flowReverse" type="boolean">
+  <Prop name="flowReverse" type="MQ<boolean>">
     If true, add a '-reverse' suffix to the flex direction property: row-reverse
     or column-reverse.
     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction">
@@ -89,9 +85,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
     the list.
   </Prop>
 </LegacyBlock>
-
 ## Playground
-
 <Playground
   componentName="Stack"
   component={state => (
@@ -227,19 +221,15 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
     },
   ]}
 />
-
 ## StackChild Overview
-
 The StackChild component is used to introduce custom order for the children of Stack.
 It is required for the component to be used within a `Stack`.
 It's behaviour is derived from the functionality of a child element in a classic `flex` container.
-
 ## StackChild Props
-
 The Stack has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
 
 <LegacyBlock marginTop="sizing050">
-  <Prop name="order" type="number" required>
+  <Prop name="order" type="MQ<number>" required>
     Defines the order of the element within the stack.
   </Prop>
 </LegacyBlock>

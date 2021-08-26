@@ -11,7 +11,7 @@ export type Override<TCO extends ComponentOverrides> =
 
 // Checking props exist in object in TypeScript way
 // https://fettblog.eu/typescript-hasownproperty/
-function hasOwnProperty<X extends {}, Y extends PropertyKey>(
+export function hasOwnProperty<X extends {}, Y extends PropertyKey>(
   obj: X,
   prop: Y,
 ): obj is X & Record<Y, unknown> {

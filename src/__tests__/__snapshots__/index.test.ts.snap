@@ -170,6 +170,7 @@ Array [
   "getWeight",
   "getWidth",
   "getXFromTheme",
+  "handleResponsiveProp",
   "instrumentationHandlers",
   "instrumentationMiddleware",
   "isButtonLink",

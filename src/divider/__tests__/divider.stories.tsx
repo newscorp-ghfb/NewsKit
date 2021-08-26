@@ -161,3 +161,19 @@ export const StoryVertical = () => (
   </React.Fragment>
 );
 StoryVertical.storyName = 'vertical';
+
+export const StoryResponsive = () => (
+  <>
+    <StorybookHeading>Divider - Responsive</StorybookHeading>
+    <StorybookSubHeading>
+      xs: default | sm: vertical | md: horizontal | xs: vertical
+    </StorybookSubHeading>
+    <div style={{height: 50}}>
+      <Divider
+        vertical={{sm: true, md: false, xl: true}}
+        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+      />
+    </div>
+  </>
+);
+StoryResponsive.storyName = 'responsive';

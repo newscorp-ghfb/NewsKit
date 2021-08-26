@@ -5,6 +5,7 @@ import {StorybookHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
+import {AlignSelfValues, StackChild} from '../../stack-child';
 
 const MainContainer = styled.div`
   margin: 0 auto;
@@ -725,6 +726,38 @@ export const StoryAllInOne = () => (
 );
 StoryAllInOne.storyName = 'all-in-one';
 
+export const StoryResponsive = () => (
+  <MainContainer>
+    <StorybookHeading>Responsive options</StorybookHeading>
+    <Container>
+      <Stack
+        stackDistribution={{sm: 'flex-end', md: 'flex-start'}}
+        flow={{sm: 'horizontal-center', lg: 'vertical-center'}}
+        spaceStack={{xs: 'space010', md: 'space030'}}
+        wrap={{md: true}}
+        inline={{md: true}}
+        spaceInline={{xs: 'space010', md: 'space030'}}
+        flowReverse={{md: true}}
+        flexGrow={{xs: 2, sm: 10}}
+        flexShrink={{xs: 2, sm: 10}}
+        height={{md: '50vh'}}
+      >
+        <StackChild
+          order={{xs: 10, md: 0}}
+          alignSelf={{sm: AlignSelfValues.FlexEnd}}
+        >
+          <Tag>Nested Item 1</Tag>
+        </StackChild>
+        <Tag>Nested Item 2</Tag>
+        <Tag>Nested Item 3</Tag>
+        <Tag>Nested Item 4</Tag>
+      </Stack>
+    </Container>
+  </MainContainer>
+);
+
+StoryResponsive.storyName = 'responsive';
+
 const StoryStackTemplate = ({wrap, ...args}) => (
   <Stack {...args} wrap={wrap}>
     {renderChildren(wrap as 'wrap' | 'nowrap')}
@@ -793,5 +826,3 @@ StoryStackWithArgs.argTypes = {
 };
 StoryStackWithArgs.storyName = 'stack-with-args';
 StoryStackWithArgs.parameters = {eyes: {include: false}};
-
-//

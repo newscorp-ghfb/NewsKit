@@ -1,14 +1,28 @@
-import {css, styled, CSSObject} from '../utils/style';
-
+import {FlexDirectionProperty, FlexWrapProperty, Properties} from 'csstype';
+import {css, styled, CSSObject, handleResponsiveProp} from '../utils/style';
 import {
   Flow,
-  ChildProps,
+  FlexWrap,
   StyledChildProps,
   StackDistribution,
   StyledStackProps,
+  DefaultStackProps,
 } from './types';
 import {Theme} from '../theme';
 import {ThemeProp} from '../utils/style-types';
+
+export const DEFAULT_PROPS: DefaultStackProps = {
+  spaceStack: 'space000',
+  spaceInline: 'space000',
+  flow: Flow.VerticalLeft,
+  wrap: false,
+  stackDistribution: StackDistribution.Start,
+  flexGrow: false,
+  flexShrink: false,
+  flowReverse: false,
+  inline: false,
+  height: undefined,
+};
 
 const flowDictionary = {
   vertical: 'column',
@@ -53,14 +67,19 @@ const calculateMargins = (negative?: boolean) => ({
   spaceInline,
   $wrap,
   flow,
-}: ChildProps & ThemeProp) => {
+}: {
+  spaceStack: string;
+  spaceInline: string;
+  $wrap: FlexWrap;
+  flow: Flow;
+} & ThemeProp) => {
   const hasWrapping = $wrap === 'wrap';
 
   const hasSpaceStack = hasSpacing(theme, spaceStack);
   const hasSpaceInline = hasSpacing(theme, spaceInline);
 
   if (!hasSpaceStack && !hasSpaceInline) {
-    return undefined;
+    return {};
   }
 
   const margins = {} as CSSObject;
@@ -94,48 +113,128 @@ const calculateMargins = (negative?: boolean) => ({
   return margins;
 };
 
-const getFlexDirection = ({flow, flowReverse}: StyledStackProps) => {
+const getFlexDirection = (
+  flow: Flow,
+  flowReverse: boolean,
+): FlexDirectionProperty => {
   const flexDir = horizontalFlows.includes(flow as Flow)
     ? flowDictionary.horizontal
     : flowDictionary.vertical;
   const reverse = flowReverse ? '-reverse' : '';
-  return flexDir + reverse;
+  return (flexDir + reverse) as FlexDirectionProperty;
 };
 
 export const StyledMasterContainer = styled.div<StyledStackProps>`
-  display: ${({inline}) => (inline ? 'inline-flex' : 'flex')};
-  height: ${({height}) => height || '100%'};
-  align-items: ${({flow}) => alignmentDictionary[flow]};
-  align-content: ${({flow, $wrap}) => ($wrap ? alignmentDictionary[flow] : '')};
-  flex-wrap: ${({$wrap}) => ($wrap === true ? 'wrap' : $wrap)};
-  flex-grow: ${({flexGrow}) => (flexGrow === true ? 1 : flexGrow)};
-  flex-shrink: ${({flexShrink}) => (flexShrink === true ? 1 : flexShrink)};
-  flex-direction: ${getFlexDirection};
+  ${handleResponsiveProp({inline: DEFAULT_PROPS.inline}, ({inline}) => ({
+    display: inline ? 'inline-flex' : 'flex',
+  }))}
 
-  justify-content: ${({stackDistribution}) =>
-    stackDistribution === StackDistribution.SpaceEvenly
-      ? StackDistribution.SpaceAround
-      : stackDistribution};
+  ${handleResponsiveProp({$height: DEFAULT_PROPS.height}, ({$height}) => ({
+    height: $height || '100%',
+  }))}
 
-  ${({stackDistribution}) =>
-    stackDistribution === StackDistribution.SpaceEvenly
-      ? css`
-          &:before,
-          &:after {
-            content: '';
-            display: block;
-          }
-        `
-      : ''};
+  ${handleResponsiveProp({flow: DEFAULT_PROPS.flow}, ({flow}) => ({
+    alignItems: alignmentDictionary[flow],
+  }))}
 
-  ${calculateMargins(true)}
+  ${handleResponsiveProp(
+    {flow: DEFAULT_PROPS.flow, $wrap: DEFAULT_PROPS.wrap},
+    ({flow, $wrap}) => ({
+      alignContent: $wrap ? alignmentDictionary[flow] : '',
+    }),
+  )}
+  
+  ${handleResponsiveProp({$wrap: DEFAULT_PROPS.wrap}, ({$wrap}) => ({
+    flexWrap: ($wrap === true ? 'wrap' : $wrap) as FlexWrapProperty,
+  }))}
+
+  ${handleResponsiveProp({flexGrow: DEFAULT_PROPS.flexGrow}, ({flexGrow}) => ({
+    flexGrow: (flexGrow === true ? 1 : flexGrow) as Properties['flexGrow'],
+  }))}
+
+  ${handleResponsiveProp(
+    {flexShrink: DEFAULT_PROPS.flexShrink},
+    ({flexShrink}) => ({
+      flexShrink: (flexShrink === true
+        ? 1
+        : flexShrink) as Properties['flexShrink'],
+    }),
+  )}
+
+  ${handleResponsiveProp(
+    {flow: DEFAULT_PROPS.flow, flowReverse: DEFAULT_PROPS.flowReverse},
+    ({flow, flowReverse}) => ({
+      flexDirection: getFlexDirection(flow as Flow, flowReverse as boolean),
+    }),
+  )}
+      
+  ${handleResponsiveProp(
+    {stackDistribution: DEFAULT_PROPS.stackDistribution},
+    ({stackDistribution}) => ({
+      justifyContent:
+        stackDistribution === StackDistribution.SpaceEvenly
+          ? StackDistribution.SpaceAround
+          : stackDistribution,
+    }),
+  )}    
+
+  ${handleResponsiveProp(
+    {stackDistribution: DEFAULT_PROPS.stackDistribution},
+    ({stackDistribution}) =>
+      stackDistribution === StackDistribution.SpaceEvenly
+        ? css`
+            &:before,
+            &:after {
+              content: '';
+              display: block;
+            }
+          `
+        : {},
+  )}
+
+  ${handleResponsiveProp(
+    {
+      $wrap: DEFAULT_PROPS.wrap,
+      flow: DEFAULT_PROPS.flow,
+      spaceStack: DEFAULT_PROPS.spaceStack,
+      spaceInline: DEFAULT_PROPS.spaceInline,
+    },
+    ({$wrap, flow, spaceStack, spaceInline}, {theme}) =>
+      calculateMargins(true)({
+        theme,
+        $wrap,
+        flow: flow as Flow,
+        spaceStack,
+        spaceInline,
+      }),
+  )}
 `;
 
 export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
-  ${calculateMargins()}
-  order: ${({$order}) => $order};
-  align-self: ${({$alignSelf}) => $alignSelf};
+  ${handleResponsiveProp(
+    {
+      $wrap: DEFAULT_PROPS.wrap,
+      flow: DEFAULT_PROPS.flow,
+      spaceStack: DEFAULT_PROPS.spaceStack,
+      spaceInline: DEFAULT_PROPS.spaceInline,
+    },
+    ({$wrap, flow, spaceStack, spaceInline}, {theme}) =>
+      calculateMargins(false)({
+        theme,
+        $wrap,
+        flow: flow as Flow,
+        spaceStack,
+        spaceInline,
+      }),
+  )}
+
+  ${handleResponsiveProp({$order: undefined}, ({$order}) => ({order: $order}))}
+  
+  ${handleResponsiveProp({$alignSelf: undefined}, ({$alignSelf}) => ({
+    alignSelf: $alignSelf,
+  }))}
+    
   /* Needed for nesting horizontal cards inside a stack:  */
   /* Use min-width to force IE11 recalculate containers width */
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -148,29 +247,36 @@ export const StyledMasterContainerList = styled(StyledMasterContainer)`
   list-style-type: none;
   padding: 0;
 
-  ${({theme, spaceStack, spaceInline, flow}) => {
-    const isVertical = [
-      Flow.VerticalLeft,
-      Flow.VerticalCenter,
-      Flow.VerticalRight,
-    ].includes(flow as Flow);
+  ${handleResponsiveProp(
+    {
+      spaceStack: DEFAULT_PROPS.spaceStack,
+      spaceInline: DEFAULT_PROPS.spaceInline,
+      flow: DEFAULT_PROPS.flow,
+    },
+    ({spaceStack, spaceInline, flow}, {theme}) => {
+      const isVertical = [
+        Flow.VerticalLeft,
+        Flow.VerticalCenter,
+        Flow.VerticalRight,
+      ].includes(flow as Flow);
 
-    const isHorizontal = [
-      Flow.HorizontalTop,
-      Flow.HorizontalCenter,
-      Flow.HorizontalBottom,
-    ].includes(flow as Flow);
+      const isHorizontal = [
+        Flow.HorizontalTop,
+        Flow.HorizontalCenter,
+        Flow.HorizontalBottom,
+      ].includes(flow as Flow);
 
-    const marginReset =
-      (isVertical && hasSpacing(theme, spaceInline)) ||
-      (isHorizontal && hasSpacing(theme, spaceStack))
-        ? null
-        : {
-            marginTop: 0,
-            marginBottom: 0,
-          };
-    return marginReset;
-  }}
+      const marginReset =
+        (isVertical && hasSpacing(theme, spaceInline)) ||
+        (isHorizontal && hasSpacing(theme, spaceStack))
+          ? {}
+          : {
+              marginTop: 0,
+              marginBottom: 0,
+            };
+      return marginReset;
+    },
+  )}
 `.withComponent('ul');
 
 export const StyledChildContainerListItem = styled(

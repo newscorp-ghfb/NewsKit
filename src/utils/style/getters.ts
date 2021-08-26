@@ -1,15 +1,17 @@
 import {CSSObject} from '@emotion/styled';
 import {getFontSizing} from '../font-sizing';
-import {TypographyPreset} from '../../theme';
+import {BreakpointKeys, TypographyPreset} from '../../theme';
 import {isFontConfigObject} from '../guards';
 import {getFontProps} from '../get-font-props';
 import {ThemeProp} from '../style-types';
-import {MQ} from './types';
+import {MQ, MQPartial} from './types';
 import {
   getResponsiveValueFromTheme,
   getValueFromTheme,
   getXFromTheme,
 } from './base';
+import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
+import {hasOwnProperty} from '../overrides';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
@@ -178,3 +180,149 @@ export const getOverlayCssFromTheme = getXFromTheme('overlays');
 export const getShadowCssFromTheme = getXFromTheme('shadows');
 export const getSizingCssFromTheme = getXFromTheme('sizing');
 export const getSpacingCssFromTheme = getXFromTheme('spacePresets');
+
+type BreakpointKeysUnsafe = BreakpointKeys | undefined;
+
+export const handleResponsiveProp = <Props extends ThemeProp, T>(
+  propObject: {[Key in keyof T]: T[Key]},
+  propHandler: (
+    values: {[Key in keyof T]: T[Key]}, // How to extract correct type form Props[propName]
+    props: Props,
+    mq: BreakpointKeysUnsafe,
+  ) => string | CSSObject,
+) => (props: Props): string | CSSObject => {
+  const {breakpoints} = props.theme;
+
+  const propNames = Object.keys(propObject);
+
+  // get only props that we will use
+  const usedProps = propNames.reduce((acc, propName: string) => {
+    if (hasOwnProperty(props, propName)) {
+      return {...acc, [propName]: props[propName]};
+    }
+    return acc;
+  }, {}) as {[Key in keyof T]: MQ<T[Key]>};
+
+  const propsValues = Object.values(usedProps) as MQ<T[keyof T]>[];
+
+  // check if at least 1 prop is MQ object
+  const hasResponsiveProp = propsValues.some(propValue =>
+    isResponsive(propValue, breakpoints),
+  );
+
+  // handle No-responsive props
+  if (!hasResponsiveProp) {
+    return propHandler(
+      usedProps as {[Key in keyof T]: T[Key]},
+      props,
+      undefined,
+    );
+  }
+
+  // ------------------------
+  // Handle responsive props
+
+  // Get and sort breakpoints
+  const breakpointKeys = Object.keys(breakpoints) as BreakpointKeys[];
+  const breakpointKeysSorted = breakpointKeys.sort(
+    (a, b) => breakpoints[a] - breakpoints[b],
+  );
+
+  // Find common MQ keys form all responsive props
+  const commonMQKeys: BreakpointKeys[] = propsValues
+    .filter(propValue => typeof propValue === 'object')
+    .flatMap(
+      (propValue: MQ<T[keyof T]>) => Object.keys(propValue) as BreakpointKeys[],
+    )
+    .filter(
+      (item: BreakpointKeys, index: number, ar: BreakpointKeys[]) =>
+        ar.indexOf(item) === index,
+    )
+    .sort(
+      (a: BreakpointKeys, b: BreakpointKeys) =>
+        breakpointKeysSorted.indexOf(a) - breakpointKeysSorted.indexOf(b),
+    );
+
+  const fillPropGaps = (
+    bps: BreakpointKeys[],
+    propValue: MQ<T[keyof T]>,
+    defaultValue: T[keyof T],
+  ): MQPartial<T[keyof T]> => {
+    // when is not object, just pre-fill all breakpoint keys with the value
+    if (typeof propValue !== 'object') {
+      return bps.reduce(
+        (obj, bp: BreakpointKeys) => ({
+          ...obj,
+          [bp]: propValue,
+        }),
+        {} as MQPartial<T[keyof T]>,
+      );
+    }
+
+    const baseKey = bps.find(bp => (propValue as MQPartial<T>)[bp]);
+    /* istanbul ignore if */
+    if (!baseKey) {
+      return {};
+    }
+
+    let baseValue =
+      baseKey !== 'xs'
+        ? defaultValue
+        : (propValue as MQPartial<T[keyof T]>)[baseKey];
+
+    return bps.reduce((result: MQPartial<T[keyof T]>, bp) => {
+      if ((propValue as MQPartial<T[keyof T]>)[bp] === undefined) {
+        return {...result, [bp]: baseValue};
+      }
+      baseValue = (propValue as MQPartial<T[keyof T]>)[bp];
+      return result;
+    }, propValue);
+  };
+
+  /*
+    when use pass MQ like : {xs: 1, md:2}
+    it fills gaps like: {xs:1, sm:1, md:2, lg:2, xl2}
+    also set default when xs is not provided
+    */
+  const filledPropValues = Object.entries(usedProps).reduce((acc, curr) => {
+    const [propName, propValue] = curr as [keyof T, MQ<T[keyof T]>];
+    acc[propName] = fillPropGaps(
+      breakpointKeysSorted,
+      propValue,
+      propObject[propName],
+    );
+    return acc;
+  }, {} as {[Key in keyof T]: MQ<T[Key]>});
+
+  // add XS to the breakpoints in case its not provided from the user
+  const usedMQKeys: BreakpointKeys[] = commonMQKeys.includes('xs')
+    ? commonMQKeys
+    : ['xs', ...commonMQKeys];
+
+  const cssObject = usedMQKeys.reduce((acc, mqKey, index) => {
+    const fromMqKey = mqKey;
+    const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
+
+    const mediaQuery = getMediaQueryFromTheme(fromMqKey, toMqKey)(props);
+    const values = propNames.reduce((valAcc, propName) => {
+      // TS needs checking if prop is part of the object otherwise throw error
+      /* istanbul ignore else */
+      if (hasOwnProperty(filledPropValues, propName)) {
+        const mqValue = filledPropValues[propName as keyof T];
+        /* istanbul ignore else */
+        if (hasOwnProperty(mqValue, fromMqKey)) {
+          return {
+            ...valAcc,
+            [propName]: mqValue[fromMqKey],
+          };
+        }
+      }
+      /* istanbul ignore next */
+      return valAcc;
+    }, {}) as {[Key in keyof T]: T[Key]};
+    acc[mediaQuery] = propHandler(values, props, fromMqKey);
+    return acc;
+  }, {} as Record<string, unknown>) as CSSObject;
+
+  return cssObject;
+};

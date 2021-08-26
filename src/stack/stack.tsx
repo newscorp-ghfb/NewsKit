@@ -1,21 +1,41 @@
-import React, {ReactChildren} from 'react';
-import {Flow, StackDistribution, StackProps, StyledChildProps} from './types';
+import React from 'react';
+import {StackProps, StyledChildProps} from './types';
 import {
   StyledMasterContainer,
   StyledMasterContainerList,
   StyledChildContainer,
   StyledChildContainerListItem,
-  hasSpacing,
+  DEFAULT_PROPS,
 } from './styled';
-import {useTheme, Theme} from '../theme';
-import {StackChild, AlignSelfValues} from '../stack-child';
+import {StackChild, StackChildProps} from '../stack-child';
 import {hasMatchingDisplayNameWith, as as asUtil} from '../utils/component';
+import {MQ} from '../utils/style/types';
 
 const getAsProp = (as: StackProps['as'], list: StackProps['list']) =>
   !list && as ? asUtil(as) : null;
 
+const hasSpacing = (spaceStack: MQ<string>, spaceInline: MQ<string>) => {
+  if (
+    spaceStack &&
+    ((typeof spaceStack === 'string' &&
+      spaceStack !== DEFAULT_PROPS.spaceStack) ||
+      (typeof spaceStack === 'object' && Object.keys(spaceStack).length > 0))
+  ) {
+    return true;
+  }
+  if (
+    spaceInline &&
+    ((typeof spaceInline === 'string' &&
+      spaceInline !== DEFAULT_PROPS.spaceInline) ||
+      (typeof spaceInline === 'object' && Object.keys(spaceInline).length > 0))
+  ) {
+    return true;
+  }
+
+  return false;
+};
+
 const wrapChild = (
-  theme: Theme,
   spaceStack: NonNullable<StackProps['spaceStack']>,
   spaceInline: NonNullable<StackProps['spaceInline']>,
   flow: NonNullable<StackProps['flow']>,
@@ -25,11 +45,7 @@ const wrapChild = (
   as?: StackProps['as'],
 ) => (
   child: React.ReactNode & {
-    props?: {
-      order?: number;
-      children?: ReactChildren;
-      alignSelf?: AlignSelfValues;
-    };
+    props?: StackChildProps;
   },
 ) => {
   if (!child) return null;
@@ -40,8 +56,7 @@ const wrapChild = (
     flow,
     $wrap: wrap,
   };
-  const hasSpace =
-    hasSpacing(theme, spaceStack) || hasSpacing(theme, spaceInline);
+  const hasSpace = hasSpacing(spaceStack, spaceInline);
 
   const renderAs = getAsProp(as, list);
 
@@ -91,23 +106,23 @@ const wrapChild = (
 };
 
 export const Stack: React.FC<StackProps> = ({
-  spaceStack = 'space000',
-  spaceInline = 'space000',
-  flow = Flow.VerticalLeft,
-  wrap = false,
-  stackDistribution = StackDistribution.Start,
-  flexGrow = false,
-  flexShrink = false,
-  flowReverse = false,
-  inline = false,
+  spaceStack = DEFAULT_PROPS.spaceStack,
+  spaceInline = DEFAULT_PROPS.spaceInline,
+  flow = DEFAULT_PROPS.flow,
+  wrap = DEFAULT_PROPS.wrap,
+  stackDistribution = DEFAULT_PROPS.stackDistribution,
+  flexGrow = DEFAULT_PROPS.flexGrow,
+  flexShrink = DEFAULT_PROPS.flexShrink,
+  flowReverse = DEFAULT_PROPS.flowReverse,
+  inline = DEFAULT_PROPS.inline,
   as,
   list,
   ariaLabel,
   children,
   role,
+  height,
   ...props
 }) => {
-  const theme = useTheme();
   const MasterContainer = list
     ? StyledMasterContainerList
     : StyledMasterContainer;
@@ -126,21 +141,13 @@ export const Stack: React.FC<StackProps> = ({
       inline={inline}
       aria-label={ariaLabel}
       role={role}
+      $height={height}
       {...props}
     >
       {children &&
         React.Children.map(
           children,
-          wrapChild(
-            theme,
-            spaceStack,
-            spaceInline,
-            flow,
-            wrap,
-            list,
-            inline,
-            as,
-          ),
+          wrapChild(spaceStack, spaceInline, flow, wrap, list, inline, as),
         )}
     </MasterContainer>
   );

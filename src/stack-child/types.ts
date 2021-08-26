@@ -1,6 +1,8 @@
+import {MQ} from '../utils/style/types';
+
 export type StackChildProps = {
-  order?: number;
-  alignSelf?: AlignSelfValues;
+  order?: MQ<number>;
+  alignSelf?: MQ<AlignSelfValues>;
   children?: React.ReactNode | string;
 };
 

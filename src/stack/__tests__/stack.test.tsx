@@ -2,13 +2,13 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Stack} from '../stack';
 import {Flow, StackDistribution} from '../types';
-import {getColorFromTheme, styled} from '../../utils/style';
+import {getColorCssFromTheme, styled} from '../../utils/style';
 
 const Box = styled.div`
   width: 150px;
   height: 150px;
-  background-color: ${getColorFromTheme('green030')};
-  border: 1px solid ${getColorFromTheme('red030')};
+  ${getColorCssFromTheme('backgroundColor', 'green030')};
+  ${getColorCssFromTheme(color => ({border: `1px solid ${color}`}), 'red030')};
 `;
 
 const children = [<Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>];
@@ -111,6 +111,29 @@ describe('Stack', () => {
     });
 
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('render with responsive props', () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      children,
+      stackDistribution: {sm: 'flex-end', md: 'flex-start'},
+      flow: {sm: 'horizontal-center', lg: 'vertical-center'},
+      wrap: {md: true},
+      inline: {md: true},
+      spaceStack: {xs: 'space010', md: 'space030'},
+      flowReverse: {md: true},
+      flexGrow: {xs: 2, sm: 10},
+      flexShrink: {xs: 2, sm: 10},
+      height: {md: '50vh'},
+    });
+    expect(fragment).toMatchSnapshot();
+
+    // with spaceInline
+    const fragmentSpaceInline = renderToFragmentWithTheme(Stack, {
+      children,
+      spaceInline: {xs: 'space010', md: 'space030'},
+    });
+    expect(fragmentSpaceInline).toMatchSnapshot();
   });
 
   Object.values(Flow).forEach(flowKey => {

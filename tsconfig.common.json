@@ -12,7 +12,8 @@
     "esModuleInterop": true,
     "preserveSymlinks": true,
     "noImplicitAny": true,
-    "resolveJsonModule" : true,
-    "isolatedModules": true
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": ["DOM", "ES2019"]
   }
 }
