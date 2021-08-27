@@ -19,7 +19,6 @@ Choose the following settings:
 
 Once configuration is complete, XLaunch will run and will prompt you to select the allowed networks. Allow both Private and Public networks.
 
-
 ### In WSL
 
 * `sudo apt update`
@@ -27,3 +26,5 @@ Once configuration is complete, XLaunch will run and will prompt you to select t
 * `sudo apt-get install xdg-utils --fix-missing`
 * `export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0` 
   * add this to your .bashrc or .zshrc profile if you don't want to do this every time you run the tests
+
+You should now be able to run cypress tests.
