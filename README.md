@@ -8,20 +8,21 @@
 
 **News UK Design System** is a design system comprised of modern, responsive, living components which will be used as the base components for all publication titles at News UK.
 
-| Branch | Link                                                                                                                       |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------- |
-| develop | [https://www.newskit.dev-news.co.uk/](https://www.newskit.dev-news.co.uk/) |
+| Branch  | Link                                                                                   |
+| ------- | -------------------------------------------------------------------------------------- |
+| develop | [https://www.newskit.dev-news.co.uk/](https://www.newskit.dev-news.co.uk/)             |
 | develop | [https://storybook.newskit.dev-news.co.uk/](https://storybook.newskit.dev-news.co.uk/) |
-| master | [https://www.newskit.co.uk/](https://www.newskit.co.uk/) |
-| master | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/) |
+| master  | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
+| master  | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
 
 ## Pre-requisites
 
 You will need to install the following as pre-requisites to getting started:
 
-* [Node.js](https://nodejs.org/en/download/) Version 10.*. If you are using an older version of Node, it is recommended to install other versions via NVM
+* [Node.js](https://nodejs.org/en/download/) Version 14.*. If you are using a different version of Node, it is recommended to install this version via [NVM](https://github.com/nvm-sh/nvm)
 * [Yarn](https://yarnpkg.com/en/docs/install) to install the project dependencies
 * (Windows Only) [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+  * Additional setup required for WSL is documented [here](./docs/wsl.md)
 
 ## Getting Started
 

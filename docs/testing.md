@@ -21,9 +21,16 @@ Any accessibility violations will be reported on the Cypress test runner.
 
 To run the e2e tests locally:
 
-build and serve with `yarn e2e:build; yarn e2e:serve`
+To run component tests:
 
-whilst the server is running, run tests with either `yarn e2e:comps` or `yarn e2e:docs`
+* `yarn e2e:build; yarn e2e:serve` (wait for it to start serving)
+* (in a separate terminal) `yarn e2e:comps`
+
+To run docs tests:
+
+* `yarn build:docs`
+* `yarn serve:docs` (wait for it to start serving)
+* (in a separate terminal) `yarn e2e:docs`
 
 ## [Manual Checks in PR](#manual-checks)
 
