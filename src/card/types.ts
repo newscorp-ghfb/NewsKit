@@ -25,9 +25,11 @@ export type HasHref = {
   hasHref?: boolean;
 };
 
+export type CardLayout = 'vertical' | 'horizontal' | 'horizontal-reverse';
+
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   href?: string | BaseLinkProps;
-  layout?: 'vertical' | 'horizontal' | 'horizontal-reverse';
+  layout?: MQ<CardLayout>;
   media?: ImageProps | React.ComponentType;
   mediaInteractive?: boolean;
   children: Exclude<React.ReactNode, 'undefined'>;

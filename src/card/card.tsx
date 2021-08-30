@@ -20,7 +20,6 @@ import {BaseLinkProps} from '../link';
 import {BreakpointKeys, Theme, useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {deepMerge} from '../utils/deep-merge';
-import {getHorizontalRatio} from './utils';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 
 // This key is needed to for the card headline (and to the link when it is wrapped)
@@ -171,13 +170,6 @@ export const Card: React.FC<CardProps> = ({
   ...restProps
 }) => {
   const hasHref = Boolean(href);
-  const theme = useTheme();
-  const [mediaRatio, teaserRatio] = getHorizontalRatio(
-    layout,
-    theme.componentDefaults.card,
-    overrides,
-  );
-
   return (
     <StyledCardContainer
       hasHref={hasHref}
@@ -191,7 +183,6 @@ export const Card: React.FC<CardProps> = ({
           mediaInteractive={mediaInteractive}
           hasHref={hasHref}
           overrides={overrides}
-          flex={mediaRatio}
         >
           {renderMedia(media)}
         </StyledCardContainerMedia>
@@ -200,7 +191,6 @@ export const Card: React.FC<CardProps> = ({
       <StyledCardContainerTeaserAndActions
         layout={layout}
         overrides={overrides}
-        flex={teaserRatio}
       >
         {children && (
           <StyledCardContainerTeaser

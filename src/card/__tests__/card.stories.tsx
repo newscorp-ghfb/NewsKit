@@ -1262,6 +1262,21 @@ export const StoryCardWithCustomHtmlAttrOnclick = () => (
 StoryCardWithCustomHtmlAttrOnclick.storyName =
   'card-with-custom-html-attr-onclick';
 
+export const StoryCardWithResponsiveLayout = () => (
+  <Card
+    href="https://newskit.co.uk/"
+    media={{
+      src: '/placeholder-3x2.png',
+      alt: 'Card Media',
+    }}
+    layout={{xs: 'vertical', md: 'horizontal'}}
+    actions={cardLargeTags}
+  >
+    {cardLargeBody}
+  </Card>
+);
+StoryCardWithResponsiveLayout.storyName = 'card-with-responsive-layout';
+
 export const StoryCardSlices = () => (
   <React.Fragment>
     <StorybookHeading>Card Slices</StorybookHeading>
@@ -1271,9 +1286,9 @@ export const StoryCardSlices = () => (
           <Cell xs={12}>
             <hr />
           </Cell>
-          <Cell xs={12} sm={10}>
+          <Cell xs={12} md={9}>
             <Card
-              layout="horizontal-reverse"
+              layout={{xs: 'vertical', md: 'horizontal-reverse'}}
               href="https://newskit.co.uk/"
               media={{
                 src: '/placeholder-3x2.png',
@@ -1313,7 +1328,7 @@ export const StoryCardSlices = () => (
               </Block>
             </Card>
           </Cell>
-          <Cell xs={12} sm={2}>
+          <Cell xs={12} md={3}>
             <Card
               href="https://newskit.co.uk/"
               media={{
@@ -1358,13 +1373,15 @@ export const StoryCardSlices = () => (
           <Cell xs={12}>
             <hr />
           </Cell>
-          <Cell xs={12} sm={3}>
+          <Cell xs={12} md={3}>
             <Card
               href="https://newskit.co.uk/"
               media={{
                 src: '/placeholder-3x2.png',
                 alt: 'Card Media',
               }}
+              layout={{xs: 'horizontal', md: 'vertical'}}
+              overrides={{horizontalRatio: '1:2'}}
               actions={() => (
                 <Link href="https://google.com">Read the full story</Link>
               )}
@@ -1390,13 +1407,15 @@ export const StoryCardSlices = () => (
               </Block>
             </Card>
           </Cell>
-          <Cell xs={12} sm={3}>
+          <Cell xs={12} md={3}>
             <Card
               href="https://newskit.co.uk/"
               media={{
                 src: '/placeholder-3x2.png',
                 alt: 'Card Media',
               }}
+              layout={{xs: 'horizontal', md: 'vertical'}}
+              overrides={{horizontalRatio: '1:2'}}
               actions={() => (
                 <Link href="https://google.com">Read the full story</Link>
               )}
@@ -1420,13 +1439,15 @@ export const StoryCardSlices = () => (
               </Block>
             </Card>
           </Cell>
-          <Cell xs={12} sm={3}>
+          <Cell xs={12} md={3}>
             <Card
               href="https://newskit.co.uk/"
               media={{
                 src: '/placeholder-3x2.png',
                 alt: 'Card Media',
               }}
+              layout={{xs: 'horizontal', md: 'vertical'}}
+              overrides={{horizontalRatio: '1:2'}}
               actions={() => (
                 <Link href="https://google.com">Read the full story</Link>
               )}
@@ -1452,13 +1473,15 @@ export const StoryCardSlices = () => (
               </Block>
             </Card>
           </Cell>
-          <Cell xs={12} sm={3}>
+          <Cell xs={12} md={3}>
             <Card
               href="https://newskit.co.uk/"
               media={{
                 src: '/placeholder-3x2.png',
                 alt: 'Card Media',
               }}
+              layout={{xs: 'horizontal', md: 'vertical'}}
+              overrides={{horizontalRatio: '1:2'}}
               actions={() => (
                 <Link href="https://google.com">Read the full story</Link>
               )}

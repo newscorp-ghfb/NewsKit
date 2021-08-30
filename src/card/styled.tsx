@@ -1,18 +1,25 @@
-import {CardProps, HasHref} from './types';
+import {FlexDirectionProperty} from 'csstype';
+import {CardLayout, CardOverridesProps, CardProps, HasHref} from './types';
 import {
   styled,
-  getSpacingInset,
-  getMinHeight,
   getStylePreset,
-  getDefaultedValue,
-  getSpacingFromTheme,
-  getSpacingInlineVertical,
-  getSpacingInlineHorizontal,
+  handleResponsiveProp,
+  getResponsiveSpace,
+  getResponsiveSize,
 } from '../utils/style';
 
 import {Stack} from '../stack';
 import {HeadlineOverrides} from '../headline/types';
-import {filterInteractiveStates, isHorizontal, isReverse} from './utils';
+import {
+  filterInteractiveStates,
+  getHorizontalRatio,
+  isHorizontal,
+  isReverse,
+} from './utils';
+
+const DEFAULT_PROPS: {layout: CardLayout} = {
+  layout: 'vertical',
+};
 
 export const StyledCardContainer = styled.div<
   Pick<CardProps, 'overrides' | 'layout' | 'className'> & HasHref
@@ -22,37 +29,50 @@ export const StyledCardContainer = styled.div<
   ${({hasHref, ...props}) => filterInteractiveStates('', hasHref)(props)}
   position: relative;
   display: flex;
-  flex-direction: ${({layout}) =>
-    isHorizontal(layout) ? `row${isReverse(layout) && '-reverse'}` : 'column'};
+  ${handleResponsiveProp({layout: DEFAULT_PROPS.layout}, ({layout}) => ({
+    flexDirection: (isHorizontal(layout)
+      ? `row${isReverse(layout) && '-reverse'}`
+      : 'column') as FlexDirectionProperty,
+  }))}
 `;
 
 export const StyledCardContainerMedia = styled.div<
-  Pick<CardProps, 'mediaInteractive' | 'layout' | 'overrides'> &
-    HasHref & {flex: string}
+  Pick<CardProps, 'mediaInteractive' | 'layout' | 'overrides'> & HasHref
 >`
   box-sizing: border-box;
   display: block;
   position: relative;
 
-  /* Needed for IE flex item image resizing bug: https://github.com/philipwalton/flexbugs#flexbug-5 */
-  /* Solution explained here: https://stackoverflow.com/a/43027202 */
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    min-height: 1px;
-  }
-  ${({layout, flex}) => isHorizontal(layout) && `flex: ${flex};`}
+  ${handleResponsiveProp(
+    {layout: DEFAULT_PROPS.layout},
+    ({layout}, {overrides, theme}) => {
+      if (isHorizontal(layout)) {
+        const [mediaRatio] = getHorizontalRatio(
+          layout,
+          theme.componentDefaults.card,
+          overrides as CardOverridesProps,
+        );
+        return {flex: mediaRatio};
+      }
 
-  ${({layout}) => {
-    if (isHorizontal(layout) && isReverse(layout))
-      return getDefaultedValue(
-        getSpacingFromTheme,
-        'spaceInline',
-        'marginLeft',
-      )('card.mediaContainer', 'mediaContainer');
+      return {};
+    },
+  )}
 
-    return (isHorizontal(layout)
-      ? getSpacingInlineHorizontal
-      : getSpacingInlineVertical)('card.mediaContainer', 'mediaContainer');
-  }}
+  ${handleResponsiveProp({layout: DEFAULT_PROPS.layout}, ({layout}, props) => {
+    let marginDirection = 'marginBottom';
+    if (isHorizontal(layout) && isReverse(layout)) {
+      marginDirection = 'marginLeft';
+    } else if (isHorizontal(layout)) {
+      marginDirection = 'marginRight';
+    }
+    return getResponsiveSpace(
+      marginDirection,
+      'card.mediaContainer',
+      'mediaContainer',
+      'spaceInline',
+    )(props);
+  })}
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
   ${({hasHref, ...props}) =>
@@ -60,28 +80,42 @@ export const StyledCardContainerMedia = styled.div<
 `;
 
 export const StyledCardContainerTeaserAndActions = styled.div<
-  Pick<CardProps, 'layout' | 'overrides'> & HasHref & {flex: string}
+  Pick<CardProps, 'layout' | 'overrides'> & HasHref
 >`
   box-sizing: border-box;
-  ${({layout, flex}) =>
-    isHorizontal(layout) &&
-    `display: flex;
-      flex-direction: column;
-      flex: ${flex};
-      /* Needed for IE FLEX CHILDREN TEXT NOT WRAPPING bug: https://medium.com/codeart-mk/internet-explorer-hacks-796200e5741c */
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        min-width: 1px;
-      }`}
+
+  ${handleResponsiveProp(
+    {layout: DEFAULT_PROPS.layout},
+    ({layout}, {overrides, theme}) => {
+      if (isHorizontal(layout)) {
+        const [, teaserRatio] = getHorizontalRatio(
+          layout,
+          theme.componentDefaults.card,
+          overrides as CardOverridesProps,
+        );
+        return {display: 'flex', flexDirection: 'column', flex: teaserRatio};
+      }
+
+      return {};
+    },
+  )}
 `;
 
 export const StyledCardContainerTeaser = styled.div<
   Pick<CardProps, 'layout' | 'overrides'> & HasHref
 >`
   box-sizing: border-box;
-  ${({layout}) => isHorizontal(layout) && 'flex: 1;'}
+  ${handleResponsiveProp({layout: DEFAULT_PROPS.layout}, ({layout}) => ({
+    flex: isHorizontal(layout) ? 1 : undefined,
+  }))}
   ${({hasHref, ...props}) =>
     filterInteractiveStates('teaserContainer', hasHref)(props)}
-  ${getSpacingInset('card.teaserContainer', 'teaserContainer')}
+  ${getResponsiveSpace(
+    'padding',
+    'card.teaserContainer',
+    'teaserContainer',
+    'spaceInset',
+  )}
 
   a:not(.nk-card-link) {
     z-index: 2;
@@ -118,16 +152,20 @@ export const StyledCardContainerActions = styled(Stack)<
 >`
   height: auto;
   box-sizing: border-box;
-  ${getSpacingInset('card.actionsContainer', 'actionsContainer')}
+  ${getResponsiveSpace(
+    'padding',
+    'card.actionsContainer',
+    'actionsContainer',
+    'spaceInset',
+  )}
   ${({hasHref, ...props}) =>
     filterInteractiveStates('actionsContainer', hasHref)(props)}
-  min-height: ${getMinHeight('card.actionsContainer', 'actionsContainer')};
-
+  ${getResponsiveSize(
+    'minHeight',
+    'card.actionsContainer',
+    'actionsContainer',
+    'minHeight',
+  )}
   position: relative;
   z-index: 2;
-
-  /* Needed for IE min-height with flex bug: https://github.com/philipwalton/flexbugs/issues/231 */
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    height: 0px;
-  }
 `;

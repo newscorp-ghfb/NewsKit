@@ -335,6 +335,14 @@ describe('Card', () => {
     expect(mockOnClick).toHaveBeenCalled();
     expect(asFragment()).toMatchSnapshot();
   });
+
+  test('renders MQ layout', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      layout: {xs: 'horizontal', sm: 'vertical'},
+      children: cardBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
 describe('Card with horizontal layout', () => {

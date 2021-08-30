@@ -168,12 +168,6 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   flex: 1;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    min-width: 1px;
-  }
-}
-
 .emotion-2 {
   box-sizing: border-box;
   -webkit-flex: 1;
@@ -371,12 +365,6 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    min-width: 1px;
-  }
 }
 
 .emotion-2 {

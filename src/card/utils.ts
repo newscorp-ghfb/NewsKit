@@ -4,8 +4,8 @@ import {CardOverridesProps} from './types';
 export const isHorizontal = (layout?: string) =>
   layout && layout.includes('horizontal');
 
-export const isReverse = (layout?: string) =>
-  layout && layout.includes('reverse');
+export const isReverse = (layout?: string): boolean =>
+  Boolean(layout && layout.includes('reverse'));
 
 export const filterInteractiveStates = (path: string, hasHref?: boolean) =>
   getStylePreset(
@@ -32,6 +32,7 @@ export const getHorizontalRatio = (
         ? overrides.horizontalRatio
         : horizontalRatioDefault;
     // In the event that the default horizontalRatio is not set or set to 'none', we don't apply the flex property.
+    /* istanbul ignore else */
     if (ratio && ratio !== 'none') {
       const ratios = ratio.split(':', 2);
       return isReverse(layout) ? ratios.reverse() : ratios;

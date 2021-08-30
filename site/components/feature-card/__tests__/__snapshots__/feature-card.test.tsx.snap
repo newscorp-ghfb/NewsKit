@@ -67,12 +67,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-bottom: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -571,12 +565,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-left: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   height: 100%;
 }
@@ -593,12 +581,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    min-width: 1px;
-  }
 }
 
 .emotion-5 {
@@ -1124,12 +1106,6 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   margin-bottom: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -1456,12 +1432,6 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   margin-left: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   height: 100%;
 }
@@ -1478,12 +1448,6 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    min-width: 1px;
-  }
 }
 
 .emotion-5 {
@@ -1802,12 +1766,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    min-height: 1px;
-  }
 }
 
 .emotion-2 {
@@ -2265,12 +2223,6 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
   margin-bottom: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    min-height: 1px;
-  }
-}
-
 .emotion-2 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -2595,12 +2547,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   margin-bottom: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -2885,12 +2831,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   margin-left: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   height: 100%;
 }
@@ -2907,12 +2847,6 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    min-width: 1px;
-  }
 }
 
 .emotion-5 {
@@ -3189,12 +3123,6 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    min-height: 1px;
-  }
 }
 
 .emotion-2 {
@@ -3479,12 +3407,6 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   margin-bottom: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -3749,12 +3671,6 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   margin-left: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    min-height: 1px;
-  }
-}
-
 .emotion-3 {
   height: 100%;
 }
@@ -3771,12 +3687,6 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    min-width: 1px;
-  }
 }
 
 .emotion-5 {

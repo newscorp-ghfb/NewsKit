@@ -163,12 +163,6 @@ exports[`Media List renders with custom layout 1`] = `
   margin-bottom: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    min-height: 1px;
-  }
-}
-
 .emotion-7 {
   width: 100%;
 }
@@ -689,12 +683,6 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   position: relative;
   margin-bottom: 0;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    min-height: 1px;
-  }
 }
 
 .emotion-7 {
@@ -1218,12 +1206,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin-bottom: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-7 {
-    min-height: 1px;
-  }
-}
-
 .emotion-8 {
   -webkit-background-size: cover;
   background-size: cover;
@@ -1645,12 +1627,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin-left: 0;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-28 {
-    min-height: 1px;
-  }
-}
-
 .emotion-29 {
   height: 100%;
 }
@@ -1667,12 +1643,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-30 {
-    min-width: 1px;
-  }
 }
 
 .emotion-31 {
