@@ -406,6 +406,60 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('with selected, selected:focus & selected:hover state', () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {
+        isSelected: true,
+      },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              selected: {
+                backgroundColor: '#00ff00',
+              },
+              'selected:hover': {
+                backgroundColor: '#FF0000',
+              },
+              'selected:focus': {
+                backgroundColor: '#0000FF',
+              },
+            },
+          },
+        },
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('with visited, visited:focus & visited:hover state', () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {},
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              visited: {
+                backgroundColor: '#00ff00',
+              },
+              'visited:hover': {
+                backgroundColor: '#FF0000',
+              },
+              'visited:focus': {
+                backgroundColor: '#0000FF',
+              },
+            },
+          },
+        },
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('with isSvg ', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,

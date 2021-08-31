@@ -39,7 +39,24 @@ const LoremIpsumText2 = [
   `Again different Content`,
 ];
 
-const myCustomTheme = createTheme({
+const myCustomTabTheme = createTheme({
+  name: 'my-custom-tab-theme',
+  overrides: {
+    stylePresets: {
+      tabCustomPreset: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+        },
+        selected: {color: '{{colors.inkBase}}'},
+        'selected:hover': {
+          color: '{{colors.green060}}',
+        },
+      },
+    },
+  },
+});
+
+const myCustomTabsTheme = createTheme({
   name: 'my-custom-tabs-theme',
   overrides: {
     stylePresets: {
@@ -884,7 +901,7 @@ export const StoryTabsWithPresetsOverrides = () => (
   <React.Fragment>
     <StorybookHeading>Tabs with presets overides</StorybookHeading>
     <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
+    <ThemeProvider theme={myCustomTabsTheme}>
       <Tabs
         size={TabSize.Small}
         overrides={{
@@ -927,6 +944,38 @@ export const StoryTabsWithPresetsOverrides = () => (
   </React.Fragment>
 );
 StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
+
+export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
+  <React.Fragment>
+    <StorybookHeading>
+      Tabs with presets overides on individual tab
+    </StorybookHeading>
+    <StorybookSubHeading>Vertical</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTabTheme}>
+      <Tabs
+        size={TabSize.Small}
+        vertical
+        divider
+        distribution={TabsDistribution.Grow}
+      >
+        <Tab label="V tab 1" overrides={{stylePreset: 'tabCustomPreset'}}>
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="V tab 2" overrides={{stylePreset: 'tabCustomPreset'}}>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab
+          label="V tab 3, three"
+          overrides={{stylePreset: 'tabCustomPreset'}}
+        >
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </ThemeProvider>
+  </React.Fragment>
+);
+StoryTabsWithPresetsOverridesOnIndividualTab.storyName =
+  'tabs-with-presets-overrides-on-individual-tab';
 
 export const StoryTabsWithAlign = () => (
   <React.Fragment>
@@ -1004,7 +1053,7 @@ export const StoryTabsWithScrollOverrides = () => {
   `;
 
   return (
-    <ThemeProvider theme={myCustomTheme}>
+    <ThemeProvider theme={myCustomTabsTheme}>
       <MainContainer>
         <StorybookHeading>Tabs With Scroll Overrides</StorybookHeading>
         <StorybookSubHeading>

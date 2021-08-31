@@ -90,9 +90,35 @@ const getPresetStates = (
     (isInvalid && invalid) ||
     (isValid && valid) ||
     undefined;
+
+  let currentSubState = '';
+  if (isDisabled) {
+    currentSubState = 'disabled';
+  } else if (isLoading) {
+    currentSubState = 'loading';
+  } else if (isSelected) {
+    currentSubState = 'selected';
+  } else if (isInvalid) {
+    currentSubState = 'invalid';
+  } else if (isValid) {
+    currentSubState = 'valid';
+  }
+
   if (stateOverrides) {
+    const pseudoStates = ['hover', 'focus', 'active'];
+
+    const pseudoPresets = {} as {[key: string]: StylePresetStyles | undefined};
+    pseudoStates.forEach(pseudo => {
+      const subStatePseudoClass = `${currentSubState}:${pseudo}` as keyof typeof presetStates;
+      if (presetStates[subStatePseudoClass]) {
+        pseudoPresets[pseudo] = presetStates[subStatePseudoClass];
+      }
+    });
     const {base = {}} = presetStates;
-    return {base: {...base, ...stateOverrides}};
+    return {
+      base: {...base, ...stateOverrides},
+      ...pseudoPresets,
+    };
   }
 
   return presetStates;
