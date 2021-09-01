@@ -89,9 +89,9 @@ export const Tabs: React.FC<TabsProps> = ({
   // filter out children which are not Tab component
   const tabsOnlyChildren = React.Children.toArray(
     children,
-  ).filter((child: React.ReactElement) =>
+  ).filter((child: React.ReactNode) =>
     hasMatchingDisplayNameWith(child, Tab),
-  );
+  ) as Array<React.ReactElement>;
 
   // The index of the active tab - this is what we change on click to trigger a visual tab change
   const [activeTabIndex, setActiveTabIndex] = useState(() =>

@@ -11,7 +11,7 @@ import {
 import {MQ} from '../utils/style';
 import {CaptionOverrides} from '../caption';
 
-type LoadingType = 'lazy' | 'eager' | 'auto';
+type LoadingType = 'lazy' | 'eager';
 
 interface HTMLImageElementWithNoSizes
   extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'height' | 'width'> {}
