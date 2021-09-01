@@ -98,6 +98,29 @@ const myCustomTabsTheme = createTheme({
   },
 });
 
+const myCustomThemeShadows = createTheme({
+  name: 'my-custom-tabs-theme2',
+  overrides: {
+    stylePresets: {
+      shadowTab: {
+        base: {
+          backgroundColor: 'transparent',
+          color: 'gray',
+        },
+        selected: {
+          backgroundColor: '#fff',
+          color: 'black',
+          boxShadow: '0px -1px 3px 1px #999999',
+          borderRadius: '4px 4px 0 0',
+          borderWidth: '0 0 1px 0',
+          borderColor: '#fff',
+          borderStyle: 'solid',
+        },
+      },
+    },
+  },
+});
+
 const Spacer = styled.div`
   margin-bottom: 2em;
 `;
@@ -943,7 +966,70 @@ export const StoryTabsWithPresetsOverrides = () => (
     </ThemeProvider>
   </React.Fragment>
 );
-StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
+export const StoryTabsWithPresetsOverridesShadows = () => {
+  const CustomScroll = styled.div`
+    max-width: 100%;
+  `;
+
+  const TabsContainer = styled.div`
+    padding: 30px;
+    background: #e9e9e9;
+  `;
+
+  const TabPaneCutter = styled.div`
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+  `;
+
+  const TabPanel = styled.div`
+    box-shadow: 0px -1px 3px 1px #999999;
+    background: #fff;
+    margin-top: -1px;
+  `;
+
+  return (
+    <React.Fragment>
+      <StorybookHeading>Tabs with Box Shadow</StorybookHeading>
+      <ThemeProvider theme={myCustomThemeShadows}>
+        <TabsContainer>
+          <Tabs
+            size={TabSize.Medium}
+            overrides={{
+              scroll: props => <CustomScroll {...props} />,
+              spaceInline: 'space000',
+              tab: {
+                spaceInline: '30px',
+              },
+            }}
+            indicatorPosition={TabsIndicatorPosition.None}
+          >
+            <Tab label="V tab 1" overrides={{stylePreset: 'shadowTab'}}>
+              <TabPanel>
+                <TabPaneCutter />
+                <LoremIpsum textNumber={1} />
+              </TabPanel>
+            </Tab>
+            <Tab label="V tab 2" overrides={{stylePreset: 'shadowTab'}}>
+              <TabPanel>
+                <TabPaneCutter />
+                <LoremIpsum textNumber={2} />
+              </TabPanel>
+            </Tab>
+            <Tab label="V tab 3, three" overrides={{stylePreset: 'shadowTab'}}>
+              <TabPanel>
+                <TabPaneCutter />
+                <LoremIpsum textNumber={3} />
+              </TabPanel>
+            </Tab>
+          </Tabs>
+        </TabsContainer>
+      </ThemeProvider>
+    </React.Fragment>
+  );
+};
+StoryTabsWithPresetsOverridesShadows.storyName = 'tabs-with-presets-shadows';
 
 export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
   <React.Fragment>

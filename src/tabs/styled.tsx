@@ -95,7 +95,6 @@ export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`
   display: flex;
   align-items: stretch;
   width: ${({vertical}) => (vertical ? '100%' : '')};
-  overflow: hidden;
   ${({distribution, vertical}) =>
     getFlexFromTabsDistribution(distribution as TabsDistribution, vertical)};
 

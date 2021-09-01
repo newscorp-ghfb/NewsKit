@@ -863,7 +863,6 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  overflow: hidden;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
