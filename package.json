@@ -22,7 +22,7 @@
     "lint:markdown": "markdownlint -c ./.markdownlint.json *.md **/*.md",
     "lint": "yarn lint:code && yarn lint:markdown",
     "test": "yarn lint && yarn test:unit:dev",
-    "test:unit:run": "jest --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:run": "node --max-old-space-size=2048 --expose-gc ./node_modules/.bin/jest --forceExit --logHeapUsage --maxWorkers=4 --coverage --coverageReporters=lcov --coverageReporters=text",
     "test:unit:watch": "yarn test:unit:run --watch",
     "test:unit:dev": "yarn build:icons:dev && yarn test:unit:run --coveragePathIgnorePatterns=/src/icons/",
     "test:unit:ci": "yarn test:unit:run --maxWorkers=2 --ci --reporters=default --reporters=jest-junit",
