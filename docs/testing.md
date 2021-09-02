@@ -19,8 +19,6 @@ cy.checkA11y();
 
 Any accessibility violations will be reported on the Cypress test runner.
 
-To run the e2e tests locally:
-
 To run component tests:
 
 * `yarn e2e:build; yarn e2e:serve` (wait for it to start serving)
