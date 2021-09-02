@@ -255,3 +255,29 @@ export const StoryLazyLoading = () => {
 };
 StoryLazyLoading.storyName = 'lazy-loading';
 StoryLazyLoading.parameters = {eyes: {include: false}};
+
+export const StoryImageWithSources = () => {
+  const sources = [
+    {media: 'lg', srcSet: 'https://placekitten.com/800/800'},
+    {media: 'md', srcSet: 'https://placekitten.com/600/600'},
+    {media: 'xs', srcSet: 'https://placekitten.com/300/300'},
+  ];
+  return <Image src="https://placekitten.com/200/200" sources={sources} />;
+};
+StoryImageWithSources.storyName = 'image-with-sources-using-mq';
+
+export const StoryImageWithSourcesAndMedia = () => {
+  // Source order matters
+  //
+  // Very much like it does when using the sizes algorithm,
+  // the browser goes over the list of sources and picks the first one that matches.
+  // A match can happen based on both media and type attributes.
+  // https://dev.opera.com/articles/native-responsive-images/
+  const sources = [
+    {media: '(min-width: 800px)', srcSet: 'https://placekitten.com/500/500'},
+    {media: '(min-width: 600px)', srcSet: 'https://placekitten.com/200/200'},
+  ];
+  return <Image src="https://placekitten.com/200/200" sources={sources} />;
+};
+StoryImageWithSourcesAndMedia.storyName =
+  'image-with-sources-using-media-query';

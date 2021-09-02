@@ -37,7 +37,7 @@ describe('getAspectRatioStyles', () => {
         width: '200px',
       }),
     ).toEqual({
-      paddingTop: '200%',
+      paddingTop: '50%',
       height: '100px',
       width: '200px',
     });
@@ -50,9 +50,35 @@ describe('getAspectRatioStyles', () => {
         width: '200%',
       }),
     ).toEqual({
-      paddingTop: '200%',
+      paddingTop: '50%',
       height: '100%',
       width: '200%',
+    });
+  });
+
+  test('aspectRatio and height only', () => {
+    expect(
+      getAspectRatioStyles({
+        height: '100%',
+        aspectRatio: '2:1',
+      }),
+    ).toEqual({
+      paddingTop: '50%',
+      height: '100%',
+      width: '200%',
+    });
+  });
+
+  test('aspectRatio and width only', () => {
+    expect(
+      getAspectRatioStyles({
+        width: '100%',
+        aspectRatio: '2:1',
+      }),
+    ).toEqual({
+      paddingTop: '50%',
+      height: '50%',
+      width: '100%',
     });
   });
 });

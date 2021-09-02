@@ -455,9 +455,9 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -508,7 +508,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -519,7 +519,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
             class="emotion-5"
             src="/static/button-hero.svg"
           />
-        </div>
+        </picture>
       </div>
     </div>
   </div>

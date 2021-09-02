@@ -1,61 +1,20 @@
-import React, {useState, useEffect, useRef, useCallback} from 'react';
+import React, {useState, useRef, useCallback} from 'react';
 import dequal from 'dequal';
 import {IconOutlinedImage} from '../icons';
 import {ImageProps} from './types';
-import {getAspectRatioStyles} from '../utils/get-aspect-ratio';
 import {
-  ImageContainer,
-  LoadingContainer,
-  IconContainer,
+  StyledImageContainer,
+  StyledLoadingContainer,
+  StyledIconContainer,
   StyledImage,
   StyledImageAndCaptionContainer,
 } from './styled';
-import {Caption} from '../caption';
-import {MQ} from '../utils/style';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {useIntersection} from '../utils/hooks/use-intersection';
-
-export const useClientSide = (
-  render: () => boolean | void,
-  imgRef: React.RefObject<HTMLImageElement>,
-) => {
-  useEffect(() => {
-    const imageElement = imgRef.current!;
-    if (imageElement && imageElement.complete) {
-      render();
-    }
-  });
-};
-
-const renderCaption = (
-  captionText: string,
-  creditText?: string,
-  overrides?: {
-    stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
-    spaceStack?: MQ<string>;
-    spaceInset?: MQ<string>;
-    credit?: {
-      stylePreset?: MQ<string>;
-      typographyPreset?: MQ<string>;
-    };
-  },
-) => (
-  <Caption creditText={creditText} overrides={overrides}>
-    {captionText}
-  </Caption>
-);
-
-const getSpaceStackValue = (
-  captionText?: string,
-  captionSpaceInset?: object,
-) => {
-  if (captionText && !captionSpaceInset) {
-    return 'space020';
-  }
-  return '';
-};
+import {ImageCaption} from './caption';
+import {Sources} from './sources';
+import {getSpaceStackValue, useClientSide} from './utils';
 
 const ImageComponent: React.FC<ImageProps> = ({
   captionText,
@@ -66,6 +25,7 @@ const ImageComponent: React.FC<ImageProps> = ({
   renderOnServer = false,
   loading,
   src,
+  sources = [],
   ...props
 }) => {
   const theme = useTheme();
@@ -78,65 +38,14 @@ const ImageComponent: React.FC<ImageProps> = ({
   ]);
   const onError = useCallback(() => setError(true), [setError]);
 
-  const imageContainerStylePreset = getToken(
-    {theme, overrides},
-    'image',
-    '',
-    'stylePreset',
-  );
-  const width = getToken({theme, overrides}, 'image', '', 'width');
-  const height = getToken({theme, overrides}, 'image', '', 'height');
-  const maxWidth = getToken({theme, overrides}, 'image', '', 'maxWidth');
-  const maxHeight = getToken({theme, overrides}, 'image', '', 'maxHeight');
-  const {
-    paddingTop,
-    width: aspectWidth,
-    height: aspectHeight,
-  } = getAspectRatioStyles({
-    aspectRatio: loadingAspectRatio,
-    height,
-    width,
-  });
-
   useClientSide(onLoad, imageRef);
 
-  const captionSpaceStack =
-    creditText &&
-    getToken({theme, overrides}, 'image', 'caption', 'spaceStack');
-
+  // TODO: remove when captions is removed from Image
   const captionSpaceInset = getToken(
     {theme, overrides},
     'image',
     'caption',
     'spaceInset',
-  );
-
-  const captionStylePreset = getToken(
-    {theme, overrides},
-    'image',
-    'caption',
-    'stylePreset',
-  );
-
-  const captionTypographyPreset = getToken(
-    {theme, overrides},
-    'image',
-    'caption',
-    'typographyPreset',
-  );
-
-  const creditStylePreset = getToken(
-    {theme, overrides},
-    'image.caption.credit',
-    'caption.credit',
-    'stylePreset',
-  );
-
-  const creditTypographyPreset = getToken(
-    {theme, overrides},
-    'image.caption.credit',
-    'caption.credit',
-    'typographyPreset',
   );
 
   const lazyBoundary = '256px'; // its arbitrary
@@ -183,51 +92,53 @@ const ImageComponent: React.FC<ImageProps> = ({
   }, [hasError, renderOnServer, isLoading, currentSrc]);
 
   return (
-    <StyledImageAndCaptionContainer $width={aspectWidth} ref={setRef}>
-      <ImageContainer
-        $loading={showLoading()}
-        paddingTop={paddingTop}
-        stylePreset={imageContainerStylePreset}
+    <StyledImageAndCaptionContainer
+      overrides={overrides}
+      loadingAspectRatio={loadingAspectRatio}
+      ref={setRef}
+    >
+      <StyledImageContainer
+        isLoading={showLoading()}
+        // TODO: remove when Caption is form Image component
         spaceStack={getSpaceStackValue(captionText, captionSpaceInset)}
+        loadingAspectRatio={loadingAspectRatio}
+        overrides={overrides}
+        // TODO: change to styled.picture after Caption is removed
+        as="picture"
       >
         {showLoading() && (
-          <LoadingContainer>
+          <StyledLoadingContainer>
             {placeholderIcon && (
-              <IconContainer>
+              <StyledIconContainer>
                 <IconOutlinedImage
                   overrides={{
                     size: 'iconSize040',
                   }}
                 />
-              </IconContainer>
+              </StyledIconContainer>
             )}
-          </LoadingContainer>
+          </StyledLoadingContainer>
         )}
+        <Sources sources={sources} />
         <StyledImage
           {...props}
-          $width={aspectWidth}
-          $height={aspectHeight}
-          maxWidth={maxWidth}
-          maxHeight={maxHeight}
           onLoad={onLoad}
           onError={onError}
-          $loading={showLoading()}
+          isLoading={showLoading()}
           loading={loading}
+          overrides={overrides}
+          loadingAspectRatio={loadingAspectRatio}
           ref={imageRef}
           src={currentSrc}
         />
-      </ImageContainer>
-      {captionText &&
-        renderCaption(captionText, creditText, {
-          stylePreset: captionStylePreset,
-          typographyPreset: captionTypographyPreset,
-          spaceInset: captionSpaceInset,
-          spaceStack: captionSpaceStack,
-          credit: {
-            stylePreset: creditStylePreset,
-            typographyPreset: creditTypographyPreset,
-          },
-        })}
+      </StyledImageContainer>
+      {captionText && (
+        <ImageCaption
+          captionText={captionText}
+          creditText={creditText}
+          overrides={overrides}
+        />
+      )}
     </StyledImageAndCaptionContainer>
   );
 };

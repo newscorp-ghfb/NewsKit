@@ -47,8 +47,8 @@ describe('Image', () => {
       ...defaultProps,
       overrides: {
         ...defaultProps.overrides,
-        maxHeight: '500',
-        maxWidth: '500',
+        maxHeight: '500px',
+        maxWidth: '500px',
       },
     };
     const fragment = renderToFragmentWithTheme(Image, props);
@@ -69,6 +69,25 @@ describe('Image', () => {
     });
     const image = getByRole('img');
     fireEvent.error(image);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('render with multiple sources', () => {
+    const {asFragment} = renderWithTheme(Image, {
+      src: 'image.jpg',
+      sources: [
+        {media: 'lg', srcSet: 'image-lg.jpg'},
+        {
+          media: 'md',
+          srcSet: 'image-md.jpg',
+        },
+        {
+          media: '(min-width: 600px)',
+          srcSet: 'image-600.jpg',
+        },
+      ],
+    });
+
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -160,6 +179,36 @@ describe('Image', () => {
         loadingAspectRatio: '1:3',
         overrides: {
           height: '300px',
+        },
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with MQ aspect ratio', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...props,
+        loadingAspectRatio: {xs: '1:3', sm: '1:1'},
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+    test('renders with MQ aspect ratio,  width and height', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...props,
+        loadingAspectRatio: {xs: '1:3', sm: '1:1'},
+        overrides: {
+          width: {xs: '100px', sm: '300px'},
+          height: {xs: '60px', sm: '180px'},
+        },
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with MQ width and height', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...props,
+        overrides: {
+          width: {xs: '100px', sm: '300px'},
+          height: {xs: '100px', sm: '200px'},
         },
       });
       expect(fragment).toMatchSnapshot();

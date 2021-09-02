@@ -168,9 +168,9 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-8 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 66%;
   height: 0;
   border-radius: 8px;
@@ -431,7 +431,7 @@ exports[`Media List renders with custom layout 1`] = `
                 <div
                   class="emotion-7"
                 >
-                  <div
+                  <picture
                     class="emotion-8"
                   >
                     <div
@@ -442,7 +442,7 @@ exports[`Media List renders with custom layout 1`] = `
                       class="emotion-10"
                       src="/static/placeholder-16x9.png"
                     />
-                  </div>
+                  </picture>
                 </div>
               </div>
               <div
@@ -690,9 +690,9 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-8 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 66%;
   height: 0;
   border-radius: 8px;
@@ -918,7 +918,7 @@ exports[`Media List renders with default layout 1`] = `
                 <div
                   class="emotion-7"
                 >
-                  <div
+                  <picture
                     class="emotion-8"
                   >
                     <div
@@ -929,7 +929,7 @@ exports[`Media List renders with default layout 1`] = `
                       class="emotion-10"
                       src="/static/placeholder-16x9.png"
                     />
-                  </div>
+                  </picture>
                 </div>
               </div>
               <div

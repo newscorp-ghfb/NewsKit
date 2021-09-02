@@ -1,2 +1,3 @@
 export * from './image';
-export * from './types';
+export type {ImageProps, ImageSource} from './types';
+export {useClientSide} from './utils';

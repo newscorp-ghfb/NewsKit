@@ -141,9 +141,9 @@ exports[`HeaderIndex renders without crashing 1`] = `
 }
 
 .emotion-5 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 0;
   height: 0;
   border-radius: 8px;
@@ -357,7 +357,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
           <div
             class="emotion-4"
           >
-            <div
+            <picture
               class="emotion-5"
             >
               <div
@@ -368,7 +368,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
                 class="emotion-7"
                 src="test"
               />
-            </div>
+            </picture>
           </div>
         </div>
         <div

@@ -1,53 +1,49 @@
 import {Block} from '../block';
-import {getStylePresetFromTheme, styled} from '../utils/style';
-
-import {StyledImageProps, ImageContainerProps} from './types';
+import {getResponsiveSize, getStylePreset, styled} from '../utils/style';
+import {StyledImageContainerProps, StyledImageProps} from './types';
+import {getResponsiveAspectRatioFromProps} from './utils';
 
 export const StyledImageAndCaptionContainer = styled.div<
-  Pick<StyledImageProps, '$width'>
+  Pick<StyledImageProps, 'overrides' | 'loadingAspectRatio'>
 >`
-  ${({$width: width = '100%'}) => ({width})}
+  ${props =>
+    getResponsiveAspectRatioFromProps(props, ({width}) => ({
+      width,
+    }))}
 `;
 
-export const ImageContainer = styled(Block)<
-  Omit<ImageContainerProps, 'loading'> & {
-    $loading: ImageContainerProps['loading'];
-  }
->`
+export const StyledImageContainer = styled(Block)<StyledImageContainerProps>`
   position: relative;
   width: 100%;
-  ${({$loading, paddingTop = 0}) =>
-    $loading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0}}
-  ${({$loading, stylePreset, ...props}) =>
-    getStylePresetFromTheme(stylePreset, undefined, {isLoading: $loading})(
-      props,
+  display: block;
+
+  ${({isLoading, ...props}) =>
+    getResponsiveAspectRatioFromProps(props, ({paddingTop}) =>
+      isLoading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0},
     )}
+  ${({isLoading, ...props}) => getStylePreset('image', '', {isLoading})(props)}
 `;
 
 export const StyledImage = styled.img<StyledImageProps>`
-  opacity: ${({$loading}) => ($loading ? '0' : '1')};
+  opacity: ${({isLoading}) => (isLoading ? '0' : '1')};
   display: block;
   border-radius: inherit;
 
-  ${({
-    $height: height = 'auto',
-    $width: width = '100%',
-    maxHeight,
-    maxWidth,
-    fit: objectFit,
-    position: objectPosition,
-    $loading,
-  }) => ({
-    height,
-    width,
-    maxHeight,
-    maxWidth,
+  ${getResponsiveSize('maxWidth', 'image', 'maxWidth', '')}
+  ${getResponsiveSize('maxHeight', 'image', 'maxHeight', '')}  
+  ${props =>
+    getResponsiveAspectRatioFromProps(props, ({height, width}) => ({
+      height,
+      width,
+    }))}
+  
+  ${({fit: objectFit, position: objectPosition, isLoading}) => ({
     objectFit,
     objectPosition,
-    top: $loading ? 0 : undefined,
-    left: $loading ? 0 : undefined,
-    position: $loading ? 'absolute' : undefined,
-    animation: !$loading ? 'fadeIn 300ms' : undefined,
+    top: isLoading ? 0 : undefined,
+    left: isLoading ? 0 : undefined,
+    position: isLoading ? 'absolute' : undefined,
+    animation: !isLoading ? 'fadeIn 300ms' : undefined,
   })}
   @keyframes fadeIn {
     from {
@@ -59,7 +55,7 @@ export const StyledImage = styled.img<StyledImageProps>`
   }
 `;
 
-export const LoadingContainer = styled.div`
+export const StyledLoadingContainer = styled.div`
   top: 0;
   left: 0;
   position: absolute;
@@ -71,7 +67,7 @@ export const LoadingContainer = styled.div`
   margin: 0;
 `;
 
-export const IconContainer = styled.div`
+export const StyledIconContainer = styled.div`
   display: flex;
   justify-content: center;
 `;

@@ -5,6 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
 import {Image, ImageShape, Link} from 'newskit';
+import {InlineCode} from '../../components/markdown-elements';
 
 export default Layout;
 
@@ -13,7 +14,7 @@ export default Layout;
 ## Overview
 
 Simple component for adding images.
-The image component provides a `<figure>` and an `<img>` element inside it to place the image in the dom.
+The image component provides a `<picture>` and an `<img>` element inside it to place the image in the dom.
 
 ## Props
 
@@ -26,7 +27,7 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     Image description that is used directly in the 'alt' attribute of the
     internal 'img' element.
   </Prop>
-  <Prop name="loadingAspectRatio" type="string">
+  <Prop name="loadingAspectRatio" type="MQ<string>">
     This is a string interpolation of the aspect ratio of the loading container
     of the image. This is also used to determine the height or width of the
     image if only one dimension is provided.
@@ -45,30 +46,42 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     This prop need to be set to `true` when the Image component is rendered on
     the server without client-side javascript.
   </Prop>
+  <Prop name="sources" type="ImageSource[]">
+    This prop utilize underlying Picture element and generates Source elements
+    from the privided array of ImageSource. For detailed inforamtion how it
+    works check out{' '}
+    <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">
+      MDN
+    </Link>. 
+    ImageSource exnteds <Link href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSourceElement">
+      Image Source element
+    </Link>, the only difference is that you can use breakpoint key  <InlineCode>(xs | sm | md | lg | xl)</InlineCode>  as <InlineCode>media</InlineCode> instead
+    of passing media query.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements.
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the image.
     </Prop>
-    <Prop name="width" type="string" default="100%">
+    <Prop name="width" type="MQ<string>" default="100%">
       Used in combination with `height` to calculate the aspect ratio for the
       image. Generally supply the width px value if known, if not supply
       horizontal aspect ratio. Both width and aspectRatio should be supplied in
       a consistent manner.
     </Prop>
-    <Prop name="height" type="string" default="auto">
+    <Prop name="height" type="MQ<string>" default="auto">
       Used in combination with `width` to calculate the aspect ratio for the
       image. Generally supply the height px value if known, if not supply
       vertical aspect ratio. Both width and aspectRatio should be supplied in a
       consistent manner.
     </Prop>
-    <Prop name="maxWidth" type="string">
+    <Prop name="maxWidth" type="MQ<string>">
       This property sets the maximum width of the image. It prevents the used
       value of the width property from becoming larger than the value specified
       by maxWidth.
     </Prop>
-    <Prop name="maxHeight" type="string">
+    <Prop name="maxHeight" type="MQ<string>">
       This property sets the maximum height of the image. It prevents the used
       value of the height property from becoming larger than the value specified
       for maxHeight.

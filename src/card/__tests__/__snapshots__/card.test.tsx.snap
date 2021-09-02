@@ -1660,9 +1660,9 @@ exports[`Card renders media section if the media data is provided 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 66%;
   height: 0;
   border-radius: 0;
@@ -1757,7 +1757,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -1768,7 +1768,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
             class="emotion-5"
             src="/placeholder-3x2.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -1844,9 +1844,9 @@ exports[`Card renders media section with a custom component 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 0;
   height: 0;
   border-radius: 0;
@@ -1941,7 +1941,7 @@ exports[`Card renders media section with a custom component 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -1952,7 +1952,7 @@ exports[`Card renders media section with a custom component 1`] = `
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -2028,9 +2028,9 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 0;
   height: 0;
   border-radius: 8px;
@@ -2125,7 +2125,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -2136,7 +2136,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -2212,9 +2212,9 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 28%;
   height: 0;
   border-radius: 0;
@@ -2309,7 +2309,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -2320,7 +2320,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
             class="emotion-5"
             src="/placeholder-3x2.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -2397,9 +2397,9 @@ exports[`Card renders media section with overrides 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 66%;
   height: 0;
   border-radius: 0;
@@ -2494,7 +2494,7 @@ exports[`Card renders media section with overrides 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -2505,7 +2505,7 @@ exports[`Card renders media section with overrides 1`] = `
             class="emotion-5"
             src="/placeholder-3x2.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -2581,9 +2581,9 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 0;
   height: 0;
   border-radius: 0;
@@ -2946,7 +2946,7 @@ exports[`Card renders with card items 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -2957,7 +2957,7 @@ exports[`Card renders with card items 1`] = `
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -3086,9 +3086,9 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 0;
   height: 0;
   border-radius: 0;
@@ -3184,7 +3184,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -3195,7 +3195,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -3305,9 +3305,9 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -3415,7 +3415,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -3426,7 +3426,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -3502,9 +3502,9 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -3609,7 +3609,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -3620,7 +3620,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -3699,9 +3699,9 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -3809,7 +3809,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -3820,7 +3820,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -3899,9 +3899,9 @@ exports[`Card with horizontal layout renders correctly 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -4009,7 +4009,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -4020,7 +4020,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -4099,9 +4099,9 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -4209,7 +4209,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -4220,7 +4220,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -4299,9 +4299,9 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -4409,7 +4409,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -4420,7 +4420,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -4499,9 +4499,9 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 }
 
 .emotion-3 {
-  border-radius: 8px;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 56%;
   height: 0;
   border-radius: 8px;
@@ -4609,7 +4609,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -4620,7 +4620,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -5165,9 +5165,9 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 66%;
   height: 0;
   border-radius: 0;
@@ -5319,7 +5319,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -5330,7 +5330,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
             class="emotion-5"
             src="/placeholder-3x2.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div
@@ -6548,9 +6548,9 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-3 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 0;
   height: 0;
   border-radius: 0;
@@ -6959,7 +6959,7 @@ exports[`CardInset renders with card items 1`] = `
       <div
         class="emotion-2"
       >
-        <div
+        <picture
           class="emotion-3"
         >
           <div
@@ -6970,7 +6970,7 @@ exports[`CardInset renders with card items 1`] = `
             class="emotion-5"
             src="/placeholder-16x9.png"
           />
-        </div>
+        </picture>
       </div>
     </div>
     <div

@@ -6,15 +6,24 @@ import {
   MaxHeightProperty,
   MaxWidthProperty,
   ObjectPositionProperty,
-  PaddingTopProperty,
 } from 'csstype';
 import {MQ} from '../utils/style';
 import {CaptionOverrides} from '../caption';
+import {BreakpointKeys} from '../theme/types';
 
 type LoadingType = 'lazy' | 'eager';
 
 interface HTMLImageElementWithNoSizes
   extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'height' | 'width'> {}
+
+export type ImageCommonProps = {
+  isLoading?: boolean;
+  loadingAspectRatio?: MQ<string>;
+  overrides?: {
+    height?: MQ<HeightProperty<string>>;
+    width?: MQ<WidthProperty<string>>;
+  };
+};
 
 interface ImageAlignmentProps {
   fit?: ObjectFitProperty;
@@ -22,34 +31,38 @@ interface ImageAlignmentProps {
 }
 export interface StyledImageProps
   extends HTMLImageElementWithNoSizes,
-    ImageAlignmentProps {
-  $height?: HeightProperty<string>;
-  $width?: WidthProperty<string>;
-  $loading: boolean;
-  maxHeight?: MaxHeightProperty<string>;
-  maxWidth?: MaxWidthProperty<string>;
+    ImageAlignmentProps,
+    ImageCommonProps {
   loading?: LoadingType;
+  overrides?: {
+    maxHeight?: MQ<MaxHeightProperty<string>>;
+    maxWidth?: MQ<MaxWidthProperty<string>>;
+  } & ImageCommonProps['overrides'];
 }
-export interface ImageContainerProps {
-  paddingTop?: PaddingTopProperty<number>;
-  loading: boolean;
-  stylePreset?: MQ<string>;
+export interface StyledImageContainerProps extends ImageCommonProps {
+  overrides?: {
+    stylePreset?: MQ<string>;
+  } & ImageCommonProps['overrides'];
 }
 export interface ImageProps
   extends HTMLImageElementWithNoSizes,
     ImageAlignmentProps {
   placeholderIcon?: boolean;
-  loadingAspectRatio?: string;
+  loadingAspectRatio?: MQ<string>;
   captionText?: string;
   creditText?: string;
   renderOnServer?: boolean;
   loading?: LoadingType;
+  sources?: ImageSource[];
   overrides?: {
-    height?: HeightProperty<string>;
-    width?: WidthProperty<string>;
-    maxHeight?: MaxHeightProperty<string>;
-    maxWidth?: MaxWidthProperty<string>;
+    maxHeight?: MQ<MaxHeightProperty<string>>;
+    maxWidth?: MQ<MaxWidthProperty<string>>;
     stylePreset?: MQ<string>;
     caption?: CaptionOverrides;
-  };
+  } & ImageCommonProps['overrides'];
+}
+
+export interface ImageSource
+  extends Omit<React.SourceHTMLAttributes<HTMLSourceElement>, 'media'> {
+  media?: BreakpointKeys | string;
 }

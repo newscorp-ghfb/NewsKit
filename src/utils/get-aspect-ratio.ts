@@ -18,7 +18,7 @@ export const getAspectRatioStyles = ({
   const heightVal = parseFloat(height!);
   if (!Number.isNaN(widthVal) && !Number.isNaN(heightVal)) {
     return {
-      paddingTop: `${Math.trunc((widthVal / heightVal) * 100)}%`,
+      paddingTop: `${Math.trunc((heightVal / widthVal) * 100)}%`,
       height: `${heightVal}${getUnit(heightVal, height)}`,
       width: `${widthVal}${getUnit(widthVal, width)}`,
     };
@@ -41,12 +41,13 @@ export const getAspectRatioStyles = ({
         return {
           paddingTop,
           width: `${Math.trunc((heightVal / hRatio) * wRatio)}${getUnit(
-            widthVal,
-            width,
+            heightVal,
+            height,
           )}`,
           height: `${heightVal}${getUnit(heightVal, height)}`,
         };
       }
+      /* istanbul ignore next */
       return {paddingTop, height, width};
     }
   }
