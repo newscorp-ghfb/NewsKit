@@ -2074,6 +2074,117 @@ exports[`Image renders with placeholder icon 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Image renders with placeholder icon override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 3px;
+}
+
+.emotion-1 {
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  height: 0;
+  border-radius: 0;
+  background-color: #fafafa;
+}
+
+.emotion-1 svg {
+  fill: #c0c0c0;
+}
+
+.emotion-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  height: 3px;
+  width: 3px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+            />
+          </svg>
+        </div>
+      </div>
+      <img
+        alt="Example Image"
+        class="emotion-6"
+        src="/placeholder-3x2.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Image stylePreset renders with invalidPreset 1`] = `
 <DocumentFragment>
   .emotion-0 {

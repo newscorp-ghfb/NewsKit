@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Image} from '..';
 import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
+import {IconFilledError} from '../../icons';
 
 const Container = styled.div`
   max-width: 600px;
@@ -139,6 +140,31 @@ export const StoryInvalidImgWithPlaceholderIcon = () => (
 );
 StoryInvalidImgWithPlaceholderIcon.storyName =
   'invalid-img-with-placeholder-icon';
+
+export const StoryInvalidImgWithCustomPlaceholderIcon = () => (
+  <Container>
+    <StorybookHeading>
+      Invalid image reference with custom placeholder Icon
+    </StorybookHeading>
+    <Image
+      placeholderIcon
+      src="/placeholder-3x2.invalid"
+      loadingAspectRatio="3:2"
+      alt="Example Image"
+      overrides={{
+        placeholderIcon: (
+          <IconFilledError
+            overrides={{
+              size: 'iconSize040',
+            }}
+          />
+        ),
+      }}
+    />
+  </Container>
+);
+StoryInvalidImgWithPlaceholderIcon.storyName =
+  'invalid-img-with-custom-placeholder-icon';
 
 export const StoryImageWithCaption = () => (
   <Container>

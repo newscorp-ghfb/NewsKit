@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactElement} from 'react';
 import {
   ObjectFitProperty,
   HeightProperty,
@@ -9,7 +9,7 @@ import {
 } from 'csstype';
 import {MQ} from '../utils/style';
 import {CaptionOverrides} from '../caption';
-import {BreakpointKeys} from '../theme/types';
+import {NewsKitIcon} from '../icons';
 
 type LoadingType = 'lazy' | 'eager';
 
@@ -59,10 +59,6 @@ export interface ImageProps
     maxWidth?: MQ<MaxWidthProperty<string>>;
     stylePreset?: MQ<string>;
     caption?: CaptionOverrides;
-  } & ImageCommonProps['overrides'];
-}
-
-export interface ImageSource
-  extends Omit<React.SourceHTMLAttributes<HTMLSourceElement>, 'media'> {
-  media?: BreakpointKeys | string;
+    placeholderIcon?: ReactElement<NewsKitIcon>;
+  };
 }

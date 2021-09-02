@@ -7,6 +7,9 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {Image, useClientSide} from '..';
+import {IconFilledError} from '../../icons';
+
+const React = require('react');
 
 describe('Image', () => {
   const defaultProps = {
@@ -27,6 +30,19 @@ describe('Image', () => {
     const props = {
       ...defaultProps,
       placeholderIcon: true,
+    };
+    const fragment = renderToFragmentWithTheme(Image, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with placeholder icon override', () => {
+    const props = {
+      ...defaultProps,
+      placeholderIcon: true,
+      overrides: {
+        ...defaultProps.overrides,
+        placeholderIcon: <IconFilledError />,
+      },
     };
     const fragment = renderToFragmentWithTheme(Image, props);
     expect(fragment).toMatchSnapshot();

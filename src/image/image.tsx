@@ -109,13 +109,15 @@ const ImageComponent: React.FC<ImageProps> = ({
         {showLoading() && (
           <StyledLoadingContainer>
             {placeholderIcon && (
-              <StyledIconContainer>
-                <IconOutlinedImage
-                  overrides={{
-                    size: 'iconSize040',
-                  }}
-                />
-              </StyledIconContainer>
+              <IconContainer>
+                {overrides.placeholderIcon ?? (
+                  <IconOutlinedImage
+                    overrides={{
+                      size: 'iconSize040',
+                    }}
+                  />
+                )}
+              </IconContainer>
             )}
           </StyledLoadingContainer>
         )}
