@@ -163,7 +163,7 @@ export const StoryInvalidImgWithCustomPlaceholderIcon = () => (
     />
   </Container>
 );
-StoryInvalidImgWithPlaceholderIcon.storyName =
+StoryInvalidImgWithCustomPlaceholderIcon.storyName =
   'invalid-img-with-custom-placeholder-icon';
 
 export const StoryImageWithCaption = () => (
