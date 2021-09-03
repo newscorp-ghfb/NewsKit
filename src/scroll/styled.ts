@@ -17,6 +17,7 @@ const getPseudoStyles = (props: ScrollProps & ThemeProp) => {
 
   return css`
     content: '';
+    pointer-events: none;
     position: absolute;
     z-index: 1;
     transition: all linear 0.3s;
