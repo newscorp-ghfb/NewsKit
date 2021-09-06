@@ -2081,9 +2081,9 @@ exports[`Image renders with placeholder icon override 1`] = `
 }
 
 .emotion-1 {
-  border-radius: 0;
   position: relative;
   width: 100%;
+  display: block;
   padding-top: 100%;
   height: 0;
   border-radius: 0;
@@ -2148,7 +2148,7 @@ exports[`Image renders with placeholder icon override 1`] = `
 <div
     class="emotion-0"
   >
-    <div
+    <picture
       class="emotion-1"
     >
       <div
@@ -2180,7 +2180,7 @@ exports[`Image renders with placeholder icon override 1`] = `
         class="emotion-6"
         src="/placeholder-3x2.png"
       />
-    </div>
+    </picture>
   </div>
 </DocumentFragment>
 `;
