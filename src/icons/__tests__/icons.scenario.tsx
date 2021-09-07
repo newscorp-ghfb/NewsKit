@@ -17,7 +17,7 @@ import {
   IconOutlinedAccountTree,
   IconOutlinedClose,
   Svg,
-  NewsKitIconProps,
+  NewsKitIcon,
 } from '..';
 import * as customIcons from '../filled/custom';
 import {customToNewsKitIcon} from '../custom-to-newskit-icon';
@@ -82,10 +82,7 @@ export default {
       storyFn: () => (
         <>
           {Object.entries(remainingCustomIcons).map((entry: any) => {
-            const [iconName, Icon] = entry as [
-              string,
-              React.ComponentType<NewsKitIconProps>,
-            ];
+            const [iconName, Icon] = entry as [string, NewsKitIcon];
 
             const stylePresetOverride = isSocialIcon(iconName)
               ? getSocialIconStylePreset(iconName)
@@ -159,43 +156,41 @@ export default {
       storyName: 'material-icons',
       storyFn: () => (
         <>
-          {Object.values(materialIconsSample).map(
-            (Icon: React.ComponentType<NewsKitIconProps>) => (
-              <div>
-                <ThemeProvider theme={getTheme()}>
-                  <Constrain>
-                    <Icon />
-                  </Constrain>
-                  <Icon overrides={{size: 'iconSize030'}} />
-                  <Icon
-                    overrides={{
-                      size: {
-                        xs: 'iconSize010',
-                        sm: 'iconSize020',
-                        md: 'iconSize030',
-                        lg: 'iconSize040',
-                        xl: 'iconSize050',
-                      },
-                    }}
-                  />
+          {Object.values(materialIconsSample).map((Icon: NewsKitIcon) => (
+            <div>
+              <ThemeProvider theme={getTheme()}>
+                <Constrain>
+                  <Icon />
+                </Constrain>
+                <Icon overrides={{size: 'iconSize030'}} />
+                <Icon
+                  overrides={{
+                    size: {
+                      xs: 'iconSize010',
+                      sm: 'iconSize020',
+                      md: 'iconSize030',
+                      lg: 'iconSize040',
+                      xl: 'iconSize050',
+                    },
+                  }}
+                />
 
-                  <Constrain>
-                    <Icon
-                      overrides={{
-                        stylePreset: 'iconCustom',
-                      }}
-                    />
-                  </Constrain>
+                <Constrain>
                   <Icon
                     overrides={{
-                      size: 'iconSize020',
                       stylePreset: 'iconCustom',
                     }}
                   />
-                </ThemeProvider>
-              </div>
-            ),
-          )}
+                </Constrain>
+                <Icon
+                  overrides={{
+                    size: 'iconSize020',
+                    stylePreset: 'iconCustom',
+                  }}
+                />
+              </ThemeProvider>
+            </div>
+          ))}
         </>
       ),
     },

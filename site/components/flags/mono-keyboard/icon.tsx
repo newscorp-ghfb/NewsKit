@@ -9,10 +9,10 @@ import {
   IconOutlinedKeyboardReturn,
   IconOutlinedKeyboardTab,
   IconOutlinedSpaceBar,
-  NewsKitIconProps,
+  NewsKitIcon,
 } from 'newskit';
 
-const keyboardIcons: Record<string, React.ComponentType<NewsKitIconProps>> = {
+const keyboardIcons: Record<string, NewsKitIcon> = {
   Backspace: IconOutlinedKeyboardBackspace,
   Down: IconOutlinedKeyboardArrowDown,
   Left: IconOutlinedKeyboardArrowLeft,

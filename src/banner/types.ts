@@ -1,11 +1,12 @@
-import {NewsKitIconProps} from '../icons';
+import {ReactElement} from 'react';
+import {NewsKitIcon} from '../icons';
 import {MQ} from '../utils/style';
 
 export interface BannerBaseProps extends React.AriaAttributes {
   actions?: React.ComponentType[];
   children: Exclude<React.ReactNode, 'undefined'>;
   closeButtonLabel?: string;
-  icon?: React.ReactElement<NewsKitIconProps>;
+  icon?: ReactElement<NewsKitIcon>;
   title?: string;
   onClose?: () => void;
   overrides?: {

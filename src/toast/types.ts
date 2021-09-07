@@ -1,4 +1,5 @@
-import {NewsKitIconProps} from '../icons';
+import {ReactElement} from 'react';
+import {NewsKitIcon} from '../icons';
 import {MQ} from '../utils';
 
 export type ToastID = string;
@@ -29,7 +30,7 @@ export interface ToastProps extends React.HTMLAttributes<HTMLElement> {
   role?: string;
   ariaLive?: 'assertive' | 'off' | 'polite';
   children: Exclude<React.ReactNode, 'undefined'>;
-  icon?: React.ReactElement<NewsKitIconProps>;
+  icon?: ReactElement<NewsKitIcon>;
   actions?: React.ComponentType;
   title?: string;
   overrides?: {

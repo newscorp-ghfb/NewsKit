@@ -1,7 +1,7 @@
 import React, {ComponentType} from 'react';
 import {EmotionIconProps} from '@emotion-icons/emotion-icon';
-import {Theme, withTheme} from '../theme';
-import {NewsKitIconProps, SvgProps} from './types';
+import {withTheme} from '../theme';
+import {NewsKitIconProps, NewsKitIcon, SvgProps} from './types';
 import {getSizingCssFromTheme, getStylePreset, styled} from '../utils/style';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -13,10 +13,6 @@ const renderIconStylePreset = (overridesOnly: boolean) => (props: any) => {
   }
   return {};
 };
-
-export type NewsKitIcon = ComponentType<
-  NewsKitIconProps & {theme?: Theme | undefined}
->;
 
 export const toNewsKitIcon = (
   PassedIcon:

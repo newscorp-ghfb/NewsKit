@@ -337,7 +337,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               name: 'icon',
-              type: 'React.ReactElement<NewsKitIconProps>',
+              type: 'ReactElement<NewsKitIcon>',
               description:
                 'If provided, defines the icon that is displayed in the Inline Message.',
             },

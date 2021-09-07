@@ -1,4 +1,5 @@
-import {NewsKitIconProps} from '../icons';
+import {ReactElement} from 'react';
+import {NewsKitIcon} from '../icons';
 import {MQ} from '../utils/style';
 
 export enum TextInputSize {
@@ -17,7 +18,7 @@ export interface TextInputProps
   ariaLabel?: string;
   rules?: Record<string, string | object>;
   dataTestId?: string;
-  icon?: React.ReactElement<NewsKitIconProps>;
+  icon?: ReactElement<NewsKitIcon>;
   overrides?: {
     width?: string;
     input?: {

@@ -1,8 +1,8 @@
-import {NewsKitIconProps} from '../icons';
+import {NewsKitIcon} from '../icons';
 import {MQ} from '../utils/style';
 
 export interface UnorderedListProps {
-  listItemMarker?: React.ComponentType<NewsKitIconProps>;
+  listItemMarker?: NewsKitIcon;
   overrides?: {
     spaceStack?: MQ<string>;
     content?: {

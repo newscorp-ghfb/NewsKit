@@ -460,7 +460,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               name: 'icon',
-              type: 'React.ReactElement<NewsKitIconProps>',
+              type: 'ReactElement<NewsKitIcon>',
               description: `Icon used to indicate the status or intent of the Banner.`,
             },
             {
