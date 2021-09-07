@@ -78,6 +78,7 @@ export const palettes = {
   purple100: '#29143d',
 
   // TODO: Remove blackTintXX tokens when we release a major version
+  blackTint10: 'rgba(10, 10, 10, 0.1)',
   blackTint20: 'rgba(10, 10, 10, 0.2)',
   blackTint30: 'rgba(10, 10, 10, 0.3)',
   blackTint40: 'rgba(10, 10, 10, 0.4)',
@@ -99,6 +100,7 @@ export const palettes = {
   black: '#0A0A0A',
 
   // TODO: Remove whiteTintXX tokens when we release a major version
+  whiteTint10: 'rgba(255,255,255, 0.1)',
   whiteTint20: 'rgba(255,255,255, 0.2)',
   whiteTint30: 'rgba(255,255,255, 0.3)',
   whiteTint40: 'rgba(255,255,255, 0.4)',
