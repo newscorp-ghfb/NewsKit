@@ -1,4 +1,4 @@
-import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
+import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {TableOfContents} from '../table-of-contents';
 
 describe('TableOfContent', () => {

@@ -51,11 +51,20 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  border-style: solid;
+  border-color: #ED6B5A;
+  background-color: #FFE8E5;
+  border-radius: 50%;
+  border-width: 1px;
 }
 
 .emotion-3 svg {
   width: 16px;
   height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #D23F2D;
 }
 
 .emotion-4 {
@@ -98,7 +107,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #d20600;
+  fill: #D23F2D;
   vertical-align: unset;
   display: inline-block;
 }
@@ -106,7 +115,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 .emotion-6.emotion-6 {
   width: 24px;
   height: 24px;
-  fill: #d20600;
+  fill: #D23F2D;
 }
 
 .emotion-8 {
@@ -128,6 +137,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
+  color: inherit;
   padding: 0;
 }
 
@@ -141,16 +151,21 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-12 {
+  border-style: solid;
+  border-color: #ED6B5A;
+  border-width: 4px;
+  border-radius: 4px;
   border-width: 0px;
   margin: 0;
+  border-top-width: 4px;
   width: 100%;
 }
 
 .emotion-14 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 600;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
 }
@@ -160,7 +175,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.30104166666666665em;
 }
 
 .emotion-14::after {
@@ -168,25 +183,25 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-15 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #d20600;
+  color: #D23F2D;
 }
 
 .emotion-15 svg {
-  fill: #d20600;
+  fill: #D23F2D;
 }
 
 .emotion-17 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -194,7 +209,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-17 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-17::before {
@@ -202,7 +217,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-17::after {
@@ -210,7 +225,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.446875em;
 }
 
 <div
@@ -350,11 +365,20 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  border-style: solid;
+  border-color: #67CF86;
+  background-color: #E6FAEB;
+  border-radius: 50%;
+  border-width: 1px;
 }
 
 .emotion-3 svg {
   width: 16px;
   height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #148F39;
 }
 
 .emotion-4 {
@@ -397,7 +421,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #0a782a;
+  fill: #148F39;
   vertical-align: unset;
   display: inline-block;
 }
@@ -405,7 +429,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 .emotion-6.emotion-6 {
   width: 24px;
   height: 24px;
-  fill: #0a782a;
+  fill: #148F39;
 }
 
 .emotion-8 {
@@ -427,6 +451,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
+  color: inherit;
   padding: 0;
 }
 
@@ -440,16 +465,21 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-12 {
+  border-style: solid;
+  border-color: #67CF86;
+  border-width: 4px;
+  border-radius: 4px;
   border-width: 0px;
   margin: 0;
+  border-top-width: 4px;
   width: 100%;
 }
 
 .emotion-14 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 600;
+  line-height: 1.3333333333333333;
+  font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
 }
@@ -459,7 +489,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.30104166666666665em;
 }
 
 .emotion-14::after {
@@ -467,25 +497,25 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.44166666666666665em;
 }
 
 .emotion-15 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a782a;
+  color: #148F39;
 }
 
 .emotion-15 svg {
-  fill: #0a782a;
+  fill: #148F39;
 }
 
 .emotion-17 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -493,7 +523,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-17 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-17::before {
@@ -501,7 +531,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-17::after {
@@ -509,7 +539,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.446875em;
 }
 
 <div

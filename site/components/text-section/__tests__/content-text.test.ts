@@ -1,4 +1,4 @@
-import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
+import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {docsThemeLight} from '../../../theme/doc-theme';
 import {ContentText} from '..';
 

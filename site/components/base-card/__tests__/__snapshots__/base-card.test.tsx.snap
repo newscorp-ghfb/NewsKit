@@ -5,6 +5,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
+  border-radius: 4px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24,6 +25,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
+  color: inherit;
   padding: 8px 4px;
 }
 
@@ -37,10 +39,10 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
 }
@@ -50,7 +52,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.128125em;
+  margin-bottom: -0.334375em;
 }
 
 .emotion-4::after {
@@ -58,25 +60,25 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-5 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-5 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -84,7 +86,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-6::before {
@@ -92,7 +94,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-6::after {
@@ -100,7 +102,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.446875em;
 }
 
 <div
@@ -141,6 +143,10 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: 1px;
+  border-color: #E4E4E4;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -152,6 +158,10 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   transition-property: box-shadow;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+.emotion-0:hover:not(:disabled) {
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
 }
 
 .emotion-1 {
@@ -173,6 +183,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  color: inherit;
   padding: 24px;
 }
 
@@ -192,31 +203,31 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #577FFB;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #503B8C;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-4:before {
@@ -231,10 +242,10 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
 }
@@ -244,7 +255,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.128125em;
+  margin-bottom: -0.334375em;
 }
 
 .emotion-5::after {
@@ -252,25 +263,25 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-6 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-6 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -278,7 +289,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-7::before {
@@ -286,7 +297,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-7::after {
@@ -294,7 +305,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.446875em;
 }
 
 <div
@@ -340,6 +351,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
+  border-radius: 4px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -372,6 +384,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  color: inherit;
   padding: 8px 4px;
 }
 
@@ -385,10 +398,10 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
 }
@@ -398,7 +411,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.128125em;
+  margin-bottom: -0.334375em;
 }
 
 .emotion-4::after {
@@ -406,25 +419,25 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-5 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-5 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -432,7 +445,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-6::before {
@@ -440,7 +453,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-6::after {
@@ -448,7 +461,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.446875em;
 }
 
 <div
@@ -489,6 +502,10 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: 1px;
+  border-color: #E4E4E4;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -502,12 +519,17 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
+.emotion-0:hover:not(:disabled) {
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
+}
+
 .emotion-1 {
   box-sizing: border-box;
 }
 
 .emotion-2 {
   box-sizing: border-box;
+  color: inherit;
   padding: 24px;
 }
 
@@ -527,31 +549,31 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #577FFB;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #503B8C;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-4:before {
@@ -566,10 +588,10 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Source Serif Pro",serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
   letter-spacing: 0;
   padding: 1px 0px;
 }
@@ -579,7 +601,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.128125em;
+  margin-bottom: -0.334375em;
 }
 
 .emotion-5::after {
@@ -587,25 +609,25 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.475em;
 }
 
 .emotion-6 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #162740;
 }
 
 .emotion-6 svg {
-  fill: #0a0a0a;
+  fill: #162740;
 }
 
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -613,7 +635,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 .emotion-7::before {
@@ -621,7 +643,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.415625em;
 }
 
 .emotion-7::after {
@@ -629,7 +651,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.446875em;
 }
 
 <div

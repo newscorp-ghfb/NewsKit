@@ -11,22 +11,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   right: 0;
   left: 0;
   z-index: 4;
-  background-color: #ffffff;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  background-color: #FFFFFF;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
   letter-spacing: 0;
   padding-top: 8px;
   padding-bottom: 8px;
-  box-shadow: 0 0 2px 0 rgba(40,41,61,0.04),0 4px 8px 0 rgba(96,97,112,0.16);
+  box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
     padding-top: 12px;
     padding-bottom: 12px;
-    box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
+    box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
     height: 80px;
   }
 }
@@ -177,8 +177,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a68c1;
-  fill: #0a68c1;
+  color: #577FFB;
+  fill: #577FFB;
   vertical-align: unset;
   display: inline-block;
 }
@@ -186,8 +186,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-8.emotion-8 {
   width: 32px;
   height: 32px;
-  color: #0a68c1;
-  fill: #0a68c1;
+  color: #577FFB;
+  fill: #577FFB;
 }
 
 .emotion-10 {
@@ -195,11 +195,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #2e2e2e;
+  color: #555E74;
 }
 
 .emotion-10 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -224,8 +224,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-13 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #555E74;
+  color: #555E74;
   width: 48px;
   height: 32px;
 }
@@ -280,8 +280,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-23 {
-  fill: #0a0a0a;
-  color: #0a0a0a;
+  fill: #243853;
+  color: #243853;
 }
 
 @media screen {
@@ -455,6 +455,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #677483;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-37:hover:not(:disabled) {
+  color: #677483;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-37:active:not(:disabled) {
+  color: #162740;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -464,11 +479,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-39 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
+  color: #162740;
   box-sizing: border-box;
 }
 
@@ -477,7 +493,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3486607142857143em;
 }
 
 .emotion-39::after {
@@ -485,7 +501,33 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4892857142857143em;
+}
+
+.emotion-44 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #677483;
+  box-sizing: border-box;
+}
+
+.emotion-44::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-44::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
 }
 
 @media screen {
@@ -636,6 +678,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #EBEBEB;
+  border-radius: 50%;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -645,6 +689,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-81 svg {
   width: 24px;
   height: 24px;
+}
+
+.emotion-81:hover:not(:disabled) {
+  background-color: #BBC3C9;
+}
+
+.emotion-81:active:not(:disabled) {
+  background-color: #BBC3C9;
 }
 
 .emotion-82 {
@@ -684,7 +736,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-84 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -990,7 +1042,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Guides
                           </div>
@@ -1012,7 +1064,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Foundations
                           </div>
@@ -1034,7 +1086,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Components
                           </div>
@@ -1098,7 +1150,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Guides
                           </div>
@@ -1120,7 +1172,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Foundations
                           </div>
@@ -1142,7 +1194,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Components
                           </div>
@@ -1214,22 +1266,22 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   right: 0;
   left: 0;
   z-index: 4;
-  background-color: #ffffff;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  background-color: #FFFFFF;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
   letter-spacing: 0;
   padding-top: 8px;
   padding-bottom: 8px;
-  box-shadow: 0 0 2px 0 rgba(40,41,61,0.04),0 4px 8px 0 rgba(96,97,112,0.16);
+  box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
     padding-top: 12px;
     padding-bottom: 12px;
-    box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
+    box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
     height: 80px;
   }
 }
@@ -1380,8 +1432,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a68c1;
-  fill: #0a68c1;
+  color: #577FFB;
+  fill: #577FFB;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1389,8 +1441,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-8.emotion-8 {
   width: 32px;
   height: 32px;
-  color: #0a68c1;
-  fill: #0a68c1;
+  color: #577FFB;
+  fill: #577FFB;
 }
 
 .emotion-10 {
@@ -1398,11 +1450,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #2e2e2e;
+  color: #555E74;
 }
 
 .emotion-10 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1427,8 +1479,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-13 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #555E74;
+  color: #555E74;
   width: 48px;
   height: 32px;
 }
@@ -1483,8 +1535,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-23 {
-  fill: #0a0a0a;
-  color: #0a0a0a;
+  fill: #243853;
+  color: #243853;
 }
 
 @media screen {
@@ -1658,6 +1710,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #677483;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-37:hover:not(:disabled) {
+  color: #677483;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-37:active:not(:disabled) {
+  color: #162740;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1667,11 +1734,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-39 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
+  color: #162740;
   box-sizing: border-box;
 }
 
@@ -1680,7 +1748,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3486607142857143em;
 }
 
 .emotion-39::after {
@@ -1688,7 +1756,33 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4892857142857143em;
+}
+
+.emotion-44 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #677483;
+  box-sizing: border-box;
+}
+
+.emotion-44::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-44::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
 }
 
 @media screen {
@@ -1839,6 +1933,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #EBEBEB;
+  border-radius: 50%;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1848,6 +1944,14 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-81 svg {
   width: 24px;
   height: 24px;
+}
+
+.emotion-81:hover:not(:disabled) {
+  background-color: #BBC3C9;
+}
+
+.emotion-81:active:not(:disabled) {
+  background-color: #BBC3C9;
 }
 
 .emotion-82 {
@@ -1887,7 +1991,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-84 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2193,7 +2297,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Guides
                           </div>
@@ -2215,7 +2319,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Foundations
                           </div>
@@ -2237,7 +2341,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Components
                           </div>
@@ -2301,7 +2405,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Guides
                           </div>
@@ -2323,7 +2427,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Foundations
                           </div>
@@ -2345,7 +2449,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
                           class="emotion-4"
                         >
                           <div
-                            class="emotion-39"
+                            class="emotion-44"
                           >
                             Components
                           </div>
@@ -2417,22 +2521,22 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   right: 0;
   left: 0;
   z-index: 4;
-  background-color: #ffffff;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
+  background-color: #FFFFFF;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
   letter-spacing: 0;
   padding-top: 8px;
   padding-bottom: 8px;
-  box-shadow: 0 0 2px 0 rgba(40,41,61,0.04),0 4px 8px 0 rgba(96,97,112,0.16);
+  box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
     padding-top: 12px;
     padding-bottom: 12px;
-    box-shadow: 0 2px 4px 0 rgba(40,41,61,0.04),0 8px 16px 0 rgba(96,97,112,0.16);
+    box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
     height: 80px;
   }
 }
@@ -2583,8 +2687,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a68c1;
-  fill: #0a68c1;
+  color: #577FFB;
+  fill: #577FFB;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2592,8 +2696,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-8.emotion-8 {
   width: 32px;
   height: 32px;
-  color: #0a68c1;
-  fill: #0a68c1;
+  color: #577FFB;
+  fill: #577FFB;
 }
 
 .emotion-10 {
@@ -2601,11 +2705,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #2e2e2e;
+  color: #555E74;
 }
 
 .emotion-10 svg {
-  fill: #2e2e2e;
+  fill: #555E74;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -2630,8 +2734,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-13 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #555E74;
+  color: #555E74;
   width: 48px;
   height: 32px;
 }
@@ -2686,8 +2790,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-23 {
-  fill: #0a0a0a;
-  color: #0a0a0a;
+  fill: #243853;
+  color: #243853;
 }
 
 @media screen {
@@ -2861,6 +2965,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #677483;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-37:hover:not(:disabled) {
+  color: #677483;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-37:active:not(:disabled) {
+  color: #162740;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -2870,11 +2989,12 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-39 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
+  color: #677483;
   box-sizing: border-box;
 }
 
@@ -2883,7 +3003,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3486607142857143em;
 }
 
 .emotion-39::after {
@@ -2891,7 +3011,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4892857142857143em;
 }
 
 @media screen {
@@ -3042,6 +3162,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #EBEBEB;
+  border-radius: 50%;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3051,6 +3173,14 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-81 svg {
   width: 24px;
   height: 24px;
+}
+
+.emotion-81:hover:not(:disabled) {
+  background-color: #BBC3C9;
+}
+
+.emotion-81:active:not(:disabled) {
+  background-color: #BBC3C9;
 }
 
 .emotion-82 {
@@ -3090,7 +3220,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-84 {
-  fill: #2e2e2e;
+  fill: #555E74;
   vertical-align: unset;
   display: inline-block;
 }

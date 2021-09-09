@@ -48,6 +48,11 @@
             "title": "Instrumentation",
             "page": true,
             "id": "/getting-started/code/instrumentation"
+          },
+          {
+            "title": "Testing",
+            "page": true,
+            "id": "/getting-started/code/testing"
           }
         ]
       }

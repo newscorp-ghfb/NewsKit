@@ -120,7 +120,7 @@ describe('Consent renders', () => {
       expect(fragment).toMatchSnapshot();
     });
 
-    it('should be a valid AMP component', () => {
+    it('should be a valid AMP component', async () => {
       const ampScriptsObject = createAmpScriptsObject();
 
       const body = (
@@ -146,11 +146,10 @@ describe('Consent renders', () => {
         </Head>
       );
       const html = renderToStaticMarkup(body, head);
-
-      amphtmlValidator.getInstance().then(validator => {
-        const result = validator.validateString(html);
-        expect(result.status).toEqual('PASS');
-      });
+      const validator = await amphtmlValidator.getInstance();
+      const result = validator.validateString(html);
+      
+      expect(result.status).toEqual('PASS');
     });
   });
 });

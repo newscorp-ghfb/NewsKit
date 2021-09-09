@@ -33,9 +33,30 @@ exports[`TableOfContent should render with no errors 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #677483;
+  border-style: solid;
+  border-color: #EBEBEB;
+  border-width: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #162740;
+  border-style: solid;
+  border-color: #577FFB;
+  border-width: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border-width: 0;
+  border-left-width: 2px;
   min-height: 32px;
   padding: 12px 16px;
+}
+
+.emotion-2:hover:not(:disabled) {
+  color: #555E74;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #555E74;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -66,10 +87,10 @@ exports[`TableOfContent should render with no errors 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   display: inline-block;
   display: block;
@@ -80,7 +101,7 @@ exports[`TableOfContent should render with no errors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: calc(-0.4677083333333334em + 1.5px);
 }
 
 .emotion-4::after {
@@ -88,7 +109,38 @@ exports[`TableOfContent should render with no errors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.6083333333333334em;
+}
+
+.emotion-5 {
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  color: #677483;
+  border-style: solid;
+  border-color: #EBEBEB;
+  border-width: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-width: 0;
+  border-left-width: 2px;
+  min-height: 32px;
+  padding: 12px 16px;
+}
+
+.emotion-5:hover:not(:disabled) {
+  color: #555E74;
+}
+
+.emotion-5:active:not(:disabled) {
+  color: #555E74;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-5 {
+    vertical-align: text-bottom;
+  }
 }
 
 <div
@@ -115,7 +167,7 @@ exports[`TableOfContent should render with no errors 1`] = `
         </span>
       </a>
       <a
-        class="emotion-2"
+        class="emotion-5"
         data-selected="false"
         href="#Accessibility"
       >

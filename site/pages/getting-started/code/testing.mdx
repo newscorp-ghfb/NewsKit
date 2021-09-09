@@ -1,0 +1,37 @@
+import Layout from '../../../components/layout';
+import { Link } from 'newskit'
+
+export default Layout;
+
+# Getting Started with Testing
+
+## Unit Testing
+
+NewsKit uses Jest and React Testing Library for unit testing. 
+
+There is an existing memory leak issue with Jest. See <Link href="https://github.com/facebook/jest/issues/7874">Memory Leak in Jest</Link>. If your tests are running slow using Jest, 
+we recommended that you try the following arguments:
+
+`--expose-gc`
+
+This allows us to manually trigger garbage collection in Node.
+
+`--max-old-space-size`
+
+This is useful when the memory allocated for the execution application is less than the required. It can be used to increase the memory limit if your tests need more than the default to run.
+Currently, we set `--max-old-space-size` to `1536` for our tests.
+
+`--logHeapUsage`
+
+Logs the heap usage after every test. When used together with `--expose-gc`, in the current version of Jest, it will force Node.js to swipe all known unused memory for each run of test.
+
+`--maxWorkers`
+
+Node sets the memory limit (--max-old-space-size=) per worker, and this command specifies the maximum number of workers the worker-pool will spawn for running tests.
+Currently, we set `maxWorkers` to `4` locally and `maxWorkers` to `2` in CI.
+
+`--forceExit`
+
+Force Jest to exit after all tests have completed running. This is useful when resources set up by test code cannot be adequately cleaned up.
+Jest suggested using `--detectOpenHandles` to help track down the external resources in use.  It is advised to tear down external resources after each test to make sure Jest can shut down cleanly.
+
