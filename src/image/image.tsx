@@ -15,6 +15,7 @@ import {useIntersection} from '../utils/hooks/use-intersection';
 import {ImageCaption} from './caption';
 import {Sources} from './sources';
 import {getSpaceStackValue, useClientSide} from './utils';
+import {getComponentOverrides} from '../utils/overrides';
 
 const ImageComponent: React.FC<ImageProps> = ({
   captionText,
@@ -91,6 +92,15 @@ const ImageComponent: React.FC<ImageProps> = ({
     return false;
   }, [hasError, renderOnServer, isLoading, currentSrc]);
 
+  const [PlaceholderComponent, placeholderProps] = getComponentOverrides(
+    /* istanbul ignore next  */
+    overrides?.placeholderIcon,
+    IconOutlinedImage,
+    {
+      size: 'iconSize040',
+    },
+  );
+
   return (
     <StyledImageAndCaptionContainer
       overrides={overrides}
@@ -110,14 +120,8 @@ const ImageComponent: React.FC<ImageProps> = ({
           <StyledLoadingContainer>
             {placeholderIcon && (
               <StyledIconContainer>
-                {overrides.placeholderIcon || (
-                  <IconOutlinedImage
-                    overrides={{
-                      size: 'iconSize040',
-                    }}
-                  />
-                )}
-              </IconContainer>
+                <PlaceholderComponent overrides={placeholderProps} />
+              </StyledIconContainer>
             )}
           </StyledLoadingContainer>
         )}

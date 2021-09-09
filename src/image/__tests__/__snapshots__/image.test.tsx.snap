@@ -2134,6 +2134,11 @@ exports[`Image renders with placeholder icon override 1`] = `
   display: inline-block;
 }
 
+.emotion-4.emotion-4 {
+  width: 48px;
+  height: 48px;
+}
+
 .emotion-6 {
   opacity: 0;
   display: block;

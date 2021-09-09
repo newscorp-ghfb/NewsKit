@@ -152,13 +152,7 @@ export const StoryInvalidImgWithCustomPlaceholderIcon = () => (
       loadingAspectRatio="3:2"
       alt="Example Image"
       overrides={{
-        placeholderIcon: (
-          <IconFilledError
-            overrides={{
-              size: 'iconSize040',
-            }}
-          />
-        ),
+        placeholderIcon: IconFilledError,
       }}
     />
   </Container>

@@ -9,8 +9,6 @@ import {
 import {Image, useClientSide} from '..';
 import {IconFilledError} from '../../icons';
 
-const React = require('react');
-
 describe('Image', () => {
   const defaultProps = {
     src: '/placeholder-3x2.png',
@@ -41,7 +39,7 @@ describe('Image', () => {
       placeholderIcon: true,
       overrides: {
         ...defaultProps.overrides,
-        placeholderIcon: <IconFilledError />,
+        placeholderIcon: IconFilledError,
       },
     };
     const fragment = renderToFragmentWithTheme(Image, props);

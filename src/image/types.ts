@@ -1,4 +1,4 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 import {
   ObjectFitProperty,
   HeightProperty,
@@ -59,6 +59,11 @@ export interface ImageProps
     maxWidth?: MQ<MaxWidthProperty<string>>;
     stylePreset?: MQ<string>;
     caption?: CaptionOverrides;
-    placeholderIcon?: ReactElement<NewsKitIcon>;
-  };
+    placeholderIcon?: NewsKitIcon;
+  } & ImageCommonProps['overrides'];
+}
+
+export interface ImageSource
+  extends Omit<React.SourceHTMLAttributes<HTMLSourceElement>, 'media'> {
+  media?: BreakpointKeys | string;
 }
