@@ -148,7 +148,7 @@ describe('Consent renders', () => {
       const html = renderToStaticMarkup(body, head);
       const validator = await amphtmlValidator.getInstance();
       const result = validator.validateString(html);
-      
+
       expect(result.status).toEqual('PASS');
     });
   });

@@ -1,5 +1,5 @@
-import {renderToFragmentWithTheme} from '../../utils/test-utils';
 import PageTitle from '@components/page-title';
+import {renderToFragmentWithTheme} from '../../utils/test-utils';
 
 describe('Page Title', () => {
   test('renders default title', () => {
