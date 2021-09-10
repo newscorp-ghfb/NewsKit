@@ -1,5 +1,8 @@
 import React from 'react';
 import {Block, getSSRId, Link} from 'newskit';
+import {SwatchCard} from '../swatch-card';
+import {TokenFlag} from '../flags/token-flag';
+import {BorderCard} from '../border-card';
 import {getByTitle} from '../../utils/get-route-object';
 import {StyledDataCell} from './styled';
 import {TableProps, TableRow, TableRowValue} from './types';
@@ -123,6 +126,41 @@ export const renderCols = (
       case 'icon':
         cellContent = renderIcon(cellValue);
         break;
+
+      case 'colorSwatch': {
+        cellContent = cellValue && <SwatchCard color={cellValue.toString()} />;
+        break;
+      }
+
+      case 'colorToken': {
+        cellContent = cellValue && (
+          <TokenFlag color={cellValue.toString()}>{cellValue}</TokenFlag>
+        );
+        break;
+      }
+
+      case 'token': {
+        cellContent = cellValue && <TokenFlag>{cellValue}</TokenFlag>;
+        break;
+      }
+
+      case 'borderRadius': {
+        cellContent = cellValue && (
+          <BorderCard borderRadiusToken={cellValue.toString()}>
+            {cellValue}
+          </BorderCard>
+        );
+        break;
+      }
+
+      case 'borderWidth': {
+        cellContent = cellValue && (
+          <BorderCard borderWidthToken={cellValue.toString()}>
+            {cellValue}
+          </BorderCard>
+        );
+        break;
+      }
 
       default:
         cellContent = cellValue;

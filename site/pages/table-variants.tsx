@@ -314,6 +314,123 @@ const Page: React.FC<{
           ]}
         />
       </Cell>
+      <Cell xs={12}>
+        <H>Variant 10 - Color Swatches</H>
+      </Cell>
+      <Cell xs="full-width" md={12}>
+        <Table
+          columns={['Colour', 'Colour token', 'Token value', 'Common uses']}
+          rows={[
+            {
+              colour: 'inkBase',
+              colourToken: 'inkBase',
+              tokenValue: 'neutral080',
+              commonUses: 'Body copy',
+            },
+            {
+              colour: 'inkContrast',
+              colourToken: 'inkContrast',
+              tokenValue: 'neutral100',
+              commonUses: 'Headline',
+            },
+            {
+              colour: 'inkSubtle',
+              colourToken: 'inkSubtle',
+              tokenValue: 'neutral070',
+              commonUses: 'Subheadlines, labels, secondary copy',
+            },
+            {
+              colour: 'inkNonEssential',
+              colourToken: 'inkNonEssential',
+              tokenValue: 'neutral040',
+              commonUses: 'Subheadlines, labels, secondary copy',
+            },
+            {
+              colour: 'interface040',
+              colourToken: 'interface040',
+              tokenValue: 'neutral030',
+              commonUses: 'Borders & keylines',
+            },
+            {
+              colour: 'interactivePrimary040',
+              colourToken: 'interactivePrimary040',
+              tokenValue: 'blue060',
+              commonUses: 'Hover state',
+            },
+            {
+              colour: 'interactivePrimary030',
+              colourToken: 'interactivePrimary030',
+              tokenValue: 'blue040',
+              commonUses: 'Base/Resting state for interactive elements',
+            },
+          ]}
+        />
+      </Cell>
+      <Cell xs={12}>
+        <H>Variant 11 - Border Radius</H>
+      </Cell>
+      <Cell xs="full-width" md={12}>
+        <Table
+          columns={['Border radius', 'Token', 'Token value']}
+          rows={[
+            {
+              borderRadius: 'borderRadiusRounded020',
+              token: 'borderRadiusDefault',
+              tokenValue: 'sizing020',
+            },
+            {
+              borderRadius: 'borderRadiusSharp',
+              token: 'borderRadiusSharp',
+              tokenValue: 'sizing000',
+            },
+            {
+              borderRadius: 'borderRadiusCircle',
+              token: 'borderRadiusCircle',
+              tokenValue: '50%',
+            },
+            {
+              borderRadius: 'borderRadiusRounded010',
+              token: 'borderRadiusRounded010',
+              tokenValue: 'sizing010',
+            },
+            {
+              borderRadius: 'borderRadiusRounded050',
+              token: 'borderRadiusRounded050',
+              tokenValue: 'sizing050',
+            },
+          ]}
+        />
+      </Cell>
+      <Cell xs={12}>
+        <H>Variant 12 - Border Width</H>
+      </Cell>
+      <Cell xs="full-width" md={12}>
+        <Table
+          columns={['Border width', 'Token', 'Token value']}
+          rows={[
+            {
+              borderWidth: 'borderWidthDefault',
+              token: 'borderWidthDefault',
+              tokenValue: '1px',
+            },
+            {
+              borderWidth: 'borderWidth000',
+              token: 'borderWidth000',
+              tokenValue: '0px',
+            },
+            {
+              borderWidth: 'borderWidth020',
+              token: 'borderWidth020',
+              tokenValue: '2px',
+            },
+            {
+              borderWidth: 'borderWidth030',
+              token: 'borderWidth030',
+              tokenValue: '4px',
+            },
+          ]}
+        />
+      </Cell>
     </Grid>
   </Layout>
 );

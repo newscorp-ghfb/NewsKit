@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {IconFilledError} from 'newskit';
+import {IconFilledErrorOutline} from 'newskit';
 
 export const hexToRgb = (hex: string): [number, number, number] | null => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
@@ -45,7 +45,7 @@ export const getContrastRating = (ratio: number) => {
     case ratio < 1 / 3:
       return 'AA(L)';
     default:
-      return <IconFilledError overrides={{size: 'iconSize020'}} />;
+      return <IconFilledErrorOutline overrides={{size: 'iconSize020'}} />;
   }
 };
 

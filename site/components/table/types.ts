@@ -16,6 +16,11 @@ export interface ColumnMapObject extends TableCellProps {
     | 'flag'
     | 'path'
     | 'keyboardFlag'
+    | 'colorSwatch'
+    | 'colorToken'
+    | 'token'
+    | 'borderRadius'
+    | 'borderWidth'
     | 'componentLink';
 }
 

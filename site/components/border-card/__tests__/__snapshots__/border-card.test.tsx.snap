@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BorderCard renders default card 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: solid;
+  border-color: #e4e4e4;
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`BorderCard renders with different borderRadius token 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: solid;
+  border-color: #e4e4e4;
+  border-radius: 50%;
+  border-width: 1px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`BorderCard renders with different borderWidth token 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: solid;
+  border-color: #e4e4e4;
+  border-radius: 8px;
+  border-width: 0;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

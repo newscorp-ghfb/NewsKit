@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TokenFlag renders color token flag 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.emotion-1 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: #d20600;
+  box-shadow: 0 0 2px 0 rgba(40,41,61,0.04),0 4px 8px 0 rgba(96,97,112,0.16);
+  border-radius: 50%;
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="flag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          />
+        </div>
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-6"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TokenFlag renders default token flag without color 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.emotion-1 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      data-testid="flag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Text
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

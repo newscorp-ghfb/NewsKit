@@ -3689,6 +3689,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -3949,6 +3955,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {
@@ -8082,6 +8095,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -8342,6 +8361,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {
@@ -12475,6 +12501,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -12735,6 +12767,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {
@@ -16868,6 +16907,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -17128,6 +17173,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {
@@ -21261,6 +21313,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -21521,6 +21579,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {
@@ -25654,6 +25719,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -25914,6 +25985,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {
@@ -30047,6 +30125,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -30307,6 +30391,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {
@@ -34440,6 +34531,12 @@ Object {
         "iconColor": "{{colors.red070}}",
       },
     },
+    "swatchBadgeInTable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
     "tab": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -34700,6 +34797,13 @@ Object {
     "toastText": Object {
       "base": Object {
         "color": "{{colors.neutral100}}",
+      },
+    },
+    "tokenFlag": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "volumeControlButtons": Object {

@@ -32,4 +32,11 @@ export const columnMap: Record<string, ColumnMapObject> = {
   Notes: {...large, cellType: 'text'},
   'Release Version': {...large, cellType: 'text'},
   Role: {...large, cellType: 'text'},
+  Colour: {...medium, cellType: 'colorSwatch'},
+  'Colour token': {...medium, cellType: 'colorToken'},
+  'Token value': {...medium, cellType: 'token'},
+  Token: {...medium, cellType: 'token'},
+  'Border radius': {...medium, cellType: 'borderRadius'},
+  'Border width': {...medium, cellType: 'borderWidth'},
+  'Common uses': {...large, cellType: 'text'},
 };

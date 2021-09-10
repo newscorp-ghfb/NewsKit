@@ -72,6 +72,19 @@ export const stylePresets = {
       iconColor: '{{colors.red070}}',
     },
   },
+  swatchBadgeInTable: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      iconColor: '{{colors.inkContrast}}',
+    },
+  },
+  tokenFlag: {
+    base: {
+      backgroundColor: '{{colors.interface020}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+      color: '{{colors.inkBase}}',
+    },
+  },
   linkNoUnderline: {
     base: {
       textDecoration: 'none',
