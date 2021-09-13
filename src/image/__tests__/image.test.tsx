@@ -7,7 +7,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {Image, useClientSide} from '..';
-import {IconFilledError} from '../../icons';
+import {IconFilledError, NewsKitIconProps} from '../../icons';
 
 describe('Image', () => {
   const defaultProps = {
@@ -39,7 +39,9 @@ describe('Image', () => {
       placeholderIcon: true,
       overrides: {
         ...defaultProps.overrides,
-        placeholderIcon: iconProps => <IconFilledError {...iconProps} />,
+        placeholderIcon: (iconProps: NewsKitIconProps) => (
+          <IconFilledError {...iconProps} />
+        ),
       },
     };
     const fragment = renderToFragmentWithTheme(Image, props);
