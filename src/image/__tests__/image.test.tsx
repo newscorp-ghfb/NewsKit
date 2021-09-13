@@ -1,6 +1,6 @@
 import {fireEvent} from '@testing-library/react';
 import {renderHook} from '@testing-library/react-hooks';
-import {RefObject} from 'react';
+import React, {RefObject} from 'react';
 import {ObjectFitProperty} from 'csstype';
 import {
   renderToFragmentWithTheme,
@@ -39,7 +39,7 @@ describe('Image', () => {
       placeholderIcon: true,
       overrides: {
         ...defaultProps.overrides,
-        placeholderIcon: IconFilledError,
+        placeholderIcon: iconProps => <IconFilledError {...iconProps} />,
       },
     };
     const fragment = renderToFragmentWithTheme(Image, props);

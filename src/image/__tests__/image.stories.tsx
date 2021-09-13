@@ -141,10 +141,11 @@ export const StoryInvalidImgWithPlaceholderIcon = () => (
 StoryInvalidImgWithPlaceholderIcon.storyName =
   'invalid-img-with-placeholder-icon';
 
-export const StoryInvalidImgWithCustomPlaceholderIcon = () => (
+export const StoryInvalidImgWithCustomPlaceholderIconDefaultSize = () => (
   <Container>
     <StorybookHeading>
-      Invalid image reference with custom placeholder Icon
+      Invalid image reference with custom placeholder Icon (using default icon
+      size)
     </StorybookHeading>
     <Image
       placeholderIcon
@@ -152,13 +153,35 @@ export const StoryInvalidImgWithCustomPlaceholderIcon = () => (
       loadingAspectRatio="3:2"
       alt="Example Image"
       overrides={{
-        placeholderIcon: IconFilledError,
+        placeholderIcon: props => <IconFilledError {...props} />,
       }}
     />
   </Container>
 );
-StoryInvalidImgWithCustomPlaceholderIcon.storyName =
-  'invalid-img-with-custom-placeholder-icon';
+StoryInvalidImgWithCustomPlaceholderIconDefaultSize.storyName =
+  'invalid-img-with-custom-placeholder-icon-default-size';
+
+export const StoryInvalidImgWithCustomPlaceholderIconOverrideSize = () => (
+  <Container>
+    <StorybookHeading>
+      Invalid image reference with custom placeholder Icon (using override icon
+      size)
+    </StorybookHeading>
+    <Image
+      placeholderIcon
+      src="/placeholder-3x2.invalid"
+      loadingAspectRatio="3:2"
+      alt="Example Image"
+      overrides={{
+        placeholderIcon: () => (
+          <IconFilledError overrides={{size: 'iconSize050'}} />
+        ),
+      }}
+    />
+  </Container>
+);
+StoryInvalidImgWithCustomPlaceholderIconOverrideSize.storyName =
+  'invalid-img-with-custom-placeholder-icon-override-size';
 
 export const StoryImageWithCaption = () => (
   <Container>

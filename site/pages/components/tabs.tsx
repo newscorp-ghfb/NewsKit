@@ -288,7 +288,7 @@ export default (layoutProps: LayoutProps) => (
             },
             {
               attribute: 'scroll',
-              type: "ScrollProps['overrides']",
+              type: 'Override<ScrollProps>',
               default: '',
               description: (
                 <>

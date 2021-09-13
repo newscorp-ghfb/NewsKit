@@ -1,6 +1,6 @@
 import React, {useState, useRef, useCallback} from 'react';
 import dequal from 'dequal';
-import {IconOutlinedImage} from '../icons';
+import {IconOutlinedImage, NewsKitIconProps} from '../icons';
 import {ImageProps} from './types';
 import {
   StyledImageContainer,
@@ -97,7 +97,9 @@ const ImageComponent: React.FC<ImageProps> = ({
     overrides?.placeholderIcon,
     IconOutlinedImage,
     {
-      size: 'iconSize040',
+      overrides: {
+        size: 'iconSize040',
+      },
     },
   );
 
@@ -120,7 +122,9 @@ const ImageComponent: React.FC<ImageProps> = ({
           <StyledLoadingContainer>
             {placeholderIcon && (
               <StyledIconContainer>
-                <PlaceholderComponent overrides={placeholderProps} />
+                <PlaceholderComponent
+                  {...(placeholderProps as NewsKitIconProps)}
+                />
               </StyledIconContainer>
             )}
           </StyledLoadingContainer>

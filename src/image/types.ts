@@ -9,7 +9,9 @@ import {
 } from 'csstype';
 import {MQ} from '../utils/style';
 import {CaptionOverrides} from '../caption';
-import {NewsKitIcon} from '../icons';
+import {NewsKitIconProps} from '../icons';
+import {BreakpointKeys} from '../theme/types';
+import {Override} from '../utils/overrides';
 
 type LoadingType = 'lazy' | 'eager';
 
@@ -59,7 +61,7 @@ export interface ImageProps
     maxWidth?: MQ<MaxWidthProperty<string>>;
     stylePreset?: MQ<string>;
     caption?: CaptionOverrides;
-    placeholderIcon?: NewsKitIcon;
+    placeholderIcon?: Override<NewsKitIconProps>;
   } & ImageCommonProps['overrides'];
 }
 
