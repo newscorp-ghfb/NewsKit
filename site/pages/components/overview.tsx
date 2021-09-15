@@ -18,7 +18,7 @@ const componentCategories: any =
 export default (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <Head>
-      <title key="title">Components overview - NewsKit design system</title>
+      <title key="title">Components overview | NewsKit design system</title>
       <meta
         name="Description"
         content="Components are key building blocks of the NewsKit design system."

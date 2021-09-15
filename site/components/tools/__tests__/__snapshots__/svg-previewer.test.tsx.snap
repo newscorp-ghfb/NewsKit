@@ -1,0 +1,1223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SvgPreviewer should render correctly when not receiving any data 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: not-allowed;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #E4E4E4;
+  border-radius: 20rem;
+  color: #BBC3C9;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  margin: 50px 20px 30px 20px;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #BBC3C9;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: not-allowed;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #E4E4E4;
+  border-radius: 20rem;
+  color: #BBC3C9;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  margin-right: 20px;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #BBC3C9;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: not-allowed;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #E4E4E4;
+  border-radius: 20rem;
+  color: #BBC3C9;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #BBC3C9;
+}
+
+<body>
+    <div>
+      <div
+        class="emotion-0"
+      >
+        <button
+          class="emotion-1"
+          data-testid="button"
+          disabled=""
+          type="button"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+              >
+                SWITCH THEME: 
+              </span>
+            </div>
+            <div
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+              >
+                LIGHT
+              </span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <select
+        disabled=""
+        style="height: 26px; font-size: 16px;"
+      >
+        <option>
+          No SVG selected
+        </option>
+      </select>
+      <div
+        class="emotion-0"
+      >
+        <button
+          class="emotion-8"
+          data-testid="button"
+          disabled=""
+          type="button"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+              >
+                Download single SVG
+              </span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-0"
+      >
+        <button
+          class="emotion-13"
+          data-testid="button"
+          disabled=""
+          type="button"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-3"
+            >
+              <span
+                class="emotion-4"
+              >
+                DOWNLOAD ALL SVGs
+              </span>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: not-allowed;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #E4E4E4;
+  border-radius: 20rem;
+  color: #BBC3C9;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  margin: 50px 20px 30px 20px;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #BBC3C9;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: not-allowed;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #E4E4E4;
+  border-radius: 20rem;
+  color: #BBC3C9;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  margin-right: 20px;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #BBC3C9;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: not-allowed;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #E4E4E4;
+  border-radius: 20rem;
+  color: #BBC3C9;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #BBC3C9;
+}
+
+<div>
+    <div
+      class="emotion-0"
+    >
+      <button
+        class="emotion-1"
+        data-testid="button"
+        disabled=""
+        type="button"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              SWITCH THEME: 
+            </span>
+          </div>
+          <div
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              LIGHT
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <select
+      disabled=""
+      style="height: 26px; font-size: 16px;"
+    >
+      <option>
+        No SVG selected
+      </option>
+    </select>
+    <div
+      class="emotion-0"
+    >
+      <button
+        class="emotion-8"
+        data-testid="button"
+        disabled=""
+        type="button"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              Download single SVG
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      class="emotion-0"
+    >
+      <button
+        class="emotion-13"
+        data-testid="button"
+        disabled=""
+        type="button"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-3"
+          >
+            <span
+              class="emotion-4"
+            >
+              DOWNLOAD ALL SVGs
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #577FFB;
+  border-radius: 20rem;
+  color: #FFFFFF;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  margin: 50px 20px 30px 20px;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #3358CC;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-1:disabled {
+  background-color: #E4E4E4;
+  color: #BBC3C9;
+}
+
+.emotion-1:disabled svg {
+  fill: #BBC3C9;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            SWITCH THEME: 
+          </span>
+        </div>
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            LIGHT
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+  <select
+    style="height: 26px; font-size: 16px;"
+  >
+    <option>
+      No SVG selected
+    </option>
+    <option
+      value="0"
+    >
+      SvgName SVG
+    </option>
+  </select>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #23A248;
+  border-radius: 20rem;
+  color: #FFFFFF;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #148F39;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #0A782A;
+}
+
+.emotion-1:disabled {
+  background-color: #E4E4E4;
+  color: #BBC3C9;
+}
+
+.emotion-1:disabled svg {
+  fill: #BBC3C9;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Download single SVG
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #23A248;
+  border-radius: 20rem;
+  color: #FFFFFF;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #148F39;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #0A782A;
+}
+
+.emotion-1:disabled {
+  background-color: #E4E4E4;
+  color: #BBC3C9;
+}
+
+.emotion-1:disabled svg {
+  fill: #BBC3C9;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .emotion-3 {
+    max-width: 100%;
+  }
+}
+
+.emotion-4 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3486607142857143em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4892857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <button
+      class="emotion-1"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            DOWNLOAD ALL SVGs
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div>
+    <svg
+      fill="none"
+      height="759"
+      viewBox="0 0 1344 759"
+      width="1344"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      
+
+      <rect
+        fill="#F4F4F4"
+        height="759"
+        width="1344"
+      />
+      
+
+      <rect
+        fill="#E4E4E4"
+        height="16"
+        rx="8"
+        width="773"
+        x="286"
+        y="380"
+      />
+      
+
+      <rect
+        fill="#3358CC"
+        height="16"
+        rx="8"
+        width="451"
+        x="286"
+        y="380"
+      />
+      
+
+      <rect
+        fill="#446BE4"
+        height="181"
+        rx="90.5"
+        width="181"
+        x="672"
+        y="297"
+      />
+      
+
+      <mask
+        height="106"
+        id="mock-nk-1"
+        maskUnits="userSpaceOnUse"
+        width="106"
+        x="710"
+        y="335"
+      >
+        
+
+        <path
+          clip-rule="evenodd"
+          d="M771.831 358.364V349.266C789.542 353.285 802.748 369.097 802.748 388C802.748 406.903 789.542 422.715 771.831 426.734V417.636C784.595 413.838 793.915 402.001 793.915 388C793.915 373.999 784.595 362.163 771.831 358.364ZM723.25 374.751V401.251H740.917L763 423.334V352.667L740.917 374.751H723.25ZM782.873 387.999C782.873 380.182 778.368 373.469 771.831 370.2V405.754C778.368 402.53 782.873 395.817 782.873 387.999Z"
+          fill="#0A0A0A"
+          fill-rule="evenodd"
+        />
+        
+
+      </mask>
+      
+
+      <g
+        mask="url(#mock-nk-1)"
+      >
+        
+
+        <rect
+          fill="#E0E7FF"
+          height="106"
+          width="106"
+          x="710"
+          y="335"
+        />
+        
+
+      </g>
+      
+
+    </svg>
+    
+
+  </div>
+</DocumentFragment>
+`;

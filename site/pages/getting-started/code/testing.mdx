@@ -16,11 +16,6 @@ we recommended that you try the following arguments:
 
 This allows us to manually trigger garbage collection in Node.
 
-`--max-old-space-size`
-
-This is useful when the memory allocated for the execution application is less than the required. It can be used to increase the memory limit if your tests need more than the default to run.
-Currently, we set `--max-old-space-size` to `1536` for our tests.
-
 `--logHeapUsage`
 
 Logs the heap usage after every test. When used together with `--expose-gc`, in the current version of Jest, it will force Node.js to swipe all known unused memory for each run of test.
