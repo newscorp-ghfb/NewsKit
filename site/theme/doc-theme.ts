@@ -2,8 +2,9 @@ import {createTheme} from 'newskit';
 import colorsLight from './colors-light.json';
 import colorsDark from './colors-dark.json';
 import fonts from './fonts.json';
-import overlays from './overlays.json';
 import typographyPresets from './typography-presets.json';
+import overlaysDark from './overlays-dark.json';
+import overlays from './overlays.json';
 import borders from './borders.json';
 import {stylePresets} from './style-presets';
 import {componentDefaults} from './component-defaults';
@@ -80,24 +81,33 @@ export const accessibilityDarkOverrides = {
   },
 };
 
-export const [lightOverrides, darkOverrides] = [colorsLight, colorsDark].map(
-  ({colors, shadows}) => ({
-    shadows,
-    colors,
-    stylePresets,
-    typographyPresets,
-    componentDefaults,
-    fonts,
-    overlays,
-    borders,
-    sizing: {
-      sizing055: '28px',
-    },
-    spacePresets: {
-      space055: '{{sizing.sizing055}}',
-    },
-  }),
-);
+const lightAndDarkCommonOverrides = {
+  stylePresets,
+  typographyPresets,
+  componentDefaults,
+  fonts,
+  overlays,
+  borders,
+  sizing: {
+    sizing055: '28px',
+  },
+  spacePresets: {
+    space055: '{{sizing.sizing055}}',
+  },
+};
+
+export const darkOverrides = {
+  ...lightAndDarkCommonOverrides,
+  shadows: colorsDark.shadows,
+  colors: colorsDark.colors,
+  overlays: overlaysDark,
+};
+
+export const lightOverrides = {
+  ...lightAndDarkCommonOverrides,
+  shadows: colorsLight.shadows,
+  colors: colorsLight.colors,
+};
 
 export const docsThemeLight = createTheme({
   name: 'docs-theme-light',

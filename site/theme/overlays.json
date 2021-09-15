@@ -1,12 +1,16 @@
 {
-    "overlayDark010": "rgba(10, 10, 10, 0.2)",
-    "overlayDark020": "rgba(10, 10, 10, 0.4)",
-    "overlayDark030": "rgba(10, 10, 10, 0.6)",
-    "overlayDark040": "rgba(10, 10, 10, 0.8)",
-    "overlayDarkGradient010": "linear-gradient(90deg, rgba(51, 51, 51, 0) 0%, rgba(10, 10, 10, 1) 100%)",
-    "overlayLightGradient010": "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)",
-    "overlayLight010": "rgba(255, 255, 255, 0.2)",
-    "overlayLight020": "rgba(255, 255, 255, 0.4)",
-    "overlayLight030": "rgba(255, 255, 255, 0.6)",
-    "overlayLight040": "rgba(255, 255, 255, 0.8)"
-}
+    "overlayTintInverse010": "rgba(255,255,255,0.2)",
+    "overlayTintInverse020": "rgba(255,255,255,0.4)",
+    "overlayTintInverse030": "rgba(255,255,255,0.6)",
+    "overlayTintInverse040": "rgba(255,255,255,0.8)",
+    "overlayTintBase010": "rgba(10,10,10,0.2)",
+    "overlayTintBase020": "rgba(10,10,10,0.4)",
+    "overlayTintBase030": "rgba(10,10,10,0.6)",
+    "overlayTintBase040": "rgba(10,10,10,0.8)",
+    "overlayGradientBaseHorizontal": "linear-gradient(-90deg, rgba(22,40,64,0.00) 0%,rgba(22,40,64,1.00) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,40,64,0.00) 0%,rgba(22,40,64,1.00) 100%)",
+    "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
+    "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)"
+  }
+
+  
