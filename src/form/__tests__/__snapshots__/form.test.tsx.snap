@@ -182,6 +182,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -580,6 +581,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1122,6 +1124,7 @@ exports[`Form renders with error on blur 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1544,6 +1547,7 @@ exports[`Form renders with error on submit 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2086,6 +2090,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2704,6 +2709,7 @@ exports[`Form renders with nested inputs 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3086,6 +3092,7 @@ exports[`Form renders with onBlur validation 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

@@ -237,6 +237,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -371,6 +372,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -605,6 +607,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1493,6 +1496,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1645,6 +1649,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #c0c0c0;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1843,6 +1848,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2685,6 +2691,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2819,6 +2826,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2907,6 +2915,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #c0c0c0;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3737,6 +3746,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4023,6 +4033,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4231,6 +4242,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4583,6 +4595,7 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4720,6 +4733,7 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4861,6 +4875,7 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5205,6 +5220,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5341,6 +5357,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5566,6 +5583,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6593,6 +6611,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6727,6 +6746,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6815,6 +6835,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #c0c0c0;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7004,6 +7025,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7929,6 +7951,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8063,6 +8086,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8151,6 +8175,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #c0c0c0;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8340,6 +8365,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9267,6 +9293,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   border-width: 2px;
   border-style: solid;
   border-color: #243c46;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9409,6 +9436,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9478,6 +9506,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9665,6 +9694,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

@@ -382,6 +382,7 @@ exports[`Card renders actions section with given component 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -788,6 +789,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1194,6 +1196,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2869,6 +2872,7 @@ exports[`Card renders with card items 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4962,6 +4966,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6882,6 +6887,7 @@ exports[`CardInset renders with card items 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

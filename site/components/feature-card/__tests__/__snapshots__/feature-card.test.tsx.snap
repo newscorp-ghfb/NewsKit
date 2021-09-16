@@ -315,6 +315,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -854,6 +855,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2016,6 +2018,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

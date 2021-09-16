@@ -1473,6 +1473,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

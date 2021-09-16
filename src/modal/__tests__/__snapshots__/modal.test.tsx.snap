@@ -243,6 +243,7 @@ exports[`Modal renders default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -619,6 +620,7 @@ exports[`Modal renders modal with overrides 1`] = `
   border-color: #a2dae3;
   background-color: transparent;
   border-radius: 50%;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1004,6 +1006,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1391,6 +1394,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1798,6 +1802,7 @@ exports[`Modal renders with different closePosition 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2195,6 +2200,7 @@ exports[`Modal renders without header 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

@@ -199,6 +199,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

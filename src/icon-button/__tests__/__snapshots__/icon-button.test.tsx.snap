@@ -43,6 +43,7 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -197,6 +198,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -354,6 +356,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -512,6 +515,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -670,6 +674,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -828,6 +833,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -989,6 +995,7 @@ exports[`IconButton renders with different style preset 1`] = `
   border-width: 1px;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

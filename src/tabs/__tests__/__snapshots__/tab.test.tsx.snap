@@ -38,6 +38,7 @@ exports[`Tab renders a selected tab correctly with overrides 1`] = `
   -ms-appearance: none;
   appearance: none;
   overflow: hidden;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -135,6 +136,7 @@ exports[`Tab renders disabled tab 1`] = `
   overflow: hidden;
   background-color: #e4e4e4;
   color: #c0c0c0;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -283,6 +285,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -481,6 +484,7 @@ exports[`Tab renders label with fallback formatting 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -656,6 +660,7 @@ exports[`Tab renders large tab 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -831,6 +836,7 @@ exports[`Tab renders small tab 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1006,6 +1012,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1204,6 +1211,7 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1402,6 +1410,7 @@ exports[`Tab renders with different minHeight 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1577,6 +1586,7 @@ exports[`Tab should render custom aria-label tab 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

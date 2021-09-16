@@ -930,6 +930,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1320,6 +1321,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1686,6 +1688,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2052,6 +2055,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2472,6 +2476,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2853,6 +2858,7 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3234,6 +3240,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

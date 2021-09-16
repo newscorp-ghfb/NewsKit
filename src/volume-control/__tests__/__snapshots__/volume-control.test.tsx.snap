@@ -93,6 +93,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -478,6 +479,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -863,6 +865,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1247,6 +1250,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1632,6 +1636,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2017,6 +2022,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2402,6 +2408,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2787,6 +2794,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3172,6 +3180,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   background-color: transparent;
   border-radius: 50%;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

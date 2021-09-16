@@ -41,6 +41,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   background-color: #d5ebff;
   border-radius: 8px;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -192,6 +193,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   background-color: #d5ebff;
   border-radius: 8px;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -343,6 +345,7 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -504,6 +507,7 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -663,6 +667,7 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -824,6 +829,7 @@ exports[`Button Loading Button renders a button with percentage for width and he
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -983,6 +989,7 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1144,6 +1151,7 @@ exports[`Button Loading Button renders a button with token set for width and hei
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1303,6 +1311,7 @@ exports[`Button renders Large Button 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1462,6 +1471,7 @@ exports[`Button renders Small Button 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1621,6 +1631,7 @@ exports[`Button renders button link when href passed 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1780,6 +1791,7 @@ exports[`Button renders button link with disabled link 1`] = `
   background-color: #e4e4e4;
   border-radius: 8px;
   color: #c0c0c0;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1923,6 +1935,7 @@ exports[`Button renders fixed-width Button 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2083,6 +2096,7 @@ exports[`Button renders full-width Button 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2242,6 +2256,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2430,6 +2445,7 @@ exports[`Button renders with different spaceInset preset 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2592,6 +2608,7 @@ exports[`Button renders with different style preset 1`] = `
   border-width: 1px;
   border-radius: 8px;
   color: #0a68c1;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2753,6 +2770,7 @@ exports[`Button renders with different typography preset 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2912,6 +2930,7 @@ exports[`Button renders with fallback formatting 1`] = `
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

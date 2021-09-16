@@ -920,6 +920,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   border-radius: borderRadiusSharp;
   background-color: transparent;
   color: #677483;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1040,6 +1041,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   border-radius: borderRadiusSharp;
   background-color: transparent;
   color: #677483;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

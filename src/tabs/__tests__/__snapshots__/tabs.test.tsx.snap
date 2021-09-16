@@ -135,6 +135,7 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -279,6 +280,7 @@ exports[`Tabs changes focus on-tab to tab-panel  1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -673,6 +675,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -817,6 +820,7 @@ exports[`Tabs clears focus onMouseDown 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1209,6 +1213,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1353,6 +1358,7 @@ exports[`Tabs distribution set to equal with horizontal flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1749,6 +1755,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1898,6 +1905,7 @@ exports[`Tabs distribution set to equal with vertical flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2297,6 +2305,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2441,6 +2450,7 @@ exports[`Tabs distribution set to grow with horizontal flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2839,6 +2849,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2988,6 +2999,7 @@ exports[`Tabs distribution set to grow with vertical flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3387,6 +3399,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3531,6 +3544,7 @@ exports[`Tabs distribution set to start with horizontal flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3929,6 +3943,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4078,6 +4093,7 @@ exports[`Tabs distribution set to start with vertical flow 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4477,6 +4493,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4621,6 +4638,7 @@ exports[`Tabs doesnt change focus if no other available tabs 1`] = `
   overflow: hidden;
   background-color: #e4e4e4;
   color: #c0c0c0;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4989,6 +5007,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5133,6 +5152,7 @@ exports[`Tabs doesnt change focus if unassigned key is pushed 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5531,6 +5551,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5680,6 +5701,7 @@ exports[`Tabs keyboard changes focus sets first to be active on Home key 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6079,6 +6101,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6223,6 +6246,7 @@ exports[`Tabs keyboard changes focus sets first to be active on right arrow when
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6621,6 +6645,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6768,6 +6793,7 @@ exports[`Tabs keyboard changes focus sets last to be active on End key 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7169,6 +7195,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7311,6 +7338,7 @@ exports[`Tabs keyboard changes focus sets last to be active on left arrow when o
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7711,6 +7739,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7854,6 +7883,7 @@ exports[`Tabs keyboard changes focus sets next to be active on down arrow in ver
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8259,6 +8289,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8397,6 +8428,7 @@ exports[`Tabs keyboard changes focus sets next to be active on right arrow 1`] =
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8797,6 +8829,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8941,6 +8974,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on left arrow 1`
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9339,6 +9373,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9488,6 +9523,7 @@ exports[`Tabs keyboard changes focus sets previous to be active on up arrow in v
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9891,6 +9927,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10060,6 +10097,7 @@ exports[`Tabs renders dividers correctly when orientation is vertical 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10477,6 +10515,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10630,6 +10669,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -11111,6 +11151,7 @@ exports[`Tabs renders with default styles 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -11255,6 +11296,7 @@ exports[`Tabs renders with default styles 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -11649,6 +11691,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -11814,6 +11857,7 @@ exports[`Tabs renders with default styles and divider 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -12226,6 +12270,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -12379,6 +12424,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -12860,6 +12906,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -13013,6 +13060,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -13494,6 +13542,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -13647,6 +13696,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -14128,6 +14178,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -14281,6 +14332,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -14762,6 +14814,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -14891,6 +14944,7 @@ exports[`Tabs renders with icons for tabs 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -15322,6 +15376,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -15480,6 +15535,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -15970,6 +16026,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -16128,6 +16185,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -16614,6 +16672,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -16758,6 +16817,7 @@ exports[`Tabs renders with non-existing initialSelectedIndex 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -17153,6 +17213,7 @@ exports[`Tabs renders with overrides 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -17306,6 +17367,7 @@ exports[`Tabs renders with overrides 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -17815,6 +17877,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -17973,6 +18036,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -18483,6 +18547,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -18621,6 +18686,7 @@ exports[`Tabs renders with second tab initially selected 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -19021,6 +19087,7 @@ exports[`Tabs renders with sizing 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -19165,6 +19232,7 @@ exports[`Tabs renders with sizing 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -19559,6 +19627,7 @@ exports[`Tabs sets active on click 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -19703,6 +19772,7 @@ exports[`Tabs sets active on click 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -20072,6 +20142,7 @@ exports[`Tabs with custom scroll component 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -20225,6 +20296,7 @@ exports[`Tabs with custom scroll component 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -20709,6 +20781,7 @@ exports[`Tabs with custom scroll props 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -20862,6 +20935,7 @@ exports[`Tabs with custom scroll props 1`] = `
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -21343,6 +21417,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -21496,6 +21571,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -21975,6 +22051,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -22128,6 +22205,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -22609,6 +22687,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -22762,6 +22841,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -23247,6 +23327,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -23405,6 +23486,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -23893,6 +23975,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -24051,6 +24134,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -24541,6 +24625,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -24699,6 +24784,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   overflow: hidden;
   background-color: transparent;
   color: #2e2e2e;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);

@@ -86,6 +86,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -466,6 +467,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -770,6 +772,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1077,6 +1080,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1462,6 +1466,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1776,6 +1781,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2078,6 +2084,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2377,6 +2384,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2672,6 +2680,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2971,6 +2980,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3266,6 +3276,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3565,6 +3576,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3857,6 +3869,7 @@ exports[`Menu renders with default props 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4152,6 +4165,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4446,6 +4460,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4741,6 +4756,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5040,6 +5056,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5340,6 +5357,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5639,6 +5657,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6081,6 +6100,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6393,6 +6413,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6751,6 +6772,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   border-color: transparent;
   border-width: 0 2px 0 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7048,6 +7070,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7315,6 +7338,7 @@ exports[`MenuItem renders in Large size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7495,6 +7519,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7675,6 +7700,7 @@ exports[`MenuItem renders in Small size 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7855,6 +7881,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8036,6 +8063,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8255,6 +8283,7 @@ exports[`MenuItem renders with default props 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8435,6 +8464,7 @@ exports[`MenuItem renders with icon 1`] = `
   border-color: transparent;
   border-width: 0 0 2px 0;
   color: #535353;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -8644,6 +8674,7 @@ exports[`MenuItem renders with overrides 1`] = `
   border-color: darkpink;
   border-width: 0px 8px 0px 0px;
   color: red;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
