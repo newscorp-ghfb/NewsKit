@@ -32,12 +32,6 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 <div
     class="emotion-0"
   >
@@ -153,12 +147,6 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardRetu
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 <div
     class="emotion-0"
   >
@@ -216,12 +204,6 @@ exports[`MonoKeyboard with single key should render with no icon for unrecognise
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 <div

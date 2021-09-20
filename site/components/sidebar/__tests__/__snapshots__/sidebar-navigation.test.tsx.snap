@@ -38,12 +38,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   text-decoration: none;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -203,12 +197,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-4:hover:not(:disabled) {
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-5 {

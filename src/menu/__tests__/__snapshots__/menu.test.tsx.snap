@@ -45,17 +45,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -75,12 +64,12 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -93,42 +82,42 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   cursor: pointer;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #535353;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-4:disabled {
+.emotion-3:disabled {
   color: #c0c0c0;
 }
 
-.emotion-4:disabled svg {
+.emotion-3:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -149,7 +138,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -158,13 +147,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
-.emotion-7 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -172,7 +155,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-7::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -180,7 +163,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-7::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -188,19 +171,19 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-8 {
+.emotion-7 {
   box-sizing: border-box;
 }
 
-.nk-menu-group+.emotion-8 {
+.nk-menu-group+.emotion-7 {
   margin-right: 24px;
 }
 
-.nk-menu-item+.emotion-8 {
+.nk-menu-item+.emotion-7 {
   margin-right: 8px;
 }
 
-.emotion-9 {
+.emotion-8 {
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -226,80 +209,72 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
           <li
             aria-hidden="true"
-            class="emotion-8"
+            class="emotion-7"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-9"
+              class="emotion-8"
               data-testid="divider"
             />
           </li>
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
         </ul>
       </li>
       <li
         aria-hidden="true"
-        class="emotion-8"
+        class="emotion-7"
         role="separator"
       >
         <hr
           aria-hidden="true"
-          class="emotion-9"
+          class="emotion-8"
           data-testid="divider"
         />
       </li>
@@ -310,68 +285,60 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
           <li
             aria-hidden="true"
-            class="emotion-8"
+            class="emotion-7"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-9"
+              class="emotion-8"
               data-testid="divider"
             />
           </li>
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
         </ul>
@@ -426,17 +393,6 @@ exports[`Menu renders horizontally with menu group 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -456,317 +412,12 @@ exports[`Menu renders horizontally with menu group 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
-  margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  cursor: pointer;
-}
-
-.emotion-4 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-4 svg {
-  fill: #535353;
-}
-
-.emotion-4:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
-}
-
-.emotion-4:hover:not(:disabled) svg {
-  fill: #0a0a0a;
-}
-
-.emotion-4:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
-}
-
-.emotion-4:active:not(:disabled) svg {
-  fill: #0a0a0a;
-}
-
-.emotion-4:disabled {
-  color: #c0c0c0;
-}
-
-.emotion-4:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
-.emotion-7 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  letter-spacing: 0;
-}
-
-.emotion-7::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.32678571428571435em;
-}
-
-.emotion-7::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-<nav
-    class="emotion-0"
-    data-testid="menu-container"
-    role="navigation"
-  >
-    <ul
-      role="list"
-    >
-      <li
-        class="nk-menu-group emotion-1"
-      >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <div
-              class="emotion-3"
-            >
-              <a
-                class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-6"
-                  >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <div
-              class="emotion-3"
-            >
-              <a
-                class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-6"
-                  >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <li
-        class="nk-menu-group emotion-1"
-      >
-        <ul>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <div
-              class="emotion-3"
-            >
-              <a
-                class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-6"
-                  >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li
-            class="nk-menu-item emotion-2"
-          >
-            <div
-              class="emotion-3"
-            >
-              <a
-                class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
-              >
-                <div
-                  class="emotion-5"
-                >
-                  <div
-                    class="emotion-6"
-                  >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Menu renders horizontally with menu items 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.emotion-0>ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.emotion-0 li:last-of-type {
-  margin-right: 0;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  margin-right: 8px;
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -844,12 +495,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
 .emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -883,112 +528,368 @@ exports[`Menu renders horizontally with menu items 1`] = `
       role="list"
     >
       <li
+        class="nk-menu-group emotion-1"
+      >
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="nk-menu-group emotion-1"
+      >
+        <ul>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-2"
+          >
+            <a
+              class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <span
+                    class="emotion-6"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Menu renders horizontally with menu items 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #535353;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg {
+  fill: #535353;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #0a68c1;
+  color: #0a0a0a;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #0a68c1;
+  color: #0a0a0a;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #0a0a0a;
+}
+
+.emotion-2:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-2:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-5 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-5::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-5::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -1039,17 +940,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1069,12 +959,12 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -1092,44 +982,44 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   text-align: left;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #535353;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-4:disabled {
+.emotion-3:disabled {
   color: #c0c0c0;
 }
 
-.emotion-4:disabled svg {
+.emotion-3:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1150,7 +1040,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1159,13 +1049,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
-.emotion-7 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1173,7 +1057,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-7::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -1181,7 +1065,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-7::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -1189,19 +1073,19 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-8 {
+.emotion-7 {
   box-sizing: border-box;
 }
 
-.nk-menu-group+.emotion-8 {
+.nk-menu-group+.emotion-7 {
   margin-bottom: 24px;
 }
 
-.nk-menu-item+.emotion-8 {
+.nk-menu-item+.emotion-7 {
   margin-bottom: 8px;
 }
 
-.emotion-9 {
+.emotion-8 {
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -1226,80 +1110,72 @@ exports[`Menu renders vertically with menu dividers 1`] = `
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
           <li
             aria-hidden="true"
-            class="emotion-8"
+            class="emotion-7"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-9"
+              class="emotion-8"
               data-testid="divider"
             />
           </li>
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
         </ul>
       </li>
       <li
         aria-hidden="true"
-        class="emotion-8"
+        class="emotion-7"
         role="separator"
       >
         <hr
           aria-hidden="true"
-          class="emotion-9"
+          class="emotion-8"
           data-testid="divider"
         />
       </li>
@@ -1310,68 +1186,60 @@ exports[`Menu renders vertically with menu dividers 1`] = `
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
           <li
             aria-hidden="true"
-            class="emotion-8"
+            class="emotion-7"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="emotion-9"
+              class="emotion-8"
               data-testid="divider"
             />
           </li>
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           ,
         </ul>
@@ -1425,17 +1293,6 @@ exports[`Menu renders vertically with menu group 1`] = `
 }
 
 .emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1455,12 +1312,12 @@ exports[`Menu renders vertically with menu group 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -1478,44 +1335,44 @@ exports[`Menu renders vertically with menu group 1`] = `
   text-align: left;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #535353;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-4:disabled {
+.emotion-3:disabled {
   color: #c0c0c0;
 }
 
-.emotion-4:disabled svg {
+.emotion-3:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1536,7 +1393,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1545,13 +1402,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
-.emotion-7 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1559,7 +1410,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-7::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -1567,7 +1418,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-7::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -1590,56 +1441,48 @@ exports[`Menu renders vertically with menu group 1`] = `
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
         </ul>
       </li>
@@ -1650,56 +1493,48 @@ exports[`Menu renders vertically with menu group 1`] = `
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li
             class="nk-menu-item emotion-2"
           >
-            <div
+            <a
               class="emotion-3"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <a
+              <div
                 class="emotion-4"
-                data-testid="buttonLink"
-                href="http://"
               >
                 <div
                   class="emotion-5"
                 >
-                  <div
+                  <span
                     class="emotion-6"
                   >
-                    <span
-                      class="emotion-7"
-                    >
-                      Menu item
-                    </span>
-                  </div>
+                    Menu item
+                  </span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
         </ul>
       </li>
@@ -1740,17 +1575,6 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1770,12 +1594,12 @@ exports[`Menu renders vertically with menu items 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -1793,44 +1617,44 @@ exports[`Menu renders vertically with menu items 1`] = `
   text-align: left;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1851,7 +1675,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1860,13 +1684,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1874,7 +1692,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -1882,7 +1700,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -1901,110 +1719,94 @@ exports[`Menu renders vertically with menu items 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -2043,17 +1845,6 @@ exports[`Menu renders with Large size menu items 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2073,12 +1864,12 @@ exports[`Menu renders with Large size menu items 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -2096,44 +1887,44 @@ exports[`Menu renders with Large size menu items 1`] = `
   text-align: left;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2154,7 +1945,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2163,13 +1954,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -2177,7 +1962,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -2185,7 +1970,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   margin-bottom: -0.36250000000000004em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -2204,110 +1989,94 @@ exports[`Menu renders with Large size menu items 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -2343,17 +2112,6 @@ exports[`Menu renders with Large size menu items 2`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2373,12 +2131,12 @@ exports[`Menu renders with Large size menu items 2`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -2391,42 +2149,42 @@ exports[`Menu renders with Large size menu items 2`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2447,7 +2205,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2456,13 +2214,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -2470,7 +2222,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -2478,7 +2230,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   margin-bottom: -0.36250000000000004em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -2497,110 +2249,94 @@ exports[`Menu renders with Large size menu items 2`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -2639,17 +2375,6 @@ exports[`Menu renders with Medium size menu items 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2669,12 +2394,12 @@ exports[`Menu renders with Medium size menu items 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -2692,44 +2417,44 @@ exports[`Menu renders with Medium size menu items 1`] = `
   text-align: left;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2750,7 +2475,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2759,13 +2484,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2773,7 +2492,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -2781,7 +2500,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -2800,110 +2519,94 @@ exports[`Menu renders with Medium size menu items 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -2939,17 +2642,6 @@ exports[`Menu renders with Medium size menu items 2`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2969,12 +2661,12 @@ exports[`Menu renders with Medium size menu items 2`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -2987,42 +2679,42 @@ exports[`Menu renders with Medium size menu items 2`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3043,7 +2735,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3052,13 +2744,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3066,7 +2752,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -3074,7 +2760,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -3093,110 +2779,94 @@ exports[`Menu renders with Medium size menu items 2`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -3235,17 +2905,6 @@ exports[`Menu renders with Small size menu items 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3265,12 +2924,12 @@ exports[`Menu renders with Small size menu items 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -3288,44 +2947,44 @@ exports[`Menu renders with Small size menu items 1`] = `
   text-align: left;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3346,7 +3005,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3355,13 +3014,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -3369,7 +3022,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -3377,7 +3030,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   margin-bottom: -0.4458333333333334em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -3396,110 +3049,94 @@ exports[`Menu renders with Small size menu items 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -3535,17 +3172,6 @@ exports[`Menu renders with Small size menu items 2`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3565,12 +3191,12 @@ exports[`Menu renders with Small size menu items 2`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -3583,42 +3209,42 @@ exports[`Menu renders with Small size menu items 2`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3639,7 +3265,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3648,13 +3274,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -3662,7 +3282,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -3670,7 +3290,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   margin-bottom: -0.4458333333333334em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -3689,110 +3309,94 @@ exports[`Menu renders with Small size menu items 2`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -3828,17 +3432,6 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3858,12 +3451,12 @@ exports[`Menu renders with default props 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -3876,42 +3469,42 @@ exports[`Menu renders with default props 1`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3932,7 +3525,7 @@ exports[`Menu renders with default props 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3941,13 +3534,7 @@ exports[`Menu renders with default props 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3955,7 +3542,7 @@ exports[`Menu renders with default props 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -3963,7 +3550,7 @@ exports[`Menu renders with default props 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -3982,110 +3569,94 @@ exports[`Menu renders with default props 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -4124,17 +3695,6 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4154,12 +3714,12 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -4172,44 +3732,44 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4230,7 +3790,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4239,13 +3799,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4253,7 +3807,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -4261,7 +3815,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -4280,110 +3834,94 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -4419,17 +3957,6 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4449,12 +3976,12 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -4467,42 +3994,42 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4523,7 +4050,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4532,13 +4059,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4546,7 +4067,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -4554,7 +4075,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -4573,110 +4094,94 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -4715,17 +4220,6 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4745,12 +4239,12 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -4768,44 +4262,44 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   text-align: right;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4826,7 +4320,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4835,13 +4329,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4849,7 +4337,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -4857,7 +4345,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -4876,110 +4364,94 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -5015,17 +4487,6 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5045,12 +4506,12 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -5068,42 +4529,42 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   text-align: right;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5124,7 +4585,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5133,13 +4594,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5147,7 +4602,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -5155,7 +4610,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -5174,110 +4629,94 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -5316,17 +4755,6 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5346,12 +4774,12 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -5369,44 +4797,44 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   text-align: left;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5427,7 +4855,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5436,13 +4864,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5450,7 +4872,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -5458,7 +4880,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -5477,110 +4899,94 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -5616,17 +5022,6 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5646,12 +5041,12 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -5669,42 +5064,42 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   text-align: left;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5725,7 +5120,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5734,13 +5129,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5748,7 +5137,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -5756,7 +5145,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -5775,110 +5164,94 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -6059,17 +5432,6 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6089,12 +5451,12 @@ exports[`MenuGroup renders with overrides 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -6107,44 +5469,44 @@ exports[`MenuGroup renders with overrides 1`] = `
   cursor: pointer;
 }
 
-.emotion-5 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 svg {
+.emotion-4 svg {
   fill: #535353;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-5:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
 }
 
-.emotion-5:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6165,7 +5527,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6174,13 +5536,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-7 {
-    max-width: 100%;
-  }
-}
-
-.emotion-8 {
+.emotion-7 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6188,7 +5544,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-8::before {
+.emotion-7::before {
   content: '';
   display: block;
   height: 0;
@@ -6196,7 +5552,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-8::after {
+.emotion-7::after {
   content: '';
   display: block;
   height: 0;
@@ -6223,110 +5579,94 @@ exports[`MenuGroup renders with overrides 1`] = `
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </li>
@@ -6372,17 +5712,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6402,12 +5731,12 @@ exports[`MenuGroup renders with title as a component 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -6420,44 +5749,44 @@ exports[`MenuGroup renders with title as a component 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #535353;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6478,7 +5807,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6487,13 +5816,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6501,7 +5824,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -6509,7 +5832,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -6565,110 +5888,94 @@ exports[`MenuGroup renders with title as a component 1`] = `
       <li
         class="nk-menu-item emotion-6"
       >
-        <div
+        <a
           class="emotion-7"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-8"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-9"
             >
-              <div
+              <span
                 class="emotion-10"
               >
-                <span
-                  class="emotion-11"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-6"
       >
-        <div
+        <a
           class="emotion-7"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-8"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-9"
             >
-              <div
+              <span
                 class="emotion-10"
               >
-                <span
-                  class="emotion-11"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-6"
       >
-        <div
+        <a
           class="emotion-7"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-8"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-9"
             >
-              <div
+              <span
                 class="emotion-10"
               >
-                <span
-                  class="emotion-11"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-6"
       >
-        <div
+        <a
           class="emotion-7"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-8"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-9"
             >
-              <div
+              <span
                 class="emotion-10"
               >
-                <span
-                  class="emotion-11"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </li>
@@ -6731,17 +6038,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6761,12 +6057,12 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -6779,44 +6075,44 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   cursor: pointer;
 }
 
-.emotion-5 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 svg {
+.emotion-4 svg {
   fill: #535353;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #0a68c1;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #02509b;
   color: #02509b;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-5:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
 }
 
-.emotion-5:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-6 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6837,7 +6133,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6846,13 +6142,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-7 {
-    max-width: 100%;
-  }
-}
-
-.emotion-8 {
+.emotion-7 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6860,7 +6150,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-8::before {
+.emotion-7::before {
   content: '';
   display: block;
   height: 0;
@@ -6868,7 +6158,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-8::after {
+.emotion-7::after {
   content: '';
   display: block;
   height: 0;
@@ -6895,110 +6185,94 @@ exports[`MenuGroup renders with title when vertical 1`] = `
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-3"
       >
-        <div
+        <a
           class="emotion-4"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-5"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-6"
             >
-              <div
+              <span
                 class="emotion-7"
               >
-                <span
-                  class="emotion-8"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </li>
@@ -7029,17 +6303,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7059,12 +6322,12 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -7077,42 +6340,42 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7133,7 +6396,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7142,13 +6405,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7156,7 +6413,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -7164,7 +6421,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -7179,110 +6436,94 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       <li
         class="nk-menu-item emotion-1"
       >
-        <div
+        <a
           class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <a
+          <div
             class="emotion-3"
-            data-testid="buttonLink"
-            href="http://"
           >
             <div
               class="emotion-4"
             >
-              <div
+              <span
                 class="emotion-5"
               >
-                <span
-                  class="emotion-6"
-                >
-                  Menu item
-                </span>
-              </div>
+                Menu item
+              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
     </ul>
   </li>
@@ -7297,17 +6538,6 @@ exports[`MenuItem renders in Large size 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7327,12 +6557,12 @@ exports[`MenuItem renders in Large size 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -7345,42 +6575,42 @@ exports[`MenuItem renders in Large size 1`] = `
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-2:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7401,7 +6631,7 @@ exports[`MenuItem renders in Large size 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7410,13 +6640,7 @@ exports[`MenuItem renders in Large size 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7424,7 +6648,7 @@ exports[`MenuItem renders in Large size 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -7432,7 +6656,7 @@ exports[`MenuItem renders in Large size 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-5::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -7443,29 +6667,25 @@ exports[`MenuItem renders in Large size 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
     >
-      <a
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
       >
         <div
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
-            <span
-              class="emotion-5"
-            >
-              Menu item
-            </span>
-          </div>
+            Menu item
+          </span>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;
@@ -7478,17 +6698,6 @@ exports[`MenuItem renders in Medium size 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7508,12 +6717,12 @@ exports[`MenuItem renders in Medium size 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -7526,42 +6735,42 @@ exports[`MenuItem renders in Medium size 1`] = `
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-2:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7582,7 +6791,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7591,13 +6800,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7605,7 +6808,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -7613,7 +6816,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-5::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -7624,29 +6827,25 @@ exports[`MenuItem renders in Medium size 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
     >
-      <a
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
       >
         <div
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
-            <span
-              class="emotion-5"
-            >
-              Menu item
-            </span>
-          </div>
+            Menu item
+          </span>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;
@@ -7659,17 +6858,6 @@ exports[`MenuItem renders in Small size 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7689,12 +6877,12 @@ exports[`MenuItem renders in Small size 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -7707,42 +6895,42 @@ exports[`MenuItem renders in Small size 1`] = `
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-2:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7763,7 +6951,7 @@ exports[`MenuItem renders in Small size 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7772,13 +6960,7 @@ exports[`MenuItem renders in Small size 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7786,7 +6968,7 @@ exports[`MenuItem renders in Small size 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -7794,7 +6976,7 @@ exports[`MenuItem renders in Small size 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-5::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -7805,29 +6987,25 @@ exports[`MenuItem renders in Small size 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
     >
-      <a
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
       >
         <div
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
-            <span
-              class="emotion-5"
-            >
-              Menu item
-            </span>
-          </div>
+            Menu item
+          </span>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;
@@ -7840,17 +7018,6 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7870,12 +7037,12 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -7888,42 +7055,42 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-2:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7944,7 +7111,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7953,13 +7120,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7967,7 +7128,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -7975,7 +7136,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-5::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -7986,30 +7147,26 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
+      target="_blank"
     >
-      <a
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
-        target="_blank"
       >
         <div
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
-            <span
-              class="emotion-5"
-            >
-              Menu item
-            </span>
-          </div>
+            Menu item
+          </span>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;
@@ -8022,17 +7179,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8052,12 +7198,12 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -8075,46 +7221,46 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-2:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8135,7 +7281,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8144,13 +7290,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8159,7 +7299,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: inline-block;
 }
 
-.emotion-8 {
+.emotion-7 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -8167,7 +7307,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-8::before {
+.emotion-7::before {
   content: '';
   display: block;
   height: 0;
@@ -8175,7 +7315,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-8::after {
+.emotion-7::after {
   content: '';
   display: block;
   height: 0;
@@ -8186,50 +7326,46 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
+      aria-current="page"
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
     >
-      <a
-        aria-current="page"
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
       >
         <div
           class="emotion-3"
         >
-          <div
-            class="emotion-4"
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-              />
-            </svg>
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <span
-              class="emotion-8"
-            >
-              Menu item
-            </span>
-          </div>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
         </div>
-      </a>
-    </div>
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-7"
+          >
+            Menu item
+          </span>
+        </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;
@@ -8242,17 +7378,6 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8272,12 +7397,12 @@ exports[`MenuItem renders with default props 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -8290,42 +7415,42 @@ exports[`MenuItem renders with default props 1`] = `
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-2:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8346,7 +7471,7 @@ exports[`MenuItem renders with default props 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8355,13 +7480,7 @@ exports[`MenuItem renders with default props 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -8369,7 +7488,7 @@ exports[`MenuItem renders with default props 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -8377,7 +7496,7 @@ exports[`MenuItem renders with default props 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-5::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -8388,29 +7507,25 @@ exports[`MenuItem renders with default props 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
     >
-      <a
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
       >
         <div
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
-            <span
-              class="emotion-5"
-            >
-              Menu item
-            </span>
-          </div>
+            Menu item
+          </span>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;
@@ -8423,17 +7538,6 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8453,12 +7557,12 @@ exports[`MenuItem renders with icon 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
@@ -8471,42 +7575,42 @@ exports[`MenuItem renders with icon 1`] = `
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: #535353;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   border-color: #0a68c1;
   color: #0a0a0a;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #0a0a0a;
 }
 
-.emotion-2:disabled {
+.emotion-1:disabled {
   color: #c0c0c0;
 }
 
-.emotion-2:disabled svg {
+.emotion-1:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8527,7 +7631,7 @@ exports[`MenuItem renders with icon 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8536,13 +7640,7 @@ exports[`MenuItem renders with icon 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -8551,7 +7649,7 @@ exports[`MenuItem renders with icon 1`] = `
   display: inline-block;
 }
 
-.emotion-8 {
+.emotion-7 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -8559,7 +7657,7 @@ exports[`MenuItem renders with icon 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-8::before {
+.emotion-7::before {
   content: '';
   display: block;
   height: 0;
@@ -8567,7 +7665,7 @@ exports[`MenuItem renders with icon 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-8::after {
+.emotion-7::after {
   content: '';
   display: block;
   height: 0;
@@ -8578,49 +7676,45 @@ exports[`MenuItem renders with icon 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
     >
-      <a
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
       >
         <div
           class="emotion-3"
         >
-          <div
-            class="emotion-4"
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-5 emotion-6"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-              />
-            </svg>
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <span
-              class="emotion-8"
-            >
-              Menu item
-            </span>
-          </div>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
         </div>
-      </a>
-    </div>
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-7"
+          >
+            Menu item
+          </span>
+        </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;
@@ -8633,17 +7727,6 @@ exports[`MenuItem renders with overrides 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8663,12 +7746,12 @@ exports[`MenuItem renders with overrides 1`] = `
   width: 100%;
   padding: 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: pink;
   border-style: solid;
   border-color: darkpink;
@@ -8681,16 +7764,16 @@ exports[`MenuItem renders with overrides 1`] = `
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   fill: grey;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8711,7 +7794,7 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-right: calc(-12px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8720,13 +7803,7 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-right: calc(12px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    max-width: 100%;
-  }
-}
-
-.emotion-5 {
+.emotion-4 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -8734,7 +7811,7 @@ exports[`MenuItem renders with overrides 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-4::before {
   content: '';
   display: block;
   height: 0;
@@ -8742,7 +7819,7 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-bottom: -0.36250000000000004em;
 }
 
-.emotion-5::after {
+.emotion-4::after {
   content: '';
   display: block;
   height: 0;
@@ -8753,29 +7830,25 @@ exports[`MenuItem renders with overrides 1`] = `
 <li
     class="nk-menu-item emotion-0"
   >
-    <div
+    <a
       class="emotion-1"
+      data-testid="buttonLink"
+      href="http://"
     >
-      <a
+      <div
         class="emotion-2"
-        data-testid="buttonLink"
-        href="http://"
       >
         <div
           class="emotion-3"
         >
-          <div
+          <span
             class="emotion-4"
           >
-            <span
-              class="emotion-5"
-            >
-              Menu item
-            </span>
-          </div>
+            Menu item
+          </span>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   </li>
 </DocumentFragment>
 `;

@@ -59,12 +59,6 @@ exports[`TableOfContent should render with no errors 1`] = `
   color: #555E74;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -135,12 +129,6 @@ exports[`TableOfContent should render with no errors 1`] = `
 
 .emotion-5:active:not(:disabled) {
   color: #555E74;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    vertical-align: text-bottom;
-  }
 }
 
 <div

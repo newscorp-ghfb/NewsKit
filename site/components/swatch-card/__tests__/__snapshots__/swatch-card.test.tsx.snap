@@ -36,16 +36,6 @@ exports[`SwatchCard renders with inkBase 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -64,12 +54,12 @@ exports[`SwatchCard renders with inkBase 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #128293;
   border-radius: 0;
   color: #ffffff;
@@ -84,16 +74,16 @@ exports[`SwatchCard renders with inkBase 1`] = `
   width: 100%;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #ffffff;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -114,7 +104,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -123,13 +113,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -137,7 +121,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -145,7 +129,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -161,23 +145,19 @@ exports[`SwatchCard renders with inkBase 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="flag"
       >
         <div
           class="emotion-3"
-          data-testid="flag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                AAA
-              </span>
-            </div>
+              AAA
+            </span>
           </div>
         </div>
       </div>

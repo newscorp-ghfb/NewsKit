@@ -11,6 +11,7 @@ import {
   StorybookSubHeading,
   StorybookHeading,
 } from '../../test/storybook-comps';
+import {ThemeProvider, createTheme} from '../../theme';
 
 const Block = styled.div`
   margin: 10px;
@@ -268,3 +269,40 @@ export const StoryFlagWithIcons = () => (
   </React.Fragment>
 );
 StoryFlagWithIcons.storyName = 'flag-with-icons';
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-text-input-theme',
+  overrides: {
+    stylePresets: {
+      myFlag: {
+        base: {
+          borderColor: '#0a68c1',
+          borderWidth: '1px',
+          borderStyle: 'solid',
+          borderRadius: '3px',
+          color: '#0a68c1',
+          backgroundColor: 'transparent',
+        },
+      },
+    },
+  },
+});
+
+export const StoryFlagWithSize = () => (
+  <React.Fragment>
+    <StorybookHeading>Flag</StorybookHeading>
+    <StorybookSubHeading>With long text and overflow</StorybookSubHeading>
+    <ThemeProvider theme={myCustomTheme}>
+      <Flag
+        overrides={{
+          width: 'sizing120',
+          height: 'sizing070',
+          stylePreset: 'myFlag',
+        }}
+      >
+        Text goes here and it has overflow and long text
+      </Flag>
+    </ThemeProvider>
+  </React.Fragment>
+);
+StoryFlagWithSize.storyName = 'flag with fixed size and overflow';

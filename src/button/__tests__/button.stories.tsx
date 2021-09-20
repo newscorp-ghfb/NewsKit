@@ -7,6 +7,7 @@ import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {StorybookSubHeading} from '../../test/storybook-comps';
+import {ThemeProvider, createTheme} from '../../theme';
 
 const Container = styled.div`
   margin: 24px;
@@ -52,6 +53,24 @@ const Background = styled.div<{hasBackground?: boolean}>`
       color: getColorFromTheme('white')({theme}),
     }}
 `;
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-text-input-theme',
+  overrides: {
+    stylePresets: {
+      myButton: {
+        base: {
+          borderColor: '#0a68c1',
+          borderWidth: '1px',
+          borderStyle: 'solid',
+          borderRadius: '3px',
+          color: '#0a68c1',
+          backgroundColor: 'transparent',
+        },
+      },
+    },
+  },
+});
 
 interface IntentKindStylePreset {
   kind: string;
@@ -182,6 +201,25 @@ export const StoryFullAndFixedWidthButton = () => (
           Large fixed-width button
         </Button>
       </Border>
+    </Container>
+    <StorybookSubHeading>Fixed-Width and overflow</StorybookSubHeading>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <Border>
+          <Spacer>
+            <Button
+              size={ButtonSize.Small}
+              overrides={{
+                width: 'sizing120',
+                height: 'sizing070',
+                stylePreset: 'myButton',
+              }}
+            >
+              Small fixed-width button and overflow with long long text
+            </Button>
+          </Spacer>
+        </Border>
+      </ThemeProvider>
     </Container>
   </>
 );

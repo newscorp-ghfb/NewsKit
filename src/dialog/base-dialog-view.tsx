@@ -5,11 +5,10 @@ import {
   StyledDialogContent,
   StyledDialogHeader,
   StyledDialogHeaderContent,
-  StyledCloseButtonContainer,
   StyledFillSpaceCloseButton,
+  StyledCloseButton,
 } from './styled';
 import {Stack} from '../stack';
-import {IconButton} from '../icon-button';
 import {IconFilledClose} from '../icons';
 import {ButtonSize} from '../button';
 import {useResizeObserver} from '../utils/hooks/use-resize-observer';
@@ -93,24 +92,19 @@ export const BaseDialogView = React.forwardRef<
         >
           {children}
         </StyledDialogContent>
-        <StyledCloseButtonContainer
+        <StyledCloseButton
           path={path}
           closePosition={closePosition}
-          overrides={overrides}
           style={{
             ...centerCloseButton(headerHeight),
           }}
-          // Move props directly to IconButton when PPDSC-1449 is fixed
+          aria-label="close"
+          onClick={handleCloseButtonClick}
+          overrides={closeButtonOverrides}
+          size={ButtonSize.Medium}
         >
-          <IconButton
-            aria-label="close"
-            onClick={handleCloseButtonClick}
-            overrides={closeButtonOverrides}
-            size={ButtonSize.Medium}
-          >
-            <IconFilledClose />
-          </IconButton>
-        </StyledCloseButtonContainer>
+          <IconFilledClose />
+        </StyledCloseButton>
       </StyledDialogPanel>
     );
   },

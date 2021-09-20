@@ -44,12 +44,6 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -159,12 +153,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -272,12 +260,6 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-1 {

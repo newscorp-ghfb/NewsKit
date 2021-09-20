@@ -74,18 +74,6 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -105,12 +93,12 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   height: 24px;
   padding: 4px 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   border-style: solid;
   border-color: #67CF86;
   background-color: #E6FAEB;
@@ -118,16 +106,16 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 1px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #148F39;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -148,7 +136,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   margin-right: calc(-4px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -157,13 +145,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -172,11 +154,11 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   display: inline-block;
 }
 
-.emotion-11.emotion-11 {
+.emotion-10.emotion-10 {
   fill: #148F39;
 }
 
-.emotion-13 {
+.emotion-12 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
@@ -189,14 +171,14 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 0;
 }
 
-.emotion-16 {
+.emotion-15 {
   fill: #E4E4E4;
   vertical-align: unset;
   display: inline-block;
   margin: 0 6px;
 }
 
-.emotion-16.emotion-16 {
+.emotion-15.emotion-15 {
   width: 12px;
   height: 12px;
   fill: #E4E4E4;
@@ -236,41 +218,37 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
           >
             <div
               class="emotion-7"
+              data-testid="flag"
             >
               <div
                 class="emotion-8"
-                data-testid="flag"
               >
                 <div
                   class="emotion-9"
                 >
-                  <div
-                    class="emotion-10"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-10 emotion-11"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0V0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
           </td>
         </tr>
         <tr
-          class="emotion-13"
+          class="emotion-12"
         >
           <td
             class="emotion-5"
@@ -282,7 +260,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
           >
             <svg
               aria-hidden="true"
-              class="emotion-16"
+              class="emotion-15"
               fill="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -385,12 +363,6 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-5:visited:not(:disabled) svg {
   fill: #503B8C;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-6 {
@@ -576,18 +548,6 @@ exports[`Table renders number values automatically if undefined 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -607,28 +567,28 @@ exports[`Table renders number values automatically if undefined 1`] = `
   height: 24px;
   padding: 0;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   color: #FFFFFF;
   background-color: #577FFB;
   border-radius: 20rem;
   white-space: nowrap;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #FFFFFF;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -649,7 +609,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -658,13 +618,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -672,7 +626,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -680,7 +634,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   margin-bottom: -0.3486607142857143em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -688,14 +642,14 @@ exports[`Table renders number values automatically if undefined 1`] = `
   margin-top: -0.4892857142857143em;
 }
 
-.emotion-18 {
+.emotion-16 {
   padding: 16px 16px 16px 0;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
 }
 
-.emotion-33 {
+.emotion-29 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
@@ -742,23 +696,19 @@ exports[`Table renders number values automatically if undefined 1`] = `
           >
             <div
               class="emotion-7"
+              data-testid="flag"
             >
               <div
                 class="emotion-8"
-                data-testid="flag"
               >
                 <div
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <span
-                      class="emotion-11"
-                    >
-                      1
-                    </span>
-                  </div>
+                    1
+                  </span>
                 </div>
               </div>
             </div>
@@ -768,29 +718,25 @@ exports[`Table renders number values automatically if undefined 1`] = `
           >
             <div
               class="emotion-7"
+              data-testid="flag"
             >
               <div
                 class="emotion-8"
-                data-testid="flag"
               >
                 <div
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <span
-                      class="emotion-11"
-                    >
-                      1
-                    </span>
-                  </div>
+                    1
+                  </span>
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-18"
+            class="emotion-16"
           >
             one
           </td>
@@ -803,23 +749,19 @@ exports[`Table renders number values automatically if undefined 1`] = `
           >
             <div
               class="emotion-7"
+              data-testid="flag"
             >
               <div
                 class="emotion-8"
-                data-testid="flag"
               >
                 <div
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <span
-                      class="emotion-11"
-                    >
-                      2
-                    </span>
-                  </div>
+                    2
+                  </span>
                 </div>
               </div>
             </div>
@@ -829,58 +771,50 @@ exports[`Table renders number values automatically if undefined 1`] = `
           >
             <div
               class="emotion-7"
+              data-testid="flag"
             >
               <div
                 class="emotion-8"
-                data-testid="flag"
               >
                 <div
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <span
-                      class="emotion-11"
-                    >
-                      2
-                    </span>
-                  </div>
+                    2
+                  </span>
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-18"
+            class="emotion-16"
           >
             two
           </td>
         </tr>
         <tr
-          class="emotion-33"
+          class="emotion-29"
         >
           <td
             class="emotion-6"
           >
             <div
               class="emotion-7"
+              data-testid="flag"
             >
               <div
                 class="emotion-8"
-                data-testid="flag"
               >
                 <div
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <span
-                      class="emotion-11"
-                    >
-                      3
-                    </span>
-                  </div>
+                    3
+                  </span>
                 </div>
               </div>
             </div>
@@ -890,29 +824,25 @@ exports[`Table renders number values automatically if undefined 1`] = `
           >
             <div
               class="emotion-7"
+              data-testid="flag"
             >
               <div
                 class="emotion-8"
-                data-testid="flag"
               >
                 <div
                   class="emotion-9"
                 >
-                  <div
+                  <span
                     class="emotion-10"
                   >
-                    <span
-                      class="emotion-11"
-                    >
-                      3
-                    </span>
-                  </div>
+                    3
+                  </span>
                 </div>
               </div>
             </div>
           </td>
           <td
-            class="emotion-18"
+            class="emotion-16"
           >
             three
           </td>

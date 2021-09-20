@@ -194,26 +194,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 
 .emotion-6 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px;
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -232,12 +212,12 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -246,35 +226,40 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 8px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #2e2e2e;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-8:disabled {
+.emotion-6:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-6:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -295,7 +280,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -304,13 +289,7 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -350,47 +329,39 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-6"
+        data-testid="button"
         style="top: 0px;"
+        tabindex="-1"
+        type="button"
       >
         <div
           class="emotion-7"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-8"
-            data-testid="button"
-            tabindex="-1"
-            type="button"
           >
-            <div
-              class="emotion-9"
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-10"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-11 emotion-12"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -644,26 +615,6 @@ exports[`Drawer renders default 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px;
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -682,12 +633,12 @@ exports[`Drawer renders default 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -696,35 +647,40 @@ exports[`Drawer renders default 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 8px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   fill: #2e2e2e;
 }
 
-.emotion-10:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-10:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-10:disabled svg {
+.emotion-8:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-11 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -745,7 +701,7 @@ exports[`Drawer renders default 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-12 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -754,13 +710,7 @@ exports[`Drawer renders default 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -809,46 +759,38 @@ exports[`Drawer renders default 1`] = `
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-8"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-9"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-10"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-11"
+            <svg
+              aria-hidden="true"
+              class="emotion-11 emotion-12"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-12"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-13 emotion-14"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -1063,26 +1005,6 @@ exports[`Drawer renders drawer with overrides 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px;
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1101,12 +1023,12 @@ exports[`Drawer renders drawer with overrides 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   border-width: 1px;
   border-style: solid;
   border-color: #a2dae3;
@@ -1117,22 +1039,27 @@ exports[`Drawer renders drawer with overrides 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 8px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #128293;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #45b5c6;
 }
 
-.emotion-9 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1153,7 +1080,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1162,13 +1089,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1208,46 +1129,38 @@ exports[`Drawer renders drawer with overrides 1`] = `
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-6"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-7"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-8"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-9"
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-10"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-11 emotion-12"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -1496,26 +1409,6 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px;
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1534,12 +1427,12 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -1548,35 +1441,40 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 8px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #2e2e2e;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-8:disabled {
+.emotion-6:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-6:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1597,7 +1495,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1606,13 +1504,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1656,46 +1548,38 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
         class="emotion-5"
         data-testid="dialog-content"
       />
-      <div
+      <button
+        aria-label="close"
         class="emotion-6"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-7"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-8"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-9"
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-10"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-11 emotion-12"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -1931,26 +1815,6 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px;
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-7 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1969,12 +1833,12 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -1983,35 +1847,40 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 8px;
 }
 
-.emotion-7 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-5 svg {
   fill: #2e2e2e;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-7:disabled {
+.emotion-5:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-7:disabled svg {
+.emotion-5:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2032,7 +1901,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2041,13 +1910,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-9 {
-    max-width: 100%;
-  }
-}
-
-.emotion-10 {
+.emotion-8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2093,46 +1956,38 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
           Showing different styles
         </div>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-5"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-6"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-7"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-8"
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-9"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-10 emotion-11"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -2386,26 +2241,6 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 8px;
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2424,12 +2259,12 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -2438,35 +2273,40 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 8px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   fill: #2e2e2e;
 }
 
-.emotion-10:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-10:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-10:disabled svg {
+.emotion-8:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-11 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2487,7 +2327,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-12 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2496,13 +2336,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2551,46 +2385,38 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-8"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-9"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-10"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-11"
+            <svg
+              aria-hidden="true"
+              class="emotion-11 emotion-12"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-12"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-13 emotion-14"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -2844,26 +2670,6 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 8px;
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2882,12 +2688,12 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -2896,35 +2702,40 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 8px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   fill: #2e2e2e;
 }
 
-.emotion-10:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-10:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-10:disabled svg {
+.emotion-8:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-11 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2945,7 +2756,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-12 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2954,13 +2765,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3009,46 +2814,38 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-8"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-9"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-10"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-11"
+            <svg
+              aria-hidden="true"
+              class="emotion-11 emotion-12"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-12"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-13 emotion-14"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -3302,26 +3099,6 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 8px;
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3340,12 +3117,12 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -3354,35 +3131,40 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 8px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   fill: #2e2e2e;
 }
 
-.emotion-10:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-10:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-10:disabled svg {
+.emotion-8:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-11 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3403,7 +3185,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-12 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3412,13 +3194,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3467,46 +3243,38 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-8"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-9"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-10"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-11"
+            <svg
+              aria-hidden="true"
+              class="emotion-11 emotion-12"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-12"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-13 emotion-14"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -3760,26 +3528,6 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 8px;
-}
-
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3798,12 +3546,12 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -3812,35 +3560,40 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 8px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-8 svg {
   fill: #2e2e2e;
 }
 
-.emotion-10:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-10:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-10:disabled svg {
+.emotion-8:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-11 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3861,7 +3614,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-12 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3870,13 +3623,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3925,46 +3672,38 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-8"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-9"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-10"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-11"
+            <svg
+              aria-hidden="true"
+              class="emotion-11 emotion-12"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-12"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-13 emotion-14"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div
@@ -4205,26 +3944,6 @@ exports[`Drawer renders without header 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px;
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4243,12 +3962,12 @@ exports[`Drawer renders without header 1`] = `
   height: 48px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #2e2e2e;
@@ -4257,35 +3976,40 @@ exports[`Drawer renders without header 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 8px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-6 svg {
   fill: #2e2e2e;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-8:disabled {
+.emotion-6:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-6:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4306,7 +4030,7 @@ exports[`Drawer renders without header 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4315,13 +4039,7 @@ exports[`Drawer renders without header 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4361,46 +4079,38 @@ exports[`Drawer renders without header 1`] = `
           Drawer body content
         </p>
       </div>
-      <div
+      <button
+        aria-label="close"
         class="emotion-6"
+        data-testid="button"
         style="top: 0px;"
+        type="button"
       >
         <div
           class="emotion-7"
         >
-          <button
-            aria-label="close"
+          <div
             class="emotion-8"
-            data-testid="button"
-            type="button"
           >
-            <div
-              class="emotion-9"
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-10"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-11 emotion-12"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
+      </button>
     </div>
   </div>
   <div

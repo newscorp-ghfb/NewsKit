@@ -14,18 +14,6 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -45,12 +33,12 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   height: 32px;
   padding: 0;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   border-style: solid;
   border-color: #ED6B5A;
   background-color: #FFE8E5;
@@ -58,16 +46,16 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   border-width: 1px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #D23F2D;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -88,7 +76,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -97,13 +85,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -112,13 +94,13 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: inline-block;
 }
 
-.emotion-6.emotion-6 {
+.emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
   fill: #D23F2D;
 }
 
-.emotion-8 {
+.emotion-7 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -131,26 +113,26 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   flex-direction: column;
 }
 
-.emotion-9 {
+.emotion-8 {
   box-sizing: border-box;
 }
 
-.emotion-10 {
+.emotion-9 {
   box-sizing: border-box;
   color: inherit;
   padding: 0;
 }
 
-.emotion-10 a:not(.nk-card-link) {
+.emotion-9 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   margin-bottom: 16px;
 }
 
-.emotion-12 {
+.emotion-11 {
   border-style: solid;
   border-color: #ED6B5A;
   border-width: 4px;
@@ -161,7 +143,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   width: 100%;
 }
 
-.emotion-14 {
+.emotion-13 {
   font-family: 'Poppins',sans-serif;
   font-size: 24px;
   line-height: 1.3333333333333333;
@@ -170,7 +152,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   padding: 1px 0px;
 }
 
-.emotion-14::before {
+.emotion-13::before {
   content: '';
   display: block;
   height: 0;
@@ -178,7 +160,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-bottom: -0.30104166666666665em;
 }
 
-.emotion-14::after {
+.emotion-13::after {
   content: '';
   display: block;
   height: 0;
@@ -186,18 +168,18 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-top: -0.44166666666666665em;
 }
 
-.emotion-15 {
+.emotion-14 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #D23F2D;
 }
 
-.emotion-15 svg {
+.emotion-14 svg {
   fill: #D23F2D;
 }
 
-.emotion-17 {
+.emotion-16 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -208,11 +190,11 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-17 svg {
+.emotion-16 svg {
   fill: #555E74;
 }
 
-.emotion-17::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -220,7 +202,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   margin-bottom: -0.415625em;
 }
 
-.emotion-17::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -236,73 +218,69 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="flag"
       >
         <div
           class="emotion-3"
-          data-testid="flag"
         >
           <div
             class="emotion-4"
           >
-            <div
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-5 emotion-6"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
-                />
-              </svg>
-            </div>
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-8"
+      class="emotion-7"
     >
       <div
-        class="emotion-9"
+        class="emotion-8"
       >
         <div
-          class="emotion-10"
+          class="emotion-9"
         >
           <div
-            class="emotion-11"
+            class="emotion-10"
           >
             <hr
               aria-hidden="true"
-              class="emotion-12"
+              class="emotion-11"
               data-testid="divider"
             />
             <div
-              class="emotion-11"
+              class="emotion-10"
             />
             <section
-              class="emotion-14"
+              class="emotion-13"
             >
               <h1
-                class="nk-headline-heading emotion-15"
+                class="nk-headline-heading emotion-14"
               >
                 Do not
               </h1>
             </section>
           </div>
           <div
-            class="emotion-11"
+            class="emotion-10"
           >
             <p
-              class="emotion-17"
+              class="emotion-16"
             >
               Description
             </p>
@@ -328,18 +306,6 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -359,12 +325,12 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   height: 32px;
   padding: 4px 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   border-style: solid;
   border-color: #67CF86;
   background-color: #E6FAEB;
@@ -372,16 +338,16 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   border-width: 1px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #148F39;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -402,7 +368,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -411,13 +377,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -426,13 +386,13 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: inline-block;
 }
 
-.emotion-6.emotion-6 {
+.emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
   fill: #148F39;
 }
 
-.emotion-8 {
+.emotion-7 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -445,26 +405,26 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   flex-direction: column;
 }
 
-.emotion-9 {
+.emotion-8 {
   box-sizing: border-box;
 }
 
-.emotion-10 {
+.emotion-9 {
   box-sizing: border-box;
   color: inherit;
   padding: 0;
 }
 
-.emotion-10 a:not(.nk-card-link) {
+.emotion-9 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-11 {
+.emotion-10 {
   margin-bottom: 16px;
 }
 
-.emotion-12 {
+.emotion-11 {
   border-style: solid;
   border-color: #67CF86;
   border-width: 4px;
@@ -475,7 +435,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   width: 100%;
 }
 
-.emotion-14 {
+.emotion-13 {
   font-family: 'Poppins',sans-serif;
   font-size: 24px;
   line-height: 1.3333333333333333;
@@ -484,7 +444,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   padding: 1px 0px;
 }
 
-.emotion-14::before {
+.emotion-13::before {
   content: '';
   display: block;
   height: 0;
@@ -492,7 +452,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-bottom: -0.30104166666666665em;
 }
 
-.emotion-14::after {
+.emotion-13::after {
   content: '';
   display: block;
   height: 0;
@@ -500,18 +460,18 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-top: -0.44166666666666665em;
 }
 
-.emotion-15 {
+.emotion-14 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #148F39;
 }
 
-.emotion-15 svg {
+.emotion-14 svg {
   fill: #148F39;
 }
 
-.emotion-17 {
+.emotion-16 {
   margin: 0;
   padding: 1px 0;
   color: #555E74;
@@ -522,11 +482,11 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-17 svg {
+.emotion-16 svg {
   fill: #555E74;
 }
 
-.emotion-17::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -534,7 +494,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   margin-bottom: -0.415625em;
 }
 
-.emotion-17::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -550,73 +510,69 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="flag"
       >
         <div
           class="emotion-3"
-          data-testid="flag"
         >
           <div
             class="emotion-4"
           >
-            <div
-              class="emotion-5"
+            <svg
+              aria-hidden="true"
+              class="emotion-5 emotion-6"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-                />
-              </svg>
-            </div>
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+              />
+            </svg>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-8"
+      class="emotion-7"
     >
       <div
-        class="emotion-9"
+        class="emotion-8"
       >
         <div
-          class="emotion-10"
+          class="emotion-9"
         >
           <div
-            class="emotion-11"
+            class="emotion-10"
           >
             <hr
               aria-hidden="true"
-              class="emotion-12"
+              class="emotion-11"
               data-testid="divider"
             />
             <div
-              class="emotion-11"
+              class="emotion-10"
             />
             <section
-              class="emotion-14"
+              class="emotion-13"
             >
               <h1
-                class="nk-headline-heading emotion-15"
+                class="nk-headline-heading emotion-14"
               >
                 Do
               </h1>
             </section>
           </div>
           <div
-            class="emotion-11"
+            class="emotion-10"
           >
             <p
-              class="emotion-17"
+              class="emotion-16"
             >
               Description
             </p>

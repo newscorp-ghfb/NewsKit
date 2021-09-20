@@ -130,12 +130,6 @@ exports[`Nested stacks render in horizontal flow with space 1`] = `
   margin-right: calc(12px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -374,12 +368,6 @@ exports[`Nested stacks render in vertical flow with space 1`] = `
   margin-bottom: calc(12px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -518,12 +506,6 @@ exports[`Nested stacks render in vertical flow with space and height 1`] = `
   display: inline-flex;
   margin-top: calc(12px/2);
   margin-bottom: calc(12px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -854,12 +836,6 @@ exports[`Stack as list renders correctly 1`] = `
   display: inline-flex;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -931,12 +907,6 @@ exports[`Stack as list renders horizontally 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -1014,12 +984,6 @@ exports[`Stack as list renders horizontally with spacing 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -1109,12 +1073,6 @@ exports[`Stack as list renders horizontally with spacing and wrap 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -1187,12 +1145,6 @@ exports[`Stack as list renders nested stack 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -1344,12 +1296,6 @@ exports[`Stack as list renders nested stack as list 1`] = `
   display: inline-flex;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-4 {
   width: 150px;
   height: 150px;
@@ -1488,12 +1434,6 @@ exports[`Stack as list renders with spacing 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -1579,12 +1519,6 @@ exports[`Stack as list renders with spacing and wrap 1`] = `
   margin-bottom: calc(8px/2);
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -1813,12 +1747,6 @@ exports[`Stack render with responsive props 1`] = `
   display: inline-flex;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -1913,12 +1841,6 @@ exports[`Stack render with responsive props 2`] = `
   .emotion-1 {
     margin-top: calc(12px/2);
     margin-bottom: calc(12px/2);
-  }
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
   }
 }
 
@@ -2043,12 +1965,6 @@ exports[`Stack renders as span with space 1`] = `
   display: inline-flex;
   margin-top: calc(12px/2);
   margin-bottom: calc(12px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -2231,12 +2147,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -2315,12 +2225,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -2403,12 +2307,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -2483,12 +2381,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -2689,12 +2581,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -2773,12 +2659,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -2865,12 +2745,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   margin-bottom: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -2949,12 +2823,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -3342,12 +3210,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -3426,12 +3288,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -3514,12 +3370,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -3594,12 +3444,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -3800,12 +3644,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -3884,12 +3722,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -3976,12 +3808,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   margin-bottom: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -4060,12 +3886,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -4453,12 +4273,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -4537,12 +4351,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -4625,12 +4433,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -4705,12 +4507,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -4911,12 +4707,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -4995,12 +4785,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -5087,12 +4871,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
   margin-bottom: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -5171,12 +4949,6 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -5564,12 +5336,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -5648,12 +5414,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -5736,12 +5496,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -5816,12 +5570,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -6022,12 +5770,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -6106,12 +5848,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -6198,12 +5934,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   margin-bottom: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -6282,12 +6012,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -6675,12 +6399,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -6759,12 +6477,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -6847,12 +6559,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -6927,12 +6633,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -7133,12 +6833,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -7217,12 +6911,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -7309,12 +6997,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   margin-right: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -7393,12 +7075,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   display: inline-flex;
   margin-top: calc(160px/2);
   margin-bottom: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -7786,12 +7462,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -7870,12 +7540,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -7958,12 +7622,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -8038,12 +7696,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -8244,12 +7896,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -8328,12 +7974,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -8420,12 +8060,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   margin-right: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -8504,12 +8138,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   display: inline-flex;
   margin-top: calc(160px/2);
   margin-bottom: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -8897,12 +8525,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -8981,12 +8603,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -9069,12 +8685,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -9149,12 +8759,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -9355,12 +8959,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -9439,12 +9037,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -9531,12 +9123,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   margin-right: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -9615,12 +9201,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   display: inline-flex;
   margin-top: calc(160px/2);
   margin-bottom: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -10008,12 +9588,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceIn
   margin-bottom: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -10092,12 +9666,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceIn
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -10180,12 +9748,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceSt
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -10260,12 +9822,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceSt
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -10466,12 +10022,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
   margin-right: calc(64px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -10550,12 +10100,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
   display: inline-flex;
   margin-top: calc(64px/2);
   margin-bottom: calc(64px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {
@@ -10642,12 +10186,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
   margin-right: calc(160px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   width: 150px;
   height: 150px;
@@ -10726,12 +10264,6 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
   display: inline-flex;
   margin-top: calc(160px/2);
   margin-bottom: calc(160px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
 }
 
 .emotion-2 {

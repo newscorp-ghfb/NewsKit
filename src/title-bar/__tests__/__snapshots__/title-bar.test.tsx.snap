@@ -161,16 +161,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-6 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -190,12 +180,12 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -206,33 +196,33 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-6 svg {
+.emotion-5 svg {
   fill: #ffffff;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:disabled {
+.emotion-5:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-6:disabled svg {
+.emotion-5:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -253,7 +243,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -262,13 +252,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-8 {
-    max-width: 100%;
-  }
-}
-
-.emotion-9 {
+.emotion-8 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -276,7 +260,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -284,7 +268,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -311,29 +295,25 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     <div
       class="emotion-4"
     >
-      <div
+      <button
         class="emotion-5"
+        data-testid="button"
+        type="button"
       >
-        <button
+        <div
           class="emotion-6"
-          data-testid="button"
-          type="button"
         >
           <div
             class="emotion-7"
           >
-            <div
+            <span
               class="emotion-8"
             >
-              <span
-                class="emotion-9"
-              >
-                Default button
-              </span>
-            </div>
+              Default button
+            </span>
           </div>
-        </button>
-      </div>
+        </div>
+      </button>
     </div>
   </div>
 </DocumentFragment>
@@ -533,12 +513,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 .emotion-5:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-6 {

@@ -2,7 +2,6 @@ import * as React from 'react';
 import {Scroll, ScrollSnapAlignment} from '..';
 import {styled, getColorCssFromTheme} from '../../utils/style';
 import {StorybookSubHeading} from '../../test/storybook-comps';
-import {Tag} from '../../tag/tag';
 import {Stack} from '../../stack/stack';
 import {Block} from '../../block';
 import {Image} from '../../image';
@@ -53,6 +52,17 @@ const Container = styled(Block)<{width?: string; height?: string}>`
 
 const Flex = styled.div`
   display: flex;
+`;
+
+const Tag = styled.div`
+  box-sizing: border-box;
+  min-height: 32px;
+  padding: 5px 12px;
+  border: 1px solid #535353;
+  color: #2e2e2e;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 `;
 
 const Box = styled.div`

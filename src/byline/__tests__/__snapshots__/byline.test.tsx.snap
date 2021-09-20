@@ -39,12 +39,6 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   margin-right: 8px;
   display: -webkit-inline-box;
@@ -119,12 +113,6 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-4:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-5 {
@@ -292,12 +280,6 @@ exports[`Byline renders correctly with author's name, author's information and n
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   margin-right: 8px;
   display: -webkit-inline-box;
@@ -424,12 +406,6 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   margin-right: 8px;
   display: -webkit-inline-box;
@@ -504,12 +480,6 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-4:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-5 {
@@ -725,12 +695,6 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   margin-right: 8px;
   display: -webkit-inline-box;
@@ -805,12 +769,6 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-4:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-5 {
@@ -992,12 +950,6 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   margin-right: 8px;
   display: -webkit-inline-box;
@@ -1142,12 +1094,6 @@ exports[`Byline renders correctly with one author 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
@@ -1235,12 +1181,6 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: calc(12px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
   margin-right: 12px;
   display: -webkit-inline-box;
@@ -1283,12 +1223,6 @@ exports[`Byline renders correctly with overrides 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #d82059;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-4 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-5 {

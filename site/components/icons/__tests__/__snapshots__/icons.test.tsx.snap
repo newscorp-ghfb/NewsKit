@@ -3,18 +3,6 @@
 exports[`Icons CheckIcon icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -34,12 +22,12 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   height: 32px;
   padding: 4px 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   border-style: solid;
   border-color: #67CF86;
   background-color: #E6FAEB;
@@ -47,16 +35,16 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   border-width: 1px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #148F39;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -77,7 +65,7 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -86,13 +74,7 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -101,7 +83,7 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-4.emotion-4 {
+.emotion-3.emotion-3 {
   width: 24px;
   height: 24px;
   fill: #148F39;
@@ -109,34 +91,30 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
 
 <div
     class="emotion-0"
+    data-testid="flag"
   >
     <div
       class="emotion-1"
-      data-testid="flag"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0V0z"
-              fill="none"
-            />
-            <path
-              d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+          />
+        </svg>
       </div>
     </div>
   </div>
@@ -146,18 +124,6 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
 exports[`Icons CrossIcon icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -177,12 +143,12 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   height: 32px;
   padding: 0;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   border-style: solid;
   border-color: #ED6B5A;
   background-color: #FFE8E5;
@@ -190,16 +156,16 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   border-width: 1px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #D23F2D;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -220,7 +186,7 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -229,13 +195,7 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -244,7 +204,7 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-4.emotion-4 {
+.emotion-3.emotion-3 {
   width: 24px;
   height: 24px;
   fill: #D23F2D;
@@ -252,34 +212,30 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
 
 <div
     class="emotion-0"
+    data-testid="flag"
   >
     <div
       class="emotion-1"
-      data-testid="flag"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0V0z"
-              fill="none"
-            />
-            <path
-              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+          />
+        </svg>
       </div>
     </div>
   </div>

@@ -541,12 +541,6 @@ exports[`Banner renders with content as string and link 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -790,12 +784,6 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-6:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-7 {
@@ -1788,23 +1776,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: auto;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1824,12 +1796,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -1840,33 +1812,33 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1887,7 +1859,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1896,13 +1868,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1910,7 +1876,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -1918,7 +1884,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -1953,56 +1919,48 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -2157,23 +2115,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-self: stretch;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2193,12 +2135,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -2209,33 +2151,33 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2256,7 +2198,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2265,13 +2207,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2279,7 +2215,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -2287,7 +2223,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -2322,56 +2258,48 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -2527,23 +2455,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   align-self: auto;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2563,12 +2475,12 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -2579,33 +2491,33 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2626,7 +2538,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2635,13 +2547,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2649,7 +2555,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -2657,7 +2563,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -2692,29 +2598,25 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -2873,23 +2775,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   align-self: stretch;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2909,12 +2795,12 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -2925,33 +2811,33 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2972,7 +2858,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2981,13 +2867,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2995,7 +2875,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -3003,7 +2883,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -3038,29 +2918,25 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -3634,23 +3510,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   align-self: auto;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3670,12 +3530,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -3686,33 +3546,33 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3733,7 +3593,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3742,13 +3602,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3756,7 +3610,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -3764,7 +3618,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -3772,7 +3626,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-12 {
+.emotion-11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3781,25 +3635,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   margin-right: calc(16px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3819,12 +3655,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   height: 32px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #ffffff;
@@ -3835,33 +3671,33 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: rgba(255,255,255,0.4);
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3897,68 +3733,60 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
         <div
-          class="emotion-12"
+          class="emotion-11"
         >
-          <div
-            class="emotion-13"
+          <button
+            aria-label="Close"
+            class="emotion-12"
+            data-testid="banner-close-button"
+            type="button"
           >
-            <button
-              aria-label="Close"
-              class="emotion-14"
-              data-testid="banner-close-button"
-              type="button"
+            <div
+              class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <div
-                  class="emotion-10"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-15 emotion-16"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-17 emotion-18"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -4117,24 +3945,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   align-self: stretch;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4154,12 +3965,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #ffffff;
@@ -4173,35 +3984,35 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.8);
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: rgba(255,255,255,0.4);
   border-color: rgba(255,255,255,0.7);
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4222,7 +4033,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4231,13 +4042,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4245,7 +4050,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -4253,7 +4058,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -4261,17 +4066,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4291,12 +4086,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -4307,29 +4102,29 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
 }
 
@@ -4360,56 +4155,48 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="banner-close-button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="banner-close-button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Close
-                  </span>
-                </div>
+                  Close
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
         <div
           class="emotion-6"
         >
-          <div
-            class="emotion-13"
+          <button
+            class="emotion-12"
+            data-testid="button"
+            type="button"
           >
-            <button
-              class="emotion-14"
-              data-testid="button"
-              type="button"
+            <div
+              class="emotion-8"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    CTA Button
-                  </span>
-                </div>
+                  CTA Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -4562,25 +4349,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   margin-right: calc(16px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4600,12 +4369,12 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   height: 32px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-radius: 50%;
   color: #ffffff;
@@ -4616,33 +4385,33 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: rgba(255,255,255,0.4);
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   background-color: transparent;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4663,7 +4432,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4672,13 +4441,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4714,41 +4477,37 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
         <div
           class="emotion-6"
         >
-          <div
+          <button
+            aria-label="Close"
             class="emotion-7"
+            data-testid="banner-close-button"
+            type="button"
           >
-            <button
-              aria-label="Close"
+            <div
               class="emotion-8"
-              data-testid="banner-close-button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
-                  class="emotion-10"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-10 emotion-11"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </div>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -4907,24 +4666,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   align-self: stretch;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-6 {
-    max-width: 100%;
-  }
-}
-
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4944,12 +4686,12 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   width: 100%;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #ffffff;
@@ -4963,35 +4705,35 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #ffffff;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.8);
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: rgba(255,255,255,0.4);
   border-color: rgba(255,255,255,0.7);
 }
 
-.emotion-8:disabled {
+.emotion-7:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-8:disabled svg {
+.emotion-7:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5012,7 +4754,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5021,13 +4763,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5035,7 +4771,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -5043,7 +4779,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -5078,29 +4814,25 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
         <div
           class="emotion-6"
         >
-          <div
+          <button
             class="emotion-7"
+            data-testid="banner-close-button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-8"
-              data-testid="banner-close-button"
-              type="button"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Close
-                  </span>
-                </div>
+                  Close
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>

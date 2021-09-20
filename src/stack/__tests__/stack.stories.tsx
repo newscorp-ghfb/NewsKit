@@ -2,7 +2,6 @@ import * as React from 'react';
 import {Flow, StackDistribution, Stack} from '..';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {Tag} from '../../tag/tag';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
 import {AlignSelfValues, StackChild} from '../../stack-child';
@@ -23,6 +22,17 @@ const Container = styled.div<{
   ${({hasWidth}) =>
     hasWidth ? {maxWidth: '400px', width: '100%'} : {maxWidth: 'auto'}};
   overflow: hidden;
+`;
+
+const Tag = styled.div`
+  box-sizing: border-box;
+  min-height: 32px;
+  padding: 5px 12px;
+  border: 1px solid #535353;
+  color: #2e2e2e;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 `;
 
 const renderChildren = (wrap: 'wrap' | 'nowrap') => {

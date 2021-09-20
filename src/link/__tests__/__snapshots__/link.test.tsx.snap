@@ -38,12 +38,6 @@ exports[`Link does not render the external icon even if the href is external 1`]
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,12 +117,6 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-1 {
@@ -212,12 +200,6 @@ exports[`Link renders as expected in default state 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -299,12 +281,6 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -333,12 +309,6 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-2 {
-    max-width: 100%;
-  }
 }
 
 .emotion-3 {
@@ -444,12 +414,6 @@ exports[`Link renders the external icon if the href is external 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -509,12 +473,6 @@ exports[`Link renders with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) {
   color: #23a248;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-1 {
@@ -623,12 +581,6 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-0 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-1 {

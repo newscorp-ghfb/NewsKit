@@ -3,18 +3,6 @@
 exports[`IconButton renders Icon Button in loading State 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 64px;
-  height: 64px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -34,12 +22,12 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   height: 64px;
   padding: 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
   color: #0a68c1;
@@ -50,16 +38,16 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   cursor: progress;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,7 +68,7 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -89,19 +77,13 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   width: 32px;
   height: 32px;
   stroke: #0a68c1;
 }
 
-.emotion-4 circle {
+.emotion-3 circle {
   r: calc(50% - 2px);
   fill: transparent;
   stroke-width: 2px;
@@ -119,57 +101,41 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   animation: rotate 1s linear infinite;
 }
 
-<div
+<button
+    aria-busy="true"
+    aria-label="Test icon button"
+    aria-live="polite"
     class="emotion-0"
+    data-testid="button"
+    type="button"
   >
-    <button
-      aria-busy="true"
-      aria-label="Test icon button"
-      aria-live="polite"
+    <div
       class="emotion-1"
-      data-testid="button"
-      type="button"
     >
       <div
         class="emotion-2"
       >
-        <div
+        <svg
+          aria-hidden="true"
           class="emotion-3"
+          fill="currentColor"
+          viewBox="0 0 64 64"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4"
-            fill="currentColor"
-            viewBox="0 0 64 64"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="50%"
-              cy="50%"
-            />
-          </svg>
-        </div>
+          <circle
+            cx="50%"
+            cy="50%"
+          />
+        </svg>
       </div>
-    </button>
-  </div>
+    </div>
+  </button>
 </DocumentFragment>
 `;
 
 exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -189,12 +155,12 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   height: 32px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
@@ -205,33 +171,33 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #ffffff;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -252,7 +218,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -261,13 +227,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -276,58 +236,42 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   display: inline-block;
 }
 
-<div
+<button
     class="emotion-0"
+    data-testid="button"
+    type="button"
   >
-    <button
+    <div
       class="emotion-1"
-      data-testid="button"
-      type="button"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
       </div>
-    </button>
-  </div>
+    </div>
+  </button>
 </DocumentFragment>
 `;
 
 exports[`IconButton renders Large Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 64px;
-  height: 64px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -347,12 +291,12 @@ exports[`IconButton renders Large Icon Button 1`] = `
   height: 64px;
   padding: 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
@@ -363,33 +307,33 @@ exports[`IconButton renders Large Icon Button 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #ffffff;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -410,7 +354,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -419,13 +363,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -434,59 +372,43 @@ exports[`IconButton renders Large Icon Button 1`] = `
   display: inline-block;
 }
 
-<div
+<button
+    aria-label="Test icon button"
     class="emotion-0"
+    data-testid="button"
+    type="button"
   >
-    <button
-      aria-label="Test icon button"
+    <div
       class="emotion-1"
-      data-testid="button"
-      type="button"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
       </div>
-    </button>
-  </div>
+    </div>
+  </button>
 </DocumentFragment>
 `;
 
 exports[`IconButton renders Medium Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -506,12 +428,12 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   height: 48px;
   padding: 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
@@ -522,33 +444,33 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #ffffff;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -569,7 +491,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -578,13 +500,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -593,59 +509,43 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   display: inline-block;
 }
 
-<div
+<button
+    aria-label="Test icon button"
     class="emotion-0"
+    data-testid="button"
+    type="button"
   >
-    <button
-      aria-label="Test icon button"
+    <div
       class="emotion-1"
-      data-testid="button"
-      type="button"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
       </div>
-    </button>
-  </div>
+    </div>
+  </button>
 </DocumentFragment>
 `;
 
 exports[`IconButton renders Small Icon Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -665,12 +565,12 @@ exports[`IconButton renders Small Icon Button 1`] = `
   height: 32px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
@@ -681,33 +581,33 @@ exports[`IconButton renders Small Icon Button 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #ffffff;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -728,7 +628,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -737,13 +637,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -752,59 +646,43 @@ exports[`IconButton renders Small Icon Button 1`] = `
   display: inline-block;
 }
 
-<div
+<button
+    aria-label="Test icon button"
     class="emotion-0"
+    data-testid="button"
+    type="button"
   >
-    <button
-      aria-label="Test icon button"
+    <div
       class="emotion-1"
-      data-testid="button"
-      type="button"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
       </div>
-    </button>
-  </div>
+    </div>
+  </button>
 </DocumentFragment>
 `;
 
 exports[`IconButton renders icon button link when href passed 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -824,12 +702,12 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   height: 32px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 50%;
   color: #ffffff;
@@ -840,33 +718,33 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #ffffff;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -887,7 +765,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -896,13 +774,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -911,59 +783,43 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   display: inline-block;
 }
 
-<div
+<a
+    aria-label="Test icon button"
     class="emotion-0"
+    data-testid="buttonLink"
+    href="http://localhost:6006"
   >
-    <a
-      aria-label="Test icon button"
+    <div
       class="emotion-1"
-      data-testid="buttonLink"
-      href="http://localhost:6006"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </DocumentFragment>
 `;
 
 exports[`IconButton renders with different style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -983,12 +839,12 @@ exports[`IconButton renders with different style preset 1`] = `
   height: 32px;
   padding: 8px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #0a68c1;
@@ -1002,35 +858,35 @@ exports[`IconButton renders with different style preset 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #e6f4ff;
   border-color: #02509b;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #d5ebff;
   border-color: #01396e;
 }
 
-.emotion-1:disabled {
+.emotion-0:disabled {
   border-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-1:disabled svg {
+.emotion-0:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1051,7 +907,7 @@ exports[`IconButton renders with different style preset 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1060,13 +916,7 @@ exports[`IconButton renders with different style preset 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1075,40 +925,36 @@ exports[`IconButton renders with different style preset 1`] = `
   display: inline-block;
 }
 
-<div
+<button
+    aria-label="Test icon button"
     class="emotion-0"
+    data-testid="button"
+    type="button"
   >
-    <button
-      aria-label="Test icon button"
+    <div
       class="emotion-1"
-      data-testid="button"
-      type="button"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
       </div>
-    </button>
-  </div>
+    </div>
+  </button>
 </DocumentFragment>
 `;

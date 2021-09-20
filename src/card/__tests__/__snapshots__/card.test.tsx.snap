@@ -234,16 +234,6 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -262,12 +252,12 @@ exports[`Card renders actions section with given component 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -276,24 +266,24 @@ exports[`Card renders actions section with given component 1`] = `
   border-radius: 0;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #2e2e2e;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -314,7 +304,7 @@ exports[`Card renders actions section with given component 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -323,13 +313,7 @@ exports[`Card renders actions section with given component 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -337,7 +321,7 @@ exports[`Card renders actions section with given component 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -345,7 +329,7 @@ exports[`Card renders actions section with given component 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -353,7 +337,7 @@ exports[`Card renders actions section with given component 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-13 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -373,12 +357,12 @@ exports[`Card renders actions section with given component 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -389,33 +373,33 @@ exports[`Card renders actions section with given component 1`] = `
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   fill: #ffffff;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-13:disabled {
+.emotion-11:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-13:disabled svg {
+.emotion-11:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -436,19 +420,13 @@ exports[`Card renders actions section with given component 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
 }
 
 <div
@@ -478,49 +456,41 @@ exports[`Card renders actions section with given component 1`] = `
         >
           <div
             class="emotion-7"
+            data-testid="tag"
           >
             <div
               class="emotion-8"
-              data-testid="tag"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Tag
-                  </span>
-                </div>
+                  Tag
+                </span>
               </div>
             </div>
           </div>
-          <div
-            class="emotion-7"
+          <button
+            class="emotion-11"
+            data-testid="button"
+            type="button"
           >
-            <button
-              class="emotion-13"
-              data-testid="button"
-              type="button"
+            <div
+              class="emotion-12"
             >
               <div
-                class="emotion-14"
+                class="emotion-13"
               >
-                <div
-                  class="emotion-15"
+                <span
+                  class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Button
-                  </span>
-                </div>
+                  Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -641,16 +611,6 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -669,12 +629,12 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -683,24 +643,24 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-radius: 0;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #2e2e2e;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -721,7 +681,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -730,13 +690,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -744,7 +698,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -752,7 +706,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -760,7 +714,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-13 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -780,12 +734,12 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -796,33 +750,33 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   fill: #ffffff;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-13:disabled {
+.emotion-11:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-13:disabled svg {
+.emotion-11:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -843,19 +797,13 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
 }
 
 <div
@@ -885,49 +833,41 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
         >
           <div
             class="emotion-7"
+            data-testid="tag"
           >
             <div
               class="emotion-8"
-              data-testid="tag"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Tag
-                  </span>
-                </div>
+                  Tag
+                </span>
               </div>
             </div>
           </div>
-          <div
-            class="emotion-7"
+          <button
+            class="emotion-11"
+            data-testid="button"
+            type="button"
           >
-            <button
-              class="emotion-13"
-              data-testid="button"
-              type="button"
+            <div
+              class="emotion-12"
             >
               <div
-                class="emotion-14"
+                class="emotion-13"
               >
-                <div
-                  class="emotion-15"
+                <span
+                  class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Button
-                  </span>
-                </div>
+                  Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -1048,16 +988,6 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1076,12 +1006,12 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -1090,24 +1020,24 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   border-radius: 0;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #2e2e2e;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1128,7 +1058,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1137,13 +1067,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    max-width: 100%;
-  }
-}
-
-.emotion-11 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1151,7 +1075,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   display: block;
   height: 0;
@@ -1159,7 +1083,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   display: block;
   height: 0;
@@ -1167,7 +1091,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-13 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1187,12 +1111,12 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -1203,33 +1127,33 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-13 svg {
+.emotion-11 svg {
   fill: #ffffff;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-13:disabled {
+.emotion-11:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-13:disabled svg {
+.emotion-11:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1250,19 +1174,13 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
 }
 
 <div
@@ -1292,49 +1210,41 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
         >
           <div
             class="emotion-7"
+            data-testid="tag"
           >
             <div
               class="emotion-8"
-              data-testid="tag"
             >
               <div
                 class="emotion-9"
               >
-                <div
+                <span
                   class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Tag
-                  </span>
-                </div>
+                  Tag
+                </span>
               </div>
             </div>
           </div>
-          <div
-            class="emotion-7"
+          <button
+            class="emotion-11"
+            data-testid="button"
+            type="button"
           >
-            <button
-              class="emotion-13"
-              data-testid="button"
-              type="button"
+            <div
+              class="emotion-12"
             >
               <div
-                class="emotion-14"
+                class="emotion-13"
               >
-                <div
-                  class="emotion-15"
+                <span
+                  class="emotion-10"
                 >
-                  <span
-                    class="emotion-11"
-                  >
-                    Button
-                  </span>
-                </div>
+                  Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -2724,16 +2634,6 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-13 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2752,12 +2652,12 @@ exports[`Card renders with card items 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -2766,24 +2666,24 @@ exports[`Card renders with card items 1`] = `
   border-radius: 0;
 }
 
-.emotion-13 svg {
+.emotion-12 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-13 svg {
+.emotion-12 svg {
   fill: #2e2e2e;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2804,7 +2704,7 @@ exports[`Card renders with card items 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-15 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2813,13 +2713,7 @@ exports[`Card renders with card items 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
-}
-
-.emotion-16 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2827,7 +2721,7 @@ exports[`Card renders with card items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-16::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -2835,7 +2729,7 @@ exports[`Card renders with card items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-16::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -2843,7 +2737,7 @@ exports[`Card renders with card items 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-18 {
+.emotion-16 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2863,12 +2757,12 @@ exports[`Card renders with card items 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -2879,33 +2773,33 @@ exports[`Card renders with card items 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-16 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-16 svg {
   fill: #ffffff;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-16:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-16:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-18:disabled {
+.emotion-16:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-16:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-19 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2926,19 +2820,13 @@ exports[`Card renders with card items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-20 {
+.emotion-18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-20 {
-    max-width: 100%;
-  }
 }
 
 <div
@@ -2988,49 +2876,41 @@ exports[`Card renders with card items 1`] = `
         >
           <div
             class="emotion-12"
+            data-testid="tag"
           >
             <div
               class="emotion-13"
-              data-testid="tag"
             >
               <div
                 class="emotion-14"
               >
-                <div
+                <span
                   class="emotion-15"
                 >
-                  <span
-                    class="emotion-16"
-                  >
-                    Tag
-                  </span>
-                </div>
+                  Tag
+                </span>
               </div>
             </div>
           </div>
-          <div
-            class="emotion-12"
+          <button
+            class="emotion-16"
+            data-testid="button"
+            type="button"
           >
-            <button
-              class="emotion-18"
-              data-testid="button"
-              type="button"
+            <div
+              class="emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
-                <div
-                  class="emotion-20"
+                <span
+                  class="emotion-15"
                 >
-                  <span
-                    class="emotion-16"
-                  >
-                    Button
-                  </span>
-                </div>
+                  Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -4818,16 +4698,6 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-9 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4846,12 +4716,12 @@ exports[`Card with href renders correctly with actions 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -4860,24 +4730,24 @@ exports[`Card with href renders correctly with actions 1`] = `
   border-radius: 0;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #2e2e2e;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4898,7 +4768,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4907,13 +4777,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-11 {
-    max-width: 100%;
-  }
-}
-
-.emotion-12 {
+.emotion-11 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4921,7 +4785,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-12::before {
+.emotion-11::before {
   content: '';
   display: block;
   height: 0;
@@ -4929,7 +4793,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-12::after {
+.emotion-11::after {
   content: '';
   display: block;
   height: 0;
@@ -4937,7 +4801,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4957,12 +4821,12 @@ exports[`Card with href renders correctly with actions 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -4973,33 +4837,33 @@ exports[`Card with href renders correctly with actions 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-15 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5020,19 +4884,13 @@ exports[`Card with href renders correctly with actions 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-16 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-16 {
-    max-width: 100%;
-  }
 }
 
 <div
@@ -5067,49 +4925,41 @@ exports[`Card with href renders correctly with actions 1`] = `
         >
           <div
             class="emotion-8"
+            data-testid="tag"
           >
             <div
               class="emotion-9"
-              data-testid="tag"
             >
               <div
                 class="emotion-10"
               >
-                <div
+                <span
                   class="emotion-11"
                 >
-                  <span
-                    class="emotion-12"
-                  >
-                    Tag
-                  </span>
-                </div>
+                  Tag
+                </span>
               </div>
             </div>
           </div>
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-12"
+            data-testid="button"
+            type="button"
           >
-            <button
-              class="emotion-14"
-              data-testid="button"
-              type="button"
+            <div
+              class="emotion-13"
             >
               <div
-                class="emotion-15"
+                class="emotion-14"
               >
-                <div
-                  class="emotion-16"
+                <span
+                  class="emotion-11"
                 >
-                  <span
-                    class="emotion-12"
-                  >
-                    Button
-                  </span>
-                </div>
+                  Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -6739,16 +6589,6 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-13 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6767,12 +6607,12 @@ exports[`CardInset renders with card items 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -6781,24 +6621,24 @@ exports[`CardInset renders with card items 1`] = `
   border-radius: 0;
 }
 
-.emotion-13 svg {
+.emotion-12 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-13 svg {
+.emotion-12 svg {
   fill: #2e2e2e;
 }
 
-.emotion-13:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-13:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6819,7 +6659,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-15 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6828,13 +6668,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
-}
-
-.emotion-16 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6842,7 +6676,7 @@ exports[`CardInset renders with card items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-16::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -6850,7 +6684,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-16::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -6858,7 +6692,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-18 {
+.emotion-16 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6878,12 +6712,12 @@ exports[`CardInset renders with card items 1`] = `
   min-width: 80px;
   padding: 12px 16px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: #0a68c1;
   border-radius: 8px;
   color: #ffffff;
@@ -6894,33 +6728,33 @@ exports[`CardInset renders with card items 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-16 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-16 svg {
   fill: #ffffff;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-16:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-16:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-18:disabled {
+.emotion-16:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-16:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-19 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6941,19 +6775,13 @@ exports[`CardInset renders with card items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-20 {
+.emotion-18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-20 {
-    max-width: 100%;
-  }
 }
 
 <div
@@ -7003,49 +6831,41 @@ exports[`CardInset renders with card items 1`] = `
         >
           <div
             class="emotion-12"
+            data-testid="tag"
           >
             <div
               class="emotion-13"
-              data-testid="tag"
             >
               <div
                 class="emotion-14"
               >
-                <div
+                <span
                   class="emotion-15"
                 >
-                  <span
-                    class="emotion-16"
-                  >
-                    Tag
-                  </span>
-                </div>
+                  Tag
+                </span>
               </div>
             </div>
           </div>
-          <div
-            class="emotion-12"
+          <button
+            class="emotion-16"
+            data-testid="button"
+            type="button"
           >
-            <button
-              class="emotion-18"
-              data-testid="button"
-              type="button"
+            <div
+              class="emotion-17"
             >
               <div
-                class="emotion-19"
+                class="emotion-18"
               >
-                <div
-                  class="emotion-20"
+                <span
+                  class="emotion-15"
                 >
-                  <span
-                    class="emotion-16"
-                  >
-                    Button
-                  </span>
-                </div>
+                  Button
+                </span>
               </div>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>

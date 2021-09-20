@@ -119,12 +119,6 @@ exports[`UnorderedList renders different types of children 1`] = `
   fill: #7547a3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-10 {
-    vertical-align: text-bottom;
-  }
-}
-
 .emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -153,12 +147,6 @@ exports[`UnorderedList renders different types of children 1`] = `
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-12 {
-    max-width: 100%;
-  }
 }
 
 .emotion-13 {

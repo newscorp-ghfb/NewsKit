@@ -280,16 +280,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-14 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -309,12 +299,12 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   min-width: 64px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -322,12 +312,12 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-13 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-15 {
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -348,7 +338,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-16 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -357,13 +347,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-16 {
-    max-width: 100%;
-  }
-}
-
-.emotion-17 {
+.emotion-16 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -371,7 +355,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-17::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -379,7 +363,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-bottom: -0.4458333333333334em;
 }
 
-.emotion-17::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -387,7 +371,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-top: -0.5458333333333334em;
 }
 
-.emotion-19 {
+.emotion-18 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -396,7 +380,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: inline-block;
 }
 
-.emotion-19.emotion-19 {
+.emotion-18.emotion-18 {
   width: 16px;
   height: 16px;
 }
@@ -450,49 +434,45 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
           <div
             class="emotion-12"
           >
-            <div
+            <button
               class="emotion-13"
+              data-testid="button"
+              type="button"
             >
-              <button
+              <div
                 class="emotion-14"
-                data-testid="button"
-                type="button"
               >
                 <div
                   class="emotion-15"
                 >
-                  <div
+                  <span
                     class="emotion-16"
                   >
-                    <span
-                      class="emotion-17"
-                    >
-                      Read more
-                    </span>
-                  </div>
-                  <div
-                    class="emotion-16"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-19 emotion-20"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                      />
-                    </svg>
-                  </div>
+                    Read more
+                  </span>
                 </div>
-              </button>
-            </div>
+                <div
+                  class="emotion-15"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-18 emotion-19"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -820,16 +800,6 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-14 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -849,12 +819,12 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   min-width: 64px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -862,12 +832,12 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-13 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-15 {
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -888,7 +858,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-16 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -897,13 +867,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-16 {
-    max-width: 100%;
-  }
-}
-
-.emotion-17 {
+.emotion-16 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -911,7 +875,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-17::before {
+.emotion-16::before {
   content: '';
   display: block;
   height: 0;
@@ -919,7 +883,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-bottom: -0.4458333333333334em;
 }
 
-.emotion-17::after {
+.emotion-16::after {
   content: '';
   display: block;
   height: 0;
@@ -927,7 +891,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   margin-top: -0.5458333333333334em;
 }
 
-.emotion-19 {
+.emotion-18 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -936,7 +900,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: inline-block;
 }
 
-.emotion-19.emotion-19 {
+.emotion-18.emotion-18 {
   width: 16px;
   height: 16px;
 }
@@ -990,49 +954,45 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
                 I am interactive
               </p>
             </div>
-            <div
+            <button
               class="emotion-13"
+              data-testid="button"
+              type="button"
             >
-              <button
+              <div
                 class="emotion-14"
-                data-testid="button"
-                type="button"
               >
                 <div
                   class="emotion-15"
                 >
-                  <div
+                  <span
                     class="emotion-16"
                   >
-                    <span
-                      class="emotion-17"
-                    >
-                      Read more
-                    </span>
-                  </div>
-                  <div
-                    class="emotion-16"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-19 emotion-20"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                      />
-                    </svg>
-                  </div>
+                    Read more
+                  </span>
                 </div>
-              </button>
-            </div>
+                <div
+                  class="emotion-15"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-18 emotion-19"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -1983,16 +1943,6 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 .emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-13 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2012,12 +1962,12 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   min-width: 64px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2025,12 +1975,12 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   cursor: pointer;
 }
 
-.emotion-13 svg {
+.emotion-12 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2051,7 +2001,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-15 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2060,13 +2010,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-15 {
-    max-width: 100%;
-  }
-}
-
-.emotion-16 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2074,7 +2018,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-16::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -2082,7 +2026,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   margin-bottom: -0.4458333333333334em;
 }
 
-.emotion-16::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -2090,7 +2034,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   margin-top: -0.5458333333333334em;
 }
 
-.emotion-18 {
+.emotion-17 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2099,7 +2043,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: inline-block;
 }
 
-.emotion-18.emotion-18 {
+.emotion-17.emotion-17 {
   width: 16px;
   height: 16px;
 }
@@ -2150,49 +2094,45 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
         <div
           class="emotion-11"
         >
-          <div
+          <button
             class="emotion-12"
+            data-testid="button"
+            type="button"
           >
-            <button
+            <div
               class="emotion-13"
-              data-testid="button"
-              type="button"
             >
               <div
                 class="emotion-14"
               >
-                <div
+                <span
                   class="emotion-15"
                 >
-                  <span
-                    class="emotion-16"
-                  >
-                    Read more
-                  </span>
-                </div>
-                <div
-                  class="emotion-15"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-18 emotion-19"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                </div>
+                  Read more
+                </span>
               </div>
-            </button>
-          </div>
+              <div
+                class="emotion-14"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="emotion-17 emotion-18"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>

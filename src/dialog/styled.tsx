@@ -1,3 +1,4 @@
+import {IconButton} from '../icon-button';
 import {
   styled,
   getStylePreset,
@@ -65,7 +66,7 @@ export const StyledFillSpaceCloseButton = styled.div<
   flex-shrink: 0;
 `;
 
-export const StyledCloseButtonContainer = styled.div<
+export const StyledCloseButton = styled(IconButton)<
   BaseDialogViewOverridesAndPathProps &
     Pick<BaseDialogViewProps, 'closePosition'>
 >`
@@ -75,9 +76,9 @@ export const StyledCloseButtonContainer = styled.div<
   ${({closePosition}) => (closePosition === 'left' ? `left: 0;` : `right: 0;`)}
   ${({path}) =>
     getResponsiveSpace(
-      'padding',
+      margin => ({margin: `0 ${margin}`}),
       `${path}.closeButton`,
-      'closeButton',
+      '',
       'spaceInset',
     )}
 `;

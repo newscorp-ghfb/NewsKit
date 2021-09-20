@@ -3,16 +3,6 @@
 exports[`TokenFlag renders color token flag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -31,20 +21,20 @@ exports[`TokenFlag renders color token flag 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 8px;
   height: 8px;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -65,7 +55,7 @@ exports[`TokenFlag renders color token flag 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -74,13 +64,7 @@ exports[`TokenFlag renders color token flag 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   height: 12px;
   width: 12px;
@@ -89,7 +73,7 @@ exports[`TokenFlag renders color token flag 1`] = `
   border-radius: 50%;
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -97,7 +81,7 @@ exports[`TokenFlag renders color token flag 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -105,7 +89,7 @@ exports[`TokenFlag renders color token flag 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -115,30 +99,26 @@ exports[`TokenFlag renders color token flag 1`] = `
 
 <div
     class="emotion-0"
+    data-testid="flag"
   >
     <div
       class="emotion-1"
-      data-testid="flag"
     >
       <div
         class="emotion-2"
       >
         <div
           class="emotion-3"
+        />
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-5"
         >
-          <div
-            class="emotion-4"
-          />
-        </div>
-        <div
-          class="emotion-3"
-        >
-          <span
-            class="emotion-6"
-          >
-            Text
-          </span>
-        </div>
+          Text
+        </span>
       </div>
     </div>
   </div>
@@ -148,16 +128,6 @@ exports[`TokenFlag renders color token flag 1`] = `
 exports[`TokenFlag renders default token flag without color 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-1 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -176,20 +146,20 @@ exports[`TokenFlag renders default token flag without color 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   width: 8px;
   height: 8px;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -210,7 +180,7 @@ exports[`TokenFlag renders default token flag without color 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -219,13 +189,7 @@ exports[`TokenFlag renders default token flag without color 1`] = `
   margin-right: calc(8px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-3 {
-    max-width: 100%;
-  }
-}
-
-.emotion-4 {
+.emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -233,7 +197,7 @@ exports[`TokenFlag renders default token flag without color 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -241,7 +205,7 @@ exports[`TokenFlag renders default token flag without color 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -251,23 +215,19 @@ exports[`TokenFlag renders default token flag without color 1`] = `
 
 <div
     class="emotion-0"
+    data-testid="flag"
   >
     <div
       class="emotion-1"
-      data-testid="flag"
     >
       <div
         class="emotion-2"
       >
-        <div
+        <span
           class="emotion-3"
         >
-          <span
-            class="emotion-4"
-          >
-            Text
-          </span>
-        </div>
+          Text
+        </span>
       </div>
     </div>
   </div>

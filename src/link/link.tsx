@@ -16,11 +16,6 @@ const StyledLink = styled.a<LinkProps>`
   transition-duration: ${getMotionFromTheme('motionDuration020')};
   transition-timing-function: ${getMotionFromTheme('motionEaseOut')};
   ${getStylePreset('link', '')}
-
-  /* Needed for IE  vertical alignment */
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    vertical-align: text-bottom;
-  }
 `;
 
 const StyledTextBlock = styled(TextBlock)`

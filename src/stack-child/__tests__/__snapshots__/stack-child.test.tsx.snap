@@ -33,23 +33,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 2;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -68,12 +52,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -82,24 +66,24 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,7 +104,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -129,13 +113,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -143,7 +121,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -151,7 +129,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -159,7 +137,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -169,13 +147,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   order: 3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-7 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
+.emotion-11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -183,12 +155,6 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-13 {
-    max-width: 100%;
-  }
 }
 
 <div
@@ -199,75 +165,63 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 1
-              </span>
-            </div>
+              child 1
+            </span>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-7"
+      class="emotion-6"
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 2
-              </span>
-            </div>
+              child 2
+            </span>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-13"
+      class="emotion-11"
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 3
-              </span>
-            </div>
+              child 3
+            </span>
           </div>
         </div>
       </div>
@@ -311,23 +265,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 2;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -346,12 +284,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -360,24 +298,24 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -398,7 +336,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -407,13 +345,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -421,7 +353,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -429,7 +361,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -437,7 +369,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -447,13 +379,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   order: 3;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-7 {
-    max-width: 100%;
-  }
-}
-
-.emotion-13 {
+.emotion-11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -461,12 +387,6 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-13 {
-    max-width: 100%;
-  }
 }
 
 <ul
@@ -477,75 +397,63 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 1
-              </span>
-            </div>
+              child 1
+            </span>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-7"
+      class="emotion-6"
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 2
-              </span>
-            </div>
+              child 2
+            </span>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-13"
+      class="emotion-11"
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 3
-              </span>
-            </div>
+              child 3
+            </span>
           </div>
         </div>
       </div>
@@ -589,23 +497,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   align-self: stretch;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-1 {
-    max-width: 100%;
-  }
-}
-
 .emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -624,12 +516,12 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  overflow: hidden;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  overflow: hidden;
   background-color: transparent;
   border-style: solid;
   border-color: #535353;
@@ -638,24 +530,24 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   border-radius: 0;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #2e2e2e;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -676,7 +568,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -685,13 +577,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   margin-right: calc(4px/2);
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .emotion-5 {
-    max-width: 100%;
-  }
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -699,7 +585,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -707,7 +593,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -723,23 +609,19 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 1
-              </span>
-            </div>
+              child 1
+            </span>
           </div>
         </div>
       </div>
@@ -749,23 +631,19 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 2
-              </span>
-            </div>
+              child 2
+            </span>
           </div>
         </div>
       </div>
@@ -775,23 +653,19 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
     >
       <div
         class="emotion-2"
+        data-testid="tag"
       >
         <div
           class="emotion-3"
-          data-testid="tag"
         >
           <div
             class="emotion-4"
           >
-            <div
+            <span
               class="emotion-5"
             >
-              <span
-                class="emotion-6"
-              >
-                child 3
-              </span>
-            </div>
+              child 3
+            </span>
           </div>
         </div>
       </div>

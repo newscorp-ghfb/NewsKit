@@ -1,6 +1,5 @@
 import {
   styled,
-  getSizingFromTheme,
   getTypographyPreset,
   getStylePreset,
   getResponsiveSpace,
@@ -8,24 +7,6 @@ import {
 } from '../utils/style';
 
 import {BaseFlagProps, BaseFlagOverrides} from './types';
-import {getToken} from '../utils/get-token';
-
-export const IE11FixContainer = styled.div<BaseFlagProps<BaseFlagOverrides>>`
-  display: inline-flex;
-  flex-direction: column;
-  ${({theme, overrides}) => {
-    const widthToken = getToken({theme, overrides}, '', '', 'width');
-    const width = getSizingFromTheme(widthToken, undefined)({theme});
-
-    const heightToken = getToken({theme, overrides}, '', '', 'height');
-    const height = getSizingFromTheme(heightToken, undefined)({theme});
-
-    return {
-      width,
-      height,
-    };
-  }}
-`;
 
 export const StyledBaseFlag = styled('div')<
   Omit<BaseFlagProps<BaseFlagOverrides>, 'loading'> & {
@@ -68,9 +49,9 @@ export const StyledBaseFlag = styled('div')<
   cursor: ${({$disabled}) => ($disabled ? 'not-allowed' : 'default')};
 
   // Button related styles
+  overflow: hidden;
   border: none;
   appearance: none;
-  overflow: hidden;
   // End of button related styles
 
   ${({$disabled, $loading}) =>
