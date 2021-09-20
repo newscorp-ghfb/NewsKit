@@ -143,6 +143,7 @@ const ButtonIntentKindsScenario: React.FC<{
 export default {
   title: 'NewsKit Light/button',
   component: () => 'None',
+  disabledRules: ['color-contrast'],
 };
 
 export const StoryButtonSize = () => (

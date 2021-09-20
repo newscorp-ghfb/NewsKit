@@ -305,7 +305,9 @@ export const StoryImageWithSources = () => {
     {media: 'md', srcSet: 'https://placekitten.com/600/600'},
     {media: 'xs', srcSet: 'https://placekitten.com/300/300'},
   ];
-  return <Image src="https://placekitten.com/200/200" sources={sources} />;
+  return (
+    <Image src="https://placekitten.com/200/200" sources={sources} alt="cats" />
+  );
 };
 StoryImageWithSources.storyName = 'image-with-sources-using-mq';
 
@@ -320,7 +322,9 @@ export const StoryImageWithSourcesAndMedia = () => {
     {media: '(min-width: 800px)', srcSet: 'https://placekitten.com/500/500'},
     {media: '(min-width: 600px)', srcSet: 'https://placekitten.com/200/200'},
   ];
-  return <Image src="https://placekitten.com/200/200" sources={sources} />;
+  return (
+    <Image src="https://placekitten.com/200/200" sources={sources} alt="cats" />
+  );
 };
 StoryImageWithSourcesAndMedia.storyName =
   'image-with-sources-using-media-query';

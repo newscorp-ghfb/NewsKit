@@ -3,22 +3,16 @@
 
 import React from 'react';
 
-interface Scenario {
+interface StoryType {
   default: {
     title: string;
-    children: [
-      {
-        storyName: string;
-        storyFn: () => JSX.Element;
-      },
-    ];
   };
 }
 
-const req = require.context('../src', true, /\.scenario\.tsx$/);
-const scenarios = req.keys().map(req) as Scenario[];
+const req = require.context('../src', true, /\.stories\.tsx$/);
+const stories = req.keys().map(req) as StoryType[];
 
-const nameCounts = scenarios.reduce((acc, s) => {
+const nameCounts = stories.reduce((acc, s) => {
   const {title} = s.default;
   if (!acc[title]) {
     acc[title] = 1;
@@ -30,9 +24,9 @@ const nameCounts = scenarios.reduce((acc, s) => {
 
 const collisions = Object.entries(nameCounts).filter(([, count]) => count > 1);
 if (collisions.length >= 1) {
-  console.error(`Found colliding scenario name(s): ${collisions
+  console.error(`Found colliding story name(s): ${collisions
     .map(([name]) => name)
-    .join(', ')}. Double check your scenario file name export.
+    .join(', ')}. Double check your story file name export.
   `);
 }
 
@@ -48,23 +42,28 @@ export default function showTestcase() {
   const name = urlParams.get('name');
 
   if (!name) {
-    const message = 'No scenario name provided.';
+    const message = 'No story name provided.';
     console.error(message);
     return <A11yFail message={message} />;
   }
 
-  const scenario = scenarios.find(s => s.default.title === name);
+  const story = stories.find(
+    s => s.default.title.replace('NewsKit Light/', '') === name,
+  );
 
-  if (!scenario) {
-    const message = `No scenario found with the name: '${name}.'`;
+  if (!story) {
+    const message = `No story found with the name: '${name}.'`;
     console.error(message);
     return <A11yFail message={message} />;
   }
 
   return (
     <div>
-      {scenario.default &&
-        scenario.default.children.map(({storyFn}) => storyFn())}
+      {Object.values(story)
+        .filter(storyComponent => typeof storyComponent === 'function')
+        .map(Story => (
+          <Story />
+        ))}
     </div>
   );
 }

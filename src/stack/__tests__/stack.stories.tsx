@@ -96,7 +96,12 @@ const stackDistributionSet: any = () => {
   return sets;
 };
 
-const stackSets = stackDistributionSet().flat(2);
+type StoryStackType = {
+  storyName: string;
+  parameters: object;
+  storyFn: () => JSX.Element;
+};
+const stackSets = stackDistributionSet().flat(2) as StoryStackType[];
 
 export default {
   title: 'NewsKit Light/stack',
@@ -768,13 +773,16 @@ export const StoryResponsive = () => (
 
 StoryResponsive.storyName = 'responsive';
 
+// @ts-ignore
 const StoryStackTemplate = ({wrap, ...args}) => (
   <Stack {...args} wrap={wrap}>
     {renderChildren(wrap as 'wrap' | 'nowrap')}
   </Stack>
 );
 
+// @ts-ignore
 export const StoryStackWithArgs = StoryStackTemplate.bind({});
+// @ts-ignore
 StoryStackWithArgs.args = {
   spaceStack: 'space000',
   spaceInline: 'space000',
@@ -786,6 +794,8 @@ StoryStackWithArgs.args = {
   flowReverse: false,
   inline: false,
 };
+
+// @ts-ignore
 StoryStackWithArgs.argTypes = {
   spaceStack: {
     control: {type: 'text'},
@@ -834,5 +844,7 @@ StoryStackWithArgs.argTypes = {
     control: {type: 'boolean'},
   },
 };
+// @ts-ignore
 StoryStackWithArgs.storyName = 'stack-with-args';
+// @ts-ignore
 StoryStackWithArgs.parameters = {eyes: {include: false}};

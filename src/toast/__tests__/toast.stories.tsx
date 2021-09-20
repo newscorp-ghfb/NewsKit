@@ -101,6 +101,7 @@ const toastLink = (
 export default {
   title: 'NewsKit Light/toast',
   component: () => 'None',
+  disabledRules: ['color-contrast'],
 };
 
 export const StoryToastDefault = () => (

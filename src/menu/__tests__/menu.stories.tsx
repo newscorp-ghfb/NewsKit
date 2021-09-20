@@ -43,6 +43,7 @@ const MenuGroupTitle = () => (
 export default {
   title: 'NewsKit Light/menu',
   component: () => 'None',
+  disabledRules: ['color-contrast'],
 };
 
 export const StoryMenuItemsHorizontal = () => (

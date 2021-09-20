@@ -105,7 +105,7 @@ const myCustomThemeShadows = createTheme({
       shadowTab: {
         base: {
           backgroundColor: 'transparent',
-          color: 'gray',
+          color: '#111',
         },
         selected: {
           backgroundColor: '#fff',

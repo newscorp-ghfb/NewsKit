@@ -23,6 +23,7 @@ const button = () => <Button>Default button</Button>;
 export default {
   title: 'NewsKit Light/title-bar',
   component: () => 'None',
+  disabledRules: ['heading-order'],
 };
 
 export const StoryTitleBar = () => (

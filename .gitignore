@@ -38,3 +38,4 @@ version-number.json
 junit.xml
 /src/icons/filled/material
 /src/icons/outlined/material
+cypress/config/a11y-components.json

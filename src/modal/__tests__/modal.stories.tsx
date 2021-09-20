@@ -36,6 +36,7 @@ const modalContent = (
 export default {
   title: 'NewsKit Light/modal',
   component: () => 'None',
+  disabledRules: ['tabindex', 'color-contrast'], // Because of scenario 'open on page load'
 };
 
 export const StoryDefault = () =>

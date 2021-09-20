@@ -388,6 +388,7 @@ jobs:
           root: ./
           paths:
             - e2e/dist/*
+            - cypress/config/a11y-components.json
       - slack/status:
           <<: *slack_status
 

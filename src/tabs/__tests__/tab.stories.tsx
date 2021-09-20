@@ -72,6 +72,7 @@ const states = ['Default', 'Selected', 'Disabled', 'Focus'];
 export default {
   title: 'NewsKit Light/tab',
   component: () => 'None',
+  disabledRules: ['color-contrast'],
 };
 
 export const StoryTabSize = () => (
