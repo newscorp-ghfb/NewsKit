@@ -53,6 +53,9 @@ The Form component also supports schema validation. To use an external validatio
     <a href="https://react-hook-form.com/ts#SubmitHandler">
       React Hook Form's documentation
     </a>
+
+    When submitting the form clicking on a button, is suggested to keep the whole logic in the `onSubmit` event
+    rather than split it in both an onClick and onSubmit event, for avoiding issues at runtime.
   </Prop>
   <Prop name="onSubmitInvalid" type="SubmitErrorHandler">
     Similar to onSubmit, this function is called when submission is attempted

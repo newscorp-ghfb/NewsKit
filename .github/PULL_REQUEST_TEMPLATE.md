@@ -15,7 +15,12 @@ DO CONSIDER any of the following are breaking changes to a consumer, this is by 
 -removing or renaming exported functions
 -in some cases, major bumps to peer dependencies
 --->
+
+<!---
+Add any breaking change if present.
+E.g:
 BREAKING CHANGE: renames the foobar component's prop foo to bar 
+--->
 
 **I have done:**
  - [ ] Written unit tests against changes
