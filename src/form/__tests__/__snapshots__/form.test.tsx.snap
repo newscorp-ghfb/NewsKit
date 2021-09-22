@@ -3151,3 +3151,1770 @@ exports[`Form renders with onBlur validation 1`] = `
   </form>
 </DocumentFragment>
 `;
+
+exports[`FormInput fireEvent with onBlur valid state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-2 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 {
+  min-height: 12px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-7:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<form
+    novalidate=""
+  >
+    <label
+      class="emotion-0"
+      for="email"
+    >
+      E-mail
+    </label>
+    <div
+      class="emotion-1"
+    >
+      <input
+        aria-describedby="email-assistive-text"
+        class="emotion-2"
+        data-testid="text-field-email"
+        id="email"
+        name="email"
+        type="text"
+      />
+      <span
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="24"
+            width="24"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="4"
+            y="10"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="10.5"
+            y="10"
+          />
+          <rect
+            height="3"
+            width="20"
+            x="2"
+            y="19"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="17"
+            y="10"
+          />
+          <polygon
+            points="12,1 2,6 2,8 22,8 22,6"
+          />
+        </svg>
+      </span>
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <p
+        class="emotion-7"
+        id="email-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-2 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 {
+  min-height: 12px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-7:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<form
+    novalidate=""
+  >
+    <label
+      class="emotion-0"
+      for="email"
+    >
+      E-mail
+    </label>
+    <div
+      class="emotion-1"
+    >
+      <input
+        aria-describedby="email-assistive-text"
+        class="emotion-2"
+        data-testid="text-field-email"
+        id="email"
+        name="email"
+        type="text"
+      />
+      <span
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="24"
+            width="24"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="4"
+            y="10"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="10.5"
+            y="10"
+          />
+          <rect
+            height="3"
+            width="20"
+            x="2"
+            y="19"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="17"
+            y="10"
+          />
+          <polygon
+            points="12,1 2,6 2,8 22,8 22,6"
+          />
+        </svg>
+      </span>
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <p
+        class="emotion-7"
+        id="email-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`FormInput renders FormInput Correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+    for="email"
+  >
+    E-mail
+  </label>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      aria-describedby="email-assistive-text"
+      class="emotion-1"
+      data-testid="text-field-email"
+      id="email"
+      name="email"
+      type="text"
+    />
+    <span
+      class="emotion-2"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-3 emotion-4"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="none"
+          height="24"
+          width="24"
+        />
+        <rect
+          height="7"
+          width="3"
+          x="4"
+          y="10"
+        />
+        <rect
+          height="7"
+          width="3"
+          x="10.5"
+          y="10"
+        />
+        <rect
+          height="3"
+          width="20"
+          x="2"
+          y="19"
+        />
+        <rect
+          height="7"
+          width="3"
+          x="17"
+          y="10"
+        />
+        <polygon
+          points="12,1 2,6 2,8 22,8 22,6"
+        />
+      </svg>
+    </span>
+  </div>
+  .emotion-0 {
+  min-height: 12px;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-1:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+      id="email-assistive-text"
+    >
+      Assistive Text
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FormInput renders with error and with submit validation and revalidation mode  1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-2 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 {
+  min-height: 12px;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-7:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #ffffff;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-13:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-13:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-13:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-16 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-16::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-16::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<form
+    novalidate=""
+  >
+    <label
+      class="emotion-0"
+      for="mock-nk-1"
+    >
+      E-mail
+    </label>
+    <div
+      class="emotion-1"
+    >
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        class="emotion-2"
+        data-testid="text-field-email"
+        id="mock-nk-1"
+        name="email"
+        type="text"
+      />
+      <span
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="24"
+            width="24"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="4"
+            y="10"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="10.5"
+            y="10"
+          />
+          <rect
+            height="3"
+            width="20"
+            x="2"
+            y="19"
+          />
+          <rect
+            height="7"
+            width="3"
+            x="17"
+            y="10"
+          />
+          <polygon
+            points="12,1 2,6 2,8 22,8 22,6"
+          />
+        </svg>
+      </span>
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <p
+        class="emotion-7"
+        id="mock-nk-1-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+    <label
+      class="emotion-0"
+      for="mock-nk-1"
+    >
+      Username
+    </label>
+    <div
+      class="emotion-1"
+    >
+      <input
+        aria-describedby="mock-nk-1-assistive-text"
+        class="emotion-2"
+        data-testid="text-field-username"
+        id="mock-nk-1"
+        name="username"
+        type="text"
+      />
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <p
+        class="emotion-7"
+        id="mock-nk-1-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+    <button
+      class="emotion-13"
+      data-testid="submit-button"
+      type="submit"
+    >
+      <div
+        class="emotion-14"
+      >
+        <div
+          class="emotion-15"
+        >
+          <span
+            class="emotion-16"
+          >
+            Submit
+          </span>
+        </div>
+      </div>
+    </button>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`FormInput renders with nested inputs 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+    for="mock-nk-1"
+  >
+    E-mail
+  </label>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      aria-describedby="mock-nk-1-assistive-text"
+      class="emotion-1"
+      data-testid="text-field-email"
+      id="mock-nk-1"
+      name="email"
+      type="text"
+    />
+    <span
+      class="emotion-2"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-3 emotion-4"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="none"
+          height="24"
+          width="24"
+        />
+        <rect
+          height="7"
+          width="3"
+          x="4"
+          y="10"
+        />
+        <rect
+          height="7"
+          width="3"
+          x="10.5"
+          y="10"
+        />
+        <rect
+          height="3"
+          width="20"
+          x="2"
+          y="19"
+        />
+        <rect
+          height="7"
+          width="3"
+          x="17"
+          y="10"
+        />
+        <polygon
+          points="12,1 2,6 2,8 22,8 22,6"
+        />
+      </svg>
+    </span>
+  </div>
+  .emotion-0 {
+  min-height: 12px;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-1:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+      id="mock-nk-1-assistive-text"
+    >
+      Assistive Text
+    </p>
+  </div>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+    for="mock-nk-1"
+  >
+    Username
+  </label>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      aria-describedby="mock-nk-1-assistive-text"
+      class="emotion-1"
+      data-testid="text-field-username"
+      id="mock-nk-1"
+      name="username"
+      type="text"
+    />
+  </div>
+  .emotion-0 {
+  min-height: 12px;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-1:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+      id="mock-nk-1-assistive-text"
+    >
+      Assistive Text
+    </p>
+  </div>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-0 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-0 svg {
+  fill: #ffffff;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-0:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-0:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<button
+    class="emotion-0"
+    data-testid="submit-button"
+    type="submit"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-3"
+        >
+          Submit
+        </span>
+      </div>
+    </div>
+  </button>
+</DocumentFragment>
+`;

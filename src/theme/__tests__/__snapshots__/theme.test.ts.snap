@@ -213,6 +213,23 @@ Object {
     "whiteTint90": "rgba(255,255,255, 0.9)",
   },
   "componentDefaults": Object {
+    "assistiveText": Object {
+      "large": Object {
+        "minHeight": "sizing030",
+        "stylePreset": "assistiveText",
+        "typographyPreset": "utilityLabel030",
+      },
+      "medium": Object {
+        "minHeight": "sizing030",
+        "stylePreset": "assistiveText",
+        "typographyPreset": "utilityLabel020",
+      },
+      "small": Object {
+        "minHeight": "sizing030",
+        "stylePreset": "assistiveText",
+        "typographyPreset": "utilityLabel020",
+      },
+    },
     "audioPlayer": Object {
       "controls": Object {
         "forwardButton": Object {
@@ -723,6 +740,26 @@ Object {
       "spaceInset": "spaceInset030",
       "stylePreset": "inlineMessageInformative",
     },
+    "label": Object {
+      "large": Object {
+        "spaceInline": "space010",
+        "spaceStack": "space040",
+        "stylePreset": "label",
+        "typographyPreset": "utilityLabel030",
+      },
+      "medium": Object {
+        "spaceInline": "space010",
+        "spaceStack": "space040",
+        "stylePreset": "label",
+        "typographyPreset": "utilityLabel030",
+      },
+      "small": Object {
+        "spaceInline": "space010",
+        "spaceStack": "space040",
+        "stylePreset": "label",
+        "typographyPreset": "utilityLabel030",
+      },
+    },
     "link": Object {
       "externalIcon": Object {
         "size": "iconSize010",
@@ -968,6 +1005,53 @@ Object {
         "spaceInset": "spaceInsetSquish010",
         "stylePreset": "tagDefault",
         "typographyPreset": "utilityLabel010",
+      },
+    },
+    "textField": Object {
+      "large": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "minHeight": "sizing090",
+        "spaceInset": "spaceInset030",
+        "spaceStack": "space020",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "stylePreset": "textField",
+        "typographyPreset": "utilityBody030",
+      },
+      "medium": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "minHeight": "sizing080",
+        "spaceInset": "spaceInset030",
+        "spaceStack": "space020",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "stylePreset": "textField",
+        "typographyPreset": "utilityBody020",
+      },
+      "small": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "minHeight": "sizing060",
+        "spaceInset": "spaceInset020",
+        "spaceStack": "space020",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
+        "stylePreset": "textField",
+        "typographyPreset": "utilityBody020",
       },
     },
     "textInput": Object {
@@ -1288,6 +1372,20 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
+    "assistiveText": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+      "invalid": Object {
+        "color": "{{colors.inkNegative}}",
+      },
+      "valid": Object {
+        "color": "{{colors.inkPositive}}",
+      },
+    },
     "audioPlayerControlButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -2629,6 +2727,14 @@ Object {
         "iconColor": "{{colors.inkNotice}}",
       },
     },
+    "label": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+    },
     "linkEmail": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -3064,6 +3170,37 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+    },
+    "textField": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+        "placeholderColor": "{{colors.inkSubtle}}",
+        "textOverflow": "ellipsis",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+      },
+      "focus": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+      "invalid": Object {
+        "borderColor": "{{colors.interactiveNegative030}}",
+        "caretColor": "{{colors.inkNegative}}",
+      },
+      "valid": Object {
+        "borderColor": "{{colors.interactivePositive030}}",
+        "caretColor": "{{colors.inkPositive}}",
       },
     },
     "textInput": Object {

@@ -5,10 +5,21 @@ import {Form, FormRef} from '..';
 import {
   renderToFragmentWithTheme,
   renderWithImplementation,
+  renderWithTheme,
 } from '../../test/test-utils';
 import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Button} from '../../button';
+import {
+  FormInput,
+  FormInputAssistiveText,
+  FormInputLabel,
+  FormInputProps,
+  FormInputTextField,
+} from '../form-input';
+import {composeEventHandlers} from '../utils';
+import {TextFieldSize} from '../../text-field';
+import {IconFilledAccountBalance} from '../..';
 
 let actualRHF: any;
 jest.mock('react-hook-form', () => {
@@ -405,5 +416,199 @@ describe('Form', () => {
     expect(ref.current!.getValues).toBe(useFormReturnMock.getValues);
     expect(ref.current!.trigger).toBe(useFormReturnMock.trigger);
     expect(ref.current!.element).toMatchSnapshot();
+  });
+});
+
+describe('FormInput', () => {
+  let props: any;
+  const formBodyFormInput = (
+    <React.Fragment>
+      <FormInput
+        id="email"
+        name="email"
+        rules={{
+          required: 'Required field',
+          pattern: {
+            // eslint-disable-next-line no-useless-escape
+            value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+            message: 'Please provide a valid email',
+          },
+        }}
+      >
+        <FormInputLabel>E-mail</FormInputLabel>
+        <FormInputTextField
+          data-testid="text-field-email"
+          endEnhancer={
+            <>
+              <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+            </>
+          }
+        />
+        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+      </FormInput>
+    </React.Fragment>
+  );
+  const formBodyFormInputInvalid = (
+    <React.Fragment>
+      <FormInput
+        name="email"
+        rules={{
+          required: 'Required field',
+          pattern: {
+            // eslint-disable-next-line no-useless-escape
+            value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+            message: 'Please provide a valid email',
+          },
+        }}
+      >
+        <FormInputLabel>E-mail</FormInputLabel>
+        <FormInputTextField
+          data-testid="text-field-email"
+          endEnhancer={
+            <>
+              <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+            </>
+          }
+        />
+        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+      </FormInput>
+
+      <FormInput
+        name="username"
+        data-testid="text-field-username"
+        rules={{
+          required: 'Required field',
+          minLength: {
+            value: 5,
+            message: 'Usernames must be at least 5 characters long',
+          },
+        }}
+      >
+        <FormInputLabel>Username</FormInputLabel>
+        <FormInputTextField data-testid="text-field-username" />
+        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+      </FormInput>
+      <Button data-testid="submit-button" type="submit">
+        Submit
+      </Button>
+    </React.Fragment>
+  );
+  const formProps = (prop: FormInputProps) => (
+    <React.Fragment>
+      <FormInput {...prop}>
+        <FormInputLabel>E-mail</FormInputLabel>
+        <FormInputTextField data-testid="text-field-email" />
+        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+      </FormInput>
+    </React.Fragment>
+  );
+  test('renders FormInput Correctly', () => {
+    const prop: FormInputProps = {
+      name: 'TextField',
+      size: TextFieldSize.Medium,
+      id: 'nk',
+
+      children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
+    };
+    const fragment = renderToFragmentWithTheme(FormInput, prop);
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders with nested inputs', () => {
+    const fragment = renderToFragmentWithTheme(FormInput, {...props});
+    expect(fragment).toMatchSnapshot();
+  });
+  test('fireEvent with onBlur valid state', () => {
+    const {getByTestId, asFragment} = renderWithImplementation(Form, {
+      ...props,
+      children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
+    });
+    fireEvent.blur(getByTestId('text-field-email'), {
+      target: {value: 'test@news.co.uk'},
+    });
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('does not call onBlur ', () => {
+    const onBlur = jest.fn();
+    const prop: FormInputProps = {};
+
+    const {getByTestId} = renderWithTheme(formProps, prop);
+    fireEvent.blur(getByTestId('text-field-email'));
+
+    expect(onBlur).toHaveBeenCalledTimes(0);
+  });
+  test('fireEvent with onChange when value is invalid', () => {
+    const {getByTestId, asFragment} = renderWithImplementation(Form, {
+      ...props,
+
+      children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
+    });
+    fireEvent.change(getByTestId('text-field-email'), {
+      target: {value: 'test@news.co.uk'},
+    });
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('does not call onChange ', () => {
+    const onChange = jest.fn();
+    const prop: FormInputProps = {};
+
+    const {getByTestId} = renderWithTheme(formProps, prop);
+    fireEvent.change(getByTestId('text-field-email'), {
+      target: {value: 'teews.co.uk'},
+    });
+
+    expect(onChange).toHaveBeenCalledTimes(0);
+  });
+  beforeAll(() => {
+    props = {
+      onSubmit: () => {},
+      children: (formBodyFormInputInvalid as unknown) as Array<React.ReactElement>,
+    };
+  });
+  test('renders with valid icon', async () => {
+    const {getByTestId, findByTestId} = renderWithImplementation(Form, {
+      ...props,
+      validationMode: 'onBlur',
+    });
+
+    fireEvent.blur(getByTestId('text-field-email'), {
+      target: {value: 'test@news.co.uk'},
+    });
+
+    expect(await findByTestId('tick-icon')).not.toBeNull();
+  });
+  test('renders with invalid icon', async () => {
+    const {getByTestId, findByTestId} = renderWithImplementation(Form, {
+      ...props,
+      validationMode: 'onBlur',
+    });
+
+    fireEvent.blur(getByTestId('text-field-email'), {
+      target: {value: 'testsßco.uk'},
+    });
+    expect(await findByTestId('error-icon')).not.toBeNull();
+  });
+  test('test function', () => {
+    const theResult = composeEventHandlers();
+    expect(typeof theResult).toBe('function');
+  });
+  test('renders with error and with submit validation and revalidation mode ', async () => {
+    const {getByRole, asFragment} = renderWithImplementation(Form, {
+      ...props,
+      reValidationMode: 'onSubmit',
+    });
+
+    fireEvent.submit(getByRole('button'));
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('renders with invalid icon and trailng icon', async () => {
+    const {getByTestId, findByTestId} = renderWithImplementation(Form, {
+      ...props,
+      validationMode: 'onBlur',
+    });
+
+    fireEvent.blur(getByTestId('text-field-email'), {
+      target: {value: 'testsßco.uk'},
+    });
+    expect(await findByTestId('error-icon')).not.toBeNull();
   });
 });

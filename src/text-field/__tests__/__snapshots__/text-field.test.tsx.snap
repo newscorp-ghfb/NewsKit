@@ -1,0 +1,1514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField renders Label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+  >
+    A label
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField renders TextField Correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      class="emotion-1"
+      name="TextField"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField renders TextField with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  border-color: #D20600;
+  min-height: 64px;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 8px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.39027777777777783em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </span>
+    <input
+      class="emotion-4"
+      data-testid="text-field-email"
+      type="text"
+    />
+    <span
+      class="emotion-5"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-6 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField renders TextField, AssistiveText and Label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+  >
+    A label
+  </label>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      class="emotion-1"
+      name="textfield"
+      placeholder="placeholder"
+      type="text"
+    />
+  </div>
+  .emotion-0 {
+  min-height: 12px;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-1:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+    >
+      AssistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField renders disabled text field 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  outline: none;
+  width: 100%;
+  cursor: not-allowed;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </span>
+    <input
+      class="emotion-4"
+      data-testid="text-field-email"
+      disabled=""
+      type="text"
+    />
+    <span
+      class="emotion-5"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-6 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField renders large TextField 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 64px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.39027777777777783em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      class="emotion-1"
+      name="textfield"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField renders large label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+  >
+    A Label
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField renders medium TextField 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      class="emotion-1"
+      name="textfield"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField renders medium label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+  >
+    A Label
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField renders small TextField 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 32px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 8px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <input
+      class="emotion-1"
+      name="textfield"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField renders small label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+  >
+    A Label
+  </label>
+</DocumentFragment>
+`;
+
+exports[`TextField renders text field with leading and trailing icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </span>
+    <input
+      class="emotion-4"
+      data-testid="text-field-email"
+      type="text"
+    />
+    <span
+      class="emotion-5"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-6 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField should render custom placeholder 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-0::placeholder {
+  color: #535353;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  outline: none;
+  width: 100%;
+  cursor: default;
+  border: none;
+  background: none;
+  padding: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </span>
+    <input
+      class="emotion-4"
+      data-testid="text-field-email"
+      placeholder="This is some text"
+      type="text"
+    />
+    <span
+      class="emotion-5"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-6 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField should render invalid label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.36250000000000004em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<label
+    class="emotion-0"
+  >
+    AssistiveText
+  </label>
+</DocumentFragment>
+`;

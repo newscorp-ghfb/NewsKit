@@ -712,6 +712,90 @@ export const componentDefaults = {
       },
     },
   },
+  assistiveText: {
+    small: {
+      stylePreset: 'assistiveText',
+      typographyPreset: 'utilityLabel020',
+      minHeight: 'sizing030',
+    },
+    medium: {
+      stylePreset: 'assistiveText',
+      typographyPreset: 'utilityLabel020',
+      minHeight: 'sizing030',
+    },
+    large: {
+      stylePreset: 'assistiveText',
+      typographyPreset: 'utilityLabel030',
+      minHeight: 'sizing030',
+    },
+  },
+  label: {
+    small: {
+      stylePreset: 'label',
+      typographyPreset: 'utilityLabel030',
+      spaceStack: 'space040',
+      spaceInline: 'space010',
+    },
+    medium: {
+      stylePreset: 'label',
+      typographyPreset: 'utilityLabel030',
+      spaceStack: 'space040',
+      spaceInline: 'space010',
+    },
+    large: {
+      stylePreset: 'label',
+      typographyPreset: 'utilityLabel030',
+      spaceStack: 'space040',
+      spaceInline: 'space010',
+    },
+  },
+  textField: {
+    small: {
+      stylePreset: 'textField',
+      spaceInset: 'spaceInset020',
+      minHeight: 'sizing060',
+      typographyPreset: 'utilityBody020',
+      spaceStack: 'space020',
+      startEnhancer: {
+        spaceInline: 'space020',
+        iconSize: 'iconSize020',
+      },
+      endEnhancer: {
+        spaceInline: 'space020',
+        iconSize: 'iconSize020',
+      },
+    },
+    medium: {
+      stylePreset: 'textField',
+      spaceInset: 'spaceInset030',
+      minHeight: 'sizing080',
+      typographyPreset: 'utilityBody020',
+      spaceStack: 'space020',
+      startEnhancer: {
+        spaceInline: 'space020',
+        iconSize: 'iconSize020',
+      },
+      endEnhancer: {
+        spaceInline: 'space020',
+        iconSize: 'iconSize020',
+      },
+    },
+    large: {
+      stylePreset: 'textField',
+      spaceInset: 'spaceInset030',
+      minHeight: 'sizing090',
+      typographyPreset: 'utilityBody030',
+      spaceStack: 'space020',
+      startEnhancer: {
+        spaceInline: 'space020',
+        iconSize: 'iconSize020',
+      },
+      endEnhancer: {
+        spaceInline: 'space020',
+        iconSize: 'iconSize020',
+      },
+    },
+  },
   textInput: {
     small: {
       label: {

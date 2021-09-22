@@ -18,6 +18,7 @@ export interface GetStylePresetFromThemeOptions {
   isDisabled?: boolean;
   isInvalid?: boolean;
   isValid?: boolean;
+  isFocused?: boolean;
   isSvg?: boolean;
   omitStates?: StylePresetStates[];
   filterStates?: StylePresetStates[];
@@ -78,6 +79,7 @@ const getPresetStates = (
     isDisabled = false,
     isInvalid = false,
     isValid = false,
+    isFocused = false,
   } = options || {};
   const {selected, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
@@ -86,6 +88,7 @@ const getPresetStates = (
   const stateOverrides =
     (isDisabled && presetStates.disabled) ||
     (isLoading && loading) ||
+    (isFocused && presetStates.focus) ||
     (isSelected && selected) ||
     (isInvalid && invalid) ||
     (isValid && valid) ||
