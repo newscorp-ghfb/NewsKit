@@ -557,6 +557,7 @@ jobs:
       - run:
           name: Run Applitools Storybook Component Tests
           command: make comps_visual_test
+          no_output_timeout: 15m
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"

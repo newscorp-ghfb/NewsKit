@@ -46,11 +46,11 @@ export const StyledListItemContainer = styled.li<
   cursor: ${({disabled}) => disabled && 'not-allowed'};
   list-style: none;
   width: 100%;
-  overflow: hidden;
 `;
 
 export const StyledLink = styled.a<StructuredListItemProps>`
   text-decoration: none;
+  outline-offset: -1px;
 `;
 
 export const StyledListWrapper = styled.ul<StructuredListProps>`

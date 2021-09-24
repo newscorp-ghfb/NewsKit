@@ -12,12 +12,12 @@ exports[`StructuredList with href renders four cells with href 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -75,12 +75,12 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -110,31 +110,31 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 
 @media screen {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -458,12 +458,12 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -493,31 +493,31 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
 
 @media screen {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -843,12 +843,12 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -878,31 +878,31 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 
 @media screen {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -1358,12 +1358,12 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -1393,31 +1393,31 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 
 @media screen {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -1903,12 +1903,12 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -1938,31 +1938,31 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 
 @media screen {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -2450,12 +2450,12 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -2485,31 +2485,31 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 
 @media screen {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -2798,12 +2798,12 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -2833,31 +2833,31 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 
 @media screen {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -3348,12 +3348,12 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -3383,31 +3383,31 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 
 @media screen {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -3898,12 +3898,12 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -3933,31 +3933,31 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 
 @media screen {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -4448,12 +4448,12 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   cursor: not-allowed;
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .emotion-3 {
@@ -4483,31 +4483,31 @@ exports[`StructuredList with href renders with disabled link 1`] = `
 
 @media screen {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-4 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -4837,7 +4837,6 @@ exports[`StructuredList without-href renders with default style 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
@@ -4867,31 +4866,31 @@ exports[`StructuredList without-href renders with default style 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -5327,7 +5326,6 @@ exports[`StructuredList without-href renders with more than 3 children 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
@@ -5373,7 +5371,6 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
@@ -5403,31 +5400,31 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -5592,7 +5589,6 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
@@ -5622,31 +5618,31 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -6079,7 +6075,6 @@ exports[`StructuredList without-href renders with texts only and no cells 1`] = 
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
@@ -6109,31 +6104,31 @@ exports[`StructuredList without-href renders with texts only and no cells 1`] = 
 
 @media screen {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -6237,7 +6232,6 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
@@ -6267,31 +6261,31 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
 
 @media screen {
   .emotion-3 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -6560,7 +6554,6 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
 .emotion-1 {
   list-style: none;
   width: 100%;
-  overflow: hidden;
 }
 
 .emotion-2 {
@@ -6590,31 +6583,31 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
 
 @media screen {
   .emotion-3 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px -8px 0 -8px;
+    margin: -16px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -0px -8px 0 -8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -0px -12px 0 -12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
