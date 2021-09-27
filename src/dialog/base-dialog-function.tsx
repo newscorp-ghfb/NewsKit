@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect, useCallback} from 'react';
 import FocusLock from 'react-focus-lock';
 import {useKeypress} from '../utils/hooks';
 import {get} from '../utils/get';
@@ -10,6 +10,8 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
   onDismiss,
   restoreFocusTo = undefined,
   renderOverlay,
+  hideOverlay,
+  disableFocusTrap,
 }) => {
   const triggerClose = () => open && onDismiss && onDismiss();
 
@@ -34,7 +36,7 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
     originalFocusedElementRef.current = document.activeElement;
   };
 
-  const handleOnLockDeactivation = () => {
+  const handleOnLockDeactivation = useCallback(() => {
     const originalFocusedElement = get(originalFocusedElementRef, 'current');
 
     /* istanbul ignore else */
@@ -47,13 +49,24 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
         0,
       );
     }
-  };
+  }, [restoreFocusTo]);
+
+  useEffect(() => {
+    if (disableFocusTrap && open) {
+      handleOnLockActivation();
+    }
+    return () => {
+      if (disableFocusTrap && open) {
+        handleOnLockDeactivation();
+      }
+    };
+  }, [disableFocusTrap, handleOnLockDeactivation, open]);
 
   return (
     <>
-      {renderOverlay(handleOverlayClick)}
+      {!hideOverlay && renderOverlay(handleOverlayClick)}
       <FocusLock
-        disabled={!open}
+        disabled={!open || disableFocusTrap}
         onActivation={handleOnLockActivation}
         onDeactivation={handleOnLockDeactivation}
       >

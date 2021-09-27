@@ -305,3 +305,163 @@ describe('Modal focus management', () => {
     });
   });
 });
+
+describe('Modal focus management when focus trap is disabled', () => {
+  test('focus on first interactive element', async () => {
+    const {findByTestId} = renderWithTheme(Modal, {
+      open: true,
+      onDismiss: () => {},
+      disableFocusTrap: true,
+      children: (
+        <button type="button" data-testid="interactive-element">
+          auto focus button
+        </button>
+      ),
+    });
+
+    await wait(async () => {
+      const element = await findByTestId('interactive-element');
+      expect(element).toHaveFocus();
+    });
+  });
+
+  test('focus on custom element using data-autofocus attr', async () => {
+    const {findByTestId} = renderWithTheme(Modal, {
+      open: true,
+      onDismiss: () => {},
+      disableFocusTrap: true,
+      children: (
+        <>
+          <button type="button">another button</button>
+          <p>text here</p>
+          <button
+            data-autofocus
+            type="button"
+            data-testid="interactive-element"
+          >
+            auto focus button
+          </button>
+        </>
+      ),
+    });
+
+    await wait(async () => {
+      const element = await findByTestId('interactive-element');
+      expect(element).toHaveFocus();
+    });
+  });
+
+  test('return focus to the last focused element on close', async () => {
+    const ModalPage = () => {
+      const [isOpen, setOpen] = useState(false);
+      return (
+        <>
+          <button
+            type="button"
+            data-testid="toggle"
+            onClick={() => setOpen(!isOpen)}
+          >
+            toggle
+          </button>
+          <Modal
+            open={isOpen}
+            onDismiss={() => setOpen(false)}
+            disableFocusTrap
+          >
+            content with
+            <button type="button" data-testid="interactive-element">
+              button
+            </button>
+          </Modal>
+        </>
+      );
+    };
+    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+      ModalPage,
+    );
+    let toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
+    await wait(async () => {
+      // first interactive element is focused
+      const interactiveElement = await findByTestId('interactive-element');
+      expect(interactiveElement).toHaveFocus();
+    });
+
+    // move to close button
+    userEvent.tab();
+
+    // check if close button is focused
+    const closeButton = getByLabelText('close');
+    expect(closeButton).toHaveFocus();
+
+    fireEvent.click(closeButton);
+
+    await wait(async () => {
+      toggleButton = await findByTestId('toggle');
+      expect(toggleButton).toHaveFocus();
+    });
+  });
+
+  test('return focus to restoreFocusTo element on close', async () => {
+    const ModalPage = () => {
+      const [isOpen, setOpen] = useState(false);
+      const restoreFocusRef = useRef(null);
+      return (
+        <>
+          <button
+            type="button"
+            data-testid="toggle"
+            onClick={() => setOpen(!isOpen)}
+          >
+            toggle
+          </button>
+
+          <Modal
+            open={isOpen}
+            onDismiss={() => setOpen(false)}
+            restoreFocusTo={restoreFocusRef.current || undefined}
+            disableFocusTrap
+          >
+            content with
+            <button type="button" data-testid="interactive-element">
+              button
+            </button>
+          </Modal>
+          <button
+            type="button"
+            data-testid="restoreFocusTo"
+            ref={restoreFocusRef}
+          >
+            another button
+          </button>
+        </>
+      );
+    };
+    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+      ModalPage,
+    );
+    const toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
+    await wait(async () => {
+      // first interactive element is focused
+      const interactiveElement = await findByTestId('interactive-element');
+      expect(interactiveElement).toHaveFocus();
+    });
+
+    // move to close button
+    userEvent.tab();
+
+    // check if close button is focused
+    const closeButton = getByLabelText('close');
+    expect(closeButton).toHaveFocus();
+
+    fireEvent.click(closeButton);
+
+    await wait(async () => {
+      const restoreFocusButton = await findByTestId('restoreFocusTo');
+      expect(restoreFocusButton).toHaveFocus();
+    });
+  });
+});

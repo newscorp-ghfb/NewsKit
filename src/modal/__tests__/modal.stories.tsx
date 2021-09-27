@@ -228,3 +228,118 @@ export const StoryWithCustomRestoreFocus = () =>
   });
 StoryWithCustomRestoreFocus.storyName = 'with custom restore focus';
 StoryWithCustomRestoreFocus.parameters = {eyes: {include: false}};
+
+export const StoryWithHiddenOverlay = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    return (
+      <div data-testid="scrollable-modal">
+        <StorybookHeading>Modal with hidden overlay</StorybookHeading>
+        <Button onClick={open} data-testid="modal-open-button">
+          Open Modal
+        </Button>
+        <p>SCROLL DOWN </p>
+        <Box>
+          {Array.from({length: 5}, (_, i) => (
+            <>
+              {i === 3 && (
+                <Button onClick={open}>Another button to open the modal</Button>
+              )}
+              <p key={i}>{scrollContent}</p>
+            </>
+          ))}
+        </Box>
+        <Modal
+          open={isActive}
+          onDismiss={close}
+          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          hideOverlay
+        >
+          {modalContent}
+        </Modal>
+      </div>
+    );
+  });
+StoryWithHiddenOverlay.storyName = 'hidden overlay';
+StoryWithHiddenOverlay.parameters = {eyes: {include: false}};
+
+export const StoryWithDisabledFocusTrap = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    return (
+      <div data-testid="scrollable-modal">
+        <StorybookHeading>Modal with disabled focus trap</StorybookHeading>
+        <Button onClick={open} data-testid="modal-open-button">
+          Open Modal
+        </Button>
+        <p>SCROLL DOWN </p>
+        <Box>
+          {Array.from({length: 5}, (_, i) => (
+            <>
+              {i === 3 && (
+                <Button onClick={open}>Another button to open the modal</Button>
+              )}
+              <p key={i}>{scrollContent}</p>
+            </>
+          ))}
+        </Box>
+        <Modal
+          open={isActive}
+          onDismiss={close}
+          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          disableFocusTrap
+        >
+          {modalContent}
+        </Modal>
+      </div>
+    );
+  });
+StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
+StoryWithDisabledFocusTrap.parameters = {eyes: {include: false}};
+
+export const StoryModelessModal = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    return (
+      <div data-testid="scrollable-modal">
+        <StorybookHeading>Modeless Modal</StorybookHeading>
+        <Button onClick={open} data-testid="modal-open-button">
+          Open Modal
+        </Button>
+        <p>SCROLL DOWN </p>
+        <Box>
+          {Array.from({length: 5}, (_, i) => (
+            <>
+              {i === 3 && (
+                <Button onClick={open}>Another button to open the modal</Button>
+              )}
+              <p key={i}>{scrollContent}</p>
+            </>
+          ))}
+        </Box>
+        <Modal
+          open={isActive}
+          onDismiss={close}
+          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          hideOverlay
+          disableFocusTrap
+        >
+          {modalContent}
+        </Modal>
+      </div>
+    );
+  });
+StoryModelessModal.storyName = 'modelss';
+StoryModelessModal.parameters = {eyes: {include: false}};

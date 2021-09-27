@@ -66,9 +66,7 @@ const transitions = {
   bottom: '0, 100%, 0',
 };
 
-export const StyledDrawer = styled(BaseDialogView, {
-  shouldForwardProp: prop => prop !== 'open',
-})<DrawerPanelProps>`
+export const StyledDrawer = styled(BaseDialogView)<DrawerPanelProps>`
   ${({placement}) => placementOptions[placement!]};
   ${({placement, ...props}) => placementSize[placement!](props)}
 

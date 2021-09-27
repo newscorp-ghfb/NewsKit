@@ -86,6 +86,7 @@ export const StoryDefault = () =>
           ))}
         </Box>
         <Drawer
+          aria-label="Drawer example"
           open={isActive}
           onDismiss={close}
           placement={placement as 'top' | 'left' | 'right' | 'bottom'}
@@ -172,7 +173,7 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
       | undefined;
 
     return (
-      <div data-testid="scrollable-drawer">
+      <div>
         <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
         <p>Drawer with autofocus using data-autofocus attribute</p>
         <Button onClick={open} data-testid="drawer-open-button">
@@ -183,6 +184,7 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
         <Button id="test-button">Takes refocus</Button>
 
         <Drawer
+          aria-label="Drawer example"
           open={isActive}
           onDismiss={close}
           header="Header"
@@ -206,3 +208,286 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
 StoryWithRestoreFocusAndCustomAutofocus.storyName =
   'with restore focus and custom autofocus';
 StoryWithRestoreFocusAndCustomAutofocus.parameters = {eyes: {include: false}};
+
+export const StoryWithHiddenOverlay = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    return (
+      <div>
+        <StorybookHeading>Drawer with hidden overlay</StorybookHeading>
+        <Button onClick={open} data-testid="drawer-open-button">
+          Open Drawer
+        </Button>
+        <p>SCROLL DOWN </p>
+        <Box>
+          {Array.from({length: 5}, (_, i) => (
+            <>
+              {i === 3 && (
+                <Button onClick={open}>
+                  Another button to open the drawer
+                </Button>
+              )}
+              <p key={i}>{content}</p>
+            </>
+          ))}
+        </Box>
+        <Drawer
+          aria-label="Drawer example"
+          open={isActive}
+          onDismiss={close}
+          placement="right"
+          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          hideOverlay
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
+            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
+            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
+            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
+            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
+            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
+            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
+            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
+            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
+            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
+            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
+            interdum.
+          </p>
+          <TextInput label="First name" />
+          <TextInput label="Last name" />
+          <TextInput label="Phone number" />
+          <div>
+            <Link href="/">For more information...</Link>{' '}
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+            scelerisque sapien. Praesent mollis vestibulum nunc at blandit.
+            Donec vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
+            Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac
+            urna <Link href="/">Test link 2</Link> rutrum aliquet eu mattis
+            ligula. Sed dapibus, enim sed tristique gravida, nisl dolor
+            malesuada lacus, quis auctor dui mauris eu odio. Vivamus eu augue et
+            enim varius viverra. Vivamus ut tellus iaculis, ullamcorper ligula
+            sit amet, posuere ipsum.
+          </p>
+          <div>
+            <Button>Remind me later</Button>
+            <Button>Ok</Button>
+          </div>
+        </Drawer>
+      </div>
+    );
+  });
+StoryWithHiddenOverlay.storyName = 'hidden overlay';
+StoryWithHiddenOverlay.parameters = {eyes: {include: false}};
+
+export const StoryWithDisabledFocusTrap = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    return (
+      <div>
+        <StorybookHeading>Drawer with disabled focus trap</StorybookHeading>
+        <Button onClick={open} data-testid="drawer-open-button">
+          Open Drawer
+        </Button>
+
+        <p>SCROLL DOWN </p>
+        <Box>
+          {Array.from({length: 5}, (_, i) => (
+            <>
+              {i === 3 && (
+                <Button onClick={open}>
+                  Another button to open the drawer
+                </Button>
+              )}
+              <p key={i}>{content}</p>
+            </>
+          ))}
+        </Box>
+        <Drawer
+          aria-label="Drawer example"
+          open={isActive}
+          onDismiss={close}
+          placement="right"
+          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          disableFocusTrap
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
+            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
+            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
+            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
+            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
+            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
+            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
+            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
+            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
+            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
+            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
+            interdum.
+          </p>
+          <TextInput label="First name" />
+          <TextInput label="Last name" />
+          <TextInput label="Phone number" />
+          <div>
+            <Link href="/">For more information...</Link>{' '}
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+            scelerisque sapien. Praesent mollis vestibulum nunc at blandit.
+            Donec vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
+            Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac
+            urna <Link href="/">Test link 2</Link> rutrum aliquet eu mattis
+            ligula. Sed dapibus, enim sed tristique gravida, nisl dolor
+            malesuada lacus, quis auctor dui mauris eu odio. Vivamus eu augue et
+            enim varius viverra. Vivamus ut tellus iaculis, ullamcorper ligula
+            sit amet, posuere ipsum.
+          </p>
+          <div>
+            <Button>Remind me later</Button>
+            <Button>Ok</Button>
+          </div>
+        </Drawer>
+      </div>
+    );
+  });
+StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
+StoryWithDisabledFocusTrap.parameters = {eyes: {include: false}};
+
+export const StoryModelessDrawer = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    return (
+      <div>
+        <StorybookHeading>Modeless Drawer</StorybookHeading>
+        <Button onClick={open} data-testid="drawer-open-button">
+          Open Drawer
+        </Button>
+
+        <Drawer
+          aria-label="Drawer example"
+          open={isActive}
+          onDismiss={close}
+          placement="right"
+          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          disableFocusTrap
+          hideOverlay
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
+            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
+            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
+            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
+            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
+            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
+            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
+            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
+            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
+            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
+            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
+            interdum.
+          </p>
+          <TextInput label="First name" />
+          <TextInput label="Last name" />
+          <TextInput label="Phone number" />
+          <div>
+            <Link href="/">For more information...</Link>{' '}
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+            scelerisque sapien. Praesent mollis vestibulum nunc at blandit.
+            Donec vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
+            Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac
+            urna <Link href="/">Test link 2</Link> rutrum aliquet eu mattis
+            ligula. Sed dapibus, enim sed tristique gravida, nisl dolor
+            malesuada lacus, quis auctor dui mauris eu odio. Vivamus eu augue et
+            enim varius viverra. Vivamus ut tellus iaculis, ullamcorper ligula
+            sit amet, posuere ipsum.
+          </p>
+          <div>
+            <Button>Remind me later</Button>
+            <Button>Ok</Button>
+          </div>
+        </Drawer>
+
+        <p>SCROLL DOWN </p>
+        <Box>
+          {Array.from({length: 5}, (_, i) => (
+            <>
+              {i === 3 && (
+                <Button onClick={open}>
+                  Another button to open the drawer
+                </Button>
+              )}
+              <p key={i}>{content}</p>
+            </>
+          ))}
+        </Box>
+      </div>
+    );
+  });
+StoryModelessDrawer.storyName = 'modelss';
+StoryModelessDrawer.parameters = {eyes: {include: false}};
+
+export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
+  React.createElement(() => {
+    const [isActive, setIsActive] = React.useState(false);
+
+    const open = () => setIsActive(true);
+    const close = () => setIsActive(false);
+
+    const elementToRestoreFocusTo = document.getElementById(
+      'modeless-test-button',
+    ) as HTMLElement | undefined;
+
+    return (
+      <div>
+        <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
+        <p>Drawer with autofocus using data-autofocus attribute</p>
+        <Button onClick={open} data-testid="modeless-drawer-open-button">
+          Open Drawer
+        </Button>
+        <br />
+        <br />
+        <Button id="modeless-test-button">Takes refocus</Button>
+
+        <Drawer
+          aria-label="Drawer example"
+          open={isActive}
+          onDismiss={close}
+          header="Header"
+          restoreFocusTo={elementToRestoreFocusTo}
+          disableFocusTrap
+        >
+          <TextInput label="First name" />
+          <TextInput label="Last name" />
+          <TextInput label="Phone number" />
+          <div>
+            <Link href="/">For more information...</Link>{' '}
+          </div>
+
+          <div>
+            <Button>Remind me later</Button>
+            <Button data-autofocus>Ok</Button>
+          </div>
+        </Drawer>
+      </div>
+    );
+  });
+StoryModelessWithRestoreFocusAndCustomAutofocus.storyName =
+  'modeless with restore focus and custom autofocus';
+StoryModelessWithRestoreFocusAndCustomAutofocus.parameters = {
+  eyes: {include: false},
+};

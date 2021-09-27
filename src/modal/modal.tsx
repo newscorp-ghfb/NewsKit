@@ -17,13 +17,11 @@ export const Modal: React.FC<ModalProps> = ({
   restoreFocusTo,
   closePosition = 'right',
   overrides,
+  hideOverlay,
+  disableFocusTrap,
   ...props
 }) => {
   const theme = useTheme();
-
-  if (!open) {
-    return null;
-  }
 
   const overlayOverrides = {
     ...deepMerge(
@@ -38,8 +36,9 @@ export const Modal: React.FC<ModalProps> = ({
       open={open}
       restoreFocusTo={restoreFocusTo}
       onDismiss={onDismiss}
+      hideOverlay={hideOverlay}
+      disableFocusTrap={disableFocusTrap}
       renderOverlay={handleOverlayClick => (
-        // Render conditionally the Overlay for Modal V2
         <Overlay
           open={open}
           onClick={handleOverlayClick}
@@ -48,9 +47,16 @@ export const Modal: React.FC<ModalProps> = ({
       )}
     >
       {handleCloseButtonClick => (
-        <CSSTransition in={open} timeout={1000} classNames="nk-modal" appear>
+        <CSSTransition
+          in={open}
+          timeout={0} // bypass transition until PPDSC-1151 is merged
+          classNames="nk-modal"
+          unmountOnExit
+          mountOnEnter
+        >
           <StyledModal
             open={open}
+            disableFocusTrap={disableFocusTrap}
             handleCloseButtonClick={handleCloseButtonClick}
             path="modal"
             data-testid="modal"

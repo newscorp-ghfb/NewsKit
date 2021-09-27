@@ -19,6 +19,8 @@ export const Drawer: React.FC<DrawerProps> = ({
   closePosition = placement === 'left' ? 'left' : 'right',
   restoreFocusTo,
   overrides,
+  hideOverlay,
+  disableFocusTrap,
   ...props
 }) => {
   const theme = useTheme();
@@ -41,6 +43,8 @@ export const Drawer: React.FC<DrawerProps> = ({
       open={open}
       restoreFocusTo={restoreFocusTo}
       onDismiss={onDismiss}
+      hideOverlay={hideOverlay}
+      disableFocusTrap={disableFocusTrap}
       renderOverlay={handleOverlayClick => (
         <Overlay
           open={open}
@@ -54,6 +58,7 @@ export const Drawer: React.FC<DrawerProps> = ({
           <StyledDrawer
             aria-hidden={!open}
             open={open}
+            disableFocusTrap={disableFocusTrap}
             handleCloseButtonClick={handleCloseButtonClick}
             path="drawer"
             data-testid="drawer"

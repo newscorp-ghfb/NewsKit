@@ -350,3 +350,163 @@ describe('Drawer focus management', () => {
     expect(getByTestId('interactive-element')).not.toHaveAttribute('tabindex');
   });
 });
+
+describe('Drawer focus management when focus trap is disabled', () => {
+  test('focus on first interactive element', async () => {
+    const {findByTestId} = renderWithTheme(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      disableFocusTrap: true,
+      children: (
+        <button type="button" data-testid="interactive-element">
+          auto focus button
+        </button>
+      ),
+    });
+
+    await waitFor(async () => {
+      const element = await findByTestId('interactive-element');
+      expect(element).toHaveFocus();
+    });
+  });
+
+  test('focus on custom element using data-autofocus attr', async () => {
+    const {findByTestId} = renderWithTheme(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      disableFocusTrap: true,
+      children: (
+        <>
+          <button type="button">another button</button>
+          <p>text here</p>
+          <button
+            data-autofocus
+            type="button"
+            data-testid="interactive-element"
+          >
+            auto focus button
+          </button>
+        </>
+      ),
+    });
+
+    await waitFor(async () => {
+      const element = await findByTestId('interactive-element');
+      expect(element).toHaveFocus();
+    });
+  });
+
+  test('return focus to the last focused element on close', async () => {
+    const DrawerPage = () => {
+      const [isOpen, setOpen] = useState(false);
+      return (
+        <>
+          <button
+            type="button"
+            data-testid="toggle"
+            onClick={() => setOpen(!isOpen)}
+          >
+            toggle
+          </button>
+          <Drawer
+            open={isOpen}
+            onDismiss={() => setOpen(false)}
+            disableFocusTrap
+          >
+            content with
+            <button type="button" data-testid="interactive-element">
+              button
+            </button>
+          </Drawer>
+        </>
+      );
+    };
+    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+      DrawerPage,
+    );
+    let toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
+    await waitFor(async () => {
+      // first interactive element is focused
+      const interactiveElement = await findByTestId('interactive-element');
+      expect(interactiveElement).toHaveFocus();
+    });
+
+    // move to close button
+    userEvent.tab();
+
+    // check if close button is focused
+    const closeButton = getByLabelText('close');
+    expect(closeButton).toHaveFocus();
+
+    fireEvent.click(closeButton);
+
+    await waitFor(async () => {
+      toggleButton = await findByTestId('toggle');
+      expect(toggleButton).toHaveFocus();
+    });
+  });
+
+  test('return focus to restoreFocusTo element on close', async () => {
+    const DrawerPage = () => {
+      const [isOpen, setOpen] = useState(false);
+      const restoreFocusRef = useRef(null);
+      return (
+        <>
+          <button
+            type="button"
+            data-testid="toggle"
+            onClick={() => setOpen(!isOpen)}
+          >
+            toggle
+          </button>
+
+          <Drawer
+            open={isOpen}
+            onDismiss={() => setOpen(false)}
+            restoreFocusTo={restoreFocusRef.current || undefined}
+            disableFocusTrap
+          >
+            content with
+            <button type="button" data-testid="interactive-element">
+              button
+            </button>
+          </Drawer>
+          <button
+            type="button"
+            data-testid="restoreFocusTo"
+            ref={restoreFocusRef}
+          >
+            another button
+          </button>
+        </>
+      );
+    };
+    const {findByTestId, getByTestId, getByLabelText} = renderWithTheme(
+      DrawerPage,
+    );
+    const toggleButton = getByTestId('toggle');
+    toggleButton.focus();
+    fireEvent.click(toggleButton);
+    await waitFor(async () => {
+      // first interactive element is focused
+      const interactiveElement = await findByTestId('interactive-element');
+      expect(interactiveElement).toHaveFocus();
+    });
+
+    // move to close button
+    userEvent.tab();
+
+    // check if close button is focused
+    const closeButton = getByLabelText('close');
+    expect(closeButton).toHaveFocus();
+
+    fireEvent.click(closeButton);
+
+    await waitFor(async () => {
+      const restoreFocusButton = await findByTestId('restoreFocusTo');
+      expect(restoreFocusButton).toHaveFocus();
+    });
+  });
+});

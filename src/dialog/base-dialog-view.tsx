@@ -1,4 +1,5 @@
 import React, {useRef} from 'react';
+import {MoveFocusInside} from 'react-focus-lock';
 import {BaseDialogViewProps} from './types';
 import {
   StyledDialogPanel,
@@ -16,6 +17,8 @@ import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {BreakpointKeys, useTheme} from '../theme';
+import {ScreenReaderOnly} from '../screen-reader-only';
+import {useReactKeys} from '../utils/hooks';
 
 /* istanbul ignore next */
 const centerCloseButton = (top: number) => ({
@@ -38,12 +41,16 @@ export const BaseDialogView = React.forwardRef<
       ariaDescribedby,
       ariaLabelledby,
       children,
+      open,
+      disableFocusTrap,
       ...props
     },
     panelRef,
   ) => {
     const headerRef = useRef<HTMLDivElement>(null);
     const [, headerHeight] = useResizeObserver(headerRef);
+
+    const [listDialogItemNotification] = useReactKeys(1);
 
     const theme = useTheme();
     const closeButtonOverrides: typeof overrides['closeButton'] = {
@@ -56,55 +63,68 @@ export const BaseDialogView = React.forwardRef<
       ),
     };
 
+    const MoveFocusInsideWhenFocusTrapDisabled =
+      disableFocusTrap && open ? MoveFocusInside : React.Fragment;
+
     return (
       <StyledDialogPanel
         ref={panelRef}
         className={className}
         role="dialog"
-        aria-modal="true"
+        aria-modal={disableFocusTrap ? 'false' : 'true'}
         aria-describedby={ariaDescribedby}
         aria-labelledby={ariaLabelledby}
         overrides={overrides}
         path={path}
         {...props}
       >
-        <StyledDialogHeader overrides={overrides} ref={headerRef} path={path}>
-          <Stack
-            flow="horizontal-center"
-            flowReverse={closePosition === 'left'}
+        <MoveFocusInsideWhenFocusTrapDisabled>
+          <StyledDialogHeader overrides={overrides} ref={headerRef} path={path}>
+            <Stack
+              flow="horizontal-center"
+              flowReverse={closePosition === 'left'}
+            >
+              {header && (
+                <StyledDialogHeaderContent path={path}>
+                  {header}
+                </StyledDialogHeaderContent>
+              )}
+              <StyledFillSpaceCloseButton
+                path={path}
+                overrides={overrides}
+                closePosition={closePosition}
+              />
+            </Stack>
+          </StyledDialogHeader>
+          <StyledDialogContent
+            data-testid="dialog-content"
+            path={path}
+            overrides={overrides}
           >
-            {header && (
-              <StyledDialogHeaderContent path={path}>
-                {header}
-              </StyledDialogHeaderContent>
-            )}
-            <StyledFillSpaceCloseButton
-              path={path}
-              overrides={overrides}
-              closePosition={closePosition}
-            />
-          </Stack>
-        </StyledDialogHeader>
-        <StyledDialogContent
-          data-testid="dialog-content"
-          path={path}
-          overrides={overrides}
-        >
-          {children}
-        </StyledDialogContent>
-        <StyledCloseButton
-          path={path}
-          closePosition={closePosition}
-          style={{
-            ...centerCloseButton(headerHeight),
-          }}
-          aria-label="close"
-          onClick={handleCloseButtonClick}
-          overrides={closeButtonOverrides}
-          size={ButtonSize.Medium}
-        >
-          <IconFilledClose />
-        </StyledCloseButton>
+            {children}
+          </StyledDialogContent>
+          <StyledCloseButton
+            path={path}
+            closePosition={closePosition}
+            style={{
+              ...centerCloseButton(headerHeight),
+            }}
+            aria-label="close"
+            aria-describedby={
+              disableFocusTrap ? listDialogItemNotification : undefined
+            }
+            onClick={handleCloseButtonClick}
+            overrides={closeButtonOverrides}
+            size={ButtonSize.Medium}
+          >
+            <IconFilledClose />
+          </StyledCloseButton>
+          {disableFocusTrap && (
+            <ScreenReaderOnly id={listDialogItemNotification}>
+              With the next tab you will be leaving the dialog window.
+            </ScreenReaderOnly>
+          )}
+        </MoveFocusInsideWhenFocusTrapDisabled>
       </StyledDialogPanel>
     );
   },

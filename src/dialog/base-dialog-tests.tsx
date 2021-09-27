@@ -19,7 +19,6 @@ export const sharedDialogTests = (
     });
     expect(fragment).toMatchSnapshot();
   });
-
   test('renders without header', () => {
     const fragment = renderToFragmentWithTheme(Dialog, {
       open: true,
@@ -53,6 +52,26 @@ export const sharedDialogTests = (
           <div id="purpose">Showing different styles</div>
         </>
       ),
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders without overlay', () => {
+    const fragment = renderToFragmentWithTheme(Dialog, {
+      open: true,
+      header,
+      children: body,
+      onDismiss: () => {},
+      hideOverlay: true,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders screen reader message when focus trapping disabled', () => {
+    const fragment = renderToFragmentWithTheme(Dialog, {
+      open: true,
+      header,
+      children: body,
+      onDismiss: () => {},
+      disableFocusTrap: true,
     });
     expect(fragment).toMatchSnapshot();
   });
