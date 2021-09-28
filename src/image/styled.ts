@@ -1,25 +1,17 @@
-import {Block} from '../block';
 import {getResponsiveSize, getStylePreset, styled} from '../utils/style';
-import {StyledImageContainerProps, StyledImageProps} from './types';
+import {StyledPictureProps, StyledImageProps} from './types';
 import {getResponsiveAspectRatioFromProps} from './utils';
 
-export const StyledImageAndCaptionContainer = styled.div<
-  Pick<StyledImageProps, 'overrides' | 'loadingAspectRatio'>
->`
-  ${props =>
-    getResponsiveAspectRatioFromProps(props, ({width}) => ({
-      width,
-    }))}
-`;
-
-export const StyledImageContainer = styled(Block)<StyledImageContainerProps>`
+export const StyledPicture = styled.picture<StyledPictureProps>`
   position: relative;
   width: 100%;
   display: block;
 
   ${({isLoading, ...props}) =>
-    getResponsiveAspectRatioFromProps(props, ({paddingTop}) =>
-      isLoading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0},
+    getResponsiveAspectRatioFromProps(props, ({paddingTop, width}) =>
+      isLoading
+        ? {paddingTop, height: 0, width}
+        : {height: 'auto', paddingTop: 0, width},
     )}
   ${({isLoading, ...props}) => getStylePreset('image', '', {isLoading})(props)}
 `;

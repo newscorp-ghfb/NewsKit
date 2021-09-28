@@ -1569,24 +1569,21 @@ exports[`Card renders media section if the media data is provided 1`] = `
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 66%;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1606,7 +1603,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1617,25 +1614,25 @@ exports[`Card renders media section if the media data is provided 1`] = `
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -1645,7 +1642,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -1653,7 +1650,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -1667,34 +1664,30 @@ exports[`Card renders media section if the media data is provided 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-3x2.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-3x2.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -1753,24 +1746,21 @@ exports[`Card renders media section with a custom component 1`] = `
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1790,7 +1780,7 @@ exports[`Card renders media section with a custom component 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1801,25 +1791,25 @@ exports[`Card renders media section with a custom component 1`] = `
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -1829,7 +1819,7 @@ exports[`Card renders media section with a custom component 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -1837,7 +1827,7 @@ exports[`Card renders media section with a custom component 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -1851,34 +1841,30 @@ exports[`Card renders media section with a custom component 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -1937,24 +1923,21 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1974,7 +1957,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1985,25 +1968,25 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -2013,7 +1996,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -2021,7 +2004,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -2035,34 +2018,30 @@ exports[`Card renders media section with a custom component using overrides 1`] 
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -2121,24 +2100,21 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 28%;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2158,7 +2134,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2169,25 +2145,25 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -2197,7 +2173,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -2205,7 +2181,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -2219,34 +2195,30 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card media"
-            class="emotion-5"
-            src="/placeholder-3x2.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card media"
+          class="emotion-4"
+          src="/placeholder-3x2.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -2306,24 +2278,21 @@ exports[`Card renders media section with overrides 1`] = `
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 66%;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2343,7 +2312,7 @@ exports[`Card renders media section with overrides 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2354,25 +2323,25 @@ exports[`Card renders media section with overrides 1`] = `
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -2382,7 +2351,7 @@ exports[`Card renders media section with overrides 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -2390,7 +2359,7 @@ exports[`Card renders media section with overrides 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -2404,34 +2373,30 @@ exports[`Card renders media section with overrides 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card media"
-            class="emotion-5"
-            src="/placeholder-3x2.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card media"
+          class="emotion-4"
+          src="/placeholder-3x2.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -2490,24 +2455,21 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2527,7 +2489,7 @@ exports[`Card renders with card items 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2538,25 +2500,25 @@ exports[`Card renders with card items 1`] = `
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -2566,7 +2528,7 @@ exports[`Card renders with card items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -2574,7 +2536,7 @@ exports[`Card renders with card items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -2582,7 +2544,7 @@ exports[`Card renders with card items 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2614,7 +2576,7 @@ exports[`Card renders with card items 1`] = `
   z-index: 2;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2633,7 +2595,7 @@ exports[`Card renders with card items 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2666,24 +2628,24 @@ exports[`Card renders with card items 1`] = `
   border-radius: 0;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #2e2e2e;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-13 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2704,7 +2666,7 @@ exports[`Card renders with card items 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2713,7 +2675,7 @@ exports[`Card renders with card items 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-15 {
+.emotion-14 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2721,7 +2683,7 @@ exports[`Card renders with card items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-15::before {
+.emotion-14::before {
   content: '';
   display: block;
   height: 0;
@@ -2729,7 +2691,7 @@ exports[`Card renders with card items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-15::after {
+.emotion-14::after {
   content: '';
   display: block;
   height: 0;
@@ -2737,7 +2699,7 @@ exports[`Card renders with card items 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2773,33 +2735,33 @@ exports[`Card renders with card items 1`] = `
   cursor: pointer;
 }
 
-.emotion-16 svg {
+.emotion-15 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-16 svg {
+.emotion-15 svg {
   fill: #ffffff;
 }
 
-.emotion-16:hover:not(:disabled) {
+.emotion-15:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-16:active:not(:disabled) {
+.emotion-15:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-16:disabled {
+.emotion-15:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-16:disabled svg {
+.emotion-15:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-17 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2820,7 +2782,7 @@ exports[`Card renders with card items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-18 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2835,57 +2797,53 @@ exports[`Card renders with card items 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
         </div>
       </div>
       <div
-        class="emotion-10"
+        class="emotion-9"
       >
         <div
-          class="emotion-11"
+          class="emotion-10"
         >
           <div
-            class="emotion-12"
+            class="emotion-11"
             data-testid="tag"
           >
             <div
-              class="emotion-13"
+              class="emotion-12"
             >
               <div
-                class="emotion-14"
+                class="emotion-13"
               >
                 <span
-                  class="emotion-15"
+                  class="emotion-14"
                 >
                   Tag
                 </span>
@@ -2893,18 +2851,18 @@ exports[`Card renders with card items 1`] = `
             </div>
           </div>
           <button
-            class="emotion-16"
+            class="emotion-15"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-17"
+              class="emotion-16"
             >
               <div
-                class="emotion-18"
+                class="emotion-17"
               >
                 <span
-                  class="emotion-15"
+                  class="emotion-14"
                 >
                   Button
                 </span>
@@ -2966,24 +2924,21 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -3003,7 +2958,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -3014,25 +2969,25 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -3042,7 +2997,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -3050,7 +3005,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -3065,34 +3020,30 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -3185,24 +3136,21 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
 }
 
 .emotion-2 {
-  width: 200px;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 200px;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -3222,7 +3170,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -3233,7 +3181,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3247,7 +3195,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   flex: 1;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3255,16 +3203,16 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -3274,7 +3222,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -3282,7 +3230,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -3296,34 +3244,30 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -3382,24 +3326,21 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
 }
 
 .emotion-2 {
-  width: 200px;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 200px;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -3419,7 +3360,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -3430,7 +3371,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3441,7 +3382,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   flex-direction: column;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3449,16 +3390,16 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -3468,7 +3409,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -3476,7 +3417,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -3490,34 +3431,30 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -3579,24 +3516,21 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
 }
 
 .emotion-2 {
-  width: 200px;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 200px;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -3616,7 +3550,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -3627,7 +3561,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3641,7 +3575,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   flex: 1;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3649,16 +3583,16 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -3668,7 +3602,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -3676,7 +3610,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -3690,34 +3624,30 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -3779,24 +3709,21 @@ exports[`Card with horizontal layout renders correctly 1`] = `
 }
 
 .emotion-2 {
-  width: 200px;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 200px;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -3816,7 +3743,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -3827,7 +3754,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3841,7 +3768,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   flex: 1;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3849,16 +3776,16 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -3868,7 +3795,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -3876,7 +3803,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -3890,34 +3817,30 @@ exports[`Card with horizontal layout renders correctly 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -3979,24 +3902,21 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
 }
 
 .emotion-2 {
-  width: 200px;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 200px;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -4016,7 +3936,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -4027,7 +3947,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4041,7 +3961,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   flex: 1;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4049,16 +3969,16 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -4068,7 +3988,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -4076,7 +3996,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -4090,34 +4010,30 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -4179,24 +4095,21 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 }
 
 .emotion-2 {
-  width: 200px;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 200px;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -4216,7 +4129,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -4227,7 +4140,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4241,7 +4154,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   flex: 1;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4249,16 +4162,16 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -4268,7 +4181,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -4276,7 +4189,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -4290,34 +4203,30 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -4379,24 +4288,21 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 }
 
 .emotion-2 {
-  width: 200px;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 200px;
   border-radius: 8px;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -4416,7 +4322,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -4427,7 +4333,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4441,7 +4347,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   flex: 3;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4449,16 +4355,16 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -4468,7 +4374,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -4476,7 +4382,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -4490,34 +4396,30 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
@@ -5016,24 +4918,21 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 66%;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -5053,7 +4952,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -5064,67 +4963,67 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   position: absolute;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 0;
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
 }
 
-.emotion-8 .nk-headline-kicker {
+.emotion-7 .nk-headline-kicker {
   color: #0a68c1;
 }
 
-.emotion-8:hover:not(:disabled) .nk-headline-kicker {
+.emotion-7:hover:not(:disabled) .nk-headline-kicker {
   color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-8:active:not(:disabled) .nk-headline-kicker {
+.emotion-7:active:not(:disabled) .nk-headline-kicker {
   color: #01396e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-8:visited:not(:disabled) .nk-headline-kicker {
+.emotion-7:visited:not(:disabled) .nk-headline-kicker {
   color: #7547a3;
 }
 
-.emotion-8 .nk-headline-heading {
+.emotion-7 .nk-headline-heading {
   color: #2e2e2e;
 }
 
-.emotion-8:hover:not(:disabled) .nk-headline-heading {
+.emotion-7:hover:not(:disabled) .nk-headline-heading {
   color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-8:active:not(:disabled) .nk-headline-heading {
+.emotion-7:active:not(:disabled) .nk-headline-heading {
   color: #01396e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-8:visited:not(:disabled) .nk-headline-heading {
+.emotion-7:visited:not(:disabled) .nk-headline-heading {
   color: #7547a3;
 }
 
-.emotion-8:before {
+.emotion-7:before {
   content: '';
   top: 0;
   right: 0;
@@ -5135,11 +5034,11 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   z-index: 1;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin-bottom: 4px;
 }
 
-.emotion-10 {
+.emotion-9 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -5149,7 +5048,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   letter-spacing: 0;
 }
 
-.emotion-10::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -5157,7 +5056,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-10::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -5171,38 +5070,34 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-3x2.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-3x2.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <a
-          class="nk-card-link emotion-8"
+          class="nk-card-link emotion-7"
           href="https://newskit.co.uk/"
         >
           <div
-            class="emotion-9"
+            class="emotion-8"
           >
             <p
-              class="emotion-10"
+              class="emotion-9"
             >
               Example Card text
             </p>
@@ -6399,24 +6294,21 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #c0c0c0;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -6436,7 +6328,7 @@ exports[`CardInset renders with card items 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -6447,48 +6339,48 @@ exports[`CardInset renders with card items 1`] = `
   position: absolute;
 }
 
+.emotion-5 {
+  box-sizing: border-box;
+}
+
 .emotion-6 {
   box-sizing: border-box;
 }
 
-.emotion-7 {
-  box-sizing: border-box;
-}
-
 @media screen and (max-width: 479px) {
-  .emotion-7 {
+  .emotion-6 {
     padding: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-7 {
+  .emotion-6 {
     padding: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-7 {
+  .emotion-6 {
     padding: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-7 {
+  .emotion-6 {
     padding: 24px;
   }
 }
 
-.emotion-7 a:not(.nk-card-link) {
+.emotion-6 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-8 {
+.emotion-7 {
   margin-bottom: 4px;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -6498,7 +6390,7 @@ exports[`CardInset renders with card items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-9::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -6506,7 +6398,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-9::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -6514,7 +6406,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6546,30 +6438,30 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-10 {
+  .emotion-9 {
     padding: 12px 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-10 {
+  .emotion-9 {
     padding: 12px 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-10 {
+  .emotion-9 {
     padding: 16px 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-10 {
+  .emotion-9 {
     padding: 16px 24px;
   }
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6588,7 +6480,7 @@ exports[`CardInset renders with card items 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6621,24 +6513,24 @@ exports[`CardInset renders with card items 1`] = `
   border-radius: 0;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-12 svg {
+.emotion-11 svg {
   fill: #2e2e2e;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-13 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6659,7 +6551,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6668,7 +6560,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-15 {
+.emotion-14 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6676,7 +6568,7 @@ exports[`CardInset renders with card items 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-15::before {
+.emotion-14::before {
   content: '';
   display: block;
   height: 0;
@@ -6684,7 +6576,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-15::after {
+.emotion-14::after {
   content: '';
   display: block;
   height: 0;
@@ -6692,7 +6584,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-16 {
+.emotion-15 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6728,33 +6620,33 @@ exports[`CardInset renders with card items 1`] = `
   cursor: pointer;
 }
 
-.emotion-16 svg {
+.emotion-15 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-16 svg {
+.emotion-15 svg {
   fill: #ffffff;
 }
 
-.emotion-16:hover:not(:disabled) {
+.emotion-15:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-16:active:not(:disabled) {
+.emotion-15:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-16:disabled {
+.emotion-15:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-16:disabled svg {
+.emotion-15:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-17 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6775,7 +6667,7 @@ exports[`CardInset renders with card items 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-18 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6790,57 +6682,53 @@ exports[`CardInset renders with card items 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="Card Media"
-            class="emotion-5"
-            src="/placeholder-16x9.png"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="Card Media"
+          class="emotion-4"
+          src="/placeholder-16x9.png"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-7"
+        class="emotion-6"
       >
         <div
-          class="emotion-8"
+          class="emotion-7"
         >
           <p
-            class="emotion-9"
+            class="emotion-8"
           >
             Example Card text
           </p>
         </div>
       </div>
       <div
-        class="emotion-10"
+        class="emotion-9"
       >
         <div
-          class="emotion-11"
+          class="emotion-10"
         >
           <div
-            class="emotion-12"
+            class="emotion-11"
             data-testid="tag"
           >
             <div
-              class="emotion-13"
+              class="emotion-12"
             >
               <div
-                class="emotion-14"
+                class="emotion-13"
               >
                 <span
-                  class="emotion-15"
+                  class="emotion-14"
                 >
                   Tag
                 </span>
@@ -6848,18 +6736,18 @@ exports[`CardInset renders with card items 1`] = `
             </div>
           </div>
           <button
-            class="emotion-16"
+            class="emotion-15"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-17"
+              class="emotion-16"
             >
               <div
-                class="emotion-18"
+                class="emotion-17"
               >
                 <span
-                  class="emotion-15"
+                  class="emotion-14"
                 >
                   Button
                 </span>

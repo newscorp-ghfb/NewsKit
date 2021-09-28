@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {CodeFromDefaultPresets} from '../../components/code';
+import {CodeFromDefaultPresets, CodeFromFile} from '../../components/code';
 import {Image, ImageShape, Link} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
 
@@ -34,13 +34,6 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
   </Prop>
   <Prop name="placeholderIcon" type="boolean" default={false}>
     Show the placeholder icon whilst the image is loading.
-  </Prop>
-  <Prop name="captionText" type="string">
-    If provided, supplies the caption component. captionText is the text of the
-    caption.
-  </Prop>
-  <Prop name="creditText" type="string">
-    If provided, supplies the credit text of the caption component.
   </Prop>
   <Prop name="renderOnServer" type="boolean">
     This prop need to be set to `true` when the Image component is rendered on
@@ -86,9 +79,6 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
       value of the height property from becoming larger than the value specified
       for maxHeight.
     </Prop>
-    <Prop name="caption" type="CaptionOverrides">
-      If provided, this overrides the styling of the caption component.
-    </Prop>
     <Prop name="placeholderIcon" type="Override<NewsKitIcon>">
       If provided, this overrides the default placeholder icon.
     </Prop>
@@ -100,6 +90,13 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
 ## Notes
 
 The aspect width/height is only used on loading state.
+
+Newskit v4.0.0 removed the in-built `Caption` in `<Image/>` component but you can still use `<Caption/>` component together with `<Image/>` component.
+Please see the example below:
+
+<CodeFromFile path="examples/image/image-with-caption.tsx" />
+
+For more information on the overrides of `<Caption/>` component, please refer to <Link href="/components/caption">/components/caption</Link>.
 
 ## Playground
 
@@ -143,18 +140,6 @@ The aspect width/height is only used on loading state.
       value: '3:2',
     },
     {
-      name: 'Caption',
-      propName: 'captionText',
-      value:
-        'This is the caption text within the caption of the image component',
-    },
-    {
-      name: 'Credit',
-      propName: 'creditText',
-      value:
-        'This is the credit text within the caption of the image component',
-    },
-    {
       name: 'Placeholder icon',
       propName: 'placeholderIcon',
       options: [
@@ -190,154 +175,6 @@ The aspect width/height is only used on loading state.
           label: 'imageCircle',
           value: {
             stylePreset: 'imageCircle',
-          },
-        },
-      ],
-    },
-    {
-      name: 'Caption Style Preset',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'Default',
-          value: {
-            caption: {
-              stylePreset: undefined,
-            },
-          },
-          isDefault: true,
-        },
-        {
-          label: 'inkBrand010',
-          value: {
-            caption: {
-              stylePreset: 'inkBrand010',
-            },
-          },
-        },
-      ],
-    },
-    {
-      name: 'Caption Typography Preset',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'Default',
-          value: {
-            caption: {
-              typographyPreset: undefined,
-            },
-          },
-          isDefault: true,
-        },
-        {
-          label: 'meta030',
-          value: {
-            caption: {
-              typographyPreset: 'meta030',
-            },
-          },
-        },
-      ],
-    },
-    {
-      name: 'Caption SpaceStack',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'Default',
-          value: {
-            caption: {
-              spaceStack: undefined,
-            },
-          },
-          isDefault: true,
-        },
-        {
-          label: 'space090',
-          value: {
-            caption: {
-              spaceStack: 'space090',
-            },
-          },
-        },
-      ],
-    },
-    {
-      name: 'Caption Inset',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'Default',
-          value: {
-            caption: {
-              spaceInset: undefined,
-            },
-          },
-          isDefault: true,
-        },
-        {
-          label: 'spaceInset070',
-          value: {
-            caption: {
-              spaceInset: {
-                xs: 'spaceInset070',
-              },
-            },
-          },
-        },
-      ],
-    },
-    {
-      name: 'Credit Style Preset',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'Default',
-          value: {
-            caption: {
-              credit: {
-                stylePreset: undefined,
-              },
-            },
-          },
-          isDefault: true,
-        },
-        {
-          label: 'inkContrast',
-          value: {
-            caption: {
-              credit: {
-                stylePreset: 'inkContrast',
-              },
-            },
-          },
-        },
-      ],
-    },
-    {
-      name: 'Credit Typography Preset',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'Default',
-          value: {
-            caption: {
-              credit: {
-                typographyPreset: undefined,
-              },
-            },
-          },
-          isDefault: true,
-        },
-        {
-          label: 'utilityMeta020',
-          value: {
-            caption: {
-              credit: {
-                typographyPreset: 'utilityMeta020',
-              },
-            },
           },
         },
       ],

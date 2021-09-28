@@ -505,19 +505,6 @@ export const componentDefaults = {
   },
   image: {
     stylePreset: 'imageSharp',
-    caption: {
-      typographyPreset: 'editorialCaption010',
-      stylePreset: 'inkBase',
-      spaceStack: 'space040',
-      spaceInset: {
-        xs: 'spaceInset040',
-        md: 'spaceInset050',
-      },
-      credit: {
-        typographyPreset: 'utilityMeta010',
-        stylePreset: 'uppercaseInkSubtle',
-      },
-    },
   },
   indeterminateProgressIndicator: {
     stylePreset: 'iconDefault',

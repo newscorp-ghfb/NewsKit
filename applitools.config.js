@@ -11,6 +11,6 @@ module.exports = {
   ],
   waitBeforeScreenshot: 5000,
   concurrency: 20,
-  showLogs: true,
+  showLogs: false, // Set to false to avoid jobs being split into several in Applitools.
   dontCloseBatches: true,
 };

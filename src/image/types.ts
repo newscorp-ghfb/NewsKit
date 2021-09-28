@@ -8,7 +8,6 @@ import {
   ObjectPositionProperty,
 } from 'csstype';
 import {MQ} from '../utils/style';
-import {CaptionOverrides} from '../caption';
 import {NewsKitIconProps} from '../icons';
 import {BreakpointKeys} from '../theme/types';
 import {Override} from '../utils/overrides';
@@ -41,7 +40,7 @@ export interface StyledImageProps
     maxWidth?: MQ<MaxWidthProperty<string>>;
   } & ImageCommonProps['overrides'];
 }
-export interface StyledImageContainerProps extends ImageCommonProps {
+export interface StyledPictureProps extends ImageCommonProps {
   overrides?: {
     stylePreset?: MQ<string>;
   } & ImageCommonProps['overrides'];
@@ -51,8 +50,6 @@ export interface ImageProps
     ImageAlignmentProps {
   placeholderIcon?: boolean;
   loadingAspectRatio?: MQ<string>;
-  captionText?: string;
-  creditText?: string;
   renderOnServer?: boolean;
   loading?: LoadingType;
   sources?: ImageSource[];
@@ -60,7 +57,6 @@ export interface ImageProps
     maxHeight?: MQ<MaxHeightProperty<string>>;
     maxWidth?: MQ<MaxWidthProperty<string>>;
     stylePreset?: MQ<string>;
-    caption?: CaptionOverrides;
     placeholderIcon?: Override<NewsKitIconProps>;
   } & ImageCommonProps['overrides'];
 }

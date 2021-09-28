@@ -61,17 +61,6 @@ export const useClientSide = (
   });
 };
 
-// TODO: remove when captions is removed from Image
-export const getSpaceStackValue = (
-  captionText?: string,
-  captionSpaceInset?: object,
-) => {
-  if (captionText && !captionSpaceInset) {
-    return 'space020';
-  }
-  return '';
-};
-
 export const getNextBreakpoint = (
   current: BreakpointKeys,
   all: BreakpointKeys[],

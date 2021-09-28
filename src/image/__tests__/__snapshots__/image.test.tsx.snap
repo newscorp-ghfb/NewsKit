@@ -1,637 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image Image with caption renders with caption and overrides 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
-  margin-bottom: 8px;
-  position: relative;
-  width: 100%;
-  display: block;
-  padding-top: 0;
-  height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
-}
-
-.emotion-1 svg {
-  fill: #c0c0c0;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-3 {
-  opacity: 0;
-  display: block;
-  border-radius: inherit;
-  height: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.emotion-5 {
-  margin-bottom: 64px;
-}
-
-.emotion-6 {
-  margin: 0;
-  padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-6 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.1958333333333334em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2958333333333334em;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
-  color: #0a0a0a;
-  text-transform: uppercase;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.emotion-7 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-7::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4458333333333334em;
-}
-
-.emotion-7::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5458333333333334em;
-}
-
-<div
-    class="emotion-0"
-  >
-    <picture
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-      />
-    </picture>
-    <div
-      class="emotion-4"
-    >
-      <div
-        class="emotion-5"
-      >
-        <p
-          class="emotion-6"
-        >
-          Caption component with both caption and credit text
-        </p>
-      </div>
-      <p
-        class="emotion-7"
-      >
-        Credit text
-      </p>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Image Image with caption renders with caption component 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
-  margin-bottom: 8px;
-  position: relative;
-  width: 100%;
-  display: block;
-  padding-top: 0;
-  height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
-}
-
-.emotion-1 svg {
-  fill: #c0c0c0;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-3 {
-  opacity: 0;
-  display: block;
-  border-radius: inherit;
-  height: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.emotion-5 {
-  margin-bottom: 16px;
-}
-
-.emotion-6 {
-  margin: 0;
-  padding: 1px 0;
-  border-radius: 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.32678571428571435em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  text-transform: uppercase;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.emotion-7 svg {
-  fill: #535353;
-}
-
-.emotion-7::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4458333333333334em;
-}
-
-.emotion-7::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5458333333333334em;
-}
-
-<div
-    class="emotion-0"
-  >
-    <picture
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-      />
-    </picture>
-    <div
-      class="emotion-4"
-    >
-      <div
-        class="emotion-5"
-      >
-        <p
-          class="emotion-6"
-        >
-          Caption component with both caption and credit text
-        </p>
-      </div>
-      <p
-        class="emotion-7"
-      >
-        Credit text
-      </p>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Image Image with caption renders with caption inset 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
-  position: relative;
-  width: 100%;
-  display: block;
-  padding-top: 0;
-  height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
-}
-
-.emotion-1 svg {
-  fill: #c0c0c0;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-3 {
-  opacity: 0;
-  display: block;
-  border-radius: inherit;
-  height: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-4 {
-    padding: 32px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-4 {
-    padding: 48px;
-  }
-}
-
-.emotion-5 {
-  margin-bottom: 16px;
-}
-
-.emotion-6 {
-  margin: 0;
-  padding: 1px 0;
-  border-radius: 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.32678571428571435em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  text-transform: uppercase;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.emotion-7 svg {
-  fill: #535353;
-}
-
-.emotion-7::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4458333333333334em;
-}
-
-.emotion-7::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5458333333333334em;
-}
-
-<div
-    class="emotion-0"
-  >
-    <picture
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-      />
-    </picture>
-    <div
-      class="emotion-4"
-    >
-      <div
-        class="emotion-5"
-      >
-        <p
-          class="emotion-6"
-        >
-          Caption component with both caption and credit text
-        </p>
-      </div>
-      <p
-        class="emotion-7"
-      >
-        Credit text
-      </p>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Image Image with caption renders with caption inset and overrides 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
-  position: relative;
-  width: 100%;
-  display: block;
-  padding-top: 0;
-  height: 0;
-  border-radius: 0;
-  background-color: #fafafa;
-}
-
-.emotion-1 svg {
-  fill: #c0c0c0;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-3 {
-  opacity: 0;
-  display: block;
-  border-radius: inherit;
-  height: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-4 {
-    padding: 32px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-4 {
-    padding: 48px;
-  }
-}
-
-.emotion-5 {
-  margin-bottom: 16px;
-}
-
-.emotion-6 {
-  margin: 0;
-  padding: 1px 0;
-  color: #0a68c1;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-6 svg {
-  fill: #0a68c1;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.32678571428571435em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 1px 0;
-  color: #0a68c1;
-  text-transform: uppercase;
-}
-
-.emotion-7 svg {
-  fill: #0a68c1;
-}
-
-<div
-    class="emotion-0"
-  >
-    <picture
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-      />
-    </picture>
-    <div
-      class="emotion-4"
-    >
-      <div
-        class="emotion-5"
-      >
-        <p
-          class="emotion-6"
-        >
-          Caption component with both caption and credit text
-        </p>
-      </div>
-      <p
-        class="emotion-7"
-      >
-        Credit text
-      </p>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`Image loadingAspectRatio renders with MQ aspect ratio 1`] = `
 <DocumentFragment>
-  @media screen and (max-width: 479px) {
   .emotion-0 {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-0 {
-    width: 100%;
-  }
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
@@ -640,24 +11,26 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio 1`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-1 {
+  .emotion-0 {
     padding-top: 300%;
     height: 0;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-1 {
+  .emotion-0 {
     padding-top: 100%;
     height: 0;
+    width: 100%;
   }
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -677,7 +50,7 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -687,79 +60,65 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio 1`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-3 {
+  .emotion-2 {
     height: auto;
     width: 100%;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-3 {
+  .emotion-2 {
     height: auto;
     width: 100%;
   }
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with MQ aspect ratio,  width and height 1`] = `
 <DocumentFragment>
-  @media screen and (max-width: 479px) {
   .emotion-0 {
+  position: relative;
+  width: 100%;
+  display: block;
+  border-radius: 0;
+  background-color: #fafafa;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-0 {
+    padding-top: 60%;
+    height: 0;
     width: 100px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-0 {
+    padding-top: 60%;
+    height: 0;
     width: 300px;
   }
 }
 
-.emotion-1 {
-  position: relative;
-  width: 100%;
-  display: block;
-  border-radius: 0;
-  background-color: #fafafa;
-}
-
-@media screen and (max-width: 479px) {
-  .emotion-1 {
-    padding-top: 60%;
-    height: 0;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-1 {
-    padding-top: 60%;
-    height: 0;
-  }
-}
-
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -779,7 +138,7 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio,  width and heigh
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -789,53 +148,37 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio,  width and heigh
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-3 {
+  .emotion-2 {
     height: 60px;
     width: 100px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-3 {
+  .emotion-2 {
     height: 180px;
     width: 300px;
   }
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with MQ width and height 1`] = `
 <DocumentFragment>
-  @media screen and (max-width: 479px) {
   .emotion-0 {
-    width: 100px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-0 {
-    width: 300px;
-  }
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
@@ -844,24 +187,26 @@ exports[`Image loadingAspectRatio renders with MQ width and height 1`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-1 {
+  .emotion-0 {
     padding-top: 100%;
     height: 0;
+    width: 100px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-1 {
+  .emotion-0 {
     padding-top: 66%;
     height: 0;
+    width: 300px;
   }
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -881,7 +226,7 @@ exports[`Image loadingAspectRatio renders with MQ width and height 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -891,59 +236,52 @@ exports[`Image loadingAspectRatio renders with MQ width and height 1`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-3 {
+  .emotion-2 {
     height: 100px;
     width: 100px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-3 {
+  .emotion-2 {
     height: 200px;
     width: 300px;
   }
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 300%;
   height: 0;
+  width: 100px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -963,7 +301,7 @@ exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect 
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -974,46 +312,39 @@ exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect 
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 300%;
   height: 0;
+  width: 100px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1033,7 +364,7 @@ exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 a
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1044,46 +375,39 @@ exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 a
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1103,7 +427,7 @@ exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect rati
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1114,46 +438,39 @@ exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect rati
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1173,7 +490,7 @@ exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect 
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1184,46 +501,39 @@ exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect 
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1243,7 +553,7 @@ exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`]
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1254,46 +564,39 @@ exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`]
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 100px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1313,7 +616,7 @@ exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1324,46 +627,39 @@ exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: auto;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: auto;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1383,7 +679,7 @@ exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1394,46 +690,39 @@ exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 300%;
   height: 0;
+  width: 100px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1453,7 +742,7 @@ exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect r
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1464,46 +753,39 @@ exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect r
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 aspect ratio 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 300%;
   height: 0;
+  width: 100px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1523,7 +805,7 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1534,46 +816,39 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image render with incorect path 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1593,7 +868,7 @@ exports[`Image render with incorect path 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1604,45 +879,38 @@ exports[`Image render with incorect path 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        class="emotion-3"
-        src="incorrect-path"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      class="emotion-2"
+      src="incorrect-path"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image render with multiple sources 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 100%;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 0;
   height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1662,7 +930,7 @@ exports[`Image render with multiple sources 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1673,57 +941,50 @@ exports[`Image render with multiple sources 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <source
-        media="screen and (min-width: 1024px)"
-        srcset="image-lg.jpg"
-      />
-      <source
-        media="screen and (min-width: 768px) and (max-width: 1023px)"
-        srcset="image-md.jpg"
-      />
-      <source
-        media="(min-width: 600px)"
-        srcset="image-600.jpg"
-      />
-      <img
-        class="emotion-3"
-        src="image.jpg"
-      />
-    </picture>
-  </div>
+    />
+    <source
+      media="screen and (min-width: 1024px)"
+      srcset="image-lg.jpg"
+    />
+    <source
+      media="screen and (min-width: 768px) and (max-width: 1023px)"
+      srcset="image-md.jpg"
+    />
+    <source
+      media="(min-width: 600px)"
+      srcset="image-600.jpg"
+    />
+    <img
+      class="emotion-2"
+      src="image.jpg"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image renders with defaults 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1743,7 +1004,7 @@ exports[`Image renders with defaults 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1754,41 +1015,34 @@ exports[`Image renders with defaults 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image renders with defaults after load 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   height: auto;
   padding-top: 0;
+  width: 3px;
   border-radius: 0;
 }
 
-.emotion-2 {
+.emotion-1 {
   opacity: 1;
   display: block;
   border-radius: inherit;
@@ -1798,43 +1052,36 @@ exports[`Image renders with defaults after load 1`] = `
   animation: fadeIn 300ms;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <img
+      alt="Example Image"
       class="emotion-1"
-    >
-      <img
-        alt="Example Image"
-        class="emotion-2"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image renders with max height and width 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1854,7 +1101,7 @@ exports[`Image renders with max height and width 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1867,46 +1114,39 @@ exports[`Image renders with max height and width 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image renders with object-fit and object-position 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1926,7 +1166,7 @@ exports[`Image renders with object-fit and object-position 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -1939,46 +1179,39 @@ exports[`Image renders with object-fit and object-position 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image renders with placeholder icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -1998,7 +1231,7 @@ exports[`Image renders with placeholder icon 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2009,7 +1242,7 @@ exports[`Image renders with placeholder icon 1`] = `
   justify-content: center;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2018,12 +1251,12 @@ exports[`Image renders with placeholder icon 1`] = `
   display: inline-block;
 }
 
-.emotion-4.emotion-4 {
+.emotion-3.emotion-3 {
   width: 48px;
   height: 48px;
 }
 
-.emotion-6 {
+.emotion-5 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2034,67 +1267,60 @@ exports[`Image renders with placeholder icon 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0V0z"
-              fill="none"
-            />
-            <path
-              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+          />
+        </svg>
       </div>
-      <img
-        alt="Example Image"
-        class="emotion-6"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    </div>
+    <img
+      alt="Example Image"
+      class="emotion-5"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image renders with placeholder icon override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
   border-radius: 0;
   background-color: #fafafa;
 }
 
-.emotion-1 svg {
+.emotion-0 svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2114,7 +1340,7 @@ exports[`Image renders with placeholder icon override 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2125,7 +1351,7 @@ exports[`Image renders with placeholder icon override 1`] = `
   justify-content: center;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2134,12 +1360,12 @@ exports[`Image renders with placeholder icon override 1`] = `
   display: inline-block;
 }
 
-.emotion-4.emotion-4 {
+.emotion-3.emotion-3 {
   width: 48px;
   height: 48px;
 }
 
-.emotion-6 {
+.emotion-5 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2150,61 +1376,54 @@ exports[`Image renders with placeholder icon override 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
     >
       <div
         class="emotion-2"
       >
-        <div
-          class="emotion-3"
+        <svg
+          aria-hidden="true"
+          class="emotion-3 emotion-4"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-            />
-          </svg>
-        </div>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          />
+        </svg>
       </div>
-      <img
-        alt="Example Image"
-        class="emotion-6"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    </div>
+    <img
+      alt="Example Image"
+      class="emotion-5"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image stylePreset renders with invalidPreset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2224,7 +1443,7 @@ exports[`Image stylePreset renders with invalidPreset 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2235,40 +1454,33 @@ exports[`Image stylePreset renders with invalidPreset 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image stylePreset renders with maskRound 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2288,7 +1500,7 @@ exports[`Image stylePreset renders with maskRound 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2299,40 +1511,33 @@ exports[`Image stylePreset renders with maskRound 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image stylePreset renders with maskSemiRounded 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2352,7 +1557,7 @@ exports[`Image stylePreset renders with maskSemiRounded 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2363,41 +1568,34 @@ exports[`Image stylePreset renders with maskSemiRounded 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image stylePreset with loading=lazy 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   height: auto;
   padding-top: 0;
+  width: 3px;
   border-radius: 0;
 }
 
-.emotion-2 {
+.emotion-1 {
   opacity: 1;
   display: block;
   border-radius: inherit;
@@ -2407,60 +1605,53 @@ exports[`Image stylePreset with loading=lazy 1`] = `
   animation: fadeIn 300ms;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <img
+      alt="Example Image"
       class="emotion-1"
-    >
-      <img
-        alt="Example Image"
-        class="emotion-2"
-        loading="lazy"
-        src=""
-      />
-    </picture>
-  </div>
+      loading="lazy"
+      src=""
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image stylePreset with mq 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 100%;
   height: 0;
+  width: 3px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-1 {
+  .emotion-0 {
     border-radius: 12px;
     background-color: #fafafa;
   }
 
-  .emotion-1 svg {
+  .emotion-0 svg {
     fill: #c0c0c0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-1 {
+  .emotion-0 {
     border-radius: 24px;
     background-color: #fafafa;
   }
 
-  .emotion-1 svg {
+  .emotion-0 svg {
     fill: #c0c0c0;
   }
 }
 
-.emotion-2 {
+.emotion-1 {
   top: 0;
   left: 0;
   position: absolute;
@@ -2480,7 +1671,7 @@ exports[`Image stylePreset with mq 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -2491,41 +1682,34 @@ exports[`Image stylePreset with mq 1`] = `
   position: absolute;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <div
       class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      />
-      <img
-        alt="Example Image"
-        class="emotion-3"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;
 
 exports[`Image stylePreset with renderOnServer & loading=lazy 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  width: 3px;
-}
-
-.emotion-1 {
   position: relative;
   width: 100%;
   display: block;
   height: auto;
   padding-top: 0;
+  width: 3px;
   border-radius: 0;
 }
 
-.emotion-2 {
+.emotion-1 {
   opacity: 1;
   display: block;
   border-radius: inherit;
@@ -2535,19 +1719,15 @@ exports[`Image stylePreset with renderOnServer & loading=lazy 1`] = `
   animation: fadeIn 300ms;
 }
 
-<div
+<picture
     class="emotion-0"
   >
-    <picture
+    <img
+      alt="Example Image"
       class="emotion-1"
-    >
-      <img
-        alt="Example Image"
-        class="emotion-2"
-        loading="lazy"
-        src="/placeholder-3x2.png"
-      />
-    </picture>
-  </div>
+      loading="lazy"
+      src="/placeholder-3x2.png"
+    />
+  </picture>
 </DocumentFragment>
 `;

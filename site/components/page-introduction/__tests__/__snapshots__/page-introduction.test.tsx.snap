@@ -451,24 +451,21 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 }
 
 .emotion-2 {
-  width: 100%;
-}
-
-.emotion-3 {
   position: relative;
   width: 100%;
   display: block;
   padding-top: 56%;
   height: 0;
+  width: 100%;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #BBC3C9;
 }
 
-.emotion-4 {
+.emotion-3 {
   top: 0;
   left: 0;
   position: absolute;
@@ -488,7 +485,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   margin: 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -505,22 +502,18 @@ exports[`Page Introduction renders with mandatory props 1`] = `
     <div
       class="emotion-1"
     >
-      <div
+      <picture
         class="emotion-2"
       >
-        <picture
+        <div
           class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          />
-          <img
-            alt="button-hero"
-            class="emotion-5"
-            src="/static/button-hero.svg"
-          />
-        </picture>
-      </div>
+        />
+        <img
+          alt="button-hero"
+          class="emotion-4"
+          src="/static/button-hero.svg"
+        />
+      </picture>
     </div>
   </div>
 </DocumentFragment>
