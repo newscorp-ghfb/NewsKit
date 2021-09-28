@@ -77,17 +77,6 @@ export const palettes = {
   purple090: '#3d1f5c',
   purple100: '#29143d',
 
-  // TODO: Remove blackTintXX tokens when we release a major version
-  blackTint10: 'rgba(10, 10, 10, 0.1)',
-  blackTint20: 'rgba(10, 10, 10, 0.2)',
-  blackTint30: 'rgba(10, 10, 10, 0.3)',
-  blackTint40: 'rgba(10, 10, 10, 0.4)',
-  blackTint50: 'rgba(10, 10, 10, 0.5)',
-  blackTint60: 'rgba(10, 10, 10, 0.6)',
-  blackTint70: 'rgba(10, 10, 10, 0.7)',
-  blackTint80: 'rgba(10, 10, 10, 0.8)',
-  blackTint90: 'rgba(10, 10, 10, 0.9)',
-
   blackTint010: 'rgba(10,10,10,0.1)',
   blackTint020: 'rgba(10,10,10,0.2)',
   blackTint030: 'rgba(10,10,10,0.3)',
@@ -98,17 +87,6 @@ export const palettes = {
   blackTint080: 'rgba(10,10,10,0.8)',
   blackTint090: 'rgba(10,10,10,0.9)',
   black: '#0A0A0A',
-
-  // TODO: Remove whiteTintXX tokens when we release a major version
-  whiteTint10: 'rgba(255,255,255, 0.1)',
-  whiteTint20: 'rgba(255,255,255, 0.2)',
-  whiteTint30: 'rgba(255,255,255, 0.3)',
-  whiteTint40: 'rgba(255,255,255, 0.4)',
-  whiteTint50: 'rgba(255,255,255, 0.5)',
-  whiteTint60: 'rgba(255,255,255, 0.6)',
-  whiteTint70: 'rgba(255,255,255, 0.7)',
-  whiteTint80: 'rgba(255,255,255, 0.8)',
-  whiteTint90: 'rgba(255,255,255, 0.9)',
 
   whiteTint010: 'rgba(255,255,255,0.1)',
   whiteTint020: 'rgba(255,255,255,0.2)',
