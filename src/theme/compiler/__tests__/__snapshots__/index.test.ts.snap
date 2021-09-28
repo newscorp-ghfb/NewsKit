@@ -78,7 +78,7 @@ Object {
     "inkInverse": "#ffffff",
     "inkNegative": "#d20600",
     "inkNonEssential": "#c0c0c0",
-    "inkNotice": "#ff7200",
+    "inkNotice": "#535353",
     "inkPositive": "#0a782a",
     "inkSubtle": "#535353",
     "interactiveDisabled010": "#e4e4e4",
@@ -122,8 +122,8 @@ Object {
     "interfaceNegative010": "#d20600",
     "interfaceNegative020": "#ffe6e5",
     "interfaceNeutral010": "#535353",
-    "interfaceNotice010": "#ff6000",
-    "interfaceNotice020": "#ffeecf",
+    "interfaceNotice010": "#535353",
+    "interfaceNotice020": "#fafafa",
     "interfacePositive010": "#0a782a",
     "interfacePositive020": "#e6faeb",
     "interfaceSkeleton010": "#fafafa",
@@ -1250,10 +1250,10 @@ Object {
   },
   "name": "my theme",
   "overlays": Object {
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #0A0A0A 100%)",
-    "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)",
-    "overlayGradientInverseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
+    "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0.00) 0%, #0A0A0A 100%)",
+    "overlayGradientInverseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #0A0A0A 100%)",
     "overlayTintBase010": "rgba(10,10,10,0.2)",
     "overlayTintBase020": "rgba(10,10,10,0.4)",
     "overlayTintBase030": "rgba(10,10,10,0.6)",
@@ -1483,7 +1483,7 @@ Object {
     },
     "bannerNotice": Object {
       "base": Object {
-        "backgroundColor": "#ff6000",
+        "backgroundColor": "#535353",
         "iconColor": "#ffffff",
       },
     },
@@ -2729,8 +2729,8 @@ Object {
     },
     "inkNotice": Object {
       "base": Object {
-        "color": "#ff7200",
-        "iconColor": "#ff7200",
+        "color": "#535353",
+        "iconColor": "#535353",
       },
     },
     "inkPositive": Object {
@@ -3043,12 +3043,12 @@ Object {
     },
     "scrollOverlaysHorizontal": Object {
       "base": Object {
-        "backgroundImage": "linear-gradient(270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)",
+        "backgroundImage": "linear-gradient(270deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
       },
     },
     "scrollOverlaysVertical": Object {
       "base": Object {
-        "backgroundImage": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)",
+        "backgroundImage": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
       },
     },
     "sliderIndicator": Object {
@@ -3369,7 +3369,7 @@ Object {
     },
     "toastNotice": Object {
       "base": Object {
-        "backgroundColor": "#ff6000",
+        "backgroundColor": "#535353",
         "borderRadius": "8px",
         "iconColor": "#ffffff",
       },
@@ -3467,8 +3467,8 @@ Object {
     },
     "uppercaseInkNotice": Object {
       "base": Object {
-        "color": "#ff7200",
-        "iconColor": "#ff7200",
+        "color": "#535353",
+        "iconColor": "#535353",
         "textTransform": "uppercase",
       },
     },
@@ -3549,6 +3549,27 @@ Object {
       "letterSpacing": "0",
       "lineHeight": 1.4285714285714286,
     },
+    "editorialDisplay010": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "56px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.1428571428571428,
+    },
+    "editorialDisplay020": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "64px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.125,
+    },
+    "editorialDisplay030": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "80px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.15,
+    },
     "editorialDropCap010": Object {
       "fontSize": "5.625em",
       "lineHeight": 0.85,
@@ -3616,6 +3637,27 @@ Object {
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1666666666666667,
+    },
+    "editorialLabel010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": 500,
+      "letterSpacing": "0",
+      "lineHeight": 1,
+    },
+    "editorialLabel020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "letterSpacing": "0",
+      "lineHeight": 1.1428571428571428,
+    },
+    "editorialLabel030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 500,
+      "letterSpacing": "0",
+      "lineHeight": 1.25,
     },
     "editorialParagraph010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",

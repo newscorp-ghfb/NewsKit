@@ -5,6 +5,31 @@ export const typographyPresets: Record<string, TypographyPreset> = {};
 
 // ** EDITORIAL **
 
+// Editorial Display
+typographyPresets.editorialDisplay010 = {
+  fontFamily: '{{fonts.fontFamily020.fontFamily}}',
+  fontSize: '{{fonts.fontSize140}}',
+  lineHeight: getLineHeight('fontSize140', 'fontLineHeight020'),
+  fontWeight: '{{fonts.fontWeight040}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};
+
+typographyPresets.editorialDisplay020 = {
+  fontFamily: '{{fonts.fontFamily020.fontFamily}}',
+  fontSize: '{{fonts.fontSize150}}',
+  lineHeight: getLineHeight('fontSize150', 'fontLineHeight020'),
+  fontWeight: '{{fonts.fontWeight040}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};
+
+typographyPresets.editorialDisplay030 = {
+  fontFamily: '{{fonts.fontFamily020.fontFamily}}',
+  fontSize: '{{fonts.fontSize160}}',
+  lineHeight: getLineHeight('fontSize160', 'fontLineHeight020'),
+  fontWeight: '{{fonts.fontWeight040}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};
+
 // Editorial Heading
 typographyPresets.editorialHeadline010 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
@@ -62,6 +87,31 @@ typographyPresets.editorialHeadline080 = {
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
+// Editorial Label
+typographyPresets.editorialLabel010 = {
+  fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+  fontSize: '{{fonts.fontSize010}}',
+  lineHeight: getLineHeight('fontSize010', 'fontLineHeight020'),
+  fontWeight: '{{fonts.fontWeight030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};
+
+typographyPresets.editorialLabel020 = {
+  fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+  fontSize: '{{fonts.fontSize020}}',
+  lineHeight: getLineHeight('fontSize020', 'fontLineHeight020'),
+  fontWeight: '{{fonts.fontWeight030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};
+
+typographyPresets.editorialLabel030 = {
+  fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+  fontSize: '{{fonts.fontSize030}}',
+  lineHeight: getLineHeight('fontSize030', 'fontLineHeight020'),
+  fontWeight: '{{fonts.fontWeight030}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};
+
 // Editorial Subheading
 typographyPresets.editorialSubheadline010 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',

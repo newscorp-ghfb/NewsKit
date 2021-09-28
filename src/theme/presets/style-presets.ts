@@ -1564,12 +1564,12 @@ stylePresets.overlay = {
 
 stylePresets.scrollOverlaysHorizontal = {
   base: {
-    backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}',
+    backgroundImage: '{{overlays.overlayGradientBaseHorizontal}}',
   },
 };
 stylePresets.scrollOverlaysVertical = {
   base: {
-    backgroundImage: '{{overlays.overlayGradientInverseVertical}}',
+    backgroundImage: '{{overlays.overlayGradientBaseVertical}}',
   },
 };
 

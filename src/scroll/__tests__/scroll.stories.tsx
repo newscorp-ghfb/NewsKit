@@ -31,7 +31,7 @@ const myCustomTheme = createTheme({
       },
       overlaysCustom: {
         base: {
-          backgroundImage: '{{overlays.overlayGradientBaseHorizontal}}',
+          backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}',
         },
       },
     },
