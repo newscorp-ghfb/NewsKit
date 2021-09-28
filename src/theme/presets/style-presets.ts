@@ -1675,19 +1675,6 @@ stylePresets.inlineMessageNegative = {
   },
 };
 
-stylePresets.inlineMessageNotice = {
-  base: {
-    backgroundColor: '{{colors.interfaceNotice020}}',
-    borderColor: '{{colors.interfaceNotice010}}',
-    borderStyle: 'solid',
-    borderRadius: '{{borders.borderRadiusRounded010}}',
-    borderWidth:
-      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}',
-    iconColor: '{{colors.inkNotice}}',
-    color: '{{colors.inkBase}}',
-  },
-};
-
 // Menu
 
 stylePresets.menuItemVertical = {

@@ -2798,17 +2798,6 @@ Object {
         "iconColor": "#d20600",
       },
     },
-    "inlineMessageNotice": Object {
-      "base": Object {
-        "backgroundColor": "#ffeecf",
-        "borderColor": "#ff6000",
-        "borderRadius": "4px",
-        "borderStyle": "solid",
-        "borderWidth": "0 0 0 4px",
-        "color": "#2e2e2e",
-        "iconColor": "#ff7200",
-      },
-    },
     "label": Object {
       "base": Object {
         "color": "#0a0a0a",

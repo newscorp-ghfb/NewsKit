@@ -84,12 +84,6 @@ export default (layoutProps: LayoutProps) => (
                 },
               },
               {
-                label: 'notice',
-                value: {
-                  stylePreset: 'inlineMessageNotice',
-                },
-              },
-              {
                 label: 'negative',
                 value: {
                   stylePreset: 'inlineMessageNegative',
