@@ -178,9 +178,7 @@ export const StyledThumbValue = styled.div<StyledThumbValueProps>`
 
   position: absolute;
   background-color: transparent;
-  white-space: nowrap;
   width: 100%;
-  text-align: center;
 `;
 
 //

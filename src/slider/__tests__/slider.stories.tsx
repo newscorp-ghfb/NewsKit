@@ -40,6 +40,8 @@ const myCustomTheme = createTheme({
           borderRadius: '999px',
           borderStyle: 'dashed',
           color: 'green',
+          textAlign: 'center',
+          whiteSpace: 'nowrap',
         },
       },
       customLabelStylePreset: {

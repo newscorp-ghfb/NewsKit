@@ -16,11 +16,15 @@ export interface StylePresetStyles {
   boxShadow?: string;
   caretColor?: string;
   color?: string;
+  hyphens?: string;
   iconColor?: string;
   placeholderColor?: string;
+  textAlign?: string;
   textDecoration?: string;
   textOverflow?: string;
   textTransform?: string;
+  whiteSpace?: string;
+  wordBreak?: string;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
 

@@ -55,40 +55,36 @@ In the future some components will take multiple style presets, that apply acros
 
 ## StylePreset States
 
-| Name             | Type               | Description                                                                                                                                          |
-| -----------------| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| base             | baseline css       | this is a group of style preset preset css styles                                                                                                    |
-| hover            | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:hover                                                                                          |
-| focus            | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:focus                                                                                          |
-| active           | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:active                                                                                         |
-| visited          | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:visited                                                                                        |
-| disabled         | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled                                                                                       |
-| selected         | component state    | this is a set of css styles to override the base when the component is selected, for example, in a tab menu the "selected" would be the selected tab |
-| invalid          | component state    | this is a css styles to override the base when component is valid, for example, any input or form component whose contents validate unsuccessfully   |                                                     
-| valid            | component state    | this is a css styles to override the base when component is invalid, for example, any input or form component whose contents validate successfully   |
+| Name     | Type               | Description                                                                                                                                          |
+| -------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| base     | baseline css       | this is a group of style preset preset css styles                                                                                                    |
+| hover    | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:hover                                                                                          |
+| focus    | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:focus                                                                                          |
+| active   | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:active                                                                                         |
+| visited  | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:visited                                                                                        |
+| disabled | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled                                                                                       |
+| selected | component state    | this is a set of css styles to override the base when the component is selected, for example, in a tab menu the "selected" would be the selected tab |
+| invalid  | component state    | this is a css styles to override the base when component is valid, for example, any input or form component whose contents validate unsuccessfully   |
+| valid    | component state    | this is a css styles to override the base when component is invalid, for example, any input or form component whose contents validate successfully   |
 
-The following component states will only be applied if `selected`, `valid`, `invalid` and `visited` states are in the stylePresets as well. For example, `'selected:hover'` can be applied if there is a 
+The following component states will only be applied if `selected`, `valid`, `invalid` and `visited` states are in the stylePresets as well. For example, `'selected:hover'` can be applied if there is a
 `selected` state in the stylePreset.
 
-| Name             | Type               | Description                                                                                                                                          |
-| -----------------| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 'selected:hover' | component state    | this is a css styles to override the hover state when component is in the selected state as well as the hover state                                  |
-| 'selected:focus' | component state    | this is a css styles to override the focus state when component is in the selected state as well as the focus state                                  |
-| 'valid:hover'    | component state    | this is a css styles to override the hover state when component is in the valid state as well as the hover state                                     |
-| 'invalid:hover'  | component state    | this is a css styles to override the hover state when component is in the invalid state as well as the hover state                                   |
-| 'valid:focus'    | component state    | this is a css styles to override the focus state when component is in the valid state as well as the focus state                                     |
-| 'invalid:focus'  | component state    | this is a css styles to override the focus state when component is in the invalid state as well as the focus state                                   |
-| 'visited:hover'  | component state    | this is a css styles to override the hover state when component is in the visited state as well as the hover state                                   |
-| 'visited:focus'  | component state    | this is a css styles to override the focus state when component is in the visited state as well as the focus state                                   |
+| Name             | Type            | Description                                                                                                         |
+| ---------------- | --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 'selected:hover' | component state | this is a css styles to override the hover state when component is in the selected state as well as the hover state |
+| 'selected:focus' | component state | this is a css styles to override the focus state when component is in the selected state as well as the focus state |
+| 'valid:hover'    | component state | this is a css styles to override the hover state when component is in the valid state as well as the hover state    |
+| 'invalid:hover'  | component state | this is a css styles to override the hover state when component is in the invalid state as well as the hover state  |
+| 'valid:focus'    | component state | this is a css styles to override the focus state when component is in the valid state as well as the focus state    |
+| 'invalid:focus'  | component state | this is a css styles to override the focus state when component is in the invalid state as well as the focus state  |
+| 'visited:hover'  | component state | this is a css styles to override the hover state when component is in the visited state as well as the hover state  |
+| 'visited:focus'  | component state | this is a css styles to override the focus state when component is in the visited state as well as the focus state  |
 
 ## StylePreset Properties
 
 | Name               | Description                                                                                                                     |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| boxShadow          | The box-shadow property, set to a token from `theme.shadows`                                                                    |
-| color              | The text color, set this to a token from `theme.colors`                                                                         |
-| iconColor          | The icon color and fill for any child icons, set this to a token from `theme.colors`                                            |
-| placeholderColor   | The color of input field placeholder text - this will only have effect on elements supporting the ::placeholder pseudo selector |
 | backgroundColor    | The background-color, set this to a token from `theme.colors`                                                                   |
 | backgroundImage    | Alternative to background-color, see https://developer.mozilla.org/en-US/docs/Web/CSS/background-image                          |
 | backgroundRepeat   | Used in conjunction with backgroundImage, see https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat                |
@@ -97,6 +93,15 @@ The following component states will only be applied if `selected`, `valid`, `inv
 | borderColor        | The border-color property, set this to a token from `theme.colors`                                                              |
 | borderRadius       | The border-radius property, set to a border radius token from `theme.borders`                                                   |
 | borderWidth        | The border-width property, set to a border width token from `theme.borders`                                                     |
-| textDecoration     | The text-decoration property, see https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration                              |
-| textOverflow       | The text-overflow property, see https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow                                  |
+| boxShadow          | The box-shadow property, set to a token from `theme.shadows`                                                                    |
 | caretColor         | This property sets the color of the insertion caret, see https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color           |
+| color              | The text color, set this to a token from `theme.colors`                                                                         |
+| hyphens            | The hyphens property, see https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens                                              |
+| iconColor          | The icon color and fill for any child icons, set this to a token from `theme.colors`                                            |
+| placeholderColor   | The color of input field placeholder text - this will only have effect on elements supporting the ::placeholder pseudo selector |
+| textAlign          | The text-align property, see https://developer.mozilla.org/en-US/docs/Web/CSS/text-align                                        |
+| textOverflow       | The text-overflow property, see https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow                                  |
+| textDecoration     | The text-decoration property, see https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration                              |
+| textTransform      | The text-transform property, see https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform                                |
+| whiteSpace         | The white-space property, see https://developer.mozilla.org/en-US/docs/Web/CSS/white-space                                      |
+| wordBreak          | The word-break property, see https://developer.mozilla.org/en-US/docs/Web/CSS/word-break                                        |

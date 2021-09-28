@@ -1333,6 +1333,8 @@ stylePresets.sliderThumb = {
 stylePresets.sliderThumbLabel = {
   base: {
     color: '{{colors.inkBrand010}}',
+    textAlign: 'center',
+    whiteSpace: 'nowrap',
   },
   disabled: {
     color: '{{colors.inkNonEssential}}',

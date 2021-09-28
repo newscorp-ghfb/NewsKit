@@ -8,6 +8,8 @@ describe('style presets should', () => {
       'underline',
       'ellipsis',
       'uppercase',
+      'center',
+      'nowrap',
     ].join('|');
     const validAttributes = new RegExp(`({{[a-zA-Z.0-9]+}}|${allowedList})`);
 

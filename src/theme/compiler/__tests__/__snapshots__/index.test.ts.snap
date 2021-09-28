@@ -3100,6 +3100,8 @@ Object {
     "sliderThumbLabel": Object {
       "base": Object {
         "color": "#0a68c1",
+        "textAlign": "center",
+        "whiteSpace": "nowrap",
       },
       "disabled": Object {
         "color": "#c0c0c0",

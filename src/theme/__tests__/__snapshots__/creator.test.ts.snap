@@ -3009,6 +3009,8 @@ Object {
     "sliderThumbLabel": Object {
       "base": Object {
         "color": "{{colors.inkBrand010}}",
+        "textAlign": "center",
+        "whiteSpace": "nowrap",
       },
       "disabled": Object {
         "color": "{{colors.inkNonEssential}}",

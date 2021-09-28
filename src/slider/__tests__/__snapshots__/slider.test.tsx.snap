@@ -933,12 +933,12 @@ exports[`slider react-range Range function props renderThumb should render defau
   font-weight: 500;
   letter-spacing: 0;
   color: #0a68c1;
+  text-align: center;
+  white-space: nowrap;
   top: -32px;
   position: absolute;
   background-color: transparent;
-  white-space: nowrap;
   width: 100%;
-  text-align: center;
 }
 
 .emotion-0::before {
@@ -1160,12 +1160,12 @@ exports[`slider react-range Range function props renderThumb should render range
   font-weight: 500;
   letter-spacing: 0;
   color: #0a68c1;
+  text-align: center;
+  white-space: nowrap;
   top: -32px;
   position: absolute;
   background-color: transparent;
-  white-space: nowrap;
   width: 100%;
-  text-align: center;
 }
 
 .emotion-1::before {
@@ -1416,12 +1416,12 @@ exports[`slider react-range Range function props renderThumb should render verti
   font-weight: 500;
   letter-spacing: 0;
   color: #0a68c1;
+  text-align: center;
+  white-space: nowrap;
   right: -32px;
   position: absolute;
   background-color: transparent;
-  white-space: nowrap;
   width: 100%;
-  text-align: center;
 }
 
 .emotion-1::before {
