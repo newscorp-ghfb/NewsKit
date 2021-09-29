@@ -7,20 +7,24 @@ import {getByTitle} from '../../utils/get-route-object';
 import {StyledDataCell} from './styled';
 import {TableProps, TableRow, TableRowValue} from './types';
 import {columnMap} from './column-map';
-import {CheckIcon, CrossIcon, NullDotIcon} from '../icons';
+import {
+  IconFilledCheckCircle,
+  IconFilledCrossCircle,
+  IconFilledNullDot,
+} from '../icons';
 import {MonoPath, MonoKeyboard, CircleFlag, Mono} from '../flags';
 
 const renderIcon = (value?: TableRowValue) => {
   switch (value) {
     case true:
-      return <CheckIcon size="small" />;
+      return <IconFilledCheckCircle size="small" />;
 
     case false:
-      return <CrossIcon size="small" />;
+      return <IconFilledCrossCircle size="small" />;
 
     case null:
     default:
-      return <NullDotIcon />;
+      return <IconFilledNullDot />;
   }
 };
 

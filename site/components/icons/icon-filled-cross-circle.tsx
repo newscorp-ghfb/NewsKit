@@ -1,7 +1,9 @@
 import React from 'react';
 import {Flag, FlagProps, IconOutlinedClose} from 'newskit';
 
-export const CrossIcon: React.FC<{size?: FlagProps['size']}> = ({size}) => (
+export const IconFilledCrossCircle: React.FC<{size?: FlagProps['size']}> = ({
+  size,
+}) => (
   <Flag
     size={size}
     overrides={{
@@ -20,4 +22,4 @@ export const CrossIcon: React.FC<{size?: FlagProps['size']}> = ({size}) => (
   </Flag>
 );
 
-CrossIcon.displayName = 'CrossIcon';
+IconFilledCrossCircle.displayName = 'IconFilledCrossCircle';

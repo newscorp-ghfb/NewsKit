@@ -7,7 +7,7 @@ import {
 import {SliderProps, LabelPosition} from '../types';
 import {Theme, createTheme} from '../../theme';
 import {StyledThumbValue} from '../styled';
-import {IconFilledPlaceholder} from '../../icons';
+import {IconOutlinedImage} from '../../icons';
 
 let mockRange: jest.Mock;
 jest.mock('react-range', () => {
@@ -192,7 +192,7 @@ describe('slider', () => {
 
         it('should render slider thumb with an icon', () => {
           renderSlider({
-            thumbIcon: IconFilledPlaceholder,
+            thumbIcon: IconOutlinedImage,
           });
 
           const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {

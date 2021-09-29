@@ -1,4 +1,4 @@
-import {Divider, Stack, StackChild, IconFilledCircle} from "newskit";
+import {Divider, Stack, StackChild, IconFilledFacebook} from "newskit";
 
 export const Example = () => (
 <Stack
@@ -6,9 +6,9 @@ export const Example = () => (
   stackDistribution="center"
   spaceInline="space030"
 >
-  <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  <IconFilledFacebook overrides={{size: 'iconSize040'}} />
   <StackChild>
     <Divider vertical />
   </StackChild>
-  <IconFilledCircle overrides={{size: 'iconSize040'}} />
+  <IconFilledFacebook overrides={{size: 'iconSize040'}} />
 </Stack>)

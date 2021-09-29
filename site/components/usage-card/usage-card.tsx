@@ -1,21 +1,21 @@
 import React from 'react';
 import {Block, Card, TextBlock, Headline, Divider} from 'newskit';
-import {CheckIcon} from '../icons/check-icon';
-import {CrossIcon} from '../icons/cross-icon';
+import {IconFilledCheckCircle} from '../icons/icon-filled-check-circle';
+import {IconFilledCrossCircle} from '../icons/icon-filled-cross-circle';
 import {KindConfig, UsageCardProps, UsageKind} from './types';
 import {RelativeBlock, AbsoluteBlock} from './styled';
 
 const kindMap: Record<string, KindConfig> = {
   do: {
     heading: 'Do',
-    iconComponent: CheckIcon,
+    iconComponent: IconFilledCheckCircle,
     dividerStylePreset: 'dividerPositive',
     headingStylePreset: 'inkPositive',
   },
 
   dont: {
     heading: 'Do not',
-    iconComponent: CrossIcon,
+    iconComponent: IconFilledCrossCircle,
     dividerStylePreset: 'dividerNegative',
     headingStylePreset: 'inkNegative',
   },

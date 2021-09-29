@@ -12,9 +12,9 @@ const Dark: React.FC<SvgProps> = props => (
   </Svg>
 );
 
-Dark.displayName = 'DarkIcon';
-
-export const DarkIcon = withDefaultProps(toNewsKitIcon(Dark), {
+export const IconFilledDark = withDefaultProps(toNewsKitIcon(Dark), {
   title: 'Dark icon',
   overrides: {size: 'iconSize020'},
 });
+
+IconFilledDark.displayName = 'IconFilledDark';

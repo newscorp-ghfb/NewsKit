@@ -1,7 +1,9 @@
 import React from 'react';
 import {Flag, FlagProps, IconOutlinedCheck} from 'newskit';
 
-export const CheckIcon: React.FC<{size?: FlagProps['size']}> = ({size}) => (
+export const IconFilledCheckCircle: React.FC<{size?: FlagProps['size']}> = ({
+  size,
+}) => (
   <Flag
     overrides={{
       stylePreset: 'checkIconContainer',
@@ -19,4 +21,4 @@ export const CheckIcon: React.FC<{size?: FlagProps['size']}> = ({size}) => (
   </Flag>
 );
 
-CheckIcon.displayName = 'CheckIcon';
+IconFilledCheckCircle.displayName = 'IconFilledCheckCircle';

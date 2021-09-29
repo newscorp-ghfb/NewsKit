@@ -319,12 +319,15 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
 }
 
 .emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -332,7 +335,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -340,7 +343,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -364,15 +367,18 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="emotion-3"
+          class="emotion-3 emotion-4"
           fill="currentColor"
+          focusable="false"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="12"
-            cy="12"
-            r="12"
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
           />
         </svg>
       </div>
@@ -380,7 +386,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
         class="emotion-2"
       >
         <span
-          class="emotion-5"
+          class="emotion-6"
         >
           Tab Label
         </span>
@@ -966,12 +972,15 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
 }
 
 .emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -979,7 +988,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -987,7 +996,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   margin-bottom: -0.32678571428571435em;
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -1011,15 +1020,18 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="emotion-3"
+          class="emotion-3 emotion-4"
           fill="currentColor"
+          focusable="false"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="12"
-            cy="12"
-            r="12"
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
           />
         </svg>
       </div>
@@ -1027,7 +1039,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
         class="emotion-2"
       >
         <span
-          class="emotion-5"
+          class="emotion-6"
         >
           Tab Label
         </span>
@@ -1169,6 +1181,9 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
 }
 
 .emotion-5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
@@ -1199,15 +1214,18 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
       >
         <svg
           aria-hidden="true"
-          class="emotion-5"
+          class="emotion-5 emotion-6"
           fill="currentColor"
+          focusable="false"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="12"
-            cy="12"
-            r="12"
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
           />
         </svg>
       </div>
@@ -1504,6 +1522,9 @@ exports[`Tab should render custom aria-label tab 1`] = `
 }
 
 .emotion-5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
   display: inline-block;
@@ -1535,15 +1556,18 @@ exports[`Tab should render custom aria-label tab 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="emotion-5"
+          class="emotion-5 emotion-6"
           fill="currentColor"
+          focusable="false"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="12"
-            cy="12"
-            r="12"
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
           />
         </svg>
       </div>

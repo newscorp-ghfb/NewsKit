@@ -5,7 +5,7 @@ import {styled} from '../../utils/style';
 import {ThumbLabelProps, SliderProps, LabelPosition} from '../types';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
-import {IconFilledPlaceholder} from '../../icons';
+import {IconOutlinedImage} from '../../icons';
 import {withDefaultProps} from '../../utils/with-default-props';
 
 const myCustomTheme = createTheme({
@@ -81,7 +81,7 @@ const CustomThumb = styled.div`
 
 const renderCustomThumb: SliderProps['renderThumb'] = ({props}) => (
   <CustomThumb {...props} aria-label="custom slider thumb">
-    <IconFilledPlaceholder
+    <IconOutlinedImage
       overrides={{size: 'iconSize030', stylePreset: 'customPlaceholderIcon'}}
     />
   </CustomThumb>
@@ -359,7 +359,7 @@ export const StorySliderWithCustomRenders = () => (
           values={[50]}
           max={100}
           min={0}
-          thumbIcon={withDefaultProps(IconFilledPlaceholder, {
+          thumbIcon={withDefaultProps(IconOutlinedImage, {
             overrides: {size: 'iconSize030'},
           })}
         />

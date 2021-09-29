@@ -9,6 +9,4 @@ export * from './icon-filled-whatsapp';
 export * from './icon-filled-youtube';
 
 // Other custom icons
-export * from './icon-filled-circle';
-export * from './icon-filled-placeholder';
 export * from './indeterminate-progress-indicator';

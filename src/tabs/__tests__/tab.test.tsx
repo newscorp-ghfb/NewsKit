@@ -2,14 +2,14 @@ import React from 'react';
 import {TabInternalProps as TabProps, TabSize} from '..';
 import {TabInternal as Tab} from '../tab-internal';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {IconFilledCircle} from '../../icons';
+import {IconFilledInfo} from '../../icons';
 import {createTheme, compileTheme} from '../../theme';
 
 const renderTabWithLabel = (props: TabProps) => <Tab {...props}>Tab Label</Tab>;
 
 const renderTabWithLabelAndIcon = (props: TabProps) => (
   <Tab {...props}>
-    <IconFilledCircle />
+    <IconFilledInfo />
     Tab Label
   </Tab>
 );
@@ -17,7 +17,7 @@ const renderTabWithLabelAndIcon = (props: TabProps) => (
 const renderTabWithLabelAndTrailingIcon = (props: TabProps) => (
   <Tab {...props}>
     Tab Label
-    <IconFilledCircle />
+    <IconFilledInfo />
   </Tab>
 );
 

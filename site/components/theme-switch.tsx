@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {ButtonSize, IconButton} from 'newskit';
-import {LightIcon, DarkIcon} from './icons';
+import {IconFilledLight, IconFilledDark} from './icons';
 
 interface ThemeSwitchProps {
   toggle: () => void;
@@ -28,7 +28,7 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
         stylePreset: 'buttonLightDarkToggle',
       }}
     >
-      {isDark() ? <LightIcon /> : <DarkIcon />}
+      {isDark() ? <IconFilledLight /> : <IconFilledDark />}
     </IconButton>
   );
 };

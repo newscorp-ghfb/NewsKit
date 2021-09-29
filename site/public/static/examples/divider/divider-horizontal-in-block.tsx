@@ -1,4 +1,4 @@
-import {Divider, Block, IconFilledCircle, getSizingCssFromTheme, styled} from 'newskit';
+import {Divider, Block, IconFilledFacebook, getSizingCssFromTheme, styled} from 'newskit';
 
 const StyledBlock = styled(Block)`
   ${getSizingCssFromTheme('width', 'sizing090')};
@@ -8,12 +8,12 @@ const StyledBlock = styled(Block)`
 export const Example = () => (
 <StyledBlock>
   <Block spaceStack="space020">
-    <IconFilledCircle />
+    <IconFilledFacebook />
   </Block>
   <Block spaceStack="space020">
     <Divider />
   </Block>
   <Block spaceStack="space020">
-    <IconFilledCircle />
+    <IconFilledFacebook />
   </Block>
 </StyledBlock>);

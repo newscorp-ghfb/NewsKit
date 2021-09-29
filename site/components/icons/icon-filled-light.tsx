@@ -12,9 +12,9 @@ const Light: React.FC<SvgProps> = props => (
   </Svg>
 );
 
-Light.displayName = 'LightIcon';
-
-export const LightIcon = withDefaultProps(toNewsKitIcon(Light), {
+export const IconFilledLight = withDefaultProps(toNewsKitIcon(Light), {
   title: 'Light icon',
   overrides: {size: 'iconSize020'},
 });
+
+IconFilledLight.displayName = 'IconFilledLight';

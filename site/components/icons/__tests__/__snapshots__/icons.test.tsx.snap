@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icons CheckIcon icon renders as expected 1`] = `
+exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -121,7 +121,7 @@ exports[`Icons CheckIcon icon renders as expected 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Icons CrossIcon icon renders as expected 1`] = `
+exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -242,7 +242,7 @@ exports[`Icons CrossIcon icon renders as expected 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Icons DarkIcon icon renders as expected 1`] = `
+exports[`Icons IconFilledDark icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #555E74;
@@ -275,7 +275,31 @@ exports[`Icons DarkIcon icon renders as expected 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Icons LightIcon icon renders as expected 1`] = `
+exports[`Icons IconFilledCircle icon renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #555E74;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="12"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icons IconFilledLight icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #555E74;
@@ -308,7 +332,7 @@ exports[`Icons LightIcon icon renders as expected 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Icons NullDotIcon icon renders as expected 1`] = `
+exports[`Icons IconFilledNullDot icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #E4E4E4;
