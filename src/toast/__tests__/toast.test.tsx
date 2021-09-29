@@ -136,7 +136,7 @@ describe('Toast', () => {
             },
           },
           divider: {
-            stylePreset: 'dividerVertical',
+            stylePreset: 'divider',
           },
           contentAndActions: {
             spaceInline: 'space010',

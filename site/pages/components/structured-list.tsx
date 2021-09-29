@@ -288,7 +288,7 @@ export default (layoutProps: LayoutProps) => (
             {
               attribute: 'divider',
               type: "DividerProps['overrides']",
-              default: 'dividerHorizontal',
+              default: 'divider',
               description: (
                 <>
                   If provided, this overrides the divider styling,{' '}

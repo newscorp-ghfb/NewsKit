@@ -39,7 +39,7 @@ const ShareOnTwitterBtn = () => (
     aria-label="Share on Twitter"
     size={ButtonSize.Large}
     overrides={{
-      stylePreset: 'buttonSocialTwitter',
+      stylePreset: 'iconButtonMinimalSecondary',
     }}
   >
     <IconFilledTwitter />
@@ -51,7 +51,7 @@ const ShareOnFacebookBtn = () => (
     aria-label="Share on Facebook"
     size={ButtonSize.Large}
     overrides={{
-      stylePreset: 'buttonSocialFacebook',
+      stylePreset: 'iconButtonMinimalSecondary',
     }}
   >
     <IconFilledFacebook />

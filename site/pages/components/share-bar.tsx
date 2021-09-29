@@ -56,21 +56,21 @@ export default (layoutProps: LayoutProps) => (
             <ShareBar {...state}>
               <IconButton
                 size={ButtonSize.Large}
-                overrides={{stylePreset: 'buttonSocialTwitter'}}
+                overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
                 aria-label="Share on Twitter"
               >
                 <IconFilledInstagram />
               </IconButton>
               <IconButton
                 size={ButtonSize.Large}
-                overrides={{stylePreset: 'buttonSocialTwitter'}}
+                overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
                 aria-label="Share on Twitter"
               >
                 <IconFilledTwitter />
               </IconButton>
               <IconButton
                 size={ButtonSize.Large}
-                overrides={{stylePreset: 'buttonSocialFacebook'}}
+                overrides={{stylePreset: 'iconButtonMinimalSecondary'}}
                 aria-label="Share on Facebook"
               >
                 <IconFilledFacebook />

@@ -209,22 +209,22 @@ Object {
     "audioPlayer": Object {
       "controls": Object {
         "forwardButton": Object {
-          "stylePreset": "audioPlayerControlButton",
+          "stylePreset": "iconButtonMinimalPrimary",
         },
         "nextButton": Object {
-          "stylePreset": "audioPlayerControlButton",
+          "stylePreset": "iconButtonMinimalPrimary",
         },
         "playPauseButton": Object {
-          "stylePreset": "audioPlayerPlayPauseButton",
+          "stylePreset": "iconButtonSolidPrimary",
         },
         "popoutButton": Object {
-          "stylePreset": "audioPlayerControlButton",
+          "stylePreset": "iconButtonMinimalPrimary",
         },
         "previousButton": Object {
-          "stylePreset": "audioPlayerControlButton",
+          "stylePreset": "iconButtonMinimalPrimary",
         },
         "replayButton": Object {
-          "stylePreset": "audioPlayerControlButton",
+          "stylePreset": "iconButtonMinimalPrimary",
         },
         "space": "space030",
       },
@@ -259,11 +259,11 @@ Object {
             "stylePreset": "volumeControlIndicator",
           },
           "labels": Object {
-            "stylePreset": "volumeControlButtons",
+            "stylePreset": "iconButtonMinimalPrimary",
           },
           "thumb": Object {
             "size": "sizing040",
-            "stylePreset": "audioPlayerVolumeControlThumb",
+            "stylePreset": "audioPlayerThumb",
           },
           "thumbLabel": Object {
             "stylePreset": "volumeControlLabels",
@@ -341,7 +341,7 @@ Object {
         "minWidth": "sizing110",
         "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish040",
-        "stylePreset": "buttonDefault",
+        "stylePreset": "buttonSolidPrimary",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
@@ -353,7 +353,7 @@ Object {
         "minWidth": "sizing100",
         "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish030",
-        "stylePreset": "buttonDefault",
+        "stylePreset": "buttonSolidPrimary",
         "typographyPreset": "utilityButton020",
       },
       "small": Object {
@@ -365,7 +365,7 @@ Object {
         "minWidth": "sizing090",
         "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "buttonDefault",
+        "stylePreset": "buttonSolidPrimary",
         "typographyPreset": "utilityButton010",
       },
     },
@@ -508,7 +508,7 @@ Object {
       "typographyPreset": "utilityMeta020",
     },
     "divider": Object {
-      "stylePreset": "dividerHorizontal",
+      "stylePreset": "divider",
     },
     "drawer": Object {
       "closeButton": Object {
@@ -544,7 +544,7 @@ Object {
         "minHeight": "sizing070",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagDefault",
+        "stylePreset": "flagSolid",
         "typographyPreset": "utilityLabel030",
       },
       "medium": Object {
@@ -552,7 +552,7 @@ Object {
         "minHeight": "sizing060",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagDefault",
+        "stylePreset": "flagSolid",
         "typographyPreset": "utilityLabel020",
       },
       "small": Object {
@@ -560,7 +560,7 @@ Object {
         "minHeight": "sizing050",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish010",
-        "stylePreset": "flagDefault",
+        "stylePreset": "flagSolid",
         "typographyPreset": "utilityLabel010",
       },
     },
@@ -653,7 +653,7 @@ Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
         "spaceInset": "spaceInset040",
-        "stylePreset": "iconButtonDefault",
+        "stylePreset": "iconButtonSolidPrimary",
         "width": "sizing090",
       },
       "medium": Object {
@@ -662,7 +662,7 @@ Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
         "spaceInset": "spaceInset030",
-        "stylePreset": "iconButtonDefault",
+        "stylePreset": "iconButtonSolidPrimary",
         "width": "sizing080",
       },
       "small": Object {
@@ -671,7 +671,7 @@ Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
         "spaceInset": "spaceInset020",
-        "stylePreset": "iconButtonDefault",
+        "stylePreset": "iconButtonSolidPrimary",
         "width": "sizing060",
       },
     },
@@ -891,7 +891,7 @@ Object {
     },
     "structuredList": Object {
       "divider": Object {
-        "stylePreset": "dividerHorizontal",
+        "stylePreset": "divider",
       },
     },
     "structuredListItem": Object {
@@ -950,7 +950,7 @@ Object {
         "minHeight": "sizing070",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "tagDefault",
+        "stylePreset": "tagPrimary",
         "typographyPreset": "utilityLabel030",
       },
       "medium": Object {
@@ -958,7 +958,7 @@ Object {
         "minHeight": "sizing060",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "tagDefault",
+        "stylePreset": "tagPrimary",
         "typographyPreset": "utilityLabel020",
       },
       "small": Object {
@@ -966,7 +966,7 @@ Object {
         "minHeight": "sizing050",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish010",
-        "stylePreset": "tagDefault",
+        "stylePreset": "tagPrimary",
         "typographyPreset": "utilityLabel010",
       },
     },
@@ -1167,7 +1167,7 @@ Object {
       "button": Object {
         "iconSize": "iconSize020",
         "size": "small",
-        "stylePreset": "volumeControlButtons",
+        "stylePreset": "iconButtonMinimalPrimary",
       },
       "slider": Object {
         "indicator": Object {
@@ -1347,74 +1347,6 @@ Object {
         "color": "#0a782a",
       },
     },
-    "audioPlayerControlButton": Object {
-      "active": Object {
-        "backgroundColor": "#d5ebff",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#e6f4ff",
-      },
-      "loading": Object {
-        "backgroundColor": "#d5ebff",
-      },
-    },
-    "audioPlayerPlayPauseButton": Object {
-      "active": Object {
-        "backgroundColor": "#01396e",
-      },
-      "base": Object {
-        "backgroundColor": "#0a68c1",
-        "borderRadius": "50%",
-        "color": "#ffffff",
-        "iconColor": "#ffffff",
-      },
-      "disabled": Object {
-        "backgroundColor": "#e4e4e4",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#02509b",
-      },
-      "loading": Object {
-        "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
-      },
-    },
-    "audioPlayerPopoutButton": Object {
-      "active": Object {
-        "backgroundColor": "#d5ebff",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#e6f4ff",
-      },
-      "loading": Object {
-        "backgroundColor": "#d5ebff",
-      },
-    },
     "audioPlayerSeekBarBuffering": Object {
       "base": Object {
         "backgroundColor": "#f0f0f0",
@@ -1451,24 +1383,6 @@ Object {
         "backgroundColor": "#02509b",
       },
     },
-    "audioPlayerVolumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "#01396e",
-        "iconColor": "#535353",
-      },
-      "base": Object {
-        "backgroundColor": "#0a68c1",
-        "borderColor": "#ffffff",
-        "borderRadius": "50%",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-        "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#02509b",
-      },
-    },
     "bannerInformative": Object {
       "base": Object {
         "backgroundColor": "#128293",
@@ -1485,30 +1399,6 @@ Object {
       "base": Object {
         "backgroundColor": "#535353",
         "iconColor": "#ffffff",
-      },
-    },
-    "buttonDefault": Object {
-      "active": Object {
-        "backgroundColor": "#01396e",
-      },
-      "base": Object {
-        "backgroundColor": "#0a68c1",
-        "borderRadius": "8px",
-        "color": "#ffffff",
-        "iconColor": "#ffffff",
-      },
-      "disabled": Object {
-        "backgroundColor": "#e4e4e4",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#02509b",
-      },
-      "loading": Object {
-        "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
       },
     },
     "buttonMinimalInverse": Object {
@@ -1756,144 +1646,6 @@ Object {
         "borderStyle": "none",
       },
     },
-    "buttonSocialEmail": Object {
-      "active": Object {
-        "backgroundColor": "#f0f0f0",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#fafafa",
-      },
-      "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "color": "#ffffff",
-      },
-    },
-    "buttonSocialFacebook": Object {
-      "active": Object {
-        "backgroundColor": "#f0f0f0",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#fafafa",
-      },
-      "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "color": "#ffffff",
-      },
-    },
-    "buttonSocialLink": Object {
-      "active": Object {
-        "backgroundColor": "#f0f0f0",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#fafafa",
-      },
-      "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "color": "#ffffff",
-      },
-    },
-    "buttonSocialShare": Object {
-      "active": Object {
-        "backgroundColor": "#f0f0f0",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#fafafa",
-      },
-      "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "color": "#ffffff",
-      },
-    },
-    "buttonSocialTwitter": Object {
-      "active": Object {
-        "backgroundColor": "#f0f0f0",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#fafafa",
-      },
-      "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "color": "#ffffff",
-      },
-    },
-    "buttonSocialWhatsapp": Object {
-      "active": Object {
-        "backgroundColor": "#f0f0f0",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#fafafa",
-      },
-      "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "color": "#ffffff",
-      },
-    },
     "buttonSolidInverse": Object {
       "active": Object {
         "backgroundColor": "rgba(255,255,255,0.7)",
@@ -2020,7 +1772,7 @@ Object {
         "color": "#2e2e2e",
       },
     },
-    "dividerHorizontal": Object {
+    "divider": Object {
       "base": Object {
         "borderColor": "#e4e4e4",
         "borderStyle": "solid",
@@ -2034,26 +1786,11 @@ Object {
         "borderWidth": "1px",
       },
     },
-    "dividerVertical": Object {
-      "base": Object {
-        "borderColor": "#e4e4e4",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-      },
-    },
     "drawerPanel": Object {
       "base": Object {
         "backgroundColor": "#ffffff",
         "borderRadius": "0",
         "boxShadow": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
-      },
-    },
-    "flagDefault": Object {
-      "base": Object {
-        "backgroundColor": "#128293",
-        "borderRadius": "0",
-        "color": "#ffffff",
-        "iconColor": "#ffffff",
       },
     },
     "flagMinimal": Object {
@@ -2131,30 +1868,6 @@ Object {
       },
       "visited": Object {
         "color": "#7547a3",
-      },
-    },
-    "iconButtonDefault": Object {
-      "active": Object {
-        "backgroundColor": "#01396e",
-      },
-      "base": Object {
-        "backgroundColor": "#0a68c1",
-        "borderRadius": "50%",
-        "color": "#ffffff",
-        "iconColor": "#ffffff",
-      },
-      "disabled": Object {
-        "backgroundColor": "#e4e4e4",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#02509b",
-      },
-      "loading": Object {
-        "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
       },
     },
     "iconButtonMinimalInverse": Object {
@@ -3163,23 +2876,6 @@ Object {
         "backgroundColor": "#e4e4e4",
       },
     },
-    "tagDefault": Object {
-      "active": Object {
-        "borderWidth": "1px",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderColor": "#535353",
-        "borderRadius": "0",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
-      },
-      "hover": Object {
-        "backgroundColor": "#f0f0f0",
-      },
-    },
     "tagPrimary": Object {
       "active": Object {
         "borderWidth": "1px",
@@ -3301,51 +2997,6 @@ Object {
     "titleBar": Object {
       "base": Object {
         "backgroundColor": "transparent",
-      },
-    },
-    "titleBarButton": Object {
-      "active": Object {
-        "backgroundColor": "#01396e",
-      },
-      "base": Object {
-        "backgroundColor": "#0a68c1",
-        "borderRadius": "8px",
-        "color": "#ffffff",
-        "iconColor": "#ffffff",
-      },
-      "disabled": Object {
-        "backgroundColor": "#e4e4e4",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#02509b",
-      },
-      "loading": Object {
-        "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
-      },
-    },
-    "titleBarLink": Object {
-      "active": Object {
-        "color": "#01396e",
-        "iconColor": "#01396e",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
-        "textDecoration": "none",
-      },
-      "hover": Object {
-        "color": "#02509b",
-        "iconColor": "#02509b",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "#7547a3",
-        "iconColor": "#7547a3",
       },
     },
     "toastInformative": Object {
@@ -3486,28 +3137,6 @@ Object {
         "color": "#535353",
         "iconColor": "#535353",
         "textTransform": "uppercase",
-      },
-    },
-    "volumeControlButtons": Object {
-      "active": Object {
-        "backgroundColor": "#d5ebff",
-      },
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderRadius": "50%",
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-        "color": "#c0c0c0",
-        "iconColor": "#c0c0c0",
-      },
-      "hover": Object {
-        "backgroundColor": "#e6f4ff",
-      },
-      "loading": Object {
-        "backgroundColor": "#d5ebff",
       },
     },
     "volumeControlIndicator": Object {

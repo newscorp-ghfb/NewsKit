@@ -28,22 +28,22 @@ export const componentDefaults = {
     controls: {
       space: 'space030',
       previousButton: {
-        stylePreset: 'audioPlayerControlButton',
+        stylePreset: 'iconButtonMinimalPrimary',
       },
       replayButton: {
-        stylePreset: 'audioPlayerControlButton',
+        stylePreset: 'iconButtonMinimalPrimary',
       },
       playPauseButton: {
-        stylePreset: 'audioPlayerPlayPauseButton',
+        stylePreset: 'iconButtonSolidPrimary',
       },
       forwardButton: {
-        stylePreset: 'audioPlayerControlButton',
+        stylePreset: 'iconButtonMinimalPrimary',
       },
       nextButton: {
-        stylePreset: 'audioPlayerControlButton',
+        stylePreset: 'iconButtonMinimalPrimary',
       },
       popoutButton: {
-        stylePreset: 'audioPlayerControlButton',
+        stylePreset: 'iconButtonMinimalPrimary',
       },
     },
     volumeControl: {
@@ -56,14 +56,14 @@ export const componentDefaults = {
           stylePreset: 'volumeControlIndicator',
         },
         thumb: {
-          stylePreset: 'audioPlayerVolumeControlThumb',
+          stylePreset: 'audioPlayerThumb',
           size: 'sizing040',
         },
         thumbLabel: {
           stylePreset: 'volumeControlLabels',
         },
         labels: {
-          stylePreset: 'volumeControlButtons',
+          stylePreset: 'iconButtonMinimalPrimary',
         },
       },
     },
@@ -140,7 +140,7 @@ export const componentDefaults = {
   button: {
     small: {
       typographyPreset: 'utilityButton010',
-      stylePreset: 'buttonDefault',
+      stylePreset: 'buttonSolidPrimary',
       spaceInset: 'spaceInsetSquish020',
       minWidth: 'sizing090',
       minHeight: 'sizing060',
@@ -152,7 +152,7 @@ export const componentDefaults = {
     },
     medium: {
       typographyPreset: 'utilityButton020',
-      stylePreset: 'buttonDefault',
+      stylePreset: 'buttonSolidPrimary',
       spaceInset: 'spaceInsetSquish030',
       minWidth: 'sizing100',
       minHeight: 'sizing080',
@@ -164,7 +164,7 @@ export const componentDefaults = {
     },
     large: {
       typographyPreset: 'utilityButton030',
-      stylePreset: 'buttonDefault',
+      stylePreset: 'buttonSolidPrimary',
       spaceInset: 'spaceInsetSquish040',
       minWidth: 'sizing110',
       minHeight: 'sizing090',
@@ -301,7 +301,7 @@ export const componentDefaults = {
     },
   },
   divider: {
-    stylePreset: 'dividerHorizontal',
+    stylePreset: 'divider',
   },
   drawer: {
     overlay: {
@@ -366,7 +366,7 @@ export const componentDefaults = {
   flag: {
     small: {
       typographyPreset: 'utilityLabel010',
-      stylePreset: 'flagDefault',
+      stylePreset: 'flagSolid',
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
@@ -374,7 +374,7 @@ export const componentDefaults = {
     },
     medium: {
       typographyPreset: 'utilityLabel020',
-      stylePreset: 'flagDefault',
+      stylePreset: 'flagSolid',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -382,7 +382,7 @@ export const componentDefaults = {
     },
     large: {
       typographyPreset: 'utilityLabel030',
-      stylePreset: 'flagDefault',
+      stylePreset: 'flagSolid',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing070',
       iconSize: 'iconSize010',
@@ -473,7 +473,7 @@ export const componentDefaults = {
   },
   iconButton: {
     small: {
-      stylePreset: 'iconButtonDefault',
+      stylePreset: 'iconButtonSolidPrimary',
       spaceInset: 'spaceInset020',
       width: 'sizing060',
       height: 'sizing060',
@@ -482,7 +482,7 @@ export const componentDefaults = {
       },
     },
     medium: {
-      stylePreset: 'iconButtonDefault',
+      stylePreset: 'iconButtonSolidPrimary',
       spaceInset: 'spaceInset030',
       width: 'sizing080',
       height: 'sizing080',
@@ -491,7 +491,7 @@ export const componentDefaults = {
       },
     },
     large: {
-      stylePreset: 'iconButtonDefault',
+      stylePreset: 'iconButtonSolidPrimary',
       spaceInset: 'spaceInset040',
       width: 'sizing090',
       height: 'sizing090',
@@ -655,7 +655,7 @@ export const componentDefaults = {
   },
   structuredList: {
     divider: {
-      stylePreset: 'dividerHorizontal',
+      stylePreset: 'divider',
     },
   },
   tab: {
@@ -875,7 +875,7 @@ export const componentDefaults = {
   tag: {
     small: {
       typographyPreset: 'utilityLabel010',
-      stylePreset: 'tagDefault',
+      stylePreset: 'tagPrimary',
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
@@ -883,7 +883,7 @@ export const componentDefaults = {
     },
     medium: {
       typographyPreset: 'utilityLabel020',
-      stylePreset: 'tagDefault',
+      stylePreset: 'tagPrimary',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -891,7 +891,7 @@ export const componentDefaults = {
     },
     large: {
       typographyPreset: 'utilityLabel030',
-      stylePreset: 'tagDefault',
+      stylePreset: 'tagPrimary',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing070',
       iconSize: 'iconSize020',
@@ -986,7 +986,7 @@ export const componentDefaults = {
       },
     },
     button: {
-      stylePreset: 'volumeControlButtons',
+      stylePreset: 'iconButtonMinimalPrimary',
       iconSize: 'iconSize020',
       size: 'small',
     },

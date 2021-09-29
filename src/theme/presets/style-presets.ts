@@ -396,9 +396,6 @@ stylePresets.buttonMinimalInverse = {
     backgroundColor: '{{colors.interactiveInverse020}}',
   },
 };
-
-stylePresets.buttonDefault = stylePresets.buttonSolidPrimary;
-
 //
 // Icon Button
 //
@@ -775,15 +772,6 @@ stylePresets.iconButtonMinimalInverse = {
   },
 };
 
-stylePresets.iconButtonDefault = stylePresets.iconButtonSolidPrimary;
-
-stylePresets.buttonSocialTwitter = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialFacebook = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialWhatsapp = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialEmail = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialLink = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialShare = stylePresets.iconButtonMinimalSecondary;
-
 //
 // Icons
 //
@@ -897,8 +885,6 @@ stylePresets.tagPrimaryInverse = {
     backgroundColor: '{{colors.interactiveInverse020}}',
   },
 };
-
-stylePresets.tagDefault = stylePresets.tagPrimary;
 
 // Tab
 
@@ -1112,8 +1098,6 @@ stylePresets.flagMinimalInverse = {
     iconColor: '{{colors.inkInverse}}',
   },
 };
-
-stylePresets.flagDefault = stylePresets.flagSolid;
 
 //
 // Link
@@ -1378,7 +1362,6 @@ stylePresets.volumeControlTrack = {
     borderRadius: '{{borders.borderRadiusPill}}',
   },
 };
-stylePresets.volumeControlButtons = stylePresets.iconButtonMinimalPrimary;
 
 //
 // Audio Player
@@ -1416,10 +1399,6 @@ stylePresets.audioPlayerThumb = {
     iconColor: '{{colors.inkSubtle}}',
   },
 };
-stylePresets.audioPlayerVolumeControlThumb = stylePresets.audioPlayerThumb;
-stylePresets.audioPlayerPopoutButton = stylePresets.iconButtonMinimalPrimary;
-stylePresets.audioPlayerControlButton = stylePresets.iconButtonMinimalPrimary;
-stylePresets.audioPlayerPlayPauseButton = stylePresets.iconButtonSolidPrimary;
 
 //
 // Image
@@ -1489,21 +1468,18 @@ stylePresets.titleBar = {
     backgroundColor: '{{colors.transparent}}',
   },
 };
-stylePresets.titleBarButton = stylePresets.buttonSolidPrimary;
-stylePresets.titleBarLink = stylePresets.linkStandalone;
 
 //
 // Divider
 //
 
-stylePresets.dividerHorizontal = {
+stylePresets.divider = {
   base: {
     borderStyle: 'solid',
     borderColor: '{{colors.interface040}}',
     borderWidth: '{{borders.borderWidthDefault}}',
   },
 };
-stylePresets.dividerVertical = stylePresets.dividerHorizontal;
 
 stylePresets.dividerInverse = {
   base: {
