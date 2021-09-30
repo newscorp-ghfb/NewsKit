@@ -13,6 +13,7 @@ exports[`Overlay renders with overrides 1`] = `
   left: 0;
   cursor: pointer;
   background-color: #ffeecf;
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -22,7 +23,11 @@ exports[`Overlay renders with overrides 1`] = `
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -32,7 +37,11 @@ exports[`Overlay renders with overrides 1`] = `
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div

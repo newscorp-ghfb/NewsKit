@@ -8,6 +8,7 @@ import {BreakpointKeys, useTheme} from '../theme';
 import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
+import {getTransitionDuration} from '../utils/get-transition-duration';
 
 export const Modal: React.FC<ModalProps> = ({
   children,
@@ -49,10 +50,10 @@ export const Modal: React.FC<ModalProps> = ({
       {handleCloseButtonClick => (
         <CSSTransition
           in={open}
-          timeout={0} // bypass transition until PPDSC-1151 is merged
+          timeout={getTransitionDuration(`modal.panel`, '')({theme, overrides})}
           classNames="nk-modal"
-          unmountOnExit
           mountOnEnter
+          unmountOnExit
         >
           <StyledModal
             open={open}

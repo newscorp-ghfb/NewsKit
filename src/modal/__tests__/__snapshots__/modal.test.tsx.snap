@@ -12,6 +12,7 @@ exports[`Modal renders default 1`] = `
   z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -21,7 +22,11 @@ exports[`Modal renders default 1`] = `
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -31,7 +36,11 @@ exports[`Modal renders default 1`] = `
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div
@@ -74,6 +83,7 @@ exports[`Modal renders default 1`] = `
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
   min-height: 15vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -126,6 +136,34 @@ exports[`Modal renders default 1`] = `
   .emotion-0 {
     max-height: 80vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {
@@ -393,6 +431,7 @@ exports[`Modal renders modal with overrides 1`] = `
   z-index: 70;
   cursor: pointer;
   background-color: #ffeecf;
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -402,7 +441,11 @@ exports[`Modal renders modal with overrides 1`] = `
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -412,7 +455,11 @@ exports[`Modal renders modal with overrides 1`] = `
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div
@@ -458,6 +505,7 @@ exports[`Modal renders modal with overrides 1`] = `
   max-width: 80vw;
   height: 500px;
   min-height: 20vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -480,6 +528,34 @@ exports[`Modal renders modal with overrides 1`] = `
   .emotion-0 {
     max-height: 85vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {
@@ -741,6 +817,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -750,7 +827,11 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -760,7 +841,11 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div
@@ -803,6 +888,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
   min-height: 15vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -855,6 +941,34 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   .emotion-0 {
     max-height: 80vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {
@@ -1145,6 +1259,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -1154,7 +1269,11 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -1164,7 +1283,11 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div
@@ -1207,6 +1330,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
   min-height: 15vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1259,6 +1383,34 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   .emotion-0 {
     max-height: 80vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {
@@ -1516,6 +1668,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -1525,7 +1678,11 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -1535,7 +1692,11 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div
@@ -1578,6 +1739,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
   min-height: 15vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1630,6 +1792,34 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   .emotion-0 {
     max-height: 80vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {
@@ -1876,6 +2066,7 @@ exports[`Modal renders with different closePosition 1`] = `
   z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -1885,7 +2076,11 @@ exports[`Modal renders with different closePosition 1`] = `
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -1895,7 +2090,11 @@ exports[`Modal renders with different closePosition 1`] = `
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div
@@ -1938,6 +2137,7 @@ exports[`Modal renders with different closePosition 1`] = `
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
   min-height: 15vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1990,6 +2190,34 @@ exports[`Modal renders with different closePosition 1`] = `
   .emotion-0 {
     max-height: 80vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {
@@ -2257,6 +2485,7 @@ exports[`Modal renders without header 1`] = `
   z-index: 70;
   cursor: pointer;
   background-color: rgba(10,10,10,0.8);
+  opacity: 0;
 }
 
 .emotion-0.nk-overlay-enter {
@@ -2266,7 +2495,11 @@ exports[`Modal renders without header 1`] = `
 .emotion-0.nk-overlay-enter-active {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-enter-done {
+  opacity: 1;
 }
 
 .emotion-0.nk-overlay-exit {
@@ -2276,7 +2509,11 @@ exports[`Modal renders without header 1`] = `
 .emotion-0.nk-overlay-exit-active {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-overlay-exit-done {
+  opacity: 0;
 }
 
 <div
@@ -2319,6 +2556,7 @@ exports[`Modal renders without header 1`] = `
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
   min-height: 15vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -2371,6 +2609,34 @@ exports[`Modal renders without header 1`] = `
   .emotion-0 {
     max-height: 80vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {
@@ -2642,6 +2908,7 @@ exports[`Modal renders without overlay 1`] = `
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
   min-height: 15vh;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -2694,6 +2961,34 @@ exports[`Modal renders without overlay 1`] = `
   .emotion-0 {
     max-height: 80vh;
   }
+}
+
+.emotion-0.nk-modal-enter {
+  opacity: 0;
+}
+
+.emotion-0.nk-modal-enter-active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-enter-done {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit {
+  opacity: 1;
+}
+
+.emotion-0.nk-modal-exit-active {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.emotion-0.nk-modal-exit-done {
+  opacity: 0;
 }
 
 .emotion-1 {

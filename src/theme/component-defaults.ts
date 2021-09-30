@@ -306,6 +306,7 @@ export const componentDefaults = {
   drawer: {
     overlay: {
       zIndex: 70,
+      transitionPreset: 'fade',
     },
     panel: {
       zIndex: 80,
@@ -318,6 +319,18 @@ export const componentDefaults = {
         md: '310px',
         lg: '333px',
         xl: '354px',
+      },
+      left: {
+        transitionPreset: ['fade', 'slideLeft'],
+      },
+      right: {
+        transitionPreset: ['fade', 'slideRight'],
+      },
+      top: {
+        transitionPreset: ['fade', 'slideTop'],
+      },
+      bottom: {
+        transitionPreset: ['fade', 'slideBottom'],
       },
     },
     header: {
@@ -334,10 +347,13 @@ export const componentDefaults = {
   modal: {
     overlay: {
       zIndex: 70,
+      transitionPreset: 'fade',
     },
     panel: {
       zIndex: 80,
       stylePreset: 'modalPanel',
+      // transitionPreset: ['fade', 'moveUp', 'grow'], // uncomment this line when working on PPDSC-1809
+      transitionPreset: ['fade'],
       topOffset: '20vh',
       width: {
         xs: '90vw',
@@ -560,6 +576,7 @@ export const componentDefaults = {
   },
   overlay: {
     stylePreset: 'overlay',
+    transitionPreset: 'fade',
   },
   paragraph: {
     stylePreset: 'inkBase',

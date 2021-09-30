@@ -139,6 +139,7 @@ const getStylePresetValueFromTheme = (
           stateKey === 'disabled'
             ? `:${stateKey} ${nestedCssSelector || ''}`
             : `:${stateKey}:not(:disabled) ${nestedCssSelector || ''}`;
+
         const styles = getPresetStyles(presetState, options);
         if (stateKey === 'base') {
           if (nestedCssSelector) {
@@ -149,7 +150,6 @@ const getStylePresetValueFromTheme = (
         }
         acc[selector] = styles;
       }
-
       return acc;
     },
     {} as CSSObject,

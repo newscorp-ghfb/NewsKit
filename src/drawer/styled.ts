@@ -1,13 +1,8 @@
 import {Theme} from '../theme';
-import {
-  css,
-  styled,
-  getStylePreset,
-  getResponsiveSize,
-  getMotionCssFromTheme,
-} from '../utils/style';
+import {css, styled, getStylePreset, getResponsiveSize} from '../utils/style';
 import {BaseDialogView} from '../dialog';
 import {DrawerProps} from './types';
+import {getTransitionPreset} from '../utils/style/transition-preset';
 
 type DrawerPanelProps = Pick<DrawerProps, 'placement' | 'overrides' | 'open'>;
 
@@ -59,13 +54,6 @@ const placementSize = {
   bottom: horizontalSize,
 };
 
-const transitions = {
-  left: '-100%, 0, 0',
-  right: '100%, 0, 0',
-  top: '0, -100%, 0',
-  bottom: '0, 100%, 0',
-};
-
 export const StyledDrawer = styled(BaseDialogView)<DrawerPanelProps>`
   ${({placement}) => placementOptions[placement!]};
   ${({placement, ...props}) => placementSize[placement!](props)}
@@ -75,85 +63,10 @@ export const StyledDrawer = styled(BaseDialogView)<DrawerPanelProps>`
   ${({placement, ...props}) =>
     placement &&
     css`
-      transform: translate3d(${transitions[placement]});
-      opacity: 0;
-
-      &.nk-drawer-enter,
-      &.nk-drawer-exit-done {
-        transform: translate3d(${transitions[placement]});
-        opacity: 0;
-      }
-      &.nk-drawer-enter-active {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-
-        transition-property: transform, opacity;
-        ${getMotionCssFromTheme(
-          'transitionDuration',
-          'motionDuration020',
-        )(props)};
-        ${getMotionCssFromTheme(
-          'transitionTimingFunction',
-          'motionEaseInAndOut',
-        )(props)};
-      }
-      &.nk-drawer-enter-done,
-      &.nk-drawer-exit {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-      }
-      &.nk-drawer-exit-active {
-        transform: translate3d(${transitions[placement]});
-        opacity: 0;
-
-        transition-property: transform, opacity;
-        ${getMotionCssFromTheme(
-          'transitionDuration',
-          'motionDuration020',
-        )(props)};
-        ${getMotionCssFromTheme(
-          'transitionTimingFunction',
-          'motionEaseInAndOut',
-        )(props)};
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        opacity: 0;
-
-        &.nk-drawer-enter,
-        &.nk-drawer-exit-done {
-          opacity: 0;
-        }
-        &.nk-drawer-enter-active {
-          opacity: 1;
-
-          transition-property: opacity;
-          ${getMotionCssFromTheme(
-            'transitionDuration',
-            'motionDuration020',
-          )(props)}
-          ${getMotionCssFromTheme(
-            'transitionTimingFunction',
-            'motionEaseIn',
-          )(props)};
-        }
-        &.nk-drawer-enter-done,
-        &.nk-drawer-exit {
-          opacity: 1;
-        }
-        &.nk-drawer-exit-active {
-          opacity: 0;
-
-          transition-property: opacity;
-          ${getMotionCssFromTheme(
-            'transitionDuration',
-            'motionDuration020',
-          )(props)}
-          ${getMotionCssFromTheme(
-            'transitionTimingFunction',
-            'motionEaseOut',
-          )(props)};
-        }
-      }
+      ${getTransitionPreset(
+        `drawer.panel.${placement}`,
+        'panel',
+        'nk-drawer',
+      )(props)};
     `};
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {getMotionFromTheme, styled, getStylePreset} from '../utils/style';
+import {styled, getStylePreset, getMotionFromTheme} from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {LinkProps} from './types';
 import {IconFilledLaunch} from '../icons';
@@ -15,6 +15,7 @@ const StyledLink = styled.a<LinkProps>`
   transition-property: color;
   transition-duration: ${getMotionFromTheme('motionDuration020')};
   transition-timing-function: ${getMotionFromTheme('motionEaseOut')};
+
   ${getStylePreset('link', '')}
 `;
 

@@ -414,6 +414,18 @@ export default (layoutProps: LayoutProps) => (
               description:
                 'If provided, returns focus to the specified element after the Drawer is closed. If not provided, focus will return to the focused element prior to the Drawer opening.',
             },
+            {
+              name: 'hideOverlay',
+              type: 'boolean',
+              description:
+                "If true, the overlay behind the drawer won't be shown and scrolling through the entire page will be enabled.",
+            },
+            {
+              name: 'disableFocusTrap',
+              type: 'boolean',
+              description:
+                'If true, focus can leave the drawer window through tabbing or direct click on the main content.',
+            },
           ],
           overridesRows: [
             {
@@ -431,11 +443,25 @@ export default (layoutProps: LayoutProps) => (
                 'If provided, this overrides the zIndex of the Overlay.',
             },
             {
+              attribute: 'overlay.transitionPreset',
+              type: 'string | string[]',
+              default: 'fade',
+              description:
+                'If provided, this overrides the motions applied to the Overlay.',
+            },
+            {
               attribute: 'panel.stylePreset',
               type: 'MQ<string>',
               default: 'drawerPanel',
               description:
                 'If provided, this overrides the style preset applied to the Drawer panel.',
+            },
+            {
+              attribute: 'panel.transitionPreset',
+              type: 'string | string[]',
+              default: "['fade', 'slideLeft']",
+              description:
+                'If provided, this overrides the motions applied to the Drawer.',
             },
             {
               attribute: 'panel.size',

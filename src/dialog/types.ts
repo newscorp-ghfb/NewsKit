@@ -5,10 +5,12 @@ export interface BaseDialogOverridesProps {
   overlay?: {
     zIndex?: number;
     stylePreset?: MQ<string>;
+    transitionPreset?: string | string[];
   };
   panel?: {
     zIndex?: number;
     stylePreset?: MQ<string>;
+    transitionPreset?: string | string[];
   };
   header?: {
     stylePreset?: MQ<string>;

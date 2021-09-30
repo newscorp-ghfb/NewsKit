@@ -1,4 +1,5 @@
 import {Breakpoints, BreakpointKeys, Theme} from '../theme';
+import {hasOwnProperty} from './has-own-property';
 
 interface ThemeProp {
   theme: Theme;
@@ -49,6 +50,4 @@ export const isResponsive = (
 ): prop is Record<keyof Breakpoints, unknown> =>
   !!prop &&
   typeof prop === 'object' &&
-  Object.keys(breakpoints).some(bp =>
-    Object.prototype.hasOwnProperty.call(prop, bp),
-  );
+  Object.keys(breakpoints).some(bp => prop && hasOwnProperty(prop, bp));

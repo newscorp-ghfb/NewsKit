@@ -1,4 +1,4 @@
-import {StylePreset, TypographyPreset} from './presets/types';
+import {StylePreset, TransitionPreset, TypographyPreset} from './presets/types';
 import {DeepPartial} from '../utils/types';
 
 export type Breakpoints = Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number>;
@@ -23,6 +23,7 @@ export interface ThemeBase {
   spacePresets: Record<string, string>;
   stylePresets: Record<string, StylePreset>;
   typographyPresets: Record<string, TypographyPreset>;
+  transitionPresets: Record<string, TransitionPreset>;
 
   // defaults
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

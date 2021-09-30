@@ -521,11 +521,30 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
+        "transitionPreset": "fade",
         "zIndex": 70,
       },
       "panel": Object {
+        "bottom": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideBottom",
+          },
+        },
+        "left": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideLeft",
+          },
+        },
         "maxSize": "100%",
         "minSize": "20px",
+        "right": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideRight",
+          },
+        },
         "size": Object {
           "lg": "333px",
           "md": "310px",
@@ -534,6 +553,12 @@ Object {
           "xs": "305px",
         },
         "stylePreset": "drawerPanel",
+        "top": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideTop",
+          },
+        },
         "zIndex": 80,
       },
     },
@@ -770,6 +795,7 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
+        "transitionPreset": "fade",
         "zIndex": 70,
       },
       "panel": Object {
@@ -780,6 +806,9 @@ Object {
         "minHeight": "15vh",
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
+        "transitionPreset": Object {
+          "0": "fade",
+        },
         "width": Object {
           "lg": "38vw",
           "md": "45vw",
@@ -804,6 +833,7 @@ Object {
     },
     "overlay": Object {
       "stylePreset": "overlay",
+      "transitionPreset": "fade",
     },
     "paragraph": Object {
       "dropCap": Object {
@@ -1238,6 +1268,12 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
+    "motionDelay000": "0",
+    "motionDelay010": "100ms",
+    "motionDelay020": "200ms",
+    "motionDelay030": "300ms",
+    "motionDelay040": "400ms",
+    "motionDelay050": "500ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
@@ -1246,6 +1282,7 @@ Object {
     "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
     "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
     "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionLinear": "linear",
   },
   "name": "default-theme",
   "overlays": Object {
@@ -2976,6 +3013,226 @@ Object {
     },
   },
   "themeVersion": 1,
+  "transitionPresets": Object {
+    "fade": Object {
+      "base": Object {
+        "opacity": "0",
+      },
+      "enter": Object {
+        "opacity": "0",
+      },
+      "enterActive": Object {
+        "opacity": "1",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+      },
+      "enterDone": Object {
+        "opacity": "1",
+      },
+      "exit": Object {
+        "opacity": "1",
+      },
+      "exitActive": Object {
+        "opacity": "0",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "opacity",
+      },
+      "exitDone": Object {
+        "opacity": "0",
+      },
+    },
+    "grow": Object {
+      "base": Object {},
+      "enter": Object {
+        "transform": "scale(0.5)",
+      },
+      "enterActive": Object {
+        "transform": "scale(1)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+      },
+      "enterDone": Object {
+        "transform": "scale(1)",
+      },
+      "exit": Object {
+        "transform": "scale(1)",
+      },
+      "exitActive": Object {
+        "transform": "scale(0.5)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+      },
+      "exitDone": Object {
+        "transform": "scale(0.5)",
+      },
+    },
+    "growOnClick": Object {
+      "base": Object {
+        "transform": "scale(1.7)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+      },
+    },
+    "moveUp": Object {
+      "appear": Object {},
+      "appearActive": Object {},
+      "appearDone": Object {},
+      "base": Object {},
+      "enter": Object {
+        "transform": "translate(-50%, 20px)",
+      },
+      "enterActive": Object {
+        "opacity": "1",
+        "transform": "translate(-50%, 0)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+      },
+      "enterDone": Object {
+        "transform": "translate(-50%, 0)",
+      },
+      "exit": Object {
+        "transform": "translate(-50%, 0)",
+      },
+      "exitActive": Object {
+        "transform": "translate(-50%, 20px)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+      },
+      "exitDone": Object {
+        "transform": "translate(-50%, 20px)",
+      },
+    },
+    "slideBottom": Object {
+      "appear": Object {},
+      "appearActive": Object {},
+      "appearDone": Object {},
+      "base": Object {
+        "transform": "translateY(100%)",
+      },
+      "enter": Object {
+        "transform": "translateY(100%)",
+      },
+      "enterActive": Object {
+        "transform": "translateY(0)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+      },
+      "enterDone": Object {
+        "transform": "translateY(0)",
+      },
+      "exit": Object {
+        "transform": "translateY(0)",
+      },
+      "exitActive": Object {
+        "transform": "translateY(100%)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+      },
+      "exitDone": Object {
+        "transform": "translateY(100%)",
+      },
+    },
+    "slideLeft": Object {
+      "appear": Object {},
+      "appearActive": Object {},
+      "appearDone": Object {},
+      "base": Object {
+        "transform": "translateX(-100%)",
+      },
+      "enter": Object {
+        "transform": "translateX(-100%)",
+      },
+      "enterActive": Object {
+        "transform": "translateX(0)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+      },
+      "enterDone": Object {
+        "transform": "translateX(0)",
+      },
+      "exit": Object {
+        "transform": "translateX(0)",
+      },
+      "exitActive": Object {
+        "transform": "translateX(-100%)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+      },
+      "exitDone": Object {
+        "transform": "translateX(-100%)",
+      },
+    },
+    "slideRight": Object {
+      "appear": Object {},
+      "appearActive": Object {},
+      "appearDone": Object {},
+      "base": Object {
+        "transform": "translateX(100%)",
+      },
+      "enter": Object {
+        "transform": "translateX(100%)",
+      },
+      "enterActive": Object {
+        "transform": "translateX(0)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+      },
+      "enterDone": Object {
+        "transform": "translateX(0)",
+      },
+      "exit": Object {
+        "transform": "translateX(0)",
+      },
+      "exitActive": Object {
+        "transform": "translateX(100%)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+      },
+      "exitDone": Object {
+        "transform": "translateX(100%)",
+      },
+    },
+    "slideTop": Object {
+      "appear": Object {},
+      "appearActive": Object {},
+      "appearDone": Object {},
+      "base": Object {
+        "transform": "translateY(-100%)",
+      },
+      "enter": Object {
+        "transform": "translateY(-100%)",
+      },
+      "enterActive": Object {
+        "transform": "translateY(0)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+      },
+      "enterDone": Object {
+        "transform": "translateY(0)",
+      },
+      "exit": Object {
+        "transform": "translateY(0)",
+      },
+      "exitActive": Object {
+        "transform": "translateY(-100%)",
+        "transitionDuration": "{{motions.motionDuration020}}",
+        "transitionProperty": "transform",
+        "transitionTimingFunction": "{{motions.motionLinear}}",
+      },
+      "exitDone": Object {
+        "transform": "translateY(-100%)",
+      },
+    },
+  },
   "typographyPresets": Object {
     "editorialCaption010": Object {
       "fontFamily": "{{fonts.fontFamily010.fontFamily}}",

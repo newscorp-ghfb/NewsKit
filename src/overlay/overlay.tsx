@@ -1,13 +1,10 @@
 import React from 'react';
 import {CSSTransition} from 'react-transition-group';
+import {useTheme} from '../theme';
+import {getTransitionDuration} from '../utils/get-transition-duration';
 import {useLockBodyScroll} from '../utils/hooks';
-import {
-  styled,
-  getStylePreset,
-  MQ,
-  getMotionCssFromTheme,
-  getResponsiveSpace,
-} from '../utils/style';
+import {styled, getStylePreset, MQ, getResponsiveSpace} from '../utils/style';
+import {getTransitionPreset} from '../utils/style/transition-preset';
 
 interface OverlayProps {
   open: boolean;
@@ -28,26 +25,9 @@ const StyledOverlay = styled.div<Pick<OverlayProps, 'overrides'>>`
   left: 0;
   ${getResponsiveSpace('zIndex', `overlay`, '', 'zIndex')};
   cursor: pointer;
-  ${getStylePreset('overlay', '')}
+  ${getStylePreset('overlay', '')};
 
-  &.nk-overlay-enter {
-    opacity: 0;
-  }
-  &.nk-overlay-enter-active {
-    opacity: 1;
-
-    transition-property: opacity;
-    ${getMotionCssFromTheme('transitionDuration', 'motionDuration010')}
-  }
-  &.nk-overlay-exit {
-    opacity: 1;
-  }
-  &.nk-overlay-exit-active {
-    opacity: 0;
-
-    transition-property: opacity;
-    ${getMotionCssFromTheme('transitionDuration', 'motionDuration010')}
-  }
+  ${getTransitionPreset('overlay', '', 'nk-overlay')};
 `;
 
 const BaseOverlay: React.FC<Omit<OverlayProps, 'open'>> = props => {
@@ -56,14 +36,22 @@ const BaseOverlay: React.FC<Omit<OverlayProps, 'open'>> = props => {
   return <StyledOverlay data-testid="overlay" {...props} />;
 };
 
-export const Overlay: React.FC<OverlayProps> = ({open, ...props}) => (
-  <CSSTransition
-    in={open}
-    timeout={1000}
-    classNames="nk-overlay"
-    mountOnEnter
-    unmountOnExit
-  >
-    <BaseOverlay {...props} />
-  </CSSTransition>
-);
+export const Overlay: React.FC<OverlayProps> = ({
+  open,
+  overrides,
+  ...props
+}) => {
+  const theme = useTheme();
+
+  return (
+    <CSSTransition
+      in={open}
+      timeout={getTransitionDuration('overlay', '')({theme, overrides})}
+      classNames="nk-overlay"
+      mountOnEnter
+      unmountOnExit
+    >
+      <BaseOverlay {...props} overrides={overrides} />
+    </CSSTransition>
+  );
+};

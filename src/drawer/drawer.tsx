@@ -9,6 +9,7 @@ import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {setDrawerElementFocusability} from './utils';
+import {getTransitionDuration} from '../utils/get-transition-duration';
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
@@ -54,7 +55,15 @@ export const Drawer: React.FC<DrawerProps> = ({
       )}
     >
       {handleCloseButtonClick => (
-        <CSSTransition in={open} timeout={1000} classNames="nk-drawer" appear>
+        <CSSTransition
+          in={open}
+          timeout={getTransitionDuration(
+            `drawer.panel.${placement}`,
+            '',
+          )({theme, overrides})}
+          classNames="nk-drawer"
+          appear
+        >
           <StyledDrawer
             aria-hidden={!open}
             open={open}

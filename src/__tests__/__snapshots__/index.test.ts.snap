@@ -172,6 +172,8 @@ Array [
   "getSpacingStackVertical",
   "getStylePreset",
   "getStylePresetFromTheme",
+  "getTransitionDuration",
+  "getTransitionDurationFromTheme",
   "getTypographyPreset",
   "getTypographyPresetFromTheme",
   "getValueFromTheme",

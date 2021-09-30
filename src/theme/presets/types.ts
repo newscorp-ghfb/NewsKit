@@ -71,3 +71,19 @@ export interface TypographyPreset {
 }
 export type TypographyPresetKeys = keyof TypographyPreset;
 export type FontKeys = keyof Fonts;
+
+export type TransitionPresetStyles = React.CSSProperties;
+export type TransitionPresetStyleKeys = keyof TransitionPresetStyles;
+export interface TransitionPreset {
+  base?: TransitionPresetStyles;
+  appear?: TransitionPresetStyles;
+  appearActive?: TransitionPresetStyles;
+  appearDone?: TransitionPresetStyles;
+  enter?: TransitionPresetStyles;
+  enterActive?: TransitionPresetStyles;
+  enterDone?: TransitionPresetStyles;
+  exit?: TransitionPresetStyles;
+  exitActive?: TransitionPresetStyles;
+  exitDone?: TransitionPresetStyles;
+}
+export type TransitionPresetStates = keyof TransitionPreset;

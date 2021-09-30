@@ -16,6 +16,7 @@ import {
   getResponsiveSpacingInlineHorizontal,
 } from '../style';
 import {createTheme, compileTheme} from '../../theme';
+import {getTransitionPreset} from '../style/transition-preset';
 
 describe('get component defaults functions', () => {
   const theme: any = compileTheme(
@@ -60,6 +61,29 @@ describe('get component defaults functions', () => {
           theOverrideToken: 'theOverrideToken-value-space',
           theNestedOverrideToken: 'theNestedOverrideToken-value-space',
         },
+        transitionPresets: {
+          theDefaultToken: {
+            base: {
+              transitionProperty: 'css-props-for-default-token',
+              transitionDuration: '200ms',
+              transitionTimingFunction: 'linear',
+            },
+          },
+          theOverrideToken: {
+            base: {
+              transitionProperty: 'css-props-for-override-token',
+              transitionDuration: '300ms',
+              transitionTimingFunction: 'linear',
+            },
+          },
+          theNestedOverrideToken: {
+            base: {
+              transitionProperty: 'css-props-for-nested-override-token',
+              transitionDuration: '400ms',
+              transitionTimingFunction: 'linear',
+            },
+          },
+        },
         componentDefaults: {
           basicTestComponent: {
             typographyPreset: 'theDefaultToken',
@@ -69,6 +93,7 @@ describe('get component defaults functions', () => {
             spacePresets: 'theDefaultToken',
             spaceInline: 'theDefaultToken',
             spaceStack: 'theDefaultToken',
+            transitionPreset: 'theDefaultToken',
           },
           responsiveTestComponent: {
             typographyPreset: {
@@ -192,7 +217,6 @@ describe('get component defaults functions', () => {
       expectedResultFormatter: (expected: any) => ({marginRight: expected}),
       responsive: true,
     },
-
     {
       fnName: 'getSpacingInlineVertical',
       fn: getSpacingInlineVertical as any,
@@ -200,6 +224,13 @@ describe('get component defaults functions', () => {
       themeSection: 'spacePresets',
       expectedResultFormatter: (expected: any) => ({marginBottom: expected}),
       responsive: true,
+    },
+    {
+      fnName: 'getTransitionPreset',
+      fn: getTransitionPreset as any,
+      tokenPathEnd: 'transitionPreset',
+      themeSection: 'transitionPresets',
+      expectedResultFormatter: (expected: {base: any}) => expected.base,
     },
   ].forEach(
     ({

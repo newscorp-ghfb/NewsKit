@@ -11,7 +11,7 @@ import {
   getXFromTheme,
 } from './base';
 import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
-import {hasOwnProperty} from '../overrides';
+import {hasOwnProperty} from '../has-own-property';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
