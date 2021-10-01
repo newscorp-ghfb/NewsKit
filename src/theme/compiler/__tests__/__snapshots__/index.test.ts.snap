@@ -569,7 +569,7 @@ Object {
         "minHeight": "sizing070",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagSolid",
+        "stylePreset": "flagSolidPrimary",
         "typographyPreset": "utilityLabel030",
       },
       "medium": Object {
@@ -577,7 +577,7 @@ Object {
         "minHeight": "sizing060",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagSolid",
+        "stylePreset": "flagSolidPrimary",
         "typographyPreset": "utilityLabel020",
       },
       "small": Object {
@@ -585,7 +585,7 @@ Object {
         "minHeight": "sizing050",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish010",
-        "stylePreset": "flagSolid",
+        "stylePreset": "flagSolidPrimary",
         "typographyPreset": "utilityLabel010",
       },
     },
@@ -1830,9 +1830,10 @@ Object {
         "boxShadow": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "transparent",
+        "borderRadius": "0",
         "color": "#128293",
         "iconColor": "#128293",
       },
@@ -1840,11 +1841,52 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "transparent",
+        "borderRadius": "0",
         "color": "#ffffff",
         "iconColor": "#ffffff",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "0",
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+    },
+    "flagMinimalNeutral": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "0",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+    },
+    "flagMinimalNotice": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "0",
+        "color": "#535353",
+        "iconColor": "#535353",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "0",
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "0",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "flagSolidInformative": Object {
       "base": Object {
         "backgroundColor": "#128293",
         "borderRadius": "0",
@@ -1856,23 +1898,48 @@ Object {
       "base": Object {
         "backgroundColor": "#ffffff",
         "borderRadius": "0",
-        "color": "#128293",
-        "iconColor": "#128293",
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
       },
     },
-    "flagSolidLive": Object {
+    "flagSolidNegative": Object {
       "base": Object {
-        "backgroundColor": "#ef1703",
+        "backgroundColor": "#d20600",
         "borderRadius": "0",
         "color": "#ffffff",
         "iconColor": "#ffffff",
       },
     },
-    "flagSolidLiveInverse": Object {
+    "flagSolidNeutral": Object {
       "base": Object {
-        "backgroundColor": "#ffe6e5",
-        "color": "#2e2e2e",
-        "iconColor": "#2e2e2e",
+        "backgroundColor": "#535353",
+        "borderRadius": "0",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
+    "flagSolidNotice": Object {
+      "base": Object {
+        "backgroundColor": "#535353",
+        "borderRadius": "0",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
+    "flagSolidPositive": Object {
+      "base": Object {
+        "backgroundColor": "#0a782a",
+        "borderRadius": "0",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "0",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
       },
     },
     "headlineHeadingInteractive": Object {

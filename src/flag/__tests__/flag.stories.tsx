@@ -1,11 +1,7 @@
 import * as React from 'react';
 import {Flag, FlagSize} from '..';
-import {getColorFromTheme, styled} from '../../utils/style';
-import {
-  IconFilledEmail,
-  IconFilledBookmarkBorder,
-  IconFilledVolumeOff,
-} from '../../icons';
+import {styled} from '../../utils/style';
+import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
 import {
   StorybookSubHeading,
@@ -19,10 +15,10 @@ const Block = styled.div`
 
 const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
-  ${({hasBlackBackground, theme}) =>
+  ${({hasBlackBackground}) =>
     hasBlackBackground && {
-      background: getColorFromTheme('black')({theme}),
-      color: getColorFromTheme('white')({theme}),
+      background: 'black',
+      color: 'white',
     }}
 `;
 
@@ -31,71 +27,96 @@ export default {
   component: () => 'None',
 };
 
+const presets = [
+  'Primary',
+  'Positive',
+  'Negative',
+  'Neutral',
+  'Notice',
+  'Informative',
+];
+
 export const StoryFlag = () => (
   <React.Fragment>
     <StorybookHeading>Flag</StorybookHeading>
     <StorybookSubHeading>Solid</StorybookSubHeading>
-    <Flag>Text goes here</Flag>
-
+    <Container>
+      <Stack
+        flow="horizontal-center"
+        spaceStack="space020"
+        spaceInline="space020"
+        wrap="wrap"
+      >
+        {presets.map(presetSuffix => (
+          <Flag
+            overrides={{
+              stylePreset: `flagSolid${presetSuffix}`,
+            }}
+          >
+            {presetSuffix}
+          </Flag>
+        ))}
+      </Stack>
+    </Container>
+    <StorybookSubHeading>Solid with icons</StorybookSubHeading>
+    <Container>
+      <Stack
+        flow="horizontal-center"
+        spaceStack="space020"
+        spaceInline="space020"
+        wrap="wrap"
+      >
+        {presets.map(presetSuffix => (
+          <Flag
+            overrides={{
+              stylePreset: `flagSolid${presetSuffix}`,
+            }}
+          >
+            <IconFilledEmail />
+            {presetSuffix}
+          </Flag>
+        ))}
+      </Stack>
+    </Container>
     <StorybookSubHeading>Minimal</StorybookSubHeading>
-    <Flag
-      overrides={{
-        stylePreset: 'flagMinimal',
-        spaceInset: 'spaceInsetSquish000',
-      }}
-    >
-      Text goes here
-    </Flag>
-
+    <Container>
+      <Stack
+        flow="horizontal-center"
+        spaceStack="space020"
+        spaceInline="space020"
+        wrap="wrap"
+      >
+        {presets.map(presetSuffix => (
+          <Flag
+            overrides={{
+              stylePreset: `flagMinimal${presetSuffix}`,
+            }}
+          >
+            {presetSuffix}
+          </Flag>
+        ))}
+      </Stack>
+    </Container>
     <StorybookSubHeading>Minimal with icons</StorybookSubHeading>
-    <Stack
-      flow="horizontal-center"
-      spaceStack="space020"
-      spaceInline="space020"
-      wrap="wrap"
-    >
-      <Flag
-        size={FlagSize.Small}
-        overrides={{
-          stylePreset: 'flagMinimal',
-          spaceInset: 'spaceInset000Squish',
-        }}
+    <Container>
+      <Stack
+        flow="horizontal-center"
+        spaceStack="space020"
+        spaceInline="space020"
+        wrap="wrap"
       >
-        <IconFilledEmail />
-        Text
-      </Flag>
-      <Flag
-        size={FlagSize.Large}
-        overrides={{
-          stylePreset: 'flagMinimal',
-          spaceInset: 'spaceInset000Squish',
-        }}
-      >
-        <IconFilledEmail />
-        Text
-      </Flag>
-      <Flag
-        size={FlagSize.Large}
-        overrides={{
-          stylePreset: 'flagMinimal',
-          spaceInset: 'spaceInset000Squish',
-        }}
-      >
-        <IconFilledBookmarkBorder />
-        Text
-      </Flag>
-      <Flag
-        size={FlagSize.Large}
-        overrides={{
-          stylePreset: 'flagMinimal',
-          spaceInset: 'spaceInset000Squish',
-        }}
-      >
-        <IconFilledVolumeOff />
-        Text
-      </Flag>
-    </Stack>
-
+        {presets.map(presetSuffix => (
+          <Flag
+            overrides={{
+              stylePreset: `flagMinimal${presetSuffix}`,
+            }}
+          >
+            <IconFilledEmail />
+            {presetSuffix}
+          </Flag>
+        ))}
+      </Stack>
+    </Container>
     <StorybookSubHeading>Flag Sizes</StorybookSubHeading>
     <Stack
       flow="horizontal-center"
@@ -110,7 +131,14 @@ export const StoryFlag = () => (
 
     <StorybookSubHeading>with Typography Preset override</StorybookSubHeading>
     <Block>
-      <Flag overrides={{typographyPreset: 'meta020'}}>Text</Flag>
+      <Flag
+        size={FlagSize.Small}
+        overrides={{
+          typographyPreset: 'meta020',
+        }}
+      >
+        Text
+      </Flag>
     </Block>
   </React.Fragment>
 );
@@ -126,17 +154,6 @@ export const StoryInverseFlag = () => (
         </StorybookSubHeading>
         <Flag
           overrides={{stylePreset: 'flagSolidInverse'}}
-          size={FlagSize.Large}
-        >
-          Text
-        </Flag>
-      </Block>
-      <Block>
-        <StorybookSubHeading>
-          with flagSolidLiveInverse style preset
-        </StorybookSubHeading>
-        <Flag
-          overrides={{stylePreset: 'flagSolidLiveInverse'}}
           size={FlagSize.Large}
         >
           Text

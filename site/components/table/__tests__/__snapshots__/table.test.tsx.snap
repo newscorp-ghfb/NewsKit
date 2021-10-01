@@ -1046,6 +1046,8 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin: 0;
   padding: 0;
   color: #555E74;
+  background-color: #F4F4F4;
+  border-radius: 4px;
   white-space: nowrap;
   font-family: 'DM Mono',monospace;
   font-size: 14px;
@@ -1234,6 +1236,8 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin: 0;
   padding: 0;
   color: #555E74;
+  background-color: #F4F4F4;
+  border-radius: 4px;
   white-space: nowrap;
   font-family: 'DM Mono',monospace;
   font-size: 14px;

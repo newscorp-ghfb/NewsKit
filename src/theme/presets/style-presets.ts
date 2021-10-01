@@ -1055,7 +1055,39 @@ stylePresets.iconNegative = {
 // Flag
 //
 
-stylePresets.flagSolid = {
+stylePresets.flagSolidPrimary = {
+  base: {
+    backgroundColor: '{{colors.interfaceBrand010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
+stylePresets.flagSolidPositive = {
+  base: {
+    backgroundColor: '{{colors.interfacePositive010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
+stylePresets.flagSolidNegative = {
+  base: {
+    backgroundColor: '{{colors.interfaceNegative010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
+stylePresets.flagSolidNotice = {
+  base: {
+    backgroundColor: '{{colors.interfaceNotice010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
+stylePresets.flagSolidInformative = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
     borderRadius: '{{borders.borderRadiusSharp}}',
@@ -1063,30 +1095,66 @@ stylePresets.flagSolid = {
     iconColor: '{{colors.inkInverse}}',
   },
 };
-stylePresets.flagSolidLive = {
+stylePresets.flagSolidNeutral = {
   base: {
-    ...stylePresets.flagSolid.base,
-    backgroundColor: '{{colors.interactiveNegative030}}',
-  },
-};
-stylePresets.flagMinimal = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-    color: '{{colors.inkInformative}}',
-    iconColor: '{{colors.inkInformative}}',
+    backgroundColor: '{{colors.interfaceNeutral010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
 };
 stylePresets.flagSolidInverse = {
   base: {
-    backgroundColor: '{{colors.inkInverse}}',
+    backgroundColor: '{{colors.interface010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkContrast}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.flagMinimalPrimary = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+};
+stylePresets.flagMinimalPositive = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkPositive}}',
+    iconColor: '{{colors.inkPositive}}',
+  },
+};
+stylePresets.flagMinimalNegative = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkNegative}}',
+    iconColor: '{{colors.inkNegative}}',
+  },
+};
+stylePresets.flagMinimalNotice = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkNotice}}',
+    iconColor: '{{colors.inkNotice}}',
+  },
+};
+stylePresets.flagMinimalInformative = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
     borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkInformative}}',
     iconColor: '{{colors.inkInformative}}',
   },
 };
-stylePresets.flagSolidLiveInverse = {
+stylePresets.flagMinimalNeutral = {
   base: {
-    backgroundColor: '{{colors.interfaceNegative020}}',
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkBase}}',
     iconColor: '{{colors.inkBase}}',
   },
@@ -1094,6 +1162,7 @@ stylePresets.flagSolidLiveInverse = {
 stylePresets.flagMinimalInverse = {
   base: {
     backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkInverse}}',
     iconColor: '{{colors.inkInverse}}',
   },

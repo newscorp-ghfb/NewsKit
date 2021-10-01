@@ -2224,9 +2224,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -2234,8 +2235,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -2243,14 +2253,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -2263,25 +2291,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -2313,6 +2326,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -6645,9 +6666,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -6655,8 +6677,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -6664,14 +6695,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -6684,25 +6733,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -6734,6 +6768,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -11066,9 +11108,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -11076,8 +11119,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -11085,14 +11137,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -11105,25 +11175,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -11155,6 +11210,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -15487,9 +15550,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -15497,8 +15561,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -15506,14 +15579,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -15526,25 +15617,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -15576,6 +15652,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -19908,9 +19992,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -19918,8 +20003,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -19927,14 +20021,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -19947,25 +20059,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -19997,6 +20094,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -24329,9 +24434,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -24339,8 +24445,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -24348,14 +24463,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -24368,25 +24501,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -24418,6 +24536,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -28750,9 +28876,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -28760,8 +28887,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -28769,14 +28905,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -28789,25 +28943,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -28839,6 +28978,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -33171,9 +33318,10 @@ Object {
         "whiteSpace": "nowrap",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -33181,8 +33329,17 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
       },
     },
     "flagMinimalNeutral": Object {
@@ -33190,14 +33347,32 @@ Object {
         "__extends": "{{stylePresets.flagSolidNeutral.base}}",
         "backgroundColor": "__delete",
         "borderRadius": "__delete",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNotice": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
       },
     },
     "flagSolidInformative": Object {
@@ -33210,25 +33385,10 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
-      },
-    },
-    "flagSolidLive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "flagSolidLiveInverse": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
     "flagSolidNegative": Object {
@@ -33260,6 +33420,14 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.interfacePositive010}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },

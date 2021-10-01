@@ -142,6 +142,8 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   margin: 0;
   padding: 0;
   color: #555E74;
+  background-color: #F4F4F4;
+  border-radius: 4px;
   white-space: nowrap;
   font-family: 'DM Mono',monospace;
   font-size: 14px;
@@ -642,6 +644,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   margin: 0;
   padding: 0;
   color: #555E74;
+  background-color: #F4F4F4;
+  border-radius: 4px;
   white-space: nowrap;
   font-family: 'DM Mono',monospace;
   font-size: 14px;

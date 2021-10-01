@@ -382,7 +382,7 @@ export const componentDefaults = {
   flag: {
     small: {
       typographyPreset: 'utilityLabel010',
-      stylePreset: 'flagSolid',
+      stylePreset: 'flagSolidPrimary',
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
@@ -390,7 +390,7 @@ export const componentDefaults = {
     },
     medium: {
       typographyPreset: 'utilityLabel020',
-      stylePreset: 'flagSolid',
+      stylePreset: 'flagSolidPrimary',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -398,7 +398,7 @@ export const componentDefaults = {
     },
     large: {
       typographyPreset: 'utilityLabel030',
-      stylePreset: 'flagSolid',
+      stylePreset: 'flagSolidPrimary',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing070',
       iconSize: 'iconSize010',

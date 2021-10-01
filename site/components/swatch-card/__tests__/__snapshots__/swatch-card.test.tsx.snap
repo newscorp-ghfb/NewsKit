@@ -60,7 +60,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
   width: 48px;

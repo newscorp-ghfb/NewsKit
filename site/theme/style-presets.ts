@@ -191,33 +191,21 @@ export const stylePresets = {
   },
   flagSolidPositive: {
     base: {
-      color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.inkInverse}}',
-      backgroundColor: '{{colors.interfacePositive010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
   flagSolidNegative: {
     base: {
-      color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.inkInverse}}',
-      backgroundColor: '{{colors.interfaceNegative010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
   flagSolidNotice: {
     base: {
-      color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.inkInverse}}',
-      backgroundColor: '{{colors.interfaceNotice010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
   flagSolidInformative: {
     base: {
-      color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.inkInverse}}',
-      backgroundColor: '{{colors.interfaceInformative010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },

@@ -575,7 +575,7 @@ Object {
         "minHeight": "sizing070",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagSolid",
+        "stylePreset": "flagSolidPrimary",
         "typographyPreset": "utilityLabel030",
       },
       "medium": Object {
@@ -583,7 +583,7 @@ Object {
         "minHeight": "sizing060",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
-        "stylePreset": "flagSolid",
+        "stylePreset": "flagSolidPrimary",
         "typographyPreset": "utilityLabel020",
       },
       "small": Object {
@@ -591,7 +591,7 @@ Object {
         "minHeight": "sizing050",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish010",
-        "stylePreset": "flagSolid",
+        "stylePreset": "flagSolidPrimary",
         "typographyPreset": "utilityLabel010",
       },
     },
@@ -1838,9 +1838,10 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
-    "flagMinimal": Object {
+    "flagMinimalInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInformative}}",
         "iconColor": "{{colors.inkInformative}}",
       },
@@ -1848,11 +1849,52 @@ Object {
     "flagMinimalInverse": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
-    "flagSolid": Object {
+    "flagMinimalNegative": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "flagMinimalNeutral": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "flagMinimalNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkNotice}}",
+        "iconColor": "{{colors.inkNotice}}",
+      },
+    },
+    "flagMinimalPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "flagMinimalPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "flagSolidInformative": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
@@ -1862,25 +1904,50 @@ Object {
     },
     "flagSolidInverse": Object {
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "color": "{{colors.inkInformative}}",
-        "iconColor": "{{colors.inkInformative}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
       },
     },
-    "flagSolidLive": Object {
+    "flagSolidNegative": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interactiveNegative030}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
     },
-    "flagSolidLiveInverse": Object {
+    "flagSolidNeutral": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
+        "backgroundColor": "{{colors.interfaceNeutral010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidNotice": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNotice010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPositive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfacePositive010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidPrimary": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceBrand010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "headlineHeadingInteractive": Object {

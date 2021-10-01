@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/cjs/prism-light';
-import {useTheme} from 'newskit';
+import {useTheme, newskitLightTheme} from 'newskit';
 import {LegacyBlock} from './legacy-block';
 import {generateCodeHighlighterTheme} from './code-highlighter-theme';
 
@@ -60,9 +60,8 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
 export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresets> = ({
   componentName,
 }) => {
-  const theme = useTheme();
   if (componentName) {
-    const presets = theme.componentDefaults[componentName];
+    const presets = newskitLightTheme.componentDefaults[componentName];
     if (presets) {
       const defaultPresetsExample = JSON.stringify(presets, null, 2).replace(
         /"([^"]+)":/g,

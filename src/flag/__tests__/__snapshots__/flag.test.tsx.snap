@@ -28,7 +28,8 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #128293;
+  border-radius: 0;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -37,7 +38,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #128293;
+  fill: #0a68c1;
 }
 
 .emotion-1 {
@@ -142,7 +143,7 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -258,7 +259,7 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -408,7 +409,7 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -559,7 +560,8 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #128293;
+  border-radius: 0;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -568,7 +570,7 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #128293;
+  fill: #0a68c1;
 }
 
 .emotion-1 {
@@ -674,7 +676,7 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -791,7 +793,7 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -908,7 +910,8 @@ exports[`Flag renders a flag with no paddings 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #128293;
+  border-radius: 0;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -917,7 +920,7 @@ exports[`Flag renders a flag with no paddings 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #128293;
+  fill: #0a68c1;
 }
 
 .emotion-1 {
@@ -1023,7 +1026,7 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -1140,7 +1143,7 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -1257,7 +1260,7 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -1374,7 +1377,7 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -1491,7 +1494,8 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #128293;
+  border-radius: 0;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -1500,7 +1504,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #128293;
+  fill: #0a68c1;
 }
 
 .emotion-1 {
@@ -1639,7 +1643,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -1789,7 +1793,7 @@ exports[`Flag renders with Large size 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -1905,7 +1909,7 @@ exports[`Flag renders with Medium size 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -2021,7 +2025,7 @@ exports[`Flag renders with Small size 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -2137,7 +2141,7 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }
@@ -2253,7 +2257,7 @@ exports[`Flag renders with default styles 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #128293;
+  background-color: #0a68c1;
   border-radius: 0;
   color: #ffffff;
 }

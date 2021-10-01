@@ -32,7 +32,7 @@ describe('Flag', () => {
   test('renders a flag with a custom stylePreset', () => {
     const props: FlagProps = {
       overrides: {
-        stylePreset: 'flagMinimal',
+        stylePreset: 'flagMinimalPrimary',
       },
     };
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
@@ -52,7 +52,7 @@ describe('Flag', () => {
   test('renders a flag with custom presets when children is number', () => {
     const props: FlagProps = {
       overrides: {
-        stylePreset: 'flagMinimal',
+        stylePreset: 'flagMinimalPrimary',
         typographyPreset: 'utilityLabel020',
       },
     };
@@ -66,7 +66,7 @@ describe('Flag', () => {
   test('renders a flag with no paddings', () => {
     const props: FlagProps = {
       overrides: {
-        stylePreset: 'flagMinimal',
+        stylePreset: 'flagMinimalPrimary',
         spaceInset: 'spaceInsetSquish000',
       },
     };
@@ -82,7 +82,7 @@ describe('Flag', () => {
   test('renders a minimal flag with an icon', () => {
     const props: FlagProps = {
       overrides: {
-        stylePreset: 'flagMinimal',
+        stylePreset: 'flagMinimalPrimary',
         spaceInset: 'spaceInsetSquish000',
       },
     };
