@@ -50,6 +50,7 @@ export const Overlay: React.FC<OverlayProps> = ({
       classNames="nk-overlay"
       mountOnEnter
       unmountOnExit
+      appear
     >
       <BaseOverlay {...props} overrides={overrides} />
     </CSSTransition>

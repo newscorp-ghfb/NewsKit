@@ -45,7 +45,7 @@ exports[`Overlay renders with overrides 1`] = `
 }
 
 <div
-    class="emotion-0"
+    class="emotion-0 nk-overlay-appear nk-overlay-appear-active"
     data-testid="overlay"
   />
 </DocumentFragment>

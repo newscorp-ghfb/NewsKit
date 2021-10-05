@@ -1,3 +1,4 @@
+import {MoveFocusInside} from 'react-focus-lock';
 import {IconButton} from '../icon-button';
 import {
   styled,
@@ -21,6 +22,13 @@ export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>
   overflow: hidden;
   display: flex;
   flex-direction: column;
+`;
+
+export const StyledMoveFocusInside = styled(MoveFocusInside)`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden auto;
 `;
 
 export const StyledDialogHeader = styled.div<BaseDialogViewOverridesAndPathProps>`

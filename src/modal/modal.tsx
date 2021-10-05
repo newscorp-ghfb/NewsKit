@@ -54,6 +54,7 @@ export const Modal: React.FC<ModalProps> = ({
           classNames="nk-modal"
           mountOnEnter
           unmountOnExit
+          appear
         >
           <StyledModal
             open={open}

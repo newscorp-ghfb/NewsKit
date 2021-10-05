@@ -1,5 +1,4 @@
 import React, {useRef} from 'react';
-import {MoveFocusInside} from 'react-focus-lock';
 import {BaseDialogViewProps} from './types';
 import {
   StyledDialogPanel,
@@ -8,6 +7,7 @@ import {
   StyledDialogHeaderContent,
   StyledFillSpaceCloseButton,
   StyledCloseButton,
+  StyledMoveFocusInside,
 } from './styled';
 import {Stack} from '../stack';
 import {IconFilledClose} from '../icons';
@@ -64,7 +64,7 @@ export const BaseDialogView = React.forwardRef<
     };
 
     const MoveFocusInsideWhenFocusTrapDisabled =
-      disableFocusTrap && open ? MoveFocusInside : React.Fragment;
+      disableFocusTrap && open ? StyledMoveFocusInside : React.Fragment;
 
     return (
       <StyledDialogPanel

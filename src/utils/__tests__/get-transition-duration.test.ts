@@ -895,7 +895,7 @@ describe('getTransitionDuration', () => {
     });
   });
 
-  test('handles invalid tokens', () => {
+  test('handles invalid paths', () => {
     const theme = compileTheme(
       createTheme({
         name: 'test-style-preset',
@@ -915,7 +915,7 @@ describe('getTransitionDuration', () => {
           },
           componentDefaults: {
             componentUnderTest: {
-              transitionPreset: 'customTransitionPresetDefaultInvalid',
+              transitionPreset: 'customTransitionPresetDefault',
             },
           },
         },
@@ -923,7 +923,7 @@ describe('getTransitionDuration', () => {
     );
 
     const result = getTransitionDuration(
-      'componentUnderTest',
+      'componentUnderTestInvalidPath',
       undefined,
     )({
       theme,
