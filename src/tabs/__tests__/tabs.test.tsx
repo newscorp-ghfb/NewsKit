@@ -610,4 +610,42 @@ describe('Tabs keyboard changes focus', () => {
       expect(asFragment()).toMatchSnapshot();
     });
   });
+
+  describe('tabpanel', () => {
+    it('should not have focus on click', async () => {
+      const props: TabsProps = {
+        children: tabsWithLabel,
+      };
+
+      const {getAllByTestId} = renderWithTheme(renderTabsDefault, props);
+
+      const firstTabPanel = getAllByTestId('tab-panel')[0];
+      const body = document.getElementsByTagName('body')[0];
+
+      firstTabPanel.click();
+
+      expect(firstTabPanel).not.toHaveFocus();
+      expect(body).toHaveFocus();
+    });
+
+    it('should keeps focus, when clicked, if it has already the focus', async () => {
+      const props: TabsProps = {
+        children: tabsWithLabel,
+      };
+
+      const {getAllByTestId} = renderWithTheme(renderTabsDefault, props);
+
+      const firstTab = getAllByTestId('tab')[0];
+      const firstTabPanel = getAllByTestId('tab-panel')[0];
+      const body = document.getElementsByTagName('body')[0];
+
+      firstTab.focus();
+      userEvent.tab();
+      expect(firstTabPanel).toHaveFocus();
+
+      fireEvent.mouseDown(firstTabPanel);
+      expect(firstTabPanel).toHaveFocus();
+      expect(body).not.toHaveFocus();
+    });
+  });
 });
