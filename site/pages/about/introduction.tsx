@@ -32,7 +32,7 @@ const WrapperWithPadding = styled.div`
 const cards = [
   {
     media: {
-      src: '../../static/about-principles-01.svg',
+      src: 'static/about-principles-01.svg',
       alt: '',
     },
     stylePrefix: 'principleCard',
@@ -48,7 +48,7 @@ const cards = [
   },
   {
     media: {
-      src: '../../static/about-principles-02.svg',
+      src: 'static/about-principles-02.svg',
       alt: '',
     },
     stylePrefix: 'principleCard',
@@ -64,7 +64,7 @@ const cards = [
   },
   {
     media: {
-      src: '../../static/about-principles-03.svg',
+      src: 'static/about-principles-03.svg',
       alt: '',
     },
     stylePrefix: 'principleCard',
@@ -80,7 +80,7 @@ const cards = [
   },
   {
     media: {
-      src: '../../static/about-principles-04.svg',
+      src: 'static/about-principles-04.svg',
       alt: '',
     },
     stylePrefix: 'principleCard',
@@ -95,7 +95,7 @@ const cards = [
   },
   {
     media: {
-      src: '../../static/about-principles-05.svg',
+      src: 'static/about-principles-05.svg',
       alt: '',
     },
     stylePrefix: 'principleCard',
@@ -111,7 +111,7 @@ const cards = [
   },
   {
     media: {
-      src: '../../static/about-principles-06.svg',
+      src: 'static/about-principles-06.svg',
       alt: '',
     },
     stylePrefix: 'principleCard',

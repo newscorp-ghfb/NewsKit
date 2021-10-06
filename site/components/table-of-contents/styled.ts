@@ -1,11 +1,11 @@
 import {
   Block,
   styled,
-  Link,
   getStylePreset,
   getSpacingCssFromTheme,
   getSizingCssFromTheme,
 } from 'newskit';
+import {Link} from '../link';
 
 export const StyledTableOfContents = styled(Block)`
   position: fixed;

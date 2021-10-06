@@ -434,7 +434,7 @@ exports[`Media List renders with custom layout 1`] = `
                   <img
                     alt="Card Media"
                     class="emotion-9"
-                    src="/static/placeholder-16x9.png"
+                    src="static/placeholder-16x9.png"
                   />
                 </picture>
               </div>
@@ -914,7 +914,7 @@ exports[`Media List renders with default layout 1`] = `
                   <img
                     alt="Card Media"
                     class="emotion-9"
-                    src="/static/placeholder-16x9.png"
+                    src="static/placeholder-16x9.png"
                   />
                 </picture>
               </div>

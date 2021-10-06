@@ -16,6 +16,7 @@ import {
   TextBlock,
   Visible,
 } from 'newskit';
+import LinkNext from 'next/link';
 import {SectionIntroduction} from '../components/section-introduction';
 import {HeroImage} from '../components/illustrations/landing-page/hero-image';
 import {MediaList} from '../components/media-list';
@@ -29,7 +30,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Foundations',
-    href: 'theming/foundations/overview',
+    href: '/foundations/overview',
     description:
       'These standardised styles define the look and feel of UI components. e.g. colours, fonts, shadows and sizing.',
   },
@@ -39,7 +40,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Components',
-    href: 'components/overview',
+    href: '/components/overview',
     description:
       'NewsKit’s flexible UI components are built to best practices to ensure usability, performance and accessibility. ',
   },
@@ -49,7 +50,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Theming',
-    href: 'theming/creating-a-theme',
+    href: '/foundations/theming/creating-a-theme',
     description:
       'Creating and applying themes allow you to tailor your experience to your unique brand requirements.',
   },
@@ -342,21 +343,25 @@ export default (layoutProps: LayoutProps) => {
                 spaceInline="space030"
                 height="unset"
               >
-                <Button
-                  href="/about/introduction"
-                  overrides={{width: 'sizing110'}}
-                >
-                  Design
-                </Button>
-                <Button
-                  href="/getting-started/code/web"
-                  overrides={{
-                    stylePreset: 'buttonOutlinedPrimary',
-                    width: 'sizing110',
-                  }}
-                >
-                  Code
-                </Button>
+                <LinkNext href="/about/introduction" passHref>
+                  <Button
+                    href="/about/introduction"
+                    overrides={{width: 'sizing110'}}
+                  >
+                    Design
+                  </Button>
+                </LinkNext>
+                <LinkNext href="/getting-started/code/web" passHref>
+                  <Button
+                    href="/getting-started/code/web"
+                    overrides={{
+                      stylePreset: 'buttonOutlinedPrimary',
+                      width: 'sizing110',
+                    }}
+                  >
+                    Code
+                  </Button>
+                </LinkNext>
               </Stack>
             </Stack>
           </HeroTextContainer>

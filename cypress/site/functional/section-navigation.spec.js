@@ -6,7 +6,11 @@ describe('section navigation', () => {
     cy.get('[data-testid="section-navigation"]')
       .find('li > a')
       .each(el => {
-        cy.wrap(el).should('have.attr', 'href', `#${el.text().toLowerCase()}`);
+        cy.wrap(el).should(
+          'have.attr',
+          'href',
+          `/components/tag/#${el.text().toLowerCase()}`,
+        );
       });
   });
 });

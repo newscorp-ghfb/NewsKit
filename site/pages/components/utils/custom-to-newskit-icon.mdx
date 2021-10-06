@@ -2,7 +2,6 @@ import {LegacyBlock} from '../../../components/legacy-block';
 import Layout from '../../../components/layout';
 import {Code, CodeFromFile} from '../../../components/code';
 import Prop from '../../../components/prop';
-import {Link} from 'newskit';
 
 export default Layout;
 
@@ -31,7 +30,7 @@ Transform SVG markup into a Newskit icon that works well with theme tokens and `
     spread on the root Svg component, see example below.
   </Prop>
   <Prop name="overrides" type='SvgProps["overrides"]'>
-    Default <Link href="/components/icons#props">override props</Link> passed to
+    Default <a href="/components/icons#props">override props</a> passed to
     the transformed icon. Overrides can still be passed to the icon to overwrite
     these values at render time.
   </Prop>

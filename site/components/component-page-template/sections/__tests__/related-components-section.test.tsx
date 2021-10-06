@@ -12,7 +12,7 @@ jest.mock('../../../../utils/get-route-object.ts', () => ({
     page: true,
     id: '/group/page/related',
     description: 'Here lies the description for the related component',
-    media: '/static/placeholder-16x9.png',
+    media: 'static/placeholder-16x9.png',
   })),
 }));
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import {Block, getSSRId, Link} from 'newskit';
+import {Block, getSSRId} from 'newskit';
+import {Link} from '../link';
 import {SwatchCard} from '../swatch-card';
 import {TokenFlag} from '../flags/token-flag';
 import {BorderCard} from '../border-card';
@@ -109,15 +110,17 @@ export const renderCols = (
           renderSingleOrMultiple(v => {
             const remapped = remapComponents[v];
             const route = getByTitle(remapped || v);
-            return route ? (
+
+            if (!route) return v;
+
+            return (
               <Link
+                type="standalone"
                 overrides={{typographyPreset: 'utilityButton020'}}
                 href={route.id}
               >
                 {v}
               </Link>
-            ) : (
-              v
             );
           }, cellValue as string | string[]);
         break;

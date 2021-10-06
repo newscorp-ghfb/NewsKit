@@ -6,7 +6,7 @@ describe('Page Introduction', () => {
     const props = {
       type: 'Component',
       name: 'ComponentName',
-      hero: {src: '/static/button-hero.svg', alt: 'button-hero'},
+      hero: {src: 'static/button-hero.svg', alt: 'button-hero'},
       introduction: 'Component Introduction',
     };
     const fragment = renderToFragmentWithTheme(PageIntroduction, props);

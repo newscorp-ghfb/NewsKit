@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Link,
   Tab,
   TabAlign,
   Tabs,
@@ -17,6 +16,7 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../components/component-page-template';
+import {Link} from '../../components/link';
 
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -293,7 +293,7 @@ export default (layoutProps: LayoutProps) => (
               description: (
                 <>
                   If provided, this overrides the scroll styling,{' '}
-                  <Link target="_blank" href="/components/scroll">
+                  <Link type="inline" target="_blank" href="/components/scroll">
                     see scroll component
                   </Link>{' '}
                   for full documentation.

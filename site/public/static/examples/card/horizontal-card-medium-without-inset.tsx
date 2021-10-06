@@ -31,7 +31,7 @@ export const CardHorizontalMediumWithoutInset = () => (
           href="#"
           layout="horizontal"
           media={{
-            src: '/static/placeholder-1x1.png',
+            src: 'static/placeholder-1x1.png',
             alt: 'Card Media',
             loadingAspectRatio: '1:1',
           }}

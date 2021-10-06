@@ -2,7 +2,6 @@ import Layout from '../../../components/layout';
 import {Code} from '../../../components/code';
 import {LegacyBlock} from '../../../components/legacy-block';
 import Prop from '../../../components/prop';
-import {Link} from 'newskit';
 
 export default Layout;
 
@@ -37,7 +36,7 @@ const layout = useMediaQueryObject(mqLayout);
 </Code>
 
 Note: In theory `useMediaQueryObject` could be used with any `MQ<T>`, however, we recommend using it only for props that don't accept `MQ<T>` as a value. Most CSS-based props and overrides already support `MQ<T>` objects.
-When you create your own components and want to apply responsive behaviour you should try to use <Link href="/utils/get-from-theme">getters</Link> and <Link href="/utils/get-defaults">defaults</Link> functions.
+When you create your own components and want to apply responsive behaviour you should try to use <a href="/components/utils/get-from-theme">getters</a> and <a href="/components/utils/get-defaults">defaults</a> functions.
 
 DO NOT DO THIS:
 

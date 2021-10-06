@@ -9,10 +9,10 @@ export const FeatureCardsForIndex = () => (
         title="What's new?"
         description="NewsKit is constantly evolving. View announcements about the latest updates to the NewsKit design system."
         stylePrefix="whatsnewCard"
-        href="/components/tabs"
+        href="components/tabs"
         layout="horizontal"
         buttonLabel="Read more"
-        buttonHref="/components/tabs"
+        buttonHref="components/tabs"
       />
     </Cell>
     <Cell xs={12} md={6} xl={5} xlOffset={1}>
@@ -21,9 +21,9 @@ export const FeatureCardsForIndex = () => (
         description="The NewsKit roadmap is updated regularly to ensure priorities are aligned to the business goals. "
         stylePrefix="roadmapCard"
         layout="vertical"
-        href="/about/roadmap"
+        href="about/roadmap"
         buttonLabel="Read more"
-        buttonHref="/about/roadmap"
+        buttonHref="about/roadmap"
       />
     </Cell>
     <Cell xs={12} md={6} xl={5}>
@@ -31,10 +31,10 @@ export const FeatureCardsForIndex = () => (
         title="Contribute"
         description="Contributions needed! There are many ways to share your great work and ideas with the community."
         stylePrefix="contributeCard"
-        href="/about/contribute"
+        href="about/contribute"
         layout="vertical"
         buttonLabel="Read more"
-        buttonHref="/about/contribute"
+        buttonHref="about/contribute"
       />
     </Cell>
   </>

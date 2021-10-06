@@ -10,7 +10,7 @@ export const OnwardJourneySection = () => (
       buttonLabel="Get In Touch"
       stylePrefix="needHelpCard"
       layout="horizontal"
-      href="needHelp"
+      href="/about/contact-us/"
     />
   </ComponentPageCell>
 );

@@ -12,7 +12,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 const cardsContent = [
   {
     media: {
-      src: '../../static/theming/foundations/borders.svg',
+      src: 'static/theming/foundations/borders.svg',
       alt: '',
     },
     title: 'Borders',
@@ -22,7 +22,7 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/breakpoints.svg',
+      src: 'static/theming/foundations/breakpoints.svg',
       alt: '',
     },
     title: 'Breakpoints',
@@ -32,7 +32,7 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/colours.svg',
+      src: 'static/theming/foundations/colours.svg',
       alt: '',
     },
     title: 'Colours',
@@ -42,7 +42,7 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/motion.svg',
+      src: 'static/theming/foundations/motion.svg',
       alt: '',
     },
     title: 'Motion',
@@ -52,7 +52,7 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/overlays.svg',
+      src: 'static/theming/foundations/overlays.svg',
       alt: '',
     },
     title: 'Overlays',
@@ -62,7 +62,7 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/shadows.svg',
+      src: 'static/theming/foundations/shadows.svg',
       alt: '',
     },
     title: 'Shadows',
@@ -72,7 +72,7 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/sizing.svg',
+      src: 'static/theming/foundations/sizing.svg',
       alt: '',
     },
     title: 'Sizing',
@@ -82,7 +82,7 @@ const cardsContent = [
   },
   {
     media: {
-      src: '../../static/theming/foundations/typography.svg',
+      src: 'static/theming/foundations/typography.svg',
       alt: '',
     },
     title: 'Typography',

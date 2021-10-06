@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Block,
-  Link,
   styled,
   InlineMessage,
   Grid,
@@ -11,6 +10,7 @@ import Head from 'next/head';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
+import {Link} from '../../components/link';
 
 const WrapperWithPadding = styled.div`
   ${getSizingCssFromTheme('paddingTop', 'sizing080')};

@@ -18,8 +18,7 @@ interface Props {
 }
 
 // Is added so relative paths work when we are on a sub dir e.g. s-3.com/ppdsc-123-foo/
-const Base = () =>
-  process.env.BASE_URI ? <base href={process.env.BASE_URI} /> : <></>;
+const Base = () => <base href={process.env.BASE_URI ?? '/'} />;
 
 export default class MyDocument extends Document<Props> {
   static async getInitialProps(ctx: DocumentContext) {

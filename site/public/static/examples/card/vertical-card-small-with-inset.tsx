@@ -31,7 +31,7 @@ export const CardVerticalSmallWithInset = () => (
         <CardInset
           href="#"
           media={{
-            src: '/static/placeholder-3x2.png',
+            src: 'static/placeholder-3x2.png',
             alt: 'Card Media',
           }}
           actions={cardSmallTags}

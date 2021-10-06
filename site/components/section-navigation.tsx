@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {
-  Link,
   getMediaQueryFromTheme,
   getTypographyPresetFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
   styled,
 } from 'newskit';
+import {Link} from './link';
 
 interface SectionNavigationProps {
   sections: Array<string>;

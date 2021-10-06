@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyledComponent} from '@emotion/styled';
 import {Cell, Grid, Block, Visible, BreakpointKeys, styled} from 'newskit';
+import LinkNext from 'next/link';
 import {UsageCard, UsageCardProps} from '../usage-card';
 import {BaseCard, BaseCardProps} from '../base-card';
 import {MediaListProps} from './types';
@@ -48,13 +49,22 @@ export const MediaList: React.FC<MediaListProps> = ({
           cellColumnList = cardListColumns.notHeroCardGroup;
         }
 
+        const StyledCardComponentWithProps = (
+          <StyledCardComponent
+            layout={cardListOrientation}
+            overrides={{horizontalRatio} as {}}
+            {...cardProps}
+          />
+        );
+
         return (
           <Cell {...cellColumnList}>
-            <StyledCardComponent
-              layout={cardListOrientation}
-              overrides={{horizontalRatio} as {}}
-              {...cardProps}
-            />
+            {cardProps.href && (
+              <LinkNext href={cardProps.href} passHref>
+                {StyledCardComponentWithProps}
+              </LinkNext>
+            )}
+            {!cardProps.href && StyledCardComponentWithProps}
           </Cell>
         );
       }),

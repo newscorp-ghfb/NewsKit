@@ -2,8 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {CodeFromDefaultPresets} from '../../components/code';
-
-import {AudioPlayer, UnorderedList, Block, Link} from 'newskit';
+import {AudioPlayer, UnorderedList, Block} from 'newskit';
 
 export default Layout;
 
@@ -97,7 +96,7 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       <Prop name="slider" type="SliderOverrideProps">
         If provided overrides the styles of the seek bar slider. The slider
         overrides structure can be found in the{' '}
-        <Link href="/components/slider">slider documentation page</Link>. If player is in live
+        <a href="/components/slider">slider documentation page</a>. If player is in live
         mode, the seek bar slider is not shown and this override is ignored.
       </Prop>
       <Prop name="buffering" type="object">

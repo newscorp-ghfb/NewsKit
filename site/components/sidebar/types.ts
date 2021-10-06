@@ -40,7 +40,3 @@ export interface SectionProps {
   section: SectionPropType;
   activePagePath: string;
 }
-
-export interface SidebarNavProps {
-  path: string;
-}

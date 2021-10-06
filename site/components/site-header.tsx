@@ -15,7 +15,6 @@ import {
   getSpacingCssFromTheme,
   getShadowCssFromTheme,
   getSizingCssFromTheme,
-  Link,
   getStylePresetFromTheme,
   Scroll,
   Block,
@@ -24,6 +23,7 @@ import {NewsKitLogo, NewsKitMobileLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 import routes from '../routes.json';
+import {Link} from './link';
 
 const Header = styled.header`
   flex-shrink: 0;
@@ -74,7 +74,7 @@ const StyledVisible = styled(Visible)`
 `;
 
 const MobileLogo: React.FC = () => (
-  <Link href="/" overrides={{stylePreset: 'inkBase'}}>
+  <Link type="standalone" href="/" overrides={{stylePreset: 'inkBase'}}>
     <NewsKitMobileLogo color="inkBase" />
   </Link>
 );
@@ -117,7 +117,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
         {breakpoint === 'xs' ? (
           <MobileLogo />
         ) : (
-          <Link href="/" overrides={{stylePreset: 'inkBase'}}>
+          <Link type="standalone" href="/" overrides={{stylePreset: 'inkBase'}}>
             <NewsKitLogo />
           </Link>
         )}
@@ -128,6 +128,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
       items.map(({title, id}) => (
         <Block spaceInset="spaceInset010">
           <Link
+            type="standalone"
             href={id}
             overrides={{
               stylePreset: 'linkTopNavigation',
@@ -160,7 +161,11 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               </Visible>
               <Visible md>{renderMobileNavigation(handleSidebarClick)}</Visible>
               <Visible lg xl>
-                <Link href="/" overrides={{stylePreset: 'inkBase'}}>
+                <Link
+                  type="standalone"
+                  href="/"
+                  overrides={{stylePreset: 'inkBase'}}
+                >
                   <NewsKitLogo />
                 </Link>
               </Visible>

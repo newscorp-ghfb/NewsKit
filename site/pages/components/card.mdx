@@ -9,7 +9,6 @@ import {
   Flow,
   Stack,
   StackDistribution,
-  Link,
   UnorderedList,
 } from 'newskit';
 import {CodeFromDefaultPresets, CodeFromFile} from '../../components/code';
@@ -69,7 +68,7 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 
   </Prop>
   <Prop name="media" type="ImageProps | React.ComponentType">
-    If this parameter is provided as <InlineCode>ImageProps</InlineCode> object (see <Link href="/components/image">Image documentation</Link>), it will render the media as an image.<br />
+    If this parameter is provided as <InlineCode>ImageProps</InlineCode> object (see <a href="/components/image">Image documentation</a>), it will render the media as an image.<br />
     If this is provided as a custom React component, it will render the React component directly.
   </Prop>
   <Prop name="mediaInteractive" type="boolean" default={false}>
@@ -80,7 +79,7 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
     <b>NOTE:</b> If necessary, make sure your media element is tabbable  by adding <InlineCode>tabindex</InlineCode> to it.
   </Prop>
   <Prop name="children" type="Exclude<React.ReactNode, 'undefined'>" required>
-    This is the body of the Card. A card requires to have at least a heading. Each element of the body content should be wrapped within a <Link href="/components/layout/block">Block</Link> component
+    This is the body of the Card. A card requires to have at least a heading. Each element of the body content should be wrapped within a <a href="/components/block">Block</a> component
     which is responsible for the spacing between the elements. Refer to the examples below.
   </Prop>
   <Prop name="actions" type="React.ComponentType">
@@ -146,7 +145,7 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
       </>
     </UnorderedList>
     You are still able to override the default <InlineCode>Headline</InlineCode> styles by passing the overides directly to
-    the <Link href="/components/headline">Headline</Link> as shown on the examples below.
+    the <a href="/components/headline">Headline</a> as shown on the examples below.
   </Prop>
 
   <br/>
@@ -174,12 +173,12 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 <CardHorizontalMediumWithoutInset />
 <CodeFromFile path="examples/card/horizontal-card-medium-without-inset.tsx" />
 
-**NOTE:** When you use non-inset card without actions you will need to provide additional spacing to the teaser. Otherwise clipping (overflowing) on the last row might occur due to Line Height Cropping. For more information check <Link href="https://medium.com/eightshapes-llc/cropping-away-negative-impacts-of-line-height-84d744e016ce">this article on medium</Link>
+**NOTE:** When you use non-inset card without actions you will need to provide additional spacing to the teaser. Otherwise clipping (overflowing) on the last row might occur due to Line Height Cropping. For more information check <a href="https://medium.com/eightshapes-llc/cropping-away-negative-impacts-of-line-height-84d744e016ce">this article on medium</a>
 
 ### Interactivity
 
 When the Card component has a `href` property (making it interactive), it is recommended
-to pass the [Headline](/components/headline) as a child,
+to pass the <a href='/components/headline'>Headline</a> as a child,
 inside of the card content area. In this case the Headline will have a link applied to it,
 which will have various interactive states (hover, visited, avtive)
 and the Headline will have new component-defaults applied out of the box - <InlineCode>card.headline.interactive</InlineCode>

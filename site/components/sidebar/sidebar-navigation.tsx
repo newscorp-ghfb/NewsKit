@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import {useRouter} from 'next/router';
 import {Link} from '../link';
 import routes from '../../routes.json';
 import {
@@ -10,7 +11,6 @@ import {
   StyledNavigationSection,
 } from './styled';
 import {
-  SidebarNavProps,
   PageLinkProps,
   NavigationSectionProps,
   SectionProps,
@@ -29,7 +29,11 @@ const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
 
   return (
     <div ref={ref}>
-      <Link href={page.id} overrides={{stylePreset: 'linkNoUnderline'}}>
+      <Link
+        type="standalone"
+        href={page.id}
+        overrides={{stylePreset: 'linkNoUnderline'}}
+      >
         <StyledLinkItem data-testid={page.id} $selected={active}>
           {page.title}
         </StyledLinkItem>
@@ -82,7 +86,9 @@ const Section: React.FC<SectionProps> = ({section, activePagePath}) => (
   </StyledSectionContainer>
 );
 
-export const SidebarNav: React.FC<SidebarNavProps> = ({path}) => {
+export const SidebarNav: React.FC = () => {
+  const path = useRouter().pathname;
+
   const currentRoute = path.match(/\/[A-z\d-]*/g);
   const currentSection =
     currentRoute && routes.filter(({id}) => id === currentRoute[0]);

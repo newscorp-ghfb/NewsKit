@@ -335,6 +335,8 @@ exports[`Table renders links correctly 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #577FFB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-5 svg {
@@ -343,6 +345,8 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-5:hover:not(:disabled) {
   color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-5:hover:not(:disabled) svg {
@@ -351,6 +355,8 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-5:active:not(:disabled) {
   color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-5:active:not(:disabled) svg {

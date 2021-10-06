@@ -2153,7 +2153,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -3263,7 +3263,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -3324,7 +3324,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -3386,7 +3386,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -3820,7 +3820,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -6595,7 +6595,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -7705,7 +7705,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -7766,7 +7766,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -7828,7 +7828,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -8262,7 +8262,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -11037,7 +11037,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -12147,7 +12147,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -12208,7 +12208,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -12270,7 +12270,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -12704,7 +12704,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -15479,7 +15479,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -16589,7 +16589,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -16650,7 +16650,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -16712,7 +16712,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -17146,7 +17146,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -19921,7 +19921,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -21031,7 +21031,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -21092,7 +21092,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -21154,7 +21154,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -21588,7 +21588,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -24363,7 +24363,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -25473,7 +25473,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -25534,7 +25534,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -25596,7 +25596,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -26030,7 +26030,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -28805,7 +28805,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -29915,7 +29915,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -29976,7 +29976,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -30038,7 +30038,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -30472,7 +30472,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -33247,7 +33247,7 @@ Object {
     },
     "contributeCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-contribute.svg)",
+        "backgroundImage": "url(static/landing/feature-card-contribute.svg)",
       },
     },
     "crossIconContainer": Object {
@@ -34357,7 +34357,7 @@ Object {
     },
     "needHelpCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/card-feature-need-help.svg)",
+        "backgroundImage": "url(static/card-feature-need-help.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
@@ -34418,7 +34418,7 @@ Object {
     },
     "patternsCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/feature-card-patterns-16-9.svg)",
+        "backgroundImage": "url(static/feature-card-patterns-16-9.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },
@@ -34480,7 +34480,7 @@ Object {
     },
     "roadmapCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-roadmap.svg)",
+        "backgroundImage": "url(static/landing/feature-card-roadmap.svg)",
       },
     },
     "scrollOverlaysHorizontal": Object {
@@ -34914,7 +34914,7 @@ Object {
     },
     "whatsnewCardMedia": Object {
       "base": Object {
-        "backgroundImage": "url(/static/landing/feature-card-whatsnew.svg)",
+        "backgroundImage": "url(static/landing/feature-card-whatsnew.svg)",
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
       },

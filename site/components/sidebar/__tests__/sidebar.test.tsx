@@ -1,11 +1,14 @@
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import Sidebar from '..';
 
+const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+
+useRouter.mockImplementation(() => ({pathname: '/'}));
+
 describe('Sidebar', () => {
   describe('renders correctly', () => {
     test('when open', () => {
       const fragment = renderToFragmentWithTheme(Sidebar, {
-        path: '/',
         sidebarOpen: true,
         handleSidebarClick: () => {},
       });
@@ -14,7 +17,6 @@ describe('Sidebar', () => {
 
     test('when closed', () => {
       const fragment = renderToFragmentWithTheme(Sidebar, {
-        path: '/',
         sidebarOpen: false,
         handleSidebarClick: () => {},
       });

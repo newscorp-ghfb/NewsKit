@@ -351,7 +351,7 @@ export const stylePresets = {
   },
   contributeCardMedia: {
     base: {
-      backgroundImage: 'url(/static/landing/feature-card-contribute.svg)',
+      backgroundImage: 'url(static/landing/feature-card-contribute.svg)',
     },
   },
   contributeCardButton: {
@@ -441,7 +441,7 @@ export const stylePresets = {
   },
   roadmapCardMedia: {
     base: {
-      backgroundImage: 'url(/static/landing/feature-card-roadmap.svg)',
+      backgroundImage: 'url(static/landing/feature-card-roadmap.svg)',
     },
   },
 
@@ -462,7 +462,7 @@ export const stylePresets = {
   },
   patternsCardMedia: {
     base: {
-      backgroundImage: 'url(/static/feature-card-patterns-16-9.svg)',
+      backgroundImage: 'url(static/feature-card-patterns-16-9.svg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center left',
     },
@@ -559,7 +559,7 @@ export const stylePresets = {
 
   whatsnewCardMedia: {
     base: {
-      backgroundImage: 'url(/static/landing/feature-card-whatsnew.svg)',
+      backgroundImage: 'url(static/landing/feature-card-whatsnew.svg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center left',
     },
@@ -608,7 +608,7 @@ export const stylePresets = {
   },
   needHelpCardMedia: {
     base: {
-      backgroundImage: 'url(/static/card-feature-need-help.svg)',
+      backgroundImage: 'url(static/card-feature-need-help.svg)',
       borderRadius: '{{borders.borderRadiusRounded030}}',
       backgroundSize: 'cover',
       backgroundPosition: 'center left',

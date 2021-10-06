@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Flow,
   IconOutlinedArrowForwardIos,
-  Link,
   Stack,
   StackDistribution,
   StructuredListCell,
@@ -13,6 +12,7 @@ import {
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../components/component-page-template';
+import {Link} from '../../components/link';
 
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -25,7 +25,7 @@ export default (layoutProps: LayoutProps) => (
       type: 'Component',
       name: 'Structured List',
       hero: {
-        src: '/static/button-hero.svg',
+        src: 'static/button-hero.svg',
         alt: 'structured-list-demo-image',
       },
       introduction:

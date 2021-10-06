@@ -2,7 +2,6 @@ import Layout from '../../../components/layout';
 import {Code, CodeFromFile} from '../../../components/code';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {Prop} from '../../../components/prop';
-import {Link} from 'newskit';
 export default Layout;
 
 # Creating Themes
@@ -15,7 +14,7 @@ sensible defaults so the consumer can override as much or as little as they wish
 - NewsKit Light - the default which all themes inherit from.
 - NewsKit Dark - an inverse of the light theme.
 
-You can switch between these two themes on this documentation site by clicking the button in the top right. Details on how to use a theme in your project can be found [here](/theming/using-a-theme).
+You can switch between these two themes on this documentation site by clicking the button in the top right. Details on how to use a theme in your project can be found [here](/foundations/theming/using-a-theme/).
 
 ## createTheme Function
 
@@ -258,6 +257,6 @@ Changing the default border radius of NewsKit elements, such as buttons, to shar
 NewsKit comes with [Material Design's Icon](https://material.io/resources/icons/?style=baseline) filled and outline sets included.
 In some cases, it might be desirable to replace the default icon with a user defined one, for instance if we want to use our own close icon across the system.
 
-Check out the <Link href="/components/others/icons">Icons page</Link> for detailed explanation on how to create custom NewsKit icon.
+Check out the <a href="/components/icons">Icons page</a> for detailed explanation on how to create custom NewsKit icon.
 
 <CodeFromFile path="examples/theming/override-icons.tsx" />

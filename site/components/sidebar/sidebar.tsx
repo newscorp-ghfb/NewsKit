@@ -19,7 +19,6 @@ import {SidebarNav} from './sidebar-navigation';
 import {handleEnterKeyPress} from '../../helpers/a11y';
 
 interface SidebarProps {
-  path: string;
   sidebarOpen: boolean;
   handleSidebarClick: () => void;
   hideSidebar?: boolean;
@@ -67,7 +66,6 @@ const IconWrapper = styled.div`
 `;
 
 const Sidebar: React.FC<SidebarProps> = ({
-  path,
   sidebarOpen,
   handleSidebarClick,
   hideSidebar,
@@ -98,7 +96,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           </LegacyBlock>
         </Visible>
       </Block>
-      <SidebarNav path={path} />
+      <SidebarNav />
     </SidebarWrapper>
 
     <Overlay

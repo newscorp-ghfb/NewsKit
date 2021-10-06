@@ -5,7 +5,7 @@ import {MediaList} from '../media-list';
 const interactiveCard = {
   description: 'interactive card',
   media: {
-    src: '/static/placeholder-16x9.png',
+    src: 'static/placeholder-16x9.png',
     alt: 'Card Media',
   },
   href: '/',

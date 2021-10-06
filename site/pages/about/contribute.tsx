@@ -34,7 +34,7 @@ const WrapperWithPadding = styled.div`
 const cards = [
   {
     media: {
-      src: '../../static/about/contribute/contribute-card-feedback.svg',
+      src: 'static/about/contribute/contribute-card-feedback.svg',
       alt: '',
     },
 
@@ -49,7 +49,7 @@ const cards = [
   },
   {
     media: {
-      src: '../../static/about/contribute/contribute-card-share.svg',
+      src: 'static/about/contribute/contribute-card-share.svg',
       alt: '',
     },
     title: 'Share',
@@ -63,7 +63,7 @@ const cards = [
   },
   {
     media: {
-      src: '../../static/about/contribute/contribute-card-create.svg',
+      src: 'static/about/contribute/contribute-card-create.svg',
       alt: '',
     },
     title: 'Create',
@@ -115,7 +115,7 @@ export default (layoutProps: LayoutProps) => (
       <SectionIntroduction
         title="Feedback"
         image={{
-          src: '/static/about/contribute/contribute-banner-feedback.svg',
+          src: 'static/about/contribute/contribute-banner-feedback.svg',
           alt: '',
         }}
       />
@@ -203,7 +203,7 @@ export default (layoutProps: LayoutProps) => (
       <SectionIntroduction
         title="Share"
         image={{
-          src: '/static/about/contribute/contribute-banner-share.svg',
+          src: 'static/about/contribute/contribute-banner-share.svg',
           alt: '',
         }}
       />
@@ -247,7 +247,7 @@ export default (layoutProps: LayoutProps) => (
       <SectionIntroduction
         title="Create"
         image={{
-          src: '/static/about/contribute/contribute-banner-create.svg',
+          src: 'static/about/contribute/contribute-banner-create.svg',
           alt: '',
         }}
       />

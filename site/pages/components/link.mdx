@@ -68,7 +68,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     <Prop name="externalIcon" type="object">
       <Prop name="size" type="string">
         Allows you to override the default size of the External icon. The value of this prop has to be one of the icon size tokens.
-        E.g: "iconSize030". For more tokens please refer to the <Link href="/components/icons">/components/icons page</Link>.
+        E.g: "iconSize030". For more tokens please refer to the <a href="/components/icons">Icons page</a>.
         <br />
         <br />
         <i>Note: You can also set the icon size by passing it directly as a size prop to the icon,
@@ -79,7 +79,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     </Prop>
        Refer to the defaults below for the object structure:
        <CodeFromDefaultPresets componentName="link" />
-      For more information about how to apply overrides to a component please refer to the <Link href="/theming/component-defaults/overview">Override component defaults</Link> page.
+      For more information about how to apply overrides to a component please refer to the <a href="/foundations/theming/component-defaults">Override component defaults</a> page.
 
   </Prop>
 </LegacyBlock>
@@ -151,7 +151,7 @@ Both the Link and LinkStandalone default stylePresets can be changed via the the
   ]}
 />
 
-For more information on overriding component defaults, see the docs [here](/theming/component-defaults/overview).
+For more information on overriding component defaults, see the docs [here](/foundations/theming/component-defaults/).
 
 ## Rationale
 
@@ -190,7 +190,7 @@ Hover states should have clear contrast change or should include a non colour de
 ## Button as link
 
 In some circumstances, the Button component has the ability to behave as fully working and stylable link.
-All you need to do is pass a href property with valid url. <Link href="/components/button">Button links</Link> can be styled in the same way as a regular Button component.
+All you need to do is pass a href property with valid url. <a href="/components/button">Button links</a> can be styled in the same way as a regular Button component.
 
 ## Variations
 
@@ -201,7 +201,8 @@ Add a link inline style preset token (linkInline, linkInlineInverse) to the over
 
 Note: linkInline is the default Link token, so there is no need to pass it to the overrides.
 
-<Link href="/">Inline link</Link>
+<a href="/">Inline link</a>
+
 <Code>
   {`
 <Link href="/">Inline link</Link>
@@ -209,7 +210,7 @@ Note: linkInline is the default Link token, so there is no need to pass it to th
 </Code>
 
 <LegacyBlock display="inline-block" backgroundColor="black">
- <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>Inline link inverse</Link>
+ <a href="/" overrides={{stylePreset: 'linkInlineInverse'}}>Inline link inverse</a>
 </LegacyBlock>
 <Code>
   {`
@@ -224,7 +225,7 @@ An external link directs users to a page not produced by brand i.e. the website 
 
 Add a link inline style preset token (linkExternal, linkExternalInverse) to the overrides.
 
-<Link href="http://google.com/" overrides={{stylePreset: 'linkExternal'}}>External link with external icon</Link>
+<a href="http://google.com/" overrides={{stylePreset: 'linkExternal'}}>External link with external icon</a>
 <Code>
   {`
 <Link
@@ -237,7 +238,7 @@ Add a link inline style preset token (linkExternal, linkExternalInverse) to the 
 </Code>
 
 <LegacyBlock display="inline-block" backgroundColor="black">
-  <Link href="http://google.com/" overrides={{stylePreset: 'linkExternalInverse'}}>External link with external icon</Link>
+  <a href="http://google.com/" overrides={{stylePreset: 'linkExternalInverse'}}>External link with external icon</a>
 </LegacyBlock>
 <Code>
   {`

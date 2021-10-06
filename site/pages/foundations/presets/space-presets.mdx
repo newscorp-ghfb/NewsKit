@@ -2,7 +2,6 @@ import Layout from '../../../components/layout';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {Image} from 'newskit';
 import {Prop} from '../../../components/prop';
-import {Link, LinkStandalone} from 'newskit';
 
 export default Layout;
 
@@ -17,7 +16,7 @@ Sizing tokens are used to build spacing presets. Avoid using generic sizing toke
 However, when established concepts don’t meet your needs – or you are overriding or extending a concept for a special case – use these recognisable, generic variables to persist spatial concepts and maintenance in code.
 
 <LegacyBlock marginBottom="sizing050" maxWidth="760px" backgroundColor="white">
-  <Image src="/static/examples/spacing/generic1.png" alt="Generic Spacing" />
+  <Image src="static/examples/spacing/generic1.png" alt="Generic Spacing" />
 </LegacyBlock>
 
 ### Values
@@ -45,7 +44,7 @@ An inset is the space within a container from which elements —typography, imag
 By default, a component’s inset should be equal on all four sides.
 
 <LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
-  <Image src="/static/examples/spacing/inset1.png" alt="Inset Spacing" />
+  <Image src="static/examples/spacing/inset1.png" alt="Inset Spacing" />
 </LegacyBlock>
 
 ### Values
@@ -69,7 +68,7 @@ A squish inset reduces top and bottom padding relative to the default inset spac
 
 <LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
   <Image
-    src="/static/examples/spacing/squish-inset1.png"
+    src="static/examples/spacing/squish-inset1.png"
     alt="Squish Spacing"
   />
 </LegacyBlock>
@@ -94,7 +93,7 @@ A stretched inset increases top and bottom padding relative to the default inset
 
 <LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
   <Image
-    src="/static/examples/spacing/stretch-inset1.png"
+    src="static/examples/spacing/stretch-inset1.png"
     alt="Stretch Spacing"
   />
 </LegacyBlock>
@@ -121,13 +120,13 @@ This allows components to apply spacing as best appropriate. For example if a co
 An example of space token used for vertical spacing between elements:
 
 <LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
-<Image src="/static/examples/spacing/stacking1.png" alt="Stack Spacing" />
+<Image src="static/examples/spacing/stacking1.png" alt="Stack Spacing" />
 </LegacyBlock>
 
 An example of space token used for horizontal spacing between elements:
 
 <LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
-<Image src="/static/examples/spacing/inline1.png" alt="Inline Spacing" />
+<Image src="static/examples/spacing/inline1.png" alt="Inline Spacing" />
 </LegacyBlock>
 
 ### Values
@@ -153,14 +152,14 @@ Apply spacing tokens to the margin property.
 
 
 ## Spacing object keys
-In the <Link href="/theming/component-defaults">component defaults or overrides objects</Link>, the aforementioned spacing tokens are mapped to the following keys: spaceInline, spaceStack and spaceInset.
+In the <a href="/foundations/theming/component-defaults">component defaults or overrides objects</a>, the aforementioned spacing tokens are mapped to the following keys: spaceInline, spaceStack and spaceInset.
 
 ### spaceInline in horizontal flow:
 This places a space inline token value as horizontal margin (left/right) CSS property.
 When flow is horizontal inline spacing is the space between items in direction of flow (column gap).
 
 <LegacyBlock>
-    <Image src="/static/examples/spacing/get-spaceinline-horizontal.png" alt="SpaceInline Horizontal" />
+    <Image src="static/examples/spacing/get-spaceinline-horizontal.png" alt="SpaceInline Horizontal" />
 </LegacyBlock>
 
 ### spaceInline in vertical flow:
@@ -168,7 +167,7 @@ This places a space inline token value as vertical margin (top/bottom) CSS prope
 When flow is vertical, inline spacing is the space between items in direction of flow (row gap).
 
 <LegacyBlock >
-    <Image src="/static/examples/spacing/get-spaceinline-vertical.png" alt="SpaceInline Vertical" />
+    <Image src="static/examples/spacing/get-spaceinline-vertical.png" alt="SpaceInline Vertical" />
 </LegacyBlock>
 
 
@@ -178,7 +177,7 @@ When flow is horizontal, stack spacing is the space between items perpendicular 
 This is only to be applied when items are allowed to wrap.
 
 <LegacyBlock>
-    <Image src="/static/examples/spacing/get-spacingstack-horizontal.png" alt="SpaceStack Horizontal" />
+    <Image src="static/examples/spacing/get-spacingstack-horizontal.png" alt="SpaceStack Horizontal" />
 </LegacyBlock>
 
 ### spaceStack in vertical flow:
@@ -187,7 +186,7 @@ When flow is vertical, stack spacing is the space between items perpendicular to
 This is only to be applied when items are allowed to wrap.
 
 <LegacyBlock  >
-    <Image src="/static/examples/spacing/get-spacingstack-vertical.png" alt="SpaceStack Vertical" />
+    <Image src="static/examples/spacing/get-spacingstack-vertical.png" alt="SpaceStack Vertical" />
 </LegacyBlock>
 
 

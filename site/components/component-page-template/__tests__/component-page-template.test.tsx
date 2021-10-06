@@ -46,7 +46,7 @@ const mandatoryProps: ComponentPageTemplateProps = {
   pageIntroduction: {
     type: 'Component',
     name: 'ComponentName',
-    hero: {src: '/static/component-hero.svg', alt: 'component-image'},
+    hero: {src: 'static/component-hero.svg', alt: 'component-image'},
     introduction: 'Component Introduction',
   },
   meta: {

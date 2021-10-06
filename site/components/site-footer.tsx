@@ -9,7 +9,6 @@ import {
   getSizingCssFromTheme,
   getMediaQueryFromTheme,
   styled,
-  Link as NewsKitLink,
   TextBlock,
   CellProps,
   Block,
@@ -124,25 +123,25 @@ const SiteFooter: React.FC<FooterProps> = ({
               </ConsentSettingsLink>
             </FooterLink>
             <FooterLink>
-              <NewsKitLink
+              <Link
                 href="https://medium.com/newskit-design-system"
                 target="_blank"
                 external={false}
                 overrides={{stylePreset: 'linkFooter'}}
               >
                 Blog
-              </NewsKitLink>
+              </Link>
             </FooterLink>
 
             <FooterLink>
-              <NewsKitLink
+              <Link
                 href="https://www.newscareers.co.uk/"
                 target="_blank"
                 external={false}
                 overrides={{stylePreset: 'linkFooter'}}
               >
                 Careers
-              </NewsKitLink>
+              </Link>
             </FooterLink>
           </FooterMenu>
         </Cell>

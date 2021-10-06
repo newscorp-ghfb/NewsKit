@@ -65,7 +65,7 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.18.7",
+    "@applitools/eyes-cypress": "^3.22.3",
     "@applitools/eyes-storybook": "3.17.0",
     "@babel/core": "^7.13.15",
     "@babel/parser": "^7.14.6",

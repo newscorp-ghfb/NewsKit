@@ -4,6 +4,8 @@ import {
 } from '../../../utils/test-utils';
 import {SidebarNav} from '..';
 
+const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+
 const scrollIntoViewMock = jest.fn();
 Element.prototype.scrollIntoView = scrollIntoViewMock;
 
@@ -62,34 +64,34 @@ jest.mock('../../../routes.json', () => [
 
 describe('Sidebar navigation', () => {
   test('should match snapshot with no active link', () => {
-    expect(
-      renderToFragmentWithTheme(SidebarNav, {path: '/'}),
-    ).toMatchSnapshot();
+    useRouter.mockImplementationOnce(() => ({pathname: '/'}));
+
+    expect(renderToFragmentWithTheme(SidebarNav)).toMatchSnapshot();
   });
 
   test('should render only routes under current section', () => {
-    expect(
-      renderToFragmentWithTheme(SidebarNav, {path: '/group1'}),
-    ).toMatchSnapshot();
+    useRouter.mockImplementationOnce(() => ({pathname: '/group1'}));
+
+    expect(renderToFragmentWithTheme(SidebarNav)).toMatchSnapshot();
   });
 
   test('should match snapshot with active link', () => {
-    expect(
-      renderToFragmentWithTheme(SidebarNav, {path: '/group1/page1'}),
-    ).toMatchSnapshot();
+    useRouter.mockImplementationOnce(() => ({pathname: '/group1/page1'}));
+    expect(renderToFragmentWithTheme(SidebarNav)).toMatchSnapshot();
   });
 
   test('should invoke scrollIntoView only when link is active', () => {
     jest.clearAllMocks();
+    useRouter.mockImplementationOnce(() => ({pathname: '/group1/page1'}));
 
-    renderWithTheme(SidebarNav, {path: '/group1/page1'});
+    renderWithTheme(SidebarNav);
     expect(scrollIntoViewMock).toHaveBeenCalledTimes(1);
   });
 
   test('should not invoke scrollIntoView when link is inactive', () => {
     jest.clearAllMocks();
-
-    renderWithTheme(SidebarNav, {path: '/'});
+    useRouter.mockImplementationOnce(() => ({pathname: '/'}));
+    renderWithTheme(SidebarNav);
     expect(scrollIntoViewMock).toHaveBeenCalledTimes(0);
   });
 });

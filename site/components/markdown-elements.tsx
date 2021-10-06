@@ -2,7 +2,6 @@
 /* istanbul ignore file */
 import * as React from 'react';
 import {
-  Link as StyledLink,
   styled,
   css,
   getTypographyPresetFromTheme,
@@ -11,6 +10,7 @@ import {
 } from 'newskit';
 import {LegacyBlock} from './legacy-block';
 import slugify from '../helpers/slugify';
+import {Link} from './link';
 
 export interface TextProps {
   children: React.ReactNode;
@@ -185,14 +185,14 @@ const SectionLink = styled.a<{offset?: number}>`
   visibility: hidden;
 `;
 
-export const DocLink: React.FC<DocLinkProps> = ({children, href}) => {
+export const DocLink: React.FC<DocLinkProps> = ({children, href, ...rest}) => {
   const parts = href.split('#');
   const internal =
     (parts[0] === '' && parts[1] !== '') || !href.includes('http');
   return (
-    <StyledLink href={href} {...(internal ? {} : {target: '_blank'})}>
+    <Link {...(internal ? {} : {target: '_blank'})} href={href} {...rest}>
       {children}
-    </StyledLink>
+    </Link>
   );
 };
 
