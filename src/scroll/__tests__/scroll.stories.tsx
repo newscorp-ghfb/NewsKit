@@ -7,6 +7,7 @@ import {Block} from '../../block';
 import {Image} from '../../image';
 import {createTheme, ThemeProvider} from '../../theme';
 import {getSSRId} from '../../utils';
+import {Button} from '../../button';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-scroll-theme',
@@ -282,3 +283,43 @@ export const StoryScrollBar = () => (
   </MainContainer>
 );
 StoryScrollBar.storyName = 'scroll-bar';
+
+export const StoryResetScrollPosition = () => {
+  const scrollRef = React.useRef<HTMLDivElement>(null);
+
+  const scrollToStart = () => {
+    const scrollElement = scrollRef.current;
+    if (scrollElement) {
+      scrollElement.scrollLeft = 0;
+    }
+  };
+
+  const scrollToMiddle = () => {
+    const scrollElement = scrollRef.current;
+    if (scrollElement) {
+      scrollElement.scrollLeft = 100;
+    }
+  };
+
+  const scrollToEnd = () => {
+    const scrollElement = scrollRef.current;
+    if (scrollElement) {
+      scrollElement.scrollLeft = 999;
+    }
+  };
+
+  return (
+    <MainContainer>
+      <StorybookSubHeading>Reset scroll position with ref</StorybookSubHeading>
+      <Container>
+        <Scroll scrollBar ref={scrollRef}>
+          <Stack flow="horizontal-top">{tags}</Stack>
+        </Scroll>
+      </Container>
+      <Button onClick={() => scrollToStart()}>Start</Button>
+      <Button onClick={() => scrollToMiddle()}>Middle</Button>
+      <Button onClick={() => scrollToEnd()}>End</Button>
+    </MainContainer>
+  );
+};
+StoryResetScrollPosition.storyName = 'reset-scroll-position';
