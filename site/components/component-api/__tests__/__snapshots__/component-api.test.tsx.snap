@@ -832,7 +832,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-35>* {
+.emotion-35>*:not(style) {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;

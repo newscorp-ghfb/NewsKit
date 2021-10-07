@@ -110,7 +110,7 @@ export const StyledDistributionWrapper = styled.div<DistributionWrapperProps>`
     )}
 
   // adds 100% width to ScrollSnapAlignment component
-  > * {
+  > *:not(style) {
     width: 100%;
     display: flex;
   }

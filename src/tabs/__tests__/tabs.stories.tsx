@@ -966,6 +966,8 @@ export const StoryTabsWithPresetsOverrides = () => (
     </ThemeProvider>
   </React.Fragment>
 );
+StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
+
 export const StoryTabsWithPresetsOverridesShadows = () => {
   const CustomScroll = styled.div`
     max-width: 100%;
