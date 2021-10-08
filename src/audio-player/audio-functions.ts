@@ -202,13 +202,14 @@ export const useAudioFunctions = ({
     [setBuffered, setDuration, setDisplayDuration],
   );
 
-  const play = () => {
+  const play = useCallback(() => {
     ifPlayer(player => {
       setPlayState(true);
       player.play();
     });
-  };
-  const onPlay = () => {
+  }, [ifPlayer, setPlayState]);
+
+  const onPlay = useCallback(() => {
     if (autoPlay) {
       fireEvent(
         getTrackingInformation('audio-player-audio', EventTrigger.Start),
@@ -222,15 +223,16 @@ export const useAudioFunctions = ({
         getTrackingInformation('audio-player-play-button', EventTrigger.Click),
       );
     }
-  };
+  }, [autoPlay, fireEvent, playing, getTrackingInformation, play]);
 
-  const pause = () => {
+  const pause = useCallback(() => {
     ifPlayer(player => {
       setPlayState(false);
       player.pause();
     });
-  };
-  const onPause = () => {
+  }, [ifPlayer, setPlayState]);
+
+  const onPause = useCallback(() => {
     if (playing) {
       pause();
 
@@ -241,7 +243,7 @@ export const useAudioFunctions = ({
         ),
       );
     }
-  };
+  }, [playing, pause, fireEvent, live, getTrackingInformation]);
 
   const onPopoutClick = () => {
     pause();
@@ -251,7 +253,7 @@ export const useAudioFunctions = ({
     );
   };
 
-  const togglePlay = () => {
+  const togglePlay = useCallback(() => {
     if (loading) {
       return;
     }
@@ -261,7 +263,7 @@ export const useAudioFunctions = ({
     } else {
       onPlay();
     }
-  };
+  }, [loading, playing, onPause, onPlay]);
 
   const onProgress = ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
     setBuffered((target as HTMLAudioElement).buffered);
