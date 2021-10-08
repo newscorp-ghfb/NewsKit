@@ -82,9 +82,7 @@ export default (layoutProps: LayoutProps) => (
                   )
                 }
                 actions={actions && [playGroundActions]}
-                onClose={
-                  onClose ? () => console.log('onClose event') : undefined
-                }
+                onClose={onClose}
               />
             </PlaygroundContainer>
           );

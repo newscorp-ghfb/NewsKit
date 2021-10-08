@@ -32,7 +32,7 @@ install:
 	yarn install --frozen-lockfile
 
 install_cypress:
-	yarn global add cypress@6.2.1;
+	yarn add -D cypress@6.2.1;
 
 build_icons:
 	yarn build:icons:ci

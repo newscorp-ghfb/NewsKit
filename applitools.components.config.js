@@ -10,6 +10,5 @@ module.exports = {
   ],
   concurrency: 100,
   viewportSize: {width: 1027, height: 768},
-  waitBeforeScreenshot: 5000,
   dontCloseBatches: true,
 };

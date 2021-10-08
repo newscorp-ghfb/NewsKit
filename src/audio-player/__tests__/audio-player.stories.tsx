@@ -135,6 +135,7 @@ const myCustomTheme = createTheme({
 export default {
   title: 'NewsKit Light/audio-player',
   component: () => 'None',
+  parameters: {eyes: {waitBeforeScreenshot: 10000}},
 };
 
 export const StoryAudioPlayer = () => (
@@ -239,6 +240,7 @@ export const StoryAudioPlayer = () => (
   </>
 );
 StoryAudioPlayer.storyName = 'audio-player';
+StoryAudioPlayer.parameters = {eyes: {waitBeforeScreenshot: 10000}};
 
 export const StoryRecordedAudioPlayerWithOnplay = () => (
   <AudioPlayerContainer>
@@ -255,6 +257,9 @@ export const StoryRecordedAudioPlayerWithOnplay = () => (
 );
 StoryRecordedAudioPlayerWithOnplay.storyName =
   'recorded-audio-player-with-onPlay';
+StoryRecordedAudioPlayerWithOnplay.parameters = {
+  eyes: {waitBeforeScreenshot: 5000},
+};
 
 export const StoryRecordedWithControls = () => (
   <>
@@ -290,3 +295,4 @@ export const StoryRecordedWithControls = () => (
   </>
 );
 StoryRecordedWithControls.storyName = 'recorded-with-controls';
+StoryRecordedWithControls.parameters = {eyes: {waitBeforeScreenshot: 10000}};

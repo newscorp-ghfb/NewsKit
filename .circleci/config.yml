@@ -233,7 +233,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: yarn-build-v1-{{ checksum "yarn.lock" }}
+          keys:
+            - yarn-build-v1-{{ checksum "yarn.lock" }}
+            - yarn-build-v1-
       - run:
           name: Dependencies Install
           command: make install
@@ -254,6 +256,9 @@ jobs:
     executor: cypress
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
       - run:
@@ -323,7 +328,7 @@ jobs:
 
   build_docs:
     <<: *working_directory
-    executor: node
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
@@ -357,7 +362,7 @@ jobs:
 
   build_docs_pr:
     <<: *working_directory
-    executor: node
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
@@ -557,7 +562,6 @@ jobs:
       - run:
           name: Run Applitools Storybook Component Tests
           command: make comps_visual_test
-          no_output_timeout: 15m
       - run:
           name: Close the Applitools Batch
           command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
@@ -569,9 +573,6 @@ jobs:
     executor: cypress
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
       - run:
@@ -595,9 +596,6 @@ jobs:
     executor: cypress
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
       - run:
@@ -615,9 +613,6 @@ jobs:
     executor: cypress
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
       - run:
@@ -957,7 +952,7 @@ workflows:
           <<: *ignore_trigger_release
           <<: *require_dep
           requires:
-            - build_components
+            - build_icons
       - build_test_e2e:
           <<: *ignore_trigger_release
           <<: *require_dep
@@ -1053,8 +1048,8 @@ workflows:
           <<: *only_pr
           name: build_docs_pr
           context: ncu-newskit-site-dev
-          requires:
-            - build_components
+          requires: 
+            - build_icons
       - push_s3:
           <<: *only_pr
           name: deploy_to_s3
@@ -1068,17 +1063,19 @@ workflows:
       - approve_publish_npm_dev:
           type: approval
           <<: *only_pr_and_develop
+          requires:
+            - build_components
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs
       - publish_npm:
           <<: *only_pr_and_develop
           name: publish_npm_dev
           context: ncu-product-platforms-context
           publish_dev: true
           requires:
-            - lint
-            - test_unit_comps
-            - test_unit_docs
-            - test_e2e_comps
-            - test_e2e_docs
             - approve_publish_npm_dev
 
       # develop jobs
