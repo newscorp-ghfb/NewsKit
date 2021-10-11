@@ -354,7 +354,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 ...filterOutFalsyProperties(seekBarSliderOverrides),
               }}
             />
-            <ScreenReaderOnly id={srOnlyForwardRewind}>
+            <ScreenReaderOnly id={srOnlyForwardRewind} aria-hidden="true">
               Use the arrow keys to fast forward or rewind
             </ScreenReaderOnly>
           </Cell>

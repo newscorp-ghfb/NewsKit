@@ -159,7 +159,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
           },
         }}
       />
-      <ScreenReaderOnly id={srOnlyVolumeControl}>
+      <ScreenReaderOnly id={srOnlyVolumeControl} aria-hidden="true">
         Use the arrow keys to adjust volume
       </ScreenReaderOnly>
     </React.Fragment>

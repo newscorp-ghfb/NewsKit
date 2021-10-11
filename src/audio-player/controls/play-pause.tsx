@@ -1,12 +1,18 @@
 import React from 'react';
 import {IconButton} from '../../icon-button';
-import {ButtonSize, ButtonProps} from '../../button/types';
+import {ButtonSize, ButtonProps, IconButtonProps} from '../../button/types';
 import {
   IconFilledPlayArrow,
   IconFilledPause,
   IconFilledStop,
 } from '../../icons';
+import {styled} from '../../utils';
 
+export const IconVisibilityButton = styled(IconButton)<
+  IconButtonProps & {hide?: boolean}
+>`
+  ${props => props.hide && 'opacity: 0; pointer-events: none;'}
+`;
 export interface PlayerButtonProps {
   playing: boolean;
   canPause: boolean;

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {AudioPlayer} from '..';
 import {styled} from '../../utils/style';
 import {createTheme, ThemeProvider} from '../../theme';
@@ -295,4 +295,51 @@ export const StoryRecordedWithControls = () => (
   </>
 );
 StoryRecordedWithControls.storyName = 'recorded-with-controls';
+
+export const StoryRecordedWithHiddenControls = () => (
+  <>
+    <StorybookHeading>Recored Audio Player</StorybookHeading>
+    <StorybookSubHeading>with hidden volumne controls</StorybookSubHeading>
+    <AudioPlayerContainer>
+      <AudioPlayer
+        {...recordedAudioProps}
+        onNextTrack={alert('Next track clicked!')}
+        onPreviousTrack={alert('Previous track clicked!')}
+        ariaLandmark="audio player with hidden volumne controls"
+        hideVolumeControl
+      />
+    </AudioPlayerContainer>
+    <StorybookSubHeading>with hidden previous track button</StorybookSubHeading>
+    <AudioPlayerContainer>
+      <AudioPlayer
+        {...recordedAudioProps}
+        hidePreviousTrack
+        ariaLandmark="audio player with hidden previous track"
+        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+      />
+    </AudioPlayerContainer>
+    <StorybookSubHeading>with hidden seek buttons</StorybookSubHeading>
+    <AudioPlayerContainer>
+      <AudioPlayer
+        {...recordedAudioProps}
+        onNextTrack={() => {}}
+        onPreviousTrack={() => {}}
+        disableNextTrack
+        disablePreviousTrack
+        hideSeekButtons
+        ariaLandmark="audio player with hidden seek buttons"
+      />
+    </AudioPlayerContainer>
+    <StorybookSubHeading>with hide all controls</StorybookSubHeading>
+    <AudioPlayerContainer>
+      <AudioPlayer
+        {...recordedAudioProps}
+        hidePreviousTrack
+        hideSeekButtons
+        ariaLandmark="audio player with all hidden"
+      />
+    </AudioPlayerContainer>
+  </>
+);
+StoryRecordedWithHiddenControls.storyName = 'recorded-with-hidden-controls';
 StoryRecordedWithControls.parameters = {eyes: {waitBeforeScreenshot: 10000}};

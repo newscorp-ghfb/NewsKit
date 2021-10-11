@@ -100,21 +100,23 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
         </StackChild>
 
         <StackChild order={1}>
-          {showControls && onPreviousTrack && (
+          {showControls && (
             <SkipPreviousButton
               onClick={onPreviousTrack}
-              disabled={disablePreviousTrack}
+              disabled={disablePreviousTrack || !onPreviousTrack}
               overrides={overrides && overrides.previousButton}
+              hide={!onPreviousTrack}
             />
           )}
         </StackChild>
 
-        <StackChild order={5}>
-          {showControls && onNextTrack && (
+        <StackChild order={3}>
+          {showControls && (
             <SkipNextButton
               onClick={onNextTrack}
-              disabled={disableNextTrack}
+              disabled={disableNextTrack || !onNextTrack}
               overrides={overrides && overrides.nextButton}
+              hide={!onNextTrack}
             />
           )}
         </StackChild>
