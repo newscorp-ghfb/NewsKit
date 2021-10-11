@@ -3,20 +3,13 @@ resource "aws_route53_zone" "newskit" {
   tags = local.tags
 }
 
-resource "aws_route53_record" "newskit" {
+resource "aws_route53_record" "cdn" {
+  for_each = var.domain_mapping
   zone_id  = aws_route53_zone.newskit.zone_id
   name     = each.key
   type     = "CNAME"
   ttl      = "360"
-  records  = [var.distribution_domain_name_mapping["newskit"]]
-}
-
-resource "aws_route53_record" "storybook" {
-  zone_id  = aws_route53_zone.newskit.zone_id
-  name     = each.key
-  type     = "CNAME"
-  ttl      = "360"
-  records  = [var.distribution_domain_name_mapping["storybook"]]
+  records  = [var.distribution_domain_name]
 }
 
 resource "aws_route53_record" "origin" {

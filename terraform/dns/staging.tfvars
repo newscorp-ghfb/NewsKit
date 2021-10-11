@@ -8,4 +8,5 @@ cert = {
   "_0f7bea9fcbfa6accda5f1617c2c2a354.www.newskit.staging-news.co.uk" = "_8fcc15c1c23296f118feccd663a306da.vjldqjsdcd.acm-validations.aws."
   "_21a4be1089c41a276fd70384b4c8f49d.storybook.newskit.staging-news.co.uk" = "_d54122f03af437c83094fbd30d6364b8.bwlshdtstt.acm-validations.aws."
   "_7545a937ba2bf2b1dd7834811c16c539.www.storybook.newskit.staging-news.co.uk" = "_3f9f7d955f8191ed8e1d71aee1b0d72c.bwlshdtstt.acm-validations.aws."
+
 }
