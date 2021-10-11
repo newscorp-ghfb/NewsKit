@@ -13,7 +13,7 @@ export interface FormError extends Object {
 }
 
 export interface FormProps {
-  children: Array<React.ReactNode> | React.ReactNode;
+  children: React.ReactNode;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onSubmit: SubmitHandler<Record<string, any>>;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
