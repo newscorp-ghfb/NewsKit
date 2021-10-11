@@ -785,6 +785,13 @@ Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
     },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
+    },
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
@@ -5226,6 +5233,13 @@ Object {
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
+    },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
     },
     "inlineMessage": Object {
       "content": Object {
@@ -9669,6 +9683,13 @@ Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
     },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
+    },
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
@@ -14110,6 +14131,13 @@ Object {
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
+    },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
     },
     "inlineMessage": Object {
       "content": Object {
@@ -18553,6 +18581,13 @@ Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
     },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
+    },
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
@@ -22994,6 +23029,13 @@ Object {
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
+    },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
     },
     "inlineMessage": Object {
       "content": Object {
@@ -27437,6 +27479,13 @@ Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
     },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
+    },
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
@@ -31878,6 +31927,13 @@ Object {
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
+    },
+    "inlineDrawer": Object {
+      "__extends": "{{componentDefaults.drawer}}",
+      "panel": Object {
+        "__extends": "{{componentDefaults.drawer.panel}}",
+        "maxSize": "auto",
+      },
     },
     "inlineMessage": Object {
       "content": Object {

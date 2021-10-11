@@ -11,12 +11,17 @@ import {BaseDialogViewProps} from './types';
 
 type BaseDialogViewOverridesAndPathProps = Pick<
   BaseDialogViewProps,
-  'path' | 'overrides'
->;
+  'path' | 'overrides' | 'inline'
+> & {$open?: boolean};
 
 export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>`
   box-sizing: border-box;
-  position: fixed;
+  ${({inline}) => ({
+    position: inline ? 'absolute' : 'fixed',
+  })}
+  ${({$open}) => ({
+    pointerEvents: $open ? undefined : 'none',
+  })}
   ${({path}) =>
     getResponsiveSpace('zIndex', `${path}.panel`, 'panel', 'zIndex')}
   overflow: hidden;

@@ -1,4 +1,21 @@
 export const componentDefaults = {
+  assistiveText: {
+    small: {
+      stylePreset: 'assistiveText',
+      typographyPreset: 'utilityLabel020',
+      minHeight: 'sizing030',
+    },
+    medium: {
+      stylePreset: 'assistiveText',
+      typographyPreset: 'utilityLabel020',
+      minHeight: 'sizing030',
+    },
+    large: {
+      stylePreset: 'assistiveText',
+      typographyPreset: 'utilityLabel030',
+      minHeight: 'sizing030',
+    },
+  },
   audioPlayer: {
     seekBar: {
       slider: {
@@ -124,19 +141,6 @@ export const componentDefaults = {
       },
     },
   },
-  byline: {
-    stylePreset: 'inkSubtle',
-    typographyPreset: 'utilityMeta020',
-    spaceStack: 'space020',
-    link: {
-      stylePreset: 'linkInline',
-      typographyPreset: 'utilityMeta020',
-    },
-    divider: {
-      stylePreset: 'inkNonEssential',
-      spaceInline: 'space020',
-    },
-  },
   button: {
     small: {
       typographyPreset: 'utilityButton010',
@@ -173,6 +177,19 @@ export const componentDefaults = {
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
+    },
+  },
+  byline: {
+    stylePreset: 'inkSubtle',
+    typographyPreset: 'utilityMeta020',
+    spaceStack: 'space020',
+    link: {
+      stylePreset: 'linkInline',
+      typographyPreset: 'utilityMeta020',
+    },
+    divider: {
+      stylePreset: 'inkNonEssential',
+      spaceInline: 'space020',
     },
   },
   caption: {
@@ -344,41 +361,6 @@ export const componentDefaults = {
       spaceInset: 'spaceInset020',
     },
   },
-  modal: {
-    overlay: {
-      zIndex: 70,
-      transitionPreset: 'fade',
-    },
-    panel: {
-      zIndex: 80,
-      stylePreset: 'modalPanel',
-      // transitionPreset: ['fade', 'moveUp', 'grow'], // uncomment this line when working on PPDSC-1809
-      transitionPreset: ['fade'],
-      topOffset: '20vh',
-      width: {
-        xs: '90vw',
-        sm: '60vw',
-        md: '45vw',
-        lg: '38vw',
-        xl: '31vw',
-      },
-      minHeight: '15vh',
-      maxHeight: {
-        xs: '95vh',
-        md: '80vh',
-      },
-    },
-    header: {
-      spaceInset: 'spaceInsetSquish040',
-    },
-    content: {
-      spaceInset: 'spaceInset050',
-    },
-    closeButton: {
-      stylePreset: 'iconButtonMinimalSecondary',
-      spaceInset: 'spaceInset020',
-    },
-  },
   flag: {
     small: {
       typographyPreset: 'utilityLabel010',
@@ -526,6 +508,51 @@ export const componentDefaults = {
     stylePreset: 'iconDefault',
     size: 'iconSize020',
   },
+  inlineDrawer: {
+    __extends: '{{componentDefaults.drawer}}',
+    panel: {
+      __extends: '{{componentDefaults.drawer.panel}}',
+      maxSize: 'auto',
+    },
+  },
+  inlineMessage: {
+    stylePreset: 'inlineMessageInformative',
+    spaceInset: 'spaceInset030',
+    icon: {
+      spaceInline: 'space030',
+    },
+    content: {
+      title: {
+        spaceStack: 'space030',
+        stylePreset: 'inkContrast',
+        typographyPreset: 'utilityHeading010',
+      },
+      message: {
+        stylePreset: 'inkBase',
+        typographyPreset: 'utilityBody010',
+      },
+    },
+  },
+  label: {
+    small: {
+      stylePreset: 'label',
+      typographyPreset: 'utilityLabel030',
+      spaceStack: 'space040',
+      spaceInline: 'space010',
+    },
+    medium: {
+      stylePreset: 'label',
+      typographyPreset: 'utilityLabel030',
+      spaceStack: 'space040',
+      spaceInline: 'space010',
+    },
+    large: {
+      stylePreset: 'label',
+      typographyPreset: 'utilityLabel030',
+      spaceStack: 'space040',
+      spaceInline: 'space010',
+    },
+  },
   link: {
     stylePreset: 'linkInline',
     spaceInline: 'space010',
@@ -539,6 +566,14 @@ export const componentDefaults = {
   },
   menu: {
     spaceInline: 'space020',
+  },
+  menuGroup: {
+    spaceInline: 'space050',
+    title: {
+      typographyPreset: 'utilityHeading030',
+      stylePreset: 'inkSubtle',
+      spaceInline: 'space050',
+    },
   },
   menuItem: {
     horizontal: {
@@ -554,12 +589,39 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish030',
     },
   },
-  menuGroup: {
-    spaceInline: 'space050',
-    title: {
-      typographyPreset: 'utilityHeading030',
-      stylePreset: 'inkSubtle',
-      spaceInline: 'space050',
+  modal: {
+    overlay: {
+      zIndex: 70,
+      transitionPreset: 'fade',
+    },
+    panel: {
+      zIndex: 80,
+      stylePreset: 'modalPanel',
+      // transitionPreset: ['fade', 'moveUp', 'grow'], // uncomment this line when working on PPDSC-1809
+      transitionPreset: ['fade'],
+      topOffset: '20vh',
+      width: {
+        xs: '90vw',
+        sm: '60vw',
+        md: '45vw',
+        lg: '38vw',
+        xl: '31vw',
+      },
+      minHeight: '15vh',
+      maxHeight: {
+        xs: '95vh',
+        md: '80vh',
+      },
+    },
+    header: {
+      spaceInset: 'spaceInsetSquish040',
+    },
+    content: {
+      spaceInset: 'spaceInset050',
+    },
+    closeButton: {
+      stylePreset: 'iconButtonMinimalSecondary',
+      spaceInset: 'spaceInset020',
     },
   },
   orderedList: {
@@ -661,6 +723,11 @@ export const componentDefaults = {
       },
     },
   },
+  structuredList: {
+    divider: {
+      stylePreset: 'divider',
+    },
+  },
   structuredListItem: {
     stylePreset: 'structuredListItem',
     spaceInset: 'spaceInsetStretch040',
@@ -668,11 +735,6 @@ export const componentDefaults = {
     icon: {
       size: 'iconSize010',
       stylePreset: 'inkContrast',
-    },
-  },
-  structuredList: {
-    divider: {
-      stylePreset: 'divider',
     },
   },
   tab: {
@@ -716,40 +778,29 @@ export const componentDefaults = {
       },
     },
   },
-  assistiveText: {
+  tag: {
     small: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityLabel020',
-      minHeight: 'sizing030',
-    },
-    medium: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityLabel020',
-      minHeight: 'sizing030',
-    },
-    large: {
-      stylePreset: 'assistiveText',
-      typographyPreset: 'utilityLabel030',
-      minHeight: 'sizing030',
-    },
-  },
-  label: {
-    small: {
-      stylePreset: 'label',
-      typographyPreset: 'utilityLabel030',
-      spaceStack: 'space040',
+      typographyPreset: 'utilityLabel010',
+      stylePreset: 'tagPrimary',
+      spaceInset: 'spaceInsetSquish010',
+      minHeight: 'sizing050',
+      iconSize: 'iconSize010',
       spaceInline: 'space010',
     },
     medium: {
-      stylePreset: 'label',
-      typographyPreset: 'utilityLabel030',
-      spaceStack: 'space040',
+      typographyPreset: 'utilityLabel020',
+      stylePreset: 'tagPrimary',
+      spaceInset: 'spaceInsetSquish020',
+      minHeight: 'sizing060',
+      iconSize: 'iconSize010',
       spaceInline: 'space010',
     },
     large: {
-      stylePreset: 'label',
       typographyPreset: 'utilityLabel030',
-      spaceStack: 'space040',
+      stylePreset: 'tagPrimary',
+      spaceInset: 'spaceInsetSquish020',
+      minHeight: 'sizing070',
+      iconSize: 'iconSize020',
       spaceInline: 'space010',
     },
   },
@@ -889,32 +940,6 @@ export const componentDefaults = {
       },
     },
   },
-  tag: {
-    small: {
-      typographyPreset: 'utilityLabel010',
-      stylePreset: 'tagPrimary',
-      spaceInset: 'spaceInsetSquish010',
-      minHeight: 'sizing050',
-      iconSize: 'iconSize010',
-      spaceInline: 'space010',
-    },
-    medium: {
-      typographyPreset: 'utilityLabel020',
-      stylePreset: 'tagPrimary',
-      spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing060',
-      iconSize: 'iconSize010',
-      spaceInline: 'space010',
-    },
-    large: {
-      typographyPreset: 'utilityLabel030',
-      stylePreset: 'tagPrimary',
-      spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing070',
-      iconSize: 'iconSize020',
-      spaceInline: 'space010',
-    },
-  },
   titleBar: {
     stylePreset: 'titleBar',
     spaceInset: {
@@ -958,24 +983,6 @@ export const componentDefaults = {
     },
     icon: {
       spaceInline: 'space030',
-    },
-  },
-  inlineMessage: {
-    stylePreset: 'inlineMessageInformative',
-    spaceInset: 'spaceInset030',
-    icon: {
-      spaceInline: 'space030',
-    },
-    content: {
-      title: {
-        spaceStack: 'space030',
-        stylePreset: 'inkContrast',
-        typographyPreset: 'utilityHeading010',
-      },
-      message: {
-        stylePreset: 'inkBase',
-        typographyPreset: 'utilityBody010',
-      },
     },
   },
   unorderedList: {

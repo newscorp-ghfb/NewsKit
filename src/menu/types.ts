@@ -1,3 +1,4 @@
+import {MouseEvent} from 'react';
 import {DividerOverrides} from '../divider';
 import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 import {MQ} from '../utils';
@@ -45,7 +46,7 @@ export interface MenuItemProps
   children: Exclude<React.ReactNode, 'undefined'>;
   href: string;
   selected?: boolean;
-  onClick?: () => {};
+  onClick?: (e: MouseEvent<HTMLElement>) => void;
 }
 
 export interface MenuDividerProps extends DividerOverrides {

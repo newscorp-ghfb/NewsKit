@@ -43,6 +43,7 @@ export const BaseDialogView = React.forwardRef<
       children,
       open,
       disableFocusTrap,
+      inline = false,
       ...props
     },
     panelRef,
@@ -76,6 +77,8 @@ export const BaseDialogView = React.forwardRef<
         aria-labelledby={ariaLabelledby}
         overrides={overrides}
         path={path}
+        inline={inline}
+        $open={open}
         {...props}
       >
         <MoveFocusInsideWhenFocusTrapDisabled>

@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React from 'react';
+import React, {MouseEvent} from 'react';
 import {Drawer} from '..';
 import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
@@ -7,17 +7,97 @@ import {Button} from '../../button';
 import {Link} from '../../link';
 import {TextInput} from '../../text-input';
 import {Block} from '../../block';
+import {Menu, MenuItem} from '../../menu';
+import {createTheme, compileTheme, ThemeProvider} from '../../theme';
 
 const Box = styled.div`
   width: 400px;
 `;
 
+const DrawerContainer = styled.div`
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background: #f1f1f1;
+
+  position: relative;
+  border: 1px solid red;
+  width: 80vw;
+  height: 80vh;
+  overflow: hidden;
+`;
+
 const content =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra. Integer non velit vitae elit porta condimentum. Cras ultrices lectus eu porttitor volutpat. In hac habitasse platea dictumst. Integer maximus leo quis sapien aliquet finibus. Cras lobortis leo quis massa commodo ornare. Donec ac ligula sed mauris sodales pretium id eu nibh. Pellentesque et eros viverra, dignissim ante in, tincidunt eros. Curabitur mattis purus dolor, non aliquam sapien auctor quis. Morbi sit amet leo in urna dictum imperdiet vitae sed velit. In auctor nulla sed lectus ultricies dignissim. In mattis.';
+
+const BoxWithContent = ({open}: {open?: () => void}) => (
+  <>
+    <p>SCROLL DOWN </p>
+    <Box>
+      {Array.from({length: 5}, (_, i) => (
+        <>
+          {open && i === 3 && (
+            <Button onClick={open}>Another button to open the drawer</Button>
+          )}
+          <p key={i}>{content}</p>
+        </>
+      ))}
+    </Box>
+  </>
+);
+
+const DrawerContent = () => (
+  <>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
+      massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
+      Pellentesque eu odio <Link href="/">Test link 1</Link> sapien. Donec
+      finibus pellentesque est porta dictum. Suspendisse venenatis vitae augue
+      nec hendrerit. In ut quam tempus, feugiat risus quis, porta eros. Aliquam
+      ultricies ac orci viverra gravida. Ut sodales odio tempor sodales viverra.
+      In condimentum tincidunt fermentum. Nullam imperdiet est vel tincidunt
+      suscipit. Vestibulum vel pulvinar nibh, at molestie lectus. Curabitur
+      ultricies massa eu sem varius volutpat. Ut vitae purus et enim imperdiet
+      finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
+      interdum.
+    </p>
+    <TextInput label="First name" />
+    <TextInput label="Last name" />
+    <TextInput label="Phone number" />
+    <div>
+      <Link href="/">For more information...</Link>{' '}
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+      scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
+      vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
+      Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac urna{' '}
+      <Link href="/">Test link 2</Link> rutrum aliquet eu mattis ligula. Sed
+      dapibus, enim sed tristique gravida, nisl dolor malesuada lacus, quis
+      auctor dui mauris eu odio. Vivamus eu augue et enim varius viverra.
+      Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
+    </p>
+    <div>
+      <Button>Remind me later</Button>
+      <Button>Ok</Button>
+    </div>
+  </>
+);
 
 export default {
   title: 'NewsKit Light/drawer',
   component: () => 'None',
+};
+
+const useActiveState = (
+  initial = false,
+): [boolean, () => void, () => void, () => void] => {
+  const [isActive, setIsActive] = React.useState(initial);
+
+  const open = () => setIsActive(true);
+  const close = () => setIsActive(false);
+  const toggle = () => (isActive ? close() : open());
+
+  return [isActive, open, close, toggle];
 };
 
 export const StoryDefault = () =>
@@ -72,19 +152,6 @@ export const StoryDefault = () =>
           </label>
         </Block>
 
-        <p>SCROLL DOWN </p>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>
-                  Another button to open the drawer
-                </Button>
-              )}
-              <p key={i}>{content}</p>
-            </>
-          ))}
-        </Box>
         <Drawer
           aria-label="Drawer example"
           open={isActive}
@@ -92,6 +159,84 @@ export const StoryDefault = () =>
           placement={placement as 'top' | 'left' | 'right' | 'bottom'}
           header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
         >
+          <DrawerContent />
+        </Drawer>
+      </div>
+    );
+  });
+StoryDefault.storyName = 'default';
+StoryDefault.parameters = {eyes: {include: false}};
+
+export const StoryInline = () =>
+  React.createElement(() => {
+    const [isActive, open, close, toggle] = useActiveState();
+    const [placement, setPlacement] = React.useState('left');
+
+    const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
+      setPlacement((ev.target as HTMLInputElement).value);
+
+    return (
+      <div data-testid="scrollable-drawer">
+        <StorybookHeading>Inline drawer</StorybookHeading>
+        <Button onClick={toggle} data-testid="drawer-open-button">
+          Open Drawer
+        </Button>
+        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+          <label htmlFor="drawer-inline_top">
+            top:
+            <input
+              type="radio"
+              value="top"
+              id="drawer-inline_top"
+              name="placement"
+            />
+          </label>
+          <label htmlFor="drawer-inline_left">
+            left:
+            <input
+              type="radio"
+              value="left"
+              id="drawer-inline_left"
+              name="placement"
+              defaultChecked
+            />
+          </label>
+          <label htmlFor="drawer-inline_bottom">
+            bottom:
+            <input
+              type="radio"
+              value="bottom"
+              id="drawer-inline_bottom"
+              name="placement"
+            />
+          </label>
+          <label htmlFor="drawer-inline_right">
+            right:
+            <input
+              type="radio"
+              value="right"
+              id="drawer-inline_right"
+              name="placement"
+            />
+          </label>
+        </Block>
+
+        <DrawerContainer>
+          <Drawer
+            aria-label="Drawer example"
+            open={isActive}
+            onDismiss={close}
+            inline
+            disableFocusTrap
+            hideOverlay
+            placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+            header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+            overrides={{
+              panel: {minSize: '20vh', maxSize: '50%'},
+            }}
+          >
+            <DrawerContent />
+          </Drawer>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
@@ -106,40 +251,162 @@ export const StoryDefault = () =>
             Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
             interdum.
           </p>
-          <TextInput label="First name" />
-          <TextInput label="Last name" />
-          <TextInput label="Phone number" />
-          <div>
-            <Link href="/">For more information...</Link>{' '}
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
-            scelerisque sapien. Praesent mollis vestibulum nunc at blandit.
-            Donec vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
-            Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac
-            urna <Link href="/">Test link 2</Link> rutrum aliquet eu mattis
-            ligula. Sed dapibus, enim sed tristique gravida, nisl dolor
-            malesuada lacus, quis auctor dui mauris eu odio. Vivamus eu augue et
-            enim varius viverra. Vivamus ut tellus iaculis, ullamcorper ligula
-            sit amet, posuere ipsum.
-          </p>
-          <div>
-            <Button>Remind me later</Button>
-            <Button>Ok</Button>
-          </div>
-        </Drawer>
+        </DrawerContainer>
+
+        <BoxWithContent open={open} />
       </div>
     );
   });
-StoryDefault.storyName = 'default';
-StoryDefault.parameters = {eyes: {include: false}};
+StoryInline.storyName = 'inline';
+StoryInline.parameters = {eyes: {include: false}};
+
+// MENU + DRAWER EXAMPLE
+const Header = styled.div<{fixed: boolean}>`
+  width: 100%;
+  top: 0;
+  left: 0;
+  ${props => props.fixed && {position: 'fixed'}}
+`;
+
+const HeaderMenu = styled.div<{fixed: boolean}>`
+  position: relative;
+  z-index: 9999;
+  background: #fdf6e9;
+`;
+
+const HeaderDrawer = styled.div`
+  position: relative;
+`;
+
+const menuDrawerTheme = compileTheme(
+  createTheme({
+    name: 'my-custom-drawer-theme',
+    overrides: {
+      transitionPresets: {
+        scaleUp: {
+          base: {
+            transform: 'scaleY(0)',
+            transformOrigin: 'top center',
+          },
+          appear: {},
+          appearActive: {},
+          appearDone: {},
+          enter: {
+            transform: 'scaleY(0)',
+          },
+          enterActive: {
+            transform: 'scaleY(1)',
+            transitionProperty: 'transform',
+            transitionDuration: '{{motions.motionDuration020}}',
+            transitionTimingFunction: '{{motions.motionEaseIn}}',
+          },
+          enterDone: {
+            transform: 'scaleY(1)',
+          },
+          exit: {
+            transform: 'scaleY(1)',
+          },
+          exitActive: {
+            transform: 'scaleY(0)',
+            transitionProperty: 'transform',
+            transitionDuration: '{{motions.motionDuration020}}',
+            transitionTimingFunction: '{{motions.motionLinear}}',
+          },
+          exitDone: {
+            transform: 'scaleY(0)',
+          },
+        },
+      },
+    },
+  }),
+);
+
+export const StoryMenuAndInline = () =>
+  React.createElement(() => {
+    const [selectedDrawer, setDrawer] = React.useState<number | null>(null);
+    const [isFixed, setFixed] = React.useState(false);
+
+    const openDrawer = (index: number) => setDrawer(index);
+    const closeDrawer = () => setDrawer(null);
+
+    return (
+      <ThemeProvider theme={menuDrawerTheme}>
+        <Header fixed={isFixed}>
+          <HeaderMenu fixed={isFixed}>
+            <Menu aria-label="Menu">
+              {Array.from({length: 5}).map((_, index) => (
+                <MenuItem
+                  href="/"
+                  onClick={(e: MouseEvent<HTMLElement>) => {
+                    e.preventDefault();
+                    openDrawer(index);
+                  }}
+                >
+                  Menu item {index}
+                </MenuItem>
+              ))}
+            </Menu>
+          </HeaderMenu>
+          <HeaderDrawer>
+            <Drawer
+              open={selectedDrawer !== null}
+              onDismiss={closeDrawer}
+              placement="top"
+              inline
+              disableFocusTrap
+              hideOverlay={!isFixed}
+              header={`Sub menu ${selectedDrawer}`}
+            >
+              {selectedDrawer !== null &&
+                Array.from({length: selectedDrawer + 1}).map(() => (
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    aliquet lorem massa, et lacinia ipsum tristique id.
+                    Phasellus sed posuere lacus. Pellentesque eu odio{' '}
+                    <Link href="/">Test link 1</Link> sapien. Donec finibus
+                    pellentesque est porta dictum. Suspendisse venenatis vitae
+                    augue nec hendrerit. In ut quam tempus, feugiat risus quis,
+                    porta eros. Aliquam ultricies ac orci viverra gravida. Ut
+                    sodales odio tempor sodales viverra. In condimentum
+                    tincidunt fermentum. Nullam imperdiet est vel tincidunt
+                    suscipit. Vestibulum vel pulvinar nibh, at molestie lectus.
+                    Curabitur ultricies massa eu sem varius volutpat. Ut vitae
+                    purus et enim imperdiet finibus. Quisque posuere lacus a
+                    nunc tempor accumsan. Aliquam odio nunc, interdum.
+                  </p>
+                ))}
+            </Drawer>
+          </HeaderDrawer>
+        </Header>
+        <div style={{marginTop: isFixed ? 50 : 0}}>
+          <Button onClick={() => setFixed(!isFixed)}>
+            Toggle Menu fixed: ( current {isFixed.toString()})
+          </Button>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
+          lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
+          lacus. Pellentesque eu odio sapien. Donec finibus pellentesque est
+          porta dictum. Suspendisse venenatis vitae augue nec hendrerit. In ut
+          quam tempus, feugiat risus quis, porta eros. Aliquam ultricies ac orci
+          viverra gravida. Ut sodales odio tempor sodales viverra. In
+          condimentum tincidunt fermentum. Nullam imperdiet est vel tincidunt
+          suscipit. Vestibulum vel pulvinar nibh, at molestie lectus. Curabitur
+          ultricies massa eu sem varius volutpat. Ut vitae purus et enim
+          imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan.
+          Aliquam odio nunc, interdum.
+        </p>
+
+        <BoxWithContent />
+      </ThemeProvider>
+    );
+  });
+StoryMenuAndInline.storyName = 'menu+inline';
+StoryMenuAndInline.parameters = {eyes: {include: false}};
 
 export const StoryWithAriaAttributes = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <>
@@ -163,10 +430,7 @@ StoryWithAriaAttributes.parameters = {eyes: {include: false}};
 
 export const StoryWithRestoreFocusAndCustomAutofocus = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     const elementToRestoreFocusTo = document.getElementById('test-button') as
       | HTMLElement
@@ -211,10 +475,7 @@ StoryWithRestoreFocusAndCustomAutofocus.parameters = {eyes: {include: false}};
 
 export const StoryWithHiddenOverlay = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div>
@@ -222,19 +483,7 @@ export const StoryWithHiddenOverlay = () =>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
-        <p>SCROLL DOWN </p>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>
-                  Another button to open the drawer
-                </Button>
-              )}
-              <p key={i}>{content}</p>
-            </>
-          ))}
-        </Box>
+        <BoxWithContent open={open} />
         <Drawer
           aria-label="Drawer example"
           open={isActive}
@@ -243,41 +492,7 @@ export const StoryWithHiddenOverlay = () =>
           header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
           hideOverlay
         >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
-            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
-            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
-            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
-            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
-            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
-            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
-            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
-            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-            interdum.
-          </p>
-          <TextInput label="First name" />
-          <TextInput label="Last name" />
-          <TextInput label="Phone number" />
-          <div>
-            <Link href="/">For more information...</Link>{' '}
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
-            scelerisque sapien. Praesent mollis vestibulum nunc at blandit.
-            Donec vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
-            Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac
-            urna <Link href="/">Test link 2</Link> rutrum aliquet eu mattis
-            ligula. Sed dapibus, enim sed tristique gravida, nisl dolor
-            malesuada lacus, quis auctor dui mauris eu odio. Vivamus eu augue et
-            enim varius viverra. Vivamus ut tellus iaculis, ullamcorper ligula
-            sit amet, posuere ipsum.
-          </p>
-          <div>
-            <Button>Remind me later</Button>
-            <Button>Ok</Button>
-          </div>
+          <DrawerContent />
         </Drawer>
       </div>
     );
@@ -287,10 +502,7 @@ StoryWithHiddenOverlay.parameters = {eyes: {include: false}};
 
 export const StoryWithDisabledFocusTrap = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div>
@@ -299,19 +511,7 @@ export const StoryWithDisabledFocusTrap = () =>
           Open Drawer
         </Button>
 
-        <p>SCROLL DOWN </p>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>
-                  Another button to open the drawer
-                </Button>
-              )}
-              <p key={i}>{content}</p>
-            </>
-          ))}
-        </Box>
+        <BoxWithContent open={open} />
         <Drawer
           aria-label="Drawer example"
           open={isActive}
@@ -320,41 +520,7 @@ export const StoryWithDisabledFocusTrap = () =>
           header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
           disableFocusTrap
         >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
-            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
-            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
-            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
-            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
-            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
-            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
-            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
-            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-            interdum.
-          </p>
-          <TextInput label="First name" />
-          <TextInput label="Last name" />
-          <TextInput label="Phone number" />
-          <div>
-            <Link href="/">For more information...</Link>{' '}
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
-            scelerisque sapien. Praesent mollis vestibulum nunc at blandit.
-            Donec vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
-            Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac
-            urna <Link href="/">Test link 2</Link> rutrum aliquet eu mattis
-            ligula. Sed dapibus, enim sed tristique gravida, nisl dolor
-            malesuada lacus, quis auctor dui mauris eu odio. Vivamus eu augue et
-            enim varius viverra. Vivamus ut tellus iaculis, ullamcorper ligula
-            sit amet, posuere ipsum.
-          </p>
-          <div>
-            <Button>Remind me later</Button>
-            <Button>Ok</Button>
-          </div>
+          <DrawerContent />
         </Drawer>
       </div>
     );
@@ -364,10 +530,7 @@ StoryWithDisabledFocusTrap.parameters = {eyes: {include: false}};
 
 export const StoryModelessDrawer = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div>
@@ -385,56 +548,10 @@ export const StoryModelessDrawer = () =>
           disableFocusTrap
           hideOverlay
         >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
-            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
-            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
-            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
-            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
-            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
-            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
-            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
-            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-            interdum.
-          </p>
-          <TextInput label="First name" />
-          <TextInput label="Last name" />
-          <TextInput label="Phone number" />
-          <div>
-            <Link href="/">For more information...</Link>{' '}
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
-            scelerisque sapien. Praesent mollis vestibulum nunc at blandit.
-            Donec vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
-            Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac
-            urna <Link href="/">Test link 2</Link> rutrum aliquet eu mattis
-            ligula. Sed dapibus, enim sed tristique gravida, nisl dolor
-            malesuada lacus, quis auctor dui mauris eu odio. Vivamus eu augue et
-            enim varius viverra. Vivamus ut tellus iaculis, ullamcorper ligula
-            sit amet, posuere ipsum.
-          </p>
-          <div>
-            <Button>Remind me later</Button>
-            <Button>Ok</Button>
-          </div>
+          <DrawerContent />
         </Drawer>
 
-        <p>SCROLL DOWN </p>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>
-                  Another button to open the drawer
-                </Button>
-              )}
-              <p key={i}>{content}</p>
-            </>
-          ))}
-        </Box>
+        <BoxWithContent open={open} />
       </div>
     );
   });
@@ -443,10 +560,7 @@ StoryModelessDrawer.parameters = {eyes: {include: false}};
 
 export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     const elementToRestoreFocusTo = document.getElementById(
       'modeless-test-button',

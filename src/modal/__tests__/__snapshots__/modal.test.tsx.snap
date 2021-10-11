@@ -842,6 +842,7 @@ exports[`Modal renders nothing if modal is closed 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   position: fixed;
+  pointer-events: none;
   z-index: 80;
   overflow: hidden;
   display: -webkit-box;

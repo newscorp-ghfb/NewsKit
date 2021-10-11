@@ -36,7 +36,8 @@ export interface BaseDialogViewProps extends HTMLAttributes<HTMLDivElement> {
   ariaLabelledby?: string;
   overrides?: BaseDialogOverridesProps;
   disableFocusTrap?: boolean;
-  open: boolean;
+  open?: boolean;
+  inline?: boolean;
 }
 
 export interface BaseDialogFunctionProps {
@@ -47,11 +48,12 @@ export interface BaseDialogFunctionProps {
   restoreFocusTo?: HTMLElement;
   disableFocusTrap?: boolean;
   hideOverlay?: boolean;
+  inline?: boolean;
 }
 export interface BaseDialogProps
   extends Omit<
       BaseDialogViewProps,
-      'className' | 'path' | 'handleCloseButtonClick'
+      'className' | 'path' | 'handleCloseButtonClick' | 'open'
     >,
     Omit<BaseDialogFunctionProps, 'children' | 'renderOverlay'>,
     React.AriaAttributes {}

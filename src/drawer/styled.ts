@@ -3,6 +3,7 @@ import {css, styled, getStylePreset, getResponsiveSize} from '../utils/style';
 import {BaseDialogView} from '../dialog';
 import {DrawerProps} from './types';
 import {getTransitionPreset} from '../utils/style/transition-preset';
+import {BaseDialogViewProps} from '../dialog/types';
 
 type DrawerPanelProps = Pick<DrawerProps, 'placement' | 'overrides' | 'open'>;
 
@@ -25,46 +26,38 @@ const placementOptions = {
   },
 };
 
-const verticalSize = (
-  props: DrawerPanelProps & {
-    theme: Theme;
-  },
-) => css`
-  ${getResponsiveSize('width', 'drawer.panel', 'panel', 'size')(props)}
-  ${getResponsiveSize('maxWidth', 'drawer.panel', 'panel', 'maxSize')(props)}
-    ${getResponsiveSize('minWidth', 'drawer.panel', 'panel', 'minSize')(props)}
-    height: 100%;
-`;
-
-const horizontalSize = (
-  props: DrawerPanelProps & {
-    theme: Theme;
-  },
-) => css`
-  ${getResponsiveSize('height', 'drawer.panel', 'panel', 'size')(props)}
-  ${getResponsiveSize('maxHeight', 'drawer.panel', 'panel', 'maxSize')(props)}
-    ${getResponsiveSize('minHeight', 'drawer.panel', 'panel', 'minSize')(props)}
-    width: 100%;
-`;
-
-const placementSize = {
-  left: verticalSize,
-  right: verticalSize,
-  top: horizontalSize,
-  bottom: horizontalSize,
+const getPlacementSize = ({
+  placement,
+  path,
+  ...props
+}: DrawerPanelProps & Pick<BaseDialogViewProps, 'path'> & {theme: Theme}) => {
+  const sizeX =
+    placement === 'left' || placement === 'right' ? 'width' : 'height';
+  const sizeY =
+    placement === 'left' || placement === 'right' ? 'height' : 'width';
+  const sizeCap = sizeX.charAt(0).toUpperCase() + sizeX.slice(1);
+  const drawerPath = `${path}.panel`;
+  return css`
+    ${getResponsiveSize(sizeX, drawerPath, 'panel', 'size')(props)}
+    ${getResponsiveSize(`max${sizeCap}`, drawerPath, 'panel', 'maxSize')(props)}
+    ${getResponsiveSize(`min${sizeCap}`, drawerPath, 'panel', 'minSize')(props)}
+    ${sizeY}: 100%;
+  `;
 };
 
-export const StyledDrawer = styled(BaseDialogView)<DrawerPanelProps>`
+export const StyledDrawer = styled(BaseDialogView)<
+  BaseDialogViewProps & DrawerPanelProps
+>`
   ${({placement}) => placementOptions[placement!]};
-  ${({placement, ...props}) => placementSize[placement!](props)}
+  ${props => getPlacementSize(props)}
 
-  ${getStylePreset('drawer.panel', 'panel')};
+  ${({path}) => getStylePreset(`${path}.panel`, 'panel')};
 
-  ${({placement, ...props}) =>
+  ${({placement, path, ...props}) =>
     placement &&
     css`
       ${getTransitionPreset(
-        `drawer.panel.${placement}`,
+        `${path}.panel.${placement}`,
         'panel',
         'nk-drawer',
       )(props)};

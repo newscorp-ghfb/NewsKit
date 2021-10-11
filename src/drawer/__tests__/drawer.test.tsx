@@ -509,4 +509,15 @@ describe('Drawer focus management when focus trap is disabled', () => {
       expect(restoreFocusButton).toHaveFocus();
     });
   });
+
+  test('render inline-drawer', () => {
+    const fragment = renderToFragmentWithTheme(Drawer, {
+      open: true,
+      inline: true,
+      onDismiss: () => {},
+      header: drawerHeader,
+      children: drawerBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });

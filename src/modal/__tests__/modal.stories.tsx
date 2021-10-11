@@ -33,6 +33,15 @@ const modalContent = (
   </Stack>
 );
 
+const useActiveState = (initial = false): [boolean, () => void, () => void] => {
+  const [isActive, setIsActive] = React.useState(initial);
+
+  const open = () => setIsActive(true);
+  const close = () => setIsActive(false);
+
+  return [isActive, open, close];
+};
+
 export default {
   title: 'NewsKit Light/modal',
   component: () => 'None',
@@ -41,10 +50,7 @@ export default {
 
 export const StoryDefault = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div data-testid="scrollable-modal">
@@ -79,13 +85,11 @@ StoryDefault.parameters = {eyes: {include: false}};
 export const StoryOpenOnPageLoad = () =>
   React.createElement(() => {
     const hasMounted = useHasMounted();
-    const [isActive, setIsActive] = React.useState(hasMounted);
+    const [isActive, open, close] = useActiveState();
 
     useEffect(() => {
-      setIsActive(hasMounted);
-    }, [hasMounted]);
-
-    const close = () => setIsActive(false);
+      open();
+    }, [hasMounted, open]);
 
     return (
       <>
@@ -116,10 +120,7 @@ StoryOpenOnPageLoad.parameters = {eyes: {include: false}};
 
 export const StoryWithAriaAttributes = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <>
@@ -142,10 +143,7 @@ StoryWithAriaAttributes.parameters = {eyes: {include: false}};
 
 export const StoryWithCustomAutofocus = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div data-testid="scrollable-modal">
@@ -185,10 +183,7 @@ StoryWithCustomAutofocus.parameters = {eyes: {include: false}};
 
 export const StoryWithCustomRestoreFocus = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
     const elementToRestoreFocusTo = document.getElementById('test-button') as
       | HTMLElement
       | undefined;
@@ -231,10 +226,7 @@ StoryWithCustomRestoreFocus.parameters = {eyes: {include: false}};
 
 export const StoryWithHiddenOverlay = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div data-testid="scrollable-modal">
@@ -269,10 +261,7 @@ StoryWithHiddenOverlay.parameters = {eyes: {include: false}};
 
 export const StoryWithDisabledFocusTrap = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div data-testid="scrollable-modal">
@@ -307,10 +296,7 @@ StoryWithDisabledFocusTrap.parameters = {eyes: {include: false}};
 
 export const StoryModelessModal = () =>
   React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+    const [isActive, open, close] = useActiveState();
 
     return (
       <div data-testid="scrollable-modal">
@@ -343,3 +329,53 @@ export const StoryModelessModal = () =>
   });
 StoryModelessModal.storyName = 'modelss';
 StoryModelessModal.parameters = {eyes: {include: false}};
+
+const ModalWrapper = styled.div`
+  margin: 20px 0 20px 350px;
+  position: relative;
+  border: 1px solid orange;
+  background: lightgray;
+`;
+
+export const StoryModelessInlineModal = () =>
+  React.createElement(() => {
+    const [isActive, open, close] = useActiveState();
+
+    return (
+      <div data-testid="scrollable-modal">
+        <StorybookHeading>Modeless Inline Modal</StorybookHeading>
+        <ModalWrapper>
+          <Button onClick={open} data-testid="modal-open-button">
+            Open Modal
+          </Button>
+          <p>SCROLL DOWN </p>
+
+          <Box>
+            {Array.from({length: 5}, (_, i) => (
+              <>
+                {i === 3 && (
+                  <Button onClick={open}>
+                    Another button to open the modal
+                  </Button>
+                )}
+                <p key={i}>{scrollContent}</p>
+              </>
+            ))}
+          </Box>
+
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+            hideOverlay
+            disableFocusTrap
+            inline
+          >
+            {modalContent}
+          </Modal>
+        </ModalWrapper>
+      </div>
+    );
+  });
+StoryModelessInlineModal.storyName = 'modelss-inline';
+StoryModelessInlineModal.parameters = {eyes: {include: false}};

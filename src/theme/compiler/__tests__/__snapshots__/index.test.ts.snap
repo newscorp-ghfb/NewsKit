@@ -710,6 +710,59 @@ Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
     },
+    "inlineDrawer": Object {
+      "closeButton": Object {
+        "spaceInset": "spaceInset020",
+        "stylePreset": "iconButtonMinimalSecondary",
+      },
+      "content": Object {
+        "spaceInset": "spaceInset050",
+      },
+      "header": Object {
+        "spaceInset": "spaceInsetSquish040",
+      },
+      "overlay": Object {
+        "transitionPreset": "fade",
+        "zIndex": 70,
+      },
+      "panel": Object {
+        "bottom": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideBottom",
+          },
+        },
+        "left": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideLeft",
+          },
+        },
+        "maxSize": "auto",
+        "minSize": "20px",
+        "right": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideRight",
+          },
+        },
+        "size": Object {
+          "lg": "333px",
+          "md": "310px",
+          "sm": "309px",
+          "xl": "354px",
+          "xs": "305px",
+        },
+        "stylePreset": "drawerPanel",
+        "top": Object {
+          "transitionPreset": Object {
+            "0": "fade",
+            "1": "slideTop",
+          },
+        },
+        "zIndex": 80,
+      },
+    },
     "inlineMessage": Object {
       "content": Object {
         "message": Object {

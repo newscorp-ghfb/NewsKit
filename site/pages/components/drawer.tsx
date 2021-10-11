@@ -1,5 +1,5 @@
 import React from 'react';
-import {Drawer, DrawerProps, OrderedList} from 'newskit';
+import {Drawer, DrawerProps, OrderedList, styled} from 'newskit';
 
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
@@ -7,6 +7,12 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../components/component-page-template';
 
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+
+const DrawerWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 300px;
+`;
 
 const Playground = ({open, ...state}: {open: boolean}) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -16,7 +22,7 @@ const Playground = ({open, ...state}: {open: boolean}) => {
   }, [open]);
 
   return (
-    <>
+    <DrawerWrapper>
       <Drawer
         {...(state as DrawerProps)}
         open={isOpen}
@@ -24,7 +30,7 @@ const Playground = ({open, ...state}: {open: boolean}) => {
       >
         Content
       </Drawer>
-    </>
+    </DrawerWrapper>
   );
 };
 
@@ -114,6 +120,16 @@ export default (layoutProps: LayoutProps) => (
             name: 'Header',
             propName: 'header',
             value: '',
+          },
+          {
+            name: 'hideOverlay',
+            propName: 'hideOverlay',
+            value: true,
+          },
+          {
+            name: 'inline',
+            propName: 'inline',
+            value: true,
           },
         ],
       },
@@ -425,6 +441,12 @@ export default (layoutProps: LayoutProps) => (
               type: 'boolean',
               description:
                 'If true, focus can leave the drawer window through tabbing or direct click on the main content.',
+            },
+            {
+              name: 'inline',
+              type: 'boolean',
+              description:
+                'If true,the drawer will display inline using position absolute ( instead of fixed ) and will take the size of its container',
             },
           ],
           overridesRows: [

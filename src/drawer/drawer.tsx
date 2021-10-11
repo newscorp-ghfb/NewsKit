@@ -22,15 +22,17 @@ export const Drawer: React.FC<DrawerProps> = ({
   overrides,
   hideOverlay,
   disableFocusTrap,
+  inline,
   ...props
 }) => {
   const theme = useTheme();
   const drawerRef = useRef<HTMLDivElement>(null);
+  const drawerPath = inline ? 'inlineDrawer' : 'drawer';
 
   const overlayOverrides = {
     ...deepMerge(
       mergeBreakpointObject(Object.keys(theme.breakpoints) as BreakpointKeys[]),
-      theme.componentDefaults.drawer.overlay,
+      theme.componentDefaults[drawerPath].overlay,
       filterOutFalsyProperties(overrides && overrides.overlay),
     ),
   };
@@ -58,7 +60,7 @@ export const Drawer: React.FC<DrawerProps> = ({
         <CSSTransition
           in={open}
           timeout={getTransitionDuration(
-            `drawer.panel.${placement}`,
+            `${drawerPath}.panel.${placement}`,
             '',
           )({theme, overrides})}
           classNames="nk-drawer"
@@ -69,12 +71,13 @@ export const Drawer: React.FC<DrawerProps> = ({
             open={open}
             disableFocusTrap={disableFocusTrap}
             handleCloseButtonClick={handleCloseButtonClick}
-            path="drawer"
-            data-testid="drawer"
+            path={drawerPath}
+            data-testid={drawerPath}
             placement={placement}
             closePosition={closePosition}
             overrides={overrides}
             ref={drawerRef}
+            inline={inline}
             {...props}
           >
             {children}
