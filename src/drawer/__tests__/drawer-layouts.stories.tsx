@@ -258,7 +258,7 @@ StoryNoHeaderContent.storyName = 'no header content';
 export const StoryWithOverrides = () =>
   React.createElement(() => (
     <>
-      <StorybookHeading>Default with overrides</StorybookHeading>
+      <StorybookHeading>Drawer with overriden space inset </StorybookHeading>
       <ThemeProvider theme={myCustomTheme}>
         <Drawer
           open
@@ -279,7 +279,7 @@ export const StoryWithOverrides = () =>
               stylePreset: 'drawerHeaderCustom',
             },
             content: {
-              spaceInset: 'spaceInset060',
+              spaceInset: 'spaceInset000',
             },
             closeButton: {
               stylePreset: 'drawerCloseButtonCustom',
@@ -287,7 +287,7 @@ export const StoryWithOverrides = () =>
             },
           }}
         >
-          {null}
+          {'Content area'}
         </Drawer>
       </ThemeProvider>
     </>
