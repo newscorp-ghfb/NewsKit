@@ -4,12 +4,12 @@ resource "aws_route53_zone" "newskit" {
 }
 
 resource "aws_route53_record" "cdn" {
-  for_each = var.domain_mapping
+  for_each = var.distribution_domain_name
   zone_id  = aws_route53_zone.newskit.zone_id
   name     = each.key
   type     = "CNAME"
   ttl      = "360"
-  records  = [var.distribution_domain_name]
+  records  = [var.distribution_domain_name[each.key]]
 }
 
 resource "aws_route53_record" "origin" {
