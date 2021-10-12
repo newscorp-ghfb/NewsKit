@@ -448,6 +448,19 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  test_broken_links_docs:
+    <<: *working_directory
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Broken Links
+          command: make check_broken_links_docs
+      - slack/status:
+          <<: *slack_status
+
   init_aws:
     parameters:
       job_type:
@@ -963,6 +976,11 @@ workflows:
           <<: *require_dep
           requires:
             - build_icons
+      - test_broken_links_docs:
+          <<: *ignore_trigger_release
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs
       - test_unit_comps:
           <<: *ignore_trigger_release
           <<: *require_dep
@@ -1048,7 +1066,7 @@ workflows:
           <<: *only_pr
           name: build_docs_pr
           context: ncu-newskit-site-dev
-          requires: 
+          requires:
             - build_icons
       - push_s3:
           <<: *only_pr

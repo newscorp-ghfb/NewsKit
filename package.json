@@ -52,6 +52,8 @@
     "e2e:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.json'",
     "e2e:visual:docs:ci": "start-server-and-test serve:docs 8081 'TZ=UTC cypress run --config-file cypress/config/cypress.docs.visual.json'",
     "e2e:generate:a11ytests": "node scripts/generate-a11y-tests.js",
+    "e2e:findbrokenlinks": "linkinator http://localhost:8081 --recurse --skip '^(?!http://localhost:8081)'",
+    "e2e:findbrokenlinks:ci": "start-server-and-test serve:docs 8081 e2e:findbrokenlinks",
     "prepare": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn\")'",
     "serve:docs": "http-server public -p 8081",
     "serve:storybook": "http-server dist-storybook -p 6006",
@@ -178,7 +180,8 @@
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "yo": "^3.1.1",
-    "yup": "^0.32.9"
+    "yup": "^0.32.9",
+    "linkinator": "^2.14.4"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.11.2",

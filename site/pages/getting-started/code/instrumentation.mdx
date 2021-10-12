@@ -26,7 +26,7 @@ This function will return an object containing the context passed to it and the 
 
 ## InstrumentationProvider
 
-Similar to the way you may use the [ThemeProvider](/theming/code) to set the components theme, NewsKit provides a React context component called `InstrumentationProvider` to wrap the React DOM of your project and provide the required event instrumentation down to NewsKit components. The props required for this component match the object output from the `createEventInstrumentation` function and as a result, the object can simply be destructured into the props of the provider.
+Similar to the way you may use the [ThemeProvider](/foundations/theming/using-a-theme) to set the components theme, NewsKit provides a React context component called `InstrumentationProvider` to wrap the React DOM of your project and provide the required event instrumentation down to NewsKit components. The props required for this component match the object output from the `createEventInstrumentation` function and as a result, the object can simply be destructured into the props of the provider.
 
 <CodeFromFile path="examples/instrumentation/instrumentation-provider.tsx" />
 

@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
   Grid,
   Cell,
-  Hidden,
   ConsentSettingsLink,
   getTypographyPresetFromTheme,
   getColorCssFromTheme,
@@ -102,15 +101,6 @@ const SiteFooter: React.FC<FooterProps> = ({
       <Grid xsRowGutter="space060" mdRowGutter="space000">
         <Cell {...cellProps}>
           <FooterMenu>
-            <Hidden xs sm md lg xl>
-              <FooterLink>
-                <Link href="/cookies">Cookies</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="/terms">Terms</Link>
-              </FooterLink>
-            </Hidden>
-
             <FooterLink>
               <ConsentSettingsLink
                 privacyManagerId="407619"

@@ -61,6 +61,9 @@ unit_test_comps:
 lint:
 	yarn lint
 
+check_broken_links_docs:
+	yarn e2e:findbrokenlinks:ci
+
 comps_visual_test:
 	yarn test:visual:comps:ci
 

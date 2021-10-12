@@ -7,7 +7,7 @@ export default Layout;
 
 ## Overview
 
-To render NewsKit components you must have a theme available for them to utilise. You can use your own theme, or use one of the two NewsKit defaults - NewsKit light and NewsKit dark. Details on how to create your theme can be found [here](/theming/creating-a-theme).
+To render NewsKit components you must have a theme available for them to utilise. You can use your own theme, or use one of the two NewsKit defaults - NewsKit light and NewsKit dark. Details on how to create your theme can be found [here](/foundations/theming/creating-a-theme).
 
 ## Setting a theme
 
@@ -21,7 +21,7 @@ The theme provided is then available to any NewsKit component under it. The them
 
 <CodeFromFile path="examples/theming/styled.tsx" />
 
-ThemeProvider's can also be nested - allowing the child to override the parent theme. This will only cause a shallow merge of the child theme over the parent. To create a sub-theme which inherits from a base theme, see the `createTheme` documentation [here](/theming/creating-a-theme).
+ThemeProvider's can also be nested - allowing the child to override the parent theme. This will only cause a shallow merge of the child theme over the parent. To create a sub-theme which inherits from a base theme, see the `createTheme` documentation [here](/foundations/theming/creating-a-theme).
 
 <CodeFromFile path="examples/theming/nested-theme-provider.tsx" />
 
