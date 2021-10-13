@@ -9,14 +9,14 @@ describe('getTransitionPresetFromTheme', () => {
         overrides: {
           motions: {
             motionDuration020: '2000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             colorTransitionCustom: {
               base: {
                 transitionProperty: 'color',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -41,7 +41,7 @@ describe('getTransitionPresetFromTheme', () => {
         overrides: {
           motions: {
             motionDuration040: '4000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             fadeCustom: {
@@ -153,21 +153,21 @@ describe('getTransitionPresetFromTheme', () => {
           motions: {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             colorTransitionCustom: {
               base: {
                 transitionProperty: 'color',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
             backgroundTransitionCustom: {
               base: {
                 transitionProperty: 'background-color',
                 transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -196,7 +196,7 @@ describe('getTransitionPresetFromTheme', () => {
           motions: {
             motionDuration020: '2000ms',
             motionDuration040: '4000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             fadeCustom: {
@@ -210,7 +210,7 @@ describe('getTransitionPresetFromTheme', () => {
                 opacity: '0.8',
                 transitionProperty: 'opacity',
                 transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
               enterDone: {
                 opacity: '0.8',
@@ -222,7 +222,7 @@ describe('getTransitionPresetFromTheme', () => {
                 opacity: '0.2',
                 transitionProperty: 'opacity',
                 transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
               exitDone: {
                 opacity: '0.2',
@@ -239,7 +239,7 @@ describe('getTransitionPresetFromTheme', () => {
                 transform: 'translateY(0)',
                 transitionProperty: 'transform',
                 transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
               enterDone: {
                 transform: 'translateY(0)',
@@ -251,7 +251,7 @@ describe('getTransitionPresetFromTheme', () => {
                 transform: 'translateY(100%)',
                 transitionProperty: 'transform',
                 transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
               exitDone: {
                 transform: 'translateY(100%)',
@@ -339,21 +339,21 @@ describe('getTransitionPresetFromTheme', () => {
           motions: {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             colorTransitionCustom: {
               base: {
                 transitionProperty: 'color',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
             backgroundTransitionCustom: {
               base: {
                 transitionProperty: 'background-color',
                 transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },

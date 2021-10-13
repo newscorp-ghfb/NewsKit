@@ -71,9 +71,15 @@ export const StyledToastBar = styled.div<{
   animation-fill-mode: forwards;
   animation-name: ${({visible, position}) => getAnimation(position, visible)};
   ${getMotionCssFromTheme('transitionDuration', 'motionDuration020')}
-  ${getMotionCssFromTheme('transitionTimingFunction', 'motionEaseInAndOut')};
+  ${getMotionCssFromTheme(
+    'transitionTimingFunction',
+    'motionTimingEaseInAndOut',
+  )};
   ${getMotionCssFromTheme('animationDuration', 'motionDuration020')}
-  ${getMotionCssFromTheme('animationTimingFunction', 'motionEaseInAndOut')};
+  ${getMotionCssFromTheme(
+    'animationTimingFunction',
+    'motionTimingEaseInAndOut',
+  )};
   > * {
     // allow events to all direct children
     pointer-events: ${({visible}) => (visible ? 'initial' : 'none')};

@@ -774,7 +774,7 @@ export const componentDefaults = {
         stylePreset: 'tabsBarIndicator',
         weight: 'borderWidth020',
         motionDuration: 'motionDuration030',
-        motionTiming: 'motionEaseInAndOut',
+        motionTiming: 'motionTimingEaseInAndOut',
       },
     },
   },

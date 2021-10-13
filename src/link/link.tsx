@@ -14,7 +14,7 @@ const StyledLink = styled.a<LinkProps>`
   display: inline-block;
   transition-property: color;
   transition-duration: ${getMotionFromTheme('motionDuration020')};
-  transition-timing-function: ${getMotionFromTheme('motionEaseOut')};
+  transition-timing-function: ${getMotionFromTheme('motionTimingEaseOut')};
 
   ${getStylePreset('link', '')}
 `;

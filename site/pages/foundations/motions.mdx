@@ -13,9 +13,10 @@ Easing controls the velocity of a motion over its duration. It helps determine a
 
 | Token              |           Value            |
 | ------------------ | :------------------------: |
-| motionEaseIn       | cubic-bezier(.5, 0, 1, 1)  |
-| motionEaseOut      | cubic-bezier(0, 0, .5, 1)  |
-| motionEaseInAndOut | cubic-bezier(.5, 0, .5, 1) |
+| motionTimingLinear       | linear  |
+| motionTimingEaseIn       | cubic-bezier(.5, 0, 1, 1)  |
+| motionTimingEaseOut      | cubic-bezier(0, 0, .5, 1)  |
+| motionTimingEaseInAndOut | cubic-bezier(.5, 0, .5, 1) |
 
 ## Duration
 
@@ -24,6 +25,7 @@ Determining which timing to use is a matter of context, including the complexity
 
 | Token             | Value |
 | ----------------- | :---: |
+| motionDuration000 | 0ms |
 | motionDuration010 | 100ms |
 | motionDuration020 | 200ms |
 | motionDuration030 | 300ms |

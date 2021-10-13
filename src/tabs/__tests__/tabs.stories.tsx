@@ -882,7 +882,7 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         selectionIndicator: {
           indicator: {
             motionDuration: 'motionDuration040',
-            motionTiming: 'motionEaseIn',
+            motionTiming: 'motionTimingEaseIn',
           },
         },
       }}
@@ -902,7 +902,7 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         selectionIndicator: {
           indicator: {
             motionDuration: 'motionDuration040',
-            motionTiming: 'motionEaseIn',
+            motionTiming: 'motionTimingEaseIn',
           },
         },
       }}

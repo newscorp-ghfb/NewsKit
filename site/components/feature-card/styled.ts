@@ -9,7 +9,7 @@ import {
 export const StyledCardHorizontalInset = styled(CardInset)`
   transition-property: box-shadow;
   transition-duration: ${getMotionFromTheme('motionDuration020')};
-  transition-timing-function: ${getMotionFromTheme('motionEaseOut')};
+  transition-timing-function: ${getMotionFromTheme('motionTimingEaseOut')};
   ${getMediaQueryFromTheme('md')} {
     min-height: 248px;
   }
@@ -20,7 +20,7 @@ export const StyledCardHorizontalInset = styled(CardInset)`
 export const StyledCardVerticalInset = styled(CardInset)`
   transition-property: box-shadow;
   transition-duration: ${getMotionFromTheme('motionDuration020')};
-  transition-timing-function: ${getMotionFromTheme('motionEaseOut')};
+  transition-timing-function: ${getMotionFromTheme('motionTimingEaseOut')};
   height: 100%;
 `;
 export const StyledFeatureCardHorizontalMedia = styled.div<{

@@ -12,14 +12,14 @@ describe('getTransitionDurationFromTheme', () => {
         overrides: {
           motions: {
             motionDuration020: '2000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
               base: {
                 transitionProperty: 'css-props',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -61,14 +61,14 @@ describe('getTransitionDurationFromTheme', () => {
         overrides: {
           motions: {
             motionDuration020: 'NAN',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
               base: {
                 transitionProperty: 'css-props',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -94,14 +94,14 @@ describe('getTransitionDurationFromTheme', () => {
         overrides: {
           motions: {
             motionDuration020: '4000',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
               base: {
                 transitionProperty: 'css-props',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -129,28 +129,28 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset1: {
               base: {
                 transitionProperty: 'css-props-1',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
             customTransitionPreset2: {
               base: {
                 transitionProperty: 'css-props-2',
                 transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
             customTransitionPreset3: {
               base: {
                 transitionProperty: 'css-props-3',
                 transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -180,28 +180,28 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset1: {
               base: {
                 transitionProperty: 'css-props-1',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
             customTransitionPreset2: {
               base: {
                 transitionProperty: 'css-props-2',
                 transitionDuration: '{{motions.motionDuration030}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
             customTransitionPreset3: {
               base: {
                 transitionProperty: 'css-props-3',
                 transitionDuration: '{{motions.motionDuration040}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -233,7 +233,7 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
 
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
@@ -300,7 +300,7 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset1: {
@@ -429,7 +429,7 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration020: '2000ms',
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset1: {},
@@ -487,7 +487,7 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
 
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
@@ -544,7 +544,7 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
 
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
@@ -601,7 +601,7 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration030: '3000ms',
             motionDuration040: '4000ms',
 
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
@@ -654,14 +654,14 @@ describe('getTransitionDurationFromTheme', () => {
         overrides: {
           motions: {
             motionDuration020: '3s',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
               base: {
                 transitionProperty: 'css-props',
                 transitionDuration: '{{motions.motionDuration020}}',
-                transitionTimingFunction: '{{motions.motionLinear}}',
+                transitionTimingFunction: '{{motions.motionTimingLinear}}',
               },
             },
           },
@@ -691,7 +691,7 @@ describe('getTransitionDurationFromTheme', () => {
             motionDuration030: '3s',
             motionDuration040: '4s',
 
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPreset: {
@@ -757,7 +757,7 @@ describe('getTransitionDuration', () => {
         overrides: {
           motions: {
             motionDuration020: '2000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPresetDefault: {
@@ -798,7 +798,7 @@ describe('getTransitionDuration', () => {
         overrides: {
           motions: {
             motionDuration020: '2000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPresetDefault: {
@@ -851,7 +851,7 @@ describe('getTransitionDuration', () => {
         overrides: {
           motions: {
             motionDuration020: '2000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPresetDefault1: {
@@ -902,7 +902,7 @@ describe('getTransitionDuration', () => {
         overrides: {
           motions: {
             motionDuration020: '2000ms',
-            motionLinear: 'linear',
+            motionTimingLinear: 'linear',
           },
           transitionPresets: {
             customTransitionPresetDefault: {

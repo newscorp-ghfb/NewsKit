@@ -298,7 +298,7 @@ const menuDrawerTheme = compileTheme(
             transform: 'scaleY(1)',
             transitionProperty: 'transform',
             transitionDuration: '{{motions.motionDuration020}}',
-            transitionTimingFunction: '{{motions.motionEaseIn}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
           },
           enterDone: {
             transform: 'scaleY(1)',
@@ -310,7 +310,7 @@ const menuDrawerTheme = compileTheme(
             transform: 'scaleY(0)',
             transitionProperty: 'transform',
             transitionDuration: '{{motions.motionDuration020}}',
-            transitionTimingFunction: '{{motions.motionLinear}}',
+            transitionTimingFunction: '{{motions.motionTimingLinear}}',
           },
           exitDone: {
             transform: 'scaleY(0)',

@@ -7,7 +7,7 @@ export const transitionPresets: Record<string, TransitionPreset> = {};
 //   base: {
 //     transitionProperty: 'color',
 //     transitionDuration: '{{motions.motionDuration020}}',
-//     transitionTimingFunction: '{{motions.motionEaseOut}}',
+//     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
 //   },
 // };
 
@@ -15,7 +15,7 @@ export const transitionPresets: Record<string, TransitionPreset> = {};
 //   base: {
 //     transitionProperty: 'background-color',
 //     transitionDuration: '{{motions.motionDuration020}}',
-//     transitionTimingFunction: '{{motions.motionEaseOut}}',
+//     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
 //   },
 // };
 
@@ -61,7 +61,7 @@ transitionPresets.slideLeft = {
     transform: 'translateX(0)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseIn}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
     transform: 'translateX(0)',
@@ -73,7 +73,7 @@ transitionPresets.slideLeft = {
     transform: 'translateX(-100%)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseOut}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
   exitDone: {
     transform: 'translateX(-100%)',
@@ -94,7 +94,7 @@ transitionPresets.slideRight = {
     transform: 'translateX(0)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseIn}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
     transform: 'translateX(0)',
@@ -106,7 +106,7 @@ transitionPresets.slideRight = {
     transform: 'translateX(100%)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseOut}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
   exitDone: {
     transform: 'translateX(100%)',
@@ -127,7 +127,7 @@ transitionPresets.slideTop = {
     transform: 'translateY(0)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseIn}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
     transform: 'translateY(0)',
@@ -139,7 +139,7 @@ transitionPresets.slideTop = {
     transform: 'translateY(-100%)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionLinear}}',
+    transitionTimingFunction: '{{motions.motionTimingLinear}}',
   },
   exitDone: {
     transform: 'translateY(-100%)',
@@ -160,7 +160,7 @@ transitionPresets.slideBottom = {
     transform: 'translateY(0)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseIn}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
     transform: 'translateY(0)',
@@ -172,7 +172,7 @@ transitionPresets.slideBottom = {
     transform: 'translateY(100%)',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseOut}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
   exitDone: {
     transform: 'translateY(100%)',
@@ -192,7 +192,7 @@ transitionPresets.moveUp = {
     opacity: '1',
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseIn}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
     transform: `translate(-50%, 0)`,
@@ -204,7 +204,7 @@ transitionPresets.moveUp = {
     transform: `translate(-50%, 20px)`,
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
-    transitionTimingFunction: '{{motions.motionEaseOut}}',
+    transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
   exitDone: {
     transform: `translate(-50%, 20px)`,

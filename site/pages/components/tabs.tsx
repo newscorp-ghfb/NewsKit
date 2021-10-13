@@ -268,7 +268,7 @@ export default (layoutProps: LayoutProps) => (
             {
               attribute: 'selectionIndicator.indicator.motionTiming',
               type: 'string',
-              default: 'motionEaseInAndOut',
+              default: 'motionTimingEaseInAndOut',
               description:
                 'If provided with a motion timing token, this overrides the transition timing upon hover and active of the indicator.',
             },

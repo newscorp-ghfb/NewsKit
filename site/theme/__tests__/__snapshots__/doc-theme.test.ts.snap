@@ -1046,7 +1046,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -1363,21 +1363,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-accessibility-dark",
   "overlays": Object {
@@ -3907,7 +3902,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -3919,7 +3914,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -3939,7 +3934,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -3951,7 +3946,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -3971,7 +3966,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -3983,7 +3978,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -4003,7 +3998,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -4015,7 +4010,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -4035,7 +4030,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -4047,7 +4042,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
@@ -5495,7 +5490,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -5812,21 +5807,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-accessibility-light",
   "overlays": Object {
@@ -8356,7 +8346,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -8368,7 +8358,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -8388,7 +8378,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -8400,7 +8390,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -8420,7 +8410,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -8432,7 +8422,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -8452,7 +8442,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -8464,7 +8454,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -8484,7 +8474,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -8496,7 +8486,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
@@ -9944,7 +9934,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -10261,21 +10251,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-theme-dark",
   "overlays": Object {
@@ -12805,7 +12790,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -12817,7 +12802,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -12837,7 +12822,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -12849,7 +12834,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -12869,7 +12854,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -12881,7 +12866,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -12901,7 +12886,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -12913,7 +12898,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -12933,7 +12918,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -12945,7 +12930,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
@@ -14393,7 +14378,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -14710,21 +14695,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-theme-light",
   "overlays": Object {
@@ -17254,7 +17234,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -17266,7 +17246,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -17286,7 +17266,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -17298,7 +17278,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -17318,7 +17298,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -17330,7 +17310,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -17350,7 +17330,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -17362,7 +17342,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -17382,7 +17362,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -17394,7 +17374,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
@@ -18842,7 +18822,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -19159,21 +19139,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-foundations-dark",
   "overlays": Object {
@@ -21703,7 +21678,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -21715,7 +21690,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -21735,7 +21710,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -21747,7 +21722,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -21767,7 +21742,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -21779,7 +21754,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -21799,7 +21774,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -21811,7 +21786,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -21831,7 +21806,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -21843,7 +21818,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
@@ -23291,7 +23266,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -23608,21 +23583,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-foundations-light",
   "overlays": Object {
@@ -26152,7 +26122,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -26164,7 +26134,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -26184,7 +26154,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -26196,7 +26166,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -26216,7 +26186,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -26228,7 +26198,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -26248,7 +26218,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -26260,7 +26230,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -26280,7 +26250,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -26292,7 +26262,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
@@ -27740,7 +27710,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -28057,21 +28027,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-patterns-dark",
   "overlays": Object {
@@ -30601,7 +30566,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -30613,7 +30578,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -30633,7 +30598,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -30645,7 +30610,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -30665,7 +30630,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -30677,7 +30642,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -30697,7 +30662,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -30709,7 +30674,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -30729,7 +30694,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -30741,7 +30706,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
@@ -32189,7 +32154,7 @@ Object {
       "selectionIndicator": Object {
         "indicator": Object {
           "motionDuration": "motionDuration030",
-          "motionTiming": "motionEaseInAndOut",
+          "motionTiming": "motionTimingEaseInAndOut",
           "stylePreset": "tabsBarIndicator",
           "weight": "borderWidth020",
         },
@@ -32506,21 +32471,16 @@ Object {
   },
   "icons": Object {},
   "motions": Object {
-    "motionDelay000": "0",
-    "motionDelay010": "100ms",
-    "motionDelay020": "200ms",
-    "motionDelay030": "300ms",
-    "motionDelay040": "400ms",
-    "motionDelay050": "500ms",
+    "motionDuration000": "0ms",
     "motionDuration010": "100ms",
     "motionDuration020": "200ms",
     "motionDuration030": "300ms",
     "motionDuration040": "400ms",
     "motionDuration050": "500ms",
-    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
-    "motionLinear": "linear",
+    "motionTimingEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionTimingEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionTimingEaseOut": "cubic-bezier(0, 0, .5, 1)",
+    "motionTimingLinear": "linear",
   },
   "name": "docs-patterns-light",
   "overlays": Object {
@@ -35050,7 +35010,7 @@ Object {
         "transform": "translate(-50%, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translate(-50%, 0)",
@@ -35062,7 +35022,7 @@ Object {
         "transform": "translate(-50%, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translate(-50%, 20px)",
@@ -35082,7 +35042,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -35094,7 +35054,7 @@ Object {
         "transform": "translateY(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateY(100%)",
@@ -35114,7 +35074,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -35126,7 +35086,7 @@ Object {
         "transform": "translateX(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(-100%)",
@@ -35146,7 +35106,7 @@ Object {
         "transform": "translateX(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateX(0)",
@@ -35158,7 +35118,7 @@ Object {
         "transform": "translateX(100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseOut}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
         "transform": "translateX(100%)",
@@ -35178,7 +35138,7 @@ Object {
         "transform": "translateY(0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionEaseIn}}",
+        "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
         "transform": "translateY(0)",
@@ -35190,7 +35150,7 @@ Object {
         "transform": "translateY(-100%)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
-        "transitionTimingFunction": "{{motions.motionLinear}}",
+        "transitionTimingFunction": "{{motions.motionTimingLinear}}",
       },
       "exitDone": Object {
         "transform": "translateY(-100%)",
