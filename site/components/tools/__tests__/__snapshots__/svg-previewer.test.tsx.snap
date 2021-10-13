@@ -4,6 +4,26 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 Object {
   "asFragment": [Function],
   "baseElement": .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.emotion-1 {
+  position: fixed;
+  top: 50px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -39,16 +59,16 @@ Object {
   margin: 50px 20px 30px 20px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #BBC3C9;
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,7 +89,7 @@ Object {
   margin-right: calc(-8px/2);
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -78,7 +98,7 @@ Object {
   margin-right: calc(8px/2);
 }
 
-.emotion-3 {
+.emotion-5 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -86,7 +106,7 @@ Object {
   letter-spacing: 0;
 }
 
-.emotion-3::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -94,7 +114,7 @@ Object {
   margin-bottom: -0.3486607142857143em;
 }
 
-.emotion-3::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -102,7 +122,7 @@ Object {
   margin-top: -0.4892857142857143em;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -138,16 +158,16 @@ Object {
   margin-right: 20px;
 }
 
-.emotion-6 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-6 svg {
+.emotion-8 svg {
   fill: #BBC3C9;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -182,97 +202,125 @@ Object {
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
-.emotion-10 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-12 svg {
   fill: #BBC3C9;
 }
 
 <body>
     <div>
-      <button
+      <div
         class="emotion-0"
-        data-testid="button"
-        disabled=""
-        type="button"
       >
         <div
           class="emotion-1"
         >
-          <div
+          <button
             class="emotion-2"
+            data-testid="button"
+            disabled=""
+            type="button"
           >
-            <span
+            <div
               class="emotion-3"
             >
-              SWITCH THEME: 
-            </span>
-          </div>
-          <div
-            class="emotion-2"
+              <div
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  SWITCH THEME: 
+                </span>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  LIGHT
+                </span>
+              </div>
+            </div>
+          </button>
+          <select
+            disabled=""
+            style="height: 26px; font-size: 16px;"
           >
-            <span
+            <option>
+              No SVG selected
+            </option>
+          </select>
+          <button
+            class="emotion-8"
+            data-testid="button"
+            disabled=""
+            type="button"
+          >
+            <div
               class="emotion-3"
             >
-              LIGHT
-            </span>
-          </div>
+              <div
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  Download single SVG
+                </span>
+              </div>
+            </div>
+          </button>
+          <button
+            class="emotion-12"
+            data-testid="button"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="emotion-3"
+            >
+              <div
+                class="emotion-4"
+              >
+                <span
+                  class="emotion-5"
+                >
+                  DOWNLOAD ALL SVGs
+                </span>
+              </div>
+            </div>
+          </button>
         </div>
-      </button>
-      <select
-        disabled=""
-        style="height: 26px; font-size: 16px;"
-      >
-        <option>
-          No SVG selected
-        </option>
-      </select>
-      <button
-        class="emotion-6"
-        data-testid="button"
-        disabled=""
-        type="button"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-2"
-          >
-            <span
-              class="emotion-3"
-            >
-              Download single SVG
-            </span>
-          </div>
-        </div>
-      </button>
-      <button
-        class="emotion-10"
-        data-testid="button"
-        disabled=""
-        type="button"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-2"
-          >
-            <span
-              class="emotion-3"
-            >
-              DOWNLOAD ALL SVGs
-            </span>
-          </div>
-        </div>
-      </button>
+      </div>
     </div>
   </body>,
   "container": .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.emotion-1 {
+  position: fixed;
+  top: 50px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -308,16 +356,16 @@ Object {
   margin: 50px 20px 30px 20px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #BBC3C9;
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -338,7 +386,7 @@ Object {
   margin-right: calc(-8px/2);
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -347,7 +395,7 @@ Object {
   margin-right: calc(8px/2);
 }
 
-.emotion-3 {
+.emotion-5 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -355,7 +403,7 @@ Object {
   letter-spacing: 0;
 }
 
-.emotion-3::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -363,7 +411,7 @@ Object {
   margin-bottom: -0.3486607142857143em;
 }
 
-.emotion-3::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -371,7 +419,7 @@ Object {
   margin-top: -0.4892857142857143em;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -407,16 +455,16 @@ Object {
   margin-right: 20px;
 }
 
-.emotion-6 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-6 svg {
+.emotion-8 svg {
   fill: #BBC3C9;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -451,93 +499,101 @@ Object {
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
 }
 
-.emotion-10 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-12 svg {
   fill: #BBC3C9;
 }
 
 <div>
-    <button
+    <div
       class="emotion-0"
-      data-testid="button"
-      disabled=""
-      type="button"
     >
       <div
         class="emotion-1"
       >
-        <div
+        <button
           class="emotion-2"
+          data-testid="button"
+          disabled=""
+          type="button"
         >
-          <span
+          <div
             class="emotion-3"
           >
-            SWITCH THEME: 
-          </span>
-        </div>
-        <div
-          class="emotion-2"
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                SWITCH THEME: 
+              </span>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                LIGHT
+              </span>
+            </div>
+          </div>
+        </button>
+        <select
+          disabled=""
+          style="height: 26px; font-size: 16px;"
         >
-          <span
+          <option>
+            No SVG selected
+          </option>
+        </select>
+        <button
+          class="emotion-8"
+          data-testid="button"
+          disabled=""
+          type="button"
+        >
+          <div
             class="emotion-3"
           >
-            LIGHT
-          </span>
-        </div>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Download single SVG
+              </span>
+            </div>
+          </div>
+        </button>
+        <button
+          class="emotion-12"
+          data-testid="button"
+          disabled=""
+          type="button"
+        >
+          <div
+            class="emotion-3"
+          >
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                DOWNLOAD ALL SVGs
+              </span>
+            </div>
+          </div>
+        </button>
       </div>
-    </button>
-    <select
-      disabled=""
-      style="height: 26px; font-size: 16px;"
-    >
-      <option>
-        No SVG selected
-      </option>
-    </select>
-    <button
-      class="emotion-6"
-      data-testid="button"
-      disabled=""
-      type="button"
-    >
-      <div
-        class="emotion-1"
-      >
-        <div
-          class="emotion-2"
-        >
-          <span
-            class="emotion-3"
-          >
-            Download single SVG
-          </span>
-        </div>
-      </div>
-    </button>
-    <button
-      class="emotion-10"
-      data-testid="button"
-      disabled=""
-      type="button"
-    >
-      <div
-        class="emotion-1"
-      >
-        <div
-          class="emotion-2"
-        >
-          <span
-            class="emotion-3"
-          >
-            DOWNLOAD ALL SVGs
-          </span>
-        </div>
-      </div>
-    </button>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -596,6 +652,26 @@ Object {
 exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.emotion-1 {
+  position: fixed;
+  top: 50px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -632,33 +708,33 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin: 50px 20px 30px 20px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-0 svg {
+.emotion-2 svg {
   fill: #FFFFFF;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #3358CC;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #213A82;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-0:disabled svg {
+.emotion-2:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-1 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -679,7 +755,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-right: calc(-8px/2);
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -688,7 +764,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-right: calc(8px/2);
 }
 
-.emotion-3 {
+.emotion-5 {
   font-family: 'Poppins',sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -696,7 +772,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   letter-spacing: 0;
 }
 
-.emotion-3::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -704,7 +780,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-bottom: -0.3486607142857143em;
 }
 
-.emotion-3::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -712,47 +788,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-top: -0.4892857142857143em;
 }
 
-<button
-    class="emotion-0"
-    data-testid="button"
-    type="button"
-  >
-    <div
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          SWITCH THEME: 
-        </span>
-      </div>
-      <div
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          LIGHT
-        </span>
-      </div>
-    </div>
-  </button>
-  <select
-    style="height: 26px; font-size: 16px;"
-  >
-    <option>
-      No SVG selected
-    </option>
-    <option
-      value="0"
-    >
-      SvgName SVG
-    </option>
-  </select>
-  .emotion-0 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -789,106 +825,33 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-right: 20px;
 }
 
-.emotion-0 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-0 svg {
+.emotion-8 svg {
   fill: #FFFFFF;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #148F39;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #0A782A;
 }
 
-.emotion-0:disabled {
+.emotion-8:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-0:disabled svg {
+.emotion-8:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-3 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 600;
-  letter-spacing: 0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3486607142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4892857142857143em;
-}
-
-<button
-    class="emotion-0"
-    data-testid="button"
-    type="button"
-  >
-    <div
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <span
-          class="emotion-3"
-        >
-          Download single SVG
-        </span>
-      </div>
-    </div>
-  </button>
-  .emotion-0 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -924,193 +887,246 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   cursor: pointer;
 }
 
-.emotion-0 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-0 svg {
+.emotion-12 svg {
   fill: #FFFFFF;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #148F39;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #0A782A;
 }
 
-.emotion-0:disabled {
+.emotion-12:disabled {
   background-color: #E4E4E4;
   color: #BBC3C9;
 }
 
-.emotion-0:disabled svg {
+.emotion-12:disabled svg {
   fill: #BBC3C9;
 }
 
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
+.emotion-16 {
+  max-width: 80vw;
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
+.emotion-16 svg {
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
-.emotion-3 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 600;
+.emotion-17 {
+  margin-bottom: 20px;
+}
+
+.emotion-18 {
+  margin: 0;
+  color: #555E74;
+  font-family: 'DM Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 400;
   letter-spacing: 0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3486607142857143em;
+.emotion-18 svg {
+  fill: #555E74;
 }
 
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4892857142857143em;
-}
-
-<button
+<div
     class="emotion-0"
-    data-testid="button"
-    type="button"
   >
     <div
       class="emotion-1"
     >
-      <div
+      <button
         class="emotion-2"
+        data-testid="button"
+        type="button"
       >
-        <span
+        <div
           class="emotion-3"
         >
-          DOWNLOAD ALL SVGs
-        </span>
+          <div
+            class="emotion-4"
+          >
+            <span
+              class="emotion-5"
+            >
+              SWITCH THEME: 
+            </span>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <span
+              class="emotion-5"
+            >
+              LIGHT
+            </span>
+          </div>
+        </div>
+      </button>
+      <select
+        style="height: 26px; font-size: 16px;"
+      >
+        <option>
+          No SVG selected
+        </option>
+        <option
+          value="0"
+        >
+          SvgName SVG
+        </option>
+      </select>
+      <button
+        class="emotion-8"
+        data-testid="button"
+        type="button"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <span
+              class="emotion-5"
+            >
+              Download single SVG
+            </span>
+          </div>
+        </div>
+      </button>
+      <button
+        class="emotion-12"
+        data-testid="button"
+        type="button"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <span
+              class="emotion-5"
+            >
+              DOWNLOAD ALL SVGs
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      class="emotion-16"
+    >
+      <div
+        class="emotion-17"
+      >
+        <p
+          class="emotion-18"
+        >
+          SvgName
+        </p>
+        <div>
+          <svg
+            fill="none"
+            height="759"
+            viewBox="0 0 1344 759"
+            width="1344"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            
+
+            <rect
+              fill="#F4F4F4"
+              height="759"
+              width="1344"
+            />
+            
+
+            <rect
+              fill="#E4E4E4"
+              height="16"
+              rx="8"
+              width="773"
+              x="286"
+              y="380"
+            />
+            
+
+            <rect
+              fill="#3358CC"
+              height="16"
+              rx="8"
+              width="451"
+              x="286"
+              y="380"
+            />
+            
+
+            <rect
+              fill="#446BE4"
+              height="181"
+              rx="90.5"
+              width="181"
+              x="672"
+              y="297"
+            />
+            
+
+            <mask
+              height="106"
+              id="mock-nk-1"
+              maskUnits="userSpaceOnUse"
+              width="106"
+              x="710"
+              y="335"
+            >
+              
+
+              <path
+                clip-rule="evenodd"
+                d="M771.831 358.364V349.266C789.542 353.285 802.748 369.097 802.748 388C802.748 406.903 789.542 422.715 771.831 426.734V417.636C784.595 413.838 793.915 402.001 793.915 388C793.915 373.999 784.595 362.163 771.831 358.364ZM723.25 374.751V401.251H740.917L763 423.334V352.667L740.917 374.751H723.25ZM782.873 387.999C782.873 380.182 778.368 373.469 771.831 370.2V405.754C778.368 402.53 782.873 395.817 782.873 387.999Z"
+                fill="#0A0A0A"
+                fill-rule="evenodd"
+              />
+              
+
+            </mask>
+            
+
+            <g
+              mask="url(#mock-nk-1)"
+            >
+              
+
+              <rect
+                fill="#E0E7FF"
+                height="106"
+                width="106"
+                x="710"
+                y="335"
+              />
+              
+
+            </g>
+            
+
+          </svg>
+          
+
+        </div>
       </div>
     </div>
-  </button>
-  <div>
-    <svg
-      fill="none"
-      height="759"
-      viewBox="0 0 1344 759"
-      width="1344"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      
-
-      <rect
-        fill="#F4F4F4"
-        height="759"
-        width="1344"
-      />
-      
-
-      <rect
-        fill="#E4E4E4"
-        height="16"
-        rx="8"
-        width="773"
-        x="286"
-        y="380"
-      />
-      
-
-      <rect
-        fill="#3358CC"
-        height="16"
-        rx="8"
-        width="451"
-        x="286"
-        y="380"
-      />
-      
-
-      <rect
-        fill="#446BE4"
-        height="181"
-        rx="90.5"
-        width="181"
-        x="672"
-        y="297"
-      />
-      
-
-      <mask
-        height="106"
-        id="mock-nk-1"
-        maskUnits="userSpaceOnUse"
-        width="106"
-        x="710"
-        y="335"
-      >
-        
-
-        <path
-          clip-rule="evenodd"
-          d="M771.831 358.364V349.266C789.542 353.285 802.748 369.097 802.748 388C802.748 406.903 789.542 422.715 771.831 426.734V417.636C784.595 413.838 793.915 402.001 793.915 388C793.915 373.999 784.595 362.163 771.831 358.364ZM723.25 374.751V401.251H740.917L763 423.334V352.667L740.917 374.751H723.25ZM782.873 387.999C782.873 380.182 778.368 373.469 771.831 370.2V405.754C778.368 402.53 782.873 395.817 782.873 387.999Z"
-          fill="#0A0A0A"
-          fill-rule="evenodd"
-        />
-        
-
-      </mask>
-      
-
-      <g
-        mask="url(#mock-nk-1)"
-      >
-        
-
-        <rect
-          fill="#E0E7FF"
-          height="106"
-          width="106"
-          x="710"
-          y="335"
-        />
-        
-
-      </g>
-      
-
-    </svg>
-    
-
   </div>
 </DocumentFragment>
 `;

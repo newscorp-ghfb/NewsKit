@@ -1,6 +1,13 @@
 /* eslint-disable no-template-curly-in-string */
 import React, {useEffect, useRef, useState} from 'react';
-import {Button, getColorCssFromTheme, getSSRId, styled, Theme} from 'newskit';
+import {
+  Button,
+  getColorCssFromTheme,
+  getSSRId,
+  P,
+  styled,
+  Theme,
+} from 'newskit';
 import JSZip from 'jszip';
 import {saveAs} from 'file-saver';
 import dompurify from 'dompurify';
@@ -63,6 +70,9 @@ export const SvgPreviewer: React.FC = () => {
   const onmessage = (event: MessageEvent) => {
     if (event.data.pluginMessage?.action === 'FilesToUI') {
       testUint8Data(event.data.pluginMessage.data.svgdata);
+      // Left as can be useful for debugging SVG issues without
+      // using the local version.
+      console.log(event.data.pluginMessage.data.hexes, 'hexes');
 
       setHexesObj(event.data.pluginMessage.data.hexes);
 
@@ -152,6 +162,16 @@ export const SvgPreviewer: React.FC = () => {
 
   // ** FUNCTIONS FOR DOWNLOAD HANDLING  ** START **
 
+  const buildComponentName = (svgName: string) =>
+    svgName
+      .split(' ')
+      .map(namePart => namePart[0].toUpperCase() + namePart.substring(1))
+      .join('')
+      .replace(' ', '');
+
+  const buildSvgFileName = (svgName: string) =>
+    svgName.replace(' ', '-').toLowerCase();
+
   const replaceColorHashWithToken = (svgCode: string) => {
     let svgCodeCopy = svgCode;
 
@@ -205,14 +225,23 @@ export const SvgPreviewer: React.FC = () => {
       .replace(`filter="url(#filter0_d)"`, 'filter={`url(#${filter0})`}')
       .replace(`filter="url(#filter1_d)"`, 'filter={`url(#${filter1})`}')
       .replace(`filter="url(#filter2_d)"`, 'filter={`url(#${filter2})`}')
-      .replaceAll(`style="mask-type:alpha"`, `mask-type="alpha"`);
+      .replaceAll(`style="mask-type:alpha"`, `mask-type="alpha"`)
+      .replaceAll(`fill-rule`, `fillRule`)
+      .replaceAll(`clip-rule`, `clipRule`);
 
     return figmaSvgCopy;
   };
 
-  const buildImportList = (svgReactCode: string) => {
-    const fileImportList = `import React from 'react';
-      import {getSSRId} from 'newskit';
+  const buildImportList = (
+    svgReactCode: string,
+    fileReactSvgComponent: string,
+  ) => {
+    let fileImportList = `import React from 'react';
+      ${
+        fileReactSvgComponent.includes('getSSRId()')
+          ? `import {getSSRId} from 'newskit';`
+          : ''
+      }
       ${svgReactCode.includes('Svg') ? `import {Svg} from '../../svg';` : ''}
       ${svgReactCode.includes('Path') ? `import {Path} from '../../path';` : ''}
       ${svgReactCode.includes('Rect') ? `import {Rect} from '../../rect';` : ''}
@@ -227,7 +256,8 @@ export const SvgPreviewer: React.FC = () => {
           : ''
       }
       `;
-
+    // Removing any extra empty lines added from the ternary above but leaving one ad the end.
+    fileImportList = `${fileImportList.replace(/(^[ \t]*\n)/gm, '')}\n`;
     return fileImportList;
   };
 
@@ -273,19 +303,19 @@ export const SvgPreviewer: React.FC = () => {
       svgReactCode = toReactComponent(baseSvgCodeGroup[selectedSvg].figmaSvg);
       svgReactCode = replaceColorHashWithToken(svgReactCode);
 
-      const fileImportList = buildImportList(svgReactCode);
-      const svgComponentName = baseSvgCodeGroup[selectedSvg].name
-        .replace('Page=', '')
-        .replace(' ', '');
+      const svgComponentName = buildComponentName(
+        baseSvgCodeGroup[selectedSvg].name,
+      );
 
       const fileReactSvgComponent = buildReactSvgComponent(
         svgComponentName,
         svgReactCode,
       );
-
-      const svgFileName = baseSvgCodeGroup[selectedSvg].name
-        .replace('Page=', '')
-        .replace(' ', '-');
+      const fileImportList = buildImportList(
+        svgReactCode,
+        fileReactSvgComponent,
+      );
+      const svgFileName = buildSvgFileName(baseSvgCodeGroup[selectedSvg].name);
 
       const fileBlob = new Blob([fileImportList + fileReactSvgComponent], {
         type: 'text/plain;charset=utf-8;',
@@ -305,13 +335,17 @@ export const SvgPreviewer: React.FC = () => {
       figmaSvgCopy = toReactComponent(figmaSvgCopy);
       figmaSvgCopy = replaceColorHashWithToken(figmaSvgCopy);
 
-      const fileImportList = buildImportList(figmaSvgCopy);
-      const svgComponentName = svg.name.replace('Page=', '').replace(' ', '');
-      const svgFileName = svg.name.replace('Page=', '').replace(' ', '-');
+      const svgComponentName = buildComponentName(svg.name);
+      const svgFileName = buildSvgFileName(svg.name);
 
       const fileReactSvgComponent = buildReactSvgComponent(
         svgComponentName,
         figmaSvgCopy,
+      );
+
+      const fileImportList = buildImportList(
+        figmaSvgCopy,
+        fileReactSvgComponent,
       );
 
       zip.file(`${svgFileName}.tsx`, fileImportList + fileReactSvgComponent);
@@ -328,10 +362,6 @@ export const SvgPreviewer: React.FC = () => {
   };
 
   // ** FUNCTIONS FOR DOWNLOAD HANDLING  ** END **
-
-  const StyledSingleSVGDownloadButton = styled(Button)`
-    margin-right: 20px;
-  `;
 
   const SwitchThemeButton = () => {
     const StyledSwitchThemeButton = styled(Button)`
@@ -350,46 +380,80 @@ export const SvgPreviewer: React.FC = () => {
     );
   };
 
+  const StyledSingleSVGDownloadButton = styled(Button)`
+    margin-right: 20px;
+  `;
+
+  const StyledSvgGroupContainer = styled.div`
+    max-width: 80vw;
+    svg {
+      max-width: 80vw;
+      max-height: 80vh;
+    }
+  `;
+
+  const StyledSvgPreviewerContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  `;
+
+  const StyledButtonsContainer = styled.div`
+    position: fixed;
+    top: 50px;
+  `;
+
+  const StyledSingleSvgWrapper = styled.div`
+    margin-bottom: 20px;
+  `;
+
   return (
-    <>
-      <SwitchThemeButton />
+    <StyledSvgPreviewerContainer>
+      <StyledButtonsContainer>
+        <SwitchThemeButton />
 
-      <select
-        ref={selectSvgEl}
-        disabled={!svgCodeGroup}
-        style={{height: '26px', fontSize: '16px'}}
-      >
-        <option>No SVG selected</option>
-        {baseSvgCodeGroup &&
-          baseSvgCodeGroup.map((svg, index) => (
-            <option selected={index === 0} value={`${index}`}>
-              {svg.name.replace('Page=', '').replace(' ', '')} SVG
-            </option>
+        <select
+          ref={selectSvgEl}
+          disabled={!svgCodeGroup}
+          style={{height: '26px', fontSize: '16px'}}
+        >
+          <option>No SVG selected</option>
+          {baseSvgCodeGroup &&
+            baseSvgCodeGroup.map((svg, index) => (
+              <option selected={index === 0} value={`${index}`}>
+                {svg.name.replace(' ', '')} SVG
+              </option>
+            ))}
+        </select>
+
+        <StyledSingleSVGDownloadButton
+          disabled={!svgCodeGroup}
+          overrides={{stylePreset: 'buttonSolidPositive'}}
+          onClick={handleDownloadButtonClick}
+        >
+          Download single SVG
+        </StyledSingleSVGDownloadButton>
+
+        <Button
+          disabled={!svgCodeGroup}
+          overrides={{stylePreset: 'buttonSolidPositive'}}
+          onClick={buildAndDownloadAllSvgFile}
+        >
+          DOWNLOAD ALL SVGs
+        </Button>
+      </StyledButtonsContainer>
+
+      {svgCodeGroup && baseSvgCodeGroup && (
+        <StyledSvgGroupContainer>
+          {svgCodeGroup.map((svgCode, index) => (
+            <StyledSingleSvgWrapper>
+              <P>{baseSvgCodeGroup[index].name}</P>
+              <div dangerouslySetInnerHTML={{__html: sanitizer(svgCode)}} />
+            </StyledSingleSvgWrapper>
           ))}
-      </select>
-
-      <StyledSingleSVGDownloadButton
-        disabled={!svgCodeGroup}
-        overrides={{stylePreset: 'buttonSolidPositive'}}
-        onClick={handleDownloadButtonClick}
-      >
-        Download single SVG
-      </StyledSingleSVGDownloadButton>
-
-      <Button
-        disabled={!svgCodeGroup}
-        overrides={{stylePreset: 'buttonSolidPositive'}}
-        onClick={buildAndDownloadAllSvgFile}
-      >
-        DOWNLOAD ALL SVGs
-      </Button>
-      {svgCodeGroup && (
-        <div
-          dangerouslySetInnerHTML={{__html: sanitizer(svgCodeGroup.join())}}
-        />
+        </StyledSvgGroupContainer>
       )}
-
-      {svgCodeGroup && svgCodeGroup.length > 1 && <SwitchThemeButton />}
-    </>
+    </StyledSvgPreviewerContainer>
   );
 };
