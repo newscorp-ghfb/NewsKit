@@ -82,12 +82,13 @@ export const StoryDefault = () => (
     </InlineMessage>
   </>
 );
-StoryDefault.storyName = 'default';
+StoryDefault.storyName = 'inline-message-default';
 
 export const StoryOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
-    <StorybookHeading>Inline message</StorybookHeading>
-    <StorybookSubHeading>overrides</StorybookSubHeading>
+    <StorybookHeading>
+      Inline message with custom theme and overrides
+    </StorybookHeading>
     <InlineMessage
       title="Your title here"
       icon={icon}
@@ -116,4 +117,39 @@ export const StoryOverrides = () => (
     </InlineMessage>
   </ThemeProvider>
 );
-StoryOverrides.storyName = 'overrides';
+StoryOverrides.storyName = 'inline-message-with-overrides';
+
+export const StoryStylePresets = () => (
+  <>
+    <StorybookHeading>
+      Inline message with different style presets
+    </StorybookHeading>
+    <br />
+    <StorybookSubHeading>inlineMessageInformative</StorybookSubHeading>
+    <InlineMessage
+      title="Your title here"
+      icon={icon}
+      aria-label="with inlineMessageInformative"
+      overrides={{
+        stylePreset: 'inlineMessageInformative',
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </InlineMessage>
+    <StorybookSubHeading>inlineMessageNegative</StorybookSubHeading>
+    <InlineMessage
+      title="Your title here"
+      icon={icon}
+      aria-label="with inlineMessageNegative"
+      overrides={{
+        stylePreset: 'inlineMessageNegative',
+      }}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </InlineMessage>
+  </>
+);
+
+StoryStylePresets.storyName = 'inline-message-intents';

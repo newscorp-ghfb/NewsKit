@@ -61,11 +61,7 @@ export const componentDefaults = {
     spaceInset: 'spaceInset040',
     width: '100%',
     content: {
-      title: {
-        stylePreset: 'inkInformative',
-      },
       message: {
-        stylePreset: 'inkInformative',
         typographyPreset: 'utilityMeta020',
       },
     },

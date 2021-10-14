@@ -21,14 +21,14 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'InlineMessage | Newskit design system',
+      title: 'Inline Message | Newskit design system',
       description:
         'An Inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Feedback & Status',
-      name: 'InlineMessage',
+      name: 'Inline Message',
       hero: {
         illustration: 'components/inline-message/inline-message-illustration',
       },
@@ -44,7 +44,7 @@ export default (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the InlineMessage component, its variations, and configuration options.',
+        'This demo allows you to preview the Inline Message component, its variations, and configuration options.',
       playground: {
         componentName: 'InlineMessage',
         component: state => {
@@ -57,7 +57,7 @@ export default (layoutProps: LayoutProps) => (
                   icon && (
                     <IconFilledInfo
                       overrides={{
-                        stylePreset: 'toastIcon',
+                        stylePreset: 'inkContrast',
                         size: 'iconSize020',
                       }}
                     />
@@ -319,7 +319,7 @@ export default (layoutProps: LayoutProps) => (
       introduction: ``,
       components: [
         {
-          title: 'InlineMessage',
+          title: 'Inline Message',
           summary: `An Inline Message has a range of props that can be used to define an appropriate experience for different use cases and
                     a range of predefined elements and attributes that can be overridden to define its appearance.`,
           propsRows: [
@@ -491,7 +491,7 @@ export default (layoutProps: LayoutProps) => (
       uiKit: true,
     }}
     related={{
-      introduction: 'Components related to InlineMessage',
+      introduction: 'Components related to Inline Message',
       related: ['Toast', 'Modal', 'Drawer'],
     }}
   />

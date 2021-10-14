@@ -795,12 +795,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
@@ -5239,12 +5239,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
@@ -9683,12 +9683,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
@@ -14127,12 +14127,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
@@ -18571,12 +18571,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
@@ -23015,12 +23015,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
@@ -27459,12 +27459,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
@@ -31903,12 +31903,12 @@ Object {
     "inlineMessage": Object {
       "content": Object {
         "message": Object {
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkBase",
           "typographyPreset": "utilityMeta020",
         },
         "title": Object {
           "spaceStack": "space030",
-          "stylePreset": "inkInformative",
+          "stylePreset": "inkContrast",
           "typographyPreset": "utilityHeading010",
         },
       },
