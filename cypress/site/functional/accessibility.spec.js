@@ -26,6 +26,13 @@ describe('Page accessibility', () => {
             'color-contrast': {enabled: false},
           },
         });
+      } else if (path === `/components/tabs`) {
+        cy.checkA11y(null, {
+          rules: {
+            'scrollable-region-focusable': {enabled: false},
+            'color-contrast': {enabled: false},
+          },
+        });
       } else {
         // TODO: Need to revisit this rule while working on the newskit site remake project
         cy.checkA11y(null, {

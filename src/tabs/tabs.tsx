@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {isFragment} from 'react-is';
 import {
   TabProps,
@@ -48,6 +48,9 @@ const validateInitialSelectedIndex = (
   children: unknown[],
 ): number => (index >= 0 && index < children.length ? index : 0);
 
+const validateSelectedIndex = (index: number, children: unknown[]): number =>
+  index >= 0 ? Math.min(index, children.length - 1) : 0;
+
 const getAlign = (align: TabAlign | undefined, vertical: boolean) => {
   if (!align) {
     return vertical ? TabAlign.Start : TabAlign.Center;
@@ -68,6 +71,7 @@ export const Tabs: React.FC<TabsProps> = ({
   divider,
   vertical = false,
   distribution,
+  selectedIndex,
   initialSelectedIndex = 0,
   indicatorPosition = TabsIndicatorPosition.End,
   align: passedAlign,
@@ -95,12 +99,24 @@ export const Tabs: React.FC<TabsProps> = ({
 
   // The index of the active tab - this is what we change on click to trigger a visual tab change
   const [activeTabIndex, setActiveTabIndex] = useState(() =>
-    validateInitialSelectedIndex(initialSelectedIndex, children),
+    validateInitialSelectedIndex(
+      selectedIndex || initialSelectedIndex,
+      children,
+    ),
   );
-  const changeActiveTab = (selectedIndex: number) => {
-    setActiveTabIndex(selectedIndex);
+
+  useEffect(() => {
+    if (selectedIndex !== undefined) {
+      setActiveTabIndex(validateSelectedIndex(selectedIndex, children));
+    }
+  }, [selectedIndex, children]);
+
+  const changeActiveTab = (newSelectedIndex: number) => {
+    if (selectedIndex === undefined) {
+      setActiveTabIndex(newSelectedIndex);
+    }
     if (onChange && typeof onChange === 'function') {
-      onChange(selectedIndex);
+      onChange(newSelectedIndex);
     }
   };
   const [indicator, setIndicator] = useState({

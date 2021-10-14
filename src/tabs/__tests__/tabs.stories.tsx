@@ -8,6 +8,7 @@ import {
 import {Tab, TabAlign, Tabs, TabsDistribution, TabsIndicatorPosition} from '..';
 import {IconFilledEmail} from '../../icons';
 import {Block} from '../../block';
+import {Button} from '../../button';
 import {createTheme, ThemeProvider} from '../../theme';
 
 const LoremIpsumText = [
@@ -248,6 +249,42 @@ export const StoryTabsDistributionStart = () => (
   </React.Fragment>
 );
 StoryTabsDistributionStart.storyName = 'tabs-distribution-start';
+
+export const StoryControlledTabs = () => {
+  const [selectedIndex, setSelected] = React.useState(0);
+  return (
+    <React.Fragment>
+      <StorybookHeading>Controlled Tabs Index selection</StorybookHeading>
+      <Block spaceInset="spaceInset040">
+        <Button onClick={() => setSelected(state => Math.min(2, state + 1))}>
+          +
+        </Button>
+        <Block spaceInset="spaceInset040" />
+        <Button onClick={() => setSelected(state => Math.max(0, state - 1))}>
+          -
+        </Button>
+      </Block>
+      <Tabs
+        size={TabSize.Small}
+        distribution={TabsDistribution.Start}
+        divider
+        selectedIndex={selectedIndex}
+        onChange={setSelected}
+      >
+        <Tab label="H tab 1" key="tab-1">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label={titleCanHaveIcons} key="tab-2">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="H tab 3, three" key="tab-3">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </React.Fragment>
+  );
+};
+StoryControlledTabs.storyName = 'tabs-controlled';
 
 export const StoryTabsDistributionGrow = () => (
   <React.Fragment>

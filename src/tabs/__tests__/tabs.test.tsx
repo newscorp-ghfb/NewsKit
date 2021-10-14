@@ -375,6 +375,112 @@ describe('Tabs', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('renders with selectedIndex', () => {
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      selectedIndex: 2,
+    };
+    const {getAllByTestId, asFragment} = renderWithTheme(
+      renderTabsDefault,
+      props,
+    );
+
+    const tab = getAllByTestId('tab')[2];
+    expect(tab).toHaveStyle(selectedTabStyled);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('updated selected Index when selectedIndex prop change controlled mode', () => {
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      selectedIndex: 1,
+    };
+    const {getAllByTestId, asFragment, rerender} = renderWithTheme(
+      renderTabsDefault,
+      props,
+    );
+
+    const tab = getAllByTestId('tab')[1];
+    expect(tab).toHaveStyle(selectedTabStyled);
+
+    const updatedProps = {
+      selectedIndex: 2,
+    };
+
+    rerender(<Tabs {...props} {...updatedProps} />);
+
+    const newSelectedTab = getAllByTestId('tab')[2];
+    expect(newSelectedTab).toHaveStyle(selectedTabStyled);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('updated selected Index to maximum size when selectedIndex value is higher', () => {
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      selectedIndex: 1,
+    };
+    const {getAllByTestId, asFragment, rerender} = renderWithTheme(
+      renderTabsDefault,
+      props,
+    );
+
+    const tab = getAllByTestId('tab')[1];
+    expect(tab).toHaveStyle(selectedTabStyled);
+
+    const updatedProps = {
+      selectedIndex: 5,
+    };
+
+    rerender(<Tabs {...props} {...updatedProps} />);
+
+    const newSelectedTab = getAllByTestId('tab')[2];
+    expect(newSelectedTab).toHaveStyle(selectedTabStyled);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('updated selected Index to 0 when selectedIndex value is less', () => {
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      selectedIndex: 1,
+    };
+    const {getAllByTestId, asFragment, rerender} = renderWithTheme(
+      renderTabsDefault,
+      props,
+    );
+
+    const tab = getAllByTestId('tab')[1];
+    expect(tab).toHaveStyle(selectedTabStyled);
+
+    const updatedProps = {
+      selectedIndex: -1,
+    };
+
+    rerender(<Tabs {...props} {...updatedProps} />);
+
+    const newSelectedTab = getAllByTestId('tab')[0];
+    expect(newSelectedTab).toHaveStyle(selectedTabStyled);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('active should state should not being updated if we dont pass onChanged in controlled mode', () => {
+    const onChange = jest.fn();
+    const props: TabsProps = {
+      children: tabsWithLabel,
+      selectedIndex: 1,
+      onChange,
+    };
+    const {getAllByTestId} = renderWithTheme(renderTabsDefault, props);
+
+    const selectedTab = getAllByTestId('tab')[1];
+    const clickedTab = getAllByTestId('tab')[2];
+    fireEvent.click(clickedTab);
+    expect(selectedTab).toHaveStyle(selectedTabStyled);
+  });
+
   test('renders with left/right aligned text', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,

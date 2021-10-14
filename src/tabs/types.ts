@@ -36,6 +36,7 @@ export interface TabsProps {
   vertical?: boolean;
   distribution?: TabsDistribution;
   initialSelectedIndex?: number;
+  selectedIndex?: number;
   indicatorPosition?: TabsIndicatorPosition;
   align?: TabAlign;
   onChange?: (selectedIndex: number) => void;

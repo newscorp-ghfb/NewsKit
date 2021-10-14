@@ -17984,6 +17984,517 @@ exports[`Tabs renders with second tab initially selected 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Tabs renders with selectedIndex 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-1 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-3::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-3 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-5>*:not(style) {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 {
+  scroll-snap-align: start;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-7:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-7:focus {
+  outline-offset: -1px;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-10 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-10::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-10::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-12 {
+  scroll-snap-align: center;
+}
+
+.emotion-18 {
+  scroll-snap-align: end;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-19 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-19 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-19:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-19:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-19:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-19:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-19 svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:focus {
+  outline-offset: -1px;
+}
+
+.emotion-23 {
+  background-color: #0a68c1;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-24 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-25 {
+  margin: 0;
+  padding: 1px 0;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+    data-testid="tab-group"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tab-bar"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="emotion-3"
+          data-testid="scroll-container"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="emotion-4"
+            role="tablist"
+          >
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        First tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-12"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Second tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-18"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="true"
+                  class="emotion-19"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Third tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="emotion-23"
+              data-testid="tab-bar-indicator"
+              role="presentation"
+              style="width: 0px; height: 2px; transform: translateX(0px);"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-24"
+        data-testid="tab-bar-track"
+        role="presentation"
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      First tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Second tab content
+    </div>
+    <div
+      aria-hidden="false"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Third tab content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Tabs renders with sizing 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -18999,6 +19510,1539 @@ exports[`Tabs sets active on click 1`] = `
       hidden=""
       role="tabpanel"
       tabindex="-1"
+    >
+      Third tab content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tabs updated selected Index to 0 when selectedIndex value is less 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-1 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-3::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-3 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-5>*:not(style) {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 {
+  scroll-snap-align: start;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-7:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-7 svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:focus {
+  outline-offset: -1px;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-10 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-10::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-10::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-12 {
+  scroll-snap-align: center;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-13:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-13:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-13:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-13:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-13:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-13:focus {
+  outline-offset: -1px;
+}
+
+.emotion-18 {
+  scroll-snap-align: end;
+}
+
+.emotion-23 {
+  background-color: #0a68c1;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-24 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-25 {
+  margin: 0;
+  padding: 1px 0;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+    data-testid="tab-group"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tab-bar"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="emotion-3"
+          data-testid="scroll-container"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="emotion-4"
+            role="tablist"
+          >
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="true"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        First tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-12"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-13"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Second tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-18"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-13"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Third tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="emotion-23"
+              data-testid="tab-bar-indicator"
+              role="presentation"
+              style="width: 0px; height: 2px; transform: translateX(0px);"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-24"
+        data-testid="tab-bar-track"
+        role="presentation"
+      />
+    </div>
+    <div
+      aria-hidden="false"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      role="tabpanel"
+      tabindex="0"
+    >
+      First tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Second tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Third tab content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tabs updated selected Index to maximum size when selectedIndex value is higher 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-1 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-3::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-3 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-5>*:not(style) {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 {
+  scroll-snap-align: start;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-7:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-7:focus {
+  outline-offset: -1px;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-10 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-10::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-10::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-12 {
+  scroll-snap-align: center;
+}
+
+.emotion-18 {
+  scroll-snap-align: end;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-19 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-19 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-19:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-19:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-19:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-19:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-19 svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:focus {
+  outline-offset: -1px;
+}
+
+.emotion-23 {
+  background-color: #0a68c1;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-24 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-25 {
+  margin: 0;
+  padding: 1px 0;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+    data-testid="tab-group"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tab-bar"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="emotion-3"
+          data-testid="scroll-container"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="emotion-4"
+            role="tablist"
+          >
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        First tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-12"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Second tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-18"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="true"
+                  class="emotion-19"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Third tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="emotion-23"
+              data-testid="tab-bar-indicator"
+              role="presentation"
+              style="width: 0px; height: 2px; transform: translateX(0px); transition: all 300ms cubic-bezier(.5, 0, .5, 1);"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-24"
+        data-testid="tab-bar-track"
+        role="presentation"
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      First tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Second tab content
+    </div>
+    <div
+      aria-hidden="false"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Third tab content
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tabs updated selected Index when selectedIndex prop change controlled mode 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-1 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-3::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-3 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-5>*:not(style) {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 {
+  scroll-snap-align: start;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-7:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-7:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-7:focus {
+  outline-offset: -1px;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-10 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.emotion-10::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.32678571428571435em;
+}
+
+.emotion-10::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-12 {
+  scroll-snap-align: center;
+}
+
+.emotion-18 {
+  scroll-snap-align: end;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: #2e2e2e;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-19 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-19 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-19:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-19:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-19:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-19:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-19 svg {
+  fill: #0a68c1;
+}
+
+.emotion-19:focus {
+  outline-offset: -1px;
+}
+
+.emotion-23 {
+  background-color: #0a68c1;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-24 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-25 {
+  margin: 0;
+  padding: 1px 0;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+    data-testid="tab-group"
+  >
+    <div
+      class="emotion-1"
+      data-testid="tab-bar"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="emotion-3"
+          data-testid="scroll-container"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="emotion-4"
+            role="tablist"
+          >
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        First tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-12"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="false"
+                  class="emotion-7"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Second tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="distribution-wrapper"
+            >
+              <div
+                class="emotion-18"
+              >
+                <button
+                  aria-controls="mock-nk-1"
+                  aria-selected="true"
+                  class="emotion-19"
+                  data-testid="tab"
+                  id="mock-nk-1"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-9"
+                    >
+                      <span
+                        class="emotion-10"
+                      >
+                        Third tab
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="emotion-23"
+              data-testid="tab-bar-indicator"
+              role="presentation"
+              style="width: 0px; height: 2px; transform: translateX(0px);"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-24"
+        data-testid="tab-bar-track"
+        role="presentation"
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      First tab content
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      hidden=""
+      role="tabpanel"
+      tabindex="-1"
+    >
+      Second tab content
+    </div>
+    <div
+      aria-hidden="false"
+      aria-labelledby="mock-nk-1"
+      class="emotion-25"
+      data-testid="tab-panel"
+      role="tabpanel"
+      tabindex="0"
     >
       Third tab content
     </div>

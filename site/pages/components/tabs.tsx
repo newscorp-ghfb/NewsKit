@@ -200,7 +200,13 @@ export default (layoutProps: LayoutProps) => (
               type: 'number',
               default: '0',
               description:
-                'Defines the index of the initially selected Tab item.',
+                'Defines the index of the initially selected Tab item (uncontrolled).',
+            },
+            {
+              name: 'selectedIndex',
+              type: 'number',
+              description:
+                'Defines the index of the selected Tab item, when changing this value tabs state is updated (controlled).',
             },
             {
               name: 'onChange',
