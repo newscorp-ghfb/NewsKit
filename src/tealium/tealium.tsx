@@ -19,17 +19,39 @@ export const Tealium: React.FC<TealiumProps> = ({
     scripts={[
       {
         content: `(function(a,b,c,d){
-                a='//tags.tiqcdn.com/utag/${accountId}/${profileId}/${env}/utag.js';
-               b=document;
-               c='script';
-               d=b.createElement(c);
-               d.src=a;
-               d.type='text/java'+c;
-               d.async=true;
-               a=b.getElementsByTagName(c)[0];
-               a.parentNode.insertBefore(d,a);
-             })();
-             `,
+              a='//tags.tiqcdn.com/utag/${accountId}/${profileId}/${env}/utag.js';
+              b=document;
+              c='script';
+              d=b.createElement(c);
+              d.src=a;
+              d.type='text/java'+c;
+              d.async=true;
+              window.utag_queue = []
+              if (d.addEventListener) {
+                d.addEventListener(
+                  'load',
+                  function () {
+                    for (var i = 0; i < utag_queue.length; i++) {
+                      event = utag_queue[i];
+                      utag.track(event.event, event.data);
+                    }
+                  },
+                  false
+                );
+              } else {
+                d.onreadystatechange = function () {
+                  if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                    this.onreadystatechange = null;
+                    for (var i = 0; i < utag_queue.length; i++) {
+                      event = utag_queue[i];
+                      utag.track(event.event, event.data);
+                    }
+                  }
+                };
+              }
+              a = b.getElementsByTagName(c)[0];
+              a.parentNode.insertBefore(d, a);
+            })();`,
       },
     ]}
   />
