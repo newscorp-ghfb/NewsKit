@@ -482,9 +482,6 @@ jobs:
     parameters:
       package:
         type: string
-      akamai:
-        type: boolean
-        default: false
       apply:
         type: boolean
         default: true
@@ -504,22 +501,6 @@ jobs:
           at: ~/project
       - run_only_on_folder_change:
           folder: ./terraform/<< parameters.package >>
-      - when:
-          condition: << parameters.akamai >>
-          steps:
-            - run:
-                name: Setup akamai
-                command: |
-                  echo "[default]
-                  client_secret = ${AKAMAI_SECRET}
-                  host = ${AKAMAI_HOST}
-                  access_token = ${AKAMAI_ACCESS_TOKEN}
-                  client_token = ${AKAMAI_CLIENT_TOKEN}
-                  [papi]
-                  client_secret = ${AKAMAI_SECRET}
-                  host = ${AKAMAI_HOST}
-                  access_token = ${AKAMAI_ACCESS_TOKEN}
-                  client_token = ${AKAMAI_CLIENT_TOKEN}" > ~/.edgerc
       - aws_assume_role_file
       - when:
           condition: << parameters.tf_env >>
@@ -1026,16 +1007,6 @@ workflows:
           context: ncu-product-platforms-context
       - deploy_terraform:
           <<: *only_pr
-          name: deploy_terraform_akamai_pr
-          package: akamai
-          context: ncu-product-platforms-context
-          akamai: true
-          apply: false
-          environment: dev
-          requires:
-            - init_aws
-      - deploy_terraform:
-          <<: *only_pr
           name: deploy_terraform_dns_pr
           package: dns
           context: ncu-product-platforms-context
@@ -1153,15 +1124,6 @@ workflows:
             - eks_flux_deploy_dev_to_prod
       - deploy_terraform:
           <<: *only_develop
-          name: deploy_terraform_akamai_dev
-          package: akamai
-          context: ncu-product-platforms-context
-          akamai: true
-          environment: dev
-          requires:
-            - init_aws
-      - deploy_terraform:
-          <<: *only_develop
           name: deploy_terraform_dns_dev
           package: dns
           context: ncu-product-platforms-context
@@ -1216,15 +1178,6 @@ workflows:
             - eks_flux_deploy_staging
       - deploy_terraform:
           <<: *only_release
-          name: deploy_terraform_akamai_staging
-          package: akamai
-          context: ncu-product-platforms-context
-          akamai: true
-          environment: staging
-          requires:
-            - init_aws
-      - deploy_terraform:
-          <<: *only_release
           name: deploy_terraform_dns_staging
           package: dns
           context: ncu-product-platforms-context
@@ -1255,12 +1208,3 @@ workflows:
           <<: *only_master
           requires:
             - eks_flux_deploy_prod
-      - deploy_terraform:
-          <<: *only_master
-          name: deploy_terraform_akamai_prod
-          package: akamai
-          context: ncu-product-platforms-context
-          akamai: true
-          environment: prod
-          requires:
-            - init_aws
