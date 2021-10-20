@@ -3,7 +3,7 @@ zone_name                = "newskit.dev-news.co.uk"
 cluster_domain           = "ceng-dev.newsuk.tech"
 distribution_domain_name      = {
   "www"       = "dzgo1oqy4dugt.cloudfront.net",
-  "storybook" = "example.com"
+  "storybook" = "do1696tkvkjks.cloudfront.net"
 }
 cert = {
   "_9e75dbcdaa5a07c5a9fd8c95ee6f66ed.newskit.dev-news.co.uk"     = "_f91f0167b578ad2b6c29d6568dbb1bbe.vjldqjsdcd.acm-validations.aws."

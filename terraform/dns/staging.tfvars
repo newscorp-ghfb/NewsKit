@@ -3,7 +3,7 @@ zone_name                = "newskit.staging-news.co.uk"
 cluster_domain           = "staging.ceng.newsuk.tech"
 distribution_domain_name      = {
   "www"       = "d361ybor7ruvjs.cloudfront.net",
-  "storybook" = "example.com"
+  "storybook" = "d1mpo513jliw4t.cloudfront.net"
 }
 cert = {
   "_34f1dae50d77832c56f007fb0026d2c1.newskit.staging-news.co.uk"     = "_57fc42778e542e5da2f031e150c305a8.vjldqjsdcd.acm-validations.aws."
