@@ -136,6 +136,7 @@ export const FormInputTextField = React.forwardRef<
     }
     return statusIcon;
   }
+
   return (
     <TextField
       name={name}

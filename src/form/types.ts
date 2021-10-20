@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Resolver,
   SubmitErrorHandler,
@@ -12,7 +13,7 @@ export interface FormError extends Object {
   ref: React.RefObject<HTMLInputElement>;
 }
 
-export interface FormProps {
+export interface FormProps extends React.HtmlHTMLAttributes<HTMLFormElement> {
   children: React.ReactNode;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onSubmit: SubmitHandler<Record<string, any>>;

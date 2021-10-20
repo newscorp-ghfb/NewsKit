@@ -64,6 +64,7 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
       setFieldsHadError(updateForFieldsHadError);
     }
   };
+
   const eventHandlerOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
       onChange(e);

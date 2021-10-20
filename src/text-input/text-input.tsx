@@ -116,6 +116,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
         props.onChange(e);
       }
     };
+
     return (
       <StyledTextInputContainer overrides={overrides}>
         {!hideLabel && (

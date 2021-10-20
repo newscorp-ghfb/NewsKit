@@ -36,7 +36,6 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       },
       [onBlur],
     );
-
     const onInputChange = React.useCallback(
       event => {
         if (onChange) {
@@ -45,6 +44,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       },
       [onChange],
     );
+
     return (
       <>
         <StyledInputContainer

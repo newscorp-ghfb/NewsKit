@@ -1,4 +1,5 @@
 import React from 'react';
+import {FormProps} from './types';
 import {IconFilledCheckCircle, IconFilledError} from '../icons';
 import {FormInputState} from '../text-field/types';
 
@@ -50,4 +51,16 @@ export const getStatusIcon = ({
   }
 
   return null;
+};
+
+export const excludeReactHookFormProps = (props: FormProps) => {
+  const {
+    resolver,
+    defaultValues,
+    reValidationMode,
+    validationMode,
+    ...rest
+  } = props;
+
+  return rest;
 };

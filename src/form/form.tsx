@@ -9,6 +9,7 @@ import React, {
 import {useForm, FormProvider} from 'react-hook-form';
 import {FormProps, FormRef, FieldsHadErrorObject} from './types';
 import {FormValidationContextProvider} from './context';
+import {excludeReactHookFormProps} from './utils';
 
 export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
   const {
@@ -91,6 +92,7 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     >
       <FormProvider {...formContext}>
         <form
+          {...excludeReactHookFormProps(props)}
           ref={formRef}
           onSubmit={formContext.handleSubmit(onSubmit, onSubmitInvalid)}
           noValidate
@@ -101,5 +103,4 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     </FormValidationContextProvider>
   );
 });
-
 Form.displayName = 'Form';

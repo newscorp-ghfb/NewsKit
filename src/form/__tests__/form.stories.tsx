@@ -11,6 +11,7 @@ import {Button} from '../../button';
 import {TextInput, TextInputSize} from '../../text-input';
 import {Block} from '../../block';
 import {Stack} from '../../stack';
+import {styled} from '../../utils';
 
 const PhoneInputWithCountry = require('react-phone-number-input/react-hook-form')
   .default;
@@ -331,3 +332,36 @@ export const StoryFormWithPhoneInput = () => {
 };
 StoryFormWithPhoneInput.storyName = 'form-with-phone-input';
 StoryFormWithPhoneInput.parameters = {eyes: {include: false}};
+
+export const StoryFormWithCustomStyles = () => {
+  const StyledForm = styled(Form)`
+    background: #fcf7de;
+    width: 100%;
+    border: 1px dashed;
+  `;
+  return (
+    <React.Fragment>
+      <StorybookHeading>Form with custom styles</StorybookHeading>
+      <Block>
+        <StyledForm onSubmit={onSubmit}>
+          <Block spaceStack="space050">
+            <TextInput
+              label="Email"
+              name="email"
+              rules={{
+                required: 'Required field',
+                pattern: {
+                  // eslint-disable-next-line no-useless-escape
+                  value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                  message: 'Please provide a valid email',
+                },
+              }}
+            />
+          </Block>
+          <Button type="submit">Submit</Button>
+        </StyledForm>
+      </Block>
+    </React.Fragment>
+  );
+};
+StoryFormWithCustomStyles.storyName = 'form-with-custom-styles';
