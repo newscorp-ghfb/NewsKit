@@ -1,5 +1,5 @@
 # slim image used simply to reduce build download time, if problems arise just use non-slim variant.
-FROM node:10.16-jessie-slim
+FROM node:16.11-bullseye-slim
 
 WORKDIR /app
 
