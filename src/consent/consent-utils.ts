@@ -36,6 +36,7 @@ export const getV2Scripts = (config: SourcePointConfigTCFV2) => {
     },
     {
       src: `${baseEndpoint}/wrapperMessagingWithoutDetection.js`,
+      async: true,
     },
   ];
 };

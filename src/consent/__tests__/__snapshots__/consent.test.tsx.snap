@@ -90,7 +90,8 @@ exports[`Consent with helmet the Consent version 2 renders correctly 1`] = `
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"
@@ -111,7 +112,8 @@ exports[`Consent with helmet the Consent version 2 renders correctly with defaul
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cdn.privacy-mgmt.com\\"}}"
     },
     {
-      "src": "https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js"
+      "src": "https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"
@@ -132,7 +134,8 @@ exports[`Consent with helmet the Consent version 2 renders correctly with events
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\",\\"events\\":{\\"onMessageReady\\":\\"__FUNC__function () {\\\\n                                console.log('onMessageReady');\\\\n                            }__FUNC__\\",\\"onConsentReady\\":\\"__FUNC__function () {\\\\n                                console.log('onConsentReady');\\\\n                            }__FUNC__\\"}}}"
     },
     {
-      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"
@@ -153,7 +156,8 @@ exports[`Consent with helmet the Consent version 2 renders correctly with traili
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "function"
@@ -252,7 +256,8 @@ exports[`Consent without helmet the Consent version 2 renders correctly 1`] = `
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "undefined"
@@ -273,7 +278,8 @@ exports[`Consent without helmet the Consent version 2 renders correctly with def
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cdn.privacy-mgmt.com\\"}}"
     },
     {
-      "src": "https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js"
+      "src": "https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "undefined"
@@ -294,7 +300,8 @@ exports[`Consent without helmet the Consent version 2 renders correctly with eve
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\",\\"events\\":{\\"onMessageReady\\":\\"__FUNC__function () {\\\\n                                console.log('onMessageReady');\\\\n                            }__FUNC__\\",\\"onConsentReady\\":\\"__FUNC__function () {\\\\n                                console.log('onConsentReady');\\\\n                            }__FUNC__\\"}}}"
     },
     {
-      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "undefined"
@@ -315,7 +322,8 @@ exports[`Consent without helmet the Consent version 2 renders correctly with tra
       "content": "window._sp_ = {\\"config\\":{\\"accountId\\":259,\\"propertyHref\\":\\"https://newskit.dev-news.co.uk\\",\\"baseEndpoint\\":\\"https://cmp.newskit.co.uk\\"}}"
     },
     {
-      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js"
+      "src": "https://cmp.newskit.co.uk/wrapperMessagingWithoutDetection.js",
+      "async": true
     }
   ],
   "reactHelmet": "undefined"
