@@ -710,7 +710,8 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 20.10.7
       - run:
           name: Install python and pip
           command: |
@@ -780,7 +781,8 @@ jobs:
         default: 'ncu-flux-newskit-site'
     executor: flux-deploy
     steps:
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 20.10.7
       - checkout
         # We have to add the ssh key so that Circle has permissions to checkout the private repo
       - add_ssh_keys:
@@ -830,7 +832,8 @@ jobs:
     executor: kubectl-deploy
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 20.10.7
       - add_ssh_keys:
           fingerprints: '7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80'
       - run:
