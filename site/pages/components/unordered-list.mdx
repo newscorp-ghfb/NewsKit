@@ -26,6 +26,9 @@ An unordered list can be used to produce a list of related content prefixed with
   <Prop name="listItemMarker" type="IconComponent">
     Optional icon component to override the list style.
   </Prop>
+  <Prop name="markerAlign" type="'start' | 'center' | 'end'" default='center'>
+    Vertically align the listItemMarker when the list takes more than one line.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
   <Prop name="spaceStack" type="MQ<string">
@@ -90,6 +93,25 @@ Refer to the defaults below for the full object structure:
         {
           label: 'facebook',
           value: IconFilledFacebook,
+        },
+      ],
+    },
+    {
+      name: 'Marker Align',
+      propName: 'markerAlign',
+      options: [
+        {
+          label: 'center',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'start',
+          value: 'start',
+        },
+        {
+          label: 'end',
+          value: 'end',
         },
       ],
     },

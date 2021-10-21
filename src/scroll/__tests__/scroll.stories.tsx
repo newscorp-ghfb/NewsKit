@@ -225,7 +225,7 @@ export const StoryScrollSnap = () => (
 
     <StorybookSubHeading>with stack vertical</StorybookSubHeading>
     <Container>
-      <Scroll vertical snapAlign="start" controls="static">
+      <Scroll vertical snapAlign="center" controls="static">
         <Stack flow="vertical-left">
           {[...tags, ...tags].map(tag => (
             <ScrollSnapAlignment key={getSSRId()}>{tag}</ScrollSnapAlignment>

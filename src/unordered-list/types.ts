@@ -3,6 +3,7 @@ import {MQ} from '../utils/style';
 
 export interface UnorderedListProps {
   listItemMarker?: NewsKitIcon;
+  markerAlign?: 'start' | 'center' | 'end';
   overrides?: {
     spaceStack?: MQ<string>;
     content?: {

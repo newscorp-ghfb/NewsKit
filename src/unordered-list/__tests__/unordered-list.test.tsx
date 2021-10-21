@@ -3,11 +3,15 @@ import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {UnorderedList, UnorderedListProps} from '..';
 import {IconFilledMood} from '../../icons';
 import {Link} from '../../link/link';
-import {StyledUl} from '../unordered-list';
+import {StyledUl} from '../styled';
 
 const renderUnorderedListWithItems = (props: UnorderedListProps) => (
   <UnorderedList {...props}>
-    {['first node', 'second node', 'third node']}
+    {[
+      `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+      'second node',
+      'third node',
+    ]}
   </UnorderedList>
 );
 
@@ -35,6 +39,30 @@ describe('UnorderedList', () => {
   test('renders with custom list item marker with different size', () => {
     const props: UnorderedListProps = {
       overrides: {marker: {size: 'iconSize010'}},
+      listItemMarker: IconFilledMood,
+    };
+    const fragment = renderToFragmentWithTheme(
+      renderUnorderedListWithItems,
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with marker at the start when list takes more than one line', () => {
+    const props: UnorderedListProps = {
+      markerAlign: 'start',
+      listItemMarker: IconFilledMood,
+    };
+    const fragment = renderToFragmentWithTheme(
+      renderUnorderedListWithItems,
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with marker at the end when list takes more than one line', () => {
+    const props: UnorderedListProps = {
+      markerAlign: 'end',
       listItemMarker: IconFilledMood,
     };
     const fragment = renderToFragmentWithTheme(
