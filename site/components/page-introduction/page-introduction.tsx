@@ -65,6 +65,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           <Illustration path={hero.illustration} />
         )}
       </Block>
+      <Block spaceStack="space060" />
     </ComponentPageCell>
   </>
 );

@@ -52,6 +52,7 @@ export interface LayoutProps {
   toggleTheme: () => void;
   themeMode: string;
   hideSidebar?: boolean;
+  children: React.ReactNode | ((props: {themeMode: string}) => React.ReactNode);
 }
 interface LayoutState {
   sidebarOpen: boolean;
@@ -198,7 +199,9 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
               <ThemeProvider
                 theme={themeMode === 'light' ? docsThemeLight : docsThemeDark}
               >
-                {children}
+                {typeof children === 'function'
+                  ? children({themeMode})
+                  : children}
               </ThemeProvider>
             ) : (
               <Grid>

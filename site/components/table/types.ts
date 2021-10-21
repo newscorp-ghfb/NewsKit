@@ -21,7 +21,9 @@ export interface ColumnMapObject extends TableCellProps {
     | 'token'
     | 'borderRadius'
     | 'borderWidth'
-    | 'componentLink';
+    | 'componentLink'
+    | 'motionDurationSwatch'
+    | 'motionTimingSwatch';
 }
 
 export type TableRowValue =

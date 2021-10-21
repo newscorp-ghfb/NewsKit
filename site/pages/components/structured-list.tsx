@@ -11,7 +11,7 @@ import {
 } from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {ComponentPageTemplate} from '../../components/component-page-template';
+import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
 
 export default (layoutProps: LayoutProps) => (

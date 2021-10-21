@@ -496,6 +496,10 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   position: absolute;
 }
 
+.emotion-5 {
+  margin-bottom: 32px;
+}
+
 <div
     class="emotion-0"
   >
@@ -515,6 +519,9 @@ exports[`Page Introduction renders with mandatory props 1`] = `
         />
       </picture>
     </div>
+    <div
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;

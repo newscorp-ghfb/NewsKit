@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Foundation Page Template renders with feature card 1`] = `
+<DocumentFragment>
+  <div
+    data-comp="layout"
+    data-props="{\\"toggleTheme\\":\\"toggle-theme-function\\",\\"themeMode\\":\\"theme-mode\\",\\"path\\":\\"/the-path\\",\\"newPage\\":true}"
+  />
+</DocumentFragment>
+`;
+
+exports[`Foundation Page Template renders with mandatory props only 1`] = `
+<DocumentFragment>
+  <div
+    data-comp="layout"
+    data-props="{\\"toggleTheme\\":\\"toggle-theme-function\\",\\"themeMode\\":\\"theme-mode\\",\\"path\\":\\"/the-path\\",\\"newPage\\":true}"
+  />
+</DocumentFragment>
+`;

@@ -7,7 +7,7 @@ import {
 } from 'newskit';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {ComponentPageTemplate} from '../../components/component-page-template';
+import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 
 const PlaygroundContainer = styled.div`

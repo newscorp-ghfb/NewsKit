@@ -4,7 +4,7 @@ import {Drawer, DrawerProps, OrderedList, styled} from 'newskit';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {ComponentPageTemplate} from '../../components/component-page-template';
+import {ComponentPageTemplate} from '../../templates/component-page-template';
 
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 

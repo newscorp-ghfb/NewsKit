@@ -18,7 +18,6 @@ import {Introduced} from './introduce';
 
 export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
   <>
-    <Block spaceStack="space060" />
     <Block spaceStack={{xs: 'space080', md: 'space050'}}>
       <Hidden xs sm>
         <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">

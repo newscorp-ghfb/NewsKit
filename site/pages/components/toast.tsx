@@ -3,7 +3,7 @@ import {Link, Toast, ToastProps, IconFilledInfo, Button, styled} from 'newskit';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {ComponentPageTemplate} from '../../components/component-page-template';
+import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 

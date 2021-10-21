@@ -12,7 +12,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {ComponentPageTemplate} from '../../components/component-page-template';
+import {ComponentPageTemplate} from '../../templates/component-page-template';
 
 const PlaygroundContainer = styled.div`
   display: flex;

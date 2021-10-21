@@ -138,7 +138,6 @@ export const renderCols = (
         cellContent = cellValue && <SwatchCard color={cellValue.toString()} />;
         break;
       }
-
       case 'colorToken': {
         cellContent = cellValue && (
           <TokenFlag color={cellValue.toString()}>{cellValue}</TokenFlag>

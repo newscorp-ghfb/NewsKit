@@ -2,13 +2,6 @@
 
 exports[`Meta renders with mandatory props 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  margin-bottom: 32px;
-}
-
-<div
-    class="emotion-0"
-  />
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 48px;
@@ -1126,13 +1119,6 @@ exports[`Meta renders with mandatory props 1`] = `
 
 exports[`Meta renders with mandatory props and figma button 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  margin-bottom: 32px;
-}
-
-<div
-    class="emotion-0"
-  />
   @media screen and (max-width: 767px) {
   .emotion-0 {
     margin-bottom: 48px;

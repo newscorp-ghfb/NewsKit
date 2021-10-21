@@ -72,11 +72,6 @@
         "id": "/foundations/colours"
       },
       {
-        "title": "Motions",
-        "page": true,
-        "id": "/foundations/motions"
-      },
-      {
         "title": "Presets",
         "id": "/foundations/presets",
         "subNav": [
