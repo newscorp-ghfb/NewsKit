@@ -13,16 +13,16 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   cursor: default;
   background-color: transparent;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-radius: 8px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
 }
@@ -44,17 +44,17 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-2:focus:not(:disabled) {
-  background-color: #fafafa;
-  border-color: #0a68c1;
+  background-color: #FAFAFA;
+  border-color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-2:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
+  border-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-2::before {
@@ -62,7 +62,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
@@ -70,7 +70,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 {
@@ -81,15 +81,15 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-4::before {
@@ -97,7 +97,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -105,7 +105,7 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div

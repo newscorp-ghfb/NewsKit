@@ -258,11 +258,11 @@ describe('Audio Player', () => {
 
     expect(mockGetTrackBackground).toHaveBeenCalledWith({
       colors: [
-        '#0a68c1', // indicator
-        '#f0f0f0', // buffered
-        '#fafafa', // track background
-        '#f0f0f0', // buffered
-        '#fafafa', // track background
+        '#3358CC', // indicator
+        '#F4F4F4', // buffered
+        '#FAFAFA', // track background
+        '#F4F4F4', // buffered
+        '#FAFAFA', // track background
       ],
       max: 6610,
       min: 0,

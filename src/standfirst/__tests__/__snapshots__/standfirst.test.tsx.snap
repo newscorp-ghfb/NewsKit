@@ -3,17 +3,17 @@
 exports[`Standfirst renders as h4 html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2e2e2e;
+  color: #2E2E2E;
   padding: 1px 0;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -21,7 +21,33 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.275em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3375em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -30,32 +56,6 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.3125em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.11145833333333338em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -68,18 +68,18 @@ exports[`Standfirst renders as h4 html tag 1`] = `
 exports[`Standfirst renders as span html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2e2e2e;
+  color: #2E2E2E;
   padding: 1px 0;
   display: inline-block;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -87,7 +87,33 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.275em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3375em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -96,32 +122,6 @@ exports[`Standfirst renders as span html tag 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.3125em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.11145833333333338em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -134,17 +134,17 @@ exports[`Standfirst renders as span html tag 1`] = `
 exports[`Standfirst renders with custom style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #0a68c1;
+  color: #3358CC;
   padding: 1px 0;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -152,7 +152,33 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.275em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3375em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -161,32 +187,6 @@ exports[`Standfirst renders with custom style preset 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.3125em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.11145833333333338em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -199,12 +199,12 @@ exports[`Standfirst renders with custom style preset 1`] = `
 exports[`Standfirst renders with custom typography preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2e2e2e;
-  font-family: "Source Serif Pro",serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: 0;
+  color: #2E2E2E;
+  font-family: "Bitter",serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.5px;
   padding: 1px 0;
 }
 
@@ -213,7 +213,7 @@ exports[`Standfirst renders with custom typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.128125em;
+  margin-bottom: -0.275em;
 }
 
 .emotion-0::after {
@@ -221,7 +221,7 @@ exports[`Standfirst renders with custom typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.3375em;
 }
 
 <h2
@@ -233,17 +233,17 @@ exports[`Standfirst renders with custom typography preset 1`] = `
 exports[`Standfirst renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2e2e2e;
+  color: #2E2E2E;
   padding: 1px 0;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -251,7 +251,33 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.275em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3375em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -260,32 +286,6 @@ exports[`Standfirst renders with default styles 1`] = `
     height: 0;
     width: 0;
     margin-top: -0.3125em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.11145833333333338em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 

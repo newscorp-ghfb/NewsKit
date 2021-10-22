@@ -12,7 +12,7 @@ exports[`Overlay renders with overrides 1`] = `
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: #ffeecf;
+  background-color: #FFEECF;
   opacity: 0;
 }
 

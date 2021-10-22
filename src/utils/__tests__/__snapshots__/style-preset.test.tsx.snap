@@ -5,28 +5,28 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
   .emotion-0 {
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -40,11 +40,11 @@ exports[`getStylePresetFromTheme with disabled and loading state 1`] = `
   .emotion-0 {
   background-color: #FF0000;
   border-radius: 50%;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -58,11 +58,11 @@ exports[`getStylePresetFromTheme with disabled state 1`] = `
   .emotion-0 {
   background-color: #FF0000;
   border-radius: 50%;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -194,23 +194,23 @@ exports[`getStylePresetFromTheme with isSvg  1`] = `
   .emotion-0 {
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   fill: #00ff00;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
   fill: #FF0000;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #c0c0c0;
-  fill: #c0c0c0;
+  color: #C0C0C0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -224,11 +224,11 @@ exports[`getStylePresetFromTheme with loading and selected state 1`] = `
   .emotion-0 {
   background-color: #ffff00;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 <div
@@ -242,11 +242,11 @@ exports[`getStylePresetFromTheme with loading state 1`] = `
   .emotion-0 {
   background-color: #ffff00;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 <div
@@ -260,28 +260,28 @@ exports[`getStylePresetFromTheme with nestedCssSelector adds the nested element 
   .emotion-0 .nested-element-class {
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 .nested-element-class svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) .nested-element-class {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-0:active:not(:disabled) .nested-element-class {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-0:disabled .nested-element-class {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled .nested-element-class svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -323,11 +323,11 @@ exports[`getStylePresetFromTheme with selected state 1`] = `
   .emotion-0 {
   background-color: #00ff00;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 <div
@@ -341,11 +341,11 @@ exports[`getStylePresetFromTheme with selected, selected:focus & selected:hover 
   .emotion-0 {
   background-color: #00ff00;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -379,28 +379,28 @@ exports[`getStylePresetFromTheme with visited, visited:focus & visited:hover sta
   .emotion-0 {
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-0:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -425,19 +425,19 @@ exports[`getStylePresetFromTheme without background-color styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -451,19 +451,19 @@ exports[`getStylePresetFromTheme without disabled state styles 1`] = `
   .emotion-0 {
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 <div

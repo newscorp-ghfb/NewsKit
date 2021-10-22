@@ -2,17 +2,17 @@ export const componentDefaults = {
   assistiveText: {
     small: {
       stylePreset: 'assistiveText',
-      typographyPreset: 'utilityLabel020',
+      typographyPreset: 'utilityBody010',
       minHeight: 'sizing030',
     },
     medium: {
       stylePreset: 'assistiveText',
-      typographyPreset: 'utilityLabel020',
+      typographyPreset: 'utilityBody020',
       minHeight: 'sizing030',
     },
     large: {
       stylePreset: 'assistiveText',
-      typographyPreset: 'utilityLabel030',
+      typographyPreset: 'utilityBody030',
       minHeight: 'sizing030',
     },
   },
@@ -103,7 +103,7 @@ export const componentDefaults = {
         },
         message: {
           stylePreset: 'inkInverse',
-          typographyPreset: 'utilityBody010',
+          typographyPreset: 'utilityBody020',
         },
       },
       actions: {
@@ -130,7 +130,7 @@ export const componentDefaults = {
         },
         message: {
           stylePreset: 'inkInverse',
-          typographyPreset: 'utilityBody010',
+          typographyPreset: 'utilityBody020',
         },
       },
       actions: {
@@ -529,20 +529,20 @@ export const componentDefaults = {
       },
       message: {
         stylePreset: 'inkBase',
-        typographyPreset: 'utilityBody010',
+        typographyPreset: 'utilityBody020',
       },
     },
   },
   label: {
     small: {
       stylePreset: 'label',
-      typographyPreset: 'utilityLabel030',
+      typographyPreset: 'utilityLabel010',
       spaceStack: 'space040',
       spaceInline: 'space010',
     },
     medium: {
       stylePreset: 'label',
-      typographyPreset: 'utilityLabel030',
+      typographyPreset: 'utilityLabel020',
       spaceStack: 'space040',
       spaceInline: 'space010',
     },
@@ -780,7 +780,7 @@ export const componentDefaults = {
   },
   tag: {
     small: {
-      typographyPreset: 'utilityLabel010',
+      typographyPreset: 'utilityButton010',
       stylePreset: 'tagPrimary',
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
@@ -788,7 +788,7 @@ export const componentDefaults = {
       spaceInline: 'space010',
     },
     medium: {
-      typographyPreset: 'utilityLabel020',
+      typographyPreset: 'utilityButton020',
       stylePreset: 'tagPrimary',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
@@ -796,7 +796,7 @@ export const componentDefaults = {
       spaceInline: 'space010',
     },
     large: {
-      typographyPreset: 'utilityLabel030',
+      typographyPreset: 'utilityButton030',
       stylePreset: 'tagPrimary',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing070',
@@ -806,7 +806,7 @@ export const componentDefaults = {
   },
   textField: {
     small: {
-      stylePreset: 'textField',
+      stylePreset: 'inputField',
       spaceInset: 'spaceInset020',
       minHeight: 'sizing060',
       typographyPreset: 'utilityBody020',
@@ -821,7 +821,7 @@ export const componentDefaults = {
       },
     },
     medium: {
-      stylePreset: 'textField',
+      stylePreset: 'inputField',
       spaceInset: 'spaceInset030',
       minHeight: 'sizing080',
       typographyPreset: 'utilityBody020',
@@ -836,7 +836,7 @@ export const componentDefaults = {
       },
     },
     large: {
-      stylePreset: 'textField',
+      stylePreset: 'inputField',
       spaceInset: 'spaceInset030',
       minHeight: 'sizing090',
       typographyPreset: 'utilityBody030',
@@ -967,7 +967,7 @@ export const componentDefaults = {
     content: {
       message: {
         stylePreset: 'inkInverse',
-        typographyPreset: 'utilityBody010',
+        typographyPreset: 'utilityBody020',
       },
       title: {
         stylePreset: 'inkInverse',

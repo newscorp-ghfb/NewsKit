@@ -363,14 +363,6 @@ exports[`Table renders links correctly 1`] = `
   fill: #213A82;
 }
 
-.emotion-5:visited:not(:disabled) {
-  color: #503B8C;
-}
-
-.emotion-5:visited:not(:disabled) svg {
-  fill: #503B8C;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;

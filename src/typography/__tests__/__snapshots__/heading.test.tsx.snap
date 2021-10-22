@@ -5,12 +5,14 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -18,7 +20,7 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -26,35 +28,51 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h1
@@ -70,16 +88,16 @@ exports[`Headings renders H1 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -87,7 +105,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-0::after {
@@ -95,17 +113,17 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -113,7 +131,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -121,17 +139,17 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -139,7 +157,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -147,12 +165,12 @@ exports[`Headings renders H1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h1
@@ -168,12 +186,14 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -181,7 +201,7 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -189,35 +209,51 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h2
@@ -233,16 +269,16 @@ exports[`Headings renders H2 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -250,7 +286,33 @@ exports[`Headings renders H2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-0::after {
@@ -262,34 +324,8 @@ exports[`Headings renders H2 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.09955357142857141em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
-  }
-}
-
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h2
@@ -305,12 +341,14 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -318,7 +356,7 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -326,35 +364,51 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h3
@@ -370,16 +424,16 @@ exports[`Headings renders H3 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -387,7 +441,7 @@ exports[`Headings renders H3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -401,11 +455,11 @@ exports[`Headings renders H3 with default styles 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -413,7 +467,7 @@ exports[`Headings renders H3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-0::after {
@@ -421,12 +475,12 @@ exports[`Headings renders H3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h3
@@ -442,12 +496,14 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -455,7 +511,7 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -463,35 +519,51 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h4
@@ -507,16 +579,16 @@ exports[`Headings renders H4 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -524,7 +596,7 @@ exports[`Headings renders H4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -538,11 +610,11 @@ exports[`Headings renders H4 with default styles 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -550,7 +622,7 @@ exports[`Headings renders H4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -563,7 +635,7 @@ exports[`Headings renders H4 with default styles 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h4
@@ -579,12 +651,14 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -592,7 +666,7 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -600,35 +674,51 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h5
@@ -644,12 +734,12 @@ exports[`Headings renders H5 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a0a0a;
+  font-family: "Bitter",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -657,7 +747,7 @@ exports[`Headings renders H5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-0::after {
@@ -665,11 +755,11 @@ exports[`Headings renders H5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h5
@@ -685,12 +775,14 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -698,7 +790,7 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -706,35 +798,51 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h6
@@ -750,12 +858,12 @@ exports[`Headings renders H6 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a0a0a;
+  font-family: "Bitter",serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -763,7 +871,7 @@ exports[`Headings renders H6 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.128125em;
+  margin-bottom: -0.275em;
 }
 
 .emotion-0::after {
@@ -771,11 +879,11 @@ exports[`Headings renders H6 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.3375em;
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h6
@@ -791,12 +899,14 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -804,7 +914,7 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -812,35 +922,51 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h1
@@ -856,16 +982,16 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -873,7 +999,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-0::after {
@@ -881,17 +1007,17 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -899,7 +1025,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -907,17 +1033,17 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -925,7 +1051,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -933,12 +1059,12 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h1
@@ -954,12 +1080,14 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -967,7 +1095,7 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -975,35 +1103,51 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h2
@@ -1019,16 +1163,16 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -1036,7 +1180,33 @@ exports[`Headings renders Heading2 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-0::after {
@@ -1048,34 +1218,8 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.09955357142857141em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
-  }
-}
-
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h2
@@ -1091,12 +1235,14 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -1104,7 +1250,7 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -1112,35 +1258,51 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h3
@@ -1156,16 +1318,16 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -1173,7 +1335,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -1187,11 +1349,11 @@ exports[`Headings renders Heading3 with default styles 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -1199,7 +1361,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-0::after {
@@ -1207,12 +1369,12 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h3
@@ -1228,12 +1390,14 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -1241,7 +1405,7 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -1249,35 +1413,51 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h4
@@ -1293,16 +1473,16 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -1310,7 +1490,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -1324,11 +1504,11 @@ exports[`Headings renders Heading4 with default styles 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -1336,7 +1516,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -1349,7 +1529,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h4
@@ -1365,12 +1545,14 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -1378,7 +1560,7 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -1386,35 +1568,51 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h5
@@ -1430,12 +1628,12 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a0a0a;
+  font-family: "Bitter",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -1443,7 +1641,7 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-0::after {
@@ -1451,11 +1649,11 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h5
@@ -1471,12 +1669,14 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a68c1;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0::before {
@@ -1484,7 +1684,7 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -1492,35 +1692,51 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <h6
@@ -1536,12 +1752,12 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #0a0a0a;
+  font-family: "Bitter",serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
 }
 
 .emotion-0::before {
@@ -1549,7 +1765,7 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.128125em;
+  margin-bottom: -0.275em;
 }
 
 .emotion-0::after {
@@ -1557,11 +1773,11 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.3375em;
 }
 
 .emotion-0 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <h6

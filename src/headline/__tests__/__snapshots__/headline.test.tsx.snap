@@ -8,11 +8,11 @@ exports[`headline renders correctly with custom props 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -20,7 +20,7 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.21250000000000002em;
   }
 
   .emotion-0::after {
@@ -28,17 +28,17 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.275em;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -46,7 +46,33 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -58,39 +84,13 @@ exports[`headline renders correctly with custom props 1`] = `
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.07812500000000006em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -98,7 +98,7 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -106,7 +106,7 @@ exports[`headline renders correctly with custom props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -114,12 +114,12 @@ exports[`headline renders correctly with custom props 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a68c1;
+  color: #3358CC;
   text-transform: uppercase;
 }
 
 .emotion-1 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 @media screen and (max-width: 479px) {
@@ -150,11 +150,11 @@ exports[`headline renders correctly with custom props 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-2 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <section
@@ -182,11 +182,11 @@ exports[`headline renders correctly with default props, just heading 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -194,7 +194,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.21250000000000002em;
   }
 
   .emotion-0::after {
@@ -202,17 +202,17 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.275em;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -220,7 +220,33 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -232,39 +258,13 @@ exports[`headline renders correctly with default props, just heading 1`] = `
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.07812500000000006em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -272,7 +272,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -280,7 +280,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -288,11 +288,11 @@ exports[`headline renders correctly with default props, just heading 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-1 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <section
@@ -315,11 +315,11 @@ exports[`headline renders correctly with default props, with heading and kicker 
 
 @media screen and (max-width: 479px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -327,7 +327,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.21250000000000002em;
   }
 
   .emotion-0::after {
@@ -335,17 +335,17 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2680555555555556em;
+    margin-top: -0.275em;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -353,7 +353,33 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -365,39 +391,13 @@ exports[`headline renders correctly with default props, with heading and kicker 
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.07812500000000006em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-0::before {
@@ -405,7 +405,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -413,17 +413,17 @@ exports[`headline renders correctly with default props, with heading and kicker 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
 .emotion-1 {
-  color: #0a68c1;
+  color: #3358CC;
   text-transform: uppercase;
 }
 
 .emotion-1 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 @media screen and (max-width: 479px) {
@@ -454,11 +454,11 @@ exports[`headline renders correctly with default props, with heading and kicker 
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-2 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <section
@@ -479,11 +479,11 @@ exports[`headline renders correctly with default props, with heading and kicker 
 exports[`headline renders correctly with overriden props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Bitter",serif;
+  font-size: 28px;
+  line-height: 1.1428571428571428;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -492,7 +492,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09062500000000001em;
+  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
@@ -500,42 +500,60 @@ exports[`headline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2839285714285714em;
 }
 
 .emotion-1 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-1 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-1:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-1:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-1:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-1:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-1:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <section

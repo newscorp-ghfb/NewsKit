@@ -526,7 +526,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-5 {
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 400;
@@ -538,7 +538,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.33229166666666665em;
+    margin-bottom: -0.30104166666666665em;
   }
 
   .emotion-5::after {
@@ -546,7 +546,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.36354166666666665em;
+    margin-top: -0.44166666666666665em;
   }
 }
 

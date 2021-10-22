@@ -19,12 +19,12 @@ exports[`Block with props renders as span 1`] = `
 exports[`Block with props renders with customBlock style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #128293;
-  color: #ffffff;
+  background-color: #05717D;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div

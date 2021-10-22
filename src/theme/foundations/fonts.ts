@@ -23,11 +23,10 @@ export const fonts = {
   fontLineHeight050: 1.75,
   fontLineHeight060: 2,
 
-  fontWeight010: 300,
-  fontWeight020: 400,
-  fontWeight030: 500,
-  fontWeight040: 600,
-  fontWeight050: 700,
+  fontWeight010: 400,
+  fontWeight020: 500,
+  fontWeight030: 600,
+  fontWeight040: 700,
 
   fontLetterSpacing010: '-0.5px',
   fontLetterSpacing020: '-0.25px',
@@ -36,25 +35,28 @@ export const fonts = {
   fontLetterSpacing050: '0.5px',
 
   fontFamily010: {
-    fontFamily: '"Noto Sans", sans-serif',
+    fontFamily: '"DM Sans", sans-serif',
     cropConfig: {
-      top: 6.8,
-      bottom: 10,
+      top: 9,
+      bottom: 9,
     },
+    cropAdjustments: {},
   } as FontConfig,
   fontFamily020: {
-    fontFamily: '"Source Serif Pro", serif',
+    fontFamily: '"Bitter", serif',
     cropConfig: {
-      top: 4.1,
+      top: 8,
       bottom: 10,
     },
+    cropAdjustments: {},
   } as FontConfig,
   fontFamily030: {
-    fontFamily: '"Courier", monospace',
+    fontFamily: '"Poppins", sans-serif',
     cropConfig: {
-      top: 3,
-      bottom: 3,
+      top: 9,
+      bottom: 9,
     },
+    cropAdjustments: {},
   } as FontConfig,
 };
 

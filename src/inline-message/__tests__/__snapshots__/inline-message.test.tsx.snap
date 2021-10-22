@@ -3,12 +3,12 @@
 exports[`InlineMessage renders with Title 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #e8f6f8;
-  border-color: #128293;
+  background-color: #EBF8F9;
+  border-color: #05717D;
   border-style: solid;
   border-radius: 4px;
   border-width: 0 0 0 4px;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
   padding: 12px;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ exports[`InlineMessage renders with Title 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #128293;
+  fill: #05717D;
 }
 
 .emotion-1 {
@@ -46,12 +46,12 @@ exports[`InlineMessage renders with Title 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
-  color: #0a0a0a;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
   margin-bottom: 12px;
 }
 
@@ -60,7 +60,7 @@ exports[`InlineMessage renders with Title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-3::after {
@@ -68,22 +68,22 @@ exports[`InlineMessage renders with Title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #2e2e2e;
+  letter-spacing: -0.5px;
+  color: #2E2E2E;
 }
 
 .emotion-4::before {
@@ -91,7 +91,7 @@ exports[`InlineMessage renders with Title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -99,11 +99,11 @@ exports[`InlineMessage renders with Title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 <div
@@ -137,12 +137,12 @@ exports[`InlineMessage renders with Title 1`] = `
 exports[`InlineMessage renders with Title and Icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #e8f6f8;
-  border-color: #128293;
+  background-color: #EBF8F9;
+  border-color: #05717D;
   border-style: solid;
   border-radius: 4px;
   border-width: 0 0 0 4px;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
   padding: 12px;
   box-sizing: border-box;
@@ -157,7 +157,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #128293;
+  fill: #05717D;
 }
 
 .emotion-1 {
@@ -183,7 +183,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -202,12 +202,12 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
-  color: #0a0a0a;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
   margin-bottom: 12px;
 }
 
@@ -216,7 +216,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-6::after {
@@ -224,22 +224,22 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-6 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #2e2e2e;
+  letter-spacing: -0.5px;
+  color: #2E2E2E;
 }
 
 .emotion-7::before {
@@ -247,7 +247,7 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -255,11 +255,11 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 <div
@@ -314,12 +314,12 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
 exports[`InlineMessage renders with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #e8f6f8;
-  border-color: #128293;
+  background-color: #EBF8F9;
+  border-color: #05717D;
   border-style: solid;
   border-radius: 4px;
   border-width: 0 0 0 4px;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
   padding: 12px;
   box-sizing: border-box;
@@ -334,7 +334,7 @@ exports[`InlineMessage renders with default props 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #128293;
+  fill: #05717D;
 }
 
 .emotion-1 {
@@ -357,12 +357,12 @@ exports[`InlineMessage renders with default props 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #2e2e2e;
+  letter-spacing: -0.5px;
+  color: #2E2E2E;
 }
 
 .emotion-3::before {
@@ -370,7 +370,7 @@ exports[`InlineMessage renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -378,11 +378,11 @@ exports[`InlineMessage renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 <div
@@ -456,7 +456,7 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -475,12 +475,12 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 1.1111111111111112;
   font-weight: 700;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
   margin-bottom: 24px;
 }
 
@@ -489,7 +489,7 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.1680555555555556em;
+  margin-bottom: -0.2368055555555556em;
 }
 
 .emotion-6::after {
@@ -497,22 +497,22 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.2368055555555556em;
 }
 
 .emotion-6 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-7::before {
@@ -520,7 +520,7 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -528,11 +528,11 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div

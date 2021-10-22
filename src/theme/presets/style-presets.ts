@@ -885,18 +885,11 @@ stylePresets.tagPrimaryInverse = {
     backgroundColor: '{{colors.interactiveInverse020}}',
   },
 };
-
-// Tab
-
 stylePresets.tab = {
   base: {
     backgroundColor: '{{colors.transparent}}',
     color: '{{colors.inkBase}}',
     iconColor: '{{colors.inkBase}}',
-  },
-  selected: {
-    color: '{{colors.inkBrand010}}',
-    iconColor: '{{colors.inkBrand010}}',
   },
   hover: {
     backgroundColor: '{{colors.interactivePrimary010}}',
@@ -905,6 +898,15 @@ stylePresets.tab = {
   },
   active: {
     backgroundColor: '{{colors.interactivePrimary020}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+  selected: {
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+  'selected:hover': {
+    backgroundColor: '{{colors.transparent}}',
     color: '{{colors.inkBrand010}}',
     iconColor: '{{colors.inkBrand010}}',
   },
@@ -926,8 +928,59 @@ stylePresets.tabsBarIndicator = {
     backgroundColor: '{{colors.interactivePrimary030}}',
   },
 };
+// Input Field
+stylePresets.inputField = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactiveInput020}}',
+    borderWidth: '{{borders.borderWidthDefault}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    color: '{{colors.inkBase}}',
+    textOverflow: 'ellipsis',
+    placeholderColor: '{{colors.inkSubtle}}',
+    iconColor: '{{colors.inkBase}}',
+  },
+  focus: {
+    borderColor: '{{colors.interactiveInput040}}',
+    backgroundColor: '{{colors.interactiveInput010}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInput010}}',
+  },
+  valid: {
+    borderColor: '{{colors.interactivePositive030}}',
+  },
+  'valid:hover': {
+    borderColor: '{{colors.interactivePositive030}}',
+    backgroundColor: '{{colors.interactiveInput010}}',
+  },
+  'valid:focus': {
+    borderColor: '{{colors.interactiveInput010}}',
+    backgroundColor: '{{colors.interactiveInput010}}',
+  },
+  disabled: {
+    borderColor: '{{colors.interactiveDisabled010}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    iconColor: '{{colors.inkBrand010}}',
+  },
+  invalid: {
+    borderColor: '{{colors.interactiveNegative030}}',
+  },
+  'invalid:focus': {
+    borderColor: '{{colors.interactiveInput010}}',
+    backgroundColor: '{{colors.interactiveInput010}}',
+  },
+  'invalid:hover': {
+    borderColor: '{{colors.interactiveNegative030}}',
+    backgroundColor: '{{colors.interactiveInput010}}',
+  },
+};
 
-// Text Field
+// Assistive Text
 stylePresets.assistiveText = {
   base: {
     color: '{{colors.inkSubtle}}',
@@ -939,7 +992,7 @@ stylePresets.assistiveText = {
     color: '{{colors.inkNegative}}',
   },
   valid: {
-    color: '{{colors.inkPositive}}',
+    color: '{{colors.inkSubtle}}',
   },
 };
 stylePresets.textField = {
@@ -1187,10 +1240,6 @@ stylePresets.linkStandalone = {
     iconColor: '{{colors.interactivePrimary050}}',
     textDecoration: 'underline',
   },
-  visited: {
-    color: '{{colors.interactiveVisited010}}',
-    iconColor: '{{colors.interactiveVisited010}}',
-  },
 };
 stylePresets.linkStandaloneInverse = {
   base: {
@@ -1208,73 +1257,39 @@ stylePresets.linkStandaloneInverse = {
     iconColor: '{{colors.interactiveInverse030}}',
     textDecoration: 'underline',
   },
-  visited: {
-    color: '{{colors.interactiveInverse040}}',
-    iconColor: '{{colors.interactiveInverse040}}',
-  },
 };
 stylePresets.linkInline = {
   base: {
     color: '{{colors.interactivePrimary030}}',
     iconColor: '{{colors.interactivePrimary030}}',
+    textDecoration: 'underline',
   },
   hover: {
     color: '{{colors.interactivePrimary040}}',
     iconColor: '{{colors.interactivePrimary040}}',
+    textDecoration: 'underline',
   },
   active: {
     color: '{{colors.interactivePrimary050}}',
     iconColor: '{{colors.interactivePrimary050}}',
+    textDecoration: 'underline',
   },
   visited: {
     color: '{{colors.interactiveVisited010}}',
     iconColor: '{{colors.interactiveVisited010}}',
+    textDecoration: 'underline',
+  },
+  'visited:hover': {
+    color: '{{colors.interactiveVisited010}}',
+    iconColor: '{{colors.interactiveVisited010}}',
+    textDecoration: 'underline',
   },
 };
 stylePresets.linkInlineInverse = {
   base: {
     color: '{{colors.interactiveInverse030}}',
     iconColor: '{{colors.interactiveInverse030}}',
-  },
-  hover: {
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.interactiveInverse030}}',
-  },
-  active: {
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.interactiveInverse030}}',
-  },
-  visited: {
-    color: '{{colors.interactiveInverse040}}',
-    iconColor: '{{colors.interactiveInverse040}}',
-  },
-};
-stylePresets.linkEmail = {
-  base: {
-    color: '{{colors.interactivePrimary030}}',
-    iconColor: '{{colors.interactivePrimary030}}',
-    textDecoration: 'none',
-  },
-  hover: {
-    color: '{{colors.interactivePrimary040}}',
-    iconColor: '{{colors.interactivePrimary040}}',
     textDecoration: 'underline',
-  },
-  active: {
-    color: '{{colors.interactivePrimary050}}',
-    iconColor: '{{colors.interactivePrimary050}}',
-    textDecoration: 'underline',
-  },
-  visited: {
-    color: '{{colors.interactiveVisited010}}',
-    iconColor: '{{colors.interactiveVisited010}}',
-  },
-};
-stylePresets.linkEmailInverse = {
-  base: {
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.interactiveInverse030}}',
-    textDecoration: 'none',
   },
   hover: {
     color: '{{colors.interactiveInverse030}}',
@@ -1289,46 +1304,9 @@ stylePresets.linkEmailInverse = {
   visited: {
     color: '{{colors.interactiveInverse040}}',
     iconColor: '{{colors.interactiveInverse040}}',
-  },
-};
-stylePresets.linkExternal = {
-  base: {
-    color: '{{colors.interactivePrimary030}}',
-    iconColor: '{{colors.interactivePrimary030}}',
-    textDecoration: 'none',
-  },
-  hover: {
-    color: '{{colors.interactivePrimary040}}',
-    iconColor: '{{colors.interactivePrimary040}}',
     textDecoration: 'underline',
   },
-  active: {
-    color: '{{colors.interactivePrimary050}}',
-    iconColor: '{{colors.interactivePrimary050}}',
-    textDecoration: 'underline',
-  },
-  visited: {
-    color: '{{colors.interactiveVisited010}}',
-    iconColor: '{{colors.interactiveVisited010}}',
-  },
-};
-stylePresets.linkExternalInverse = {
-  base: {
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.interactiveInverse030}}',
-    textDecoration: 'none',
-  },
-  hover: {
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.interactiveInverse030}}',
-    textDecoration: 'underline',
-  },
-  active: {
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.interactiveInverse030}}',
-    textDecoration: 'underline',
-  },
-  visited: {
+  'visited:hover': {
     color: '{{colors.interactiveInverse040}}',
     iconColor: '{{colors.interactiveInverse040}}',
   },
@@ -1628,7 +1606,7 @@ stylePresets.drawerPanel = {
   base: {
     borderRadius: '{{borders.borderRadiusSharp}}',
     backgroundColor: '{{colors.interface010}}',
-    boxShadow: '{{shadows.shadow050}}',
+    boxShadow: '{{shadows.shadow060}}',
   },
 };
 
@@ -1736,20 +1714,24 @@ stylePresets.menuItemVertical = {
   },
   hover: {
     backgroundColor: '{{colors.interactivePrimary010}}',
-    borderColor: '{{colors.interactivePrimary030}}',
-    color: '{{colors.interactivePrimary030}}',
-    iconColor: '{{colors.interactivePrimary030}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
   },
   active: {
     backgroundColor: '{{colors.interactivePrimary020}}',
-    borderColor: '{{colors.interactivePrimary040}}',
-    color: '{{colors.interactivePrimary040}}',
-    iconColor: '{{colors.interactivePrimary040}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
   },
   selected: {
     borderColor: '{{colors.interactivePrimary030}}',
-    color: '{{colors.interactivePrimary030}}',
-    iconColor: '{{colors.interactivePrimary030}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+  'selected:hover': {
+    backgroundColor: '{{colors.transparent}}',
+    borderColor: '{{colors.interactivePrimary030}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
   },
   disabled: {
     color: '{{colors.inkNonEssential}}',
@@ -1769,15 +1751,20 @@ stylePresets.menuItemHorizontal = {
   },
   hover: {
     borderColor: '{{colors.interactivePrimary030}}',
-    color: '{{colors.inkContrast}}',
-    iconColor: '{{colors.inkContrast}}',
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}',
   },
   active: {
-    borderColor: '{{colors.interactivePrimary030}}',
+    borderColor: '{{colors.interactivePrimary040}}',
     color: '{{colors.inkContrast}}',
     iconColor: '{{colors.inkContrast}}',
   },
   selected: {
+    borderColor: '{{colors.interactivePrimary030}}',
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}',
+  },
+  'selected:hover': {
     borderColor: '{{colors.interactivePrimary030}}',
     color: '{{colors.inkBase}}',
     iconColor: '{{colors.inkBase}}',
@@ -1795,26 +1782,28 @@ stylePresets.menuItemHorizontalInverse = {
     borderColor: '{{colors.transparent}}',
     borderWidth:
       '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
-    color: '{{colors.interactiveInverse040}}',
-    iconColor: '{{colors.interactiveInverse040}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
   hover: {
-    backgroundColor: '{{colors.transparent}}',
-    borderColor: '{{colors.interactiveInverse040}}',
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.inkContrast}}',
+    borderColor: '{{colors.interactiveInverse030}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+  'selected:hover': {
+    borderColor: '{{colors.interactiveInverse030}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
   active: {
-    backgroundColor: '{{colors.transparent}}',
-    borderColor: '{{colors.interactiveInverse050}}',
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.inkContrast}}',
+    borderColor: '{{colors.interactiveInverse030}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
   selected: {
-    backgroundColor: '{{colors.interactiveInverse030}}',
     borderColor: '{{colors.interactiveInverse030}}',
-    color: '{{colors.interactiveInverse030}}',
-    iconColor: '{{colors.inkContrast}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
   disabled: {
     color: '{{colors.interactiveInverse020}}',
@@ -1830,6 +1819,6 @@ stylePresets.modalPanel = {
   base: {
     borderRadius: '{{borders.borderRadiusSharp}}',
     backgroundColor: '{{colors.interfaceBackground}}',
-    boxShadow: '{{shadows.shadow050}}',
+    boxShadow: '{{shadows.shadow060}}',
   },
 };

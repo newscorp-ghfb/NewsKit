@@ -26,7 +26,7 @@ describe('Page accessibility', () => {
             'color-contrast': {enabled: false},
           },
         });
-      } else if (path === `/components/tabs`) {
+      } else if (path === `/components/tabs` || `/components/banner`) {
         cy.checkA11y(null, {
           rules: {
             'scrollable-region-focusable': {enabled: false},

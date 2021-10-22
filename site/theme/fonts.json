@@ -1,9 +1,4 @@
 {
-  "fontWeight010": 400,
-  "fontWeight020": 500,
-  "fontWeight030": 600,
-  "fontWeight040": 700,
-
   "fontFamily010": {
     "fontFamily": "'Poppins', sans-serif",
     "cropConfig": {

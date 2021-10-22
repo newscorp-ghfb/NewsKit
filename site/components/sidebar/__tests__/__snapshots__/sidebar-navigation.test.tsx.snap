@@ -3,7 +3,7 @@
 exports[`Sidebar navigation should match snapshot with active link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
@@ -131,7 +131,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
@@ -164,7 +164,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 exports[`Sidebar navigation should render only routes under current section 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;

@@ -92,29 +92,38 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-3:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -148,11 +157,11 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -160,7 +169,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -168,7 +177,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
@@ -185,7 +194,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -440,29 +449,38 @@ exports[`Menu renders horizontally with menu group 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-3:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -496,11 +514,11 @@ exports[`Menu renders horizontally with menu group 1`] = `
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -508,7 +526,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -516,7 +534,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -712,29 +730,38 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -768,11 +795,11 @@ exports[`Menu renders horizontally with menu items 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -780,7 +807,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -788,7 +815,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -992,31 +1019,39 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -1050,11 +1085,11 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -1062,7 +1097,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -1070,7 +1105,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
@@ -1087,7 +1122,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1345,31 +1380,39 @@ exports[`Menu renders vertically with menu group 1`] = `
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-3:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-4 {
@@ -1403,11 +1446,11 @@ exports[`Menu renders vertically with menu group 1`] = `
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -1415,7 +1458,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -1423,7 +1466,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -1627,31 +1670,39 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1685,11 +1736,11 @@ exports[`Menu renders vertically with menu items 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -1697,7 +1748,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -1705,7 +1756,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -1897,31 +1948,39 @@ exports[`Menu renders with Large size menu items 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1955,11 +2014,11 @@ exports[`Menu renders with Large size menu items 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -1967,7 +2026,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-5::after {
@@ -1975,7 +2034,7 @@ exports[`Menu renders with Large size menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.43125em;
 }
 
 <nav
@@ -2159,29 +2218,38 @@ exports[`Menu renders with Large size menu items 2`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2215,11 +2283,11 @@ exports[`Menu renders with Large size menu items 2`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -2227,7 +2295,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-5::after {
@@ -2235,7 +2303,7 @@ exports[`Menu renders with Large size menu items 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.43125em;
 }
 
 <nav
@@ -2427,31 +2495,39 @@ exports[`Menu renders with Medium size menu items 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2485,11 +2561,11 @@ exports[`Menu renders with Medium size menu items 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -2497,7 +2573,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -2505,7 +2581,7 @@ exports[`Menu renders with Medium size menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -2689,29 +2765,38 @@ exports[`Menu renders with Medium size menu items 2`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2745,11 +2830,11 @@ exports[`Menu renders with Medium size menu items 2`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -2757,7 +2842,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -2765,7 +2850,7 @@ exports[`Menu renders with Medium size menu items 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -2957,31 +3042,39 @@ exports[`Menu renders with Small size menu items 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3015,11 +3108,11 @@ exports[`Menu renders with Small size menu items 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -3027,7 +3120,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-5::after {
@@ -3035,7 +3128,7 @@ exports[`Menu renders with Small size menu items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 <nav
@@ -3219,29 +3312,38 @@ exports[`Menu renders with Small size menu items 2`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3275,11 +3377,11 @@ exports[`Menu renders with Small size menu items 2`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -3287,7 +3389,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-5::after {
@@ -3295,7 +3397,7 @@ exports[`Menu renders with Small size menu items 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 <nav
@@ -3479,29 +3581,38 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3535,11 +3646,11 @@ exports[`Menu renders with default props 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -3547,7 +3658,7 @@ exports[`Menu renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -3555,7 +3666,7 @@ exports[`Menu renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -3742,31 +3853,39 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3800,11 +3919,11 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -3812,7 +3931,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -3820,7 +3939,7 @@ exports[`Menu renders with menu items aligned at the Center 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -4004,29 +4123,38 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -4060,11 +4188,11 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -4072,7 +4200,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -4080,7 +4208,7 @@ exports[`Menu renders with menu items aligned at the Center 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -4272,31 +4400,39 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -4330,11 +4466,11 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -4342,7 +4478,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -4350,7 +4486,7 @@ exports[`Menu renders with menu items aligned at the End 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -4539,29 +4675,38 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -4595,11 +4740,11 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -4607,7 +4752,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -4615,7 +4760,7 @@ exports[`Menu renders with menu items aligned at the End 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -4807,31 +4952,39 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -4865,11 +5018,11 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -4877,7 +5030,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -4885,7 +5038,7 @@ exports[`Menu renders with menu items aligned at the Start 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -5074,29 +5227,38 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -5130,11 +5292,11 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -5142,7 +5304,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -5150,7 +5312,7 @@ exports[`Menu renders with menu items aligned at the Start 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -5274,7 +5436,7 @@ exports[`MenuDivider renders horizontally 1`] = `
 
 .emotion-1 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -5312,7 +5474,7 @@ exports[`MenuDivider renders vertically with default props 1`] = `
 
 .emotion-1 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -5399,11 +5561,11 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 1.1111111111111112;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-2 svg {
@@ -5415,7 +5577,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.1680555555555556em;
+  margin-bottom: -0.2368055555555556em;
 }
 
 .emotion-2::after {
@@ -5423,7 +5585,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.2368055555555556em;
 }
 
 .emotion-3 {
@@ -5479,31 +5641,39 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-4:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-4:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-4:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-4:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-5 {
@@ -5537,11 +5707,11 @@ exports[`MenuGroup renders with overrides 1`] = `
 }
 
 .emotion-7 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7::before {
@@ -5549,7 +5719,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -5557,7 +5727,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -5696,7 +5866,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5759,31 +5929,39 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-7:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-7:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-7:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-7:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -5817,11 +5995,11 @@ exports[`MenuGroup renders with title as a component 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -5829,7 +6007,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -5837,7 +6015,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -6005,11 +6183,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-2 svg {
@@ -6021,7 +6199,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.2125em;
+  margin-bottom: -0.28125em;
 }
 
 .emotion-2::after {
@@ -6029,7 +6207,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3125em;
+  margin-top: -0.28125em;
 }
 
 .emotion-3 {
@@ -6085,31 +6263,39 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  border-color: #0a68c1;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #d5ebff;
-  border-color: #02509b;
-  color: #02509b;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #02509b;
+  fill: #3358CC;
+}
+
+.emotion-4:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-4:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-4:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-4:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-5 {
@@ -6143,11 +6329,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 }
 
 .emotion-7 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7::before {
@@ -6155,7 +6341,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -6163,7 +6349,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -6350,29 +6536,38 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -6406,11 +6601,11 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -6418,7 +6613,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -6426,7 +6621,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -6585,29 +6780,38 @@ exports[`MenuItem renders in Large size 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-1:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-1:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-1:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2 {
@@ -6641,11 +6845,11 @@ exports[`MenuItem renders in Large size 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -6653,7 +6857,7 @@ exports[`MenuItem renders in Large size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -6661,7 +6865,7 @@ exports[`MenuItem renders in Large size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -6745,29 +6949,38 @@ exports[`MenuItem renders in Medium size 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-1:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-1:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-1:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2 {
@@ -6801,11 +7014,11 @@ exports[`MenuItem renders in Medium size 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -6813,7 +7026,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -6821,7 +7034,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -6905,29 +7118,38 @@ exports[`MenuItem renders in Small size 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-1:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-1:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-1:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2 {
@@ -6961,11 +7183,11 @@ exports[`MenuItem renders in Small size 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -6973,7 +7195,7 @@ exports[`MenuItem renders in Small size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -6981,7 +7203,7 @@ exports[`MenuItem renders in Small size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -7065,29 +7287,38 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-1:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-1:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-1:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2 {
@@ -7121,11 +7352,11 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -7133,7 +7364,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -7141,7 +7372,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -7216,9 +7447,9 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   cursor: pointer;
   background-color: transparent;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #3358CC;
   border-width: 0 0 2px 0;
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-1 svg {
@@ -7231,33 +7462,51 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-1:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-1:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-1:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
+}
+
+.emotion-1:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-2 {
@@ -7294,17 +7543,17 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-7 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7::before {
@@ -7312,7 +7561,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -7320,7 +7569,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -7425,29 +7674,38 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-1:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-1:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-1:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2 {
@@ -7481,11 +7739,11 @@ exports[`MenuItem renders with default props 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -7493,7 +7751,7 @@ exports[`MenuItem renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -7501,7 +7759,7 @@ exports[`MenuItem renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -7585,29 +7843,38 @@ exports[`MenuItem renders with icon 1`] = `
 }
 
 .emotion-1:hover:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #3358CC;
+  color: #2E2E2E;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #2E2E2E;
 }
 
 .emotion-1:active:not(:disabled) {
-  border-color: #0a68c1;
-  color: #0a0a0a;
+  border-color: #2B4AAB;
+  color: #0A0A0A;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #2E2E2E;
+}
+
+.emotion-1:selected:hover:not(:disabled) svg {
+  fill: #2E2E2E;
 }
 
 .emotion-1:disabled {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-1:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2 {
@@ -7644,17 +7911,17 @@ exports[`MenuItem renders with icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-7 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7::before {
@@ -7662,7 +7929,7 @@ exports[`MenuItem renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -7670,7 +7937,7 @@ exports[`MenuItem renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <li
@@ -7804,11 +8071,11 @@ exports[`MenuItem renders with overrides 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -7816,7 +8083,7 @@ exports[`MenuItem renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-4::after {
@@ -7824,7 +8091,7 @@ exports[`MenuItem renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.43125em;
 }
 
 <li

@@ -114,23 +114,23 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-7 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-7:before {
@@ -150,11 +150,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -162,7 +162,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-8::after {
@@ -176,11 +176,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -188,7 +188,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-8::after {
@@ -202,11 +202,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -214,7 +214,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-8::after {
@@ -222,17 +222,17 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -240,7 +240,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-8::after {
@@ -248,7 +248,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -348,11 +348,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-16 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-16::before {
@@ -360,7 +360,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-16::after {
@@ -368,14 +368,14 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-18 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -638,23 +638,23 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-8 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-8:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-8:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-8:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-8:before {
@@ -674,11 +674,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -686,7 +686,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-9::after {
@@ -700,11 +700,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -712,7 +712,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-9::after {
@@ -726,11 +726,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -738,7 +738,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-9::after {
@@ -746,17 +746,17 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -764,7 +764,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-9::after {
@@ -772,7 +772,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -868,11 +868,11 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
 }
 
 .emotion-16 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-16::before {
@@ -880,7 +880,7 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-16::after {
@@ -888,14 +888,14 @@ exports[`FeatureCard Renders interactive horizontal card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-18 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1115,23 +1115,23 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 }
 
 .emotion-7 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-7:before {
@@ -1151,11 +1151,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -1163,7 +1163,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-8::after {
@@ -1177,11 +1177,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -1189,7 +1189,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-8::after {
@@ -1203,11 +1203,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -1215,7 +1215,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-8::after {
@@ -1223,17 +1223,17 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -1241,7 +1241,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-8::after {
@@ -1249,7 +1249,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1486,23 +1486,23 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 }
 
 .emotion-8 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-8:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-8:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-8:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-8:before {
@@ -1522,11 +1522,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -1534,7 +1534,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-9::after {
@@ -1548,11 +1548,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -1560,7 +1560,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-9::after {
@@ -1574,11 +1574,11 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -1586,7 +1586,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-9::after {
@@ -1594,17 +1594,17 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-9 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-9::before {
@@ -1612,7 +1612,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-9::after {
@@ -1620,7 +1620,7 @@ exports[`FeatureCard Renders interactive horizontal card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1777,23 +1777,23 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 .emotion-6 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-6:before {
@@ -1813,11 +1813,11 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -1825,7 +1825,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-7::after {
@@ -1839,11 +1839,11 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -1851,7 +1851,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-7::after {
@@ -1865,11 +1865,11 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -1877,7 +1877,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-7::after {
@@ -1885,17 +1885,17 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -1903,7 +1903,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-7::after {
@@ -1911,7 +1911,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -2011,11 +2011,11 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
 }
 
 .emotion-15 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-15::before {
@@ -2023,7 +2023,7 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-15::after {
@@ -2031,14 +2031,14 @@ exports[`FeatureCard Renders interactive vertical card with button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-17 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2213,23 +2213,23 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 }
 
 .emotion-6 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-6:before {
@@ -2249,11 +2249,11 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2261,7 +2261,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-7::after {
@@ -2275,11 +2275,11 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2287,7 +2287,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-7::after {
@@ -2301,11 +2301,11 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2313,7 +2313,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-7::after {
@@ -2321,17 +2321,17 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2339,7 +2339,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-7::after {
@@ -2347,7 +2347,7 @@ exports[`FeatureCard Renders interactive vertical card without button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -2536,11 +2536,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2548,7 +2548,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-7::after {
@@ -2562,11 +2562,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2574,7 +2574,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-7::after {
@@ -2588,11 +2588,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2600,7 +2600,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-7::after {
@@ -2608,17 +2608,17 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-7 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-7::before {
@@ -2626,7 +2626,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-7::after {
@@ -2634,7 +2634,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -2865,11 +2865,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -2877,7 +2877,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-8::after {
@@ -2891,11 +2891,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -2903,7 +2903,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-8::after {
@@ -2917,11 +2917,11 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -2929,7 +2929,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-8::after {
@@ -2937,17 +2937,17 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-8 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-8::before {
@@ -2955,7 +2955,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-8::after {
@@ -2963,7 +2963,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -3114,11 +3114,11 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-6 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-6::before {
@@ -3126,7 +3126,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-6::after {
@@ -3140,11 +3140,11 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-6 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-6::before {
@@ -3152,7 +3152,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-6::after {
@@ -3166,11 +3166,11 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-6 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-6::before {
@@ -3178,7 +3178,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-6::after {
@@ -3186,17 +3186,17 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-6 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-6::before {
@@ -3204,7 +3204,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-6::after {
@@ -3212,7 +3212,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -3397,23 +3397,23 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 }
 
 .emotion-7 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-7:before {
@@ -3428,11 +3428,11 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 }
 
 .emotion-8 {
-  font-family: "Source Serif Pro",serif;
-  font-size: 28px;
-  line-height: 1.1428571428571428;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Bitter",serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -3441,7 +3441,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09955357142857141em;
+  margin-bottom: -0.2333333333333334em;
 }
 
 .emotion-8::after {
@@ -3449,7 +3449,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-9 {
@@ -3473,11 +3473,11 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 .emotion-11 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Bitter",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.5px;
 }
 
 .emotion-11::before {
@@ -3485,7 +3485,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-11::after {
@@ -3493,7 +3493,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 <div
@@ -3706,23 +3706,23 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 }
 
 .emotion-8 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-8:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-8:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-8:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-8:before {
@@ -3737,11 +3737,11 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 }
 
 .emotion-9 {
-  font-family: "Source Serif Pro",serif;
-  font-size: 28px;
-  line-height: 1.1428571428571428;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Bitter",serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -3750,7 +3750,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.09955357142857141em;
+  margin-bottom: -0.2333333333333334em;
 }
 
 .emotion-9::after {
@@ -3758,7 +3758,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.2958333333333334em;
 }
 
 .emotion-10 {
@@ -3782,11 +3782,11 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 .emotion-12 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Bitter",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.5px;
 }
 
 .emotion-12::before {
@@ -3794,7 +3794,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.11145833333333338em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-12::after {
@@ -3802,7 +3802,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2958333333333334em;
+  margin-top: -0.3125em;
 }
 
 <div

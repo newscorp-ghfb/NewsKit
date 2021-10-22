@@ -38,7 +38,7 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -46,14 +46,14 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-1:disabled {
-  background-color: #e4e4e4;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -72,19 +72,19 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -93,14 +93,14 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-2:disabled {
   box-shadow: none;
-  background-color: #e4e4e4;
+  background-color: #DEDEDE;
   border-style: none;
   border-color: none;
   border-width: none;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div

@@ -7,35 +7,53 @@ exports[`Link does not render the external icon even if the href is external 1`]
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-1 {
@@ -88,35 +106,53 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-1 {
@@ -169,35 +205,53 @@ exports[`Link renders as expected in default state 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-1 {
@@ -250,35 +304,53 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-1 {
@@ -322,7 +394,7 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -383,35 +455,53 @@ exports[`Link renders the external icon if the href is external 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-1 {
@@ -464,15 +554,15 @@ exports[`Link renders with overrides 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #ef1703;
+  color: #EF1703;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #a60100;
+  color: #A60100;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #23a248;
+  color: #23A248;
 }
 
 .emotion-1 {
@@ -497,11 +587,11 @@ exports[`Link renders with overrides 1`] = `
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -511,7 +601,7 @@ exports[`Link renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
@@ -519,7 +609,7 @@ exports[`Link renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <a
@@ -546,41 +636,33 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #213A82;
 }
 
 .emotion-1 {
@@ -605,11 +687,11 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -619,7 +701,7 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
@@ -627,7 +709,7 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <a

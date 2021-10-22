@@ -129,7 +129,7 @@ export const StoryLink = () => (
     <StorybookHeading>Link external</StorybookHeading>
     <Link
       href="http://newskit.staging-news.co.uk/"
-      overrides={{stylePreset: 'linkExternal'}}
+      overrides={{stylePreset: 'linkInline'}}
     >
       External link with external icon
     </Link>
@@ -138,7 +138,7 @@ export const StoryLink = () => (
     <Link
       href="http://newskit.staging-news.co.uk/"
       overrides={{
-        stylePreset: 'linkExternal',
+        stylePreset: 'linkInline',
         externalIcon: {
           size: 'iconSize030',
         },
@@ -151,7 +151,7 @@ export const StoryLink = () => (
     <Link
       href="http://newskit.staging-news.co.uk/"
       external={false}
-      overrides={{stylePreset: 'linkExternal'}}
+      overrides={{stylePreset: 'linkInline'}}
     >
       External link without external icon
     </Link>
@@ -210,7 +210,7 @@ export const StoryLinkInverse = () => (
     </Link>
     <br />
     <br />
-    <Link href="mailto:###" overrides={{stylePreset: 'linkEmailInverse'}}>
+    <Link href="mailto:###" overrides={{stylePreset: 'linkInlineInverse'}}>
       Inline mail link
     </Link>
 
@@ -218,7 +218,7 @@ export const StoryLinkInverse = () => (
     <StorybookHeading>Link external</StorybookHeading>
     <Link
       href="http://newskit.staging-news.co.uk/"
-      overrides={{stylePreset: 'linkExternalInverse'}}
+      overrides={{stylePreset: 'linkInlineInverse'}}
     >
       External link with external icon
     </Link>
@@ -227,7 +227,7 @@ export const StoryLinkInverse = () => (
     <Link
       href="http://newskit.staging-news.co.uk/"
       overrides={{
-        stylePreset: 'linkExternalInverse',
+        stylePreset: 'linkInlineInverse',
         externalIcon: {
           size: 'iconSize030',
         },
@@ -240,7 +240,7 @@ export const StoryLinkInverse = () => (
     <Link
       href="http://newskit.staging-news.co.uk/"
       external={false}
-      overrides={{stylePreset: 'linkExternalInverse'}}
+      overrides={{stylePreset: 'linkInlineInverse'}}
     >
       External link without external icon
     </Link>
@@ -268,13 +268,35 @@ export const StoryLinkWithinTextParagraph = () => (
     <StorybookSubHeading>default</StorybookSubHeading>
     <CustomPragraph>
       Officials said that the{' '}
-      <Link href="http://localhost:6006">Apple-Google model</Link> was unable to
-      differentiate between a phone that was in someone’s hand three metres away
-      from a phone that was in someone’s pocket
-      <Link href="http://localhost:6006">one metre away.</Link> “That is a
-      really important distinction if you’re going to use the app to determine
-      whether or not you spend 14 days at home,” one{' '}
-      <Link href="http://localhost:6006">official</Link> said.
+      <Link
+        href="http://localhost:6006"
+        overrides={{
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        Apple-Google model
+      </Link>{' '}
+      was unable to differentiate between a phone that was in someone’s hand
+      three metres away from a phone that was in someone’s pocket
+      <Link
+        href="http://localhost:6006"
+        overrides={{
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        one metre away.
+      </Link>{' '}
+      “That is a really important distinction if you’re going to use the app to
+      determine whether or not you spend 14 days at home,” one{' '}
+      <Link
+        href="http://localhost:6006"
+        overrides={{
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        official
+      </Link>{' '}
+      said.
     </CustomPragraph>
 
     <StorybookSubHeading>with overrides</StorybookSubHeading>
@@ -292,11 +314,33 @@ export const StoryLinkWithinTextParagraph = () => (
     <StorybookSubHeading>external default</StorybookSubHeading>
     <CustomPragraph>
       Officials said that the{' '}
-      <Link href="http://apple.com">Apple-Google model</Link> was unable to
-      differentiate between a phone that was in{' '}
-      <Link href="http://apple.com">someone’s hand</Link> three metres away from
-      a phone that was in someone’s pocket{' '}
-      <Link href="http://apple.com">one metre</Link> away.
+      <Link
+        href="http://apple.com"
+        overrides={{
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        Apple-Google model
+      </Link>{' '}
+      was unable to differentiate between a phone that was in{' '}
+      <Link
+        href="http://apple.com"
+        overrides={{
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        someone’s hand
+      </Link>{' '}
+      three metres away from a phone that was in someone’s pocket{' '}
+      <Link
+        href="http://apple.com"
+        overrides={{
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        one metre
+      </Link>{' '}
+      away.
     </CustomPragraph>
 
     <StorybookSubHeading>external with overrides</StorybookSubHeading>

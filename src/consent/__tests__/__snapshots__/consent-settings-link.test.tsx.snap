@@ -7,41 +7,33 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #213A82;
 }
 
 .emotion-1 {
@@ -66,11 +58,11 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -80,7 +72,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
@@ -88,7 +80,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <a
@@ -116,41 +108,33 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #213A82;
 }
 
 .emotion-1 {
@@ -175,11 +159,11 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-family: "DM Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -189,7 +173,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-2::after {
@@ -197,7 +181,7 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.5145833333333334em;
 }
 
 <a
@@ -225,41 +209,33 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-0:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #213A82;
 }
 
 .emotion-1 {
@@ -284,11 +260,11 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 .emotion-2 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -298,7 +274,7 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
@@ -306,7 +282,7 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <a

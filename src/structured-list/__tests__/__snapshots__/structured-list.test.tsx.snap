@@ -22,7 +22,7 @@ exports[`StructuredList with href renders four cells with href 1`] = `
 
 .emotion-3 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -139,11 +139,11 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -203,16 +203,16 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-7::before {
@@ -220,7 +220,7 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
@@ -228,7 +228,7 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -290,8 +290,8 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -299,13 +299,13 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 .emotion-11.emotion-11 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-13 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -522,11 +522,11 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -586,16 +586,16 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-7::before {
@@ -603,7 +603,7 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
@@ -611,7 +611,7 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -673,8 +673,8 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -682,13 +682,13 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
 .emotion-11.emotion-11 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-13 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -907,11 +907,11 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -1035,16 +1035,16 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 .emotion-10 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-10::before {
@@ -1052,7 +1052,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
@@ -1060,7 +1060,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -1095,11 +1095,11 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13 svg {
@@ -1111,7 +1111,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
@@ -1119,7 +1119,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -1151,7 +1151,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1163,7 +1163,7 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 
 .emotion-18 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1422,11 +1422,11 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -1550,16 +1550,16 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 .emotion-10 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-10::before {
@@ -1567,7 +1567,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
@@ -1575,7 +1575,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -1610,11 +1610,11 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13 svg {
@@ -1626,7 +1626,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
@@ -1634,7 +1634,7 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -1685,8 +1685,8 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1694,13 +1694,13 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 .emotion-17.emotion-17 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-19 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1967,11 +1967,11 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -2095,16 +2095,16 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 .emotion-10 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-10::before {
@@ -2112,7 +2112,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
@@ -2120,7 +2120,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -2155,11 +2155,11 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13 svg {
@@ -2171,7 +2171,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
@@ -2179,7 +2179,7 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -2230,8 +2230,8 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2239,13 +2239,13 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 .emotion-17.emotion-17 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-19 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -2514,11 +2514,11 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -2578,16 +2578,16 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-7::before {
@@ -2595,7 +2595,7 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
@@ -2603,7 +2603,7 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -2646,11 +2646,11 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10 svg {
@@ -2662,7 +2662,7 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -2670,12 +2670,12 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -2862,11 +2862,11 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -2990,16 +2990,16 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 .emotion-10 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-10::before {
@@ -3007,7 +3007,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
@@ -3015,7 +3015,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -3050,11 +3050,11 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13 svg {
@@ -3066,7 +3066,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
@@ -3074,7 +3074,7 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -3128,8 +3128,8 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3137,13 +3137,13 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 .emotion-17.emotion-17 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-19 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -3412,11 +3412,11 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -3540,16 +3540,16 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 .emotion-10 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-10::before {
@@ -3557,7 +3557,7 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
@@ -3565,7 +3565,7 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -3600,11 +3600,11 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13 svg {
@@ -3616,7 +3616,7 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
@@ -3624,7 +3624,7 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -3678,8 +3678,8 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3687,13 +3687,13 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 .emotion-17.emotion-17 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-19 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -3962,11 +3962,11 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -4090,16 +4090,16 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 .emotion-10 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-10::before {
@@ -4107,7 +4107,7 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
@@ -4115,7 +4115,7 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -4150,11 +4150,11 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13 svg {
@@ -4166,7 +4166,7 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
@@ -4174,7 +4174,7 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -4225,8 +4225,8 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4234,13 +4234,13 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 .emotion-17.emotion-17 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-19 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -4512,11 +4512,11 @@ exports[`StructuredList with href renders with disabled link 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-4:disabled {
@@ -4576,16 +4576,16 @@ exports[`StructuredList with href renders with disabled link 1`] = `
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-7::before {
@@ -4593,7 +4593,7 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
@@ -4601,7 +4601,7 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -4663,8 +4663,8 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4672,13 +4672,13 @@ exports[`StructuredList with href renders with disabled link 1`] = `
 .emotion-11.emotion-11 {
   width: 16px;
   height: 16px;
-  color: #0a0a0a;
-  fill: #0a0a0a;
+  color: #0A0A0A;
+  fill: #0A0A0A;
 }
 
 .emotion-13 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -5015,16 +5015,16 @@ exports[`StructuredList without-href renders with default style 1`] = `
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-9 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-9::before {
@@ -5032,7 +5032,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-9::after {
@@ -5040,7 +5040,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-10 {
@@ -5075,11 +5075,11 @@ exports[`StructuredList without-href renders with default style 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-12 svg {
@@ -5091,7 +5091,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-12::after {
@@ -5099,7 +5099,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-13 {
@@ -5131,7 +5131,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5143,7 +5143,7 @@ exports[`StructuredList without-href renders with default style 1`] = `
 
 .emotion-17 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -5330,7 +5330,7 @@ exports[`StructuredList without-href renders with more than 3 children 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -5474,16 +5474,16 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-6::before {
@@ -5491,7 +5491,7 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-6::after {
@@ -5499,12 +5499,12 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-7 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -5763,16 +5763,16 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-9 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-9::before {
@@ -5780,7 +5780,7 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-9::after {
@@ -5788,7 +5788,7 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-10 {
@@ -5823,11 +5823,11 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-12 svg {
@@ -5839,7 +5839,7 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-12::after {
@@ -5847,7 +5847,7 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-13 {
@@ -5879,7 +5879,7 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -5890,14 +5890,14 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 }
 
 .emotion-17 {
-  color: #0a0a0a;
+  color: #0A0A0A;
   border-width: 0px;
   margin: 0;
   width: 100%;
 }
 
 .emotion-17 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <ul
@@ -6163,7 +6163,7 @@ exports[`StructuredList without-href renders with texts only and no cells 1`] = 
 
 .emotion-5 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -6346,16 +6346,16 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-6::before {
@@ -6363,7 +6363,7 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-6::after {
@@ -6371,7 +6371,7 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-7 {
@@ -6414,11 +6414,11 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-9 svg {
@@ -6430,7 +6430,7 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -6438,12 +6438,12 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-10 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -6668,16 +6668,16 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Noto Sans",sans-serif;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-6::before {
@@ -6685,7 +6685,7 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-6::after {
@@ -6693,7 +6693,7 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-7 {
@@ -6736,11 +6736,11 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-9 svg {
@@ -6752,7 +6752,7 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -6760,12 +6760,12 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-10 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;

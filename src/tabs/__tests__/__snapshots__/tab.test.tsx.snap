@@ -110,8 +110,8 @@ exports[`Tab renders disabled tab 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -124,7 +124,7 @@ exports[`Tab renders disabled tab 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -162,11 +162,11 @@ exports[`Tab renders disabled tab 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -174,7 +174,7 @@ exports[`Tab renders disabled tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -182,7 +182,7 @@ exports[`Tab renders disabled tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <button
@@ -240,7 +240,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -254,34 +254,43 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -322,17 +331,17 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -340,7 +349,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -348,7 +357,7 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <button
@@ -425,7 +434,7 @@ exports[`Tab renders label with fallback formatting 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -439,34 +448,43 @@ exports[`Tab renders label with fallback formatting 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -504,11 +522,11 @@ exports[`Tab renders label with fallback formatting 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -516,7 +534,7 @@ exports[`Tab renders label with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -524,7 +542,7 @@ exports[`Tab renders label with fallback formatting 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <button
@@ -581,7 +599,7 @@ exports[`Tab renders large tab 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -595,34 +613,43 @@ exports[`Tab renders large tab 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -660,11 +687,11 @@ exports[`Tab renders large tab 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -672,7 +699,7 @@ exports[`Tab renders large tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-3::after {
@@ -680,7 +707,7 @@ exports[`Tab renders large tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.43125em;
 }
 
 <button
@@ -737,7 +764,7 @@ exports[`Tab renders small tab 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -751,34 +778,43 @@ exports[`Tab renders small tab 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -816,11 +852,11 @@ exports[`Tab renders small tab 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -828,7 +864,7 @@ exports[`Tab renders small tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-3::after {
@@ -836,7 +872,7 @@ exports[`Tab renders small tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 <button
@@ -893,7 +929,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -907,34 +943,43 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -975,17 +1020,17 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -993,7 +1038,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -1001,7 +1046,7 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <button
@@ -1078,7 +1123,7 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1092,34 +1137,43 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -1157,11 +1211,11 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1169,7 +1223,7 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1177,14 +1231,14 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1263,7 +1317,7 @@ exports[`Tab renders with different minHeight 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1277,34 +1331,43 @@ exports[`Tab renders with different minHeight 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -1342,11 +1405,11 @@ exports[`Tab renders with different minHeight 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1354,7 +1417,7 @@ exports[`Tab renders with different minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1362,7 +1425,7 @@ exports[`Tab renders with different minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <button
@@ -1419,7 +1482,7 @@ exports[`Tab should render custom aria-label tab 1`] = `
   -ms-appearance: none;
   appearance: none;
   background-color: transparent;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1433,34 +1496,43 @@ exports[`Tab should render custom aria-label tab 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
+  background-color: #E0E7FF;
+  color: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
+  background-color: #AEBFFF;
+  color: #3358CC;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) {
+  background-color: transparent;
+  color: #3358CC;
+}
+
+.emotion-0:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
 }
 
 .emotion-0:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-0:focus {
@@ -1498,11 +1570,11 @@ exports[`Tab should render custom aria-label tab 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1510,7 +1582,7 @@ exports[`Tab should render custom aria-label tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1518,14 +1590,14 @@ exports[`Tab should render custom aria-label tab 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }

@@ -44,7 +44,7 @@ const tabsWithLabelAndIcons = [
   </Tab>,
 ];
 
-const selectedTabStyled = 'color: #0a68c1';
+const selectedTabStyled = 'color: #3358CC';
 
 describe('Tabs', () => {
   // Mocking ResizeObserver

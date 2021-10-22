@@ -24,8 +24,8 @@ exports[`Nested stacks render in horizontal flow 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -152,8 +152,8 @@ exports[`Nested stacks render in horizontal flow with space 1`] = `
 .emotion-3 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -262,8 +262,8 @@ exports[`Nested stacks render in vertical flow 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -390,8 +390,8 @@ exports[`Nested stacks render in vertical flow with space 1`] = `
 .emotion-3 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -530,8 +530,8 @@ exports[`Nested stacks render in vertical flow with space and height 1`] = `
 .emotion-3 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -640,8 +640,8 @@ exports[`Nested stacks render mixed content 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -730,8 +730,8 @@ exports[`Nested stacks render with stackDistribution 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -839,8 +839,8 @@ exports[`Stack as list renders correctly 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -912,8 +912,8 @@ exports[`Stack as list renders horizontally 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -989,8 +989,8 @@ exports[`Stack as list renders horizontally with spacing 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -1076,8 +1076,8 @@ exports[`Stack as list renders horizontally with spacing and wrap 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -1169,8 +1169,8 @@ exports[`Stack as list renders nested stack 1`] = `
 .emotion-3 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -1299,8 +1299,8 @@ exports[`Stack as list renders nested stack as list 1`] = `
 .emotion-4 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -1437,8 +1437,8 @@ exports[`Stack as list renders with spacing 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -1524,8 +1524,8 @@ exports[`Stack as list renders with spacing and wrap 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <ul
@@ -1750,8 +1750,8 @@ exports[`Stack render with responsive props 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -1847,8 +1847,8 @@ exports[`Stack render with responsive props 2`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -1909,8 +1909,8 @@ exports[`Stack renders as span 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <span
@@ -1970,8 +1970,8 @@ exports[`Stack renders as span with space 1`] = `
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <span
@@ -2032,8 +2032,8 @@ exports[`Stack renders inline stack 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2082,8 +2082,8 @@ exports[`Stack renders reverse stack 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2150,8 +2150,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2230,8 +2230,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2310,8 +2310,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2386,8 +2386,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2455,8 +2455,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2512,8 +2512,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2584,8 +2584,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2664,8 +2664,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2748,8 +2748,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2828,8 +2828,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2890,8 +2890,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2940,8 +2940,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -2990,8 +2990,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3040,8 +3040,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3089,8 +3089,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3145,8 +3145,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3213,8 +3213,8 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3293,8 +3293,8 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3373,8 +3373,8 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3449,8 +3449,8 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3518,8 +3518,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3575,8 +3575,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3647,8 +3647,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3727,8 +3727,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3811,8 +3811,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3891,8 +3891,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -3953,8 +3953,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4003,8 +4003,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4053,8 +4053,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4103,8 +4103,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4152,8 +4152,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4208,8 +4208,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4276,8 +4276,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4356,8 +4356,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4436,8 +4436,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4512,8 +4512,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and only space
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4581,8 +4581,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4638,8 +4638,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4710,8 +4710,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4790,8 +4790,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4874,8 +4874,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -4954,8 +4954,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the spaceI
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5016,8 +5016,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the stack 
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5066,8 +5066,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the stack 
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5116,8 +5116,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the stack 
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5166,8 +5166,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the stack 
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5215,8 +5215,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the stack 
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5271,8 +5271,8 @@ exports[`Stack renders where the stack flow is horizontal-stretch and the stack 
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5339,8 +5339,8 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5419,8 +5419,8 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5499,8 +5499,8 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5575,8 +5575,8 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5644,8 +5644,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5701,8 +5701,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5773,8 +5773,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5853,8 +5853,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -5937,8 +5937,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6017,8 +6017,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6079,8 +6079,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6129,8 +6129,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6179,8 +6179,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6229,8 +6229,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6278,8 +6278,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6334,8 +6334,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6402,8 +6402,8 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6482,8 +6482,8 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6562,8 +6562,8 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6638,8 +6638,8 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6707,8 +6707,8 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6764,8 +6764,8 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6836,8 +6836,8 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -6916,8 +6916,8 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7000,8 +7000,8 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7080,8 +7080,8 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7142,8 +7142,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7192,8 +7192,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7242,8 +7242,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7292,8 +7292,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7341,8 +7341,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7397,8 +7397,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7465,8 +7465,8 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7545,8 +7545,8 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7625,8 +7625,8 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7701,8 +7701,8 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7770,8 +7770,8 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7827,8 +7827,8 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7899,8 +7899,8 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -7979,8 +7979,8 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8063,8 +8063,8 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8143,8 +8143,8 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8205,8 +8205,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8255,8 +8255,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8305,8 +8305,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8355,8 +8355,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8404,8 +8404,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8460,8 +8460,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8528,8 +8528,8 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8608,8 +8608,8 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8688,8 +8688,8 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8764,8 +8764,8 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8833,8 +8833,8 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8890,8 +8890,8 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -8962,8 +8962,8 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9042,8 +9042,8 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9126,8 +9126,8 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9206,8 +9206,8 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9268,8 +9268,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9318,8 +9318,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9368,8 +9368,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9418,8 +9418,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9467,8 +9467,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9523,8 +9523,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9591,8 +9591,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9671,8 +9671,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceIn
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9751,8 +9751,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceSt
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9827,8 +9827,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and only spaceSt
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9896,8 +9896,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -9953,8 +9953,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10025,8 +10025,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10105,8 +10105,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10189,8 +10189,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10269,8 +10269,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the spaceInl
 .emotion-2 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10331,8 +10331,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the stack di
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10381,8 +10381,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the stack di
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10431,8 +10431,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the stack di
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10481,8 +10481,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the stack di
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10530,8 +10530,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the stack di
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10586,8 +10586,8 @@ exports[`Stack renders where the stack flow is vertical-stretch and the stack di
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10636,8 +10636,8 @@ exports[`Stack renders with defaults only 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10693,8 +10693,8 @@ exports[`Stack renders with flex grow and shrink 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10750,8 +10750,8 @@ exports[`Stack renders with flex grow and shrink 2`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10800,8 +10800,8 @@ exports[`Stack renders with invalid stack distribution 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10846,8 +10846,8 @@ exports[`Stack renders with invalid stack flow 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10896,8 +10896,8 @@ exports[`Stack renders with valid stack distribution 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div
@@ -10946,8 +10946,8 @@ exports[`Stack renders with valid stack flow 1`] = `
 .emotion-1 {
   width: 150px;
   height: 150px;
-  background-color: #8ee1a6;
-  border: 1px solid #ff8a8a;
+  background-color: #8EE1A6;
+  border: 1px solid #FF8A8A;
 }
 
 <div

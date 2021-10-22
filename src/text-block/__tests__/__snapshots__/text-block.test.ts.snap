@@ -32,35 +32,53 @@ exports[`TextBlock renders with custom style preset 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <p
@@ -74,11 +92,11 @@ exports[`TextBlock renders with custom typography preset 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-0::before {
@@ -86,7 +104,7 @@ exports[`TextBlock renders with custom typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
@@ -94,7 +112,7 @@ exports[`TextBlock renders with custom typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <p
@@ -121,11 +139,11 @@ exports[`TextBlock renders with no text cropping 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 <p

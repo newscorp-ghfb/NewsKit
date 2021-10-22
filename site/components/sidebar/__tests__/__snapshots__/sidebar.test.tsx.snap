@@ -110,7 +110,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-7 {
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
@@ -315,7 +315,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-7 {
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;

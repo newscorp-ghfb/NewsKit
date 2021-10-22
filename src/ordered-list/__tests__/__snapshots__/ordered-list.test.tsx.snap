@@ -12,16 +12,16 @@ exports[`OrderedList renders with defaults 1`] = `
 .emotion-1 {
   margin-bottom: 16px;
   counter-increment: item-counter;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-1 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-1::before {
@@ -29,7 +29,7 @@ exports[`OrderedList renders with defaults 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -37,23 +37,23 @@ exports[`OrderedList renders with defaults 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1::before {
   content: counter(item-counter) '. ';
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   min-width: 24px;
 }
 
 .emotion-1::before svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 <ol
@@ -91,16 +91,16 @@ exports[`OrderedList renders with invalid nodes 1`] = `
 .emotion-1 {
   margin-bottom: 16px;
   counter-increment: item-counter;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-1 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-1::before {
@@ -108,7 +108,7 @@ exports[`OrderedList renders with invalid nodes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -116,23 +116,23 @@ exports[`OrderedList renders with invalid nodes 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1::before {
   content: counter(item-counter) '. ';
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   min-width: 24px;
 }
 
 .emotion-1::before svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 <ol
@@ -165,12 +165,12 @@ exports[`OrderedList renders with overrides 1`] = `
 .emotion-1 {
   margin-bottom: 4px;
   counter-increment: item-counter;
-  color: #ef1703;
-  font-family: "Noto Sans",sans-serif;
+  color: #EF1703;
+  font-family: "DM Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-1::before {
@@ -178,7 +178,7 @@ exports[`OrderedList renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.39027777777777783em;
+  margin-bottom: -0.4590277777777778em;
 }
 
 .emotion-1::after {
@@ -186,17 +186,17 @@ exports[`OrderedList renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4902777777777778em;
+  margin-top: -0.4590277777777778em;
 }
 
 .emotion-1::before {
   content: counter(item-counter) '. ';
-  color: #0a68c1;
-  font-family: "Noto Sans",sans-serif;
+  color: #3358CC;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   min-width: 12px;
 }

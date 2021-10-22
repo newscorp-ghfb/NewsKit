@@ -7,13 +7,13 @@ exports[`SwatchCard renders with inkBase 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: #2e2e2e;
+  background: #2E2E2E;
   height: 80px;
   width: 100px;
   margin-right: 8px;
   border-radius: 8px;
   border: 1px solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
 }
 
 .emotion-1 {
@@ -60,17 +60,17 @@ exports[`SwatchCard renders with inkBase 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 48px;
   height: 32px;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 1.1111111111111112;
-  font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
   width: 100%;
 }
 
@@ -80,7 +80,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-3 {
@@ -114,11 +114,11 @@ exports[`SwatchCard renders with inkBase 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -126,7 +126,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -134,7 +134,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div

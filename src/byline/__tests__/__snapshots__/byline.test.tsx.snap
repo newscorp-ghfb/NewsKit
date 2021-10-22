@@ -51,11 +51,11 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -68,7 +68,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -76,7 +76,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -84,35 +84,53 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-4:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-5 {
@@ -137,11 +155,11 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -151,7 +169,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -159,12 +177,12 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
   margin-left: 8px;
-  color: #c0c0c0;
+  color: #C0C0C0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -172,7 +190,7 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -292,11 +310,11 @@ exports[`Byline renders correctly with author's name, author's information and n
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -309,7 +327,7 @@ exports[`Byline renders correctly with author's name, author's information and n
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -317,12 +335,12 @@ exports[`Byline renders correctly with author's name, author's information and n
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
   margin-left: 8px;
-  color: #c0c0c0;
+  color: #C0C0C0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -330,7 +348,7 @@ exports[`Byline renders correctly with author's name, author's information and n
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -418,11 +436,11 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -435,7 +453,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -443,7 +461,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -451,35 +469,53 @@ exports[`Byline renders correctly with authors and links 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-4:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-5 {
@@ -504,11 +540,11 @@ exports[`Byline renders correctly with authors and links 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -518,7 +554,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -526,12 +562,12 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 {
   margin-left: 8px;
-  color: #c0c0c0;
+  color: #C0C0C0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -539,7 +575,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -707,11 +743,11 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -724,7 +760,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -732,7 +768,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -740,35 +776,53 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-4:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-5 {
@@ -793,11 +847,11 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -807,7 +861,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -815,12 +869,12 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 {
   margin-left: 8px;
-  color: #c0c0c0;
+  color: #C0C0C0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -828,7 +882,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -962,11 +1016,11 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -979,7 +1033,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -987,12 +1041,12 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
   margin-left: 8px;
-  color: #c0c0c0;
+  color: #C0C0C0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1000,7 +1054,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -1098,11 +1152,11 @@ exports[`Byline renders correctly with one author 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #535353;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -1115,7 +1169,7 @@ exports[`Byline renders correctly with one author 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
@@ -1123,7 +1177,7 @@ exports[`Byline renders correctly with one author 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1193,11 +1247,11 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #f000dc;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -1206,7 +1260,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-3::after {
@@ -1214,7 +1268,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.43125em;
 }
 
 .emotion-4 {
@@ -1247,11 +1301,11 @@ exports[`Byline renders correctly with overrides 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -1261,7 +1315,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-6::after {
@@ -1269,7 +1323,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.43125em;
 }
 
 .emotion-8 {

@@ -1087,7 +1087,7 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 479px) {
@@ -1141,12 +1141,12 @@ exports[`Toast Component renders with actions 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-3::before {
@@ -1154,7 +1154,7 @@ exports[`Toast Component renders with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1162,11 +1162,11 @@ exports[`Toast Component renders with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-4 {
@@ -1219,9 +1219,9 @@ exports[`Toast Component renders with actions 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1235,24 +1235,24 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-7:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -1286,11 +1286,11 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -1298,7 +1298,7 @@ exports[`Toast Component renders with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-10::after {
@@ -1306,7 +1306,7 @@ exports[`Toast Component renders with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 <div
@@ -1382,7 +1382,7 @@ exports[`Toast Component renders with content as react element 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 479px) {
@@ -1435,12 +1435,12 @@ exports[`Toast Component renders with content as react element 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-3::before {
@@ -1448,7 +1448,7 @@ exports[`Toast Component renders with content as react element 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1456,11 +1456,11 @@ exports[`Toast Component renders with content as react element 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-4 {
@@ -1513,7 +1513,7 @@ exports[`Toast Component renders with content as string and link 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 479px) {
@@ -1566,12 +1566,12 @@ exports[`Toast Component renders with content as string and link 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-3::before {
@@ -1579,7 +1579,7 @@ exports[`Toast Component renders with content as string and link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1587,11 +1587,11 @@ exports[`Toast Component renders with content as string and link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-4 {
@@ -1599,35 +1599,53 @@ exports[`Toast Component renders with content as string and link 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-4:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-5 {
@@ -1713,7 +1731,7 @@ exports[`Toast Component renders with default props 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 479px) {
@@ -1766,12 +1784,12 @@ exports[`Toast Component renders with default props 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-3::before {
@@ -1779,7 +1797,7 @@ exports[`Toast Component renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1787,11 +1805,11 @@ exports[`Toast Component renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1835,7 +1853,7 @@ exports[`Toast Component renders with icon 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 479px) {
@@ -1891,7 +1909,7 @@ exports[`Toast Component renders with icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1910,12 +1928,12 @@ exports[`Toast Component renders with icon 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-6::before {
@@ -1923,7 +1941,7 @@ exports[`Toast Component renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -1931,11 +1949,11 @@ exports[`Toast Component renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -2056,7 +2074,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2076,11 +2094,11 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 18px;
   line-height: 1.1111111111111112;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-bottom: 24px;
 }
 
@@ -2089,7 +2107,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.1680555555555556em;
+  margin-bottom: -0.2368055555555556em;
 }
 
 .emotion-6::after {
@@ -2097,17 +2115,17 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.2368055555555556em;
 }
 
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7::before {
@@ -2115,7 +2133,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -2123,7 +2141,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 {
@@ -2135,7 +2153,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 
 .emotion-9 {
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #DEDEDE;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -2176,9 +2194,9 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2192,24 +2210,24 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-11:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-11:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-12 {
@@ -2243,11 +2261,11 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 }
 
 .emotion-14 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-14::before {
@@ -2255,7 +2273,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-14::after {
@@ -2263,7 +2281,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 <div
@@ -2365,7 +2383,7 @@ exports[`Toast Component renders with title 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 @media screen and (max-width: 479px) {
@@ -2418,12 +2436,12 @@ exports[`Toast Component renders with title 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
   margin-bottom: 4px;
 }
 
@@ -2432,7 +2450,7 @@ exports[`Toast Component renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-3::after {
@@ -2440,22 +2458,22 @@ exports[`Toast Component renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-3 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -2463,7 +2481,7 @@ exports[`Toast Component renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -2471,11 +2489,11 @@ exports[`Toast Component renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div

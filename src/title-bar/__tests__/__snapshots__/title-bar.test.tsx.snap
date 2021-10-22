@@ -43,11 +43,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -55,7 +55,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -63,17 +63,17 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -81,7 +81,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -89,17 +89,17 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -107,7 +107,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -115,7 +115,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -123,11 +123,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 @media screen {
@@ -186,9 +186,9 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -202,24 +202,24 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-5:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-5:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-6 {
@@ -253,11 +253,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-8 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -265,7 +265,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -273,7 +273,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -362,11 +362,11 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -374,7 +374,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -382,17 +382,17 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -400,7 +400,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -408,17 +408,17 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -426,7 +426,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -434,7 +434,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -442,11 +442,11 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 @media screen {
@@ -484,35 +484,53 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-5 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-5:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-5:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-5:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-5:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-5:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-5:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-5:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-5:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-6 {
@@ -618,11 +636,11 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -630,7 +648,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -638,17 +656,17 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -656,7 +674,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -664,17 +682,17 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -682,7 +700,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -690,7 +708,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -698,35 +716,53 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-3:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-3:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <div
@@ -788,11 +824,11 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
 
 @media screen and (max-width: 479px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -800,7 +836,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -814,11 +850,11 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -826,7 +862,7 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -840,11 +876,11 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -852,7 +888,33 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    font-family: "Bitter",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-2::after {
@@ -864,41 +926,15 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-2::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.09955357142857141em;
-  }
-
-  .emotion-2::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
-  }
-}
-
 .emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -948,11 +984,11 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 18px;
     line-height: 1.1111111111111112;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -960,7 +996,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.08368055555555559em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -974,11 +1010,11 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -986,7 +1022,7 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -1000,11 +1036,11 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1012,7 +1048,33 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    font-family: "Bitter",serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-2::after {
@@ -1024,65 +1086,57 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 28px;
-    line-height: 1.1428571428571428;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-
-  .emotion-2::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.09955357142857141em;
-  }
-
-  .emotion-2::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
-  }
-}
-
 .emotion-3 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-3:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-3:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <div
@@ -1144,11 +1198,11 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1156,7 +1210,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -1164,17 +1218,17 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1182,7 +1236,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -1190,17 +1244,17 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1208,7 +1262,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -1216,7 +1270,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -1224,11 +1278,11 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -1290,11 +1344,11 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1302,7 +1356,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -1310,17 +1364,17 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1328,7 +1382,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -1336,17 +1390,17 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1354,7 +1408,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -1362,7 +1416,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -1370,11 +1424,11 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -1436,11 +1490,11 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1448,7 +1502,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -1456,17 +1510,17 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1474,7 +1528,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -1482,17 +1536,17 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1500,7 +1554,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -1508,7 +1562,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -1516,11 +1570,11 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -1582,11 +1636,11 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1594,7 +1648,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -1602,17 +1656,17 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1620,7 +1674,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -1628,17 +1682,17 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1646,7 +1700,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -1654,7 +1708,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -1662,11 +1716,11 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -1728,11 +1782,11 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1740,7 +1794,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -1748,17 +1802,17 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1766,7 +1820,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -1774,17 +1828,17 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1792,7 +1846,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -1800,7 +1854,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -1808,11 +1862,11 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -1874,11 +1928,11 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1886,7 +1940,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -1894,17 +1948,17 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1912,7 +1966,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -1920,17 +1974,17 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -1938,7 +1992,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -1946,7 +2000,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -1954,11 +2008,11 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -2020,11 +2074,11 @@ exports[`TitleBar should display correctly with default styles and given title 1
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -2032,7 +2086,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
@@ -2040,17 +2094,17 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -2058,7 +2112,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.07812500000000006em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
@@ -2066,17 +2120,17 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-2::before {
@@ -2084,7 +2138,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
@@ -2092,7 +2146,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.3125em;
   }
 }
 
@@ -2100,11 +2154,11 @@ exports[`TitleBar should display correctly with default styles and given title 1
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-3 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div

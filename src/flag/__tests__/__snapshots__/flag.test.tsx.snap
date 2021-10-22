@@ -29,7 +29,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 0;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
@@ -38,7 +38,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-1 {
@@ -72,11 +72,11 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -84,7 +84,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -92,7 +92,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -143,9 +143,9 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -154,7 +154,7 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -188,11 +188,11 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -200,7 +200,7 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -208,7 +208,7 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -259,9 +259,9 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -270,7 +270,7 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -307,7 +307,7 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -318,11 +318,11 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -330,7 +330,7 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -338,7 +338,7 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -409,9 +409,9 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -420,7 +420,7 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -457,7 +457,7 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -468,11 +468,11 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -480,7 +480,7 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -488,7 +488,7 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -561,7 +561,7 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 0;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
@@ -570,7 +570,7 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-1 {
@@ -604,11 +604,11 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -616,7 +616,7 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -624,7 +624,7 @@ exports[`Flag renders a flag with custom presets when children is number 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -676,9 +676,9 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -687,7 +687,7 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -721,11 +721,11 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -733,7 +733,7 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -741,7 +741,7 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -793,9 +793,9 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -804,7 +804,7 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -838,11 +838,11 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -850,7 +850,7 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -858,7 +858,7 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -911,7 +911,7 @@ exports[`Flag renders a flag with no paddings 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 0;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
@@ -920,7 +920,7 @@ exports[`Flag renders a flag with no paddings 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-1 {
@@ -954,11 +954,11 @@ exports[`Flag renders a flag with no paddings 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -966,7 +966,7 @@ exports[`Flag renders a flag with no paddings 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -974,7 +974,7 @@ exports[`Flag renders a flag with no paddings 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1026,9 +1026,9 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1037,7 +1037,7 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1071,11 +1071,11 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1083,7 +1083,7 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1091,7 +1091,7 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1143,9 +1143,9 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1154,7 +1154,7 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1188,11 +1188,11 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1200,7 +1200,7 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1208,7 +1208,7 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1260,9 +1260,9 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1271,7 +1271,7 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1305,11 +1305,11 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1317,7 +1317,7 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1325,7 +1325,7 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1377,9 +1377,9 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1388,7 +1388,7 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1422,11 +1422,11 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1434,7 +1434,7 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1442,7 +1442,7 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1495,7 +1495,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 0;
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-0 svg {
@@ -1504,7 +1504,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-1 {
@@ -1541,7 +1541,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1552,11 +1552,11 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -1564,7 +1564,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -1572,7 +1572,7 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1643,9 +1643,9 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1654,7 +1654,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1691,7 +1691,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1702,11 +1702,11 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 }
 
 .emotion-6 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6::before {
@@ -1714,7 +1714,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -1722,7 +1722,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1793,9 +1793,9 @@ exports[`Flag renders with Large size 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1804,7 +1804,7 @@ exports[`Flag renders with Large size 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1838,11 +1838,11 @@ exports[`Flag renders with Large size 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1850,7 +1850,7 @@ exports[`Flag renders with Large size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.36250000000000004em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-3::after {
@@ -1858,7 +1858,7 @@ exports[`Flag renders with Large size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.43125em;
 }
 
 <div
@@ -1909,9 +1909,9 @@ exports[`Flag renders with Medium size 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -1920,7 +1920,7 @@ exports[`Flag renders with Medium size 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1954,11 +1954,11 @@ exports[`Flag renders with Medium size 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -1966,7 +1966,7 @@ exports[`Flag renders with Medium size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -1974,7 +1974,7 @@ exports[`Flag renders with Medium size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2025,9 +2025,9 @@ exports[`Flag renders with Small size 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2036,7 +2036,7 @@ exports[`Flag renders with Small size 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -2070,11 +2070,11 @@ exports[`Flag renders with Small size 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -2082,7 +2082,7 @@ exports[`Flag renders with Small size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4458333333333334em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-3::after {
@@ -2090,7 +2090,7 @@ exports[`Flag renders with Small size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5458333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 <div
@@ -2141,9 +2141,9 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2152,7 +2152,7 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -2186,11 +2186,11 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -2198,7 +2198,7 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -2206,7 +2206,7 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2257,9 +2257,9 @@ exports[`Flag renders with default styles 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 0;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-0 svg {
@@ -2268,7 +2268,7 @@ exports[`Flag renders with default styles 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -2302,11 +2302,11 @@ exports[`Flag renders with default styles 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -2314,7 +2314,7 @@ exports[`Flag renders with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -2322,7 +2322,7 @@ exports[`Flag renders with default styles 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div

@@ -5,8 +5,8 @@ exports[`Card renders MQ layout 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -74,11 +74,11 @@ exports[`Card renders MQ layout 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -86,7 +86,7 @@ exports[`Card renders MQ layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -94,7 +94,7 @@ exports[`Card renders MQ layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -126,8 +126,8 @@ exports[`Card renders actions section with given component 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -159,11 +159,11 @@ exports[`Card renders actions section with given component 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -171,7 +171,7 @@ exports[`Card renders actions section with given component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -179,7 +179,7 @@ exports[`Card renders actions section with given component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -262,7 +262,7 @@ exports[`Card renders actions section with given component 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -272,11 +272,11 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -314,11 +314,11 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -326,7 +326,7 @@ exports[`Card renders actions section with given component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -334,7 +334,7 @@ exports[`Card renders actions section with given component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -363,9 +363,9 @@ exports[`Card renders actions section with given component 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -379,24 +379,24 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-11:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-11:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-12 {
@@ -503,8 +503,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -536,11 +536,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -548,7 +548,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -556,7 +556,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -639,7 +639,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -649,11 +649,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -691,11 +691,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -703,7 +703,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -711,7 +711,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -740,9 +740,9 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -756,24 +756,24 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-11:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-11:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-12 {
@@ -880,8 +880,8 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -913,11 +913,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -925,7 +925,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -933,7 +933,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -1016,7 +1016,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -1026,11 +1026,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -1068,11 +1068,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -1080,7 +1080,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -1088,7 +1088,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -1117,9 +1117,9 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1133,24 +1133,24 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-11:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-11:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-12 {
@@ -1258,7 +1258,7 @@ exports[`Card renders card with overrides 1`] = `
   box-sizing: border-box;
   overflow: hidden;
   border-style: solid;
-  border-color: #b399cc;
+  border-color: #BBAEFF;
   border-width: 1px;
   position: relative;
   display: -webkit-box;
@@ -1276,7 +1276,7 @@ exports[`Card renders card with overrides 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  background-color: #ffdb89;
+  background-color: #FFDB9D;
   padding: 4px 8px;
 }
 
@@ -1292,11 +1292,11 @@ exports[`Card renders card with overrides 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -1304,7 +1304,7 @@ exports[`Card renders card with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -1312,7 +1312,7 @@ exports[`Card renders card with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1344,8 +1344,8 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1380,11 +1380,11 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-4 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-4::before {
@@ -1392,7 +1392,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-4::after {
@@ -1406,11 +1406,11 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-4 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-4::before {
@@ -1418,7 +1418,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-4::after {
@@ -1432,11 +1432,11 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-4::before {
@@ -1444,7 +1444,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-4::after {
@@ -1452,17 +1452,17 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-4::before {
@@ -1470,7 +1470,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-4::after {
@@ -1478,7 +1478,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1486,11 +1486,11 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 .emotion-5 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 <div
@@ -1526,8 +1526,8 @@ exports[`Card renders media section if the media data is provided 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1576,11 +1576,11 @@ exports[`Card renders media section if the media data is provided 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1635,11 +1635,11 @@ exports[`Card renders media section if the media data is provided 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -1647,7 +1647,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -1655,7 +1655,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1703,8 +1703,8 @@ exports[`Card renders media section with a custom component 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1753,11 +1753,11 @@ exports[`Card renders media section with a custom component 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1812,11 +1812,11 @@ exports[`Card renders media section with a custom component 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -1824,7 +1824,7 @@ exports[`Card renders media section with a custom component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -1832,7 +1832,7 @@ exports[`Card renders media section with a custom component 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1880,8 +1880,8 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1930,11 +1930,11 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1989,11 +1989,11 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -2001,7 +2001,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -2009,7 +2009,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2057,8 +2057,8 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2107,11 +2107,11 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2166,11 +2166,11 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -2178,7 +2178,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -2186,7 +2186,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2234,8 +2234,8 @@ exports[`Card renders media section with overrides 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2285,11 +2285,11 @@ exports[`Card renders media section with overrides 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2344,11 +2344,11 @@ exports[`Card renders media section with overrides 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -2356,7 +2356,7 @@ exports[`Card renders media section with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -2364,7 +2364,7 @@ exports[`Card renders media section with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2412,8 +2412,8 @@ exports[`Card renders with card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2462,11 +2462,11 @@ exports[`Card renders with card items 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2521,11 +2521,11 @@ exports[`Card renders with card items 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -2533,7 +2533,7 @@ exports[`Card renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -2541,7 +2541,7 @@ exports[`Card renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-9 {
@@ -2624,7 +2624,7 @@ exports[`Card renders with card items 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -2634,11 +2634,11 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -2676,11 +2676,11 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-14 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-14::before {
@@ -2688,7 +2688,7 @@ exports[`Card renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-14::after {
@@ -2696,7 +2696,7 @@ exports[`Card renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-15 {
@@ -2725,9 +2725,9 @@ exports[`Card renders with card items 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2741,24 +2741,24 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-15 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-15:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-15:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-16 {
@@ -2881,8 +2881,8 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2931,11 +2931,11 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2990,11 +2990,11 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -3002,7 +3002,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -3010,7 +3010,7 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3059,8 +3059,8 @@ exports[`Card renders without card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3090,8 +3090,8 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3143,11 +3143,11 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   height: 0;
   width: 200px;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3215,11 +3215,11 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -3227,7 +3227,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -3235,7 +3235,7 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3283,8 +3283,8 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3333,11 +3333,11 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   height: 0;
   width: 200px;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3402,11 +3402,11 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -3414,7 +3414,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -3422,7 +3422,7 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3470,8 +3470,8 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3523,11 +3523,11 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   height: 0;
   width: 200px;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3595,11 +3595,11 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -3607,7 +3607,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -3615,7 +3615,7 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3663,8 +3663,8 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3716,11 +3716,11 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   height: 0;
   width: 200px;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3788,11 +3788,11 @@ exports[`Card with horizontal layout renders correctly 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -3800,7 +3800,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -3808,7 +3808,7 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3856,8 +3856,8 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3909,11 +3909,11 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   height: 0;
   width: 200px;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3981,11 +3981,11 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -3993,7 +3993,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -4001,7 +4001,7 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -4049,8 +4049,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4102,11 +4102,11 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   height: 0;
   width: 200px;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -4174,11 +4174,11 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -4186,7 +4186,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -4194,7 +4194,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -4242,8 +4242,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4295,11 +4295,11 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   height: 0;
   width: 200px;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -4367,11 +4367,11 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -4379,7 +4379,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -4387,7 +4387,7 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -4435,8 +4435,8 @@ exports[`Card with href renders correctly with actions 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4468,43 +4468,43 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) .nk-headline-heading {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-3:before {
@@ -4525,11 +4525,11 @@ exports[`Card with href renders correctly with actions 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -4537,7 +4537,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -4545,7 +4545,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6 {
@@ -4628,7 +4628,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -4638,11 +4638,11 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -4680,11 +4680,11 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-11 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-11::before {
@@ -4692,7 +4692,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-11::after {
@@ -4700,7 +4700,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-12 {
@@ -4729,9 +4729,9 @@ exports[`Card with href renders correctly with actions 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -4745,24 +4745,24 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-12 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-12:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-13 {
@@ -4874,8 +4874,8 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4925,11 +4925,11 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -4984,43 +4984,43 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-7 .nk-headline-heading {
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-heading {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-heading {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:visited:not(:disabled) .nk-headline-heading {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-7:before {
@@ -5041,11 +5041,11 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-9::before {
@@ -5053,7 +5053,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -5061,7 +5061,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -5114,8 +5114,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5151,33 +5151,32 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #0a0a0a;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
-  color: #2F75D7;
+  color: #0A0A0A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5199,11 +5198,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5211,7 +5210,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
@@ -5225,11 +5224,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5237,7 +5236,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
@@ -5251,11 +5250,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5263,7 +5262,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-5::after {
@@ -5271,17 +5270,17 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5289,7 +5288,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-5::after {
@@ -5297,7 +5296,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -5305,13 +5304,12 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #0a0a0a;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-6:hover:not(:disabled) {
-  color: #2F75D7;
+  color: #0A0A0A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5354,8 +5352,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5391,43 +5389,43 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-heading {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-heading {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-4:before {
@@ -5447,11 +5445,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5459,7 +5457,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
@@ -5473,11 +5471,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5485,7 +5483,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
@@ -5499,11 +5497,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5511,7 +5509,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-5::after {
@@ -5519,17 +5517,17 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5537,7 +5535,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-5::after {
@@ -5545,7 +5543,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -5553,23 +5551,23 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-6:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 <div
@@ -5612,8 +5610,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5649,43 +5647,43 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-heading {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-heading {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-4:before {
@@ -5705,11 +5703,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5717,7 +5715,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
@@ -5731,11 +5729,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
+    font-family: "Bitter",serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5743,7 +5741,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.128125em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
@@ -5757,11 +5755,11 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5769,7 +5767,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.11145833333333338em;
+    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-5::after {
@@ -5777,17 +5775,17 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2958333333333334em;
+    margin-top: -0.25795454545454544em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 600;
-    letter-spacing: 0;
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
   }
 
   .emotion-5::before {
@@ -5795,7 +5793,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.09062500000000001em;
+    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-5::after {
@@ -5803,7 +5801,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -5811,23 +5809,23 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-6:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 <div
@@ -5868,8 +5866,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5901,43 +5899,43 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) .nk-headline-heading {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-3:before {
@@ -5958,11 +5956,11 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -5970,7 +5968,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -5978,7 +5976,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6017,8 +6015,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6050,43 +6048,43 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3 .nk-headline-kicker {
-  color: #0a68c1;
+  color: #3358CC;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-kicker {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) .nk-headline-kicker {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
-  color: #02509b;
+  color: #2B4AAB;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #01396e;
+  color: #213A82;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-3:visited:not(:disabled) .nk-headline-heading {
-  color: #7547a3;
+  color: #5E44E4;
 }
 
 .emotion-3:before {
@@ -6107,11 +6105,11 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -6119,7 +6117,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -6127,7 +6125,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6165,7 +6163,7 @@ exports[`CardInset renders card with overrides 1`] = `
   box-sizing: border-box;
   overflow: hidden;
   border-style: solid;
-  border-color: #b399cc;
+  border-color: #BBAEFF;
   border-width: 1px;
   position: relative;
   display: -webkit-box;
@@ -6183,7 +6181,7 @@ exports[`CardInset renders card with overrides 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  background-color: #ffdb89;
+  background-color: #FFDB9D;
 }
 
 @media screen and (max-width: 479px) {
@@ -6222,11 +6220,11 @@ exports[`CardInset renders card with overrides 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4::before {
@@ -6234,7 +6232,7 @@ exports[`CardInset renders card with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -6242,7 +6240,7 @@ exports[`CardInset renders card with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6274,8 +6272,8 @@ exports[`CardInset renders with card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6301,11 +6299,11 @@ exports[`CardInset renders with card items 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-2 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -6383,11 +6381,11 @@ exports[`CardInset renders with card items 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-8::before {
@@ -6395,7 +6393,7 @@ exports[`CardInset renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -6403,7 +6401,7 @@ exports[`CardInset renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-9 {
@@ -6509,7 +6507,7 @@ exports[`CardInset renders with card items 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -6519,11 +6517,11 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -6561,11 +6559,11 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-14 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-14::before {
@@ -6573,7 +6571,7 @@ exports[`CardInset renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-14::after {
@@ -6581,7 +6579,7 @@ exports[`CardInset renders with card items 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-15 {
@@ -6610,9 +6608,9 @@ exports[`CardInset renders with card items 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -6626,24 +6624,24 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-15 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-15:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-15:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-15:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-15:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-16 {
@@ -6766,8 +6764,8 @@ exports[`CardInset renders without card items 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   overflow: hidden;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;

@@ -34,13 +34,13 @@ exports[`Banner renders with content as react element 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -117,12 +117,12 @@ exports[`Banner renders with content as react element 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-5::before {
@@ -130,7 +130,7 @@ exports[`Banner renders with content as react element 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -138,11 +138,11 @@ exports[`Banner renders with content as react element 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-6 {
@@ -213,13 +213,13 @@ exports[`Banner renders with content as react element 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -293,12 +293,12 @@ exports[`Banner renders with content as react element 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-5::before {
@@ -306,7 +306,7 @@ exports[`Banner renders with content as react element 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -314,11 +314,11 @@ exports[`Banner renders with content as react element 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-6 {
@@ -394,13 +394,13 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -477,12 +477,12 @@ exports[`Banner renders with content as string and link 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-5::before {
@@ -490,7 +490,7 @@ exports[`Banner renders with content as string and link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -498,11 +498,11 @@ exports[`Banner renders with content as string and link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-6 {
@@ -510,35 +510,53 @@ exports[`Banner renders with content as string and link 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-6:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-6:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-7 {
@@ -642,13 +660,13 @@ exports[`Banner renders with content as string and link 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -722,12 +740,12 @@ exports[`Banner renders with content as string and link 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-5::before {
@@ -735,7 +753,7 @@ exports[`Banner renders with content as string and link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -743,11 +761,11 @@ exports[`Banner renders with content as string and link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-6 {
@@ -755,35 +773,53 @@ exports[`Banner renders with content as string and link 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #0a68c1;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-6:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-6:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-6:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-7 {
@@ -892,13 +928,13 @@ exports[`Banner renders with default props 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -975,12 +1011,12 @@ exports[`Banner renders with default props 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-5::before {
@@ -988,7 +1024,7 @@ exports[`Banner renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -996,11 +1032,11 @@ exports[`Banner renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1062,13 +1098,13 @@ exports[`Banner renders with default props 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -1142,12 +1178,12 @@ exports[`Banner renders with default props 1`] = `
 .emotion-5 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-5::before {
@@ -1155,7 +1191,7 @@ exports[`Banner renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -1163,11 +1199,11 @@ exports[`Banner renders with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1234,13 +1270,13 @@ exports[`Banner renders with icon 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -1317,8 +1353,8 @@ exports[`Banner renders with icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #ffffff;
-  fill: #ffffff;
+  color: #FFFFFF;
+  fill: #FFFFFF;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1326,8 +1362,8 @@ exports[`Banner renders with icon 1`] = `
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  color: #ffffff;
-  fill: #ffffff;
+  color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .emotion-7 {
@@ -1342,12 +1378,12 @@ exports[`Banner renders with icon 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-8::before {
@@ -1355,7 +1391,7 @@ exports[`Banner renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -1363,11 +1399,11 @@ exports[`Banner renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1449,13 +1485,13 @@ exports[`Banner renders with icon 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -1529,8 +1565,8 @@ exports[`Banner renders with icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #ffffff;
-  fill: #ffffff;
+  color: #FFFFFF;
+  fill: #FFFFFF;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1538,8 +1574,8 @@ exports[`Banner renders with icon 1`] = `
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  color: #ffffff;
-  fill: #ffffff;
+  color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .emotion-7 {
@@ -1554,12 +1590,12 @@ exports[`Banner renders with icon 1`] = `
 .emotion-8 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-8::before {
@@ -1567,7 +1603,7 @@ exports[`Banner renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
@@ -1575,11 +1611,11 @@ exports[`Banner renders with icon 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1636,13 +1672,13 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -1716,12 +1752,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -1729,7 +1765,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -1737,11 +1773,11 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -1802,9 +1838,9 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1818,24 +1854,24 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-7:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -1869,11 +1905,11 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -1881,7 +1917,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -1889,7 +1925,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1972,13 +2008,13 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -2055,12 +2091,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -2068,7 +2104,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -2076,11 +2112,11 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -2141,9 +2177,9 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2157,24 +2193,24 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-7:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -2208,11 +2244,11 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -2220,7 +2256,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -2228,7 +2264,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2311,13 +2347,13 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -2391,12 +2427,12 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -2404,7 +2440,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -2412,11 +2448,11 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -2481,9 +2517,9 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2497,24 +2533,24 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-7:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -2548,11 +2584,11 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -2560,7 +2596,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -2568,7 +2604,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2628,13 +2664,13 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -2711,12 +2747,12 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -2724,7 +2760,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -2732,11 +2768,11 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -2801,9 +2837,9 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2817,24 +2853,24 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-7:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -2868,11 +2904,11 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -2880,7 +2916,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -2888,7 +2924,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2978,13 +3014,13 @@ exports[`Banner renders with title 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -3062,12 +3098,12 @@ exports[`Banner renders with title 1`] = `
   margin: 0;
   padding: 1px 0;
   display: inline-block;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
   margin-bottom: 12px;
 }
 
@@ -3076,7 +3112,7 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-5::after {
@@ -3084,22 +3120,22 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-6::before {
@@ -3107,7 +3143,7 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -3115,11 +3151,11 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -3186,13 +3222,13 @@ exports[`Banner renders with title 1`] = `
 
 .emotion-1 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-1 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-2 {
@@ -3267,12 +3303,12 @@ exports[`Banner renders with title 1`] = `
   margin: 0;
   padding: 1px 0;
   display: inline-block;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
   margin-bottom: 12px;
 }
 
@@ -3281,7 +3317,7 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.23750000000000002em;
+  margin-bottom: -0.30625em;
 }
 
 .emotion-5::after {
@@ -3289,22 +3325,22 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.30625em;
 }
 
 .emotion-5 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-6::before {
@@ -3312,7 +3348,7 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -3320,11 +3356,11 @@ exports[`Banner renders with title 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
@@ -3366,13 +3402,13 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -3446,12 +3482,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -3459,7 +3495,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -3467,11 +3503,11 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -3536,9 +3572,9 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -3552,24 +3588,24 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-7:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -3603,11 +3639,11 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -3615,7 +3651,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -3623,7 +3659,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -3663,7 +3699,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -3677,31 +3713,31 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-12 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.2);
 }
 
 .emotion-12:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-15 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3798,13 +3834,13 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -3881,12 +3917,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -3894,7 +3930,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -3902,11 +3938,11 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -3973,10 +4009,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #ffffff;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -3990,26 +4026,26 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
+  background-color: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.7);
+}
+
+.emotion-7:active:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.8);
 }
 
-.emotion-7:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.4);
-  border-color: rgba(255,255,255,0.7);
-}
-
 .emotion-7:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
+  border-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -4043,11 +4079,11 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -4055,7 +4091,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -4063,7 +4099,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-12 {
@@ -4092,9 +4128,9 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #0a68c1;
+  background-color: #3358CC;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -4108,24 +4144,24 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-12 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-12:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-12:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-12:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
+  background-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 <div
@@ -4208,13 +4244,13 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -4288,12 +4324,12 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -4301,7 +4337,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -4309,11 +4345,11 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -4377,7 +4413,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -4391,24 +4427,24 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.2);
 }
 
 .emotion-7:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -4445,7 +4481,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4519,13 +4555,13 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  background-color: #128293;
+  background-color: #05717D;
   padding: 20px;
   min-height: 64px;
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 {
@@ -4602,12 +4638,12 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 .emotion-4 {
   margin: 0;
   padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
-  color: #ffffff;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -4615,7 +4651,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
@@ -4623,11 +4659,11 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-5 {
@@ -4694,10 +4730,10 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #ffffff;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 8px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -4711,26 +4747,26 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-7:hover:not(:disabled) {
+  background-color: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.7);
+}
+
+.emotion-7:active:not(:disabled) {
   background-color: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.8);
 }
 
-.emotion-7:active:not(:disabled) {
-  background-color: rgba(255,255,255,0.4);
-  border-color: rgba(255,255,255,0.7);
-}
-
 .emotion-7:disabled {
-  border-color: #e4e4e4;
-  color: #c0c0c0;
+  border-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-7:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -4764,11 +4800,11 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-10 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -4776,7 +4812,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -4784,7 +4820,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div

@@ -68,17 +68,17 @@ exports[`TokenFlag renders color token flag 1`] = `
   display: inline-block;
   height: 12px;
   width: 12px;
-  background: #d20600;
-  box-shadow: 0 0 2px 0 rgba(40,41,61,0.04),0 4px 8px 0 rgba(96,97,112,0.16);
+  background: #D20600;
+  box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
   border-radius: 50%;
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -86,7 +86,7 @@ exports[`TokenFlag renders color token flag 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -94,7 +94,7 @@ exports[`TokenFlag renders color token flag 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -190,11 +190,11 @@ exports[`TokenFlag renders default token flag without color 1`] = `
 }
 
 .emotion-3 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-3::before {
@@ -202,7 +202,7 @@ exports[`TokenFlag renders default token flag without color 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
@@ -210,7 +210,7 @@ exports[`TokenFlag renders default token flag without color 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div

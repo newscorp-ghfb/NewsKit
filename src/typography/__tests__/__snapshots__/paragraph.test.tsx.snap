@@ -4,16 +4,16 @@ exports[`Paragraph renders Paragraph 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 <p
@@ -28,40 +28,58 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #0a68c1;
-  font-family: "Noto Sans",sans-serif;
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-0 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #02509b;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #02509b;
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #01396e;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #01396e;
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #7547a3;
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #7547a3;
+  fill: #5E44E4;
+}
+
+.emotion-0:visited:hover:not(:disabled) {
+  color: #5E44E4;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 <p
@@ -76,16 +94,16 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-0 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 <p
@@ -106,16 +124,16 @@ exports[`Paragraph renders with drop cap 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-1 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-2 {
@@ -123,7 +141,7 @@ exports[`Paragraph renders with drop cap 1`] = `
   float: left;
   margin-right: 0.15em;
   margin-top: 4px;
-  color: #0a0a0a;
+  color: #0A0A0A;
 }
 
 @media screen and (max-width: 767px) {
@@ -148,7 +166,7 @@ exports[`Paragraph renders with drop cap 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #0a0a0a;
+  fill: #0A0A0A;
 }
 
 .emotion-3 {

@@ -310,6 +310,8 @@ exports[`Meta renders with mandatory props 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #577FFB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23 svg {
@@ -318,6 +320,8 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-23:hover:not(:disabled) {
   color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23:hover:not(:disabled) svg {
@@ -326,6 +330,8 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-23:active:not(:disabled) {
   color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23:active:not(:disabled) svg {
@@ -334,9 +340,21 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-23:visited:not(:disabled) {
   color: #503B8C;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23:visited:not(:disabled) svg {
+  fill: #503B8C;
+}
+
+.emotion-23:visited:hover:not(:disabled) {
+  color: #503B8C;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-23:visited:hover:not(:disabled) svg {
   fill: #503B8C;
 }
 
@@ -1427,6 +1445,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   color: #577FFB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23 svg {
@@ -1435,6 +1455,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-23:hover:not(:disabled) {
   color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23:hover:not(:disabled) svg {
@@ -1443,6 +1465,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-23:active:not(:disabled) {
   color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23:active:not(:disabled) svg {
@@ -1451,9 +1475,21 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-23:visited:not(:disabled) {
   color: #503B8C;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-23:visited:not(:disabled) svg {
+  fill: #503B8C;
+}
+
+.emotion-23:visited:hover:not(:disabled) {
+  color: #503B8C;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-23:visited:hover:not(:disabled) svg {
   fill: #503B8C;
 }
 

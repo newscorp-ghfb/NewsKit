@@ -7,7 +7,7 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio 1`] = `
   width: 100%;
   display: block;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 @media screen and (max-width: 479px) {
@@ -27,7 +27,7 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -95,7 +95,7 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio,  width and heigh
   width: 100%;
   display: block;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 @media screen and (max-width: 479px) {
@@ -115,7 +115,7 @@ exports[`Image loadingAspectRatio renders with MQ aspect ratio,  width and heigh
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -183,7 +183,7 @@ exports[`Image loadingAspectRatio renders with MQ width and height 1`] = `
   width: 100%;
   display: block;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 @media screen and (max-width: 479px) {
@@ -203,7 +203,7 @@ exports[`Image loadingAspectRatio renders with MQ width and height 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -274,11 +274,11 @@ exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect 
   height: 0;
   width: 100px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -337,11 +337,11 @@ exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 a
   height: 0;
   width: 100px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -400,11 +400,11 @@ exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect rati
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -463,11 +463,11 @@ exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect 
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -526,11 +526,11 @@ exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`]
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -589,11 +589,11 @@ exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio
   height: 0;
   width: 100px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -652,11 +652,11 @@ exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio
   height: 0;
   width: auto;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -715,11 +715,11 @@ exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect r
   height: 0;
   width: 100px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -778,11 +778,11 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
   height: 0;
   width: 100px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -841,11 +841,11 @@ exports[`Image render with incorect path 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -903,11 +903,11 @@ exports[`Image render with multiple sources 1`] = `
   height: 0;
   width: 100%;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -977,11 +977,11 @@ exports[`Image renders with defaults 1`] = `
   height: 0;
   width: 3px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -1074,11 +1074,11 @@ exports[`Image renders with max height and width 1`] = `
   height: 0;
   width: 3px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -1139,11 +1139,11 @@ exports[`Image renders with object-fit and object-position 1`] = `
   height: 0;
   width: 3px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -1204,11 +1204,11 @@ exports[`Image renders with placeholder icon 1`] = `
   height: 0;
   width: 3px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -1246,7 +1246,7 @@ exports[`Image renders with placeholder icon 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1313,11 +1313,11 @@ exports[`Image renders with placeholder icon override 1`] = `
   height: 0;
   width: 3px;
   border-radius: 0;
-  background-color: #fafafa;
+  background-color: #F4F4F4;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-1 {
@@ -1355,7 +1355,7 @@ exports[`Image renders with placeholder icon override 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1632,22 +1632,22 @@ exports[`Image stylePreset with mq 1`] = `
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-0 {
     border-radius: 12px;
-    background-color: #fafafa;
+    background-color: #F4F4F4;
   }
 
   .emotion-0 svg {
-    fill: #c0c0c0;
+    fill: #C0C0C0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
     border-radius: 24px;
-    background-color: #fafafa;
+    background-color: #F4F4F4;
   }
 
   .emotion-0 svg {
-    fill: #c0c0c0;
+    fill: #C0C0C0;
   }
 }
 

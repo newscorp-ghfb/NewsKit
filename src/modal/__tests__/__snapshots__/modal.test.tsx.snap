@@ -80,8 +80,8 @@ exports[`Modal renders default 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -260,7 +260,7 @@ exports[`Modal renders default 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -279,24 +279,24 @@ exports[`Modal renders default 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-8:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-9 {
@@ -333,7 +333,7 @@ exports[`Modal renders default 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -430,7 +430,7 @@ exports[`Modal renders modal with overrides 1`] = `
   left: 0;
   z-index: 70;
   cursor: pointer;
-  background-color: #ffeecf;
+  background-color: #FFEECF;
   opacity: 0;
 }
 
@@ -498,7 +498,7 @@ exports[`Modal renders modal with overrides 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #e6faeb;
+  background-color: #E6FAEB;
   box-shadow: 0px 0px 16px 14px rgba(169,183,172,0.9);
   width: 600px;
   min-width: 20vw;
@@ -563,7 +563,7 @@ exports[`Modal renders modal with overrides 1`] = `
   background-color: transparent;
   border-style: none none solid none;
   border-width: 1px;
-  border-color: #ef1703;
+  border-color: #EF1703;
   min-height: 48px;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -643,7 +643,7 @@ exports[`Modal renders modal with overrides 1`] = `
   appearance: none;
   border-width: 1px;
   border-style: solid;
-  border-color: #a2dae3;
+  border-color: #81D2DA;
   background-color: transparent;
   border-radius: 50%;
   margin: 0;
@@ -664,11 +664,11 @@ exports[`Modal renders modal with overrides 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #128293;
+  fill: #05717D;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #45b5c6;
+  background-color: #41A0AA;
 }
 
 .emotion-7 {
@@ -705,7 +705,7 @@ exports[`Modal renders modal with overrides 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -863,8 +863,8 @@ exports[`Modal renders nothing if modal is closed 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -1043,7 +1043,7 @@ exports[`Modal renders nothing if modal is closed 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1062,24 +1062,24 @@ exports[`Modal renders nothing if modal is closed 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-8:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-9 {
@@ -1116,7 +1116,7 @@ exports[`Modal renders nothing if modal is closed 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1282,8 +1282,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -1474,7 +1474,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1493,24 +1493,24 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
 }
 
 .emotion-9 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-9:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-9:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-9:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-10 {
@@ -1547,7 +1547,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1737,8 +1737,8 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -1912,7 +1912,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1931,24 +1931,24 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-7 {
@@ -1985,7 +1985,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2146,8 +2146,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -2308,7 +2308,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2327,24 +2327,24 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-5:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-5:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-6 {
@@ -2381,7 +2381,7 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2544,8 +2544,8 @@ exports[`Modal renders with different closePosition 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -2724,7 +2724,7 @@ exports[`Modal renders with different closePosition 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2743,24 +2743,24 @@ exports[`Modal renders with different closePosition 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-8:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-9 {
@@ -2797,7 +2797,7 @@ exports[`Modal renders with different closePosition 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2963,8 +2963,8 @@ exports[`Modal renders without header 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -3130,7 +3130,7 @@ exports[`Modal renders without header 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -3149,24 +3149,24 @@ exports[`Modal renders without header 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-6:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-7 {
@@ -3203,7 +3203,7 @@ exports[`Modal renders without header 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3315,8 +3315,8 @@ exports[`Modal renders without overlay 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px 0 rgba(40,41,61,0.04),0 16px 24px 0 rgba(96,97,112,0.16);
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   opacity: 0;
 }
@@ -3495,7 +3495,7 @@ exports[`Modal renders without overlay 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -3514,24 +3514,24 @@ exports[`Modal renders without overlay 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-8:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-9 {
@@ -3568,7 +3568,7 @@ exports[`Modal renders without overlay 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }

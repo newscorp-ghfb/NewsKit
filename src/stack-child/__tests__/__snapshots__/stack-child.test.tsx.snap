@@ -62,7 +62,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -72,11 +72,11 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -114,11 +114,11 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -126,7 +126,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -134,7 +134,7 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6 {
@@ -294,7 +294,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -304,11 +304,11 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -346,11 +346,11 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -358,7 +358,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -366,7 +366,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6 {
@@ -526,7 +526,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  color: #2E2E2E;
   border-radius: 0;
 }
 
@@ -536,11 +536,11 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #2e2e2e;
+  fill: #2E2E2E;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -578,11 +578,11 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5::before {
@@ -590,7 +590,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
@@ -598,7 +598,7 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div

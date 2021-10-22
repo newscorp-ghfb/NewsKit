@@ -60,7 +60,7 @@ const myCustomCardTheme = createTheme({
           textDecoration: 'none',
         },
         hover: {
-          color: '{{colors.inkHeadingLinkHover}}}',
+          color: '{{colors.inkContrast}}}',
           textDecoration: 'underline',
         },
       },

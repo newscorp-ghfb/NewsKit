@@ -103,10 +103,10 @@ const myCustomCardTheme = createTheme({
           backgroundColor: '{{colors.neutral010}}',
         },
         hover: {
-          backgroundColor: '{{colors.amber040}}',
+          backgroundColor: '{{colors.amber010}}',
         },
         active: {
-          backgroundColor: '{{colors.amber060}}',
+          backgroundColor: '{{colors.amber020}}',
         },
       },
       cardContainerActionsMock: {
@@ -116,11 +116,11 @@ const myCustomCardTheme = createTheme({
       },
       headlineKickerInteractiveMock: {
         base: {
-          color: '{{colors.interactiveNegative030}}',
+          color: '{{colors.interactiveNegative050}}',
           textDecoration: 'underline',
         },
         hover: {
-          color: '{{colors.interactiveNegative040}}',
+          color: '{{colors.interactiveNegative050}}',
           textDecoration: 'underline',
         },
         active: {
@@ -133,7 +133,7 @@ const myCustomCardTheme = createTheme({
       },
       headlineHeadingInteractiveMock: {
         base: {
-          color: '{{colors.interactivePositive030}}',
+          color: '{{colors.green090}}',
           textDecoration: 'underline',
         },
         hover: {

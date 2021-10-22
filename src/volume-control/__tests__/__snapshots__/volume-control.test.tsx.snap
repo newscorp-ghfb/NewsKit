@@ -28,11 +28,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -41,7 +41,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -49,7 +49,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -80,7 +80,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -94,24 +94,24 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -148,7 +148,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -163,7 +163,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -171,10 +171,10 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -192,19 +192,19 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -212,11 +212,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -225,7 +225,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -233,7 +233,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -389,11 +389,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -402,7 +402,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -410,7 +410,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -441,7 +441,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -455,24 +455,24 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -509,7 +509,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -524,7 +524,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -532,10 +532,10 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -553,19 +553,19 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -573,11 +573,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -586,7 +586,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -594,7 +594,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -750,11 +750,11 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -763,7 +763,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -771,7 +771,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -802,7 +802,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -816,24 +816,24 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -870,7 +870,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -885,7 +885,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -893,10 +893,10 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -914,19 +914,19 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -934,11 +934,11 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -947,7 +947,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -955,7 +955,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1110,11 +1110,11 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-top: 12px;
 }
 
@@ -1123,7 +1123,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -1131,7 +1131,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -1162,7 +1162,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1176,24 +1176,24 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1230,7 +1230,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1245,7 +1245,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2) calc(32px/2 - 12px/2);
   height: 100%;
@@ -1253,10 +1253,10 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1274,19 +1274,19 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -1294,11 +1294,11 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-bottom: 12px;
 }
 
@@ -1307,7 +1307,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -1315,7 +1315,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1471,11 +1471,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -1484,7 +1484,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -1492,7 +1492,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -1523,7 +1523,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1537,24 +1537,24 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1591,7 +1591,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1606,7 +1606,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -1614,10 +1614,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1635,19 +1635,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -1655,11 +1655,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -1668,7 +1668,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -1676,7 +1676,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1832,11 +1832,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -1845,7 +1845,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -1853,7 +1853,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -1884,7 +1884,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1898,24 +1898,24 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -1952,7 +1952,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1967,7 +1967,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -1975,10 +1975,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1996,19 +1996,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -2016,11 +2016,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -2029,7 +2029,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -2037,7 +2037,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2193,11 +2193,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -2206,7 +2206,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -2214,7 +2214,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -2245,7 +2245,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2259,24 +2259,24 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2313,7 +2313,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2328,7 +2328,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -2336,10 +2336,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -2357,19 +2357,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -2377,11 +2377,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -2390,7 +2390,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -2398,7 +2398,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2554,11 +2554,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -2567,7 +2567,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -2575,7 +2575,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -2606,7 +2606,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2620,24 +2620,24 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -2674,7 +2674,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2689,7 +2689,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -2697,10 +2697,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -2718,19 +2718,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -2738,11 +2738,11 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -2751,7 +2751,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -2759,7 +2759,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2915,11 +2915,11 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-right: 12px;
 }
 
@@ -2928,7 +2928,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
@@ -2936,7 +2936,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -2967,7 +2967,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #0a68c1;
+  color: #3358CC;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -2981,24 +2981,24 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-2 svg {
-  fill: #0a68c1;
+  fill: #3358CC;
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #E0E7FF;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #AEBFFF;
 }
 
 .emotion-2:disabled {
   background-color: transparent;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 
 .emotion-2:disabled svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-3 {
@@ -3035,7 +3035,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2e2e2e;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3050,7 +3050,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f0f0f0;
+  background-color: #F4F4F4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -3058,10 +3058,10 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-8 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: #3358CC;
   border-style: solid;
-  border-color: #e6f4ff;
+  border-color: #E0E7FF;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -3079,19 +3079,19 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-8 svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #02509b;
+  background-color: #2B4AAB;
 }
 
 .emotion-8:hover:not(:disabled) svg {
-  fill: #c0c0c0;
+  fill: #C0C0C0;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #213A82;
 }
 
 .emotion-8:active:not(:disabled) svg {
@@ -3099,11 +3099,11 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   margin-left: 12px;
 }
 
@@ -3112,7 +3112,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.32678571428571435em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
@@ -3120,7 +3120,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <div

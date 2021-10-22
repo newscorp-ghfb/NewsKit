@@ -65,7 +65,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
   .emotion-0 {
   color: #162740;
   background-color: #FFFFFF;
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -187,7 +187,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
   .emotion-0 {
     color: #677483;
     background-color: #EBEBEB;
-    font-family: 'DM Sans',sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3333333333333333;
@@ -257,7 +257,7 @@ exports[`Block with simple style props renders a styled div 1`] = `
   .emotion-0 {
   color: #162740;
   background-color: #213A82;
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
