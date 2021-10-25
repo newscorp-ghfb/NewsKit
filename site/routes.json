@@ -72,6 +72,11 @@
         "id": "/foundations/colours"
       },
       {
+        "title": "Iconography",
+        "page": true,
+        "id": "/foundations/iconography"
+      },
+      {
         "title": "Presets",
         "id": "/foundations/presets",
         "subNav": [

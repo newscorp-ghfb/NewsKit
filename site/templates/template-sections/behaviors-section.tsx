@@ -3,13 +3,19 @@ import {MediaList, MediaListProps} from '../../components/media-list';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 
-export type BehaviorsSectionProps = MediaListProps & IntroductionText;
+export type BehaviorsSectionProps = MediaListProps &
+  IntroductionText & {title?: string};
 
 export const BehaviorsSection: React.FC<BehaviorsSectionProps> = ({
   introduction,
+  children,
   ...behaviors
 }) => (
-  <CommonSection title="Behaviours" id="behaviors" introduction={introduction}>
+  <CommonSection
+    title={behaviors.title || 'Behaviours'}
+    id="behaviors"
+    introduction={introduction}
+  >
     <MediaList
       cardsLayout={{
         xs: 'vertical',
@@ -21,5 +27,6 @@ export const BehaviorsSection: React.FC<BehaviorsSectionProps> = ({
       layout="1-span"
       {...behaviors}
     />
+    {children}
   </CommonSection>
 );
