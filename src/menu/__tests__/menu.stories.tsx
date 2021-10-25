@@ -531,7 +531,12 @@ export const StoryMenuItemsAndGroups = () => (
         {/* <MenuDivider /> */}
       </MenuGroup>
 
-      <MenuDivider overrides={{spaceInline: 'space020'}} />
+      <MenuDivider
+        overrides={{
+          spaceInline: 'space020',
+          stylePreset: 'buttonOutlinedPrimary',
+        }}
+      />
 
       <MenuItem href={href}>item 3</MenuItem>
       <MenuDivider />
@@ -546,7 +551,12 @@ export const StoryMenuItemsAndGroups = () => (
         <MenuItem href={href}>Group 2-item 3</MenuItem>
       </MenuGroup>
 
-      <MenuDivider overrides={{spaceInline: 'space020'}} />
+      <MenuDivider
+        overrides={{
+          spaceInline: 'space020',
+          stylePreset: 'buttonOutlinedPrimary',
+        }}
+      />
 
       <MenuItem href={href}>item 5</MenuItem>
       <MenuDivider />

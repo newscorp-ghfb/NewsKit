@@ -46,11 +46,11 @@ export interface MenuItemProps
   children: Exclude<React.ReactNode, 'undefined'>;
   href: string;
   selected?: boolean;
-  onClick?: (e: MouseEvent<HTMLElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export interface MenuDividerProps extends DividerOverrides {
-  overrides?: {
+export interface MenuDividerProps {
+  overrides?: DividerOverrides & {
     spaceInline?: MQ<string>;
   };
 }

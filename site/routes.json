@@ -329,6 +329,13 @@
             "illustration": "components/url-illustration"
           },
           {
+            "title": "Menu",
+            "page": true,
+            "id": "/components/menu",
+            "description": "A Menu displays a list of navigational items. They are displayed either at the top of a screen, or at the side where space allows.",
+            "illustration": "components/menu/menu-illustration"
+          },
+          {
             "title": "Scroll",
             "page": true,
             "id": "/components/scroll",
