@@ -168,6 +168,13 @@ export const renderCols = (
         break;
       }
 
+      case 'boxShadow': {
+        cellContent = cellValue && (
+          <BorderCard boxShadowToken={cellValue.toString()} />
+        );
+        break;
+      }
+
       default:
         cellContent = cellValue;
         break;

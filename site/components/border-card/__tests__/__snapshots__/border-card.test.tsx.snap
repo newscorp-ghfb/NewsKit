@@ -62,3 +62,27 @@ exports[`BorderCard renders with different borderWidth token 1`] = `
   />
 </DocumentFragment>
 `;
+
+exports[`BorderCard renders with different boxShadow token 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: solid;
+  border-color: #DEDEDE;
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
+  background-color: white;
+  margin: 0 0 20px 15px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

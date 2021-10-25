@@ -70,11 +70,16 @@
         "title": "Colours",
         "page": true,
         "id": "/foundations/colours"
-      },
+      },      
       {
         "title": "Iconography",
         "page": true,
         "id": "/foundations/iconography"
+      },
+      {
+        "title": "Shadows",
+        "page": true,
+        "id": "/foundations/shadows"
       },
       {
         "title": "Presets",

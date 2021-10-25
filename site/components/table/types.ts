@@ -23,7 +23,8 @@ export interface ColumnMapObject extends TableCellProps {
     | 'borderWidth'
     | 'componentLink'
     | 'motionDurationSwatch'
-    | 'motionTimingSwatch';
+    | 'motionTimingSwatch'
+    | 'boxShadow';
 }
 
 export type TableRowValue =

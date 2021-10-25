@@ -41,4 +41,5 @@ export const columnMap: Record<string, ColumnMapObject> = {
   'Common uses': {...large, cellType: 'text'},
   'Motion Duration': {...large, cellType: 'motionDurationSwatch'},
   'Motion Timing': {...large, cellType: 'motionTimingSwatch'},
+  Shadow: {...medium, cellType: 'boxShadow'},
 };

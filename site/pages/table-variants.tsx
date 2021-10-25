@@ -1,9 +1,51 @@
-import {Block, Cell, Grid, H3, TabSize} from 'newskit';
+import {Block, Cell, Grid, H3, TabSize, Link, newskitLightTheme} from 'newskit';
 import React from 'react';
 import {parseEnumValues} from '../utils/parse-enum-values';
 import Layout from '../components/layout';
 import {Table} from '../components/table';
 import {Mono} from '../components/flags';
+import {getTokenType} from '../utils/get-token-type';
+
+const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
+  shadow010: (
+    <>
+      <Link href="/components/card">Card</Link>
+      <br />
+      <Link href="/components/button">Button (active state)</Link>
+    </>
+  ),
+  shadow020: 'Notification badges',
+  shadow030: 'Navigation Menu Bar',
+  shadow040: (
+    <>
+      <Link href="/components/card">Card (hover state)</Link>
+      <br />
+      <Link href="/components/button">Button (hover state)</Link>
+    </>
+  ),
+  shadow050: (
+    <>
+      Pickers
+      <br />
+      Popover
+    </>
+  ),
+  shadow060: (
+    <>
+      Modals
+      <br />
+      Dialogs
+    </>
+  ),
+};
+
+const shadowRows = getTokenType(newskitLightTheme.shadows, 'shadow').map(
+  ({tokenName, tokenValue}) => ({
+    shadow: tokenValue,
+    token: tokenName,
+    exampleUsage: TOKENS_DESCRIPTION[tokenName] || '-',
+  }),
+);
 
 const H: React.FC = ({children}) => (
   <>
@@ -429,6 +471,15 @@ const Page: React.FC<{
               tokenValue: '4px',
             },
           ]}
+        />
+      </Cell>
+      <Cell xs={12}>
+        <H>Variant 13 - Shadows</H>
+      </Cell>
+      <Cell xs="full-width" md={12}>
+        <Table
+          columns={['Shadow', 'Token', 'Example usage']}
+          rows={shadowRows}
         />
       </Cell>
     </Grid>

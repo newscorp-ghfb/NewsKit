@@ -23,4 +23,12 @@ describe('BorderCard', () => {
     const fragment = renderToFragmentWithTheme(BorderCard, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with different boxShadow token', () => {
+    const props: BorderCardProps = {
+      boxShadowToken: 'shadow010',
+    };
+    const fragment = renderToFragmentWithTheme(BorderCard, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });
