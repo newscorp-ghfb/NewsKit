@@ -1197,6 +1197,7 @@ workflows:
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs
+            - build_components
       - eks_flux_deploy:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
