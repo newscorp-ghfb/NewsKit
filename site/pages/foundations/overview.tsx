@@ -46,7 +46,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Motion',
-    href: '#',
+    href: '/foundations/motions/',
     description:
       "Motion is used to create movement and narrative within a product. Timely animated interface elements don't just attract attention, they enhance user experience and help guide user flow. They reveal the functionality and process of a user interface by communicating where to focus, what to do next and offering tactile feedback.",
   },

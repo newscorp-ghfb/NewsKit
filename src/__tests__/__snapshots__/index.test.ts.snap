@@ -141,6 +141,7 @@ Array [
   "getMinSize",
   "getMinWidth",
   "getMotionCssFromTheme",
+  "getMotionDurationValue",
   "getMotionFromTheme",
   "getOverlayCssFromTheme",
   "getPresetStyles",

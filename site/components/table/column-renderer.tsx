@@ -14,6 +14,10 @@ import {
   IconFilledNullDot,
 } from '../icons';
 import {MonoPath, MonoKeyboard, CircleFlag, Mono} from '../flags';
+import {
+  MotionDurationSwatch,
+  MotionTimingSwatch,
+} from '../theming-values/motions/swatches';
 
 const renderIcon = (value?: TableRowValue) => {
   switch (value) {
@@ -138,6 +142,20 @@ export const renderCols = (
         cellContent = cellValue && <SwatchCard color={cellValue.toString()} />;
         break;
       }
+
+      case 'motionDurationSwatch': {
+        cellContent = cellValue && (
+          <MotionDurationSwatch duration={cellValue.toString()} />
+        );
+        break;
+      }
+      case 'motionTimingSwatch': {
+        cellContent = cellValue && (
+          <MotionTimingSwatch timing={cellValue.toString()} />
+        );
+        break;
+      }
+
       case 'colorToken': {
         cellContent = cellValue && (
           <TokenFlag color={cellValue.toString()}>{cellValue}</TokenFlag>

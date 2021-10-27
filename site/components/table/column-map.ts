@@ -39,7 +39,7 @@ export const columnMap: Record<string, ColumnMapObject> = {
   'Border radius': {...medium, cellType: 'borderRadius'},
   'Border width': {...medium, cellType: 'borderWidth'},
   'Common uses': {...large, cellType: 'text'},
-  'Motion Duration': {...large, cellType: 'motionDurationSwatch'},
-  'Motion Timing': {...large, cellType: 'motionTimingSwatch'},
+  Duration: {...large, cellType: 'motionDurationSwatch'},
+  Timing: {...large, cellType: 'motionTimingSwatch'},
   Shadow: {...medium, cellType: 'boxShadow'},
 };

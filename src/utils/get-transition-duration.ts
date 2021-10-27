@@ -4,7 +4,7 @@ import {ThemeProp} from './style-types';
 
 type TimeoutType = {appear: number; enter: number; exit: number};
 
-const getDurationValue = (transitionDuration: string) => {
+export const getMotionDurationValue = (transitionDuration: string) => {
   const splitStr = transitionDuration.split(/(\d+)/);
   const duration = parseInt(splitStr[1], 10);
 
@@ -42,17 +42,17 @@ const extractDurationFromPreset = (tokensArray: string[], theme: Theme) =>
         const appearDuration =
           (appearActive &&
             appearActive.transitionDuration &&
-            getDurationValue(appearActive.transitionDuration)) ||
+            getMotionDurationValue(appearActive.transitionDuration)) ||
           0;
         const enterDuration =
           (enterActive &&
             enterActive.transitionDuration &&
-            getDurationValue(enterActive.transitionDuration)) ||
+            getMotionDurationValue(enterActive.transitionDuration)) ||
           0;
         const exitDuration =
           (exitActive &&
             exitActive.transitionDuration &&
-            getDurationValue(exitActive.transitionDuration)) ||
+            getMotionDurationValue(exitActive.transitionDuration)) ||
           0;
 
         return {
@@ -65,7 +65,7 @@ const extractDurationFromPreset = (tokensArray: string[], theme: Theme) =>
       const baseDuration =
         (base &&
           base.transitionDuration &&
-          getDurationValue(base.transitionDuration)) ||
+          getMotionDurationValue(base.transitionDuration)) ||
         0;
       return {
         appear: Math.max(duration.appear, baseDuration),
