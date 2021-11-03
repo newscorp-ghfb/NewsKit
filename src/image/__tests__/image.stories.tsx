@@ -211,15 +211,34 @@ StoryLazyLoading.parameters = {eyes: {include: false}};
 
 export const StoryImageWithSources = () => {
   const sources = [
-    {media: 'lg', srcSet: 'https://placekitten.com/800/800'},
-    {media: 'md', srcSet: 'https://placekitten.com/600/600'},
-    {media: 'xs', srcSet: 'https://placekitten.com/300/300'},
+    {media: 'lg', srcSet: '/1200x800-lg-placeholder-image.png'},
+    {media: 'md', srcSet: '/800x600-md-placeholder-image.png'},
+    {media: 'xs', srcSet: '/300x300-xs-placeholder-image.png'},
   ];
   return (
-    <Image src="https://placekitten.com/200/200" sources={sources} alt="cats" />
+    <Image
+      src="/fallback-placeholder-image.png"
+      sources={sources}
+      alt="placeholders"
+    />
   );
 };
 StoryImageWithSources.storyName = 'image-with-sources-using-mq';
+
+export const StoryImageWithSourcesNoXS = () => {
+  const sources = [
+    {media: 'lg', srcSet: '/1200x800-lg-placeholder-image.png'},
+    {media: 'md', srcSet: '/800x600-md-placeholder-image.png'},
+  ];
+  return (
+    <Image
+      src="/fallback-placeholder-image.png"
+      sources={sources}
+      alt="placeholders"
+    />
+  );
+};
+StoryImageWithSourcesNoXS.storyName = 'image-with-sources-using-mq-no-xs';
 
 export const StoryImageWithSourcesAndMedia = () => {
   // Source order matters
@@ -229,11 +248,21 @@ export const StoryImageWithSourcesAndMedia = () => {
   // A match can happen based on both media and type attributes.
   // https://dev.opera.com/articles/native-responsive-images/
   const sources = [
-    {media: '(min-width: 800px)', srcSet: 'https://placekitten.com/500/500'},
-    {media: '(min-width: 600px)', srcSet: 'https://placekitten.com/200/200'},
+    {
+      media: '(min-width: 800px)',
+      srcSet: '/min-width-800px-placeholder-image.png',
+    },
+    {
+      media: '(min-width: 600px)',
+      srcSet: '/min-width-600px-placeholder-image.png',
+    },
   ];
   return (
-    <Image src="https://placekitten.com/200/200" sources={sources} alt="cats" />
+    <Image
+      src="/fallback-300x-placeholder-image.png"
+      sources={sources}
+      alt="placeholders"
+    />
   );
 };
 StoryImageWithSourcesAndMedia.storyName =
