@@ -1247,6 +1247,7 @@ export const StoryCardWithCustomHtmlAttrOnclick = () => (
   <Card
     onClick={e => {
       e.preventDefault();
+      // eslint-disable-next-line no-console
       console.log('onclick event');
     }}
     href="https://newskit.co.uk/"

@@ -1,4 +1,4 @@
-/* eslint-disable no-template-curly-in-string */
+/* eslint-disable no-useless-concat */
 import React, {useEffect, useRef, useState} from 'react';
 import {
   Button,
@@ -37,7 +37,7 @@ export const SvgPreviewer: React.FC = () => {
   // FUNCTIONS FOR DISPLAYING SVG ** START **
 
   const setIds = (figmaSvg: string) => {
-    const regexList = [/mask\d{1,}/g, /filter\d{1,}_d/g, /clip\d{1,}/g];
+    const regexList = [/mask\d{1,}/g, /filter\d{1,}/g, /clip\d{1,}/g];
     let figmaSvgCopy = figmaSvg;
 
     regexList.forEach(regex => {
@@ -50,7 +50,6 @@ export const SvgPreviewer: React.FC = () => {
         );
       });
     });
-
     return figmaSvgCopy;
   };
 
@@ -67,19 +66,53 @@ export const SvgPreviewer: React.FC = () => {
     });
   };
 
+  // This function simplify the IDs set by figma for clips, filters and masks.
+  // It makes simpler the SVG manipulation especially when building the react component.
+  // ** To be removed if Figma brings back short IDs (E.G: clip0 than clip0_12:1464). **
+  const svgIdsShortener = (figmaSvg: string) => {
+    let figmaSvgCopy = figmaSvg;
+    const regexList = [
+      /mask\d+_\d+:\d+/g,
+      /filter\d+_d_\d+:\d+/g,
+      /clip\d+_\d+:\d+/g,
+    ];
+
+    regexList.forEach(regex => {
+      const matchList = figmaSvg.match(regex);
+
+      // eslint-disable-next-line no-unused-expressions
+      matchList?.forEach(match => {
+        const firstUnderscoreIndex = match.indexOf('_');
+
+        figmaSvgCopy = figmaSvgCopy.replace(
+          new RegExp(match, 'g'),
+          match.substring(0, firstUnderscoreIndex),
+        );
+      });
+    });
+    return figmaSvgCopy;
+  };
+
   const onmessage = (event: MessageEvent) => {
     if (event.data.pluginMessage?.action === 'FilesToUI') {
       testUint8Data(event.data.pluginMessage.data.svgdata);
-      // Left as can be useful for debugging SVG issues without
+
+      // Left console logs as can be useful for debugging SVG issues without
       // using the local version.
-      console.log(event.data.pluginMessage.data.hexes, 'hexes');
+      // eslint-disable-next-line no-console
+      console.log(event.data.pluginMessage.data.hexes, 'Hexes');
+      // eslint-disable-next-line no-console
+      console.log(event.data.pluginMessage.data, 'SVG data');
 
       setHexesObj(event.data.pluginMessage.data.hexes);
 
       const baseFigmaSvg: Array<{figmaSvg: string; name: string}> = [];
       // @ts-ignore
       const content = event.data.pluginMessage.data.svgdata.map(svg => {
-        let figmaSvg: string = String.fromCharCode.apply(null, svg.code);
+        let figmaSvg: string;
+        figmaSvg = String.fromCharCode.apply(null, svg.code);
+        figmaSvg = svgIdsShortener(figmaSvg);
+
         baseFigmaSvg.push({figmaSvg, name: svg.name});
 
         // Setting ids for "mask", "filter", and "clip" attributes
@@ -182,8 +215,53 @@ export const SvgPreviewer: React.FC = () => {
     return svgCodeCopy;
   };
 
+  const replaceFigmaIdWithVariable = (figmaSvg: string) => {
+    let figmaSvgCopy = figmaSvg;
+    const idTypeList = ['mask', 'filter', 'clip'];
+    const escapeRegex = (string: string) =>
+      // eslint-disable-next-line no-useless-escape
+      string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+
+    idTypeList.forEach(idType => {
+      for (let i = 0; figmaSvgCopy.includes(`id="${idType}${i}"`); ++i) {
+        figmaSvgCopy = figmaSvgCopy.replace(
+          new RegExp(`id="${idType}${i}"`, 'g'),
+          `id={${idType}${i}}`,
+        );
+      }
+    });
+
+    for (let i = 0; figmaSvgCopy.includes(`mask="url(#mask${i})"`); ++i) {
+      const escapedRegex = escapeRegex(`mask="url(#mask${i})"`);
+      figmaSvgCopy = figmaSvgCopy.replace(
+        new RegExp(escapedRegex, 'g'),
+        'mask={`url(#${mask' + `${i}` + '})`}',
+      );
+    }
+
+    for (let i = 0; figmaSvgCopy.includes(`clip-path="url(#clip${i})"`); ++i) {
+      const escapedRegex = escapeRegex(`clip-path="url(#clip${i})"`);
+      figmaSvgCopy = figmaSvgCopy.replace(
+        new RegExp(escapedRegex, 'g'),
+        'clipPath={`url(#${clip' + `${i}` + '})`}',
+      );
+    }
+
+    for (let i = 0; figmaSvgCopy.includes(`filter="url(#filter${i})"`); ++i) {
+      const escapedRegex = escapeRegex(`filter="url(#filter${i})"`);
+      figmaSvgCopy = figmaSvgCopy.replace(
+        new RegExp(escapedRegex, 'g'),
+        'filter={`url(#${filter' + `${i}` + '})`}',
+      );
+    }
+
+    return figmaSvgCopy;
+  };
+
   const toReactComponent = (figmaSvg: string) => {
     let figmaSvgCopy = figmaSvg;
+
+    figmaSvgCopy = replaceFigmaIdWithVariable(figmaSvgCopy);
     figmaSvgCopy = figmaSvgCopy
       .replace(/<path/g, '<Path')
       .replace(/<rect/g, '<Rect')
@@ -194,37 +272,6 @@ export const SvgPreviewer: React.FC = () => {
       .replace(/color-interpolation-filters/g, 'colorInterpolationFilters')
       .replace(/flood-opacity/g, 'floodOpacity')
       .replace(/"mix-blend-mode:multiply"/g, "{{mixBlendMode: 'multiply'}}")
-      .replace(`id="mask0"`, 'id={mask0}')
-      .replace(`id="mask1"`, 'id={mask1}')
-      .replace(`id="mask2"`, 'id={mask2}')
-      .replace(`id="mask3"`, 'id={mask3}')
-      .replace(`mask="url(#mask0)"`, 'mask={`url(#${mask0})`}')
-      .replace(`mask="url(#mask1)"`, 'mask={`url(#${mask1})`}')
-      .replace(`mask="url(#mask2)"`, 'mask={`url(#${mask2})`}')
-      .replace(`mask="url(#mask3)"`, 'mask={`url(#${mask3})`}')
-      .replace(`id="clip0"`, 'id={clip0}')
-      .replace(`id="clip1"`, 'id={clip1}')
-      .replace(`id="clip2"`, 'id={clip2}')
-      .replace(`id="clip3"`, 'id={clip3}')
-      .replace(`id="clip4"`, 'id={clip4}')
-      .replace(`id="clip5"`, 'id={clip5}')
-      .replace(`clipPath="url(#clip0)"`, 'clipPath={`url(#${clip0})`}>')
-      .replace(`clipPath="url(#clip1)"`, 'clipPath={`url(#${clip1})`}>')
-      .replace(`clipPath="url(#clip2)"`, 'clipPath={`url(#${clip2})`}>')
-      .replace(`clipPath="url(#clip3)"`, 'clipPath={`url(#${clip3})`}>')
-      .replace(`clipPath="url(#clip4)"`, 'clipPath={`url(#${clip4})`}>')
-      .replace(`clipPath="url(#clip5)"`, 'clipPath={`url(#${clip5})`}>')
-      .replace(`clip-path="url(#clip0)"`, 'clipPath={`url(#${clip0})`}')
-      .replace(`clip-path="url(#clip1)"`, 'clipPath={`url(#${clip1})`}')
-      .replace(`clip-path="url(#clip2)"`, 'clipPath={`url(#${clip2})`}')
-      .replace(`clip-path="url(#clip4)"`, 'clipPath={`url(#${clip4})`}')
-      .replace(`clip-path="url(#clip5)"`, 'clipPath={`url(#${clip5})`}')
-      .replace(`id="filter0_d"`, 'id={filter0}')
-      .replace(`id="filter1_d"`, 'id={filter1}')
-      .replace(`id="filter2_d"`, 'id={filter2}')
-      .replace(`filter="url(#filter0_d)"`, 'filter={`url(#${filter0})`}')
-      .replace(`filter="url(#filter1_d)"`, 'filter={`url(#${filter1})`}')
-      .replace(`filter="url(#filter2_d)"`, 'filter={`url(#${filter2})`}')
       .replaceAll(`style="mask-type:alpha"`, `mask-type="alpha"`)
       .replaceAll(`fill-rule`, `fillRule`)
       .replaceAll(`clip-rule`, `clipRule`);
@@ -265,21 +312,20 @@ export const SvgPreviewer: React.FC = () => {
     svgComponentName: string,
     svgReactCode: string,
   ) => {
-    let fileReactSvgComponent = `
+    const addSSRIdVariables = () => {
+      let variables = '';
+      const idTypeList = ['mask', 'clip', 'filter'];
+      idTypeList.forEach(idType => {
+        for (let i = 0; svgReactCode.includes(`${idType}${i}`); ++i) {
+          variables += `const ${idType}${i} = getSSRId();\n`;
+        }
+      });
+      return variables;
+    };
+
+    const fileReactSvgComponent = `
         export const ${svgComponentName}: React.FC = () => {
-        ${svgReactCode.includes('mask0') ? 'const mask0 = getSSRId();' : ''}
-        ${svgReactCode.includes('mask1') ? 'const mask1 = getSSRId();' : ''}
-        ${svgReactCode.includes('mask2') ? 'const mask2 = getSSRId();' : ''}
-        ${svgReactCode.includes('mask3') ? 'const mask3 = getSSRId();' : ''}
-        ${svgReactCode.includes('clip0') ? 'const clip0 = getSSRId();' : ''}
-        ${svgReactCode.includes('clip1') ? 'const clip1 = getSSRId();' : ''}
-        ${svgReactCode.includes('clip2') ? 'const clip2 = getSSRId();' : ''}
-        ${svgReactCode.includes('clip3') ? 'const clip3 = getSSRId();' : ''}
-        ${svgReactCode.includes('clip4') ? 'const clip4 = getSSRId();' : ''}
-        ${svgReactCode.includes('clip5') ? 'const clip5 = getSSRId();' : ''}
-        ${svgReactCode.includes('filter0') ? 'const filter0 = getSSRId();' : ''}
-        ${svgReactCode.includes('filter1') ? 'const filter1 = getSSRId();' : ''}
-        ${svgReactCode.includes('filter2') ? 'const filter2 = getSSRId();' : ''}
+        ${addSSRIdVariables()}
         return (
           ${svgReactCode}
         );
@@ -287,8 +333,6 @@ export const SvgPreviewer: React.FC = () => {
 
       export default ${svgComponentName};`;
 
-    // Removing any extra empty lines added from the ternary above.
-    fileReactSvgComponent = fileReactSvgComponent.replace(/(^[ \t]*\n)/gm, '');
     return fileReactSvgComponent;
   };
 
@@ -322,6 +366,7 @@ export const SvgPreviewer: React.FC = () => {
       });
       saveAs(fileBlob, `${svgFileName}.tsx`);
     } else {
+      // eslint-disable-next-line no-console
       console.error('Please select an SVG from the dropdown');
     }
   };
@@ -449,6 +494,7 @@ export const SvgPreviewer: React.FC = () => {
           {svgCodeGroup.map((svgCode, index) => (
             <StyledSingleSvgWrapper>
               <P>{baseSvgCodeGroup[index].name}</P>
+              {/* eslint-disable-next-line react/no-danger */}
               <div dangerouslySetInnerHTML={{__html: sanitizer(svgCode)}} />
             </StyledSingleSvgWrapper>
           ))}
