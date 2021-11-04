@@ -31,4 +31,5 @@ export interface ComponentPageTemplateProps
   compliance?: ComplianceSectionProps;
   related?: RelatedComponentsSectionProps;
   featureCard?: Partial<OnwardJourneySectionProps>;
+  children?: React.ReactNode;
 }

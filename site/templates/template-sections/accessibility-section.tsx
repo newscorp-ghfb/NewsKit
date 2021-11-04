@@ -9,7 +9,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 interface A11ySubSection<RowType> {
   title: string;
   description?: string;
-  tableRows: RowType[];
+  tableRows?: RowType[];
 }
 
 export interface AccessibilityTablesProps {
@@ -47,7 +47,7 @@ const A11yTable: React.FC<
     <ContentText title={title} titleAs="span">
       {description}
     </ContentText>
-    <Table columns={columns} rows={tableRows} />
+    {tableRows && <Table columns={columns} rows={tableRows} />}
   </ComponentPageCell>
 );
 

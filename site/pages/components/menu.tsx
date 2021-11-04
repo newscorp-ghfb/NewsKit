@@ -2,7 +2,6 @@
 import React from 'react';
 import {
   Menu,
-  Link,
   styled,
   TextBlock,
   MenuItem,
@@ -18,6 +17,7 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {MenuItemAlign, MenuItemSize} from '../../../src/menu/types';
+import {Link} from '../../components/link';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -47,7 +47,8 @@ export default (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.3.0',
-      codeUrl: 'https://github.com/newscorp-ghfb/ncu-newskit',
+      codeUrl:
+        'https://github.com/newscorp-ghfb/ncu-newskit/tree/master/src/menu',
     }}
     interactiveDemo={{
       introduction:

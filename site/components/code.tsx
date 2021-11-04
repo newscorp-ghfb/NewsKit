@@ -1,16 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, HTMLAttributes} from 'react';
 import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/cjs/prism-light';
-import {useTheme, newskitLightTheme} from 'newskit';
-import {LegacyBlock} from './legacy-block';
+import {
+  useTheme,
+  newskitLightTheme,
+  styled,
+  getColorCssFromTheme,
+  getBorderCssFromTheme,
+} from 'newskit';
 import {generateCodeHighlighterTheme} from './code-highlighter-theme';
 
-interface CodeProps {
+interface CodeProps extends HTMLAttributes<HTMLDivElement> {
   children: string;
   language?: string;
 }
 
-interface CodeFromFileProps {
+interface CodeFromFileProps extends HTMLAttributes<HTMLDivElement> {
   path: string;
   language?: string;
 }
@@ -20,26 +25,46 @@ interface CodeFromDefaultPresets {
 }
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 
-export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
+const StyledDiv = styled.div`
+  border: solid 1px;
+  ${getColorCssFromTheme('borderColor', 'interface040')};
+  ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
+  ${getColorCssFromTheme('backgroundColor', 'interface020')};
+`;
+export const Code: React.FC<CodeProps> = ({
+  language = 'jsx',
+  children,
+  tabIndex,
+}) => {
   const {colors} = useTheme();
   const highlighterTheme = generateCodeHighlighterTheme(colors);
-
   return (
-    <LegacyBlock>
+    <StyledDiv>
       <SyntaxHighlighter
         data-testid="sample-code"
-        codeTagProps={{tabIndex: 0}}
+        codeTagProps={{tabIndex}}
         language={language}
         style={highlighterTheme}
-        customStyle={{overflow: 'auto', padding: '1em'}}
+        showLineNumbers
+        showInlineLineNumbers
+        customStyle={{
+          overflow: 'auto',
+          marginLeft: '0.5em',
+          marginRight: '0.5em',
+          marginBottom: '0.5em',
+        }}
       >
         {children}
       </SyntaxHighlighter>
-    </LegacyBlock>
+    </StyledDiv>
   );
 };
 
-export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
+export const CodeFromFile: React.FC<CodeFromFileProps> = ({
+  language,
+  path,
+  tabIndex,
+}) => {
   const [source, setSource] = useState('');
 
   useEffect(() => {
@@ -54,7 +79,11 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
     })();
   }, [path]);
 
-  return <Code language={language}>{source}</Code>;
+  return (
+    <Code language={language} tabIndex={tabIndex}>
+      {source}
+    </Code>
+  );
 };
 
 export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresets> = ({

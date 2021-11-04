@@ -23,7 +23,7 @@ export const generateCodeHighlighterTheme = (
     ...coy['pre[class*="language-"]'],
     color: colors.inkSubtle,
     background: 'none',
-    backgroundColor: 'none',
+    backgroundColor: colors.interface020,
   },
   'code[class*="language-"]': {
     ...coy['code[class*="language-"]'],
