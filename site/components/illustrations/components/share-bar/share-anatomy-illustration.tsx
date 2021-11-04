@@ -29,8 +29,8 @@ export const ShareAnatomyIllustration: React.FC = () => {
         fill="illustrationInterface020"
       />
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M1296.09 355.864H303.914C300.573 355.864 297.864 358.573 297.864 361.914V537.359C297.864 540.7 300.573 543.409 303.914 543.409H1296.09C1299.43 543.409 1302.14 540.7 1302.14 537.359V361.914C1302.14 358.573 1299.43 355.864 1296.09 355.864ZM303.914 355C300.096 355 297 358.096 297 361.914V537.359C297 541.178 300.096 544.273 303.914 544.273H1296.09C1299.9 544.273 1303 541.178 1303 537.359V361.914C1303 358.096 1299.9 355 1296.09 355H303.914Z"
         fill="illustrationAnatomyBorder010"
       />
@@ -264,8 +264,8 @@ export const ShareAnatomyIllustration: React.FC = () => {
         fill="illustrationPalette040"
       />
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M419 268L419 452L417 452L417 268L419 268Z"
         fill="illustrationPalette040"
       />
@@ -282,8 +282,8 @@ export const ShareAnatomyIllustration: React.FC = () => {
         fill="white"
       />
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M1128 268L1128 372L1126 372L1126 268L1128 268Z"
         fill="illustrationPalette040"
       />
@@ -304,8 +304,8 @@ export const ShareAnatomyIllustration: React.FC = () => {
         fill="illustrationPalette040"
       />
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M751 696L751 458L752.999 458L753 696L751 696Z"
         fill="illustrationPalette040"
       />

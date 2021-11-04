@@ -178,8 +178,8 @@ export const TabsDo03Illustration: React.FC = () => {
           fill="illustrationHighlight010"
         />
         <Path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M381.152 308.9C381.152 297.053 390.756 287.449 402.602 287.449H416.902V281.321H402.602C387.371 281.321 375.023 293.668 375.023 308.9V373.251H337.234V379.38H375.023V439.644C375.023 454.875 387.371 467.223 402.602 467.223H416.902V461.094H402.602C390.756 461.094 381.152 451.49 381.152 439.644V308.9Z"
           fill="illustrationHighlight010"
         />

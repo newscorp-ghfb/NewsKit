@@ -127,8 +127,8 @@ export const DrawerOptionsWidthIllustration: React.FC = () => {
           />
         </g>
         <Path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M487 207.179L487 127L498.712 127L498.712 162.901L988.675 162.901L988.675 127L1000.39 127L1000.39 207.179L988.675 207.179L988.675 171.278L498.712 171.278L498.712 207.179L487 207.179Z"
           fill="illustrationHighlight010"
         />

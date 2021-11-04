@@ -34,8 +34,8 @@ export const BannerDont3Illustration: React.FC = () => {
               fill="illustrationInterface010"
             />
             <Path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M529.984 363C538.821 363 545.984 370.163 545.984 379C545.984 387.837 538.821 395 529.984 395H-261C-269.837 395 -277 387.837 -277 379C-277 370.163 -269.837 363 -261 363H529.984ZM762.176 443C771.012 443 778.176 450.163 778.176 459C778.176 467.837 771.012 475 762.176 475H-118.999C-127.836 475 -134.999 467.837 -134.999 459C-134.999 450.163 -127.836 443 -118.999 443H762.176Z"
               fill="illustrationInterface020"
             />

@@ -110,8 +110,8 @@ export const TabsDont05Illustration: React.FC = () => {
             fill="illustrationInterface010"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M1071 341V650C1071 655.523 1066.52 660 1061 660H427C421.477 660 417 655.523 417 650V274C417 268.477 421.477 264 427 264H719C724.523 264 729 268.477 729 274V331H1061C1066.52 331 1071 335.477 1071 341ZM1061 333C1065.42 333 1069 336.582 1069 341V650C1069 654.418 1065.42 658 1061 658H427C422.582 658 419 654.418 419 650V274C419 269.582 422.582 266 427 266H719C723.418 266 727 269.582 727 274V333H1061Z"
             fill="illustrationBorder010"
           />

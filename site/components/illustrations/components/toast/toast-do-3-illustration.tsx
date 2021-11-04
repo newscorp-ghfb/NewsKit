@@ -44,8 +44,8 @@ export const ToastDo3Illustration: React.FC = () => {
             fill="illustrationInterface010"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M294.857 369.97C294.857 364.462 299.322 359.998 304.829 359.998H724.048C729.555 359.998 734.019 364.462 734.019 369.97C734.019 375.477 729.555 379.941 724.048 379.941H304.829C299.322 379.941 294.857 375.477 294.857 369.97ZM294.857 418.368C294.857 413.062 299.158 408.761 304.464 408.761H870.968C876.273 408.761 880.574 413.062 880.574 418.368C880.574 423.673 876.273 427.974 870.968 427.974H304.464C299.158 427.974 294.857 423.673 294.857 418.368ZM305.064 456.794C299.427 456.794 294.857 461.364 294.857 467.001C294.857 472.638 299.427 477.208 305.064 477.208H870.367C876.005 477.208 880.574 472.638 880.574 467.001C880.574 461.364 876.005 456.794 870.367 456.794H305.064Z"
             fill="illustrationInterface020"
           />
@@ -75,8 +75,8 @@ export const ToastDo3Illustration: React.FC = () => {
           fill="illustrationHighlight010"
         />
         <Path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M736 558H803V564H773V815H803V821H736V815H766V564H736V558Z"
           fill="illustrationHighlight010"
         />

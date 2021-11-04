@@ -33,8 +33,8 @@ export const DrawerOptionsHeightIllustration: React.FC = () => {
           fill="illustrationInterface020"
         />
         <Path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M525 647L465 647L465 639L490.355 639L490.355 354L465 354L465 346L525 346L525 354L500.005 354L500.005 639L525 639L525 647Z"
           fill="illustrationHighlight010"
         />

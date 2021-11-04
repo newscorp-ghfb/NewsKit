@@ -436,8 +436,8 @@ export const TabsOptionsDistributionIllustration: React.FC = () => {
         fill="illustrationHighlight010"
       />
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M419.462 198.011C408.187 198.011 399.047 206.837 399.047 217.725V243H398V217.725C398 206.279 407.609 197 419.462 197H1313.54C1325.39 197 1335 206.279 1335 217.725V243H1333.95V217.725C1333.95 206.837 1324.81 198.011 1313.54 198.011H419.462Z"
         fill="illustrationHighlight010"
       />

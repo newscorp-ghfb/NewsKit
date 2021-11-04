@@ -46,8 +46,8 @@ export const BannerOptionsIconIllustration: React.FC = () => {
               fill="illustrationInterface020"
             />
             <Path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M442 340.5C407.5 340.5 379.5 368.5 379.5 403C379.5 437.5 407.5 465.5 442 465.5C476.5 465.5 504.5 437.5 504.5 403C504.5 368.5 476.5 340.5 442 340.5ZM435.75 434.25V396.75H448.25V434.25H435.75ZM435.75 371.75V384.25H448.25V371.75H435.75Z"
               fill="illustrationHighlight010"
             />

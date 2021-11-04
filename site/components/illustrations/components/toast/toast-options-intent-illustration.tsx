@@ -35,8 +35,8 @@ export const ToastOptionsIntentIllustration: React.FC = () => {
             fill="red070"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M836.377 459.391C824.99 459.391 815.748 468.49 815.748 479.702C815.748 490.913 824.99 500.013 836.377 500.013C847.763 500.013 857.005 490.913 857.005 479.702C857.005 468.49 847.763 459.391 836.377 459.391ZM838.438 489.857H834.312V477.671H838.438V489.857ZM834.312 473.608H838.438V469.546H834.312V473.608Z"
             fill="white"
           />
@@ -75,8 +75,8 @@ export const ToastOptionsIntentIllustration: React.FC = () => {
             fill="whiteTint080"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M836.377 281.572C824.99 281.572 815.748 290.671 815.748 301.883C815.748 313.094 824.99 322.193 836.377 322.193C847.763 322.193 857.005 313.094 857.005 301.883C857.005 290.671 847.763 281.572 836.377 281.572ZM838.438 312.038H834.312V299.851H838.438V312.038ZM834.312 295.789H838.438V291.727H834.312V295.789Z"
             fill="white"
           />
@@ -91,8 +91,8 @@ export const ToastOptionsIntentIllustration: React.FC = () => {
             fill="amber040"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M162.724 552.298C151.332 552.298 142.086 561.398 142.086 572.609C142.086 583.821 151.332 592.92 162.724 592.92C174.117 592.92 183.363 583.821 183.363 572.609C183.363 561.398 174.117 552.298 162.724 552.298ZM164.787 582.765H160.659V570.578H164.787V582.765ZM160.659 566.516H164.787V562.454H160.659V566.516Z"
             fill="white"
           />
@@ -119,8 +119,8 @@ export const ToastOptionsIntentIllustration: React.FC = () => {
             fill="teal050"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M162.724 374.572C151.332 374.572 142.086 383.671 142.086 394.882C142.086 406.094 151.332 415.193 162.724 415.193C174.117 415.193 183.363 406.094 183.363 394.882C183.363 383.671 174.117 374.572 162.724 374.572ZM164.787 405.038H160.659V392.851H164.787V405.038ZM160.659 388.789H164.787V384.727H160.659V388.789Z"
             fill="white"
           />
@@ -147,8 +147,8 @@ export const ToastOptionsIntentIllustration: React.FC = () => {
             fill="neutral050"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M162.963 196.573C151.57 196.573 142.324 205.672 142.324 216.884C142.324 228.095 151.57 237.195 162.963 237.195C174.355 237.195 183.601 228.095 183.601 216.884C183.601 205.672 174.355 196.573 162.963 196.573ZM165.025 227.039H160.897V214.853H165.025V227.039ZM160.897 210.79H165.025V206.728H160.897V210.79Z"
             fill="white"
           />

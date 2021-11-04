@@ -19,10 +19,23 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
           tabs.push({
             label: 'Props',
             content: (
-              <Table
-                columns={['Name', 'Type', 'Default', 'Description', 'Required']}
-                rows={propsRows}
-              />
+              <>
+                <Table
+                  columns={[
+                    'Name',
+                    'Type',
+                    'Default',
+                    'Description',
+                    'Required',
+                  ]}
+                  rows={propsRows}
+                />
+                {infoNotice && (
+                  <InlineMessage role="region" aria-label="Props notice">
+                    {infoNotice}
+                  </InlineMessage>
+                )}
+              </>
             ),
           });
         }

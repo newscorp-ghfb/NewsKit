@@ -400,8 +400,8 @@ export const DrawerBehavioursDisablePageScrollingIllustration: React.FC = () => 
             <Circle cx="558" cy="420" r="70" fill="white" />
           </g>
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M528.31 402.937H531.965V395.627C531.965 385.539 540.152 377.352 550.24 377.352C560.328 377.352 568.515 385.539 568.515 395.627V402.937H572.17C576.191 402.937 579.48 406.227 579.48 410.247V446.798C579.48 450.818 576.191 454.108 572.17 454.108H528.31C524.289 454.108 520.999 450.818 520.999 446.798V410.247C520.999 406.227 524.289 402.937 528.31 402.937ZM550.24 435.832C554.261 435.832 557.55 432.543 557.55 428.522C557.55 424.502 554.261 421.212 550.24 421.212C546.22 421.212 542.93 424.502 542.93 428.522C542.93 432.543 546.22 435.832 550.24 435.832ZM561.205 395.627V402.937H539.275V395.627C539.275 389.559 544.173 384.661 550.24 384.661C556.307 384.661 561.205 389.559 561.205 395.627Z"
             fill="illustrationInterface070"
           />
@@ -414,8 +414,8 @@ export const DrawerBehavioursDisablePageScrollingIllustration: React.FC = () => 
             fill="illustrationInterface070"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M594.488 395.018L594.488 441.635L597.941 441.635L597.941 395.018L594.488 395.018Z"
             fill="illustrationInterface070"
           />

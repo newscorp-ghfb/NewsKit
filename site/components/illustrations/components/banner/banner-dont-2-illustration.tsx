@@ -33,8 +33,8 @@ export const BannerDont2Illustration: React.FC = () => {
               fill="illustrationInterface010"
             />
             <Path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M101.984 363C110.821 363 117.984 370.163 117.984 379C117.984 387.837 110.821 395 101.984 395H-689C-697.837 395 -705 387.837 -705 379C-705 370.163 -697.837 363 -689 363H101.984ZM284.176 443C293.012 443 300.176 450.163 300.176 459C300.176 467.837 293.012 475 284.176 475H-596.999C-605.836 475 -612.999 467.837 -612.999 459C-612.999 450.163 -605.836 443 -596.999 443H284.176Z"
               fill="illustrationInterface020"
             />

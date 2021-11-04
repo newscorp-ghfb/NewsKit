@@ -161,8 +161,8 @@ export const TabsOptionsTrackWeightIllustration: React.FC = () => {
           fill="illustrationHighlight010"
         />
         <Path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M589 556.5C589 553.462 591.462 551 594.5 551H610V549H594.5C590.697 549 587.555 551.831 587.066 555.5H491V557.5H587.066C587.555 561.169 590.697 564 594.5 564H610V562H594.5C591.462 562 589 559.538 589 556.5Z"
           fill="illustrationHighlight010"
         />

@@ -17,14 +17,14 @@ export const ToastAnatomyIllustration: React.FC = () => (
       fill="illustrationInterface020"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M238.968 336.4C230.048 336.4 223.4 342.078 223.4 348.442V554.558C223.4 560.922 230.048 566.6 238.968 566.6H1339.03C1347.95 566.6 1354.6 560.922 1354.6 554.558V348.442C1354.6 342.078 1347.95 336.4 1339.03 336.4H238.968ZM238.968 335C229.597 335 222 341.018 222 348.442V554.558C222 561.982 229.597 568 238.968 568H1339.03C1348.4 568 1356 561.982 1356 554.558V348.442C1356 341.018 1348.4 335 1339.03 335H238.968Z"
       fill="illustrationAnatomyBorder010"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M369 409C369 401.268 375.268 395 383 395H835C842.732 395 849 401.268 849 409C849 416.732 842.732 423 835 423H383C375.268 423 369 416.732 369 409ZM369 455.5C369 450.253 373.253 446 378.5 446H1028.5C1033.75 446 1038 450.253 1038 455.5C1038 460.747 1033.75 465 1028.5 465H378.5C373.253 465 369 460.747 369 455.5ZM378.5 488C373.253 488 369 492.253 369 497.5C369 502.747 373.253 507 378.5 507H1028.5C1033.75 507 1038 502.747 1038 497.5C1038 492.253 1033.75 488 1028.5 488H378.5Z"
       fill="illustrationAnatomySubtle"
     />
@@ -41,8 +41,8 @@ export const ToastAnatomyIllustration: React.FC = () => (
       fill="illustrationAnatomySubtle"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M295 438C312.673 438 327 423.673 327 406C327 388.327 312.673 374 295 374C277.327 374 263 388.327 263 406C263 423.673 277.327 438 295 438ZM295 439C313.225 439 328 424.225 328 406C328 387.775 313.225 373 295 373C276.775 373 262 387.775 262 406C262 424.225 276.775 439 295 439Z"
       fill="illustrationInterface020"
     />
@@ -63,8 +63,8 @@ export const ToastAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M564 225L564 406L562 406L562 225L564 225Z"
       fill="illustrationPalette040"
     />
@@ -85,8 +85,8 @@ export const ToastAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M296 225L296 406L294 406L294 225L296 225Z"
       fill="illustrationPalette040"
     />
@@ -103,8 +103,8 @@ export const ToastAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M751 708.649L751 502L752.833 502L752.833 708.649L751 708.649Z"
       fill="illustrationPalette040"
     />
@@ -125,8 +125,8 @@ export const ToastAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1199 709L1199 476L1201 476L1201 709L1199 709Z"
       fill="illustrationPalette040"
     />

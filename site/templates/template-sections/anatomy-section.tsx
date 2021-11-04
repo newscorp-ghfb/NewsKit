@@ -11,7 +11,7 @@ export interface AnatomyProps {
   rows: {
     name: string;
     description: string | JSX.Element;
-    component: string | string[];
+    component?: string | string[];
     optional?: boolean;
   }[];
 }

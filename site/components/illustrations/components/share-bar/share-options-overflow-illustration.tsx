@@ -69,8 +69,8 @@ export const ShareOptionsOverflowIllustration: React.FC = () => {
           fill="illustrationHighlight010"
         />
         <Path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M1154 555V282H1156V555H1154Z"
           fill="illustrationBorder010"
         />

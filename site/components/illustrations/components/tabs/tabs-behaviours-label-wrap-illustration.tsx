@@ -136,20 +136,20 @@ export const TabsBehavioursLabelWrapIllustration: React.FC = () => {
         </g>
       </g>
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M597.777 107.235V149.37H594.867V107.235H597.777Z"
         fill="illustrationHighlight010"
       />
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M896.135 130.512H594.867V127.603H896.135V130.512Z"
         fill="illustrationHighlight010"
       />
       <Path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M896.972 107.235V149.37H894.062V107.235H896.972Z"
         fill="illustrationHighlight010"
       />

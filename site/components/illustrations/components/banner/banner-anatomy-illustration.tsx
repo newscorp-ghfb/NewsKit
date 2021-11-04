@@ -19,8 +19,8 @@ export const BannerAnatomyIllustration: React.FC = () => (
       fill="illustrationInterface020"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M238.718 371.326C235.886 373.117 234.4 375.416 234.4 377.731V542.269C234.4 544.584 235.886 546.883 238.718 548.674C241.532 550.454 245.506 551.6 249.968 551.6H1350.03C1354.49 551.6 1358.47 550.454 1361.28 548.674C1364.11 546.883 1365.6 544.584 1365.6 542.269V377.731C1365.6 375.416 1364.11 373.117 1361.28 371.326C1358.47 369.547 1354.49 368.4 1350.03 368.4H249.968C245.506 368.4 241.532 369.547 238.718 371.326ZM249.968 367C240.597 367 233 371.804 233 377.731V542.269C233 548.196 240.597 553 249.968 553H1350.03C1359.4 553 1367 548.196 1367 542.269V377.731C1367 371.804 1359.4 367 1350.03 367H249.968Z"
       fill="illustrationAnatomyBorder010"
     />
@@ -88,8 +88,8 @@ export const BannerAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1214 700L1214 461L1216 461L1216 700L1214 700Z"
       fill="illustrationPalette040"
     />
@@ -110,8 +110,8 @@ export const BannerAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M762 699.649L762 493L763.833 493L763.833 699.649L762 699.649Z"
       fill="illustrationPalette040"
     />
@@ -136,8 +136,8 @@ export const BannerAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M575 257L575 438L573 438L573 257L575 257Z"
       fill="illustrationPalette040"
     />
@@ -158,8 +158,8 @@ export const BannerAnatomyIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M307 257L307 438L305 438L305 257L307 257Z"
       fill="illustrationPalette040"
     />

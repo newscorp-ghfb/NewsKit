@@ -57,8 +57,8 @@ export const ToastDo2Illustration: React.FC = () => {
               height="35"
             >
               <Path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M293.57 137.909V146.536H302.197V160.915H276.314V140.784H284.942V137.909L289.256 133.595L293.57 137.909ZM279.189 158.04H282.065V155.164H279.189V158.04ZM282.065 152.288H279.189V149.412H282.065V152.288ZM279.189 146.536H282.065V143.66H279.189V146.536ZM290.692 158.04H287.817V155.164H290.692V158.04ZM287.817 152.288H290.692V149.412H287.817V152.288ZM290.692 146.536H287.817V143.66H290.692V146.536ZM287.817 140.784H290.692V137.909H287.817V140.784ZM299.32 158.04H296.444V155.164H299.32V158.04ZM296.444 152.288H299.32V149.412H296.444V152.288Z"
                 fill="#0A0A0A"
               />
@@ -214,8 +214,8 @@ export const ToastDo2Illustration: React.FC = () => {
                 fill="inkNotice"
               />
               <Path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M507.5 196C505.567 196 504 197.567 504 199.5C504 201.433 505.567 203 507.5 203H726.5C728.433 203 730 201.433 730 199.5C730 197.567 728.433 196 726.5 196H507.5ZM507.5 213C505.567 213 504 214.567 504 216.5C504 218.433 505.567 220 507.5 220H985.5C987.433 220 989 218.433 989 216.5C989 214.567 987.433 213 985.5 213H507.5Z"
                 fill="whiteTint080"
               />
@@ -223,8 +223,8 @@ export const ToastDo2Illustration: React.FC = () => {
           </g>
         </g>
         <Path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M1260.39 241.999H1301.37V245.999H1283.38V611.997H1301.37V615.997H1260.39V611.997H1279.38V245.999H1260.39V241.999Z"
           fill="illustrationHighlight010"
         />
@@ -250,8 +250,8 @@ export const ToastDo2Illustration: React.FC = () => {
             fill="interfacePositive010"
           />
           <Path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M552 639.5C552 637.567 553.567 636 555.5 636H774.5C776.433 636 778 637.567 778 639.5C778 641.433 776.433 643 774.5 643H555.5C553.567 643 552 641.433 552 639.5ZM552 656.5C552 654.567 553.567 653 555.5 653H1033.5C1035.43 653 1037 654.567 1037 656.5C1037 658.433 1035.43 660 1033.5 660H555.5C553.567 660 552 658.433 552 656.5ZM555.5 670C553.567 670 552 671.567 552 673.5C552 675.433 553.567 677 555.5 677H1033.5C1035.43 677 1037 675.433 1037 673.5C1037 671.567 1035.43 670 1033.5 670H555.5Z"
             fill="whiteTint080"
           />

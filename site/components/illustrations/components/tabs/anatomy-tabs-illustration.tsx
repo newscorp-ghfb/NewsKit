@@ -25,14 +25,14 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M521.213 731.29L521.213 578.288L523.047 578.288L523.047 731.29L521.213 731.29Z"
       fill="illustrationPalette040"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M648.914 580.257C653.472 580.257 657.167 576.562 657.167 572.004L657.167 567.419L655.333 567.419L655.333 572.004C655.333 575.549 652.459 578.423 648.914 578.423L395.586 578.423C392.041 578.423 389.167 575.549 389.167 572.004L389.167 567.419L387.333 567.419L387.333 572.004C387.333 576.562 391.028 580.257 395.586 580.257L648.914 580.257Z"
       fill="illustrationPalette040"
     />
@@ -49,14 +49,14 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M182.846 538.491H358.412V540.325H182.846V538.491Z"
       fill="illustrationPalette040"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M357.495 538.908C357.495 535.916 359.92 533.491 362.912 533.491H370.333V535.325H362.912C360.933 535.325 359.329 536.929 359.329 538.908C359.329 540.887 360.933 542.491 362.912 542.491H370.333V544.325H362.912C359.92 544.325 357.495 541.9 357.495 538.908Z"
       fill="illustrationPalette040"
     />
@@ -77,8 +77,8 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="illustrationHighlight010"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M654.974 520.091L654.464 358.566L655.856 358.564L656.367 520.089L654.974 520.091Z"
       fill="illustrationAnatomyBorder010"
     />
@@ -95,8 +95,8 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="illustrationAnatomySubtle"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M922.394 520.091L921.884 358.566L923.276 358.564L923.787 520.089L922.394 520.091Z"
       fill="illustrationAnatomyBorder010"
     />
@@ -122,8 +122,8 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="illustrationInterface030"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1178 336.4H400C394.145 336.4 389.4 341.146 389.4 347V531C389.4 536.854 394.145 541.6 400 541.6H1178C1183.85 541.6 1188.6 536.854 1188.6 531V347C1188.6 341.146 1183.85 336.4 1178 336.4ZM400 335C393.372 335 388 340.372 388 347V531C388 537.627 393.372 543 400 543H1178C1184.63 543 1190 537.627 1190 531V347C1190 340.372 1184.63 335 1178 335H400Z"
       fill="illustrationAnatomyBorder010"
     />
@@ -140,8 +140,8 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M922.853 729.136L922.853 522.487L924.687 522.487L924.687 729.136L922.853 729.136Z"
       fill="illustrationPalette040"
     />
@@ -162,8 +162,8 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1147.51 729.136L1147.51 522.487L1149.35 522.487L1149.35 729.136L1147.51 729.136Z"
       fill="illustrationPalette040"
     />
@@ -184,14 +184,14 @@ export const AnatomyTabsIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M788.056 300.712L788.056 147.71L789.89 147.71L789.89 300.712L788.056 300.712Z"
       fill="illustrationPalette040"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1181.92 298.757C1186.47 298.757 1190.17 302.452 1190.17 307.01L1190.17 311.595L1188.33 311.595L1188.33 307.01C1188.33 303.465 1185.46 300.591 1181.92 300.591L395.587 300.591C392.042 300.591 389.168 303.465 389.168 307.01L389.168 311.595L387.334 311.595L387.334 307.01C387.334 302.452 391.029 298.757 395.587 298.757L1181.92 298.757Z"
       fill="illustrationPalette040"
     />

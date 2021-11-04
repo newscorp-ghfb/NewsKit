@@ -13,20 +13,20 @@ export const HeroContributeIllustration: React.FC = () => (
   >
     <Rect width="1344" height="759" fill="illustrationBackground020" />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M994.199 496.991C1058.57 472.554 1153.93 367.599 1280.29 182.125C1069.2 124.765 931.465 108.303 867.098 132.74C770.548 169.395 720.731 280.65 755.829 381.235C790.927 481.82 897.649 533.646 994.199 496.991Z"
       fill="blue060"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M932.183 454.674C976.03 438.003 1016.58 367.986 1053.83 244.624C958.925 202.503 889.547 189.779 845.7 206.45C779.93 231.458 745.972 307.297 769.854 375.843C793.735 444.388 866.413 479.682 932.183 454.674Z"
       fill="blue040"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M871.089 413.165C894.559 404.256 924.958 364.678 962.283 294.433C894.023 276.024 848.157 271.274 824.686 280.184C789.48 293.548 771.328 334.154 784.143 370.875C796.957 407.597 835.883 426.53 871.089 413.165Z"
       fill="blue030"
     />
@@ -39,8 +39,8 @@ export const HeroContributeIllustration: React.FC = () => (
       fill="white"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M542.42 410.27C561.905 402.868 590.789 371.122 629.071 315.032C565.199 297.746 523.52 292.804 504.035 300.205C474.807 311.308 459.706 344.947 470.305 375.34C480.905 405.734 513.192 421.372 542.42 410.27Z"
       fill="illustrationPrimary050"
     />
@@ -53,8 +53,8 @@ export const HeroContributeIllustration: React.FC = () => (
       fill="blue030"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1051.33 659.279C1064.9 654.113 1085.03 631.99 1111.72 592.909C1067.26 580.912 1038.24 577.497 1024.67 582.663C1004.32 590.412 993.784 613.845 1001.15 635.002C1008.51 656.159 1030.98 667.028 1051.33 659.279Z"
       fill="blue050"
     />
@@ -67,8 +67,8 @@ export const HeroContributeIllustration: React.FC = () => (
       fill="blue030"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M699.468 179.051C705.455 176.772 714.335 167.012 726.108 149.77C706.493 144.478 693.692 142.971 687.705 145.25C678.725 148.669 674.078 159.007 677.326 168.341C680.574 177.675 690.487 182.47 699.468 179.051Z"
       fill="illustrationPrimary040"
     />
@@ -81,8 +81,8 @@ export const HeroContributeIllustration: React.FC = () => (
       fill="blue030"
     />
     <Path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1205.85 451.233C1211.84 448.954 1220.72 439.194 1232.49 421.952C1212.88 416.66 1200.08 415.153 1194.09 417.432C1185.11 420.851 1180.46 431.189 1183.71 440.523C1186.96 449.857 1196.87 454.652 1205.85 451.233Z"
       fill="illustrationPrimary040"
     />
