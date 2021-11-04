@@ -29,29 +29,28 @@ export default (layoutProps: LayoutProps) => (
       />
     </Head>
     <WrapperWithPadding />
-
-    <PageIntroduction
-      type="About"
-      name="Contact Us"
-      introduction="Have a question about our design system? The NewsKit team is here to help you. "
-      hero={{illustration: 'about/contact-us-hero-illustration'}}
-    />
-    <WrapperWithPadding />
-    <SectionIntroduction title="Slack Channel" cellProps={{md: 10}}>
-      The NewsKit team maintains
-      <Link href="https://newsuktechnology.slack.com/archives/CTFGLAK9C">
-        #newskit
-      </Link>{' '}
-      channel and will provide support.
-      <Block spaceStack="space080" />
-      <InlineMessage role="region" aria-label="contact" title="Note">
-        For internal News Corp users only.
-      </InlineMessage>
-    </SectionIntroduction>
-    <ComponentPageCell>
-      <Separator />
-    </ComponentPageCell>
     <Grid lgMargin="sizing000" xsRowGutter="space000">
+      <PageIntroduction
+        type="About"
+        name="Contact Us"
+        introduction="Have a question about our design system? The NewsKit team is here to help you. "
+        hero={{illustration: 'about/contact-us-hero-illustration'}}
+      />
+      <WrapperWithPadding />
+      <SectionIntroduction title="Slack Channel" cellProps={{md: 10}}>
+        The NewsKit team maintains
+        <Link href="https://newsuktechnology.slack.com/archives/CTFGLAK9C">
+          #newskit
+        </Link>{' '}
+        channel and will provide support.
+        <Block spaceStack="space080" />
+        <InlineMessage role="region" aria-label="contact" title="Note">
+          For internal News Corp users only.
+        </InlineMessage>
+      </SectionIntroduction>
+      <ComponentPageCell>
+        <Separator />
+      </ComponentPageCell>
       <SectionIntroduction title="Form">
         Send an enquiry to the NewsKit team who will respond as quickly as
         possible.

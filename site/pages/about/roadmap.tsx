@@ -36,35 +36,35 @@ export default (layoutProps: LayoutProps) => (
         build better products faster."
         hero={{illustration: 'components/hero-roadmap-illustration'}}
       />
+      <Block spaceStack="space100" />
+      <SectionIntroduction
+        title="NewsKit Roadmap"
+        cellProps={{xs: 12, md: 10, lg: 10}}
+      >
+        Here is the team’s focus over the coming months. This is updated
+        regularly as our priorities change over time.
+        <Block spaceStack="space070" />
+        <iframe
+          title="airtable roadmap"
+          className="airtable-embed"
+          src="https://airtable.com/embed/shrbFPJXN4tVA0Yye?backgroundColor=blue"
+          frameBorder="0"
+          width="100%"
+          height="533"
+          style={{
+            background: 'transparent',
+            border: '1px solid #ccc',
+          }}
+        />
+        <Block spaceStack="space070">
+          <Block spaceStack={{xs: 'space080', xl: 'space090'}} />
+          <InlineMessage>
+            If you’d like to influence the roadmap,see the{' '}
+            <Link href="/about/contribute">contribution page</Link> for further
+            details.
+          </InlineMessage>
+        </Block>
+      </SectionIntroduction>
     </Grid>
-    <Block spaceStack="space100" />
-    <SectionIntroduction
-      title="NewsKit Roadmap"
-      cellProps={{xs: 12, md: 10, lg: 8, mdOffset: 1}}
-    >
-      Here is the team’s focus over the coming months. This is updated regularly
-      as our priorities change over time.
-      <Block spaceStack="space070" />
-      <iframe
-        title="airtable roadmap"
-        className="airtable-embed"
-        src="https://airtable.com/embed/shrbFPJXN4tVA0Yye?backgroundColor=blue"
-        frameBorder="0"
-        width="100%"
-        height="533"
-        style={{
-          background: 'transparent',
-          border: '1px solid #ccc',
-        }}
-      />
-      <Block spaceStack="space070">
-        <Block spaceStack={{xs: 'space080', xl: 'space090'}} />
-        <InlineMessage>
-          If you’d like to influence the roadmap,see the{' '}
-          <Link href="/about/contribute">contribution page</Link> for further
-          details.
-        </InlineMessage>
-      </Block>
-    </SectionIntroduction>
   </Layout>
 );

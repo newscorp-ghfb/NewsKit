@@ -160,21 +160,6 @@ export default (layoutProps: LayoutProps) => (
           team to address.
         </ContentText>
 
-        <ContentText title="Report a bug" titleAs="h3">
-          Software glitches and pesky bugs can occasionally make their way into
-          NewsKit products including the design library, codebase or this
-          website. If you encounter a bug, please report it to us using the{' '}
-          <Link
-            overrides={{typographyPreset: 'utilityButton030'}}
-            target="_blank"
-            href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
-          >
-            bug submission form
-          </Link>
-          . Reports submitted in this fashion will be directed to the NewsKit
-          team to address.
-        </ContentText>
-
         <ContentText
           title="Propose an enhancement or request a feature"
           titleAs="h3"
