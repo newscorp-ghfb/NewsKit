@@ -55,7 +55,7 @@
     "e2e:findbrokenlinks": "linkinator http://localhost:8081 --recurse --skip '^(?!http://localhost:8081)'",
     "e2e:findbrokenlinks:ci": "start-server-and-test serve:docs 8081 e2e:findbrokenlinks",
     "prepare": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn\")'",
-    "serve:docs": "http-server public -p 8081",
+    "serve:docs": "http-server public -p 8081 -c300",
     "serve:storybook": "http-server dist-storybook -p 6006",
     "dependencies:check": "package-change-checker --install-cmd=\"yarn install --pure-lockfile\" HEAD@{1} HEAD",
     "create:release": "sh ./scripts/release.sh",

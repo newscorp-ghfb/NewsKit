@@ -3,7 +3,7 @@ FROM node:16.11-bullseye-slim
 
 WORKDIR /app
 
-RUN yarn add http-server -c-1
+RUN yarn add http-server
 
 COPY package.json ./
 COPY dist-storybook ./dist-storybook
