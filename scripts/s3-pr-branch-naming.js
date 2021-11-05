@@ -24,7 +24,6 @@ if (!s3BucketPath) {
 }
 
 const sitePath = branchNameToUrl(branchName);
-
 process.stdout.write(
   subdirectory
     ? `${s3BucketPath}${sitePath}/${subdirectory}`

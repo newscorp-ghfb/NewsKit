@@ -3,6 +3,7 @@ version: 2.1
 orbs:
   slack: circleci/slack@3.4.1
   aws-cli: circleci/aws-cli@2.0.0
+  github-cli: circleci/github-cli@1.0.4
 
 slack_status: &slack_status
   channel: '#nuk-pp-newskit'
@@ -249,8 +250,7 @@ jobs:
             - node_modules/*
             - src/version-number.json
       - slack/status:
-          <<: *slack_status
-
+          <<: *slack_status   
   install_cypress:
     <<: *cypress_defaults
     executor: cypress
@@ -765,6 +765,25 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  post_pr_env_url_to_github_pr:
+    executor: node
+    steps:
+      - checkout
+      - github-cli/setup
+      - run:
+          name: Doc site link
+          command: |
+              if gh pr view -c | grep "Documentation Site" ; 
+              then
+                circleci-agent step halt
+              else
+                gh pr comment --body "You can preview these changes on: 
+                Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'docs') 
+                Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'storybook')" 
+              fi 
+      - slack/status:
+          <<: *slack_status 
+
   eks_flux_deploy:
     # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
     parameters:
@@ -1050,6 +1069,12 @@ workflows:
             - deploy_terraform_s3_dev
             - build_docs_pr
             - build_storybook
+      -  post_pr_env_url_to_github_pr:
+          <<: *only_pr
+          name: pr_enviroment_link
+          context: ncu-product-platforms-context
+          requires:
+            - deploy_to_s3
 
       # PR & Develop jobs
       - approve_publish_npm_dev:
