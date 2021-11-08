@@ -123,6 +123,14 @@ describe('Form', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with native radio input without validation', () => {
+    const fragment = renderToFragmentWithTheme(Form, {
+      ...props,
+      children: <input type="radio" value="A" id="radio" />,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with onBlur validation', () => {
     const fragment = renderToFragmentWithTheme(Form, {
       validationMode: 'onBlur',

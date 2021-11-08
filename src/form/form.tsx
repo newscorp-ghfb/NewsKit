@@ -37,6 +37,8 @@ export const Form = forwardRef<FormRef, FormProps>((props, ref) => {
     const formFields = Object.keys(formContext.getValues());
     const newFieldsHadErrorObject: FieldsHadErrorObject = {};
 
+    if (formFields.length === 0) return;
+
     formFields.forEach(field => {
       newFieldsHadErrorObject[field] = {hadError: false};
     });

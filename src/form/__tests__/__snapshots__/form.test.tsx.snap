@@ -2426,6 +2426,20 @@ exports[`Form renders with inputs 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Form renders with native radio input without validation 1`] = `
+<DocumentFragment>
+  <form
+    novalidate=""
+  >
+    <input
+      id="radio"
+      type="radio"
+      value="A"
+    />
+  </form>
+</DocumentFragment>
+`;
+
 exports[`Form renders with nested inputs 1`] = `
 <DocumentFragment>
   .emotion-0 {
