@@ -7,7 +7,7 @@ const packageJson = require('../package.json');
 
 const toAbsolutePath = relative => path.join(__dirname, relative);
 
-const allowedList = [
+const allowedPackageProperties = [
   'name',
   'version',
   'description',
@@ -20,9 +20,16 @@ const allowedList = [
   'peerDependencies',
 ];
 
-const updateDistRootPackageJson = () => {
-  const cleanedPackageJson = Object.entries(packageJson)
-    .filter(([key]) => allowedList.includes(key))
+const dependenciesNotToBeIncluded = [
+  'jszip',
+  'file-saver',
+  'dompurify',
+  '@babel/runtime-corejs3',
+];
+
+const filterPackageJson = () => {
+  const filteredPackageJson = Object.entries(packageJson)
+    .filter(([key]) => allowedPackageProperties.includes(key))
     .reduce(
       (agg, [key, value]) => ({
         ...agg,
@@ -30,6 +37,16 @@ const updateDistRootPackageJson = () => {
       }),
       {},
     );
+
+  dependenciesNotToBeIncluded.forEach(package => {
+    delete filteredPackageJson.dependencies[package];
+  });
+
+  return filteredPackageJson;
+};
+
+const updateDistRootPackageJson = () => {
+  const cleanedPackageJson = filterPackageJson();
 
   const newPackageJson = {
     ...cleanedPackageJson,
