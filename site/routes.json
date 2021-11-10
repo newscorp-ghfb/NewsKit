@@ -67,6 +67,11 @@
         "id": "/foundations/overview"
       },
       {
+        "title": "Borders",
+        "page": true,
+        "id": "/foundations/borders"
+      },
+      {
         "title": "Colours",
         "page": true,
         "id": "/foundations/colours"
@@ -75,11 +80,6 @@
         "title": "Iconography",
         "page": true,
         "id": "/foundations/iconography"
-      },
-      {
-        "title": "Shadows",
-        "page": true,
-        "id": "/foundations/shadows"
       },
       {
         "title": "Motion",
@@ -106,6 +106,11 @@
             "id": "/foundations/presets/typography-presets"
           }
         ]
+      },
+      {
+        "title": "Shadows",
+        "page": true,
+        "id": "/foundations/shadows"
       },
       {
         "title": "Theming",

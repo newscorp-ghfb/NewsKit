@@ -16,7 +16,7 @@ const cardsContent = [
       alt: '',
     },
     title: 'Borders',
-    href: '#',
+    href: '/foundations/borders',
     description:
       'Borders direct attention, identify components, communicate state, and express a brand.',
   },

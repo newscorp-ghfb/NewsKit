@@ -4,6 +4,8 @@ import {
   getSizingCssFromTheme,
   getShadowCssFromTheme,
   styled,
+  newskitLightTheme,
+  compileTheme,
 } from 'newskit';
 import React from 'react';
 
@@ -12,6 +14,8 @@ export interface BorderCardProps {
   borderWidthToken?: string;
   boxShadowToken?: string;
 }
+
+const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
 
 const StyledBorderCard = styled.div<{
   borderRadiusToken: string;
@@ -22,14 +26,25 @@ const StyledBorderCard = styled.div<{
   ${getSizingCssFromTheme('width', 'sizing100')};
   ${getSizingCssFromTheme('height', 'sizing100')};
   border: solid;
-  ${getColorCssFromTheme('borderColor', 'interface040')};
+  ${getColorCssFromTheme('borderColor', 'interface060')};
+  ${getColorCssFromTheme('background', 'interface020')};
 
   ${({borderRadiusToken}) =>
-    getBorderCssFromTheme('borderRadius', borderRadiusToken)};
+    getBorderCssFromTheme(
+      'borderRadius',
+      borderRadiusToken,
+    )({theme: compiledNewskitLightTheme})};
   ${({borderWidthToken}) =>
-    getBorderCssFromTheme('borderWidth', borderWidthToken)};
+    getBorderCssFromTheme(
+      'borderWidth',
+      borderWidthToken,
+    )({theme: compiledNewskitLightTheme})};
 
-  ${({boxShadowToken}) => getShadowCssFromTheme('boxShadow', boxShadowToken)};
+  ${({boxShadowToken}) =>
+    getShadowCssFromTheme(
+      'boxShadow',
+      boxShadowToken,
+    )({theme: compiledNewskitLightTheme})};
   background-color: ${({boxShadowToken}) => (boxShadowToken ? 'white' : '')};
   margin: ${({boxShadowToken}) => (boxShadowToken ? '0 0 20px 15px' : '')};
 `;
