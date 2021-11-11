@@ -1822,3 +1822,72 @@ stylePresets.modalPanel = {
     boxShadow: '{{shadows.shadow060}}',
   },
 };
+
+//
+// Checkbox
+//
+
+stylePresets.checkboxInput = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderColor: '{{colors.interactiveInput020}}',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderStyle: 'solid',
+    iconColor: '{{colors.inkInverse}}',
+  },
+  hover: {
+    borderColor: '{{colors.interactiveInput040}}',
+  },
+  focus: {
+    borderColor: '{{colors.interactiveInput040}}',
+  },
+  selected: {
+    backgroundColor: '{{colors.interactiveInput040}}',
+    borderColor: '{{colors.interactiveInput040}}',
+  },
+  'selected:hover': {
+    backgroundColor: '{{colors.interactiveInput050}}',
+    borderColor: '{{colors.interactiveInput050}}',
+  },
+  'selected:focus': {
+    backgroundColor: '{{colors.interactiveInput040}}',
+    borderColor: '{{colors.interactiveInput050}}',
+  },
+  invalid: {
+    borderColor: '{{colors.interfaceNegative010}}',
+  },
+  'invalid:hover': {
+    borderColor: '{{colors.interfaceNegative010}}',
+  },
+  'selected:invalid': {
+    backgroundColor: '{{colors.interfaceNegative010}}',
+    borderColor: '{{colors.interfaceNegative010}}',
+  },
+  'selected:invalid:focus': {
+    backgroundColor: '{{colors.interfaceNegative010}}',
+    borderColor: '{{colors.interactiveInput050}}',
+  },
+  valid: {
+    borderColor: '{{colors.interfacePositive010}}',
+  },
+  'valid:hover': {
+    borderColor: '{{colors.interfacePositive010}}',
+  },
+  'selected:valid': {
+    backgroundColor: '{{colors.interfacePositive010}}',
+    borderColor: '{{colors.interfacePositive010}}',
+  },
+  'selected:valid:focus': {
+    backgroundColor: '{{colors.interfacePositive010}}',
+    borderColor: '{{colors.interactiveInput050}}',
+  },
+  disabled: {
+    borderColor: '{{colors.interactiveDisabled010}}',
+  },
+  'selected:disabled': {
+    backgroundColor: '{{colors.interactiveDisabled010}}',
+    borderColor: '{{colors.interactiveDisabled010}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+};

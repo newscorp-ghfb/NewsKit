@@ -44,12 +44,19 @@ export interface StylePreset {
   valid?: StylePresetStyles;
   'selected:hover'?: StylePresetStyles;
   'selected:focus'?: StylePresetStyles;
+  'selected:disabled'?: StylePresetStyles;
   'valid:hover'?: StylePresetStyles;
   'valid:focus'?: StylePresetStyles;
   'invalid:hover'?: StylePresetStyles;
   'invalid:focus'?: StylePresetStyles;
   'visited:hover'?: StylePresetStyles;
   'visited:focus'?: StylePresetStyles;
+  'selected:valid'?: StylePresetStyles;
+  'selected:invalid'?: StylePresetStyles;
+  'selected:valid:focus'?: StylePresetStyles;
+  'selected:invalid:focus'?: StylePresetStyles;
+  'selected:valid:hover'?: StylePresetStyles;
+  'selected:invalid:hover'?: StylePresetStyles;
 }
 export type StylePresetStates = keyof StylePreset;
 

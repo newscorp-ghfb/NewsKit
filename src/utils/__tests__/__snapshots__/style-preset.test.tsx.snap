@@ -1,5 +1,350 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`getStylePresetFromTheme renders with disabled state when prop isDisabled is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #F4F4F4;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with focus state when prop isFocused is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #3358CC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with invalid state when prop isInvalid is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #D20600;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #D20600;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with loading state when prop isLoading is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected state when prop isSelected is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #3358CC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #2B4AAB;
+}
+
+.emotion-0:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-0:valid:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-0:disabled {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:disabled pseudo state when both isSelected and isDisabled are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #F4F4F4;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #C0C0C0;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:focus pseudo state when both isSelected and isFocused are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #2B4AAB;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:invalid pseudo state when both isSelected and isInvalid are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #D20600;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #D20600;
+  border-color: #2B4AAB;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:invalid:focus state when isSelected, isFocused and isInvalid are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #2B4AAB;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:invalid:hover pseudo state when both isSelected and isInvalid are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #D20600;
+  border-color: #D20600;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FF0000;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #D20600;
+  border-color: #2B4AAB;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:valid pseudo state when both isSelected and isValid are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #0A782A;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #2B4AAB;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:valid:focus state when isSelected, isFocused and isValid are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #2B4AAB;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with selected:valid:hover pseudo state when both isSelected and isValid are passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #0A782A;
+  border-color: #0A782A;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FF0000;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #2B4AAB;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme renders with valid state when prop isValid is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  border-color: #0A782A;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -36,24 +381,6 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 `;
 
 exports[`getStylePresetFromTheme with disabled and loading state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: #FF0000;
-  border-radius: 50%;
-  color: #C0C0C0;
-}
-
-.emotion-0 svg {
-  fill: #C0C0C0;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme with disabled state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
@@ -189,6 +516,59 @@ exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactiveP
 </DocumentFragment>
 `;
 
+exports[`getStylePresetFromTheme with invalid:focus pseudoState 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #00FF00;
+  border-color: #D20600;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #D20600;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #FF0000;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with invalid:hover pseudoState 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #00FF00;
+  border-color: #D20600;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #D20600;
+  background-color: #FF0000;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`getStylePresetFromTheme with isSvg  1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -220,24 +600,6 @@ exports[`getStylePresetFromTheme with isSvg  1`] = `
 `;
 
 exports[`getStylePresetFromTheme with loading and selected state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: #ffff00;
-  border-radius: 50%;
-  color: #3358CC;
-}
-
-.emotion-0 svg {
-  fill: #3358CC;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme with loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
@@ -318,16 +680,47 @@ exports[`getStylePresetFromTheme with override to interactivePrimary040 1`] = `
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme with selected state 1`] = `
+exports[`getStylePresetFromTheme with selected:focus pseudoState 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #00ff00;
-  border-radius: 50%;
-  color: #3358CC;
+  background-color: #00FF00;
+  border-color: #3358CC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #FF0000;
+  border-color: #2B4AAB;
+}
+
+.emotion-0:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-0:valid:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-0:disabled {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
 }
 
 <div
@@ -336,24 +729,47 @@ exports[`getStylePresetFromTheme with selected state 1`] = `
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme with selected, selected:focus & selected:hover state 1`] = `
+exports[`getStylePresetFromTheme with selected:hover pseudoState 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #00ff00;
-  border-radius: 50%;
-  color: #3358CC;
+  background-color: #00FF00;
+  border-color: #3358CC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
 }
 
 .emotion-0 svg {
-  fill: #3358CC;
+  fill: #FFFFFF;
 }
 
 .emotion-0:hover:not(:disabled) {
   background-color: #FF0000;
+  border-color: #2B4AAB;
 }
 
 .emotion-0:focus:not(:disabled) {
-  background-color: #0000FF;
+  background-color: #3358CC;
+  border-color: #2B4AAB;
+}
+
+.emotion-0:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-0:valid:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-0:disabled {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
 }
 
 <div
@@ -374,12 +790,65 @@ exports[`getStylePresetFromTheme with stateOverwrites without base state fallbac
 </DocumentFragment>
 `;
 
+exports[`getStylePresetFromTheme with valid:focus pseudoState 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #00FF00;
+  border-color: #0A782A;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-0:focus:not(:disabled) {
+  background-color: #FF0000;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with valid:hover pseudoState 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #00FF00;
+  border-color: #0A782A;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #0A782A;
+  background-color: #FF0000;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`getStylePresetFromTheme with visited, visited:focus & visited:hover state 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: transparent;
-  border-radius: 50%;
   color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0 svg {
@@ -387,35 +856,50 @@ exports[`getStylePresetFromTheme with visited, visited:focus & visited:hover sta
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E0E7FF;
+  color: #2B4AAB;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #2B4AAB;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #AEBFFF;
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
-.emotion-0:disabled {
-  background-color: transparent;
-  color: #C0C0C0;
-}
-
-.emotion-0:disabled svg {
-  fill: #C0C0C0;
+.emotion-0:active:not(:disabled) svg {
+  fill: #213A82;
 }
 
 .emotion-0:visited:not(:disabled) {
-  background-color: #00ff00;
+  color: #00ff00;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-0:visited:hover:not(:disabled) {
-  background-color: #FF0000;
+  color: #FF0000;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited:hover:not(:disabled) svg {
+  fill: #5E44E4;
 }
 
 .emotion-0:visited:focus:not(:disabled) {
-  background-color: #0000FF;
+  color: #0000FF;
 }
 
-<div
+<link
     class="emotion-0"
   />
 </DocumentFragment>

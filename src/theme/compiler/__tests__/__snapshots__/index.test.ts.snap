@@ -1865,6 +1865,70 @@ Object {
         "color": "#2E2E2E",
       },
     },
+    "checkboxInput": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#CCCCCC",
+        "borderRadius": "4px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "iconColor": "#FFFFFF",
+      },
+      "disabled": Object {
+        "borderColor": "#F4F4F4",
+      },
+      "focus": Object {
+        "borderColor": "#3358CC",
+      },
+      "hover": Object {
+        "borderColor": "#3358CC",
+      },
+      "invalid": Object {
+        "borderColor": "#D20600",
+      },
+      "invalid:hover": Object {
+        "borderColor": "#D20600",
+      },
+      "selected": Object {
+        "backgroundColor": "#3358CC",
+        "borderColor": "#3358CC",
+      },
+      "selected:disabled": Object {
+        "backgroundColor": "#F4F4F4",
+        "borderColor": "#F4F4F4",
+        "iconColor": "#C0C0C0",
+      },
+      "selected:focus": Object {
+        "backgroundColor": "#3358CC",
+        "borderColor": "#2B4AAB",
+      },
+      "selected:hover": Object {
+        "backgroundColor": "#2B4AAB",
+        "borderColor": "#2B4AAB",
+      },
+      "selected:invalid": Object {
+        "backgroundColor": "#D20600",
+        "borderColor": "#D20600",
+      },
+      "selected:invalid:focus": Object {
+        "backgroundColor": "#D20600",
+        "borderColor": "#2B4AAB",
+      },
+      "selected:valid": Object {
+        "backgroundColor": "#0A782A",
+        "borderColor": "#0A782A",
+      },
+      "selected:valid:focus": Object {
+        "backgroundColor": "#0A782A",
+        "borderColor": "#2B4AAB",
+      },
+      "valid": Object {
+        "borderColor": "#0A782A",
+      },
+      "valid:hover": Object {
+        "borderColor": "#0A782A",
+      },
+    },
     "divider": Object {
       "base": Object {
         "borderColor": "#DEDEDE",

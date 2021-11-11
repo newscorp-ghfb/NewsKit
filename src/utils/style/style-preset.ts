@@ -94,32 +94,60 @@ const getPresetStates = (
     (isValid && valid) ||
     undefined;
 
-  let currentSubState = '';
+  const forcedStates = [];
+  if (isSelected) {
+    forcedStates.push('selected');
+  }
   if (isDisabled) {
-    currentSubState = 'disabled';
-  } else if (isLoading) {
-    currentSubState = 'loading';
-  } else if (isSelected) {
-    currentSubState = 'selected';
-  } else if (isInvalid) {
-    currentSubState = 'invalid';
-  } else if (isValid) {
-    currentSubState = 'valid';
+    forcedStates.push('disabled');
+  }
+  if (isLoading) {
+    forcedStates.push('loading');
+  }
+  if (isInvalid) {
+    forcedStates.push('invalid');
+  }
+  if (isValid) {
+    forcedStates.push('valid');
+  }
+  if (isFocused) {
+    forcedStates.push('focus');
   }
 
   if (stateOverrides) {
-    const pseudoStates = ['hover', 'focus', 'active'];
+    const pseudoStates = [
+      'hover',
+      'focus',
+      'active',
+      'invalid',
+      'valid',
+      'disabled',
+    ];
+
+    let pseudoOverrides = {};
+    let currentSubState = '';
+
+    /* istanbul ignore next */
+    if (forcedStates.length > 0) {
+      const path = forcedStates.join(':') as keyof typeof presetStates;
+      pseudoOverrides = presetStates[path] || {};
+      currentSubState = path;
+    }
 
     const pseudoPresets = {} as {[key: string]: StylePresetStyles | undefined};
-    pseudoStates.forEach(pseudo => {
-      const subStatePseudoClass = `${currentSubState}:${pseudo}` as keyof typeof presetStates;
-      if (presetStates[subStatePseudoClass]) {
-        pseudoPresets[pseudo] = presetStates[subStatePseudoClass];
-      }
-    });
+    /* istanbul ignore next */
+    if (currentSubState !== '') {
+      pseudoStates.forEach(pseudo => {
+        const subStatePseudoClass = `${currentSubState}:${pseudo}` as keyof typeof presetStates;
+        if (presetStates[subStatePseudoClass]) {
+          pseudoPresets[pseudo] = presetStates[subStatePseudoClass];
+        }
+      });
+    }
+
     const {base = {}} = presetStates;
     return {
-      base: {...base, ...stateOverrides},
+      base: {...base, ...stateOverrides, ...pseudoOverrides},
       ...pseudoPresets,
     };
   }

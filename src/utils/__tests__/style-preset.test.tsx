@@ -13,6 +13,14 @@ const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
     getStylePresetFromTheme('iconButtonMinimalPrimary', undefined, options)}
 `;
 
+const TestSurfaceCheckbox = styled.div<GetStylePresetFromThemeOptions>`
+  ${options => getStylePresetFromTheme('checkboxInput', undefined, options)}
+`;
+
+const TestSurfaceLink = styled.link<GetStylePresetFromThemeOptions>`
+  ${options => getStylePresetFromTheme('linkInline', undefined, options)}
+`;
+
 const OverridableTestSurface = styled.div<
   GetStylePresetFromThemeOptions & {stylePresetToUse: MQ<string>}
 >`
@@ -288,72 +296,6 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with disabled state', () => {
-    const fragment = renderToFragmentWithTheme(
-      TestSurface,
-      {
-        isDisabled: true,
-      },
-      createTheme({
-        name: 'test-style-preset',
-        overrides: {
-          stylePresets: {
-            iconButtonMinimalPrimary: {
-              disabled: {
-                backgroundColor: '#FF0000',
-              },
-            },
-          },
-        },
-      }),
-    );
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('with loading state', () => {
-    const fragment = renderToFragmentWithTheme(
-      TestSurface,
-      {
-        isLoading: true,
-      },
-      createTheme({
-        name: 'test-style-preset',
-        overrides: {
-          stylePresets: {
-            iconButtonMinimalPrimary: {
-              loading: {
-                backgroundColor: '#ffff00',
-              },
-            },
-          },
-        },
-      }),
-    );
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('with selected state', () => {
-    const fragment = renderToFragmentWithTheme(
-      TestSurface,
-      {
-        isSelected: true,
-      },
-      createTheme({
-        name: 'test-style-preset',
-        overrides: {
-          stylePresets: {
-            iconButtonMinimalPrimary: {
-              selected: {
-                backgroundColor: '#00ff00',
-              },
-            },
-          },
-        },
-      }),
-    );
-    expect(fragment).toMatchSnapshot();
-  });
-
   test('with loading and selected state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
@@ -406,25 +348,23 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with selected, selected:focus & selected:hover state', () => {
+  test('with visited, visited:focus & visited:hover state', () => {
     const fragment = renderToFragmentWithTheme(
-      TestSurface,
-      {
-        isSelected: true,
-      },
+      TestSurfaceLink,
+      {},
       createTheme({
         name: 'test-style-preset',
         overrides: {
           stylePresets: {
-            iconButtonMinimalPrimary: {
-              selected: {
-                backgroundColor: '#00ff00',
+            linkInline: {
+              visited: {
+                color: '#00ff00',
               },
-              'selected:hover': {
-                backgroundColor: '#FF0000',
+              'visited:hover': {
+                color: '#FF0000',
               },
-              'selected:focus': {
-                backgroundColor: '#0000FF',
+              'visited:focus': {
+                color: '#0000FF',
               },
             },
           },
@@ -434,30 +374,130 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with visited, visited:focus & visited:hover state', () => {
-    const fragment = renderToFragmentWithTheme(
-      TestSurface,
-      {},
-      createTheme({
-        name: 'test-style-preset',
-        overrides: {
-          stylePresets: {
-            iconButtonMinimalPrimary: {
-              visited: {
-                backgroundColor: '#00ff00',
-              },
-              'visited:hover': {
-                backgroundColor: '#FF0000',
-              },
-              'visited:focus': {
-                backgroundColor: '#0000FF',
+  [
+    ['disabled', 'isDisabled'],
+    ['selected', 'isSelected'],
+    ['loading', 'isLoading'],
+    ['focus', 'isFocused'],
+    ['valid', 'isValid'],
+    ['invalid', 'isInvalid'],
+  ].forEach(([state, prop]) => {
+    test(`renders with ${state} state when prop ${prop} is passed`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          [prop]: true,
+        },
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: {
+                [state]: {
+                  backgroundColor: '#FF0000',
+                },
               },
             },
           },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  [
+    ['selected', 'selected:hover', 'isSelected'],
+    ['selected', 'selected:focus', 'isSelected'],
+    ['valid', 'valid:hover', 'isValid'],
+    ['valid', 'valid:focus', 'isValid'],
+    ['invalid', 'invalid:hover', 'isInvalid'],
+    ['invalid', 'invalid:focus', 'isInvalid'],
+  ].forEach(([state, pseudoState, prop]) => {
+    test(`with ${pseudoState} pseudoState`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          [prop]: true,
         },
-      }),
-    );
-    expect(fragment).toMatchSnapshot();
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: {
+                [state]: {
+                  backgroundColor: '#00FF00',
+                },
+                [pseudoState]: {
+                  backgroundColor: '#FF0000',
+                },
+              },
+            },
+          },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  [
+    ['selected:disabled', 'isDisabled'],
+    ['selected:focus', 'isFocused'],
+    ['selected:valid', 'isValid'],
+    ['selected:invalid', 'isInvalid'],
+    ['selected:valid:hover', 'isValid'],
+    ['selected:invalid:hover', 'isInvalid'],
+  ].forEach(([pseudoState, prop]) => {
+    test(`renders with ${pseudoState} pseudo state when both isSelected and ${prop} are passed`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          isSelected: true,
+          [prop]: true,
+        },
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: {
+                [pseudoState]: {
+                  backgroundColor: '#FF0000',
+                },
+              },
+            },
+          },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  [
+    ['selected:valid:focus', 'isValid'],
+    ['selected:invalid:focus', 'isInvalid'],
+  ].forEach(([pseudoState, prop]) => {
+    test(`renders with ${pseudoState} state when isSelected, isFocused and ${prop} are passed`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          isSelected: true,
+          isFocused: true,
+          [prop]: true,
+        },
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: {
+                [pseudoState]: {
+                  backgroundColor: '#FF0000',
+                },
+              },
+            },
+          },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
   });
 
   test('with isSvg ', () => {
