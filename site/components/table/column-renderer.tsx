@@ -2,7 +2,7 @@ import React from 'react';
 import {Block, getSSRId} from 'newskit';
 import {Link} from '../link';
 import {SwatchCard} from '../swatch-card';
-import {TokenFlag} from '../flags/token-flag';
+import {MonoColor} from '../flags/mono-color';
 import {BorderCard} from '../border-card';
 import {getByTitle} from '../../utils/get-route-object';
 import {StyledDataCell} from './styled';
@@ -95,7 +95,7 @@ export const renderCols = (
         cellContent =
           cellValue &&
           renderSingleOrMultiple(
-            v => <Mono minimal>{v}</Mono>,
+            v => <Mono>{v}</Mono>,
             cellValue as string | string[],
           );
         break;
@@ -157,14 +157,7 @@ export const renderCols = (
       }
 
       case 'colorToken': {
-        cellContent = cellValue && (
-          <TokenFlag color={cellValue.toString()}>{cellValue}</TokenFlag>
-        );
-        break;
-      }
-
-      case 'token': {
-        cellContent = cellValue && <TokenFlag>{cellValue}</TokenFlag>;
+        cellContent = cellValue && <MonoColor color={cellValue.toString()} />;
         break;
       }
 

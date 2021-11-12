@@ -1041,24 +1041,100 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 {
-  margin: 0;
-  padding: 0;
-  color: #555E74;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  padding: 4px 8px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   background-color: #F4F4F4;
   border-radius: 4px;
+  color: #555E74;
   white-space: nowrap;
-  font-family: 'DM Mono',monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0;
+}
+
+.emotion-8 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-8 svg {
   fill: #555E74;
 }
 
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
 .emotion-11 {
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4285714285714286;
+  letter-spacing: 0;
+}
+
+.emotion-11::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4267857142857143em;
+}
+
+.emotion-11::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3642857142857143em;
+}
+
+.emotion-17 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
@@ -1108,24 +1184,50 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              type
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    type
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              default
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    default
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
         <tr
-          class="emotion-11"
+          class="emotion-17"
         >
           <td
             class="emotion-6"
@@ -1135,20 +1237,46 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              type
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    type
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              default
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    default
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -1231,24 +1359,100 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 {
-  margin: 0;
-  padding: 0;
-  color: #555E74;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  padding: 4px 8px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   background-color: #F4F4F4;
   border-radius: 4px;
+  color: #555E74;
   white-space: nowrap;
-  font-family: 'DM Mono',monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0;
+}
+
+.emotion-8 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-8 svg {
   fill: #555E74;
 }
 
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
 .emotion-11 {
+  font-family: 'DM Mono',monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4285714285714286;
+  letter-spacing: 0;
+}
+
+.emotion-11::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4267857142857143em;
+}
+
+.emotion-11::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3642857142857143em;
+}
+
+.emotion-17 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
@@ -1298,24 +1502,50 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              type
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    type
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              default
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    default
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
         <tr
-          class="emotion-11"
+          class="emotion-17"
         >
           <td
             class="emotion-6"
@@ -1325,20 +1555,46 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              type
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    type
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
           <td
             class="emotion-7"
           >
-            <p
+            <div
               class="emotion-8"
+              data-testid="flag"
             >
-              default
-            </p>
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    default
+                  </span>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
       </tbody>

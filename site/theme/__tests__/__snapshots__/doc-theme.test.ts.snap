@@ -2322,9 +2322,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
@@ -6876,9 +6875,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
@@ -11430,9 +11428,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
@@ -15984,9 +15981,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
@@ -20538,9 +20534,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
@@ -25092,9 +25087,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
@@ -29646,9 +29640,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
@@ -34200,9 +34193,8 @@ Object {
     },
     "flagMinimalNeutral": Object {
       "base": Object {
-        "__extends": "{{stylePresets.flagSolidNeutral.base}}",
-        "backgroundColor": "__delete",
-        "borderRadius": "__delete",
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },

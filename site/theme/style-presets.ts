@@ -218,13 +218,6 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
-  flagMinimalNeutral: {
-    base: {
-      __extends: '{{stylePresets.flagSolidNeutral.base}}',
-      backgroundColor: '__delete',
-      borderRadius: '__delete',
-    },
-  },
   flagBrand: {
     base: {
       color: '{{colors.inkInverse}}',

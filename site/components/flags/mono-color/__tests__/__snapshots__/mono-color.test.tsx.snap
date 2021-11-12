@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonoColor renders mono token with color 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  padding: 4px 8px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #535353;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-3 {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background: #D20600;
+  box-shadow: 0 2px 4px 0 rgba(10,10,10,0.08);
+  border-radius: 50%;
+}
+
+<div
+    class="emotion-0"
+    data-testid="flag"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        />
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-5"
+        >
+          inkNegative
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

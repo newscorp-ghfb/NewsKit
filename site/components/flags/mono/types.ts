@@ -1,12 +1,3 @@
-import {FlagProps, TextBlockProps} from 'newskit';
+import {FlagProps} from 'newskit';
 
-type FlagMonoProps = Omit<FlagProps, 'size'> & {
-  minimal?: false;
-};
-
-type MinimalMonoProps = {
-  minimal: true;
-  overrides?: TextBlockProps;
-};
-
-export type MonoProps = MinimalMonoProps | FlagMonoProps;
+export type MonoProps = Omit<FlagProps, 'size'>;

@@ -19,9 +19,7 @@ exports[`MonoPath with 2 level path should render as expected 1`] = `
       class="emotion-1"
     >
       <span
-        data-props="{
-  \\"minimal\\": true
-}"
+        data-props="{}"
         data-testid="Mono"
       >
         level1Value
@@ -31,9 +29,7 @@ exports[`MonoPath with 2 level path should render as expected 1`] = `
       class="emotion-2"
     >
       <span
-        data-props="{
-  \\"minimal\\": true
-}"
+        data-props="{}"
         data-testid="Mono"
       >
         .level2Value
@@ -67,9 +63,7 @@ exports[`MonoPath with 3 level path should render as expected 1`] = `
       class="emotion-1"
     >
       <span
-        data-props="{
-  \\"minimal\\": true
-}"
+        data-props="{}"
         data-testid="Mono"
       >
         level1Value
@@ -79,9 +73,7 @@ exports[`MonoPath with 3 level path should render as expected 1`] = `
       class="emotion-2"
     >
       <span
-        data-props="{
-  \\"minimal\\": true
-}"
+        data-props="{}"
         data-testid="Mono"
       >
         .level2Value
@@ -91,9 +83,7 @@ exports[`MonoPath with 3 level path should render as expected 1`] = `
       class="emotion-3"
     >
       <span
-        data-props="{
-  \\"minimal\\": true
-}"
+        data-props="{}"
         data-testid="Mono"
       >
         .level3Value
@@ -116,9 +106,7 @@ exports[`MonoPath with single level path should render as expected 1`] = `
       class="emotion-1"
     >
       <span
-        data-props="{
-  \\"minimal\\": true
-}"
+        data-props="{}"
         data-testid="Mono"
       >
         level1Value
