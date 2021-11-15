@@ -53,21 +53,14 @@ const ImageComponent: React.FC<ImageProps> = ({
   const isVisible = !isLazy || isIntersected;
 
   // This code can be removed once Safari start supporting loading=lazy
-  const getSource = useCallback(() => {
-    if ((isLazy && hasNativeLazyLoadSupport) || renderOnServer) {
-      return src;
-    }
-    // This if statements is returning  the same as above,
-    // however I give native lazy loading priority when to load the image
-    /* istanbul ignore next */
-    if (!hasNativeLazyLoadSupport && isLazy && isVisible) {
-      return src;
-    }
-    if (!hasNativeLazyLoadSupport && isLazy && !isVisible) {
-      return '';
-    }
-    return src;
-  }, [isVisible, isLazy, src, hasNativeLazyLoadSupport, renderOnServer]);
+  // This code can be removed once Safari start supporting loading=lazy
+  const getSource = useCallback(
+    () =>
+      isLazy && !renderOnServer && !hasNativeLazyLoadSupport && !isVisible
+        ? undefined
+        : src,
+    [isVisible, isLazy, src, hasNativeLazyLoadSupport, renderOnServer],
+  );
 
   const currentSrc = getSource();
 

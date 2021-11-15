@@ -9,6 +9,12 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
+const ContainerWithHeight = styled.div`
+  max-width: 600px;
+  margin: 0 auto;
+  height: 300px;
+`;
+
 export default {
   title: 'NewsKit Light/image',
   component: () => 'None',
@@ -28,17 +34,45 @@ export const StoryFixedHeightAndWidthInPx = () => (
 StoryFixedHeightAndWidthInPx.storyName = 'fixed height and width in px';
 
 export const StoryFixedHeightAndWidthIn = () => (
-  <Container>
-    <StorybookHeading>100% by 60%</StorybookHeading>
+  <ContainerWithHeight>
+    <StorybookHeading>100% by 30%</StorybookHeading>
     <Image
       src="/placeholder-3x2.png"
       alt="Example Image"
-      overrides={{width: '100%', height: '66%'}}
+      overrides={{width: '100%', height: '30%'}}
+      placeholderIcon
+    />
+  </ContainerWithHeight>
+);
+StoryFixedHeightAndWidthIn.storyName = 'fixed height and width in %';
+
+export const StoryFixedWidthAndAspectRatio = () => (
+  <Container>
+    <StorybookHeading>Fixed width and aspect ratio (h=266.66)</StorybookHeading>
+    <Image
+      src="/placeholder-3x2.png"
+      alt="Example Image"
+      overrides={{width: '400px'}}
+      loadingAspectRatio="3:2"
       placeholderIcon
     />
   </Container>
 );
-StoryFixedHeightAndWidthIn.storyName = 'fixed height and width in %';
+StoryFixedWidthAndAspectRatio.storyName = 'fixed-width-and-aspect-ratio';
+
+export const StoryFixedHeighthAndAspectRatio = () => (
+  <Container>
+    <StorybookHeading>Fixed height and aspect-ratio (w=450)</StorybookHeading>
+    <Image
+      src="/placeholder-3x2.png"
+      alt="Example Image"
+      overrides={{height: '300px'}}
+      loadingAspectRatio="3:2"
+      placeholderIcon
+    />
+  </Container>
+);
+StoryFixedHeighthAndAspectRatio.storyName = 'fixed-height-and-aspect-ratio';
 
 export const StorySharpBorderRadius = () => (
   <Container>

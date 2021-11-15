@@ -3139,9 +3139,8 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56%;
-  height: 0;
   width: 200px;
+  height: 112px;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
@@ -3329,9 +3328,8 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56%;
-  height: 0;
   width: 200px;
+  height: 112px;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
@@ -3519,9 +3517,8 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56%;
-  height: 0;
   width: 200px;
+  height: 112px;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
@@ -3712,9 +3709,8 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56%;
-  height: 0;
   width: 200px;
+  height: 112px;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
@@ -3905,9 +3901,8 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56%;
-  height: 0;
   width: 200px;
+  height: 112px;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
@@ -4098,9 +4093,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56%;
-  height: 0;
   width: 200px;
+  height: 112px;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
@@ -4291,9 +4285,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56%;
-  height: 0;
   width: 200px;
+  height: 112px;
   border-radius: 8px;
   background-color: #F4F4F4;
 }

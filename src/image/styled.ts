@@ -8,11 +8,15 @@ export const StyledPicture = styled.picture<StyledPictureProps>`
   display: block;
 
   ${({isLoading, ...props}) =>
-    getResponsiveAspectRatioFromProps(props, ({paddingTop, width}) =>
-      isLoading
-        ? {paddingTop, height: 0, width}
-        : {height: 'auto', paddingTop: 0, width},
-    )}
+    getResponsiveAspectRatioFromProps(props, ({paddingTop, width, height}) => {
+      if (!isLoading) {
+        return {paddingTop: 0, height: 'auto', width};
+      }
+
+      return parseInt(height, 10)
+        ? {width, height}
+        : {paddingTop, height: 0, width};
+    })}
   ${({isLoading, ...props}) => getStylePreset('image', '', {isLoading})(props)}
 `;
 

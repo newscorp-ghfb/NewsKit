@@ -62,12 +62,14 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
       image. Generally supply the width px value if known, if not supply
       horizontal aspect ratio. Both width and aspectRatio should be supplied in
       a consistent manner.
+      It is not recommended to have both height and width values expressed as percentages.
     </Prop>
     <Prop name="height" type="MQ<string>" default="auto">
       Used in combination with `width` to calculate the aspect ratio for the
       image. Generally supply the height px value if known, if not supply
       vertical aspect ratio. Both width and aspectRatio should be supplied in a
       consistent manner.
+      It is not recommended both height and width values to be expressed as percentages.
     </Prop>
     <Prop name="maxWidth" type="MQ<string>">
       This property sets the maximum width of the image. It prevents the used
