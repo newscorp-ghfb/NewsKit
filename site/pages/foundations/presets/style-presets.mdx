@@ -55,31 +55,48 @@ In the future some components will take multiple style presets, that apply acros
 
 ## StylePreset States
 
-| Name     | Type               | Description                                                                                                                                          |
-| -------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| base     | baseline css       | this is a group of style preset preset css styles                                                                                                    |
-| hover    | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:hover                                                                                          |
-| focus    | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:focus                                                                                          |
-| active   | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:active                                                                                         |
-| visited  | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:visited                                                                                        |
-| disabled | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled                                                                                       |
-| selected | component state    | this is a set of css styles to override the base when the component is selected, for example, in a tab menu the "selected" would be the selected tab |
-| invalid  | component state    | this is a css styles to override the base when component is valid, for example, any input or form component whose contents validate unsuccessfully   |
-| valid    | component state    | this is a css styles to override the base when component is invalid, for example, any input or form component whose contents validate successfully   |
+| Name     | Type               | Description                                                                                                                                              |
+| -------- | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| base     | baseline css       | this is a group of style preset preset css styles                                                                                                        |
+| hover    | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:hover                                                                                              |
+| focus    | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:focus                                                                                              |
+| active   | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:active                                                                                             |
+| visited  | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:visited                                                                                            |
+| disabled | css Pseudo-classes | see https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled                                                                                           |
+| selected | component state    | this is a set of css styles to override the base when the component is selected, for example, in a tab menu the "selected" would be the selected tab     |
+| checked  | component state    | this is a set of css styles to override the base when the component is checked, for example, in a Chekbox component "checked" would be the checked state |
+| invalid  | component state    | this is a css styles to override the base when component is valid, for example, any input or form component whose contents validate unsuccessfully       |
+| valid    | component state    | this is a css styles to override the base when component is invalid, for example, any input or form component whose contents validate successfully       |
 
-The following component states will only be applied if `selected`, `valid`, `invalid` and `visited` states are in the stylePresets as well. For example, `'selected:hover'` can be applied if there is a
+The following component states will only be applied if `selected`, `checked`, `valid`, `invalid` and `visited` states are in the stylePresets as well. For example, `'selected:hover'` can be applied if there is a
 `selected` state in the stylePreset.
 
-| Name             | Type            | Description                                                                                                         |
-| ---------------- | --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 'selected:hover' | component state | this is a css styles to override the hover state when component is in the selected state as well as the hover state |
-| 'selected:focus' | component state | this is a css styles to override the focus state when component is in the selected state as well as the focus state |
-| 'valid:hover'    | component state | this is a css styles to override the hover state when component is in the valid state as well as the hover state    |
-| 'invalid:hover'  | component state | this is a css styles to override the hover state when component is in the invalid state as well as the hover state  |
-| 'valid:focus'    | component state | this is a css styles to override the focus state when component is in the valid state as well as the focus state    |
-| 'invalid:focus'  | component state | this is a css styles to override the focus state when component is in the invalid state as well as the focus state  |
-| 'visited:hover'  | component state | this is a css styles to override the hover state when component is in the visited state as well as the hover state  |
-| 'visited:focus'  | component state | this is a css styles to override the focus state when component is in the visited state as well as the focus state  |
+| Name                     | Type            | Description                                                                                                                     |
+| ------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 'selected:hover'         | component state | this is a css styles to override the hover state when component is in the selected state as well as the hover state             |
+| 'selected:focus'         | component state | this is a css styles to override the focus state when component is in the selected state as well as the focus state             |
+| 'selected:disabled'      | component state | this is a css styles to override the disabled state when component is in the selected state as well as the disabled state       |
+| 'selected:valid'         | component state | this is a css styles to override the valid state when component is in the selected state as well as the valid state             |
+| 'selected:valid:focus'   | component state | this is a css styles to override the focus state when component is in the selected state as well as the valid and focus state   |
+| 'selected:valid:hover'   | component state | this is a css styles to override the hover state when component is in the selected state as well as the valid and focus state   |
+| 'selected:invalid'       | component state | this is a css styles to override the invalid state when component is in the selected state as well as the invalid state         |
+| 'selected:invalid:focus' | component state | this is a css styles to override the focus state when component is in the selected state as well as the focus and invalid state |
+| 'selected:invalid:hover' | component state | this is a css styles to override the hover state when component is in the selected state as well as the hover and invalid state |
+| 'checked:hover'          | component state | this is a css styles to override the hover state when component is in the checked state as well as the hover state              |
+| 'checked:focus'          | component state | this is a css styles to override the focus state when component is in the checked state as well as the focus state              |
+| 'checked:disabled'       | component state | this is a css styles to override the disabled state when component is in the checked state as well as the disabled state        |
+| 'checked:valid'          | component state | this is a css styles to override the valid state when component is in the checked state as well as the valid state              |
+| 'checked:valid:focus'    | component state | this is a css styles to override the focus state when component is in the checked state as well as the valid and focus state    |
+| 'checked:valid:hover'    | component state | this is a css styles to override the hover state when component is in the checked state as well as the valid and hover state    |
+| 'checked:invalid'        | component state | this is a css styles to override the invalid state when component is in the checked state as well as the invalid state          |
+| 'checked:invalid:focus'  | component state | this is a css styles to override the focus state when component is in the checked state as well as the focus and invalid state  |
+| 'checked:invalid:hover'  | component state | this is a css styles to override the hover state when component is in the checked state as well as the hover and invalid state  |
+| 'valid:hover'            | component state | this is a css styles to override the hover state when component is in the valid state as well as the hover state                |
+| 'invalid:hover'          | component state | this is a css styles to override the hover state when component is in the invalid state as well as the hover state              |
+| 'valid:focus'            | component state | this is a css styles to override the focus state when component is in the valid state as well as the focus state                |
+| 'invalid:focus'          | component state | this is a css styles to override the focus state when component is in the invalid state as well as the focus state              |
+| 'visited:hover'          | component state | this is a css styles to override the hover state when component is in the visited state as well as the hover state              |
+| 'visited:focus'          | component state | this is a css styles to override the focus state when component is in the visited state as well as the focus state              |
 
 ## StylePreset Properties
 

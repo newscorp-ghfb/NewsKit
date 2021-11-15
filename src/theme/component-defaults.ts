@@ -1015,4 +1015,39 @@ export const componentDefaults = {
       size: 'small',
     },
   },
+  checkbox: {
+    small: {
+      input: {
+        size: 'sizing050',
+        stylePreset: 'checkboxInput',
+        spaceInline: 'space030',
+      },
+      ripple: {
+        size: 'sizing070',
+        stylePreset: 'checkboxRipple',
+      },
+    },
+    medium: {
+      input: {
+        size: 'sizing060',
+        stylePreset: 'checkboxInput',
+        spaceInline: 'space030',
+      },
+      ripple: {
+        size: 'sizing080',
+        stylePreset: 'checkboxRipple',
+      },
+    },
+    large: {
+      input: {
+        size: 'sizing070',
+        stylePreset: 'checkboxInput',
+        spaceInline: 'space040',
+      },
+      ripple: {
+        size: 'sizing090',
+        stylePreset: 'checkboxRipple',
+      },
+    },
+  },
 };

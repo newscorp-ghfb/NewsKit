@@ -377,6 +377,7 @@ describe('getStylePresetFromTheme', () => {
   [
     ['disabled', 'isDisabled'],
     ['selected', 'isSelected'],
+    ['checked', 'isChecked'],
     ['loading', 'isLoading'],
     ['focus', 'isFocused'],
     ['valid', 'isValid'],
@@ -408,6 +409,8 @@ describe('getStylePresetFromTheme', () => {
   [
     ['selected', 'selected:hover', 'isSelected'],
     ['selected', 'selected:focus', 'isSelected'],
+    ['checked', 'checked:hover', 'isChecked'],
+    ['checked', 'checked:focus', 'isChecked'],
     ['valid', 'valid:hover', 'isValid'],
     ['valid', 'valid:focus', 'isValid'],
     ['invalid', 'invalid:hover', 'isInvalid'],
@@ -470,6 +473,37 @@ describe('getStylePresetFromTheme', () => {
       expect(fragment).toMatchSnapshot();
     });
   });
+  [
+    ['checked:disabled', 'isDisabled'],
+    ['checked:focus', 'isFocused'],
+    ['checked:valid', 'isValid'],
+    ['checked:invalid', 'isInvalid'],
+    ['checked:valid:hover', 'isValid'],
+    ['checked:invalid:hover', 'isInvalid'],
+  ].forEach(([pseudoState, prop]) => {
+    test(`renders with ${pseudoState} pseudo state when both isChecked and ${prop} are passed`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          isChecked: true,
+          [prop]: true,
+        },
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: {
+                [pseudoState]: {
+                  backgroundColor: '#FF0000',
+                },
+              },
+            },
+          },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+  });
 
   [
     ['selected:valid:focus', 'isValid'],
@@ -480,6 +514,35 @@ describe('getStylePresetFromTheme', () => {
         TestSurfaceCheckbox,
         {
           isSelected: true,
+          isFocused: true,
+          [prop]: true,
+        },
+        createTheme({
+          name: 'test-style-preset',
+          overrides: {
+            stylePresets: {
+              checkboxInput: {
+                [pseudoState]: {
+                  backgroundColor: '#FF0000',
+                },
+              },
+            },
+          },
+        }),
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  [
+    ['checked:valid:focus', 'isValid'],
+    ['checked:invalid:focus', 'isInvalid'],
+  ].forEach(([pseudoState, prop]) => {
+    test(`renders with ${pseudoState} state when isChecked, isFocused and ${prop} are passed`, () => {
+      const fragment = renderToFragmentWithTheme(
+        TestSurfaceCheckbox,
+        {
+          isChecked: true,
           isFocused: true,
           [prop]: true,
         },

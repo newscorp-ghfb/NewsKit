@@ -15,6 +15,7 @@ export interface GetStylePresetFromThemeOptions {
   nestedCssSelector?: string;
   isLoading?: boolean;
   isSelected?: boolean;
+  isChecked?: boolean;
   isDisabled?: boolean;
   isInvalid?: boolean;
   isValid?: boolean;
@@ -75,13 +76,14 @@ const getPresetStates = (
     omitStates = [],
     filterStates = [],
     isSelected = false,
+    isChecked = false,
     isLoading = false,
     isDisabled = false,
     isInvalid = false,
     isValid = false,
     isFocused = false,
   } = options || {};
-  const {selected, loading, invalid, valid, ...presetStates} =
+  const {selected, checked, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
       ? filterObject(stylePreset, filterStates)
       : rejectObject(stylePreset, omitStates);
@@ -90,6 +92,7 @@ const getPresetStates = (
     (isLoading && loading) ||
     (isFocused && presetStates.focus) ||
     (isSelected && selected) ||
+    (isChecked && checked) ||
     (isInvalid && invalid) ||
     (isValid && valid) ||
     undefined;
@@ -97,6 +100,9 @@ const getPresetStates = (
   const forcedStates = [];
   if (isSelected) {
     forcedStates.push('selected');
+  }
+  if (isChecked) {
+    forcedStates.push('checked');
   }
   if (isDisabled) {
     forcedStates.push('disabled');
