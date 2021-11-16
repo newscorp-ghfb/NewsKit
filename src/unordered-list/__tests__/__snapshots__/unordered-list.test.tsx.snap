@@ -60,11 +60,16 @@ exports[`UnorderedList renders different types of children 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
+  color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.emotion-3 svg {
+  fill: #2E2E2E;
 }
 
 .emotion-3::before {
@@ -320,6 +325,7 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  color: #2E2E2E;
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
@@ -328,16 +334,23 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
+  color: #2E2E2E;
+  fill: #2E2E2E;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
+  color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.emotion-6 svg {
+  fill: #2E2E2E;
 }
 
 .emotion-6::before {
@@ -511,6 +524,7 @@ exports[`UnorderedList renders with custom list item marker with different size 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  color: #2E2E2E;
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
@@ -519,16 +533,23 @@ exports[`UnorderedList renders with custom list item marker with different size 
 .emotion-4.emotion-4 {
   width: 16px;
   height: 16px;
+  color: #2E2E2E;
+  fill: #2E2E2E;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
+  color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.emotion-6 svg {
+  fill: #2E2E2E;
 }
 
 .emotion-6::before {
@@ -684,11 +705,16 @@ exports[`UnorderedList renders with defaults 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
+  color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.emotion-3 svg {
+  fill: #2E2E2E;
 }
 
 .emotion-3::before {
@@ -781,11 +807,16 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
 .emotion-3 {
   margin: 0;
   padding: 1px 0;
+  color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.emotion-3 svg {
+  fill: #2E2E2E;
 }
 
 .emotion-3::before {
@@ -896,6 +927,7 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  color: #2E2E2E;
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
@@ -904,16 +936,23 @@ exports[`UnorderedList renders with marker at the end when list takes more than 
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
+  color: #2E2E2E;
+  fill: #2E2E2E;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
+  color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.emotion-6 svg {
+  fill: #2E2E2E;
 }
 
 .emotion-6::before {
@@ -1087,6 +1126,7 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  color: #2E2E2E;
   fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
@@ -1095,16 +1135,23 @@ exports[`UnorderedList renders with marker at the start when list takes more tha
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
+  color: #2E2E2E;
+  fill: #2E2E2E;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
+  color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.emotion-6 svg {
+  fill: #2E2E2E;
 }
 
 .emotion-6::before {

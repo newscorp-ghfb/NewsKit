@@ -9,17 +9,20 @@ import {
   getShadowFromTheme,
   getSpacingFromTheme,
   getStylePresetFromTheme,
+  getMediaQueryFromTheme,
+  getColorCssFromTheme,
+  getBorderCssFromTheme,
 } from 'newskit';
 import {ThemeColor} from './types';
 import {getTextColor, getBorderRadius} from './utils';
 
 export const StyledBadgeContainer = styled.span`
-  height: ${getSizingFromTheme('sizing060')};
+  height: ${getSizingFromTheme('sizing050')};
 `;
 
 export const StyledAccessibilityBadge = styled(Flag)`
   width: ${getSizingFromTheme('sizing070')};
-  height: ${getSizingFromTheme('sizing060')};
+  height: ${getSizingFromTheme('sizing050')};
   ${getStylePresetFromTheme('swatchBadge')};
 `;
 
@@ -27,14 +30,13 @@ export const StyledSwatchRow = styled.span<
   ThemeColor & {first: boolean; last: boolean}
 >`
   display: inline-block;
-  ${getTypographyPresetFromTheme('utilitySubheading030')};
+  ${getTypographyPresetFromTheme('editorialParagraph020')};
   padding: ${getSpacingFromTheme('spaceInsetSquish030')};
   width: 100%;
   border-radius: ${getBorderRadius as any};
   background-color: ${({theme, name}) => theme.colors[name]};
-  border: ${({brightness, value}) =>
-    brightness > 0.99 || value === 'transparent' ? `solid 1px black` : null};
   color: ${getTextColor};
+  text-transform: capitalize;
 `;
 
 export const StyledSwatchCard = styled.div`
@@ -131,4 +133,13 @@ export const TextBoxSwatch = styled.span<{
 
 export const ColorPalettesWrapper = styled.div`
   margin-bottom: 30px;
+`;
+
+export const ColorSetWrapper = styled.div`
+  ${getMediaQueryFromTheme('lg')} {
+    border: 1px solid;
+    ${getColorCssFromTheme('borderColor', 'interface020')}
+  }
+  ${getBorderCssFromTheme('border-radius', 'borderRadiusRounded020')};
+  padding-top: 24px;
 `;

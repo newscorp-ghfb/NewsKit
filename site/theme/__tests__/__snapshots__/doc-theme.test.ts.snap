@@ -3657,10 +3657,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {
@@ -8251,10 +8248,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {
@@ -12845,10 +12839,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {
@@ -17439,10 +17430,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {
@@ -22033,10 +22021,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {
@@ -26627,10 +26612,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {
@@ -31221,10 +31203,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {
@@ -35815,10 +35794,7 @@ Object {
     },
     "swatchBadge": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.red070}}",
+        "iconColor": "{{colors.interface060}}",
       },
     },
     "swatchBadgeInTable": Object {

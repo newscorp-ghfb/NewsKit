@@ -1,13 +1,16 @@
 import {
-  getShadowCssFromTheme,
   getBorderCssFromTheme,
   getSizingCssFromTheme,
+  getColorCssFromTheme,
   styled,
-  useTheme,
+  compileTheme,
+  newskitLightTheme,
+  newskitDarkTheme,
   getSSRId,
 } from 'newskit';
 import React from 'react';
 import {Mono, MonoProps} from '../mono';
+import {useThemeMode} from '../../../helpers/use-theme-mode';
 
 export interface MonoColorProps extends MonoProps {
   color: string;
@@ -15,15 +18,23 @@ export interface MonoColorProps extends MonoProps {
 
 const StyledSwatchCardDot = styled.div<{backgroundColor: string}>`
   display: inline-block;
-  ${getSizingCssFromTheme('height', 'sizing020')};
-  ${getSizingCssFromTheme('width', 'sizing020')};
+  ${getSizingCssFromTheme('height', 'sizing030')};
+  ${getSizingCssFromTheme('width', 'sizing030')};
   background: ${({backgroundColor}) => backgroundColor};
-  ${getShadowCssFromTheme('boxShadow', 'shadow020')};
   ${getBorderCssFromTheme('borderRadius', 'borderRadiusCircle')};
+  border: 1px solid;
+  ${getColorCssFromTheme('borderColor', 'interface040')};
 `;
 
+const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
+const compiledNewskitDarkTheme = compileTheme(newskitDarkTheme);
+
 export const MonoColor: React.FC<MonoColorProps> = ({color}) => {
-  const theme = useTheme();
+  const themeMode = useThemeMode();
+  const theme =
+    themeMode === 'light'
+      ? compiledNewskitLightTheme
+      : compiledNewskitDarkTheme;
   return (
     <Mono key={getSSRId()}>
       <StyledSwatchCardDot backgroundColor={theme.colors[color]} />

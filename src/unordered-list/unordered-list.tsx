@@ -44,6 +44,18 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
     'content',
     'typographyPreset',
   );
+  const contentStylePresetToken = getToken(
+    {theme, overrides},
+    'unorderedList.content',
+    'content',
+    'stylePreset',
+  );
+  const markerStylePresetToken = getToken(
+    {theme, overrides},
+    'unorderedList.marker',
+    'marker',
+    'stylePreset',
+  );
 
   return (
     <StyledUl role="list">
@@ -59,10 +71,18 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
                   aria-hidden="true"
                   markerAlign={markerAlign}
                 >
-                  <ListItemMarker overrides={{size: markerSizeToken}} />
+                  <ListItemMarker
+                    overrides={{
+                      size: markerSizeToken,
+                      stylePreset: markerStylePresetToken,
+                    }}
+                  />
                 </StyledMarkerBlock>
               )}
-              <TextBlock typographyPreset={contentTypographyPresetToken}>
+              <TextBlock
+                typographyPreset={contentTypographyPresetToken}
+                stylePreset={contentStylePresetToken}
+              >
                 {node}
               </TextBlock>
             </StyledBlock>

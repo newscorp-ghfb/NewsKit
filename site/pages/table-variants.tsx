@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import {Table} from '../components/table';
 import {Mono} from '../components/flags';
 import {getTokenType} from '../utils/get-token-type';
+import {INK_DESCRIPTION} from '../utils/colors-token-description';
 
 const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
   shadow010: (
@@ -44,6 +45,16 @@ const shadowRows = getTokenType(newskitLightTheme.shadows, 'shadow').map(
     shadow: tokenValue,
     token: tokenName,
     exampleUsage: TOKENS_DESCRIPTION[tokenName] || '-',
+  }),
+);
+
+const inkColorRows = getTokenType(newskitLightTheme.colors, 'ink').map(
+  ({tokenName, tokenValue}) => ({
+    colour: tokenName,
+    colourToken: tokenName,
+    tokenValue: tokenValue.split('.')[1].replace('}}', ''),
+    // @ts-ignore
+    commonUses: INK_DESCRIPTION[tokenName] || '-',
   }),
 );
 
@@ -362,50 +373,7 @@ const Page: React.FC<{
       <Cell xs="full-width" md={12}>
         <Table
           columns={['Colour', 'Colour token', 'Token value', 'Common uses']}
-          rows={[
-            {
-              colour: 'inkBase',
-              colourToken: 'inkBase',
-              tokenValue: 'neutral080',
-              commonUses: 'Body copy',
-            },
-            {
-              colour: 'inkContrast',
-              colourToken: 'inkContrast',
-              tokenValue: 'neutral100',
-              commonUses: 'Headline',
-            },
-            {
-              colour: 'inkSubtle',
-              colourToken: 'inkSubtle',
-              tokenValue: 'neutral070',
-              commonUses: 'Subheadlines, labels, secondary copy',
-            },
-            {
-              colour: 'inkNonEssential',
-              colourToken: 'inkNonEssential',
-              tokenValue: 'neutral040',
-              commonUses: 'Subheadlines, labels, secondary copy',
-            },
-            {
-              colour: 'interface040',
-              colourToken: 'interface040',
-              tokenValue: 'neutral030',
-              commonUses: 'Borders & keylines',
-            },
-            {
-              colour: 'interactivePrimary040',
-              colourToken: 'interactivePrimary040',
-              tokenValue: 'blue060',
-              commonUses: 'Hover state',
-            },
-            {
-              colour: 'interactivePrimary030',
-              colourToken: 'interactivePrimary030',
-              tokenValue: 'blue040',
-              commonUses: 'Base/Resting state for interactive elements',
-            },
-          ]}
+          rows={inkColorRows}
         />
       </Cell>
       <Cell xs={12}>

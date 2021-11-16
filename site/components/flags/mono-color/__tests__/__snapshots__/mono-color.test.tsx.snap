@@ -73,11 +73,12 @@ exports[`MonoColor renders mono token with color 1`] = `
 
 .emotion-3 {
   display: inline-block;
-  height: 8px;
-  width: 8px;
+  height: 12px;
+  width: 12px;
   background: #D20600;
-  box-shadow: 0 2px 4px 0 rgba(10,10,10,0.08);
   border-radius: 50%;
+  border: 1px solid;
+  border-color: #DEDEDE;
 }
 
 <div

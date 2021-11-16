@@ -66,10 +66,7 @@ export const stylePresets = {
   },
   swatchBadge: {
     base: {
-      backgroundColor: '{{colors.interface010}}',
-      color: '{{colors.inkSubtle}}',
-      borderRadius: '{{borders.borderRadiusRounded010}}',
-      iconColor: '{{colors.red070}}',
+      iconColor: '{{colors.interface060}}',
     },
   },
   swatchBadgeInTable: {

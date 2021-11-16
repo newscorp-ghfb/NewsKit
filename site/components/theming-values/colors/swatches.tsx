@@ -30,30 +30,28 @@ export const SwatchRow: SwatchComponent = ({
   index,
   length,
 }: SwatchRowProps) => (
-  <Cell xs={12}>
-    <StyledSwatchRow {...color} first={index === 0} last={index === length - 1}>
-      <Stack flow="horizontal-center" stackDistribution="space-between">
-        <span>{color.name}</span>
-        <span>
-          <Stack flow="horizontal-center" spaceInline="space050">
-            {color.parentColor && <span>({color.parentColor.name})</span>}
-            <span>{colorTokenToUpperCase(color.value)}</span>
-            <StyledBadgeContainer>
-              <StyledAccessibilityBadge
-                overrides={{
-                  stylePreset: 'swatchBadge',
-                  width: 'sizing070',
-                  height: 'sizing060',
-                }}
-              >
-                {color.contrastRating}
-              </StyledAccessibilityBadge>
-            </StyledBadgeContainer>
-          </Stack>
-        </span>
-      </Stack>
-    </StyledSwatchRow>
-  </Cell>
+  <StyledSwatchRow {...color} first={index === 0} last={index === length - 1}>
+    <Stack flow="horizontal-center" stackDistribution="space-between">
+      <span>{color.name}</span>
+      <span>
+        <Stack flow="horizontal-center" spaceInline="space050">
+          {color.parentColor && <span>({color.parentColor.name})</span>}
+          <span>{colorTokenToUpperCase(color.value)}</span>
+          <StyledBadgeContainer>
+            <StyledAccessibilityBadge
+              overrides={{
+                stylePreset: 'swatchBadge',
+                width: 'sizing070',
+                height: 'sizing050',
+              }}
+            >
+              {color.contrastRating}
+            </StyledAccessibilityBadge>
+          </StyledBadgeContainer>
+        </Stack>
+      </span>
+    </Stack>
+  </StyledSwatchRow>
 );
 
 export const SwatchCard: SwatchComponent = ({

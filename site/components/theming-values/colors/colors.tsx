@@ -1,8 +1,7 @@
 import * as React from 'react';
-import {Grid, Cell, useTheme, Theme, GridProps, P, Block} from 'newskit';
+import {Grid, Cell, useTheme, Theme, GridProps} from 'newskit';
 import {palettes as newskitLightPaletteColors} from 'newskit/theme/foundations/colors';
-import {H3} from '../../markdown-elements';
-import {ColorPalettesWrapper} from './styled';
+import {ColorPalettesWrapper, ColorSetWrapper} from './styled';
 import {
   mapColorObjects,
   createPaletteColorMap,
@@ -20,29 +19,10 @@ const ColorSet: React.FC<{
   isOverlay?: boolean;
 }> = ({colors: unsortedColors, Swatch, gridProps, isOverlay}) => {
   const colors = unsortedColors;
-  const groupTitle =
-    colors[0].group[0].toUpperCase() + colors[0].group.substring(1);
-
-  const description = {
-    ink:
-      'Ink is a colour applied to typography and iconography. As a default within the NewsKit design system, there are several variations of ink that are available, each associated with a specific purpose within the design system.',
-    interface:
-      'Interface background colours applied to fills and borders on background UI elements including screen background and card background.',
-    interactive:
-      'Interactive colours are used to indicate and display interactions of certain components such as buttons, links and switches. Each set of interactive colours are used in combination to apply the differing states needed. The base (resting) state uses the 030, the hover 040 and the active 050. The 010 and 020 are used for loading/progress states.',
-  };
 
   return (
     <div>
-      <Block spaceStack="space050">
-        <H3>{groupTitle}</H3>
-      </Block>
-      <Block spaceStack="space050">
-        <P>
-          {description[groupTitle.toLowerCase() as keyof typeof description]}
-        </P>
-      </Block>
-      <Grid {...gridProps}>
+      <Grid {...gridProps} xsColumnGutter="space080">
         {colors.map((color, index, {length}) => (
           <Swatch
             color={color}
@@ -75,14 +55,16 @@ export const ColorPalettes: React.FC = () => {
 
   return (
     <ColorPalettesWrapper>
-      <Grid xsMargin="sizing000">
+      <Grid xsMargin="space000">
         {palettes.map(palette => (
-          <Cell xs={12} lg={6} xl={4}>
-            <ColorSet
-              gridProps={{xsMargin: 'sizing000', xsRowGutter: 'sizing000'}}
-              Swatch={SwatchRow}
-              colors={palette}
-            />
+          <Cell xs={12} lg={12} xl={6}>
+            <ColorSetWrapper>
+              <ColorSet
+                gridProps={{xsMargin: 'sizing000', xsRowGutter: 'sizing000'}}
+                Swatch={SwatchRow}
+                colors={palette}
+              />
+            </ColorSetWrapper>
           </Cell>
         ))}
       </Grid>

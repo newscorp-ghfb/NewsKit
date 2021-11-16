@@ -18,6 +18,7 @@ import SectionNavigation from './section-navigation';
 import markdownElements from './markdown-elements';
 import {Playground} from './playground';
 import {DebugDropdown} from './debug-dropdown';
+import {ThemeModeContext} from '../helpers/use-theme-mode';
 
 const LayoutWrapper = styled.div`
   display: flex;
@@ -176,72 +177,74 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
     return (
       <LayoutWrapper>
-        {debugDropdownVisible && <DebugDropdown />}
-        <Sidebar
-          sidebarOpen={sidebarOpen}
-          handleSidebarClick={this.toggleSidebar}
-          hideSidebar={hideSidebar}
-        />
-        <SiteHeader
-          handleSidebarClick={this.toggleSidebar}
-          toggleTheme={toggleTheme}
-          themeMode={themeMode}
-          ref={this.headerRef}
-          path={path}
-          data-test-id="siteHeader"
-        />
-        <Container hideSidebar={hideSidebar}>
-          {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}
-          <Playground componentName={false} />
+        <ThemeModeContext.Provider value={themeMode}>
+          {debugDropdownVisible && <DebugDropdown />}
+          <Sidebar
+            sidebarOpen={sidebarOpen}
+            handleSidebarClick={this.toggleSidebar}
+            hideSidebar={hideSidebar}
+          />
+          <SiteHeader
+            handleSidebarClick={this.toggleSidebar}
+            toggleTheme={toggleTheme}
+            themeMode={themeMode}
+            ref={this.headerRef}
+            path={path}
+            data-test-id="siteHeader"
+          />
+          <Container hideSidebar={hideSidebar}>
+            {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}
+            <Playground componentName={false} />
 
-          <BodyWrapper>
-            {path.endsWith('-new') || newPage ? (
-              <ThemeProvider
-                theme={themeMode === 'light' ? docsThemeLight : docsThemeDark}
-              >
-                {typeof children === 'function'
-                  ? children({themeMode})
-                  : children}
-              </ThemeProvider>
+            <BodyWrapper>
+              {path.endsWith('-new') || newPage ? (
+                <ThemeProvider
+                  theme={themeMode === 'light' ? docsThemeLight : docsThemeDark}
+                >
+                  {typeof children === 'function'
+                    ? children({themeMode})
+                    : children}
+                </ThemeProvider>
+              ) : (
+                <Grid>
+                  <Cell xs={12} lg={10} lgOffset={1}>
+                    <WrapperWithPadding>
+                      {this.renderNavigation()}
+                      <MDXProvider
+                        components={this.updatePropsForMarkdownElements()}
+                      >
+                        {children}
+                      </MDXProvider>
+                    </WrapperWithPadding>
+                  </Cell>
+                </Grid>
+              )}
+            </BodyWrapper>
+            {path === '/index' ? (
+              <SiteFooter
+                cellProps={{
+                  xs: 12,
+                  md: 10,
+                  lg: 8,
+                  lgOffset: 0,
+                  mdOffset: 0,
+                  xlOffset: 1,
+                }}
+                footerCopyCellProps={{
+                  xs: 10,
+                  xsOffset: 1,
+                  md: 10,
+                  mdOffset: 2,
+                  lg: 10,
+                  lgOffset: 2,
+                  xlOffset: 1,
+                }}
+              />
             ) : (
-              <Grid>
-                <Cell xs={12} lg={10} lgOffset={1}>
-                  <WrapperWithPadding>
-                    {this.renderNavigation()}
-                    <MDXProvider
-                      components={this.updatePropsForMarkdownElements()}
-                    >
-                      {children}
-                    </MDXProvider>
-                  </WrapperWithPadding>
-                </Cell>
-              </Grid>
+              <SiteFooter />
             )}
-          </BodyWrapper>
-          {path === '/index' ? (
-            <SiteFooter
-              cellProps={{
-                xs: 12,
-                md: 10,
-                lg: 8,
-                lgOffset: 0,
-                mdOffset: 0,
-                xlOffset: 1,
-              }}
-              footerCopyCellProps={{
-                xs: 10,
-                xsOffset: 1,
-                md: 10,
-                mdOffset: 2,
-                lg: 10,
-                lgOffset: 2,
-                xlOffset: 1,
-              }}
-            />
-          ) : (
-            <SiteFooter />
-          )}
-        </Container>
+          </Container>
+        </ThemeModeContext.Provider>
       </LayoutWrapper>
     );
   }
