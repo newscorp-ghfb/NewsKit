@@ -7,6 +7,9 @@ export interface ComponentAPIProps {
 export interface SingleComponentAPIProps {
   title?: string;
   summary?: string;
+  propsSummary?: string;
+  argsSummary?: string;
+  overridesSummary?: string;
   propsRows?: PropsRowsProps[];
   argsRows?: ArgumentsRowsProps[];
   overridesRows?: OverridesRowsProps[];

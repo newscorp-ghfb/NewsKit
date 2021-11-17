@@ -281,6 +281,13 @@
             "illustration": "components/grid-cell-illustration"
           },
           {
+            "title": "Modal",
+            "page": true,
+            "id": "/components/modal",
+            "description": "A Modal is a layout panel that presents critical information or requests users input without navigating away from the current page.",
+            "illustration": "components/modal-illustration"
+          },
+          {
             "title": "Stack",
             "page": true,
             "id": "/components/stack",

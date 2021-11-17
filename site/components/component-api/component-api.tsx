@@ -9,15 +9,30 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
   <ComponentPageCell>
     {components.map(
       (
-        {title, summary, propsRows, argsRows, overridesRows, infoNotice},
+        {
+          title,
+          summary,
+          propsSummary,
+          argsSummary,
+          overridesSummary,
+          propsRows,
+          argsRows,
+          overridesRows,
+          infoNotice,
+        },
         i,
         arr,
       ) => {
-        const tabs: {label: string; content: React.ReactNode}[] = [];
+        const tabs: {
+          label: string;
+          tabSummary?: string;
+          content: React.ReactNode;
+        }[] = [];
 
         if (propsRows) {
           tabs.push({
             label: 'Props',
+            tabSummary: propsSummary,
             content: (
               <>
                 <Table
@@ -43,6 +58,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
         if (argsRows) {
           tabs.push({
             label: 'Arguments',
+            tabSummary: argsSummary,
             content: (
               <Table
                 columns={[
@@ -61,6 +77,7 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
         if (overridesRows) {
           tabs.push({
             label: 'Overrides',
+            tabSummary: overridesSummary,
             content: (
               <>
                 <Table
@@ -91,8 +108,9 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
             )}
             {tabs.length > 1 && (
               <Tabs size={TabSize.Medium}>
-                {tabs.map(({label, content}) => (
+                {tabs.map(({label, tabSummary, content}) => (
                   <Tab label={label} overrides={tabOverrides}>
+                    {tabSummary && <ContentText>{tabSummary}</ContentText>}
                     {content}
                   </Tab>
                 ))}
