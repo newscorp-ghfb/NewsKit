@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import {
   StorybookHeading,
@@ -23,12 +21,18 @@ const myCustomTheme = compileTheme(
             borderColor: 'red',
             borderStyle: 'solid',
             borderWidth: '2px',
-            borderRadius: '10px',
+            borderRadius: '50%',
             backgroundColor: 'orange',
             iconColor: 'red',
           },
           hover: {
             backgroundColor: 'blue',
+          },
+        },
+        customCheckboxFeedback: {
+          base: {
+            backgroundColor: 'rgba(0,0,0,0.2)',
+            borderRadius: '50%',
           },
         },
       },
@@ -50,61 +54,73 @@ const Container = styled.div`
     margin-right: 40px;
   }
 `;
-export const StoryCheckboxDefault = () => {
-  const [isChecked, setIsChecked] = React.useState(false);
+export const StoryCheckboxDefault = () => (
+  <ThemeProvider theme={myCustomTheme}>
+    <StorybookHeading>Checkbox</StorybookHeading>
+    <Grid>
+      <Cell xs={8} sm={4}>
+        <StorybookSubHeading>States</StorybookSubHeading>
 
+        {states.map(([id, {checked, ...props}]) => (
+          <Container>
+            <Checkbox {...props} defaultChecked={checked} label={id} />
+          </Container>
+        ))}
+      </Cell>
+      <Cell xs={8} md={4}>
+        <StorybookSubHeading>Sizes</StorybookSubHeading>
+
+        {sizes.map(size => (
+          <>
+            <Container>
+              <Checkbox size={size} label={size} />
+            </Container>
+            <Container>
+              <Checkbox size={size} label={`${size}-checked`} checked />
+            </Container>
+          </>
+        ))}
+      </Cell>
+    </Grid>
+  </ThemeProvider>
+);
+
+StoryCheckboxDefault.storyName = 'checkbox-default';
+
+export const StoryCheckboxLabel = () => {
+  const shortLabel = 'Short label';
+  const longLabel =
+    'Very long label... The array of dependencies is not passed as arguments to the effect function.';
   return (
     <ThemeProvider theme={myCustomTheme}>
-      <StorybookHeading>Checkbox</StorybookHeading>
+      <StorybookHeading>Checkbox - Labels</StorybookHeading>
       <Grid>
-        <Cell xs={8} sm={4}>
-          <StorybookSubHeading>States</StorybookSubHeading>
-          <Container>
-            <Checkbox
-              value="10"
-              checked={isChecked}
-              id="controlled"
-              onChange={event => {
-                console.log(
-                  'is checked',
-                  event.target?.checked,
-                  'value',
-                  event.target?.value,
-                );
-                setIsChecked(event.target?.checked);
-              }}
-            />
-            <label htmlFor="controlled">controlled</label>
-          </Container>
-          {states.map(([id, {checked, ...props}]) => (
+        {sizes.map(size => (
+          <Cell xs={8} sm={4}>
+            <StorybookSubHeading>Size {size}</StorybookSubHeading>
             <Container>
-              <Checkbox {...props} defaultChecked={checked} id={id} />
-              <label htmlFor={id}>{id}</label>
+              <Checkbox label={shortLabel} size={size} />
             </Container>
-          ))}
-        </Cell>
-        <Cell xs={8} md={4}>
-          <StorybookSubHeading>Sizes</StorybookSubHeading>
-
-          {sizes.map(size => (
-            <>
-              <Container>
-                <Checkbox size={size} id={size} />
-                <label htmlFor={size}>{size}</label>
-              </Container>
-              <Container>
-                <Checkbox size={size} id={`${size}checked`} checked />
-                <label htmlFor={`${size}checked`}>{size} checked</label>
-              </Container>
-            </>
-          ))}
-        </Cell>
+            <hr />
+            <Container>
+              <Checkbox label={longLabel} size={size} />
+            </Container>
+            <hr />
+            <Container>
+              <Checkbox label={shortLabel} size={size} labelPosition="start" />
+            </Container>
+            <hr />
+            <Container>
+              <Checkbox label={longLabel} size={size} labelPosition="start" />
+            </Container>
+          </Cell>
+        ))}
       </Grid>
     </ThemeProvider>
   );
 };
 
-StoryCheckboxDefault.storyName = 'checkbox-default';
+StoryCheckboxLabel.storyName = 'checkbox-label';
 
 const CustomCheck = ({checked}: CheckboxIconProps) =>
   checked ? (
@@ -121,20 +137,27 @@ export const StoryCheckboxOverrides = () => (
     <Container>
       <Checkbox
         value="10"
-        id="custom-style-preset"
+        label="Style overrides"
         overrides={{
           input: {
             stylePreset: 'customCheckboxInput',
             size: '100px',
           },
+          feedback: {
+            size: '120px',
+            stylePreset: 'customCheckboxFeedback',
+          },
+          label: {
+            typographyPreset: 'utilityHeading010',
+            stylePreset: 'inkSubtle',
+          },
         }}
       />
-      <label htmlFor="custom-style-preset">custom style preset</label>
     </Container>
     <StorybookSubHeading>Icon Prop override</StorybookSubHeading>
     <Container>
       <Checkbox
-        id="prop-overrides"
+        label="prop overrides"
         overrides={{
           icon: {
             props: {
@@ -145,22 +168,20 @@ export const StoryCheckboxOverrides = () => (
           },
         }}
       />
-      <label htmlFor="prop-overrides">prop overrides</label>
     </Container>
     <StorybookSubHeading>Icon Component override</StorybookSubHeading>
     <Container>
       <Checkbox
-        id="component-overrides"
+        label="component overrides"
         overrides={{
           icon: CustomCheck,
         }}
       />
-      <label htmlFor="component-overrides">component overrides</label>
     </Container>
     <StorybookSubHeading>Icon Override</StorybookSubHeading>
     <Container>
       <Checkbox
-        id="overrides"
+        label="overrides"
         overrides={{
           icon: {
             stylePreset: 'bannerInformative',
@@ -168,7 +189,6 @@ export const StoryCheckboxOverrides = () => (
           },
         }}
       />
-      <label htmlFor="overrides">overrides</label>
     </Container>
   </ThemeProvider>
 );

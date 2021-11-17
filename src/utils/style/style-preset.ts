@@ -20,6 +20,7 @@ export interface GetStylePresetFromThemeOptions {
   isInvalid?: boolean;
   isValid?: boolean;
   isFocused?: boolean;
+  isHover?: boolean;
   isSvg?: boolean;
   omitStates?: StylePresetStates[];
   filterStates?: StylePresetStates[];
@@ -82,8 +83,9 @@ const getPresetStates = (
     isInvalid = false,
     isValid = false,
     isFocused = false,
+    isHover = false,
   } = options || {};
-  const {selected, checked, loading, invalid, valid, ...presetStates} =
+  const {selected, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
       ? filterObject(stylePreset, filterStates)
       : rejectObject(stylePreset, omitStates);
@@ -91,8 +93,9 @@ const getPresetStates = (
     (isDisabled && presetStates.disabled) ||
     (isLoading && loading) ||
     (isFocused && presetStates.focus) ||
+    (isHover && presetStates.hover) ||
     (isSelected && selected) ||
-    (isChecked && checked) ||
+    (isChecked && presetStates.checked) ||
     (isInvalid && invalid) ||
     (isValid && valid) ||
     undefined;
@@ -118,6 +121,9 @@ const getPresetStates = (
   }
   if (isFocused) {
     forcedStates.push('focus');
+  }
+  if (isHover) {
+    forcedStates.push('hover');
   }
 
   if (stateOverrides) {

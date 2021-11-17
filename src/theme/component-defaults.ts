@@ -1022,9 +1022,13 @@ export const componentDefaults = {
         stylePreset: 'checkboxInput',
         spaceInline: 'space030',
       },
-      ripple: {
+      feedback: {
         size: 'sizing070',
-        stylePreset: 'checkboxRipple',
+        stylePreset: 'checkboxFeedback',
+      },
+      label: {
+        stylePreset: 'controlLabel',
+        typographyPreset: 'utilityBody020',
       },
     },
     medium: {
@@ -1033,9 +1037,13 @@ export const componentDefaults = {
         stylePreset: 'checkboxInput',
         spaceInline: 'space030',
       },
-      ripple: {
+      feedback: {
         size: 'sizing080',
-        stylePreset: 'checkboxRipple',
+        stylePreset: 'checkboxFeedback',
+      },
+      label: {
+        stylePreset: 'controlLabel',
+        typographyPreset: 'utilityBody020',
       },
     },
     large: {
@@ -1044,9 +1052,13 @@ export const componentDefaults = {
         stylePreset: 'checkboxInput',
         spaceInline: 'space040',
       },
-      ripple: {
+      feedback: {
         size: 'sizing090',
-        stylePreset: 'checkboxRipple',
+        stylePreset: 'checkboxFeedback',
+      },
+      label: {
+        stylePreset: 'controlLabel',
+        typographyPreset: 'utilityBody030',
       },
     },
   },

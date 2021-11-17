@@ -503,36 +503,48 @@ Object {
     },
     "checkbox": Object {
       "large": Object {
+        "feedback": Object {
+          "size": "sizing090",
+          "stylePreset": "checkboxFeedback",
+        },
         "input": Object {
           "size": "sizing070",
           "spaceInline": "space040",
           "stylePreset": "checkboxInput",
         },
-        "ripple": Object {
-          "size": "sizing090",
-          "stylePreset": "checkboxRipple",
+        "label": Object {
+          "stylePreset": "controlLabel",
+          "typographyPreset": "utilityBody030",
         },
       },
       "medium": Object {
+        "feedback": Object {
+          "size": "sizing080",
+          "stylePreset": "checkboxFeedback",
+        },
         "input": Object {
           "size": "sizing060",
           "spaceInline": "space030",
           "stylePreset": "checkboxInput",
         },
-        "ripple": Object {
-          "size": "sizing080",
-          "stylePreset": "checkboxRipple",
+        "label": Object {
+          "stylePreset": "controlLabel",
+          "typographyPreset": "utilityBody020",
         },
       },
       "small": Object {
+        "feedback": Object {
+          "size": "sizing070",
+          "stylePreset": "checkboxFeedback",
+        },
         "input": Object {
           "size": "sizing050",
           "spaceInline": "space030",
           "stylePreset": "checkboxInput",
         },
-        "ripple": Object {
-          "size": "sizing070",
-          "stylePreset": "checkboxRipple",
+        "label": Object {
+          "stylePreset": "controlLabel",
+          "typographyPreset": "utilityBody020",
         },
       },
     },
@@ -1900,6 +1912,18 @@ Object {
         "color": "#2E2E2E",
       },
     },
+    "checkboxFeedback": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "4px",
+      },
+      "focus": Object {
+        "backgroundColor": "#E0E7FF",
+      },
+      "hover": Object {
+        "backgroundColor": "#E0E7FF",
+      },
+    },
     "checkboxInput": Object {
       "base": Object {
         "backgroundColor": "transparent",
@@ -1919,7 +1943,11 @@ Object {
         "iconColor": "#C0C0C0",
       },
       "checked:focus": Object {
-        "backgroundColor": "#3358CC",
+        "backgroundColor": "#2B4AAB",
+        "borderColor": "#2B4AAB",
+      },
+      "checked:focus:hover": Object {
+        "backgroundColor": "#2B4AAB",
         "borderColor": "#2B4AAB",
       },
       "checked:hover": Object {
@@ -1931,22 +1959,41 @@ Object {
         "borderColor": "#D20600",
       },
       "checked:invalid:focus": Object {
-        "backgroundColor": "#D20600",
-        "borderColor": "#2B4AAB",
+        "backgroundColor": "#A60100",
+        "borderColor": "#A60100",
+      },
+      "checked:invalid:focus:hover": Object {
+        "backgroundColor": "#A60100",
+        "borderColor": "#A60100",
+      },
+      "checked:invalid:hover": Object {
+        "backgroundColor": "#A60100",
+        "borderColor": "#A60100",
       },
       "checked:valid": Object {
-        "backgroundColor": "#0A782A",
-        "borderColor": "#0A782A",
+        "backgroundColor": "#148F39",
+        "borderColor": "#148F39",
       },
       "checked:valid:focus": Object {
         "backgroundColor": "#0A782A",
-        "borderColor": "#2B4AAB",
+        "borderColor": "#0A782A",
+      },
+      "checked:valid:focus:hover": Object {
+        "backgroundColor": "#0A782A",
+        "borderColor": "#0A782A",
+      },
+      "checked:valid:hover": Object {
+        "backgroundColor": "#0A782A",
+        "borderColor": "#0A782A",
       },
       "disabled": Object {
         "borderColor": "#F4F4F4",
       },
       "focus": Object {
-        "borderColor": "#3358CC",
+        "borderColor": "#2B4AAB",
+      },
+      "focus:hover": Object {
+        "borderColor": "#2B4AAB",
       },
       "hover": Object {
         "borderColor": "#3358CC",
@@ -1954,20 +2001,34 @@ Object {
       "invalid": Object {
         "borderColor": "#D20600",
       },
+      "invalid:focus": Object {
+        "borderColor": "#A60100",
+      },
+      "invalid:focus:hover": Object {
+        "borderColor": "#A60100",
+      },
       "invalid:hover": Object {
-        "borderColor": "#D20600",
+        "borderColor": "#A60100",
       },
       "valid": Object {
+        "borderColor": "#148F39",
+      },
+      "valid:focus": Object {
+        "borderColor": "#0A782A",
+      },
+      "valid:focus:hover": Object {
         "borderColor": "#0A782A",
       },
       "valid:hover": Object {
         "borderColor": "#0A782A",
       },
     },
-    "checkboxRipple": Object {
+    "controlLabel": Object {
       "base": Object {
-        "backgroundColor": "#E0E7FF",
-        "borderRadius": "4px",
+        "color": "#2E2E2E",
+      },
+      "disabled": Object {
+        "color": "#C0C0C0",
       },
     },
     "divider": Object {

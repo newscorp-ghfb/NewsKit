@@ -43,6 +43,7 @@ export interface StylePreset {
   checked?: StylePresetStyles;
   invalid?: StylePresetStyles;
   valid?: StylePresetStyles;
+  'focus:hover'?: StylePresetStyles;
   'selected:hover'?: StylePresetStyles;
   'selected:focus'?: StylePresetStyles;
   'selected:disabled'?: StylePresetStyles;
@@ -54,17 +55,22 @@ export interface StylePreset {
   'selected:invalid:hover'?: StylePresetStyles;
   'checked:hover'?: StylePresetStyles;
   'checked:focus'?: StylePresetStyles;
+  'checked:focus:hover'?: StylePresetStyles;
   'checked:disabled'?: StylePresetStyles;
   'checked:valid'?: StylePresetStyles;
   'checked:valid:focus'?: StylePresetStyles;
   'checked:valid:hover'?: StylePresetStyles;
+  'checked:valid:focus:hover'?: StylePresetStyles;
   'checked:invalid'?: StylePresetStyles;
   'checked:invalid:focus'?: StylePresetStyles;
   'checked:invalid:hover'?: StylePresetStyles;
+  'checked:invalid:focus:hover'?: StylePresetStyles;
   'valid:hover'?: StylePresetStyles;
   'valid:focus'?: StylePresetStyles;
+  'valid:focus:hover'?: StylePresetStyles;
   'invalid:hover'?: StylePresetStyles;
   'invalid:focus'?: StylePresetStyles;
+  'invalid:focus:hover'?: StylePresetStyles;
   'visited:hover'?: StylePresetStyles;
   'visited:focus'?: StylePresetStyles;
 }

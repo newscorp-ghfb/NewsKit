@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox onBlur and onFocus: with blur 1`] = `
+exports[`Checkbox hover on feedback shows it: with hover 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -14,22 +26,17 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  z-index: 1;
   background-color: #E0E7FF;
   border-radius: 4px;
   width: 48px;
@@ -40,7 +47,140 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #3358CC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  z-index: 2;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox hover on feedback shows it: without hover 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
 .emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -65,67 +205,220 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-2:checked:hover:not(:disabled) {
+.emotion-3:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:checked:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:hover:not(:disabled) {
-  border-color: #D20600;
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
 }
 
-.emotion-2:checked:invalid:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #2B4AAB;
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
 }
 
-.emotion-2:valid:hover:not(:disabled) {
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:focus:not(:disabled) {
+.emotion-3:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #2B4AAB;
+  border-color: #0A782A;
 }
 
-.emotion-2:disabled {
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) {
+.emotion-3:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) svg {
+.emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox hover on feedback when disabled does not show it: with hover 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
 }
 
 .emotion-3 {
@@ -134,25 +427,1558 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #F4F4F4;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   margin: 0;
   opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          disabled=""
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox hover on feedback when disabled does not show it: without hover 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #F4F4F4;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          disabled=""
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #3358CC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox hover on label with disabled do not change hover state: with hover 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #F4F4F4;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          disabled=""
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox hover on label with disabled do not change hover state: without hover 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #F4F4F4;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          disabled=""
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox label attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    aria-label="label"
+    class="emotion-0"
+    id="label-id"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox label position start 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+}
+
+.emotion-2 * {
+  box-sizing: border-box;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-4 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-4:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-4:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-4:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-4:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-4:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-4:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-4:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-4:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-4:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-4:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-4:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-4:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-4:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-4:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-4:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-4:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-4:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-4:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-4:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-4:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-4:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-4:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-4:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-4:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+<label
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      start
+    </span>
+    <div
+      class="emotion-2"
+      role="presentation"
+    >
+      <div
+        class="emotion-3"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-4"
+      >
+        <input
+          class="emotion-5"
+          type="checkbox"
+        />
+      </div>
+    </div>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox onBlur and onFocus: with blur 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -160,6 +1986,18 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
 exports[`Checkbox onBlur and onFocus: with focus 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -171,22 +2009,17 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  z-index: 1;
   background-color: #E0E7FF;
   border-radius: 4px;
   width: 48px;
@@ -197,7 +2030,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -216,17 +2049,22 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  border-color: #3358CC;
+  border-color: #2B4AAB;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
+  z-index: 2;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-3 {
+.emotion-3:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -234,23 +2072,45 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -258,6 +2118,18 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
 exports[`Checkbox render with size: large & checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -269,23 +2141,17 @@ exports[`Checkbox render with size: large & checked 1`] = `
   width: 40px;
   height: 40px;
   margin-right: 16px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 64px;
   height: 64px;
@@ -295,7 +2161,11 @@ exports[`Checkbox render with size: large & checked 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -320,40 +2190,40 @@ exports[`Checkbox render with size: large & checked 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:not(:disabled) {
+.emotion-3:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:valid:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+.emotion-3:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:disabled svg {
+.emotion-3:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -362,12 +2232,12 @@ exports[`Checkbox render with size: large & checked 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -375,47 +2245,81 @@ exports[`Checkbox render with size: large & checked 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;
 
-exports[`Checkbox render with size: large 1`] = `
+exports[`Checkbox render with size: large & label 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -427,23 +2331,17 @@ exports[`Checkbox render with size: large 1`] = `
   width: 40px;
   height: 40px;
   margin-right: 16px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 64px;
   height: 64px;
@@ -453,7 +2351,11 @@ exports[`Checkbox render with size: large 1`] = `
   transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -478,67 +2380,220 @@ exports[`Checkbox render with size: large 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-2:checked:hover:not(:disabled) {
+.emotion-3:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:checked:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:hover:not(:disabled) {
-  border-color: #D20600;
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
 }
 
-.emotion-2:checked:invalid:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #2B4AAB;
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
 }
 
-.emotion-2:valid:hover:not(:disabled) {
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:focus:not(:disabled) {
+.emotion-3:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #2B4AAB;
+  border-color: #0A782A;
 }
 
-.emotion-2:disabled {
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) {
+.emotion-3:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) svg {
+.emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      large
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox render with size: large 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 64px;
+  height: 64px;
+  -webkit-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+  -moz-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+  -ms-transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+  transform: translate3d(calc(64px / -2), calc(64px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
 }
 
 .emotion-3 {
@@ -547,25 +2602,185 @@ exports[`Checkbox render with size: large 1`] = `
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -573,6 +2788,18 @@ exports[`Checkbox render with size: large 1`] = `
 exports[`Checkbox render with size: medium & checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -584,23 +2811,17 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -610,7 +2831,11 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -635,40 +2860,40 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:not(:disabled) {
+.emotion-3:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:valid:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+.emotion-3:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:disabled svg {
+.emotion-3:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -677,12 +2902,12 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -690,47 +2915,81 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;
 
-exports[`Checkbox render with size: medium 1`] = `
+exports[`Checkbox render with size: medium & label 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -742,23 +3001,17 @@ exports[`Checkbox render with size: medium 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -768,7 +3021,11 @@ exports[`Checkbox render with size: medium 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -793,67 +3050,220 @@ exports[`Checkbox render with size: medium 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-2:checked:hover:not(:disabled) {
+.emotion-3:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:checked:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:hover:not(:disabled) {
-  border-color: #D20600;
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
 }
 
-.emotion-2:checked:invalid:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #2B4AAB;
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
 }
 
-.emotion-2:valid:hover:not(:disabled) {
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:focus:not(:disabled) {
+.emotion-3:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #2B4AAB;
+  border-color: #0A782A;
 }
 
-.emotion-2:disabled {
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) {
+.emotion-3:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) svg {
+.emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      medium
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox render with size: medium 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
 }
 
 .emotion-3 {
@@ -862,25 +3272,185 @@ exports[`Checkbox render with size: medium 1`] = `
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -888,6 +3458,18 @@ exports[`Checkbox render with size: medium 1`] = `
 exports[`Checkbox render with size: small & checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -899,23 +3481,17 @@ exports[`Checkbox render with size: small & checked 1`] = `
   width: 24px;
   height: 24px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 40px;
   height: 40px;
@@ -925,7 +3501,11 @@ exports[`Checkbox render with size: small & checked 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -950,40 +3530,40 @@ exports[`Checkbox render with size: small & checked 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:not(:disabled) {
+.emotion-3:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:valid:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+.emotion-3:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:disabled svg {
+.emotion-3:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -992,12 +3572,12 @@ exports[`Checkbox render with size: small & checked 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1005,47 +3585,81 @@ exports[`Checkbox render with size: small & checked 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;
 
-exports[`Checkbox render with size: small 1`] = `
+exports[`Checkbox render with size: small & label 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1057,23 +3671,17 @@ exports[`Checkbox render with size: small 1`] = `
   width: 24px;
   height: 24px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 40px;
   height: 40px;
@@ -1083,7 +3691,11 @@ exports[`Checkbox render with size: small 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1108,67 +3720,220 @@ exports[`Checkbox render with size: small 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-2:checked:hover:not(:disabled) {
+.emotion-3:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:checked:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:hover:not(:disabled) {
-  border-color: #D20600;
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
 }
 
-.emotion-2:checked:invalid:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #2B4AAB;
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
 }
 
-.emotion-2:valid:hover:not(:disabled) {
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:focus:not(:disabled) {
+.emotion-3:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #2B4AAB;
+  border-color: #0A782A;
 }
 
-.emotion-2:disabled {
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) {
+.emotion-3:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) svg {
+.emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+<label
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+      role="presentation"
+    >
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
+      />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
+    </div>
+    <span
+      class="emotion-5"
+    >
+      small
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`Checkbox render with size: small 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -moz-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  -ms-transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+  transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
 }
 
 .emotion-3 {
@@ -1177,25 +3942,185 @@ exports[`Checkbox render with size: small 1`] = `
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-color: #3358CC;
+}
+
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+  border-color: #3358CC;
+}
+
+.emotion-3:checked:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
+}
+
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
+  background-color: #D20600;
+  border-color: #D20600;
+}
+
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.emotion-3:checked:disabled:not(:disabled) svg {
+  fill: #C0C0C0;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1203,6 +4128,18 @@ exports[`Checkbox render with size: small 1`] = `
 exports[`Checkbox render with state: checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1214,23 +4151,17 @@ exports[`Checkbox render with state: checked 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -1240,7 +4171,11 @@ exports[`Checkbox render with state: checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1265,40 +4200,40 @@ exports[`Checkbox render with state: checked 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:not(:disabled) {
+.emotion-3:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:valid:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+.emotion-3:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:disabled svg {
+.emotion-3:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1307,12 +4242,12 @@ exports[`Checkbox render with state: checked 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1320,41 +4255,63 @@ exports[`Checkbox render with state: checked 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        id="checked"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          id="checked"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1362,6 +4319,18 @@ exports[`Checkbox render with state: checked 1`] = `
 exports[`Checkbox render with state: checked-disabled 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1373,19 +4342,17 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: not-allowed;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -1395,7 +4362,11 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1420,11 +4391,11 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #C0C0C0;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1433,12 +4404,12 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1446,42 +4417,60 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: not-allowed;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        disabled=""
-        id="checked-disabled"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          disabled=""
+          id="checked-disabled"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1489,6 +4478,18 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
 exports[`Checkbox render with state: default 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1500,23 +4501,17 @@ exports[`Checkbox render with state: default 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -1526,7 +4521,11 @@ exports[`Checkbox render with state: default 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1551,70 +4550,120 @@ exports[`Checkbox render with state: default 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   border-color: #3358CC;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:focus:hover:not(:disabled) {
+  border-color: #2B4AAB;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
   border-color: #3358CC;
 }
 
-.emotion-2:checked:hover:not(:disabled) {
+.emotion-3:checked:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:checked:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:checked:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:hover:not(:disabled) {
-  border-color: #D20600;
+.emotion-3:checked:focus:hover:not(:disabled) {
+  background-color: #2B4AAB;
+  border-color: #2B4AAB;
 }
 
-.emotion-2:checked:invalid:not(:disabled) {
+.emotion-3:invalid:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:invalid:focus:hover:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:checked:invalid:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #2B4AAB;
+.emotion-3:checked:invalid:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
 }
 
-.emotion-2:valid:hover:not(:disabled) {
+.emotion-3:checked:invalid:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:checked:invalid:focus:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-3:valid:focus:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:not(:disabled) {
+.emotion-3:valid:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:valid:focus:hover:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-3:checked:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
+}
+
+.emotion-3:checked:valid:focus:not(:disabled) {
   background-color: #0A782A;
   border-color: #0A782A;
 }
 
-.emotion-2:checked:valid:focus:not(:disabled) {
+.emotion-3:checked:valid:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #2B4AAB;
+  border-color: #0A782A;
 }
 
-.emotion-2:disabled {
+.emotion-3:checked:valid:focus:hover:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-3:disabled {
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) {
+.emotion-3:checked:disabled:not(:disabled) {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:checked:disabled:not(:disabled) svg {
+.emotion-3:checked:disabled:not(:disabled) svg {
   fill: #C0C0C0;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1622,24 +4671,46 @@ exports[`Checkbox render with state: default 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        id="default"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          id="default"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1647,6 +4718,18 @@ exports[`Checkbox render with state: default 1`] = `
 exports[`Checkbox render with state: disabled 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1658,19 +4741,17 @@ exports[`Checkbox render with state: disabled 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: not-allowed;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -1680,7 +4761,11 @@ exports[`Checkbox render with state: disabled 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1705,11 +4790,11 @@ exports[`Checkbox render with state: disabled 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1717,25 +4802,43 @@ exports[`Checkbox render with state: disabled 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: not-allowed;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        disabled=""
-        id="disabled"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          disabled=""
+          id="disabled"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1743,6 +4846,18 @@ exports[`Checkbox render with state: disabled 1`] = `
 exports[`Checkbox render with state: invalid 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1754,23 +4869,17 @@ exports[`Checkbox render with state: invalid 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -1780,7 +4889,11 @@ exports[`Checkbox render with state: invalid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1805,15 +4918,19 @@ exports[`Checkbox render with state: invalid 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #D20600;
+.emotion-3:hover:not(:disabled) {
+  border-color: #A60100;
 }
 
-.emotion-3 {
+.emotion-3:focus:not(:disabled) {
+  border-color: #A60100;
+}
+
+.emotion-4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1821,24 +4938,46 @@ exports[`Checkbox render with state: invalid 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        id="invalid"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          id="invalid"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1846,6 +4985,18 @@ exports[`Checkbox render with state: invalid 1`] = `
 exports[`Checkbox render with state: invalid-checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1857,23 +5008,17 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -1883,7 +5028,11 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1908,16 +5057,21 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #D20600;
-  border-color: #2B4AAB;
+.emotion-3:hover:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
 }
 
-.emotion-3 {
+.emotion-3:focus:not(:disabled) {
+  background-color: #A60100;
+  border-color: #A60100;
+}
+
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1926,12 +5080,12 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1939,41 +5093,63 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        id="invalid-checked"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          id="invalid-checked"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1981,6 +5157,18 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
 exports[`Checkbox render with state: valid 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1992,23 +5180,17 @@ exports[`Checkbox render with state: valid 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -2018,7 +5200,11 @@ exports[`Checkbox render with state: valid 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2037,21 +5223,25 @@ exports[`Checkbox render with state: valid 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  border-color: #0A782A;
+  border-color: #148F39;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   border-color: #0A782A;
 }
 
-.emotion-3 {
+.emotion-3:focus:not(:disabled) {
+  border-color: #0A782A;
+}
+
+.emotion-4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2059,24 +5249,46 @@ exports[`Checkbox render with state: valid 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-5 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <input
-        class="emotion-3"
-        id="valid"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <input
+          class="emotion-4"
+          id="valid"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-5"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -2084,6 +5296,18 @@ exports[`Checkbox render with state: valid 1`] = `
 exports[`Checkbox render with state: valid-checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -2095,23 +5319,17 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -2121,7 +5339,11 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2139,23 +5361,28 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0A782A;
-  border-color: #0A782A;
+  background-color: #148F39;
+  border-color: #148F39;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #0A782A;
-  border-color: #2B4AAB;
+  border-color: #0A782A;
 }
 
-.emotion-3 {
+.emotion-3:focus:not(:disabled) {
+  background-color: #0A782A;
+  border-color: #0A782A;
+}
+
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2164,12 +5391,12 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2177,41 +5404,63 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        id="valid-checked"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          id="valid-checked"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -2219,6 +5468,18 @@ exports[`Checkbox render with state: valid-checked 1`] = `
 exports[`Checkbox with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -2230,23 +5491,17 @@ exports[`Checkbox with overrides 1`] = `
   width: 32px;
   height: 32px;
   margin-right: 12px;
-  cursor: pointer;
 }
 
-.emotion-0 * {
+.emotion-1 * {
   box-sizing: border-box;
 }
 
-.emotion-0:hover .nk-checkbox-ripple {
-  opacity: 1;
-}
-
-.emotion-1 {
+.emotion-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  background-color: #E0E7FF;
+  background-color: transparent;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -2256,7 +5511,11 @@ exports[`Checkbox with overrides 1`] = `
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-2 {
+.emotion-2:focus:not(:disabled) {
+  background-color: #E0E7FF;
+}
+
+.emotion-3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2281,40 +5540,40 @@ exports[`Checkbox with overrides 1`] = `
   border-style: solid;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:focus:not(:disabled) {
-  background-color: #3358CC;
+.emotion-3:focus:not(:disabled) {
+  background-color: #2B4AAB;
   border-color: #2B4AAB;
 }
 
-.emotion-2:invalid:not(:disabled) {
+.emotion-3:invalid:not(:disabled) {
   background-color: #D20600;
   border-color: #D20600;
 }
 
-.emotion-2:valid:not(:disabled) {
-  background-color: #0A782A;
-  border-color: #0A782A;
+.emotion-3:valid:not(:disabled) {
+  background-color: #148F39;
+  border-color: #148F39;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: #F4F4F4;
   border-color: #F4F4F4;
 }
 
-.emotion-2:disabled svg {
+.emotion-3:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2324,14 +5583,14 @@ exports[`Checkbox with overrides 1`] = `
   display: inline-block;
 }
 
-.emotion-3.emotion-3 {
+.emotion-4.emotion-4 {
   width: 32px;
   height: 32px;
   background-color: #05717D;
   fill: #FFFFFF;
 }
 
-.emotion-5 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2339,40 +5598,62 @@ exports[`Checkbox with overrides 1`] = `
   height: 100%;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: inherit;
+}
+
+.emotion-7 {
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7:disabled {
+  color: #C0C0C0;
 }
 
 <div
     class="emotion-0"
   >
     <div
-      class="nk-checkbox-ripple emotion-1"
-    />
-    <div
-      class="emotion-2"
+      class="emotion-1"
+      role="presentation"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-3 emotion-4"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <input
-        checked=""
-        class="emotion-5"
-        type="checkbox"
+      <div
+        class="emotion-2"
+        data-testid="checkbox-feedback"
       />
+      <div
+        class="emotion-3"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-4 emotion-5"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <input
+          checked=""
+          class="emotion-6"
+          type="checkbox"
+        />
+      </div>
     </div>
+    <span
+      class="emotion-7"
+    />
   </div>
 </DocumentFragment>
 `;

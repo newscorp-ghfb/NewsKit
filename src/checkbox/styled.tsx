@@ -2,12 +2,24 @@ import {
   getResponsiveSize,
   getResponsiveSpace,
   getStylePreset,
+  getTypographyPreset,
   styled,
 } from '../utils';
 import {CheckboxProps} from './types';
 
-export const StyledContainer = styled.div<
-  Pick<CheckboxProps, 'size' | 'overrides' | 'state'>
+const STACKING_CONTEXT = {
+  feedback: '1',
+  input: '2',
+};
+
+export const StyledContainer = styled.label<Pick<CheckboxProps, 'state'>>`
+  display: flex;
+  align-items: center;
+  ${({state}) => ({cursor: state === 'disabled' ? 'not-allowed' : 'pointer'})};
+`;
+
+export const StyledCheckboxContainer = styled.div<
+  Pick<CheckboxProps, 'size' | 'overrides' | 'state' | 'labelPosition'>
 >`
   position: relative;
   display: inline-block;
@@ -26,19 +38,13 @@ export const StyledContainer = styled.div<
       'size',
     )}
 
-  ${({size}) =>
+  ${({size, labelPosition}) =>
     getResponsiveSpace(
-      'marginRight',
+      labelPosition === 'end' ? 'marginRight' : 'marginLeft',
       `checkbox.${size}.input`,
       'input',
       'spaceInline',
     )}
-
-  ${({state}) => ({cursor: state === 'disabled' ? 'not-allowed' : 'pointer'})};
-
-  &:hover .nk-checkbox-ripple {
-    ${({state}) => state !== 'disabled' && `opacity: 1`}
-  }
 `;
 
 const insetCSS = `
@@ -52,32 +58,46 @@ const insetCSS = `
 export const StyledCheckbox = styled.div<
   Pick<CheckboxProps, 'checked' | 'size' | 'state' | 'overrides'> & {
     isFocused: boolean;
+    isHover: boolean;
+    feedbackIsVisible: boolean;
   }
 >`
   ${insetCSS}
   display: flex;
   justify-content: center;
   align-items: center;
-  ${({size, checked, state, isFocused}) =>
+  ${({size, checked, state, isFocused, isHover}) =>
     getStylePreset(`checkbox.${size}.input`, 'input', {
       isChecked: checked,
       isDisabled: state === 'disabled',
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
       isFocused,
+      isHover,
     })};
+  ${({feedbackIsVisible}) =>
+    feedbackIsVisible && `z-index: ${STACKING_CONTEXT.input}`}
 `;
 
-export const StyledRipple = styled.div<
-  Pick<CheckboxProps, 'size' | 'overrides'>
+export const StyledFeedback = styled.div<
+  Pick<CheckboxProps, 'size' | 'overrides' | 'state'> & {
+    isFocused: boolean;
+    isHover: boolean;
+  }
 >`
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  ${({isHover, isFocused}) =>
+    (isHover || isFocused) && `z-index: ${STACKING_CONTEXT.feedback}`};
 
-  ${({size}) => getStylePreset(`checkbox.${size}.ripple`, 'ripple', {})}
-
+  ${({size, isHover, isFocused}) =>
+    getStylePreset(`checkbox.${size}.feedback`, 'feedback', {
+      isHover,
+      isFocused,
+      // when is not HOVER we need to remove the hover so it does not apply as class:hover
+      omitStates: isHover ? [] : ['hover'],
+    })}
   ${({size}) =>
     getResponsiveSize(
       rectSize => ({
@@ -85,17 +105,27 @@ export const StyledRipple = styled.div<
         height: rectSize,
         transform: `translate3d(calc(${rectSize} / -2), calc(${rectSize} / -2), 0)`,
       }),
-      `checkbox.${size}.ripple`,
-      'ripple',
+      `checkbox.${size}.feedback`,
+      'feedback',
       'size',
-    )}
+    )};
 `;
 
 export const StyledInput = styled.input<CheckboxProps>`
   ${insetCSS}
   margin: 0;
   opacity: 0;
-  ${({state}) => ({
-    cursor: state === 'disabled' ? 'not-allowed' : 'pointer',
-  })};
+  cursor: inherit;
+`;
+
+export const StyledLabel = styled.span<
+  Pick<CheckboxProps, 'size' | 'overrides' | 'state'>
+>`
+  ${({size, state}) =>
+    getStylePreset(`checkbox.${size}.label`, 'label', {
+      isDisabled: state === 'disabled',
+      isInvalid: state === 'invalid',
+      isValid: state === 'valid',
+    })}
+  ${({size}) => getTypographyPreset(`checkbox.${size}.label`, 'label')}
 `;

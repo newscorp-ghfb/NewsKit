@@ -1840,7 +1840,10 @@ stylePresets.checkboxInput = {
     borderColor: '{{colors.interactiveInput040}}',
   },
   focus: {
-    borderColor: '{{colors.interactiveInput040}}',
+    borderColor: '{{colors.interactiveInput050}}',
+  },
+  'focus:hover': {
+    borderColor: '{{colors.interactiveInput050}}',
   },
   checked: {
     backgroundColor: '{{colors.interactiveInput040}}',
@@ -1851,36 +1854,68 @@ stylePresets.checkboxInput = {
     borderColor: '{{colors.interactiveInput050}}',
   },
   'checked:focus': {
-    backgroundColor: '{{colors.interactiveInput040}}',
+    backgroundColor: '{{colors.interactiveInput050}}',
+    borderColor: '{{colors.interactiveInput050}}',
+  },
+  'checked:focus:hover': {
+    backgroundColor: '{{colors.interactiveInput050}}',
     borderColor: '{{colors.interactiveInput050}}',
   },
   invalid: {
-    borderColor: '{{colors.interfaceNegative010}}',
+    borderColor: '{{colors.interactiveNegative040}}',
+  },
+  'invalid:focus': {
+    borderColor: '{{colors.interactiveNegative050}}',
   },
   'invalid:hover': {
-    borderColor: '{{colors.interfaceNegative010}}',
+    borderColor: '{{colors.interactiveNegative050}}',
+  },
+  'invalid:focus:hover': {
+    borderColor: '{{colors.interactiveNegative050}}',
   },
   'checked:invalid': {
-    backgroundColor: '{{colors.interfaceNegative010}}',
-    borderColor: '{{colors.interfaceNegative010}}',
+    backgroundColor: '{{colors.interactiveNegative040}}',
+    borderColor: '{{colors.interactiveNegative040}}',
   },
   'checked:invalid:focus': {
-    backgroundColor: '{{colors.interfaceNegative010}}',
-    borderColor: '{{colors.interactiveInput050}}',
+    backgroundColor: '{{colors.interactiveNegative050}}',
+    borderColor: '{{colors.interactiveNegative050}}',
+  },
+  'checked:invalid:hover': {
+    backgroundColor: '{{colors.interactiveNegative050}}',
+    borderColor: '{{colors.interactiveNegative050}}',
+  },
+  'checked:invalid:focus:hover': {
+    backgroundColor: '{{colors.interactiveNegative050}}',
+    borderColor: '{{colors.interactiveNegative050}}',
   },
   valid: {
-    borderColor: '{{colors.interfacePositive010}}',
+    borderColor: '{{colors.interactivePositive040}}',
+  },
+  'valid:focus': {
+    borderColor: '{{colors.interactivePositive050}}',
   },
   'valid:hover': {
-    borderColor: '{{colors.interfacePositive010}}',
+    borderColor: '{{colors.interactivePositive050}}',
+  },
+  'valid:focus:hover': {
+    borderColor: '{{colors.interactivePositive050}}',
   },
   'checked:valid': {
-    backgroundColor: '{{colors.interfacePositive010}}',
-    borderColor: '{{colors.interfacePositive010}}',
+    backgroundColor: '{{colors.interactivePositive040}}',
+    borderColor: '{{colors.interactivePositive040}}',
   },
   'checked:valid:focus': {
-    backgroundColor: '{{colors.interfacePositive010}}',
-    borderColor: '{{colors.interactiveInput050}}',
+    backgroundColor: '{{colors.interactivePositive050}}',
+    borderColor: '{{colors.interactivePositive050}}',
+  },
+  'checked:valid:hover': {
+    backgroundColor: '{{colors.interactivePositive050}}',
+    borderColor: '{{colors.interactivePositive050}}',
+  },
+  'checked:valid:focus:hover': {
+    backgroundColor: '{{colors.interactivePositive050}}',
+    borderColor: '{{colors.interactivePositive050}}',
   },
   disabled: {
     borderColor: '{{colors.interactiveDisabled010}}',
@@ -1892,9 +1927,24 @@ stylePresets.checkboxInput = {
   },
 };
 
-stylePresets.checkboxRipple = {
+stylePresets.checkboxFeedback = {
   base: {
-    backgroundColor: '{{colors.interactiveInput030}}',
+    backgroundColor: '{{colors.transparent}}',
     borderRadius: '{{borders.borderRadiusRounded010}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInput030}}',
+  },
+  focus: {
+    backgroundColor: '{{colors.interactiveInput030}}',
+  },
+};
+
+stylePresets.controlLabel = {
+  base: {
+    color: '{{colors.inkBase}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
   },
 };

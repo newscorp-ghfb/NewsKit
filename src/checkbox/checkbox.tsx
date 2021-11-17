@@ -6,8 +6,10 @@ import {IconFilledCheck} from '../icons';
 import {
   StyledCheckbox,
   StyledInput,
+  StyledCheckboxContainer,
+  StyledFeedback,
   StyledContainer,
-  StyledRipple,
+  StyledLabel,
 } from './styled';
 import {CheckboxProps, CheckboxIconProps} from './types';
 import {getComponentOverrides} from '../utils/overrides';
@@ -34,18 +36,24 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       onFocus,
       onBlur,
       onChange,
+      label,
+      labelPosition = 'end',
+      labelAttributes = {},
       ...restProps
     },
     inputRef,
   ) => {
     const ref = useRef<HTMLInputElement>(null);
     const [isFocused, setFocused] = React.useState(false);
+    const [isLabelHover, setLabelHover] = React.useState(false);
+    const [isFeedbackHover, setFeedbackHover] = React.useState(false);
+
     const [checked, setCheckedState] = useControlled({
       controlledValue: checkedProp,
       defaultValue: Boolean(defaultChecked),
     });
 
-    const onRippleClick = useCallback(() => {
+    const onFeedbackClick = useCallback(() => {
       /* istanbul ignore else */
       if (ref && ref.current) {
         ref.current.click();
@@ -60,6 +68,40 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       [setCheckedState],
     );
 
+    const onInputFocus = useCallback(() => {
+      setFocused(true);
+    }, [setFocused]);
+
+    const onInputBlur = useCallback(() => {
+      setFocused(false);
+    }, [setFocused]);
+
+    // onLabelMouseOver && onLabelMouseLeave
+    // are used to apply hover state on the checkbox when mouse is over label
+    const onLabelMouseOver = useCallback(() => {
+      if (state !== 'disabled') {
+        setLabelHover(true);
+      }
+    }, [setLabelHover, state]);
+
+    const onLabelMouseLeave = useCallback(() => {
+      if (state !== 'disabled') {
+        setLabelHover(false);
+      }
+    }, [setLabelHover, state]);
+
+    const onFeedbackMouseOver = useCallback(() => {
+      if (state !== 'disabled') {
+        setFeedbackHover(true);
+      }
+    }, [setFeedbackHover, state]);
+
+    const onFeedbackMouseLeave = useCallback(() => {
+      if (state !== 'disabled') {
+        setFeedbackHover(false);
+      }
+    }, [setFeedbackHover, state]);
+
     const [CheckIcon, checkIconProps] = getComponentOverrides(
       overrides?.icon,
       DefaultCheckboxIcon,
@@ -70,35 +112,64 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       },
     );
 
+    const labelElement = (
+      <StyledLabel size={size} overrides={overrides} state={state}>
+        {label}
+      </StyledLabel>
+    );
+
     return (
-      <StyledContainer size={size} overrides={overrides} state={state}>
-        <StyledRipple
+      <StyledContainer
+        as={label ? 'label' : 'div'}
+        state={state}
+        {...(label ? labelAttributes : {})}
+        onMouseOver={onLabelMouseOver}
+        onMouseLeave={onLabelMouseLeave}
+      >
+        {labelPosition === 'start' && labelElement}
+        <StyledCheckboxContainer
           size={size}
           overrides={overrides}
-          onClick={onRippleClick}
-          className="nk-checkbox-ripple"
-        />
-        <StyledCheckbox
-          checked={checked}
           state={state}
-          overrides={overrides}
-          size={size}
-          isFocused={isFocused}
+          labelPosition={labelPosition}
+          onMouseOver={onFeedbackMouseOver}
+          onMouseLeave={onFeedbackMouseLeave}
+          role="presentation"
         >
-          <CheckIcon {...(checkIconProps as CheckboxIconProps)} />
-          <StyledInput
-            ref={composeRefs(inputRef, ref)}
+          <StyledFeedback
+            size={size}
             overrides={overrides}
-            checked={checked}
-            disabled={state === 'disabled'}
-            {...restProps}
-            type="checkbox"
             state={state}
-            onFocus={composeEventHandlers([() => setFocused(true), onFocus])}
-            onBlur={composeEventHandlers([() => setFocused(false), onBlur])}
-            onChange={composeEventHandlers([onInputChange, onChange])}
+            onClick={onFeedbackClick}
+            data-testid="checkbox-feedback"
+            isFocused={isFocused}
+            isHover={isFeedbackHover}
           />
-        </StyledCheckbox>
+          <StyledCheckbox
+            checked={checked}
+            state={state}
+            overrides={overrides}
+            size={size}
+            isFocused={isFocused}
+            isHover={isLabelHover}
+            feedbackIsVisible={isFeedbackHover || isFocused}
+          >
+            <CheckIcon {...(checkIconProps as CheckboxIconProps)} />
+            <StyledInput
+              ref={composeRefs(inputRef, ref)}
+              overrides={overrides}
+              checked={checked}
+              disabled={state === 'disabled'}
+              {...restProps}
+              type="checkbox"
+              state={state}
+              onFocus={composeEventHandlers([onInputFocus, onFocus])}
+              onBlur={composeEventHandlers([onInputBlur, onBlur])}
+              onChange={composeEventHandlers([onInputChange, onChange])}
+            />
+          </StyledCheckbox>
+        </StyledCheckboxContainer>
+        {labelPosition === 'end' && labelElement}
       </StyledContainer>
     );
   },

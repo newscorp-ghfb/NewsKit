@@ -30,6 +30,29 @@ describe('Checkbox', () => {
       ));
       expect(fragment).toMatchSnapshot();
     });
+    test(`render with size: ${size} & label`, () => {
+      const fragment = renderToFragmentWithTheme(() => (
+        <Checkbox size={size} label={size} />
+      ));
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  test('label position start', () => {
+    const fragment = renderToFragmentWithTheme(() => (
+      <Checkbox label="start" labelPosition="start" />
+    ));
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('label attributes', () => {
+    const fragment = renderToFragmentWithTheme(() => (
+      <Checkbox
+        label="label"
+        labelAttributes={{id: 'label-id', 'aria-label': 'label'}}
+      />
+    ));
+    expect(fragment).toMatchSnapshot();
   });
 
   test('onBlur and onFocus', () => {
@@ -37,14 +60,10 @@ describe('Checkbox', () => {
       <Checkbox defaultChecked={false} />
     ));
     const checkbox = getByRole('checkbox') as HTMLInputElement;
-    if (checkbox) {
-      fireEvent.focus(checkbox);
-    }
-
+    fireEvent.focus(checkbox);
     expect(asFragment()).toMatchSnapshot('with focus');
-    if (checkbox) {
-      fireEvent.blur(checkbox);
-    }
+
+    fireEvent.blur(checkbox);
     expect(asFragment()).toMatchSnapshot('with blur');
   });
 
@@ -68,21 +87,64 @@ describe('Checkbox', () => {
       <Checkbox defaultChecked={false} />
     ));
     const checkbox = getByRole('checkbox') as HTMLInputElement;
-    if (checkbox) {
-      fireEvent.click(checkbox);
-    }
+    fireEvent.click(checkbox);
     expect(checkbox?.checked).toBe(true);
   });
 
-  test('click on ripple', () => {
-    const {container} = renderWithTheme(() => (
+  test('click on feedback', () => {
+    const {container, getByTestId} = renderWithTheme(() => (
       <Checkbox defaultChecked={false} />
     ));
-    const ripple = container.querySelector('.nk-checkbox-ripple');
-    if (ripple) {
-      fireEvent.click(ripple);
-    }
+    const feedback = getByTestId('checkbox-feedback');
+    fireEvent.click(feedback);
 
     expect(container.querySelector('input')?.checked).toBe(true);
+  });
+
+  test('hover on label trigger checkbox hover styles', () => {
+    const {getByText, asFragment} = renderWithTheme(() => (
+      <Checkbox label="label" />
+    ));
+    const label = getByText('label') as HTMLLabelElement;
+
+    fireEvent.mouseOver(label);
+    expect(asFragment()).toMatchSnapshot('with hover');
+
+    fireEvent.mouseLeave(label);
+    expect(asFragment()).toMatchSnapshot('without hover');
+  });
+  test('hover on label with disabled do not change hover state', () => {
+    const {getByText, asFragment} = renderWithTheme(() => (
+      <Checkbox label="label" state="disabled" />
+    ));
+    const label = getByText('label') as HTMLLabelElement;
+    fireEvent.mouseOver(label);
+    expect(asFragment()).toMatchSnapshot('with hover');
+
+    fireEvent.mouseLeave(label);
+    expect(asFragment()).toMatchSnapshot('without hover');
+  });
+
+  test('hover on feedback shows it', () => {
+    const {getByTestId, asFragment} = renderWithTheme(() => (
+      <Checkbox label="label" />
+    ));
+    const feedback = getByTestId('checkbox-feedback');
+    fireEvent.mouseOver(feedback);
+    expect(asFragment()).toMatchSnapshot('with hover');
+
+    fireEvent.mouseLeave(feedback);
+    expect(asFragment()).toMatchSnapshot('without hover');
+  });
+  test('hover on feedback when disabled does not show it', () => {
+    const {getByTestId, asFragment} = renderWithTheme(() => (
+      <Checkbox label="label" state="disabled" />
+    ));
+    const feedback = getByTestId('checkbox-feedback');
+    fireEvent.mouseOver(feedback);
+    expect(asFragment()).toMatchSnapshot('with hover');
+
+    fireEvent.mouseLeave(feedback);
+    expect(asFragment()).toMatchSnapshot('without hover');
   });
 });
