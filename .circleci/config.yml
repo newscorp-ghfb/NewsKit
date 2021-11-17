@@ -227,7 +227,43 @@ commands:
               circleci-agent step halt
             fi
 
-jobs:
+  run_test_visual_changes:
+    description: 'Run the Applitool tests for docs visual changes'
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: 'Setup Applitools environment variables'
+          <<: *applitools_defaults
+      - run:
+          name: Run Applitools Docs Site Visual Tests
+          command: make e2e_visual_test_docs
+      - run:
+          name: Close the Applitools Batch
+          command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
+      - store_artifacts:
+          path: cypress/screenshots
+      - store_artifacts:
+          path: cypress/videos
+      - slack/status:
+          <<: *slack_status
+
+jobs: 
+  can_i_merge_checker: 
+    executor: node
+    steps:
+      - run: 
+          name: 'Waiting for "no_visual_changes" or "test_visual_docs"'
+          command: |
+            if [[ $(curl --location --request GET "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/job" --header "Circle-Token: ${CIRCLECI_BASE_AUTH}"| jq -r '.items[]|select(.name == "no_visual_changes" or .name == "test_visual_docs" or .name == "test_visual_docs_2")|.status' | grep -c "success") -gt 0 ]]
+            then 
+              echo "Passed!"
+            else 
+              echo "Failed!"
+              exit 1
+            fi
+
   install_deps:
     <<: *working_directory
     executor: node-large
@@ -250,7 +286,8 @@ jobs:
             - node_modules/*
             - src/version-number.json
       - slack/status:
-          <<: *slack_status   
+          <<: *slack_status
+
   install_cypress:
     <<: *cypress_defaults
     executor: cypress
@@ -566,24 +603,13 @@ jobs:
     <<: *cypress_defaults
     executor: cypress
     steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: 'Setup Applitools environment variables'
-          <<: *applitools_defaults
-      - run:
-          name: Run Applitools Docs Site Visual Tests
-          command: make e2e_visual_test_docs
-      - run:
-          name: Close the Applitools Batch
-          command: curl --request DELETE --dump-header - "https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid/?apiKey=$APPLITOOLS_API_KEY"
-      - store_artifacts:
-          path: cypress/screenshots
-      - store_artifacts:
-          path: cypress/videos
-      - slack/status:
-          <<: *slack_status
+      - run_test_visual_changes
+
+  test_visual_docs_2:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - run_test_visual_changes
 
   test_e2e_comps:
     <<: *cypress_defaults
@@ -1006,24 +1032,52 @@ workflows:
           requires:
             - build_docs
             - install_cypress
+
       # PR jobs
-      - run_visual_tests:
+        ## Visual changes approval jobs
+      - no_visual_changes:
           <<: *only_pr
           type: approval
           requires:
             - build_storybook
+      - docs_and_comps_visual_changes:
+          <<: *only_pr
+          type: approval
+          requires:
+            - build_storybook
+      - docs_visual_changes:
+          <<: *only_pr
+          type: approval
+          requires:
+            - build_storybook
+        # end visual changes approval jobs
       - test_visual_comps:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - run_visual_tests
+            - docs_and_comps_visual_changes
       - test_visual_docs:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
             - build_docs
-            - test_visual_comps
             - install_cypress
+            - test_visual_comps
+      - test_visual_docs_2:
+          <<: *only_pr
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs
+            - install_cypress
+            - docs_visual_changes
+      - can_i_merge_checker:  
+          <<: *only_pr   
+          context: ncu-product-platforms-context
+          requires:
+            - i_have_merged_applitools
+      - i_have_merged_applitools:
+          <<: *only_pr
+          type: approval
       - init_aws:
           <<: *ignore_trigger_release
           context: ncu-product-platforms-context
