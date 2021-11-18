@@ -87,6 +87,11 @@
         "id": "/foundations/motions"
       },
       {
+        "title": "Design tokens",
+        "page": true,
+        "id": "/foundations/design-tokens"
+      },
+      {
         "title": "Presets",
         "id": "/foundations/presets",
         "subNav": [
