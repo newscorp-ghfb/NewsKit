@@ -236,6 +236,20 @@ describe('MenuGroup', () => {
         name: 'menu-group-theme',
         overrides: {
           stylePresets: {
+            menuGroupCustom: {
+              base: {
+                backgroundColor: '#2f1e9f',
+                borderStyle: 'solid',
+                borderColor: '#8074eb',
+                borderWidth: '4px 4px 0px 4px',
+                color: '#dfd3d3',
+                iconColor: 'grey',
+                borderRadius: '10px 10px 0 0',
+              },
+              hover: {
+                backgroundColor: '#d8335c',
+              },
+            },
             menuDividerCustom: {
               base: {
                 borderStyle: 'solid',
@@ -252,6 +266,7 @@ describe('MenuGroup', () => {
       title: 'Menu Group Title',
       overrides: {
         spaceInline: 'space030',
+        stylePreset: 'menuGroupCustom',
         title: {
           typographyPreset: 'utilityHeading020',
           stylePreset: 'inkSubtle',

@@ -5540,7 +5540,21 @@ exports[`MenuGroup renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  background-color: #2f1e9f;
+  border-style: solid;
+  border-color: #8074eb;
+  border-width: 4px 4px 0px 4px;
+  color: #dfd3d3;
+  border-radius: 10px 10px 0 0;
   margin-bottom: 12px;
+}
+
+.emotion-0 svg {
+  fill: grey;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #d8335c;
 }
 
 .emotion-0>ul {

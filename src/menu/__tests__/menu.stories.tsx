@@ -4,13 +4,14 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {createTheme, compileTheme, ThemeProvider} from '../../theme';
-import {IconFilledAddCircleOutline} from '../../icons';
+import {IconFilledAddCircleOutline, IconFilledClose} from '../../icons';
 import {Menu, MenuItem, MenuGroup, MenuDivider} from '..';
 import {MenuItemAlign, MenuItemSize} from '../types';
 import {styled} from '../../utils';
 import {getSSRId} from '../../utils/get-ssr-id';
 
-const href = 'http://newskit.co.uk';
+// eslint-disable-next-line no-script-url
+const href = 'javascript:;';
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -672,3 +673,149 @@ export const StoryMenuAlignedTitle = () => (
   </>
 );
 StoryMenuAlignedTitle.storyName = 'menu - aligned title';
+
+const closeButtonTheme = compileTheme(
+  createTheme({
+    name: 'my-custom-menu-theme',
+    overrides: {
+      stylePresets: {
+        menuGroupCustom: {
+          base: {
+            backgroundColor: '#2f1e9f',
+            borderStyle: 'solid',
+            borderColor: '#8074eb',
+            borderWidth: '4px 4px 0px 4px',
+            color: '#dfd3d3',
+            iconColor: 'grey',
+            borderRadius: '10px 10px 0 0',
+          },
+          hover: {
+            backgroundColor: '#d8335c',
+          },
+        },
+        menuItemCustom: {
+          base: {
+            backgroundColor: 'transparent',
+            color: 'inherit',
+          },
+        },
+        menuItemClose: {
+          base: {
+            backgroundColor: 'transparent',
+            borderStyle: 'solid',
+            borderColor: 'white',
+            borderWidth: '1px',
+            borderRadius: '50%',
+          },
+          focus: {
+            backgroundColor: 'rgba(0,0,0,0.3)',
+          },
+          hover: {
+            backgroundColor: 'rgba(0,0,0,0.3)',
+            iconColor: 'white',
+          },
+        },
+      },
+    },
+  }),
+);
+
+export const StoryMenuWithCloseButtons = () => {
+  const menuItemOverrides = {
+    overrides: {
+      stylePreset: 'menuItemCustom',
+    },
+  };
+  const menuItemCloseOverrides = {
+    overrides: {
+      stylePreset: 'menuItemClose',
+      maxHeight: '24px',
+      maxWidth: '24px',
+      minHeight: '24px',
+      minWidth: '24px',
+      spaceInset: '12px',
+    },
+  };
+
+  const CloseIcon = ({companyName}: {companyName: string}) => (
+    <IconFilledClose
+      title={`Remove ${companyName}`}
+      overrides={{size: 'iconSize010'}}
+    />
+  );
+
+  const MenuItemNoOutline = styled(MenuItem)`
+    outline: none;
+  `;
+  const MenuItemNoOutlineIcon = styled(MenuItem)`
+    outline: none;
+    margin-top: 10px;
+    margin-right: 16px;
+  `;
+
+  return (
+    <ThemeProvider theme={closeButtonTheme}>
+      <StorybookHeading>Menu - menu with close buttons</StorybookHeading>
+      <Menu
+        aria-label={`Menu ${getSSRId()}`}
+        overrides={{spaceInline: 'space000'}}
+      >
+        <MenuGroup
+          aria-label="News Corp"
+          overrides={{
+            spaceInline: 'space000',
+            stylePreset: 'menuGroupCustom',
+          }}
+        >
+          <MenuItemNoOutline href={href} {...menuItemOverrides}>
+            News Corp
+          </MenuItemNoOutline>
+          <MenuItemNoOutlineIcon
+            aria-label="close button"
+            href={href}
+            {...menuItemCloseOverrides}
+          >
+            <CloseIcon companyName="News Corp" />
+          </MenuItemNoOutlineIcon>
+        </MenuGroup>
+        <MenuGroup
+          aria-label="GSK"
+          overrides={{
+            spaceInline: 'space000',
+            stylePreset: 'menuGroupCustom',
+          }}
+        >
+          <MenuItemNoOutline href={href} {...menuItemOverrides}>
+            GSK
+          </MenuItemNoOutline>
+          <MenuItemNoOutlineIcon
+            aria-label="close button"
+            href={href}
+            {...menuItemCloseOverrides}
+          >
+            <CloseIcon companyName="GSK" />
+          </MenuItemNoOutlineIcon>
+        </MenuGroup>
+        <MenuGroup
+          aria-label="Shell"
+          overrides={{
+            spaceInline: 'space000',
+            stylePreset: 'menuGroupCustom',
+          }}
+        >
+          <MenuItemNoOutline href={href} {...menuItemOverrides}>
+            Shell
+          </MenuItemNoOutline>
+          <MenuItemNoOutlineIcon
+            aria-label="close button"
+            href={href}
+            {...menuItemCloseOverrides}
+          >
+            <CloseIcon companyName="Shell" />
+          </MenuItemNoOutlineIcon>
+        </MenuGroup>
+      </Menu>
+    </ThemeProvider>
+  );
+};
+StoryMenuWithCloseButtons.storyName = 'menu - menu with close buttons';

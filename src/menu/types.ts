@@ -30,6 +30,7 @@ export interface MenuGroupProps extends React.AriaAttributes {
   title?: React.ReactNode;
   overrides?: {
     spaceInline?: MQ<string>; // -> space between menuGroups
+    stylePreset?: MQ<string>;
     title?: {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;

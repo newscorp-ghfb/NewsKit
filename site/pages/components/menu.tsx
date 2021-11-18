@@ -640,6 +640,11 @@ export default (layoutProps: LayoutProps) => (
               default: 'space050',
               description: `Defines the space between MenuGroup.`,
             },
+            {
+              attribute: 'menuGroup.stylePreset',
+              type: 'MQ<string>',
+              description: `Overrides the stylePreset of the MenuGroup.`,
+            },
           ],
         },
         {

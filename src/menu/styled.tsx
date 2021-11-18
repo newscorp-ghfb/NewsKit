@@ -32,6 +32,9 @@ export const StyledMenuGroup = styled.li<
 >`
   box-sizing: border-box;
 
+  // empty string because there is no default and no overrides path because overrides are not nested
+  ${getStylePreset('')};
+
   ${({vertical}) =>
     getResponsiveSpace(
       vertical ? 'marginBottom' : 'marginRight',
