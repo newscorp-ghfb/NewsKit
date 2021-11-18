@@ -2,13 +2,14 @@ import {useEffect, useState} from 'react';
 import debounce from 'debounce';
 import {useTheme} from '@emotion/react';
 
-let domElementsCache: {
-  intro?: HTMLElement;
-  toc?: HTMLElement;
-  footer?: HTMLElement;
-  header?: HTMLElement;
-} = {};
 const getDomElements = () => {
+  let domElementsCache: {
+    intro?: HTMLElement;
+    toc?: HTMLElement;
+    footer?: HTMLElement;
+    header?: HTMLElement;
+  } = {};
+
   if (Object.keys(domElementsCache).length === 4) {
     return domElementsCache;
   }
