@@ -53,16 +53,9 @@ export const SvgPreviewer: React.FC = () => {
     return figmaSvgCopy;
   };
 
-  const testUint8Data = (data: Array<{code: Array<number>; name: string}>) => {
-    let filtered = [];
-
+  const testSvgCodeIsString = (data: Array<{code: string; name: string}>) => {
     data.forEach(svg => {
-      filtered = svg.code.filter((number: number) => {
-        if (typeof number !== 'number') throw Error;
-        return number < 0 || number > 255;
-      });
-
-      if (filtered.length > 0) throw Error;
+      if (typeof svg.code !== 'string') throw Error;
     });
   };
 
@@ -72,9 +65,9 @@ export const SvgPreviewer: React.FC = () => {
   const svgIdsShortener = (figmaSvg: string) => {
     let figmaSvgCopy = figmaSvg;
     const regexList = [
-      /mask\d+_\d+:\d+/g,
-      /filter\d+_d_\d+:\d+/g,
-      /clip\d+_\d+:\d+/g,
+      /mask\d+_\d+_\d+/g,
+      /filter\d+_df_\d+_\d+/g,
+      /clip\d+_\d+_\d+/g,
     ];
 
     regexList.forEach(regex => {
@@ -95,7 +88,7 @@ export const SvgPreviewer: React.FC = () => {
 
   const onmessage = (event: MessageEvent) => {
     if (event.data.pluginMessage?.action === 'FilesToUI') {
-      testUint8Data(event.data.pluginMessage.data.svgdata);
+      testSvgCodeIsString(event.data.pluginMessage.data.svgdata);
 
       // Left console logs as can be useful for debugging SVG issues without
       // using the local version.
@@ -109,10 +102,8 @@ export const SvgPreviewer: React.FC = () => {
       const baseFigmaSvg: Array<{figmaSvg: string; name: string}> = [];
       // @ts-ignore
       const content = event.data.pluginMessage.data.svgdata.map(svg => {
-        let figmaSvg: string;
-        figmaSvg = String.fromCharCode.apply(null, svg.code);
+        let figmaSvg: string = svg.code;
         figmaSvg = svgIdsShortener(figmaSvg);
-
         baseFigmaSvg.push({figmaSvg, name: svg.name});
 
         // Setting ids for "mask", "filter", and "clip" attributes
@@ -203,7 +194,7 @@ export const SvgPreviewer: React.FC = () => {
       .replace(' ', '');
 
   const buildSvgFileName = (svgName: string) =>
-    svgName.replace(' ', '-').toLowerCase();
+    svgName.replaceAll(' ', '-').toLowerCase();
 
   const replaceColorHashWithToken = (svgCode: string) => {
     let svgCodeCopy = svgCode;
@@ -473,6 +464,7 @@ export const SvgPreviewer: React.FC = () => {
         </select>
 
         <StyledSingleSVGDownloadButton
+          data-testid="single-svg-button"
           disabled={!svgCodeGroup}
           overrides={{stylePreset: 'buttonSolidPositive'}}
           onClick={handleDownloadButtonClick}

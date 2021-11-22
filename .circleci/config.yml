@@ -56,18 +56,18 @@ executors:
 
   node:
     docker:
-      - image: circleci/node:14.17.1
+      - image: circleci/node:16.13.0
 
   node-large:
     docker:
-      - image: circleci/node:14.17.1
+      - image: circleci/node:16.13.0
     resource_class: large
     environment:
       NODE_OPTIONS: --max_old_space_size=7680
 
   node-xlarge:
     docker:
-      - image: circleci/node:14.17.1
+      - image: circleci/node:16.13.0
     resource_class: xlarge
     environment:
       NODE_OPTIONS: --max_old_space_size=15872
