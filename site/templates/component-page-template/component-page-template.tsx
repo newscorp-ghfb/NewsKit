@@ -6,6 +6,7 @@ import {
   AccessibilitySection,
   AnatomySection,
   BehaviorsSection,
+  CodeExamplesSection,
   ComplianceSection,
   ComponentAPISection,
   InteractiveDemoSection,
@@ -34,6 +35,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   options,
   states,
   behaviors,
+  codeExamples,
   usage,
   accessibility,
   seo,
@@ -58,6 +60,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
       {options && <OptionsSection {...options} />}
       {states && <StatesSection {...states} />}
       {behaviors && <BehaviorsSection {...behaviors} />}
+      {codeExamples && <CodeExamplesSection {...codeExamples} />}
       {usage && <UsageSection {...usage} />}
       {accessibility && <AccessibilitySection {...accessibility} />}
       {seo && <SEOSection {...seo} />}

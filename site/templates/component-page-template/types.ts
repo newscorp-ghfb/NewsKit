@@ -6,6 +6,7 @@ import {
   OptionsSectionProps,
   StatesSectionProps,
   BehaviorsSectionProps,
+  CodeExamplesSectionProps,
   UsageSectionProps,
   AccessibilitySectionProps,
   SEOSectionProps,
@@ -24,6 +25,7 @@ export interface ComponentPageTemplateProps
   options?: OptionsSectionProps;
   states?: StatesSectionProps;
   behaviors?: BehaviorsSectionProps;
+  codeExamples?: CodeExamplesSectionProps;
   usage?: UsageSectionProps;
   accessibility?: AccessibilitySectionProps;
   seo?: SEOSectionProps;
