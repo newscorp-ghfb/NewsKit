@@ -10,7 +10,7 @@ const scrollIntoViewMock = jest.fn();
 Element.prototype.scrollIntoView = scrollIntoViewMock;
 
 jest.mock('next/link', () => ({children}: any) => children);
-jest.mock('../../../routes.json', () => [
+jest.mock('../../../routes', () => [
   {
     title: 'Group 1',
     id: '/group1',

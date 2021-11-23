@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import {useRouter} from 'next/router';
 import {Link} from '../link';
-import routes from '../../routes.json';
+import routes from '../../routes';
 import {
   StyledSectionContainer,
   StyledNavigationWrapper,

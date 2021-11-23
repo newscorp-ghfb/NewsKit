@@ -6,6 +6,8 @@ export interface Item {
   page?: boolean;
   href?: string;
   subNav?: Item[];
+  illustration?: string;
+  description?: string;
 }
 
 export type PageType = {

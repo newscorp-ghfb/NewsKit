@@ -3,7 +3,7 @@ import {getByTitle} from '../get-route-object';
 let mockGroup1: any;
 let mockGroup2Page1A: any;
 
-jest.mock('../../routes.json', () => {
+jest.mock('../../routes', () => {
   mockGroup1 = {
     title: 'Group1',
     id: '/group1',

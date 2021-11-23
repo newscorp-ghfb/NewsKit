@@ -1,4 +1,4 @@
-import routes from '../routes.json';
+import routes from '../routes';
 
 export interface RouteObject {
   title: string;

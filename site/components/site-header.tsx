@@ -22,7 +22,7 @@ import {
 import {NewsKitLogo, NewsKitMobileLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
-import routes from '../routes.json';
+import routes from '../routes';
 import {Link} from './link';
 
 const Header = styled.header`

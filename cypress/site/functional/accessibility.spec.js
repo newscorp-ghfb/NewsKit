@@ -1,6 +1,6 @@
 // / <reference types="Cypress" />
 
-import siteRoutes from '../../../site/routes.json';
+import siteRoutes from '../../../site/routes';
 import {flatRoutes} from '../../support/commands';
 
 const pages = flatRoutes(siteRoutes, 'id');

@@ -10,7 +10,7 @@ import Layout, {LayoutProps} from '../../components/layout';
 import {SectionIntroduction} from '../../components/section-introduction';
 import {MediaList} from '../../components/media-list';
 import {HeaderIndex} from '../../components/header-index';
-import routes from '../../routes.json';
+import routes from '../../routes';
 
 const componentCategories: any =
   routes.find(r => r.title === 'Components')?.subNav?.slice(1) || [];
