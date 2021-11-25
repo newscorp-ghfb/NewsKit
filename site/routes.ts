@@ -616,4 +616,15 @@ export default [
       },
     ],
   },
+  {
+    title: 'Patterns',
+    id: '/patterns',
+    subNav: [
+      {
+        title: 'Overview',
+        page: true,
+        id: '/patterns/overview',
+      },
+    ],
+  },
 ];

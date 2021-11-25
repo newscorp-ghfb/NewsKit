@@ -10,11 +10,11 @@ import {
 import {OnwardJourneySectionProps} from '../template-sections';
 import {FoundationPageTemplateProps} from './types';
 
-const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
+export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   buttonLabel: 'Read more',
   stylePrefix: 'foundationFeatureCard',
   layout: 'horizontal',
-  href: 'readMore',
+  href: 'components/overview',
 };
 
 export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({

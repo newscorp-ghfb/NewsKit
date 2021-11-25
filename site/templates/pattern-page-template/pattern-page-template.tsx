@@ -11,7 +11,7 @@ const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   buttonLabel: 'Read more',
   stylePrefix: 'patternFeatureCard',
   layout: 'horizontal',
-  href: 'readMore',
+  href: '/about/contact-us/',
 };
 
 export const PatternPageTemplate: React.FC<PatternPageTemplateProps> = ({
