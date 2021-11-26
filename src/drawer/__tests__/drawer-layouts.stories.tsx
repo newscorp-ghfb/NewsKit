@@ -287,7 +287,7 @@ export const StoryWithOverrides = () =>
             },
           }}
         >
-          {'Content area'}
+          Content area
         </Drawer>
       </ThemeProvider>
     </>

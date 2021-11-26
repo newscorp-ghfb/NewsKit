@@ -27,15 +27,15 @@ export default {
 };
 
 export const StoryUnorderedListDefault = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Unordered list defaults</StorybookHeading>
     <UnorderedList>{listData}</UnorderedList>
-  </React.Fragment>
+  </>
 );
 StoryUnorderedListDefault.storyName = 'unordered-list-default';
 
 export const StoryUnorderedListWithMarker = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Unordered list</StorybookHeading>
     <StorybookSubHeading>with markers</StorybookSubHeading>
     <UnorderedList listItemMarker={IconFilledMood}>{listData}</UnorderedList>
@@ -49,7 +49,7 @@ export const StoryUnorderedListWithMarker = () => (
     >
       {listData}
     </UnorderedList>
-  </React.Fragment>
+  </>
 );
 StoryUnorderedListWithMarker.storyName = 'unordered-list-with-marker';
 
@@ -63,7 +63,7 @@ export const StoryUnorderedListWithMarkerAlignment = () => {
     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
   ];
   return (
-    <React.Fragment>
+    <>
       <StorybookHeading>Unordered list</StorybookHeading>
       <StorybookSubHeading>
         with marker in the center (default)
@@ -79,7 +79,7 @@ export const StoryUnorderedListWithMarkerAlignment = () => {
       <UnorderedList listItemMarker={IconFilledMood} markerAlign="end">
         {multiLineListData}
       </UnorderedList>
-    </React.Fragment>
+    </>
   );
 };
 StoryUnorderedListWithMarkerAlignment.storyName =

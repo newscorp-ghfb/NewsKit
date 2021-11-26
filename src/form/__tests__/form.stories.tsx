@@ -41,7 +41,7 @@ export default {
 };
 
 export const StoryFormWithSubmitValidation = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Form</StorybookHeading>
     <Block>
       <StorybookSubHeading>Input validation mode: onSubmit</StorybookSubHeading>
@@ -77,12 +77,12 @@ export const StoryFormWithSubmitValidation = () => (
         <Button type="submit">Submit</Button>
       </Form>
     </Block>
-  </React.Fragment>
+  </>
 );
 StoryFormWithSubmitValidation.storyName = 'form-with-submit-validation';
 
 export const StoryFormWithResolver = () => (
-  <React.Fragment>
+  <>
     <div data-testid="yup-resolver">
       <StorybookHeading>Form</StorybookHeading>
       <Block>
@@ -104,12 +104,12 @@ export const StoryFormWithResolver = () => (
         </Form>
       </Block>
     </div>
-  </React.Fragment>
+  </>
 );
 StoryFormWithResolver.storyName = 'form-with-resolver';
 
 export const StoryFormWithSubmitValidationAndAssistiveText = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Form</StorybookHeading>
     <Block>
       <StorybookSubHeading>
@@ -149,13 +149,13 @@ export const StoryFormWithSubmitValidationAndAssistiveText = () => (
         <Button type="submit">Submit</Button>
       </Form>
     </Block>
-  </React.Fragment>
+  </>
 );
 StoryFormWithSubmitValidationAndAssistiveText.storyName =
   'form-with-submit-validation-and-assistive-text';
 
 export const StoryFormSizes = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Form with</StorybookHeading>
     <Block>
       <Stack
@@ -273,7 +273,7 @@ export const StoryFormSizes = () => (
         </Form>
       </Stack>
     </Block>
-  </React.Fragment>
+  </>
 );
 StoryFormSizes.storyName = 'form-sizes';
 
@@ -306,7 +306,7 @@ export const StoryFormWithPhoneInput = () => {
               />
             </Block>
             <Block>
-              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for */}
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
               <label htmlFor="phone-number">Phone number</label>
               <PhoneInputWithCountry
                 placeholder="Enter phone number"
@@ -324,10 +324,10 @@ export const StoryFormWithPhoneInput = () => {
     );
   };
   return (
-    <React.Fragment>
+    <>
       <StorybookHeading>Form with Telephone number</StorybookHeading>
       <FormWithPhoneInput />
-    </React.Fragment>
+    </>
   );
 };
 StoryFormWithPhoneInput.storyName = 'form-with-phone-input';
@@ -340,7 +340,7 @@ export const StoryFormWithCustomStyles = () => {
     border: 1px dashed;
   `;
   return (
-    <React.Fragment>
+    <>
       <StorybookHeading>Form with custom styles</StorybookHeading>
       <Block>
         <StyledForm onSubmit={onSubmit}>
@@ -361,7 +361,7 @@ export const StoryFormWithCustomStyles = () => {
           <Button type="submit">Submit</Button>
         </StyledForm>
       </Block>
-    </React.Fragment>
+    </>
   );
 };
 StoryFormWithCustomStyles.storyName = 'form-with-custom-styles';

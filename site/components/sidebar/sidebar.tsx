@@ -70,7 +70,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   handleSidebarClick,
   hideSidebar,
 }) => (
-  <React.Fragment>
+  <>
     <SidebarWrapper
       open={sidebarOpen}
       data-testid="sidebar"
@@ -106,7 +106,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       lockScroll={sidebarOpen}
       hideAtBreakpoint="lg"
     />
-  </React.Fragment>
+  </>
 );
 
 export default Sidebar;

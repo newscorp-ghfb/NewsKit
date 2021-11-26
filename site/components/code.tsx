@@ -19,10 +19,10 @@ interface CodeFromFileProps extends HTMLAttributes<HTMLDivElement> {
   path: string;
   language?: string;
 }
-
-interface CodeFromDefaultPresets {
+interface CodeFromDefaultPresetsProps {
   componentName: string;
 }
+
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 
 const StyledDiv = styled.div`
@@ -86,7 +86,7 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({
   );
 };
 
-export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresets> = ({
+export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresetsProps> = ({
   componentName,
 }) => {
   if (componentName) {

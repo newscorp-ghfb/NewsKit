@@ -19,8 +19,8 @@ const WrapperWithPadding = styled.div`
   ${getSizingCssFromTheme('marginBottom', 'sizing080')}
 `;
 
-export default (layoutProps: LayoutProps) => (
-  <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
+export default ({path, ...props}: LayoutProps) => (
+  <Layout {...props} path={`${path}-new`}>
     <Head>
       <title key="title">Contact us | NewsKit design system</title>
       <meta

@@ -127,7 +127,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
   );
 
   return (
-    <React.Fragment>
+    <>
       <Slider
         vertical={vertical}
         min={0}
@@ -162,6 +162,6 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
       <ScreenReaderOnly id={srOnlyVolumeControl} aria-hidden="true">
         Use the arrow keys to adjust volume
       </ScreenReaderOnly>
-    </React.Fragment>
+    </>
   );
 };

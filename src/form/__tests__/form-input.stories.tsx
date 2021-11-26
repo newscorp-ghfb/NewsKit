@@ -38,7 +38,7 @@ export default {
   disabledRules: ['color-contrast'],
 };
 export const StoryFormField = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       FormInput with assistive text, label and before and after icon
     </StorybookHeading>
@@ -159,13 +159,13 @@ export const StoryFormField = () => (
       </FormInput>
       <Button type="submit">Submit</Button>
     </Form>
-  </React.Fragment>
+  </>
 );
 StoryFormField.storyName = 'form-input-before-and-after-icon';
 export const FormFieldWithIconButton = () => {
   const [showPassword, setShowPassword] = React.useState(false);
   return (
-    <React.Fragment>
+    <>
       <StorybookHeading>Form With Icon In Input</StorybookHeading>
       <Block>
         <Form onSubmit={onSubmit}>
@@ -216,7 +216,7 @@ export const FormFieldWithIconButton = () => {
           <Button type="submit">Submit</Button>
         </Form>
       </Block>
-    </React.Fragment>
+    </>
   );
 };
 FormFieldWithIconButton.storyName = 'form-input-with-icon-button';

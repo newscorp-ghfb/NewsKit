@@ -110,12 +110,12 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
     dividerSpace,
   );
 
-  interface bylineItemProps {
+  interface BylineItemProps {
     children?: Array<JSX.Element | string | undefined> | JSX.Element | string;
     lastItem: boolean;
   }
 
-  const BylineItem = ({lastItem, children}: bylineItemProps) => (
+  const BylineItem = ({lastItem, children}: BylineItemProps) => (
     <StyledTextBlockWithSpace withSpace={!lastItem}>
       {children}
       {!lastItem && <PipeContainer overrides={overrides}>|</PipeContainer>}

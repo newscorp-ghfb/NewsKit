@@ -45,8 +45,7 @@ export const getPresetStyles = (
   presetStyles: StylePresetStyles,
   options?: GetStylePresetFromThemeOptions,
 ) => {
-  const {filterStyles = null, omitStyles = [], isSvg: isSvg = false} =
-    options || {};
+  const {filterStyles = null, omitStyles = [], isSvg = false} = options || {};
   const {iconColor, placeholderColor, ...cssObject} = filterStyles
     ? filterObject(presetStyles, filterStyles)
     : rejectObject(presetStyles, omitStyles);

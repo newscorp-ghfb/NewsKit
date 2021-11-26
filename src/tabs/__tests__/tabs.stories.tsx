@@ -192,7 +192,7 @@ export default {
 };
 
 export const StoryTabsDistributionStart = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Distribution Start</StorybookHeading>
 
     <StorybookSubHeading>Horizontal</StorybookSubHeading>
@@ -246,14 +246,14 @@ export const StoryTabsDistributionStart = () => (
         <LoremIpsum textNumber={3} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsDistributionStart.storyName = 'tabs-distribution-start';
 
 export const StoryControlledTabs = () => {
   const [selectedIndex, setSelected] = React.useState(0);
   return (
-    <React.Fragment>
+    <>
       <StorybookHeading>Controlled Tabs Index selection</StorybookHeading>
       <Block spaceInset="spaceInset040">
         <Button onClick={() => setSelected(state => Math.min(2, state + 1))}>
@@ -281,13 +281,13 @@ export const StoryControlledTabs = () => {
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
-    </React.Fragment>
+    </>
   );
 };
 StoryControlledTabs.storyName = 'tabs-controlled';
 
 export const StoryTabsDistributionGrow = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Distribution - Grow</StorybookHeading>
 
     <StorybookSubHeading>Horizontal</StorybookSubHeading>
@@ -321,12 +321,12 @@ export const StoryTabsDistributionGrow = () => (
         <LoremIpsum textNumber={3} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsDistributionGrow.storyName = 'tabs-distribution-grow';
 
 export const StoryTabsDistributionEqual = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Distribution - Equal</StorybookHeading>
 
     <StorybookSubHeading>Horizontal</StorybookSubHeading>
@@ -360,12 +360,12 @@ export const StoryTabsDistributionEqual = () => (
         <LoremIpsum textNumber={3} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsDistributionEqual.storyName = 'tabs-distribution-equal';
 
 export const StoryTabsWithScroll = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs with fixed height in container and scroll
     </StorybookHeading>
@@ -413,12 +413,12 @@ export const StoryTabsWithScroll = () => (
         </ScrollBox>
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithScroll.storyName = 'tabs-with-scroll';
 
 export const StoryTabsHorizontal = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Horizontal</StorybookHeading>
     <StorybookSubHeading>Small</StorybookSubHeading>
 
@@ -443,12 +443,12 @@ export const StoryTabsHorizontal = () => (
       <Tab label="Large tab">Content 2</Tab>
       <Tab label="Large tab">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsHorizontal.storyName = 'tabs-horizontal';
 
 export const StoryTabsHorizontalIconLabel = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Horizontal Label / Icon</StorybookHeading>
     <StorybookSubHeading>Label Only</StorybookSubHeading>
     <Tabs size={TabSize.Medium} divider>
@@ -474,12 +474,12 @@ export const StoryTabsHorizontalIconLabel = () => (
         <LoremIpsum textNumber={3} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsHorizontalIconLabel.storyName = 'tabs-horizontal-icon-label';
 
 export const StoryTabsVerticalIconLabel = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Vertical Label / Icon</StorybookHeading>
     <StorybookSubHeading>Label Only</StorybookSubHeading>
     <Tabs size={TabSize.Medium} divider vertical>
@@ -511,12 +511,12 @@ export const StoryTabsVerticalIconLabel = () => (
         <LoremIpsum textNumber={4} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsVerticalIconLabel.storyName = 'tabs-vertical-icon-label';
 
 export const StoryTabsHorizontalIconAndLabel = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Horizontal Icon and Label</StorybookHeading>
     <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
     <Tabs size={TabSize.Small} divider>
@@ -544,12 +544,12 @@ export const StoryTabsHorizontalIconAndLabel = () => (
         <LoremIpsum textNumber={3} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsHorizontalIconAndLabel.storyName = 'tabs-horizontal-icon-and-label';
 
 export const StoryTabsVerticalIconAndLabel = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Vertical Icon and Label</StorybookHeading>
     <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
     <Tabs size={TabSize.Medium} divider vertical>
@@ -577,12 +577,12 @@ export const StoryTabsVerticalIconAndLabel = () => (
         <LoremIpsum textNumber={3} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsVerticalIconAndLabel.storyName = 'tabs-vertical-icon-and-label';
 
 export const StoryTabsVertical = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Vertical</StorybookHeading>
     <StorybookSubHeading>Small</StorybookSubHeading>
     <Tabs size={TabSize.Small} vertical>
@@ -602,12 +602,12 @@ export const StoryTabsVertical = () => (
       <Tab label="Large tab">Content 2</Tab>
       <Tab label="Large tab">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsVertical.storyName = 'tabs-vertical';
 
 export const StoryTabsVerticalVariantsLabelOrIcon = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Vertical Variants (Label or Icon)</StorybookHeading>
     <StorybookSubHeading>Label Only</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical divider>
@@ -627,13 +627,13 @@ export const StoryTabsVerticalVariantsLabelOrIcon = () => (
         Content 3
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsVerticalVariantsLabelOrIcon.storyName =
   'tabs-vertical-variants-label-or-icon';
 
 export const StoryTabsVerticalVariantsIconPlacement = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Vertical Variants (Icon Placement)</StorybookHeading>
     <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
     <Tabs size={TabSize.Medium} vertical divider>
@@ -667,13 +667,13 @@ export const StoryTabsVerticalVariantsIconPlacement = () => (
         Content 3
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsVerticalVariantsIconPlacement.storyName =
   'tabs-vertical-variants-icon-placement';
 
 export const StoryTabsHorizontalIndicatorPositionVariants = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs Horizontal Indicator Position Variants
     </StorybookHeading>
@@ -695,13 +695,13 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
       <Tab label="Tab Two">Content 2</Tab>
       <Tab label="Tab Three is Long">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsHorizontalIndicatorPositionVariants.storyName =
   'tabs-horizontal-indicator-position-variants';
 
 export const StoryTabsVerticalIndicatorPositionVariants = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs Vertical Indicator Position Variants
     </StorybookHeading>
@@ -731,13 +731,13 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
       <Tab label="Tab Two">Content 2</Tab>
       <Tab label="Tab Three is Long">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsVerticalIndicatorPositionVariants.storyName =
   'tabs-vertical-indicator-position-variants';
 
 export const StoryTabsContent = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs Content</StorybookHeading>
     <StorybookSubHeading>Tab with content</StorybookSubHeading>
     <Tabs size={TabSize.Medium} divider>
@@ -763,12 +763,12 @@ export const StoryTabsContent = () => (
         <LoremIpsum textNumber={3} />
       </Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsContent.storyName = 'tabs-content';
 
 export const StoryTabsWithDisabledTab = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs With Disabled Tab</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
     <Tabs>
@@ -786,12 +786,12 @@ export const StoryTabsWithDisabledTab = () => (
       </Tab>
       <Tab label="Tab Three is Long">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithDisabledTab.storyName = 'tabs-with-disabled-tab';
 
 export const StoryTabsWithFixedTabIndicatorSize = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs With Fixed Tab Indicator Size</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
     <Tabs overrides={{selectionIndicator: {indicator: {size: 'sizing050'}}}}>
@@ -808,13 +808,13 @@ export const StoryTabsWithFixedTabIndicatorSize = () => (
       <Tab label="Tab Two">Content 2</Tab>
       <Tab label="Tab Three is Long">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithFixedTabIndicatorSize.storyName =
   'tabs-with-fixed-tab-indicator-size';
 
 export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs With Fixed Tab Indicator Percentage Size
     </StorybookHeading>
@@ -830,13 +830,13 @@ export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
       <Tab label="Tab Two">Content 1</Tab>
       <Tab label="Tab Three is Long">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithFixedTabIndicatorPercentageSize.storyName =
   'tabs-with-fixed-tab-indicator-percentage-size';
 
 export const StoryTabsWithFixedTabIndicatorPixelSize = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs With Fixed Tab Indicator Pixel Size
     </StorybookHeading>
@@ -855,13 +855,13 @@ export const StoryTabsWithFixedTabIndicatorPixelSize = () => (
       <Tab label="Tab Two">Content 1</Tab>
       <Tab label="Tab Three is Long">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithFixedTabIndicatorPixelSize.storyName =
   'tabs-with-fixed-tab-indicator-pixel-size';
 
 export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs With Custom Tab Bar Track And Indicator Weight
     </StorybookHeading>
@@ -903,13 +903,13 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
       <Tab label="Tab Three is Long">Content 3</Tab>
       <Tab label="Tab Four">Content 4</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithCustomTabBarTrackAndIndicatorWeight.storyName =
   'tabs-with-custom-tab-bar-track-and-indicator-weight';
 
 export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs With Custom Tab Bar Indicator Animation
     </StorybookHeading>
@@ -949,7 +949,7 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
       <Tab label="Tab Three is Long">Content 3</Tab>
       <Tab label="Tab Four">Content 4</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithCustomTabBarIndicatorAnimation.storyName =
   'tabs-with-custom-tab-bar-indicator-animation';
@@ -958,7 +958,7 @@ StoryTabsWithCustomTabBarIndicatorAnimation.parameters = {
 };
 
 export const StoryTabsWithPresetsOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs with presets overides</StorybookHeading>
     <StorybookSubHeading>Vertical</StorybookSubHeading>
     <ThemeProvider theme={myCustomTabsTheme}>
@@ -1001,7 +1001,7 @@ export const StoryTabsWithPresetsOverrides = () => (
         </Tab>
       </Tabs>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
 
@@ -1029,7 +1029,7 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
   `;
 
   return (
-    <React.Fragment>
+    <>
       <StorybookHeading>Tabs with Box Shadow</StorybookHeading>
       <ThemeProvider theme={myCustomThemeShadows}>
         <TabsContainer>
@@ -1065,13 +1065,13 @@ export const StoryTabsWithPresetsOverridesShadows = () => {
           </Tabs>
         </TabsContainer>
       </ThemeProvider>
-    </React.Fragment>
+    </>
   );
 };
 StoryTabsWithPresetsOverridesShadows.storyName = 'tabs-with-presets-shadows';
 
 export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Tabs with presets overides on individual tab
     </StorybookHeading>
@@ -1097,13 +1097,13 @@ export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
         </Tab>
       </Tabs>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithPresetsOverridesOnIndividualTab.storyName =
   'tabs-with-presets-overrides-on-individual-tab';
 
 export const StoryTabsWithAlign = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tabs With Align</StorybookHeading>
     <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>
     <Tabs align={TabAlign.Start} distribution={TabsDistribution.Grow}>
@@ -1131,7 +1131,7 @@ export const StoryTabsWithAlign = () => (
       <Tab label="Tab Two">Content 2</Tab>
       <Tab label="Tab Three is Long">Content 3</Tab>
     </Tabs>
-  </React.Fragment>
+  </>
 );
 StoryTabsWithAlign.storyName = 'tabs-with-align';
 

@@ -74,6 +74,19 @@ const StyledFullWidthVisible = styled(Visible)`
   width: 100%;
 `;
 
+const CTABtn = ({
+  children,
+  overrides,
+  ...restProps
+}: ButtonOrButtonLinkProps) => (
+  <Button
+    overrides={{stylePreset: 'buttonSolidInverse', width: '100%', ...overrides}}
+    {...restProps}
+  >
+    {children || 'CTA Button'}
+  </Button>
+);
+
 const BannerWithState: React.FC<BannerProps> = ({children, ...restProps}) => {
   const [isActive, setIsActive] = React.useState(true);
 
@@ -175,19 +188,6 @@ const bannerLink = (
   <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
     with link
   </Link>
-);
-
-const CTABtn = ({
-  children,
-  overrides,
-  ...restProps
-}: ButtonOrButtonLinkProps) => (
-  <Button
-    overrides={{stylePreset: 'buttonSolidInverse', width: '100%', ...overrides}}
-    {...restProps}
-  >
-    {children || 'CTA Button'}
-  </Button>
 );
 
 export default {

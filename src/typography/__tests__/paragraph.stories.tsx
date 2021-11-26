@@ -33,7 +33,7 @@ export default {
 };
 
 export const StoryParagraph = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Paragraph</StorybookHeading>
     <StorybookSubHeading>default</StorybookSubHeading>
     <P>{bodyString}</P>
@@ -53,12 +53,12 @@ export const StoryParagraph = () => (
       Paragraph component containing a <Sub>subscript element</Sub> and a{' '}
       <Sup>superscript element</Sup>
     </P>
-  </React.Fragment>
+  </>
 );
 StoryParagraph.storyName = 'paragraph';
 
 export const StoryParagraphWithOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Paragraph with overrides</StorybookHeading>
     <StorybookSubHeading>on paragraph</StorybookSubHeading>
     <br />
@@ -92,6 +92,6 @@ export const StoryParagraphWithOverrides = () => (
         each actually destructive and wrong-headed.
       </P>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryParagraphWithOverrides.storyName = 'paragraph-with-overrides';

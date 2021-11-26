@@ -732,13 +732,7 @@ StoryNestedStacksBothAsListWithSpace.storyName =
 
 // From GitHub, why dynamic creating stories is not possible anymore
 // It's very important for us that CSF be statically analyzable, so we're not planning on adding a dynamic story API
-export const StoryAllInOne = () => (
-  <>
-    {stackSets.map(c => (
-      <>{c.storyFn()}</>
-    ))}
-  </>
-);
+export const StoryAllInOne = () => <>{stackSets.map(c => c.storyFn())}</>;
 StoryAllInOne.storyName = 'all-in-one';
 
 export const StoryResponsive = () => (

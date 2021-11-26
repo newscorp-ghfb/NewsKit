@@ -83,8 +83,10 @@ export default class MyApp extends App<Props, State> {
     }
   }
 
+  // eslint-disable-next-line class-methods-use-this
   getThemeStyle = () => window.localStorage.getItem(STORAGE_KEY_NAME);
 
+  // eslint-disable-next-line class-methods-use-this
   setThemeStyle = (theme: string) =>
     window.localStorage.setItem(STORAGE_KEY_NAME, theme);
 

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import {FlexDirectionProperty} from 'csstype';
 import {CardLayout, CardOverridesProps, CardProps, HasHref} from './types';
 import {

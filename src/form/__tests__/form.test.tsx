@@ -37,7 +37,7 @@ describe('Form', () => {
   });
 
   const formBody = (
-    <React.Fragment>
+    <>
       <TextInput
         label="Email"
         name="email"
@@ -61,11 +61,11 @@ describe('Form', () => {
           minLength: {value: 3, message: 'min length is 3'},
         }}
       />
-    </React.Fragment>
+    </>
   );
 
   const nestedFormBody = (
-    <React.Fragment>
+    <>
       <Block spaceStack="space050">
         <TextInput
           label="Email"
@@ -99,7 +99,7 @@ describe('Form', () => {
       <Button data-testid="submit-button" type="submit">
         Submit
       </Button>
-    </React.Fragment>
+    </>
   );
 
   let props: any;
@@ -430,7 +430,7 @@ describe('Form', () => {
 describe('FormInput', () => {
   let props: any;
   const formBodyFormInput = (
-    <React.Fragment>
+    <>
       <FormInput
         id="email"
         name="email"
@@ -454,10 +454,10 @@ describe('FormInput', () => {
         />
         <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
       </FormInput>
-    </React.Fragment>
+    </>
   );
   const formBodyFormInputInvalid = (
-    <React.Fragment>
+    <>
       <FormInput
         name="email"
         rules={{
@@ -499,16 +499,14 @@ describe('FormInput', () => {
       <Button data-testid="submit-button" type="submit">
         Submit
       </Button>
-    </React.Fragment>
+    </>
   );
   const formProps = (prop: FormInputProps) => (
-    <React.Fragment>
-      <FormInput {...prop}>
-        <FormInputLabel>E-mail</FormInputLabel>
-        <FormInputTextField data-testid="text-field-email" />
-        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
-      </FormInput>
-    </React.Fragment>
+    <FormInput {...prop}>
+      <FormInputLabel>E-mail</FormInputLabel>
+      <FormInputTextField data-testid="text-field-email" />
+      <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+    </FormInput>
   );
   test('renders FormInput Correctly', () => {
     const prop: FormInputProps = {

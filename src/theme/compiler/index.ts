@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {ThemeLoggerFunction, Theme, UncompiledTheme} from '../types';
 import {get} from '../../utils/get';
@@ -53,7 +52,8 @@ const parseAndGet = (
       }
       return tokens.length > 1
         ? result.replace(`{{${tokenPath}}}`, tokenValue as string)
-        : recurseUnknown(theme, tokenValue, errorLogger);
+        : // eslint-disable-next-line @typescript-eslint/no-use-before-define
+          recurseUnknown(theme, tokenValue, errorLogger);
     }, value as string);
   }
 

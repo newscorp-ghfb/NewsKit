@@ -27,7 +27,7 @@ export default {
 };
 
 export const StoryEmailInputVariations = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Email Input Variations</StorybookHeading>
     <StorybookSubHeading>With Hidden Label</StorybookSubHeading>
     <Container>
@@ -45,12 +45,12 @@ export const StoryEmailInputVariations = () => (
         assistiveText="Assistive text"
       />
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryEmailInputVariations.storyName = 'email-input-variations';
 
 export const StoryEmailWithSubmitValidation = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Form</StorybookHeading>
     <Block>
       <StorybookSubHeading>
@@ -74,6 +74,6 @@ export const StoryEmailWithSubmitValidation = () => (
         <Button type="submit">Submit</Button>
       </Form>
     </Block>
-  </React.Fragment>
+  </>
 );
 StoryEmailWithSubmitValidation.storyName = 'email-with-submit-validation';

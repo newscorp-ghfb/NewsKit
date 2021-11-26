@@ -42,7 +42,7 @@ export const SvgPreviewer: React.FC = () => {
 
     regexList.forEach(regex => {
       const matchList = figmaSvgCopy.match(regex);
-      // eslint-disable-next-line no-unused-expressions
+
       matchList?.forEach(match => {
         figmaSvgCopy = figmaSvgCopy.replace(
           new RegExp(match, 'g'),
@@ -55,7 +55,7 @@ export const SvgPreviewer: React.FC = () => {
 
   const testSvgCodeIsString = (data: Array<{code: string; name: string}>) => {
     data.forEach(svg => {
-      if (typeof svg.code !== 'string') throw Error;
+      if (typeof svg.code !== 'string') throw new Error();
     });
   };
 
@@ -73,7 +73,6 @@ export const SvgPreviewer: React.FC = () => {
     regexList.forEach(regex => {
       const matchList = figmaSvg.match(regex);
 
-      // eslint-disable-next-line no-unused-expressions
       matchList?.forEach(match => {
         const firstUnderscoreIndex = match.indexOf('_');
 
@@ -365,7 +364,6 @@ export const SvgPreviewer: React.FC = () => {
   const buildAndDownloadAllSvgFile = () => {
     const zip = new JSZip();
 
-    // eslint-disable-next-line no-unused-expressions
     baseSvgCodeGroup?.forEach(svg => {
       let figmaSvgCopy = svg.figmaSvg;
       figmaSvgCopy = toReactComponent(figmaSvgCopy);

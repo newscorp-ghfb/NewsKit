@@ -423,7 +423,7 @@ export const StoryButtonStyleAtBreakpoints = () => (
 StoryButtonStyleAtBreakpoints.storyName = 'button-style-at-breakpoints';
 
 export const StoryButtonLink = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>Button link</StorybookSubHeading>
     <Container>
       <Button href="https://www.newskit.co.uk/">Visit newskit.co.uk</Button>
@@ -443,6 +443,6 @@ export const StoryButtonLink = () => (
         Another link to newskit.co.uk
       </Button>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryButtonLink.storyName = 'button-link';

@@ -76,7 +76,7 @@ export default {
 };
 
 export const StoryTabSize = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tab Size</StorybookHeading>
     <Container>
       <Stack
@@ -97,12 +97,12 @@ export const StoryTabSize = () => (
         </Tab>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTabSize.storyName = 'tab-size';
 
 export const StoryTabStates = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tab States</StorybookHeading>
     <Grid>
       <Cell xs={6} sm={3}>
@@ -113,59 +113,57 @@ export const StoryTabStates = () => (
           ))}
         </Stack>
       </Cell>
-      {
-        <Cell xs={6} sm={3}>
-          <Stack
-            spaceInline="space020"
-            stackDistribution={StackDistribution.SpaceEvenly}
-            role="tablist"
-          >
-            <StorybookSubHeading>Tab</StorybookSubHeading>
-            <Block role="tablist" data-state="Default">
-              <Tab ariaLabel="tab label" overrides={{stylePreset: 'tab'}}>
-                Tab Label
-              </Tab>
-            </Block>
+      <Cell xs={6} sm={3}>
+        <Stack
+          spaceInline="space020"
+          stackDistribution={StackDistribution.SpaceEvenly}
+          role="tablist"
+        >
+          <StorybookSubHeading>Tab</StorybookSubHeading>
+          <Block role="tablist" data-state="Default">
+            <Tab ariaLabel="tab label" overrides={{stylePreset: 'tab'}}>
+              Tab Label
+            </Tab>
+          </Block>
 
-            <Block data-state="Selected" role="tablist">
-              <Tab
-                ariaLabel="tab label"
-                selected
-                overrides={{stylePreset: 'tab'}}
-              >
-                Tab Label
-              </Tab>
-            </Block>
+          <Block data-state="Selected" role="tablist">
+            <Tab
+              ariaLabel="tab label"
+              selected
+              overrides={{stylePreset: 'tab'}}
+            >
+              Tab Label
+            </Tab>
+          </Block>
 
-            <Block data-state="Disabled">
-              <Tab
-                disabled
-                ariaLabel="tab label"
-                overrides={{stylePreset: 'tab'}}
-              >
-                Tab Label
-              </Tab>
-            </Block>
+          <Block data-state="Disabled">
+            <Tab
+              disabled
+              ariaLabel="tab label"
+              overrides={{stylePreset: 'tab'}}
+            >
+              Tab Label
+            </Tab>
+          </Block>
 
-            <Block data-state="Focus">
-              <Tab
-                autoFocus
-                ariaLabel="tab label"
-                overrides={{stylePreset: 'tab'}}
-              >
-                Tab Label
-              </Tab>
-            </Block>
-          </Stack>
-        </Cell>
-      }
+          <Block data-state="Focus">
+            <Tab
+              autoFocus
+              ariaLabel="tab label"
+              overrides={{stylePreset: 'tab'}}
+            >
+              Tab Label
+            </Tab>
+          </Block>
+        </Stack>
+      </Cell>
     </Grid>
-  </React.Fragment>
+  </>
 );
 StoryTabStates.storyName = 'tab-states';
 
 export const StoryTabIcon = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tab - Icon</StorybookHeading>
     {[IconFilledPause, IconFilledEmail, IconFilledLink].map(IconType => (
       <Spacer key={getSSRId()}>
@@ -178,12 +176,12 @@ export const StoryTabIcon = () => (
         </Stack>
       </Spacer>
     ))}
-  </React.Fragment>
+  </>
 );
 StoryTabIcon.storyName = 'tab-icon';
 
 export const StoryTabIconLabel = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tab - Icon and Label</StorybookHeading>
     {[IconFilledPause, IconFilledEmail, IconFilledLink].map(IconType => (
       <Spacer key={getSSRId()}>
@@ -197,12 +195,12 @@ export const StoryTabIconLabel = () => (
         </Stack>
       </Spacer>
     ))}
-  </React.Fragment>
+  </>
 );
 StoryTabIconLabel.storyName = 'tab-icon & label';
 
 export const StoryTabWithOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tab With Overrides</StorybookHeading>
     <Container>
       <ThemeProvider theme={myCustomTheme}>
@@ -223,12 +221,12 @@ export const StoryTabWithOverrides = () => (
         </Stack>
       </ThemeProvider>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTabWithOverrides.storyName = 'tab-with-overrides';
 
 export const StoryTabWithIconSizeOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>
       Tab With default IconSize and inline overridden icon size
     </StorybookSubHeading>
@@ -263,6 +261,6 @@ export const StoryTabWithIconSizeOverrides = () => (
         </Stack>
       </ThemeProvider>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTabWithIconSizeOverrides.storyName = 'tab-with-icon-size-overrides';

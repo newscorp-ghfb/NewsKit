@@ -20,7 +20,7 @@ export default {
 };
 
 export const StoryGrid = () => (
-  <React.Fragment>
+  <>
     <BorderedBox>
       <Grid>
         <Cell>
@@ -327,6 +327,6 @@ export const StoryGrid = () => (
         </Cell>
       </Grid>
     </BorderedBox>
-  </React.Fragment>
+  </>
 );
 StoryGrid.storyName = 'grid';

@@ -112,7 +112,7 @@ export const Heading = ({
     border={border}
     wrapText={wrapText}
   >
-    <React.Fragment>{children}</React.Fragment>
+    {children}
   </TextElement>
 );
 
@@ -197,7 +197,7 @@ export const DocLink: React.FC<DocLinkProps> = ({children, href, ...rest}) => {
 };
 
 export const H1 = ({children}: TextProps) => (
-  <React.Fragment>
+  <>
     <Heading
       id={
         (children &&
@@ -210,7 +210,7 @@ export const H1 = ({children}: TextProps) => (
     >
       {children as string}
     </Heading>
-  </React.Fragment>
+  </>
 );
 
 export const H2 = ({children, offset}: TextProps & {offset?: number}) => {
@@ -218,12 +218,12 @@ export const H2 = ({children, offset}: TextProps & {offset?: number}) => {
     typeof children === 'string' &&
     children.toLowerCase().replace(/\s+/g, '-')) as string | undefined;
   return (
-    <React.Fragment>
+    <>
       <SectionLink id={id} offset={offset} />
       <Heading element="h2" fontType="utilitySubheading040" border>
         {children as string}
       </Heading>
-    </React.Fragment>
+    </>
   );
 };
 

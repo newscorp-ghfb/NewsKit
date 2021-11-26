@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-
 const {resolve} = require('path');
 const {promisify} = require('util');
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const {readdir: _readdir, readFileSync} = require('fs');
 const ignore = require('ignore');
 

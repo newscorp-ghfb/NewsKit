@@ -130,6 +130,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const eventHandler = (eventName: AudioEvents) => (
     e: React.SyntheticEvent<HTMLAudioElement, Event>,
   ) => {
+    // eslint-disable-next-line react/destructuring-assignment
     const eventCallback = props[eventName];
     if (eventCallback) {
       eventCallback(e);

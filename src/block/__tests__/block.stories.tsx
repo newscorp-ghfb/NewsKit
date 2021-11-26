@@ -47,7 +47,7 @@ export default {
 };
 
 export const StoryBlock = () => (
-  <React.Fragment>
+  <>
     <ThemeProvider theme={myCustomTheme}>
       <StorybookHeading>Block</StorybookHeading>
       <StyledHr />
@@ -109,6 +109,6 @@ export const StoryBlock = () => (
       </Block>
       <StyledHr />
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryBlock.storyName = 'block';

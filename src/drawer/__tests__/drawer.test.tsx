@@ -1,4 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
 import {fireEvent, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React, {useRef, useState} from 'react';

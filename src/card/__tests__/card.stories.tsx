@@ -340,72 +340,56 @@ export default {
   component: () => 'None',
 };
 
-export const StoryCardSmallWithoutInset = () => (
-  <React.Fragment>{renderCard()}</React.Fragment>
-);
+export const StoryCardSmallWithoutInset = () => renderCard();
 StoryCardSmallWithoutInset.storyName = 'card-small-without-inset';
 StoryCardSmallWithoutInset.parameters = {
   viewport: {defaultViewport: 'iphone5'},
   eyes: {include: false},
 };
 
-export const StoryCardMediumWithoutInset = () => (
-  <React.Fragment>{renderCard()}</React.Fragment>
-);
+export const StoryCardMediumWithoutInset = () => renderCard();
 StoryCardMediumWithoutInset.storyName = 'card-medium-without-inset';
 StoryCardMediumWithoutInset.parameters = {
   viewport: {defaultViewport: 'ipad'},
   eyes: {include: false},
 };
 
-export const StoryCardLargeWithoutInset = () => (
-  <React.Fragment>{renderCard()}</React.Fragment>
-);
+export const StoryCardLargeWithoutInset = () => renderCard();
 StoryCardLargeWithoutInset.storyName = 'card-large-without-inset';
 StoryCardLargeWithoutInset.parameters = {
   viewport: {defaultViewport: 'ipad12p'},
   eyes: {include: false},
 };
 
-export const StoryCardSmallWithInset = () => (
-  <React.Fragment>{renderCardInset()}</React.Fragment>
-);
+export const StoryCardSmallWithInset = () => renderCardInset();
 StoryCardSmallWithInset.storyName = 'card-small-with-inset';
 StoryCardSmallWithInset.parameters = {
   viewport: {defaultViewport: 'iphone5'},
   eyes: {include: false},
 };
 
-export const StoryCardMediumWithInset = () => (
-  <React.Fragment>{renderCardInset()}</React.Fragment>
-);
+export const StoryCardMediumWithInset = () => renderCardInset();
 StoryCardMediumWithInset.storyName = 'card-medium-with-inset';
 StoryCardMediumWithInset.parameters = {
   viewport: {defaultViewport: 'ipad'},
   eyes: {include: false},
 };
 
-export const StoryCardLargeWithInset = () => (
-  <React.Fragment>{renderCardInset()}</React.Fragment>
-);
+export const StoryCardLargeWithInset = () => renderCardInset();
 StoryCardLargeWithInset.storyName = 'card-large-with-inset';
 StoryCardLargeWithInset.parameters = {
   viewport: {defaultViewport: 'ipad12p'},
   eyes: {include: false},
 };
 
-export const StoryCardWithoutInset = () => (
-  <React.Fragment>{renderCard()}</React.Fragment>
-);
+export const StoryCardWithoutInset = () => renderCard();
 StoryCardWithoutInset.storyName = 'card-without-inset';
 
-export const StoryCardWithInset = () => (
-  <React.Fragment>{renderCardInset()}</React.Fragment>
-);
+export const StoryCardWithInset = () => renderCardInset();
 StoryCardWithInset.storyName = 'card-with-inset';
 
 export const StoryCardWithoutInsetContainersOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card - Without Inset - Containers Overrides
     </StorybookHeading>
@@ -439,13 +423,13 @@ export const StoryCardWithoutInsetContainersOverrides = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithoutInsetContainersOverrides.storyName =
   'card-without-inset-containers-overrides';
 
 export const StoryCardWithInsetContainersOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card - With Inset - Containers Overrides
     </StorybookHeading>
@@ -478,13 +462,13 @@ export const StoryCardWithInsetContainersOverrides = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithInsetContainersOverrides.storyName =
   'card-with-inset-containers-overrides';
 
 export const StoryCardWithMediaLinkAndHeadline = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card with media, link and only Headline in cardBody
     </StorybookHeading>
@@ -510,13 +494,13 @@ export const StoryCardWithMediaLinkAndHeadline = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithMediaLinkAndHeadline.storyName =
   'card-with-media-link-and-headline';
 
 export const StoryCardWithLinkAndHeadlineAndMediainteractive = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card with link Headline and mediaInteractive set to true
     </StorybookHeading>
@@ -543,13 +527,13 @@ export const StoryCardWithLinkAndHeadlineAndMediainteractive = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithLinkAndHeadlineAndMediainteractive.storyName =
   'card-with-link-and-headline-and-mediaInteractive';
 
 export const StoryCardWithLinkAndNoHeadline = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card - Without Inset - Container Overrides
     </StorybookHeading>
@@ -594,12 +578,12 @@ export const StoryCardWithLinkAndNoHeadline = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithLinkAndNoHeadline.storyName = 'card-with-link-and-no-headline';
 
 export const StoryCardWithLinkHeadlineAndNestedLinksInCardBody = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card with link, headline and nested links in cardBody
     </StorybookHeading>
@@ -653,13 +637,13 @@ export const StoryCardWithLinkHeadlineAndNestedLinksInCardBody = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithLinkHeadlineAndNestedLinksInCardBody.storyName =
   'card-with-link-headline-and-nested-links-in-card-body';
 
 export const StoryCardWithInsetNoMediaAndLink = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Card with inset, no media and link</StorybookHeading>
     <ContainerWithBackground>
       <Grid>
@@ -683,13 +667,13 @@ export const StoryCardWithInsetNoMediaAndLink = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithInsetNoMediaAndLink.storyName =
   'card-with-inset-no-media-and-link';
 
 export const StoryCardWithoutInsetLinkContainersAndHeadlineOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card - Without Inset - with Link and Containers & Headline Overrides
     </StorybookHeading>
@@ -748,7 +732,7 @@ export const StoryCardWithoutInsetLinkContainersAndHeadlineOverrides = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithoutInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-without-inset-link-containers-and-headline-overrides';
@@ -757,7 +741,7 @@ StoryCardWithoutInsetLinkContainersAndHeadlineOverrides.parameters = {
 };
 
 export const StoryCardWithInsetLinkContainersAndHeadlineOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card - With Inset - with Link and Containers & Headline Overrides
     </StorybookHeading>
@@ -813,7 +797,7 @@ export const StoryCardWithInsetLinkContainersAndHeadlineOverrides = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-with-inset-link-containers-and-headline-overrides';
@@ -822,7 +806,7 @@ StoryCardWithInsetLinkContainersAndHeadlineOverrides.parameters = {
 };
 
 export const StoryCardHorizontal = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Card Horizontal</StorybookHeading>
     <ContainerWithBackground>
       <Grid>
@@ -854,12 +838,12 @@ export const StoryCardHorizontal = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardHorizontal.storyName = 'card-horizontal';
 
 export const StoryCardHorizontalReverseWithLink = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Card Horizontal-Reverse With Link</StorybookHeading>
     <ContainerWithBackground>
       <Grid>
@@ -891,13 +875,13 @@ export const StoryCardHorizontalReverseWithLink = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardHorizontalReverseWithLink.storyName =
   'card-horizontal-reverse-with-link';
 
 export const StoryCardInsetHorizontalWithLinkAndMediainteractive = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       CardInset Horizontal with Link and mediaInteractive
     </StorybookHeading>
@@ -933,13 +917,13 @@ export const StoryCardInsetHorizontalWithLinkAndMediainteractive = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardInsetHorizontalWithLinkAndMediainteractive.storyName =
   'card-inset-horizontal-with-link-and-mediaInteractive';
 
 export const StoryCardInsetHorizontalReverseWithLinkAndMediainteractive = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       CardInset Horizontal-Reverse with link and mediaInteractive
     </StorybookHeading>
@@ -975,13 +959,13 @@ export const StoryCardInsetHorizontalReverseWithLinkAndMediainteractive = () => 
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardInsetHorizontalReverseWithLinkAndMediainteractive.storyName =
   'card-inset-horizontal-reverse-with-link-and-mediaInteractive';
 
 export const StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card Horizontal - Without Inset - with Link and Containers & Headline
       Overrides
@@ -1041,7 +1025,7 @@ export const StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides =
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-horizontal-without-inset-link-containers-and-headline-overrides';
@@ -1050,7 +1034,7 @@ StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides.parameters = {
 };
 
 export const StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card Horizontal-reverse - With Inset - with Link and Containers & Headline
       Overrides
@@ -1109,7 +1093,7 @@ export const StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrid
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-horizontal-reverse-with-inset-link-containers-and-headline-overrides';
@@ -1118,7 +1102,7 @@ StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrides.parameters
 };
 
 export const StoryCardHorizontalWithRatio = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Card horizontal with ratio (3:1)</StorybookHeading>
     <ContainerWithBackground>
       <Grid>
@@ -1152,12 +1136,12 @@ export const StoryCardHorizontalWithRatio = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardHorizontalWithRatio.storyName = 'card-horizontal-with-ratio';
 
 export const StoryCardHorizontalWithRatioFalsyValue = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Card horizontal with falsy value</StorybookHeading>
     <ContainerWithBackground>
       <Grid>
@@ -1191,13 +1175,13 @@ export const StoryCardHorizontalWithRatioFalsyValue = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardHorizontalWithRatioFalsyValue.storyName =
   'card-horizontal-with-ratio-falsy-value';
 
 export const StoryCardWithCroppingText = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Card - Without Inset - Fix cropping text
     </StorybookHeading>
@@ -1239,7 +1223,7 @@ export const StoryCardWithCroppingText = () => (
         </Cell>
       </Grid>
     </ContainerWithBackground>
-  </React.Fragment>
+  </>
 );
 StoryCardWithCroppingText.storyName = 'card-with-cropping-text';
 
@@ -1279,7 +1263,7 @@ export const StoryCardWithResponsiveLayout = () => (
 StoryCardWithResponsiveLayout.storyName = 'card-with-responsive-layout';
 
 export const StoryCardSlices = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Card Slices</StorybookHeading>
     <ThemeProvider theme={myCustomCardTheme}>
       <ContainerWithBackground colorToken="white">
@@ -1668,7 +1652,7 @@ export const StoryCardSlices = () => (
         </Grid>
       </ContainerWithBackground>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryCardSlices.storyName = 'card-slices';
 StoryCardSlices.parameters = {eyes: {include: false}};

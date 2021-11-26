@@ -5,7 +5,7 @@ import {Separator} from '../../components/separator';
 import {StyledSection} from './styled';
 import {ComponentPageCell} from '../../components/layout-cells';
 
-export type CommonSection = {
+export type CommonSectionProps = {
   children?: React.ReactNode;
   title: string;
   introduction?: React.ReactNode;
@@ -14,14 +14,14 @@ export type CommonSection = {
   hideSeparator?: boolean;
 };
 
-export const CommonSection = ({
+export const CommonSection: React.FC<CommonSectionProps> = ({
   children,
   title,
   introduction,
   id,
   toc,
   hideSeparator,
-}: CommonSection) => (
+}) => (
   <>
     <Cell xs={12}>
       <StyledSection id={id} data-toc-indexed={toc || title}>

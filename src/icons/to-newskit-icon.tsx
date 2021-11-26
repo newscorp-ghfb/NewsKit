@@ -1,4 +1,4 @@
-import React, {ComponentType} from 'react';
+import React from 'react';
 import {EmotionIconProps} from '@emotion-icons/emotion-icon';
 import {withTheme} from '../theme';
 import {NewsKitIconProps, NewsKitIcon, SvgProps} from './types';

@@ -128,9 +128,9 @@ const cards = [
   },
 ];
 
-export default (layoutProps: LayoutProps) => (
+export default ({path, ...props}: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
-  <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
+  <Layout {...props} path={`${path}-new`}>
     <Head>
       <title key="title">About | NewsKit design system</title>
       <meta

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import {FlexDirectionProperty, FlexWrapProperty, Properties} from 'csstype';
 import {css, styled, CSSObject, handleResponsiveProp} from '../utils/style';
 import {

@@ -7,7 +7,7 @@ export default {
 };
 
 export const StoryHeadline = () => (
-  <React.Fragment>
+  <>
     <Headline>Headline text with no kicker</Headline>
     <br />
     <br />
@@ -44,6 +44,6 @@ export const StoryHeadline = () => (
     >
       Heading Headline
     </Headline>
-  </React.Fragment>
+  </>
 );
 StoryHeadline.storyName = 'headline';

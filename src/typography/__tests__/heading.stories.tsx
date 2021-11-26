@@ -26,7 +26,7 @@ export default {
 };
 
 export const StoryHeadingDefault = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Heading - default</StorybookHeading>
     <br />
     <H1>Default H1 - {title}</H1>
@@ -40,12 +40,12 @@ export const StoryHeadingDefault = () => (
     <H5>Default H5 - {title}</H5>
     <br />
     <H6>Default H6 - {title}</H6>
-  </React.Fragment>
+  </>
 );
 StoryHeadingDefault.storyName = 'heading-default';
 
 export const StoryCropVsNoCrop = () => (
-  <React.Fragment>
+  <>
     <Grid>
       <Cell xs={6}>
         <h1>cropped</h1>
@@ -102,12 +102,12 @@ export const StoryCropVsNoCrop = () => (
         </TextBlock>
       </Cell>
     </Grid>
-  </React.Fragment>
+  </>
 );
 StoryCropVsNoCrop.storyName = 'crop vs no crop';
 
 export const StoryHeadingOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Heading with overrides</StorybookHeading>
     <ThemeProvider theme={myCustomTheme}>
       <H1
@@ -164,6 +164,6 @@ export const StoryHeadingOverrides = () => (
         H6 with override
       </H6>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryHeadingOverrides.storyName = 'heading-overrides';

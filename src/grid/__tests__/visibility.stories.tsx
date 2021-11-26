@@ -17,7 +17,7 @@ export default {
 };
 
 export const StoryVisibilityComponent = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Visibility component</StorybookHeading>
     <Visible display="inline-block" xs>
       <Container color="green">xs</Container>
@@ -53,6 +53,6 @@ export const StoryVisibilityComponent = () => (
     <Hidden display="inline-block" xl>
       <Container color="silver">xl</Container>
     </Hidden>
-  </React.Fragment>
+  </>
 );
 StoryVisibilityComponent.storyName = 'visibility-component';

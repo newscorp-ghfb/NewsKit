@@ -172,7 +172,7 @@ export default {
 };
 
 export const StorySlider1And2Thumbs = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>1 thumb slider</StorybookHeading>
     <ContainerWithBorder>
       <StatefulSlider values={[50]} max={100} min={0} />
@@ -184,12 +184,12 @@ export const StorySlider1And2Thumbs = () => (
     <ContainerWithBorder>
       <StatefulSlider values={[0, 100]} max={100} min={0} />
     </ContainerWithBorder>
-  </React.Fragment>
+  </>
 );
 StorySlider1And2Thumbs.storyName = 'slider-1-and-2-thumbs';
 
 export const StorySliderWithTextLabels = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Slider with text labels</StorybookHeading>
     <ContainerWithBorder>
       <StatefulSlider values={[2.5]} max={10} min={0} step={0.5} thumbLabel />
@@ -230,12 +230,12 @@ export const StorySliderWithTextLabels = () => (
         labelPosition={LabelPosition.After}
       />
     </ContainerWithBorder>
-  </React.Fragment>
+  </>
 );
 StorySliderWithTextLabels.storyName = 'slider-with-text-labels';
 
 export const StorySliderWithCustomLabels = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Slider with custom labels</StorybookHeading>
     <ContainerWithBorder>
       <StatefulSlider
@@ -273,12 +273,12 @@ export const StorySliderWithCustomLabels = () => (
         thumbLabel={CustomThumbLabel}
       />
     </ContainerWithBorder>
-  </React.Fragment>
+  </>
 );
 StorySliderWithCustomLabels.storyName = 'slider-with-custom-labels';
 
 export const StorySliderWithCustomStylePreset = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Slider with custom style presets</StorybookHeading>
     <ContainerWithBorder>
       <ThemeProvider theme={myCustomTheme}>
@@ -315,12 +315,12 @@ export const StorySliderWithCustomStylePreset = () => (
         />
       </ThemeProvider>
     </ContainerWithBorder>
-  </React.Fragment>
+  </>
 );
 StorySliderWithCustomStylePreset.storyName = 'slider-with-custom-style-preset';
 
 export const StorySliderWithCustomRenders = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Slider with custom renderers</StorybookHeading>
     <ContainerWithBorder>
       <ThemeProvider theme={myCustomTheme}>
@@ -365,12 +365,12 @@ export const StorySliderWithCustomRenders = () => (
         />
       </ThemeProvider>
     </ContainerWithBorder>
-  </React.Fragment>
+  </>
 );
 StorySliderWithCustomRenders.storyName = 'slider-with-custom-renders';
 
 export const StorySliderRendersVertical = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Vertical Slider examples</StorybookHeading>
     <FlexContainer>
       <VerticalContainerWithBorder>
@@ -423,12 +423,12 @@ export const StorySliderRendersVertical = () => (
         />
       </VerticalContainerWithBorder>
     </FlexContainer>
-  </React.Fragment>
+  </>
 );
 StorySliderRendersVertical.storyName = 'slider-renders-vertical';
 
 export const StorySliderWithLabelsBeforeAndAfter = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>
       Vertical Slider with labels before and after
     </StorybookHeading>
@@ -469,7 +469,7 @@ export const StorySliderWithLabelsBeforeAndAfter = () => (
         />
       </HorizontalContainerWithBorder>
     </FlexContainer>
-  </React.Fragment>
+  </>
 );
 StorySliderWithLabelsBeforeAndAfter.storyName =
   'slider-with-labels-before-and-after';

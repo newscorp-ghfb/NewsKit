@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export const HTMLMeta = (): JSX.Element => (
-  <React.Fragment>
+  <>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
@@ -35,5 +35,5 @@ export const HTMLMeta = (): JSX.Element => (
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="theme-color" content="#ffffff" />
-  </React.Fragment>
+  </>
 );

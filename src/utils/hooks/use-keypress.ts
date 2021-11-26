@@ -41,7 +41,7 @@ export const useKeypress = (
       enabled: true,
       eventType: 'keyup',
     };
-    const options = Object.assign({}, defaultOptions, opts);
+    const options = {...defaultOptions, ...opts};
     const {enabled, eventType, target} = options;
 
     const handle: EventListener = (e: Event) => {

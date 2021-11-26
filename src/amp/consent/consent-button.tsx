@@ -9,6 +9,7 @@ export interface AmpConsentButton {
 
 const ConsentButton = styled.button<AmpConsentButton>``;
 
+// eslint-disable-next-line @typescript-eslint/no-redeclare
 export const AmpConsentButton: React.FC<AmpConsentButton> = ({
   settingsButtonText = 'Privacy Settings',
   postPromptUI = 'privacy-settings-prompt',

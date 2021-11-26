@@ -235,7 +235,7 @@ export const StoryIconButtonInverse = () => (
 StoryIconButtonInverse.storyName = 'icon-button-inverse';
 
 export const StoryIconButtonLink = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>Icon button link</StorybookSubHeading>
     <Container>
       <IconButton aria-label="Link icon" href="https://www.newskit.co.uk/">
@@ -252,6 +252,6 @@ export const StoryIconButtonLink = () => (
         <IconFilledLink />
       </IconButton>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryIconButtonLink.storyName = 'icon-button-link';

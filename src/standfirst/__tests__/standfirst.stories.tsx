@@ -34,26 +34,26 @@ export default {
 };
 
 export const StoryDefault = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>Standfirst - default</StorybookSubHeading>
     <Standfirst>{bodyString}</Standfirst>
-  </React.Fragment>
+  </>
 );
 StoryDefault.storyName = 'default';
 
 export const StoryWithAsProp = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>Standfirst - as h3</StorybookSubHeading>
     <Standfirst as="h3">{bodyString}</Standfirst>
 
     <StorybookSubHeading>Standfirst - as span</StorybookSubHeading>
     <Standfirst as="span">{bodyString}</Standfirst>
-  </React.Fragment>
+  </>
 );
 StoryWithAsProp.storyName = 'with-as-prop';
 
 export const StoryWithOverrides = () => (
-  <React.Fragment>
+  <>
     <ThemeProvider theme={myCustomTheme}>
       <StorybookSubHeading>
         Standfirst - with style-preset override
@@ -80,6 +80,6 @@ export const StoryWithOverrides = () => (
         {bodyString}
       </Standfirst>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryWithOverrides.storyName = 'with-overrides';

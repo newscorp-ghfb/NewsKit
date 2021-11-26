@@ -55,7 +55,7 @@ export default {
 };
 
 export const StoryHorizontal = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Divider - Horizontal</StorybookHeading>
     <StorybookSubHeading>default</StorybookSubHeading>
     <Divider />
@@ -101,12 +101,12 @@ export const StoryHorizontal = () => (
         <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
       </StackForHorizontalDivider>
     </BlockWithBorder>
-  </React.Fragment>
+  </>
 );
 StoryHorizontal.storyName = 'horizontal';
 
 export const StoryVertical = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Divider - Vertical</StorybookHeading>
     <StorybookSubHeading>default</StorybookSubHeading>
     <Box>
@@ -158,7 +158,7 @@ export const StoryVertical = () => (
     <Box>
       <Divider vertical overrides={{stylePreset: 'buttonOutlinedPrimary'}} />
     </Box>
-  </React.Fragment>
+  </>
 );
 StoryVertical.storyName = 'vertical';
 

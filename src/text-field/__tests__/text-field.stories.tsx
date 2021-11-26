@@ -56,7 +56,7 @@ export default {
   disabledRules: ['color-contrast'],
 };
 export const TextFieldSizeExamples = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text Field Sizes</StorybookHeading>
     <Container>
       <Stack
@@ -93,10 +93,10 @@ export const TextFieldSizeExamples = () => (
         </Block>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 export const TextFieldBasics = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text field states</StorybookHeading>
 
     <Grid>
@@ -162,10 +162,10 @@ export const TextFieldBasics = () => (
         </CustomBlock>
       </Cell>
     </Grid>
-  </React.Fragment>
+  </>
 );
 export const TextFieldWithOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text With Overrides</StorybookHeading>
     <Container>
       <ThemeProvider theme={myCustomTheme}>
@@ -199,10 +199,10 @@ export const TextFieldWithOverrides = () => (
         </AssistiveText>
       </ThemeProvider>
     </Container>
-  </React.Fragment>
+  </>
 );
 export const TextFieldIcons = () => (
-  <React.Fragment>
+  <>
     <Container>
       <StorybookSubHeading>
         With Icons and Icon placement overrides
@@ -250,7 +250,7 @@ export const TextFieldIcons = () => (
       />
       <AssistiveText id="id-9-at">Assistive Text</AssistiveText>
     </Container>
-  </React.Fragment>
+  </>
 );
 export const TextFieldAddOn = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -283,7 +283,7 @@ export const TextFieldAddOn = () => {
   const blockSpaceStack = '42px';
 
   return (
-    <React.Fragment>
+    <>
       <StorybookHeading>Text Field With Addons</StorybookHeading>
       <Container>
         <StorybookSubHeading>Text Field with Drop Down</StorybookSubHeading>
@@ -385,6 +385,6 @@ export const TextFieldAddOn = () => {
           <AssistiveText id="id-13-at">Assistive Text Goes Here</AssistiveText>
         </Block>
       </Container>
-    </React.Fragment>
+    </>
   );
 };

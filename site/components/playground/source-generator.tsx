@@ -71,8 +71,11 @@ export const generateSource = ({componentName, state}: GenerateArgs) => {
       ),
     };
   } catch (error) {
-    return {
-      error: error.message,
-    };
+    if (error instanceof Error) {
+      return {
+        error: error.message,
+      };
+    }
+    throw new Error('There is an error generating source');
   }
 };

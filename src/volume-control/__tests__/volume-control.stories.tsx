@@ -85,7 +85,7 @@ export default {
 };
 
 export const StoryVolumeControl = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>VolumeControl</StorybookHeading>
     <StorybookSubHeading>horizontal</StorybookSubHeading>
     <HorizontalContainer>
@@ -108,12 +108,12 @@ export const StoryVolumeControl = () => (
     <VerticalContainer>
       <StatefulVolumeControl vertical volume={0} />
     </VerticalContainer>
-  </React.Fragment>
+  </>
 );
 StoryVolumeControl.storyName = 'volume-control';
 
 export const StoryVolumeControlWithOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>VolumeControl with overrides</StorybookHeading>
     <VerticalContainer>
       <ThemeProvider theme={myCustomTheme}>
@@ -150,6 +150,6 @@ export const StoryVolumeControlWithOverrides = () => (
         />
       </ThemeProvider>
     </VerticalContainer>
-  </React.Fragment>
+  </>
 );
 StoryVolumeControlWithOverrides.storyName = 'volume-control-with-overrides';

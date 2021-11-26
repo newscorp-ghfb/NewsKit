@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import {CursorProperty} from 'csstype';
 import {
   styled,

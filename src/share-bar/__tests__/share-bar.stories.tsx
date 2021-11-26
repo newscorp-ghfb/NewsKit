@@ -64,7 +64,7 @@ export default {
 };
 
 export const StoryHorizontal = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>Share bar with horizontal items</StorybookSubHeading>
     <ShareBar role="region" aria-label="share bar default">
       <ShareOnTwitterBtn />
@@ -135,12 +135,12 @@ export const StoryHorizontal = () => (
         <Button>More options</Button>
       </ShareBar>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryHorizontal.storyName = 'horizontal';
 
 export const StoryVertical = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>Share bar with vertical items</StorybookSubHeading>
     <ShareBar vertical role="region" aria-label="share bar with vertical items">
       <ShareOnTwitterBtn />
@@ -171,6 +171,6 @@ export const StoryVertical = () => (
       <ShareOnFacebookBtn />
       <Button>More options</Button>
     </ShareBar>
-  </React.Fragment>
+  </>
 );
 StoryVertical.storyName = 'vertical';

@@ -11,7 +11,7 @@ export default {
 };
 
 export const StoryScreenReaderOnly = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Screen reader only</StorybookHeading>
     <a href="..." aria-describedby={srOnly}>
       Google
@@ -19,7 +19,7 @@ export const StoryScreenReaderOnly = () => (
     <ScreenReaderOnly id={srOnly}>
       The best known search engine
     </ScreenReaderOnly>
-  </React.Fragment>
+  </>
 );
 StoryScreenReaderOnly.storyName = 'screen-reader-only';
 StoryScreenReaderOnly.parameters = {eyes: {include: false}};

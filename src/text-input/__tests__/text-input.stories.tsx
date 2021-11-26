@@ -73,7 +73,7 @@ export default {
 };
 
 export const StoryTextInputSize = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text Input Sizes</StorybookHeading>
     <Container>
       <Stack
@@ -108,12 +108,12 @@ export const StoryTextInputSize = () => (
         </Block>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTextInputSize.storyName = 'text-input-size';
 
 export const StoryFullWidthTextInput = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Full-Width Text Input</StorybookHeading>
     <Container>
       <Border>
@@ -147,12 +147,12 @@ export const StoryFullWidthTextInput = () => (
         />
       </Border>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryFullWidthTextInput.storyName = 'full-width-text-input';
 
 export const StoryFixedWidthTextInput = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Fixed-Width Text Input</StorybookHeading>
     <Container>
       <Border>
@@ -186,12 +186,12 @@ export const StoryFixedWidthTextInput = () => (
         />
       </Border>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryFixedWidthTextInput.storyName = 'fixed-width-text-input';
 
 export const StoryTextInputVariations = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text Input Variations</StorybookHeading>
     <StorybookSubHeading>With Hidden Label</StorybookSubHeading>
     <Container>
@@ -209,12 +209,12 @@ export const StoryTextInputVariations = () => (
         assistiveText="Assistive text"
       />
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTextInputVariations.storyName = 'text-input-variations';
 
 export const StoryTextInputStates = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text Input States</StorybookHeading>
     <Grid>
       <Cell xs={4} sm={4}>
@@ -227,62 +227,56 @@ export const StoryTextInputStates = () => (
           ))}
         </Stack>
       </Cell>
-      {
-        <Cell xs={8} sm={4}>
-          <Stack
-            spaceInline="space070"
-            stackDistribution={StackDistribution.Start}
-          >
-            <CustomBlock data-state="Default">
-              <TextInput label="Label" assistiveText="Assistive text" />
-            </CustomBlock>
+      <Cell xs={8} sm={4}>
+        <Stack
+          spaceInline="space070"
+          stackDistribution={StackDistribution.Start}
+        >
+          <CustomBlock data-state="Default">
+            <TextInput label="Label" assistiveText="Assistive text" />
+          </CustomBlock>
 
-            <CustomBlock data-state="Focus">
-              <TextInput
-                autoFocus
-                label="Label"
-                assistiveText="Assistive text"
-                overrides={{
-                  input: {
-                    stylePreset: 'textInput',
-                  },
-                }}
-              />
-            </CustomBlock>
+          <CustomBlock data-state="Focus">
+            <TextInput
+              autoFocus
+              label="Label"
+              assistiveText="Assistive text"
+              overrides={{
+                input: {
+                  stylePreset: 'textInput',
+                },
+              }}
+            />
+          </CustomBlock>
 
-            <CustomBlock data-state="Disabled">
-              <TextInput
-                disabled
-                label="Label"
-                assistiveText="Assistive text"
-                overrides={{
-                  input: {
-                    stylePreset: 'textInput',
-                  },
-                  assistiveText: {
-                    stylePreset: 'textInputAssistiveText',
-                  },
-                }}
-              />
-            </CustomBlock>
+          <CustomBlock data-state="Disabled">
+            <TextInput
+              disabled
+              label="Label"
+              assistiveText="Assistive text"
+              overrides={{
+                input: {
+                  stylePreset: 'textInput',
+                },
+                assistiveText: {
+                  stylePreset: 'textInputAssistiveText',
+                },
+              }}
+            />
+          </CustomBlock>
 
-            <CustomBlock data-state="Read-Only">
-              <TextInput
-                readOnly
-                label="Label"
-                assistiveText="Assistive text"
-              />
-            </CustomBlock>
-          </Stack>
-        </Cell>
-      }
+          <CustomBlock data-state="Read-Only">
+            <TextInput readOnly label="Label" assistiveText="Assistive text" />
+          </CustomBlock>
+        </Stack>
+      </Cell>
     </Grid>
-  </React.Fragment>
+  </>
 );
 StoryTextInputStates.storyName = 'text-input-states';
 
 export const StoryTextInputWithOverrides = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text Input With Overrides</StorybookHeading>
     <Container>
       <ThemeProvider theme={myCustomTheme}>
@@ -310,12 +304,12 @@ export const StoryTextInputWithOverrides = () => (
         />
       </ThemeProvider>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTextInputWithOverrides.storyName = 'text-input-with-overrides';
 
 export const StoryTextInputWithLeadingIcon = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Text Input With Leading Icon</StorybookHeading>
     <Container>
       <Stack
@@ -401,6 +395,6 @@ export const StoryTextInputWithLeadingIcon = () => (
         </Block>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTextInputWithLeadingIcon.storyName = 'text-input-with-leading-icon';

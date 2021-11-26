@@ -1,5 +1,9 @@
 module.exports = {
+  parser: '@typescript-eslint/parser',
   extends: ['airbnb-typescript', 'plugin:prettier/recommended', 'prettier'],
+  parserOptions: {
+    project: 'tsconfig.eslint.json',
+  },
   plugins: ['cup', 'header', 'prettier', 'react-hooks'],
   env: {
     jest: true,
@@ -18,6 +22,11 @@ module.exports = {
     'react/forbid-prop-types': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
+    // The latest eslint package will flag type imports and cannot be fixed by setting devDependencies to true.
+    // There is an open pr for this: https://github.com/import-js/eslint-plugin-import/issues/1618
+    // This rule has been disabled in individual files instead
     'import/no-extraneous-dependencies': [
       'error',
       {optionalDependencies: false, devDependencies: true},

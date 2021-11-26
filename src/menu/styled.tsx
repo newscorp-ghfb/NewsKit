@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import {TextAlignProperty} from 'csstype';
 import {Button} from '../button';
 import {getStylePreset, getResponsiveSpace, styled} from '../utils/style';

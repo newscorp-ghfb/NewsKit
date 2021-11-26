@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import {HeightProperty, WidthProperty} from 'csstype';
 
 export interface GetAspectRatioProp {

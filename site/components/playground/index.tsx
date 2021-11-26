@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React, {useState} from 'react';
 import {styled, getColorFromTheme, deepMerge} from 'newskit';
 import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
@@ -202,7 +203,7 @@ export const Playground: React.FC<
       <LegacyBlock {...commonBlockProps} borderRadius="0px 0px 12px 12px">
         <CodeExample
           componentName={selectedCompName}
-          source={source.code || source.error}
+          source={source.code || source.error || ''}
           error={Boolean(source.error)}
         />
       </LegacyBlock>

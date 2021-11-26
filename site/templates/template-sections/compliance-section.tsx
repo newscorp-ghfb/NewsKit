@@ -75,6 +75,7 @@ export const ComplianceSection: React.FC<ComplianceSectionProps> = props => (
         rows={columns.map(col => ({
           feature: features[col].title,
           description: features[col].description,
+          // eslint-disable-next-line react/destructuring-assignment
           status: props[col],
         }))}
       />

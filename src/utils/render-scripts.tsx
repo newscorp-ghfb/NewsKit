@@ -69,7 +69,7 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
   }
 
   return (
-    <React.Fragment>
+    <>
       {scripts.map(scriptData => {
         const scriptProps = isExternalScriptData(scriptData)
           ? {
@@ -85,6 +85,6 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
             };
         return <script type="text/javascript" {...scriptProps} />;
       })}
-    </React.Fragment>
+    </>
   );
 };

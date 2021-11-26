@@ -25,13 +25,13 @@ const ToastExample = ({
   action?: Function;
   providerProps?: ToastProviderProps;
 }) => (
-  <React.Fragment>
+  <>
     <button type="button" data-testid="action" onClick={() => action()}>
       action
     </button>
 
     <ToastProvider {...providerProps} />
-  </React.Fragment>
+  </>
 );
 
 describe('Toast', () => {

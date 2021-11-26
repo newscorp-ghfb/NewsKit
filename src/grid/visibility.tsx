@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {DisplayProperty} from 'csstype';
 import {styled, css} from '../utils/style';

@@ -37,7 +37,7 @@ const presets = [
 ];
 
 export const StoryFlag = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Flag</StorybookHeading>
     <StorybookSubHeading>Solid</StorybookSubHeading>
     <Container>
@@ -140,12 +140,12 @@ export const StoryFlag = () => (
         Text
       </Flag>
     </Block>
-  </React.Fragment>
+  </>
 );
 StoryFlag.storyName = 'flag';
 
 export const StoryInverseFlag = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Inverse Flag</StorybookHeading>
     <Container hasBlackBackground>
       <Block>
@@ -171,12 +171,12 @@ export const StoryInverseFlag = () => (
         </Flag>
       </Block>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryInverseFlag.storyName = 'inverse-flag';
 
 export const StoryFlagWithIcons = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Flag</StorybookHeading>
     <StorybookSubHeading>with leading icon</StorybookSubHeading>
     <Container>
@@ -283,7 +283,7 @@ export const StoryFlagWithIcons = () => (
         </Flag>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryFlagWithIcons.storyName = 'flag-with-icons';
 
@@ -306,7 +306,7 @@ const myCustomTheme = createTheme({
 });
 
 export const StoryFlagWithSize = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Flag</StorybookHeading>
     <StorybookSubHeading>With long text and overflow</StorybookSubHeading>
     <ThemeProvider theme={myCustomTheme}>
@@ -320,6 +320,6 @@ export const StoryFlagWithSize = () => (
         Text goes here and it has overflow and long text
       </Flag>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryFlagWithSize.storyName = 'flag with fixed size and overflow';

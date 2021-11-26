@@ -86,8 +86,9 @@ const DefaultValue: React.FC<DefaultValueProps> = ({value, type, enumObj}) => {
 };
 
 const wrapChild = (child: React.ReactNode & {props?: PropProps}) => {
-  // eslint-disable-next-line no-use-before-define
+  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   if (child.props && child.props.mdxType === Prop.displayName) {
+    // eslint-disable-next-line @typescript-eslint/no-use-before-define
     return <Prop nested {...child.props} />;
   }
   return child;

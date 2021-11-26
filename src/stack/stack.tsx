@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import {StackProps, StyledChildProps} from './types';
 import {
@@ -65,8 +66,10 @@ const wrapChild = (
     : StyledChildContainer;
 
   // If child is a Stack component
-  // eslint-disable-next-line no-use-before-define
+
+  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   if (hasMatchingDisplayNameWith(child, Stack)) {
+    // eslint-disable-next-line @typescript-eslint/no-use-before-define
     const stack = <Stack inline={inline} as={as} {...child.props} />;
 
     return list || hasSpace ? (
@@ -79,6 +82,7 @@ const wrapChild = (
   }
 
   // If child is a StackChild component
+
   if (hasMatchingDisplayNameWith(child, StackChild)) {
     if (child.props.order) {
       childProps.$order = child.props.order;

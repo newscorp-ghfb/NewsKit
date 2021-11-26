@@ -39,7 +39,7 @@ export default {
 };
 
 export const StoryTag = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Tag</StorybookHeading>
     <StorybookSubHeading>Enabled/Disbaled</StorybookSubHeading>
     <Container>
@@ -115,12 +115,12 @@ export const StoryTag = () => (
         </Tag>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTag.storyName = 'tag';
 
 export const StoryInverseTag = () => (
-  <React.Fragment>
+  <>
     <Container hasBlackBackground>
       <Stack
         flow="horizontal-center"
@@ -139,12 +139,12 @@ export const StoryInverseTag = () => (
         </Tag>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryInverseTag.storyName = 'inverse-tag';
 
 export const StoryTagIconSizes = () => (
-  <React.Fragment>
+  <>
     <StorybookSubHeading>
       With icon and inline overridden size
     </StorybookSubHeading>
@@ -199,6 +199,6 @@ export const StoryTagIconSizes = () => (
         </Tag>
       </Stack>
     </Container>
-  </React.Fragment>
+  </>
 );
 StoryTagIconSizes.storyName = 'tag-icon-sizes';

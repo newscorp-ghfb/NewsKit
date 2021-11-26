@@ -35,7 +35,7 @@ export default {
 };
 
 export const StoryByline = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Byline</StorybookHeading>
     <StorybookSubHeading>default style variations</StorybookSubHeading>
     <Byline
@@ -197,6 +197,6 @@ export const StoryByline = () => (
         ]}
       />
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryByline.storyName = 'byline';

@@ -29,7 +29,7 @@ export default {
 };
 
 export const StoryOrderedList = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>Ordered list defaults</StorybookHeading>
     <OrderedList>{listData}</OrderedList>
     <br />
@@ -52,6 +52,6 @@ export const StoryOrderedList = () => (
         {listData}
       </OrderedList>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryOrderedList.storyName = 'ordered-list';

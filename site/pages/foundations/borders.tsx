@@ -25,11 +25,11 @@ const borderRows = (type: string) =>
     }),
   );
 
-type codeExampleType = {
+type CodeExampleType = {
   [key: string]: string;
 };
 
-const codeExamples: codeExampleType = {
+const codeExamples: CodeExampleType = {
   borderRadius: `borderRadius: '{{borders.borderRadiusDefault}}'`,
   borderWidth: `borderWidth: '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}'`,
   borderColor: `borderColor: '{{colors.interactivePrimary030}}'`,

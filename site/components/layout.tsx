@@ -139,9 +139,9 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
     );
   };
 
+  // eslint-disable-next-line class-methods-use-this
   getPageSections = (children: PageSection): string[] => {
     const sections: string[] = [];
-
     React.Children.forEach(children, child => {
       if (React.isValidElement(child) && child.props.mdxType === 'h2') {
         sections.push(child.props.children as string);

@@ -14,7 +14,7 @@ export const Head: React.FC<HeadProps> = ({
   ampScriptsObject,
   children,
 }) => (
-  <React.Fragment>
+  <>
     <meta charSet="utf-8" />
     <title>{title}</title>
     <meta
@@ -45,5 +45,5 @@ export const Head: React.FC<HeadProps> = ({
     <AmpScriptsProvider value={ampScriptsObject}>
       <AmpScripts />
     </AmpScriptsProvider>
-  </React.Fragment>
+  </>
 );

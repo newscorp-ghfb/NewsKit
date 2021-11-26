@@ -7,7 +7,7 @@ export const AmpScripts: React.FC = () => (
     {scriptIds => {
       if (scriptIds) {
         return (
-          <React.Fragment>
+          <>
             {(Object.keys(scriptIds) as ScriptsKey[])
               .filter(scriptId => Boolean(scriptVersions[scriptId]))
               .map(scriptId => (
@@ -18,7 +18,7 @@ export const AmpScripts: React.FC = () => (
                   src={`https://cdn.ampproject.org/v0/${scriptId}-${scriptVersions[scriptId]}.js`}
                 />
               ))}
-          </React.Fragment>
+          </>
         );
       }
       return null;

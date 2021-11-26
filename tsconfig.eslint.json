@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.common.json",
+  "include": [
+    "src/", 
+    "site/", 
+    "e2e/", 
+    "cypress/", 
+    "scripts/",
+    "githooks/",
+    "component-generator/",
+    "jest.config.js",
+    ".eslintrc.js",
+    "applitools.components.config.js",
+    "applitools.config.js",
+    "commitlint.config.js",
+    "webpack.e2e.config.js",
+  ]
+}

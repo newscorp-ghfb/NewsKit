@@ -27,7 +27,7 @@ export default {
 };
 
 export const StoryTitleBar = () => (
-  <React.Fragment>
+  <>
     <TitleBar>Title bar default state</TitleBar>
     <br />
     <br />
@@ -67,18 +67,18 @@ export const StoryTitleBar = () => (
     <br />
     <br />
     <TitleBar actionItem={button}>Title bar with button</TitleBar>
-  </React.Fragment>
+  </>
 );
 StoryTitleBar.storyName = 'title-bar';
 
 export const StoryTitleBarAsH1toh6 = () => (
-  <React.Fragment>
+  <>
     <TitleBar headingAs="h1">Title bar as h1</TitleBar>
     <TitleBar headingAs="h2">Title bar as h2</TitleBar>
     <TitleBar headingAs="h3">Title bar as h3</TitleBar>
     <TitleBar headingAs="h4">Title bar as h4</TitleBar>
     <TitleBar headingAs="h5">Title bar as h5</TitleBar>
     <TitleBar headingAs="h6">Title bar as h6</TitleBar>
-  </React.Fragment>
+  </>
 );
 StoryTitleBarAsH1toh6.storyName = 'title-bar-as-h1toh6';

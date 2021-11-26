@@ -8,16 +8,14 @@ import {
 import {LegacyBlock} from '../legacy-block';
 import {Header, ExampleWrapper} from './common';
 
-interface StyledSizeBox {
-  size: string;
-}
-
 interface SizePreviewProps {
   name: string;
   size: string;
 }
 
-const StyledSizeBox = styled.div<StyledSizeBox>`
+const StyledSizeBox = styled.div<{
+  size: string;
+}>`
   background-color: ${getColorFromTheme('inkContrast')};
   margin-top: ${getSizingFromTheme('sizing010')};
   ${({size}) => size && `height: ${size};`}

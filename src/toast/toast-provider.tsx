@@ -1,5 +1,5 @@
 import hotToast, {useToaster} from 'react-hot-toast';
-import React, {ReactNode, useEffect, useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import {
   ToastOptions,

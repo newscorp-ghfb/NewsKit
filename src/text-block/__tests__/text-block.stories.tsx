@@ -39,27 +39,27 @@ export default {
 };
 
 export const StoryDefault = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>TextBlock default</StorybookHeading>
     <TextBlock>{bodyString}</TextBlock>
-  </React.Fragment>
+  </>
 );
 StoryDefault.storyName = 'default';
 
 export const StoryAsDifferentHtmlTag = () => (
-  <React.Fragment>
+  <>
     <StorybookHeading>TextBlock</StorybookHeading>
     <StorybookSubHeading>As h3</StorybookSubHeading>
     <TextBlock as="h3">{bodyString}</TextBlock>
 
     <StorybookSubHeading>As div</StorybookSubHeading>
     <TextBlock as="div">{bodyString}</TextBlock>
-  </React.Fragment>
+  </>
 );
 StoryAsDifferentHtmlTag.storyName = 'as different html tag';
 
 export const StoryWithOverriddenPresets = () => (
-  <React.Fragment>
+  <>
     <ThemeProvider theme={myCustomTheme}>
       <StorybookHeading>TextBlock</StorybookHeading>
       <StorybookSubHeading>With style-preset override</StorybookSubHeading>
@@ -70,6 +70,6 @@ export const StoryWithOverriddenPresets = () => (
         {bodyString}
       </TextBlock>
     </ThemeProvider>
-  </React.Fragment>
+  </>
 );
 StoryWithOverriddenPresets.storyName = 'with overridden presets';
