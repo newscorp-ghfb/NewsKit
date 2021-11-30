@@ -78,6 +78,7 @@ export const StoryRightPlacement = () =>
     <>
       <StorybookHeading>Drawer placed on the right</StorybookHeading>
       <Drawer
+        aria-label="drawer on the right"
         open
         onDismiss={() => {}}
         placement="right"
@@ -149,7 +150,12 @@ export const StoryLeftPlacement = () =>
     return (
       <>
         <StorybookHeading>Drawer placed on the left</StorybookHeading>
-        <Drawer open onDismiss={() => {}} header={renderHeader()}>
+        <Drawer
+          aria-label="Drawer placed on the left"
+          open
+          onDismiss={() => {}}
+          header={renderHeader()}
+        >
           {renderChildren()}
         </Drawer>
       </>
@@ -162,6 +168,7 @@ export const StoryTopPlacement = () =>
     <>
       <StorybookHeading>Drawer placed on the top</StorybookHeading>
       <Drawer
+        aria-label="drawer on the left"
         open
         onDismiss={() => {}}
         placement="top"
@@ -187,6 +194,7 @@ export const StoryBottomPlacement = () =>
     <>
       <StorybookHeading>Drawer placed on the bottom</StorybookHeading>
       <Drawer
+        aria-label="drawer on the the bottom"
         open
         onDismiss={() => {}}
         placement="bottom"
@@ -212,6 +220,7 @@ export const StoryRightPlacementWithClosepositionSetToLeft = () =>
     <>
       <StorybookHeading>Drawer placed on the right</StorybookHeading>
       <Drawer
+        aria-label="drawer placed on the right"
         open
         onDismiss={() => {}}
         placement="right"
@@ -239,6 +248,7 @@ export const StoryNoHeaderContent = () =>
     <>
       <StorybookHeading>Default with no header</StorybookHeading>
       <Drawer
+        aria-label="drawer with no header"
         open
         onDismiss={() => {}}
         overrides={{header: {spaceInset: 'space000'}}}
@@ -261,6 +271,7 @@ export const StoryWithOverrides = () =>
       <StorybookHeading>Drawer with overriden space inset </StorybookHeading>
       <ThemeProvider theme={myCustomTheme}>
         <Drawer
+          aria-label="drawer with overriden space inset"
           open
           onDismiss={() => {}}
           placement="right"

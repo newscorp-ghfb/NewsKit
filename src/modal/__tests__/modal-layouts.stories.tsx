@@ -75,6 +75,7 @@ export const StoryDefault = () =>
     <>
       <StorybookHeading>Default modal</StorybookHeading>
       <Modal
+        aria-label="Default modal"
         open
         onDismiss={() => {}}
         header={
@@ -94,6 +95,7 @@ export const StoryWithCloseButtonOnTheLeft = () =>
         Modal: header close button on the left
       </StorybookHeading>
       <Modal
+        aria-label="Modal: header close button on the left"
         open
         onDismiss={() => {}}
         header={
@@ -112,6 +114,7 @@ export const StoryNoHeaderContent = () =>
     <>
       <StorybookHeading>Default with no header</StorybookHeading>
       <Modal
+        aria-label="Default with no header"
         open
         onDismiss={() => {}}
         overrides={{header: {spaceInset: 'space000'}}}
@@ -128,6 +131,7 @@ export const StoryWithOverrides = () =>
       <StorybookHeading>Default with overrides</StorybookHeading>
       <ThemeProvider theme={myCustomTheme}>
         <Modal
+          aria-label="Default with overrides"
           open
           onDismiss={() => {}}
           header={

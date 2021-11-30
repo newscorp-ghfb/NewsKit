@@ -70,6 +70,7 @@ export const StoryDefault = () =>
           ))}
         </Box>
         <Modal
+          aria-label="Default Modal"
           open={isActive}
           onDismiss={close}
           header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
@@ -95,7 +96,12 @@ export const StoryOpenOnPageLoad = () =>
       <>
         <StorybookHeading>Open modal on page load</StorybookHeading>
         <p>Refresh the page to open the modal</p>
-        <Modal open={isActive} onDismiss={close} header="Modal header">
+        <Modal
+          open={isActive}
+          onDismiss={close}
+          aria-label="Open modal on page load"
+          header="Modal header"
+        >
           <Stack
             flow="vertical-center"
             stackDistribution="center"
