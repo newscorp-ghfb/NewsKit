@@ -1,8 +1,8 @@
 import React, {useEffect, useContext} from 'react';
 import {useFormContext} from 'react-hook-form';
 import {FormValidationContext} from './context';
-import {FieldsHadErrorObject} from './types';
-import {FormEntryProps, FormInputState} from '../text-field/types';
+import {FieldsHadErrorObject, FormInputState} from './types';
+import {FormEntryProps} from '../text-field/types';
 
 export const FormEntry = ({name, rules, children}: FormEntryProps) => {
   const {validationMode, setFieldsHadError, fieldsHadError} = useContext(

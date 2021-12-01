@@ -1,22 +1,21 @@
 import React, {useContext} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
-import {Label} from '../text-field/label';
+import {Label, LabelProps} from '../label';
 import {TextField} from '../text-field/text-field';
-import {AssistiveText} from '../text-field/assistive-text';
+import {AssistiveText, AssistiveTextProps} from '../assistive-text';
 import {composeEventHandlers, getStatusIcon} from './utils';
 import {useReactKeys} from '../utils/hooks';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {
-  AssistiveTextProps,
   FormInputTextFieldProps,
   FormEntryProps,
-  LabelProps,
   TextFieldSize,
-  FormInputState,
 } from '../text-field/types';
 import {FormEntry} from './form-entry';
 import {Block} from '../block';
+import {FormInputState} from './types';
+import {SelectProps, Select} from '../select';
 
 const FormInputContext = React.createContext<{
   name?: string;
@@ -27,6 +26,7 @@ const FormInputContext = React.createContext<{
   error?: string;
   ref?: React.Ref<HTMLInputElement>;
   id?: string;
+  labelId?: string;
   assistiveTextId?: string;
   statusIcon?: React.ReactNode;
 }>({});
@@ -44,7 +44,7 @@ export const FormInput = ({
   name,
   rules,
   state: stateProp,
-  size = TextFieldSize.Medium,
+  size = 'medium' as TextFieldSize,
   children,
   id,
 }: FormInputProps) => {
@@ -68,6 +68,7 @@ export const FormInput = ({
         const assistiveTextId =
           (state === 'invalid' && `${currentID}-error-text`) ||
           `${currentID}-assistive-text`;
+        const labelId = `${currentID}-label`;
 
         const statusIcon = getStatusIcon({
           state,
@@ -84,6 +85,7 @@ export const FormInput = ({
           ref,
           id: currentID,
           assistiveTextId,
+          labelId,
           statusIcon,
         };
 
@@ -98,10 +100,10 @@ export const FormInput = ({
 };
 
 export const FormInputLabel = ({children, ...props}: LabelProps) => {
-  const {size, state, id} = useFormFieldContext();
+  const {size, state, id, labelId} = useFormFieldContext();
 
   return (
-    <Label size={size} state={state} htmlFor={id} {...props}>
+    <Label id={labelId} size={size} state={state} htmlFor={id} {...props}>
       {children}
     </Label>
   );
@@ -152,6 +154,41 @@ export const FormInputTextField = React.forwardRef<
     />
   );
 });
+
+export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
+  ({children, onChange, onBlur, ...props}, inputRef) => {
+    const {
+      size,
+      name,
+      state,
+      onChange: onChangeContext,
+      onBlur: onBlurContext,
+      ref,
+      id,
+      assistiveTextId,
+      labelId,
+      statusIcon,
+    } = useFormFieldContext();
+
+    return (
+      <Select
+        name={name}
+        state={state}
+        size={size}
+        aria-labelledby={`${labelId} ${id}`}
+        validationIcon={statusIcon}
+        onChange={composeEventHandlers([onChange, onChangeContext])}
+        onBlur={composeEventHandlers([onBlur, onBlurContext])}
+        ref={composeRefs(ref, inputRef)}
+        id={id}
+        aria-describedby={assistiveTextId}
+        {...props}
+      >
+        {children}
+      </Select>
+    );
+  },
+);
 
 export const FormInputAssistiveText = ({
   children,

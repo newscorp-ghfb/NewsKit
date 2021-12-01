@@ -85,7 +85,7 @@ exports[`TextField renders TextField Correctly 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -99,7 +99,7 @@ exports[`TextField renders TextField Correctly 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -258,7 +258,7 @@ exports[`TextField renders TextField with overrides 1`] = `
 <div
     class="emotion-0"
   >
-    <span
+    <div
       class="emotion-1"
     >
       <svg
@@ -277,13 +277,13 @@ exports[`TextField renders TextField with overrides 1`] = `
           d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
         />
       </svg>
-    </span>
+    </div>
     <input
       class="emotion-4"
       data-testid="text-field-email"
       type="text"
     />
-    <span
+    <div
       class="emotion-5"
     >
       <svg
@@ -302,7 +302,7 @@ exports[`TextField renders TextField with overrides 1`] = `
           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
-    </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -387,7 +387,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -401,7 +401,7 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -540,7 +540,7 @@ exports[`TextField renders disabled text field 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -554,7 +554,7 @@ exports[`TextField renders disabled text field 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -654,7 +654,7 @@ exports[`TextField renders disabled text field 1`] = `
 <div
     class="emotion-0"
   >
-    <span
+    <div
       class="emotion-1"
     >
       <svg
@@ -673,14 +673,14 @@ exports[`TextField renders disabled text field 1`] = `
           d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
         />
       </svg>
-    </span>
+    </div>
     <input
       class="emotion-4"
       data-testid="text-field-email"
       disabled=""
       type="text"
     />
-    <span
+    <div
       class="emotion-5"
     >
       <svg
@@ -699,7 +699,7 @@ exports[`TextField renders disabled text field 1`] = `
           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
-    </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -747,7 +747,7 @@ exports[`TextField renders large TextField 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -761,7 +761,7 @@ exports[`TextField renders large TextField 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -809,48 +809,6 @@ exports[`TextField renders large TextField 1`] = `
       type="text"
     />
   </div>
-</DocumentFragment>
-`;
-
-exports[`TextField renders large label 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-0:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
-}
-
-<label
-    class="emotion-0"
-  >
-    A Label
-  </label>
 </DocumentFragment>
 `;
 
@@ -897,7 +855,7 @@ exports[`TextField renders medium TextField 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -911,7 +869,7 @@ exports[`TextField renders medium TextField 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -962,48 +920,6 @@ exports[`TextField renders medium TextField 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TextField renders medium label 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-0:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
-<label
-    class="emotion-0"
-  >
-    A Label
-  </label>
-</DocumentFragment>
-`;
-
 exports[`TextField renders small TextField 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -1047,7 +963,7 @@ exports[`TextField renders small TextField 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -1061,7 +977,7 @@ exports[`TextField renders small TextField 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -1112,48 +1028,6 @@ exports[`TextField renders small TextField 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TextField renders small label 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-0:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
-}
-
-<label
-    class="emotion-0"
-  >
-    A Label
-  </label>
-</DocumentFragment>
-`;
-
 exports[`TextField renders text field with leading and trailing icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -1197,7 +1071,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -1211,7 +1085,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -1311,7 +1185,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
 <div
     class="emotion-0"
   >
-    <span
+    <div
       class="emotion-1"
     >
       <svg
@@ -1330,13 +1204,13 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
           d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
         />
       </svg>
-    </span>
+    </div>
     <input
       class="emotion-4"
       data-testid="text-field-email"
       type="text"
     />
-    <span
+    <div
       class="emotion-5"
     >
       <svg
@@ -1355,7 +1229,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
-    </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1403,7 +1277,7 @@ exports[`TextField should render custom placeholder 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -1417,7 +1291,7 @@ exports[`TextField should render custom placeholder 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -1517,7 +1391,7 @@ exports[`TextField should render custom placeholder 1`] = `
 <div
     class="emotion-0"
   >
-    <span
+    <div
       class="emotion-1"
     >
       <svg
@@ -1536,14 +1410,14 @@ exports[`TextField should render custom placeholder 1`] = `
           d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
         />
       </svg>
-    </span>
+    </div>
     <input
       class="emotion-4"
       data-testid="text-field-email"
       placeholder="This is some text"
       type="text"
     />
-    <span
+    <div
       class="emotion-5"
     >
       <svg
@@ -1562,7 +1436,7 @@ exports[`TextField should render custom placeholder 1`] = `
           d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
-    </span>
+    </div>
   </div>
 </DocumentFragment>
 `;

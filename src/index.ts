@@ -1,5 +1,6 @@
 export * from './aspect-ratio';
 export * from './audio-player';
+export * from './assistive-text';
 export * from './banner';
 export * from './byline';
 export * from './block';
@@ -20,6 +21,7 @@ export * from './icons';
 export * from './inline-message';
 export * from './image';
 export * from './instrumentation';
+export * from './label';
 export * from './link';
 export * from './menu';
 export * from './modal';

@@ -16,10 +16,11 @@ import {
   FormInputLabel,
   FormInputProps,
   FormInputTextField,
+  FormInputSelect,
 } from '../form-input';
 import {composeEventHandlers} from '../utils';
-import {TextFieldSize} from '../../text-field';
-import {IconFilledAccountBalance} from '../..';
+import {IconFilledAccountBalance, TextFieldSize} from '../..';
+import {SelectOption} from '../../select';
 
 let actualRHF: any;
 jest.mock('react-hook-form', () => {
@@ -453,6 +454,12 @@ describe('FormInput', () => {
           }
         />
         <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+        <FormInputLabel>Pizza topping</FormInputLabel>
+        <FormInputSelect data-testid="select-pizza-topping">
+          <SelectOption value="ham">Ham</SelectOption>
+          <SelectOption value="pineapple">Pineapple</SelectOption>
+        </FormInputSelect>
+        <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
       </FormInput>
     </>
   );
@@ -511,7 +518,7 @@ describe('FormInput', () => {
   test('renders FormInput Correctly', () => {
     const prop: FormInputProps = {
       name: 'TextField',
-      size: TextFieldSize.Medium,
+      size: 'medium' as TextFieldSize,
       id: 'nk',
 
       children: (formBodyFormInput as unknown) as Array<React.ReactElement>,

@@ -928,7 +928,43 @@ stylePresets.tabsBarIndicator = {
     backgroundColor: '{{colors.interactivePrimary030}}',
   },
 };
+
+//
+// Assistive Text
+//
+
+stylePresets.assistiveText = {
+  base: {
+    color: '{{colors.inkSubtle}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
+  },
+  invalid: {
+    color: '{{colors.inkNegative}}',
+  },
+  valid: {
+    color: '{{colors.inkSubtle}}',
+  },
+};
+
+//
+// Label
+//
+
+stylePresets.label = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
+  },
+};
+
+//
 // Input Field
+//
+
 stylePresets.inputField = {
   base: {
     backgroundColor: '{{colors.transparent}}',
@@ -956,7 +992,7 @@ stylePresets.inputField = {
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   'valid:focus': {
-    borderColor: '{{colors.interactiveInput010}}',
+    borderColor: '{{colors.interactiveInput040}}',
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   disabled: {
@@ -971,67 +1007,12 @@ stylePresets.inputField = {
     borderColor: '{{colors.interactiveNegative030}}',
   },
   'invalid:focus': {
-    borderColor: '{{colors.interactiveInput010}}',
+    borderColor: '{{colors.interactiveInput040}}',
     backgroundColor: '{{colors.interactiveInput010}}',
   },
   'invalid:hover': {
     borderColor: '{{colors.interactiveNegative030}}',
     backgroundColor: '{{colors.interactiveInput010}}',
-  },
-};
-
-// Assistive Text
-stylePresets.assistiveText = {
-  base: {
-    color: '{{colors.inkSubtle}}',
-  },
-  disabled: {
-    color: '{{colors.inkNonEssential}}',
-  },
-  invalid: {
-    color: '{{colors.inkNegative}}',
-  },
-  valid: {
-    color: '{{colors.inkSubtle}}',
-  },
-};
-stylePresets.textField = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-    borderStyle: 'solid',
-    borderColor: '{{colors.interface040}}',
-    borderWidth: '{{borders.borderWidthDefault}}',
-    borderRadius: '{{borders.borderRadiusDefault}}',
-    color: '{{colors.inkBase}}',
-    textOverflow: 'ellipsis',
-    placeholderColor: '{{colors.inkSubtle}}',
-  },
-  focus: {
-    backgroundColor: '{{colors.interface020}}',
-    borderColor: '{{colors.interfaceBrand010}}',
-  },
-  hover: {
-    backgroundColor: '{{colors.interface020}}',
-  },
-  disabled: {
-    borderColor: '{{colors.interactiveDisabled010}}',
-    color: '{{colors.inkNonEssential}}',
-  },
-  invalid: {
-    caretColor: '{{colors.inkNegative}}',
-    borderColor: '{{colors.interactiveNegative030}}',
-  },
-  valid: {
-    caretColor: '{{colors.inkPositive}}',
-    borderColor: '{{colors.interactivePositive030}}',
-  },
-};
-stylePresets.label = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-  disabled: {
-    color: '{{colors.inkNonEssential}}',
   },
 };
 
@@ -1101,6 +1082,79 @@ stylePresets.iconPositive = {
 stylePresets.iconNegative = {
   base: {
     iconColor: '{{colors.inkNegative}}',
+  },
+};
+
+//
+// Select
+//
+
+stylePresets.selectPanel = {
+  base: {
+    backgroundColor: '{{colors.interface010}}',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    boxShadow: '{{shadows.shadow050}}',
+  },
+};
+
+stylePresets.selectOptionItem = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    color: '{{colors.inkBase}}',
+    textOverflow: 'ellipsis',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderColor: '{{colors.transparent}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInput010}}',
+  },
+  focus: {
+    backgroundColor: '{{colors.interactiveInput010}}',
+    borderColor: '{{colors.interactiveInput040}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInput030}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
+  },
+  selected: {
+    backgroundColor: '{{colors.interactiveInput030}}',
+  },
+  'selected:hover': {
+    backgroundColor: '{{colors.interactiveInput030}}',
+    color: '{{colors.inkContrast}}',
+  },
+  'selected:focus': {
+    backgroundColor: '{{colors.interactiveInput030}}',
+    borderColor: '{{colors.interactiveInput040}}',
+  },
+  'selected:active': {
+    backgroundColor: '{{colors.interactiveInput030}}',
+  },
+  'selected:focus:active': {
+    backgroundColor: '{{colors.interactiveInput030}}',
+  },
+  'selected:focus:hover': {
+    backgroundColor: '{{colors.interactiveInput030}}',
+    color: '{{colors.inkContrast}}',
+  },
+};
+
+stylePresets.selectOptionItemIcon = {
+  selected: {
+    iconColor: '{{colors.interactiveInput040}}',
+  },
+  'selected:hover': {
+    iconColor: '{{colors.interactiveInput040}}',
+  },
+  'selected:focus': {
+    iconColor: '{{colors.interactiveInput040}}',
+  },
+  'selected:active': {
+    iconColor: '{{colors.interactiveInput040}}',
   },
 };
 

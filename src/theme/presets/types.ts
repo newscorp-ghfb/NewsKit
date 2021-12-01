@@ -46,6 +46,9 @@ export interface StylePreset {
   'focus:hover'?: StylePresetStyles;
   'selected:hover'?: StylePresetStyles;
   'selected:focus'?: StylePresetStyles;
+  'selected:focus:active'?: StylePresetStyles;
+  'selected:focus:hover'?: StylePresetStyles;
+  'selected:active'?: StylePresetStyles;
   'selected:disabled'?: StylePresetStyles;
   'selected:valid'?: StylePresetStyles;
   'selected:valid:focus'?: StylePresetStyles;

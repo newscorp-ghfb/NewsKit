@@ -1,12 +1,12 @@
 import React, {createRef} from 'react';
 import {fireEvent} from '@testing-library/react';
-import {LabelProps, TextField, TextFieldProps, TextFieldSize} from '..';
+import {TextField, TextFieldProps, TextFieldSize} from '..';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {AssistiveText} from '../assistive-text';
-import {Label} from '../label';
+import {AssistiveText} from '../../assistive-text';
+import {Label, LabelProps} from '../../label';
 import {createTheme, IconFilledClose, IconFilledSearch} from '../..';
 
 const renderInvalidLabel = () => <Label state="invalid">AssistiveText</Label>;
@@ -46,28 +46,16 @@ describe('TextField', () => {
     const fragment = renderToFragmentWithTheme(renderTextFieldWithComponents);
     expect(fragment).toMatchSnapshot();
   });
-  [TextFieldSize.Small, TextFieldSize.Medium, TextFieldSize.Large].forEach(
-    size => {
-      test(`renders ${size} label`, () => {
-        const props: LabelProps = {
-          children: 'A Label',
-          state: 'valid',
-          size,
-        };
-        const fragment = renderToFragmentWithTheme(Label, props);
-        expect(fragment).toMatchSnapshot();
-      });
-
-      test(`renders ${size} TextField`, () => {
-        const props: TextFieldProps = {
-          name: 'textfield',
-          size,
-        };
-        const fragment = renderToFragmentWithTheme(TextField, props);
-        expect(fragment).toMatchSnapshot();
-      });
-    },
-  );
+  ['small', 'medium', 'large'].forEach(size => {
+    test(`renders ${size} TextField`, () => {
+      const props: TextFieldProps = {
+        name: 'textfield',
+        size: size as TextFieldSize,
+      };
+      const fragment = renderToFragmentWithTheme(TextField, props);
+      expect(fragment).toMatchSnapshot();
+    });
+  });
   test('should render custom placeholder', () => {
     const props: TextFieldProps = {
       placeholder: 'This is some text',

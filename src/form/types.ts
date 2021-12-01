@@ -5,6 +5,7 @@ import {
   SubmitHandler,
   UseFormReturn,
 } from 'react-hook-form';
+import {MQ} from '../utils/style';
 
 export interface FormError extends Object {
   type: string;
@@ -38,3 +39,29 @@ export interface FormRef {
 }
 
 export type FieldsHadErrorObject = Record<string, {hadError: boolean}>;
+
+export type FormInputState = 'disabled' | 'valid' | 'invalid' | undefined;
+
+export type CommonInputProps = Omit<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  'size'
+> & {
+  size?: 'small' | 'medium' | 'large';
+  state?: FormInputState;
+  onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
+  onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  startEnhancer?: React.ReactNode;
+  endEnhancer?: React.ReactNode;
+};
+
+export type EnhancerOverrides = {
+  startEnhancer?: {
+    spaceInline?: MQ<string>;
+    iconSize?: MQ<string>;
+  };
+  endEnhancer?: {
+    spaceInline?: MQ<string>;
+    iconSize?: MQ<string>;
+  };
+};

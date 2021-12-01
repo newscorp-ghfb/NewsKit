@@ -1,0 +1,3406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select renders Select with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  border-color: #D20600;
+  min-height: 48px;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 24px;
+}
+
+.emotion-4 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-7 {
+  all: unset;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-9.emotion-9 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      option 1
+    </span>
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-38-toggle-button"
+      type="button"
+      value="option 1"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-4"
+          value="option 1"
+        >
+          <span>
+            option 1
+          </span>
+        </div>
+      </div>
+    </button>
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-6"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-7"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-8"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-38-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-38-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders Select, AssistiveText and Label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+<label
+    class="emotion-0"
+  >
+    A label
+  </label>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-0-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-6"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-0-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-0-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+  .emotion-0 {
+  min-height: 12px;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+    >
+      AssistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Select renders disabled select 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #F4F4F4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #C0C0C0;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: not-allowed;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: inherit;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: not-allowed;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      disabled=""
+      id="downshift-14-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+        disabled=""
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+        disabled=""
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-6"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-14-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-14-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders large Select 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 64px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-3-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-6"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 360px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-3-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-3-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders loading select 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: wait;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: wait;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-7 {
+  width: 24px;
+  height: 24px;
+  stroke: #3358CC;
+}
+
+.emotion-7 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      disabled=""
+      id="downshift-15-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-7"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-15-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-15-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders medium Select 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-2-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-6"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-2-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-2-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders select with a pre selected option 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-4 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-7 {
+  all: unset;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-9.emotion-9 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      option 1
+    </span>
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-16-toggle-button"
+      type="button"
+      value="option 1"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-4"
+          value="option 1"
+        >
+          <span>
+            option 1
+          </span>
+        </div>
+      </div>
+    </button>
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-6"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-7"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-8"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-16-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-16-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders select with a selected option 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-4 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-7 {
+  all: unset;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-9.emotion-9 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      option 1
+    </span>
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-17-toggle-button"
+      type="button"
+      value="option 1"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-4"
+          value="option 1"
+        >
+          <span>
+            option 1
+          </span>
+        </div>
+      </div>
+    </button>
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-6"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-7"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-8"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-17-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-17-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders select with leading and trailing icon 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-5 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-6 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-7 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-9 {
+  all: unset;
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-13 {
+  margin-right: 8px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </div>
+    <span
+      class="emotion-4"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-5"
+      data-testid="select-button"
+      id="downshift-18-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-6"
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-8"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-9"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-10"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-2 emotion-3"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="emotion-13"
+      />
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-18-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-18-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders select with non-string options 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-4 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-7 {
+  all: unset;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-9.emotion-9 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    >
+      option 2
+    </span>
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-19-toggle-button"
+      type="button"
+      value="option 2"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-4"
+          value="option 2"
+        >
+          <div>
+            <div>
+              this is not a string
+            </div>
+          </div>
+        </div>
+      </div>
+    </button>
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-6"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-7"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-8"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-9 emotion-10"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-19-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-19-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select renders small Select 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 32px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-1-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-6"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 184px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-1-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-1-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Select should render custom placeholder 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="emotion-2"
+      data-testid="select-button"
+      id="downshift-4-toggle-button"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+      >
+        This is some text
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-6"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-4-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-4-menu"
+    role="listbox"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;

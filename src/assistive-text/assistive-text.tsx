@@ -1,11 +1,12 @@
 import React from 'react';
+import {TextFieldSize} from '../text-field';
 import {StyledAssistiveText, StyledAssistiveTextContainer} from './styled';
 
-import {AssistiveTextProps, TextFieldSize} from './types';
+import {AssistiveTextProps} from './types';
 
 export const AssistiveText = ({
   overrides,
-  size = TextFieldSize.Medium,
+  size = 'medium' as TextFieldSize,
   state,
   children,
   ...props
@@ -13,6 +14,7 @@ export const AssistiveText = ({
   <StyledAssistiveTextContainer size={size} overrides={overrides}>
     {children && (
       <StyledAssistiveText
+        aria-disabled={state === 'disabled' ? true : undefined}
         size={size}
         overrides={overrides}
         state={state}

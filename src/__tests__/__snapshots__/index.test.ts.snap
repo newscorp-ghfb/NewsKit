@@ -37,6 +37,7 @@ Array [
   "FormInput",
   "FormInputAssistiveText",
   "FormInputLabel",
+  "FormInputSelect",
   "FormInputTextField",
   "Global",
   "Grid",

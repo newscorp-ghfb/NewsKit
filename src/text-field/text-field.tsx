@@ -1,11 +1,12 @@
 import React from 'react';
 import {TextFieldProps, TextFieldSize} from './types';
-import {StyledInput, StyledInputContainer, StyledEnhancer} from './styled';
+import {StyledInput} from './styled';
+import {InputWithEnhancers} from '../input-with-enhancers/input-with-enhancers';
 
 export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
     {
-      size = TextFieldSize.Medium,
+      size = 'medium' as TextFieldSize,
       overrides,
       state,
       startEnhancer,
@@ -47,21 +48,14 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
 
     return (
       <>
-        <StyledInputContainer
-          size={size}
+        <InputWithEnhancers
+          componentDefaultsPath={`textField.${size}`}
+          isFocused={isFocused}
           overrides={overrides}
           state={state}
-          focused={isFocused}
+          startEnhancer={startEnhancer}
+          endEnhancer={endEnhancer}
         >
-          {startEnhancer && (
-            <StyledEnhancer
-              position="startEnhancer"
-              size={size}
-              overrides={overrides}
-            >
-              {startEnhancer}
-            </StyledEnhancer>
-          )}
           <StyledInput
             ref={inputRef}
             type="text"
@@ -74,16 +68,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
             onChange={onInputChange}
             {...restProps}
           />
-          {endEnhancer && (
-            <StyledEnhancer
-              position="endEnhancer"
-              size={size}
-              overrides={overrides}
-            >
-              {endEnhancer}
-            </StyledEnhancer>
-          )}
-        </StyledInputContainer>
+        </InputWithEnhancers>
       </>
     );
   },

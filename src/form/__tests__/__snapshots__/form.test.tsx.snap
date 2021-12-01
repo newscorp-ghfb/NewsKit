@@ -3241,7 +3241,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-1:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -3255,7 +3255,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 }
 
 .emotion-1:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -3358,12 +3358,99 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
+.emotion-10 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-11 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-12 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-15 {
+  all: unset;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-20 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
 <form
     novalidate=""
   >
     <label
       class="emotion-0"
       for="email"
+      id="email-label"
     >
       E-mail
     </label>
@@ -3378,7 +3465,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
         name="email"
         type="text"
       />
-      <span
+      <div
         class="emotion-3"
       >
         <svg
@@ -3422,8 +3509,101 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
             points="12,1 2,6 2,8 22,8 22,6"
           />
         </svg>
-      </span>
+      </div>
     </div>
+    <div
+      class="emotion-6"
+    >
+      <p
+        class="emotion-7"
+        id="email-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+    <label
+      class="emotion-0"
+      for="email"
+      id="email-label"
+    >
+      Pizza topping
+    </label>
+    <div
+      class="emotion-1"
+    >
+      <span
+        class="emotion-10"
+      />
+      <button
+        aria-describedby="email-assistive-text"
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="email-label email"
+        class="emotion-11"
+        data-testid="select-pizza-topping"
+        id="email"
+        name="email"
+        type="button"
+        value=""
+      >
+        <div
+          class="emotion-12"
+        >
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-14"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-16"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-4 emotion-5"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <span
+      class="emotion-10"
+      id="mock-nk-1"
+    >
+      Press down arrow key to navigate to the first item
+    </span>
+    <div
+      aria-describedby="mock-nk-1"
+      aria-labelledby="downshift-2-label"
+      class="emotion-20"
+      data-testid="select-panel"
+      id="downshift-2-menu"
+      role="listbox"
+      tabindex="-1"
+    />
     <div
       class="emotion-6"
     >
@@ -3513,7 +3693,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-1:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -3527,7 +3707,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 }
 
 .emotion-1:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -3630,12 +3810,99 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
+.emotion-10 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-11 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-12 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-15 {
+  all: unset;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-20 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
 <form
     novalidate=""
   >
     <label
       class="emotion-0"
       for="email"
+      id="email-label"
     >
       E-mail
     </label>
@@ -3650,7 +3917,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
         name="email"
         type="text"
       />
-      <span
+      <div
         class="emotion-3"
       >
         <svg
@@ -3694,8 +3961,101 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
             points="12,1 2,6 2,8 22,8 22,6"
           />
         </svg>
-      </span>
+      </div>
     </div>
+    <div
+      class="emotion-6"
+    >
+      <p
+        class="emotion-7"
+        id="email-assistive-text"
+      >
+        Assistive Text
+      </p>
+    </div>
+    <label
+      class="emotion-0"
+      for="email"
+      id="email-label"
+    >
+      Pizza topping
+    </label>
+    <div
+      class="emotion-1"
+    >
+      <span
+        class="emotion-10"
+      />
+      <button
+        aria-describedby="email-assistive-text"
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="email-label email"
+        class="emotion-11"
+        data-testid="select-pizza-topping"
+        id="email"
+        name="email"
+        type="button"
+        value=""
+      >
+        <div
+          class="emotion-12"
+        >
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-14"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-16"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-4 emotion-5"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <span
+      class="emotion-10"
+      id="mock-nk-1"
+    >
+      Press down arrow key to navigate to the first item
+    </span>
+    <div
+      aria-describedby="mock-nk-1"
+      aria-labelledby="downshift-4-label"
+      class="emotion-20"
+      data-testid="select-panel"
+      id="downshift-4-menu"
+      role="listbox"
+      tabindex="-1"
+    />
     <div
       class="emotion-6"
     >
@@ -3747,6 +4107,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 <label
     class="emotion-0"
     for="email"
+    id="email-label"
   >
     E-mail
   </label>
@@ -3791,7 +4152,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -3805,7 +4166,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -3884,7 +4245,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
       name="email"
       type="text"
     />
-    <span
+    <div
       class="emotion-2"
     >
       <svg
@@ -3928,8 +4289,358 @@ exports[`FormInput renders FormInput Correctly 1`] = `
           points="12,1 2,6 2,8 22,8 22,6"
         />
       </svg>
-    </span>
+    </div>
   </div>
+  .emotion-0 {
+  min-height: 12px;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+      id="email-assistive-text"
+    >
+      Assistive Text
+    </p>
+  </div>
+  .emotion-0 {
+  display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+<label
+    class="emotion-0"
+    for="email"
+    id="email-label"
+  >
+    Pizza topping
+  </label>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  min-height: 48px;
+}
+
+.emotion-0 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #23A248;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-0:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  border-color: #3358CC;
+  background-color: #FAFAFA;
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #EF1703;
+  background-color: #FAFAFA;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E2E2E;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <span
+      class="emotion-1"
+    />
+    <button
+      aria-describedby="email-assistive-text"
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-labelledby="email-label email"
+      class="emotion-2"
+      data-testid="select-pizza-topping"
+      id="email"
+      name="email"
+      type="button"
+    >
+      <div
+        class="emotion-3"
+      >
+        Select Option
+      </div>
+    </button>
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-5"
+      >
+        <button
+          aria-hidden="true"
+          class="emotion-6"
+          data-testid="select-chevron-button"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="emotion-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-8 emotion-9"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<span
+    class="emotion-0"
+    id="mock-nk-1"
+  >
+    Press down arrow key to navigate to the first item
+  </span>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    aria-describedby="mock-nk-1"
+    aria-labelledby="downshift-0-label"
+    class="emotion-0"
+    data-testid="select-panel"
+    id="downshift-0-menu"
+    role="listbox"
+    tabindex="-1"
+  />
   .emotion-0 {
   min-height: 12px;
 }
@@ -4053,7 +4764,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-1:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -4067,7 +4778,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-1:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -4292,6 +5003,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
     <label
       class="emotion-0"
       for="mock-nk-1"
+      id="mock-nk-1-label"
     >
       E-mail
     </label>
@@ -4306,7 +5018,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
         name="email"
         type="text"
       />
-      <span
+      <div
         class="emotion-3"
       >
         <svg
@@ -4350,7 +5062,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
             points="12,1 2,6 2,8 22,8 22,6"
           />
         </svg>
-      </span>
+      </div>
     </div>
     <div
       class="emotion-6"
@@ -4365,6 +5077,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
     <label
       class="emotion-0"
       for="mock-nk-1"
+      id="mock-nk-1-label"
     >
       Username
     </label>
@@ -4450,6 +5163,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 <label
     class="emotion-0"
     for="mock-nk-1"
+    id="mock-nk-1-label"
   >
     E-mail
   </label>
@@ -4494,7 +5208,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -4508,7 +5222,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -4587,7 +5301,7 @@ exports[`FormInput renders with nested inputs 1`] = `
       name="email"
       type="text"
     />
-    <span
+    <div
       class="emotion-2"
     >
       <svg
@@ -4631,7 +5345,7 @@ exports[`FormInput renders with nested inputs 1`] = `
           points="12,1 2,6 2,8 22,8 22,6"
         />
       </svg>
-    </span>
+    </div>
   </div>
   .emotion-0 {
   min-height: 12px;
@@ -4713,6 +5427,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 <label
     class="emotion-0"
     for="mock-nk-1"
+    id="mock-nk-1-label"
   >
     Username
   </label>
@@ -4757,7 +5472,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:valid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 
@@ -4771,7 +5486,7 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-0:invalid:focus:not(:disabled) {
-  border-color: #FAFAFA;
+  border-color: #3358CC;
   background-color: #FAFAFA;
 }
 

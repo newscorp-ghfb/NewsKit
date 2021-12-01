@@ -984,6 +984,130 @@ Object {
         },
       },
     },
+    "select": Object {
+      "large": Object {
+        "button": Object {
+          "endEnhancer": Object {
+            "iconSize": "iconSize020",
+            "spaceInline": "space020",
+          },
+          "iconSize": "iconSize020",
+          "loadingIndicator": Object {
+            "stylePreset": "indeterminateProgressIndicatorPrimary",
+          },
+          "minHeight": "sizing090",
+          "spaceInline": "space020",
+          "spaceInset": "spaceInset030",
+          "spaceStack": "space020",
+          "startEnhancer": Object {
+            "iconSize": "iconSize020",
+            "spaceInline": "space020",
+          },
+          "stylePreset": "inputField",
+          "typographyPreset": "utilityBody030",
+          "width": "100%",
+        },
+        "panel": Object {
+          "maxHeight": "360px",
+          "spaceInset": "spaceInset020",
+          "spaceStack": "space010",
+          "stylePreset": "selectPanel",
+        },
+      },
+      "medium": Object {
+        "button": Object {
+          "endEnhancer": Object {
+            "iconSize": "iconSize020",
+            "spaceInline": "space020",
+          },
+          "iconSize": "iconSize020",
+          "loadingIndicator": Object {
+            "stylePreset": "indeterminateProgressIndicatorPrimary",
+          },
+          "minHeight": "sizing080",
+          "spaceInline": "space020",
+          "spaceInset": "spaceInset020",
+          "spaceStack": "space020",
+          "startEnhancer": Object {
+            "iconSize": "iconSize020",
+            "spaceInline": "space020",
+          },
+          "stylePreset": "inputField",
+          "typographyPreset": "utilityBody020",
+          "width": "100%",
+        },
+        "panel": Object {
+          "maxHeight": "272px",
+          "spaceInset": "spaceInset020",
+          "spaceStack": "space010",
+          "stylePreset": "selectPanel",
+        },
+      },
+      "small": Object {
+        "button": Object {
+          "endEnhancer": Object {
+            "iconSize": "iconSize020",
+            "spaceInline": "space020",
+          },
+          "iconSize": "iconSize020",
+          "loadingIndicator": Object {
+            "stylePreset": "indeterminateProgressIndicatorPrimary",
+          },
+          "minHeight": "sizing060",
+          "spaceInline": "space020",
+          "spaceInset": "spaceInset020",
+          "spaceStack": "space020",
+          "startEnhancer": Object {
+            "iconSize": "iconSize020",
+            "spaceInline": "space020",
+          },
+          "stylePreset": "inputField",
+          "typographyPreset": "utilityBody020",
+          "width": "100%",
+        },
+        "panel": Object {
+          "maxHeight": "184px",
+          "spaceInset": "spaceInset020",
+          "spaceStack": "space010",
+          "stylePreset": "selectPanel",
+        },
+      },
+    },
+    "selectOption": Object {
+      "large": Object {
+        "icon": Object {
+          "iconSize": "iconSize020",
+          "stylePreset": "selectOptionItemIcon",
+        },
+        "minHeight": "sizing090",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetStretch030",
+        "stylePreset": "selectOptionItem",
+        "typographyPreset": "utilityBody030",
+      },
+      "medium": Object {
+        "icon": Object {
+          "iconSize": "iconSize020",
+          "stylePreset": "selectOptionItemIcon",
+        },
+        "minHeight": "sizing080",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInset020",
+        "stylePreset": "selectOptionItem",
+        "typographyPreset": "utilityBody020",
+      },
+      "small": Object {
+        "icon": Object {
+          "iconSize": "iconSize020",
+          "stylePreset": "selectOptionItemIcon",
+        },
+        "minHeight": "sizing060",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetSquish010",
+        "stylePreset": "selectOptionItem",
+        "typographyPreset": "utilityBody020",
+      },
+    },
     "shareBar": Object {
       "items": Object {
         "spaceInline": "space020",
@@ -1122,6 +1246,7 @@ Object {
         },
         "stylePreset": "inputField",
         "typographyPreset": "utilityBody030",
+        "width": "100%",
       },
       "medium": Object {
         "endEnhancer": Object {
@@ -1137,6 +1262,7 @@ Object {
         },
         "stylePreset": "inputField",
         "typographyPreset": "utilityBody020",
+        "width": "100%",
       },
       "small": Object {
         "endEnhancer": Object {
@@ -1152,6 +1278,7 @@ Object {
         },
         "stylePreset": "inputField",
         "typographyPreset": "utilityBody020",
+        "width": "100%",
       },
     },
     "textInput": Object {
@@ -2812,7 +2939,7 @@ Object {
       },
       "invalid:focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#FAFAFA",
+        "borderColor": "#3358CC",
       },
       "invalid:hover": Object {
         "backgroundColor": "#FAFAFA",
@@ -2826,7 +2953,7 @@ Object {
       },
       "valid:focus": Object {
         "backgroundColor": "#FAFAFA",
-        "borderColor": "#FAFAFA",
+        "borderColor": "#3358CC",
       },
       "valid:hover": Object {
         "backgroundColor": "#FAFAFA",
@@ -3053,6 +3180,72 @@ Object {
         "backgroundImage": "linear-gradient(0deg, rgba(10,10,10,0.00) 0%, #FFFFFF 100%)",
       },
     },
+    "selectOptionItem": Object {
+      "active": Object {
+        "backgroundColor": "#E0E7FF",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "transparent",
+        "borderRadius": "0",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#2E2E2E",
+        "textOverflow": "ellipsis",
+      },
+      "disabled": Object {
+        "color": "#C0C0C0",
+      },
+      "focus": Object {
+        "backgroundColor": "#FAFAFA",
+        "borderColor": "#3358CC",
+      },
+      "hover": Object {
+        "backgroundColor": "#FAFAFA",
+      },
+      "selected": Object {
+        "backgroundColor": "#E0E7FF",
+      },
+      "selected:active": Object {
+        "backgroundColor": "#E0E7FF",
+      },
+      "selected:focus": Object {
+        "backgroundColor": "#E0E7FF",
+        "borderColor": "#3358CC",
+      },
+      "selected:focus:active": Object {
+        "backgroundColor": "#E0E7FF",
+      },
+      "selected:focus:hover": Object {
+        "backgroundColor": "#E0E7FF",
+        "color": "#0A0A0A",
+      },
+      "selected:hover": Object {
+        "backgroundColor": "#E0E7FF",
+        "color": "#0A0A0A",
+      },
+    },
+    "selectOptionItemIcon": Object {
+      "selected": Object {
+        "iconColor": "#3358CC",
+      },
+      "selected:active": Object {
+        "iconColor": "#3358CC",
+      },
+      "selected:focus": Object {
+        "iconColor": "#3358CC",
+      },
+      "selected:hover": Object {
+        "iconColor": "#3358CC",
+      },
+    },
+    "selectPanel": Object {
+      "base": Object {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": "4px",
+        "boxShadow": "0 16px 24px 0 rgba(10,10,10,0.08)",
+      },
+    },
     "sliderIndicator": Object {
       "base": Object {
         "backgroundColor": "#3358CC",
@@ -3202,37 +3395,6 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "rgba(255,255,255,0.1)",
-      },
-    },
-    "textField": Object {
-      "base": Object {
-        "backgroundColor": "transparent",
-        "borderColor": "#DEDEDE",
-        "borderRadius": "8px",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-        "color": "#2E2E2E",
-        "placeholderColor": "#535353",
-        "textOverflow": "ellipsis",
-      },
-      "disabled": Object {
-        "borderColor": "#F4F4F4",
-        "color": "#C0C0C0",
-      },
-      "focus": Object {
-        "backgroundColor": "#FAFAFA",
-        "borderColor": "#3358CC",
-      },
-      "hover": Object {
-        "backgroundColor": "#FAFAFA",
-      },
-      "invalid": Object {
-        "borderColor": "#EF1703",
-        "caretColor": "#D20600",
-      },
-      "valid": Object {
-        "borderColor": "#23A248",
-        "caretColor": "#0A782A",
       },
     },
     "textInput": Object {

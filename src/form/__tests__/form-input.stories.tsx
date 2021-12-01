@@ -4,6 +4,7 @@ import {
   FormInput,
   FormInputAssistiveText,
   FormInputLabel,
+  FormInputSelect,
   FormInputTextField,
 } from '..';
 import {
@@ -13,11 +14,12 @@ import {
   IconFilledAccountBalance,
   IconFilledAccountTree,
 } from '../..';
+import {SelectOption} from '../../select';
+import {TextFieldSize} from '../../text-field';
 import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {TextFieldSize} from '../../text-field';
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -58,7 +60,7 @@ export const StoryFormField = () => (
       >
         <FormInputLabel>E-mail</FormInputLabel>
         <FormInputTextField
-          size={TextFieldSize.Small}
+          size={'small' as TextFieldSize}
           startEnhancer={
             <>
               <IconFilledAccountBalance overrides={{size: '20px'}} />
@@ -82,7 +84,7 @@ export const StoryFormField = () => (
       >
         <FormInputLabel>Username</FormInputLabel>
         <FormInputTextField
-          size={TextFieldSize.Small}
+          size={'small' as TextFieldSize}
           startEnhancer={
             <>
               <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
@@ -122,7 +124,7 @@ export const StoryFormField = () => (
         <StorybookSubHeading>Default State</StorybookSubHeading>
         <FormInputLabel>Surname</FormInputLabel>
         <FormInputTextField
-          size={TextFieldSize.Small}
+          size={'small' as TextFieldSize}
           startEnhancer={
             <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
           }
@@ -149,7 +151,7 @@ export const StoryFormField = () => (
         <FormInputLabel>Password</FormInputLabel>
         <FormInputTextField
           state="disabled"
-          size={TextFieldSize.Small}
+          size={'small' as TextFieldSize}
           startEnhancer={
             <IconFilledAccountBalance overrides={{size: '20px'}} />
           }
@@ -161,12 +163,13 @@ export const StoryFormField = () => (
     </Form>
   </>
 );
+
 StoryFormField.storyName = 'form-input-before-and-after-icon';
 export const FormFieldWithIconButton = () => {
   const [showPassword, setShowPassword] = React.useState(false);
   return (
     <>
-      <StorybookHeading>Form With Icon In Input</StorybookHeading>
+      <StorybookHeading>FormInput with Button enhancer</StorybookHeading>
       <Block>
         <Form onSubmit={onSubmit}>
           <FormInput
@@ -220,3 +223,64 @@ export const FormFieldWithIconButton = () => {
   );
 };
 FormFieldWithIconButton.storyName = 'form-input-with-icon-button';
+
+export const FormInputWithSelect = () => (
+  <>
+    <StorybookHeading>FormInput with Select</StorybookHeading>
+    <Block>
+      <StorybookSubHeading>Standalone Select</StorybookSubHeading>
+      <Form onSubmit={onSubmit}>
+        <FormInput
+          name="select"
+          rules={{
+            required: 'Required field',
+          }}
+        >
+          <Block spaceStack="space020">
+            <FormInputLabel>Select Item</FormInputLabel>
+          </Block>
+          <Block spaceStack="space020">
+            <FormInputSelect overrides={{button: {width: '300px'}}}>
+              <SelectOption value="Option 1">Option 1</SelectOption>
+              <SelectOption value="Option 2">Option 2</SelectOption>
+            </FormInputSelect>
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </Block>
+        </FormInput>
+        <Button type="submit">Submit</Button>
+      </Form>
+    </Block>
+    <Block>
+      <StorybookSubHeading>Select with enhancers</StorybookSubHeading>
+      <Form onSubmit={onSubmit}>
+        <FormInput
+          name="select"
+          rules={{
+            required: 'Required field',
+          }}
+        >
+          <Block spaceStack="space020">
+            <FormInputLabel>Select Item</FormInputLabel>
+          </Block>
+          <Block spaceStack="space020">
+            <FormInputSelect
+              overrides={{button: {width: '300px'}}}
+              startEnhancer={
+                <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+              }
+              endEnhancer={
+                <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+              }
+            >
+              <SelectOption value="Option 1">Option 1</SelectOption>
+              <SelectOption value="Option 2">Option 2</SelectOption>
+            </FormInputSelect>
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </Block>
+        </FormInput>
+        <Button type="submit">Submit</Button>
+      </Form>
+    </Block>
+  </>
+);
+FormInputWithSelect.storyName = 'form-input-with-select';

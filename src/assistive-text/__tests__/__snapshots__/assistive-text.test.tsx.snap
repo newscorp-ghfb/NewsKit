@@ -147,6 +147,52 @@ exports[`Assistive Text renders small AssistiveText 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Assistive Text should render disabled Assistive Text 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  min-height: 12px;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #C0C0C0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <p
+      aria-disabled="true"
+      class="emotion-1"
+    >
+      Assistive Text
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Assistive Text should render invalid Assistive Text 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -188,7 +234,7 @@ exports[`Assistive Text should render invalid Assistive Text 1`] = `
       class="emotion-1"
       role="alert"
     >
-      AssistiveText
+      Assistive Text
     </p>
   </div>
 </DocumentFragment>

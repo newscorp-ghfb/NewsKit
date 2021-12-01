@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {AssistiveText, TextField, TextFieldSize} from '..';
+import {TextField, TextFieldSize} from '..';
 import {Block} from '../../block';
 import {Button} from '../../button';
 import {Cell, Grid} from '../../grid';
@@ -17,7 +17,8 @@ import {
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled, getSizingCssFromTheme} from '../../utils/style';
-import {Label} from '../label';
+import {Label} from '../../label';
+import {AssistiveText} from '../../assistive-text';
 
 const CustomBlock = styled.div`
   margin-right: 12px;
@@ -67,23 +68,23 @@ export const TextFieldSizeExamples = () => (
       >
         <Block>
           {[
-            {id: 'id-29', size: TextFieldSize.Small},
-            {id: 'id-30', size: TextFieldSize.Medium},
-            {id: 'id-31', size: TextFieldSize.Large},
+            {id: 'id-29', size: 'small'},
+            {id: 'id-30', size: 'medium'},
+            {id: 'id-31', size: 'large'},
           ].map(({id, size}) => (
             <Block>
               <Grid>
                 <Cell xs={12}>
                   <StorybookSubHeading>{size}</StorybookSubHeading>
-                  <Label htmlFor={id} size={size}>
+                  <Label htmlFor={id} size={size as TextFieldSize}>
                     A Label
                   </Label>
                   <TextField
                     aria-describedby={`${id}-at`}
                     id={id}
-                    size={size}
+                    size={size as TextFieldSize}
                   />
-                  <AssistiveText id={`${id}-at`} size={size}>
+                  <AssistiveText id={`${id}-at`} size={size as TextFieldSize}>
                     Assistive Text Goes Here
                   </AssistiveText>
                 </Cell>
