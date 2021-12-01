@@ -1,6 +1,7 @@
-/* eslint-disable no-underscore-dangle */
+/* eslint-disable no-underscore-dangle, @typescript-eslint/naming-convention */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/naming-convention */
+
+import React, {ReactNode} from 'react';
 
 type DeepMergeCallback = (obj: any) => boolean;
 
@@ -25,7 +26,8 @@ export function deepMerge(
       const jLen = entries.length;
       for (let entryIdx = 0; entryIdx < jLen; entryIdx += 1) {
         const [key, value] = entries[entryIdx];
-        if (isCloneable(value)) {
+        // To avoid deep-merging ReactElements with !React.isValidElement(value)
+        if (isCloneable(value) && !React.isValidElement(value as ReactNode)) {
           result[key] = deepMerge(
             hasCallbackFn ? callbackFn : {},
             (result[key] || {}) as Record<string, unknown>,
