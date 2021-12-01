@@ -1,16 +1,10 @@
 {
-    "overlayTintInverse010": "rgba(255,255,255,0.2)",
-    "overlayTintInverse020": "rgba(255,255,255,0.4)",
-    "overlayTintInverse030": "rgba(255,255,255,0.6)",
-    "overlayTintInverse040": "rgba(255,255,255,0.8)",
-    "overlayTintBase010": "rgba(10,10,10,0.2)",
-    "overlayTintBase020": "rgba(10,10,10,0.4)",
-    "overlayTintBase030": "rgba(10,10,10,0.6)",
-    "overlayTintBase040": "rgba(10,10,10,0.8)",
-    "overlayGradientBaseHorizontal": "linear-gradient(-90deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
-    "overlayGradientBaseVertical":"linear-gradient(-90deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
-    "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,40,64,0.00) 0%,rgba(22,40,64,1.00)100%)",
-    "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,40,64,0.00) 0%,rgba(22,40,64,1.00) 100%)"
-  }
+  "overlayTintBase010": "rgba(22,39,64,0.2)",
+  "overlayTintBase020": "rgba(22,39,64,0.4)",
+  "overlayTintBase030": "rgba(22,39,64,0.6)",
+  "overlayTintBase040": "rgba(22,39,64,0.8)",
+  "overlayGradientInverseVertical": "linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)",
+  "overlayGradientInverseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)"
+}
 
   

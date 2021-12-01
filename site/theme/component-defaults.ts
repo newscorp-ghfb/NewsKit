@@ -92,10 +92,10 @@ export const componentDefaults = {
     horizontal: {
       content: {
         title: {
-          stylePreset: 'inkWhite',
+          stylePreset: 'inkWhiteContrast',
         },
         message: {
-          stylePreset: 'inkWhite',
+          stylePreset: 'inkWhiteContrast',
         },
       },
       actions: {
@@ -107,10 +107,10 @@ export const componentDefaults = {
     vertical: {
       content: {
         title: {
-          stylePreset: 'inkWhite',
+          stylePreset: 'inkWhiteContrast',
         },
         message: {
-          stylePreset: 'inkWhite',
+          stylePreset: 'inkWhiteContrast',
         },
       },
       actions: {

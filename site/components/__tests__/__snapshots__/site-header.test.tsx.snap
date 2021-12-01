@@ -12,11 +12,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   left: 0;
   z-index: 4;
   background-color: #FFFFFF;
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
@@ -195,11 +195,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #555E74;
+  color: #2E2E2E;
 }
 
 .emotion-10 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-12 {
@@ -218,8 +218,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-13 {
   display: inline-block;
-  fill: #555E74;
-  color: #555E74;
+  fill: #2E2E2E;
+  color: #2E2E2E;
   width: 48px;
   height: 32px;
 }
@@ -274,8 +274,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-23 {
-  fill: #243853;
-  color: #243853;
+  fill: #162740;
+  color: #162740;
 }
 
 @media screen {
@@ -443,30 +443,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #677483;
+  color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-37:hover:not(:disabled) {
-  color: #677483;
+  color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-37:active:not(:disabled) {
-  color: #162740;
+  color: #0A0A0A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-39 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
-  color: #162740;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
   box-sizing: border-box;
 }
 
@@ -475,7 +475,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-39::after {
@@ -483,16 +483,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-44 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
-  color: #677483;
+  letter-spacing: -0.5px;
+  color: #535353;
   box-sizing: border-box;
 }
 
@@ -501,7 +501,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-44::after {
@@ -509,7 +509,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 @media screen {
@@ -648,7 +648,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #EBEBEB;
+  background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
   transition-property: background-color;
@@ -663,11 +663,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-90:hover:not(:disabled) {
-  background-color: #BBC3C9;
+  background-color: #CCCCCC;
 }
 
 .emotion-90:active:not(:disabled) {
-  background-color: #BBC3C9;
+  background-color: #CCCCCC;
 }
 
 .emotion-91 {
@@ -701,7 +701,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-93 {
-  fill: #555E74;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1272,11 +1272,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   left: 0;
   z-index: 4;
   background-color: #FFFFFF;
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
@@ -1455,11 +1455,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #555E74;
+  color: #2E2E2E;
 }
 
 .emotion-10 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-12 {
@@ -1478,8 +1478,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-13 {
   display: inline-block;
-  fill: #555E74;
-  color: #555E74;
+  fill: #2E2E2E;
+  color: #2E2E2E;
   width: 48px;
   height: 32px;
 }
@@ -1534,8 +1534,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-23 {
-  fill: #243853;
-  color: #243853;
+  fill: #162740;
+  color: #162740;
 }
 
 @media screen {
@@ -1703,30 +1703,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #677483;
+  color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-37:hover:not(:disabled) {
-  color: #677483;
+  color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-37:active:not(:disabled) {
-  color: #162740;
+  color: #0A0A0A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-39 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
-  color: #162740;
+  letter-spacing: -0.5px;
+  color: #0A0A0A;
   box-sizing: border-box;
 }
 
@@ -1735,7 +1735,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-39::after {
@@ -1743,16 +1743,16 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-44 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
-  color: #677483;
+  letter-spacing: -0.5px;
+  color: #535353;
   box-sizing: border-box;
 }
 
@@ -1761,7 +1761,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-44::after {
@@ -1769,7 +1769,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 @media screen {
@@ -1908,7 +1908,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #EBEBEB;
+  background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
   transition-property: background-color;
@@ -1923,11 +1923,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-90:hover:not(:disabled) {
-  background-color: #BBC3C9;
+  background-color: #CCCCCC;
 }
 
 .emotion-90:active:not(:disabled) {
-  background-color: #BBC3C9;
+  background-color: #CCCCCC;
 }
 
 .emotion-91 {
@@ -1961,7 +1961,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-93 {
-  fill: #555E74;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2532,11 +2532,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   left: 0;
   z-index: 4;
   background-color: #FFFFFF;
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 4px 8px 0 rgba(10,10,10,0.08);
@@ -2715,11 +2715,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #555E74;
+  color: #2E2E2E;
 }
 
 .emotion-10 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-12 {
@@ -2738,8 +2738,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-13 {
   display: inline-block;
-  fill: #555E74;
-  color: #555E74;
+  fill: #2E2E2E;
+  color: #2E2E2E;
   width: 48px;
   height: 32px;
 }
@@ -2794,8 +2794,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-23 {
-  fill: #243853;
-  color: #243853;
+  fill: #162740;
+  color: #162740;
 }
 
 @media screen {
@@ -2963,30 +2963,30 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  color: #677483;
+  color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-37:hover:not(:disabled) {
-  color: #677483;
+  color: #535353;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-37:active:not(:disabled) {
-  color: #162740;
+  color: #0A0A0A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-39 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
-  color: #677483;
+  letter-spacing: -0.5px;
+  color: #535353;
   box-sizing: border-box;
 }
 
@@ -2995,7 +2995,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-39::after {
@@ -3003,7 +3003,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 @media screen {
@@ -3142,7 +3142,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #EBEBEB;
+  background-color: #F4F4F4;
   border-radius: 50%;
   margin: 0;
   transition-property: background-color;
@@ -3157,11 +3157,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-90:hover:not(:disabled) {
-  background-color: #BBC3C9;
+  background-color: #CCCCCC;
 }
 
 .emotion-90:active:not(:disabled) {
-  background-color: #BBC3C9;
+  background-color: #CCCCCC;
 }
 
 .emotion-91 {
@@ -3195,7 +3195,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-93 {
-  fill: #555E74;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }

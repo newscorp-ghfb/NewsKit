@@ -5,7 +5,7 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Tab, TabSize} from '../..';
+import {compileTheme, newskitLightTheme, Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
 import {TabAlign, TabsProps, TabsIndicatorPosition} from '../types';
 import {IconFilledEmail} from '../../icons';
@@ -44,7 +44,9 @@ const tabsWithLabelAndIcons = [
   </Tab>,
 ];
 
-const selectedTabStyled = 'color: #3358CC';
+const selectedTabStyled = `color: ${
+  compileTheme(newskitLightTheme).stylePresets.tab.selected!.color
+}`;
 
 describe('Tabs', () => {
   // Mocking ResizeObserver

@@ -3,11 +3,11 @@
 exports[`Sidebar navigation should match snapshot with active link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-1 {
@@ -58,13 +58,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-6 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   background-color: transparent;
-  color: #162740;
+  color: #0A0A0A;
   box-sizing: border-box;
   cursor: 'pointer';
   min-width: 230px;
@@ -78,7 +78,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -86,7 +86,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 <nav
@@ -131,11 +131,11 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-1 {
@@ -164,11 +164,11 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 exports[`Sidebar navigation should render only routes under current section 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-1 {
@@ -219,13 +219,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-6 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   background-color: transparent;
-  color: #677483;
+  color: #535353;
   box-sizing: border-box;
   cursor: 'pointer';
   min-width: 230px;
@@ -239,7 +239,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -247,19 +247,19 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6:hover:not(:disabled) {
   background-color: #E0E7FF;
-  border-radius: 20rem;
-  color: #162740;
+  border-radius: 8px;
+  color: #0A0A0A;
 }
 
 .emotion-6:active:not(:disabled) {
   background-color: #AEBFFF;
-  border-radius: 20rem;
-  color: #162740;
+  border-radius: 8px;
+  color: #0A0A0A;
 }
 
 <nav

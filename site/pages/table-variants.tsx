@@ -52,7 +52,9 @@ const inkColorRows = getTokenType(newskitLightTheme.colors, 'ink').map(
   ({tokenName, tokenValue}) => ({
     colour: tokenName,
     colourToken: tokenName,
-    tokenValue: tokenValue.split('.')[1].replace('}}', ''),
+    tokenValue: tokenValue.includes('.')
+      ? tokenValue.split('.')[1].replace('}}', '')
+      : tokenValue,
     // @ts-ignore
     commonUses: INK_DESCRIPTION[tokenName] || '-',
   }),

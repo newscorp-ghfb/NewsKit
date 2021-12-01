@@ -3,7 +3,7 @@ import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
 import {AudioPlayer} from '..';
 import {AudioPlayerProps} from '../types';
-import {createTheme} from '../../theme';
+import {compileTheme, createTheme, newskitLightTheme} from '../../theme';
 
 const version = '0.10.0';
 
@@ -256,13 +256,20 @@ describe('Audio Player', () => {
     };
     fireEvent.progress(audioElement);
 
+    const compiledNKLightThemeStylePresets = compileTheme(newskitLightTheme)
+      .stylePresets;
+
+    const {audioPlayerSeekBarTrack} = compiledNKLightThemeStylePresets;
+    const {audioPlayerSeekBarIndicator} = compiledNKLightThemeStylePresets;
+    const {audioPlayerSeekBarBuffering} = compiledNKLightThemeStylePresets;
+
     expect(mockGetTrackBackground).toHaveBeenCalledWith({
       colors: [
-        '#3358CC', // indicator
-        '#F4F4F4', // buffered
-        '#FAFAFA', // track background
-        '#F4F4F4', // buffered
-        '#FAFAFA', // track background
+        `${audioPlayerSeekBarIndicator.base!.backgroundColor}`, // indicator
+        `${audioPlayerSeekBarBuffering.base!.backgroundColor}`, // buffered
+        `${audioPlayerSeekBarTrack.base!.backgroundColor}`, // track background
+        `${audioPlayerSeekBarBuffering.base!.backgroundColor}`, // buffered
+        `${audioPlayerSeekBarTrack.base!.backgroundColor}`, // track background
       ],
       max: 6610,
       min: 0,

@@ -353,8 +353,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkWhite}}',
-      iconColor: '{{colors.inkWhite}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -410,8 +410,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkWhite}}',
-      iconColor: '{{colors.inkWhite}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -466,8 +466,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkWhite}}',
-      iconColor: '{{colors.inkWhite}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -537,8 +537,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkWhite}}',
-      iconColor: '{{colors.inkWhite}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -663,8 +663,8 @@ export const stylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkWhite}}',
-      iconColor: '{{colors.inkWhite}}',
+      color: '{{colors.inkWhiteContrast}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
@@ -702,7 +702,7 @@ export const stylePresets = {
         '{{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
     },
   },
-  inkWhite: {
+  inkWhiteContrast: {
     base: {
       color: '{{colors.white}}',
     },
@@ -712,7 +712,7 @@ export const stylePresets = {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.inkWhite}}',
+      iconColor: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse010}}',
@@ -736,7 +736,7 @@ export const stylePresets = {
       borderWidth: '{{borders.borderWidth010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.interactiveInverse030}}',
-      iconColor: '{{colors.inkInverse}}',
+      iconColor: '{{colors.red100}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse010}}',

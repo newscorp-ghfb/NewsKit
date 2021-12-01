@@ -1,10 +1,10 @@
 export const fonts = {
   fontSize010: '12px', // 0.75rem
   fontSize020: '14px', // 0.875rem
-  fontSize030: '16px', // 1rem
-  fontSize040: '18px', // 1rem
+  fontSize030: '16px', // 1rem (base)
+  fontSize040: '18px', // 1.125rem
   fontSize050: '20px', // 1.25rem
-  fontSize060: '22px', // 1.5rem
+  fontSize060: '22px', // 1.375rem
   fontSize070: '24px', // 1.5rem
   fontSize080: '28px', // 1.75rem
   fontSize090: '32px', // 2rem

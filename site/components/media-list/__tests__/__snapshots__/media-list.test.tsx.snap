@@ -175,7 +175,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #BBC3C9;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -251,15 +251,15 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-13:visited:not(:disabled) .nk-headline-kicker {
-  color: #503B8C;
+  color: #5E44E4;
 }
 
 .emotion-13 .nk-headline-heading {
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-13 .nk-headline-heading svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-13:before {
@@ -274,11 +274,11 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-14 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -287,7 +287,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.334375em;
+  margin-bottom: -0.28125em;
 }
 
 .emotion-14::after {
@@ -295,33 +295,33 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.475em;
+  margin-top: -0.28125em;
 }
 
 .emotion-15 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-15 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-16 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-16 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-16::before {
@@ -329,7 +329,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.415625em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-16::after {
@@ -337,7 +337,7 @@ exports[`Media List renders with custom layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.446875em;
+  margin-top: -0.43125em;
 }
 
 .emotion-17 {
@@ -690,7 +690,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #BBC3C9;
+  fill: #C0C0C0;
 }
 
 .emotion-8 {
@@ -766,15 +766,15 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-13:visited:not(:disabled) .nk-headline-kicker {
-  color: #503B8C;
+  color: #5E44E4;
 }
 
 .emotion-13 .nk-headline-heading {
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-13 .nk-headline-heading svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-13:before {
@@ -789,11 +789,11 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-14 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -802,7 +802,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.334375em;
+  margin-bottom: -0.28125em;
 }
 
 .emotion-14::after {
@@ -810,33 +810,33 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.475em;
+  margin-top: -0.28125em;
 }
 
 .emotion-15 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-15 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-16 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-16 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-16::before {
@@ -844,7 +844,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.415625em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-16::after {
@@ -852,7 +852,7 @@ exports[`Media List renders with default layout 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.446875em;
+  margin-top: -0.43125em;
 }
 
 .emotion-18 {
@@ -1256,7 +1256,7 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-12:visited:not(:disabled) .nk-headline-kicker {
-  color: #503B8C;
+  color: #5E44E4;
 }
 
 .emotion-12 .nk-headline-heading {
@@ -1284,11 +1284,11 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-13 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 28px;
-    line-height: 1.2857142857142858;
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-13::before {
@@ -1296,7 +1296,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2772321428571429em;
+    margin-bottom: -0.2645833333333334em;
   }
 
   .emotion-13::after {
@@ -1304,17 +1304,17 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.4178571428571429em;
+    margin-top: -0.2645833333333334em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-13 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 40px;
-    line-height: 1.2;
+    font-family: "Poppins",sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-13::before {
@@ -1322,7 +1322,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.234375em;
+    margin-bottom: -0.24375000000000002em;
   }
 
   .emotion-13::after {
@@ -1330,7 +1330,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.375em;
+    margin-top: -0.24375000000000002em;
   }
 }
 
@@ -1369,11 +1369,11 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-16 {
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins",sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-16::before {
@@ -1381,7 +1381,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.384375em;
+    margin-bottom: -0.43125em;
   }
 
   .emotion-16::after {
@@ -1389,17 +1389,17 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.525em;
+    margin-top: -0.43125em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-16 {
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins",sans-serif;
     font-size: 20px;
     line-height: 1.6;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-16::before {
@@ -1407,7 +1407,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.43437500000000007em;
+    margin-bottom: -0.48125000000000007em;
   }
 
   .emotion-16::after {
@@ -1415,7 +1415,7 @@ exports[`Media List renders with feature cardscards 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5750000000000001em;
+    margin-top: -0.48125000000000007em;
   }
 }
 
@@ -1492,11 +1492,11 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-21 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-21::before {
@@ -1504,7 +1504,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4677083333333334em + 1.5px);
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-21::after {
@@ -1512,14 +1512,14 @@ exports[`Media List renders with feature cardscards 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6083333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-23 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #555E74;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2159,7 +2159,7 @@ exports[`Media List renders with usage cards 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #67CF86;
+  border-color: #0A782A;
   background-color: #E6FAEB;
   border-radius: 50%;
   border-width: 1px;
@@ -2171,7 +2171,7 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #148F39;
+  fill: #0A782A;
 }
 
 .emotion-8 {
@@ -2208,7 +2208,7 @@ exports[`Media List renders with usage cards 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #148F39;
+  fill: #0A782A;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2216,7 +2216,7 @@ exports[`Media List renders with usage cards 1`] = `
 .emotion-10.emotion-10 {
   width: 24px;
   height: 24px;
-  fill: #148F39;
+  fill: #0A782A;
 }
 
 .emotion-12 {
@@ -2253,7 +2253,7 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-16 {
   border-style: solid;
-  border-color: #67CF86;
+  border-color: #0A782A;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -2263,11 +2263,11 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-18 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 24px;
-  line-height: 1.3333333333333333;
+  font-family: "Poppins",sans-serif;
+  font-size: 22px;
+  line-height: 1.0909090909090908;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -2276,7 +2276,7 @@ exports[`Media List renders with usage cards 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.30104166666666665em;
+  margin-bottom: -0.22670454545454544em;
 }
 
 .emotion-18::after {
@@ -2284,33 +2284,33 @@ exports[`Media List renders with usage cards 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.44166666666666665em;
+  margin-top: -0.22670454545454544em;
 }
 
 .emotion-19 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #148F39;
+  color: #0A782A;
 }
 
 .emotion-19 svg {
-  fill: #148F39;
+  fill: #0A782A;
 }
 
 .emotion-21 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-21 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-21::before {
@@ -2318,7 +2318,7 @@ exports[`Media List renders with usage cards 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.415625em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-21::after {
@@ -2326,7 +2326,7 @@ exports[`Media List renders with usage cards 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.446875em;
+  margin-top: -0.43125em;
 }
 
 .emotion-25 {
@@ -2356,8 +2356,8 @@ exports[`Media List renders with usage cards 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #ED6B5A;
-  background-color: #FFE8E5;
+  border-color: #D20600;
+  background-color: #FFE6E5;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -2368,14 +2368,14 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 .emotion-25 svg {
-  fill: #D23F2D;
+  fill: #D20600;
 }
 
 .emotion-28 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D23F2D;
+  fill: #D20600;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2383,12 +2383,12 @@ exports[`Media List renders with usage cards 1`] = `
 .emotion-28.emotion-28 {
   width: 24px;
   height: 24px;
-  fill: #D23F2D;
+  fill: #D20600;
 }
 
 .emotion-34 {
   border-style: solid;
-  border-color: #ED6B5A;
+  border-color: #D20600;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -2401,11 +2401,11 @@ exports[`Media List renders with usage cards 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #D23F2D;
+  color: #D20600;
 }
 
 .emotion-37 svg {
-  fill: #D23F2D;
+  fill: #D20600;
 }
 
 <div

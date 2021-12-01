@@ -63,12 +63,12 @@ exports[`Block with overflow set to scrollY renders no overflow prop 1`] = `
 exports[`Block with responsive style props renders a responsive styled div 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #162740;
+  color: #0A0A0A;
   background-color: #FFFFFF;
-  font-family: 'Poppins',sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.4285714285714286;
   border: 1px solid black;
   border-top: sizing010;
   border-right: sizing010;
@@ -126,12 +126,12 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width: 0px) {
   .emotion-0 {
-    color: #555E74;
+    color: #2E2E2E;
     background-color: #F4F4F4;
-    font-family: 'DM Sans',sans-serif;
+    font-family: "DM Sans",sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.5;
     border: 2px dashed blue;
     border-top: sizing010;
     border-right: sizing020;
@@ -185,12 +185,12 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width: 480px) {
   .emotion-0 {
-    color: #677483;
+    color: #535353;
     background-color: #EBEBEB;
-    font-family: 'Poppins',sans-serif;
+    font-family: "DM Sans",sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.3333333333333333;
+    line-height: 1.5555555555555556;
     border: 3px dotted green;
     border-top: sizing020;
     border-right: sizing030;
@@ -255,12 +255,12 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 exports[`Block with simple style props renders a styled div 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #162740;
+  color: #0A0A0A;
   background-color: #213A82;
-  font-family: 'Poppins',sans-serif;
+  font-family: "DM Sans",sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.4285714285714286;
   border: 1px solid black;
   border-top: sizing010;
   border-right: sizing010;

@@ -39,11 +39,11 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 }
 
 .emotion-4 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -52,7 +52,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.334375em;
+  margin-bottom: -0.28125em;
 }
 
 .emotion-4::after {
@@ -60,33 +60,33 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.475em;
+  margin-top: -0.28125em;
 }
 
 .emotion-5 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-5 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-6::before {
@@ -94,7 +94,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.415625em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-6::after {
@@ -102,7 +102,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.446875em;
+  margin-top: -0.43125em;
 }
 
 <div
@@ -219,15 +219,15 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #503B8C;
+  color: #5E44E4;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-4:before {
@@ -242,11 +242,11 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-5 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -255,7 +255,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.334375em;
+  margin-bottom: -0.28125em;
 }
 
 .emotion-5::after {
@@ -263,33 +263,33 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.475em;
+  margin-top: -0.28125em;
 }
 
 .emotion-6 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-6 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-7::before {
@@ -297,7 +297,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.415625em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-7::after {
@@ -305,7 +305,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.446875em;
+  margin-top: -0.43125em;
 }
 
 <div
@@ -398,11 +398,11 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
 }
 
 .emotion-4 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -411,7 +411,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.334375em;
+  margin-bottom: -0.28125em;
 }
 
 .emotion-4::after {
@@ -419,33 +419,33 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.475em;
+  margin-top: -0.28125em;
 }
 
 .emotion-5 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-5 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-6::before {
@@ -453,7 +453,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.415625em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-6::after {
@@ -461,7 +461,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.446875em;
+  margin-top: -0.43125em;
 }
 
 <div
@@ -565,15 +565,15 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #503B8C;
+  color: #5E44E4;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-4:before {
@@ -588,11 +588,11 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-5 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -601,7 +601,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.334375em;
+  margin-bottom: -0.28125em;
 }
 
 .emotion-5::after {
@@ -609,33 +609,33 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.475em;
+  margin-top: -0.28125em;
 }
 
 .emotion-6 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-6 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-7 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-7::before {
@@ -643,7 +643,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.415625em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-7::after {
@@ -651,7 +651,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.446875em;
+  margin-top: -0.43125em;
 }
 
 <div

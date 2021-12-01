@@ -276,7 +276,7 @@ export default (layoutProps: LayoutProps) => {
               stackDistribution="center"
               wrap="nowrap"
             >
-              <Block spaceStack={{xs: 'space050', md: 'space055'}}>
+              <Block spaceStack="space050">
                 <TextBlock
                   as="h1"
                   stylePreset="inkSubtle"
@@ -289,7 +289,7 @@ export default (layoutProps: LayoutProps) => {
                   Collaborate
                 </TextBlock>
               </Block>
-              <Block spaceStack={{xs: 'space050', md: 'space055'}}>
+              <Block spaceStack="space050">
                 <TextBlock
                   as="h1"
                   stylePreset="inkBrand010"

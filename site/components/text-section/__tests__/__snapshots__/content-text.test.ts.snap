@@ -9,20 +9,20 @@ exports[`ContentText renders with only the description 1`] = `
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
+  color: #2E2E2E;
 }
 
 .emotion-1 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: 'DM Sans',sans-serif;
+    font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -30,7 +30,7 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.415625em;
+    margin-bottom: -0.43125em;
   }
 
   .emotion-1::after {
@@ -38,17 +38,17 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.446875em;
+    margin-top: -0.43125em;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: 'Poppins',sans-serif;
+    font-family: "DM Sans",sans-serif;
     font-size: 18px;
-    line-height: 1.3333333333333333;
+    line-height: 1.5555555555555556;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -56,7 +56,7 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30104166666666665em;
+    margin-bottom: -0.4590277777777778em;
   }
 
   .emotion-1::after {
@@ -64,7 +64,7 @@ exports[`ContentText renders with only the description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.4590277777777778em;
   }
 }
 
@@ -89,20 +89,20 @@ exports[`ContentText renders with only the title 1`] = `
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-1 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins",sans-serif;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -110,7 +110,7 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.334375em;
+    margin-bottom: -0.28125em;
   }
 
   .emotion-1::after {
@@ -118,17 +118,17 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.28125em;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 24px;
-    line-height: 1.3333333333333333;
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -136,7 +136,7 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30104166666666665em;
+    margin-bottom: -0.22670454545454544em;
   }
 
   .emotion-1::after {
@@ -144,7 +144,7 @@ exports[`ContentText renders with only the title 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.22670454545454544em;
   }
 }
 
@@ -177,20 +177,20 @@ exports[`ContentText renders with title and description 1`] = `
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-1 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins",sans-serif;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -198,7 +198,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.334375em;
+    margin-bottom: -0.28125em;
   }
 
   .emotion-1::after {
@@ -206,17 +206,17 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.475em;
+    margin-top: -0.28125em;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 24px;
-    line-height: 1.3333333333333333;
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -224,7 +224,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30104166666666665em;
+    margin-bottom: -0.22670454545454544em;
   }
 
   .emotion-1::after {
@@ -232,7 +232,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.22670454545454544em;
   }
 }
 
@@ -252,20 +252,20 @@ exports[`ContentText renders with title and description 1`] = `
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
-  color: #555E74;
+  color: #2E2E2E;
 }
 
 .emotion-1 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: 'DM Sans',sans-serif;
+    font-family: "DM Sans",sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -273,7 +273,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.415625em;
+    margin-bottom: -0.43125em;
   }
 
   .emotion-1::after {
@@ -281,17 +281,17 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.446875em;
+    margin-top: -0.43125em;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: 'Poppins',sans-serif;
+    font-family: "DM Sans",sans-serif;
     font-size: 18px;
-    line-height: 1.3333333333333333;
+    line-height: 1.5555555555555556;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 
   .emotion-1::before {
@@ -299,7 +299,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30104166666666665em;
+    margin-bottom: -0.4590277777777778em;
   }
 
   .emotion-1::after {
@@ -307,7 +307,7 @@ exports[`ContentText renders with title and description 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.44166666666666665em;
+    margin-top: -0.4590277777777778em;
   }
 }
 

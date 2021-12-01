@@ -334,6 +334,8 @@ typographyPresets.utilityButton030 = {
   ...typographyPresets.utilityLabel030,
   fontWeight: '{{fonts.fontWeight020}}',
 };
+
+// Dropcap
 typographyPresets.editorialDropCap010 = {
   fontSize: '5.625em',
   lineHeight: 0.85,

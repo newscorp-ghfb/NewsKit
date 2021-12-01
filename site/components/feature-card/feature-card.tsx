@@ -73,7 +73,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
                 overrides={{
                   typographyPreset: titleTypographyPreset,
                   heading: {
-                    stylePreset: 'inkWhite',
+                    stylePreset: 'inkWhiteContrast',
                   },
                 }}
               >
@@ -84,7 +84,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
           {description && (
             <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
               <TextBlock
-                stylePreset="inkWhiteTint080"
+                stylePreset="inkWhiteSubtle"
                 typographyPreset={descriptionTypographyPreset}
               >
                 {description}
@@ -133,10 +133,9 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
               <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
                 <Headline
                   overrides={{
-                    // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
                     typographyPreset: titleTypographyPreset,
                     heading: {
-                      stylePreset: 'inkWhite',
+                      stylePreset: 'inkWhiteContrast',
                     },
                   }}
                 >
@@ -147,7 +146,7 @@ const FeatureCardHorizontal: React.FC<FeatureCardProps> = ({
             {description && (
               <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
                 <TextBlock
-                  stylePreset="inkWhiteTint080"
+                  stylePreset="inkWhiteSubtle"
                   typographyPreset={descriptionTypographyPreset}
                 >
                   {description}
@@ -221,11 +220,10 @@ const FeatureCardVertical: React.FC<FeatureCardProps> = ({
         <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
           <Headline
             overrides={{
-              // TODO: clean out excessive overrides as part of https://nidigitalsolutions.jira.com/browse/PPDSC-1502
               typographyPreset: titleTypographyPreset,
 
               heading: {
-                stylePreset: 'inkWhite',
+                stylePreset: 'inkWhiteContrast',
               },
             }}
           >
@@ -236,7 +234,7 @@ const FeatureCardVertical: React.FC<FeatureCardProps> = ({
       {description && (
         <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
           <TextBlock
-            stylePreset="inkWhiteTint080"
+            stylePreset="inkWhiteSubtle"
             typographyPreset={descriptionTypographyPreset}
           >
             {description}

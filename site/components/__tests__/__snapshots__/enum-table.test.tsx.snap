@@ -9,11 +9,11 @@ exports[`EnumTable renders enum as expected 1`] = `
 }
 
 .emotion-1 {
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   background-color: #FFFFFF;
   box-shadow: 0 3px 4px 2px #FFFFFF;
 }
@@ -21,7 +21,7 @@ exports[`EnumTable renders enum as expected 1`] = `
 .emotion-1,
 .emotion-1 td,
 .emotion-1 th {
-  color: #162740;
+  color: #0A0A0A;
   border-spacing: 0;
   border: solid 1px #E4E4E4;
 }

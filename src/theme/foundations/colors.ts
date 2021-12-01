@@ -75,6 +75,7 @@ export const palettes = {
   purple070: '#442EB5',
   purple080: '#36248C',
   purple090: '#332770',
+  purple100: '#2A205C',
 
   blackTint010: 'rgba(10,10,10,0.1)',
   blackTint020: 'rgba(10,10,10,0.2)',

@@ -16,12 +16,12 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -34,12 +34,12 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -52,12 +52,12 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5 {
@@ -100,7 +100,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #67CF86;
+  border-color: #0A782A;
   background-color: #E6FAEB;
   border-radius: 50%;
   border-width: 1px;
@@ -112,7 +112,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 }
 
 .emotion-7 svg {
-  fill: #148F39;
+  fill: #0A782A;
 }
 
 .emotion-8 {
@@ -149,25 +149,25 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #148F39;
+  fill: #0A782A;
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-10.emotion-10 {
-  fill: #148F39;
+  fill: #0A782A;
 }
 
 .emotion-12 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   border-width: 0;
 }
 
@@ -295,12 +295,12 @@ exports[`Table renders links correctly 1`] = `
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -313,12 +313,12 @@ exports[`Table renders links correctly 1`] = `
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-4 {
@@ -385,11 +385,11 @@ exports[`Table renders links correctly 1`] = `
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -399,7 +399,7 @@ exports[`Table renders links correctly 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
@@ -407,19 +407,19 @@ exports[`Table renders links correctly 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 {
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   border-width: 0;
 }
 
@@ -494,12 +494,12 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -512,12 +512,12 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -530,12 +530,12 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 {
@@ -573,7 +573,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   appearance: none;
   color: #FFFFFF;
   background-color: #577FFB;
-  border-radius: 20rem;
+  border-radius: 8px;
   white-space: nowrap;
 }
 
@@ -617,11 +617,11 @@ exports[`Table renders number values automatically if undefined 1`] = `
 }
 
 .emotion-10 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-10::before {
@@ -629,7 +629,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.3486607142857143em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
@@ -637,7 +637,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4892857142857143em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-16 {
@@ -651,12 +651,12 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   border-width: 0;
 }
 
@@ -867,12 +867,12 @@ exports[`Table renders with default styles 1`] = `
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -885,12 +885,12 @@ exports[`Table renders with default styles 1`] = `
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-5 {
@@ -903,12 +903,12 @@ exports[`Table renders with default styles 1`] = `
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   border-width: 0;
 }
 
@@ -983,12 +983,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1001,12 +1001,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1019,12 +1019,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 {
@@ -1067,7 +1067,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   appearance: none;
   background-color: #F4F4F4;
   border-radius: 4px;
-  color: #555E74;
+  color: #2E2E2E;
   white-space: nowrap;
 }
 
@@ -1077,7 +1077,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-9 {
@@ -1111,11 +1111,10 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-11 {
-  font-family: 'DM Mono',monospace;
+  font-family: 'DM Mono',courier;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4285714285714286;
-  letter-spacing: 0;
 }
 
 .emotion-11::before {
@@ -1138,12 +1137,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   border-width: 0;
 }
 
@@ -1301,12 +1300,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1319,12 +1318,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #BBC3C9;
   border-width: 0 0 1px 0;
-  color: #162740;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.62;
-  font-weight: 700;
-  letter-spacing: 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1337,12 +1336,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-6 {
@@ -1385,7 +1384,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   appearance: none;
   background-color: #F4F4F4;
   border-radius: 4px;
-  color: #555E74;
+  color: #2E2E2E;
   white-space: nowrap;
 }
 
@@ -1395,7 +1394,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-8 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-9 {
@@ -1429,11 +1428,10 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-11 {
-  font-family: 'DM Mono',monospace;
+  font-family: 'DM Mono',courier;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4285714285714286;
-  letter-spacing: 0;
 }
 
 .emotion-11::before {
@@ -1456,12 +1454,12 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-style: solid;
   border-color: #E4E4E4;
   border-width: 0 0 1px 0;
-  color: #555E74;
-  font-family: 'DM Sans',sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   border-width: 0;
 }
 

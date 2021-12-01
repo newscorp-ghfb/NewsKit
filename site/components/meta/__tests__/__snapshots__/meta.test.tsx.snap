@@ -112,11 +112,11 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-6 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -125,7 +125,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4121527777777778em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -133,18 +133,18 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-7 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-9 {
@@ -174,7 +174,7 @@ exports[`Meta renders with mandatory props 1`] = `
   appearance: none;
   color: #FFFFFF;
   background-color: #577FFB;
-  border-radius: 20rem;
+  border-radius: 8px;
   white-space: nowrap;
 }
 
@@ -224,11 +224,11 @@ exports[`Meta renders with mandatory props 1`] = `
 .emotion-13 {
   margin: 0;
   padding: 1px 0;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13::before {
@@ -236,7 +236,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4915178571428571em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-13::after {
@@ -244,7 +244,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6321428571428571em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-14 {
@@ -339,23 +339,23 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-23:visited:not(:disabled) {
-  color: #503B8C;
+  color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:visited:not(:disabled) svg {
-  fill: #503B8C;
+  fill: #5E44E4;
 }
 
 .emotion-23:visited:hover:not(:disabled) {
-  color: #503B8C;
+  color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:visited:hover:not(:disabled) svg {
-  fill: #503B8C;
+  fill: #5E44E4;
 }
 
 .emotion-24 {
@@ -380,11 +380,11 @@ exports[`Meta renders with mandatory props 1`] = `
 .emotion-25 {
   margin: 0;
   padding: 1px 0;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -394,7 +394,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.384375em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-25::after {
@@ -402,7 +402,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.525em;
+  margin-top: -0.43125em;
 }
 
 .emotion-26 {
@@ -466,10 +466,10 @@ exports[`Meta renders with mandatory props 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #555E74;
+  border-color: #535353;
   border-width: 1px;
-  border-radius: 20rem;
-  color: #555E74;
+  border-radius: 8px;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -483,26 +483,26 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-28 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-28:hover:not(:disabled) {
-  background-color: #EBEBEB;
-  border-color: #243853;
+  background-color: #F4F4F4;
+  border-color: #2E2E2E;
 }
 
 .emotion-28:active:not(:disabled) {
-  background-color: #BBC3C9;
-  border-color: #162740;
+  background-color: #CCCCCC;
+  border-color: #0A0A0A;
 }
 
 .emotion-28:disabled {
-  border-color: #E4E4E4;
-  color: #BBC3C9;
+  border-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-28:disabled svg {
-  fill: #BBC3C9;
+  fill: #C0C0C0;
 }
 
 .emotion-29 {
@@ -536,17 +536,17 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-31 {
-  fill: #555E74;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-33 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-33::before {
@@ -554,7 +554,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4677083333333334em + 1.5px);
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-33::after {
@@ -562,7 +562,7 @@ exports[`Meta renders with mandatory props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6083333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-34 {
@@ -1247,11 +1247,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-6 {
-  font-family: 'Poppins',sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   padding: 1px 0px;
 }
 
@@ -1260,7 +1260,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4121527777777778em;
+  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
@@ -1268,18 +1268,18 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.5527777777777778em;
+  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
   display: inline;
   font: inherit;
   margin: 0;
-  color: #162740;
+  color: #0A0A0A;
 }
 
 .emotion-7 svg {
-  fill: #162740;
+  fill: #0A0A0A;
 }
 
 .emotion-9 {
@@ -1309,7 +1309,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   appearance: none;
   color: #FFFFFF;
   background-color: #577FFB;
-  border-radius: 20rem;
+  border-radius: 8px;
   white-space: nowrap;
 }
 
@@ -1359,11 +1359,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 .emotion-13 {
   margin: 0;
   padding: 1px 0;
-  font-family: 'Poppins',sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 
 .emotion-13::before {
@@ -1371,7 +1371,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4915178571428571em;
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-13::after {
@@ -1379,7 +1379,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6321428571428571em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-14 {
@@ -1474,23 +1474,23 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-23:visited:not(:disabled) {
-  color: #503B8C;
+  color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:visited:not(:disabled) svg {
-  fill: #503B8C;
+  fill: #5E44E4;
 }
 
 .emotion-23:visited:hover:not(:disabled) {
-  color: #503B8C;
+  color: #5E44E4;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:visited:hover:not(:disabled) svg {
-  fill: #503B8C;
+  fill: #5E44E4;
 }
 
 .emotion-24 {
@@ -1515,11 +1515,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 .emotion-25 {
   margin: 0;
   padding: 1px 0;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   display: inline-block;
   display: block;
 }
@@ -1529,7 +1529,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.384375em;
+  margin-bottom: -0.43125em;
 }
 
 .emotion-25::after {
@@ -1537,7 +1537,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.525em;
+  margin-top: -0.43125em;
 }
 
 .emotion-26 {
@@ -1601,10 +1601,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #555E74;
+  border-color: #535353;
   border-width: 1px;
-  border-radius: 20rem;
-  color: #555E74;
+  border-radius: 8px;
+  color: #2E2E2E;
   margin: 0;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -1618,26 +1618,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-28 svg {
-  fill: #555E74;
+  fill: #2E2E2E;
 }
 
 .emotion-28:hover:not(:disabled) {
-  background-color: #EBEBEB;
-  border-color: #243853;
+  background-color: #F4F4F4;
+  border-color: #2E2E2E;
 }
 
 .emotion-28:active:not(:disabled) {
-  background-color: #BBC3C9;
-  border-color: #162740;
+  background-color: #CCCCCC;
+  border-color: #0A0A0A;
 }
 
 .emotion-28:disabled {
-  border-color: #E4E4E4;
-  color: #BBC3C9;
+  border-color: #F4F4F4;
+  color: #C0C0C0;
 }
 
 .emotion-28:disabled svg {
-  fill: #BBC3C9;
+  fill: #C0C0C0;
 }
 
 .emotion-29 {
@@ -1671,17 +1671,17 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-31 {
-  fill: #555E74;
+  fill: #2E2E2E;
   vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-33 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
 }
 
 .emotion-33::before {
@@ -1689,7 +1689,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.4677083333333334em + 1.5px);
+  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-33::after {
@@ -1697,7 +1697,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.6083333333333334em;
+  margin-top: -0.5145833333333334em;
 }
 
 .emotion-34 {

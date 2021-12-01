@@ -2,13 +2,13 @@
 
 // Note: only a subset of pages as a base for smoke tests
 const routes = {
-  articleByline: '/components/byline',
   audioPlayer: '/components/audio-player',
-  dateTime: '/components/date-time',
   icons: '/components/icons',
   spacePresets: '/foundations/presets/space-presets',
   typography: '/foundations/presets/typography-presets',
   welcome: '/index',
+  overview: '/components/overview/',
+  tabs: '/components/tabs/',
 };
 
 Object.entries(routes).forEach(route => {
@@ -18,7 +18,7 @@ Object.entries(routes).forEach(route => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
       cy.mockConsentAndVisit(path);
-      if (!['spacePresets', 'welcome'].includes(pageName)) {
+      if (!['spacePresets', 'welcome', 'overview'].includes(pageName)) {
         cy.get('[data-testid="sample-code"]').first().scrollIntoView({
           easing: 'linear',
         });
