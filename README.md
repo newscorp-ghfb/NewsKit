@@ -1,12 +1,13 @@
+
 <p align="center">
   <a href="https://github.com/newscorp-ghfb/ncu-newskit">
-    <img width="500px" src="https://www.news.co.uk/wp-content/themes/newscouk/assets/img/logo.png">
+    <img width='550' src="https://www.newskit.co.uk/static/newskit-logo.svg">
   </a>
 </p>
 
-# <h1 align="center">News UK Components</h1>
+# NewsKit
 
-**News UK Design System** is a design system comprised of modern, responsive, living components which will be used as the base components for all publication titles at News UK.
+NewsKit is News UK’s design system. It provides interactive building blocks and guidelines for crafting cohesive digital product interfaces and accelerating development. Build better products faster.
 
 | Branch  | Link                                                                                   |
 | ------- | -------------------------------------------------------------------------------------- |
@@ -15,16 +16,24 @@
 | master  | [https://www.newskit.co.uk/](https://www.newskit.co.uk/)                               |
 | master  | [https://storybook.newskit.co.uk/](https://storybook.newskit.co.uk/)                   |
 
-## Pre-requisites
+## 🙌 Browser support
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome  | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari |
+| --- | --- | --- |
+| last 2 versions | last 2 versions | last 2 versions |
+
+## ✅ Pre-requisites
 
 You will need to install the following as pre-requisites to getting started:
 
-* [Node.js](https://nodejs.org/en/download/) Version 14.*. If you are using a different version of Node, it is recommended to install this version via [NVM](https://github.com/nvm-sh/nvm)
+* [Node.js](https://nodejs.org/en/download/) We use two versions of node.
+You need to be on version: <b>>=16.5.0</b> to run the application. In your terminal run the command `nvm use` to install the required version.
+
 * [Yarn](https://yarnpkg.com/en/docs/install) to install the project dependencies
 * (Windows Only) [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-  * Additional setup required for WSL is documented [here](./docs/wsl.md)
+* Additional setup required for WSL is documented [here](./docs/wsl.md)
 
-## Getting Started
+## 📦  Getting Started
 
 Once you have the above installed, run the following commands:
 Note that if you are on Windows machine, you need to run the `wsl` command first to run which ever linux environment you've installed on your machine.
@@ -44,10 +53,6 @@ Thereore in order to work around this when developing (testing) on IE11, please 
 yarn build && yarn serve:docs
 ```
 
-## Contributing
-
-For detailed information on how to create your first PR, branching and commit messages convention, please visit [Contributing](./docs/CONTRIBUTING.md)
-
 ## Testing
 
 We use the following libraries for our automated tests:
@@ -58,3 +63,16 @@ We use the following libraries for our automated tests:
 * Applitools for cross browser visual testing
 
 For detailed information on how to run the automated tests, please visit [Testing](./docs/testing.md)
+
+## 👉 What’s next
+
+* To start engineering with NewsKit, follow the steps in the [quickstart guide](https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2354218083).
+* Have a question? [Contact the NewsKit team via the contact form](https://newskit.co.uk/about/contact-us/).
+
+## 🔗 Key Links
+
+* [NewsKit Documentation](https://www.newskit.co.uk/)
+* [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)
+* [Github repository](https://github.com/newscorp-ghfb/ncu-newskit)
+* [Medium](https://medium.com/newskit-design-system)
+* [Storybook](https://storybook.newskit.co.uk/)

@@ -11,6 +11,9 @@
   "types": "index.d.ts",
   "repository": "",
   "sideEffects": false,
+  "engines": {
+    "node": ">=16.5.0"
+  },
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "yarn build:icons:dev && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
@@ -223,7 +226,7 @@
     "hooks": {
       "prepare-commit-msg": "node githooks/preparecommitmsg",
       "commit-msg": "node githooks/commitmsg",
-      "pre-commit": "lint-staged",
+      "pre-commit": "lint-staged && node githooks/update-readme-node-version.js",
       "post-merge": "yarn dependencies:check",
       "post-checkout": "yarn dependencies:check"
     }
