@@ -10,6 +10,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {TextFieldSize} from '../../text-field';
+import {IconFilledAccountBalance} from '../../icons';
 
 const Container = styled.div`
   ${getSizingCssFromTheme('margin', {
@@ -71,3 +72,59 @@ export const AssistiveTextVariants = () => (
   </>
 );
 AssistiveTextVariants.storyName = 'assistive-text-variations';
+
+const enhancer = <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />;
+
+export const AssistiveTextEnhancers = () => (
+  <>
+    <StorybookHeading>Assistive Text Enhancers</StorybookHeading>
+    <Container>
+      <Stack wrap spaceInline="space020">
+        <Block>
+          <StorybookSubHeading>Start</StorybookSubHeading>
+          <AssistiveText startEnhancer={enhancer}>Test</AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>End</StorybookSubHeading>
+          <AssistiveText endEnhancer={enhancer}>Test</AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Start and End</StorybookSubHeading>
+          <AssistiveText startEnhancer={enhancer} endEnhancer={enhancer}>
+            Test
+          </AssistiveText>
+        </Block>
+      </Stack>
+      <Stack wrap spaceInline="space020">
+        <Block>
+          <StorybookSubHeading>Long long text</StorybookSubHeading>
+          <AssistiveText startEnhancer={enhancer}>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>End</StorybookSubHeading>
+          <AssistiveText endEnhancer={enhancer}>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </AssistiveText>
+        </Block>
+        <Block>
+          <StorybookSubHeading>Start and End</StorybookSubHeading>
+          <AssistiveText startEnhancer={enhancer} endEnhancer={enhancer}>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </AssistiveText>
+        </Block>
+      </Stack>
+    </Container>
+  </>
+);
+AssistiveTextEnhancers.storyName = 'assistive-text-enhancers';

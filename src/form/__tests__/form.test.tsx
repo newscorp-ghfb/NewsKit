@@ -17,6 +17,7 @@ import {
   FormInputProps,
   FormInputTextField,
   FormInputSelect,
+  FormInputCheckbox,
 } from '../form-input';
 import {composeEventHandlers} from '../utils';
 import {IconFilledAccountBalance, TextFieldSize} from '../..';
@@ -460,6 +461,11 @@ describe('FormInput', () => {
           <SelectOption value="pineapple">Pineapple</SelectOption>
         </FormInputSelect>
         <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+
+        <FormInputCheckbox label="Checkbox" value="checked" />
+        <FormInputAssistiveText validationIcon>
+          Checkbox assistive text
+        </FormInputAssistiveText>
       </FormInput>
     </>
   );

@@ -34,4 +34,15 @@ describe('Assistive Text', () => {
     const fragment = renderToFragmentWithTheme(AssistiveText, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  test('should render with enhancer', () => {
+    const props: AssistiveTextProps = {
+      children: 'Assistive Text',
+      startEnhancer: 'start',
+      endEnhancer: 'start',
+    };
+
+    const fragment = renderToFragmentWithTheme(AssistiveText, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });

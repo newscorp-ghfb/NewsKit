@@ -197,17 +197,41 @@ Object {
   "componentDefaults": Object {
     "assistiveText": Object {
       "large": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space030",
+        },
         "minHeight": "sizing030",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space030",
+        },
         "stylePreset": "assistiveText",
         "typographyPreset": "utilityBody030",
       },
       "medium": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
         "minHeight": "sizing030",
+        "startEnhancer": Object {
+          "iconSize": "iconSize020",
+          "spaceInline": "space020",
+        },
         "stylePreset": "assistiveText",
         "typographyPreset": "utilityBody020",
       },
       "small": Object {
+        "endEnhancer": Object {
+          "iconSize": "iconSize010",
+          "spaceInline": "space020",
+        },
         "minHeight": "sizing030",
+        "startEnhancer": Object {
+          "iconSize": "iconSize010",
+          "spaceInline": "space020",
+        },
         "stylePreset": "assistiveText",
         "typographyPreset": "utilityBody010",
       },
@@ -516,6 +540,7 @@ Object {
           "stylePreset": "controlLabel",
           "typographyPreset": "utilityBody030",
         },
+        "spaceStack": "space000",
       },
       "medium": Object {
         "feedback": Object {
@@ -531,6 +556,7 @@ Object {
           "stylePreset": "controlLabel",
           "typographyPreset": "utilityBody020",
         },
+        "spaceStack": "space000",
       },
       "small": Object {
         "feedback": Object {
@@ -546,6 +572,7 @@ Object {
           "stylePreset": "controlLabel",
           "typographyPreset": "utilityBody020",
         },
+        "spaceStack": "space000",
       },
     },
     "dateTime": Object {

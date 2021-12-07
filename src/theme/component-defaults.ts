@@ -4,16 +4,40 @@ export const componentDefaults = {
       stylePreset: 'assistiveText',
       typographyPreset: 'utilityBody010',
       minHeight: 'sizing030',
+      startEnhancer: {
+        iconSize: 'iconSize010',
+        spaceInline: 'space020',
+      },
+      endEnhancer: {
+        iconSize: 'iconSize010',
+        spaceInline: 'space020',
+      },
     },
     medium: {
       stylePreset: 'assistiveText',
       typographyPreset: 'utilityBody020',
       minHeight: 'sizing030',
+      startEnhancer: {
+        iconSize: 'iconSize020',
+        spaceInline: 'space020',
+      },
+      endEnhancer: {
+        iconSize: 'iconSize020',
+        spaceInline: 'space020',
+      },
     },
     large: {
       stylePreset: 'assistiveText',
       typographyPreset: 'utilityBody030',
       minHeight: 'sizing030',
+      startEnhancer: {
+        iconSize: 'iconSize020',
+        spaceInline: 'space030',
+      },
+      endEnhancer: {
+        iconSize: 'iconSize020',
+        spaceInline: 'space030',
+      },
     },
   },
   audioPlayer: {
@@ -1144,6 +1168,7 @@ export const componentDefaults = {
   },
   checkbox: {
     small: {
+      spaceStack: 'space000',
       input: {
         size: 'sizing050',
         stylePreset: 'checkboxInput',
@@ -1159,6 +1184,7 @@ export const componentDefaults = {
       },
     },
     medium: {
+      spaceStack: 'space000',
       input: {
         size: 'sizing060',
         stylePreset: 'checkboxInput',
@@ -1174,6 +1200,7 @@ export const componentDefaults = {
       },
     },
     large: {
+      spaceStack: 'space000',
       input: {
         size: 'sizing070',
         stylePreset: 'checkboxInput',

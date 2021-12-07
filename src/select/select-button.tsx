@@ -13,7 +13,7 @@ import {
   StyledIconBox,
   StyledDropdownIconButton,
 } from './styled';
-import {InputWithEnhancers} from '../input-with-enhancers/input-with-enhancers';
+import {WithEnhancers} from '../with-enhancers/with-enhancers';
 import {IconFilledKeyboardArrowDown} from '../icons';
 import {IndeterminateProgressIndicator} from '../icons/filled/custom/indeterminate-progress-indicator';
 import {ScreenReaderOnly} from '../screen-reader-only';
@@ -113,7 +113,7 @@ export const SelectButton = React.forwardRef<
   );
 
   return (
-    <InputWithEnhancers
+    <WithEnhancers
       componentDefaultsPath={`select.${size}.button`}
       isFocused={isFocused}
       overrides={overrides}
@@ -183,6 +183,6 @@ export const SelectButton = React.forwardRef<
           {selectedItemDisplay || selectedItem || placeholder}
         </StyledButtonContents>
       </StyledSelectButton>
-    </InputWithEnhancers>
+    </WithEnhancers>
   );
 });

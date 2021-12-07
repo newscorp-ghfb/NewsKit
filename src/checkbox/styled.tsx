@@ -12,10 +12,16 @@ const STACKING_CONTEXT = {
   input: '2',
 };
 
-export const StyledContainer = styled.label<Pick<CheckboxProps, 'state'>>`
+export const StyledContainer = styled.label<
+  Pick<CheckboxProps, 'state' | 'size' | 'overrides'>
+>`
   display: flex;
   align-items: center;
+
   ${({state}) => ({cursor: state === 'disabled' ? 'not-allowed' : 'pointer'})};
+
+  ${({size}) =>
+    getResponsiveSpace('marginBottom', `checkbox.${size}`, '', 'spaceStack')}
 `;
 
 export const StyledCheckboxContainer = styled.div<

@@ -1,5 +1,5 @@
 import React from 'react';
-import {NewsKitIconProps} from '..';
+import {NewsKitIconProps} from '../icons';
 import {Override} from '../utils/overrides';
 import {MQ} from '../utils/style/types';
 
@@ -7,6 +7,7 @@ export type CheckboxIconProps = NewsKitIconProps &
   Pick<CheckboxProps, 'checked' | 'state'>;
 
 type CheckboxOverrides = {
+  spaceStack?: MQ<string>;
   input?: {
     size?: MQ<string>;
     stylePreset?: MQ<string>;

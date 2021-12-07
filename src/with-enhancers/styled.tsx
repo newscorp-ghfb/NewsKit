@@ -1,5 +1,5 @@
-import {EnhancerOverrides, CommonInputProps} from '../form/types';
-import {EnhancerProps} from './types';
+import {EnhancerOverrides} from '../form/types';
+import {EnhancerProps, WithEnhancersProps} from './types';
 import {
   getResponsiveSize,
   getResponsiveSpace,
@@ -9,22 +9,35 @@ import {
 } from '../utils/style';
 import {TextFieldSize} from '../text-field/types';
 
+const getMarginDirection = ({
+  marginPosition,
+  position,
+}: Pick<EnhancerProps, 'marginPosition' | 'position'>) => {
+  if (marginPosition === 'inside') {
+    return position === 'startEnhancer' ? 'marginRight' : 'marginLeft';
+  }
+
+  return position === 'startEnhancer' ? 'marginLeft' : 'marginRight';
+};
+
 export const StyledEnhancer = styled.div<EnhancerProps>`
   align-self: center;
 
   display: flex;
   align-items: center;
-  ${({componentDefaultsPath, position}) =>
+  ${({componentDefaultsPath, position, marginPosition}) =>
     getResponsiveSpace(
-      position === 'startEnhancer' ? 'marginLeft' : 'marginRight',
+      getMarginDirection({position, marginPosition}),
       `${componentDefaultsPath}.spaceInline`,
       '',
       'spaceInline',
-    )}
+    )};
+
+  ${({alignSelf}) => alignSelf && {alignSelf}}
 `;
 
 export const StyledInputContainer = styled.div<
-  Omit<CommonInputProps, 'size'> & {
+  Omit<WithEnhancersProps, 'size'> & {
     size?: TextFieldSize; // remove this override when https://nidigitalsolutions.jira.com/browse/PPDSC-1872 is implemented
     componentDefaultsPath: string;
     focused?: boolean;
@@ -34,6 +47,7 @@ export const StyledInputContainer = styled.div<
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  align-items: center;
   ${({componentDefaultsPath}) =>
     getResponsiveSize('width', componentDefaultsPath, '', 'width')}
   ${({componentDefaultsPath}) =>

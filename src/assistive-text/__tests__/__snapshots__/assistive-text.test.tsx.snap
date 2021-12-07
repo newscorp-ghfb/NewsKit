@@ -3,12 +3,33 @@
 exports[`Assistive Text renders large AssistiveText 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #535353;
   min-height: 12px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
 }
 
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
@@ -52,12 +73,33 @@ exports[`Assistive Text renders large AssistiveText 1`] = `
 exports[`Assistive Text renders medium AssistiveText 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #535353;
   min-height: 12px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
 }
 
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -101,12 +143,33 @@ exports[`Assistive Text renders medium AssistiveText 1`] = `
 exports[`Assistive Text renders small AssistiveText 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #535353;
   min-height: 12px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
 }
 
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
@@ -150,12 +213,29 @@ exports[`Assistive Text renders small AssistiveText 1`] = `
 exports[`Assistive Text should render disabled Assistive Text 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #C0C0C0;
   min-height: 12px;
 }
 
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -196,12 +276,29 @@ exports[`Assistive Text should render disabled Assistive Text 1`] = `
 exports[`Assistive Text should render invalid Assistive Text 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #D20600;
   min-height: 12px;
 }
 
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #D20600;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -236,6 +333,122 @@ exports[`Assistive Text should render invalid Assistive Text 1`] = `
     >
       Assistive Text
     </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Assistive Text should render with enhancer 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #535353;
+  min-height: 12px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #535353;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+.emotion-3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      start
+    </div>
+    <p
+      class="emotion-2"
+    >
+      Assistive Text
+    </p>
+    <div
+      class="emotion-3"
+    >
+      start
+    </div>
   </div>
 </DocumentFragment>
 `;

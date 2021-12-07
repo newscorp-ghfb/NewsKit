@@ -1,7 +1,7 @@
 import React from 'react';
 import {TextFieldProps, TextFieldSize} from './types';
 import {StyledInput} from './styled';
-import {InputWithEnhancers} from '../input-with-enhancers/input-with-enhancers';
+import {WithEnhancers} from '../with-enhancers/with-enhancers';
 
 export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
@@ -48,7 +48,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
 
     return (
       <>
-        <InputWithEnhancers
+        <WithEnhancers
           componentDefaultsPath={`textField.${size}`}
           isFocused={isFocused}
           overrides={overrides}
@@ -68,7 +68,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
             onChange={onInputChange}
             {...restProps}
           />
-        </InputWithEnhancers>
+        </WithEnhancers>
       </>
     );
   },

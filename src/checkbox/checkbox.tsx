@@ -54,11 +54,13 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     });
 
     const onFeedbackClick = useCallback(() => {
+      // When label is passed, everything ( input and feedback components) is wrap inside the label
+      // so there is no need for clicking on the input
       /* istanbul ignore else */
-      if (ref && ref.current) {
+      if (ref && ref.current && !label) {
         ref.current.click();
       }
-    }, [ref]);
+    }, [ref, label]);
 
     const onInputChange = useCallback(
       event => {
@@ -122,6 +124,8 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       <StyledContainer
         as={label ? 'label' : 'div'}
         state={state}
+        size={size}
+        overrides={overrides}
         {...(label ? labelAttributes : {})}
         onMouseOver={onLabelMouseOver}
         onMouseLeave={onLabelMouseLeave}

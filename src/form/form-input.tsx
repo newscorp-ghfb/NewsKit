@@ -4,6 +4,7 @@ import {Label, LabelProps} from '../label';
 import {TextField} from '../text-field/text-field';
 import {AssistiveText, AssistiveTextProps} from '../assistive-text';
 import {composeEventHandlers, getStatusIcon} from './utils';
+import {Checkbox, CheckboxProps} from '../checkbox';
 import {useReactKeys} from '../utils/hooks';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
@@ -192,13 +193,63 @@ export const FormInputSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
 export const FormInputAssistiveText = ({
   children,
+  validationIcon = false,
+  overrides,
   ...props
-}: AssistiveTextProps) => {
+}: AssistiveTextProps & {validationIcon?: boolean}) => {
   const {size, state, error, assistiveTextId} = useFormFieldContext();
 
+  const theme = useTheme();
+
+  const validationIconSize = getToken(
+    {theme, overrides: {}},
+    `assistiveText.${size}.startEnhancer`,
+    'startEnhancer',
+    'iconSize',
+  );
+
+  const statusIcon = getStatusIcon({state, iconSize: validationIconSize});
+
   return (
-    <AssistiveText size={size} state={state} id={assistiveTextId} {...props}>
+    <AssistiveText
+      size={size}
+      state={state}
+      id={assistiveTextId}
+      startEnhancer={validationIcon ? statusIcon : undefined}
+      overrides={overrides}
+      {...props}
+    >
       {error || children}
     </AssistiveText>
   );
 };
+
+export const FormInputCheckbox = React.forwardRef<
+  HTMLInputElement,
+  CheckboxProps
+>(({children, onChange, onBlur, ...props}, inputRef) => {
+  const {
+    size,
+    name,
+    state,
+    onChange: onChangeContext,
+    onBlur: onBlurContext,
+    ref,
+    id,
+    assistiveTextId,
+  } = useFormFieldContext();
+
+  return (
+    <Checkbox
+      name={name}
+      state={state}
+      size={size}
+      onChange={composeEventHandlers([onChange, onChangeContext])}
+      onBlur={composeEventHandlers([onBlur, onBlurContext])}
+      ref={composeRefs(ref, inputRef)}
+      id={id}
+      aria-describedby={assistiveTextId}
+      {...props}
+    />
+  );
+});

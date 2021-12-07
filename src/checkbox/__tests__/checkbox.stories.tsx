@@ -49,10 +49,6 @@ export default {
 const Container = styled.div`
   margin: 10px;
   display: flex;
-
-  > label {
-    margin-right: 40px;
-  }
 `;
 export const StoryCheckboxDefault = () => (
   <ThemeProvider theme={myCustomTheme}>
@@ -116,6 +112,12 @@ export const StoryCheckboxLabel = () => {
           </Cell>
         ))}
       </Grid>
+      <StorybookSubHeading>No label</StorybookSubHeading>
+      <Container>
+        <span>This is checkbox</span> <Checkbox id="no-label" />
+        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+        <label htmlFor="no-label">without label</label>
+      </Container>
     </ThemeProvider>
   );
 };
@@ -139,6 +141,7 @@ export const StoryCheckboxOverrides = () => (
         value="10"
         label="Style overrides"
         overrides={{
+          spaceStack: 'space060',
           input: {
             stylePreset: 'customCheckboxInput',
             size: '100px',

@@ -12,6 +12,10 @@ exports[`Select renders Select with overrides 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   border-color: #D20600;
@@ -303,6 +307,10 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -557,12 +565,33 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
     tabindex="-1"
   />
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #535353;
   min-height: 12px;
+}
+
+.emotion-0:disabled {
+  color: #C0C0C0;
 }
 
 .emotion-1 {
   margin: 0;
   padding: 1px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -615,6 +644,10 @@ exports[`Select renders disabled select 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -848,6 +881,10 @@ exports[`Select renders large Select 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -1116,6 +1153,10 @@ exports[`Select renders loading select 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -1379,6 +1420,10 @@ exports[`Select renders medium Select 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -1647,6 +1692,10 @@ exports[`Select renders select with a pre selected option 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -1949,6 +1998,10 @@ exports[`Select renders select with a selected option 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -2251,6 +2304,10 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -2577,6 +2634,10 @@ exports[`Select renders select with non-string options 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -2881,6 +2942,10 @@ exports[`Select renders small Select 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;
@@ -3149,6 +3214,10 @@ exports[`Select should render custom placeholder 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 8px;
   background-color: transparent;

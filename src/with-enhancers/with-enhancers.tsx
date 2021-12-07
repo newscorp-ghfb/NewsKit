@@ -1,5 +1,5 @@
 import React from 'react';
-import {InputWithEnhancersProps, EnhancerProps} from './types';
+import {WithEnhancersProps, EnhancerProps} from './types';
 import {StyledInputContainer, StyledEnhancer} from './styled';
 
 const Enhancer = ({
@@ -21,9 +21,9 @@ const Enhancer = ({
   </StyledEnhancer>
 );
 
-export const InputWithEnhancers = React.forwardRef<
+export const WithEnhancers = React.forwardRef<
   HTMLDivElement,
-  InputWithEnhancersProps
+  WithEnhancersProps
 >(
   (
     {
@@ -34,6 +34,8 @@ export const InputWithEnhancers = React.forwardRef<
       endEnhancer,
       isFocused,
       children,
+      marginPosition = 'outside',
+      alignSelf,
     },
     ref,
   ) => (
@@ -49,6 +51,8 @@ export const InputWithEnhancers = React.forwardRef<
           position="startEnhancer"
           componentDefaultsPath={`${componentDefaultsPath}.startEnhancer`}
           overrides={overrides?.startEnhancer}
+          alignSelf={alignSelf}
+          marginPosition={marginPosition}
         >
           {startEnhancer}
         </Enhancer>
@@ -59,6 +63,8 @@ export const InputWithEnhancers = React.forwardRef<
           componentDefaultsPath={`${componentDefaultsPath}.endEnhancer`}
           position="endEnhancer"
           overrides={overrides?.endEnhancer}
+          alignSelf={alignSelf}
+          marginPosition={marginPosition}
         >
           {endEnhancer}
         </Enhancer>

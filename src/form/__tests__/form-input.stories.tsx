@@ -6,6 +6,7 @@ import {
   FormInputLabel,
   FormInputSelect,
   FormInputTextField,
+  FormInputCheckbox,
 } from '..';
 import {
   Block,
@@ -284,3 +285,43 @@ export const FormInputWithSelect = () => (
   </>
 );
 FormInputWithSelect.storyName = 'form-input-with-select';
+
+const spaceStack = {
+  small: 'space020',
+  medium: 'space020',
+  large: 'space030',
+};
+
+export const FormFieldCheckbox = () => (
+  <Form onSubmit={onSubmit}>
+    <StorybookSubHeading>Single checkbox validation</StorybookSubHeading>
+    <Block spaceInset="space050">
+      {['small', 'medium', 'large'].map(size => (
+        <Block spaceStack="space050">
+          <FormInput
+            name={`${size}-name`}
+            size={size as TextFieldSize}
+            rules={{
+              required: 'Required field',
+            }}
+          >
+            <FormInputCheckbox
+              label={`Agree with T&C ${size}`}
+              value="tc"
+              overrides={{
+                spaceStack: spaceStack[size as keyof typeof spaceStack],
+              }}
+            />
+            <FormInputAssistiveText validationIcon>
+              Please agree with our T&C
+            </FormInputAssistiveText>
+          </FormInput>
+        </Block>
+      ))}
+
+      <Button type="submit">Submit</Button>
+    </Block>
+  </Form>
+);
+
+FormFieldCheckbox.storyName = 'form-input-checkbox';

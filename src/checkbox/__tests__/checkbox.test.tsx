@@ -72,9 +72,18 @@ describe('Checkbox', () => {
       <Checkbox
         checked
         overrides={{
-          icon: {
-            stylePreset: 'bannerInformative',
-            size: 'iconSize030',
+          spaceStack: 'space060',
+          input: {
+            stylePreset: 'customCheckboxInput',
+            size: '100px',
+          },
+          feedback: {
+            size: '120px',
+            stylePreset: 'customCheckboxFeedback',
+          },
+          label: {
+            typographyPreset: 'utilityHeading010',
+            stylePreset: 'inkSubtle',
           },
         }}
       />
