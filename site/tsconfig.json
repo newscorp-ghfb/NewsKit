@@ -34,7 +34,8 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "module": "esnext",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "incremental": true
   },
   "exclude": [
     "node_modules",

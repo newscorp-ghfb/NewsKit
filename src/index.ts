@@ -7,6 +7,7 @@ export * from './block';
 export * from './button';
 export * from './caption';
 export * from './card';
+export * from './checkbox';
 export * from './consent';
 export * from './date-time';
 export * from './divider';

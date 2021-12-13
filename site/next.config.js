@@ -1,20 +1,16 @@
 /* eslint-disable no-param-reassign */
 const path = require('path');
-const {resolve, join: joinPath} = require('path');
+const {resolve} = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 // remove @next/mdx when doc pages are all tranformed to tsx
 const withMDX = require('./mdx');
 
 module.exports = withMDX({
+  experimental: {
+    externalDir: true,
+  },
   webpack: config => {
-    // enable transpile of files outside of directory - https://github.com/vercel/next.js/issues/5666#issuecomment-782922703
-    config.module.rules.forEach(rule => {
-      if (rule.test && rule.test.toString().includes('tsx|ts')) {
-        rule.include = [...rule.include, joinPath(__dirname, '../src')];
-      }
-    });
-
     config.resolve.alias['@components/page-title'] = path.join(
       __dirname,
       'components/page-title.tsx',
