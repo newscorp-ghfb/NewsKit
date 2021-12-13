@@ -116,18 +116,18 @@ const motionDurationRows = getTokenType(
   newskitLightTheme.motions,
   'motionDuration',
 ).map(({tokenName, tokenValue}) => ({
-  duration: tokenValue,
+  duration: tokenValue as string,
   token: tokenName,
-  tokenValue,
+  tokenValue: tokenValue as string,
   commonUses: TOKENS_DESCRIPTION[tokenName] || '-',
 }));
 const motionTimingRows = getTokenType(
   newskitLightTheme.motions,
   'motionTiming',
 ).map(({tokenName, tokenValue}) => ({
-  timing: tokenValue,
+  timing: tokenValue as string,
   token: tokenName,
-  tokenValue,
+  tokenValue: tokenValue as string,
   commonUses: TOKENS_DESCRIPTION[tokenName] || '-',
 }));
 

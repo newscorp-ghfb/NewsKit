@@ -11,7 +11,7 @@ import {getTokenType} from '../../../utils/get-token-type';
 import {updateCanvas, CANVAS_SIZE} from './utils';
 
 const [maxDuration] = getTokenType(newskitLightTheme.motions, 'motionDuration')
-  .map(({tokenValue}) => getMotionDurationValue(tokenValue))
+  .map(({tokenValue}) => getMotionDurationValue(tokenValue as string))
   .sort()
   .reverse();
 

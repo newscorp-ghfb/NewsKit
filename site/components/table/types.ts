@@ -5,6 +5,7 @@ export interface TableCellProps {
   maxWidth?: MQ<string>;
   textAlign?: string;
   noWrap?: boolean;
+  cellHeader?: string;
 }
 
 export interface ColumnMapObject extends TableCellProps {
@@ -24,7 +25,11 @@ export interface ColumnMapObject extends TableCellProps {
     | 'componentLink'
     | 'motionDurationSwatch'
     | 'motionTimingSwatch'
-    | 'boxShadow';
+    | 'boxShadow'
+    | 'fontSize'
+    | 'fontWeight'
+    | 'fontLineHeight'
+    | 'fontLetterSpacing';
 }
 
 export type TableRowValue =

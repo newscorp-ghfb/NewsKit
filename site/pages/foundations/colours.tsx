@@ -39,7 +39,7 @@ const themeColorRows = (
       const color = {
         colour: tokenName,
         colourToken: tokenName,
-        tokenValue: tokenValue.split('.')[1].replace('}}', ''),
+        tokenValue: (tokenValue as string).split('.')[1].replace('}}', ''),
         commonUses: data[tokenName] || '-',
       };
       return [...result, color];

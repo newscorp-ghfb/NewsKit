@@ -42,7 +42,7 @@ const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
 
 const shadowRows = getTokenType(newskitLightTheme.shadows, 'shadow').map(
   ({tokenName, tokenValue}) => ({
-    shadow: tokenValue,
+    shadow: tokenValue as string,
     token: tokenName,
     exampleUsage: TOKENS_DESCRIPTION[tokenName] || '-',
   }),
@@ -52,9 +52,9 @@ const inkColorRows = getTokenType(newskitLightTheme.colors, 'ink').map(
   ({tokenName, tokenValue}) => ({
     colour: tokenName,
     colourToken: tokenName,
-    tokenValue: tokenValue.includes('.')
-      ? tokenValue.split('.')[1].replace('}}', '')
-      : tokenValue,
+    tokenValue: (tokenValue as string).includes('.')
+      ? (tokenValue as string).split('.')[1].replace('}}', '')
+      : (tokenValue as string),
     // @ts-ignore
     commonUses: INK_DESCRIPTION[tokenName] || '-',
   }),

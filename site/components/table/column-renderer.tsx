@@ -18,6 +18,7 @@ import {
   MotionDurationSwatch,
   MotionTimingSwatch,
 } from '../theming-values/motions/swatches';
+import {FontAttributes} from '../font-attributes';
 
 const renderIcon = (value?: TableRowValue) => {
   switch (value) {
@@ -182,6 +183,34 @@ export const renderCols = (
       case 'boxShadow': {
         cellContent = cellValue && (
           <BorderCard boxShadowToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'fontSize': {
+        cellContent = cellValue && (
+          <FontAttributes fontSizeToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'fontWeight': {
+        cellContent = cellValue && (
+          <FontAttributes fontWeightToken={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'fontLineHeight': {
+        cellContent = cellValue && (
+          <FontAttributes fontLineHeight={cellValue.toString()} />
+        );
+        break;
+      }
+
+      case 'fontLetterSpacing': {
+        cellContent = cellValue && (
+          <FontAttributes fontLetterSpacing={cellValue.toString()} />
         );
         break;
       }

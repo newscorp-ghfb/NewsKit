@@ -10,6 +10,9 @@ const medium = {
 const large = {
   minWidth: '100px',
 };
+const xxlarge = {
+  maxWidth: '500px',
+};
 
 export const columnMap: Record<string, ColumnMapObject> = {
   Item: {...small, cellType: 'number'},
@@ -42,4 +45,22 @@ export const columnMap: Record<string, ColumnMapObject> = {
   Duration: {...large, cellType: 'motionDurationSwatch'},
   Timing: {...large, cellType: 'motionTimingSwatch'},
   Shadow: {...medium, cellType: 'boxShadow'},
+  FontFamily: {...medium, cellType: 'text'},
+  'Font size': {
+    ...xxlarge,
+    cellType: 'fontSize',
+    noWrap: true,
+    cellHeader: 'Example',
+  },
+  'Font weight': {...medium, cellType: 'fontWeight', cellHeader: 'Example'},
+  'Font line height': {
+    ...medium,
+    cellType: 'fontLineHeight',
+    cellHeader: 'Example',
+  },
+  'Font letter spacing': {
+    ...medium,
+    cellType: 'fontLetterSpacing',
+    cellHeader: 'Example',
+  },
 };

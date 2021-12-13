@@ -68,9 +68,14 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
 
 .emotion-6 {
   padding: 16px 16px 16px 0;
-  width: 100px;
+  max-width: 100px;
   text-align: left;
   vertical-align: top;
+  overflow: hidden;
+}
+
+.emotion-6 div {
+  overflow: hidden;
 }
 
 .emotion-7 {
@@ -540,9 +545,14 @@ exports[`Table renders number values automatically if undefined 1`] = `
 
 .emotion-6 {
   padding: 16px 16px 16px 0;
-  width: 100px;
+  max-width: 100px;
   text-align: left;
   vertical-align: top;
+  overflow: hidden;
+}
+
+.emotion-6 div {
+  overflow: hidden;
 }
 
 .emotion-7 {

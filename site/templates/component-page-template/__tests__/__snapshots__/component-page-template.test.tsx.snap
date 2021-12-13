@@ -204,6 +204,69 @@ exports[`Component Page Template renders the Behaviors section when prop behavio
 </DocumentFragment>
 `;
 
+exports[`Component Page Template renders the CodeExamplesSection section when prop example is passed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+<div
+    data-comp="layout"
+    data-props="{\\"toggleTheme\\":\\"toggle-theme-function\\",\\"themeMode\\":\\"theme-mode\\",\\"path\\":\\"/the-path\\",\\"newPage\\":true}"
+  >
+    <div
+      class="emotion-0"
+    >
+      <div
+        data-comp="NewsKit Grid"
+        data-props="{
+  \\"xsRowGutter\\": \\"space000\\"
+}"
+        data-testid="Grid"
+      >
+        <div>
+          IntroductionSection Component with props:{
+  "pageIntroduction": {
+    "type": "Component",
+    "name": "ComponentName",
+    "hero": {
+      "src": "static/component-hero.svg",
+      "alt": "component-image"
+    },
+    "introduction": "Component Introduction"
+  },
+  "meta": {
+    "status": "Supported",
+    "introduced": "v0.3",
+    "codeUrl": "https://github.com/newscorp-ghfb/ncu-newskit",
+    "figmaUrl": "https://github.com/newscorp-ghfb/ncu-newskit"
+  }
+}
+        </div>
+        <div>
+          OnwardJourneySection Component
+        </div>
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xsHidden\\": true,
+  \\"smHidden\\": true,
+  \\"mdHidden\\": true,
+  \\"lgHidden\\": true,
+  \\"xlOffset\\": 10,
+  \\"xl\\": 2
+}"
+          data-testid="Cell"
+        >
+          TableOfContents Component
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Component Page Template renders the Compliance section when prop compliance is passed 1`] = `
 <DocumentFragment>
   .emotion-0 {

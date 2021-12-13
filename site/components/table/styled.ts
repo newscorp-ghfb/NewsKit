@@ -35,10 +35,14 @@ export const StyledDataCell = styled.td<TableCellProps>`
   padding: ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space040')}
     ${getSpacingFromTheme('space040')} ${getSpacingFromTheme('space000')};
   min-width: ${getSpacingFromTheme('', 'minWidth')};
-  width: ${getSpacingFromTheme('', 'maxWidth')};
+  max-width: ${getSpacingFromTheme('', 'maxWidth')};
   text-align: ${({textAlign}) => textAlign || 'left'};
   white-space: ${({noWrap}) => noWrap && 'nowrap'};
   vertical-align: top;
+  overflow: ${({maxWidth}) => maxWidth && 'hidden'};
+  & div {
+    overflow: ${({maxWidth}) => maxWidth && 'hidden'};
+  }
 `;
 
 export const StyledContainer = styled.div`

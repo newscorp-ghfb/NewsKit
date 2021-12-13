@@ -150,18 +150,8 @@ export default (layoutProps: LayoutProps) => (
       cards={[
         {
           title: 'Overlay',
-          description: (
-            <>
-              Et libero, congue at condimentum. Id lobortis urna consectetur a,
-              scelerisque lorem amet, magnis fringilla.
-              <Block
-                spaceStack={{xs: 'space030', md: 'space050', lg: 'space050'}}
-              />
-              <InlineMessage role="region" title="Note" aria-label="Overlay">
-                Currently only applicable for News UK teams
-              </InlineMessage>
-            </>
-          ),
+          description:
+            'Icons have two variations; ‘Filled’ and ‘Outlined’. There will be certain instances when a ‘Filled’ and ‘Outlined’ instance of the same icon look the same. This is because some visual characteristics don’t lend themselves to one or the other style.',
           media: getIllustrationComponent('foundations/iconography/appearance'),
         },
         {

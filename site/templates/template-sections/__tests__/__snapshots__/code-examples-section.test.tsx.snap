@@ -1,0 +1,938 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeExamplesSection renders section as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+.emotion-1 {
+  margin-top: -24px;
+  padding-top: 24px;
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -0px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -0px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -0px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -0px -12px 0 -12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-5 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-5 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0;
+  background-color: transparent;
+}
+
+.emotion-8 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-8 {
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-8::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2645833333333334em;
+  }
+
+  .emotion-8::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2645833333333334em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-8 {
+    font-family: "Poppins",sans-serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-8::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2526785714285714em;
+  }
+
+  .emotion-8::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2526785714285714em;
+  }
+}
+
+.emotion-9 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-9 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-10 {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-10 {
+    margin-bottom: 80px;
+  }
+}
+
+.emotion-11 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2E2E2E;
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.emotion-11 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-11::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.48125000000000007em;
+}
+
+.emotion-11::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.48125000000000007em;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-12 {
+    padding: 0 8px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-12 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-12 {
+    padding: 0 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-12 {
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+.emotion-14 {
+  margin-bottom: 24px;
+}
+
+.emotion-15 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+}
+
+.emotion-15 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-15 {
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-15::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2645833333333334em;
+  }
+
+  .emotion-15::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2645833333333334em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-15 {
+    font-family: "Poppins",sans-serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-15::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2526785714285714em;
+  }
+
+  .emotion-15::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2526785714285714em;
+  }
+}
+
+.emotion-16 {
+  margin-bottom: 40px;
+}
+
+.emotion-17 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2E2E2E;
+}
+
+.emotion-17 svg {
+  fill: #2E2E2E;
+}
+
+@media screen and (max-width: 1439px) {
+  .emotion-17 {
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-17::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.43125em;
+  }
+
+  .emotion-17::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.43125em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-17 {
+    font-family: "DM Sans",sans-serif;
+    font-size: 18px;
+    line-height: 1.5555555555555556;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-17::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4590277777777778em;
+  }
+
+  .emotion-17::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4590277777777778em;
+  }
+}
+
+.emotion-18 {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.emotion-19 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #F4F4F4;
+}
+
+.emotion-19 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-20 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-21 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.emotion-22 {
+  margin-bottom: 64px;
+}
+
+.emotion-23 {
+  border: solid 1px;
+  border-color: #E4E4E4;
+  border-radius: 8px;
+  background-color: #F4F4F4;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-24 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-24 {
+    margin-bottom: 20px;
+  }
+}
+
+.emotion-25 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+}
+
+.emotion-25 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1439px) {
+  .emotion-25 {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-25::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.28125em;
+  }
+
+  .emotion-25::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.28125em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-25 {
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-25::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22670454545454544em;
+  }
+
+  .emotion-25::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.22670454545454544em;
+  }
+}
+
+<div
+    class="emotion-0"
+  >
+    <section
+      class="emotion-1"
+      data-toc-indexed="Codeexamplessection"
+      id="Codeexamplessectiontitle"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <section
+                    class="emotion-8"
+                  >
+                    <h2
+                      class="nk-headline-heading emotion-9"
+                    >
+                      Code examples section title
+                    </h2>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-10"
+            >
+              <p
+                class="emotion-11"
+              >
+                Code examples section title introduction
+              </p>
+            </div>
+          </div>
+          <div
+            class="emotion-12"
+          />
+          <div
+            class="emotion-12"
+          >
+            <div
+              class="emotion-14"
+            >
+              <p
+                class="emotion-15"
+              >
+                Example title 1
+              </p>
+            </div>
+            <div
+              class="emotion-16"
+            >
+              <p
+                class="emotion-17"
+              >
+                Example description 1
+              </p>
+            </div>
+            <div
+              class="emotion-18"
+            >
+              <picture
+                class="emotion-19"
+              >
+                <div
+                  class="emotion-20"
+                />
+                <img
+                  class="emotion-21"
+                  src="media 1 src"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-22"
+            >
+              <div
+                class="emotion-23"
+              >
+                <pre
+                  data-testid="sample-code"
+                  style="color: rgb(83, 83, 83); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(244, 244, 244); box-sizing: border-box;"
+                >
+                  <code>
+                    <span
+                      class="linenumber react-syntax-highlighter-line-number"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                    >
+                      1
+                    </span>
+                    <span>
+                      Example code 
+                    </span>
+                    <span
+                      class="token"
+                      style="color: rgb(5, 113, 125);"
+                    >
+                      1
+                    </span>
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <div
+              class="emotion-24"
+            >
+              <p
+                class="emotion-25"
+              >
+                Sections title 1
+              </p>
+            </div>
+            <div
+              class="emotion-16"
+            >
+              <p
+                class="emotion-17"
+              >
+                Sections description 1
+              </p>
+            </div>
+            <div
+              class="emotion-18"
+            >
+              <picture
+                class="emotion-19"
+              >
+                <div
+                  class="emotion-20"
+                />
+                <img
+                  class="emotion-21"
+                  src="media 2 src"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-22"
+            >
+              <div
+                class="emotion-23"
+              >
+                <pre
+                  data-testid="sample-code"
+                  style="color: rgb(83, 83, 83); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(244, 244, 244); box-sizing: border-box;"
+                >
+                  <code>
+                    <span
+                      class="linenumber react-syntax-highlighter-line-number"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                    >
+                      1
+                    </span>
+                    <span>
+                      Example code 
+                    </span>
+                    <span
+                      class="token"
+                      style="color: rgb(5, 113, 125);"
+                    >
+                      2
+                    </span>
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <div
+              class="emotion-22"
+            />
+            <div
+              class="emotion-24"
+            >
+              <p
+                class="emotion-25"
+              >
+                Sections title 2
+              </p>
+            </div>
+            <div
+              class="emotion-16"
+            >
+              <p
+                class="emotion-17"
+              >
+                Sections description 2
+              </p>
+            </div>
+            <div
+              class="emotion-18"
+            >
+              <picture
+                class="emotion-19"
+              >
+                <div
+                  class="emotion-20"
+                />
+                <img
+                  class="emotion-21"
+                  src="media 3 src"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-22"
+            >
+              <div
+                class="emotion-23"
+              >
+                <pre
+                  data-testid="sample-code"
+                  style="color: rgb(83, 83, 83); background: none; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; position: relative; margin: .5em 0.5em 0.5em 0.5em; overflow: auto; padding: 0px; background-color: rgb(244, 244, 244); box-sizing: border-box;"
+                >
+                  <code>
+                    <span
+                      class="linenumber react-syntax-highlighter-line-number"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 192, 192);"
+                    >
+                      1
+                    </span>
+                    <span>
+                      Example code 
+                    </span>
+                    <span
+                      class="token"
+                      style="color: rgb(5, 113, 125);"
+                    >
+                      3
+                    </span>
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  .emotion-0 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-left: 8.333333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-0 {
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    margin-bottom: 80px;
+  }
+}
+
+.emotion-2 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-2"
+        data-testid="divider"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -233,9 +233,14 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-18 {
   padding: 16px 16px 16px 0;
-  width: 100px;
+  max-width: 100px;
   text-align: left;
   vertical-align: top;
+  overflow: hidden;
+}
+
+.emotion-18 div {
+  overflow: hidden;
 }
 
 .emotion-19 {
@@ -793,9 +798,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-22 {
   padding: 16px 16px 16px 0;
-  width: 100px;
+  max-width: 100px;
   text-align: left;
   vertical-align: top;
+  overflow: hidden;
+}
+
+.emotion-22 div {
+  overflow: hidden;
 }
 
 .emotion-23 {

@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FontAttributes renders default font attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`FontAttributes renders with fontLetterSpacing token 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: -0.5px;
+}
+
+<div
+    class="emotion-0"
+  >
+    The quick brown fox
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FontAttributes renders with fontLineHeight token 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+}
+
+<div
+    class="emotion-0"
+  >
+    The quick brown fox jumps over the lazy dog
+    <br />
+     The quick brown fox jumps over the lazy dog 
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FontAttributes renders with fontSize token 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+}
+
+<div
+    class="emotion-0"
+  >
+    The quick brown fox
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FontAttributes renders with fontWeightToken token 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+}
+
+<div
+    class="emotion-0"
+  >
+    The quick brown fox
+  </div>
+</DocumentFragment>
+`;

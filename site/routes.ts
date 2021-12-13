@@ -83,6 +83,14 @@ export default [
           'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
       },
       {
+        title: 'Fonts',
+        page: true,
+        id: '/foundations/fonts',
+        illustration: 'foundations/fonts/hero',
+        description:
+          'Fonts form an important part of the interface, establishing styles for content such as headlines, sub-headlines or paragraphs, as well as more functional styles for items such as labels, tags and messaging.',
+      },
+      {
         title: 'Iconography',
         page: true,
         id: '/foundations/iconography',

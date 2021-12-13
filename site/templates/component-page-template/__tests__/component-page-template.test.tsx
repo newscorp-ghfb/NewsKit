@@ -34,6 +34,7 @@ jest.mock('../../template-sections/related-components-section');
 jest.mock('../../template-sections/seo-section');
 jest.mock('../../template-sections/states-section');
 jest.mock('../../template-sections/usage-section');
+jest.mock('../../template-sections/code-examples-section');
 
 const mandatoryProps: ComponentPageTemplateProps = {
   headTags: {
@@ -75,6 +76,7 @@ describe('Component Page Template', () => {
     ['Options', 'options'],
     ['States', 'states'],
     ['Behaviors', 'behaviors'],
+    ['CodeExamplesSection', 'example'],
     ['Usage', 'usage'],
     ['Accessibility', 'accessibility'],
     ['SEO', 'seo'],

@@ -16,7 +16,7 @@ export const Table: React.FC<TableProps> = ({rows, columns}) => (
         <tr>
           {columns.map(columnName => (
             <StyledHeader key={columnName} {...(columnMap[columnName] || {})}>
-              {columnName}
+              {columnMap[columnName]?.cellHeader || columnName}
             </StyledHeader>
           ))}
         </tr>

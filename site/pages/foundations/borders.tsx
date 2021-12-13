@@ -21,7 +21,7 @@ const borderRows = (type: string) =>
     ({tokenName, tokenValue}) => ({
       [type]: tokenName,
       token: tokenName,
-      tokenValue,
+      tokenValue: tokenValue as string,
     }),
   );
 
