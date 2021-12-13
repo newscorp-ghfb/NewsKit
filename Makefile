@@ -96,10 +96,6 @@ set_git_identity:
 	git config --global user.email "ncu-product-platforms@news.co.uk"
 	git config --global user.name "Product Platforms Service"
 
-install_hub:
-	wget https://github.com/github/hub/releases/download/v2.12.4/hub-linux-amd64-2.12.4.tgz
-	tar zxvf hub-linux-amd64-2.12.4.tgz
-	sudo cp hub-linux-amd64-2.12.4/bin/hub /usr/bin/hub
 
 # UPDATE PACKAGE VERSION BASED ON UPDATE TYPE IN BRANCH TRIGGER NAME
 create_release_candidate:
@@ -118,7 +114,7 @@ push_release:
 	git merge -s ours origin/master --no-edit
 	git push --tags --set-upstream origin $(RELEASE_BRANCH)
 	echo "Create PR into develop"
-	hub pull-request -p --base develop --head $(RELEASE_BRANCH) -m $(RELEASE_PR_DEVELOP_TITLE)
+	gh pr create --base develop --head $(RELEASE_BRANCH) -t $(RELEASE_PR_DEVELOP_TITLE) --body ""
 	echo "Create PR into master"
-	hub pull-request --base master --head $(RELEASE_BRANCH) -m $(RELEASE_PR_MASTER_TITLE)
+	gh pr create --base master --head $(RELEASE_BRANCH) -t $(RELEASE_PR_MASTER_TITLE) --body ""
 	git push origin --delete "trigger-release-${INITIAL_UPDATE_TYPE}"
