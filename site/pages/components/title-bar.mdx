@@ -31,6 +31,9 @@ Title bar has a number of props to facilitate a variety of uses:
     An action item, most commonly a button or a link, related to the title.
     The actionItem is <b>hidden for extra small viewports</b> (less than 480px).
   </Prop>
+  <Prop name="hideActionItemOn" type="MQPartial<boolean>" default="{xs: true}">
+    An object to specify in which breakpoints to hide the action item.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     <Prop name="stylePreset" type="MQ<string>">

@@ -4,6 +4,8 @@ import {TitleBar} from '..';
 import {Button} from '../../button';
 import {Link} from '../../link';
 
+import {IconFilledFigma} from '../../icons/filled/custom/icon-filled-figma';
+
 const myCustomTheme = createTheme({
   name: 'my-custom-title-bar-theme',
   overrides: {
@@ -67,6 +69,14 @@ export const StoryTitleBar = () => (
     <br />
     <br />
     <TitleBar actionItem={button}>Title bar with button</TitleBar>
+    <br />
+    <TitleBar>
+      Title bar with Icon <IconFilledFigma height="30px" />
+    </TitleBar>
+    <br />
+    <TitleBar hideActionItemOn={{sm: true, md: true}} actionItem={button}>
+      Title bar with action hidden in sm and md
+    </TitleBar>
   </>
 );
 StoryTitleBar.storyName = 'title-bar';

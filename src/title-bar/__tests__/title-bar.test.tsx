@@ -83,6 +83,15 @@ describe('TitleBar', () => {
       } as TitleBarProps);
       expect(fragment).toMatchSnapshot();
     });
+    test('Button hidden in lg', () => {
+      const button = () => <Button>Default button</Button>;
+      const fragment = renderToFragmentWithTheme(TitleBar, {
+        children: TITLE,
+        actionItem: button,
+        hideActionItemOn: {lg: true},
+      } as TitleBarProps);
+      expect(fragment).toMatchSnapshot();
+    });
     test('Link', () => {
       const link = () => <Link href="/">Link</Link>;
       const fragment = renderToFragmentWithTheme(TitleBar, {

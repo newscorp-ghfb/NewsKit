@@ -16,6 +16,7 @@ const StackContainer = styled(Stack)<ContainerProps>`
 export const TitleBar: React.FC<TitleBarProps> = props => {
   const {
     children,
+    hideActionItemOn = {xs: true},
     headingAs = 'h3',
     actionItem: ActionItem,
     overrides = {},
@@ -63,11 +64,11 @@ export const TitleBar: React.FC<TitleBarProps> = props => {
           {children}
         </Headline>
       </Block>
-      {ActionItem ? (
-        <Hidden xs>
+      {ActionItem && (
+        <Hidden {...hideActionItemOn}>
           <ActionItem />
         </Hidden>
-      ) : null}
+      )}
     </StackContainer>
   );
 };

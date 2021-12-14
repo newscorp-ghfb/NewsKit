@@ -319,6 +319,325 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 </DocumentFragment>
 `;
 
+exports[`TitleBar Should display correctly with action item as: Button hidden in lg 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    padding: 12px 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding: 16px 24px;
+  }
+}
+
+.emotion-1 {
+  margin-right: 16px;
+}
+
+.emotion-2 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-2 {
+    font-family: "Bitter",serif;
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22142857142857142em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2839285714285714em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
+    font-family: "Bitter",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    font-family: "Bitter",serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
+.emotion-3 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-3 svg {
+  fill: #0A0A0A;
+}
+
+@media screen {
+  .emotion-4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-5 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #2B4AAB;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #213A82;
+}
+
+.emotion-5:disabled {
+  background-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-8 {
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <section
+        class="emotion-2"
+      >
+        <h3
+          class="nk-headline-heading emotion-3"
+        >
+          Test title of title bar
+        </h3>
+      </section>
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <button
+        class="emotion-5"
+        data-testid="button"
+        type="button"
+      >
+        <div
+          class="emotion-6"
+        >
+          <div
+            class="emotion-7"
+          >
+            <span
+              class="emotion-8"
+            >
+              Default button
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 <DocumentFragment>
   .emotion-0 {

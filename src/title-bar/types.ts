@@ -1,4 +1,5 @@
-import {MQ} from '../utils/style';
+import React from 'react';
+import {MQ, MQPartial} from '../utils/style';
 
 export type TitleBarOverrides = {
   spaceInset?: MQ<string>;
@@ -14,8 +15,9 @@ export type ContainerProps = {
 };
 
 export type TitleBarProps = {
-  children: string;
+  children: React.ReactNode;
   actionItem?: React.ComponentType;
+  hideActionItemOn?: MQPartial<boolean>;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   overrides?: TitleBarOverrides;
 };
