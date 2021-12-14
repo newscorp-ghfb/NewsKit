@@ -96,7 +96,6 @@ set_git_identity:
 	git config --global user.email "ncu-product-platforms@news.co.uk"
 	git config --global user.name "Product Platforms Service"
 
-
 # UPDATE PACKAGE VERSION BASED ON UPDATE TYPE IN BRANCH TRIGGER NAME
 create_release_candidate:
 	git fetch origin

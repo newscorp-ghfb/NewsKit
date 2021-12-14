@@ -649,6 +649,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - github-cli/setup
       - run:
           name: Set github identity
           command: make set_git_identity
@@ -1220,6 +1221,7 @@ workflows:
       # release jobs
       - create_release_candidate:
           <<: *only_trigger_release
+          context: ncu-product-platforms-context
       - build_push_docker_ecr:
           name: build_push_docker_ecr_release
           context: ncu-product-platforms-context
