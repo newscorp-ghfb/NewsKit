@@ -4,7 +4,7 @@ import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 
 export type BehaviorsSectionProps = MediaListProps &
-  IntroductionText & {title?: string};
+  IntroductionText & {title?: string; toc?: string};
 
 export const BehaviorsSection: React.FC<BehaviorsSectionProps> = ({
   introduction,
@@ -13,6 +13,7 @@ export const BehaviorsSection: React.FC<BehaviorsSectionProps> = ({
 }) => (
   <CommonSection
     title={behaviors.title || 'Behaviours'}
+    toc={behaviors.toc}
     id="behaviors"
     introduction={introduction}
   >

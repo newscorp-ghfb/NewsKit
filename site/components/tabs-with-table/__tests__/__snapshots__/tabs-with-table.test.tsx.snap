@@ -1,0 +1,803 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabsWithTable renders with default data 1`] = `
+<DocumentFragment>
+  @media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    margin-bottom: 20px;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0A0A0A;
+  display: inline-block;
+}
+
+.emotion-2 svg {
+  fill: #0A0A0A;
+}
+
+@media screen and (max-width: 1439px) {
+  .emotion-2 {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.28125em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.28125em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.22670454545454544em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.22670454545454544em;
+  }
+}
+
+.emotion-3 {
+  margin-bottom: 40px;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2E2E2E;
+}
+
+.emotion-4 svg {
+  fill: #2E2E2E;
+}
+
+@media screen and (max-width: 1439px) {
+  .emotion-4 {
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-4::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.43125em;
+  }
+
+  .emotion-4::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.43125em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    font-family: "DM Sans",sans-serif;
+    font-size: 18px;
+    line-height: 1.5555555555555556;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-4::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.4590277777777778em;
+  }
+
+  .emotion-4::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.4590277777777778em;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.emotion-6 {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 32px;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-8::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-8 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-width: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-10>*:not(style) {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-11 {
+  scroll-snap-align: start;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: borderRadiusSharp;
+  background-color: transparent;
+  color: #535353;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  border-radius: borderRadiusSharp;
+  background-color: transparent;
+  color: #0A0A0A;
+  border-color: #577FFB;
+}
+
+.emotion-12 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #2E2E2E;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #2E2E2E;
+}
+
+.emotion-12:focus {
+  outline-offset: -1px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-15 {
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.emotion-15::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-15::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+.emotion-17 {
+  scroll-snap-align: end;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: borderRadiusSharp;
+  background-color: transparent;
+  color: #535353;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+}
+
+.emotion-18 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-18:hover:not(:disabled) {
+  color: #2E2E2E;
+}
+
+.emotion-18:active:not(:disabled) {
+  color: #2E2E2E;
+}
+
+.emotion-18:focus {
+  outline-offset: -1px;
+}
+
+.emotion-22 {
+  background-color: #577FFB;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-23 {
+  background-color: #E4E4E4;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.emotion-24 {
+  margin: 0;
+  padding: 1px 0;
+  width: 100%;
+}
+
+.emotion-27 {
+  overflow-x: auto;
+}
+
+.emotion-28 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-29 {
+  border-style: solid;
+  border-color: #BBC3C9;
+  border-width: 0 0 1px 0;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  height: 40px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 64px;
+  white-space: nowrap;
+}
+
+.emotion-31 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.emotion-32 {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.emotion-34 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 0 0 1px 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  border-width: 0;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <span
+        class="emotion-2"
+      >
+        Section title
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <p
+        class="emotion-4"
+      >
+        Section summary
+      </p>
+    </div>
+    <div
+      class="emotion-5"
+      data-testid="tab-group"
+    >
+      <div
+        class="emotion-6"
+        data-testid="tab-bar"
+      >
+        <div
+          class="emotion-7"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="emotion-8"
+            data-testid="scroll-container"
+          >
+            <div
+              aria-orientation="horizontal"
+              class="emotion-9"
+              role="tablist"
+            >
+              <div
+                class="emotion-10"
+                data-testid="distribution-wrapper"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <button
+                    aria-controls="mock-nk-1"
+                    aria-selected="true"
+                    class="emotion-12"
+                    data-testid="tab"
+                    id="mock-nk-1"
+                    role="tab"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-13"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <span
+                          class="emotion-15"
+                        >
+                          Title1
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="emotion-10"
+                data-testid="distribution-wrapper"
+              >
+                <div
+                  class="emotion-17"
+                >
+                  <button
+                    aria-controls="mock-nk-1"
+                    aria-selected="false"
+                    class="emotion-18"
+                    data-testid="tab"
+                    id="mock-nk-1"
+                    role="tab"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-13"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <span
+                          class="emotion-15"
+                        >
+                          Title2
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="emotion-22"
+                data-testid="tab-bar-indicator"
+                role="presentation"
+                style="width: 0px; height: 2px; transform: translateX(0px);"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-23"
+          data-testid="tab-bar-track"
+          role="presentation"
+        />
+      </div>
+      <div
+        aria-hidden="false"
+        aria-labelledby="mock-nk-1"
+        class="emotion-24"
+        data-testid="tab-panel"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <div
+          class="emotion-3"
+        >
+          <p
+            class="emotion-4"
+          >
+             Tab1 description
+          </p>
+        </div>
+        <div
+          class="emotion-27"
+        >
+          <table
+            class="emotion-28"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="emotion-29"
+                >
+                  Header1
+                </th>
+                <th
+                  class="emotion-29"
+                >
+                  Header2
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="emotion-31"
+              >
+                <td
+                  class="emotion-32"
+                >
+                  row1
+                </td>
+                <td
+                  class="emotion-32"
+                >
+                  row1
+                </td>
+              </tr>
+              <tr
+                class="emotion-34"
+              >
+                <td
+                  class="emotion-32"
+                >
+                  row2
+                </td>
+                <td
+                  class="emotion-32"
+                >
+                  row2
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="mock-nk-1"
+        class="emotion-24"
+        data-testid="tab-panel"
+        hidden=""
+        role="tabpanel"
+        tabindex="-1"
+      >
+        <div
+          class="emotion-3"
+        >
+          <p
+            class="emotion-4"
+          >
+             Tab2 description
+          </p>
+        </div>
+        <div
+          class="emotion-27"
+        >
+          <table
+            class="emotion-28"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="emotion-29"
+                >
+                  Header1
+                </th>
+                <th
+                  class="emotion-29"
+                >
+                  Header2
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="emotion-31"
+              >
+                <td
+                  class="emotion-32"
+                >
+                  row1
+                </td>
+                <td
+                  class="emotion-32"
+                >
+                  row1
+                </td>
+              </tr>
+              <tr
+                class="emotion-34"
+              >
+                <td
+                  class="emotion-32"
+                >
+                  row2
+                </td>
+                <td
+                  class="emotion-32"
+                >
+                  row2
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  @media screen and (max-width: 767px) {
+  .emotion-0 {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-bottom: 80px;
+  }
+}
+
+.emotion-1 {
+  border-style: solid;
+  border-color: #E4E4E4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<div
+    class="emotion-0"
+  >
+    <hr
+      aria-hidden="true"
+      class="emotion-1"
+      data-testid="divider"
+    />
+  </div>
+</DocumentFragment>
+`;

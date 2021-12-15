@@ -1,32 +1,24 @@
 import React from 'react';
 import {Block, Tab, Tabs, TabSize} from 'newskit';
 import {Table} from '../table';
+import {ComponentTabsWithTableProps} from './types';
 import {ContentText} from '../text-section/content-text';
-import {ComponentColoursTableProps} from './types';
 import {Separator} from '../separator';
 
-export const ColoursTable: React.FC<ComponentColoursTableProps> = ({
+export const TabsWithTable: React.FC<ComponentTabsWithTableProps> = ({
   components,
 }) => (
   <>
     {components.map(({title, summary, tabs}, i, arr) => {
       const tabList: {label: string; content: React.ReactNode}[] = [];
 
-      tabs.map(({header, rows, description}) =>
+      tabs.map(({header, columnHeader, description, rows}) =>
         tabList.push({
           label: header,
           content: (
             <>
               <ContentText>{description}</ContentText>
-              <Table
-                columns={[
-                  'Colour',
-                  'Colour token',
-                  'Token value',
-                  'Common uses',
-                ]}
-                rows={rows}
-              />
+              <Table columns={columnHeader} rows={rows} />
             </>
           ),
         }),

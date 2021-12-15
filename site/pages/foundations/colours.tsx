@@ -16,7 +16,7 @@ import {MediaList} from '../../components/media-list';
 import {Illustration} from '../../components/illustrations/illustration-loader';
 import {ColorPalettes} from '../../components/theming-values/colors/colors';
 import {ContentText} from '../../components/text-section';
-import {ColoursTable} from '../../components/colours-table';
+import {TabsWithTable} from '../../components/tabs-with-table';
 import {TableRow} from '../../components/table';
 import {Code} from '../../components/code';
 import {IconFilledError} from '../../../src/icons';
@@ -121,6 +121,8 @@ const CUSTOM_ICONS = [
   },
 ];
 
+const COLUMN_HEADER = ['Colour', 'Colour token', 'Token value', 'Common uses'];
+
 const coloursTable = [
   {
     title: 'Ink',
@@ -129,6 +131,7 @@ const coloursTable = [
     tabs: [
       {
         header: 'Common',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('ink', INK_DESCRIPTION, [
           'inkBase',
           'inkContrast',
@@ -141,6 +144,7 @@ const coloursTable = [
       },
       {
         header: 'Status',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('ink', INK_DESCRIPTION, [
           'inkNegative',
           'inkPositive',
@@ -152,6 +156,7 @@ const coloursTable = [
       },
       {
         header: 'Brand',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('ink', INK_DESCRIPTION, [
           'inkBrand010',
           'inkBrand020',
@@ -168,6 +173,7 @@ const coloursTable = [
     tabs: [
       {
         header: 'Common',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interface', INTERFACE_DESCRIPTION, [
           'interfaceBackground',
           'interface010',
@@ -182,6 +188,7 @@ const coloursTable = [
       },
       {
         header: 'Status',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interface', INTERFACE_DESCRIPTION, [
           'interfaceInformative010',
           'interfaceInformative020',
@@ -201,6 +208,7 @@ const coloursTable = [
       },
       {
         header: 'Brand',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interface', INTERFACE_DESCRIPTION, [
           'interfaceBrand010',
           'interfaceBrand020',
@@ -217,6 +225,7 @@ const coloursTable = [
     tabs: [
       {
         header: 'Primary',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
           'interactivePrimary010',
           'interactivePrimary020',
@@ -229,6 +238,7 @@ const coloursTable = [
       },
       {
         header: 'Secondary',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
           'interactiveSecondary010',
           'interactiveSecondary020',
@@ -241,6 +251,7 @@ const coloursTable = [
       },
       {
         header: 'Positive',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
           'interactivePositive010',
           'interactivePositive020',
@@ -253,6 +264,7 @@ const coloursTable = [
       },
       {
         header: 'Negative',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
           'interactiveNegative010',
           'interactiveNegative020',
@@ -265,6 +277,7 @@ const coloursTable = [
       },
       {
         header: 'Input',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
           'interactiveInput010',
           'interactiveInput020',
@@ -277,6 +290,7 @@ const coloursTable = [
       },
       {
         header: 'Inverse',
+        columnHeader: COLUMN_HEADER,
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
           'interactiveInverse010',
           'interactiveInverse020',
@@ -289,6 +303,7 @@ const coloursTable = [
       },
       {
         header: 'Common',
+        columnHeader: ['Colour', 'Colour token', 'Token value', 'Common uses'],
         rows: themeColorRows('interactive', INTERACTIVE_DESCRIPTION, [
           'interactiveDisabled010',
           'interactiveVisited010',
@@ -426,7 +441,7 @@ export default (layoutProps: LayoutProps) => (
           Learn more about the Icon component
         </Link>
         <Block spaceStack="space100" />
-        <ColoursTable components={coloursTable} />
+        <TabsWithTable components={coloursTable} />
         <ContentText>
           Colour can be applied to a UI element using the color, iconColor
           borderColor, placeholderColor and background attribute on a{' '}
