@@ -964,7 +964,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -976,7 +987,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -4293,29 +4327,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {
@@ -5768,7 +5801,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -5780,7 +5824,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -9097,29 +9164,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {
@@ -10572,7 +10638,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -10584,7 +10661,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -13901,29 +14001,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {
@@ -15376,7 +15475,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -15388,7 +15498,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -18705,29 +18838,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {
@@ -20180,7 +20312,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -20192,7 +20335,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -23509,29 +23675,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {
@@ -24984,7 +25149,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -24996,7 +25172,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -28313,29 +28512,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {
@@ -29788,7 +29986,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -29800,7 +30009,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -33117,29 +33349,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {
@@ -34592,7 +34823,18 @@ Object {
         "spaceInset": "spaceInsetSquish040",
       },
       "overlay": Object {
-        "transitionPreset": "fade",
+        "transitionPreset": Object {
+          "enterActive": Object {
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+          },
+          "exitActive": Object {
+            "transitionDelay": "{{motions.motionDuration010}}",
+            "transitionDuration": "{{motions.motionDuration030}}",
+            "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+          },
+          "extend": "fade",
+        },
         "zIndex": 70,
       },
       "panel": Object {
@@ -34604,7 +34846,30 @@ Object {
         "stylePreset": "modalPanel",
         "topOffset": "20vh",
         "transitionPreset": Object {
-          "0": "fade",
+          "0": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingLinear}}",
+            },
+            "extend": "fade",
+          },
+          "1": Object {
+            "enterActive": Object {
+              "transitionDelay": "{{motions.motionDuration010}}",
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
+            },
+            "exitActive": Object {
+              "transitionDuration": "{{motions.motionDuration010}}",
+              "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
+            },
+            "extend": "moveUp",
+          },
         },
         "width": Object {
           "lg": "38vw",
@@ -37921,29 +38186,28 @@ Object {
       "appearDone": Object {},
       "base": Object {},
       "enter": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
       "enterActive": Object {
-        "opacity": "1",
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseIn}}",
       },
       "enterDone": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exit": Object {
-        "transform": "translate(-50%, 0)",
+        "transform": "translate(0, 0)",
       },
       "exitActive": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
         "transitionDuration": "{{motions.motionDuration020}}",
         "transitionProperty": "transform",
         "transitionTimingFunction": "{{motions.motionTimingEaseOut}}",
       },
       "exitDone": Object {
-        "transform": "translate(-50%, 20px)",
+        "transform": "translate(0, 20px)",
       },
     },
     "slideBottom": Object {

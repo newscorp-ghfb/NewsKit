@@ -1,7 +1,7 @@
 import React from 'react';
 import {CSSTransition} from 'react-transition-group';
 import {ModalProps} from './types';
-import {StyledModal} from './styled';
+import {StyledModal, StyledModalWrapper} from './styled';
 import {BaseDialogFunction} from '../dialog';
 import {Overlay} from '../overlay/overlay';
 import {BreakpointKeys, useTheme} from '../theme';
@@ -32,6 +32,8 @@ export const Modal: React.FC<ModalProps> = ({
     ),
   };
 
+  const [showWrapper, setShowWrapper] = React.useState(false);
+
   return (
     <BaseDialogFunction
       open={open}
@@ -48,27 +50,38 @@ export const Modal: React.FC<ModalProps> = ({
       )}
     >
       {handleCloseButtonClick => (
-        <CSSTransition
-          in={open}
-          timeout={getTransitionDuration(`modal.panel`, '')({theme, overrides})}
-          classNames="nk-modal"
-          mountOnEnter
-          unmountOnExit
-          appear
+        <StyledModalWrapper
+          inline={props.inline}
+          $open={showWrapper}
+          overrides={overrides}
         >
-          <StyledModal
-            open={open}
-            disableFocusTrap={disableFocusTrap}
-            handleCloseButtonClick={handleCloseButtonClick}
-            path="modal"
-            data-testid="modal"
-            closePosition={closePosition}
-            overrides={overrides}
-            {...props}
+          <CSSTransition
+            in={open}
+            timeout={getTransitionDuration(
+              `modal.panel`,
+              '',
+            )({theme, overrides})}
+            classNames="nk-modal"
+            mountOnEnter
+            unmountOnExit
+            appear
+            onEnter={() => setShowWrapper(true)}
+            onExited={() => setShowWrapper(false)}
           >
-            {children}
-          </StyledModal>
-        </CSSTransition>
+            <StyledModal
+              open={open}
+              disableFocusTrap={disableFocusTrap}
+              handleCloseButtonClick={handleCloseButtonClick}
+              path="modal"
+              data-testid="modal"
+              closePosition={closePosition}
+              overrides={overrides}
+              {...props}
+            >
+              {children}
+            </StyledModal>
+          </CSSTransition>
+        </StyledModalWrapper>
       )}
     </BaseDialogFunction>
   );

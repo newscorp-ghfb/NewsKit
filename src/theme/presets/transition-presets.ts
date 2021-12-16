@@ -185,29 +185,28 @@ transitionPresets.moveUp = {
   appearActive: {},
   appearDone: {},
   enter: {
-    transform: `translate(-50%, 20px)`,
+    transform: `translate(0, 20px)`,
   },
   enterActive: {
-    transform: `translate(-50%, 0)`,
-    opacity: '1',
+    transform: `translate(0, 0)`,
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
-    transform: `translate(-50%, 0)`,
+    transform: `translate(0, 0)`,
   },
   exit: {
-    transform: `translate(-50%, 0)`,
+    transform: `translate(0, 0)`,
   },
   exitActive: {
-    transform: `translate(-50%, 20px)`,
+    transform: `translate(0, 20px)`,
     transitionProperty: 'transform',
     transitionDuration: '{{motions.motionDuration020}}',
     transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
   },
   exitDone: {
-    transform: `translate(-50%, 20px)`,
+    transform: `translate(0, 20px)`,
   },
 };
 

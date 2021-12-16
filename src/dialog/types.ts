@@ -1,16 +1,17 @@
 import React, {HTMLAttributes} from 'react';
+import {TransitionToken} from '../theme';
 import {MQ} from '../utils/style';
 
 export interface BaseDialogOverridesProps {
   overlay?: {
     zIndex?: number;
     stylePreset?: MQ<string>;
-    transitionPreset?: string | string[];
+    transitionPreset?: TransitionToken | TransitionToken[];
   };
   panel?: {
     zIndex?: number;
     stylePreset?: MQ<string>;
-    transitionPreset?: string | string[];
+    transitionPreset?: TransitionToken | TransitionToken[];
   };
   header?: {
     stylePreset?: MQ<string>;

@@ -616,13 +616,48 @@ export const componentDefaults = {
   modal: {
     overlay: {
       zIndex: 70,
-      transitionPreset: 'fade',
+      transitionPreset: {
+        extend: 'fade',
+        enterActive: {
+          transitionDuration: '{{motions.motionDuration030}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+        },
+        exitActive: {
+          transitionDuration: '{{motions.motionDuration030}}',
+          transitionDelay: '{{motions.motionDuration010}}',
+          transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+        },
+      },
     },
     panel: {
       zIndex: 80,
       stylePreset: 'modalPanel',
-      // transitionPreset: ['fade', 'moveUp', 'grow'], // uncomment this line when working on PPDSC-1809
-      transitionPreset: ['fade'],
+      transitionPreset: [
+        {
+          extend: 'fade',
+          enterActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+            transitionDelay: '{{motions.motionDuration010}}',
+          },
+          exitActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingLinear}}',
+          },
+        },
+        {
+          extend: 'moveUp',
+          enterActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
+            transitionDelay: '{{motions.motionDuration010}}',
+          },
+          exitActive: {
+            transitionDuration: '{{motions.motionDuration010}}',
+            transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
+          },
+        },
+      ],
       topOffset: '20vh',
       width: {
         xs: '90vw',

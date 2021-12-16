@@ -23,21 +23,14 @@ jest.mock('react-transition-group', () => {
       });
     };
 
-    if (props.appear && props.in) {
+    if (props.in) {
       return (
         <FakeTransition>
           {React.Children.map(props.children, child => modifyChildren(child))}
         </FakeTransition>
       );
     }
-
-    if (props.appear) {
-      return <FakeTransition>{props.children}</FakeTransition>;
-    }
-    if (props.in) {
-      return <FakeTransition>{props.children}</FakeTransition>;
-    }
-    return null;
+    return <FakeTransition>{props.children}</FakeTransition>;
   });
   return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
 });

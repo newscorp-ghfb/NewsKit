@@ -935,4 +935,121 @@ describe('getTransitionDuration', () => {
       appear: 0,
     });
   });
+
+  test('returns duration from multiple default transition presets with delay', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          motions: {
+            motionDuration020: '2000ms',
+            motionTimingLinear: 'linear',
+          },
+          transitionPresets: {
+            customTransitionPresetDefault1: {
+              base: {
+                transitionProperty: 'css-props',
+                transitionDuration: '200ms',
+                transitionTimingFunction: 'linear',
+                transitionDelay: '100ms',
+              },
+            },
+            customTransitionPresetDefault2: {
+              base: {
+                transitionProperty: 'css-props',
+                transitionDuration: '400ms',
+                transitionTimingFunction: 'linear',
+                transitionDelay: '300ms',
+              },
+            },
+          },
+          componentDefaults: {
+            componentUnderTest: {
+              transitionPreset: [
+                'customTransitionPresetDefault1',
+                'customTransitionPresetDefault2',
+              ],
+            },
+          },
+        },
+      }),
+    );
+
+    const result = getTransitionDuration(
+      'componentUnderTest',
+      undefined,
+    )({
+      theme,
+    });
+
+    expect(result).toEqual({
+      enter: 700,
+      exit: 700,
+      appear: 700,
+    });
+  });
+
+  test('returns duration from multiple default transition presets with inline overrides', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          motions: {
+            motionDuration020: '2000ms',
+            motionTimingLinear: 'linear',
+          },
+          transitionPresets: {
+            customTransitionPresetDefault1: {
+              appearActive: {
+                transitionProperty: 'css-props',
+                transitionDuration: '200ms',
+                transitionTimingFunction: 'linear',
+                transitionDelay: '100ms',
+              },
+            },
+            customTransitionPresetDefault2: {
+              appearActive: {
+                transitionProperty: 'css-props2',
+                transitionDuration: '400ms',
+                transitionTimingFunction: 'linear',
+              },
+            },
+          },
+          componentDefaults: {
+            componentUnderTest: {
+              transitionPreset: [
+                {
+                  extend: 'customTransitionPresetDefault1',
+                  appearActive: {
+                    transitionDuration: '100ms',
+                    transitionDelay: '100ms',
+                  },
+                },
+                {
+                  extend: 'customTransitionPresetDefault2',
+                  appearActive: {
+                    transitionDuration: '150ms',
+                    transitionDelay: '100ms',
+                  },
+                },
+              ],
+            },
+          },
+        },
+      }),
+    );
+
+    const result = getTransitionDuration(
+      'componentUnderTest',
+      undefined,
+    )({
+      theme,
+    });
+
+    expect(result).toEqual({
+      enter: 0,
+      exit: 0,
+      appear: 250,
+    });
+  });
 });

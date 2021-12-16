@@ -9,7 +9,8 @@ import {
   getFontsFromTheme,
 } from '../style';
 import {getFontSizing} from '../font-sizing';
-import {isValidUnit} from '../style/utils';
+import {isValidUnit, unifyTransition} from '../style/utils';
+import {compileTheme, createTheme} from '../../theme';
 
 jest.mock('../font-sizing');
 
@@ -442,5 +443,32 @@ describe('Style helpers', () => {
     expect(isValidUnit('key', [])).toBeFalsy();
     expect(isValidUnit('key', undefined)).toBeFalsy();
     expect(isValidUnit('key', '10px')).toBeTruthy();
+  });
+
+  test('unifyTransition', () => {
+    const theme = compileTheme(
+      createTheme({
+        name: 'test-transition-preset',
+        overrides: {
+          transitionPresets: {
+            testPreset: {
+              base: {
+                opacity: 1,
+              },
+            },
+          },
+        },
+      }),
+    );
+    expect(unifyTransition(theme, 'testPreset')).toEqual({base: {opacity: 1}});
+    expect(
+      unifyTransition(theme, {extend: 'testPreset', base: {opacity: 0.5}}),
+    ).toEqual({base: {opacity: 0.5}});
+    expect(
+      unifyTransition(theme, {
+        extend: 'testPreset',
+        enterActive: {opacity: 0},
+      }),
+    ).toEqual({base: {opacity: 1}, enterActive: {opacity: 0}});
   });
 });

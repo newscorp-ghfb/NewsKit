@@ -10,6 +10,9 @@ import {Modal} from '../modal';
 import {TextBlock} from '../../text-block';
 import {sharedDialogTests} from '../../dialog/base-dialog-tests';
 
+// @ts-ignore
+const callIfExist = (props, method) => method in props && props[method]();
+
 jest.mock('react-transition-group', () => {
   const FakeTransition = jest.fn(({children}) => children);
   const FakeCSSTransition = jest.fn(props => {
@@ -23,7 +26,12 @@ jest.mock('react-transition-group', () => {
       });
     };
 
-    if (props.appear && props.in) {
+    const onEnter = () => callIfExist(props, 'onEnter');
+    const onExited = () => callIfExist(props, 'onExited');
+
+    // check only for `in` prop and ignore `appear` since its always applied it does not play role
+    if (props.in) {
+      onEnter();
       return (
         <FakeTransition>
           {React.Children.map(props.children, child => modifyChildren(child))}
@@ -31,12 +39,8 @@ jest.mock('react-transition-group', () => {
       );
     }
 
-    if (props.appear) {
-      return <FakeTransition>{props.children}</FakeTransition>;
-    }
-    if (props.in) {
-      return <FakeTransition>{props.children}</FakeTransition>;
-    }
+    // modal is not in the DOM when is not open
+    onExited();
     return null;
   });
   return {CSSTransition: FakeCSSTransition, Transition: FakeTransition};
@@ -149,6 +153,17 @@ describe('Modal', () => {
       myCustomTheme,
     );
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders inline', () => {
+    const {asFragment} = renderWithTheme(Modal, {
+      open: true,
+      header: modalHeader,
+      children: modalBody,
+      inline: true,
+      onDismiss: () => {},
+    });
+    expect(asFragment()).toMatchSnapshot();
   });
 });
 

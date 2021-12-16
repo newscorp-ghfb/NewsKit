@@ -1,3 +1,6 @@
+import {Theme, TransitionPreset, TransitionToken} from '../../theme/types';
+import {deepMerge} from '../deep-merge';
+
 export const endsWith = (value: string, checks: string[]): boolean =>
   checks.some(c => value.endsWith(c));
 
@@ -204,4 +207,34 @@ export const isValidUnit = (themeKey: string, value: any) => {
     !Number.isNaN(value) &&
     !Array.isArray(value)
   );
+};
+
+export const isArrayLikeObject = (value: string | object) =>
+  typeof value === 'object' && '0' in value;
+
+const unifyToken = (token: TransitionToken) => {
+  if (typeof token === 'string') {
+    return {extend: token, overrides: {}};
+  }
+  const {extend, ...overrides} = token;
+  return {
+    extend,
+    overrides,
+  };
+};
+
+export const unifyTransition = (
+  theme: Theme,
+  transitionToken: TransitionToken,
+) => {
+  const {extend: tokenName, overrides} = unifyToken(transitionToken);
+
+  const baseTransitionPreset: TransitionPreset =
+    theme.transitionPresets[tokenName];
+
+  if (!baseTransitionPreset) return undefined;
+
+  return Object.keys(overrides).length
+    ? deepMerge({}, baseTransitionPreset, overrides)
+    : baseTransitionPreset;
 };

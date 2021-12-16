@@ -67,7 +67,7 @@ const myCustomTheme = createTheme({
 export default {
   title: 'NewsKit Light/modal-layouts-only',
   component: () => 'None',
-  disabledRules: ['tabindex', 'heading-order'],
+  disabledRules: ['tabindex', 'heading-order', 'color-contrast'],
 };
 
 export const StoryDefault = () =>

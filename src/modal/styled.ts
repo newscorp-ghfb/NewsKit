@@ -1,20 +1,43 @@
 import {BaseDialogView} from '../dialog';
 import {ModalProps} from './types';
-import {styled, getStylePreset, getResponsiveSize} from '../utils/style';
+import {
+  styled,
+  getStylePreset,
+  getResponsiveSize,
+  getResponsiveSpace,
+} from '../utils/style';
 import {getMediaQueryFromTheme} from '../utils';
 import {getTransitionPreset} from '../utils/style/transition-preset';
 
 type ModalPanelProps = Pick<ModalProps, 'overrides' | 'open'>;
 
+export const StyledModalWrapper = styled.div<
+  Pick<ModalProps, 'overrides' | 'inline'> & {$open: boolean}
+>`
+  ${({$open, inline}) =>
+    $open &&
+    `
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // Remove events on the modal wrapper so that users can click on the content behind it ( like overlay or body )
+      pointer-events: none;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: ${inline ? 'absolute' : 'fixed'};
+  `}
+  ${getResponsiveSpace('zIndex', `modal.panel`, 'panel', 'zIndex')}
+`;
+
 export const StyledModal = styled(BaseDialogView)<ModalPanelProps>`
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
+  // adds pointer events which are removed by its parent ( StyledModalWrapper ) so that modal is interactive
+  pointer-events: all;
 
   ${getMediaQueryFromTheme('md')} {
     ${getResponsiveSize('top', 'modal.panel', 'panel', 'topOffset')};
-    transform: translate(-50%, 0);
   }
 
   ${getStylePreset('modal.panel', 'panel')};

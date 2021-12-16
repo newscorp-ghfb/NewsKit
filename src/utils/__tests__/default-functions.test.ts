@@ -157,6 +157,17 @@ describe('get component defaults functions', () => {
               md: '24md',
             },
           },
+          transitionsInlineOverrides: {
+            transitionPreset: {
+              extend: 'theDefaultToken',
+              base: {
+                transitionDuration: '1200ms',
+              },
+              enterActive: {
+                transitionDuration: '1000ms',
+              },
+            },
+          },
         },
       },
     }),
@@ -610,6 +621,57 @@ describe('get component defaults functions', () => {
       expect(result).toEqual({
         '@media screen and (max-width: 767px)': {marginRight: '13px'},
         '@media screen and (min-width: 768px)': {marginRight: '23px'},
+      });
+    });
+  });
+
+  describe('getTransitionPreset', () => {
+    test('component defaults with transition extend', () => {
+      const props = {
+        theme,
+      };
+      const result = getTransitionPreset(
+        'transitionsInlineOverrides',
+        '',
+        'test',
+      )(props);
+      expect(result).toEqual({
+        '&.test-enter-active': {
+          transitionDuration: '1000ms',
+        },
+        transitionDuration: '1200ms',
+        transitionProperty: 'css-props-for-default-token',
+        transitionTimingFunction: 'linear',
+      });
+    });
+
+    test('component overrides with transition extend', () => {
+      const props = {
+        theme,
+        overrides: {
+          transitionPreset: {
+            extend: 'theDefaultToken',
+            base: {
+              transitionDuration: '500ms',
+            },
+            enterActive: {
+              transitionDuration: '800ms',
+            },
+          },
+        },
+      };
+      const result = getTransitionPreset(
+        'transitionsInlineOverrides',
+        '',
+        'test',
+      )(props);
+      expect(result).toEqual({
+        '&.test-enter-active': {
+          transitionDuration: '800ms',
+        },
+        transitionDuration: '500ms',
+        transitionProperty: 'css-props-for-default-token',
+        transitionTimingFunction: 'linear',
       });
     });
   });

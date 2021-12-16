@@ -113,3 +113,9 @@ export interface TransitionPreset {
   exitDone?: TransitionPresetStyles;
 }
 export type TransitionPresetStates = keyof TransitionPreset;
+
+type TransitionTokenAsObject = {
+  extend: string;
+} & TransitionPreset;
+
+export type TransitionToken = string | TransitionTokenAsObject;

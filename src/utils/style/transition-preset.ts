@@ -3,9 +3,11 @@ import {
   TransitionPresetStates,
   TransitionPresetStyleKeys,
   TransitionPresetStyles,
+  TransitionToken,
 } from '../../theme/types';
 import {deepMerge} from '../deep-merge';
 import {getToken} from '../get-token';
+import {isArrayLikeObject, unifyTransition} from './utils';
 import {hasOwnProperty} from '../has-own-property';
 import {ThemeProp} from '../style-types';
 import {CSSObject} from './emotion';
@@ -79,12 +81,11 @@ function concatAndMergeInTransitionStringsForPseudoState(
   return mergedTransitionPreset;
 }
 
-function concatAndMergeInTransitionStringsForPreset<Props extends ThemeProp>(
-  props: Props,
-  token: string,
+function concatAndMergeInTransitionStringsForPreset(
+  transitionPreset: TransitionPreset,
   mergedTransitionPreset: TransitionPreset,
 ): TransitionPreset {
-  return Object.entries(props.theme.transitionPresets[token]).reduce(
+  return Object.entries(transitionPreset).reduce(
     (mergedTransitionPresetAcc, entry) =>
       concatAndMergeInTransitionStringsForPseudoState(
         entry,
@@ -95,17 +96,17 @@ function concatAndMergeInTransitionStringsForPreset<Props extends ThemeProp>(
 }
 
 export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
-  token: string | string[],
+  token: TransitionToken | TransitionToken[],
   componentClassName?: string,
 ) => (props: Props) => {
   if (Array.isArray(token)) {
     const mergedTransitionPresets = token
-      .filter(tkn => props.theme.transitionPresets[tkn])
+      .map(tkn => unifyTransition(props.theme, tkn))
+      .filter(transition => transition)
       .reduce(
-        (mergedTransitionPreset, tkn) =>
-          concatAndMergeInTransitionStringsForPreset<Props>(
-            props,
-            tkn,
+        (mergedTransitionPreset, transition) =>
+          concatAndMergeInTransitionStringsForPreset(
+            transition,
             mergedTransitionPreset,
           ),
         {} as TransitionPreset,
@@ -119,8 +120,7 @@ export const getTransitionPresetFromTheme = <Props extends ThemeProp>(
       : '';
   }
 
-  const transitionPreset: TransitionPreset =
-    props.theme.transitionPresets[token];
+  const transitionPreset = unifyTransition(props.theme, token);
 
   return transitionPreset
     ? getTransitionPresetValueFromTheme(transitionPreset, componentClassName)
@@ -140,11 +140,12 @@ const getDefaultedValue = <
 ) => (props: Props) => {
   const token = getToken(props, defaultPath, overridePath, presetType);
 
-  const tokenAsStringOrArray =
-    typeof token === 'object' ? Object.values(token) : token;
+  const tokenAsSingleOrMultiply = isArrayLikeObject(token)
+    ? Object.values(token)
+    : token;
 
   return getPresetFromThemeUtil(
-    tokenAsStringOrArray,
+    tokenAsSingleOrMultiply,
     componentClassName,
   )(props);
 };

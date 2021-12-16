@@ -1,6 +1,7 @@
-import {Theme} from '../theme';
+import {Theme, TransitionToken} from '../theme';
 import {getToken} from './get-token';
 import {ThemeProp} from './style-types';
+import {isArrayLikeObject, unifyTransition} from './style/utils';
 
 type TimeoutType = {appear: number; enter: number; exit: number};
 
@@ -25,10 +26,13 @@ export const getMotionDurationValue = (transitionDuration: string) => {
   return 0;
 };
 
-const extractDurationFromPreset = (tokensArray: string[], theme: Theme) =>
+const extractDurationFromPreset = (
+  tokensArray: TransitionToken[],
+  theme: Theme,
+) =>
   tokensArray.reduce(
     (duration, currentToken) => {
-      const transitionPreset = theme.transitionPresets[currentToken];
+      const transitionPreset = unifyTransition(theme, currentToken);
       if (!transitionPreset || !Object.keys(transitionPreset).length)
         return duration;
 
@@ -44,21 +48,36 @@ const extractDurationFromPreset = (tokensArray: string[], theme: Theme) =>
             appearActive.transitionDuration &&
             getMotionDurationValue(appearActive.transitionDuration)) ||
           0;
+        const appearDelay =
+          (appearActive &&
+            appearActive.transitionDelay &&
+            getMotionDurationValue(appearActive.transitionDelay)) ||
+          0;
         const enterDuration =
           (enterActive &&
             enterActive.transitionDuration &&
             getMotionDurationValue(enterActive.transitionDuration)) ||
+          0;
+        const enterDelay =
+          (enterActive &&
+            enterActive.transitionDelay &&
+            getMotionDurationValue(enterActive.transitionDelay)) ||
           0;
         const exitDuration =
           (exitActive &&
             exitActive.transitionDuration &&
             getMotionDurationValue(exitActive.transitionDuration)) ||
           0;
+        const exitDelay =
+          (exitActive &&
+            exitActive.transitionDelay &&
+            getMotionDurationValue(exitActive.transitionDelay)) ||
+          0;
 
         return {
-          appear: Math.max(duration.appear, appearDuration),
-          enter: Math.max(duration.enter, enterDuration),
-          exit: Math.max(duration.exit, exitDuration),
+          appear: Math.max(duration.appear, appearDuration + appearDelay),
+          enter: Math.max(duration.enter, enterDuration + enterDelay),
+          exit: Math.max(duration.exit, exitDuration + exitDelay),
         };
       }
 
@@ -67,10 +86,15 @@ const extractDurationFromPreset = (tokensArray: string[], theme: Theme) =>
           base.transitionDuration &&
           getMotionDurationValue(base.transitionDuration)) ||
         0;
+      const baseDelay =
+        (base &&
+          base.transitionDelay &&
+          getMotionDurationValue(base.transitionDelay)) ||
+        0;
       return {
-        appear: Math.max(duration.appear, baseDuration),
-        enter: Math.max(duration.enter, baseDuration),
-        exit: Math.max(duration.exit, baseDuration),
+        appear: Math.max(duration.appear, baseDuration + baseDelay),
+        enter: Math.max(duration.enter, baseDuration + baseDelay),
+        exit: Math.max(duration.exit, baseDuration + baseDelay),
       };
     },
     {enter: 0, exit: 0, appear: 0} as TimeoutType,
@@ -93,8 +117,9 @@ export const getTransitionDuration = (
 
   if (!token) return {enter: 0, exit: 0, appear: 0} as TimeoutType;
 
-  const tokensArray: string[] =
-    typeof token !== 'string' ? Object.values(token) : [token];
+  const tokensArray: string[] = isArrayLikeObject(token)
+    ? Object.values(token)
+    : [token];
 
   return extractDurationFromPreset(tokensArray, props.theme);
 };
