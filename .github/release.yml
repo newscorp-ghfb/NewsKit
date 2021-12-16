@@ -18,7 +18,7 @@ changelog:
         - fix
     - title: Documentation 📝
       labels:
-        - fix
+        - doc
     - title: Other Changes 🧱
       labels:
         - "*"
