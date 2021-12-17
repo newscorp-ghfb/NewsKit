@@ -63,4 +63,5 @@ export const columnMap: Record<string, ColumnMapObject> = {
     cellType: 'fontLetterSpacing',
     cellHeader: 'Example',
   },
+  State: {...medium, cellType: 'flag'},
 };
