@@ -1,12 +1,12 @@
 import React from 'react';
-import {Block, getSSRId} from 'newskit';
+import {Block, getSSRId, P} from 'newskit';
 import {Link} from '../link';
 import {SwatchCard} from '../swatch-card';
 import {MonoColor} from '../flags/mono-color';
 import {BorderCard} from '../border-card';
 import {getByTitle} from '../../utils/get-route-object';
 import {StyledDataCell} from './styled';
-import {TableProps, TableRow, TableRowValue} from './types';
+import {TableProps, TableRow, TableRowValue, CellWithOverrides} from './types';
 import {columnMap} from './column-map';
 import {
   IconFilledCheckCircle,
@@ -76,6 +76,34 @@ export const renderCols = (
     let cellContent: React.ReactNode;
 
     switch (cellType) {
+      case 'typographyPreset': {
+        const paragraph = (
+          <P
+            overrides={{
+              typographyPreset: (cellValue as CellWithOverrides)
+                ?.preset as string,
+            }}
+          >
+            <div
+              style={{
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+              }}
+            >
+              The quick brown fox
+            </div>
+          </P>
+        );
+        cellContent = ((cellValue as CellWithOverrides)?.config
+          ?.isItalic as boolean) ? (
+          <i>{paragraph}</i>
+        ) : (
+          paragraph
+        );
+        break;
+      }
+
       case 'number': {
         const v = typeof cellValue === 'undefined' ? rowIndex + 1 : cellValue;
         cellContent = <CircleFlag>{v}</CircleFlag>;

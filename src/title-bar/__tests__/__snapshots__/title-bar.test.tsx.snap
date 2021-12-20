@@ -97,7 +97,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -107,7 +107,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -115,7 +115,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -416,7 +416,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -426,7 +426,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -434,7 +434,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -735,7 +735,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -745,7 +745,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -753,7 +753,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1009,7 +1009,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -1019,7 +1019,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -1027,7 +1027,7 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1571,7 +1571,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -1581,7 +1581,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -1589,7 +1589,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1717,7 +1717,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -1727,7 +1727,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -1735,7 +1735,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1863,7 +1863,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -1873,7 +1873,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -1881,7 +1881,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -2009,7 +2009,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -2019,7 +2019,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -2027,7 +2027,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -2155,7 +2155,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -2165,7 +2165,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -2173,7 +2173,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -2301,7 +2301,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -2311,7 +2311,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -2319,7 +2319,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -2447,7 +2447,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -2457,7 +2457,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
@@ -2465,7 +2465,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3125em;
+    margin-top: -0.26250000000000007em;
   }
 }
 

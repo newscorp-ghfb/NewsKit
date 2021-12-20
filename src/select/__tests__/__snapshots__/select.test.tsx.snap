@@ -61,7 +61,7 @@ exports[`Select renders Select with overrides 1`] = `
   text-overflow: ellipsis;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -405,7 +405,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -704,7 +704,7 @@ exports[`Select renders disabled select 1`] = `
   color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1251,7 +1251,7 @@ exports[`Select renders loading select 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1518,7 +1518,7 @@ exports[`Select renders medium Select 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1790,7 +1790,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -2096,7 +2096,7 @@ exports[`Select renders select with a selected option 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -2431,7 +2431,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -2732,7 +2732,7 @@ exports[`Select renders select with non-string options 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -3040,7 +3040,7 @@ exports[`Select renders small Select 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -3312,7 +3312,7 @@ exports[`Select should render custom placeholder 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }

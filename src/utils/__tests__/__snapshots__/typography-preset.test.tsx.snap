@@ -5,7 +5,7 @@ exports[`TypographyPreset renders default 1`] = `
   .emotion-0 {
   font-family: "DM Sans",sans-serif;
   font-size: 18px;
-  line-height: 1.5555555555555556;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -22,7 +22,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 14px;
-    line-height: 1.4285714285714286;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: -0.5px;
   }
@@ -32,7 +32,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
-    line-height: 1.5555555555555556;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: -0.5px;
   }
@@ -50,7 +50,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 14px;
-    line-height: 1.4285714285714286;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: -0.5px;
   }
@@ -70,7 +70,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
-    line-height: 1.5555555555555556;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: -0.5px;
   }
@@ -88,7 +88,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 14px;
-    line-height: 1.4285714285714286;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: -0.5px;
   }
@@ -116,7 +116,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 14px;
-    line-height: 1.4285714285714286;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: -0.5px;
   }
@@ -136,7 +136,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
-    line-height: 1.5555555555555556;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: -0.5px;
   }
@@ -146,7 +146,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 18px;
-    line-height: 1.1111111111111112;
+    line-height: 1.125;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -156,7 +156,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.1666666666666667;
+    line-height: 1.125;
     font-weight: 500;
     letter-spacing: -0.5px;
   }
@@ -173,7 +173,7 @@ exports[`TypographyPreset renders with fontSmooth and fontStretch 1`] = `
   .emotion-0 {
   font-family: "DM Sans",sans-serif;
   font-size: 18px;
-  line-height: 1.5555555555555556;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
   font-smooth: always;
@@ -191,7 +191,7 @@ exports[`TypographyPreset renders with override editorialParagraph010 1`] = `
   .emotion-0 {
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }

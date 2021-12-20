@@ -34,10 +34,11 @@ export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
           <PageTemplate
             {...rest}
             featureCard={
-              {
+              featureCard &&
+              ({
                 ...defaultFeatureCard,
                 ...featureCard,
-              } as OnwardJourneySectionProps
+              } as OnwardJourneySectionProps)
             }
           >
             {children}

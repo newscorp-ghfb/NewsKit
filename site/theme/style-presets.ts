@@ -685,6 +685,23 @@ export const stylePresets = {
   tab: {
     base: {
       color: '{{colors.inkSubtle}}',
+      borderRadius: 'borderRadiusSharp',
+    },
+    hover: {
+      color: '{{colors.inkBase}}',
+      backgroundColor: '{{colors.transparent}}',
+    },
+    active: {
+      color: '{{colors.inkBase}}',
+      backgroundColor: '{{colors.transparent}}',
+    },
+    selected: {
+      color: '{{colors.inkContrast}}',
+      borderColor: '{{colors.interactivePrimary030}}',
+    },
+    'selected:hover': {
+      color: '{{colors.inkContrast}}',
+      borderColor: '{{colors.interactivePrimary030}}',
     },
   },
   imageRoundedMedium: {

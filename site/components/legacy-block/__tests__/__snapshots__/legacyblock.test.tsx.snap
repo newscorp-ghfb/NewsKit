@@ -68,7 +68,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
   font-family: "DM Sans",sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   border: 1px solid black;
   border-top: sizing010;
   border-right: sizing010;
@@ -190,7 +190,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
     font-family: "DM Sans",sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.5555555555555556;
+    line-height: 1.5;
     border: 3px dotted green;
     border-top: sizing020;
     border-right: sizing030;
@@ -260,7 +260,7 @@ exports[`Block with simple style props renders a styled div 1`] = `
   font-family: "DM Sans",sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   border: 1px solid black;
   border-top: sizing010;
   border-right: sizing010;

@@ -29,7 +29,15 @@ export interface ColumnMapObject extends TableCellProps {
     | 'fontSize'
     | 'fontWeight'
     | 'fontLineHeight'
-    | 'fontLetterSpacing';
+    | 'fontLetterSpacing'
+    | 'typographyPreset';
+}
+
+export interface CellWithOverrides {
+  preset: string;
+  config?: {
+    isItalic?: boolean;
+  };
 }
 
 export type TableRowValue =
@@ -39,7 +47,8 @@ export type TableRowValue =
   | boolean
   | null
   | undefined
-  | JSX.Element;
+  | JSX.Element
+  | CellWithOverrides;
 
 export type TableRow = Record<string, TableRowValue>;
 

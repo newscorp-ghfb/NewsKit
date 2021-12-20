@@ -67,7 +67,7 @@ exports[`SwatchCard renders with inkBase 1`] = `
   height: 32px;
   font-family: "Poppins",sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
+  line-height: 1.125;
   font-weight: 500;
   letter-spacing: -0.5px;
   color: #FFFFFF;

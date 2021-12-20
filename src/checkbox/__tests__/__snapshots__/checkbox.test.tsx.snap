@@ -93,7 +93,7 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -335,7 +335,7 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -468,7 +468,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -598,7 +598,7 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -728,7 +728,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -970,7 +970,7 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1103,7 +1103,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1233,7 +1233,7 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1472,7 +1472,7 @@ exports[`Checkbox label attributes 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1531,7 +1531,7 @@ exports[`Checkbox label position start 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -1958,7 +1958,7 @@ exports[`Checkbox onBlur and onFocus: with blur 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -2091,7 +2091,7 @@ exports[`Checkbox onBlur and onFocus: with focus 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -2938,7 +2938,7 @@ exports[`Checkbox render with size: medium & checked 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -3195,7 +3195,7 @@ exports[`Checkbox render with size: medium & label 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -3437,7 +3437,7 @@ exports[`Checkbox render with size: medium 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -3611,7 +3611,7 @@ exports[`Checkbox render with size: small & checked 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -3868,7 +3868,7 @@ exports[`Checkbox render with size: small & label 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4110,7 +4110,7 @@ exports[`Checkbox render with size: small 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4284,7 +4284,7 @@ exports[`Checkbox render with state: checked 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4447,7 +4447,7 @@ exports[`Checkbox render with state: checked-disabled 1`] = `
   color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4702,7 +4702,7 @@ exports[`Checkbox render with state: default 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4834,7 +4834,7 @@ exports[`Checkbox render with state: disabled 1`] = `
   color: #C0C0C0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4971,7 +4971,7 @@ exports[`Checkbox render with state: invalid 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -5127,7 +5127,7 @@ exports[`Checkbox render with state: invalid-checked 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -5284,7 +5284,7 @@ exports[`Checkbox render with state: valid 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -5440,7 +5440,7 @@ exports[`Checkbox render with state: valid-checked 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -5588,7 +5588,7 @@ exports[`Checkbox with overrides 1`] = `
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.125;
   font-weight: 700;
   letter-spacing: -0.5px;
 }

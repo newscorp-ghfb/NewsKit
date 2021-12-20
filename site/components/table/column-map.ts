@@ -10,6 +10,9 @@ const medium = {
 const large = {
   minWidth: '100px',
 };
+const xlarge = {
+  minWidth: '200px',
+};
 const xxlarge = {
   maxWidth: '500px',
 };
@@ -41,11 +44,11 @@ export const columnMap: Record<string, ColumnMapObject> = {
   Token: {...medium, cellType: 'flag'},
   'Border radius': {...medium, cellType: 'borderRadius'},
   'Border width': {...medium, cellType: 'borderWidth'},
-  'Common uses': {...large, cellType: 'text'},
+  'Common uses': {...xlarge, cellType: 'text'},
   Duration: {...large, cellType: 'motionDurationSwatch'},
   Timing: {...large, cellType: 'motionTimingSwatch'},
   Shadow: {...medium, cellType: 'boxShadow'},
-  FontFamily: {...medium, cellType: 'text'},
+  'Font family': {...medium, cellType: 'text'},
   'Font size': {
     ...xxlarge,
     cellType: 'fontSize',
@@ -61,6 +64,36 @@ export const columnMap: Record<string, ColumnMapObject> = {
   'Font letter spacing': {
     ...medium,
     cellType: 'fontLetterSpacing',
+    cellHeader: 'Example',
+  },
+  'Typography font family': {
+    ...medium,
+    cellType: 'flag',
+    cellHeader: 'Font Family',
+  },
+  'Typography font size': {
+    ...medium,
+    cellType: 'flag',
+    cellHeader: 'Font Size',
+  },
+  'Typography line height': {
+    ...medium,
+    cellType: 'flag',
+    cellHeader: 'Line Height',
+  },
+  'Typography font weight': {
+    ...medium,
+    cellType: 'flag',
+    cellHeader: 'Font Weight',
+  },
+  'Typography letter spacing': {
+    ...medium,
+    cellType: 'flag',
+    cellHeader: 'Letter Spacing',
+  },
+  'Typography preset': {
+    ...xxlarge,
+    cellType: 'typographyPreset',
     cellHeader: 'Example',
   },
   State: {...medium, cellType: 'flag'},

@@ -17,6 +17,10 @@ export const getFontSizing = (fontSize: string, lineHeight: number) => {
   };
 };
 
+/**
+ * @deprecated This method has been deprecated and will be removed in a future release. Use typography tokens instead.
+ */
+/* istanbul ignore next */
 export const getLineHeight = (
   fontSizeToken: string,
   lineHeightToken: string,

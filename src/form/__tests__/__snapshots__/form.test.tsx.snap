@@ -3423,7 +3423,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -3671,7 +3671,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4151,7 +4151,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -4399,7 +4399,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -5060,7 +5060,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -5490,7 +5490,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }

@@ -141,7 +141,7 @@ exports[`TextBlock renders with no text cropping 1`] = `
   padding: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -0.5px;
 }

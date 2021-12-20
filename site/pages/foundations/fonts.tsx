@@ -271,7 +271,7 @@ export default (layoutProps: LayoutProps) => (
           </Link>
           <Block spaceStack="space050" />
           <Table
-            columns={['Token', 'Font Family', 'Classification']}
+            columns={['Token', 'Font family', 'Classification']}
             rows={fontAttributes('fontFamily')}
           />
           <Divider />
