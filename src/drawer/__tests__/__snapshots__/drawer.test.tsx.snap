@@ -187,7 +187,6 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-4 {
@@ -581,7 +580,6 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {
@@ -955,7 +953,6 @@ exports[`Drawer renders default 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-4 {
@@ -1322,7 +1319,6 @@ exports[`Drawer renders drawer with overrides 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {
@@ -1697,7 +1693,6 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {
@@ -2864,7 +2859,6 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-4 {
@@ -3250,7 +3244,6 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-4 {
@@ -3636,7 +3629,6 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-4 {
@@ -4022,7 +4014,6 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-4 {
@@ -4415,7 +4406,6 @@ exports[`Drawer renders without header 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {
@@ -4743,7 +4733,6 @@ exports[`Drawer renders without overlay 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-4 {

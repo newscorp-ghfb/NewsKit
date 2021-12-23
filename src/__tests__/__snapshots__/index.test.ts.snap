@@ -66,6 +66,7 @@ Array [
   "Label",
   "LabelPosition",
   "Link",
+  "LinkInline",
   "LinkStandalone",
   "MediaQueryProvider",
   "Menu",

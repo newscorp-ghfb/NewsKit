@@ -8,7 +8,9 @@ export interface BaseLinkProps
   href: string;
 }
 
-export interface LinkProps extends BaseLinkProps {
+export interface LinkProps extends Omit<InternalLinkProps, 'noCrop'> {}
+
+export interface InternalLinkProps extends BaseLinkProps {
   external?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
@@ -18,4 +20,5 @@ export interface LinkProps extends BaseLinkProps {
       size?: string;
     };
   };
+  noCrop?: boolean;
 }

@@ -16,7 +16,6 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   display: inline-block;
 }
@@ -29,25 +28,22 @@ exports[`TabsWithTable renders with default data 1`] = `
   .emotion-2 {
     font-family: "Poppins",sans-serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.28125em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.28125em;
   }
 }
 
@@ -55,25 +51,22 @@ exports[`TabsWithTable renders with default data 1`] = `
   .emotion-2 {
     font-family: "Poppins",sans-serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22670454545454544em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.22670454545454544em;
   }
 }
 
@@ -83,7 +76,6 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
 }
 
@@ -95,25 +87,22 @@ exports[`TabsWithTable renders with default data 1`] = `
   .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.391em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.43125em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.409em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.43125em;
   }
 }
 
@@ -121,25 +110,22 @@ exports[`TabsWithTable renders with default data 1`] = `
   .emotion-4 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
-    line-height: 1.5555555555555556;
+    line-height: 27px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.391em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.4590277777777778em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.409em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.4590277777777778em;
   }
 }
 
@@ -325,27 +311,26 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-17 {
@@ -426,7 +411,6 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-24 {
   margin: 0;
-  padding: 1px 0;
   width: 100%;
 }
 

@@ -1324,28 +1324,40 @@ Object {
   },
   "fonts": Object {
     "fontFamily010": Object {
-      "cropAdjustments": Object {},
-      "cropConfig": Object {
-        "bottom": 9,
-        "top": 9,
-      },
       "fontFamily": "\\"DM Sans\\", sans-serif",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontFamily020": Object {
-      "cropAdjustments": Object {},
-      "cropConfig": Object {
-        "bottom": 10,
-        "top": 8,
-      },
       "fontFamily": "\\"Bitter\\", serif",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 935,
+          "capHeight": 692,
+          "descent": -265,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontFamily030": Object {
-      "cropAdjustments": Object {},
-      "cropConfig": Object {
-        "bottom": 9,
-        "top": 9,
-      },
       "fontFamily": "\\"Poppins\\", sans-serif",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 1050,
+          "capHeight": 697,
+          "descent": -350,
+          "lineGap": 100,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",

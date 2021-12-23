@@ -512,26 +512,23 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 .emotion-41 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-41::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-41::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-42 {
@@ -653,26 +650,23 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-49::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-49::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-55 {
@@ -814,25 +808,22 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 .emotion-65 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-65::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-65::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <section
@@ -1751,26 +1742,23 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 .emotion-31 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-31::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-31::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-32 {
@@ -1892,26 +1880,23 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 .emotion-39 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-39::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-39::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-45 {
@@ -2053,25 +2038,22 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 .emotion-55 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-55::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-55::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <section
@@ -3113,25 +3095,22 @@ exports[`Audio Player hides volume control as expected 1`] = `
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-49::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-49::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-50 {
@@ -3851,26 +3830,23 @@ exports[`Audio Player live player renders as expected 1`] = `
 .emotion-21 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-21::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-21::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-22 {
@@ -4001,26 +3977,23 @@ exports[`Audio Player live player renders as expected 1`] = `
 .emotion-29 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-29::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-29::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-35 {
@@ -5322,26 +5295,23 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 .emotion-42 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-42::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-42::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-43 {
@@ -5465,26 +5435,23 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 .emotion-50 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-50::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-50::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-56 {
@@ -5627,25 +5594,22 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 .emotion-66 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-66::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-66::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <section
@@ -6688,26 +6652,23 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 .emotion-41 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-41::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-41::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-42 {
@@ -6829,26 +6790,23 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-49::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-49::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-55 {
@@ -6990,25 +6948,22 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 .emotion-65 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-65::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-65::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <section
@@ -7989,26 +7944,23 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 .emotion-41 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-41::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-41::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-42 {
@@ -8130,26 +8082,23 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-49::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-49::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-55 {
@@ -8291,25 +8240,22 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 .emotion-65 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-65::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-65::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <section
@@ -9279,26 +9225,23 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 .emotion-41 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-41::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-41::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-42 {
@@ -9380,26 +9323,23 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 .emotion-49 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-49::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-49::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-55 {
@@ -9557,27 +9497,24 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 .emotion-65 {
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   background-color: transparent;
   color: #fff;
 }
 
 .emotion-65::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-65::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 .emotion-65 svg {

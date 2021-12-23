@@ -84,33 +84,26 @@ exports[`SectionIntroduction renders with all props 1`] = `
   background-color: transparent;
 }
 
-.emotion-4 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-4 {
     font-family: "Poppins",sans-serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2645833333333334em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2645833333333334em;
   }
 }
 
@@ -118,25 +111,22 @@ exports[`SectionIntroduction renders with all props 1`] = `
   .emotion-4 {
     font-family: "Poppins",sans-serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2526785714285714em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2526785714285714em;
   }
 }
 
@@ -171,13 +161,13 @@ exports[`SectionIntroduction renders with all props 1`] = `
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
@@ -186,18 +176,14 @@ exports[`SectionIntroduction renders with all props 1`] = `
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.48125000000000007em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.48125000000000007em;
 }
 
 <div

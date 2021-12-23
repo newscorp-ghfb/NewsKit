@@ -2,7 +2,7 @@ import {CSSObject} from '@emotion/styled';
 import {getFontSizing} from '../font-sizing';
 import {BreakpointKeys, TypographyPreset} from '../../theme';
 import {isFontConfigObject} from '../guards';
-import {getFontProps} from '../get-font-props';
+import {legacyGetFontProps} from '../get-font-props';
 import {ThemeProp} from '../style-types';
 import {MQ, MQPartial} from './types';
 import {
@@ -12,6 +12,8 @@ import {
 } from './base';
 import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
 import {hasOwnProperty} from '../has-own-property';
+import {FontConfig} from '../../theme/foundations/fonts';
+import {textCrop} from '../text-crop';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
@@ -20,13 +22,50 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 ) => (props: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const applyCrop = (typographyPreset: any) => {
-    const {fontSize, lineHeight, fontFamily} = typographyPreset;
-    const cropProps = getFontProps(
-      fontSize,
-      lineHeight,
-      fontFamily,
+    const {fontSize, lineHeight, fontFamily, fontWeight} = typographyPreset;
+
+    //* * Following code to be removed once only Font Metrics will be supported by newsKit
+    const [fontStackPeek] = fontFamily.split(',');
+    const fontFamilyObject: FontConfig | undefined = Object.values(
       props.theme.fonts,
+    ).find(
+      (fontEl): fontEl is FontConfig =>
+        isFontConfigObject(fontEl) &&
+        (fontEl as FontConfig).fontFamily.split(',')[0] === fontStackPeek,
     );
+
+    if (!fontFamilyObject) return typographyPreset;
+
+    let cropProps;
+    if (Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropConfig')) {
+      cropProps = legacyGetFontProps(
+        fontSize,
+        lineHeight,
+        fontFamily,
+        props.theme.fonts,
+      );
+    } else {
+      const themeFontsProperties = Object.entries(props.theme.fonts);
+
+      const weightTokenArray = themeFontsProperties.find(element =>
+        element.includes(fontWeight),
+      );
+      const weightToken = weightTokenArray && weightTokenArray[0];
+
+      const fontMetrics =
+        (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
+        fontFamilyObject.fontMetrics!.fontWeight010;
+
+      const cropData = {
+        fontSize,
+        lineHeight,
+        fontMetrics,
+      };
+
+      cropProps = textCrop(cropData);
+    }
+    //  **
+
     return {
       ...typographyPreset,
       ...cropProps,

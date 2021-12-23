@@ -463,53 +463,47 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-39 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #0A0A0A;
   box-sizing: border-box;
 }
 
 .emotion-39::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-39::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-44 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   box-sizing: border-box;
 }
 
 .emotion-44::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-44::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 @media screen {
@@ -1723,53 +1717,47 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-39 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #0A0A0A;
   box-sizing: border-box;
 }
 
 .emotion-39::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-39::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-44 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   box-sizing: border-box;
 }
 
 .emotion-44::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-44::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 @media screen {
@@ -2983,27 +2971,24 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-39 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   box-sizing: border-box;
 }
 
 .emotion-39::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-39::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 @media screen {

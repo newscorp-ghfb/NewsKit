@@ -8,6 +8,12 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-2 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -18,13 +24,20 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -57,35 +70,19 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-2::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-2::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-3 {
   min-height: 12px;
 }
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4:disabled {
@@ -94,18 +91,14 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div

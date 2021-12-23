@@ -81,6 +81,11 @@ exports[`MonoColor renders mono token with color 1`] = `
   border-color: #DEDEDE;
 }
 
+.emotion-5 {
+  margin: 0;
+  display: inline-block;
+}
+
 <div
     class="emotion-0"
     data-testid="flag"

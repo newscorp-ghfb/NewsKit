@@ -1,6 +1,5 @@
 import {
   styled,
-  getTypographyPreset,
   getStylePreset,
   getResponsiveSpace,
   getResponsiveSize,
@@ -59,12 +58,4 @@ export const StyledBaseFlag = styled('div')<
       isDisabled: $disabled,
       isLoading: $loading,
     })}
-`;
-
-export const StyledTextCropWrapper = styled.span<
-  BaseFlagProps<BaseFlagOverrides>
->`
-  ${getTypographyPreset('', '', {
-    withCrop: true,
-  })}
 `;

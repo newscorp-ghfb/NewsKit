@@ -24,26 +24,23 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 16px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -162,26 +159,23 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 16px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -498,26 +492,23 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -743,26 +734,23 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 16px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -963,27 +951,26 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1102,27 +1089,24 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #2E2E2E;
   margin-right: 16px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 svg {
@@ -1327,27 +1311,26 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1466,26 +1449,23 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -1686,27 +1666,26 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1825,26 +1804,23 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -2045,27 +2021,26 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2238,26 +2213,23 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -2467,27 +2439,26 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2606,26 +2577,23 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -2835,27 +2803,26 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2974,26 +2941,23 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -3203,27 +3167,26 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-15 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div

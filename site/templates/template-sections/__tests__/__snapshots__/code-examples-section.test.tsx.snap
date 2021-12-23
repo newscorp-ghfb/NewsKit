@@ -167,33 +167,26 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   background-color: transparent;
 }
 
-.emotion-8 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-8 {
     font-family: "Poppins",sans-serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-8::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2645833333333334em;
   }
 
   .emotion-8::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2645833333333334em;
   }
 }
 
@@ -201,25 +194,22 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   .emotion-8 {
     font-family: "Poppins",sans-serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-8::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2526785714285714em;
   }
 
   .emotion-8::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2526785714285714em;
   }
 }
 
@@ -248,13 +238,13 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-11 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-11 svg {
@@ -263,18 +253,14 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-11::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.48125000000000007em;
 }
 
 .emotion-11::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.48125000000000007em;
 }
 
 .emotion-12 {
@@ -327,7 +313,6 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-15 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -339,25 +324,22 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   .emotion-15 {
     font-family: "Poppins",sans-serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-15::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2645833333333334em;
   }
 
   .emotion-15::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2645833333333334em;
   }
 }
 
@@ -365,25 +347,22 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   .emotion-15 {
     font-family: "Poppins",sans-serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-15::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2526785714285714em;
   }
 
   .emotion-15::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2526785714285714em;
   }
 }
 
@@ -393,7 +372,6 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-17 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
 }
 
@@ -405,25 +383,22 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   .emotion-17 {
     font-family: "DM Sans",sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-17::before {
     content: '';
+    margin-bottom: -0.391em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.43125em;
   }
 
   .emotion-17::after {
     content: '';
+    margin-top: -0.409em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.43125em;
   }
 }
 
@@ -431,25 +406,22 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   .emotion-17 {
     font-family: "DM Sans",sans-serif;
     font-size: 18px;
-    line-height: 1.5555555555555556;
+    line-height: 27px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-17::before {
     content: '';
+    margin-bottom: -0.391em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.4590277777777778em;
   }
 
   .emotion-17::after {
     content: '';
+    margin-top: -0.409em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.4590277777777778em;
   }
 }
 
@@ -530,7 +502,6 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-25 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -542,25 +513,22 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   .emotion-25 {
     font-family: "Poppins",sans-serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-25::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.28125em;
   }
 
   .emotion-25::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.28125em;
   }
 }
 
@@ -568,25 +536,22 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   .emotion-25 {
     font-family: "Poppins",sans-serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-25::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22670454545454544em;
   }
 
   .emotion-25::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.22670454545454544em;
   }
 }
 

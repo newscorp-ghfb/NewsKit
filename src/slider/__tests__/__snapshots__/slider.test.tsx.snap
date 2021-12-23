@@ -304,51 +304,45 @@ exports[`slider labels should render custom component min, max labels 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-right: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-left: 12px;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -408,27 +402,24 @@ exports[`slider labels should render horizontal labels 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   margin-right: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 svg {
@@ -446,27 +437,24 @@ exports[`slider labels should render horizontal labels 1`] = `
 .emotion-2 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   margin-left: 12px;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 svg {
@@ -534,27 +522,24 @@ exports[`slider labels should render max label 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   margin-left: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 svg {
@@ -616,27 +601,24 @@ exports[`slider labels should render min label 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   margin-right: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 svg {
@@ -697,27 +679,24 @@ exports[`slider labels should render vertical labels 1`] = `
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   margin-top: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 svg {
@@ -735,27 +714,24 @@ exports[`slider labels should render vertical labels 1`] = `
 .emotion-2 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #535353;
   margin-bottom: 12px;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 svg {
@@ -929,9 +905,10 @@ exports[`slider react-range Range function props renderThumb should render defau
   .emotion-0 {
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   text-align: center;
   white-space: nowrap;
@@ -943,18 +920,14 @@ exports[`slider react-range Range function props renderThumb should render defau
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-0:disabled {
@@ -1156,9 +1129,10 @@ exports[`slider react-range Range function props renderThumb should render range
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   text-align: center;
   white-space: nowrap;
@@ -1170,18 +1144,14 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-1:disabled {
@@ -1415,9 +1385,10 @@ exports[`slider react-range Range function props renderThumb should render verti
 .emotion-1 {
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   text-align: center;
   white-space: nowrap;
@@ -1429,18 +1400,14 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-1:disabled {

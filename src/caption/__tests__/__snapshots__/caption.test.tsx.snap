@@ -8,13 +8,13 @@ exports[`Caption renders correctly with default props and caption and credit tex
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
@@ -23,30 +23,26 @@ exports[`Caption renders correctly with default props and caption and credit tex
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   text-transform: uppercase;
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-3 svg {
@@ -55,18 +51,14 @@ exports[`Caption renders correctly with default props and caption and credit tex
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 <div
@@ -110,13 +102,13 @@ exports[`CaptionInset renders correctly with default props and caption and credi
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
@@ -125,30 +117,26 @@ exports[`CaptionInset renders correctly with default props and caption and credi
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   text-transform: uppercase;
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-3 svg {
@@ -157,18 +145,14 @@ exports[`CaptionInset renders correctly with default props and caption and credi
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 <div
@@ -208,13 +192,13 @@ exports[`CaptionInset renders correctly with default props and only caption text
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
@@ -223,18 +207,14 @@ exports[`CaptionInset renders correctly with default props and only caption text
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -273,13 +253,13 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 22px;
-  line-height: 1.0909090909090908;
+  line-height: 24.75px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
@@ -288,30 +268,26 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22670454545454544em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.22670454545454544em;
 }
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   text-transform: uppercase;
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-3 svg {
@@ -320,18 +296,14 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 <div
@@ -359,13 +331,13 @@ exports[`renders correctly with default props and only caption text 1`] = `
 <DocumentFragment>
   .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
@@ -374,18 +346,14 @@ exports[`renders correctly with default props and only caption text 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -412,13 +380,13 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 22px;
-  line-height: 1.0909090909090908;
+  line-height: 24.75px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
@@ -427,30 +395,26 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22670454545454544em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.22670454545454544em;
 }
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   text-transform: uppercase;
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-3 svg {
@@ -459,18 +423,14 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 <div

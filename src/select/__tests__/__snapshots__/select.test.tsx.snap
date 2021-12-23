@@ -265,9 +265,10 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -278,18 +279,14 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <label
@@ -588,16 +585,16 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 
 .emotion-1 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
@@ -606,18 +603,14 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div

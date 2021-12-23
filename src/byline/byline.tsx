@@ -1,6 +1,6 @@
 import React from 'react';
 import {styled, getSpacingFromTheme, getStylePreset, MQ} from '../utils/style';
-import {Link} from '../link';
+import {LinkInline} from '../link';
 import {Stack} from '../stack';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
@@ -52,7 +52,7 @@ const renderLink = (
     typographyPreset: MQ<string>;
   },
 ) => (
-  <Link
+  <LinkInline
     overrides={overrides}
     href={href!}
     rel="author"
@@ -60,7 +60,7 @@ const renderLink = (
     data-author={author}
   >
     {author}
-  </Link>
+  </LinkInline>
 );
 
 const isLastItem = (currentIndex: number, length: number) =>

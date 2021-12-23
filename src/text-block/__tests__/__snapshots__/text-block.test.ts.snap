@@ -4,7 +4,6 @@ exports[`TextBlock renders as h2 html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
 }
 
 <h2
@@ -17,7 +16,6 @@ exports[`TextBlock renders as span html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   display: inline-block;
 }
 
@@ -31,7 +29,6 @@ exports[`TextBlock renders with custom style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -91,28 +88,24 @@ exports[`TextBlock renders with custom typography preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <p
@@ -125,7 +118,6 @@ exports[`TextBlock renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
 }
 
 <p
@@ -138,7 +130,6 @@ exports[`TextBlock renders with no text cropping 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
   line-height: 1.5;

@@ -12,7 +12,6 @@ const StyledText = styled.h2<StandfirstProps>`
   ${getTypographyPreset('standfirst.styledText', 'styledText', {
     withCrop: true,
   })}
-  padding: 1px 0;
   ${({as}) => as && (isInlineElement(as) ? 'display: inline-block' : '')}
 `;
 

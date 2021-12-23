@@ -236,7 +236,6 @@ exports[`HeaderIndex renders without crashing 1`] = `
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -248,25 +247,22 @@ exports[`HeaderIndex renders without crashing 1`] = `
   .emotion-9 {
     font-family: "Poppins",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-9::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.24375000000000002em;
   }
 
   .emotion-9::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.24375000000000002em;
   }
 }
 
@@ -274,25 +270,22 @@ exports[`HeaderIndex renders without crashing 1`] = `
   .emotion-9 {
     font-family: "Poppins",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-9::before {
     content: '';
+    margin-bottom: -0.2155em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.23125000000000007em;
   }
 
   .emotion-9::after {
     content: '';
+    margin-top: -0.2125em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.23125000000000007em;
   }
 }
 
@@ -310,13 +303,13 @@ exports[`HeaderIndex renders without crashing 1`] = `
 
 .emotion-11 {
   margin: 0;
-  padding: 1px 0;
   color: #2E2E2E;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-11 svg {
@@ -325,18 +318,14 @@ exports[`HeaderIndex renders without crashing 1`] = `
 
 .emotion-11::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.48125000000000007em;
 }
 
 .emotion-11::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.48125000000000007em;
 }
 
 <div

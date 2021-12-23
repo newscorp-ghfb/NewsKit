@@ -12,9 +12,9 @@ export const StyledInput = styled.input<StyledTextFieldProps>`
   border: none;
   background: none;
   ${({$size}) =>
-    getResponsiveSpace('padding', `textField.${$size}`, '', 'spaceInset')}
-  ${({$size}) =>
     getTypographyPreset(`textField.${$size}`, '', {
       withCrop: true,
     })}
+  ${({$size}) =>
+    getResponsiveSpace('padding', `textField.${$size}`, '', 'spaceInset')}
 `;

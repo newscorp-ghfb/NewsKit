@@ -4,12 +4,12 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -17,18 +17,14 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -87,7 +83,6 @@ exports[`Headings renders H1 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -95,25 +90,22 @@ exports[`Headings renders H1 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -121,25 +113,22 @@ exports[`Headings renders H1 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -147,25 +136,22 @@ exports[`Headings renders H1 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -185,12 +171,12 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -198,18 +184,14 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -268,7 +250,6 @@ exports[`Headings renders H2 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -276,25 +257,22 @@ exports[`Headings renders H2 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -302,25 +280,22 @@ exports[`Headings renders H2 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -340,12 +315,12 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -353,18 +328,14 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -423,7 +394,6 @@ exports[`Headings renders H3 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -431,25 +401,22 @@ exports[`Headings renders H3 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -457,25 +424,22 @@ exports[`Headings renders H3 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -495,12 +459,12 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -508,18 +472,14 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -578,7 +538,6 @@ exports[`Headings renders H4 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -586,25 +545,22 @@ exports[`Headings renders H4 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 18px;
-    line-height: 1.1111111111111112;
+    line-height: 20.25px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -612,25 +568,22 @@ exports[`Headings renders H4 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -650,12 +603,12 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -663,18 +616,14 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -733,29 +682,25 @@ exports[`Headings renders H5 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 22.5px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #0A0A0A;
 }
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.25em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3125em;
 }
 
 .emotion-0 svg {
@@ -774,12 +719,12 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -787,18 +732,14 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -857,29 +798,25 @@ exports[`Headings renders H6 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #0A0A0A;
 }
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.275em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3375em;
 }
 
 .emotion-0 svg {
@@ -898,12 +835,12 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -911,18 +848,14 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -981,7 +914,6 @@ exports[`Headings renders Heading1 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -989,25 +921,22 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1015,25 +944,22 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1041,25 +967,22 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1079,12 +1002,12 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1092,18 +1015,14 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -1162,7 +1081,6 @@ exports[`Headings renders Heading2 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -1170,25 +1088,22 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -1196,25 +1111,22 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1234,12 +1146,12 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1247,18 +1159,14 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -1317,7 +1225,6 @@ exports[`Headings renders Heading3 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -1325,25 +1232,22 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -1351,25 +1255,22 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -1389,12 +1290,12 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1402,18 +1303,14 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -1472,7 +1369,6 @@ exports[`Headings renders Heading4 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
 }
 
@@ -1480,25 +1376,22 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 18px;
-    line-height: 1.1111111111111112;
+    line-height: 20.25px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1506,25 +1399,22 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -1544,12 +1434,12 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1557,18 +1447,14 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -1627,29 +1513,25 @@ exports[`Headings renders Heading5 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 22.5px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #0A0A0A;
 }
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.25em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3125em;
 }
 
 .emotion-0 svg {
@@ -1668,12 +1550,12 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 31.5px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1681,18 +1563,14 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.22142857142857142em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2839285714285714em;
 }
 
 .emotion-0 svg {
@@ -1751,29 +1629,25 @@ exports[`Headings renders Heading6 with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Bitter",serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   color: #0A0A0A;
 }
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.275em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3375em;
 }
 
 .emotion-0 svg {

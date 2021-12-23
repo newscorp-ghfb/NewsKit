@@ -34,29 +34,47 @@ export const fonts = {
   fontLetterSpacing040: '0.25px',
   fontLetterSpacing050: '0.5px',
 
+  // ** fontMetrics **
+  // The fontWeight010(regular 400) metrics are generally enough for a good cropping
+  // and should always be declared.
+  // But If you need you can specify metrics for the other font weights.
+  // 400 Will always be the fall back.
+
   fontFamily010: {
     fontFamily: '"DM Sans", sans-serif',
-    cropConfig: {
-      top: 9,
-      bottom: 9,
+    fontMetrics: {
+      fontWeight010: {
+        capHeight: 700,
+        ascent: 992,
+        descent: -310,
+        lineGap: 0,
+        unitsPerEm: 1000,
+      },
     },
-    cropAdjustments: {},
   } as FontConfig,
   fontFamily020: {
     fontFamily: '"Bitter", serif',
-    cropConfig: {
-      top: 8,
-      bottom: 10,
+    fontMetrics: {
+      fontWeight010: {
+        capHeight: 692,
+        ascent: 935,
+        descent: -265,
+        lineGap: 0,
+        unitsPerEm: 1000,
+      },
     },
-    cropAdjustments: {},
   } as FontConfig,
   fontFamily030: {
     fontFamily: '"Poppins", sans-serif',
-    cropConfig: {
-      top: 9,
-      bottom: 9,
+    fontMetrics: {
+      fontWeight010: {
+        capHeight: 697,
+        ascent: 1050,
+        descent: -350,
+        lineGap: 100,
+        unitsPerEm: 1000,
+      },
     },
-    cropAdjustments: {},
   } as FontConfig,
 };
 
@@ -64,6 +82,16 @@ export type Fonts = typeof fonts;
 
 export interface FontConfig {
   fontFamily: string;
+  fontMetrics?: {
+    [weight: string]: {
+      capHeight: number;
+      ascent: number;
+      descent: number;
+      lineGap: number;
+      unitsPerEm: number;
+    };
+  };
+  // cropConfig and cropAdjustments be removed once we will support only font metrics
   cropConfig?: {
     top: number;
     bottom: number;

@@ -225,7 +225,6 @@ exports[`Modal renders default 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {
@@ -651,7 +650,6 @@ exports[`Modal renders inline 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {
@@ -1061,7 +1059,6 @@ exports[`Modal renders modal with overrides 1`] = `
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-6 {
@@ -1507,7 +1504,6 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-6 {
@@ -2794,7 +2790,6 @@ exports[`Modal renders with different closePosition 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {
@@ -3227,7 +3222,6 @@ exports[`Modal renders without header 1`] = `
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-6 {
@@ -3592,7 +3586,6 @@ exports[`Modal renders without overlay 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
 }
 
 .emotion-5 {

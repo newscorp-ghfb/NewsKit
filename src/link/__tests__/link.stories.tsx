@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Link, LinkStandalone} from '..';
+import {LinkInline, LinkStandalone} from '..';
 import {getColorFromTheme, styled} from '../../utils/style';
 import {
   StorybookHeading,
@@ -48,7 +48,7 @@ const CustomPragraph = styled.p`
 
 const LinkWithOverrides = ({children}: {children: React.ReactNode}) => (
   <ThemeProvider theme={myCustomTheme}>
-    <Link
+    <LinkInline
       href="http://localhost:6006"
       overrides={{
         typographyPreset: 'utilityButton020',
@@ -56,13 +56,13 @@ const LinkWithOverrides = ({children}: {children: React.ReactNode}) => (
       }}
     >
       {children}
-    </Link>
+    </LinkInline>
   </ThemeProvider>
 );
 
 const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
   <ThemeProvider theme={myCustomTheme}>
-    <Link
+    <LinkInline
       href="http://apple.com"
       overrides={{
         typographyPreset: 'utilityButton020',
@@ -70,7 +70,7 @@ const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
       }}
     >
       {children}
-    </Link>
+    </LinkInline>
   </ThemeProvider>
 );
 
@@ -83,11 +83,11 @@ export const StoryLink = () => (
   <Container>
     {/* ------ Link inline -------- */}
     <StorybookHeading>Link inline</StorybookHeading>
-    <Link href="/">Inline link</Link>
+    <LinkInline href="/">Inline link</LinkInline>
     <br />
     <br />
     <ThemeProvider theme={myCustomTheme}>
-      <Link
+      <LinkInline
         href="/"
         overrides={{
           typographyPreset: 'utilityButton020',
@@ -95,18 +95,18 @@ export const StoryLink = () => (
         }}
       >
         Inline link with style and type overrides
-      </Link>
+      </LinkInline>
     </ThemeProvider>
     <br />
     <br />
-    <Link href="/">
+    <LinkInline href="/">
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
       Inline link with leading and trailing icons
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link
+    <LinkInline
       href="/"
       overrides={{
         spaceInline: 'space030',
@@ -115,27 +115,27 @@ export const StoryLink = () => (
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
       Inline link with leading and trailing icons and custom space
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link href="mailto:###" overrides={{stylePreset: 'linkEmail'}}>
+    <LinkInline href="mailto:###" overrides={{stylePreset: 'linkEmail'}}>
       Inline mail link
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link href="tel:###">Inline telephone link</Link>
+    <LinkInline href="tel:###">Inline telephone link</LinkInline>
 
     {/* ------ Link external -------- */}
     <StorybookHeading>Link external</StorybookHeading>
-    <Link
+    <LinkInline
       href="http://newskit.staging-news.co.uk/"
       overrides={{stylePreset: 'linkInline'}}
     >
       External link with external icon
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link
+    <LinkInline
       href="http://newskit.staging-news.co.uk/"
       overrides={{
         stylePreset: 'linkInline',
@@ -145,16 +145,16 @@ export const StoryLink = () => (
       }}
     >
       External link with custom size for external icon
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link
+    <LinkInline
       href="http://newskit.staging-news.co.uk/"
       external={false}
       overrides={{stylePreset: 'linkInline'}}
     >
       External link without external icon
-    </Link>
+    </LinkInline>
 
     {/* ------ Link standalone -------- */}
     <StorybookHeading>Link standalone</StorybookHeading>
@@ -185,19 +185,19 @@ export const StoryLinkInverse = () => (
   <Container hasBackground>
     {/* ------ Link inline -------- */}
     <StorybookHeading>Link inline</StorybookHeading>
-    <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+    <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
       Inline link
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+    <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
       Inline link with leading and trailing icons
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link
+    <LinkInline
       href="/"
       overrides={{
         stylePreset: 'linkInlineInverse',
@@ -207,24 +207,27 @@ export const StoryLinkInverse = () => (
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
       Inline link with leading and trailing icons and custom space
       <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link href="mailto:###" overrides={{stylePreset: 'linkInlineInverse'}}>
+    <LinkInline
+      href="mailto:###"
+      overrides={{stylePreset: 'linkInlineInverse'}}
+    >
       Inline mail link
-    </Link>
+    </LinkInline>
 
     {/* ------ Link external -------- */}
     <StorybookHeading>Link external</StorybookHeading>
-    <Link
+    <LinkInline
       href="http://newskit.staging-news.co.uk/"
       overrides={{stylePreset: 'linkInlineInverse'}}
     >
       External link with external icon
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link
+    <LinkInline
       href="http://newskit.staging-news.co.uk/"
       overrides={{
         stylePreset: 'linkInlineInverse',
@@ -234,16 +237,16 @@ export const StoryLinkInverse = () => (
       }}
     >
       External link with custom size for external icon
-    </Link>
+    </LinkInline>
     <br />
     <br />
-    <Link
+    <LinkInline
       href="http://newskit.staging-news.co.uk/"
       external={false}
       overrides={{stylePreset: 'linkInlineInverse'}}
     >
       External link without external icon
-    </Link>
+    </LinkInline>
 
     {/* ------ Link standalone -------- */}
     <StorybookHeading>Link standalone</StorybookHeading>
@@ -268,34 +271,34 @@ export const StoryLinkWithinTextParagraph = () => (
     <StorybookSubHeading>default</StorybookSubHeading>
     <CustomPragraph>
       Officials said that the{' '}
-      <Link
+      <LinkInline
         href="http://localhost:6006"
         overrides={{
           typographyPreset: 'editorialParagraph020',
         }}
       >
         Apple-Google model
-      </Link>{' '}
+      </LinkInline>{' '}
       was unable to differentiate between a phone that was in someone’s hand
       three metres away from a phone that was in someone’s pocket
-      <Link
+      <LinkInline
         href="http://localhost:6006"
         overrides={{
           typographyPreset: 'editorialParagraph020',
         }}
       >
         one metre away.
-      </Link>{' '}
+      </LinkInline>{' '}
       “That is a really important distinction if you’re going to use the app to
       determine whether or not you spend 14 days at home,” one{' '}
-      <Link
+      <LinkInline
         href="http://localhost:6006"
         overrides={{
           typographyPreset: 'editorialParagraph020',
         }}
       >
         official
-      </Link>{' '}
+      </LinkInline>{' '}
       said.
     </CustomPragraph>
 
@@ -314,32 +317,32 @@ export const StoryLinkWithinTextParagraph = () => (
     <StorybookSubHeading>external default</StorybookSubHeading>
     <CustomPragraph>
       Officials said that the{' '}
-      <Link
+      <LinkInline
         href="http://apple.com"
         overrides={{
           typographyPreset: 'editorialParagraph020',
         }}
       >
         Apple-Google model
-      </Link>{' '}
+      </LinkInline>{' '}
       was unable to differentiate between a phone that was in{' '}
-      <Link
+      <LinkInline
         href="http://apple.com"
         overrides={{
           typographyPreset: 'editorialParagraph020',
         }}
       >
         someone’s hand
-      </Link>{' '}
+      </LinkInline>{' '}
       three metres away from a phone that was in someone’s pocket{' '}
-      <Link
+      <LinkInline
         href="http://apple.com"
         overrides={{
           typographyPreset: 'editorialParagraph020',
         }}
       >
         one metre
-      </Link>{' '}
+      </LinkInline>{' '}
       away.
     </CustomPragraph>
 

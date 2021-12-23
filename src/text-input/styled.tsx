@@ -64,6 +64,10 @@ export const IconContainer = styled.span<StyledTextInputProps>`
 `;
 
 export const StyledInput = styled.input<StyledTextInputProps>`
+  ${({$size}) =>
+    getTypographyPreset(`textInput.${$size}.input`, 'input', {
+      withCrop: true,
+    })}
   & {
     ${({valid, invalid, $size, ...rest}) =>
       valid || invalid
@@ -93,11 +97,6 @@ export const StyledInput = styled.input<StyledTextInputProps>`
       isValid: valid,
       isDisabled: disabled,
     })}
-  ${({$size}) =>
-    getTypographyPreset(`textInput.${$size}.input`, 'input', {
-      withCrop: true,
-    })}
-  
   ${({$size}) =>
     getResponsiveSpace(
       'padding',

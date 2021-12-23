@@ -37,33 +37,26 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin-right: 16px;
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -71,25 +64,22 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -97,25 +87,22 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -253,27 +240,26 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-8 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -356,33 +342,26 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   margin-right: 16px;
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -390,25 +369,22 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -416,25 +392,22 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -572,27 +545,26 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 }
 
 .emotion-8 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -675,33 +647,26 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   margin-right: 16px;
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -709,25 +674,22 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -735,25 +697,22 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -873,7 +832,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   display: inline-block;
   display: block;
 }
@@ -949,33 +907,26 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -983,25 +934,22 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1009,25 +957,22 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1137,33 +1082,26 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 479px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 18px;
-    line-height: 1.1111111111111112;
+    line-height: 20.25px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1171,25 +1109,22 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -1197,25 +1132,22 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -1223,25 +1155,22 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1297,33 +1226,26 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   padding: 4px 8px;
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 479px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 18px;
-    line-height: 1.1111111111111112;
+    line-height: 20.25px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1331,25 +1253,22 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -1357,25 +1276,22 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -1383,25 +1299,22 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 27px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -1511,33 +1424,26 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1545,25 +1451,22 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1571,25 +1474,22 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1657,33 +1557,26 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1691,25 +1584,22 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1717,25 +1607,22 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1803,33 +1690,26 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1837,25 +1717,22 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -1863,25 +1740,22 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -1949,33 +1823,26 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1983,25 +1850,22 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -2009,25 +1873,22 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -2095,33 +1956,26 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -2129,25 +1983,22 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -2155,25 +2006,22 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -2241,33 +2089,26 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -2275,25 +2116,22 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -2301,25 +2139,22 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 
@@ -2387,33 +2222,26 @@ exports[`TitleBar should display correctly with default styles and given title 1
   }
 }
 
-.emotion-2 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 767px) {
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -2421,25 +2249,22 @@ exports[`TitleBar should display correctly with default styles and given title 1
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 36px;
-    line-height: 1.1111111111111112;
+    line-height: 40.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
   }
 }
 
@@ -2447,25 +2272,22 @@ exports[`TitleBar should display correctly with default styles and given title 1
   .emotion-2 {
     font-family: "Bitter",serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 45px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-2::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
   }
 }
 

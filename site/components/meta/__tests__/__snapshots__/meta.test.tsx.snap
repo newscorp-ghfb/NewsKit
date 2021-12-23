@@ -114,26 +114,22 @@ exports[`Meta renders with mandatory props 1`] = `
 .emotion-6 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  padding: 1px 0px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
@@ -223,28 +219,24 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 .emotion-14 {
@@ -379,30 +371,26 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-25 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
   display: block;
 }
 
 .emotion-25::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-25::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-26 {
@@ -542,27 +530,26 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-33 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-33::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-33::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 .emotion-34 {
@@ -1249,26 +1236,22 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 .emotion-6 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  padding: 1px 0px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
@@ -1358,28 +1341,24 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 .emotion-14 {
@@ -1514,30 +1493,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-25 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
   display: block;
 }
 
 .emotion-25::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-25::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-26 {
@@ -1677,27 +1652,26 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-33 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-33::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-33::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 .emotion-34 {

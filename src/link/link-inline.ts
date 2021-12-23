@@ -1,9 +1,9 @@
 import {withDefaultProps} from '../utils/with-default-props';
 import {InternalLink} from './internal-link';
 
-export const LinkStandalone = withDefaultProps(
+export const LinkInline = withDefaultProps(
   InternalLink,
-  {},
-  'linkStandalone',
+  {noCrop: true},
+  'linkInline',
 );
-LinkStandalone.displayName = 'LinkStandalone';
+LinkInline.displayName = 'LinkInline';

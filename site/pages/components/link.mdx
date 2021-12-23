@@ -5,7 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {CodeFromDefaultPresets, Code} from '../../components/code';
 import {LegacyBlock} from '../../components/legacy-block';
 
-import {Link, LinkStandalone} from 'newskit';
+import {LinkInline, LinkStandalone} from 'newskit';
 
 export default Layout;
 
@@ -87,20 +87,20 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
 ### Default HTML props
 
 All the native HTML attributes which an anchor element can take, can also be passed.
-E.g: `<Link aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">`
+E.g: `<LinkInline aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">`
 
 
 ## Playground
 
-Here you can play with the <b>Link</b> component and the <b>LinkStandalone</b> component.
+Here you can play with the <b>LinkInline</b> and the <b>LinkStandalone</b> component.
 
-LinkStandalone is an alternative export of the Link.
+LinkStandalone is an alternative export of the LinkInline.
 All of the above applies to it, however the <b>LinkStandalone</b> uses a different default stylePreset which does not include the underline.
-Both the Link and LinkStandalone default stylePresets can be changed via the theme.
+Both the LinkInline and LinkStandalone default stylePresets can be changed via the theme.
 
 <Playground
-  componentName={['Link', 'LinkStandalone']}
-  component={[Link, LinkStandalone]}
+  componentName={['LinkInline', 'LinkStandalone']}
+  component={[LinkInline, LinkStandalone]}
   knobs={[
     {
       name: 'content',
@@ -195,6 +195,7 @@ All you need to do is pass a href property with valid url. <a href="/components/
 ## Variations
 
 ### Inline
+LinkInline does not have any text cropping, is suggested to crop the whole paragraph, where it is sitting in.
 These are used within paragraphs or sentences to link to different content on the same page or other pages. Our current link style is more akin to this.
 
 Add a link inline style preset token (linkInline, linkInlineInverse) to the overrides.
@@ -205,7 +206,7 @@ Note: linkInline is the default Link token, so there is no need to pass it to th
 
 <Code>
   {`
-<Link href="/">Inline link</Link>
+<LinkInline href="/">Inline link</Link>
   `}
 </Code>
 
@@ -214,26 +215,26 @@ Note: linkInline is the default Link token, so there is no need to pass it to th
 </LegacyBlock>
 <Code>
   {`
- <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+ <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
     Inline link inverse
-  </Link>
+  </LinkInline>
   `}
 </Code>
 
 ### External
-An external link directs users to a page not produced by brand i.e. the website they currently are visiting. A trailing icon to depict the user is navigating away is often paired with the external link text.
+An external link, which can be both Inline or Standalone,directs users to a page not produced by brand i.e. the website they currently are visiting. A trailing icon to depict the user is navigating away is often paired with the external link text.
 
 Add a link inline style preset token (linkExternal, linkExternalInverse) to the overrides.
 
 <a href="http://google.com/" overrides={{stylePreset: 'linkExternal'}}>External link with external icon</a>
 <Code>
   {`
-<Link
+<LinkInline
   href="http://google.com/"
   overrides={{stylePreset: 'linkExternal'}}
 >
   External link with external icon
-</Link>
+</LinkInline>
   `}
 </Code>
 
@@ -242,16 +243,17 @@ Add a link inline style preset token (linkExternal, linkExternalInverse) to the 
 </LegacyBlock>
 <Code>
   {`
-<Link
+<LinkInline
   href="http://google.com/"
   overrides={{stylePreset: 'linkExternalInverse'}}
 >
   External link inverse with external icon
-</Link>
+</LinkInline>
   `}
 </Code>
 
 ### Standalone
+LinkStandalone has text cropping applied by default.
 Standalone links are used outside of body content, for example within navigational components such as menus, headers and footers.
 
 Add a link standalone style preset token (linkStandalone, linkStandaloneInverse) to the overrides of the LinkStandalone component.

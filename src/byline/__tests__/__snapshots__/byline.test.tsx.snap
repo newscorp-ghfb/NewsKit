@@ -49,13 +49,13 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
@@ -65,18 +65,14 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -154,30 +150,12 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: -0.5px;
-  display: inline-block;
   display: block;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-7 {
@@ -308,13 +286,13 @@ exports[`Byline renders correctly with author's name, author's information and n
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
@@ -324,18 +302,14 @@ exports[`Byline renders correctly with author's name, author's information and n
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -434,13 +408,13 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
@@ -450,18 +424,14 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -539,30 +509,12 @@ exports[`Byline renders correctly with authors and links 1`] = `
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: -0.5px;
-  display: inline-block;
   display: block;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 {
@@ -741,13 +693,13 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
@@ -757,18 +709,14 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -846,30 +794,12 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: -0.5px;
-  display: inline-block;
   display: block;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 {
@@ -1014,13 +944,13 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
@@ -1030,18 +960,14 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -1150,13 +1076,13 @@ exports[`Byline renders correctly with one author 1`] = `
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
@@ -1166,18 +1092,14 @@ exports[`Byline renders correctly with one author 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1245,30 +1167,26 @@ exports[`Byline renders correctly with overrides 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   color: #f000dc;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-4 {
@@ -1300,30 +1218,12 @@ exports[`Byline renders correctly with overrides 1`] = `
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: -0.5px;
-  display: inline-block;
   display: block;
-}
-
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-8 {

@@ -12,8 +12,6 @@ const HeadlineContainer = styled.section<Pick<HeadlineProps, 'overrides'>>`
   ${getTypographyPreset('headline', '', {
     withCrop: true,
   })}
-  /* Necessary for a proper section cropping */
-  padding: 1px 0px;
 `;
 
 const cssReset = css`

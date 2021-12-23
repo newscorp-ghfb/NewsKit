@@ -4,32 +4,28 @@ exports[`Standfirst renders as h4 html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2E2E2E;
-  padding: 1px 0;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 18px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3375em;
   }
 }
 
@@ -37,25 +33,22 @@ exports[`Standfirst renders as h4 html tag 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -69,7 +62,6 @@ exports[`Standfirst renders as span html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2E2E2E;
-  padding: 1px 0;
   display: inline-block;
 }
 
@@ -77,25 +69,22 @@ exports[`Standfirst renders as span html tag 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 18px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3375em;
   }
 }
 
@@ -103,25 +92,22 @@ exports[`Standfirst renders as span html tag 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -135,32 +121,28 @@ exports[`Standfirst renders with custom style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #3358CC;
-  padding: 1px 0;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 18px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3375em;
   }
 }
 
@@ -168,25 +150,22 @@ exports[`Standfirst renders with custom style preset 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -202,26 +181,22 @@ exports[`Standfirst renders with custom typography preset 1`] = `
   color: #2E2E2E;
   font-family: "Bitter",serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 400;
   letter-spacing: -0.5px;
-  padding: 1px 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.2055em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.275em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.2275em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3375em;
 }
 
 <h2
@@ -234,32 +209,28 @@ exports[`Standfirst renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2E2E2E;
-  padding: 1px 0;
 }
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 18px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3375em;
   }
 }
 
@@ -267,25 +238,22 @@ exports[`Standfirst renders with default styles 1`] = `
   .emotion-0 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-0::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 

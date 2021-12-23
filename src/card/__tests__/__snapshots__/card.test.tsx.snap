@@ -73,28 +73,24 @@ exports[`Card renders MQ layout 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -158,28 +154,24 @@ exports[`Card renders actions section with given component 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -314,27 +306,26 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -535,28 +526,24 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -691,27 +678,26 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -912,28 +898,24 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -1068,27 +1050,26 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -1291,28 +1272,24 @@ exports[`Card renders card with overrides 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1374,33 +1351,26 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-4 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 479px) {
   .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -1408,25 +1378,22 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -1434,25 +1401,22 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -1460,25 +1424,22 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
   .emotion-4 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-4::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -1634,28 +1595,24 @@ exports[`Card renders media section if the media data is provided 1`] = `
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1811,28 +1768,24 @@ exports[`Card renders media section with a custom component 1`] = `
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1988,28 +1941,24 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2165,28 +2114,24 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2343,28 +2288,24 @@ exports[`Card renders media section with overrides 1`] = `
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2520,28 +2461,24 @@ exports[`Card renders with card items 1`] = `
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-9 {
@@ -2676,27 +2613,26 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-14::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-14::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-15 {
@@ -2989,28 +2925,24 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3213,28 +3145,24 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3399,28 +3327,24 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3591,28 +3515,24 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3783,28 +3703,24 @@ exports[`Card with horizontal layout renders correctly 1`] = `
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -3975,28 +3891,24 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -4167,28 +4079,24 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -4359,28 +4267,24 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -4517,28 +4421,24 @@ exports[`Card with href renders correctly with actions 1`] = `
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-6 {
@@ -4673,27 +4573,26 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-11 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-11::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-11::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-12 {
@@ -5033,28 +4932,24 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -5185,33 +5080,26 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   z-index: 1;
 }
 
-.emotion-5 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 479px) {
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -5219,25 +5107,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -5245,25 +5130,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -5271,25 +5153,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -5432,33 +5311,26 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   z-index: 1;
 }
 
-.emotion-5 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 479px) {
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -5466,25 +5338,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -5492,25 +5361,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -5518,25 +5384,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -5690,33 +5553,26 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   z-index: 1;
 }
 
-.emotion-5 {
-  padding: 1px 0px;
-}
-
 @media screen and (max-width: 479px) {
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -5724,25 +5580,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 22.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.25em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.3125em;
   }
 }
 
@@ -5750,25 +5603,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 24.75px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.19545454545454544em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -5776,25 +5626,22 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   .emotion-5 {
     font-family: "Bitter",serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 31.5px;
     font-weight: 500;
     letter-spacing: -0.5px;
+    padding: 0.5px 0px;
   }
 
   .emotion-5::before {
     content: '';
+    margin-bottom: -0.2055em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.22142857142857142em;
   }
 
   .emotion-5::after {
     content: '';
+    margin-top: -0.2275em;
     display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2839285714285714em;
   }
 }
 
@@ -5948,28 +5795,24 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6097,28 +5940,24 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6212,28 +6051,24 @@ exports[`CardInset renders card with overrides 1`] = `
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6373,28 +6208,24 @@ exports[`CardInset renders with card items 1`] = `
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-9 {
@@ -6552,27 +6383,26 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-14 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-14::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-14::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-15 {

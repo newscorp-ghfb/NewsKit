@@ -7,9 +7,10 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -20,18 +21,14 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -40,6 +37,12 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -50,13 +53,20 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -89,35 +99,19 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -126,18 +120,14 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -184,6 +174,12 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 }
 
 .emotion-2 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -194,13 +190,20 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -233,35 +236,19 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-2::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-2::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-3 {
   min-height: 12px;
 }
 
 .emotion-4 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-4:disabled {
@@ -270,18 +257,14 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 
 .emotion-4::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-4::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -322,9 +305,10 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -335,18 +319,14 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -355,6 +335,12 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -365,13 +351,20 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -402,22 +395,6 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 .emotion-3:disabled {
   border-color: #F4F4F4;
   color: #C0C0C0;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-4 {
@@ -458,27 +435,24 @@ exports[`TextInput renders disabled text input 1`] = `
   color: #C0C0C0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -487,6 +461,12 @@ exports[`TextInput renders disabled text input 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: not-allowed;
@@ -497,13 +477,20 @@ exports[`TextInput renders disabled text input 1`] = `
   border-radius: 8px;
   color: #C0C0C0;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -522,51 +509,31 @@ exports[`TextInput renders disabled text input 1`] = `
   color: #535353;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #C0C0C0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -615,9 +582,10 @@ exports[`TextInput renders large text input 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -628,18 +596,14 @@ exports[`TextInput renders large text input 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -648,6 +612,12 @@ exports[`TextInput renders large text input 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -658,13 +628,20 @@ exports[`TextInput renders large text input 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 64px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -697,35 +674,19 @@ exports[`TextInput renders large text input 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -734,18 +695,14 @@ exports[`TextInput renders large text input 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 <div
@@ -791,9 +748,10 @@ exports[`TextInput renders readonly text input 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -804,18 +762,14 @@ exports[`TextInput renders readonly text input 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -824,6 +778,12 @@ exports[`TextInput renders readonly text input 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -834,13 +794,20 @@ exports[`TextInput renders readonly text input 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -873,35 +840,19 @@ exports[`TextInput renders readonly text input 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -910,18 +861,14 @@ exports[`TextInput renders readonly text input 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -968,9 +915,10 @@ exports[`TextInput renders small text input 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -981,18 +929,14 @@ exports[`TextInput renders small text input 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -1001,6 +945,12 @@ exports[`TextInput renders small text input 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1011,13 +961,20 @@ exports[`TextInput renders small text input 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 8px;
   min-height: 32px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -1050,35 +1007,19 @@ exports[`TextInput renders small text input 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -1087,18 +1028,14 @@ exports[`TextInput renders small text input 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1144,9 +1081,10 @@ exports[`TextInput renders text input with leading icon 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -1157,18 +1095,14 @@ exports[`TextInput renders text input with leading icon 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -1209,6 +1143,12 @@ exports[`TextInput renders text input with leading icon 1`] = `
 }
 
 .emotion-6 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1219,13 +1159,20 @@ exports[`TextInput renders text input with leading icon 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-6::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-6::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-6 {
@@ -1262,35 +1209,19 @@ exports[`TextInput renders text input with leading icon 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-7 {
   min-height: 12px;
 }
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8:disabled {
@@ -1299,18 +1230,14 @@ exports[`TextInput renders text input with leading icon 1`] = `
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1376,27 +1303,24 @@ exports[`TextInput renders text input with overrides 1`] = `
   color: #f000dc;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 24px;
   margin-right: 8px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.5145833333333334em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5145833333333334em;
 }
 
 .emotion-2 {
@@ -1405,33 +1329,30 @@ exports[`TextInput renders text input with overrides 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
   border-color: #D20600;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 8px;
   min-height: 64px;
 }
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-4 {
@@ -1440,29 +1361,25 @@ exports[`TextInput renders text input with overrides 1`] = `
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #f000dc;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 <div
@@ -1508,9 +1425,10 @@ exports[`TextInput renders text input with overrides for leading and validation 
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -1521,18 +1439,14 @@ exports[`TextInput renders text input with overrides for leading and validation 
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -1573,6 +1487,12 @@ exports[`TextInput renders text input with overrides for leading and validation 
 }
 
 .emotion-6 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1583,13 +1503,20 @@ exports[`TextInput renders text input with overrides for leading and validation 
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-6::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-6::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-6 {
@@ -1626,35 +1553,19 @@ exports[`TextInput renders text input with overrides for leading and validation 
   color: #C0C0C0;
 }
 
-.emotion-6::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-6::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-7 {
   min-height: 12px;
 }
 
 .emotion-8 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-8:disabled {
@@ -1663,18 +1574,14 @@ exports[`TextInput renders text input with overrides for leading and validation 
 
 .emotion-8::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-8::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1740,9 +1647,10 @@ exports[`TextInput renders with different minHeight 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -1753,18 +1661,14 @@ exports[`TextInput renders with different minHeight 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -1773,6 +1677,12 @@ exports[`TextInput renders with different minHeight 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1783,13 +1693,20 @@ exports[`TextInput renders with different minHeight 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 64px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -1822,35 +1739,19 @@ exports[`TextInput renders with different minHeight 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -1859,18 +1760,14 @@ exports[`TextInput renders with different minHeight 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -1920,9 +1817,10 @@ exports[`TextInput renders with fixed width 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -1933,18 +1831,14 @@ exports[`TextInput renders with fixed width 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -1953,6 +1847,12 @@ exports[`TextInput renders with fixed width 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1963,13 +1863,20 @@ exports[`TextInput renders with fixed width 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -2002,35 +1909,19 @@ exports[`TextInput renders with fixed width 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -2039,18 +1930,14 @@ exports[`TextInput renders with fixed width 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2100,9 +1987,10 @@ exports[`TextInput renders with full width 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -2113,18 +2001,14 @@ exports[`TextInput renders with full width 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -2133,6 +2017,12 @@ exports[`TextInput renders with full width 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -2143,13 +2033,20 @@ exports[`TextInput renders with full width 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -2182,35 +2079,19 @@ exports[`TextInput renders with full width 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -2219,18 +2100,14 @@ exports[`TextInput renders with full width 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2276,9 +2153,10 @@ exports[`TextInput should render custom aria-label 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -2289,18 +2167,14 @@ exports[`TextInput should render custom aria-label 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -2309,6 +2183,12 @@ exports[`TextInput should render custom aria-label 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -2319,13 +2199,20 @@ exports[`TextInput should render custom aria-label 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -2358,35 +2245,19 @@ exports[`TextInput should render custom aria-label 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -2395,18 +2266,14 @@ exports[`TextInput should render custom aria-label 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -2453,9 +2320,10 @@ exports[`TextInput should render custom placeholder 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -2466,18 +2334,14 @@ exports[`TextInput should render custom placeholder 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -2486,6 +2350,12 @@ exports[`TextInput should render custom placeholder 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -2496,13 +2366,20 @@ exports[`TextInput should render custom placeholder 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -2535,35 +2412,19 @@ exports[`TextInput should render custom placeholder 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -2572,18 +2433,14 @@ exports[`TextInput should render custom placeholder 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div

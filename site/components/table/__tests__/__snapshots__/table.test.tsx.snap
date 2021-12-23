@@ -389,30 +389,26 @@ exports[`Table renders links correctly 1`] = `
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
   display: block;
 }
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-8 {
@@ -627,27 +623,26 @@ exports[`Table renders number values automatically if undefined 1`] = `
 }
 
 .emotion-10 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-16 {
@@ -1121,10 +1116,13 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-11 {
+  margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4285714285714286;
+  padding: 1px 0px;
+  display: inline-block;
 }
 
 .emotion-11::before {
@@ -1438,10 +1436,13 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
 }
 
 .emotion-11 {
+  margin: 0;
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4285714285714286;
+  padding: 1px 0px;
+  display: inline-block;
 }
 
 .emotion-11::before {

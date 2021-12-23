@@ -8,7 +8,6 @@ import {TextBlockProps} from './types';
 
 const StyledTextBlock = styled.p<TextBlockProps>`
   margin: 0;
-  padding: ${({noCrop}) => (noCrop ? '0' : '1px 0')};
   ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)};
   ${({typographyPreset, noCrop}) =>
     typographyPreset &&

@@ -1,9 +1,11 @@
 import {FontConfig} from '../theme/foundations/fonts';
-import {textCrop} from './text-crop';
-import {getFontSizing} from './font-sizing';
+import {legacyTextCrop} from './text-crop';
 import {isFontConfigObject} from './guards';
+import {getFontSizing} from './font-sizing';
 
-export const getFontProps = (
+// TODO 'legacyGetFontProps' To be removed once we will adopt only the fontMetrics approach
+/* istanbul ignore next */
+export const legacyGetFontProps = (
   fontSize: string,
   lineHeight: number,
   fontFamily: string,
@@ -32,7 +34,7 @@ export const getFontProps = (
     } = fontFamilyObject!;
     const adjustment = fontCropAdjustments && fontCropAdjustments[fontSize];
 
-    const cropData = {
+    const legacyCropData = {
       lineHeight: base.lineHeight,
       topCrop: fontCropConfig!.top,
       bottomCrop: fontCropConfig!.bottom,
@@ -42,7 +44,7 @@ export const getFontProps = (
       cropLineHeight: fontCropConfig && fontCropConfig.lineHeight,
     };
 
-    const croppedTextProps = textCrop(cropData);
+    const croppedTextProps = legacyTextCrop(legacyCropData);
 
     return {
       ...base,

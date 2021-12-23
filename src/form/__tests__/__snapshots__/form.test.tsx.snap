@@ -10,9 +10,10 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -23,18 +24,14 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-3 {
@@ -43,6 +40,12 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -53,13 +56,20 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-4::-webkit-input-placeholder {
@@ -92,35 +102,19 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-5 {
   min-height: 12px;
 }
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6:disabled {
@@ -129,18 +123,14 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -236,27 +226,26 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 }
 
 .emotion-17 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-17::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-17::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -372,9 +361,10 @@ exports[`Form renders with error and with submit validation and revalidation mod
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -385,18 +375,14 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-3 {
@@ -405,6 +391,12 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -416,13 +408,20 @@ exports[`Form renders with error and with submit validation and revalidation mod
   color: #2E2E2E;
   text-overflow: ellipsis;
   caret-color: #D20600;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-4 {
@@ -443,22 +442,6 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-4::placeholder {
   color: #535353;
-}
-
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -497,29 +480,25 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #D20600;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-20 {
@@ -615,27 +594,26 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-23 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-23::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-23::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -798,9 +776,10 @@ exports[`Form renders with error on blur 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -811,18 +790,14 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-3 {
@@ -831,6 +806,12 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -842,13 +823,20 @@ exports[`Form renders with error on blur 1`] = `
   color: #2E2E2E;
   text-overflow: ellipsis;
   caret-color: #D20600;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-4 {
@@ -869,22 +857,6 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-4::placeholder {
   color: #535353;
-}
-
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -923,32 +895,34 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #D20600;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -959,13 +933,20 @@ exports[`Form renders with error on blur 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-14::-webkit-input-placeholder {
@@ -998,31 +979,15 @@ exports[`Form renders with error on blur 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-14::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-14::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-16 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-16:disabled {
@@ -1031,18 +996,14 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-16::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-16::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-17 {
@@ -1138,27 +1099,26 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-20 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-20::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-20::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -1298,9 +1258,10 @@ exports[`Form renders with error on submit 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -1311,18 +1272,14 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-3 {
@@ -1331,6 +1288,12 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1342,13 +1305,20 @@ exports[`Form renders with error on submit 1`] = `
   color: #2E2E2E;
   text-overflow: ellipsis;
   caret-color: #D20600;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-4 {
@@ -1369,22 +1339,6 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-4::placeholder {
   color: #535353;
-}
-
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -1423,29 +1377,25 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #D20600;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-20 {
@@ -1541,27 +1491,26 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-23 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-23::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-23::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -1724,9 +1673,10 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -1737,18 +1687,14 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-3 {
@@ -1757,6 +1703,12 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1768,13 +1720,20 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   color: #2E2E2E;
   text-overflow: ellipsis;
   caret-color: #D20600;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-4 {
@@ -1795,22 +1754,6 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-4::placeholder {
   color: #535353;
-}
-
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-5 {
@@ -1849,32 +1792,34 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #D20600;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -1885,13 +1830,20 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-14::-webkit-input-placeholder {
@@ -1924,31 +1876,15 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-14::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-14::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-16 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-16:disabled {
@@ -1957,18 +1893,14 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-16::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-16::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-17 {
@@ -2064,27 +1996,26 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-20 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-20::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-20::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -2220,9 +2151,10 @@ exports[`Form renders with inputs 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -2233,18 +2165,14 @@ exports[`Form renders with inputs 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-2 {
@@ -2253,6 +2181,12 @@ exports[`Form renders with inputs 1`] = `
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -2263,13 +2197,20 @@ exports[`Form renders with inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-3::-webkit-input-placeholder {
@@ -2302,35 +2243,19 @@ exports[`Form renders with inputs 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-4 {
   min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
@@ -2339,18 +2264,14 @@ exports[`Form renders with inputs 1`] = `
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -2451,9 +2372,10 @@ exports[`Form renders with nested inputs 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -2464,18 +2386,14 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-3 {
@@ -2484,6 +2402,12 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -2494,13 +2418,20 @@ exports[`Form renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-4::-webkit-input-placeholder {
@@ -2533,35 +2464,19 @@ exports[`Form renders with nested inputs 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-5 {
   min-height: 12px;
 }
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6:disabled {
@@ -2570,18 +2485,14 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -2677,27 +2588,26 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-17 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-17::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-17::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -2814,9 +2724,10 @@ exports[`Form renders with onBlur validation 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -2827,18 +2738,14 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.43125em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.43125em;
 }
 
 .emotion-3 {
@@ -2847,6 +2754,12 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
@@ -2857,13 +2770,20 @@ exports[`Form renders with onBlur validation 1`] = `
   border-radius: 8px;
   color: #2E2E2E;
   text-overflow: ellipsis;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  letter-spacing: -0.5px;
   padding: 12px;
   min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-4::-webkit-input-placeholder {
@@ -2896,35 +2816,19 @@ exports[`Form renders with onBlur validation 1`] = `
   color: #C0C0C0;
 }
 
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
 .emotion-5 {
   min-height: 12px;
 }
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6:disabled {
@@ -2933,18 +2837,14 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -3040,27 +2940,26 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-17 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-17::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-17::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -3173,9 +3072,10 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -3186,18 +3086,14 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 {
@@ -3274,28 +3170,25 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   cursor: default;
   border: none;
   background: none;
-  padding: 12px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 {
@@ -3351,16 +3244,16 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7:disabled {
@@ -3369,18 +3262,14 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-10 {
@@ -3901,9 +3790,10 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -3914,18 +3804,14 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 {
@@ -4002,28 +3888,25 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   cursor: default;
   border: none;
   background: none;
-  padding: 12px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 {
@@ -4079,16 +3962,16 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7:disabled {
@@ -4097,18 +3980,14 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-10 {
@@ -4629,9 +4508,10 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -4642,18 +4522,14 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <label
@@ -4737,28 +4613,25 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   cursor: default;
   border: none;
   background: none;
-  padding: 12px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -4871,16 +4744,16 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-1 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
@@ -4889,18 +4762,14 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -4918,9 +4787,10 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -4931,18 +4801,14 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <label
@@ -5246,16 +5112,16 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-1 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
@@ -5264,18 +5130,14 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -5553,16 +5415,16 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-1 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
@@ -5571,18 +5433,14 @@ exports[`FormInput renders FormInput Correctly 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -5605,9 +5463,10 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -5618,18 +5477,14 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-1 {
@@ -5706,28 +5561,25 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   cursor: default;
   border: none;
   background: none;
-  padding: 12px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-3 {
@@ -5783,16 +5635,16 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7:disabled {
@@ -5801,18 +5653,14 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-13 {
@@ -5908,27 +5756,26 @@ exports[`FormInput renders with error and with submit validation and revalidatio
 }
 
 .emotion-16 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-16::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-16::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <form
@@ -6067,9 +5914,10 @@ exports[`FormInput renders with nested inputs 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -6080,18 +5928,14 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <label
@@ -6175,28 +6019,25 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
-  padding: 12px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-2 {
@@ -6309,16 +6150,16 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-1 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
@@ -6327,18 +6168,14 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6356,9 +6193,10 @@ exports[`FormInput renders with nested inputs 1`] = `
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
 }
@@ -6369,18 +6207,14 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-0::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-0::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <label
@@ -6464,28 +6298,25 @@ exports[`FormInput renders with nested inputs 1`] = `
   cursor: default;
   border: none;
   background: none;
-  padding: 12px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  padding: 12px;
 }
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6524,16 +6355,16 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-1 {
   margin: 0;
-  padding: 1px 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
@@ -6542,18 +6373,14 @@ exports[`FormInput renders with nested inputs 1`] = `
 
 .emotion-1::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-1::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <div
@@ -6659,27 +6486,26 @@ exports[`FormInput renders with nested inputs 1`] = `
 }
 
 .emotion-3 {
+  margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  display: inline-block;
 }
 
 .emotion-3::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-3::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <button

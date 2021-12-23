@@ -321,6 +321,7 @@ typographyPresets.utilityMeta020 = {
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing010}}',
 };
+
 // Button
 typographyPresets.utilityButton010 = {
   ...typographyPresets.utilityLabel010,

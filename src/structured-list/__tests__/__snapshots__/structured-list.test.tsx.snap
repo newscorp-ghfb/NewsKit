@@ -202,13 +202,13 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
@@ -217,18 +217,14 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -585,13 +581,13 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
@@ -600,18 +596,14 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -1034,13 +1026,13 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 
 .emotion-10 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-10 svg {
@@ -1049,18 +1041,14 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -1093,13 +1081,13 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13 svg {
@@ -1108,18 +1096,14 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -1549,13 +1533,13 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 
 .emotion-10 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-10 svg {
@@ -1564,18 +1548,14 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -1608,13 +1588,13 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13 svg {
@@ -1623,18 +1603,14 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -2094,13 +2070,13 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 
 .emotion-10 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-10 svg {
@@ -2109,18 +2085,14 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -2153,13 +2125,13 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13 svg {
@@ -2168,18 +2140,14 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -2577,13 +2545,13 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
@@ -2592,18 +2560,14 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -2644,13 +2608,13 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 
 .emotion-10 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-10 svg {
@@ -2659,18 +2623,14 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-11 {
@@ -2989,13 +2949,13 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 
 .emotion-10 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-10 svg {
@@ -3004,18 +2964,14 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -3048,13 +3004,13 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13 svg {
@@ -3063,18 +3019,14 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -3539,13 +3491,13 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 
 .emotion-10 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-10 svg {
@@ -3554,18 +3506,14 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -3598,13 +3546,13 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13 svg {
@@ -3613,18 +3561,14 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -4089,13 +4033,13 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 
 .emotion-10 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-10 svg {
@@ -4104,18 +4048,14 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 
 .emotion-10::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-10::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-11 {
@@ -4148,13 +4088,13 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 
 .emotion-13 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-13 svg {
@@ -4163,18 +4103,14 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
 
 .emotion-13::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-13::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-14 {
@@ -4575,13 +4511,13 @@ exports[`StructuredList with href renders with disabled link 1`] = `
 
 .emotion-7 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
@@ -4590,18 +4526,14 @@ exports[`StructuredList with href renders with disabled link 1`] = `
 
 .emotion-7::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-7::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-8 {
@@ -5014,13 +4946,13 @@ exports[`StructuredList without-href renders with default style 1`] = `
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9 svg {
@@ -5029,18 +4961,14 @@ exports[`StructuredList without-href renders with default style 1`] = `
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-10 {
@@ -5073,13 +5001,13 @@ exports[`StructuredList without-href renders with default style 1`] = `
 
 .emotion-12 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-12 svg {
@@ -5088,18 +5016,14 @@ exports[`StructuredList without-href renders with default style 1`] = `
 
 .emotion-12::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-12::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-13 {
@@ -5473,13 +5397,13 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6 svg {
@@ -5488,18 +5412,14 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-7 {
@@ -5762,13 +5682,13 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9 svg {
@@ -5777,18 +5697,14 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-10 {
@@ -5821,13 +5737,13 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 
 .emotion-12 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-12 svg {
@@ -5836,18 +5752,14 @@ exports[`StructuredList without-href renders with overrides 1`] = `
 
 .emotion-12::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-12::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-13 {
@@ -6345,13 +6257,13 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6 svg {
@@ -6360,18 +6272,14 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-7 {
@@ -6412,13 +6320,13 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9 svg {
@@ -6427,18 +6335,14 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-10 {
@@ -6667,13 +6571,13 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
 
 .emotion-6 {
   margin: 0;
-  padding: 1px 0;
   color: #0A0A0A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-6 svg {
@@ -6682,18 +6586,14 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
 
 .emotion-6::before {
   content: '';
+  margin-bottom: -0.2155em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.30625em;
 }
 
 .emotion-6::after {
   content: '';
+  margin-top: -0.2125em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.30625em;
 }
 
 .emotion-7 {
@@ -6734,13 +6634,13 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
 
 .emotion-9 {
   margin: 0;
-  padding: 1px 0;
   color: #535353;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
 }
 
 .emotion-9 svg {
@@ -6749,18 +6649,14 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
 
 .emotion-9::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-9::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 .emotion-10 {

@@ -3,10 +3,11 @@ import React, {PropsWithChildren} from 'react';
 import {FlagProps, FlagSize, BaseFlagProps, BaseFlagOverrides} from './types';
 import {Stack} from '../stack';
 import {Flow, StackDistribution} from '../stack/types';
-import {StyledBaseFlag, StyledTextCropWrapper} from './styled';
+import {StyledBaseFlag} from './styled';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import {TextBlock} from '../text-block';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
@@ -34,9 +35,9 @@ const BaseFlag = React.forwardRef<
       >
         {React.Children.map(children, child =>
           ['string', 'number'].includes(typeof child) ? (
-            <StyledTextCropWrapper overrides={overrides}>
+            <TextBlock as="span" typographyPreset={overrides?.typographyPreset}>
               {child}
-            </StyledTextCropWrapper>
+            </TextBlock>
           ) : (
             child
           ),

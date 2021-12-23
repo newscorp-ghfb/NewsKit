@@ -77,7 +77,6 @@ exports[`Link does not render the external icon even if the href is external 1`]
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   display: inline-block;
   display: block;
 }
@@ -176,7 +175,6 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   display: inline-block;
   display: block;
 }
@@ -275,7 +273,6 @@ exports[`Link renders as expected in default state 1`] = `
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   display: inline-block;
   display: block;
 }
@@ -385,7 +382,6 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 
 .emotion-3 {
   margin: 0;
-  padding: 1px 0;
   display: inline-block;
   display: block;
 }
@@ -525,7 +521,6 @@ exports[`Link renders the external icon if the href is external 1`] = `
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   display: inline-block;
   display: block;
 }
@@ -586,30 +581,26 @@ exports[`Link renders with overrides 1`] = `
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
   display: block;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <a
@@ -686,30 +677,26 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
 
 .emotion-2 {
   margin: 0;
-  padding: 1px 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
-  line-height: 1.4285714285714286;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   display: inline-block;
   display: block;
 }
 
 .emotion-2::before {
   content: '';
+  margin-bottom: -0.403em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
 }
 
 .emotion-2::after {
   content: '';
+  margin-top: -0.4em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
 }
 
 <a

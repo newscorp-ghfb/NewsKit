@@ -6,6 +6,25 @@ const theme = createTheme({
     fonts: {
       fontFamily010: {
         fontFamily: '"Times New Roman", Times, serif',
+        // fontMetrics approach
+        fontMetrics: {
+          400: {
+            capHeight: 1434,
+            ascent: 1980,
+            descent: -572,
+            lineGap: 0,
+            unitsPerEm: 2048,
+          },
+          700: {
+            capHeight: 1534,
+            ascent: 1780,
+            descent: -472,
+            lineGap: 0,
+            unitsPerEm: 2148,
+          },
+        // 
+
+        // cropConfig Approach 
         cropConfig: {
           top: 8,
           bottom: 10,
@@ -15,6 +34,7 @@ const theme = createTheme({
             top: 1.2,
           },
         },
+        // 
       },
     },
   },
