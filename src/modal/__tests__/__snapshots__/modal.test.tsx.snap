@@ -86,18 +86,11 @@ exports[`Modal renders default 1`] = `
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -210,38 +203,19 @@ exports[`Modal renders default 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-4 {
   box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -249,33 +223,29 @@ exports[`Modal renders default 1`] = `
   padding: 16px 24px;
 }
 
-.emotion-5 {
+.emotion-4 {
   margin: 0;
   padding: 1px 0;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-7 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-9 {
+.emotion-7 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -309,40 +279,35 @@ exports[`Modal renders default 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #2E2E2E;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-9:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-9:disabled svg {
+.emotion-8:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -363,7 +328,7 @@ exports[`Modal renders default 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -372,7 +337,7 @@ exports[`Modal renders default 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -395,66 +360,61 @@ exports[`Modal renders default 1`] = `
       >
         <div
           class="emotion-2"
+        />
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          <p
+            class="emotion-4"
           >
-            <div
-              class="emotion-4"
-            >
-              <p
-                class="emotion-5"
-              >
-                Modal header content
-              </p>
-            </div>
-            <div
-              class="emotion-6"
-            />
-          </div>
+            Modal header content
+          </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-5"
           data-testid="dialog-content"
         >
           <p
-            class="emotion-5"
+            class="emotion-4"
           >
             Modal body content
           </p>
         </div>
-        <button
-          aria-label="close"
-          class="emotion-9"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-7"
         >
-          <div
-            class="emotion-10"
+          <button
+            aria-label="close"
+            class="emotion-8"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-12 emotion-13"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-10"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-11 emotion-12"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -552,18 +512,11 @@ exports[`Modal renders inline 1`] = `
   box-sizing: border-box;
   position: absolute;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -676,38 +629,19 @@ exports[`Modal renders inline 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-4 {
   box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -715,33 +649,29 @@ exports[`Modal renders inline 1`] = `
   padding: 16px 24px;
 }
 
-.emotion-5 {
+.emotion-4 {
   margin: 0;
   padding: 1px 0;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-7 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-9 {
+.emotion-7 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -775,40 +705,35 @@ exports[`Modal renders inline 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #2E2E2E;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-9:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-9:disabled svg {
+.emotion-8:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -829,7 +754,7 @@ exports[`Modal renders inline 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -838,7 +763,7 @@ exports[`Modal renders inline 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -861,66 +786,61 @@ exports[`Modal renders inline 1`] = `
       >
         <div
           class="emotion-2"
+        />
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          <p
+            class="emotion-4"
           >
-            <div
-              class="emotion-4"
-            >
-              <p
-                class="emotion-5"
-              >
-                Modal header content
-              </p>
-            </div>
-            <div
-              class="emotion-6"
-            />
-          </div>
+            Modal header content
+          </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-5"
           data-testid="dialog-content"
         >
           <p
-            class="emotion-5"
+            class="emotion-4"
           >
             Modal body content
           </p>
         </div>
-        <button
-          aria-label="close"
-          class="emotion-9"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-7"
         >
-          <div
-            class="emotion-10"
+          <button
+            aria-label="close"
+            class="emotion-8"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-12 emotion-13"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-10"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-11 emotion-12"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1018,18 +938,11 @@ exports[`Modal renders modal with overrides 1`] = `
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   background-color: #E6FAEB;
   box-shadow: 0px 0px 16px 14px rgba(169,183,172,0.9);
@@ -1115,60 +1028,50 @@ exports[`Modal renders modal with overrides 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
   background-color: transparent;
   border-style: none none solid none;
   border-width: 1px;
   border-color: #EF1703;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
+  box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+  padding: 0;
 }
 
 .emotion-4 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 32px;
 }
 
-.emotion-6 {
+.emotion-5 {
   margin: 0;
   padding: 1px 0;
+}
+
+.emotion-6 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
 }
 
 .emotion-7 {
@@ -1207,11 +1110,6 @@ exports[`Modal renders modal with overrides 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
 .emotion-7 svg {
@@ -1280,57 +1178,55 @@ exports[`Modal renders modal with overrides 1`] = `
       >
         <div
           class="emotion-2"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            />
-          </div>
-        </div>
+        />
         <div
-          class="emotion-5"
+          class="emotion-3"
+        />
+        <div
+          class="emotion-4"
           data-testid="dialog-content"
         >
           <p
-            class="emotion-6"
+            class="emotion-5"
           >
             Modal body content
           </p>
         </div>
-        <button
-          aria-label="close"
-          class="emotion-7"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-6"
         >
-          <div
-            class="emotion-8"
+          <button
+            aria-label="close"
+            class="emotion-7"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-9"
+              class="emotion-8"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-10 emotion-11"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-9"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-10 emotion-11"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1459,18 +1355,11 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -1583,50 +1472,32 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   height: 100%;
   overflow: hidden auto;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-5 {
   box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1634,33 +1505,29 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   padding: 16px 24px;
 }
 
-.emotion-6 {
+.emotion-5 {
   margin: 0;
   padding: 1px 0;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-10 {
+.emotion-8 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.emotion-9 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1694,40 +1561,35 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
-.emotion-10 svg {
+.emotion-9 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-10 svg {
+.emotion-9 svg {
   fill: #2E2E2E;
 }
 
-.emotion-10:hover:not(:disabled) {
+.emotion-9:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-10:active:not(:disabled) {
+.emotion-9:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-10:disabled {
+.emotion-9:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-10:disabled svg {
+.emotion-9:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1748,7 +1610,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   margin-right: calc(-8px/2);
 }
 
-.emotion-12 {
+.emotion-11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1757,7 +1619,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   margin-right: calc(8px/2);
 }
 
-.emotion-13 {
+.emotion-12 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1766,7 +1628,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   display: inline-block;
 }
 
-.emotion-15 {
+.emotion-14 {
   display: block;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -1796,69 +1658,64 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
         >
           <div
             class="emotion-3"
+          />
+          <div
+            class="emotion-4"
           >
-            <div
-              class="emotion-4"
+            <p
+              class="emotion-5"
             >
-              <div
-                class="emotion-5"
-              >
-                <p
-                  class="emotion-6"
-                >
-                  Modal header content
-                </p>
-              </div>
-              <div
-                class="emotion-7"
-              />
-            </div>
+              Modal header content
+            </p>
           </div>
           <div
-            class="emotion-8"
+            class="emotion-6"
             data-testid="dialog-content"
           >
             <p
-              class="emotion-6"
+              class="emotion-5"
             >
               Modal body content
             </p>
           </div>
-          <button
-            aria-describedby="mock-nk-1"
-            aria-label="close"
-            class="emotion-10"
-            data-testid="button"
-            style="top: 0px;"
-            type="button"
+          <div
+            class="emotion-8"
           >
-            <div
-              class="emotion-11"
+            <button
+              aria-describedby="mock-nk-1"
+              aria-label="close"
+              class="emotion-9"
+              data-testid="button"
+              type="button"
             >
               <div
-                class="emotion-12"
+                class="emotion-10"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-13 emotion-14"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  class="emotion-11"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-12 emotion-13"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </button>
+            </button>
+          </div>
           <span
-            class="emotion-15"
+            class="emotion-14"
             id="mock-nk-1"
           >
             With the next tab you will be leaving the dialog window.
@@ -1961,18 +1818,11 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -2085,38 +1935,19 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-4 {
   box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2124,28 +1955,24 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   padding: 16px 24px;
 }
 
-.emotion-5 {
+.emotion-4 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-6 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-7 {
+.emotion-5 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.emotion-6 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2179,40 +2006,35 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   fill: #2E2E2E;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-7:disabled {
+.emotion-6:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-6:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2233,7 +2055,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2242,7 +2064,7 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2266,60 +2088,55 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
       >
         <div
           class="emotion-2"
+        />
+        <div
+          class="emotion-3"
         >
           <div
-            class="emotion-3"
+            id="headerLabel"
           >
-            <div
-              class="emotion-4"
-            >
-              <div
-                id="headerLabel"
-              >
-                Overridden dialog header
-              </div>
-            </div>
-            <div
-              class="emotion-5"
-            />
+            Overridden dialog header
           </div>
         </div>
         <div
-          class="emotion-6"
+          class="emotion-4"
           data-testid="dialog-content"
         />
-        <button
-          aria-label="close"
-          class="emotion-7"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-5"
         >
-          <div
-            class="emotion-8"
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-9"
+              class="emotion-7"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-10 emotion-11"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-8"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -2417,18 +2234,11 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -2541,51 +2351,41 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
+  box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+  padding: 16px 24px;
 }
 
 .emotion-4 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-area: content;
+  overflow: hidden auto;
+  padding: 24px;
 }
 
 .emotion-5 {
+  grid-area: close;
   box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  overflow: hidden auto;
-  padding: 24px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
 }
 
 .emotion-6 {
@@ -2622,11 +2422,6 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
 .emotion-6 svg {
@@ -2709,17 +2504,12 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
       >
         <div
           class="emotion-2"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            />
-          </div>
-        </div>
+        />
         <div
-          class="emotion-5"
+          class="emotion-3"
+        />
+        <div
+          class="emotion-4"
           data-testid="dialog-content"
         >
           <div
@@ -2733,38 +2523,41 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
             Showing different styles
           </div>
         </div>
-        <button
-          aria-label="close"
-          class="emotion-6"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-5"
         >
-          <div
-            class="emotion-7"
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-8"
+              class="emotion-7"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-9 emotion-10"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-8"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -2862,18 +2655,11 @@ exports[`Modal renders with different closePosition 1`] = `
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'close header' 'content content';
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -2986,38 +2772,19 @@ exports[`Modal renders with different closePosition 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-4 {
   box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3025,33 +2792,29 @@ exports[`Modal renders with different closePosition 1`] = `
   padding: 16px 24px;
 }
 
-.emotion-5 {
+.emotion-4 {
   margin: 0;
   padding: 1px 0;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-right: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-7 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-9 {
+.emotion-7 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-right: 0;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3085,40 +2848,35 @@ exports[`Modal renders with different closePosition 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 8px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #2E2E2E;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-9:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-9:disabled svg {
+.emotion-8:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3139,7 +2897,7 @@ exports[`Modal renders with different closePosition 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3148,7 +2906,7 @@ exports[`Modal renders with different closePosition 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3171,66 +2929,61 @@ exports[`Modal renders with different closePosition 1`] = `
       >
         <div
           class="emotion-2"
+        />
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          <p
+            class="emotion-4"
           >
-            <div
-              class="emotion-4"
-            >
-              <p
-                class="emotion-5"
-              >
-                Modal header content
-              </p>
-            </div>
-            <div
-              class="emotion-6"
-            />
-          </div>
+            Modal header content
+          </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-5"
           data-testid="dialog-content"
         >
           <p
-            class="emotion-5"
+            class="emotion-4"
           >
             Modal body content
           </p>
         </div>
-        <button
-          aria-label="close"
-          class="emotion-9"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-7"
         >
-          <div
-            class="emotion-10"
+          <button
+            aria-label="close"
+            class="emotion-8"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-12 emotion-13"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-10"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-11 emotion-12"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -3328,18 +3081,11 @@ exports[`Modal renders without header 1`] = `
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -3452,56 +3198,46 @@ exports[`Modal renders without header 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
+  box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+  padding: 16px 24px;
 }
 
 .emotion-4 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-6 {
+.emotion-5 {
   margin: 0;
   padding: 1px 0;
+}
+
+.emotion-6 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
 }
 
 .emotion-7 {
@@ -3538,11 +3274,6 @@ exports[`Modal renders without header 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
 .emotion-7 svg {
@@ -3624,57 +3355,55 @@ exports[`Modal renders without header 1`] = `
       >
         <div
           class="emotion-2"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            />
-          </div>
-        </div>
+        />
         <div
-          class="emotion-5"
+          class="emotion-3"
+        />
+        <div
+          class="emotion-4"
           data-testid="dialog-content"
         >
           <p
-            class="emotion-6"
+            class="emotion-5"
           >
             Modal body content
           </p>
         </div>
-        <button
-          aria-label="close"
-          class="emotion-7"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-6"
         >
-          <div
-            class="emotion-8"
+          <button
+            aria-label="close"
+            class="emotion-7"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-9"
+              class="emotion-8"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-10 emotion-11"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-9"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-10 emotion-11"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -3724,18 +3453,11 @@ exports[`Modal renders without overlay 1`] = `
   box-sizing: border-box;
   position: fixed;
   z-index: 80;
+  display: grid;
+  grid-template-areas: 'header close' 'content content';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   pointer-events: all;
   border-radius: 0;
   background-color: #FFFFFF;
@@ -3848,38 +3570,19 @@ exports[`Modal renders without overlay 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-4 {
   box-sizing: border-box;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  grid-area: header;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3887,33 +3590,29 @@ exports[`Modal renders without overlay 1`] = `
   padding: 16px 24px;
 }
 
-.emotion-5 {
+.emotion-4 {
   margin: 0;
   padding: 1px 0;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
-  margin: 8px;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.emotion-7 {
-  box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   padding: 24px;
 }
 
-.emotion-9 {
+.emotion-7 {
+  grid-area: close;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3947,40 +3646,35 @@ exports[`Modal renders without overlay 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 8px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   fill: #2E2E2E;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #FAFAFA;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #F4F4F4;
 }
 
-.emotion-9:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: #C0C0C0;
 }
 
-.emotion-9:disabled svg {
+.emotion-8:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4001,7 +3695,7 @@ exports[`Modal renders without overlay 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4010,7 +3704,7 @@ exports[`Modal renders without overlay 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-12 {
+.emotion-11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4033,66 +3727,61 @@ exports[`Modal renders without overlay 1`] = `
       >
         <div
           class="emotion-2"
+        />
+        <div
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          <p
+            class="emotion-4"
           >
-            <div
-              class="emotion-4"
-            >
-              <p
-                class="emotion-5"
-              >
-                Modal header content
-              </p>
-            </div>
-            <div
-              class="emotion-6"
-            />
-          </div>
+            Modal header content
+          </p>
         </div>
         <div
-          class="emotion-7"
+          class="emotion-5"
           data-testid="dialog-content"
         >
           <p
-            class="emotion-5"
+            class="emotion-4"
           >
             Modal body content
           </p>
         </div>
-        <button
-          aria-label="close"
-          class="emotion-9"
-          data-testid="button"
-          style="top: 0px;"
-          type="button"
+        <div
+          class="emotion-7"
         >
-          <div
-            class="emotion-10"
+          <button
+            aria-label="close"
+            class="emotion-8"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-12 emotion-13"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="emotion-10"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  class="emotion-11 emotion-12"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>

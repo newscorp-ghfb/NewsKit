@@ -1,18 +1,38 @@
 import {MoveFocusInside} from 'react-focus-lock';
-import {IconButton} from '../icon-button';
 import {
   styled,
   getStylePreset,
   getResponsiveSpace,
-  getResponsiveSize,
   getSizingCssFromTheme,
+  css,
 } from '../utils/style';
 import {BaseDialogViewProps} from './types';
 
 type BaseDialogViewOverridesAndPathProps = Pick<
   BaseDialogViewProps,
-  'path' | 'overrides' | 'inline'
+  'path' | 'overrides' | 'inline' | 'closePosition'
 > & {$open?: boolean};
+
+const createCssGrid = ({
+  closePosition,
+}: Pick<BaseDialogViewProps, 'closePosition'>) =>
+  closePosition === 'left'
+    ? css`
+        display: grid;
+        grid-template-areas:
+          'close header'
+          'content content';
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+      `
+    : css`
+        display: grid;
+        grid-template-areas:
+          'header close'
+          'content content';
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto 1fr;
+      `;
 
 export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>`
   box-sizing: border-box;
@@ -24,28 +44,37 @@ export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>
   })}
   ${({path}) =>
     getResponsiveSpace('zIndex', `${path}.panel`, 'panel', 'zIndex')}
+  ${({closePosition}) => createCssGrid({closePosition})}  
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 `;
 
-export const StyledMoveFocusInside = styled(MoveFocusInside)`
-  display: flex;
-  flex-direction: column;
+export const StyledMoveFocusInside = styled(MoveFocusInside)<
+  Pick<BaseDialogViewProps, 'closePosition'>
+>`
   height: 100%;
   overflow: hidden auto;
+  ${({closePosition}) => createCssGrid({closePosition})};
+  // it makes this container to take full space form it parent grid
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+`;
+
+// This is empty div that sits behind header content and close button so that style-preset can be applied to it.
+export const StyledDialogHeaderBG = styled.div<BaseDialogViewOverridesAndPathProps>`
+  ${({path}) => getStylePreset(`${path}.header`, 'header')};
+  // takes the space of header and close grid area
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 `;
 
 export const StyledDialogHeader = styled.div<BaseDialogViewOverridesAndPathProps>`
   box-sizing: border-box;
-  ${({path}) => getStylePreset(`${path}.header`, 'header')}
   ${getSizingCssFromTheme('minHeight', 'sizing080')}
-  flex-shrink: 0; //fix min-height issues
-`;
-
-export const StyledDialogHeaderContent = styled.div<BaseDialogViewOverridesAndPathProps>`
-  box-sizing: border-box;
   display: flex;
+  grid-area: header;
   align-items: center;
   ${({path}) =>
     getResponsiveSpace('padding', `${path}.header`, 'header', 'spaceInset')}
@@ -53,45 +82,27 @@ export const StyledDialogHeaderContent = styled.div<BaseDialogViewOverridesAndPa
 
 export const StyledDialogContent = styled.div<BaseDialogViewOverridesAndPathProps>`
   box-sizing: border-box;
-  flex-grow: 1;
+  grid-area: content;
   overflow: hidden auto;
   ${({path}) =>
     getResponsiveSpace('padding', `${path}.content`, 'content', 'spaceInset')}
 `;
 
-// This elements is needed to fill the space behind close button which is positioned absolute
-export const StyledFillSpaceCloseButton = styled.div<
+export const StyledCloseButtonContainer = styled.div<
   BaseDialogViewOverridesAndPathProps &
     Pick<BaseDialogViewProps, 'closePosition'>
 >`
+  grid-area: close;
   box-sizing: border-box;
+  align-self: center;
+
   ${({path}) =>
     getResponsiveSpace(
-      'margin',
+      'padding',
       `${path}.closeButton`,
       'closeButton',
       'spaceInset',
-    )}
-  ${getResponsiveSize('width', 'iconButton.medium', '', 'width')}  
-  ${getResponsiveSize('height', 'iconButton.medium', '', 'height')}
+    )};
   ${({closePosition}) =>
-    closePosition === 'left' ? `margin-right: auto;` : `margin-left: auto;`}
-  flex-shrink: 0;
-`;
-
-export const StyledCloseButton = styled(IconButton)<
-  BaseDialogViewOverridesAndPathProps &
-    Pick<BaseDialogViewProps, 'closePosition'>
->`
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  ${({closePosition}) => (closePosition === 'left' ? `left: 0;` : `right: 0;`)}
-  ${({path}) =>
-    getResponsiveSpace(
-      margin => ({margin: `0 ${margin}`}),
-      `${path}.closeButton`,
-      '',
-      'spaceInset',
-    )}
+    closePosition === 'left' ? `padding-right: 0;` : `padding-left: 0;`}
 `;

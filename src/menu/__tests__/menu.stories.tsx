@@ -28,6 +28,17 @@ const myCustomTheme = compileTheme(
             iconColor: 'grey',
           },
         },
+        dividerPrimary: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.interactivePrimary030}}',
+            borderWidth: '{{borders.borderWidth010}}',
+            borderRadius: '{{borders.borderRadiusDefault}}',
+            color: '{{colors.inkBrand010}}',
+            iconColor: '{{colors.inkBrand010}}',
+          },
+        },
       },
     },
   }),
@@ -515,7 +526,7 @@ StoryMenuMenuGroupsOnlyhorizontaldividersWithinGroups.storyName =
   'menu - menu groups only (horizontal) (dividers within groups)';
 
 export const StoryMenuItemsAndGroups = () => (
-  <>
+  <ThemeProvider theme={myCustomTheme}>
     <StorybookHeading>Menu - items and groups</StorybookHeading>
     <Menu vertical aria-label={`Menu ${getSSRId()}`}>
       <MenuItem href={href}>item 1</MenuItem>
@@ -535,7 +546,7 @@ export const StoryMenuItemsAndGroups = () => (
       <MenuDivider
         overrides={{
           spaceInline: 'space020',
-          stylePreset: 'buttonOutlinedPrimary',
+          stylePreset: 'dividerPrimary',
         }}
       />
 
@@ -555,7 +566,7 @@ export const StoryMenuItemsAndGroups = () => (
       <MenuDivider
         overrides={{
           spaceInline: 'space020',
-          stylePreset: 'buttonOutlinedPrimary',
+          stylePreset: 'dividerPrimary',
         }}
       />
 
@@ -564,7 +575,7 @@ export const StoryMenuItemsAndGroups = () => (
       <MenuItem href={href}>item 6</MenuItem>
       <MenuDivider />
     </Menu>
-  </>
+  </ThemeProvider>
 );
 StoryMenuItemsAndGroups.storyName = 'menu - items and groups';
 

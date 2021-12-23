@@ -1,13 +1,42 @@
 import * as React from 'react';
 import {Headline} from '..';
+import {compileTheme, createTheme, ThemeProvider} from '../../theme';
 
 export default {
   title: 'NewsKit Light/headline',
   component: () => 'None',
 };
 
+const myCustomTheme = compileTheme(
+  createTheme({
+    name: 'my-custom-theme',
+    overrides: {
+      stylePresets: {
+        tagPrimary: {
+          base: {
+            backgroundColor: '{{colors.transparent}}',
+            borderStyle: 'solid',
+            borderColor: '{{colors.interactiveSecondary030}}',
+            borderWidth: '{{borders.borderWidth010}}',
+            color: '{{colors.inkBase}}',
+            iconColor: '{{colors.inkBase}}',
+            borderRadius: '{{borders.borderRadiusSharp}}',
+          },
+        },
+        linkInline: {
+          base: {
+            color: '{{colors.interactivePrimary030}}',
+            iconColor: '{{colors.interactivePrimary030}}',
+            textDecoration: 'underline',
+          },
+        },
+      },
+    },
+  }),
+);
+
 export const StoryHeadline = () => (
-  <>
+  <ThemeProvider theme={myCustomTheme}>
     <Headline>Headline text with no kicker</Headline>
     <br />
     <br />
@@ -44,6 +73,6 @@ export const StoryHeadline = () => (
     >
       Heading Headline
     </Headline>
-  </>
+  </ThemeProvider>
 );
 StoryHeadline.storyName = 'headline';

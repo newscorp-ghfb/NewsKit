@@ -38,9 +38,71 @@ const OverridableTestSurfaceWithNoDefault = styled.div<
   ${options => getStylePresetFromTheme(undefined, 'stylePresetToUse', options)}
 `;
 
+const iconButtonMinimalPrimary = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactivePrimary010}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactivePrimary020}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.transparent}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interactivePrimary020}}',
+  },
+};
+
+const linkInline = {
+  base: {
+    color: '{{colors.interactivePrimary030}}',
+    iconColor: '{{colors.interactivePrimary030}}',
+    textDecoration: 'underline',
+  },
+  hover: {
+    color: '{{colors.interactivePrimary040}}',
+    iconColor: '{{colors.interactivePrimary040}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactivePrimary050}}',
+    iconColor: '{{colors.interactivePrimary050}}',
+    textDecoration: 'underline',
+  },
+  visited: {
+    color: '{{colors.interactiveVisited010}}',
+    iconColor: '{{colors.interactiveVisited010}}',
+    textDecoration: 'underline',
+  },
+  'visited:hover': {
+    color: '{{colors.interactiveVisited010}}',
+    iconColor: '{{colors.interactiveVisited010}}',
+    textDecoration: 'underline',
+  },
+};
+
+const themeIconButtonMinimalPrimary = createTheme({
+  name: 'test-style-preset',
+  overrides: {
+    stylePresets: {iconButtonMinimalPrimary},
+  },
+});
+
 describe('getStylePresetFromTheme', () => {
   test('with default iconButtonMinimalPrimary style preset', () => {
-    const fragment = renderToFragmentWithTheme(TestSurface);
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      undefined,
+      themeIconButtonMinimalPrimary,
+    );
     expect(fragment).toMatchSnapshot();
   });
 
@@ -308,6 +370,7 @@ describe('getStylePresetFromTheme', () => {
         overrides: {
           stylePresets: {
             iconButtonMinimalPrimary: {
+              ...iconButtonMinimalPrimary,
               selected: {
                 backgroundColor: '#00ff00',
               },
@@ -334,6 +397,9 @@ describe('getStylePresetFromTheme', () => {
         overrides: {
           stylePresets: {
             iconButtonMinimalPrimary: {
+              base: {
+                color: '#C0C0C0',
+              },
               loading: {
                 backgroundColor: '#00ff00',
               },
@@ -357,6 +423,7 @@ describe('getStylePresetFromTheme', () => {
         overrides: {
           stylePresets: {
             linkInline: {
+              ...linkInline,
               visited: {
                 color: '#00ff00',
               },
@@ -575,6 +642,7 @@ describe('getStylePresetFromTheme', () => {
         overrides: {
           stylePresets: {
             iconButtonMinimalPrimary: {
+              ...iconButtonMinimalPrimary,
               base: {
                 iconColor: '#00ff00',
               },
@@ -590,23 +658,35 @@ describe('getStylePresetFromTheme', () => {
   });
 
   test('without background-color styles', () => {
-    const fragment = renderToFragmentWithTheme(TestSurface, {
-      omitStyles: ['backgroundColor'],
-    });
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {
+        omitStyles: ['backgroundColor'],
+      },
+      themeIconButtonMinimalPrimary,
+    );
     expect(fragment).toMatchSnapshot();
   });
 
   test('without disabled state styles', () => {
-    const fragment = renderToFragmentWithTheme(TestSurface, {
-      omitStates: ['disabled'],
-    });
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {
+        omitStates: ['disabled'],
+      },
+      themeIconButtonMinimalPrimary,
+    );
     expect(fragment).toMatchSnapshot();
   });
 
   test('with nestedCssSelector adds the nested element class to all state selectors', () => {
-    const fragment = renderToFragmentWithTheme(TestSurface, {
-      nestedCssSelector: '.nested-element-class',
-    });
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {
+        nestedCssSelector: '.nested-element-class',
+      },
+      themeIconButtonMinimalPrimary,
+    );
     expect(fragment).toMatchSnapshot();
   });
 });

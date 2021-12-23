@@ -2,6 +2,9 @@ import React from 'react';
 import {MenuContextProvider} from './context';
 import {MenuItemAlign, MenuItemSize, MenuProps} from './types';
 import {StyledMenu} from './styled';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const getAlign = (align: MenuItemAlign | undefined, vertical: boolean) => {
   if (!align) {
@@ -10,14 +13,14 @@ const getAlign = (align: MenuItemAlign | undefined, vertical: boolean) => {
   return align;
 };
 
-export const Menu: React.FC<MenuProps> = ({
+const ThemelessMenu = ({
   overrides,
   children,
   vertical = false,
   size = MenuItemSize.Medium,
   align: passedAlign,
   ...rest
-}) => {
+}: MenuProps) => {
   const align = getAlign(passedAlign, vertical);
 
   return (
@@ -35,3 +38,5 @@ export const Menu: React.FC<MenuProps> = ({
     </MenuContextProvider>
   );
 };
+
+export const Menu = withOwnTheme(ThemelessMenu)({defaults, stylePresets});

@@ -5,17 +5,15 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
 import {useTheme} from '../theme';
 import {styled} from '../utils/style';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const StyledFlag = styled(Flag)`
   ${({href, disabled}: TagProps) => href && !disabled && {cursor: 'pointer'}}
 `;
 
-export const Tag: React.FC<TagProps> = ({
-  overrides = {},
-  disabled,
-  href,
-  ...props
-}) => {
+const ThemelessTag = ({overrides = {}, disabled, href, ...props}: TagProps) => {
   const theme = useTheme();
   const {size = TagSize.Medium} = props;
 
@@ -33,3 +31,5 @@ export const Tag: React.FC<TagProps> = ({
     />
   );
 };
+
+export const Tag = withOwnTheme(ThemelessTag)({defaults, stylePresets});

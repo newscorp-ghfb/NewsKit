@@ -14,4 +14,8 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+    '/src/test/require-context.ts',
+  ],
 };

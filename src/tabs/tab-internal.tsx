@@ -11,11 +11,14 @@ export const TabInternal = React.forwardRef<
   (
     {
       children,
+      /* istanbul ignore next */
       overrides = {},
+      /* istanbul ignore next */
       size = TabSize.Medium,
       ariaLabel,
       selected,
       id,
+      /* istanbul ignore next */
       align = TabAlign.Center,
       dataTestId = 'tab',
       ...props
@@ -23,6 +26,18 @@ export const TabInternal = React.forwardRef<
     ref,
   ) => {
     const theme = useTheme();
+
+    /* istanbul ignore if */
+    if (
+      process.env.NODE_ENV !== 'production' &&
+      typeof theme.componentDefaults.tab !== 'object'
+    ) {
+      // eslint-disable-next-line no-console
+      console.error('<Tab /> component needs to be used as child of <Tabs />');
+
+      return null;
+    }
+
     const tabSettings: typeof overrides = {
       ...theme.componentDefaults.tab[size],
       ...filterOutFalsyProperties(overrides),

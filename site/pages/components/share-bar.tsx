@@ -39,7 +39,7 @@ export default (layoutProps: LayoutProps) => (
       introduction:
         'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story.',
     }}
-    componentDefaultsKey="share-bar"
+    componentDefaultsKey="shareBar"
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v0.20.1',

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
+import {ThemeProvider} from '@emotion/react';
 import {Divider} from '..';
 import {
   StorybookHeading,
@@ -9,7 +10,8 @@ import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {StackChild, AlignSelfValues} from '../../stack-child';
 import {IconFilledFacebook, IconFilledWhatsApp} from '../../icons';
-import {getSizingFromTheme} from '../../utils/style';
+import {getSizingCssFromTheme} from '../../utils/style';
+import {compileTheme, createTheme} from '../../theme';
 
 const Box = styled.div`
   display: inline-block;
@@ -27,13 +29,13 @@ const BlockWithBorder = styled(Block)`
 `;
 
 const BlockForHorizontalDivider = styled(Block)`
-  width: ${getSizingFromTheme('iconSize040')};
+  ${getSizingCssFromTheme('width', 'iconSize040')};
   border: 1px solid salmon;
 `;
 
 const IconContainer = styled(Block)`
-  width: ${getSizingFromTheme('iconSize040')};
-  height: ${getSizingFromTheme('iconSize040')};
+  ${getSizingCssFromTheme('width', 'iconSize040')};
+  ${getSizingCssFromTheme('height', 'iconSize040')};
 `;
 
 const IconContainerInline = styled(Block)`
@@ -46,8 +48,25 @@ const StackForHorizontalDivider = styled(Stack)`
 
 const InlineDividerContainer = styled(Block)`
   display: inline-block;
-  height: ${getSizingFromTheme('iconSize040')};
+  ${getSizingCssFromTheme('height', 'iconSize040')};
 `;
+
+const myCustomTheme = compileTheme(
+  createTheme({
+    name: 'my-custom-theme',
+    overrides: {
+      stylePresets: {
+        customDivider: {
+          base: {
+            borderStyle: 'solid',
+            borderColor: '{{colors.interface060}}',
+            borderWidth: '{{borders.borderWidth030}}',
+          },
+        },
+      },
+    },
+  }),
+);
 
 export default {
   title: 'NewsKit Light/divider',
@@ -155,9 +174,11 @@ export const StoryVertical = () => (
     </BlockWithBorder>
     <br />
     <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <Box>
-      <Divider vertical overrides={{stylePreset: 'buttonOutlinedPrimary'}} />
-    </Box>
+    <ThemeProvider theme={myCustomTheme}>
+      <Box>
+        <Divider vertical overrides={{stylePreset: 'customDivider'}} />
+      </Box>
+    </ThemeProvider>
   </>
 );
 StoryVertical.storyName = 'vertical';
@@ -169,10 +190,7 @@ export const StoryResponsive = () => (
       xs: default | sm: vertical | md: horizontal | xs: vertical
     </StorybookSubHeading>
     <div style={{height: 50}}>
-      <Divider
-        vertical={{sm: true, md: false, xl: true}}
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      />
+      <Divider vertical={{sm: true, md: false, xl: true}} />
     </div>
   </>
 );

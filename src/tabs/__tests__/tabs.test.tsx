@@ -5,11 +5,12 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {compileTheme, newskitLightTheme, Tab, TabSize} from '../..';
+import {compileTheme, createTheme, Tab, TabSize} from '../..';
 import {Tabs, TabsDistribution} from '..';
 import {TabAlign, TabsProps, TabsIndicatorPosition} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {KEYBOARD_ARROWS} from '../utils';
+import tabStylePresets from '../style-presets';
 
 const renderTabsDefault = (props: TabsProps) => <Tabs {...props} />;
 
@@ -44,8 +45,14 @@ const tabsWithLabelAndIcons = [
   </Tab>,
 ];
 
+const tabsTheme = createTheme({
+  name: 'tabs-theme',
+  overrides: {
+    stylePresets: tabStylePresets,
+  },
+});
 const selectedTabStyled = `color: ${
-  compileTheme(newskitLightTheme).stylePresets.tab.selected!.color
+  compileTheme(tabsTheme).stylePresets.tab.selected!.color
 }`;
 
 describe('Tabs', () => {
@@ -122,13 +129,16 @@ describe('Tabs', () => {
       size: TabSize.Large,
       overrides: {
         spaceInline: 'space050',
-        tab: {spaceInline: 'space020'},
+        tab: {
+          spaceInline: 'space020',
+        },
       },
     };
 
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
     expect(fragment).toMatchSnapshot();
   });
+
   test('renders with overrides vertical', () => {
     const props: TabsProps = {
       children: tabsWithLabelAndIcons,
@@ -141,6 +151,44 @@ describe('Tabs', () => {
     };
 
     const fragment = renderToFragmentWithTheme(renderTabsDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with overrides on Tab', () => {
+    const myCustomTheme = createTheme({
+      name: 'my-custom-tab-theme',
+      overrides: {
+        stylePresets: {
+          tabCustom: {
+            selected: {
+              borderStyle: 'solid',
+              borderColor: 'green',
+            },
+          },
+        },
+      },
+    });
+    const props: TabsProps = {
+      children: [
+        <Tab label="First tab" overrides={{stylePreset: 'tabCustom'}}>
+          First tab content
+        </Tab>,
+        <Tab label="Second tab">Second tab content</Tab>,
+      ],
+      size: TabSize.Large,
+      overrides: {
+        spaceInline: 'space050',
+        tab: {
+          spaceInline: 'space020',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(
+      renderTabsDefault,
+      props,
+      myCustomTheme,
+    );
     expect(fragment).toMatchSnapshot();
   });
 

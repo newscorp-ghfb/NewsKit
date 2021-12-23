@@ -7,6 +7,9 @@ import {StyledBaseFlag, StyledTextCropWrapper} from './styled';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const BaseFlag = React.forwardRef<
   HTMLDivElement,
@@ -43,7 +46,7 @@ const BaseFlag = React.forwardRef<
   );
 });
 
-export const Flag = React.forwardRef<
+const ThemelessFlag = React.forwardRef<
   HTMLDivElement,
   PropsWithChildren<FlagProps>
 >(({overrides = {}, ...props}, ref) => {
@@ -62,3 +65,5 @@ export const Flag = React.forwardRef<
     />
   );
 });
+
+export const Flag = withOwnTheme(ThemelessFlag)({defaults, stylePresets});

@@ -1,10 +1,11 @@
-import React, {useContext} from 'react';
-import {MenuContext} from './context';
+import React from 'react';
+import {useMenuContext} from './context';
 import {MenuItemProps} from './types';
 import {StyledButton, StyledMenuItem} from './styled';
 
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import {get} from '../utils/get';
 
 export const MenuItem: React.FC<MenuItemProps> = ({
   overrides,
@@ -12,13 +13,14 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   selected,
   ...rest
 }) => {
-  const {vertical, size, align, overrides: menuOverrides} = useContext(
-    MenuContext,
-  );
+  const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
 
   const theme = useTheme();
   const buttonOverrides: MenuItemProps['overrides'] = {
-    ...theme.componentDefaults.menuItem[vertical ? 'vertical' : 'horizontal'],
+    ...get(
+      theme.componentDefaults,
+      `menuItem.${vertical ? 'vertical' : 'horizontal'}`,
+    ),
     ...filterOutFalsyProperties(overrides),
   };
 

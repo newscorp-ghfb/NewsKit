@@ -1105,9 +1105,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   line-height: 1.4285714285714286;
   font-weight: 500;
   letter-spacing: -0.5px;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
+  color: #2E2E2E;
   margin-right: 16px;
 }
 
@@ -1128,24 +1126,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #2B4AAB;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #213A82;
-}
-
-.emotion-1:disabled {
-  background-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-1:disabled svg {
-  fill: #C0C0C0;
+  fill: #2E2E2E;
 }
 
 .emotion-2 {

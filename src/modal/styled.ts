@@ -32,7 +32,6 @@ export const StyledModalWrapper = styled.div<
 `;
 
 export const StyledModal = styled(BaseDialogView)<ModalPanelProps>`
-  display: flex;
   // adds pointer events which are removed by its parent ( StyledModalWrapper ) so that modal is interactive
   pointer-events: all;
 

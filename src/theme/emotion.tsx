@@ -14,9 +14,14 @@ export const withTheme = (_withTheme as unknown) as <P>(
 export const useTheme = (_useTheme as unknown) as () => Theme;
 
 export interface ThemeProviderProps {
-  theme: UncompiledTheme | Theme;
+  theme: UncompiledTheme | Theme | ((outerTheme: Theme) => Theme);
 }
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   theme,
   ...props
-}) => <EmotionThemeProvider {...props} theme={compileTheme(theme)} />;
+}) => (
+  <EmotionThemeProvider
+    {...props}
+    theme={typeof theme === 'function' ? theme : compileTheme(theme)}
+  />
+);

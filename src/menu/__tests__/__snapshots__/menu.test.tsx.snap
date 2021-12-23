@@ -5424,17 +5424,41 @@ exports[`MenuDivider renders horizontally 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  height: 100%;
 }
 
-.nk-menu-group+.emotion-0 {
-  margin-bottom: 24px;
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
 }
 
-.nk-menu-item+.emotion-0 {
-  margin-bottom: 8px;
+.emotion-0 li:last-of-type {
+  margin-bottom: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+}
+
+.nk-menu-group+.emotion-1 {
+  margin-bottom: 24px;
+}
+
+.nk-menu-item+.emotion-1 {
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
   border-style: solid;
   border-color: #DEDEDE;
   border-width: 1px;
@@ -5444,17 +5468,27 @@ exports[`MenuDivider renders horizontally 1`] = `
   width: 100%;
 }
 
-<li
-    aria-hidden="true"
+<nav
     class="emotion-0"
-    role="separator"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <hr
-      aria-hidden="true"
-      class="emotion-1"
-      data-testid="divider"
-    />
-  </li>
+    <ul
+      role="list"
+    >
+      <li
+        aria-hidden="true"
+        class="emotion-1"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="emotion-2"
+          data-testid="divider"
+        />
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -5462,14 +5496,6 @@ exports[`MenuDivider renders vertically with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-}
-
-.nk-menu-group+.emotion-0 {
-  margin-right: 24px;
-}
-
-.nk-menu-item+.emotion-0 {
-  margin-right: 8px;
 }
 
 .emotion-1 {
@@ -5540,6 +5566,30 @@ exports[`MenuGroup renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
+  height: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
   background-color: #2f1e9f;
   border-style: solid;
   border-color: #8074eb;
@@ -5549,29 +5599,29 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: grey;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #d8335c;
 }
 
-.emotion-0>ul {
+.emotion-1>ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-1 {
+.emotion-2 {
   box-sizing: border-box;
   margin-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.emotion-2 {
+.emotion-3 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -5582,11 +5632,11 @@ exports[`MenuGroup renders with overrides 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #535353;
 }
 
-.emotion-2::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -5594,7 +5644,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-bottom: -0.2368055555555556em;
 }
 
-.emotion-2::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -5602,12 +5652,12 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-top: -0.2368055555555556em;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   margin-bottom: 8px;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5643,54 +5693,59 @@ exports[`MenuGroup renders with overrides 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.emotion-4 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-5 svg {
   fill: #535353;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #3358CC;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-5:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #3358CC;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-5:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:selected:hover:not(:disabled) {
+.emotion-5:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
   color: #3358CC;
 }
 
-.emotion-4:selected:hover:not(:disabled) svg {
+.emotion-5:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:disabled {
+.emotion-5:disabled {
   color: #C0C0C0;
 }
 
-.emotion-4:disabled svg {
+.emotion-5:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-5 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5711,7 +5766,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5720,7 +5775,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5728,7 +5783,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-7::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -5736,7 +5791,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-7::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -5744,116 +5799,126 @@ exports[`MenuGroup renders with overrides 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-group emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <div
-      class="emotion-1"
-    >
-      <h2
-        class="emotion-2"
-        id="mock-nk-1"
-      >
-        Menu Group Title
-      </h2>
-    </div>
     <ul
-      aria-labelledby="mock-nk-1"
+      role="list"
     >
       <li
-        class="nk-menu-item emotion-3"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
+        <div
+          class="emotion-2"
         >
-          <div
-            class="emotion-5"
+          <h2
+            class="emotion-3"
+            id="mock-nk-1"
           >
-            <div
-              class="emotion-6"
-            >
-              <span
-                class="emotion-7"
-              >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-3"
-      >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
+            Menu Group Title
+          </h2>
+        </div>
+        <ul
+          aria-labelledby="mock-nk-1"
         >
-          <div
-            class="emotion-5"
+          <li
+            class="nk-menu-item emotion-4"
           >
-            <div
-              class="emotion-6"
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-7"
+              <div
+                class="emotion-6"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-3"
-      >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-5"
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
           >
-            <div
-              class="emotion-6"
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-7"
+              <div
+                class="emotion-6"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-3"
-      >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-5"
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
           >
-            <div
-              class="emotion-6"
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-7"
+              <div
+                class="emotion-6"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
+          >
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
-  </li>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -5861,7 +5926,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-bottom: 24px;
+  height: 100%;
 }
 
 .emotion-0>ul {
@@ -5869,6 +5934,18 @@ exports[`MenuGroup renders with title as a component 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-bottom: 0;
 }
 
 .emotion-1 {
@@ -5876,7 +5953,19 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5885,17 +5974,17 @@ exports[`MenuGroup renders with title as a component 1`] = `
   display: inline-block;
 }
 
-.emotion-2.emotion-2 {
+.emotion-3.emotion-3 {
   width: 16px;
   height: 16px;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-sizing: border-box;
   margin-bottom: 8px;
 }
 
-.emotion-7 {
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5931,54 +6020,59 @@ exports[`MenuGroup renders with title as a component 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.emotion-7 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-8 svg {
   fill: #535353;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #3358CC;
 }
 
-.emotion-7:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #3358CC;
 }
 
-.emotion-7:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-7:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
   color: #3358CC;
 }
 
-.emotion-7:selected:hover:not(:disabled) svg {
+.emotion-8:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-7:disabled {
+.emotion-8:disabled {
   color: #C0C0C0;
 }
 
-.emotion-7:disabled svg {
+.emotion-8:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5999,7 +6093,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6008,7 +6102,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6016,7 +6110,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-10::before {
+.emotion-11::before {
   content: '';
   display: block;
   height: 0;
@@ -6024,7 +6118,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-10::after {
+.emotion-11::after {
   content: '';
   display: block;
   height: 0;
@@ -6032,145 +6126,155 @@ exports[`MenuGroup renders with title as a component 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-group emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <div
-      class="emotion-1"
-    >
-      <svg
-        aria-hidden="true"
-        class="emotion-2 emotion-3"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-        />
-      </svg>
-      <span>
-         Menu Group Title Custom Component 
-      </span>
-      <svg
-        aria-hidden="true"
-        class="emotion-2 emotion-3"
-        fill="currentColor"
-        focusable="false"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-        />
-      </svg>
-    </div>
     <ul
-      aria-labelledby="mock-nk-1"
+      role="list"
     >
       <li
-        class="nk-menu-item emotion-6"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-7"
-          data-testid="buttonLink"
-          href="http://"
+        <div
+          class="emotion-2"
         >
-          <div
-            class="emotion-8"
+          <svg
+            aria-hidden="true"
+            class="emotion-3 emotion-4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              class="emotion-9"
-            >
-              <span
-                class="emotion-10"
-              >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-6"
-      >
-        <a
-          class="emotion-7"
-          data-testid="buttonLink"
-          href="http://"
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
+          <span>
+             Menu Group Title Custom Component 
+          </span>
+          <svg
+            aria-hidden="true"
+            class="emotion-3 emotion-4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
+        </div>
+        <ul
+          aria-labelledby="mock-nk-1"
         >
-          <div
-            class="emotion-8"
+          <li
+            class="nk-menu-item emotion-7"
           >
-            <div
-              class="emotion-9"
+            <a
+              class="emotion-8"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-10"
+              <div
+                class="emotion-9"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-6"
-      >
-        <a
-          class="emotion-7"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-8"
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-7"
           >
-            <div
-              class="emotion-9"
+            <a
+              class="emotion-8"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-10"
+              <div
+                class="emotion-9"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-6"
-      >
-        <a
-          class="emotion-7"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-8"
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-7"
           >
-            <div
-              class="emotion-9"
+            <a
+              class="emotion-8"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-10"
+              <div
+                class="emotion-9"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-7"
+          >
+            <a
+              class="emotion-8"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <span
+                    class="emotion-11"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
-  </li>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -6178,7 +6282,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-bottom: 24px;
+  height: 100%;
 }
 
 .emotion-0>ul {
@@ -6186,6 +6290,18 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-bottom: 0;
 }
 
 .emotion-1 {
@@ -6193,7 +6309,19 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-2 {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.emotion-3 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -6204,11 +6332,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #535353;
 }
 
-.emotion-2::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -6216,7 +6344,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: -0.28125em;
 }
 
-.emotion-2::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -6224,12 +6352,12 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-top: -0.28125em;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   margin-bottom: 8px;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6265,54 +6393,59 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, .5, 1);
   cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.emotion-4 svg {
+.emotion-5 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-5 svg {
   fill: #535353;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   background-color: #E0E7FF;
   color: #3358CC;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-5:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   background-color: #AEBFFF;
   color: #3358CC;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-5:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:selected:hover:not(:disabled) {
+.emotion-5:selected:hover:not(:disabled) {
   background-color: transparent;
   border-color: #3358CC;
   color: #3358CC;
 }
 
-.emotion-4:selected:hover:not(:disabled) svg {
+.emotion-5:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-4:disabled {
+.emotion-5:disabled {
   color: #C0C0C0;
 }
 
-.emotion-4:disabled svg {
+.emotion-5:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-5 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6333,7 +6466,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6342,7 +6475,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6350,7 +6483,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-7::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -6358,7 +6491,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-7::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -6366,116 +6499,126 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-group emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <div
-      class="emotion-1"
-    >
-      <h2
-        class="emotion-2"
-        id="mock-nk-1"
-      >
-        Menu Group Title
-      </h2>
-    </div>
     <ul
-      aria-labelledby="mock-nk-1"
+      role="list"
     >
       <li
-        class="nk-menu-item emotion-3"
+        class="nk-menu-group emotion-1"
       >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
+        <div
+          class="emotion-2"
         >
-          <div
-            class="emotion-5"
+          <h2
+            class="emotion-3"
+            id="mock-nk-1"
           >
-            <div
-              class="emotion-6"
-            >
-              <span
-                class="emotion-7"
-              >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-3"
-      >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
+            Menu Group Title
+          </h2>
+        </div>
+        <ul
+          aria-labelledby="mock-nk-1"
         >
-          <div
-            class="emotion-5"
+          <li
+            class="nk-menu-item emotion-4"
           >
-            <div
-              class="emotion-6"
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-7"
+              <div
+                class="emotion-6"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-3"
-      >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-5"
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
           >
-            <div
-              class="emotion-6"
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-7"
+              <div
+                class="emotion-6"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-3"
-      >
-        <a
-          class="emotion-4"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-5"
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
           >
-            <div
-              class="emotion-6"
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
             >
-              <span
-                class="emotion-7"
+              <div
+                class="emotion-6"
               >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
+          >
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
-  </li>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -6483,7 +6626,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  height: 100%;
 }
 
 .emotion-0>ul {
@@ -6495,6 +6638,355 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.emotion-1>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.28125em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.28125em;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #535353;
+  margin: 0;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  cursor: pointer;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-5 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 svg {
+  fill: #535353;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #E0E7FF;
+  color: #3358CC;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #AEBFFF;
+  color: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-5:disabled svg {
+  fill: #C0C0C0;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-8 {
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.3955357142857143em;
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3955357142857143em;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-group emotion-1"
+      >
+        <div
+          class="emotion-2"
+        >
+          <h2
+            class="emotion-3"
+            id="mock-nk-1"
+          >
+            Menu Group Title
+          </h2>
+        </div>
+        <ul
+          aria-labelledby="mock-nk-1"
+        >
+          <li
+            class="nk-menu-item emotion-4"
+          >
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
+          >
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
+          >
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-4"
+          >
+            <a
+              class="emotion-5"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <div
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <span
+                    class="emotion-8"
+                  >
+                    Menu item
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`MenuItem renders in Large size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
@@ -6638,79 +7130,14 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-group emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <ul>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item emotion-1"
-      >
-        <a
-          class="emotion-2"
-          data-testid="buttonLink"
-          href="http://"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            >
-              <span
-                class="emotion-5"
-              >
-                Menu item
-              </span>
-            </div>
-          </div>
-        </a>
-      </li>
+    <ul
+      role="list"
+    >
       <li
         class="nk-menu-item emotion-1"
       >
@@ -6735,176 +7162,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
         </a>
       </li>
     </ul>
-  </li>
-</DocumentFragment>
-`;
-
-exports[`MenuItem renders in Large size 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  margin-right: 8px;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  width: 100%;
-  padding: 12px 16px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #535353;
-  margin: 0;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  cursor: pointer;
-}
-
-.emotion-1 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-1 svg {
-  fill: #535353;
-}
-
-.emotion-1:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
-}
-
-.emotion-1:hover:not(:disabled) svg {
-  fill: #2E2E2E;
-}
-
-.emotion-1:active:not(:disabled) {
-  border-color: #2B4AAB;
-  color: #0A0A0A;
-}
-
-.emotion-1:active:not(:disabled) svg {
-  fill: #0A0A0A;
-}
-
-.emotion-1:selected:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #2E2E2E;
-}
-
-.emotion-1:selected:hover:not(:disabled) svg {
-  fill: #2E2E2E;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1:disabled svg {
-  fill: #C0C0C0;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-4 {
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-}
-
-.emotion-4::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.3955357142857143em;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3955357142857143em;
-}
-
-<li
-    class="nk-menu-item emotion-0"
-  >
-    <a
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-3"
-        >
-          <span
-            class="emotion-4"
-          >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -6912,10 +7170,31 @@ exports[`MenuItem renders in Medium size 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6953,51 +7232,51 @@ exports[`MenuItem renders in Medium size 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #2B4AAB;
   color: #0A0A0A;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
-.emotion-1:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:selected:hover:not(:disabled) svg {
+.emotion-2:selected:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
-.emotion-1:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7018,7 +7297,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7027,7 +7306,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7035,7 +7314,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-4::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -7043,7 +7322,7 @@ exports[`MenuItem renders in Medium size 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-4::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -7051,29 +7330,39 @@ exports[`MenuItem renders in Medium size 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-item emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <a
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
+    <ul
+      role="list"
     >
-      <div
-        class="emotion-2"
+      <li
+        class="nk-menu-item emotion-1"
       >
-        <div
-          class="emotion-3"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <span
-            class="emotion-4"
+          <div
+            class="emotion-3"
           >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -7081,10 +7370,31 @@ exports[`MenuItem renders in Small size 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7122,51 +7432,51 @@ exports[`MenuItem renders in Small size 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #2B4AAB;
   color: #0A0A0A;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
-.emotion-1:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:selected:hover:not(:disabled) svg {
+.emotion-2:selected:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
-.emotion-1:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7187,7 +7497,7 @@ exports[`MenuItem renders in Small size 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7196,7 +7506,7 @@ exports[`MenuItem renders in Small size 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7204,7 +7514,7 @@ exports[`MenuItem renders in Small size 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-4::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -7212,7 +7522,7 @@ exports[`MenuItem renders in Small size 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-4::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -7220,29 +7530,39 @@ exports[`MenuItem renders in Small size 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-item emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <a
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
+    <ul
+      role="list"
     >
-      <div
-        class="emotion-2"
+      <li
+        class="nk-menu-item emotion-1"
       >
-        <div
-          class="emotion-3"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <span
-            class="emotion-4"
+          <div
+            class="emotion-3"
           >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -7250,10 +7570,31 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7291,51 +7632,51 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #2B4AAB;
   color: #0A0A0A;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
-.emotion-1:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:selected:hover:not(:disabled) svg {
+.emotion-2:selected:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
-.emotion-1:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7356,7 +7697,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7365,7 +7706,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7373,7 +7714,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-4::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -7381,7 +7722,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-4::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -7389,30 +7730,40 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-item emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <a
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
-      target="_blank"
+    <ul
+      role="list"
     >
-      <div
-        class="emotion-2"
+      <li
+        class="nk-menu-item emotion-1"
       >
-        <div
-          class="emotion-3"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+          target="_blank"
         >
-          <span
-            class="emotion-4"
+          <div
+            class="emotion-3"
           >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -7420,10 +7771,31 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7466,64 +7838,64 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   color: #2E2E2E;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #2B4AAB;
   color: #0A0A0A;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
-.emotion-1:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:selected:hover:not(:disabled) svg {
+.emotion-2:selected:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
-.emotion-1:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7544,7 +7916,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7553,7 +7925,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7562,7 +7934,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7570,7 +7942,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-7::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -7578,7 +7950,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-7::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -7586,50 +7958,60 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-item emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <a
-      aria-current="page"
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
+    <ul
+      role="list"
     >
-      <div
-        class="emotion-2"
+      <li
+        class="nk-menu-item emotion-1"
       >
-        <div
-          class="emotion-3"
+        <a
+          aria-current="page"
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="emotion-3"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-            />
-          </svg>
-        </div>
-        <div
-          class="emotion-3"
-        >
-          <span
-            class="emotion-7"
-          >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+            <div
+              class="emotion-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-8"
+              >
+                Menu item
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -7637,10 +8019,31 @@ exports[`MenuItem renders with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7678,51 +8081,51 @@ exports[`MenuItem renders with default props 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #2B4AAB;
   color: #0A0A0A;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
-.emotion-1:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:selected:hover:not(:disabled) svg {
+.emotion-2:selected:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
-.emotion-1:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7743,7 +8146,7 @@ exports[`MenuItem renders with default props 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7752,7 +8155,7 @@ exports[`MenuItem renders with default props 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7760,7 +8163,7 @@ exports[`MenuItem renders with default props 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-4::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -7768,7 +8171,7 @@ exports[`MenuItem renders with default props 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-4::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -7776,29 +8179,39 @@ exports[`MenuItem renders with default props 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-item emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <a
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
+    <ul
+      role="list"
     >
-      <div
-        class="emotion-2"
+      <li
+        class="nk-menu-item emotion-1"
       >
-        <div
-          class="emotion-3"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <span
-            class="emotion-4"
+          <div
+            class="emotion-3"
           >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -7806,10 +8219,31 @@ exports[`MenuItem renders with icon 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7847,51 +8281,51 @@ exports[`MenuItem renders with icon 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: #535353;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   border-color: #2B4AAB;
   color: #0A0A0A;
 }
 
-.emotion-1:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #0A0A0A;
 }
 
-.emotion-1:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   border-color: #3358CC;
   color: #2E2E2E;
 }
 
-.emotion-1:selected:hover:not(:disabled) svg {
+.emotion-2:selected:hover:not(:disabled) svg {
   fill: #2E2E2E;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #C0C0C0;
 }
 
-.emotion-1:disabled svg {
+.emotion-2:disabled svg {
   fill: #C0C0C0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7912,7 +8346,7 @@ exports[`MenuItem renders with icon 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7921,7 +8355,7 @@ exports[`MenuItem renders with icon 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7930,7 +8364,7 @@ exports[`MenuItem renders with icon 1`] = `
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7938,7 +8372,7 @@ exports[`MenuItem renders with icon 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-7::before {
+.emotion-8::before {
   content: '';
   display: block;
   height: 0;
@@ -7946,7 +8380,7 @@ exports[`MenuItem renders with icon 1`] = `
   margin-bottom: -0.3955357142857143em;
 }
 
-.emotion-7::after {
+.emotion-8::after {
   content: '';
   display: block;
   height: 0;
@@ -7954,49 +8388,59 @@ exports[`MenuItem renders with icon 1`] = `
   margin-top: -0.3955357142857143em;
 }
 
-<li
-    class="nk-menu-item emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <a
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
+    <ul
+      role="list"
     >
-      <div
-        class="emotion-2"
+      <li
+        class="nk-menu-item emotion-1"
       >
-        <div
-          class="emotion-3"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <svg
-            aria-hidden="true"
-            class="emotion-4 emotion-5"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="emotion-3"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-            />
-          </svg>
-        </div>
-        <div
-          class="emotion-3"
-        >
-          <span
-            class="emotion-7"
-          >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+            <div
+              class="emotion-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-5 emotion-6"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-8"
+              >
+                Menu item
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
 
@@ -8004,10 +8448,31 @@ exports[`MenuItem renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
-  margin-right: 8px;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
 }
 
 .emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -8045,16 +8510,16 @@ exports[`MenuItem renders with overrides 1`] = `
   cursor: pointer;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-1 svg {
+.emotion-2 svg {
   fill: grey;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8075,7 +8540,7 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-right: calc(-12px/2);
 }
 
-.emotion-3 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8084,7 +8549,7 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-right: calc(12px/2);
 }
 
-.emotion-4 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -8092,7 +8557,7 @@ exports[`MenuItem renders with overrides 1`] = `
   letter-spacing: -0.5px;
 }
 
-.emotion-4::before {
+.emotion-5::before {
   content: '';
   display: block;
   height: 0;
@@ -8100,7 +8565,7 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-bottom: -0.43125em;
 }
 
-.emotion-4::after {
+.emotion-5::after {
   content: '';
   display: block;
   height: 0;
@@ -8108,28 +8573,38 @@ exports[`MenuItem renders with overrides 1`] = `
   margin-top: -0.43125em;
 }
 
-<li
-    class="nk-menu-item emotion-0"
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <a
-      class="emotion-1"
-      data-testid="buttonLink"
-      href="http://"
+    <ul
+      role="list"
     >
-      <div
-        class="emotion-2"
+      <li
+        class="nk-menu-item emotion-1"
       >
-        <div
-          class="emotion-3"
+        <a
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
         >
-          <span
-            class="emotion-4"
+          <div
+            class="emotion-3"
           >
-            Menu item
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
+            <div
+              class="emotion-4"
+            >
+              <span
+                class="emotion-5"
+              >
+                Menu item
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;

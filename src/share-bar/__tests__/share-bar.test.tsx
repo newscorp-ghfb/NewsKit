@@ -128,7 +128,7 @@ describe('ShareBar', () => {
       label: 'Share',
       overrides: {
         label: {
-          stylePreset: 'buttonSolidPrimary',
+          stylePreset: 'inkBase',
         },
       },
     } as ShareBarProps);

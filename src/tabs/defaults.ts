@@ -1,0 +1,43 @@
+export default {
+  tab: {
+    small: {
+      stylePreset: 'tab',
+      typographyPreset: 'utilityButton010',
+      spaceInset: 'spaceInsetSquish020',
+      minHeight: 'sizing060',
+      iconSize: 'iconSize010',
+      spaceInline: 'space020',
+    },
+    medium: {
+      stylePreset: 'tab',
+      typographyPreset: 'utilityButton020',
+      spaceInset: 'spaceInsetSquish030',
+      minHeight: 'sizing080',
+      iconSize: 'iconSize020',
+      spaceInline: 'space020',
+    },
+    large: {
+      stylePreset: 'tab',
+      typographyPreset: 'utilityButton030',
+      spaceInset: 'spaceInsetSquish030',
+      minHeight: 'sizing090',
+      iconSize: 'iconSize030',
+      spaceInline: 'space020',
+    },
+  },
+  tabs: {
+    spaceInline: 'space020',
+    selectionIndicator: {
+      track: {
+        stylePreset: 'tabsBarTrack',
+        weight: 'borderWidth020',
+      },
+      indicator: {
+        stylePreset: 'tabsBarIndicator',
+        weight: 'borderWidth020',
+        motionDuration: 'motionDuration030',
+        motionTiming: 'motionTimingEaseInAndOut',
+      },
+    },
+  },
+};

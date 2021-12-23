@@ -1,30 +1,22 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {BaseDialogViewProps} from './types';
 import {
   StyledDialogPanel,
   StyledDialogContent,
   StyledDialogHeader,
-  StyledDialogHeaderContent,
-  StyledFillSpaceCloseButton,
-  StyledCloseButton,
+  StyledDialogHeaderBG,
   StyledMoveFocusInside,
+  StyledCloseButtonContainer,
 } from './styled';
-import {Stack} from '../stack';
 import {IconFilledClose} from '../icons';
 import {ButtonSize} from '../button';
-import {useResizeObserver} from '../utils/hooks/use-resize-observer';
 import {deepMerge} from '../utils/deep-merge';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {BreakpointKeys, useTheme} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only';
 import {useReactKeys} from '../utils/hooks';
-
-/* istanbul ignore next */
-const centerCloseButton = (top: number) => ({
-  top: top / 2,
-  transform: top !== 0 ? `translateY(-50%)` : undefined,
-});
+import {IconButton} from '../icon-button';
 
 export const BaseDialogView = React.forwardRef<
   HTMLDivElement,
@@ -48,9 +40,6 @@ export const BaseDialogView = React.forwardRef<
     },
     panelRef,
   ) => {
-    const headerRef = useRef<HTMLDivElement>(null);
-    const [, headerHeight] = useResizeObserver(headerRef);
-
     const [listDialogItemNotification] = useReactKeys(1);
 
     const theme = useTheme();
@@ -79,25 +68,13 @@ export const BaseDialogView = React.forwardRef<
         path={path}
         inline={inline}
         $open={open}
+        closePosition={closePosition}
         {...props}
       >
-        <MoveFocusInsideWhenFocusTrapDisabled>
-          <StyledDialogHeader overrides={overrides} ref={headerRef} path={path}>
-            <Stack
-              flow="horizontal-center"
-              flowReverse={closePosition === 'left'}
-            >
-              {header && (
-                <StyledDialogHeaderContent path={path}>
-                  {header}
-                </StyledDialogHeaderContent>
-              )}
-              <StyledFillSpaceCloseButton
-                path={path}
-                overrides={overrides}
-                closePosition={closePosition}
-              />
-            </Stack>
+        <MoveFocusInsideWhenFocusTrapDisabled closePosition={closePosition}>
+          <StyledDialogHeaderBG overrides={overrides} path={path} />
+          <StyledDialogHeader overrides={overrides} path={path}>
+            {header}
           </StyledDialogHeader>
           <StyledDialogContent
             data-testid="dialog-content"
@@ -106,22 +83,23 @@ export const BaseDialogView = React.forwardRef<
           >
             {children}
           </StyledDialogContent>
-          <StyledCloseButton
+          <StyledCloseButtonContainer
             path={path}
+            overrides={overrides}
             closePosition={closePosition}
-            style={{
-              ...centerCloseButton(headerHeight),
-            }}
-            aria-label="close"
-            aria-describedby={
-              disableFocusTrap ? listDialogItemNotification : undefined
-            }
-            onClick={handleCloseButtonClick}
-            overrides={closeButtonOverrides}
-            size={ButtonSize.Medium}
           >
-            <IconFilledClose />
-          </StyledCloseButton>
+            <IconButton
+              aria-label="close"
+              aria-describedby={
+                disableFocusTrap ? listDialogItemNotification : undefined
+              }
+              onClick={handleCloseButtonClick}
+              overrides={closeButtonOverrides}
+              size={ButtonSize.Medium}
+            >
+              <IconFilledClose />
+            </IconButton>
+          </StyledCloseButtonContainer>
           {disableFocusTrap && (
             <ScreenReaderOnly id={listDialogItemNotification}>
               With the next tab you will be leaving the dialog window.

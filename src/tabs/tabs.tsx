@@ -38,6 +38,9 @@ import {Scroll, ScrollSnapAlignment} from '../scroll';
 import {getComponentOverrides} from '../utils/overrides';
 import {withDefaultProps} from '../utils';
 import {Divider} from '../divider';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 /* istanbul ignore next */
 export const Tab: React.FC<TabProps> = () => <></>;
@@ -64,7 +67,7 @@ const DefaultScroll = withDefaultProps(
   'tabs.scroll',
 );
 
-export const Tabs: React.FC<TabsProps> = ({
+const ThemelessTabs: React.FC<TabsProps> = ({
   children,
   overrides = {},
   size = TabSize.Medium,
@@ -372,3 +375,5 @@ export const Tabs: React.FC<TabsProps> = ({
     </StyledTabGroup>
   );
 };
+
+export const Tabs = withOwnTheme(ThemelessTabs)({defaults, stylePresets});

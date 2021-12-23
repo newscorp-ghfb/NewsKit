@@ -1,5 +1,5 @@
-import React, {useContext} from 'react';
-import {MenuContext} from './context';
+import React from 'react';
+import {useMenuContext} from './context';
 import {MenuGroupProps} from './types';
 import {StyledMenuGroup, StyledMenuGroupTitle} from './styled';
 import {TextBlock} from '../text-block';
@@ -51,7 +51,7 @@ export const MenuGroup: React.FC<MenuGroupProps> = ({
   ...restProps
 }) => {
   const theme = useTheme();
-  const {vertical} = useContext(MenuContext);
+  const {vertical} = useMenuContext();
   const {aria, rest} = splitAriaProps(restProps);
   const titleID = useReactKeys(1)[0];
 

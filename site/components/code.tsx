@@ -9,6 +9,7 @@ import {
   getBorderCssFromTheme,
 } from 'newskit';
 import {generateCodeHighlighterTheme} from './code-highlighter-theme';
+import {toKebabCase} from '../utils/to-kabab-case';
 
 interface CodeProps extends HTMLAttributes<HTMLDivElement> {
   children: string;
@@ -89,16 +90,33 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({
 export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresetsProps> = ({
   componentName,
 }) => {
-  if (componentName) {
-    const presets = newskitLightTheme.componentDefaults[componentName];
-    if (presets) {
-      const defaultPresetsExample = JSON.stringify(presets, null, 2).replace(
-        /"([^"]+)":/g,
-        '$1:',
-      );
-      return <Code>{defaultPresetsExample}</Code>;
+  const [codeExample, setCodeExample] = useState('');
+
+  useEffect(() => {
+    const defaultsFromTheme =
+      newskitLightTheme.componentDefaults[componentName];
+    if (defaultsFromTheme) {
+      setCodeExample(defaultsFromTheme);
+    } else {
+      // dynamically load componentDefaults from newskit
+      // this will become default behavior once all component have own theme
+      const dynamicallyImportDefaults = async () => {
+        const kebabComponentName = toKebabCase(componentName);
+        const code = (await import(`newskit/${kebabComponentName}/defaults`))
+          .default;
+
+        setCodeExample(code);
+      };
+      dynamicallyImportDefaults();
     }
-    return <p>An error occurred loading this code example.</p>;
+  }, [componentName, setCodeExample]);
+
+  if (componentName && codeExample) {
+    const defaultPresetsExample = JSON.stringify(codeExample, null, 2).replace(
+      /"([^"]+)":/g,
+      '$1:',
+    );
+    return <Code>{defaultPresetsExample}</Code>;
   }
   return <p>An error occurred loading this code example.</p>;
 };

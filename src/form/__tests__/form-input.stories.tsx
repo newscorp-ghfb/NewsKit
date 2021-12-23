@@ -71,6 +71,7 @@ export const StoryFormField = () => (
         <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
       </FormInput>
       <StorybookSubHeading>Invalid State</StorybookSubHeading>
+
       <FormInput
         state="invalid"
         name="username-invalid"
@@ -111,6 +112,7 @@ export const StoryFormField = () => (
         />
         <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
       </FormInput>
+
       <FormInput
         name="username-default"
         rules={{

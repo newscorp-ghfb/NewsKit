@@ -6,8 +6,11 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
 import {IndeterminateProgressIndicator} from '../icons/filled/custom/indeterminate-progress-indicator';
 import {useInstrumentation, EventTrigger} from '../instrumentation';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
-export const Button = React.forwardRef<
+const ThemelessButton = React.forwardRef<
   HTMLButtonElement | HTMLAnchorElement,
   ButtonOrButtonLinkProps
 >((props, ref) => {
@@ -97,3 +100,5 @@ export const Button = React.forwardRef<
     </StyledFlag>
   );
 });
+
+export const Button = withOwnTheme(ThemelessButton)({defaults, stylePresets});

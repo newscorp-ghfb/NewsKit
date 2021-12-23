@@ -165,44 +165,7 @@ export const componentDefaults = {
       },
     },
   },
-  button: {
-    small: {
-      typographyPreset: 'utilityButton010',
-      stylePreset: 'buttonSolidPrimary',
-      spaceInset: 'spaceInsetSquish020',
-      minWidth: 'sizing090',
-      minHeight: 'sizing060',
-      iconSize: 'iconSize010',
-      spaceInline: 'space020',
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPrimary',
-      },
-    },
-    medium: {
-      typographyPreset: 'utilityButton020',
-      stylePreset: 'buttonSolidPrimary',
-      spaceInset: 'spaceInsetSquish030',
-      minWidth: 'sizing100',
-      minHeight: 'sizing080',
-      iconSize: 'iconSize020',
-      spaceInline: 'space020',
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPrimary',
-      },
-    },
-    large: {
-      typographyPreset: 'utilityButton030',
-      stylePreset: 'buttonSolidPrimary',
-      spaceInset: 'spaceInsetSquish040',
-      minWidth: 'sizing110',
-      minHeight: 'sizing090',
-      iconSize: 'iconSize030',
-      spaceInline: 'space020',
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPrimary',
-      },
-    },
-  },
+
   byline: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
@@ -385,32 +348,6 @@ export const componentDefaults = {
       spaceInset: 'spaceInset020',
     },
   },
-  flag: {
-    small: {
-      typographyPreset: 'utilityLabel010',
-      stylePreset: 'flagSolidPrimary',
-      spaceInset: 'spaceInsetSquish010',
-      minHeight: 'sizing050',
-      iconSize: 'iconSize010',
-      spaceInline: 'space010',
-    },
-    medium: {
-      typographyPreset: 'utilityLabel020',
-      stylePreset: 'flagSolidPrimary',
-      spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing060',
-      iconSize: 'iconSize010',
-      spaceInline: 'space010',
-    },
-    large: {
-      typographyPreset: 'utilityLabel030',
-      stylePreset: 'flagSolidPrimary',
-      spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing070',
-      iconSize: 'iconSize010',
-      spaceInline: 'space010',
-    },
-  },
   grid: {
     maxWidth: '1920px',
     columns: 12,
@@ -493,35 +430,6 @@ export const componentDefaults = {
     stylePreset: 'inkContrast',
     typographyPreset: 'editorialSubheadline010',
   },
-  iconButton: {
-    small: {
-      stylePreset: 'iconButtonSolidPrimary',
-      spaceInset: 'spaceInset020',
-      width: 'sizing060',
-      height: 'sizing060',
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPrimary',
-      },
-    },
-    medium: {
-      stylePreset: 'iconButtonSolidPrimary',
-      spaceInset: 'spaceInset030',
-      width: 'sizing080',
-      height: 'sizing080',
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPrimary',
-      },
-    },
-    large: {
-      stylePreset: 'iconButtonSolidPrimary',
-      spaceInset: 'spaceInset040',
-      width: 'sizing090',
-      height: 'sizing090',
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPrimary',
-      },
-    },
-  },
   icons: {
     stylePreset: 'iconDefault',
   },
@@ -587,31 +495,6 @@ export const componentDefaults = {
   linkStandalone: {
     stylePreset: 'linkStandalone',
     typographyPreset: 'utilityLabel020',
-  },
-  menu: {
-    spaceInline: 'space020',
-  },
-  menuGroup: {
-    spaceInline: 'space050',
-    title: {
-      typographyPreset: 'utilityHeading030',
-      stylePreset: 'inkSubtle',
-      spaceInline: 'space050',
-    },
-  },
-  menuItem: {
-    horizontal: {
-      minHeight: 'sizing080',
-      stylePreset: 'menuItemHorizontal',
-      spaceInline: 'space020',
-      spaceInset: 'spaceInsetSquish030',
-    },
-    vertical: {
-      minHeight: 'sizing080',
-      stylePreset: 'menuItemVertical',
-      spaceInline: 'space020',
-      spaceInset: 'spaceInsetSquish030',
-    },
   },
   modal: {
     overlay: {
@@ -920,73 +803,7 @@ export const componentDefaults = {
       stylePreset: 'inkContrast',
     },
   },
-  tab: {
-    small: {
-      stylePreset: 'tab',
-      typographyPreset: 'utilityButton010',
-      spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing060',
-      iconSize: 'iconSize010',
-      spaceInline: 'space020',
-    },
-    medium: {
-      stylePreset: 'tab',
-      typographyPreset: 'utilityButton020',
-      spaceInset: 'spaceInsetSquish030',
-      minHeight: 'sizing080',
-      iconSize: 'iconSize020',
-      spaceInline: 'space020',
-    },
-    large: {
-      stylePreset: 'tab',
-      typographyPreset: 'utilityButton030',
-      spaceInset: 'spaceInsetSquish030',
-      minHeight: 'sizing090',
-      iconSize: 'iconSize030',
-      spaceInline: 'space020',
-    },
-  },
-  tabs: {
-    spaceInline: 'space020',
-    selectionIndicator: {
-      track: {
-        stylePreset: 'tabsBarTrack',
-        weight: 'borderWidth020',
-      },
-      indicator: {
-        stylePreset: 'tabsBarIndicator',
-        weight: 'borderWidth020',
-        motionDuration: 'motionDuration030',
-        motionTiming: 'motionTimingEaseInAndOut',
-      },
-    },
-  },
-  tag: {
-    small: {
-      typographyPreset: 'utilityButton010',
-      stylePreset: 'tagPrimary',
-      spaceInset: 'spaceInsetSquish010',
-      minHeight: 'sizing050',
-      iconSize: 'iconSize010',
-      spaceInline: 'space010',
-    },
-    medium: {
-      typographyPreset: 'utilityButton020',
-      stylePreset: 'tagPrimary',
-      spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing060',
-      iconSize: 'iconSize010',
-      spaceInline: 'space010',
-    },
-    large: {
-      typographyPreset: 'utilityButton030',
-      stylePreset: 'tagPrimary',
-      spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing070',
-      iconSize: 'iconSize020',
-      spaceInline: 'space010',
-    },
-  },
+
   textField: {
     small: {
       stylePreset: 'inputField',

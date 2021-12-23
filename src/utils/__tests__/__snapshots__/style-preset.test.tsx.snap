@@ -728,13 +728,8 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 exports[`getStylePresetFromTheme with disabled and loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #FF0000;
-  border-radius: 50%;
   color: #C0C0C0;
-}
-
-.emotion-0 svg {
-  fill: #C0C0C0;
+  background-color: #FF0000;
 }
 
 <div
@@ -922,14 +917,10 @@ exports[`getStylePresetFromTheme with invalid:hover pseudoState 1`] = `
 exports[`getStylePresetFromTheme with isSvg  1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3358CC;
   fill: #00ff00;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E0E7FF;
   fill: #FF0000;
 }
 
