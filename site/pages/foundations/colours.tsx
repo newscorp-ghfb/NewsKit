@@ -67,7 +67,7 @@ const PRINCIPLE_CARDS = [
     },
     title: 'Contextual',
     description:
-      'Colour is applied to a UI element based on it’s context, not just because it’s visually pleasing.',
+      'Colour is applied to a UI element based on it’s context, not just because it’s visually pleasing',
     stylePrefix: 'featureCard',
     overrides: {
       title,
@@ -81,7 +81,7 @@ const PRINCIPLE_CARDS = [
     },
     title: 'Expressive',
     description:
-      'Brand colours are added to key moments in the user journey to express brand identity and style.',
+      'Brand colours are added to key moments in the user journey to express brand identity and style',
     stylePrefix: 'featureCard',
     overrides: {
       title,
@@ -95,7 +95,7 @@ const PRINCIPLE_CARDS = [
     },
     title: 'Inclusive',
     description:
-      'Important UI elements like text and icons are legible and meet accessibility contrast standards.',
+      'Important UI elements like text and icons are legible and meet accessibility contrast standards',
     stylePrefix: 'featureCard',
     overrides: {
       title,

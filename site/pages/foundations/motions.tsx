@@ -54,7 +54,7 @@ const PRINCIPLE_CARDS = [
     },
     title: 'Purposeful',
     description:
-      'Motion should help draw attention to important details and emphasise key points in a user journey without creating unnecessary distractions.',
+      'Motion should help draw attention to important details and emphasise key points in a user journey without creating unnecessary distractions',
     stylePrefix: 'featureCard',
     overrides: {
       title,
@@ -67,7 +67,7 @@ const PRINCIPLE_CARDS = [
       alt: '',
     },
     title: 'Seamless',
-    description: `Motion should add to a brand's character and the way it expresses itself to users.`,
+    description: `Motion should add to a brand's character and the way it expresses itself to users`,
     stylePrefix: 'featureCard',
     overrides: {
       title,
@@ -80,7 +80,7 @@ const PRINCIPLE_CARDS = [
       alt: '',
     },
     title: 'Instinctive',
-    description: `Motion should mimic the feel of real-world physics, to give motion a natural and discernible feeling.`,
+    description: `Motion should mimic the feel of real-world physics, to give motion a natural and discernible feeling`,
     stylePrefix: 'featureCard',
     overrides: {
       title,

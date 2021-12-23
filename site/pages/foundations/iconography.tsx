@@ -34,7 +34,7 @@ const PRINCIPLE_CARDS = [
     },
     title: 'Simple',
     description:
-      'The style of icons in the library is paired back and not too elaborate for ease of interpretation, and so they work well at smaller sizes.',
+      'The style of icons in the library is paired back and not too elaborate for ease of interpretation, and so they work well at smaller sizes',
     stylePrefix: 'featureCard',
     overrides: {
       title,
@@ -48,7 +48,7 @@ const PRINCIPLE_CARDS = [
     },
     title: 'Consistent',
     description:
-      'Icons should be used consistently across products and platforms for the same function.',
+      'Icons should be used consistently across products and platforms for the same function',
     stylePrefix: 'featureCard',
     overrides: {
       title,
@@ -62,7 +62,7 @@ const PRINCIPLE_CARDS = [
     },
     title: 'Contextual',
     description:
-      'Icons are used as visual representations of common actions and commands to provide additional context and enhance usability.',
+      'Icons are used as visual representations of common actions and commands to provide additional context and enhance usability',
     stylePrefix: 'featureCard',
     overrides: {
       title,

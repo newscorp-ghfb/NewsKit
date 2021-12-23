@@ -121,7 +121,14 @@ export default [
         description:
           'Shadows provide visual cues about the distance between layers.',
       },
-
+      {
+        title: 'Sizing',
+        page: true,
+        id: '/foundations/sizing',
+        illustration: 'components/hero-sizing-illustration',
+        description:
+          'Standardised sizing provides increased visual consistency in an interface.',
+      },
       // {
       //   title: 'Breakpoints',
       //   page: true,
@@ -137,14 +144,6 @@ export default [
       //   illustration: 'static/theming/foundations/overlays.svg',
       //   description:
       //     'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
-      // },
-      // {
-      //   title: 'Sizing',
-      //   page: true,
-      //   id: '/foundations/sizing',
-      //   illustration: 'static/theming/foundations/sizing.svg',
-      //   description:
-      //     'izing is one of the biggest influences in creating a distinguishable brand. It provides the foundation for harmoniously and consistently setting the space and positioning elements onscreen and setting.',
       // },
       // {
       //   title: 'Typography',

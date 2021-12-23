@@ -97,4 +97,5 @@ export const columnMap: Record<string, ColumnMapObject> = {
     cellHeader: 'Example',
   },
   State: {...medium, cellType: 'flag'},
+  'Size box': {...medium, cellType: 'sizeBox', cellHeader: 'Example'},
 };

@@ -19,6 +19,7 @@ import {
   MotionTimingSwatch,
 } from '../theming-values/motions/swatches';
 import {FontAttributes} from '../font-attributes';
+import {SizeBox} from '../theming-values/size-box';
 
 const renderIcon = (value?: TableRowValue) => {
   switch (value) {
@@ -212,6 +213,11 @@ export const renderCols = (
         cellContent = cellValue && (
           <BorderCard boxShadowToken={cellValue.toString()} />
         );
+        break;
+      }
+
+      case 'sizeBox': {
+        cellContent = cellValue && <SizeBox sideLength={cellValue as string} />;
         break;
       }
 
