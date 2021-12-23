@@ -35,6 +35,7 @@ const myCustomTheme = createTheme({
         base: {
           borderStyle: 'solid',
           borderColor: '#D20600',
+          placeholderColor: 'blue',
         },
       },
       labelOverrides: {
@@ -181,6 +182,7 @@ export const TextFieldWithOverrides = () => (
         <TextField
           aria-describedby="id-7-at"
           id="id-7"
+          placeholder="Placeholder"
           overrides={{
             stylePreset: 'inputContainerCustom',
             typographyPreset: 'utilityBody030',

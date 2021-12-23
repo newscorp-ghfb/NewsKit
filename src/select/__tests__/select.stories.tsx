@@ -376,6 +376,7 @@ const myCustomTheme = createTheme({
         base: {
           borderStyle: 'solid',
           borderColor: '#D20600',
+          placeholderColor: 'blue',
         },
       },
       selectPanelCustom: {

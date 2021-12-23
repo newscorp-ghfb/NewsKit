@@ -83,6 +83,8 @@ Array [
   "ScreenReaderOnly",
   "Scroll",
   "ScrollSnapAlignment",
+  "Select",
+  "SelectOption",
   "ShareBar",
   "Slider",
   "Stack",

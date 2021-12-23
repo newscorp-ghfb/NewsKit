@@ -3191,6 +3191,22 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   display: block;
 }
 
+.emotion-2::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::placeholder {
+  color: #535353;
+}
+
 .emotion-3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -3907,6 +3923,22 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::placeholder {
+  color: #535353;
 }
 
 .emotion-3 {
@@ -4632,6 +4664,22 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 .emotion-2 {
@@ -5582,6 +5630,22 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   display: block;
 }
 
+.emotion-2::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::placeholder {
+  color: #535353;
+}
+
 .emotion-3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -6040,6 +6104,22 @@ exports[`FormInput renders with nested inputs 1`] = `
   display: block;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 .emotion-2 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -6317,6 +6397,22 @@ exports[`FormInput renders with nested inputs 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 <div

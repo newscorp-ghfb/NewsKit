@@ -2,6 +2,9 @@ import React from 'react';
 import {TextFieldProps, TextFieldSize} from './types';
 import {StyledInput} from './styled';
 import {WithEnhancers} from '../with-enhancers/with-enhancers';
+import {useTheme} from '../theme';
+import {getToken} from '../utils/get-token';
+import {getSingleStylePreset} from '../utils/style/style-preset';
 
 export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
   (
@@ -18,6 +21,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
     },
     inputRef,
   ) => {
+    const theme = useTheme();
     const [isFocused, setIsFocused] = React.useState(false);
     const onInputFocus = React.useCallback(
       event => {
@@ -45,6 +49,20 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
       },
       [onChange],
     );
+    // This is a fix to apply the placeholderColor to input
+    const textFieldStylePreset = getToken(
+      {theme, overrides},
+      `textField.${size}`,
+      '',
+      'stylePreset',
+    );
+
+    const placeholderColor = getSingleStylePreset(
+      theme,
+      'base',
+      'placeholderColor',
+      textFieldStylePreset,
+    );
 
     return (
       <>
@@ -66,6 +84,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
             onBlur={onInputBlur}
             onFocus={onInputFocus}
             onChange={onInputChange}
+            placeholderColor={placeholderColor}
             {...restProps}
           />
         </WithEnhancers>

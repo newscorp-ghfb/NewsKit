@@ -136,6 +136,22 @@ exports[`TextField renders TextField Correctly 1`] = `
   display: block;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 <div
     class="emotion-0"
   >
@@ -168,6 +184,22 @@ exports[`TextField renders TextField with overrides 1`] = `
   margin-bottom: 16px;
   border-color: #D20600;
   min-height: 64px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: red;
+}
+
+.emotion-0::-moz-placeholder {
+  color: red;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: red;
+}
+
+.emotion-0::placeholder {
+  color: red;
 }
 
 .emotion-1 {
@@ -225,6 +257,22 @@ exports[`TextField renders TextField with overrides 1`] = `
   display: block;
 }
 
+.emotion-4::-webkit-input-placeholder {
+  color: red;
+}
+
+.emotion-4::-moz-placeholder {
+  color: red;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: red;
+}
+
+.emotion-4::placeholder {
+  color: red;
+}
+
 .emotion-5 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -280,6 +328,7 @@ exports[`TextField renders TextField with overrides 1`] = `
     <input
       class="emotion-4"
       data-testid="text-field-email"
+      placeholder="placeholder"
       type="text"
     />
     <div
@@ -435,6 +484,22 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 <div
@@ -637,6 +702,22 @@ exports[`TextField renders disabled text field 1`] = `
   display: block;
 }
 
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
 .emotion-5 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -693,6 +774,7 @@ exports[`TextField renders disabled text field 1`] = `
       class="emotion-4"
       data-testid="text-field-email"
       disabled=""
+      placeholder="placeholder"
       type="text"
     />
     <div
@@ -816,6 +898,22 @@ exports[`TextField renders large TextField 1`] = `
   display: block;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 <div
     class="emotion-0"
   >
@@ -925,6 +1023,22 @@ exports[`TextField renders medium TextField 1`] = `
   display: block;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 <div
     class="emotion-0"
   >
@@ -1032,6 +1146,22 @@ exports[`TextField renders small TextField 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 <div
@@ -1172,6 +1302,22 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   display: block;
 }
 
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
 .emotion-5 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1227,6 +1373,7 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
     <input
       class="emotion-4"
       data-testid="text-field-email"
+      placeholder="placeholder"
       type="text"
     />
     <div
@@ -1377,6 +1524,22 @@ exports[`TextField should render custom placeholder 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
 }
 
 .emotion-5 {

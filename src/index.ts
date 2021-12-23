@@ -31,6 +31,7 @@ export * from './unordered-list';
 export * from './utils';
 export * from './screen-reader-only';
 export * from './scroll';
+export * from './select';
 export * from './share-bar';
 export * from './slider';
 export * from './stack-child';

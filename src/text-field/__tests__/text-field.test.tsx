@@ -20,6 +20,7 @@ const renderTextFieldWithComponents = () => (
 const renderTextField = (props: TextFieldProps) => (
   <TextField
     data-testid="text-field-email"
+    placeholder="placeholder"
     {...props}
     startEnhancer={<IconFilledSearch overrides={{size: 'iconSize020'}} />}
     endEnhancer={<IconFilledClose overrides={{size: 'iconSize010'}} />}
@@ -188,6 +189,7 @@ describe('TextField', () => {
           textInputContainerCustom: {
             base: {
               borderColor: '#D20600',
+              placeholderColor: 'red',
             },
           },
         },

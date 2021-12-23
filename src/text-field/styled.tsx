@@ -5,7 +5,11 @@ interface StyledTextFieldProps extends FormInputTextFieldProps {
   $size: TextFieldSize;
 }
 
-export const StyledInput = styled.input<StyledTextFieldProps>`
+export const StyledInput = styled.input<
+  StyledTextFieldProps & {
+    placeholderColor?: string;
+  }
+>`
   outline: none;
   width: 100%;
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
@@ -15,6 +19,9 @@ export const StyledInput = styled.input<StyledTextFieldProps>`
     getTypographyPreset(`textField.${$size}`, '', {
       withCrop: true,
     })}
+  ::placeholder {
+    color: ${({placeholderColor}) => placeholderColor && placeholderColor};
+  }
   ${({$size}) =>
     getResponsiveSpace('padding', `textField.${$size}`, '', 'spaceInset')}
 `;
