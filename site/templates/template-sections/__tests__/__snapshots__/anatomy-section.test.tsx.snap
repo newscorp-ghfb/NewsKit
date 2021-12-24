@@ -225,7 +225,6 @@ exports[`AnatomySection renders section as expected 1`] = `
           data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"
@@ -335,7 +334,6 @@ exports[`AnatomySection renders section as expected 1`] = `
     data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"

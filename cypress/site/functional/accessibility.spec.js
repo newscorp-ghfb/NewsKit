@@ -12,7 +12,7 @@ describe('Page accessibility', () => {
     )}${path}`, () => {
       cy.mockConsentAndVisit(path);
       cy.injectAxe();
-      if (path === `/pages/article` || path === `/components/card`) {
+      if (path === `/foundations/fonts` || path === `/components/card`) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
         // More info on the rule here: https://www.w3.org/WAI/tutorials/page-structure/headings/
         // TODO: Need to revisit the below color contrast rule while working on the newskit site remake project

@@ -11,7 +11,10 @@ import {Illustration} from '../../components/illustrations/illustration-loader';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {CommonSection} from '../../templates/template-sections';
 import {Table, TableRow} from '../../components/table';
-import {ComponentPageCellCompact} from '../../components/layout-cells';
+import {
+  ComponentPageCell,
+  ComponentPageCellCompact,
+} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
 import {getTokenType} from '../../utils/get-token-type';
 import {Link} from '../../components/link';
@@ -116,12 +119,9 @@ export default (layoutProps: LayoutProps) => (
     }}
   >
     <CommonSection title="Principles" id="principles" toc="Principles">
-      <MediaList
-        layout="3-span"
-        cardType="feature"
-        cards={PRINCIPLE_CARDS}
-        parentCellProps={{md: 10, lg: 10, xl: 8, mdOffset: 1}}
-      />
+      <ComponentPageCell>
+        <MediaList cards={PRINCIPLE_CARDS} />
+      </ComponentPageCell>
     </CommonSection>
     <CommonSection
       title="Overview"

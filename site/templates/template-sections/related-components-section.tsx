@@ -4,6 +4,7 @@ import {MediaList} from '../../components/media-list';
 import {getByTitle} from '../../utils/get-route-object';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
+import {ComponentPageCell} from '../../components/layout-cells';
 
 export type RelatedComponentsSectionProps = {
   related: string[];
@@ -30,10 +31,14 @@ export const RelatedComponentsSection: React.FC<RelatedComponentsSectionProps> =
     introduction={introduction}
     hideSeparator
   >
-    <MediaList
-      spaceStack="space090"
-      layout="4-span"
-      cards={getRelatedComponents(related).filter(component => component.title)}
-    />
+    <ComponentPageCell>
+      <MediaList
+        spaceStack="space090"
+        layout="4-span"
+        cards={getRelatedComponents(related).filter(
+          component => component.title,
+        )}
+      />
+    </ComponentPageCell>
   </CommonSection>
 );

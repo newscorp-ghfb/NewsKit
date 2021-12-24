@@ -207,8 +207,18 @@ exports[`BehaviorsSection renders section as expected 1`] = `
 }"
           data-testid="Cell"
         />
-        <div>
-          MediaList Component with props:{
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+          data-testid="Cell"
+        >
+          <div>
+            MediaList Component with props:{
   "cardsLayout": {
     "xs": "vertical",
     "sm": "vertical",
@@ -236,6 +246,7 @@ exports[`BehaviorsSection renders section as expected 1`] = `
     }
   ]
 }
+          </div>
         </div>
       </div>
     </section>
@@ -279,7 +290,6 @@ exports[`BehaviorsSection renders section as expected 1`] = `
     data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"

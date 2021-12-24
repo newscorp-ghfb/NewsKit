@@ -3,7 +3,6 @@ import {Cell, withDefaultProps} from 'newskit';
 export const ComponentPageCell = withDefaultProps(Cell, {
   xs: 12,
   md: 10,
-  lg: 10,
   xl: 8,
   mdOffset: 1,
 });

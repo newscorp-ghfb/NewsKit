@@ -179,6 +179,7 @@ export const renderCols = (
         );
         break;
       }
+
       case 'motionTimingSwatch': {
         cellContent = cellValue && (
           <MotionTimingSwatch timing={cellValue.toString()} />

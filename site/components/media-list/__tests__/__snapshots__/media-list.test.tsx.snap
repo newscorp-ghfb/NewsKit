@@ -3,62 +3,16 @@
 exports[`Media List renders with custom layout 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-0 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 83.33333333333334%;
-    -ms-flex-preferred-size: 83.33333333333334%;
-    flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-.emotion-1 {
   margin-bottom: 120px;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -76,36 +30,36 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen {
-  .emotion-3 {
+  .emotion-2 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -12px -4px 0 -4px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -12px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -12px -8px 0 -8px;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -115,7 +69,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen {
-  .emotion-4 {
+  .emotion-3 {
     padding: 0 8px;
     margin-top: 12px;
     -webkit-flex-basis: 100%;
@@ -126,12 +80,12 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     padding: 0 12px;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   box-sizing: border-box;
   overflow: hidden;
   border-style: solid;
@@ -152,525 +106,18 @@ exports[`Media List renders with custom layout 1`] = `
   height: 100%;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
-}
-
-.emotion-6 {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.emotion-7 {
-  position: relative;
-  width: 100%;
-  display: block;
-  padding-top: 66%;
-  height: 0;
-  width: 100%;
-  border-radius: 8px;
-  background-color: #F4F4F4;
-}
-
-.emotion-7 svg {
-  fill: #C0C0C0;
-}
-
-.emotion-8 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-9 {
-  opacity: 0;
-  display: block;
-  border-radius: inherit;
-  height: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
-}
-
-.emotion-11 {
-  box-sizing: border-box;
-  color: inherit;
-  padding: 24px;
-}
-
-.emotion-11 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
-}
-
-.emotion-12 {
-  margin-bottom: 20px;
-}
-
-.emotion-13 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: none;
-}
-
-.emotion-13 .nk-headline-kicker {
-  color: #577FFB;
-}
-
-.emotion-13:hover:not(:disabled) .nk-headline-kicker {
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-13:active:not(:disabled) .nk-headline-kicker {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-13:visited:not(:disabled) .nk-headline-kicker {
-  color: #5E44E4;
-}
-
-.emotion-13 .nk-headline-heading {
-  color: #0A0A0A;
-}
-
-.emotion-13 .nk-headline-heading svg {
-  fill: #0A0A0A;
-}
-
-.emotion-13:before {
-  content: '';
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-}
-
-.emotion-14 {
-  font-family: "Poppins",sans-serif;
-  font-size: 20px;
-  line-height: 22.5px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-14::before {
-  content: '';
-  margin-bottom: -0.2155em;
-  display: block;
-}
-
-.emotion-14::after {
-  content: '';
-  margin-top: -0.2125em;
-  display: block;
-}
-
-.emotion-15 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #0A0A0A;
-}
-
-.emotion-15 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-16 {
-  margin: 0;
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-16 svg {
-  fill: #2E2E2E;
-}
-
-.emotion-16::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-16::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-17 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-17 {
-    padding: 0 8px;
-    margin-top: 12px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-17 {
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-17 {
-    padding: 0 12px;
-  }
-}
-
-.emotion-18 {
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 4px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  height: 100%;
-}
-
-.emotion-20 {
-  box-sizing: border-box;
-  color: inherit;
-  padding: 8px 4px;
-}
-
-.emotion-20 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
-}
-
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-5"
-            >
-              <div
-                class="emotion-6"
-              >
-                <picture
-                  class="emotion-7"
-                >
-                  <div
-                    class="emotion-8"
-                  />
-                  <img
-                    alt="Card Media"
-                    class="emotion-9"
-                    src="static/placeholder-16x9.png"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-10"
-              >
-                <div
-                  class="emotion-11"
-                >
-                  <div
-                    class="emotion-12"
-                  >
-                    <a
-                      class="nk-card-link emotion-13"
-                      href="/"
-                    >
-                      <section
-                        class="emotion-14"
-                      >
-                        <h1
-                          class="nk-headline-heading emotion-15"
-                        />
-                      </section>
-                    </a>
-                  </div>
-                  <p
-                    class="emotion-16"
-                  >
-                    interactive card
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-17"
-          >
-            <div
-              class="emotion-18"
-            >
-              <div
-                class="emotion-10"
-              >
-                <div
-                  class="emotion-20"
-                >
-                  <div
-                    class="emotion-12"
-                  >
-                    <section
-                      class="emotion-14"
-                    >
-                      <h1
-                        class="nk-headline-heading emotion-15"
-                      >
-                        static
-                      </h1>
-                    </section>
-                  </div>
-                  <p
-                    class="emotion-16"
-                  >
-                    card with optional title 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Media List renders with default layout 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-0 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 83.33333333333334%;
-    -ms-flex-preferred-size: 83.33333333333334%;
-    flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-.emotion-2 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-4 {
-    padding: 0 8px;
-    margin-top: 48px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-4 {
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-  }
 }
 
 .emotion-5 {
   box-sizing: border-box;
-  overflow: hidden;
-  border-style: solid;
-  border-radius: 12px;
-  border-width: 1px;
-  border-color: #E4E4E4;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  height: 100%;
-}
-
-.emotion-5:hover:not(:disabled) {
-  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
-}
-
-.emotion-6 {
-  box-sizing: border-box;
   display: block;
   position: relative;
   margin-bottom: 0;
 }
 
-.emotion-7 {
+.emotion-6 {
   position: relative;
   width: 100%;
   display: block;
@@ -681,11 +128,11 @@ exports[`Media List renders with default layout 1`] = `
   background-color: #F4F4F4;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   fill: #C0C0C0;
 }
 
-.emotion-8 {
+.emotion-7 {
   top: 0;
   left: 0;
   position: absolute;
@@ -705,7 +152,7 @@ exports[`Media List renders with default layout 1`] = `
   margin: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   opacity: 0;
   display: block;
   border-radius: inherit;
@@ -714,480 +161,6 @@ exports[`Media List renders with default layout 1`] = `
   top: 0;
   left: 0;
   position: absolute;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
-}
-
-.emotion-11 {
-  box-sizing: border-box;
-  color: inherit;
-  padding: 24px;
-}
-
-.emotion-11 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
-}
-
-.emotion-12 {
-  margin-bottom: 20px;
-}
-
-.emotion-13 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: none;
-}
-
-.emotion-13 .nk-headline-kicker {
-  color: #577FFB;
-}
-
-.emotion-13:hover:not(:disabled) .nk-headline-kicker {
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-13:active:not(:disabled) .nk-headline-kicker {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-13:visited:not(:disabled) .nk-headline-kicker {
-  color: #5E44E4;
-}
-
-.emotion-13 .nk-headline-heading {
-  color: #0A0A0A;
-}
-
-.emotion-13 .nk-headline-heading svg {
-  fill: #0A0A0A;
-}
-
-.emotion-13:before {
-  content: '';
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-}
-
-.emotion-14 {
-  font-family: "Poppins",sans-serif;
-  font-size: 20px;
-  line-height: 22.5px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-14::before {
-  content: '';
-  margin-bottom: -0.2155em;
-  display: block;
-}
-
-.emotion-14::after {
-  content: '';
-  margin-top: -0.2125em;
-  display: block;
-}
-
-.emotion-15 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #0A0A0A;
-}
-
-.emotion-15 svg {
-  fill: #0A0A0A;
-}
-
-.emotion-16 {
-  margin: 0;
-  color: #2E2E2E;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-16 svg {
-  fill: #2E2E2E;
-}
-
-.emotion-16::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-16::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-18 {
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 4px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  height: 100%;
-}
-
-.emotion-20 {
-  box-sizing: border-box;
-  color: inherit;
-  padding: 8px 4px;
-}
-
-.emotion-20 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
-}
-
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-    >
-      <div
-        class="emotion-2"
-      >
-        <div
-          class="emotion-3"
-        >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-5"
-            >
-              <div
-                class="emotion-6"
-              >
-                <picture
-                  class="emotion-7"
-                >
-                  <div
-                    class="emotion-8"
-                  />
-                  <img
-                    alt="Card Media"
-                    class="emotion-9"
-                    src="static/placeholder-16x9.png"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-10"
-              >
-                <div
-                  class="emotion-11"
-                >
-                  <div
-                    class="emotion-12"
-                  >
-                    <a
-                      class="nk-card-link emotion-13"
-                      href="/"
-                    >
-                      <section
-                        class="emotion-14"
-                      >
-                        <h1
-                          class="nk-headline-heading emotion-15"
-                        />
-                      </section>
-                    </a>
-                  </div>
-                  <p
-                    class="emotion-16"
-                  >
-                    interactive card
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-18"
-            >
-              <div
-                class="emotion-10"
-              >
-                <div
-                  class="emotion-20"
-                >
-                  <div
-                    class="emotion-12"
-                  >
-                    <section
-                      class="emotion-14"
-                    >
-                      <h1
-                        class="nk-headline-heading emotion-15"
-                      >
-                        static
-                      </h1>
-                    </section>
-                  </div>
-                  <p
-                    class="emotion-16"
-                  >
-                    card with optional title 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Media List renders with feature cardscards 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-0 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 83.33333333333334%;
-    -ms-flex-preferred-size: 83.33333333333334%;
-    flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-.emotion-2 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-3 {
-    margin: -48px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-3 {
-    margin: -48px -12px 0 -12px;
-  }
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-4 {
-    padding: 0 8px;
-    margin-top: 48px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-4 {
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-  }
-}
-
-@media screen {
-  .emotion-5 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-5 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-5 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-5 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-5 {
-    display: none;
-  }
-}
-
-.emotion-6 {
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  transition-property: box-shadow;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  height: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-6 {
-    min-height: 248px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-6 {
-    min-height: 304px;
-  }
-}
-
-.emotion-7 {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.emotion-8 {
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-background-position: right bottom;
-  background-position: right bottom;
-  height: 18vh;
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-8 {
-    height: 200px;
-  }
 }
 
 .emotion-9 {
@@ -1205,16 +178,8 @@ exports[`Media List renders with feature cardscards 1`] = `
   position: relative;
 }
 
-@media screen and (max-width: 1023px) {
-  .emotion-11 {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-11 {
-    margin-bottom: 24px;
-  }
+.emotion-11 {
+  margin-bottom: 20px;
 }
 
 .emotion-12 {
@@ -1244,11 +209,11 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-12 .nk-headline-heading {
-  color: #FFFFFF;
+  color: #0A0A0A;
 }
 
 .emotion-12 .nk-headline-heading svg {
-  fill: #FFFFFF;
+  fill: #0A0A0A;
 }
 
 .emotion-12:before {
@@ -1262,8 +227,897 @@ exports[`Media List renders with feature cardscards 1`] = `
   z-index: 1;
 }
 
+.emotion-13 {
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 22.5px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-13::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-13::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-14 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-14 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-15 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-15 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-15::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-15::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-16 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-16 {
+    padding: 0 8px;
+    margin-top: 12px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-16 {
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-16 {
+    padding: 0 12px;
+  }
+}
+
+.emotion-17 {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  color: inherit;
+  padding: 8px 4px;
+}
+
+.emotion-19 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <picture
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                />
+                <img
+                  alt="Card Media"
+                  class="emotion-8"
+                  src="static/placeholder-16x9.png"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-10"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <a
+                    class="nk-card-link emotion-12"
+                    href="/"
+                  >
+                    <section
+                      class="emotion-13"
+                    >
+                      <h1
+                        class="nk-headline-heading emotion-14"
+                      />
+                    </section>
+                  </a>
+                </div>
+                <p
+                  class="emotion-15"
+                >
+                  interactive card
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-16"
+        >
+          <div
+            class="emotion-17"
+          >
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-19"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <section
+                    class="emotion-13"
+                  >
+                    <h1
+                      class="nk-headline-heading emotion-14"
+                    >
+                      static
+                    </h1>
+                  </section>
+                </div>
+                <p
+                  class="emotion-15"
+                >
+                  card with optional title 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Media List renders with default layout 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 48px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: 1px;
+  border-color: #E4E4E4;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
+}
+
+.emotion-4:hover:not(:disabled) {
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.emotion-6 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 66%;
+  height: 0;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #F4F4F4;
+}
+
+.emotion-6 svg {
+  fill: #C0C0C0;
+}
+
+.emotion-7 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-8 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  color: inherit;
+  padding: 24px;
+}
+
+.emotion-10 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-11 {
+  margin-bottom: 20px;
+}
+
+.emotion-12 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-12 .nk-headline-kicker {
+  color: #577FFB;
+}
+
+.emotion-12:hover:not(:disabled) .nk-headline-kicker {
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-12:active:not(:disabled) .nk-headline-kicker {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-12:visited:not(:disabled) .nk-headline-kicker {
+  color: #5E44E4;
+}
+
+.emotion-12 .nk-headline-heading {
+  color: #0A0A0A;
+}
+
+.emotion-12 .nk-headline-heading svg {
+  fill: #0A0A0A;
+}
+
+.emotion-12:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.emotion-13 {
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 22.5px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-13::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-13::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-14 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0A0A0A;
+}
+
+.emotion-14 svg {
+  fill: #0A0A0A;
+}
+
+.emotion-15 {
+  margin: 0;
+  color: #2E2E2E;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-15 svg {
+  fill: #2E2E2E;
+}
+
+.emotion-15::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-15::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-17 {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  color: inherit;
+  padding: 8px 4px;
+}
+
+.emotion-19 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <picture
+                class="emotion-6"
+              >
+                <div
+                  class="emotion-7"
+                />
+                <img
+                  alt="Card Media"
+                  class="emotion-8"
+                  src="static/placeholder-16x9.png"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-10"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <a
+                    class="nk-card-link emotion-12"
+                    href="/"
+                  >
+                    <section
+                      class="emotion-13"
+                    >
+                      <h1
+                        class="nk-headline-heading emotion-14"
+                      />
+                    </section>
+                  </a>
+                </div>
+                <p
+                  class="emotion-15"
+                >
+                  interactive card
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-17"
+          >
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-19"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <section
+                    class="emotion-13"
+                  >
+                    <h1
+                      class="nk-headline-heading emotion-14"
+                    >
+                      static
+                    </h1>
+                  </section>
+                </div>
+                <p
+                  class="emotion-15"
+                >
+                  card with optional title 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Media List renders with feature cardscards 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-2 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-2 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    margin: -48px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-2 {
+    margin: -48px -12px 0 -12px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-3 {
+    padding: 0 8px;
+    margin-top: 48px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    padding: 0 12px;
+  }
+}
+
+@media screen {
+  .emotion-4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-4 {
+    display: none;
+  }
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-5 {
+    min-height: 248px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    min-height: 304px;
+  }
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.emotion-7 {
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-background-position: right bottom;
+  background-position: right bottom;
+  height: 18vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-7 {
+    height: 200px;
+  }
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  color: inherit;
+  padding: 24px;
+}
+
+.emotion-9 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
 @media screen and (max-width: 1023px) {
-  .emotion-13 {
+  .emotion-10 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-10 {
+    margin-bottom: 24px;
+  }
+}
+
+.emotion-11 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: none;
+}
+
+.emotion-11 .nk-headline-kicker {
+  color: #577FFB;
+}
+
+.emotion-11:hover:not(:disabled) .nk-headline-kicker {
+  color: #3358CC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-11:active:not(:disabled) .nk-headline-kicker {
+  color: #213A82;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-11:visited:not(:disabled) .nk-headline-kicker {
+  color: #5E44E4;
+}
+
+.emotion-11 .nk-headline-heading {
+  color: #FFFFFF;
+}
+
+.emotion-11 .nk-headline-heading svg {
+  fill: #FFFFFF;
+}
+
+.emotion-11:before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-12 {
     font-family: "Poppins",sans-serif;
     font-size: 24px;
     line-height: 27px;
@@ -1272,13 +1126,13 @@ exports[`Media List renders with feature cardscards 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-13::before {
+  .emotion-12::before {
     content: '';
     margin-bottom: -0.2155em;
     display: block;
   }
 
-  .emotion-13::after {
+  .emotion-12::after {
     content: '';
     margin-top: -0.2125em;
     display: block;
@@ -1286,7 +1140,7 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-13 {
+  .emotion-12 {
     font-family: "Poppins",sans-serif;
     font-size: 32px;
     line-height: 36px;
@@ -1295,53 +1149,53 @@ exports[`Media List renders with feature cardscards 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-13::before {
+  .emotion-12::before {
     content: '';
     margin-bottom: -0.2155em;
     display: block;
   }
 
-  .emotion-13::after {
+  .emotion-12::after {
     content: '';
     margin-top: -0.2125em;
     display: block;
   }
 }
 
-.emotion-14 {
+.emotion-13 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #FFFFFF;
 }
 
-.emotion-14 svg {
+.emotion-13 svg {
   fill: #FFFFFF;
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-15 {
+  .emotion-14 {
     margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-15 {
+  .emotion-14 {
     margin-bottom: 32px;
   }
 }
 
-.emotion-16 {
+.emotion-15 {
   margin: 0;
   color: rgba(255,255,255,0.8);
 }
 
-.emotion-16 svg {
+.emotion-15 svg {
   fill: rgba(255,255,255,0.8);
 }
 
 @media screen and (max-width: 1023px) {
-  .emotion-16 {
+  .emotion-15 {
     font-family: "Poppins",sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -1350,13 +1204,13 @@ exports[`Media List renders with feature cardscards 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-16::before {
+  .emotion-15::before {
     content: '';
     margin-bottom: -0.403em;
     display: block;
   }
 
-  .emotion-16::after {
+  .emotion-15::after {
     content: '';
     margin-top: -0.4em;
     display: block;
@@ -1364,7 +1218,7 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-16 {
+  .emotion-15 {
     font-family: "Poppins",sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -1373,24 +1227,24 @@ exports[`Media List renders with feature cardscards 1`] = `
     padding: 0.5px 0px;
   }
 
-  .emotion-16::before {
+  .emotion-15::before {
     content: '';
     margin-bottom: -0.403em;
     display: block;
   }
 
-  .emotion-16::after {
+  .emotion-15::after {
     content: '';
     margin-top: -0.4em;
     display: block;
   }
 }
 
-.emotion-17 {
+.emotion-16 {
   margin-bottom: 8px;
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1423,12 +1277,12 @@ exports[`Media List renders with feature cardscards 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-17 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-19 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1449,7 +1303,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-20 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1458,7 +1312,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-21 {
+.emotion-20 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1469,19 +1323,19 @@ exports[`Media List renders with feature cardscards 1`] = `
   display: inline-block;
 }
 
-.emotion-21::before {
+.emotion-20::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-21::after {
+.emotion-20::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-23 {
+.emotion-22 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1490,42 +1344,42 @@ exports[`Media List renders with feature cardscards 1`] = `
   display: inline-block;
 }
 
-.emotion-23.emotion-23 {
+.emotion-22.emotion-22 {
   width: 16px;
   height: 16px;
 }
 
 @media screen {
-  .emotion-25 {
+  .emotion-24 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-25 {
+  .emotion-24 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-25 {
+  .emotion-24 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-25 {
+  .emotion-24 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-25 {
+  .emotion-24 {
     display: block;
   }
 }
 
-.emotion-26 {
+.emotion-25 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -1543,18 +1397,18 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-26 {
+  .emotion-25 {
     min-height: 248px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-26 {
+  .emotion-25 {
     min-height: 304px;
   }
 }
 
-.emotion-27 {
+.emotion-26 {
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -1564,11 +1418,11 @@ exports[`Media List renders with feature cardscards 1`] = `
   margin-left: 0;
 }
 
-.emotion-28 {
+.emotion-27 {
   height: 100%;
 }
 
-.emotion-29 {
+.emotion-28 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1582,7 +1436,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   flex: 1;
 }
 
-.emotion-30 {
+.emotion-29 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1591,35 +1445,35 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 @media screen and (max-width: 479px) {
-  .emotion-30 {
+  .emotion-29 {
     padding: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-30 {
+  .emotion-29 {
     padding: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-30 {
+  .emotion-29 {
     padding: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-30 {
+  .emotion-29 {
     padding: 32px;
   }
 }
 
-.emotion-30 a:not(.nk-card-link) {
+.emotion-29 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-31 {
+.emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1638,7 +1492,7 @@ exports[`Media List renders with feature cardscards 1`] = `
   justify-content: center;
 }
 
-.emotion-46 {
+.emotion-45 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -1679,91 +1533,91 @@ exports[`Media List renders with feature cardscards 1`] = `
               >
                 <div
                   class="emotion-7"
-                >
-                  <div
-                    class="emotion-8"
-                  />
-                </div>
+                />
+              </div>
+              <div
+                class="emotion-8"
+              >
                 <div
                   class="emotion-9"
                 >
                   <div
                     class="emotion-10"
                   >
-                    <div
-                      class="emotion-11"
+                    <a
+                      class="nk-card-link emotion-11"
+                      href="/"
                     >
-                      <a
-                        class="nk-card-link emotion-12"
-                        href="/"
+                      <section
+                        class="emotion-12"
                       >
-                        <section
-                          class="emotion-13"
+                        <h1
+                          class="nk-headline-heading emotion-13"
                         >
-                          <h1
-                            class="nk-headline-heading emotion-14"
-                          >
-                            Feature Card
-                          </h1>
-                        </section>
-                      </a>
-                    </div>
-                    <div
+                          Feature Card
+                        </h1>
+                      </section>
+                    </a>
+                  </div>
+                  <div
+                    class="emotion-14"
+                  >
+                    <p
                       class="emotion-15"
                     >
-                      <p
-                        class="emotion-16"
-                      >
-                        This is a feature card.
-                      </p>
-                    </div>
-                    <div
+                      This is a feature card.
+                    </p>
+                  </div>
+                  <div
+                    class="emotion-16"
+                  >
+                    <button
                       class="emotion-17"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
+                      <div
                         class="emotion-18"
-                        data-testid="button"
-                        type="button"
                       >
                         <div
                           class="emotion-19"
                         >
-                          <div
+                          <span
                             class="emotion-20"
                           >
-                            <span
-                              class="emotion-21"
-                            >
-                              needHelpCard
-                            </span>
-                          </div>
-                          <div
-                            class="emotion-20"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              class="emotion-23 emotion-24"
-                              fill="currentColor"
-                              focusable="false"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                              />
-                              <path
-                                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                              />
-                            </svg>
-                          </div>
+                            needHelpCard
+                          </span>
                         </div>
-                      </button>
-                    </div>
+                        <div
+                          class="emotion-19"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="emotion-22 emotion-23"
+                            fill="currentColor"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div
+            class="emotion-24"
+          >
             <div
               class="emotion-25"
             >
@@ -1772,11 +1626,11 @@ exports[`Media List renders with feature cardscards 1`] = `
               >
                 <div
                   class="emotion-27"
-                >
-                  <div
-                    class="emotion-28"
-                  />
-                </div>
+                />
+              </div>
+              <div
+                class="emotion-28"
+              >
                 <div
                   class="emotion-29"
                 >
@@ -1784,145 +1638,55 @@ exports[`Media List renders with feature cardscards 1`] = `
                     class="emotion-30"
                   >
                     <div
-                      class="emotion-31"
+                      class="emotion-10"
                     >
-                      <div
-                        class="emotion-11"
+                      <a
+                        class="nk-card-link emotion-11"
+                        href="/"
                       >
-                        <a
-                          class="nk-card-link emotion-12"
-                          href="/"
+                        <section
+                          class="emotion-12"
                         >
-                          <section
-                            class="emotion-13"
+                          <h1
+                            class="nk-headline-heading emotion-13"
                           >
-                            <h1
-                              class="nk-headline-heading emotion-14"
-                            >
-                              Feature Card
-                            </h1>
-                          </section>
-                        </a>
-                      </div>
-                      <div
+                            Feature Card
+                          </h1>
+                        </section>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-14"
+                    >
+                      <p
                         class="emotion-15"
                       >
-                        <p
-                          class="emotion-16"
-                        >
-                          This is a feature card.
-                        </p>
-                      </div>
-                      <button
-                        class="emotion-18"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <div
-                          class="emotion-19"
-                        >
-                          <div
-                            class="emotion-20"
-                          >
-                            <span
-                              class="emotion-21"
-                            >
-                              needHelpCard
-                            </span>
-                          </div>
-                          <div
-                            class="emotion-20"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              class="emotion-23 emotion-24"
-                              fill="currentColor"
-                              focusable="false"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                              />
-                              <path
-                                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                      </button>
+                        This is a feature card.
+                      </p>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-46"
-            >
-              <div
-                class="emotion-9"
-              >
-                <div
-                  class="emotion-10"
-                >
-                  <div
-                    class="emotion-11"
-                  >
-                    <a
-                      class="nk-card-link emotion-12"
-                      href="/"
-                    >
-                      <section
-                        class="emotion-13"
-                      >
-                        <h1
-                          class="nk-headline-heading emotion-14"
-                        >
-                          Feature Card
-                        </h1>
-                      </section>
-                    </a>
-                  </div>
-                  <div
-                    class="emotion-15"
-                  >
-                    <p
-                      class="emotion-16"
-                    >
-                      This is a feature card.
-                    </p>
-                  </div>
-                  <div
-                    class="emotion-17"
-                  >
                     <button
-                      class="emotion-18"
+                      class="emotion-17"
                       data-testid="button"
                       type="button"
                     >
                       <div
-                        class="emotion-19"
+                        class="emotion-18"
                       >
                         <div
-                          class="emotion-20"
+                          class="emotion-19"
                         >
                           <span
-                            class="emotion-21"
+                            class="emotion-20"
                           >
                             needHelpCard
                           </span>
                         </div>
                         <div
-                          class="emotion-20"
+                          class="emotion-19"
                         >
                           <svg
                             aria-hidden="true"
-                            class="emotion-23 emotion-24"
+                            class="emotion-22 emotion-23"
                             fill="currentColor"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -1945,6 +1709,92 @@ exports[`Media List renders with feature cardscards 1`] = `
             </div>
           </div>
         </div>
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-45"
+          >
+            <div
+              class="emotion-8"
+            >
+              <div
+                class="emotion-9"
+              >
+                <div
+                  class="emotion-10"
+                >
+                  <a
+                    class="nk-card-link emotion-11"
+                    href="/"
+                  >
+                    <section
+                      class="emotion-12"
+                    >
+                      <h1
+                        class="nk-headline-heading emotion-13"
+                      >
+                        Feature Card
+                      </h1>
+                    </section>
+                  </a>
+                </div>
+                <div
+                  class="emotion-14"
+                >
+                  <p
+                    class="emotion-15"
+                  >
+                    This is a feature card.
+                  </p>
+                </div>
+                <div
+                  class="emotion-16"
+                >
+                  <button
+                    class="emotion-17"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-18"
+                    >
+                      <div
+                        class="emotion-19"
+                      >
+                        <span
+                          class="emotion-20"
+                        >
+                          needHelpCard
+                        </span>
+                      </div>
+                      <div
+                        class="emotion-19"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="emotion-22 emotion-23"
+                          fill="currentColor"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1953,59 +1803,13 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 exports[`Media List renders with usage cards 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-0 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-left: 8.333333333333334%;
-    -webkit-flex-basis: 83.33333333333334%;
-    -ms-flex-preferred-size: 83.33333333333334%;
-    flex-basis: 83.33333333333334%;
-    max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-0 {
-    -webkit-flex-basis: 66.66666666666667%;
-    -ms-flex-preferred-size: 66.66666666666667%;
-    flex-basis: 66.66666666666667%;
-    max-width: 66.66666666666667%;
-  }
-}
-
-.emotion-2 {
+  .emotion-1 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2023,36 +1827,36 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen {
-  .emotion-3 {
+  .emotion-2 {
     margin: -48px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -48px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -48px -8px 0 -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -48px -12px 0 -12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-3 {
+  .emotion-2 {
     margin: -48px -12px 0 -12px;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -2062,7 +1866,7 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen {
-  .emotion-4 {
+  .emotion-3 {
     padding: 0 8px;
     margin-top: 48px;
     -webkit-flex-basis: 100%;
@@ -2073,7 +1877,7 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-4 {
+  .emotion-3 {
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -2082,23 +1886,23 @@ exports[`Media List renders with usage cards 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-4 {
+  .emotion-3 {
     padding: 0 12px;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   position: relative;
 }
 
-.emotion-6 {
+.emotion-5 {
   position: absolute;
   right: 16px;
   top: 16px;
   z-index: 1;
 }
 
-.emotion-7 {
+.emotion-6 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2131,16 +1935,16 @@ exports[`Media List renders with usage cards 1`] = `
   border-width: 1px;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   fill: #0A782A;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2161,7 +1965,7 @@ exports[`Media List renders with usage cards 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2170,7 +1974,7 @@ exports[`Media List renders with usage cards 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-10 {
+.emotion-9 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2179,13 +1983,13 @@ exports[`Media List renders with usage cards 1`] = `
   display: inline-block;
 }
 
-.emotion-10.emotion-10 {
+.emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
   fill: #0A782A;
 }
 
-.emotion-12 {
+.emotion-11 {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -2198,26 +2002,26 @@ exports[`Media List renders with usage cards 1`] = `
   flex-direction: column;
 }
 
-.emotion-13 {
+.emotion-12 {
   box-sizing: border-box;
 }
 
-.emotion-14 {
+.emotion-13 {
   box-sizing: border-box;
   color: inherit;
   padding: 0;
 }
 
-.emotion-14 a:not(.nk-card-link) {
+.emotion-13 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
 }
 
-.emotion-15 {
+.emotion-14 {
   margin-bottom: 16px;
 }
 
-.emotion-16 {
+.emotion-15 {
   border-style: solid;
   border-color: #0A782A;
   border-width: 4px;
@@ -2228,7 +2032,7 @@ exports[`Media List renders with usage cards 1`] = `
   width: 100%;
 }
 
-.emotion-18 {
+.emotion-17 {
   font-family: "Poppins",sans-serif;
   font-size: 22px;
   line-height: 24.75px;
@@ -2237,30 +2041,30 @@ exports[`Media List renders with usage cards 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-18::before {
+.emotion-17::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-18::after {
+.emotion-17::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
 }
 
-.emotion-19 {
+.emotion-18 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #0A782A;
 }
 
-.emotion-19 svg {
+.emotion-18 svg {
   fill: #0A782A;
 }
 
-.emotion-21 {
+.emotion-20 {
   margin: 0;
   color: #2E2E2E;
   font-family: "DM Sans",sans-serif;
@@ -2271,23 +2075,23 @@ exports[`Media List renders with usage cards 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-21 svg {
+.emotion-20 svg {
   fill: #2E2E2E;
 }
 
-.emotion-21::before {
+.emotion-20::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-21::after {
+.emotion-20::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
-.emotion-25 {
+.emotion-24 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2320,16 +2124,16 @@ exports[`Media List renders with usage cards 1`] = `
   border-width: 1px;
 }
 
-.emotion-25 svg {
+.emotion-24 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-25 svg {
+.emotion-24 svg {
   fill: #D20600;
 }
 
-.emotion-28 {
+.emotion-27 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2338,13 +2142,13 @@ exports[`Media List renders with usage cards 1`] = `
   display: inline-block;
 }
 
-.emotion-28.emotion-28 {
+.emotion-27.emotion-27 {
   width: 24px;
   height: 24px;
   fill: #D20600;
 }
 
-.emotion-34 {
+.emotion-33 {
   border-style: solid;
   border-color: #D20600;
   border-width: 4px;
@@ -2355,14 +2159,14 @@ exports[`Media List renders with usage cards 1`] = `
   width: 100%;
 }
 
-.emotion-37 {
+.emotion-36 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #D20600;
 }
 
-.emotion-37 svg {
+.emotion-36 svg {
   fill: #D20600;
 }
 
@@ -2386,37 +2190,37 @@ exports[`Media List renders with usage cards 1`] = `
             >
               <div
                 class="emotion-6"
+                data-testid="flag"
               >
                 <div
                   class="emotion-7"
-                  data-testid="flag"
                 >
                   <div
                     class="emotion-8"
                   >
-                    <div
-                      class="emotion-9"
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-9 emotion-10"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-10 emotion-11"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0V0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-                        />
-                      </svg>
-                    </div>
+                      <path
+                        d="M0 0h24v24H0V0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              class="emotion-11"
+            >
               <div
                 class="emotion-12"
               >
@@ -2426,41 +2230,41 @@ exports[`Media List renders with usage cards 1`] = `
                   <div
                     class="emotion-14"
                   >
-                    <div
+                    <hr
+                      aria-hidden="true"
                       class="emotion-15"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="emotion-16"
-                        data-testid="divider"
-                      />
-                      <div
-                        class="emotion-15"
-                      />
-                      <section
-                        class="emotion-18"
-                      >
-                        <h1
-                          class="nk-headline-heading emotion-19"
-                        >
-                          Do
-                        </h1>
-                      </section>
-                    </div>
+                      data-testid="divider"
+                    />
                     <div
-                      class="emotion-15"
+                      class="emotion-14"
+                    />
+                    <section
+                      class="emotion-17"
                     >
-                      <p
-                        class="emotion-21"
+                      <h1
+                        class="nk-headline-heading emotion-18"
                       >
-                        UsageCard Do
-                      </p>
-                    </div>
+                        Do
+                      </h1>
+                    </section>
+                  </div>
+                  <div
+                    class="emotion-14"
+                  >
+                    <p
+                      class="emotion-20"
+                    >
+                      UsageCard Do
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div
+          class="emotion-3"
+        >
           <div
             class="emotion-4"
           >
@@ -2468,38 +2272,38 @@ exports[`Media List renders with usage cards 1`] = `
               class="emotion-5"
             >
               <div
-                class="emotion-6"
+                class="emotion-24"
+                data-testid="flag"
               >
                 <div
-                  class="emotion-25"
-                  data-testid="flag"
+                  class="emotion-7"
                 >
                   <div
                     class="emotion-8"
                   >
-                    <div
-                      class="emotion-9"
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-27 emotion-10"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-28 emotion-11"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0V0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
-                        />
-                      </svg>
-                    </div>
+                      <path
+                        d="M0 0h24v24H0V0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              class="emotion-11"
+            >
               <div
                 class="emotion-12"
               >
@@ -2509,36 +2313,32 @@ exports[`Media List renders with usage cards 1`] = `
                   <div
                     class="emotion-14"
                   >
+                    <hr
+                      aria-hidden="true"
+                      class="emotion-33"
+                      data-testid="divider"
+                    />
                     <div
-                      class="emotion-15"
+                      class="emotion-14"
+                    />
+                    <section
+                      class="emotion-17"
                     >
-                      <hr
-                        aria-hidden="true"
-                        class="emotion-34"
-                        data-testid="divider"
-                      />
-                      <div
-                        class="emotion-15"
-                      />
-                      <section
-                        class="emotion-18"
+                      <h1
+                        class="nk-headline-heading emotion-36"
                       >
-                        <h1
-                          class="nk-headline-heading emotion-37"
-                        >
-                          Do not
-                        </h1>
-                      </section>
-                    </div>
-                    <div
-                      class="emotion-15"
+                        Do not
+                      </h1>
+                    </section>
+                  </div>
+                  <div
+                    class="emotion-14"
+                  >
+                    <p
+                      class="emotion-20"
                     >
-                      <p
-                        class="emotion-21"
-                      >
-                        UsageCard Dont
-                      </p>
-                    </div>
+                      UsageCard Dont
+                    </p>
                   </div>
                 </div>
               </div>

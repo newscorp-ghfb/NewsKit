@@ -1,6 +1,5 @@
 import React from 'react';
-import {Link, TextBlock} from 'newskit*';
-import {InlineMessage, Block} from 'newskit';
+import {Link, TextBlock, InlineMessage, Block} from 'newskit';
 import {
   Illustration,
   getIllustrationComponent,
@@ -13,7 +12,10 @@ import {
 } from '../../templates/template-sections';
 import {MediaList} from '../../components/media-list';
 import {UsageKind} from '../../components/usage-card';
-import {ComponentPageCellCompact} from '../../components/layout-cells';
+import {
+  ComponentPageCell,
+  ComponentPageCellCompact,
+} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
 
 const featureCardoverrides = {
@@ -136,12 +138,9 @@ export default (layoutProps: LayoutProps) => (
       toc="Principles"
       introduction=""
     >
-      <MediaList
-        layout="3-span"
-        cardType="feature"
-        cards={PRINCIPLE_CARDS}
-        parentCellProps={{md: 10, lg: 10, xl: 8, mdOffset: 1}}
-      />
+      <ComponentPageCell>
+        <MediaList layout="3-span" cardType="feature" cards={PRINCIPLE_CARDS} />
+      </ComponentPageCell>
     </CommonSection>
 
     <BehaviorsSection

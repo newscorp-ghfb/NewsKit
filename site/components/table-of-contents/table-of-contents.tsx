@@ -14,7 +14,7 @@ export const TableOfContents: React.FC = () => {
   const getContentInfo = () => {
     const data: {id: string; title: string}[] = [];
 
-    document.querySelectorAll('section[data-toc-indexed').forEach(element => {
+    document.querySelectorAll('[data-toc-indexed]').forEach(element => {
       const title = element.getAttribute('data-toc-indexed');
       if (title) {
         data.push({id: element.id, title});

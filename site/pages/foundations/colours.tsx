@@ -5,10 +5,13 @@ import {
   UnorderedList,
   InlineMessage,
   TextBlock,
-} from 'newskit*';
+} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {CommonSection} from '../../templates/template-sections';
-import {ComponentPageCellCompact} from '../../components/layout-cells';
+import {
+  ComponentPageCell,
+  ComponentPageCellCompact,
+} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
 import {getTokenType} from '../../utils/get-token-type';
 import {Link} from '../../components/link';
@@ -363,12 +366,9 @@ export default (layoutProps: LayoutProps) => (
       toc="Principles"
       introduction=""
     >
-      <MediaList
-        layout="3-span"
-        cardType="feature"
-        cards={PRINCIPLE_CARDS}
-        parentCellProps={{md: 10, lg: 10, xl: 8, mdOffset: 1}}
-      />
+      <ComponentPageCell>
+        <MediaList layout="3-span" cardType="feature" cards={PRINCIPLE_CARDS} />
+      </ComponentPageCell>
     </CommonSection>
 
     <CommonSection

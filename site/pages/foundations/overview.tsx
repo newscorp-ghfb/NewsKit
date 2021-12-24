@@ -1,5 +1,5 @@
 import React from 'react';
-import {Cell, Grid} from 'newskit';
+import {Grid} from 'newskit';
 import Head from 'next/head';
 import {HeaderImage} from '../../components/illustrations/foundations/header-image';
 import Layout, {LayoutProps} from '../../components/layout';
@@ -41,20 +41,16 @@ export default (layoutProps: LayoutProps) => (
       feel of UI components.
     </HeaderIndex>
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-      <Cell xs={12}>
-        <SectionIntroduction
-          title="Categories"
-          cellProps={{lg: 8}}
-          subHeadingSpaceStack="space000"
-        >
-          The NewsKit Foundations are structured into the following categories:
-        </SectionIntroduction>
-      </Cell>
-      <MediaList
-        cards={cardsContent}
-        parentCellProps={{lg: 10}}
-        gridProps={{xsRowGutter: 'space050'}}
-      />
+      <SectionIntroduction
+        title="Categories"
+        cellProps={{lg: 8}}
+        subHeadingSpaceStack="space000"
+      >
+        The NewsKit Foundations are structured into the following categories:
+      </SectionIntroduction>
+      <ComponentPageCell>
+        <MediaList cards={cardsContent} gridProps={{xsRowGutter: 'space050'}} />
+      </ComponentPageCell>
       <ComponentPageCell>
         <Separator />
       </ComponentPageCell>

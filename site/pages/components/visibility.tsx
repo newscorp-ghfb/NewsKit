@@ -17,7 +17,10 @@ import {
   SEOSection,
   UsageSection,
 } from '../../templates/template-sections';
-import {ComponentPageCellCompact} from '../../components/layout-cells';
+import {
+  ComponentPageCell,
+  ComponentPageCellCompact,
+} from '../../components/layout-cells';
 import {Link} from '../../components/link';
 import {Mono} from '../../components/flags';
 
@@ -108,10 +111,9 @@ export default (layoutProps: LayoutProps) => (
       toc="Components"
       introduction="Visibility is comprised of three components."
     >
-      <MediaList
-        cards={cards}
-        parentCellProps={{md: 10, lg: 10, xl: 8, mdOffset: 1}}
-      />
+      <ComponentPageCell>
+        <MediaList cards={cards} />
+      </ComponentPageCell>
     </CommonSection>
     <CommonSection title="Code Example" id="code-example" toc="Code Example">
       <CellWrapper>

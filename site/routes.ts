@@ -75,6 +75,14 @@ export default [
         illustration: 'foundations/hero-borders-illustration',
       },
       {
+        title: 'Breakpoints',
+        page: true,
+        id: '/foundations/breakpoints',
+        illustration: 'foundations/breakpoints/hero',
+        description:
+          'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
+      },
+      {
         title: 'Colours',
         page: true,
         id: '/foundations/colours',
@@ -129,14 +137,6 @@ export default [
         description:
           'Standardised sizing provides increased visual consistency in an interface.',
       },
-      // {
-      //   title: 'Breakpoints',
-      //   page: true,
-      //   id: '/foundations/breakpoints',
-      //   illustration: 'static/theming/foundations/breakpoints.svg',
-      //   description:
-      //     'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
-      // },
       // {
       //   title: 'Overlays',
       //   page: true,

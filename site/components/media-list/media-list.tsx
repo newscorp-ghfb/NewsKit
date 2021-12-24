@@ -21,7 +21,6 @@ export const MediaList: React.FC<MediaListProps> = ({
   cards,
   cardType = 'base',
   gridProps,
-  parentCellProps,
   horizontalRatio,
 }) => {
   const renderCards = (cardListOrientation?: 'vertical' | 'horizontal') => {
@@ -102,12 +101,10 @@ export const MediaList: React.FC<MediaListProps> = ({
   };
 
   return (
-    <Cell xs={12} md={10} xl={8} mdOffset={1} {...parentCellProps}>
-      <Block spaceStack={spaceStack}>
-        <Grid xsRowGutter="space080" xsMargin="space000" {...gridProps}>
-          {renderBreakpointCards()}
-        </Grid>
-      </Block>
-    </Cell>
+    <Block spaceStack={spaceStack}>
+      <Grid xsRowGutter="space080" xsMargin="space000" {...gridProps}>
+        {renderBreakpointCards()}
+      </Grid>
+    </Block>
   );
 };

@@ -207,8 +207,18 @@ exports[`UsageSection renders section as expected 1`] = `
 }"
           data-testid="Cell"
         />
-        <div>
-          MediaList Component with props:{
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+          data-testid="Cell"
+        >
+          <div>
+            MediaList Component with props:{
   "gridProps": {
     "xsRowGutter": "space050"
   },
@@ -233,6 +243,7 @@ exports[`UsageSection renders section as expected 1`] = `
     }
   ]
 }
+          </div>
         </div>
       </div>
     </section>
@@ -276,7 +287,6 @@ exports[`UsageSection renders section as expected 1`] = `
     data-props="{
   \\"xs\\": 12,
   \\"md\\": 10,
-  \\"lg\\": 10,
   \\"xl\\": 8,
   \\"mdOffset\\": 1
 }"

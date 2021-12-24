@@ -8,7 +8,10 @@ import {
   BehaviorsSection,
   CommonSection,
 } from '../../../templates/template-sections';
-import {ComponentPageCellCompact} from '../../../components/layout-cells';
+import {
+  ComponentPageCell,
+  ComponentPageCellCompact,
+} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {
   Illustration,
@@ -44,7 +47,6 @@ const spaceTable = getTokenType(newskitLightTheme.spacePresets, 'space').reduce(
             (tokenValue as string).split('{{sizing.')[1].replace('}}', ''),
           ) || '-',
       };
-      console.log(tokenObject);
       return [...result, tokenObject];
     }
     return result;
@@ -257,12 +259,9 @@ export default (layoutProps: LayoutProps) => (
       toc="Principles"
       introduction=""
     >
-      <MediaList
-        layout="3-span"
-        cardType="feature"
-        cards={PRINCIPLE_CARDS}
-        parentCellProps={{md: 10, lg: 10, xl: 8, mdOffset: 1}}
-      />
+      <ComponentPageCell>
+        <MediaList layout="3-span" cardType="feature" cards={PRINCIPLE_CARDS} />
+      </ComponentPageCell>
     </CommonSection>
     <CommonSection
       title="Overview"

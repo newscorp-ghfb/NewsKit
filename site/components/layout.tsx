@@ -197,7 +197,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             <Playground componentName={false} />
 
             <BodyWrapper>
-              {path.endsWith('-new') || newPage ? (
+              {newPage ? (
                 <ThemeProvider
                   theme={themeMode === 'light' ? docsThemeLight : docsThemeDark}
                 >
@@ -220,6 +220,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
                 </Grid>
               )}
             </BodyWrapper>
+
             {path === '/index' ? (
               <SiteFooter
                 cellProps={{

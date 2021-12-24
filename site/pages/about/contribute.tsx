@@ -101,16 +101,10 @@ export default ({path, ...props}: LayoutProps) => (
         Design System; from submitting a proposal to designing a new feature for
         other users to benefit from.
       </SectionIntroduction>
-      <ComponentPageCell>
-        <MediaList
-          layout="3-span"
-          cardType="feature"
-          cards={cards}
-          parentCellProps={{md: 'full-width', lg: 12, mdOffset: 0, xl: 12}}
-        />
-
+      <Cell>
+        <MediaList layout="3-span" cardType="feature" cards={cards} />
         <Separator />
-      </ComponentPageCell>
+      </Cell>
 
       <SectionIntroduction
         title="Feedback"

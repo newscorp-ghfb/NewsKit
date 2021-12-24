@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block, TextBlock, Divider, newskitLightTheme} from 'newskit*';
+import {Block, TextBlock, Divider, newskitLightTheme} from 'newskit';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {CommonSection} from '../../templates/template-sections';
 import {Table} from '../../components/table';

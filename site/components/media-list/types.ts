@@ -1,4 +1,4 @@
-import {GridProps, MQ, CellProps} from 'newskit';
+import {GridProps, MQ} from 'newskit';
 import {FeatureCardProps} from '../feature-card';
 import {UsageCardProps} from '../usage-card';
 import {BaseCardProps} from '../base-card';
@@ -17,6 +17,5 @@ export interface MediaListProps {
   spaceStack?: string;
   gridProps?: GridProps;
   horizontalRatio?: string;
-  parentCellProps?: CellProps;
 }
 export type MediaItem = BaseCardProps | UsageCardProps | FeatureCardProps;

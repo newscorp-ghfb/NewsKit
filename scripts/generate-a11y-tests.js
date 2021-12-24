@@ -54,5 +54,3 @@ fs.writeFileSync(
   './cypress/config/a11y-components.json',
   JSON.stringify(testsConfig, null, '\t'),
 );
-
-console.log('a11y tests generation completed');

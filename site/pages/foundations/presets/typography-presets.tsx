@@ -14,7 +14,10 @@ import {Code} from '../../../components/code';
 import {FoundationPageTemplate} from '../../../templates/foundation-page-template';
 import {CommonSection} from '../../../templates/template-sections';
 import {Table} from '../../../components/table';
-import {ComponentPageCellCompact} from '../../../components/layout-cells';
+import {
+  ComponentPageCell,
+  ComponentPageCellCompact,
+} from '../../../components/layout-cells';
 import {LayoutProps} from '../../../components/layout';
 import {Link} from '../../../components/link';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -297,78 +300,82 @@ const ItalicTextBlock = styled(TextBlock)\`
       <CellWrapper>
         <Block spaceStack="space090" />
       </CellWrapper>
-      <MediaList
-        cardsLayout={{
-          xs: 'vertical',
-          sm: 'vertical',
-          md: 'horizontal',
-          lg: 'horizontal',
-          xl: 'horizontal',
-        }}
-        layout="1-span"
-        cards={[
-          {
-            title: 'Font size',
-            description: (
-              <>
-                While there is no official minimum font size for the web, it is
-                generally agreed upon that 16px for body text is a good starting
-                point.
-                <br />
-                <br />
-                Of course, some text will be smaller for elements such as labels
-                and headers will be larger.
-                <br />
-                <br />
-                To ensure that text is legible, NewsKit recommended that the
-                smallest font-size applied to text is no less 12px for web.
-              </>
-            ),
-            media: getIllustrationComponent('foundations/typography/font-size'),
-          },
-          {
-            title: 'Line Height',
-            description: (
-              <>
-                Providing an adequate amount of space between lines is critical
-                to the legibility of text. As per W3C accessibility guidelines
-                line spacing should be at least space-and-a-half within
-                paragraphs, and paragraph spacing is at least 1.5 times larger
-                than the line spacing.
-                <br />
-                <br />
-                Using relative line-heights, NewsKit ensures consistent spacing
-                of all headings and body-text sizes. Heading and Headline styles
-                are set to a default of 1.125-times the font size and body text
-                set at 1.5-times the font size.
-              </>
-            ),
-            media: getIllustrationComponent(
-              'foundations/typography/line-height',
-            ),
-          },
-          {
-            title: 'Line length',
-            description: (
-              <>
-                Line-length, also known as a measure, is the number of
-                characters contained in a line of text. Line-length should fall
-                between 50 and 80 characters wide, including spaces, to ensure
-                readability.
-                <br />
-                <br />
-                Lines narrower than 50 characters require the eye to jump to the
-                next line too frequently, breaking the reader’s rhythm. Lines
-                wider than 80 characters make it difficult to continue to the
-                correct line in a large body of the text.
-              </>
-            ),
-            media: getIllustrationComponent(
-              'foundations/typography/line-length',
-            ),
-          },
-        ]}
-      />
+      <ComponentPageCell>
+        <MediaList
+          cardsLayout={{
+            xs: 'vertical',
+            sm: 'vertical',
+            md: 'horizontal',
+            lg: 'horizontal',
+            xl: 'horizontal',
+          }}
+          layout="1-span"
+          cards={[
+            {
+              title: 'Font size',
+              description: (
+                <>
+                  While there is no official minimum font size for the web, it
+                  is generally agreed upon that 16px for body text is a good
+                  starting point.
+                  <br />
+                  <br />
+                  Of course, some text will be smaller for elements such as
+                  labels and headers will be larger.
+                  <br />
+                  <br />
+                  To ensure that text is legible, NewsKit recommended that the
+                  smallest font-size applied to text is no less 12px for web.
+                </>
+              ),
+              media: getIllustrationComponent(
+                'foundations/typography/font-size',
+              ),
+            },
+            {
+              title: 'Line Height',
+              description: (
+                <>
+                  Providing an adequate amount of space between lines is
+                  critical to the legibility of text. As per W3C accessibility
+                  guidelines line spacing should be at least space-and-a-half
+                  within paragraphs, and paragraph spacing is at least 1.5 times
+                  larger than the line spacing.
+                  <br />
+                  <br />
+                  Using relative line-heights, NewsKit ensures consistent
+                  spacing of all headings and body-text sizes. Heading and
+                  Headline styles are set to a default of 1.125-times the font
+                  size and body text set at 1.5-times the font size.
+                </>
+              ),
+              media: getIllustrationComponent(
+                'foundations/typography/line-height',
+              ),
+            },
+            {
+              title: 'Line length',
+              description: (
+                <>
+                  Line-length, also known as a measure, is the number of
+                  characters contained in a line of text. Line-length should
+                  fall between 50 and 80 characters wide, including spaces, to
+                  ensure readability.
+                  <br />
+                  <br />
+                  Lines narrower than 50 characters require the eye to jump to
+                  the next line too frequently, breaking the reader’s rhythm.
+                  Lines wider than 80 characters make it difficult to continue
+                  to the correct line in a large body of the text.
+                </>
+              ),
+              media: getIllustrationComponent(
+                'foundations/typography/line-length',
+              ),
+            },
+          ]}
+        />
+      </ComponentPageCell>
     </CommonSection>
   </FoundationPageTemplate>
 );

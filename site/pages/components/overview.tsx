@@ -52,21 +52,22 @@ export default (layoutProps: LayoutProps) => (
                 </SectionIntroduction>
               </Cell>
             )}
-            <MediaList
-              cards={subNav.map((comp: any) => ({
-                media: comp.illustration
-                  ? getIllustrationComponent(comp.illustration)
-                  : {
-                      src: comp.media,
-                      alt: '',
-                    },
-                title: comp.title,
-                href: comp.id,
-                description: comp.description,
-              }))}
-              parentCellProps={{lg: 10}}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
+            <ComponentPageCell>
+              <MediaList
+                cards={subNav.map((comp: any) => ({
+                  media: comp.illustration
+                    ? getIllustrationComponent(comp.illustration)
+                    : {
+                        src: comp.media,
+                        alt: '',
+                      },
+                  title: comp.title,
+                  href: comp.id,
+                  description: comp.description,
+                }))}
+                gridProps={{xsRowGutter: 'space050'}}
+              />
+            </ComponentPageCell>
             {i !== componentCategories.length - 1 && (
               <ComponentPageCell>
                 <Separator />
