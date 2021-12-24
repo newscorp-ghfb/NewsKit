@@ -200,6 +200,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@seznam/compose-react-refs": "^1.0.5",
+    "aria-hidden": "^1.1.3",
     "date-fns": "^2.6.0",
     "debounce": "^1.2.0",
     "dequal": "^1.0.0",

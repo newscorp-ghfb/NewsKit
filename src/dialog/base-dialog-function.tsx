@@ -1,5 +1,6 @@
-import React, {useRef, useEffect, useCallback} from 'react';
+import React, {useRef, useEffect, useCallback, useState} from 'react';
 import FocusLock from 'react-focus-lock';
+import {hideOthers, Undo} from 'aria-hidden';
 import {useKeypress} from '../utils/hooks';
 import {get} from '../utils/get';
 import {BaseDialogFunctionProps} from './types';
@@ -29,8 +30,12 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
 
   useKeypress('Escape', handleEscape, {enabled: open});
 
+  const [ariaHiddenUndo, setAriaHiddenUndo] = useState<{undo: Undo}>();
+
   // ref to store activeElement ( focused ) before dialog been opened
   const originalFocusedElementRef = useRef<Element | null>(null);
+
+  const baseDialogFunctionRef = useRef(null);
 
   const handleOnLockActivation = () => {
     originalFocusedElementRef.current = document.activeElement;
@@ -62,8 +67,21 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
     };
   }, [disableFocusTrap, handleOnLockDeactivation, open]);
 
+  // Aria hides everything else that is not contained inside BaseDialogFunction
+  useEffect(() => {
+    if (open && baseDialogFunctionRef.current && !disableFocusTrap) {
+      const undo = hideOthers(baseDialogFunctionRef.current);
+      return setAriaHiddenUndo({undo});
+    }
+    return () => {
+      if (!open && ariaHiddenUndo) {
+        ariaHiddenUndo.undo();
+      }
+    };
+  }, [open]);
+
   return (
-    <>
+    <div ref={baseDialogFunctionRef}>
       {!hideOverlay && renderOverlay(handleOverlayClick)}
       <FocusLock
         disabled={!open || disableFocusTrap}
@@ -72,6 +90,6 @@ export const BaseDialogFunction: React.FC<BaseDialogFunctionProps> = ({
       >
         {children && children(handleCloseButtonClick)}
       </FocusLock>
-    </>
+    </div>
   );
 };
