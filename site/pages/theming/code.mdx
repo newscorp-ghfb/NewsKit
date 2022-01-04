@@ -1,0 +1,77 @@
+import Layout from '../../components/layout';
+import {Code, CodeFromFile} from '../../components/code';
+
+export default Layout;
+
+# Code
+
+## ThemeProvider
+
+A ThemeProvider allows the user to provide a theme that is passed to all NewsKit components.
+This theme is an object that represents the brand identity. NewsKit provides sensible defaults if the brand chooses to not fully implement a theme of their own. 
+Details of this can be found below in the theme section.
+
+<CodeFromFile path="examples/theming/theme-provider.tsx"/>
+
+The theme is also available to any styled component created using the NewsKit styled utility function nested within the ThemeProvider.
+
+<CodeFromFile language="text" path="examples/theming/styled.tsx"/>
+
+ThemeProvider's can also be nested allowing the child to override the parent. Please note that this is a shallow merge of the parent and child theme.
+
+<CodeFromFile path="examples/theming/nested-theme-provider.tsx"/>
+
+## withTheme
+
+The withTheme higher order component allows a developer to access the global theme inside their codebase as long as there is a ThemeProvider 
+at the root of the project.
+
+<CodeFromFile path="examples/theming/with-theme.tsx"/>
+
+## Theme
+
+Themes represent the brand's identity. These are objects that house the primitives and tokens used inside the NewsKit components. NewsKit provides 
+sensible defaults so the consumer can override as much or as little of the theme as they wish. Currently the NewsKit component library houses 
+3 themes. These can be used in conjunction with the ThemeProvider above.
+
+* theSunTheme
+* theTimesTheme
+* newskitLightTheme
+
+## createTheme
+
+The createTheme utility function allows you to create your own theme to be used by the ThemeProvider. It takes the following arguments:
+
+* `name | String`
+* `options | Object`
+
+The options object is made up of the following attributes:
+
+* `baseTheme | Object`
+* `colorOverrides | Object`
+* `fontOverrides | Object`
+* `themeOverrider | Object`
+
+### baseTheme
+
+The base theme provided here is updated with the overrides to create the output theme of the function. If no theme is provided, the default newskit-light theme is used as a base.
+
+### colorOverrides
+
+A map of color key-value pairs that override the base theme values. An example of these values can be found below:
+
+<CodeFromFile path="examples/theming/colors.ts"/>
+
+### fontOverrides
+
+A map of font key-value pairs that override the base theme values. An example of these values can be found below:
+
+<CodeFromFile path="examples/theming/fonts.ts" />
+
+### themeOverrider
+
+The themeOverrider allows you to override specific values after creating the theme. To accomplish this just pass in an object 
+of the values you wish to override.
+
+
+<CodeFromFile path="examples/theming/overrides.ts" />

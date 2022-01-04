@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay when closed 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.6s,right 0.3s;
+  transition: opacity 0.6s,right 0.3s;
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+</DocumentFragment>
+`;
+
+exports[`Overlay when hidden at breakpoint 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.6s,right 0.3s;
+  transition: opacity 0.6s,right 0.3s;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+</DocumentFragment>
+`;
+
+exports[`Overlay when open 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.6s,right 0.3s;
+  transition: opacity 0.6s,right 0.3s;
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+</DocumentFragment>
+`;
+
+exports[`Overlay with z-index 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.6s,right 0.3s;
+  transition: opacity 0.6s,right 0.3s;
+  z-index: 1;
+}
+
+<div
+    class="emotion-0"
+    data-testid="overlay"
+  />
+</DocumentFragment>
+`;

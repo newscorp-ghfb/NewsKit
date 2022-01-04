@@ -1,0 +1,57 @@
+import * as React from 'react';
+import {ArticleByline} from '..';
+
+export const name = 'article-byline';
+
+export const component = () => (
+  <React.Fragment>
+    <ArticleByline
+      bylineData={[
+        {
+          author: 'Alison Beach',
+          href: 'https://en.wikipedia.org/wiki/Beach',
+          title: 'Beach Editor',
+        },
+        {
+          author: 'Charles Donkey',
+          href: 'https://en.wikipedia.org/wiki/Donkey',
+          title: 'Senior Donkey Reporter',
+        },
+      ]}
+    />
+    <ArticleByline
+      bylineData={[
+        {
+          author: 'Alison Beach',
+          title: 'Beach Editor',
+        },
+        {
+          author: 'Charles Donkey',
+          title: 'Senior Donkey Reporter',
+        },
+      ]}
+    />
+    <ArticleByline
+      bylineData={[
+        {
+          author: 'Alison Beach',
+          href: 'https://en.wikipedia.org/wiki/Beach',
+        },
+        {
+          author: 'Charles Donkey',
+          href: 'https://en.wikipedia.org/wiki/Donkey',
+        },
+      ]}
+    />
+    <ArticleByline
+      bylineData={[
+        {
+          author: 'Alison Beach',
+        },
+        {
+          author: 'Charles Donkey',
+        },
+      ]}
+    />
+  </React.Fragment>
+);

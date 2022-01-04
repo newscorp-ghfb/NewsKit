@@ -1,0 +1,92 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {ArticleHeadline} from 'newskit';
+
+export default Layout;
+
+# Article Headline
+
+## Overview
+
+### Usage
+
+No special requirements.
+
+### Theming
+
+## Props
+
+<Block marginTop="sizing040">
+  <Prop name="children" type="string" required>
+    The content of the article headline is passed as the child of the component.
+  </Prop>
+  <Prop name="kickerText" type="string">
+    The optional kicker content, which appears before the headline content.
+  </Prop>
+  <Prop name="kickerColor" type="ColorKeys">
+    The optional color of the article kicker. If passed without kickerText, this prop has no effect.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="ArticleHeadline"
+  newskitPath="/article-headline"
+  component={ArticleHeadline}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'ArticleHeadline Content',
+    },
+    {
+      name: 'Kicker Text',
+      propName: 'kickerText',
+      value: 'ArticleKicker',
+    },
+    {
+      name: 'Kicker Color',
+      propName: 'kickerColor',
+      options: [
+        {
+          label: 'inkContrast',
+          value: 'inkContrast',
+          isDefault: true,
+        },
+        {
+          label: 'interactive010',
+          value: 'interactive010',
+        },
+        {
+          label: 'semanticNegative',
+          value: 'semanticNegative',
+        },
+        {
+          label: 'semanticPositive',
+          value: 'semanticPositive',
+        },
+      ],
+    },
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+### Accessibility
+
+#### Colour
+
+### SEO
+
+#### Ranking
+
+#### Navigation
+
+#### Descriptive

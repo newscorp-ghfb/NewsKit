@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleStandfirst renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 12px 0;
+  color: #2e2e2e;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+<h3
+    class="emotion-0"
+    itemprop="description"
+  />
+</DocumentFragment>
+`;

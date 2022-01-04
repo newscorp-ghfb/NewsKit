@@ -1,0 +1,118 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {H1, H2, H3, H4, H5, H6, P, Image} from 'newskit';
+
+export default Layout;
+
+# Typography
+
+## Overview
+
+Words are at the heart of our business. Use the type scale and usage guidelines to present your design and content as clearly and efficiently as possible.
+
+## Type scale
+
+A type scale is used to provide consistency, hierarchy and rhythm, ensuring responsivity across devices. Typography sizing is based on our root font size (rem) of 16pt, which is adjusted to provide a harmonious scale.
+
+<Image
+  src="/static/examples/typography/typography.png"
+  alt="typography example"
+  aspectWidth="1388"
+  aspectHeight="1600"
+/>
+
+## Applying the type scale
+
+Keeping consistent and sticking to logical hierarchies ensures that elements in the UI are clear and easily recognisable when scanning the page.
+
+Although the scale should remain consistent, type attributes can use custom values for the typeface, font, case, size, and letter spacing.
+
+## Headlines
+
+In the type scale, headlines span from a range of 1 through 6. Headlines are the largest text on the screen, reserved for short, important text or numerals.
+
+## Subtitles
+
+Subtitles are smaller than headlines. They are typically reserved for medium-emphasis text that is shorter in length.
+
+## Body
+
+Body text comes in three sizes. It’s typically used for long-form writing as it works well for smaller text sizes.
+
+## Captions
+
+Captions are the smallest font sizes. They are generally used to annotate imagery or to introduce a headline.
+
+## Playground
+
+### Short Text
+
+<Playground
+  componentName={['H1', 'H2', 'H3', 'H4', 'H5', 'H6']}
+  newskitPath="/typography"
+  component={[H1, H2, H3, H4, H5, H6]}
+  knobs={[
+    {
+      name: 'Bold',
+      propName: '$bold',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'We tell the stories that matter.',
+    },
+  ]}
+/>
+
+### Body Text
+
+<Playground
+  componentName="P"
+  newskitPath="/typography"
+  component={P}
+  knobs={[
+    {
+      name: 'Bold',
+      propName: '$bold',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Drop Cap',
+      propName: '$dropCap',
+      type: 'boolean',
+      value: true,
+    },
+    {
+      name: 'Drop Cap Color',
+      propName: '$dropCapColor',
+      options: [
+        {
+          label: 'inkContrast',
+          value: 'inkContrast',
+          isDefault: true,
+        },
+        {
+          label: 'interactive010',
+          value: 'interactive010',
+        },
+        {
+          label: 'semanticNegative',
+          value: 'semanticNegative',
+        },
+        {
+          label: 'semanticPositive',
+          value: 'semanticPositive',
+        },
+      ],
+    },
+    {
+      name: 'Content',
+      propName: 'children',
+      value:
+        'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.',
+    },
+  ]}
+/>

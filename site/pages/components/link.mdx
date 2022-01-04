@@ -1,0 +1,155 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {Link} from 'newskit';
+
+export default Layout;
+
+# Link
+
+## Overview
+
+A simple styled anchor element.
+
+### Usage
+
+A link requires a href property to be passed in.
+
+### Theming
+
+The default link component uses the following style tokens, which can be overridden:
+
+| Theme Token | Color Primitive | Color Value                               |
+| ----------- | --------------- | ----------------------------------------- |
+| linkText    | link010          | <TextBoxSwatch themeColor="link010"/>      |
+| linkVisited | link010Visited     | <TextBoxSwatch themeColor="link010Visited"/> |
+| linkHover   | link010Hover         | <TextBoxSwatch themeColor="link010Hover"/>     |
+| linkActive  | link010Hover        | <TextBoxSwatch themeColor="link010Hover"/>    |
+
+## Props
+
+Links have a number of props to facilitate a variety of uses. Any prop valid on an Anchor HTML element, is also valid on the Link component. Custom and required props are detailed below:
+
+<Block marginTop="sizing040">
+  <Prop name="children" type="string" required>
+    The content of the link is passed as the child of the component.
+  </Prop>
+  <Prop name="href" type="string" required>
+    Passed to the href attribute of the rendered anchor element. The provided
+    URL or fragment identifier will be loaded when the link is clicked.
+  </Prop>
+  <Prop name="$font" type="TypePresetKeys">
+    If provided, uses that type preset. Without this, none is set and the
+    underlying anchor element will inherit its parent font properties.
+  </Prop>
+  <Prop name="$color" type="ColorKeys">
+    If provided, overrides the text color of the link including psuedo
+    selectors. Overriding individual pseudo selectors can be done via a theme.
+  </Prop>
+  <Prop name="$noUnderline" type="boolean">
+    If provided, determines if the link will be underlined.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="Link"
+  newskitPath="/link"
+  component={Link}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'Some Link',
+    },
+    {
+      name: 'Link',
+      propName: 'href',
+      value: 'http://example.com',
+    },
+    {
+      name: 'Color',
+      propName: '$color',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'link010',
+          value: 'link010',
+        },
+        {
+          label: 'semanticNegative',
+          value: 'semanticNegative',
+        },
+        {
+          label: 'semanticPositive',
+          value: 'semanticPositive',
+        },
+      ],
+    },
+    {
+      name: 'Font',
+      propName: '$font',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'body010',
+          value: 'body010',
+        },
+        {
+          label: 'body020',
+          value: 'body020',
+        },
+        {
+          label: 'body030',
+          value: 'body030',
+        },
+      ],
+    },
+    {
+      name: 'No Underline',
+      propName: '$noUnderline',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true
+        },
+        {
+          label: 'true',
+          value: true
+        }
+      ]
+    }
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+### Accessibility
+
+#### Colour
+
+Text and background colours must have a 3:1 minimum contrast ratio.
+Hover states should have clear contrast change or should include a non colour designator.
+
+### SEO
+
+#### Ranking
+
+#### Navigation
+
+#### Descriptive

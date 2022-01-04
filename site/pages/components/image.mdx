@@ -1,0 +1,99 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {Image, Link} from 'newskit';
+
+export default Layout;
+
+# Image
+
+## Overview
+Simple component for adding images.
+The image component provides a `<figure>` and an `<img>` element inside it to place the image in the dom. 
+
+## Props
+
+<Block marginTop="sizing040">
+  <Prop name="src" type="string">
+    Image file path that is used directly in the <code>src</code> attribute of the internal <code>img</code> element.
+  </Prop>
+  <Prop name="alt" type="string">
+    Image description that is used directly in the <code>alt</code> attribute of the internal <code>img</code> element.
+  </Prop>
+  <Prop name="aspectWidth" type="string|number">
+    Used in combination with `aspectHeight` to calculate the aspect ratio for the image. Generally supply the width px value if know, if not supply horizontal aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner. 
+  </Prop>
+  <Prop name="aspectHeight" type="string|number">
+    Used in combination with `aspectWidth` to calculate the aspect ratio for the image. Generally supply the height px value if know, if not supply vertical aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner. 
+  </Prop>
+  <Prop name="hideLoadingIcon" type="boolean" default={false} >
+    Hide the loading icon whilst the image is loading.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="Image"
+  newskitPath="/image"
+  component={Image}
+  knobs={[
+    {
+      name: 'src',
+      propName: 'src',
+      value: 'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
+    },
+    {
+      name: 'alt',
+      propName: 'alt',
+      value: 'Example image',
+    },
+    {
+      name: 'aspect width',
+      propName: 'aspectWidth',
+      value: '826',
+    },
+    {
+      name: 'aspect height',
+      propName: 'aspectHeight',
+      value: '551',
+    },
+    {
+      name: 'Hide loading icon',
+      propName: 'hideLoadingIcon',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true
+        },
+        {
+          label: 'true',
+          value: true
+        }
+      ]
+    }
+  ]}
+/>
+
+### Styling
+
+### Styling
+
+The image component is block level element and it wraps its boundaries around the internal img element and the dimenstions of the image file provided. Change or limit the width of the component by styling the returned wrapper.
+
+Placeholder icon can be overridden in the theme with a different icon if needed.
+
+### Accessibility
+
+Provide an alternative text description for the image via its alt prop. This will allow screen readers and other text based browsers to understand the image.
+
+#### Colour
+
+Text and background colours must have a 3:1 minimum contrast ratio.
+Hover states should have clear contrast change or should include a non colour designator.
+Placeholder icon colour is taken from `inkNonEssential` token
+Placeholder background colour is taken from `skeleton010` token

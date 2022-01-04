@@ -1,0 +1,62 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {CodeFromFile} from '../../components/code';
+import {Block} from '../../components/block';
+
+import {Consent} from 'newskit';
+
+export default Layout;
+
+# Consent
+
+## Overview
+
+The consent component is a non-visual component for the consent of the use of 3rd party cookies. It triggers the loading of a Sourcepoint CMP (Content Management Platform) dialog to allow the user to decide what 3rd party cookies they wish to allow or disallow on their browser. It is placed inside the head of the document and because of this, currently only supports server-side rendering. NewsKit has both an AMP and non-AMP version of this component. The two are not interchangeable so you must ensure you use the correct one.
+
+## Prerequisites
+
+To utilise this component you will need to have a [Sourcepoint](https://www.sourcepoint.com) account and, if required, a Sourcepoint messaging subdomain set up. For more information please see Sourcepoint [documentation](https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2).
+
+## Usage
+
+<CodeFromFile path="examples/consent.tsx"/>
+
+## Props
+
+<Block $marginTop='sizing040'>
+  <Prop required name='accountId' type='string'>
+    Your sourcepoint account id.
+  </Prop>
+  <Prop name='mmsDomain' type='string' default="https://message{accountId}.sp-prod.net">
+    Can be changed to a CNAMED subdomain in order to deliver 1st party cookies on Safari web browser (due to Safari’s ITP). Changing the mmsDomain is optional! More information about setting up an mmsDomain below.
+  </Prop>
+  <Prop name='waitForConsent' type='boolean' default="true">
+    When true (the default value), the consent component will cause prebid.js to wait for user consent to be provided before it initialises.
+  </Prop>
+</Block>
+
+# AMP
+
+## Usage With AMP
+
+Note the use of the AMP `Head` component. The `Consent` component must be used as a child of `Head`. See [Getting Started with AMP](/guides/getting-started-amp) for more information.
+
+<CodeFromFile path="examples/amp/consent.tsx"/>
+
+## Props With AMP
+
+<Block $marginTop='sizing040'>
+  <Prop required name='accountId' type='string'>
+    Your sourcepoint account id.
+  </Prop>
+  <Prop required name='siteName' type='string'>
+    The name of your site.
+  </Prop>
+  <Prop required name='privacyManagerId' type='string'>
+    This attribute corresponds to the ID of the privacy manager used for this site.
+  </Prop>
+  <Prop name='postPromptUI' type='string' default="privacy-settings-prompt">
+    This is the reference to  on-page element that will display after a user has provided consent. When this element appears a user can click on it to change their consent preferences.
+  </Prop>
+</Block>

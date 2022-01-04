@@ -1,0 +1,261 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {Block} from '../../components/block';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+
+import {
+  TitleBar,
+  TitleBarBorder,
+  TitleAlignment,
+  Button,
+  Link,
+  Heading1,
+  Heading2,
+  Heading3,
+  Heading4,
+  Heading5,
+  Heading6,
+} from 'newskit';
+
+export default Layout;
+
+# Title Bar
+
+## Overview
+
+The title bar provides context and actions related to a particular section of content that follows below on the screen.
+
+## Playground
+
+<Playground
+  componentName="TitleBar"
+  newskitPath="/title-bar"
+  component={state => (
+    <Block $width="100%">
+      <TitleBar {...state} />
+    </Block>
+  )}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'Title content',
+    },
+    {
+      name: 'Heading Component',
+      propName: 'headingComponent',
+      options: [
+        {
+          label: 'h1',
+          value: Heading1,
+        },
+        {
+          label: 'h2',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'h3',
+          value: Heading3,
+        },
+        {
+          label: 'h4',
+          value: Heading4,
+        },
+        {
+          label: 'h5',
+          value: Heading5,
+        },
+        {
+          label: 'h6',
+          value: Heading6,
+        },
+      ],
+    },
+    {
+      name: 'Title Alignment',
+      propName: '$titleAlignment',
+      options: [
+        {
+          label: 'left',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'center',
+          value: 'center',
+        },
+      ],
+    },
+    {
+      name: 'Padding Left',
+      propName: '$paddingLeft',
+      options: [
+        {
+          label: 'Undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+      ],
+    },
+    {
+      name: 'Padding Right',
+      propName: '$paddingRight',
+      options: [
+        {
+          label: 'Undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+      ],
+    },
+    {
+      name: 'Container Border',
+      propName: '$containerBorder',
+      options: [
+        {
+          label: 'Undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'Top',
+          value: TitleBarBorder.Top,
+        },
+        {
+          label: 'Bottom',
+          value: TitleBarBorder.Bottom,
+        },
+        {
+          label: 'TopAndBottom',
+          value: TitleBarBorder.TopAndBottom,
+        },
+      ],
+    },
+    {
+      name: 'Action Item',
+      propName: 'actionItem',
+      options: [
+        {
+          label: 'Undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'Link',
+          value: () => <Link href="/">Link</Link>,
+        },
+        {
+          label: 'Button',
+          value: () => <Button>Default button</Button>,
+        },
+      ],
+    },
+  ]}
+/>
+
+## Props
+
+Title bar has a number of props to facilitate a variety of uses:
+
+<Block $marginTop="sizing05">
+  <Prop name="children" type="string" required>
+    The content of the title is passed as the child of the component.
+  </Prop>
+  <Prop name="headingComponent" type="React.ComponentType" default="Heading2">
+    The heading tag used for the title. It should be one of the Heading Classes from fountations.
+  </Prop>
+  <Prop name="actionItem" type="React.ComponentType">
+    An action item, most commonly a button, related to the title.
+  </Prop>
+  <Prop name="$titleAlignment" type="TitleAlignment" enum={TitleAlignment} default={TitleAlignment.Left}>
+    The alignment of the title.
+  </Prop>
+  <Prop name="$containerBorder" type="TitleBarBorder" enum={TitleBarBorder} default={TitleBarBorder.None}>
+    Places a border on the container.
+  </Prop>
+  <Prop name="$paddingLeft" type="boolean" default={false}>
+    Left padding of the title according to main container.
+  </Prop>
+  <Prop name="$paddingRight" type="boolean" default={false}>
+    Right padding of the title and button according to main container.
+  </Prop>
+
+</Block>
+
+## Anatomy
+
+The recommended placement of items in a Title Bar is:
+
+- Place a title on the left or center
+- Place contextual actions to the right
+
+![Exploded isometric view](image.url 'Exploded isometric view')
+
+1. Surface
+2. Title
+3. Action items (optional)
+
+### Container
+
+The container takes up the full width of the grid area that's specified for example 12 column, 6 column etc.
+![Images here](image.url 'Images here')
+
+A border can be applied to the surface (a combination of top, bottom, top and bottom).
+
+![Showing border](image.url 'Showing border')
+
+### Title
+
+The title should provide context for the content that sits below the title bar.
+
+![Do - If title text is long, wrap the title to two lines.](image.url 'Do - If title text is long, wrap the title to two lines.')
+![Don’t truncate text, hiding the full title may cause misunderstanding.](image.url 'Don’t truncate text, hiding the full title may cause misunderstanding.')
+![Don’t shrink text to fit on a single line.](image.url 'Don’t shrink text to fit on a single line.')
+
+The title can be aligned to the left or the center.
+
+![Left title](image.url 'Left title')
+![Center title](image.url 'Center title')
+
+### Action Items
+
+Action items can include a button or a link. They are positioned to the right of the container and they vertically align to the position of the title.
+
+![Example with buttons](image.url 'Example with buttons')
+![Don’t change the vertical position of the actions](image.url 'Don’t change the vertical position of the actions')
+
+## Behavior
+
+### Action hidden at smaller breakpoints
+
+By default the action item is hidden on small breakpoints (xs and sm). This is to allow the action to then be placed at the bottom of mobile list for a better UX.
+
+## Accessibility
+
+Your title should be 3:1 colour ratio against a the background colour to be AA WCAG compliant.
+
+![Don't put x colour on x colour](image.url "Don't put x colour on x colour")
+
+## SEO
+
+To be defined
+
+## Theming
+
+| Theme Token         | Primitive      | Value                                       |
+| ------------------- | -------------- | ------------------------------------------- |
+| titleBarBorder      | interface030   | <TextBoxSwatch themeColor="interface030" /> |
+| titleBarTextColor   | inkBase        | <TextBoxSwatch themeColor="inkBase" />      |
+| titleBarBorderWidth | borderWidth010 | 1px                                         |
+
+<br />

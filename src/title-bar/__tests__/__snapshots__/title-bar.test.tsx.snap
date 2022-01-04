@@ -1,0 +1,1203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleBar Should display correctly with action item as: Button 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-3 {
+  padding-left: 24px;
+  display: none;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-3 {
+    display: block;
+  }
+}
+
+.emotion-2 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  color: #ffffff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  background-color: #0A68C1;
+  cursor: pointer;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  padding: 0 8px;
+  height: 32px;
+  margin: 8px 0;
+  border-radius: 0;
+}
+
+.emotion-2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-2:disabled {
+  cursor: not-allowed;
+  background-color: #F2F2F2;
+  color: #c0c0c0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #0A68C1;
+  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+<div
+    class="emotion-4"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <button
+        class="emotion-2"
+        type="button"
+      >
+        Default button
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar Should display correctly with action item as: Link 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-3 {
+  padding-left: 24px;
+  display: none;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-3 {
+    display: block;
+  }
+}
+
+.emotion-2 {
+  color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-2:visited {
+  color: #903D91;
+}
+
+.emotion-2:hover {
+  color: #2F75D7;
+}
+
+.emotion-2:active {
+  color: #2F75D7;
+}
+
+<div
+    class="emotion-4"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <a
+        class="emotion-2"
+        href="/"
+      >
+        Link
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly as Heading1 tag 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h1
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly as Heading2 tag 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly as Heading3 tag 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 12px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h3
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly as Heading4 tag 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  line-height: 1.0909090909090908;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h4
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h4>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly as Heading5 tag 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h5
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h5>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly as Heading6 tag 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h6
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h6>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with align center 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with align left 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with border Bottom 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: solid;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with border None 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with border Top 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: solid;
+  border-bottom-style: none;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with border TopAndBottom 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with default styles and given title 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with padding left 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TitleBar should display correctly with padding right 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-color: #E6E6E6;
+  border-width: 1px;
+  border-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h2
+        class="emotion-0"
+      >
+        Test title of title bar
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;

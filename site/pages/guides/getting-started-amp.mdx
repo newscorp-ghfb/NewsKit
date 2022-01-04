@@ -1,0 +1,37 @@
+import Colors from '../../components/theming-values/colors';
+import Layout from '../../components/layout';
+import {CodeFromFile} from '../../components/code';
+
+export default Layout;
+
+# Getting Started with NewsKit AMP
+
+## Overview
+
+NewsKit has a subset of components and utilities specifically for AMP web page development. AMP is a web component framework, and publishing technology, developed by Google. Its mission is to "provide a user-first format for web content".
+
+There are multiple considerations to take into account when developing an AMP page, such as:
+
+- There are specific versions of many HTML elements that must be used, for example, `<amp-img>` instead of `<img>`.
+- User-authored Javascript is forbidden.
+- Only one single 50kb inline stylesheet is allowed.
+
+More information on AMP can be found at [amp.dev](https://amp.dev/).
+
+## Installing
+
+NewsKit's AMP library is available as part of the main NewsKit package, downloadable from [NPM](https://www.npmjs.com/package/newskit). To install, simply add NewsKit to your dependencies; `yarn add newskit` and import from `newskit/amp`. To ensure a clear separation between AMP and non-AMP components, all AMP related components and utilities are under the `newskit/amp` path and are not exported at the `newskit` root, unlike the regular NewsKit components.
+
+## Using
+
+The foundations for any NewsKit AMP page begin with the `Head` and `Body` components. These provide the required AMP boilerplate, as well as the relevant React context providers. As well as this, two core functions are also needed; `renderToStaticMarkup`, and `createAmpScriptsObject`.
+
+Both the `Head` and `Body` components render any children passed to them. The `Body` children will be your AMP page content. While the `Head` can render children passed to it, you must ensure anything you pass does not make your page fail AMP compliance. This means no script or style tags, for example. To validate that your page is compliant you can use the Chrome browser extension, pass your rendered HTML to the validator, or give the validator a URL to test. The validator can be found [here](https://validator.ampproject.org) and is provided as part of the AMP project. For more information you can visit the [AMP documentation](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp/).
+
+`renderToStaticMarkup` performs much like the server-side rendering method of the same name from react-dom. NewsKit's version utilises the react-dom method to produce a string of html, but also handles consolidating the [Emotion](https://emotion.sh/) style tags into a single AMP compliant tag.
+
+`createAmpScriptsObject` creates an object which will hold the AMP scripts required for the rendered AMP components. The same scripts object must be passed to both the `Head` and `Body` components, this is to enable NewsKit AMP components to inject the "extended AMP component" scripts into the page automatically. You can read more about extended AMP components [here](https://amp.dev/documentation/guides-and-tutorials/start/add_advanced/adding_components/?format=websites).
+
+One important thing to note is the construction order of the page. The `Body` **must** be created first, then the `Head` second; this is intentional. The `Body` components must create their required scripts and styles first, before they can be moved into the `Head`.
+
+<CodeFromFile path="examples/amp/foundation-template.tsx"/>

@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "integrationFolder": "cypress",
+  "video": false,
+  "env": {
+    "DOC_SITE_URL": "http://localhost:8081"
+  },
+  "viewportWidth": 1280
+}

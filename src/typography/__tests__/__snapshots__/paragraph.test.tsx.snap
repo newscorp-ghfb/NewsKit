@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph renders Paragraph 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 18px;
+}
+
+<p
+    class="emotion-0"
+  >
+    paragraph component
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Paragraph renders bold Paragraph 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+<p
+    class="emotion-0"
+  >
+    paragraph component
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Paragraph renders with coloured drop cap 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.emotion-0:first-letter {
+  float: left;
+  padding-right: 0.15em;
+  font-size: 5.34em;
+  line-height: 0.85;
+  color: #2F75D7;
+}
+
+<p
+    class="emotion-0"
+  >
+    paragraph component
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Paragraph renders with drop cap 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.emotion-0:first-letter {
+  float: left;
+  padding-right: 0.15em;
+  font-size: 5.34em;
+  line-height: 0.85;
+}
+
+<p
+    class="emotion-0"
+  >
+    paragraph component
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Subscript renders Subscript 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 80%;
+}
+
+<sub
+    class="emotion-0"
+  >
+    subscript component
+  </sub>
+</DocumentFragment>
+`;
+
+exports[`Superscript renders Superscript 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 80%;
+}
+
+<sup
+    class="emotion-0"
+  >
+    superscript component
+  </sup>
+</DocumentFragment>
+`;

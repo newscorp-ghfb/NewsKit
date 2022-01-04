@@ -1,0 +1,170 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {DollarPropRenderer as Icon} from '../../components/dollar-prop-renderer';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {
+  Comment,
+  Email,
+  Menu,
+  SaveActive,
+  SaveInactive,
+  Facebook,
+  GitHub,
+  Twitter,
+  WhatsApp,
+  Bookmark,
+  CopyLink,
+  Circle,
+  Placeholder
+} from 'newskit';
+
+export default Layout;
+
+# Icons
+
+## Overview
+
+Icons are small SVG shapes, ranging from basic UI shapes to brand logos. NewsKit contains a default set but any of these can be overriden by providing a React component in the icons section of your theme.
+
+### Usage
+
+Icons can be used to enhance other elements and content, as well as used inside links or buttons when space is limited.
+
+### Available Icons
+
+| Name         |                      Preview                        | Color prop? |
+| ------------ | :-------------------------------------------------: | :---------: |
+| Bookmark     | <Icon Component={Bookmark} _size="sizing060" />     |     👍      |
+| Comment      | <Icon Component={Comment} _size="sizing060" />      |     👍      |
+| Email        | <Icon Component={Email} _size="sizing060" />        |     👍      |
+| Menu         | <Icon Component={Menu} _size="sizing060" />         |     👍      |
+| SaveActive   | <Icon Component={SaveActive} _size="sizing060" />   |     👍      |
+| SaveInactive | <Icon Component={SaveInactive} _size="sizing060" /> |     👍      |
+| CopyLink     | <Icon Component={CopyLink} _size="sizing060" />     |     👍      |
+| Circle       | <Icon Component={Circle} _size="sizing060" />       |     👍      |
+| Facebook     | <Icon Component={Facebook} _size="sizing060" />     |     👎      |
+| GitHub       | <Icon Component={GitHub} _size="sizing060" />       |     👎      |
+| Twitter      | <Icon Component={Twitter} _size="sizing060" />      |     👎      |
+| WhatsApp     | <Icon Component={WhatsApp} _size="sizing060" />     |     👎      |
+| Placeholder  | <Icon Component={Placeholder} _size="sizing060" />  |     👎      |
+## Props
+
+Icons must have a size specified, and some also support an optional colour override.
+
+<Block $marginTop="sizing040">
+  <Prop name="size" type="SizingKeys" required>
+    A sizing token must be provided.
+  </Prop>
+  <Prop name="color" type="ColorKeys" default="inkBase">
+    This optional property is available on some icons, but not brand icons.
+  </Prop>
+</Block>
+
+## Playground
+
+### Color Prop Supported
+
+<Playground
+  componentName={[
+    'Comment',
+    'Email',
+    'Menu',
+    'SaveActive',
+    'SaveInactive',
+    'CopyLink',
+  ]}
+  newskitPath="/icons"
+  component={[Comment, Email, Menu, SaveActive, SaveInactive, CopyLink]}
+  knobs={[
+    {
+      name: 'Size',
+      propName: '$size',
+      options: [
+        {
+          label: 'sizing050',
+          value: 'sizing050',
+        },
+        {
+          label: 'sizing060',
+          value: 'sizing060',
+        },
+        {
+          label: 'sizing070',
+          value: 'sizing070',
+          isDefault: true,
+        },
+        {
+          label: 'sizing080',
+          value: 'sizing080',
+        },
+      ],
+    },
+    {
+      name: 'Color',
+      propName: '$color',
+      options: [
+        {
+          label: 'inkBase',
+          value: 'inkBase',
+          isDefault: true,
+        },
+        {
+          label: 'interactive010',
+          value: 'interactive010',
+        },
+        {
+          label: 'semanticNegative',
+          value: 'semanticNegative',
+        },
+        {
+          label: 'semanticPositive',
+          value: 'semanticPositive',
+        },
+      ],
+    },
+  ]}
+/>
+
+### Color Prop Not Supported
+
+<Playground
+  componentName={['Facebook', 'GitHub', 'Twitter', 'WhatsApp', 'Placeholder']}
+  newskitPath="/icons"
+  component={[Facebook, GitHub, Twitter, WhatsApp, Placeholder]}
+  knobs={[
+    {
+      name: 'Size',
+      propName: '$size',
+      options: [
+        {
+          label: 'sizing050',
+          value: 'sizing050',
+        },
+        {
+          label: 'sizing060',
+          value: 'sizing060',
+        },
+        {
+          label: 'sizing070',
+          value: 'sizing070',
+          isDefault: true,
+        },
+        {
+          label: 'sizing080',
+          value: 'sizing080',
+        },
+      ],
+    },
+  ]}
+/>
+
+## Rationale
+
+### Accessibility
+
+#### Colour
+
+Where icon colour can be overidden, the icon must have a 3:1 minimum contrast ratio with its background.

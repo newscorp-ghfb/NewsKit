@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag href renders as an anchor 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-0:hover,
+.emotion-0:active,
+.emotion-0:focus {
+  border-color: #CCCCCC;
+  background-color: #E5F3FF;
+  color: #2e2e2e;
+}
+
+<a
+    class="emotion-0"
+    href="#"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag href renders in disable state with an anchor 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-color: #F2F2F2;
+  background-color: #F2F2F2;
+  color: #c0c0c0;
+  cursor: default;
+}
+
+<span
+    class="emotion-0"
+    disabled=""
+    href="#"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders in disabled state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-color: #F2F2F2;
+  background-color: #F2F2F2;
+  color: #c0c0c0;
+  cursor: default;
+}
+
+<span
+    class="emotion-0"
+    disabled=""
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders with Large size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 40px;
+  line-height: calc(40px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders with Medium size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders with Rounded shape 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 32px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders with SemiRounded shape 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: calc(32px * 0.25);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders with Small size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 24px;
+  line-height: calc(24px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders with Squared shape 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Tag renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E6E6E6;
+  background-color: #FAFAFA;
+  color: #777777;
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

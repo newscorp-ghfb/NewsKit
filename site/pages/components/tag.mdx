@@ -1,0 +1,157 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {Tag, TagSize, BorderRadiusShape} from 'newskit';
+
+export default Layout;
+
+# Tag
+
+## Overview
+
+The tag element is used within the [tag list](/components/tag-list) as a way of classifying content, typically using keywords. They are added to a web page or other content to help users search for and find related content quickly and easily.
+
+### Usage
+
+A tag is used in a [tag list](/components/tag-list) and displayed anywhere that a quick link to related content could be beneficial to a user e.g. article pages or search.
+
+### Theming
+
+The default tag component uses the following style tokens, which can be overridden:
+
+| Theme Token       | Color Primitive |  Color Value                                          |
+| ----------------- | --------------- | -------------------------------------------- |
+| tagFill           | interface020     | <TextBoxSwatch themeColor="interface020"/>    |
+| tagBorder         | interface030     | <TextBoxSwatch themeColor="interface030"/>    |
+| tagText           | inkSubtle          | <TextBoxSwatch themeColor="inkSubtle" dark/>    |
+| tagHoverFill      | interfaceHover  | <TextBoxSwatch themeColor="interfaceHover"/> |
+| tagHoverBorder    | interface040     | <TextBoxSwatch themeColor="interface040"/>    |
+| tagHoverText      | inkBase          | <TextBoxSwatch themeColor="inkBase" dark/>    |
+| tagDisabledFill   | interactiveDisabled      | <TextBoxSwatch themeColor="interactiveDisabled"/>     |
+| tagDisabledBorder | interactiveDisabled      | <TextBoxSwatch themeColor="interactiveDisabled"/>     |
+| tagDisabledText   | inkNonEssential          | <TextBoxSwatch themeColor="inkNonEssential" dark/>    |
+
+## Props
+
+Tags have a number of props to facilitate a variety of uses:
+
+<Block $marginTop="sizing040">
+  <Prop name="children" type="string" required>
+    The content of the tag is passed as the child of the component.
+  </Prop>
+  <Prop name="href" type="string">
+    If provided, the Tag will render as an anchor with this prop value as the
+    href.
+  </Prop>
+  <Prop name="disabled" type="boolean" default={false}>
+    If true, the Tag will render in a disabled state, appearing greyed out. If
+    an href is also passed, the Tag will not open the provided href on click.
+  </Prop>
+  <Prop name="$size" type="TagSize" enum={TagSize} default="Medium">
+    Optional size of the Tag.
+  </Prop>
+  <Prop
+    name="$shape"
+    type="BorderRadiusShape"
+    enum={BorderRadiusShape}
+    default="Squared"
+  >
+    Optional shape of the Tag.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="Tag"
+  newskitPath="/tag"
+  component={Tag}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'Tag Content',
+    },
+    {
+      name: 'Link',
+      propName: 'href',
+      value: 'http://example.com',
+    },
+    {
+      name: 'Disabled',
+      propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Tag Size',
+      propName: '$size',
+      options: [
+        {
+          label: 'Small',
+          value: TagSize.Small,
+        },
+        {
+          label: 'Medium',
+          isDefault: true,
+          value: TagSize.Medium,
+        },
+        {
+          label: 'Large',
+          value: TagSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Tag Shape',
+      propName: '$shape',
+      options: [
+        {
+          label: 'Squared',
+          isDefault: true,
+          value: BorderRadiusShape.Squared,
+        },
+        {
+          label: 'Semi-rounded',
+          value: BorderRadiusShape.SemiRounded,
+        },
+        {
+          label: 'Rounded',
+          value: BorderRadiusShape.Rounded,
+        },
+      ],
+    },
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+Tags are designed to be compact and discreet as they are intended to supplement the primary content.
+
+Tags should have as few words as possible and always have a direct relationship to the content they represent.
+
+### Accessibility
+
+#### Colour
+
+Text and background colours must have a 3:1 minimum contrast ratio.
+Hover states should have clear contrast change or should include a non colour designator.
+
+### SEO
+
+#### Ranking
+
+Tagging generates hub pages which act as valuable catch-all pages, these rank well in search, are automatically updated and generate more backlinks.
+
+#### Navigation
+
+Good for site navigation (for crawlers and users), particularly helpful where site structure is poor (The Times)
+
+#### Descriptive
+
+Tagging helps tell Google what the page content is about, this then enables Google to better surface those pages in search

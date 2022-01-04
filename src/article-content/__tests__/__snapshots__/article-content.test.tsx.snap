@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleContent renders ArticleContent with bold headings 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.emotion-0::selection,
+.emotion-0 *::selection {
+  background-color: #c8e4fd;
+}
+
+<div
+    class="emotion-0"
+  >
+    <code>
+      {}
+    </code>
+    <code>
+      {}
+    </code>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ArticleContent renders ArticleContent with bold intro 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.emotion-0::selection,
+.emotion-0 *::selection {
+  background-color: #c8e4fd;
+}
+
+<div
+    class="emotion-0"
+  >
+    <code>
+      {
+  "$bold": true
+}
+    </code>
+    <code>
+      {}
+    </code>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ArticleContent renders ArticleContent with bold intro and bold headings 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.emotion-0::selection,
+.emotion-0 *::selection {
+  background-color: #c8e4fd;
+}
+
+<div
+    class="emotion-0"
+  >
+    <code>
+      {}
+    </code>
+    <code>
+      {}
+    </code>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ArticleContent renders ArticleContent with children 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.emotion-0::selection,
+.emotion-0 *::selection {
+  background-color: #c8e4fd;
+}
+
+<div
+    class="emotion-0"
+  >
+    <code>
+      {}
+    </code>
+    <code>
+      {}
+    </code>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ArticleContent renders empty ArticleContent 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.emotion-0::selection,
+.emotion-0 *::selection {
+  background-color: #c8e4fd;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`ArticleContent renders null ArticleContent children 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.emotion-0::selection,
+.emotion-0 *::selection {
+  background-color: #c8e4fd;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

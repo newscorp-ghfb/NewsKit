@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Headings renders H1 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+<h1
+    class="emotion-0"
+  >
+    A Heading
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H1 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+}
+
+<h1
+    class="emotion-0"
+  >
+    A Heading
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H2 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+<h2
+    class="emotion-0"
+  >
+    A Heading
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H2 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+<h2
+    class="emotion-0"
+  >
+    A Heading
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H3 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+<h3
+    class="emotion-0"
+  >
+    A Heading
+  </h3>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H3 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 12px 0;
+}
+
+<h3
+    class="emotion-0"
+  >
+    A Heading
+  </h3>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H4 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  line-height: 1.0909090909090908;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+<h4
+    class="emotion-0"
+  >
+    A Heading
+  </h4>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H4 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  line-height: 1.0909090909090908;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<h4
+    class="emotion-0"
+  >
+    A Heading
+  </h4>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H5 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+<h5
+    class="emotion-0"
+  >
+    A Heading
+  </h5>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H5 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<h5
+    class="emotion-0"
+  >
+    A Heading
+  </h5>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H6 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+<h6
+    class="emotion-0"
+  >
+    A Heading
+  </h6>
+</DocumentFragment>
+`;
+
+exports[`Headings renders H6 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<h6
+    class="emotion-0"
+  >
+    A Heading
+  </h6>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading1 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+<h1
+    class="emotion-0"
+  >
+    A Heading
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading1 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+}
+
+<h1
+    class="emotion-0"
+  >
+    A Heading
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading2 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+<h2
+    class="emotion-0"
+  >
+    A Heading
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading2 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 16px 0;
+}
+
+<h2
+    class="emotion-0"
+  >
+    A Heading
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading3 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+<h3
+    class="emotion-0"
+  >
+    A Heading
+  </h3>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading3 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 12px 0;
+}
+
+<h3
+    class="emotion-0"
+  >
+    A Heading
+  </h3>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading4 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  line-height: 1.0909090909090908;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+<h4
+    class="emotion-0"
+  >
+    A Heading
+  </h4>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading4 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  line-height: 1.0909090909090908;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<h4
+    class="emotion-0"
+  >
+    A Heading
+  </h4>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading5 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+<h5
+    class="emotion-0"
+  >
+    A Heading
+  </h5>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading5 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<h5
+    class="emotion-0"
+  >
+    A Heading
+  </h5>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading6 in bold style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+<h6
+    class="emotion-0"
+  >
+    A Heading
+  </h6>
+</DocumentFragment>
+`;
+
+exports[`Headings renders Heading6 with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #0a0a0a;
+  margin: 0 0 8px 0;
+}
+
+<h6
+    class="emotion-0"
+  >
+    A Heading
+  </h6>
+</DocumentFragment>
+`;

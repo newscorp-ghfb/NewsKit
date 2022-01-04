@@ -1,0 +1,179 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Block} from '../../components/block';
+import {Prop} from '../../components/prop';
+
+import {Divider, BorderKeys, ColorKeys, SizingKeys} from 'newskit';
+
+export default Layout;
+
+# Divider
+
+## Overview
+
+The purpose of this component is to visually separate elements of the content.
+
+## Playground
+
+<Playground
+  componentName="Divider"
+  newskitPath="/divider"
+  component={(state) => <Block $width="100%"><Divider {...state} /></Block>}
+  knobs={[
+    {
+      name: 'Color',
+      propName: '$color',
+      options: [
+        {
+          label: 'interface030',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'interface040',
+          value: 'interface040',
+        },
+        {
+          label: 'interface050',
+          value: 'interface050',
+        },
+      ],
+    },
+    {
+      name: 'Border',
+      propName: '$border',
+      options: [
+        {
+          label: 'borderWidth010',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'borderWidth020',
+          value: 'borderWidth020',
+        },
+        {
+          label: 'borderWidth030',
+          value: 'borderWidth030',
+        }
+      ],
+    },
+    {
+      name: 'Margin Top',
+      propName: '$marginTop',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'spacingSize040',
+          value: 'spacingSize040',
+        },
+        {
+          label: 'spacingSize060',
+          value: 'spacingSize060',
+        },
+        {
+          label: 'spacingSize100',
+          value: 'spacingSize100',
+        }
+      ],
+    },
+    {
+      name: 'Margin Right',
+      propName: '$marginRight',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'spacingSize040',
+          value: 'spacingSize040',
+        },
+        {
+          label: 'spacingSize060',
+          value: 'spacingSize060',
+        },
+        {
+          label: 'spacingSize100',
+          value: 'spacingSize100',
+        }
+      ],
+    },
+    {
+      name: 'Margin Bottom',
+      propName: '$marginBottom',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'spacingSize040',
+          value: 'spacingSize040',
+        },
+        {
+          label: 'spacingSize060',
+          value: 'spacingSize060',
+        },
+        {
+          label: 'spacingSize100',
+          value: 'spacingSize100',
+        }
+      ],
+    },
+    {
+      name: 'Margin Left',
+      propName: '$marginLeft',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'spacingSize040',
+          value: 'spacingSize040',
+        },
+        {
+          label: 'spacingSize060',
+          value: 'spacingSize060',
+        },
+        {
+          label: 'spacingSize100',
+          value: 'spacingSize100',
+        }
+      ],
+    },
+  ]}
+/>
+
+## Props
+
+Divider have a number of props to facilitate a variety of uses. Custom and required props are detailed below:
+
+<Block marginTop="sizing05">
+  <Prop name="$color" type="ColorKeys">
+    If provided, overrides the color of the divider.
+  </Prop>
+  <Prop name="$border" type="BorderKeys">
+    If provided, overrides the thickness of the divider.
+  </Prop>
+  <Prop name="$marginTop" type="SizingKeys">
+    Specifies the top offset of the divider.
+  </Prop>
+  <Prop name="$marginRight" type="SizingKeys">
+    Specifies the right offset of the divider.
+  </Prop>
+  <Prop name="$marginBottom" type="SizingKeys">
+    Specifies the bottom offset of the divider.
+  </Prop>
+  <Prop name="$marginLeft" type="SizingKeys">
+    Specifies the left offset of the divider.
+  </Prop>
+</Block>

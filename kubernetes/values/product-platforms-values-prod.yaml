@@ -1,0 +1,18 @@
+Name:
+  ncu-product-platforms
+DocSiteName:
+  ncu-product-platforms-doc-site
+StorybookName:
+  ncu-product-platforms-storybook
+Environment:
+  prod
+Namespace:
+  ncu-product-platforms-prod
+NewsUKcidr:
+  143.252.0.0/16
+FQDN:
+  product-platforms.digieng-prod.ntch.co.uk
+FQDNStorybook:
+  product-platforms-storybook.digieng-prod.ntch.co.uk
+SSLCertARN:
+  arn:aws:acm:eu-west-1:474887192380:certificate/b170a102-baab-48a4-8a55-af600246b539

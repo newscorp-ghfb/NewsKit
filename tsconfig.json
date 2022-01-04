@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.common.json",
+  "exclude": [
+    "**.test.ts",
+    "**.test.tsx",
+    "**/__tests__/**",
+    "**/__mocks__/**",
+    "**/test/**"
+  ],
+  "include": ["src/"],
+  "compilerOptions": {
+    "rootDir": "src/",
+    "outDir": "dist/"
+  }
+}

@@ -1,0 +1,47 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {Block} from '../../components/block';
+
+import {
+  OrderedList,
+  Twitter,
+  Facebook,
+} from 'newskit';
+
+export default Layout;
+
+# Ordered List
+
+## Overview
+
+### Usage
+
+An ordered list can be used to produce a list of related content prefixed with incrementing numbers.
+
+## Props
+
+<Block $marginTop="sizing040">
+  <Prop name="children" type="Array<React.ReactNode>">
+    An array of react nodes to populate the child components.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="OrderedList"
+  newskitPath="/list"
+  component={OrderedList}
+  knobs={[
+    {
+      name: 'List Data',
+      propName: 'children',
+      value: [
+        'Prince Harry',
+        'Meghan Markle',
+        'Royal Family',
+      ],
+    },
+  ]}
+/>

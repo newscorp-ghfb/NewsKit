@@ -1,0 +1,106 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {Block} from '../../components/block';
+
+import {
+  AudioPlayer,
+  UnorderedList,
+  Circle
+} from 'newskit';
+
+export default Layout;
+
+# Audio Player
+
+## Overview
+
+The Audio Player component is a collection of custom features and elements built around the native `<audio>` element.
+
+### Usage
+
+The Audio Player requires a source stream to be passed in as a prop. This will then be loaded into the internal `<audio>` element for playback.
+
+## Props
+
+<Block $marginTop="sizing05">
+  <Prop name="src" type="string" required>
+    URL of the audio source to be played.
+  </Prop>
+  <Prop name="autoplay" type="string">
+    <div>
+      Even though the feature is supported in most browser but the browser will only follow this setting if:
+    </div>
+    
+    <ul>
+      <li>you are on a desktop browser. it will not work on mobile browsers to prevent users from eating into their mobile data allowance</li>
+      <li>it can't happen on page load, the user has to interact with the site for it to work: navigating inside an SPA seems to satisfy the browser as there was no page refresh.</li>
+    </ul>
+    
+    <div>
+      In Summary autoplay will work in some scenarios, this is expected. It's best thought of as a suggestion for the browser: play the audio automatically if it's acceptable from a usability perspective
+    </div>
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="AudioPlayer"
+  newskitPath="/audio-player"
+  component={AudioPlayer}
+  knobs={[
+    {
+      name: 'Source',
+      propName: 'src',
+      value: 'https://radio.talkradio.co.uk/stream',
+    },
+    {
+      name: 'Image Source',
+      propName: 'imgSrc',
+      value: "https://via.placeholder.com/150",
+    },
+    {
+      name: 'Title',
+      propName: 'title',
+      value: 'Talk Radio Live',
+    },
+    {
+      name: 'Description',
+      propName: 'description',
+      value: 'Live from talkRadio.',
+    },
+    {
+      name: 'Time',
+      propName: 'time',
+      value: '1PM to 3PM',
+    },
+    {
+      name: 'Live',
+      propName: 'live',
+      type: 'boolean',
+      value: true,
+    },
+    {
+      name: 'Auto Play',
+      propName: 'autoPlay',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Tags',
+      propName: 'tags',
+      value: ["News", "Sport", "Live"],
+    },
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+The Audio Player's internal components can be styled as required.
+
+### Accessibility
+
+The controls of the Audio Player are fully accessible with the keyboard.

@@ -1,0 +1,73 @@
+version: "2.3"
+services:
+  docs:
+    image: site
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    command: yarn dev:docs
+    expose:
+      - 8081
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./dist/:/app/dist:cached
+      - ./src/:/app/src:cached
+      - ./site/:/app/site:cached
+      - ./package.json:/app/package.json:cached
+
+  storybook:
+    image: storybook
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    command: yarn dev:storybook
+    expose:
+      - 6006
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./src:/app/src:cached
+      - ./.storybook:/app/.storybook:cached
+      - ./package.json:/app/package.json:cached
+
+  docs_build_serve:
+    image: site
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    command: yarn docker:docs
+    expose:
+      - 8081
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./src:/app/src:cached
+      - ./site:/app/site:cached
+      - ./package.json:/app/package.json:cached
+      - ./README_COMPONENTS.md:/app/README_COMPONENTS.md:cached
+      - ./.npmignore:/app/.npmignore:cached
+      - ./scripts:/app/scripts:cached
+
+  e2e:
+    image: e2e
+    build:
+      context: .
+      dockerfile: e2e.dockerfile
+    command: yarn e2e:docker
+    ipc: host
+    depends_on:
+      - docs_build_serve
+    environment:
+      - ELECTRON_ENABLE_LOGGING=1
+      - cypress_DOC_SITE_URL=http://docs_build_serve:8081
+    expose:
+      - 8080
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./package.json:/package.json:cached
+      - ./cypress:/cypress:cached
+      - ./e2e:/e2e:cached
+      - ./src:/src:cached
+      - ./site/routes.json:/site/routes.json:cached

@@ -1,0 +1,10 @@
+import Colors from '../../components/theming-values/colors';
+import Layout from '../../components/layout';
+
+export default Layout;
+
+# Colours
+
+Themes are built from sets of primitive values defined as part of the design system. Color primitives are overridable when creating a theme, whereas others such as sizing are not. The default color primitives are light, though there is also a dark set included. Primitives are generic and are mapped to more component specific properties via the theme object. The whole theme object is also merged with any overrides. This all happens as part of the `createTheme` utility.
+
+<Colors />

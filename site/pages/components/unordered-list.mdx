@@ -1,0 +1,68 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {Block} from '../../components/block';
+
+import {
+  UnorderedList,
+  Twitter,
+  Facebook,
+} from 'newskit';
+
+export default Layout;
+
+# Unordered List
+
+## Overview
+
+### Usage
+
+An unordered list can be used to produce a list of related content prefixed with no icons as default, this can be optionally overridden with a custom icon.
+
+## Props
+
+<Block $marginTop="sizing040">
+  <Prop name="children" type="Array<React.ReactNode>">
+    An array of react nodes to populate the list components.
+  </Prop>
+  <Prop name="listItemMarker" type="React.ComponentType<{}>">
+    Optional icon component to override the list style.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="UnorderedList"
+  newskitPath="/list"
+  component={UnorderedList}
+  knobs={[
+    {
+      name: 'List Data',
+      propName: 'children',
+      value: [
+        'Prince Harry',
+        'Meghan Markle',
+        'Royal Family',
+      ],
+    },
+    {
+      name: 'List Item Marker',
+      propName: 'listItemMarker',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+        },
+        {
+          label: 'Twitter',
+          value: () => <Twitter $size='sizing020' />,
+        },
+        {
+          label: 'Facebook',
+          value: () => <Facebook $size='sizing020' />,
+        },
+      ],
+    },
+  ]}
+/>

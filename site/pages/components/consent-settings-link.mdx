@@ -1,0 +1,37 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {CodeFromFile} from '../../components/code';
+import {Block} from '../../components/block';
+
+import {Consent} from 'newskit';
+
+export default Layout;
+
+# ConsentSettingsLink
+
+## Overview
+
+The consent settings link is a component utilising the [Link](/components/link) component which on click will open the Sourcepoint CMP (Content Management Platform) privacy manager. This allows users to review or edit their privacy settings after they have submitted the initial privacy consent message.
+
+## Prerequisites
+
+To utilise this component you will need to have added the [Consent](/components/consent) component added to the head of the page. You will also need to obtain your site id and privacy manager id from Sourcepoint, these are different from the account id used with the [Consent](/components/consent) component.
+
+## Usage
+
+<CodeFromFile path="examples/consent-settings-link.tsx"/>
+
+## Props
+
+<Block $marginTop="sizing040">
+  <Prop required name="siteId" type="string">
+    Your Sourcepoint site id.
+  </Prop>
+  <Prop name="privacyManagerId" type="string">
+    Your privacy manager id.
+  </Prop>
+  <Prop name="children" type="ReactNode" default="Manage Consent">
+    The content of the link. Can be undefined and left to default text.
+  </Prop>
+</Block>

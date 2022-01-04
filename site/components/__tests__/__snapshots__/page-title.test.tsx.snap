@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Title renders default title 1`] = `<DocumentFragment />`;
+
+exports[`Page Title renders passed title 1`] = `<DocumentFragment />`;

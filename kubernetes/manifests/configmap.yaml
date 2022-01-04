@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ (datasource "config").Name }}-config-map
+  namespace: {{ (datasource "config").Namespace }}
+data:
+  node_env: {{ (datasource "config").Environment }}

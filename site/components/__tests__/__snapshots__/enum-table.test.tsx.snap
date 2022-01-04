@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnumTable renders enum as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-shadow: 0 3px 4px 2px #ffffff;
+}
+
+.emotion-0,
+.emotion-0 td,
+.emotion-0 th {
+  color: #0a0a0a;
+  border-spacing: 0;
+  border: solid 1px #CCCCCC;
+}
+
+.emotion-0 td,
+.emotion-0 th {
+  padding: 8px 12px;
+  border-top: none;
+}
+
+<table
+    class="emotion-0"
+  >
+    <thead>
+      <tr>
+        <th>
+          Key
+        </th>
+        <th>
+          Value
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Value1
+        </td>
+        <td>
+          test-value-1
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Value2
+        </td>
+        <td>
+          test-value-2
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Value3
+        </td>
+        <td>
+          test-value-3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

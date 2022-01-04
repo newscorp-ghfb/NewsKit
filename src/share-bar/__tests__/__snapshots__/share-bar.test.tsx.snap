@@ -1,0 +1,1665 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShareBar does not render invalid elements 1`] = `
+<DocumentFragment>
+  .emotion-12 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-12 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-11 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.emotion-2 {
+  height: 40px;
+  width: 40px;
+}
+
+.emotion-2 svg {
+  margin: auto;
+}
+
+.emotion-2:hover svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-1 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 40px;
+  height: 40px;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.emotion-3 {
+  color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-3:visited {
+  color: #903D91;
+}
+
+.emotion-3:hover {
+  color: #2F75D7;
+}
+
+.emotion-3:active {
+  color: #2F75D7;
+}
+
+<div
+    class="emotion-12"
+  >
+    <span
+      class="emotion-0"
+    >
+      Test
+    </span>
+    <ul
+      class="emotion-5"
+    >
+      <li
+        class="emotion-4"
+      >
+        <a
+          class="emotion-3"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <span
+      class="emotion-0"
+    >
+      TestRight
+    </span>
+    <ul
+      class="emotion-11"
+    >
+      <li
+        class="emotion-4"
+      >
+        <a
+          class="emotion-3"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ShareBar href renders as an anchor 1`] = `
+<DocumentFragment>
+  .emotion-14 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-14 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-8 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-13 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.emotion-1 {
+  height: 40px;
+  width: 40px;
+}
+
+.emotion-1 svg {
+  margin: auto;
+}
+
+.emotion-1:hover svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 40px;
+  height: 40px;
+}
+
+.emotion-2 {
+  color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-2:visited {
+  color: #903D91;
+}
+
+.emotion-2:hover {
+  color: #2F75D7;
+}
+
+.emotion-2:active {
+  color: #2F75D7;
+}
+
+.emotion-9 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 40px;
+  height: 40px;
+}
+
+<div
+    class="emotion-14"
+  >
+    <ul
+      class="emotion-8"
+    >
+      <li
+        class="emotion-3"
+      >
+        <a
+          class="emotion-2"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <a
+          class="emotion-2"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <ul
+      class="emotion-13"
+    >
+      <li
+        class="emotion-3"
+      >
+        <a
+          class="emotion-2"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-9"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Save active icon
+              </title>
+              <polygon
+                points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"
+                stroke="none"
+              />
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ShareBar renders with a border 1`] = `
+<DocumentFragment>
+  .emotion-14 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-14 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-8 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-13 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.emotion-2 {
+  color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-2:visited {
+  color: #903D91;
+}
+
+.emotion-2:hover {
+  color: #2F75D7;
+}
+
+.emotion-2:active {
+  color: #2F75D7;
+}
+
+.emotion-1 {
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #777777;
+}
+
+.emotion-1 svg {
+  margin: auto;
+}
+
+.emotion-1:hover {
+  border: 1px solid #0A68C1;
+  background-color: #FAFAFA;
+}
+
+.emotion-1:hover svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-9 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-14"
+  >
+    <ul
+      class="emotion-8"
+    >
+      <li
+        class="emotion-3"
+      >
+        <a
+          class="emotion-2"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <a
+          class="emotion-2"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <ul
+      class="emotion-13"
+    >
+      <li
+        class="emotion-3"
+      >
+        <a
+          class="emotion-2"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-9"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Save active icon
+              </title>
+              <polygon
+                points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"
+                stroke="none"
+              />
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ShareBar renders with custom components 1`] = `
+<DocumentFragment>
+  .emotion-16 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-16 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-9 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-15 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.emotion-2 {
+  height: 40px;
+  width: 40px;
+}
+
+.emotion-2 svg {
+  margin: auto;
+}
+
+.emotion-2:hover svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-1 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 40px;
+  height: 40px;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.emotion-3 {
+  color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-3:visited {
+  color: #903D91;
+}
+
+.emotion-3:hover {
+  color: #2F75D7;
+}
+
+.emotion-3:active {
+  color: #2F75D7;
+}
+
+<div
+    class="emotion-16"
+  >
+    <span
+      class="emotion-0"
+    >
+      Test
+    </span>
+    <ul
+      class="emotion-9"
+    >
+      <li
+        class="emotion-4"
+      >
+        <a
+          class="emotion-3"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          Styled Component
+        </div>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          Class Component
+        </div>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          Functional Component
+        </div>
+      </li>
+    </ul>
+    <span
+      class="emotion-0"
+    >
+      TestRight
+    </span>
+    <ul
+      class="emotion-15"
+    >
+      <li
+        class="emotion-4"
+      >
+        <a
+          class="emotion-3"
+          data-testid="share-bar-icon"
+          href="/"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ShareBar renders with left and right icons 1`] = `
+<DocumentFragment>
+  .emotion-14 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-14 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-13 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.emotion-1 {
+  height: 40px;
+  width: 40px;
+}
+
+.emotion-1 svg {
+  margin: auto;
+}
+
+.emotion-1:hover svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 40px;
+  height: 40px;
+}
+
+<div
+    class="emotion-14"
+  >
+    <ul
+      class="emotion-6"
+    >
+      <li
+        class="emotion-2"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul
+      class="emotion-13"
+    >
+      <li
+        class="emotion-2"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ShareBar renders with left and right labels 1`] = `
+<DocumentFragment>
+  .emotion-16 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-16 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-15 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.emotion-2 {
+  height: 40px;
+  width: 40px;
+}
+
+.emotion-2 svg {
+  margin: auto;
+}
+
+.emotion-2:hover svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-1 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 40px;
+  height: 40px;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+<div
+    class="emotion-16"
+  >
+    <span
+      class="emotion-0"
+    >
+      Test
+    </span>
+    <ul
+      class="emotion-7"
+    >
+      <li
+        class="emotion-3"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <span
+      class="emotion-0"
+    >
+      TestRight
+    </span>
+    <ul
+      class="emotion-15"
+    >
+      <li
+        class="emotion-3"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-2"
+          >
+            <svg
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ShareBar renders with left icons 1`] = `
+<DocumentFragment>
+  .emotion-8 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-8 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.emotion-1 {
+  height: 40px;
+  width: 40px;
+}
+
+.emotion-1 svg {
+  margin: auto;
+}
+
+.emotion-1:hover svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 40px;
+  height: 40px;
+}
+
+<div
+    class="emotion-8"
+  >
+    <ul
+      class="emotion-6"
+    >
+      <li
+        class="emotion-2"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 400 400"
+            >
+              <title>
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
+		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
+		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
+		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
+		C110.8,297.5,136.2,305.5,163.4,305.5"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <div
+          data-testid="share-bar-icon"
+          role="button"
+        >
+          <div
+            class="emotion-1"
+          >
+            <svg
+              class="emotion-0"
+              viewBox="0 0 1365.3333 1365.3333"
+            >
+              <title>
+                Facebook logo
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
+                <g
+                  transform="scale(0.1)"
+                >
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul
+      class="emotion-7"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ShareBar renders with no icons and labels 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-2 {
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+    class="emotion-2"
+  >
+    <ul
+      class="emotion-0"
+    />
+    <ul
+      class="emotion-1"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,59 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {ArticleByline} from 'newskit';
+
+export default Layout;
+
+# Article Byline
+
+## Overview
+
+The article byline is a small line of text which lists the authors of an article, along with their titles if provided.
+
+### Usage
+
+The `ArticleByline` component requires an array of byline data. Each byline data object in the array must contain an author. You can optionally provide an href to link to that authors page, and a title for that author.
+
+### Theming
+
+The byline uses a type preset of `meta02` and inherits its font color from its parent, apart from author links which use the default [Link](/components/link) theme color tokens.
+
+## Props
+
+<Block $marginTop="sizing040">
+  <Prop name="bylineData" type="array" required>
+    An array of byline data to populate the byline authors. Byline data objects
+    must contain an author string, and can contain optional href and title
+    strings. See playground for example.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="ArticleByline"
+  newskitPath="/article-byline"
+  component={ArticleByline}
+  knobs={[
+    {
+      name: 'Byline Data',
+      propName: 'bylineData',
+      value: [
+        {
+          author: 'Alison Beach',
+          href: 'https://en.wikipedia.org/wiki/Beach',
+          title: 'Beach Editor',
+        },
+        {
+          author: 'Charles Donkey',
+          href: 'https://en.wikipedia.org/wiki/Donkey',
+          title: 'Senior Donkey Reporter',
+        },
+      ],
+    },
+  ]}
+/>

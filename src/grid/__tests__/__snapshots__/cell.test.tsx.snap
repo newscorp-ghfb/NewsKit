@@ -1,0 +1,659 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell Container renders expected cell order styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 8.333333333333334%;
+    -ms-flex-preferred-size: 8.333333333333334%;
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+    display: block;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected cell span styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    max-width: 16.666666666666668%;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 8.333333333333334%;
+    -ms-flex-preferred-size: 8.333333333333334%;
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected hidden at lg styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    max-width: 16.666666666666668%;
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected hidden at md styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    max-width: 16.666666666666668%;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected hidden at sm styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    max-width: 16.666666666666668%;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected hidden at xs styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    max-width: 16.666666666666668%;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected inherited sm cell order styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 8.333333333333334%;
+    -ms-flex-preferred-size: 8.333333333333334%;
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+    display: block;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected inherited sm cell span styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders with expected grid overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 4px;
+    -webkit-flex-basis: 8.333333333333334%;
+    -ms-flex-preferred-size: 8.333333333333334%;
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 2px;
+    margin-top: 8px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 6px;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 32px;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  >
+    blah blah
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders with expected inherited sm grid overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 4px;
+    -webkit-flex-basis: 8.333333333333334%;
+    -ms-flex-preferred-size: 8.333333333333334%;
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 2px;
+    margin-top: 8px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 2px;
+    margin-top: 8px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 2px;
+    margin-top: 8px;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  >
+    blah blah
+  </div>
+</DocumentFragment>
+`;

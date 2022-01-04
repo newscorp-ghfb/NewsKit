@@ -1,0 +1,41 @@
+import {Breakpoints, BreakpointKeys} from '../themes';
+import {ThemeProp} from './style';
+
+/**
+ * Helper function that generates media queries based on given parameters
+ *
+ * E.g.
+ * getMediaQuery({'max-width': '1280px', 'min-height': '720px'}, 'and') =>
+ *   '@media screen and (max-width: 1280px) and (min-height: 720px)'
+ */
+export const getMediaQuery = (
+  options: Record<string, string>,
+  booleanOperator: 'AND' | 'OR' = 'OR',
+): string => {
+  const mediaFeatureSeparator = booleanOperator === 'OR' ? ', ' : ' and ';
+
+  const mediaFeatures = Object.keys(options).map(
+    key => `(${key}: ${options[key]})`,
+  );
+
+  return `@media screen and ${mediaFeatures.join(mediaFeatureSeparator)}`;
+};
+
+export const getMediaQueries = (breakpoints: Breakpoints): string[] =>
+  (Object.keys(breakpoints) as BreakpointKeys[])
+    .sort((a, b) => breakpoints[a] - breakpoints[b])
+    .map(size => getMediaQuery({'min-width': `${breakpoints[size]}px`}));
+
+export const getMediaQueryFromTheme = (
+  minWidth?: BreakpointKeys,
+  maxWidth?: BreakpointKeys,
+) => ({theme}: ThemeProp) => {
+  const queries = ['@media screen'];
+  if (minWidth && theme.breakpoints[minWidth]) {
+    queries.push(` and (min-width: ${theme.breakpoints[minWidth]}px)`);
+  }
+  if (maxWidth) {
+    queries.push(` and (max-width: ${theme.breakpoints[maxWidth] - 1}px)`);
+  }
+  return queries.join('');
+};

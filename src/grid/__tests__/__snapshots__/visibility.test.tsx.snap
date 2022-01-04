@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hidden renders expected default styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Hidden renders expected display override styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Hidden renders expected sm and lg hidden styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Hidden renders expected xs and md hidden styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Visible renders expected default styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Visible renders expected display override styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Visible renders expected sm and lg visible styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Visible renders expected xs and md visible styles 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

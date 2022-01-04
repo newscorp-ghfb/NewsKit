@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-0:visited {
+  color: #903D91;
+}
+
+.emotion-0:hover {
+  color: #2F75D7;
+}
+
+.emotion-0:active {
+  color: #2F75D7;
+}
+
+<a
+    class="emotion-0"
+    href="#"
+    role="button"
+  >
+    Some Custom Link Text
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ConsentSettingsLink with no children renders link with default text 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-0:visited {
+  color: #903D91;
+}
+
+.emotion-0:hover {
+  color: #2F75D7;
+}
+
+.emotion-0:active {
+  color: #2F75D7;
+}
+
+<a
+    class="emotion-0"
+    href="#"
+    role="button"
+  >
+    Manage Consent
+  </a>
+</DocumentFragment>
+`;

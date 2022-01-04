@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleHeadline renders correctly with default props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+  display: inline;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+<h1
+    class="emotion-0"
+  >
+    test
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`ArticleHeadline renders correctly with default props 2`] = `
+<DocumentFragment>
+  .emotion-1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+  display: inline;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-1 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+.emotion-2 {
+  display: block;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+  display: inline;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline;
+  color: #01396E;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+<div
+    class="emotion-2"
+  >
+    <span
+      class="emotion-0"
+    >
+      this is kicker 
+    </span>
+    <h1
+      class="emotion-1"
+    >
+      test
+    </h1>
+  </div>
+</DocumentFragment>
+`;

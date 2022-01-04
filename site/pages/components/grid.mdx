@@ -1,0 +1,121 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {Block} from '../../components/block';
+
+export default Layout;
+
+# Grid & Cell
+
+## Overview
+
+### Usage
+
+The Grid and Cell components are used together to construct a visual grid for responsive page layout. The Grid containers children must be Cell components, which can span different widths at each of the 4 breakpoints.
+
+The 4 breakpoints (xs, sm, md, lg) widths are set via the theme, as are the grid settings. The NewsKit light default grid settings are as follows:
+
+| Setting         | Default Value  | Explanation                                                                                                                                                                                                    |
+| --------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| maxWidth        | 1920           | The maximum width of the Grid container component. The Grid will not grow bigger than 1920px wide.                                                                                                             |
+| containerMargin | 16, 16, 24, 24 | The margin either side of the Grid container component. The margin can be different for each breakpoint. By default it is 16px for xs & sm, and 24px for md & lg.                                              |
+| columnGutters   | 16, 16, 24, 24 | The spacing between each Cell component column (i.e. left and right). The margin can be different for each breakpoint. By default it is 16px for xs & sm, and 24px for md & lg.                                |
+| rowGutters      | 16, 16, 24, 24 | The spacing between each Cell component row (i.e. top and bottom when Cells are wrapped). The margin can be different for each breakpoint. By default it is 16px for xs & sm, and 24px for md & lg.            |
+| columns         | 12             | The total columns available to use. Each Cell by default takes up 1 column. If there are more Cells in a Grid than columns, or the Cell components inside a Grid span a total greater than 12, they will wrap. |
+
+## Grid Props
+
+<Block $marginTop="sizing040">
+  <Prop name="children" type="Cell">
+    The Cell components must be used as children of the Grid. Using anything other than the Cell components will break the Grid functionality.
+  </Prop>
+  <Prop name="xsMargin" type="SizingKeys">
+    An override for the grid margin sizing at the xs and upwards breakpoint.
+  </Prop>
+  <Prop name="smMargin" type="SizingKeys">
+    An override for the grid margin sizing at the sm and upwards breakpoint.
+  </Prop>
+  <Prop name="mdMargin" type="SizingKeys">
+    An override for the grid margin sizing at the md and upwards breakpoint.
+  </Prop>
+  <Prop name="lgMargin" type="SizingKeys">
+    An override for the grid margin sizing at the lg breakpoint.
+  </Prop>
+  <Prop name="xsColumnGutter" type="SizingKeys">
+    An override for the column gutter sizing at the xs and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+  <Prop name="smColumnGutter" type="SizingKeys">
+    An override for the column gutter sizing at the sm and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+  <Prop name="mdColumnGutter" type="SizingKeys">
+    An override for the column gutter sizing at the md and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+  <Prop name="lgColumnGutter" type="SizingKeys">
+    An override for the column gutter sizing at the lg breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+  <Prop name="xsRowGutter" type="SizingKeys">
+    An override for the row gutter sizing at the xs and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+  <Prop name="smRowGutter" type="SizingKeys">
+    An override for the row gutter sizing at the sm and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+  <Prop name="mdRowGutter" type="SizingKeys">
+    An override for the row gutter sizing at the md and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+  <Prop name="lgRowGutter" type="SizingKeys">
+    An override for the row gutter sizing at the lg breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+  </Prop>
+</Block>
+
+## Cell Props
+
+<Block $marginTop="sizing040">
+  <Prop name="children" type="React.ReactNode">
+    The children of a column are rendered in that column, any supported React
+    node is allowed.
+  </Prop>
+  <Prop name="xs" type="number" default={1}>
+    The amount of columns for Cell to span at the xs and upwards breakpoint.
+  </Prop>
+  <Prop name="sm" type="number" default={1}>
+    The amount of columns for Cell to span at the sm and upwards breakpoint.
+  </Prop>
+  <Prop name="md" type="number" default={1}>
+    The amount of columns for Cell to span at the md and upwards breakpoint.
+  </Prop>
+  <Prop name="lg" type="number" default={1}>
+    The amount of columns for Cell to span at the lg breakpoint.
+  </Prop>
+  <Prop name="xsHidden" type="boolean" default={false}>
+    If true, the Cell will be hidden at the xs breakpoint. Unlike other
+    breakpoint props this has no effect on other breakpoints.
+  </Prop>
+  <Prop name="smHidden" type="boolean" default={false}>
+    If true, the Cell will be hidden at the sm breakpoint. Unlike other
+    breakpoint props this has no effect on other breakpoints.
+  </Prop>
+  <Prop name="mdHidden" type="boolean" default={false}>
+    If true, the Cell will be hidden at the md breakpoint. Unlike other
+    breakpoint props this has no effect on other breakpoints.
+  </Prop>
+  <Prop name="lgHidden" type="boolean" default={false}>
+    If true, the Cell will be hidden at the lg breakpoint. Unlike other
+    breakpoint props this has no effect on other breakpoints.
+  </Prop>
+  <Prop name="xsOrder" type="number">
+    If set, this is the flex order number than will be applied at the xs and
+    upwards breakpoint.
+  </Prop>
+  <Prop name="smOrder" type="number">
+    If set, this is the flex order number than will be applied at the sm and
+    upwards breakpoint.
+  </Prop>
+  <Prop name="mdOrder" type="number">
+    If set, this is the flex order number than will be applied at the md and
+    upwards breakpoint.
+  </Prop>
+  <Prop name="lgOrder" type="number">
+    If set, this is the flex order number than will be applied at the lg
+    breakpoint.
+  </Prop>
+</Block>

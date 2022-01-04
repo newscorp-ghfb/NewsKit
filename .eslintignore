@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-storybook
+coverage
+docs
+kubernetes
+public
+site/static

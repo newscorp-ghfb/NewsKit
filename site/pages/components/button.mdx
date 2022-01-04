@@ -1,0 +1,88 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {Button, ButtonSize, ButtonShape} from 'newskit';
+
+export default Layout;
+
+# Button
+
+## Overview
+
+A styled button element with customisable shape and size.
+
+## Props
+
+<Block marginTop="sizing040">
+  <Prop name="$size" type="ButtonSize">
+    Set the size of the button. Possible values: Small, Medium and Large. Default styling: Small.
+  </Prop>
+  <Prop name="$shape" type="ButtonShape">
+    Set the shape of the button. Possible values: Square and Rounded. Default styling: Square.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="Button"
+  newskitPath="/button"
+  component={Button}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'Click me!',
+    },
+    {
+      name: '$size',
+      propName: '$size',
+      options: [
+        {
+          label: 'ButtonSize.Small',
+          value: ButtonSize.Small,
+          isDefault: true,
+        },
+        {
+          label: 'ButtonSize.Medium',
+          value: ButtonSize.Medium,
+        },
+        {
+          label: 'ButtonSize.Large',
+          value: ButtonSize.Large,
+        },
+      ],
+    },
+    {
+      name: '$shape',
+      propName: '$shape',
+      options: [
+        {
+          label: 'ButtonShape.Square',
+          value: ButtonShape.Square,
+          isDefault: true,
+        },
+        {
+          label: 'ButtonShape.Rounded',
+          value: ButtonShape.Rounded,
+        },
+      ],
+    }
+  ]}
+/>
+
+### Styling
+
+The button component is block level element with a native HTML button with custom styling.
+
+### Accessibility
+
+The button is a fully accessible with the native HTML button used.
+
+#### Colour
+
+Text and background colours must have a 3:1 minimum contrast ratio.
+Hover states should have clear contrast change or should include a non colour designator.

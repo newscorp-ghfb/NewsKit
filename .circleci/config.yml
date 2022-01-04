@@ -1,0 +1,409 @@
+version: 2.1
+
+orbs:
+  aws-ecr: circleci/aws-ecr@0.0.2
+
+executors:
+  # A basic image with just raw Alpine on it that you can run commands on
+  base:
+    docker:
+      - image: $PIPELINE_REGISTRY/base:latest
+        auth:
+          username: $DOCKER_USERNAME
+          password: $DOCKER_PASSWORD
+
+  flux-deploy:
+    docker:
+      - image: $PIPELINE_REGISTRY/flux-k8s:latest
+        auth:
+          username: $DOCKER_USERNAME
+          password: $DOCKER_PASSWORD
+
+commands:
+  # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
+  flux-deploy:
+    description: "Generates a manifests and commits them to a Flux repo for deployments"
+    parameters:
+      config_values:
+        type: string
+      substitution_dir:
+        type: string
+      out_dir:
+        type: string
+      flux_repo_url:
+        type: string
+      flux_repo_name:
+        type: string
+      flux_repo_target:
+        type: string
+    steps:
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - checkout
+        # We have to add the ssh key so that Circle has permissions to checkout the private repo
+      - add_ssh_keys:
+          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+      - run: |
+          git config --global user.email "ncu-product-platforms@news.co.uk"
+          git config --global user.name "Product Platforms Service"
+          flux-generate "${CIRCLE_SHA1}" << parameters.config_values >> << parameters.substitution_dir >> << parameters.out_dir >>
+          flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d << parameters.out_dir >> -t << parameters.flux_repo_target >> -m "${CIRCLE_SHA1}_<< parameters.out_dir >>"
+
+  ecr-build-push-docker:
+    description: "Assume Role and Push to ECR"
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+      aws_access_key_id:
+        description: AWS Access Key Id
+        type: string
+      aws_secret_key:
+        description: AWS Secret Key
+        type: string
+      aws_account_url:
+        description: AWS Account URL
+        type: string
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+      ecr_repo:
+        description: ECR REPO
+        type: string
+      docker_tag:
+        description: Docker Image Tag
+        type: string
+    steps:
+      - run:
+          command: |
+            export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+            export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+            export DOCKER_REGISTRY_URL=<< parameters.aws_account_url >>
+            export DOCKER_REPO=<< parameters.ecr_repo >>
+            export DOCKER_TAG=<< parameters.docker_tag >>
+            export temp_role=$(aws sts assume-role \
+                    --role-arn "<< parameters.aws_assume_role_arn >>" \
+                    --role-session-name "circle-ci-assume")
+            export AWS_ACCESS_KEY_ID=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
+            export AWS_SECRET_ACCESS_KEY=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
+            export AWS_SESSION_TOKEN=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
+            aws ecr get-login --no-include-email --region << parameters.aws_region >> | /bin/bash
+            make build_docker
+            make push_docker
+
+jobs:
+  install_deps:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - yarn-build-{{ checksum "yarn.lock" }}
+      - run:
+          name: Dependencies Install
+          command: make install
+      - save_cache:
+          key: yarn-build-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.npm
+            - ~/.cache
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - node_modules/*
+
+  build_components:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: make build_components
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - dist/*
+
+  build_storybook:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: make build_storybook
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - dist-storybook/*
+
+  build_docs:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: make build_docs
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public/*
+
+  build_test_e2e:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build E2E Tests
+          command: make e2e_test_build
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - e2e/dist/*
+
+  test_unit:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Unit Testing
+          command: make unit_test
+      - store_test_results:
+          path: unit-test-results
+
+  test_e2e:
+    working_directory: ~/project
+    docker:
+      - image: cypress/base:10
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: install cypress
+          command: make install_cypress
+      - run:
+          name: E2E Testing
+          command: make e2e_test
+      - store_artifacts:
+          path: cypress/snapshots
+
+  create_release_candidate:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - run:
+          name: install hub
+          command: make install_hub
+      - add_ssh_keys:
+          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+      - run:
+          name: Set github identity
+          command: make set_git_identity
+      - run:
+          name: bump version
+          command: make create_release_candidate
+
+  publish_npm_dev:
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Add NPM login credentionals
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      - run:
+          name: Set github identity
+          command: make set_git_identity
+      - run:
+          name: Publish components to NPM
+          command: make publish_npm_dev
+
+  publish_npm:
+    docker:
+      - image: circleci/node:10.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Add NPM login credentionals
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      - run:
+          name: Set github identity
+          command: make set_git_identity
+      - run:
+          name: Publish components to NPM
+          command: make publish_npm
+
+  build_push_docker_ecr:
+    machine: true
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - ecr-build-push-docker:
+          aws_region: "${AWS_DEFAULT_REGION}"
+          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
+          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
+          aws_account_url: "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
+          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
+          ecr_repo: "${AWS_RESOURCE_NAME_PREFIX}"
+          docker_tag: "${CIRCLE_SHA1}"
+
+  k8s_flux_deploy_dev:
+    executor: flux-deploy
+    steps:
+      - flux-deploy:
+          config_values: kubernetes/values/product-platforms-values-dev.yaml
+          substitution_dir: kubernetes/manifests
+          out_dir: product-platforms-dev
+          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
+          flux_repo_name: ncu-flux-newskit-site
+          flux_repo_target: dev/product-platforms
+
+  k8s_flux_deploy_staging:
+    executor: flux-deploy
+    steps:
+      - flux-deploy:
+          config_values: kubernetes/values/product-platforms-values-staging.yaml
+          substitution_dir: kubernetes/manifests
+          out_dir: product-platforms-staging
+          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
+          flux_repo_name: ncu-flux-newskit-site
+          flux_repo_target: staging/product-platforms
+
+  k8s_flux_deploy_prod:
+    executor: flux-deploy
+    steps:
+      - flux-deploy:
+          config_values: kubernetes/values/product-platforms-values-prod.yaml
+          substitution_dir: kubernetes/manifests
+          out_dir: product-platforms-prod
+          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
+          flux_repo_name: ncu-flux-newskit-site
+          flux_repo_target: prod/product-platforms
+
+only_develop: &only_develop
+  filters:
+    branches:
+      only: develop
+
+only_release: &only_release
+  filters:
+    branches:
+      only: /trigger-release-.*/
+
+only_master: &only_master
+  filters:
+    branches:
+      only: master
+
+ignore_release: &ignore_release
+  filters:
+    branches:
+      ignore: /trigger-release-.*/
+
+require_dep: &require_dep
+  requires:
+    - install_deps
+
+workflows:
+  version: 2.1
+  build_and_deploy:
+    jobs:
+      - install_deps:
+          <<: *ignore_release
+      - build_components:
+          <<: *ignore_release
+          <<: *require_dep
+      - build_storybook:
+          <<: *ignore_release
+          <<: *require_dep
+      - build_docs:
+          <<: *ignore_release
+          requires:
+            - install_deps
+            - build_components
+      - build_test_e2e:
+          <<: *ignore_release
+          <<: *require_dep
+      - test_unit:
+          <<: *ignore_release
+          <<: *require_dep
+      - test_e2e:
+          <<: *ignore_release
+          requires:
+            - build_docs
+            - build_test_e2e
+      - approve_publish_npm_dev:
+          type: approval
+          <<: *only_develop
+      - create_release_candidate:
+          <<: *only_release
+      - publish_npm_dev:
+          <<: *only_develop
+          context: ncu-product-platforms-context
+          requires:
+            - build_components
+            - test_unit
+            - test_e2e
+            - approve_publish_npm_dev
+      - build_push_docker_ecr:
+          context: ncu-product-platforms-context
+          <<: *only_develop
+          requires:
+            - build_docs
+            - build_storybook
+            - test_unit
+            - test_e2e
+      - k8s_flux_deploy_dev:
+          context: ncu-product-platforms-context
+          <<: *only_develop
+          requires:
+            - build_push_docker_ecr
+      - approve_deployment:
+          type: approval
+          <<: *only_master
+          requires:
+            - test_unit
+            - test_e2e
+      - publish_npm:
+          context: ncu-product-platforms-context
+          <<: *only_master
+          requires:
+            - build_components
+            - test_unit
+            - test_e2e
+      - k8s_flux_deploy_prod:
+          context: ncu-product-platforms-context
+          requires:
+            - build_push_docker_ecr
+            - approve_deployment
+            - publish_npm
+          <<: *only_master

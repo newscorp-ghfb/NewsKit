@@ -1,0 +1,87 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {Block} from '../../components/block';
+
+import {DateLine, Link} from 'newskit';
+
+export default Layout;
+
+# Date Line
+
+## Overview
+
+The date line component is a styled HTML5 time element for displaying dates, usually publication dates on news articles. You provide a date/time and the desired format setting for displaying the date.
+Date parsing is handled by the native [Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
+Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/format) library.
+
+## Props
+
+<Block marginTop="sizing040">
+  <Prop name="date" type="string">
+    Timestamp string of the date to be displayed. Provide this in the ISO8601 format that is understood by the native <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Date object</Link>.
+  </Prop>
+  <Prop name="dateFormat" type="string">
+    Date and time formatting setting. Refer to the <Link href="https://date-fns.org/v2.6.0/docs/format">date-fns docs</Link> for all available settings.
+  </Prop>
+  <Prop name="prefix" type="string">
+    Adds the provided string before the date.
+  </Prop>
+  <Prop name="suffix" type="string">
+    Adds the provided string after the date.
+  </Prop>
+  <Prop name="$color" type="ColorKeys">
+    Adds custom color to date.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName="DateLine"
+  newskitPath="/date-line"
+  component={DateLine}
+  knobs={[
+    {
+      name: 'Date',
+      propName: 'date',
+      value: '2017-07-01T14:32:00.000Z',
+    },
+    {
+      name: 'Date format',
+      propName: 'dateFormat',
+      value: "MMMM d yyyy, h:mmaaaaa'm'",
+    },
+    {
+      name: 'Prefix',
+      propName: 'prefix',
+      value: 'Updated: ',
+    },
+    {
+      name: 'Suffix',
+      propName: 'suffix',
+      value: ', The Times',
+    },
+    {
+      name: 'Color',
+      propName: '$color',
+      value: 'inkSubtle',
+    },
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+The date line was designed to be discreet as it's intended to supplement the primary content.
+
+### Accessibility
+
+The date line component is wrapped in a time HTML5 element and the provided `date` prop is passed into its `datetime` attribute to make the displayed date fully accessible.
+
+#### Colour
+
+Text and background colours must have a 3:1 minimum contrast ratio.
+Hover states should have clear contrast change or should include a non colour designator.

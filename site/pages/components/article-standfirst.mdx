@@ -1,0 +1,66 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+
+import {ArticleStandfirst} from 'newskit';
+
+export default Layout;
+
+# Article Standfirst
+
+## Overview
+
+The standfirst component is a simple, styled text paragraph used at the top of the article content. A standfirst is a brief introductory summary of an article, typically appearing immediately after the headline and typographically distinct from the rest of the article.
+
+### Usage
+
+No special requirements.
+
+### Theming
+
+The default tag component uses the following style tokens, which can be overridden:
+
+| Theme Token       | Color Primitive |  Color Value                                          |
+| ----------------- | --------------- | -------------------------------------------- |
+| standfirstText    | inkSubtle          | <TextBoxSwatch themeColor="inkSubtle"/>         |
+
+## Props
+
+The standfirst component provides no props for customisation.
+
+## Playground
+
+<Playground
+  componentName="ArticleStandfirst"
+  newskitPath="/article-standfirst"
+  component={ArticleStandfirst}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'ArticleStandfirst Content',
+    }
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+The standfirst was designed to be discreet as they are intended to supplement the primary content.
+
+### Accessibility
+
+#### Colour
+
+Text and background colours must have a 3:1 minimum contrast ratio.
+Hover states should have clear contrast change or should include a non colour designator.
+
+### SEO
+
+#### Ranking
+
+#### Navigation
+
+#### Descriptive

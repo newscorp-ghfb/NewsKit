@@ -1,0 +1,115 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {Block} from '../../components/block';
+
+import {ShareBar} from 'newskit';
+
+export default Layout;
+
+# Share Bar
+
+## Overview
+
+The share bar uses [icons](/foundations/icons) to allow users to share. 
+
+### Usage
+
+A share bar can be used anywhere a user would like to easily share something with social media.
+
+## Props
+
+<Block $marginTop='sizing040'>
+  <Prop name='leftIcons' type='array'>
+    An array of social items that start from the left.
+  </Prop>
+  <Prop name='rightIcons' type='array'>
+    An array of social items that start from the right.
+  </Prop>
+  <Prop name='leftLabel' type='string'>
+    A label to appear before the left items.
+  </Prop>
+  <Prop name='rightLabel' type='string'>
+    A label to appear before the right items.
+  </Prop>
+</Block>
+
+## Playground
+
+<Playground
+  componentName='ShareBar'
+  newskitPath='/share-bar'
+  component={ShareBar}
+  knobs={[
+    {
+      name: 'Left Label',
+      propName: 'leftLabel',
+      value: 'Social',
+    },
+    {
+      name: 'Right Label',
+      propName: 'rightLabel',
+      value: 'Social',
+    },
+    {
+      name: 'Left Items',
+      propName: 'leftIcons',
+      value: [
+        {
+          type: 'twitter',
+          href: '/components/share-bar'
+        },
+        {
+          type: 'facebook',
+          href: '/components/share-bar'
+        },
+        {
+          type: 'whatsApp',
+          href: '/components/share-bar'
+        },
+      ],
+    },
+    {
+      name: 'Right Items',
+      propName: 'rightIcons',
+      value: [
+        {
+          type: 'comment',
+          $borderEnabled: true,
+          href: '/components/share-bar'
+        },
+        {
+          type: 'bookmark',
+          $borderEnabled: true,
+          href: '/components/share-bar'
+        },
+      ],
+    },
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+Share bars give the user the ability to share articles.
+
+The articles can be shared via social media or saved locally for later use.
+
+### Accessibility
+
+#### Keyboard navigation
+The share bar uses an unordered list to follow accessibility standards.
+
+If a user focuses on an element and presses enter it will do the same action as if the user clicked on it.
+
+### SEO
+
+#### Ranking
+Coming Soon
+
+#### Navigation
+Coming Soon
+
+#### Descriptive
+Coming Soon

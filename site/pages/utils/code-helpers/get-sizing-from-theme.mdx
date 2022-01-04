@@ -1,0 +1,48 @@
+import {Block} from '../../../components/block';
+import Layout from '../../../components/layout';
+import {Code, CodeFromFile} from '../../../components/code';
+import Prop from '../../../components/prop';
+
+export default Layout;
+
+# getSizingFromTheme()
+
+## Syntax
+
+<Code>{'getSizingFromTheme(defaultToken, customProp)(props)'}</Code>
+
+## Overview
+
+Retrieve a sizing token from the current theme. Sizing tokens are CSS values to be used with CSS properties that take [CSS length value](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#Numbers_lengths_and_percentages).
+
+## Parameters
+
+<Block $marginTop='sizing040'>
+  <Prop name='defaultToken' type='ThemeToken'>
+    Is the name of the sizing token to be retrieved. If provided, it is used as an object key on the sizing section of the theme to get the token value.
+  </Prop>
+  <Prop name='customProp' type="Exclude<keyof Props, 'theme'>">
+    Is the name of the component prop in which a sizing token name can be proivded by the end-user of the component. If provided, the sizing to be retrieved will come from the component prop.
+  </Prop>
+  <Prop name='props' type='Props'>
+    Is the props of the component including the theme. If the function is used inside a styled component template literal, or a [css block](/utils/css), [Emotion](https://emotion.sh/docs/) will call the function first with the component props passed in.
+  </Prop>
+</Block>
+
+## Return value
+
+Returns a sizing token if valid attributes are received.
+
+Returns an empty string if invalid attributes or no attributes are provided.
+
+## Example
+
+<CodeFromFile language="text" path="examples/utils/get-sizing-from-theme.tsx"/>
+
+In this example the `Paragraph` component will use the sizing value from `sizing030` found in the theme if the `Paragraph` is used with no props:
+
+<Code>{'<Paragraph />'}</Code>
+
+However, it will include the value from `sizing070` if the `Paragraph` is used with the `$marginBottom` prop and the value passed in is `sizing070`:
+
+<Code>{'<Paragraph $marginBottom="sizing030" />'}</Code>
