@@ -23,12 +23,12 @@ cypress_defaults: &cypress_defaults
 
 applitools_defaults: &applitools_defaults
   command: |
-    export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
-    export APPLITOOLS_PARENT_BRANCH_NAME=develop
-    export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
-    export APPLITOOLS_DONT_CLOSE_BATCHES=true
-    echo "export APPLITOOLS_BATCH_ID=${APPLITOOLS_BATCH_ID}" >> $BASH_ENV
-    echo "export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}" >> $BASH_ENV
+    echo 'export APPLITOOLS_PARENT_BRANCH_NAME=develop' >> $BASH_ENV
+    echo 'export APPLITOOLS_DONT_CLOSE_BATCHES=true' >> $BASH_ENV
+    echo 'export APPLITOOLS_BATCH_ID=${CIRCLE_SHA1}' >> $BASH_ENV
+    echo ${APPLITOOLS_PARENT_BRANCH_NAME}
+    echo ${APPLITOOLS_DONT_CLOSE_BATCHES}
+    echo ${APPLITOOLS_BATCH_ID}
 
 # ========== APPLITOOLS ENVIRONMENT VARIABLES END ==========
 
@@ -249,11 +249,11 @@ commands:
       - slack/status:
           <<: *slack_status
 
-jobs: 
-  can_i_merge_checker: 
+jobs:
+  can_i_merge_checker:
     executor: node
     steps:
-      - run: 
+      - run:
           name: 'Waiting for "no_visual_changes" or "test_visual_docs"'
           command: |
             if [[ $(curl --location --request GET "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/job" --header "Circle-Token: ${CIRCLECI_BASE_AUTH}"| jq -r '.items[]|select(.name == "no_visual_changes" or .name == "test_visual_docs" or .name == "test_visual_docs_2")|.status' | grep -c "success") -gt 0 ]]
@@ -793,16 +793,16 @@ jobs:
       - run:
           name: Doc site link
           command: |
-              if gh pr view -c | grep "Documentation Site" ; 
-              then
-                circleci-agent step halt
-              else
-                gh pr comment --body "You can preview these changes on: 
-                Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'docs') 
-                Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'storybook')" 
-              fi 
+            if gh pr view -c | grep "Documentation Site" ; 
+            then
+              circleci-agent step halt
+            else
+              gh pr comment --body "You can preview these changes on: 
+              Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'docs') 
+              Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'storybook')" 
+            fi
       - slack/status:
-          <<: *slack_status 
+          <<: *slack_status
 
   eks_flux_deploy:
     # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
@@ -1023,7 +1023,7 @@ workflows:
             - install_cypress
 
       # PR jobs
-        ## Visual changes approval jobs
+      ## Visual changes approval jobs
       - no_visual_changes:
           <<: *only_pr
           type: approval
@@ -1059,8 +1059,8 @@ workflows:
             - build_docs
             - install_cypress
             - docs_visual_changes
-      - can_i_merge_checker:  
-          <<: *only_pr   
+      - can_i_merge_checker:
+          <<: *only_pr
           context: ncu-product-platforms-context
           requires:
             - i_have_merged_applitools
@@ -1112,7 +1112,7 @@ workflows:
             - deploy_terraform_s3_dev
             - build_docs_pr
             - build_storybook
-      -  post_pr_env_url_to_github_pr:
+      - post_pr_env_url_to_github_pr:
           <<: *only_pr
           name: pr_enviroment_link
           context: ncu-product-platforms-context
