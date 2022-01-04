@@ -110,7 +110,7 @@ exports[`TypographyPreset renders responsive override editorialParagraph010 for 
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeading010 for lg and xl breakpoints and ignore wrong prop 1`] = `
+exports[`TypographyPreset renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeadline010 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
   @media screen and (max-width: 479px) {
   .emotion-0 {
