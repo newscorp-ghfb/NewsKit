@@ -44,15 +44,6 @@ cd ncu-newskit
 yarn && yarn dev
 ```
 
-### IE11 issue
-
-Disclaimer: when running the documentation site in development mode using `yarn dev:docs`, the site will not work as it includes devDependency modules that does not support IE11.
-Thereore in order to work around this when developing (testing) on IE11, please run the following commands instead.
-
-```sh
-yarn build && yarn serve:docs
-```
-
 ## Testing
 
 We use the following libraries for our automated tests:
