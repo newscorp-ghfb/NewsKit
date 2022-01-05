@@ -691,9 +691,6 @@ Object {
     "icons": Object {
       "stylePreset": "iconDefault",
     },
-    "image": Object {
-      "stylePreset": "imageSharp",
-    },
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
@@ -1783,60 +1780,6 @@ Object {
     "iconSocialYoutube": Object {
       "base": Object {
         "iconColor": "#FF0000",
-      },
-    },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "50%",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageDefault": Object {
-      "base": Object {
-        "borderRadius": "8px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "24px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "12px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "4px",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "0",
-      },
-      "loading": Object {
-        "backgroundColor": "#F4F4F4",
-        "iconColor": "#C0C0C0",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {

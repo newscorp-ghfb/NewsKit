@@ -701,9 +701,6 @@ Object {
     "icons": Object {
       "stylePreset": "iconDefault",
     },
-    "image": Object {
-      "stylePreset": "imageSharp",
-    },
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
@@ -1749,60 +1746,6 @@ Object {
     "iconSocialYoutube": Object {
       "base": Object {
         "iconColor": "{{colors.socialYoutube}}",
-      },
-    },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageDefault": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusDefault}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -2939,6 +2882,9 @@ Object {
       "stylePreset": "iconButtonSolidPrimary",
       "width": "sizing060",
     },
+  },
+  "image": Object {
+    "stylePreset": "imageSharp",
   },
   "menu": Object {
     "spaceInline": "space020",

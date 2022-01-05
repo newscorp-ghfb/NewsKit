@@ -556,65 +556,6 @@ stylePresets.audioPlayerThumb = {
 };
 
 //
-// Image
-//
-
-stylePresets.imageSharp = {
-  base: {
-    borderRadius: '{{borders.borderRadiusSharp}}',
-  },
-  loading: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.imageRoundedSmall = {
-  base: {
-    borderRadius: '{{borders.borderRadiusRounded010}}',
-  },
-  loading: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.imageRoundedMedium = {
-  base: {
-    borderRadius: '{{borders.borderRadiusRounded030}}',
-  },
-  loading: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.imageRoundedLarge = {
-  base: {
-    borderRadius: '{{borders.borderRadiusRounded050}}',
-  },
-  loading: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.imageDefault = {
-  base: {
-    borderRadius: '{{borders.borderRadiusDefault}}',
-  },
-  loading: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.imageCircle = {
-  base: {
-    borderRadius: '{{borders.borderRadiusCircle}}',
-  },
-  loading: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-
-//
 // TitleBar
 //
 

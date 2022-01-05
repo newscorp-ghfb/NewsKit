@@ -433,9 +433,6 @@ export const componentDefaults = {
   icons: {
     stylePreset: 'iconDefault',
   },
-  image: {
-    stylePreset: 'imageSharp',
-  },
   indeterminateProgressIndicator: {
     stylePreset: 'iconDefault',
     size: 'iconSize020',

@@ -1643,6 +1643,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -2241,59 +2247,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -5357,6 +5313,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -5955,59 +5917,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -9071,6 +8983,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -9669,59 +9587,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -12785,6 +12653,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -13383,59 +13257,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -16499,6 +16323,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -17097,59 +16927,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -20213,6 +19993,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -20811,59 +20597,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -23927,6 +23663,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -24525,59 +24267,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
@@ -27641,6 +27333,12 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded010}}",
       },
     },
+    "blockRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+        "overflow": "hidden",
+      },
+    },
     "buttonLightDarkToggle": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -28239,59 +27937,9 @@ Object {
         "iconColor": "{{colors.socialYoutube}}",
       },
     },
-    "imageCircle": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
     "imageDefault": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusRounded020}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedLarge": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded050}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedMedium": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded030}}",
-        "overflow": "hidden",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageRoundedSmall": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusRounded010}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "imageSharp": Object {
-      "base": Object {
-        "borderRadius": "{{borders.borderRadiusSharp}}",
-      },
-      "loading": Object {
-        "backgroundColor": "{{colors.interfaceSkeleton010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
