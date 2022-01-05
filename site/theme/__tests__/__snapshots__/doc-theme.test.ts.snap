@@ -604,9 +604,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -2015,18 +2012,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -4318,9 +4306,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -5729,18 +5714,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -8032,9 +8008,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -9443,18 +9416,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -11746,9 +11710,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -13157,18 +13118,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -15460,9 +15412,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -16871,18 +16820,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -19174,9 +19114,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -20585,18 +20522,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -22888,9 +22816,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -24299,18 +24224,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {
@@ -26602,9 +26518,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -28013,18 +27926,9 @@ Object {
         "iconColor": "{{colors.inkNegative}}",
       },
     },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
-      },
-    },
     "dividerInverse": Object {
       "base": Object {
         "borderColor": "{{colors.blackTint020}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
       },
     },
     "dividerNegative": Object {

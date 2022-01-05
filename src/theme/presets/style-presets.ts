@@ -625,26 +625,6 @@ stylePresets.titleBar = {
 };
 
 //
-// Divider
-//
-
-stylePresets.divider = {
-  base: {
-    borderStyle: 'solid',
-    borderColor: '{{colors.interface040}}',
-    borderWidth: '{{borders.borderWidthDefault}}',
-  },
-};
-
-stylePresets.dividerInverse = {
-  base: {
-    borderStyle: 'solid',
-    borderColor: '{{colors.whiteTint050}}',
-    borderWidth: '{{borders.borderWidthDefault}}',
-  },
-};
-
-//
 // Headline
 //
 

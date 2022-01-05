@@ -165,7 +165,6 @@ export const componentDefaults = {
       },
     },
   },
-
   byline: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
@@ -303,9 +302,6 @@ export const componentDefaults = {
       stylePreset: 'inkSubtle',
       typographyPreset: 'utilityMeta020',
     },
-  },
-  divider: {
-    stylePreset: 'divider',
   },
   drawer: {
     overlay: {

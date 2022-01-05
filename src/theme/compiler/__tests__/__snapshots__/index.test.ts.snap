@@ -550,9 +550,6 @@ Object {
       },
       "typographyPreset": "utilityMeta020",
     },
-    "divider": Object {
-      "stylePreset": "divider",
-    },
     "drawer": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -1680,20 +1677,6 @@ Object {
       },
       "disabled": Object {
         "color": "#C0C0C0",
-      },
-    },
-    "divider": Object {
-      "base": Object {
-        "borderColor": "#DEDEDE",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-      },
-    },
-    "dividerInverse": Object {
-      "base": Object {
-        "borderColor": "rgba(255,255,255,0.5)",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
       },
     },
     "drawerPanel": Object {
