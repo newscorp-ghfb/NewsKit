@@ -421,28 +421,16 @@ stylePresets.linkInlineInverse = {
 };
 
 //
-// Slider
+// Volume Control
 //
 
-stylePresets.sliderTrack = {
-  base: {
-    backgroundColor: '{{colors.interface030}}',
-    borderRadius: '{{borders.borderRadiusPill}}',
-  },
-  disabled: {
-    backgroundColor: '{{colors.interactiveDisabled010}}',
-  },
-};
-stylePresets.sliderIndicator = {
+stylePresets.volumeControlIndicator = {
   base: {
     backgroundColor: '{{colors.interactivePrimary030}}',
     borderRadius: '{{borders.borderRadiusPill}}',
   },
-  disabled: {
-    backgroundColor: '{{colors.interface040}}',
-  },
 };
-stylePresets.sliderThumb = {
+stylePresets.volumeControlThumb = {
   base: {
     boxShadow: '{{shadows.shadow010}}',
     backgroundColor: '{{colors.interactivePrimary030}}',
@@ -459,56 +447,6 @@ stylePresets.sliderThumb = {
   active: {
     backgroundColor: '{{colors.interactivePrimary050}}',
     iconColor: '{{colors.inkSubtle}}',
-  },
-  disabled: {
-    boxShadow: 'none',
-    backgroundColor: '{{colors.interface040}}',
-    borderStyle: 'none',
-    borderColor: 'none',
-    borderWidth: 'none',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.sliderThumbLabel = {
-  base: {
-    color: '{{colors.inkBrand010}}',
-    textAlign: 'center',
-    whiteSpace: 'nowrap',
-  },
-  disabled: {
-    color: '{{colors.inkNonEssential}}',
-  },
-};
-stylePresets.sliderLabels = {
-  base: {
-    color: '{{colors.inkSubtle}}',
-    iconColor: '{{colors.inkSubtle}}',
-  },
-  disabled: {
-    color: '{{colors.inkNonEssential}}',
-    iconColor: '{{colors.inkNonEssential}}',
-  },
-};
-
-//
-// Volume Control
-//
-
-stylePresets.volumeControlIndicator = {
-  base: {
-    backgroundColor: '{{colors.interactivePrimary030}}',
-    borderRadius: '{{borders.borderRadiusPill}}',
-  },
-};
-stylePresets.volumeControlThumb = {
-  base: {
-    ...stylePresets.sliderThumb.base,
-  },
-  hover: {
-    ...stylePresets.sliderThumb.hover,
-  },
-  active: {
-    ...stylePresets.sliderThumb.active,
   },
 };
 stylePresets.volumeControlTrack = {
@@ -542,7 +480,11 @@ stylePresets.audioPlayerSeekBarBuffering = {
 };
 stylePresets.audioPlayerThumb = {
   base: {
-    ...stylePresets.sliderThumb.base,
+    boxShadow: '{{shadows.shadow010}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
+    iconColor: '{{colors.inkNonEssential}}',
     backgroundColor: '{{colors.interactivePrimary030}}',
     borderColor: '{{colors.interfaceBackground}}',
   },
