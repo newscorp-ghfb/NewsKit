@@ -3,7 +3,8 @@ import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
 import {AudioPlayer} from '..';
 import {AudioPlayerProps} from '../types';
-import {compileTheme, createTheme, newskitLightTheme} from '../../theme';
+import {compileTheme, createTheme} from '../../theme';
+import audioPlayStylePresets from '../style-presets';
 
 const version = '0.10.0';
 
@@ -256,7 +257,14 @@ describe('Audio Player', () => {
     };
     fireEvent.progress(audioElement);
 
-    const compiledNKLightThemeStylePresets = compileTheme(newskitLightTheme)
+    const audioPlayerTheme = createTheme({
+      name: 'audio-player',
+      overrides: {
+        stylePresets: audioPlayStylePresets,
+      },
+    });
+
+    const compiledNKLightThemeStylePresets = compileTheme(audioPlayerTheme)
       .stylePresets;
 
     const {audioPlayerSeekBarTrack} = compiledNKLightThemeStylePresets;

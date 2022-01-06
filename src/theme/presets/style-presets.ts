@@ -421,47 +421,6 @@ stylePresets.linkInlineInverse = {
 };
 
 //
-// Audio Player
-//
-
-stylePresets.audioPlayerSeekBarTrack = {
-  base: {
-    backgroundColor: '{{colors.interface020}}',
-    borderRadius: '{{borders.borderRadiusPill}}',
-  },
-};
-stylePresets.audioPlayerSeekBarIndicator = {
-  base: {
-    backgroundColor: '{{colors.interactivePrimary030}}',
-    borderRadius: '{{borders.borderRadiusPill}}',
-  },
-};
-stylePresets.audioPlayerSeekBarBuffering = {
-  base: {
-    backgroundColor: '{{colors.interface030}}',
-    borderRadius: '{{borders.borderRadiusPill}}',
-  },
-};
-stylePresets.audioPlayerThumb = {
-  base: {
-    boxShadow: '{{shadows.shadow010}}',
-    borderStyle: 'solid',
-    borderWidth: '{{borders.borderWidth010}}',
-    borderRadius: '{{borders.borderRadiusCircle}}',
-    iconColor: '{{colors.inkNonEssential}}',
-    backgroundColor: '{{colors.interactivePrimary030}}',
-    borderColor: '{{colors.interfaceBackground}}',
-  },
-  hover: {
-    backgroundColor: '{{colors.interactivePrimary040}}',
-  },
-  active: {
-    backgroundColor: '{{colors.interactivePrimary050}}',
-    iconColor: '{{colors.inkSubtle}}',
-  },
-};
-
-//
 // TitleBar
 //
 

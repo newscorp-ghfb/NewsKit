@@ -237,75 +237,6 @@ Object {
         "typographyPreset": "utilityBody010",
       },
     },
-    "audioPlayer": Object {
-      "controls": Object {
-        "forwardButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "nextButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "playPauseButton": Object {
-          "stylePreset": "iconButtonSolidPrimary",
-        },
-        "popoutButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "previousButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "replayButton": Object {
-          "stylePreset": "iconButtonMinimalPrimary",
-        },
-        "space": "space030",
-      },
-      "seekBar": Object {
-        "buffering": Object {
-          "stylePreset": "audioPlayerSeekBarBuffering",
-        },
-        "slider": Object {
-          "indicator": Object {
-            "stylePreset": "audioPlayerSeekBarIndicator",
-          },
-          "labels": Object {
-            "stylePreset": "audioPlayerLabels",
-            "typographyPreset": "utilityLabel020",
-          },
-          "thumb": Object {
-            "size": "sizing040",
-            "stylePreset": "audioPlayerThumb",
-          },
-          "thumbLabel": Object {
-            "stylePreset": "audioPlayerLabels",
-          },
-          "track": Object {
-            "size": "sizing020",
-            "stylePreset": "audioPlayerSeekBarTrack",
-          },
-        },
-      },
-      "volumeControl": Object {
-        "slider": Object {
-          "indicator": Object {
-            "stylePreset": "volumeControlIndicator",
-          },
-          "labels": Object {
-            "stylePreset": "iconButtonMinimalPrimary",
-          },
-          "thumb": Object {
-            "size": "sizing040",
-            "stylePreset": "audioPlayerThumb",
-          },
-          "thumbLabel": Object {
-            "stylePreset": "volumeControlLabels",
-          },
-          "track": Object {
-            "size": "sizing010",
-            "stylePreset": "volumeControlTrack",
-          },
-        },
-      },
-    },
     "banner": Object {
       "horizontal": Object {
         "actions": Object {
@@ -1457,42 +1388,6 @@ Object {
       },
       "valid": Object {
         "color": "#535353",
-      },
-    },
-    "audioPlayerSeekBarBuffering": Object {
-      "base": Object {
-        "backgroundColor": "#F4F4F4",
-        "borderRadius": "20rem",
-      },
-    },
-    "audioPlayerSeekBarIndicator": Object {
-      "base": Object {
-        "backgroundColor": "#3358CC",
-        "borderRadius": "20rem",
-      },
-    },
-    "audioPlayerSeekBarTrack": Object {
-      "base": Object {
-        "backgroundColor": "#FAFAFA",
-        "borderRadius": "20rem",
-      },
-    },
-    "audioPlayerThumb": Object {
-      "active": Object {
-        "backgroundColor": "#213A82",
-        "iconColor": "#535353",
-      },
-      "base": Object {
-        "backgroundColor": "#3358CC",
-        "borderColor": "#FFFFFF",
-        "borderRadius": "50%",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-        "boxShadow": "0 0 2px 0 rgba(10,10,10,0.08)",
-        "iconColor": "#C0C0C0",
-      },
-      "hover": Object {
-        "backgroundColor": "#2B4AAB",
       },
     },
     "bannerInformative": Object {
