@@ -32,7 +32,7 @@ const labelFlowMap = [
   },
 ];
 
-export const ThemelessSlider: React.FC<SliderProps> = ({
+const ThemelessSlider: React.FC<SliderProps> = ({
   min,
   max,
   step = 1,

@@ -22,10 +22,7 @@ import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
-export const ThemelessTextInput = React.forwardRef<
-  HTMLInputElement,
-  TextInputProps
->(
+const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   (
     {
       overrides = {},

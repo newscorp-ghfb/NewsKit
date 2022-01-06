@@ -1173,22 +1173,10 @@ exports[`getStylePresetFromTheme with visited, visited:focus & visited:hover sta
 
 .emotion-0:visited:not(:disabled) {
   color: #00ff00;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:not(:disabled) svg {
-  fill: #5E44E4;
 }
 
 .emotion-0:visited:hover:not(:disabled) {
   color: #FF0000;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
 }
 
 .emotion-0:visited:focus:not(:disabled) {
