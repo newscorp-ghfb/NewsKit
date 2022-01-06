@@ -1022,29 +1022,6 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
-    "slider": Object {
-      "indicator": Object {
-        "stylePreset": "sliderIndicator",
-      },
-      "labels": Object {
-        "space": "space030",
-        "stylePreset": "sliderLabels",
-        "typographyPreset": "utilityLabel020",
-      },
-      "thumb": Object {
-        "size": "sizing060",
-        "stylePreset": "sliderThumb",
-      },
-      "thumbLabel": Object {
-        "space": "space060",
-        "stylePreset": "sliderThumbLabel",
-        "typographyPreset": "utilityLabel030",
-      },
-      "track": Object {
-        "size": "sizing030",
-        "stylePreset": "sliderTrack",
-      },
-    },
     "standfirst": Object {
       "styledText": Object {
         "stylePreset": "inkBase",
@@ -2028,71 +2005,6 @@ Object {
         "boxShadow": "{{shadows.shadow050}}",
       },
     },
-    "sliderIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interface040}}",
-      },
-    },
-    "sliderLabels": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "sliderThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interface040}}",
-        "borderColor": "none",
-        "borderStyle": "none",
-        "borderWidth": "none",
-        "boxShadow": "none",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "sliderThumbLabel": Object {
-      "base": Object {
-        "color": "{{colors.inkBrand010}}",
-        "textAlign": "center",
-        "whiteSpace": "nowrap",
-      },
-      "disabled": Object {
-        "color": "{{colors.inkNonEssential}}",
-      },
-    },
-    "sliderTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
     "structuredListItem": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
@@ -2909,6 +2821,29 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "menuItemVertical",
+    },
+  },
+  "slider": Object {
+    "indicator": Object {
+      "stylePreset": "sliderIndicator",
+    },
+    "labels": Object {
+      "space": "space030",
+      "stylePreset": "sliderLabels",
+      "typographyPreset": "utilityLabel020",
+    },
+    "thumb": Object {
+      "size": "sizing060",
+      "stylePreset": "sliderThumb",
+    },
+    "thumbLabel": Object {
+      "space": "space060",
+      "stylePreset": "sliderThumbLabel",
+      "typographyPreset": "utilityLabel030",
+    },
+    "track": Object {
+      "size": "sizing030",
+      "stylePreset": "sliderTrack",
     },
   },
   "tab": Object {

@@ -1058,29 +1058,6 @@ Object {
         "typographyPreset": "utilityLabel020",
       },
     },
-    "slider": Object {
-      "indicator": Object {
-        "stylePreset": "sliderIndicator",
-      },
-      "labels": Object {
-        "space": "space030",
-        "stylePreset": "sliderLabels",
-        "typographyPreset": "utilityLabel020",
-      },
-      "thumb": Object {
-        "size": "sizing060",
-        "stylePreset": "sliderThumb",
-      },
-      "thumbLabel": Object {
-        "space": "space060",
-        "stylePreset": "sliderThumbLabel",
-        "typographyPreset": "utilityLabel030",
-      },
-      "track": Object {
-        "size": "sizing030",
-        "stylePreset": "sliderTrack",
-      },
-    },
     "standfirst": Object {
       "styledText": Object {
         "stylePreset": "inkBase",
@@ -2126,71 +2103,6 @@ Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": "4px",
         "boxShadow": "0 16px 24px 0 rgba(10,10,10,0.08)",
-      },
-    },
-    "sliderIndicator": Object {
-      "base": Object {
-        "backgroundColor": "#3358CC",
-        "borderRadius": "20rem",
-      },
-      "disabled": Object {
-        "backgroundColor": "#DEDEDE",
-      },
-    },
-    "sliderLabels": Object {
-      "base": Object {
-        "color": "#535353",
-        "iconColor": "#535353",
-      },
-      "disabled": Object {
-        "color": "#C0C0C0",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "sliderThumb": Object {
-      "active": Object {
-        "backgroundColor": "#213A82",
-        "iconColor": "#535353",
-      },
-      "base": Object {
-        "backgroundColor": "#3358CC",
-        "borderColor": "#E0E7FF",
-        "borderRadius": "50%",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-        "boxShadow": "0 0 2px 0 rgba(10,10,10,0.08)",
-        "iconColor": "#C0C0C0",
-      },
-      "disabled": Object {
-        "backgroundColor": "#DEDEDE",
-        "borderColor": "none",
-        "borderStyle": "none",
-        "borderWidth": "none",
-        "boxShadow": "none",
-        "iconColor": "#C0C0C0",
-      },
-      "hover": Object {
-        "backgroundColor": "#2B4AAB",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "sliderThumbLabel": Object {
-      "base": Object {
-        "color": "#3358CC",
-        "textAlign": "center",
-        "whiteSpace": "nowrap",
-      },
-      "disabled": Object {
-        "color": "#C0C0C0",
-      },
-    },
-    "sliderTrack": Object {
-      "base": Object {
-        "backgroundColor": "#F4F4F4",
-        "borderRadius": "20rem",
-      },
-      "disabled": Object {
-        "backgroundColor": "#F4F4F4",
       },
     },
     "structuredListItem": Object {
