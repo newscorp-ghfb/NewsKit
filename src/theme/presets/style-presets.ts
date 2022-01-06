@@ -26,51 +26,6 @@ stylePresets.bannerNegative = {
 };
 
 //
-// Icons
-//
-stylePresets.iconSocialTwitter = {
-  base: {
-    iconColor: '{{colors.socialTwitter}}',
-  },
-};
-stylePresets.iconSocialGitHub = {
-  base: {
-    iconColor: '{{colors.socialGithub}}',
-  },
-};
-stylePresets.iconSocialFacebook = {
-  base: {
-    iconColor: '{{colors.socialFacebook}}',
-  },
-};
-stylePresets.iconSocialInstagram = {
-  base: {
-    iconColor: '{{colors.socialInstagram}}',
-  },
-};
-stylePresets.iconSocialYoutube = {
-  base: {
-    iconColor: '{{colors.socialYoutube}}',
-  },
-};
-stylePresets.iconSocialWhatsApp = {
-  base: {
-    iconColor: '{{colors.socialWhatsapp}}',
-  },
-};
-stylePresets.iconSocialReddit = {
-  base: {
-    iconColor: '{{colors.socialReddit}}',
-  },
-};
-
-stylePresets.iconDefault = {
-  base: {
-    iconColor: '{{colors.inkBase}}',
-  },
-};
-
-//
 // Indeterminate Progress Indicator
 //
 
@@ -184,19 +139,6 @@ stylePresets.inputField = {
   'invalid:hover': {
     borderColor: '{{colors.interactiveNegative030}}',
     backgroundColor: '{{colors.interactiveInput010}}',
-  },
-};
-
-// ICONS:
-stylePresets.iconPositive = {
-  base: {
-    iconColor: '{{colors.inkPositive}}',
-  },
-};
-
-stylePresets.iconNegative = {
-  base: {
-    iconColor: '{{colors.inkNegative}}',
   },
 };
 

@@ -362,9 +362,7 @@ export const componentDefaults = {
     stylePreset: 'inkContrast',
     typographyPreset: 'editorialSubheadline010',
   },
-  icons: {
-    stylePreset: 'iconDefault',
-  },
+
   indeterminateProgressIndicator: {
     stylePreset: 'iconDefault',
     size: 'iconSize020',

@@ -618,9 +618,6 @@ Object {
       "stylePreset": "inkContrast",
       "typographyPreset": "editorialSubheadline010",
     },
-    "icons": Object {
-      "stylePreset": "iconDefault",
-    },
     "indeterminateProgressIndicator": Object {
       "size": "iconSize020",
       "stylePreset": "iconDefault",
@@ -1448,56 +1445,6 @@ Object {
       },
       "visited": Object {
         "color": "{{colors.interactiveVisited010}}",
-      },
-    },
-    "iconDefault": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkBase}}",
-      },
-    },
-    "iconNegative": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "iconPositive": Object {
-      "base": Object {
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "iconSocialFacebook": Object {
-      "base": Object {
-        "iconColor": "{{colors.socialFacebook}}",
-      },
-    },
-    "iconSocialGitHub": Object {
-      "base": Object {
-        "iconColor": "{{colors.socialGithub}}",
-      },
-    },
-    "iconSocialInstagram": Object {
-      "base": Object {
-        "iconColor": "{{colors.socialInstagram}}",
-      },
-    },
-    "iconSocialReddit": Object {
-      "base": Object {
-        "iconColor": "{{colors.socialReddit}}",
-      },
-    },
-    "iconSocialTwitter": Object {
-      "base": Object {
-        "iconColor": "{{colors.socialTwitter}}",
-      },
-    },
-    "iconSocialWhatsApp": Object {
-      "base": Object {
-        "iconColor": "{{colors.socialWhatsapp}}",
-      },
-    },
-    "iconSocialYoutube": Object {
-      "base": Object {
-        "iconColor": "{{colors.socialYoutube}}",
       },
     },
     "indeterminateProgressIndicatorInverse": Object {
