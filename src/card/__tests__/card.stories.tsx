@@ -15,6 +15,7 @@ import {IconFilledImage} from '../../icons';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Link} from '../../link';
+import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 
 const ContainerWithBackground = styled.div<{colorToken?: string}>`
   ${({colorToken = 'white', ...props}) =>
@@ -1656,3 +1657,107 @@ export const StoryCardSlices = () => (
 );
 StoryCardSlices.storyName = 'card-slices';
 StoryCardSlices.parameters = {eyes: {include: false}};
+
+const LargeItemBody = styled.div`
+  min-height: 92px;
+  background: #ccc;
+`;
+
+const LargeItem = () => (
+  <>
+    <Card
+      layout="vertical"
+      media={{
+        src: '/placeholder-3x2.png',
+        alt: 'Card Media',
+      }}
+    >
+      <LargeItemBody>
+        <Block spaceStack={cardTeaserHeadline}>
+          <Headline kickerText="SHORT">
+            title of the card describing the main content
+          </Headline>
+        </Block>
+        <Block spaceStack={cardTeaserLeadInset}>
+          <TextBlock
+            stylePreset="cardTeaserLead"
+            typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
+          >
+            A short paragraph description of the article, outlining the main
+            story and focus.
+          </TextBlock>
+        </Block>
+      </LargeItemBody>
+    </Card>
+  </>
+);
+const SmallItem = () => (
+  <>
+    <Card
+      layout="horizontal"
+      media={{
+        src: '/placeholder-3x2.png',
+        alt: 'Card Media',
+      }}
+      overrides={{
+        horizontalRatio: '1:1',
+      }}
+    >
+      <Headline
+        kickerText="SHORT"
+        overrides={{
+          typographyPreset: 'editorialHeadline010',
+        }}
+      >
+        title of the card describing the main content
+      </Headline>
+    </Card>
+  </>
+);
+
+const CSSGrid = styled.div`
+  display: grid;
+  height: 100%;
+  gap: 10px;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
+  }
+  ${getMediaQueryFromTheme('lg')} {
+    justify-content: stretch;
+    align-content: space-between;
+    gap: 30px;
+  }
+`;
+
+const FixWidth = styled.div`
+  margin: 0 auto;
+  max-width: 420px;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    max-width: 620px;
+  }
+
+  ${getMediaQueryFromTheme('lg')} {
+    max-width: 932px;
+  }
+`;
+
+export const StoryTheSun = () => (
+  <FixWidth>
+    <Grid>
+      <Cell xs="full-width" lg={8}>
+        <LargeItem />
+      </Cell>
+      <Cell xs="full-width" lg={4}>
+        <CSSGrid>
+          <SmallItem />
+          <SmallItem />
+          <SmallItem />
+          <SmallItem />
+        </CSSGrid>
+      </Cell>
+    </Grid>
+  </FixWidth>
+);
