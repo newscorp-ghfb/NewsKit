@@ -30,16 +30,23 @@ const RANGE_DESCRIPTION: {[key: string]: string} = {
 };
 
 const USAGE_DESCRIPTION: {[key: string]: string | JSX.Element} = {
-  xs: 'Small handset, large handset',
-  sm: 'Large handset, small tablet',
-  md: 'Large tablet',
-};
-
-const LANDSCAPE_USAGE_DESCRIPTION: {[key: string]: string | JSX.Element} = {
-  sm: 'Small handset',
-  md: 'Large handset, small tablet',
-  lg: 'Large tablet',
-  xl: 'Large tablet',
+  xs: 'Portrait - small handset >  large handset',
+  sm: (
+    <>
+      Portrait - large handset &gt; small tablet
+      <br />
+      Landscape - small handset
+    </>
+  ),
+  md: (
+    <>
+      Portrait - large tablet
+      <br />
+      Landscape - large handset &gt; small tablet
+    </>
+  ),
+  lg: 'Landscape - large tablet > desktop',
+  xl: 'Landscape - large tablet > desktop',
 };
 
 const bps = compiledNewskitLightTheme.breakpoints;
@@ -49,7 +56,6 @@ const breakpointsRows = Object.entries(bps).map(([tokenName, tokenValue]) => ({
   breakpoint: tokenValue,
   range: RANGE_DESCRIPTION[tokenName] || '',
   usage: USAGE_DESCRIPTION[tokenName] || '',
-  landscapeUsage: LANDSCAPE_USAGE_DESCRIPTION[tokenName] || '',
 }));
 
 export default (layoutProps: LayoutProps) => (
@@ -98,13 +104,7 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentSecondary>
           <Table
-            columns={[
-              'Token',
-              'Breakpoint',
-              'Range',
-              'Usage',
-              'Landscape Usage',
-            ]}
+            columns={['Token', 'Breakpoint', 'Range', 'Usage']}
             rows={breakpointsRows}
           />
         </ContentSecondary>

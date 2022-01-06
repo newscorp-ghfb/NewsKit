@@ -2424,13 +2424,13 @@ exports[`Content Secondary renders with headline, description and content 1`] = 
 
 exports[`Content Section renders with children 1`] = `
 <DocumentFragment>
-  <div />
+  <section />
 </DocumentFragment>
 `;
 
 exports[`Content Section renders without section name 1`] = `
 <DocumentFragment>
-  <div />
+  <section />
 </DocumentFragment>
 `;
 

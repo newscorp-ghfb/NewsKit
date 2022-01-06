@@ -588,6 +588,129 @@ Object {
         "spaceStack": "space000",
       },
     },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
     "contentsNavItem": Object {
       "stylePreset": "contentsNavItem",
       "typographyPreset": "utilityButton020",
@@ -4300,6 +4423,129 @@ Object {
           "typographyPreset": "utilityBody020",
         },
         "spaceStack": "space000",
+      },
+    },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
       },
     },
     "contentsNavItem": Object {
@@ -8016,6 +8262,129 @@ Object {
         "spaceStack": "space000",
       },
     },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
     "contentsNavItem": Object {
       "stylePreset": "contentsNavItem",
       "typographyPreset": "utilityButton020",
@@ -11728,6 +12097,129 @@ Object {
           "typographyPreset": "utilityBody020",
         },
         "spaceStack": "space000",
+      },
+    },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
       },
     },
     "contentsNavItem": Object {
@@ -15444,6 +15936,129 @@ Object {
         "spaceStack": "space000",
       },
     },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
     "contentsNavItem": Object {
       "stylePreset": "contentsNavItem",
       "typographyPreset": "utilityButton020",
@@ -19156,6 +19771,129 @@ Object {
           "typographyPreset": "utilityBody020",
         },
         "spaceStack": "space000",
+      },
+    },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
       },
     },
     "contentsNavItem": Object {
@@ -22872,6 +23610,129 @@ Object {
         "spaceStack": "space000",
       },
     },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
     "contentsNavItem": Object {
       "stylePreset": "contentsNavItem",
       "typographyPreset": "utilityButton020",
@@ -26584,6 +27445,129 @@ Object {
           "typographyPreset": "utilityBody020",
         },
         "spaceStack": "space000",
+      },
+    },
+    "contentPrimary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h2",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline050",
+          "md": "editorialHeadline050",
+          "xl": "editorialHeadline050",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space070",
+        },
+      },
+    },
+    "contentSecondary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h3",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline030",
+          "md": "editorialHeadline030",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline030",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
+      },
+    },
+    "contentTertiary": Object {
+      "description": Object {
+        "spaceStack": Object {
+          "lg": "space080",
+          "md": "space080",
+          "xl": "space080",
+          "xs": "space070",
+        },
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialParagraph030",
+          "md": "editorialParagraph030",
+          "xl": "editorialParagraph030",
+          "xs": "editorialParagraph020",
+        },
+      },
+      "headline": Object {
+        "as": "h4",
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "xl": "space050",
+          "xs": "space045",
+        },
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialHeadline020",
+          "md": "editorialHeadline020",
+          "xl": "editorialHeadline030",
+          "xs": "editorialHeadline020",
+        },
+      },
+      "separator": Object {
+        "spaceStack": Object {
+          "lg": "space100",
+          "md": "space100",
+          "xl": "space100",
+          "xs": "space100",
+        },
       },
     },
     "contentsNavItem": Object {

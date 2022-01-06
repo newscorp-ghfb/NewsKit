@@ -8,7 +8,6 @@ import {
   ContentTertiary,
 } from '../../components/content-structure';
 import {LayoutProps} from '../../components/layout';
-// import {Mono} from '../../components/flags';
 import {InlineCode} from '../../components/markdown-elements';
 import {FoundationPageTemplate} from '../../templates/foundation-page-template';
 import {ComponentPageCell} from '../../components/layout-cells';
@@ -411,18 +410,19 @@ export default (layoutProps: LayoutProps) => (
           <Code>
             lineHeight: getLineHeight(‘fontSize040’, ‘fontLineHeight020’)
           </Code>
-          <Block spaceStack="space060" />
-          <InlineMessage
-            overrides={{stylePreset: 'inlineMessageInformative'}}
-            icon={icon}
-            role="region"
-            aria-label="4px-baseline"
-          >
-            The default baseline of NewsKit is 4px, and when calculating
-            line-height for typographical styles we round either up or down to
-            the nearest 4px value. This maintains a consistent visual approach
-            when using typography across your UI designs.
-          </InlineMessage>
+          <Block spaceStack="space060">
+            <InlineMessage
+              overrides={{stylePreset: 'inlineMessageInformative'}}
+              icon={icon}
+              role="region"
+              aria-label="4px-baseline"
+            >
+              The default baseline of NewsKit is 4px, and when calculating
+              line-height for typographical styles we round either up or down to
+              the nearest 4px value. This maintains a consistent visual approach
+              when using typography across your UI designs.
+            </InlineMessage>
+          </Block>
         </ContentSecondary>
 
         <ContentSecondary
@@ -467,20 +467,21 @@ export default (layoutProps: LayoutProps) => (
 
         <ContentSecondary showSeparator>
           <CodeFromFile path="examples/fonts/font-properties.tsx" />
-          <Block spaceStack="space060" />
-          <InlineMessage
-            title="Font smooth"
-            overrides={{stylePreset: 'inlineMessageInformative'}}
-            icon={icon}
-            role="region"
-            aria-label="typography"
-          >
-            To ensure typography in components are rendered smooth and crisp
-            (rounded to nearest pixel as opposed to the subpixel), apply{' '}
-            <InlineCode>-webkit-font-smoothing: antialiased</InlineCode>.
-            Emotion’s global style component can be used to set this as a
-            default across your website.
-          </InlineMessage>
+          <Block spaceStack="space060">
+            <InlineMessage
+              title="Font smooth"
+              overrides={{stylePreset: 'inlineMessageInformative'}}
+              icon={icon}
+              role="region"
+              aria-label="typography"
+            >
+              To ensure typography in components are rendered smooth and crisp
+              (rounded to nearest pixel as opposed to the subpixel), apply{' '}
+              <InlineCode>-webkit-font-smoothing: antialiased</InlineCode>.
+              Emotion’s global style component can be used to set this as a
+              default across your website.
+            </InlineMessage>
+          </Block>
         </ContentSecondary>
       </ContentSection>
 

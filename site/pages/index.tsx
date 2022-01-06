@@ -374,8 +374,7 @@ export default (layoutProps: LayoutProps) => {
             title="Explore"
             cellProps={{xs: 12, xl: 10, xlOffset: 1}}
           />
-
-          <Cell xs={12} xl={10} xlOffset={1}>
+          <Cell xs={12} md={12} mdOffset={0} lg={12} xl={10} xlOffset={1}>
             <MediaList
               layout="3-span"
               cards={cardsContent}
