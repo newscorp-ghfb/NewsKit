@@ -412,17 +412,6 @@ export const componentDefaults = {
       spaceInline: 'space010',
     },
   },
-  link: {
-    stylePreset: 'linkInline',
-    spaceInline: 'space010',
-    externalIcon: {
-      size: 'iconSize010',
-    },
-  },
-  linkStandalone: {
-    stylePreset: 'linkStandalone',
-    typographyPreset: 'utilityLabel020',
-  },
   modal: {
     overlay: {
       zIndex: 70,

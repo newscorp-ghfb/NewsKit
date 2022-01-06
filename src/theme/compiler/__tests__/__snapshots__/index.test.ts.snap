@@ -714,17 +714,6 @@ Object {
         "typographyPreset": "utilityLabel010",
       },
     },
-    "link": Object {
-      "externalIcon": Object {
-        "size": "iconSize010",
-      },
-      "spaceInline": "space010",
-      "stylePreset": "linkInline",
-    },
-    "linkStandalone": Object {
-      "stylePreset": "linkStandalone",
-      "typographyPreset": "utilityLabel020",
-    },
     "modal": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -1663,93 +1652,6 @@ Object {
       },
       "disabled": Object {
         "color": "#C0C0C0",
-      },
-    },
-    "linkInline": Object {
-      "active": Object {
-        "color": "#213A82",
-        "iconColor": "#213A82",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#3358CC",
-        "iconColor": "#3358CC",
-        "textDecoration": "underline",
-      },
-      "hover": Object {
-        "color": "#2B4AAB",
-        "iconColor": "#2B4AAB",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "#5E44E4",
-        "iconColor": "#5E44E4",
-        "textDecoration": "underline",
-      },
-      "visited:hover": Object {
-        "color": "#5E44E4",
-        "iconColor": "#5E44E4",
-        "textDecoration": "underline",
-      },
-    },
-    "linkInlineInverse": Object {
-      "active": Object {
-        "color": "#FFFFFF",
-        "iconColor": "#FFFFFF",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#FFFFFF",
-        "iconColor": "#FFFFFF",
-        "textDecoration": "underline",
-      },
-      "hover": Object {
-        "color": "#FFFFFF",
-        "iconColor": "#FFFFFF",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "rgba(255,255,255,0.7)",
-        "iconColor": "rgba(255,255,255,0.7)",
-        "textDecoration": "underline",
-      },
-      "visited:hover": Object {
-        "color": "rgba(255,255,255,0.7)",
-        "iconColor": "rgba(255,255,255,0.7)",
-      },
-    },
-    "linkStandalone": Object {
-      "active": Object {
-        "color": "#213A82",
-        "iconColor": "#213A82",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#3358CC",
-        "iconColor": "#3358CC",
-        "textDecoration": "none",
-      },
-      "hover": Object {
-        "color": "#2B4AAB",
-        "iconColor": "#2B4AAB",
-        "textDecoration": "underline",
-      },
-    },
-    "linkStandaloneInverse": Object {
-      "active": Object {
-        "color": "#FFFFFF",
-        "iconColor": "#FFFFFF",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#FFFFFF",
-        "iconColor": "#FFFFFF",
-        "textDecoration": "none",
-      },
-      "hover": Object {
-        "color": "#FFFFFF",
-        "iconColor": "#FFFFFF",
-        "textDecoration": "underline",
       },
     },
     "modalPanel": Object {

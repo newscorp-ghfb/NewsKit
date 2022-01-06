@@ -678,17 +678,6 @@ Object {
         "typographyPreset": "utilityLabel010",
       },
     },
-    "link": Object {
-      "externalIcon": Object {
-        "size": "iconSize010",
-      },
-      "spaceInline": "space010",
-      "stylePreset": "linkInline",
-    },
-    "linkStandalone": Object {
-      "stylePreset": "linkStandalone",
-      "typographyPreset": "utilityLabel020",
-    },
     "modal": Object {
       "closeButton": Object {
         "spaceInset": "spaceInset020",
@@ -1565,93 +1554,6 @@ Object {
         "color": "{{colors.inkNonEssential}}",
       },
     },
-    "linkInline": Object {
-      "active": Object {
-        "color": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.interactivePrimary050}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.interactivePrimary030}}",
-        "iconColor": "{{colors.interactivePrimary030}}",
-        "textDecoration": "underline",
-      },
-      "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.interactivePrimary040}}",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "{{colors.interactiveVisited010}}",
-        "iconColor": "{{colors.interactiveVisited010}}",
-        "textDecoration": "underline",
-      },
-      "visited:hover": Object {
-        "color": "{{colors.interactiveVisited010}}",
-        "iconColor": "{{colors.interactiveVisited010}}",
-        "textDecoration": "underline",
-      },
-    },
-    "linkInlineInverse": Object {
-      "active": Object {
-        "color": "{{colors.interactiveInverse030}}",
-        "iconColor": "{{colors.interactiveInverse030}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.interactiveInverse030}}",
-        "iconColor": "{{colors.interactiveInverse030}}",
-        "textDecoration": "underline",
-      },
-      "hover": Object {
-        "color": "{{colors.interactiveInverse030}}",
-        "iconColor": "{{colors.interactiveInverse030}}",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "{{colors.interactiveInverse040}}",
-        "iconColor": "{{colors.interactiveInverse040}}",
-        "textDecoration": "underline",
-      },
-      "visited:hover": Object {
-        "color": "{{colors.interactiveInverse040}}",
-        "iconColor": "{{colors.interactiveInverse040}}",
-      },
-    },
-    "linkStandalone": Object {
-      "active": Object {
-        "color": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.interactivePrimary050}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.interactivePrimary030}}",
-        "iconColor": "{{colors.interactivePrimary030}}",
-        "textDecoration": "none",
-      },
-      "hover": Object {
-        "color": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.interactivePrimary040}}",
-        "textDecoration": "underline",
-      },
-    },
-    "linkStandaloneInverse": Object {
-      "active": Object {
-        "color": "{{colors.interactiveInverse030}}",
-        "iconColor": "{{colors.interactiveInverse030}}",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "{{colors.interactiveInverse030}}",
-        "iconColor": "{{colors.interactiveInverse030}}",
-        "textDecoration": "none",
-      },
-      "hover": Object {
-        "color": "{{colors.interactiveInverse030}}",
-        "iconColor": "{{colors.interactiveInverse030}}",
-        "textDecoration": "underline",
-      },
-    },
     "modalPanel": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBackground}}",
@@ -2520,6 +2422,17 @@ Object {
   },
   "image": Object {
     "stylePreset": "imageSharp",
+  },
+  "link": Object {
+    "externalIcon": Object {
+      "size": "iconSize010",
+    },
+    "spaceInline": "space010",
+    "stylePreset": "linkInline",
+  },
+  "linkStandalone": Object {
+    "stylePreset": "linkStandalone",
+    "typographyPreset": "utilityLabel020",
   },
   "menu": Object {
     "spaceInline": "space020",
