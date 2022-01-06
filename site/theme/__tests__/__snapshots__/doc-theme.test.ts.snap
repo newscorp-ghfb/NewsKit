@@ -1338,24 +1338,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -2937,37 +2919,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -4920,24 +4871,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -6519,37 +6452,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -8502,24 +8404,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -10101,37 +9985,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -12084,24 +11937,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -13683,37 +13518,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -15666,24 +15470,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -17265,37 +17051,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -19248,24 +19003,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -20847,37 +20584,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -22830,24 +22536,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -24429,37 +24117,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {
@@ -26412,24 +26069,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -28011,37 +27650,6 @@ Object {
         "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusRounded010}}",
         "color": "{{colors.inkBase}}",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactivePrimary050}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-      "base": Object {
-        "backgroundColor": "{{colors.interactivePrimary030}}",
-        "borderColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusCircle}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary040}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "whatsnewCardButton": Object {

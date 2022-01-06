@@ -1277,24 +1277,6 @@ Object {
       },
       "spaceStack": "space040",
     },
-    "volumeControl": Object {
-      "button": Object {
-        "iconSize": "iconSize020",
-        "size": "small",
-        "stylePreset": "iconButtonMinimalPrimary",
-      },
-      "slider": Object {
-        "indicator": Object {
-          "stylePreset": "volumeControlIndicator",
-        },
-        "thumb": Object {
-          "stylePreset": "volumeControlThumb",
-        },
-        "track": Object {
-          "stylePreset": "volumeControlTrack",
-        },
-      },
-    },
   },
   "fonts": Object {
     "fontFamily010": Object {
@@ -2284,37 +2266,6 @@ Object {
         "color": "#535353",
         "iconColor": "#535353",
         "textTransform": "uppercase",
-      },
-    },
-    "volumeControlIndicator": Object {
-      "base": Object {
-        "backgroundColor": "#3358CC",
-        "borderRadius": "20rem",
-      },
-    },
-    "volumeControlThumb": Object {
-      "active": Object {
-        "backgroundColor": "#213A82",
-        "iconColor": "#535353",
-      },
-      "base": Object {
-        "backgroundColor": "#3358CC",
-        "borderColor": "#E0E7FF",
-        "borderRadius": "50%",
-        "borderStyle": "solid",
-        "borderWidth": "1px",
-        "boxShadow": "0 0 2px 0 rgba(10,10,10,0.08)",
-        "iconColor": "#C0C0C0",
-      },
-      "hover": Object {
-        "backgroundColor": "#2B4AAB",
-        "iconColor": "#C0C0C0",
-      },
-    },
-    "volumeControlTrack": Object {
-      "base": Object {
-        "backgroundColor": "#F4F4F4",
-        "borderRadius": "20rem",
       },
     },
   },

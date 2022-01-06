@@ -974,24 +974,6 @@ export const componentDefaults = {
       size: 'iconSize005',
     },
   },
-  volumeControl: {
-    slider: {
-      track: {
-        stylePreset: 'volumeControlTrack',
-      },
-      indicator: {
-        stylePreset: 'volumeControlIndicator',
-      },
-      thumb: {
-        stylePreset: 'volumeControlThumb',
-      },
-    },
-    button: {
-      stylePreset: 'iconButtonMinimalPrimary',
-      iconSize: 'iconSize020',
-      size: 'small',
-    },
-  },
   checkbox: {
     small: {
       spaceStack: 'space000',
