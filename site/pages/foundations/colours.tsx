@@ -334,11 +334,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user. `,
     }}
-    featureCard={{
-      title: 'Iconography',
-      description: 'Icons provide additional context to information.',
-      href: '/foundations/iconography',
-    }}
   >
     <CommonSection
       title="Overview"

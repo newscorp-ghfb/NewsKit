@@ -61,11 +61,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Design tokens are the design decisions of the design system — specifically, they are named entities that store visual and functional attributes. They are used in place of hardcoded values (such as hex values for colour or pixel values for spacing) to maintain a scalable and consistent system for UI.`,
     }}
-    featureCard={{
-      title: 'Iconography',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      href: '/foundations/iconography',
-    }}
   >
     <CommonSection
       title="Literal vs contextual tokens"

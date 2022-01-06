@@ -647,10 +647,10 @@ export const stylePresets = {
   },
   foundationFeatureCardMedia: {
     base: {
-      backgroundImage: 'url(static/card-feature-need-help.svg)', // Design WIP
+      backgroundImage: 'url(static/card-feature-need-help.svg)',
       borderRadius: '{{borders.borderRadiusRounded030}}',
       backgroundSize: 'cover',
-      backgroundPosition: 'center left',
+      backgroundPosition: 'bottom left',
     },
   },
 

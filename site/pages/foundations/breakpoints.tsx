@@ -68,12 +68,6 @@ export default (layoutProps: LayoutProps) => (
       },
       introduction: `Breakpoints set a visual point on a screen to adapt the design of content (responsive design), ensuring a consistent, optimised experience across different screen widths.`,
     }}
-    featureCard={{
-      title: 'Colours',
-      description:
-        'Colour is key to expressing brand and identity but it also plays an important role in conveying meaning to a user.',
-      href: '/foundations/colours',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="overview">

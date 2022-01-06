@@ -168,11 +168,6 @@ export default (layoutProps: LayoutProps) => (
       introduction: `Motion is used to create movement and narrative within a product. Animated interface elements don't just attract attention, they enhance user experience and help guide user flow. They reveal the functionality and process of a user interface by communicating where to focus and what to do next..
 `,
     }}
-    featureCard={{
-      title: 'Overlays',
-      description: 'Overlays are used for styling UI elements.',
-      href: '/foundations/overlays',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="overview">
