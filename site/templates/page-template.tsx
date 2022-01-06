@@ -20,8 +20,12 @@ export const PageTemplate: React.FC<TemplateProps> = ({
 }) => (
   <>
     <Head>
-      <title>{headTags.title}</title>
-      <meta name="Description" content={headTags.description} />
+      <title key="title">{headTags.title}</title>
+      <meta
+        key="description"
+        name="description"
+        content={headTags.description}
+      />
     </Head>
 
     <WrapperWithPadding>

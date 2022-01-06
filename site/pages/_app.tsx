@@ -130,9 +130,10 @@ export default class MyApp extends App<Props, State> {
     return (
       <>
         <Head>
-          <title>NewsKit design system</title>
+          <title key="title">NewsKit design system</title>
           <meta
-            name="Description"
+            key="description"
+            name="description"
             content="NewsKit design system - components and guidelines to help increase the speed of creation and innovation in digital teams."
           />
         </Head>
