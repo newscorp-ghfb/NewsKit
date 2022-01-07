@@ -3,41 +3,6 @@ import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {TitleBar, TitleBarProps} from '..';
 import {Button} from '../../button';
 import {Link} from '../../link';
-import {createTheme} from '../../theme';
-
-const theme = createTheme({
-  overrides: {
-    stylePresets: {
-      linkInline: {
-        base: {
-          color: '{{colors.interactivePrimary030}}',
-          iconColor: '{{colors.interactivePrimary030}}',
-          textDecoration: 'underline',
-        },
-        hover: {
-          color: '{{colors.interactivePrimary040}}',
-          iconColor: '{{colors.interactivePrimary040}}',
-          textDecoration: 'underline',
-        },
-        active: {
-          color: '{{colors.interactivePrimary050}}',
-          iconColor: '{{colors.interactivePrimary050}}',
-          textDecoration: 'underline',
-        },
-        visited: {
-          color: '{{colors.interactiveVisited010}}',
-          iconColor: '{{colors.interactiveVisited010}}',
-          textDecoration: 'underline',
-        },
-        'visited:hover': {
-          color: '{{colors.interactiveVisited010}}',
-          iconColor: '{{colors.interactiveVisited010}}',
-          textDecoration: 'underline',
-        },
-      },
-    },
-  },
-});
 
 describe('TitleBar', () => {
   const TITLE = 'Test title of title bar';
@@ -49,42 +14,34 @@ describe('TitleBar', () => {
   });
 
   test('should apply correctly the props and overrides', () => {
-    const fragment = renderToFragmentWithTheme(
-      TitleBar,
-      {
-        children: TITLE,
-        overrides: {
-          stylePreset: 'standfirst',
-          spaceInset: 'spaceInsetSquish010',
-          heading: {
-            typographyPreset: {
-              xs: 'editorialHeadline010',
-              sm: 'editorialHeadline020',
-              md: 'editorialHeadline030',
-              lg: 'editorialHeadline040',
-            },
-            stylePreset: 'linkInline',
+    const fragment = renderToFragmentWithTheme(TitleBar, {
+      children: TITLE,
+      overrides: {
+        stylePreset: 'standfirst',
+        spaceInset: 'spaceInsetSquish010',
+        heading: {
+          typographyPreset: {
+            xs: 'editorialHeadline010',
+            sm: 'editorialHeadline020',
+            md: 'editorialHeadline030',
+            lg: 'editorialHeadline040',
           },
+          stylePreset: 'inkInverse',
         },
-      } as TitleBarProps,
-      theme,
-    );
+      },
+    } as TitleBarProps);
     expect(fragment).toMatchSnapshot();
   });
 
   test('should apply correctly only stylePreset for the heading', () => {
-    const fragment = renderToFragmentWithTheme(
-      TitleBar,
-      {
-        children: TITLE,
-        overrides: {
-          heading: {
-            stylePreset: 'linkInline',
-          },
+    const fragment = renderToFragmentWithTheme(TitleBar, {
+      children: TITLE,
+      overrides: {
+        heading: {
+          stylePreset: 'inkInverse',
         },
-      } as TitleBarProps,
-      theme,
-    );
+      },
+    } as TitleBarProps);
     expect(fragment).toMatchSnapshot();
   });
 
