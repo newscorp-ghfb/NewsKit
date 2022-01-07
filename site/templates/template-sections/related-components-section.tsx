@@ -8,7 +8,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 
 export type RelatedComponentsSectionProps = {
   related: string[];
-} & IntroductionText;
+} & IntroductionText & {title?: string; toc?: string; id?: string};
 
 const getRelatedComponents = (related: string[]) =>
   related.map(component => {
@@ -23,11 +23,12 @@ const getRelatedComponents = (related: string[]) =>
 export const RelatedComponentsSection: React.FC<RelatedComponentsSectionProps> = ({
   introduction,
   related,
+...next
 }) => (
   <CommonSection
-    title="Related Components"
-    toc="Related"
-    id="related"
+    title={next.title || 'Related Components'}
+    toc={next.toc || 'Related'}
+    id={next.id || 'related'}
     introduction={introduction}
     hideSeparator
   >

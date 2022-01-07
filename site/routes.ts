@@ -53,6 +53,14 @@ export default [
             page: true,
             id: '/getting-started/code/testing',
           },
+          {
+            title: 'Design Overview',
+            page: true,
+            id: '/getting-started/code/design-overview',
+            description:
+              'To start designing with NewsKit, follow the steps in the quickstart guide.',
+            illustration: 'components/form-illustration',
+          },
         ],
       },
     ],
