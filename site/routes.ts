@@ -188,6 +188,8 @@ export default [
             title: 'Overview',
             page: true,
             id: '/foundations/theming/overview',
+            description:
+              'A NewsKit theme is built up from a layer of foundations - such as colours, fonts and sizing scales.',
           },
           {
             title: 'Creating a theme',
