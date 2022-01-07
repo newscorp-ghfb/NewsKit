@@ -1,7 +1,7 @@
 module.exports = {
   appName: 'DS Site',
   batchId: process.env.CIRCLE_SHA1,
-  parentBranchName: 'develop',
+  baselineBranchName: 'develop',
   browser: [
     {deviceName: 'iPhone 5/SE'},
     {deviceName: 'iPad'},
