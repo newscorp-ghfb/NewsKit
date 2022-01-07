@@ -20,35 +20,31 @@ export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
 export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
   children,
   layoutProps,
+  featureCard = GetFeatureCard(),
   ...rest
-}) => {
-  const featureCard = GetFeatureCard();
-  return (
-    <Layout {...layoutProps} newPage>
-      {({themeMode}) => (
-        <>
-          <ThemeProvider
-            theme={
-              themeMode === 'light'
-                ? foundationsThemeLight
-                : foundationsThemeDark
+}) => (
+  <Layout {...layoutProps} newPage>
+    {({themeMode}) => (
+      <>
+        <ThemeProvider
+          theme={
+            themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
+          }
+        >
+          <PageTemplate
+            {...rest}
+            featureCard={
+              featureCard &&
+              ({
+                ...defaultFeatureCard,
+                ...featureCard,
+              } as OnwardJourneySectionProps)
             }
           >
-            <PageTemplate
-              {...rest}
-              featureCard={
-                featureCard &&
-                ({
-                  ...defaultFeatureCard,
-                  ...featureCard,
-                } as OnwardJourneySectionProps)
-              }
-            >
-              {children}
-            </PageTemplate>
-          </ThemeProvider>
-        </>
-      )}
-    </Layout>
-  );
-};
+            {children}
+          </PageTemplate>
+        </ThemeProvider>
+      </>
+    )}
+  </Layout>
+);
