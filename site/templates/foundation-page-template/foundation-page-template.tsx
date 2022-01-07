@@ -8,7 +8,7 @@ import {
 } from '../../theme/doc-theme';
 import {OnwardJourneySectionProps} from '../template-sections';
 import {FoundationPageTemplateProps} from './types';
-import {getFeatureCard} from '../../utils/get-feature-card';
+import {GetFeatureCard} from '../../utils/get-feature-card';
 
 export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   buttonLabel: 'Read more',
@@ -20,35 +20,31 @@ export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
 export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
   children,
   layoutProps,
+  featureCard = GetFeatureCard(),
   ...rest
-}) => {
-  const featureCard = getFeatureCard(layoutProps.path);
-  return (
-    <Layout {...layoutProps} newPage>
-      {({themeMode}) => (
-        <>
-          <ThemeProvider
-            theme={
-              themeMode === 'light'
-                ? foundationsThemeLight
-                : foundationsThemeDark
+}) => (
+  <Layout {...layoutProps} newPage>
+    {({themeMode}) => (
+      <>
+        <ThemeProvider
+          theme={
+            themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
+          }
+        >
+          <PageTemplate
+            {...rest}
+            featureCard={
+              featureCard &&
+              ({
+                ...defaultFeatureCard,
+                ...featureCard,
+              } as OnwardJourneySectionProps)
             }
           >
-            <PageTemplate
-              {...rest}
-              featureCard={
-                featureCard &&
-                ({
-                  ...defaultFeatureCard,
-                  ...featureCard,
-                } as OnwardJourneySectionProps)
-              }
-            >
-              {children}
-            </PageTemplate>
-          </ThemeProvider>
-        </>
-      )}
-    </Layout>
-  );
-};
+            {children}
+          </PageTemplate>
+        </ThemeProvider>
+      </>
+    )}
+  </Layout>
+);

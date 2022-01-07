@@ -1,3 +1,4 @@
+import {useRouter} from 'next/router';
 import {RouteObject} from './get-route-object';
 import routes from '../routes';
 
@@ -5,7 +6,7 @@ let initialRoute: RouteObject | undefined;
 let subNavRoute: RouteObject | undefined;
 let subNavIndex: number | undefined;
 const findIndex = (
-  currentPath: string,
+  path: string,
   currentRoute: string[],
   routesData: RouteObject[] | undefined,
   elementIndex: number,
@@ -22,16 +23,10 @@ const findIndex = (
     initialRoute = currentSubNav && currentSubNav[0];
   }
   const currentIndex =
-    currentSubNav &&
-    currentSubNav.findIndex((e: RouteObject) => e.id === currentPath);
+    currentSubNav && currentSubNav.findIndex((e: RouteObject) => e.id === path);
   if (currentIndex === -1) {
     subNavRoute = matchedRoute;
-    return findIndex(
-      currentPath,
-      currentRoute,
-      currentSubNav,
-      elementIndex + 1,
-    );
+    return findIndex(path, currentRoute, currentSubNav, elementIndex + 1);
   }
   subNavIndex =
     matchedRoute &&
@@ -39,15 +34,10 @@ const findIndex = (
   return {currentIndex, matchedRoute};
 };
 
-export const getFeatureCard = (path: string) => {
-  const currentPath = path.slice(0, -1);
-  const currentRoute: string[] = currentPath.match(/\/[A-z\d-]*/g) || [];
-  const {currentIndex, matchedRoute} = findIndex(
-    currentPath,
-    currentRoute,
-    routes,
-    0,
-  );
+export const GetFeatureCard = () => {
+  const path = useRouter().pathname;
+  const currentRoute: string[] = path.match(/\/[A-z\d-]*/g) || [];
+  const {currentIndex, matchedRoute} = findIndex(path, currentRoute, routes, 0);
   let feature =
     currentIndex !== -1 &&
     matchedRoute &&
