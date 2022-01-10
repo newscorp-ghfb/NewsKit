@@ -1116,20 +1116,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -2820,17 +2806,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {
@@ -4727,20 +4702,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -6431,17 +6392,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {
@@ -8338,20 +8288,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -10042,17 +9978,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {
@@ -11949,20 +11874,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -13653,17 +13564,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {
@@ -15560,20 +15460,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -17264,17 +17150,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {
@@ -19171,20 +19046,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -20875,17 +20736,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {
@@ -22782,20 +22632,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -24486,17 +24322,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {
@@ -26393,20 +26218,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "tab": Object {
       "small": Object {
         "spaceInset": "spaceInsetStretch040",
@@ -28097,17 +27908,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
       },
     },
     "swatchBadge": Object {

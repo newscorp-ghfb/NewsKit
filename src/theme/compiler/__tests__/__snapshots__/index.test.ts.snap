@@ -1034,20 +1034,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "textField": Object {
       "large": Object {
         "endEnhancer": Object {
@@ -2126,17 +2112,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#F4F4F4",
-      },
-    },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "#F4F4F4",
-      },
-      "disabled": Object {
-        "backgroundColor": "transparent",
-      },
-      "hover": Object {
-        "backgroundColor": "#FAFAFA",
       },
     },
     "textInput": Object {

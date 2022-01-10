@@ -684,19 +684,6 @@ stylePresets.cardContainer = {
   },
 };
 
-// StructuredList
-stylePresets.structuredListItem = {
-  hover: {
-    backgroundColor: '{{colors.interactiveSecondary010}}',
-  },
-  active: {
-    backgroundColor: '{{colors.interactiveSecondary020}}',
-  },
-  disabled: {
-    backgroundColor: '{{colors.transparent}}',
-  },
-};
-
 // Inline Message
 
 stylePresets.inlineMessageInformative = {

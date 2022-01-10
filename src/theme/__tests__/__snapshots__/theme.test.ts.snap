@@ -998,20 +998,6 @@ Object {
         },
       },
     },
-    "structuredList": Object {
-      "divider": Object {
-        "stylePreset": "divider",
-      },
-    },
-    "structuredListItem": Object {
-      "icon": Object {
-        "size": "iconSize010",
-        "stylePreset": "inkContrast",
-      },
-      "minHeight": "sizing100",
-      "spaceInset": "spaceInsetStretch040",
-      "stylePreset": "structuredListItem",
-    },
     "textField": Object {
       "large": Object {
         "endEnhancer": Object {
@@ -2028,17 +2014,6 @@ Object {
         "backgroundColor": "{{colors.interactiveDisabled010}}",
       },
     },
-    "structuredListItem": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interactiveSecondary020}}",
-      },
-      "disabled": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactiveSecondary010}}",
-      },
-    },
     "textInput": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -2866,6 +2841,20 @@ Object {
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "menuItemVertical",
     },
+  },
+  "structuredList": Object {
+    "divider": Object {
+      "stylePreset": "divider",
+    },
+  },
+  "structuredListItem": Object {
+    "icon": Object {
+      "size": "iconSize010",
+      "stylePreset": "inkContrast",
+    },
+    "minHeight": "sizing100",
+    "spaceInset": "spaceInsetStretch040",
+    "stylePreset": "structuredListItem",
   },
   "tab": Object {
     "large": Object {

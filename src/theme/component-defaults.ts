@@ -729,21 +729,6 @@ export const componentDefaults = {
       },
     },
   },
-  structuredList: {
-    divider: {
-      stylePreset: 'divider',
-    },
-  },
-  structuredListItem: {
-    stylePreset: 'structuredListItem',
-    spaceInset: 'spaceInsetStretch040',
-    minHeight: 'sizing100',
-    icon: {
-      size: 'iconSize010',
-      stylePreset: 'inkContrast',
-    },
-  },
-
   textField: {
     small: {
       stylePreset: 'inputField',
