@@ -362,54 +362,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -1604,24 +1580,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -4064,54 +4022,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -5306,24 +5240,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -7766,54 +7682,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -9008,24 +8900,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -11468,54 +11342,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -12710,24 +12560,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -15170,54 +15002,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -16412,24 +16220,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -18872,54 +18662,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -20114,24 +19880,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -22574,54 +22322,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -23816,24 +23540,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {
@@ -26276,54 +25982,30 @@ Object {
           "closeButton": Object {
             "stylePreset": "buttonMinimalInverseDocs",
           },
-          "spaceInline": "space040",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space030",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
       "vertical": Object {
         "actions": Object {
           "closeButton": Object {
             "stylePreset": "buttonOutlinedInverseDocs",
           },
-          "spaceInline": "space050",
         },
         "content": Object {
           "message": Object {
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityBody020",
           },
-          "spaceInline": "space050",
           "title": Object {
-            "spaceStack": "space030",
             "stylePreset": "inkWhiteContrast",
-            "typographyPreset": "utilityHeading010",
           },
         },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
       },
     },
     "byline": Object {
@@ -27518,24 +27200,6 @@ Object {
     "bannerIcon": Object {
       "base": Object {
         "iconColor": "{{colors.white}}",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "baseCardInteractive": Object {

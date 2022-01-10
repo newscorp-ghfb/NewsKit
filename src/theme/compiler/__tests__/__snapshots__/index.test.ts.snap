@@ -306,62 +306,6 @@ Object {
         },
       },
     },
-    "banner": Object {
-      "horizontal": Object {
-        "actions": Object {
-          "closeButton": Object {
-            "stylePreset": "iconButtonMinimalInverse",
-          },
-          "spaceInline": "space040",
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityBody020",
-          },
-          "spaceInline": "space030",
-          "title": Object {
-            "spaceStack": "space030",
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityHeading010",
-          },
-        },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-      "vertical": Object {
-        "actions": Object {
-          "closeButton": Object {
-            "stylePreset": "buttonOutlinedInverse",
-          },
-          "spaceInline": "space050",
-        },
-        "content": Object {
-          "message": Object {
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityBody020",
-          },
-          "spaceInline": "space050",
-          "title": Object {
-            "spaceStack": "space030",
-            "stylePreset": "inkInverse",
-            "typographyPreset": "utilityHeading010",
-          },
-        },
-        "icon": Object {
-          "spaceInline": "space030",
-        },
-        "maxWidth": "1920px",
-        "minHeight": "sizing090",
-        "spaceInset": "spaceInset045",
-        "stylePreset": "bannerInformative",
-      },
-    },
     "byline": Object {
       "divider": Object {
         "spaceInline": "space020",
@@ -1534,24 +1478,6 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "#2B4AAB",
-      },
-    },
-    "bannerInformative": Object {
-      "base": Object {
-        "backgroundColor": "#05717D",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "bannerNegative": Object {
-      "base": Object {
-        "backgroundColor": "#D20600",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "bannerNotice": Object {
-      "base": Object {
-        "backgroundColor": "#535353",
-        "iconColor": "#FFFFFF",
       },
     },
     "cardContainer": Object {
