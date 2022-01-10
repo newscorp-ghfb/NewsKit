@@ -4,7 +4,7 @@ import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
 import {AudioPlayer} from '..';
 import {AudioPlayerProps} from '../types';
 import {compileTheme, createTheme} from '../../theme';
-import audioPlayStylePresets from '../style-presets';
+import audioPlayerStylePresets from '../style-presets';
 
 const version = '0.10.0';
 
@@ -260,7 +260,7 @@ describe('Audio Player', () => {
     const audioPlayerTheme = createTheme({
       name: 'audio-player',
       overrides: {
-        stylePresets: audioPlayStylePresets,
+        stylePresets: audioPlayerStylePresets,
       },
     });
 
