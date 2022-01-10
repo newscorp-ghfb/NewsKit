@@ -21,7 +21,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -39,7 +39,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -57,7 +57,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -172,7 +172,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 
@@ -305,7 +305,7 @@ exports[`Table renders links correctly 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -323,7 +323,7 @@ exports[`Table renders links correctly 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -393,7 +393,7 @@ exports[`Table renders links correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -420,7 +420,7 @@ exports[`Table renders links correctly 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 
@@ -500,7 +500,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -518,7 +518,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -536,7 +536,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-6 {
@@ -628,7 +628,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -661,7 +661,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 
@@ -877,7 +877,7 @@ exports[`Table renders with default styles 1`] = `
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -895,7 +895,7 @@ exports[`Table renders with default styles 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5 {
@@ -913,7 +913,7 @@ exports[`Table renders with default styles 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 
@@ -993,7 +993,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1011,7 +1011,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1029,7 +1029,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-6 {
@@ -1150,7 +1150,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 
@@ -1313,7 +1313,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1331,7 +1331,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -1349,7 +1349,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-6 {
@@ -1470,7 +1470,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   border-width: 0;
 }
 

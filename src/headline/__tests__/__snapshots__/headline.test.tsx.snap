@@ -8,7 +8,7 @@ exports[`headline renders correctly with custom props 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -31,7 +31,7 @@ exports[`headline renders correctly with custom props 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -54,7 +54,7 @@ exports[`headline renders correctly with custom props 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -77,7 +77,7 @@ exports[`headline renders correctly with custom props 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -166,7 +166,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -189,7 +189,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     font-size: 32px;
     line-height: 36px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -212,7 +212,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -235,7 +235,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -283,7 +283,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     font-size: 32px;
     line-height: 36px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -306,7 +306,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     font-size: 32px;
     line-height: 36px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -329,7 +329,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -352,7 +352,7 @@ exports[`headline renders correctly with default props, with heading and kicker 
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -435,7 +435,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 

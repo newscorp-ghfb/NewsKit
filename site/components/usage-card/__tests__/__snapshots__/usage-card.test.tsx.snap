@@ -148,7 +148,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   font-size: 22px;
   line-height: 24.75px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -182,7 +182,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -432,7 +432,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   font-size: 22px;
   line-height: 24.75px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -466,7 +466,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 

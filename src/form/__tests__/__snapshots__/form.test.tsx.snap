@@ -12,7 +12,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -44,7 +44,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -113,7 +113,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -231,7 +231,7 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -363,7 +363,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -395,7 +395,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -485,7 +485,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -599,7 +599,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -778,7 +778,7 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -810,7 +810,7 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -900,7 +900,7 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -921,7 +921,7 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -986,7 +986,7 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1104,7 +1104,7 @@ exports[`Form renders with error on blur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1260,7 +1260,7 @@ exports[`Form renders with error on submit 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -1292,7 +1292,7 @@ exports[`Form renders with error on submit 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1382,7 +1382,7 @@ exports[`Form renders with error on submit 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1496,7 +1496,7 @@ exports[`Form renders with error on submit 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1675,7 +1675,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -1707,7 +1707,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1797,7 +1797,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -1818,7 +1818,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -1883,7 +1883,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2001,7 +2001,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2153,7 +2153,7 @@ exports[`Form renders with inputs 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -2185,7 +2185,7 @@ exports[`Form renders with inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -2254,7 +2254,7 @@ exports[`Form renders with inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2374,7 +2374,7 @@ exports[`Form renders with nested inputs 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -2406,7 +2406,7 @@ exports[`Form renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -2475,7 +2475,7 @@ exports[`Form renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2593,7 +2593,7 @@ exports[`Form renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -2726,7 +2726,7 @@ exports[`Form renders with onBlur validation 1`] = `
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -2758,7 +2758,7 @@ exports[`Form renders with onBlur validation 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
@@ -2827,7 +2827,7 @@ exports[`Form renders with onBlur validation 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -2945,7 +2945,7 @@ exports[`Form renders with onBlur validation 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -3074,7 +3074,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -3174,7 +3174,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
 }
@@ -3268,7 +3268,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -3330,7 +3330,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-14 {
@@ -3578,7 +3578,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-28:disabled {
@@ -3808,7 +3808,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -3908,7 +3908,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
 }
@@ -4002,7 +4002,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -4064,7 +4064,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-14 {
@@ -4312,7 +4312,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-28:disabled {
@@ -4542,7 +4542,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -4649,7 +4649,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
 }
@@ -4800,7 +4800,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -4837,7 +4837,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -4976,7 +4976,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-4 {
@@ -5168,7 +5168,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -5402,7 +5402,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .emotion-5:disabled {
@@ -5471,7 +5471,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -5513,7 +5513,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -5613,7 +5613,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
 }
@@ -5707,7 +5707,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -5825,7 +5825,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -5980,7 +5980,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -6087,7 +6087,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
 }
@@ -6238,7 +6238,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -6275,7 +6275,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -6382,7 +6382,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
 }
@@ -6459,7 +6459,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
 }
 
@@ -6587,7 +6587,7 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
 }

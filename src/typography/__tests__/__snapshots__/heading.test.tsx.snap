@@ -8,7 +8,7 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -92,7 +92,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -115,7 +115,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -138,7 +138,7 @@ exports[`Headings renders H1 with default styles 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -175,7 +175,7 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -259,7 +259,7 @@ exports[`Headings renders H2 with default styles 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -282,7 +282,7 @@ exports[`Headings renders H2 with default styles 1`] = `
     font-size: 24px;
     line-height: 27px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -319,7 +319,7 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -403,7 +403,7 @@ exports[`Headings renders H3 with default styles 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -426,7 +426,7 @@ exports[`Headings renders H3 with default styles 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -463,7 +463,7 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -547,7 +547,7 @@ exports[`Headings renders H4 with default styles 1`] = `
     font-size: 18px;
     line-height: 20.25px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -570,7 +570,7 @@ exports[`Headings renders H4 with default styles 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -607,7 +607,7 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -686,7 +686,7 @@ exports[`Headings renders H5 with default styles 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
 }
@@ -723,7 +723,7 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -802,7 +802,7 @@ exports[`Headings renders H6 with default styles 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
 }
@@ -839,7 +839,7 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -923,7 +923,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -946,7 +946,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     font-size: 36px;
     line-height: 40.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -969,7 +969,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
     font-size: 40px;
     line-height: 45px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1006,7 +1006,7 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -1090,7 +1090,7 @@ exports[`Headings renders Heading2 with default styles 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1113,7 +1113,7 @@ exports[`Headings renders Heading2 with default styles 1`] = `
     font-size: 24px;
     line-height: 27px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1150,7 +1150,7 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -1234,7 +1234,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1257,7 +1257,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
     font-size: 22px;
     line-height: 24.75px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1294,7 +1294,7 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -1378,7 +1378,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
     font-size: 18px;
     line-height: 20.25px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1401,7 +1401,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     padding: 0.5px 0px;
   }
 
@@ -1438,7 +1438,7 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -1517,7 +1517,7 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
 }
@@ -1554,7 +1554,7 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   font-size: 28px;
   line-height: 31.5px;
   font-weight: 500;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -1633,7 +1633,7 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   padding: 0.5px 0px;
   color: #0A0A0A;
 }
