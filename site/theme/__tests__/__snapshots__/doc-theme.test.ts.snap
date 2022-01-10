@@ -1295,22 +1295,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -1319,8 +1307,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -2968,41 +2954,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -4955,22 +4906,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -4979,8 +4918,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -6628,41 +6565,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -8615,22 +8517,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -8639,8 +8529,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -10288,41 +10176,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -12275,22 +12128,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -12299,8 +12140,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -13948,41 +13787,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -15935,22 +15739,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -15959,8 +15751,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -17608,41 +17398,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -19595,22 +19350,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -19619,8 +19362,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -21268,41 +21009,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -23255,22 +22961,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -23279,8 +22973,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -24928,41 +24620,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {
@@ -26915,22 +26572,10 @@ Object {
       "content": Object {
         "message": Object {
           "stylePreset": "toastText",
-          "typographyPreset": "utilityBody020",
         },
         "title": Object {
-          "spaceStack": "space010",
           "stylePreset": "toastText",
-          "typographyPreset": "utilityHeading010",
         },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
       },
       "maxWidth": Object {
         "lg": "38vw",
@@ -26939,8 +26584,6 @@ Object {
         "xl": "31vw",
         "xs": "90vw",
       },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
     },
     "unorderedList": Object {
       "content": Object {
@@ -28588,41 +28231,6 @@ Object {
     "toastIcon": Object {
       "base": Object {
         "iconColor": "{{colors.neutral100}}",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
       },
     },
     "toastText": Object {

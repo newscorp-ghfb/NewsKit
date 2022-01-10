@@ -684,46 +684,6 @@ stylePresets.cardContainer = {
   },
 };
 
-// Toast
-
-stylePresets.toastNeutral = {
-  base: {
-    backgroundColor: '{{colors.interfaceNeutral010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-stylePresets.toastInformative = {
-  base: {
-    backgroundColor: '{{colors.interfaceInformative010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
-stylePresets.toastNotice = {
-  base: {
-    backgroundColor: '{{colors.interfaceNotice010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-stylePresets.toastPositive = {
-  base: {
-    backgroundColor: '{{colors.interfacePositive010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-stylePresets.toastNegative = {
-  base: {
-    backgroundColor: '{{colors.interfaceNegative010}}',
-    borderRadius: '{{borders.borderRadiusRounded020}}',
-    iconColor: '{{colors.inkInverse}}',
-  },
-};
-
 // StructuredList
 stylePresets.structuredListItem = {
   hover: {

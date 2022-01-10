@@ -1165,37 +1165,6 @@ Object {
       },
       "stylePreset": "titleBar",
     },
-    "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityBody020",
-        },
-        "title": Object {
-          "spaceStack": "space010",
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityHeading010",
-        },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
-      },
-      "maxWidth": Object {
-        "lg": "38%",
-        "md": "45%",
-        "sm": "60%",
-        "xl": "31%",
-        "xs": "90%",
-      },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
-    },
     "unorderedList": Object {
       "content": Object {
         "stylePreset": "inkBase",
@@ -2128,41 +2097,6 @@ Object {
         "backgroundColor": "{{colors.transparent}}",
       },
     },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceInformative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfaceNotice010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interfacePositive010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
     "volumeControlIndicator": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary030}}",
@@ -2999,6 +2933,37 @@ Object {
       "stylePreset": "tagPrimary",
       "typographyPreset": "utilityButton010",
     },
+  },
+  "toast": Object {
+    "content": Object {
+      "message": Object {
+        "stylePreset": "inkInverse",
+        "typographyPreset": "utilityBody020",
+      },
+      "title": Object {
+        "spaceStack": "space010",
+        "stylePreset": "inkInverse",
+        "typographyPreset": "utilityHeading010",
+      },
+    },
+    "contentAndActions": Object {
+      "spaceInline": "space030",
+    },
+    "divider": Object {
+      "stylePreset": "dividerInverse",
+    },
+    "icon": Object {
+      "spaceInline": "space030",
+    },
+    "maxWidth": Object {
+      "lg": "38%",
+      "md": "45%",
+      "sm": "60%",
+      "xl": "31%",
+      "xs": "90%",
+    },
+    "spaceInset": "spaceInset030",
+    "stylePreset": "toastNeutral",
   },
 }
 `;

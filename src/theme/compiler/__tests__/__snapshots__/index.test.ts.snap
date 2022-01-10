@@ -1201,37 +1201,6 @@ Object {
       },
       "stylePreset": "titleBar",
     },
-    "toast": Object {
-      "content": Object {
-        "message": Object {
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityBody020",
-        },
-        "title": Object {
-          "spaceStack": "space010",
-          "stylePreset": "inkInverse",
-          "typographyPreset": "utilityHeading010",
-        },
-      },
-      "contentAndActions": Object {
-        "spaceInline": "space030",
-      },
-      "divider": Object {
-        "stylePreset": "dividerInverse",
-      },
-      "icon": Object {
-        "spaceInline": "space030",
-      },
-      "maxWidth": Object {
-        "lg": "38%",
-        "md": "45%",
-        "sm": "60%",
-        "xl": "31%",
-        "xs": "90%",
-      },
-      "spaceInset": "spaceInset030",
-      "stylePreset": "toastNeutral",
-    },
     "unorderedList": Object {
       "content": Object {
         "stylePreset": "inkBase",
@@ -2226,41 +2195,6 @@ Object {
     "titleBar": Object {
       "base": Object {
         "backgroundColor": "transparent",
-      },
-    },
-    "toastInformative": Object {
-      "base": Object {
-        "backgroundColor": "#05717D",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastNegative": Object {
-      "base": Object {
-        "backgroundColor": "#D20600",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastNeutral": Object {
-      "base": Object {
-        "backgroundColor": "#535353",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastNotice": Object {
-      "base": Object {
-        "backgroundColor": "#535353",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
-      },
-    },
-    "toastPositive": Object {
-      "base": Object {
-        "backgroundColor": "#0A782A",
-        "borderRadius": "8px",
-        "iconColor": "#FFFFFF",
       },
     },
     "uppercaseInkBase": Object {
