@@ -372,7 +372,7 @@ export default (layoutProps: LayoutProps) => {
         <Explore xsRowGutter="space000">
           <SectionIntroduction
             title="Explore"
-            cellProps={{xs: 12, xl: 10, xlOffset: 1}}
+            cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
           />
           <Cell xs={12} md={12} mdOffset={0} lg={12} xl={10} xlOffset={1}>
             <MediaList
@@ -387,7 +387,7 @@ export default (layoutProps: LayoutProps) => {
         <Grid xsRowGutter="space000">
           <SectionIntroduction
             title="Find out more"
-            cellProps={{xs: 12, xl: 10, xlOffset: 1}}
+            cellProps={{mdOffset: 0, md: 12, lg: 12, xl: 10, xlOffset: 1}}
           />
         </Grid>
         <Grid xsRowGutter="space040" mdRowGutter="space050">
@@ -397,3 +397,5 @@ export default (layoutProps: LayoutProps) => {
     </Layout>
   );
 };
+
+// , md: 12, lg: 12, xl: 10, xlOffset: 1
