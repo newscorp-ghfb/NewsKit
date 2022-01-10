@@ -9,6 +9,8 @@ import {
 import {getSSRId} from '../utils/get-ssr-id';
 import {isValidNode} from '../utils/component';
 import {OrderedListProps} from './types';
+import defaults from './defaults';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const ListItem = styled.li<OrderedListProps>`
   ${getSpacingInlineVertical('orderedList', '')}
@@ -33,7 +35,7 @@ const List = styled.ol`
   counter-reset: item-counter;
 `;
 
-export const OrderedList: React.FC<OrderedListProps> = ({
+const ThemelessOrderedList: React.FC<OrderedListProps> = ({
   children,
   overrides,
 }) => (
@@ -47,3 +49,5 @@ export const OrderedList: React.FC<OrderedListProps> = ({
     )}
   </List>
 );
+
+export const OrderedList = withOwnTheme(ThemelessOrderedList)({defaults});

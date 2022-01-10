@@ -26,51 +26,6 @@ stylePresets.bannerNegative = {
 };
 
 //
-// Icons
-//
-stylePresets.iconSocialTwitter = {
-  base: {
-    iconColor: '{{colors.socialTwitter}}',
-  },
-};
-stylePresets.iconSocialGitHub = {
-  base: {
-    iconColor: '{{colors.socialGithub}}',
-  },
-};
-stylePresets.iconSocialFacebook = {
-  base: {
-    iconColor: '{{colors.socialFacebook}}',
-  },
-};
-stylePresets.iconSocialInstagram = {
-  base: {
-    iconColor: '{{colors.socialInstagram}}',
-  },
-};
-stylePresets.iconSocialYoutube = {
-  base: {
-    iconColor: '{{colors.socialYoutube}}',
-  },
-};
-stylePresets.iconSocialWhatsApp = {
-  base: {
-    iconColor: '{{colors.socialWhatsapp}}',
-  },
-};
-stylePresets.iconSocialReddit = {
-  base: {
-    iconColor: '{{colors.socialReddit}}',
-  },
-};
-
-stylePresets.iconDefault = {
-  base: {
-    iconColor: '{{colors.inkBase}}',
-  },
-};
-
-//
 // Indeterminate Progress Indicator
 //
 
@@ -241,18 +196,6 @@ stylePresets.textInputAssistiveText = {
   },
   valid: {
     color: '{{colors.inkPositive}}',
-  },
-};
-
-stylePresets.iconPositive = {
-  base: {
-    iconColor: '{{colors.inkPositive}}',
-  },
-};
-
-stylePresets.iconNegative = {
-  base: {
-    iconColor: '{{colors.inkNegative}}',
   },
 };
 
@@ -615,16 +558,6 @@ stylePresets.imageCircle = {
 };
 
 //
-// TitleBar
-//
-
-stylePresets.titleBar = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-  },
-};
-
-//
 // Divider
 //
 
@@ -641,43 +574,6 @@ stylePresets.dividerInverse = {
     borderStyle: 'solid',
     borderColor: '{{colors.whiteTint050}}',
     borderWidth: '{{borders.borderWidthDefault}}',
-  },
-};
-
-//
-// Headline
-//
-
-stylePresets.headlineKickerInteractive = {
-  base: {
-    color: '{{colors.interactivePrimary030}}',
-  },
-  hover: {
-    color: '{{colors.interactivePrimary040}}',
-    textDecoration: 'underline',
-  },
-  active: {
-    color: '{{colors.interactivePrimary050}}',
-    textDecoration: 'underline',
-  },
-  visited: {
-    color: '{{colors.interactiveVisited010}}',
-  },
-};
-stylePresets.headlineHeadingInteractive = {
-  base: {
-    color: '{{colors.inkBase}}',
-  },
-  hover: {
-    color: '{{colors.interactivePrimary040}}',
-    textDecoration: 'underline',
-  },
-  active: {
-    color: '{{colors.interactivePrimary050}}',
-    textDecoration: 'underline',
-  },
-  visited: {
-    color: '{{colors.interactiveVisited010}}',
   },
 };
 
@@ -715,15 +611,6 @@ stylePresets.drawerPanel = {
     borderRadius: '{{borders.borderRadiusSharp}}',
     backgroundColor: '{{colors.interface010}}',
     boxShadow: '{{shadows.shadow060}}',
-  },
-};
-
-// Card
-
-stylePresets.cardContainer = {
-  base: {
-    color: '{{colors.inkBase}}',
-    backgroundColor: '{{colors.interface010}}',
   },
 };
 

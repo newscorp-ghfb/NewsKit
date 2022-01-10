@@ -397,97 +397,6 @@ Object {
       "stylePreset": "inkBase",
       "typographyPreset": "editorialCaption010",
     },
-    "card": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing080",
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerActions",
-      },
-      "headline": Object {
-        "interactive": Object {
-          "heading": Object {
-            "stylePreset": "headlineHeadingInteractive",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "headlineKickerInteractive",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-        "nonInteractive": Object {
-          "heading": Object {
-            "stylePreset": "inkContrast",
-          },
-          "kicker": Object {
-            "spaceInline": Object {
-              "lg": "space030",
-              "md": "space030",
-              "sm": "space020",
-              "xs": "space020",
-            },
-            "stylePreset": "uppercaseInkBrand010",
-          },
-          "typographyPreset": Object {
-            "lg": "editorialHeadline050",
-            "md": "editorialHeadline030",
-            "sm": "editorialHeadline020",
-            "xs": "editorialHeadline020",
-          },
-        },
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": Object {
-          "lg": "space050",
-          "md": "space050",
-          "sm": "space040",
-          "xs": "space040",
-        },
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": "spaceInsetSquish000",
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
-    "cardInset": Object {
-      "actionsContainer": Object {
-        "minHeight": "sizing000",
-        "spaceInset": Object {
-          "lg": "spaceInsetSquish040",
-          "md": "spaceInsetSquish040",
-          "sm": "spaceInsetSquish030",
-          "xs": "spaceInsetSquish030",
-        },
-        "stylePreset": "cardContainerActions",
-      },
-      "horizontalRatio": "1:1",
-      "mediaContainer": Object {
-        "spaceInline": "space000",
-        "stylePreset": "cardContainerMedia",
-      },
-      "stylePreset": "cardContainer",
-      "teaserContainer": Object {
-        "spaceInset": Object {
-          "lg": "spaceInset050",
-          "md": "spaceInset050",
-          "sm": "spaceInset040",
-          "xs": "spaceInset040",
-        },
-        "stylePreset": "cardContainerTeaser",
-      },
-    },
     "checkbox": Object {
       "large": Object {
         "feedback": Object {
@@ -631,26 +540,6 @@ Object {
         "xs": "space040",
       },
     },
-    "headline": Object {
-      "heading": Object {
-        "stylePreset": "inkContrast",
-      },
-      "kicker": Object {
-        "spaceInline": Object {
-          "lg": "space040",
-          "md": "space040",
-          "sm": "space030",
-          "xs": "space030",
-        },
-        "stylePreset": "uppercaseInkBrand010",
-      },
-      "typographyPreset": Object {
-        "lg": "editorialHeadline080",
-        "md": "editorialHeadline070",
-        "sm": "editorialHeadline060",
-        "xs": "editorialHeadline060",
-      },
-    },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
@@ -693,10 +582,6 @@ Object {
     },
     "image": Object {
       "stylePreset": "imageSharp",
-    },
-    "indeterminateProgressIndicator": Object {
-      "size": "iconSize020",
-      "stylePreset": "iconDefault",
     },
     "inlineDrawer": Object {
       "closeButton": Object {
@@ -869,18 +754,6 @@ Object {
         },
         "zIndex": 80,
       },
-    },
-    "orderedList": Object {
-      "content": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "counter": Object {
-        "minWidth": "sizing050",
-        "stylePreset": "inkBase",
-        "typographyPreset": "editorialParagraph010",
-      },
-      "spaceInline": "space040",
     },
     "overlay": Object {
       "stylePreset": "overlay",
@@ -1084,15 +957,6 @@ Object {
         "stylePreset": "sliderTrack",
       },
     },
-    "standfirst": Object {
-      "styledText": Object {
-        "stylePreset": "inkBase",
-        "typographyPreset": Object {
-          "lg": "editorialSubheadline020",
-          "xs": "editorialSubheadline010",
-        },
-      },
-    },
     "structuredList": Object {
       "divider": Object {
         "stylePreset": "divider",
@@ -1245,20 +1109,6 @@ Object {
           "typographyPreset": "utilityLabel030",
         },
       },
-    },
-    "titleBar": Object {
-      "heading": Object {
-        "typographyPreset": Object {
-          "lg": "editorialHeadline080",
-          "md": "editorialHeadline070",
-          "xs": "editorialHeadline050",
-        },
-      },
-      "spaceInset": Object {
-        "lg": "spaceInsetSquish040",
-        "xs": "spaceInsetSquish030",
-      },
-      "stylePreset": "titleBar",
     },
     "toast": Object {
       "content": Object {
@@ -1557,12 +1407,6 @@ Object {
         "iconColor": "#FFFFFF",
       },
     },
-    "cardContainer": Object {
-      "base": Object {
-        "backgroundColor": "#FFFFFF",
-        "color": "#2E2E2E",
-      },
-    },
     "checkboxFeedback": Object {
       "base": Object {
         "backgroundColor": "transparent",
@@ -1701,88 +1545,6 @@ Object {
         "backgroundColor": "#FFFFFF",
         "borderRadius": "0",
         "boxShadow": "0 20px 32px 0 rgba(10,10,10,0.08)",
-      },
-    },
-    "headlineHeadingInteractive": Object {
-      "active": Object {
-        "color": "#213A82",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#2E2E2E",
-      },
-      "hover": Object {
-        "color": "#2B4AAB",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "#5E44E4",
-      },
-    },
-    "headlineKickerInteractive": Object {
-      "active": Object {
-        "color": "#213A82",
-        "textDecoration": "underline",
-      },
-      "base": Object {
-        "color": "#3358CC",
-      },
-      "hover": Object {
-        "color": "#2B4AAB",
-        "textDecoration": "underline",
-      },
-      "visited": Object {
-        "color": "#5E44E4",
-      },
-    },
-    "iconDefault": Object {
-      "base": Object {
-        "iconColor": "#2E2E2E",
-      },
-    },
-    "iconNegative": Object {
-      "base": Object {
-        "iconColor": "#D20600",
-      },
-    },
-    "iconPositive": Object {
-      "base": Object {
-        "iconColor": "#0A782A",
-      },
-    },
-    "iconSocialFacebook": Object {
-      "base": Object {
-        "iconColor": "#1877F2",
-      },
-    },
-    "iconSocialGitHub": Object {
-      "base": Object {
-        "iconColor": "#000000",
-      },
-    },
-    "iconSocialInstagram": Object {
-      "base": Object {
-        "iconColor": "#C32AA3",
-      },
-    },
-    "iconSocialReddit": Object {
-      "base": Object {
-        "iconColor": "#FF4500",
-      },
-    },
-    "iconSocialTwitter": Object {
-      "base": Object {
-        "iconColor": "#1DA1F2",
-      },
-    },
-    "iconSocialWhatsApp": Object {
-      "base": Object {
-        "iconColor": "#25D366",
-      },
-    },
-    "iconSocialYoutube": Object {
-      "base": Object {
-        "iconColor": "#FF0000",
       },
     },
     "imageCircle": Object {
@@ -2312,11 +2074,6 @@ Object {
       },
       "disabled": Object {
         "color": "#C0C0C0",
-      },
-    },
-    "titleBar": Object {
-      "base": Object {
-        "backgroundColor": "transparent",
       },
     },
     "toastInformative": Object {

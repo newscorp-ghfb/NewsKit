@@ -169,7 +169,6 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 
@@ -341,7 +340,6 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-19 {
   box-sizing: border-box;
-  color: inherit;
   padding: 8px 4px;
 }
 
@@ -626,7 +624,6 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 
@@ -763,7 +760,6 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-19 {
   box-sizing: border-box;
-  color: inherit;
   padding: 8px 4px;
 }
 
@@ -1050,7 +1046,6 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 .emotion-9 {
   box-sizing: border-box;
-  color: inherit;
   padding: 24px;
 }
 
@@ -1441,7 +1436,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  color: inherit;
 }
 
 @media screen and (max-width: 479px) {
@@ -2008,7 +2002,6 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-13 {
   box-sizing: border-box;
-  color: inherit;
   padding: 0;
 }
 
