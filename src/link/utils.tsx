@@ -15,6 +15,6 @@ export const isLinkExternal = (href: string) => {
   return false;
 };
 
-export const linkWithTheme = <P extends {}>(
+export const withLinkTheme = <P extends {}>(
   BaseComponent: React.ComponentType<P> | React.ForwardRefExoticComponent<P>,
 ) => withOwnTheme(BaseComponent)({defaults, stylePresets});

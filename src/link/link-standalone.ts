@@ -1,8 +1,8 @@
 import {withDefaultProps} from '../utils/with-default-props';
 import {InternalLink} from './internal-link';
-import {linkWithTheme} from './utils';
+import {withLinkTheme} from './utils';
 
-export const LinkStandalone = linkWithTheme(
+export const LinkStandalone = withLinkTheme(
   withDefaultProps(InternalLink, {}, 'linkStandalone'),
 );
 LinkStandalone.displayName = 'LinkStandalone';

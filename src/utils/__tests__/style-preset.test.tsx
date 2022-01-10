@@ -7,6 +7,7 @@ import {
   getPresetStyles,
 } from '../style';
 import {createTheme} from '../../theme';
+import {deepMerge} from '../deep-merge';
 
 const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
   ${options =>
@@ -422,8 +423,7 @@ describe('getStylePresetFromTheme', () => {
         name: 'test-style-preset',
         overrides: {
           stylePresets: {
-            linkInline: {
-              ...linkInline,
+            linkInline: deepMerge({}, linkInline, {
               visited: {
                 color: '#00ff00',
               },
@@ -433,7 +433,7 @@ describe('getStylePresetFromTheme', () => {
               'visited:focus': {
                 color: '#0000FF',
               },
-            },
+            }),
           },
         },
       }),

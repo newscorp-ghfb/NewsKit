@@ -1,8 +1,8 @@
 import {withDefaultProps} from '../utils/with-default-props';
 import {InternalLink} from './internal-link';
-import {linkWithTheme} from './utils';
+import {withLinkTheme} from './utils';
 
-export const LinkInline = linkWithTheme(
+export const LinkInline = withLinkTheme(
   withDefaultProps(InternalLink, {noCrop: true}, 'linkInline'),
 );
 LinkInline.displayName = 'LinkInline';
