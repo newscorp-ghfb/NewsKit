@@ -1,7 +1,6 @@
 module.exports = {
   appName: 'DS Site',
   batchId: process.env.APPLITOOLS_BATCH_ID,
-  baselineBranchName: 'develop',
   browser: [
     {deviceName: 'iPhone 5/SE'},
     {deviceName: 'iPad'},
