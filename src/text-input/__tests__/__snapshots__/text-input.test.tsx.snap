@@ -4,130 +4,20 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -170,101 +60,16 @@ exports[`TextInput renders correctly with label hidden 1`] = `
 <DocumentFragment>
   .emotion-1 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-2 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-2::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-2::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-2::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-2::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-2:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-2::placeholder {
-  color: #535353;
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-2:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-2:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-3 {
-  min-height: 12px;
 }
 
 .emotion-4 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-4:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-4::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-4::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -302,103 +107,16 @@ exports[`TextInput renders correctly without asistive text 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 <div
@@ -432,108 +150,20 @@ exports[`TextInput renders disabled text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #C0C0C0;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: not-allowed;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #F4F4F4;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #C0C0C0;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #C0C0C0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -579,130 +209,20 @@ exports[`TextInput renders large text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 64px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -745,130 +265,20 @@ exports[`TextInput renders readonly text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -912,130 +322,20 @@ exports[`TextInput renders small text input 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 8px;
-  min-height: 32px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -1078,36 +378,10 @@ exports[`TextInput renders text input with leading icon 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
@@ -1122,7 +396,6 @@ exports[`TextInput renders text input with leading icon 1`] = `
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   pointer-events: none;
-  left: 12px;
 }
 
 .emotion-4 {
@@ -1143,101 +416,13 @@ exports[`TextInput renders text input with leading icon 1`] = `
 }
 
 .emotion-6 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-6::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-6::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-6 {
-  padding-left: 40px;
-}
-
-.emotion-6::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-6::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-6:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-6::placeholder {
-  color: #535353;
-}
-
-.emotion-6:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-6:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-7 {
-  min-height: 12px;
 }
 
 .emotion-8 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-8:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-8::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-8::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -1422,36 +607,10 @@ exports[`TextInput renders text input with overrides for leading and validation 
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
@@ -1466,7 +625,6 @@ exports[`TextInput renders text input with overrides for leading and validation 
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   pointer-events: none;
-  left: 12px;
 }
 
 .emotion-4 {
@@ -1487,101 +645,17 @@ exports[`TextInput renders text input with overrides for leading and validation 
 }
 
 .emotion-6 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-6::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-6::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
 }
 
 .emotion-6 {
   padding-left: 48px;
 }
 
-.emotion-6::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-6::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-6:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-6::placeholder {
-  color: #535353;
-}
-
-.emotion-6:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-6:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-7 {
-  min-height: 12px;
-}
-
 .emotion-8 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-8:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-8::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-8::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -1644,130 +718,21 @@ exports[`TextInput renders with different minHeight 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
   min-height: 64px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -1814,130 +779,20 @@ exports[`TextInput renders with fixed width 1`] = `
 
 .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -1984,130 +839,20 @@ exports[`TextInput renders with full width 1`] = `
 
 .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -2150,130 +895,20 @@ exports[`TextInput should render custom aria-label 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
@@ -2317,130 +952,20 @@ exports[`TextInput should render custom placeholder 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
-  color: #0A0A0A;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-  margin-bottom: 16px;
-  margin-right: 4px;
-}
-
-.emotion-1:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 .emotion-2 {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .emotion-3 {
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #DEDEDE;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E2E2E;
-  text-overflow: ellipsis;
-  padding: 12px;
-  min-height: 48px;
-}
-
-.emotion-3::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-3::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-3::-webkit-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::-moz-placeholder {
-  color: #535353;
-}
-
-.emotion-3:-ms-input-placeholder {
-  color: #535353;
-}
-
-.emotion-3::placeholder {
-  color: #535353;
-}
-
-.emotion-3:focus:not(:disabled) {
-  background-color: #FAFAFA;
-  border-color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #FAFAFA;
-}
-
-.emotion-3:disabled {
-  border-color: #F4F4F4;
-  color: #C0C0C0;
-}
-
-.emotion-4 {
-  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
-  color: #535353;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  padding: 0.5px 0px;
-}
-
-.emotion-5:disabled {
-  color: #C0C0C0;
-}
-
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
 }
 
 <div
