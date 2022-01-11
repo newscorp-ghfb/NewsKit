@@ -15,6 +15,13 @@ const myCustomTheme = createTheme({
           color: '{{colors.blue060}}',
         },
       },
+      linkInline: {
+        base: {
+          color: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'underline',
+        },
+      },
     },
   },
 });
@@ -33,24 +40,24 @@ export const StoryTitleBar = () => (
     <TitleBar>Title bar default state</TitleBar>
     <br />
     <br />
-    <TitleBar
-      overrides={{
-        heading: {
-          typographyPreset: {
-            xs: 'editorialHeadline010',
-            sm: 'editorialHeadline020',
-            md: 'editorialHeadline030',
-            lg: 'editorialHeadline040',
-          },
-          stylePreset: 'linkInline',
-        },
-      }}
-    >
-      Title bar with overwritten heading typographyPreset
-    </TitleBar>
-    <br />
-    <br />
     <ThemeProvider theme={myCustomTheme}>
+      <TitleBar
+        overrides={{
+          heading: {
+            typographyPreset: {
+              xs: 'editorialHeadline010',
+              sm: 'editorialHeadline020',
+              md: 'editorialHeadline030',
+              lg: 'editorialHeadline040',
+            },
+            stylePreset: 'linkInline',
+          },
+        }}
+      >
+        Title bar with overwritten heading typographyPreset
+      </TitleBar>
+      <br />
+      <br />
       <TitleBar
         headingAs="h6"
         overrides={{
