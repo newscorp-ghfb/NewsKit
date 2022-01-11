@@ -4,16 +4,101 @@ exports[`EmailInput renders correctly with label hidden 1`] = `
 <DocumentFragment>
   .emotion-1 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-2 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-2::placeholder {
+  color: #535353;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-2:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-3 {
+  min-height: 12px;
 }
 
 .emotion-4 {
   margin: 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-4:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 <div

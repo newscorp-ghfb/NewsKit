@@ -18,11 +18,14 @@ import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {IconFilledCheckCircle, IconFilledError} from '../icons';
 import {FieldsHadErrorObject} from '../form/types';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 /**
  * @deprecated This component has been deprecated and will be removed in a future release, use TextField instead
  */
-export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
+const ThemelessTextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   (
     {
       overrides = {},
@@ -204,4 +207,9 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   },
 );
 
-TextInput.displayName = 'TextInput';
+ThemelessTextInput.displayName = 'TextInput';
+
+export const TextInput = withOwnTheme(ThemelessTextInput)({
+  defaults,
+  stylePresets,
+});

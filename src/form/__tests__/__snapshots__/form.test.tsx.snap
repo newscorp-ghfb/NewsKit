@@ -7,20 +7,130 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
 
 .emotion-2 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-3 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-4:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-4:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-5 {
+  min-height: 12px;
 }
 
 .emotion-6 {
   margin: 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-6:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-6::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-6::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-14 {
@@ -248,16 +358,90 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-2 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-3 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #EF1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  caret-color: #D20600;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
 }
 
 .emotion-5 {
@@ -272,6 +456,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {
@@ -284,11 +469,36 @@ exports[`Form renders with error and with submit validation and revalidation mod
 }
 
 .emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
   fill: #D20600;
+}
+
+.emotion-8 {
+  min-height: 12px;
 }
 
 .emotion-9 {
   margin: 0;
+  color: #D20600;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-20 {
@@ -563,16 +773,90 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-2 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-3 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #EF1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  caret-color: #D20600;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
 }
 
 .emotion-5 {
@@ -587,6 +871,7 @@ exports[`Form renders with error on blur 1`] = `
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {
@@ -599,11 +884,126 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
   fill: #D20600;
+}
+
+.emotion-8 {
+  min-height: 12px;
 }
 
 .emotion-9 {
   margin: 0;
+  color: #D20600;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-14 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-14::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-14::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-14:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-14::placeholder {
+  color: #535353;
+}
+
+.emotion-14:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-14:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-16 {
+  margin: 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-16:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-16::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-16::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-17 {
@@ -804,7 +1204,7 @@ exports[`Form renders with error on blur 1`] = `
           <input
             aria-describedby="mock-nk-1-assistive-text"
             aria-invalid="false"
-            class="emotion-4"
+            class="emotion-14"
             data-testid="text-input-username"
             id="mock-nk-1"
             name="username"
@@ -816,7 +1216,7 @@ exports[`Form renders with error on blur 1`] = `
           class="emotion-8"
         >
           <p
-            class="emotion-9"
+            class="emotion-16"
             id="mock-nk-1-assistive-text"
           >
             Your username
@@ -855,16 +1255,90 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-2 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-3 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #EF1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  caret-color: #D20600;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
 }
 
 .emotion-5 {
@@ -879,6 +1353,7 @@ exports[`Form renders with error on submit 1`] = `
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {
@@ -891,11 +1366,36 @@ exports[`Form renders with error on submit 1`] = `
 }
 
 .emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
   fill: #D20600;
+}
+
+.emotion-8 {
+  min-height: 12px;
 }
 
 .emotion-9 {
   margin: 0;
+  color: #D20600;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-20 {
@@ -1170,16 +1670,90 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-2 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-3 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #EF1703;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  caret-color: #D20600;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4 {
+  padding-right: 40px;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
 }
 
 .emotion-5 {
@@ -1194,6 +1768,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   pointer-events: none;
+  right: 12px;
 }
 
 .emotion-6 {
@@ -1206,11 +1781,126 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
   fill: #D20600;
+}
+
+.emotion-8 {
+  min-height: 12px;
 }
 
 .emotion-9 {
   margin: 0;
+  color: #D20600;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-14 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-14::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-14::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-14:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-14::placeholder {
+  color: #535353;
+}
+
+.emotion-14:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-14:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-16 {
+  margin: 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-16:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-16::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-16::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-17 {
@@ -1411,7 +2101,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
           <input
             aria-describedby="mock-nk-1-assistive-text"
             aria-invalid="false"
-            class="emotion-4"
+            class="emotion-14"
             data-testid="text-input-username"
             id="mock-nk-1"
             name="username"
@@ -1423,7 +2113,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
           class="emotion-8"
         >
           <p
-            class="emotion-9"
+            class="emotion-16"
             id="mock-nk-1-assistive-text"
           >
             Your username
@@ -1458,20 +2148,130 @@ exports[`Form renders with inputs 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-1:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-2 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-3 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-3::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-3::placeholder {
+  color: #535353;
+}
+
+.emotion-3:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-3:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-4 {
+  min-height: 12px;
 }
 
 .emotion-5 {
   margin: 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-5:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 <form
@@ -1569,20 +2369,130 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-2 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-3 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-4:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-4:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-5 {
+  min-height: 12px;
 }
 
 .emotion-6 {
   margin: 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-6:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-6::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-6::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-14 {
@@ -1811,20 +2721,130 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-2 {
   display: block;
+  color: #0A0A0A;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-2:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-3 {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .emotion-4 {
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
   box-sizing: border-box;
   width: 100%;
   cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEDEDE;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E2E2E;
+  text-overflow: ellipsis;
+  padding: 12px;
+  min-height: 48px;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-4::placeholder {
+  color: #535353;
+}
+
+.emotion-4:focus:not(:disabled) {
+  background-color: #FAFAFA;
+  border-color: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #FAFAFA;
+}
+
+.emotion-4:disabled {
+  border-color: #F4F4F4;
+  color: #C0C0C0;
+}
+
+.emotion-5 {
+  min-height: 12px;
 }
 
 .emotion-6 {
   margin: 0;
+  color: #535353;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 0.5px 0px;
+}
+
+.emotion-6:disabled {
+  color: #C0C0C0;
+}
+
+.emotion-6::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-6::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
 }
 
 .emotion-14 {
