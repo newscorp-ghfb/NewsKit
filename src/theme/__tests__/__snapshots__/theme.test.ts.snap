@@ -2423,6 +2423,23 @@ Object {
   "image": Object {
     "stylePreset": "imageSharp",
   },
+  "legend": Object {
+    "large": Object {
+      "spaceStack": "space030",
+      "stylePreset": "legend",
+      "typographyPreset": "utilityLabel030",
+    },
+    "medium": Object {
+      "spaceStack": "space030",
+      "stylePreset": "legend",
+      "typographyPreset": "utilityLabel020",
+    },
+    "small": Object {
+      "spaceStack": "space030",
+      "stylePreset": "legend",
+      "typographyPreset": "utilityLabel010",
+    },
+  },
   "link": Object {
     "externalIcon": Object {
       "size": "iconSize010",
@@ -4056,6 +4073,14 @@ Object {
     },
   },
   "label": Object {
+    "base": Object {
+      "color": "{{colors.inkContrast}}",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+    },
+  },
+  "legend": Object {
     "base": Object {
       "color": "{{colors.inkContrast}}",
     },

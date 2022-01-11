@@ -1,5 +1,6 @@
 import {createContext, Dispatch, SetStateAction} from 'react';
-import {FieldsHadErrorObject} from './types';
+import {TextFieldSize} from '../text-field';
+import {FieldsHadErrorObject, FormInputState} from './types';
 
 /* istanbul ignore next */
 const noop = () => {
@@ -16,3 +17,17 @@ export const FormValidationContext = createContext<{
   setFieldsHadError: noop,
 });
 export const FormValidationContextProvider = FormValidationContext.Provider;
+
+export const FormInputContext = createContext<{
+  name?: string;
+  size?: TextFieldSize;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
+  state?: FormInputState;
+  error?: string;
+  ref?: React.Ref<HTMLInputElement>;
+  id?: string;
+  labelId?: string;
+  assistiveTextId?: string;
+  statusIcon?: React.ReactNode;
+}>({});

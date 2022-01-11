@@ -4472,10 +4472,10 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
     </span>
     <div
       aria-describedby="mock-nk-1"
-      aria-labelledby="downshift-4-label"
+      aria-labelledby="downshift-6-label"
       class="emotion-20"
       data-testid="select-panel"
-      id="downshift-4-menu"
+      id="downshift-6-menu"
       role="listbox"
       tabindex="-1"
     />
