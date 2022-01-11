@@ -13,6 +13,9 @@ import {ThumbLabelWrapper} from './thumb-label-wrapper';
 import {renderLabel, getTrackBackgroundStyle} from './utils';
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const labelFlowMap = [
   // horizontal
@@ -29,7 +32,7 @@ const labelFlowMap = [
   },
 ];
 
-export const Slider: React.FC<SliderProps> = ({
+const ThemelessSlider: React.FC<SliderProps> = ({
   min,
   max,
   step = 1,
@@ -217,3 +220,5 @@ export const Slider: React.FC<SliderProps> = ({
     </StackContainer>
   );
 };
+
+export const Slider = withOwnTheme(ThemelessSlider)({defaults, stylePresets});
