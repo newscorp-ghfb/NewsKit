@@ -980,53 +980,11 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-3 svg {
-  fill: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-3:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-3:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-3:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <div
@@ -1322,53 +1280,11 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3358CC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .emotion-3 svg {
-  fill: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) {
-  color: #2B4AAB;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:hover:not(:disabled) svg {
-  fill: #2B4AAB;
-}
-
-.emotion-3:active:not(:disabled) {
-  color: #213A82;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:active:not(:disabled) svg {
-  fill: #213A82;
-}
-
-.emotion-3:visited:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:not(:disabled) svg {
-  fill: #5E44E4;
-}
-
-.emotion-3:visited:hover:not(:disabled) {
-  color: #5E44E4;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-3:visited:hover:not(:disabled) svg {
-  fill: #5E44E4;
+  fill: #FFFFFF;
 }
 
 <div

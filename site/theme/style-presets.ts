@@ -704,8 +704,10 @@ export const stylePresets = {
       borderColor: '{{colors.interactivePrimary030}}',
     },
   },
-  imageRoundedMedium: {
+  blockRoundedMedium: {
     base: {
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      // TODO: remove overflow from here
       overflow: 'hidden',
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any,
