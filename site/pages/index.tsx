@@ -397,5 +397,3 @@ export default (layoutProps: LayoutProps) => {
     </Layout>
   );
 };
-
-// , md: 12, lg: 12, xl: 10, xlOffset: 1
