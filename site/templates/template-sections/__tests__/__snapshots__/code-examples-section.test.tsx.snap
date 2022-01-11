@@ -691,7 +691,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
               </p>
             </div>
             <div
-              class="emotion-18"
+              class="emotion-14"
             >
               <picture
                 class="emotion-19"
@@ -757,7 +757,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
               </p>
             </div>
             <div
-              class="emotion-18"
+              class="emotion-14"
             >
               <picture
                 class="emotion-19"

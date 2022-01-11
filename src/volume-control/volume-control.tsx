@@ -13,6 +13,9 @@ import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getSSRId} from '../utils/get-ssr-id';
 import {getTokensForVolumeControl} from './utils';
 import {MQ} from '../utils/style';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 interface MuteButtonProps {
   volume: number;
@@ -52,7 +55,7 @@ const MuteButton: React.FC<MuteButtonProps> = ({
   </IconButton>
 );
 
-export const VolumeControl: React.FC<VolumeControlProps> = ({
+const ThemelessVolumeControl: React.FC<VolumeControlProps> = ({
   volume,
   vertical,
   onChange,
@@ -165,3 +168,8 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
     </>
   );
 };
+
+export const VolumeControl = withOwnTheme(ThemelessVolumeControl)({
+  defaults,
+  stylePresets,
+});
