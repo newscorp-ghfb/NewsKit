@@ -12,6 +12,9 @@ import {useIntersection} from '../utils/hooks/use-intersection';
 import {Sources} from './sources';
 import {useClientSide} from './utils';
 import {getComponentOverrides} from '../utils/overrides';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {withOwnTheme} from '../utils/with-own-theme';
 
 const ImageComponent: React.FC<ImageProps> = ({
   loadingAspectRatio,
@@ -115,4 +118,6 @@ const ImageComponent: React.FC<ImageProps> = ({
   );
 };
 
-export const Image = React.memo(ImageComponent, dequal);
+const ThemelessImage = React.memo(ImageComponent, dequal);
+
+export const Image = withOwnTheme(ThemelessImage)({defaults, stylePresets});
