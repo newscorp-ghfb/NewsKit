@@ -325,7 +325,7 @@ export default (layoutProps: LayoutProps) => (
             overrides={{stylePreset: 'inlineMessageInformative'}}
             icon={icon}
             role="region"
-            aria-label="fallback-font"
+            aria-label="fallback font"
           >
             It is also important to consider a fallback font (web safe font)
             when defining a font family.{' '}
@@ -415,7 +415,7 @@ export default (layoutProps: LayoutProps) => (
               overrides={{stylePreset: 'inlineMessageInformative'}}
               icon={icon}
               role="region"
-              aria-label="4px-baseline"
+              aria-label="default base line"
             >
               The default baseline of NewsKit is 4px, and when calculating
               line-height for typographical styles we round either up or down to
