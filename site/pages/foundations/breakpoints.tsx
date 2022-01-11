@@ -55,7 +55,7 @@ const breakpointsRows = Object.entries(bps).map(([tokenName, tokenValue]) => ({
 export default (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
-      title: 'Breakpoints | Newskit design system',
+      title: 'Breakpoints',
       description:
         'Breakpoints set a visual point on a screen to adapt the design of content (responsive design), ensuring a consistent, optimised experience across different screen widths.',
     }}

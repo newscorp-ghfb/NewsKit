@@ -5,10 +5,10 @@ import Document, {
   Head,
   Main,
   NextScript,
-  DocumentContext,
   Html,
+  DocumentContext,
 } from 'next/document';
-import {Consent, Tealium, Global, css} from 'newskit';
+import {Consent, Global, css, Tealium} from 'newskit';
 import Helmet from 'react-helmet';
 import {HTMLMeta} from '../components/html-meta';
 
@@ -21,7 +21,7 @@ interface Props {
 const Base = () => <base href={process.env.BASE_URI ?? '/'} />;
 
 export default class MyDocument extends Document<Props> {
-  static async getInitialProps(ctx: DocumentContext) {
+  static async getStaticProps(ctx: DocumentContext) {
     const {html} = await ctx.renderPage();
     return {
       html,

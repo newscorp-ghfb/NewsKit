@@ -50,7 +50,7 @@ const ModalComponent = ({open, ...state}: {open: boolean}) => {
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Modal | Newskit design system',
+      title: 'Modal',
       description:
         'A Modal is a layout panel that presents critical information or requests users input without navigating away from the current page.',
     }}

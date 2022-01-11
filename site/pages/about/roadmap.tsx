@@ -6,7 +6,7 @@ import {
   Grid,
   getSizingCssFromTheme,
 } from 'newskit';
-import Head from 'next/head';
+import {HeadNextSeo} from '../../components/head-next-seo';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -20,13 +20,10 @@ const WrapperWithPadding = styled.div`
 export default ({path, ...props}: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...props} path={`${path}-new`}>
-    <Head>
-      <title key="title">Roadmap | NewsKit design system</title>
-      <meta
-        name="Description"
-        content="NewsKit’s Design System team is busy building and planning to help you build better products faster."
-      />
-    </Head>
+    <HeadNextSeo
+      title="Roadmap"
+      description="NewsKit’s Design System team is busy building and planning to help you build better products faster."
+    />
     <WrapperWithPadding />
     <Grid lgMargin="sizing000" xsRowGutter="space000">
       <PageIntroduction
