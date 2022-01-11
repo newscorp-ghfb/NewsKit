@@ -19,7 +19,7 @@ describe('TextBlock', () => {
 
   test('renders with custom style preset', () => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
-      stylePreset: 'linkInline',
+      stylePreset: 'inkInverse',
     });
     expect(fragment).toMatchSnapshot();
   });
