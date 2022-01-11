@@ -45,7 +45,7 @@ export const FormInput = ({
 
   const validationIconSize = getToken(
     {theme, overrides: {}},
-    `textField.${size}.endEnhancer`,
+    `textField.${size || defaultSize}.endEnhancer`,
     'endEnhancer',
     'iconSize',
   );
