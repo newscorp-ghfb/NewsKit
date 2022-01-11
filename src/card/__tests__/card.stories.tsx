@@ -16,6 +16,9 @@ import {getColorCssFromTheme, styled} from '../../utils/style';
 import {createTheme, ThemeProvider} from '../../theme';
 import {Link} from '../../link';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
+import {AlignSelfValues, StackChild} from '../../stack-child';
+import {Divider} from '../../divider';
+import {TitleBar} from '../../title-bar';
 
 const ContainerWithBackground = styled.div<{colorToken?: string}>`
   ${({colorToken = 'white', ...props}) =>
@@ -1727,7 +1730,7 @@ const CSSGrid = styled.div`
   ${getMediaQueryFromTheme('lg')} {
     justify-content: stretch;
     align-content: space-between;
-    gap: 30px;
+    gap: 10px;
   }
 `;
 
@@ -1753,10 +1756,76 @@ export const StoryTheSun = () => (
       <Cell xs="full-width" lg={4}>
         <CSSGrid>
           <SmallItem />
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
           <SmallItem />
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
           <SmallItem />
+
+          <Visible sm lg>
+            <Divider />
+          </Visible>
+
           <SmallItem />
         </CSSGrid>
+      </Cell>
+    </Grid>
+  </FixWidth>
+);
+
+const StackBlock = styled.div`
+  width: 100%;
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    min-width: 300px;
+    max-width: 300px;
+    border: 1px solid red;
+  }
+`;
+
+export const StoryTheSun2 = () => (
+  <FixWidth>
+    <TitleBar>
+      <Stack flow="horizontal-stretch">
+        <span style={{flex: 1}}>Title bar with button</span>
+        <Divider />
+      </Stack>
+    </TitleBar>
+    <Grid>
+      <Cell xs="full-width" lg={8}>
+        <LargeItem />
+      </Cell>
+      <Cell xs="full-width" lg={4}>
+        <Stack
+          stackDistribution={{xs: 'flex-start', lg: 'space-between'}}
+          spaceInline={{xs: 'space040', lg: 'space000'}}
+          spaceStack={{xs: 'space040', lg: 'space000'}}
+          flow={{
+            xs: 'vertical-center',
+            md: 'horizontal-center',
+            lg: 'vertical-center',
+          }}
+          wrap
+        >
+          <StackBlock>
+            <SmallItem />
+          </StackBlock>
+          <StackBlock>
+            <SmallItem />
+          </StackBlock>
+          <StackBlock>
+            <SmallItem />
+          </StackBlock>
+          <StackBlock>
+            <SmallItem />
+          </StackBlock>
+        </Stack>
       </Cell>
     </Grid>
   </FixWidth>
