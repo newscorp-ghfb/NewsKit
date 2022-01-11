@@ -1,10 +1,10 @@
 import React from 'react';
 import {Cell, Grid, getSizingFromTheme, styled} from 'newskit';
-import Head from 'next/head';
 
 import {TableOfContents} from '../components/table-of-contents';
 import {IntroductionSection, OnwardJourneySection} from './template-sections';
 import {TemplateProps} from './types';
+import {HeadNextSeo} from '../components/head-next-seo';
 
 const WrapperWithPadding = styled.div`
   padding-top: ${getSizingFromTheme('sizing090')};
@@ -19,15 +19,7 @@ export const PageTemplate: React.FC<TemplateProps> = ({
   featureCard,
 }) => (
   <>
-    <Head>
-      <title key="title">{headTags.title}</title>
-      <meta
-        key="description"
-        name="description"
-        content={headTags.description}
-      />
-    </Head>
-
+    <HeadNextSeo title={headTags.title} description={headTags.description} />
     <WrapperWithPadding>
       <Grid xsRowGutter="space000">
         <IntroductionSection pageIntroduction={pageIntroduction} meta={meta} />

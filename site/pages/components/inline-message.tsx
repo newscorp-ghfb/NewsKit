@@ -24,7 +24,7 @@ const PlaygroundContainer = styled.div`
 export default (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Inline Message | Newskit design system',
+      title: 'Inline Message',
       description:
         'An Inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
     }}

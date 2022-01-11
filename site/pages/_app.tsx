@@ -9,7 +9,7 @@ import {
   UncompiledTheme,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
-import Head from 'next/head';
+import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
 import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
 import {docsThemeLight, docsThemeDark} from '../theme/doc-theme';
@@ -129,14 +129,10 @@ export default class MyApp extends App<Props, State> {
 
     return (
       <>
-        <Head>
-          <title key="title">NewsKit design system</title>
-          <meta
-            key="description"
-            name="description"
-            content="NewsKit design system - components and guidelines to help increase the speed of creation and innovation in digital teams."
-          />
-        </Head>
+        <HeadNextSeo
+          description="NewsKit design system - components and guidelines to 
+          help increase the speed of creation and innovation in digital teams."
+        />
         <InstrumentationProvider
           {...createEventInstrumentation(handlers, {
             ...pageProps,
