@@ -111,6 +111,7 @@ const iconsList = [
   'Backspace',
   'Backup',
   'BackupTable',
+  'Badge',
   'Ballot',
   'BarChart',
   'BatchPrediction',
